@@ -73,9 +73,9 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_devel")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio" TYPE FILE FILES
     "/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_api.h"
-    "/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h"
-    "/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_types.h"
     "/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_consts.h"
+    "/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_types.h"
+    "/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_devel")
 

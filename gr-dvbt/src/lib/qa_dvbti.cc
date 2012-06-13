@@ -27,13 +27,11 @@
 
 #include <qa_dvbti.h>
 
-
 CppUnit::TestSuite *
 qa_dvbt::suite ()
 {
-  CppUnit::TestSuite    *s = new CppUnit::TestSuite ("dvbt");
-  //s->addTest (qa_atsci_equalizer_nop::suite ());
+  CppUnit::TestSuite	*s = new CppUnit::TestSuite ("dvbt");
+
 
   return s;
 }
-

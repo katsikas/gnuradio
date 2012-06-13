@@ -24,10 +24,17 @@ include(GrPython)
 
 GR_PYTHON_INSTALL(
     PROGRAMS
+    btl-fsd.py
+    dvbt_utils.py
     DESTINATION ${GR_PKG_DATA_DIR}/examples/dvbt
     COMPONENT "dvbt_examples"
 )
 
+install(
+    FILES README
+    DESTINATION ${GR_PKG_DATA_DIR}/examples/dvbt
+    COMPONENT "dvbt_examples"
+)
 
 ########################################################################
 # Handle the unit tests
@@ -40,7 +47,7 @@ foreach(py_qa_test_file ${py_qa_test_files})
     set(GR_TEST_PYTHON_DIRS
         ${CMAKE_BINARY_DIR}/gnuradio-core/src/python
         ${CMAKE_BINARY_DIR}/gnuradio-core/src/lib/swig
-        ${CMAKE_BINARY_DIR}/gr-dvb/src/lib
+        ${CMAKE_BINARY_DIR}/gr-dvbt/src/lib
     )
     set(GR_TEST_TARGET_DEPS volk gruel gnuradio-core gnuradio-dvbt)
     GR_ADD_TEST(${py_qa_test_name} ${PYTHON_EXECUTABLE} ${PYTHON_DASH_B} ${py_qa_test_file})

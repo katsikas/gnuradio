@@ -23,16 +23,16 @@
 #ifndef _DVBT_TYPES_H_
 #define _DVBT_TYPES_H_
 
+#include <dvbt_consts.h>
 #include <cstring>
 #include <cassert>
-#include <dvbt_consts.h>
 
 
 class dvbt_mpeg_packet {
  public:
-  static const int PAD  = 68;
-  unsigned char data[DVBT_MPEG_DATA_LENGTH + 1];        // first byte is sync
-  unsigned char _pad_[PAD];                            // pad to power of 2
+  static const int NPAD  = 68;
+  unsigned char	data[187 + 1];	// first byte is sync
+  unsigned char _pad_[NPAD];				// pad to power of 2 (256)
 
   // overload equality operator
   bool operator== (const dvbt_mpeg_packet &other) const {

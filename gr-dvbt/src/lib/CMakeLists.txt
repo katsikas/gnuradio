@@ -35,7 +35,6 @@ link_directories(${Boost_LIBRARY_DIRS})
 ########################################################################
 list(APPEND gr_dvbt_sources
     dvbt_pad.cc
-    # ----> put .cc files
 )
 
 list(APPEND dvbt_libs
@@ -57,14 +56,13 @@ link_directories(${CPPUNIT_LIBRARY_DIRS})
 
 list(APPEND test_dvbti_sources
     qa_dvbti.cc
-    # ---> qa_atsci_basic_trellis_encoder.cc
 )
 
 include(GrTest)
 set(GR_TEST_TARGET_DEPS gnuradio-dvbt gnuradio-core gruel volk)
-add_executable(test_dvbt ${test_dvbt_sources} test_dvbt.cc)
-target_link_libraries(test_dvbt gnuradio-dvbt gnuradio-core ${CPPUNIT_LIBRARIES})
-GR_ADD_TEST(dvbt-test test_dvbt)
+add_executable(test_dvbti ${test_dvbti_sources} test_dvbti.cc)
+target_link_libraries(test_dvbti gnuradio-dvbt gnuradio-core ${CPPUNIT_LIBRARIES})
+GR_ADD_TEST(dvbti-test test_dvbti)
 
 endif(ENABLE_TESTING)
 
@@ -73,10 +71,9 @@ endif(ENABLE_TESTING)
 ########################################################################
 install(FILES
     dvbt_api.h
-    dvbt_pad.h
-    dvbt_types.h
     dvbt_consts.h
-	# ----> put .h files.  e.g: atsc_derandomizer.h
+    dvbt_types.h
+    dvbt_pad.h
     DESTINATION ${GR_INCLUDE_DIR}/gnuradio
     COMPONENT "dvbt_devel"
 )

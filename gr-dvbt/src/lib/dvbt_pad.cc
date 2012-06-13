@@ -25,8 +25,8 @@
 #endif
 
 #include <dvbt_pad.h>
-#include <dvbt_types.h>
 #include <gr_io_signature.h>
+#include <dvbt_types.h>
 
 
 dvbt_pad_sptr
@@ -48,9 +48,9 @@ void
 dvbt_pad::forecast (int noutput_items, gr_vector_int &ninput_items_required)
 {
 	unsigned ninputs = ninput_items_required.size();
-  	for (unsigned i = 0; i < ninputs; i++){
-    		ninput_items_required[i] = noutput_items * DVBT_MPEG_PACKET_LENGTH;
-	}
+ 		for (unsigned i = 0; i < ninputs; i++){
+    			ninput_items_required[i] = noutput_items * DVBT_MPEG_PACKET_LENGTH;
+		}
 }
 
 
@@ -60,17 +60,17 @@ dvbt_pad::work (int noutput_items,
 		       gr_vector_void_star &output_items)
 {
 	int i = 0;
-	const unsigned char *in = (const unsigned char *) input_items[0];
+  	const unsigned char *in = (const unsigned char *) input_items[0];
   	dvbt_mpeg_packet *out = (dvbt_mpeg_packet *) output_items[0];
 
 
-  	for (i = 0; i < noutput_items; i++){
+	for (i = 0; i < noutput_items; i++){
     		for (int j = 0; j < DVBT_MPEG_PACKET_LENGTH; j++){
-        		out[i].data[j] = in[i * DVBT_MPEG_PACKET_LENGTH + j];
+			out[i].data[j] = in[i * DVBT_MPEG_PACKET_LENGTH + j];
 		}
-	}
+  	}
 
-	return noutput_items;
+  	return noutput_items;
 }
 
 

@@ -4363,7 +4363,7 @@ namespace swig
 
 
 #include <dvbt_pad.h>
-#include <dvbt_consts.h>
+#include "dvbt_consts.h"
 
 
 SWIGINTERNINLINE PyObject* 
@@ -6239,7 +6239,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"pad", _wrap_pad, METH_VARARGS, (char *)"\n"
 		"pad() -> dvbt_pad_sptr\n"
 		"\n"
-		"pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packet\n"
+		"pad mpeg ts packets from 188 byte char to to 256 byte atsc_mpeg_packet\n"
 		"\n"
 		"input: unsigned char; output: dvbt_mpeg_packet\n"
 		""},

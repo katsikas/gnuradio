@@ -88,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_examples\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -237,18 +237,18 @@ pygen_gr_dvbt_src_lib_2c1ae/fast:
 .PHONY : pygen_gr_dvbt_src_lib_2c1ae/fast
 
 # Convenience name for target.
-gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/rule
-.PHONY : gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/rule
+gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/rule:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/rule
+.PHONY : gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/rule
 
 # Convenience name for target.
-test_dvbt: gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/rule
-.PHONY : test_dvbt
+test_dvbti: gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/rule
+.PHONY : test_dvbti
 
 # fast build rule for target.
-test_dvbt/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/build
-.PHONY : test_dvbt/fast
+test_dvbti/fast:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build
+.PHONY : test_dvbti/fast
 
 _dvbt_swig_doc_tag.o: _dvbt_swig_doc_tag.cpp.o
 .PHONY : _dvbt_swig_doc_tag.o
@@ -346,29 +346,53 @@ dvbt_pad.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/src/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.s
 .PHONY : dvbt_pad.cc.s
 
-test_dvbt.o: test_dvbt.cc.o
-.PHONY : test_dvbt.o
+qa_dvbti.o: qa_dvbti.cc.o
+.PHONY : qa_dvbti.o
 
 # target to build an object file
-test_dvbt.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/test_dvbt.cc.o
-.PHONY : test_dvbt.cc.o
+qa_dvbti.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/qa_dvbti.cc.o
+.PHONY : qa_dvbti.cc.o
 
-test_dvbt.i: test_dvbt.cc.i
-.PHONY : test_dvbt.i
+qa_dvbti.i: qa_dvbti.cc.i
+.PHONY : qa_dvbti.i
 
 # target to preprocess a source file
-test_dvbt.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/test_dvbt.cc.i
-.PHONY : test_dvbt.cc.i
+qa_dvbti.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/qa_dvbti.cc.i
+.PHONY : qa_dvbti.cc.i
 
-test_dvbt.s: test_dvbt.cc.s
-.PHONY : test_dvbt.s
+qa_dvbti.s: qa_dvbti.cc.s
+.PHONY : qa_dvbti.s
 
 # target to generate assembly for a file
-test_dvbt.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbt.dir/test_dvbt.cc.s
-.PHONY : test_dvbt.cc.s
+qa_dvbti.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/qa_dvbti.cc.s
+.PHONY : qa_dvbti.cc.s
+
+test_dvbti.o: test_dvbti.cc.o
+.PHONY : test_dvbti.o
+
+# target to build an object file
+test_dvbti.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/test_dvbti.cc.o
+.PHONY : test_dvbti.cc.o
+
+test_dvbti.i: test_dvbti.cc.i
+.PHONY : test_dvbti.i
+
+# target to preprocess a source file
+test_dvbti.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/test_dvbti.cc.i
+.PHONY : test_dvbti.cc.i
+
+test_dvbti.s: test_dvbti.cc.s
+.PHONY : test_dvbti.s
+
+# target to generate assembly for a file
+test_dvbti.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/test_dvbti.cc.s
+.PHONY : test_dvbti.cc.s
 
 # Help Target
 help:
@@ -390,7 +414,7 @@ help:
 	@echo "... pygen_gr_dvbt_src_lib_2c1ae"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... test_dvbt"
+	@echo "... test_dvbti"
 	@echo "... _dvbt_swig_doc_tag.o"
 	@echo "... _dvbt_swig_doc_tag.i"
 	@echo "... _dvbt_swig_doc_tag.s"
@@ -403,9 +427,12 @@ help:
 	@echo "... dvbt_pad.o"
 	@echo "... dvbt_pad.i"
 	@echo "... dvbt_pad.s"
-	@echo "... test_dvbt.o"
-	@echo "... test_dvbt.i"
-	@echo "... test_dvbt.s"
+	@echo "... qa_dvbti.o"
+	@echo "... qa_dvbti.i"
+	@echo "... qa_dvbti.s"
+	@echo "... test_dvbti.o"
+	@echo "... test_dvbti.i"
+	@echo "... test_dvbti.s"
 .PHONY : help
 
 

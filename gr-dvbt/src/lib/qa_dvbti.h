@@ -35,4 +35,3 @@ class qa_dvbt {
 
 
 #endif /* _QA_DVBT_H_ */
-

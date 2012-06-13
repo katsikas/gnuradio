@@ -27,9 +27,8 @@
 
 %{
 #include <dvbt_pad.h>
-#include <dvbt_consts.h>
+#include "dvbt_consts.h"
 %}
-
 
 // ----------------------------------------------------------------
 GR_SWIG_BLOCK_MAGIC(dvbt,pad);

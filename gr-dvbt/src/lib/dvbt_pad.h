@@ -32,7 +32,7 @@ DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 /*!
  * \brief pad mpeg ts packets from 188 byte char to
- * to 256 byte dvbt_mpeg_packet
+ * to 256 byte atsc_mpeg_packet
  * \ingroup dvbt
  *
  * input: unsigned char; output: dvbt_mpeg_packet

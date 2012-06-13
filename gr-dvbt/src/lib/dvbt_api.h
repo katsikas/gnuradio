@@ -24,7 +24,7 @@
 
 #include <gruel/attributes.h>
 
-#ifdef gnuradio_dvbt_EXPORTS
+#ifdef gnuradio_atsc_EXPORTS
 #  define DVBT_API __GR_ATTR_EXPORT
 #else
 #  define DVBT_API __GR_ATTR_IMPORT

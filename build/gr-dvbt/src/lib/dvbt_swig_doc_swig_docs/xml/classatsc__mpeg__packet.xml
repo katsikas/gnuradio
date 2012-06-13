@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classatsc__mpeg__packet" kind="class" prot="public">
+    <compoundname>atsc_mpeg_packet</compoundname>
+    <includes refid="atsc__types_8h" local="no">atsc_types.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classatsc__mpeg__packet_1afd3f737d45dc2e6659e07877fdffcad7" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int atsc_mpeg_packet::NPAD</definition>
+        <argsstring></argsstring>
+        <name>NPAD</name>
+        <initializer> 68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classatsc__mpeg__packet_1a9898b770f74631e02651faaba58df1ba" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char atsc_mpeg_packet::data[187+1]</definition>
+        <argsstring>[187+1]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatsc__mpeg__packet_1a07b00dd8356e9633c6f70c58e6eda9f8" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char atsc_mpeg_packet::_pad_[NPAD]</definition>
+        <argsstring>[NPAD]</argsstring>
+        <name>_pad_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatsc__mpeg__packet_1a115130fcb66db6e6c3301a34ed4a38de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atsc_mpeg_packet::operator==</definition>
+        <argsstring>(const atsc_mpeg_packet &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classatsc__mpeg__packet" kindref="compound">atsc_mpeg_packet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classatsc__mpeg__packet_1abe73509ae654ab41a7aac3a086c31a88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atsc_mpeg_packet::operator!=</definition>
+        <argsstring>(const atsc_mpeg_packet &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classatsc__mpeg__packet" kindref="compound">atsc_mpeg_packet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" line="42" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/atsc_types.h" bodystart="31" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classatsc__mpeg__packet_1a07b00dd8356e9633c6f70c58e6eda9f8" prot="public" virt="non-virtual"><scope>atsc_mpeg_packet</scope><name>_pad_</name></member>
+      <member refid="classatsc__mpeg__packet_1a9898b770f74631e02651faaba58df1ba" prot="public" virt="non-virtual"><scope>atsc_mpeg_packet</scope><name>data</name></member>
+      <member refid="classatsc__mpeg__packet_1afd3f737d45dc2e6659e07877fdffcad7" prot="public" virt="non-virtual"><scope>atsc_mpeg_packet</scope><name>NPAD</name></member>
+      <member refid="classatsc__mpeg__packet_1abe73509ae654ab41a7aac3a086c31a88" prot="public" virt="non-virtual"><scope>atsc_mpeg_packet</scope><name>operator!=</name></member>
+      <member refid="classatsc__mpeg__packet_1a115130fcb66db6e6c3301a34ed4a38de" prot="public" virt="non-virtual"><scope>atsc_mpeg_packet</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
