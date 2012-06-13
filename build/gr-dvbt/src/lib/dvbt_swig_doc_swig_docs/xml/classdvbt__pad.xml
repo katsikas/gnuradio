@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbt__pad" kind="class" prot="public">
+    <compoundname>dvbt_pad</compoundname>
+    <includes refid="dvbt__pad_8h" local="no">dvbt_pad.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdvbt__pad_1ad174ab7b9d55c93dc69b1fe07d3e53df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT dvbt_pad_sptr dvbt_make_pad</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_make_pad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" line="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdvbt__pad_1ab728fe4a6ba77046a684362c2e454636" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbt_pad::dvbt_pad</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_pad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" line="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbt__pad_1a40b68e3ebedce9c16f81dc94b2d33f67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbt_pad::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__pad_1aaaa6286955cfde9a63d712b719d3b934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dvbt_pad::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbt_pad::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" line="52" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>pad mpeg ts packets from 188 byte char to to 256 byte <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref></para><para>input: unsigned char; output: <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-dvbt/src/lib/dvbt_pad.h" bodystart="40" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classdvbt__pad_1ad174ab7b9d55c93dc69b1fe07d3e53df" prot="private" virt="non-virtual"><scope>dvbt_pad</scope><name>dvbt_make_pad</name></member>
+      <member refid="classdvbt__pad_1ab728fe4a6ba77046a684362c2e454636" prot="private" virt="non-virtual"><scope>dvbt_pad</scope><name>dvbt_pad</name></member>
+      <member refid="classdvbt__pad_1a40b68e3ebedce9c16f81dc94b2d33f67" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>forecast</name></member>
+      <member refid="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>reset</name></member>
+      <member refid="classdvbt__pad_1aaaa6286955cfde9a63d712b719d3b934" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>work</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
