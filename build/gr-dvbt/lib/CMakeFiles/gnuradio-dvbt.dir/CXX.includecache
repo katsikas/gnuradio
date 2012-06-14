@@ -6,30 +6,8 @@
 
 #IncludeRegexTransform: 
 
-../gnuradio-core/src/lib/filter/gr_sincos.h
-gr_core_api.h
--
-
 ../gnuradio-core/src/lib/general/gr_core_api.h
 gruel/attributes.h
--
-
-../gnuradio-core/src/lib/general/gr_expj.h
-gr_core_api.h
--
-gr_sincos.h
--
-gr_types.h
--
-
-../gnuradio-core/src/lib/general/gr_math.h
-gr_core_api.h
--
-gr_complex.h
--
-
-../gnuradio-core/src/lib/general/gri_control_loop.h
-gr_core_api.h
 -
 
 ../gnuradio-core/src/lib/runtime/gr_basic_block.h
@@ -92,6 +70,12 @@ gr_core_api.h
 gr_block.h
 -
 
+../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
+gr_core_api.h
+-
+gr_sync_block.h
+-
+
 ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr_core_api.h
 -
@@ -112,20 +96,14 @@ gr_complex.h
 stdint.h
 -
 
-../gr-dvbt/include/digital_api.h
+../gr-dvbt/include/dvbt/api.h
 gruel/attributes.h
 -
 
-../gr-dvbt/include/digital_costas_loop_cc.h
-gr_sync_block.h
+../gr-dvbt/include/dvbt/dvbt_pad.h
+dvbt/api.h
 -
-gri_control_loop.h
--
-stdexcept
--
-fstream
--
-digital_api.h
+gr_sync_decimator.h
 -
 
 ../gruel/src/include/gruel/api.h
@@ -166,17 +144,11 @@ gruel/pmt_sugar.h
 
 ../gruel/src/include/gruel/pmt_sugar.h
 
-/home/katsikas/gnuradio/gr-dvbt/lib/digital_costas_loop_cc.cc
+/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_pad.cc
 config.h
-/home/katsikas/gnuradio/gr-dvbt/lib/config.h
-digital_costas_loop_cc.h
+-
+dvbt/dvbt_pad.h
 -
 gr_io_signature.h
--
-gr_expj.h
--
-gr_sincos.h
--
-gr_math.h
 -
 

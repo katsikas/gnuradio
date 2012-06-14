@@ -2943,7 +2943,7 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_allocator_type swig_types[0]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t swig_types[1]
+#define SWIGTYPE_p_boost__shared_ptrT_dvbt_pad_t swig_types[1]
 #define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[2]
 #define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[3]
 #define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[4]
@@ -2958,7 +2958,7 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[13]
 #define SWIGTYPE_p_char swig_types[14]
 #define SWIGTYPE_p_difference_type swig_types[15]
-#define SWIGTYPE_p_digital_costas_loop_cc swig_types[16]
+#define SWIGTYPE_p_dvbt_pad swig_types[16]
 #define SWIGTYPE_p_gr_basic_block swig_types[17]
 #define SWIGTYPE_p_gr_block swig_types[18]
 #define SWIGTYPE_p_gr_hier_block2 swig_types[19]
@@ -2966,17 +2966,20 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_gr_sync_decimator swig_types[21]
 #define SWIGTYPE_p_gr_sync_interpolator swig_types[22]
 #define SWIGTYPE_p_gr_top_block swig_types[23]
-#define SWIGTYPE_p_gruel__rt_status_t swig_types[24]
-#define SWIGTYPE_p_long_long swig_types[25]
-#define SWIGTYPE_p_size_type swig_types[26]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[27]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[28]
-#define SWIGTYPE_p_std__invalid_argument swig_types[29]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[30]
-#define SWIGTYPE_p_unsigned_long_long swig_types[31]
-#define SWIGTYPE_p_value_type swig_types[32]
-static swig_type_info *swig_types[34];
-static swig_module_info swig_module = {swig_types, 33, 0, 0, 0, 0};
+#define SWIGTYPE_p_gr_vector_const_void_star swig_types[24]
+#define SWIGTYPE_p_gr_vector_int swig_types[25]
+#define SWIGTYPE_p_gr_vector_void_star swig_types[26]
+#define SWIGTYPE_p_gruel__rt_status_t swig_types[27]
+#define SWIGTYPE_p_long_long swig_types[28]
+#define SWIGTYPE_p_size_type swig_types[29]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[30]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[31]
+#define SWIGTYPE_p_std__invalid_argument swig_types[32]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[33]
+#define SWIGTYPE_p_unsigned_long_long swig_types[34]
+#define SWIGTYPE_p_value_type swig_types[35]
+static swig_type_info *swig_types[37];
+static swig_module_info swig_module = {swig_types, 36, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4362,34 +4365,7 @@ namespace swig
 }
 
 
-
-
-#include "digital_costas_loop_cc.h"
-
-
-SWIGINTERNINLINE PyObject* 
-SWIG_From_unsigned_SS_long  (unsigned long value)
-{
-  return (value > LONG_MAX) ?
-    PyLong_FromUnsignedLong(value) : PyInt_FromLong(static_cast< long >(value)); 
-}
-
-
-SWIGINTERNINLINE PyObject *
-SWIG_From_unsigned_SS_int  (unsigned int value)
-{    
-  return SWIG_From_unsigned_SS_long  (value);
-}
-
-
-SWIGINTERNINLINE PyObject *
-SWIG_From_int  (int value)
-{    
-  return SWIG_From_long  (value);
-}
-
-
-  #define SWIG_From_double   PyFloat_FromDouble 
+#include "dvbt/dvbt_pad.h" 
 
 
 #include <limits.h>
@@ -4400,79 +4376,6 @@ SWIG_From_int  (int value)
 #   define ULLONG_MAX (LLONG_MAX * 2ULL + 1ULL)
 # endif
 #endif
-
-
-SWIGINTERN int
-SWIG_AsVal_unsigned_SS_int (PyObject * obj, unsigned int *val)
-{
-  unsigned long v;
-  int res = SWIG_AsVal_unsigned_SS_long (obj, &v);
-  if (SWIG_IsOK(res)) {
-    if ((v > UINT_MAX)) {
-      return SWIG_OverflowError;
-    } else {
-      if (val) *val = static_cast< unsigned int >(v);
-    }
-  }  
-  return res;
-}
-
-
-SWIGINTERNINLINE PyObject* 
-SWIG_From_long_SS_long  (long long value)
-{
-  return ((value < LONG_MIN) || (value > LONG_MAX)) ?
-    PyLong_FromLongLong(value) : PyInt_FromLong(static_cast< long >(value)); 
-}
-
-
-SWIGINTERNINLINE PyObject* 
-SWIG_From_unsigned_SS_long_SS_long  (unsigned long long value)
-{
-  return (value > LONG_MAX) ?
-    PyLong_FromUnsignedLongLong(value) : PyInt_FromLong(static_cast< long >(value)); 
-}
-
-
-SWIGINTERN swig_type_info*
-SWIG_pchar_descriptor(void)
-{
-  static int init = 0;
-  static swig_type_info* info = 0;
-  if (!init) {
-    info = SWIG_TypeQuery("_p_char");
-    init = 1;
-  }
-  return info;
-}
-
-
-SWIGINTERNINLINE PyObject *
-SWIG_FromCharPtrAndSize(const char* carray, size_t size)
-{
-  if (carray) {
-    if (size > INT_MAX) {
-      swig_type_info* pchar_descriptor = SWIG_pchar_descriptor();
-      return pchar_descriptor ? 
-	SWIG_InternalNewPointerObj(const_cast< char * >(carray), pchar_descriptor, 0) : SWIG_Py_Void();
-    } else {
-#if PY_VERSION_HEX >= 0x03000000
-      return PyUnicode_FromStringAndSize(carray, static_cast< int >(size));
-#else
-      return PyString_FromStringAndSize(carray, static_cast< int >(size));
-#endif
-    }
-  } else {
-    return SWIG_Py_Void();
-  }
-}
-
-
-SWIGINTERNINLINE PyObject *
-SWIG_From_std_string  (const std::string& s)
-{
-  return SWIG_FromCharPtrAndSize(s.data(), s.size());
-}
 
 
 SWIGINTERN int
@@ -4491,19 +4394,10 @@ SWIG_AsVal_int (PyObject * obj, int *val)
 }
 
 
-SWIGINTERN int
-SWIG_AsVal_float (PyObject * obj, float *val)
-{
-  double v;
-  int res = SWIG_AsVal_double (obj, &v);
-  if (SWIG_IsOK(res)) {
-    if ((v < -FLT_MAX || v > FLT_MAX)) {
-      return SWIG_OverflowError;
-    } else {
-      if (val) *val = static_cast< float >(v);
-    }
-  }  
-  return res;
+SWIGINTERNINLINE PyObject *
+SWIG_From_int  (int value)
+{    
+  return SWIG_From_long  (value);
 }
 
 #ifdef __cplusplus
@@ -5433,13 +5327,13 @@ SWIGINTERN PyObject *SwigPyIterator_swigregister(PyObject *SWIGUNUSEDPARM(self),
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_new_digital_costas_loop_cc_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_dvbt_make_pad(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *result = 0 ;
+  SwigValueWrapper< boost::shared_ptr< dvbt_pad > > result;
   
   {
     try {
-      result = (boost::shared_ptr< digital_costas_loop_cc > *)new boost::shared_ptr< digital_costas_loop_cc >();
+      result = dvbt_make_pad();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5449,30 +5343,53 @@ SWIGINTERN PyObject *_wrap_new_digital_costas_loop_cc_sptr__SWIG_0(PyObject *SWI
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj((new dvbt_pad_sptr(static_cast< const dvbt_pad_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_dvbt_pad_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_digital_costas_loop_cc_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_dvbt_pad_forecast(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  digital_costas_loop_cc *arg1 = (digital_costas_loop_cc *) 0 ;
+  dvbt_pad *arg1 = (dvbt_pad *) 0 ;
+  int arg2 ;
+  gr_vector_int *arg3 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
   PyObject * obj0 = 0 ;
-  boost::shared_ptr< digital_costas_loop_cc > *result = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "noutput_items",(char *) "ninput_items_required", NULL 
+  };
   
-  if(!PyArg_UnpackTuple(args,(char *)"new_digital_costas_loop_cc_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_digital_costas_loop_cc, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:dvbt_pad_forecast",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_pad, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_digital_costas_loop_cc_sptr" "', argument " "1"" of type '" "digital_costas_loop_cc *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_pad_forecast" "', argument " "1"" of type '" "dvbt_pad *""'"); 
   }
-  arg1 = reinterpret_cast< digital_costas_loop_cc * >(argp1);
+  arg1 = reinterpret_cast< dvbt_pad * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_pad_forecast" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_int,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_pad_forecast" "', argument " "3"" of type '" "gr_vector_int &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_pad_forecast" "', argument " "3"" of type '" "gr_vector_int &""'"); 
+  }
+  arg3 = reinterpret_cast< gr_vector_int * >(argp3);
   {
     try {
-      result = (boost::shared_ptr< digital_costas_loop_cc > *)new boost::shared_ptr< digital_costas_loop_cc >(arg1);
+      (arg1)->forecast(arg2,*arg3);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5482,62 +5399,66 @@ SWIGINTERN PyObject *_wrap_new_digital_costas_loop_cc_sptr__SWIG_1(PyObject *SWI
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_digital_costas_loop_cc_sptr(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[2];
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 0) {
-    return _wrap_new_digital_costas_loop_cc_sptr__SWIG_0(self, args);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_digital_costas_loop_cc, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_new_digital_costas_loop_cc_sptr__SWIG_1(self, args);
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_digital_costas_loop_cc_sptr'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    boost::shared_ptr< digital_costas_loop_cc >::shared_ptr()\n"
-    "    boost::shared_ptr< digital_costas_loop_cc >::shared_ptr(digital_costas_loop_cc *)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_dvbt_pad_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
+  dvbt_pad *arg1 = (dvbt_pad *) 0 ;
+  int arg2 ;
+  gr_vector_const_void_star *arg3 = 0 ;
+  gr_vector_void_star *arg4 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
   PyObject * obj0 = 0 ;
-  digital_costas_loop_cc *result = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "noutput_items",(char *) "input_items",(char *) "output_items", NULL 
+  };
+  int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr___deref__",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:dvbt_pad_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_pad, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_pad_work" "', argument " "1"" of type '" "dvbt_pad *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
+  arg1 = reinterpret_cast< dvbt_pad * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_pad_work" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_pad_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_pad_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "dvbt_pad_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_pad_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
   {
     try {
-      result = (digital_costas_loop_cc *)(arg1)->operator ->();
+      result = (int)(arg1)->work(arg2,*arg3,*arg4);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5547,26 +5468,58 @@ SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr___deref__(PyObject *SWIGU
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_digital_costas_loop_cc, 0 |  0 );
+  resultobj = SWIG_From_int(static_cast< int >(result));
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_digital_costas_loop_cc_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_dvbt_pad_reset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
+  dvbt_pad *arg1 = (dvbt_pad *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"delete_digital_costas_loop_cc_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, SWIG_POINTER_DISOWN |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_pad_reset",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_pad, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_digital_costas_loop_cc_sptr" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_pad_reset" "', argument " "1"" of type '" "dvbt_pad *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
+  arg1 = reinterpret_cast< dvbt_pad * >(argp1);
+  {
+    try {
+      (arg1)->reset();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_dvbt_pad(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_pad *arg1 = (dvbt_pad *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_dvbt_pad",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_pad, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_dvbt_pad" "', argument " "1"" of type '" "dvbt_pad *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_pad * >(argp1);
   {
     try {
       delete arg1;
@@ -5586,622 +5539,12 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  unsigned int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_history",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (unsigned int)(*arg1)->history();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (int)(*arg1)->output_multiple();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  double result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (double)(*arg1)->relative_rate();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_double(static_cast< double >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_start",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (bool)(*arg1)->start();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_stop",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (bool)(*arg1)->stop();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  unsigned int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  unsigned int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "which_input", NULL 
-  };
-  uint64_t result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_costas_loop_cc_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_costas_loop_cc_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
-  } 
-  arg2 = static_cast< unsigned int >(val2);
-  {
-    try {
-      result = (uint64_t)(*arg1)->nitems_read(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  unsigned int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  unsigned int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "which_output", NULL 
-  };
-  uint64_t result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_costas_loop_cc_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_costas_loop_cc_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
-  } 
-  arg2 = static_cast< unsigned int >(val2);
-  {
-    try {
-      result = (uint64_t)(*arg1)->nitems_written(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr_block_detail_sptr result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_detail",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_detail" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (*arg1)->detail();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr_block_detail_sptr(static_cast< const gr_block_detail_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_set_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  gr_block_detail_sptr arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "detail", NULL 
-  };
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_costas_loop_cc_sptr_set_detail",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_set_detail" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "digital_costas_loop_cc_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "digital_costas_loop_cc_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'");
-    } else {
-      gr_block_detail_sptr * temp = reinterpret_cast< gr_block_detail_sptr * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  {
-    try {
-      (*arg1)->set_detail(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::string result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_name",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (*arg1)->name();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr_io_signature_sptr result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_input_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (*arg1)->input_signature();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr_io_signature_sptr result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_output_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (*arg1)->output_signature();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  long result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_unique_id",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (long)(*arg1)->unique_id();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_long(static_cast< long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr_basic_block_sptr result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"digital_costas_loop_cc_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  {
-    try {
-      result = (*arg1)->to_basic_block();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr_basic_block_sptr(static_cast< const gr_basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_digital_costas_loop_cc_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< digital_costas_loop_cc > *arg1 = (boost::shared_ptr< digital_costas_loop_cc > *) 0 ;
-  int arg2 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "ninputs",(char *) "noutputs", NULL 
-  };
-  bool result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:digital_costas_loop_cc_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_costas_loop_cc_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< digital_costas_loop_cc > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_costas_loop_cc > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_costas_loop_cc_sptr_check_topology" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "digital_costas_loop_cc_sptr_check_topology" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = static_cast< int >(val3);
-  {
-    try {
-      result = (bool)(*arg1)->check_topology(arg2,arg3);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *digital_costas_loop_cc_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *dvbt_pad_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_dvbt_pad, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
-
-SWIGINTERN PyObject *_wrap_costas_loop_cc(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  float arg1 ;
-  int arg2 ;
-  float val1 ;
-  int ecode1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "loop_bw",(char *) "order", NULL 
-  };
-  digital_costas_loop_cc_sptr result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:costas_loop_cc",kwnames,&obj0,&obj1)) SWIG_fail;
-  ecode1 = SWIG_AsVal_float(obj0, &val1);
-  if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "costas_loop_cc" "', argument " "1"" of type '" "float""'");
-  } 
-  arg1 = static_cast< float >(val1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "costas_loop_cc" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      try {
-        result = digital_make_costas_loop_cc(arg1,arg2);
-      }
-      catch(std::invalid_argument &_e) {
-        SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
-      }
-      
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new digital_costas_loop_cc_sptr(static_cast< const digital_costas_loop_cc_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
 
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
@@ -6226,44 +5569,39 @@ static PyMethodDef SwigMethods[] = {
 		"SwigPyIterator___sub__(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
 		""},
 	 { (char *)"SwigPyIterator_swigregister", SwigPyIterator_swigregister, METH_VARARGS, NULL},
-	 { (char *)"new_digital_costas_loop_cc_sptr", _wrap_new_digital_costas_loop_cc_sptr, METH_VARARGS, (char *)"\n"
-		"digital_costas_loop_cc_sptr()\n"
-		"new_digital_costas_loop_cc_sptr( p) -> digital_costas_loop_cc_sptr\n"
+	 { (char *)"dvbt_make_pad", _wrap_dvbt_make_pad, METH_VARARGS, (char *)"\n"
+		"dvbt_make_pad() -> dvbt_pad_sptr\n"
+		"\n"
+		"pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packet\n"
+		"\n"
+		"input: unsigned char; output: dvbt_mpeg_packet\n"
 		""},
-	 { (char *)"digital_costas_loop_cc_sptr___deref__", _wrap_digital_costas_loop_cc_sptr___deref__, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr___deref__(digital_costas_loop_cc_sptr self)"},
-	 { (char *)"delete_digital_costas_loop_cc_sptr", _wrap_delete_digital_costas_loop_cc_sptr, METH_VARARGS, (char *)"delete_digital_costas_loop_cc_sptr(digital_costas_loop_cc_sptr self)"},
-	 { (char *)"digital_costas_loop_cc_sptr_history", _wrap_digital_costas_loop_cc_sptr_history, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_history(digital_costas_loop_cc_sptr self) -> unsigned int"},
-	 { (char *)"digital_costas_loop_cc_sptr_output_multiple", _wrap_digital_costas_loop_cc_sptr_output_multiple, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_output_multiple(digital_costas_loop_cc_sptr self) -> int"},
-	 { (char *)"digital_costas_loop_cc_sptr_relative_rate", _wrap_digital_costas_loop_cc_sptr_relative_rate, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_relative_rate(digital_costas_loop_cc_sptr self) -> double"},
-	 { (char *)"digital_costas_loop_cc_sptr_start", _wrap_digital_costas_loop_cc_sptr_start, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_start(digital_costas_loop_cc_sptr self) -> bool"},
-	 { (char *)"digital_costas_loop_cc_sptr_stop", _wrap_digital_costas_loop_cc_sptr_stop, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_stop(digital_costas_loop_cc_sptr self) -> bool"},
-	 { (char *)"digital_costas_loop_cc_sptr_nitems_read", (PyCFunction) _wrap_digital_costas_loop_cc_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"digital_costas_loop_cc_sptr_nitems_read(digital_costas_loop_cc_sptr self, unsigned int which_input) -> uint64_t"},
-	 { (char *)"digital_costas_loop_cc_sptr_nitems_written", (PyCFunction) _wrap_digital_costas_loop_cc_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"digital_costas_loop_cc_sptr_nitems_written(digital_costas_loop_cc_sptr self, unsigned int which_output) -> uint64_t"},
-	 { (char *)"digital_costas_loop_cc_sptr_detail", _wrap_digital_costas_loop_cc_sptr_detail, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_detail(digital_costas_loop_cc_sptr self) -> gr_block_detail_sptr"},
-	 { (char *)"digital_costas_loop_cc_sptr_set_detail", (PyCFunction) _wrap_digital_costas_loop_cc_sptr_set_detail, METH_VARARGS | METH_KEYWORDS, (char *)"digital_costas_loop_cc_sptr_set_detail(digital_costas_loop_cc_sptr self, gr_block_detail_sptr detail)"},
-	 { (char *)"digital_costas_loop_cc_sptr_name", _wrap_digital_costas_loop_cc_sptr_name, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_name(digital_costas_loop_cc_sptr self) -> string"},
-	 { (char *)"digital_costas_loop_cc_sptr_input_signature", _wrap_digital_costas_loop_cc_sptr_input_signature, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_input_signature(digital_costas_loop_cc_sptr self) -> gr_io_signature_sptr"},
-	 { (char *)"digital_costas_loop_cc_sptr_output_signature", _wrap_digital_costas_loop_cc_sptr_output_signature, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_output_signature(digital_costas_loop_cc_sptr self) -> gr_io_signature_sptr"},
-	 { (char *)"digital_costas_loop_cc_sptr_unique_id", _wrap_digital_costas_loop_cc_sptr_unique_id, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_unique_id(digital_costas_loop_cc_sptr self) -> long"},
-	 { (char *)"digital_costas_loop_cc_sptr_to_basic_block", _wrap_digital_costas_loop_cc_sptr_to_basic_block, METH_VARARGS, (char *)"digital_costas_loop_cc_sptr_to_basic_block(digital_costas_loop_cc_sptr self) -> gr_basic_block_sptr"},
-	 { (char *)"digital_costas_loop_cc_sptr_check_topology", (PyCFunction) _wrap_digital_costas_loop_cc_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"digital_costas_loop_cc_sptr_check_topology(digital_costas_loop_cc_sptr self, int ninputs, int noutputs) -> bool"},
-	 { (char *)"digital_costas_loop_cc_sptr_swigregister", digital_costas_loop_cc_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"costas_loop_cc", (PyCFunction) _wrap_costas_loop_cc, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"costas_loop_cc(float loop_bw, int order) -> digital_costas_loop_cc_sptr\n"
-		"\n"
-		"Carrier tracking PLL for QPSK\n"
-		"\n"
-		"input: complex; output: complex \n"
-		"The Costas loop can have two output streams: stream 1 is the baseband I and Q; stream 2 is the normalized frequency of the loop.\n"
-		"\n"
-		"must be 2, 4, or 8.\n"
+	 { (char *)"dvbt_pad_forecast", (PyCFunction) _wrap_dvbt_pad_forecast, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_pad_forecast(dvbt_pad self, int noutput_items, gr_vector_int ninput_items_required)"},
+	 { (char *)"dvbt_pad_work", (PyCFunction) _wrap_dvbt_pad_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"dvbt_pad_work(dvbt_pad self, int noutput_items, gr_vector_const_void_star input_items, \n"
+		"    gr_vector_void_star output_items) -> int\n"
 		""},
+	 { (char *)"dvbt_pad_reset", _wrap_dvbt_pad_reset, METH_VARARGS, (char *)"dvbt_pad_reset(dvbt_pad self)"},
+	 { (char *)"delete_dvbt_pad", _wrap_delete_dvbt_pad, METH_VARARGS, (char *)"delete_dvbt_pad(dvbt_pad self)"},
+	 { (char *)"dvbt_pad_swigregister", dvbt_pad_swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
+static void *_p_dvbt_padTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *) (gr_sync_decimator *) ((dvbt_pad *) x));
+}
+static void *_p_gr_sync_decimatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *)  ((gr_sync_decimator *) x));
+}
+static void *_p_gr_sync_interpolatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *)  ((gr_sync_interpolator *) x));
+}
+static void *_p_dvbt_padTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *)(gr_sync_decimator *) ((dvbt_pad *) x));
+}
 static void *_p_gr_sync_decimatorTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((gr_sync_decimator *) x));
 }
@@ -6272,9 +5610,6 @@ static void *_p_gr_hier_block2To_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(n
 }
 static void *_p_gr_sync_blockTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *) ((gr_sync_block *) x));
-}
-static void *_p_digital_costas_loop_ccTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((digital_costas_loop_cc *) x));
 }
 static void *_p_gr_blockTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *)  ((gr_block *) x));
@@ -6285,14 +5620,8 @@ static void *_p_gr_sync_interpolatorTo_p_gr_basic_block(void *x, int *SWIGUNUSED
 static void *_p_gr_top_blockTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_hier_block2 *) ((gr_top_block *) x));
 }
-static void *_p_gr_sync_decimatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_sync_block *)  ((gr_sync_decimator *) x));
-}
-static void *_p_digital_costas_loop_ccTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_sync_block *)  ((digital_costas_loop_cc *) x));
-}
-static void *_p_gr_sync_interpolatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_sync_block *)  ((gr_sync_interpolator *) x));
+static void *_p_dvbt_padTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_block *) (gr_sync_block *)(gr_sync_decimator *) ((dvbt_pad *) x));
 }
 static void *_p_gr_sync_decimatorTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *) ((gr_sync_decimator *) x));
@@ -6300,14 +5629,14 @@ static void *_p_gr_sync_decimatorTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newm
 static void *_p_gr_sync_blockTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *)  ((gr_sync_block *) x));
 }
-static void *_p_digital_costas_loop_ccTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr_block *) (gr_sync_block *) ((digital_costas_loop_cc *) x));
-}
 static void *_p_gr_sync_interpolatorTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *) ((gr_sync_interpolator *) x));
 }
+static void *_p_dvbt_padTo_p_gr_sync_decimator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_decimator *)  ((dvbt_pad *) x));
+}
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_boost__shared_ptrT_digital_costas_loop_cc_t = {"_p_boost__shared_ptrT_digital_costas_loop_cc_t", "boost::shared_ptr< digital_costas_loop_cc > *|digital_costas_loop_cc_sptr *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_pad_t = {"_p_boost__shared_ptrT_dvbt_pad_t", "boost::shared_ptr< dvbt_pad > *|dvbt_pad_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_basic_block_t = {"_p_boost__shared_ptrT_gr_basic_block_t", "boost::shared_ptr< gr_basic_block > *|gr_basic_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_block_detail_t = {"_p_boost__shared_ptrT_gr_block_detail_t", "boost::shared_ptr< gr_block_detail > *|gr_block_detail_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_block_t = {"_p_boost__shared_ptrT_gr_block_t", "boost::shared_ptr< gr_block > *|gr_block_sptr *", 0, 0, (void*)0, 0};
@@ -6322,14 +5651,17 @@ static swig_type_info _swigt__p_boost__shared_ptrT_gr_single_threaded_scheduler_
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_top_block_t = {"_p_boost__shared_ptrT_gr_top_block_t", "boost::shared_ptr< gr_top_block > *|gr_top_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_digital_costas_loop_cc = {"_p_digital_costas_loop_cc", "digital_costas_loop_cc *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_dvbt_pad = {"_p_dvbt_pad", "dvbt_pad *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_basic_block = {"_p_gr_basic_block", "gr_basic_block *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gr_sync_decimator = {"_p_gr_sync_decimator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_hier_block2 = {"_p_gr_hier_block2", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_sync_interpolator = {"_p_gr_sync_interpolator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_top_block = {"_p_gr_top_block", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_block = {"_p_gr_block", "gr_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_sync_block = {"_p_gr_sync_block", "gr_sync_block *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr_sync_decimator = {"_p_gr_sync_decimator", "gr_sync_decimator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr_vector_const_void_star = {"_p_gr_vector_const_void_star", "gr_vector_const_void_star *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr_vector_int = {"_p_gr_vector_int", "gr_vector_int *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr_vector_void_star = {"_p_gr_vector_void_star", "gr_vector_void_star *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gruel__rt_status_t = {"_p_gruel__rt_status_t", "enum gruel::rt_status_t *|gruel::rt_status_t *|gr_rt_status_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long_long = {"_p_long_long", "int64_t *|long long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
@@ -6342,7 +5674,7 @@ static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_allocator_type,
-  &_swigt__p_boost__shared_ptrT_digital_costas_loop_cc_t,
+  &_swigt__p_boost__shared_ptrT_dvbt_pad_t,
   &_swigt__p_boost__shared_ptrT_gr_basic_block_t,
   &_swigt__p_boost__shared_ptrT_gr_block_detail_t,
   &_swigt__p_boost__shared_ptrT_gr_block_t,
@@ -6357,7 +5689,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_gr_top_block_t,
   &_swigt__p_char,
   &_swigt__p_difference_type,
-  &_swigt__p_digital_costas_loop_cc,
+  &_swigt__p_dvbt_pad,
   &_swigt__p_gr_basic_block,
   &_swigt__p_gr_block,
   &_swigt__p_gr_hier_block2,
@@ -6365,6 +5697,9 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gr_sync_decimator,
   &_swigt__p_gr_sync_interpolator,
   &_swigt__p_gr_top_block,
+  &_swigt__p_gr_vector_const_void_star,
+  &_swigt__p_gr_vector_int,
+  &_swigt__p_gr_vector_void_star,
   &_swigt__p_gruel__rt_status_t,
   &_swigt__p_long_long,
   &_swigt__p_size_type,
@@ -6377,7 +5712,7 @@ static swig_type_info *swig_type_initial[] = {
 };
 
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_boost__shared_ptrT_digital_costas_loop_cc_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_costas_loop_cc_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_pad_t[] = {  {&_swigt__p_boost__shared_ptrT_dvbt_pad_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_basic_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_basic_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_block_detail_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_block_detail_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_block_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -6392,14 +5727,17 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_gr_single_threaded_scheduler_
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_top_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_top_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_digital_costas_loop_cc[] = {  {&_swigt__p_digital_costas_loop_cc, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_sync_decimator[] = {{&_swigt__p_gr_sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_dvbt_pad[] = {  {&_swigt__p_dvbt_pad, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_hier_block2[] = {{&_swigt__p_gr_hier_block2, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_interpolator[] = {{&_swigt__p_gr_sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_top_block[] = {{&_swigt__p_gr_top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_sync_decimator[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_decimator, 0, 0},  {&_swigt__p_gr_sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_vector_const_void_star[] = {  {&_swigt__p_gr_vector_const_void_star, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_vector_int[] = {  {&_swigt__p_gr_vector_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_vector_void_star[] = {  {&_swigt__p_gr_vector_void_star, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gruel__rt_status_t[] = {  {&_swigt__p_gruel__rt_status_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -6412,7 +5750,7 @@ static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_allocator_type,
-  _swigc__p_boost__shared_ptrT_digital_costas_loop_cc_t,
+  _swigc__p_boost__shared_ptrT_dvbt_pad_t,
   _swigc__p_boost__shared_ptrT_gr_basic_block_t,
   _swigc__p_boost__shared_ptrT_gr_block_detail_t,
   _swigc__p_boost__shared_ptrT_gr_block_t,
@@ -6427,7 +5765,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_gr_top_block_t,
   _swigc__p_char,
   _swigc__p_difference_type,
-  _swigc__p_digital_costas_loop_cc,
+  _swigc__p_dvbt_pad,
   _swigc__p_gr_basic_block,
   _swigc__p_gr_block,
   _swigc__p_gr_hier_block2,
@@ -6435,6 +5773,9 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gr_sync_decimator,
   _swigc__p_gr_sync_interpolator,
   _swigc__p_gr_top_block,
+  _swigc__p_gr_vector_const_void_star,
+  _swigc__p_gr_vector_int,
+  _swigc__p_gr_vector_void_star,
   _swigc__p_gruel__rt_status_t,
   _swigc__p_long_long,
   _swigc__p_size_type,

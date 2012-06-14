@@ -65,8 +65,6 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_sw
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio/swig" TYPE FILE FILES
     "/home/katsikas/gnuradio/gr-dvbt/swig/dvbt_swig.i"
     "/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig_doc.i"
-    "/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_generated.i"
-    "/home/katsikas/gnuradio/gr-dvbt/swig/digital_costas_loop_cc.i"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_swig")
 

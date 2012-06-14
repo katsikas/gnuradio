@@ -1,4 +1,4 @@
-# Copyright 2011 Free Software Foundation, Inc.
+# Copyright 2012 Free Software Foundation, Inc.
 #
 # This file is part of GNU Radio
 #
@@ -26,13 +26,17 @@ include(GrBoost)
 # Register component
 ########################################################################
 include(GrComponent)
+
 GR_REGISTER_COMPONENT("gr-dvbt" ENABLE_GR_DVBT
+    ENABLE_GRUEL
+    ENABLE_VOLK
     Boost_FOUND
     ENABLE_GR_CORE
 )
 
 GR_SET_GLOBAL(GR_DVBT_INCLUDE_DIRS
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 ########################################################################
@@ -67,13 +71,6 @@ CPACK_COMPONENT("dvbt_python"
     DEPENDS      "core_python;dvbt_runtime"
 )
 
-CPACK_COMPONENT("dvbt_examples"
-    GROUP        "DVBT"
-    DISPLAY_NAME "Examples"
-    DESCRIPTION  "Python examples for DVBT"
-    DEPENDS      "dvbt_python"
-)
-
 CPACK_COMPONENT("dvbt_swig"
     GROUP        "DVBT"
     DISPLAY_NAME "SWIG"
@@ -84,10 +81,15 @@ CPACK_COMPONENT("dvbt_swig"
 ########################################################################
 # Add subdirectories
 ########################################################################
-add_subdirectory(src/lib)
+add_subdirectory(include/dvbt)
+add_subdirectory(lib)
 if(ENABLE_PYTHON)
-    add_subdirectory(src/python)
+    add_subdirectory(swig)
+    add_subdirectory(python)
+    add_subdirectory(grc)
 endif(ENABLE_PYTHON)
+#add_subdirectory(examples)
+add_subdirectory(doc)
 
 ########################################################################
 # Create Pkg Config File

@@ -4,6 +4,7 @@ var pages =
     [ "Instructions for using Volk in GNU Radio", "volk_guide.html", null ],
     [ "Audio Interface", "page_audio.html", null ],
     [ "Digital Modulation", "page_digital.html", null ],
+    [ "DVBT Signal Processing Blocks", "page_dvbt.html", null ],
     [ "FunCube Dongle Source", "page_fcd.html", null ],
     [ "FFT Signal Processing Blocks", "page_fft.html", null ],
     [ "QT Graphical User Interface", "page_qtgui.html", null ],

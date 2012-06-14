@@ -163,100 +163,100 @@
     <detaileddescription>
 <para>This block creates tags to be sent downstream every 10,000 items it sees. The tags contain the name and ID of the instantiated block, use &quot;seq&quot; as a key, and have a counter that increments by 1 for every tag produced that is used as the tag&apos;s value. The tags are propagated using the all-to-all policy.</para><para>It also stores a copy of all tags it sees flow past it. These tags can be recalled externally with the <ref refid="classgr__annotator__alltoall_1ac320a559f67e747da00c165fe2ca3577" kindref="member">data()</ref> member.</para><para>This block is only meant for testing and showing how to use the tags. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2093">
+      <node id="2111">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2094" relation="public-inheritance">
+        <childnode refid="2112" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2090">
+      <node id="2108">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2091" relation="public-inheritance">
+        <childnode refid="2109" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2091">
+      <node id="2109">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2092" relation="public-inheritance">
+        <childnode refid="2110" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2089">
+      <node id="2107">
         <label>gr_annotator_alltoall</label>
         <link refid="classgr__annotator__alltoall"/>
-        <childnode refid="2090" relation="public-inheritance">
+        <childnode refid="2108" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2094">
+      <node id="2112">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2092">
+      <node id="2110">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2093" relation="public-inheritance">
+        <childnode refid="2111" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2099">
+      <node id="2117">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2100" relation="public-inheritance">
+        <childnode refid="2118" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2096">
+      <node id="2114">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2097" relation="public-inheritance">
+        <childnode refid="2115" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2097">
+      <node id="2115">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2098" relation="public-inheritance">
+        <childnode refid="2116" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2095">
+      <node id="2113">
         <label>gr_annotator_alltoall</label>
         <link refid="classgr__annotator__alltoall"/>
-        <childnode refid="2096" relation="public-inheritance">
+        <childnode refid="2114" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2101">
+      <node id="2119">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2102" relation="usage">
+        <childnode refid="2120" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2104">
+      <node id="2122">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2100">
+      <node id="2118">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2102">
+      <node id="2120">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2098">
+      <node id="2116">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2099" relation="public-inheritance">
+        <childnode refid="2117" relation="public-inheritance">
         </childnode>
-        <childnode refid="2101" relation="usage">
+        <childnode refid="2119" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2103" relation="usage">
+        <childnode refid="2121" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2103">
+      <node id="2121">
         <label>std::string</label>
-        <childnode refid="2104" relation="public-inheritance">
+        <childnode refid="2122" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -4,5 +4,9 @@
 # 
 # This file includes the relevent testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-SUBDIRS(src/lib)
-SUBDIRS(src/python)
+SUBDIRS(include/dvbt)
+SUBDIRS(lib)
+SUBDIRS(swig)
+SUBDIRS(python)
+SUBDIRS(grc)
+SUBDIRS(doc)

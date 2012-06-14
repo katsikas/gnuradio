@@ -10,10 +10,6 @@
 gruel/attributes.h
 -
 
-../gnuradio-core/src/lib/general/gri_control_loop.h
-gr_core_api.h
--
-
 ../gnuradio-core/src/lib/runtime/gr_basic_block.h
 gr_core_api.h
 -
@@ -68,6 +64,12 @@ gr_core_api.h
 gr_block.h
 -
 
+../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
+gr_core_api.h
+-
+gr_sync_block.h
+-
+
 ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr_core_api.h
 -
@@ -90,20 +92,14 @@ stdint.h
 
 ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 
-../gr-dvbt/include/digital_api.h
+../gr-dvbt/include/dvbt/api.h
 gruel/attributes.h
 -
 
-../gr-dvbt/include/digital_costas_loop_cc.h
-gr_sync_block.h
+../gr-dvbt/include/dvbt/dvbt_pad.h
+dvbt/api.h
 -
-gri_control_loop.h
--
-stdexcept
--
-fstream
--
-digital_api.h
+gr_sync_decimator.h
 -
 
 ../gruel/src/include/gruel/api.h
@@ -195,8 +191,8 @@ functional
 -
 iterator
 -
-digital_costas_loop_cc.h
-/home/katsikas/gnuradio/build/gr-dvbt/swig/digital_costas_loop_cc.h
+dvbt/dvbt_pad.h
+/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_pad.h
 limits.h
 -
 

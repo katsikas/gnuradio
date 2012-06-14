@@ -5,68 +5,108 @@
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__fxpt_8h" local="no">gr_fxpt.h</includes>
     <includes refid="gr__complex_8h" local="no">gr_complex.h</includes>
+    <includedby refid="gr__sig__source__c_8h" local="no">gr_sig_source_c.h</includedby>
+    <includedby refid="gr__sig__source__f_8h" local="no">gr_sig_source_f.h</includedby>
+    <includedby refid="gr__sig__source__i_8h" local="no">gr_sig_source_i.h</includedby>
+    <includedby refid="gr__sig__source__s_8h" local="no">gr_sig_source_s.h</includedby>
     <incdepgraph>
-      <node id="8013">
+      <node id="8213">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="8010">
+      <node id="8210">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="8011">
+      <node id="8211">
         <label>gr_fxpt.h</label>
         <link refid="gr__fxpt_8h"/>
-        <childnode refid="8009" relation="include">
+        <childnode refid="8209" relation="include">
         </childnode>
-        <childnode refid="8012" relation="include">
+        <childnode refid="8212" relation="include">
         </childnode>
       </node>
-      <node id="8012">
+      <node id="8212">
         <label>gr_types.h</label>
         <link refid="gr__types_8h"/>
-        <childnode refid="8009" relation="include">
+        <childnode refid="8209" relation="include">
         </childnode>
-        <childnode refid="8013" relation="include">
+        <childnode refid="8213" relation="include">
         </childnode>
-        <childnode refid="8014" relation="include">
+        <childnode refid="8214" relation="include">
         </childnode>
-        <childnode refid="8015" relation="include">
+        <childnode refid="8215" relation="include">
         </childnode>
-        <childnode refid="8016" relation="include">
+        <childnode refid="8216" relation="include">
         </childnode>
       </node>
-      <node id="8015">
+      <node id="8215">
         <label>stddef.h</label>
       </node>
-      <node id="8014">
+      <node id="8214">
         <label>vector</label>
       </node>
-      <node id="8009">
+      <node id="8209">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="8010" relation="include">
+        <childnode refid="8210" relation="include">
         </childnode>
       </node>
-      <node id="8008">
+      <node id="8208">
         <label>gr_fxpt_nco.h</label>
         <link refid="gr_fxpt_nco.h"/>
-        <childnode refid="8009" relation="include">
+        <childnode refid="8209" relation="include">
         </childnode>
-        <childnode refid="8011" relation="include">
+        <childnode refid="8211" relation="include">
         </childnode>
-        <childnode refid="8016" relation="include">
+        <childnode refid="8216" relation="include">
         </childnode>
       </node>
-      <node id="8017">
+      <node id="8217">
         <label>complex</label>
       </node>
-      <node id="8016">
+      <node id="8216">
         <label>gr_complex.h</label>
         <link refid="gr__complex_8h"/>
-        <childnode refid="8017" relation="include">
+        <childnode refid="8217" relation="include">
         </childnode>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="8220">
+        <label>gr_channel_model.h</label>
+        <link refid="gr__channel__model_8h"/>
+      </node>
+      <node id="8219">
+        <label>gr_sig_source_c.h</label>
+        <link refid="gr__sig__source__c_8h"/>
+        <childnode refid="8220" relation="include">
+        </childnode>
+      </node>
+      <node id="8223">
+        <label>gr_sig_source_s.h</label>
+        <link refid="gr__sig__source__s_8h"/>
+      </node>
+      <node id="8221">
+        <label>gr_sig_source_f.h</label>
+        <link refid="gr__sig__source__f_8h"/>
+      </node>
+      <node id="8218">
+        <label>gr_fxpt_nco.h</label>
+        <link refid="gr_fxpt_nco.h"/>
+        <childnode refid="8219" relation="include">
+        </childnode>
+        <childnode refid="8221" relation="include">
+        </childnode>
+        <childnode refid="8222" relation="include">
+        </childnode>
+        <childnode refid="8223" relation="include">
+        </childnode>
+      </node>
+      <node id="8222">
+        <label>gr_sig_source_i.h</label>
+        <link refid="gr__sig__source__i_8h"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classgr__fxpt__nco" prot="public">gr_fxpt_nco</innerclass>
     <briefdescription>
     </briefdescription>

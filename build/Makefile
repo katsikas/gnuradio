@@ -88,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_examples\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -1324,17 +1324,30 @@ pygen_gr_atsc_src_python_68675/fast:
 .PHONY : pygen_gr_atsc_src_python_68675/fast
 
 #=============================================================================
-# Target rules for targets named _dvbt
+# Target rules for targets named gnuradio-dvbt
 
 # Build rule for target.
-_dvbt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _dvbt
-.PHONY : _dvbt
+gnuradio-dvbt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-dvbt
+.PHONY : gnuradio-dvbt
 
 # fast build rule for target.
-_dvbt/fast:
-	$(MAKE) -f gr-dvbt/src/lib/CMakeFiles/_dvbt.dir/build.make gr-dvbt/src/lib/CMakeFiles/_dvbt.dir/build
-.PHONY : _dvbt/fast
+gnuradio-dvbt/fast:
+	$(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build
+.PHONY : gnuradio-dvbt/fast
+
+#=============================================================================
+# Target rules for targets named _dvbt_swig
+
+# Build rule for target.
+_dvbt_swig: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _dvbt_swig
+.PHONY : _dvbt_swig
+
+# fast build rule for target.
+_dvbt_swig/fast:
+	$(MAKE) -f gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/build.make gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/build
+.PHONY : _dvbt_swig/fast
 
 #=============================================================================
 # Target rules for targets named _dvbt_swig_doc_tag
@@ -1346,73 +1359,47 @@ _dvbt_swig_doc_tag: cmake_check_build_system
 
 # fast build rule for target.
 _dvbt_swig_doc_tag/fast:
-	$(MAKE) -f gr-dvbt/src/lib/CMakeFiles/_dvbt_swig_doc_tag.dir/build.make gr-dvbt/src/lib/CMakeFiles/_dvbt_swig_doc_tag.dir/build
+	$(MAKE) -f gr-dvbt/swig/CMakeFiles/_dvbt_swig_doc_tag.dir/build.make gr-dvbt/swig/CMakeFiles/_dvbt_swig_doc_tag.dir/build
 .PHONY : _dvbt_swig_doc_tag/fast
 
 #=============================================================================
-# Target rules for targets named _dvbt_swig_tag
+# Target rules for targets named _dvbt_swig_swig_tag
 
 # Build rule for target.
-_dvbt_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _dvbt_swig_tag
-.PHONY : _dvbt_swig_tag
+_dvbt_swig_swig_tag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _dvbt_swig_swig_tag
+.PHONY : _dvbt_swig_swig_tag
 
 # fast build rule for target.
-_dvbt_swig_tag/fast:
-	$(MAKE) -f gr-dvbt/src/lib/CMakeFiles/_dvbt_swig_tag.dir/build.make gr-dvbt/src/lib/CMakeFiles/_dvbt_swig_tag.dir/build
-.PHONY : _dvbt_swig_tag/fast
+_dvbt_swig_swig_tag/fast:
+	$(MAKE) -f gr-dvbt/swig/CMakeFiles/_dvbt_swig_swig_tag.dir/build.make gr-dvbt/swig/CMakeFiles/_dvbt_swig_swig_tag.dir/build
+.PHONY : _dvbt_swig_swig_tag/fast
 
 #=============================================================================
-# Target rules for targets named gnuradio-dvbt
+# Target rules for targets named pygen_gr_dvbt_swig_534af
 
 # Build rule for target.
-gnuradio-dvbt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-dvbt
-.PHONY : gnuradio-dvbt
+pygen_gr_dvbt_swig_534af: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_dvbt_swig_534af
+.PHONY : pygen_gr_dvbt_swig_534af
 
 # fast build rule for target.
-gnuradio-dvbt/fast:
-	$(MAKE) -f gr-dvbt/src/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/src/lib/CMakeFiles/gnuradio-dvbt.dir/build
-.PHONY : gnuradio-dvbt/fast
+pygen_gr_dvbt_swig_534af/fast:
+	$(MAKE) -f gr-dvbt/swig/CMakeFiles/pygen_gr_dvbt_swig_534af.dir/build.make gr-dvbt/swig/CMakeFiles/pygen_gr_dvbt_swig_534af.dir/build
+.PHONY : pygen_gr_dvbt_swig_534af/fast
 
 #=============================================================================
-# Target rules for targets named pygen_gr_dvbt_src_lib_2c1ae
+# Target rules for targets named pygen_gr_dvbt_python_97e9e
 
 # Build rule for target.
-pygen_gr_dvbt_src_lib_2c1ae: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_dvbt_src_lib_2c1ae
-.PHONY : pygen_gr_dvbt_src_lib_2c1ae
+pygen_gr_dvbt_python_97e9e: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_dvbt_python_97e9e
+.PHONY : pygen_gr_dvbt_python_97e9e
 
 # fast build rule for target.
-pygen_gr_dvbt_src_lib_2c1ae/fast:
-	$(MAKE) -f gr-dvbt/src/lib/CMakeFiles/pygen_gr_dvbt_src_lib_2c1ae.dir/build.make gr-dvbt/src/lib/CMakeFiles/pygen_gr_dvbt_src_lib_2c1ae.dir/build
-.PHONY : pygen_gr_dvbt_src_lib_2c1ae/fast
-
-#=============================================================================
-# Target rules for targets named test_dvbti
-
-# Build rule for target.
-test_dvbti: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_dvbti
-.PHONY : test_dvbti
-
-# fast build rule for target.
-test_dvbti/fast:
-	$(MAKE) -f gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build.make gr-dvbt/src/lib/CMakeFiles/test_dvbti.dir/build
-.PHONY : test_dvbti/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_dvbt_src_python_49125
-
-# Build rule for target.
-pygen_gr_dvbt_src_python_49125: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_dvbt_src_python_49125
-.PHONY : pygen_gr_dvbt_src_python_49125
-
-# fast build rule for target.
-pygen_gr_dvbt_src_python_49125/fast:
-	$(MAKE) -f gr-dvbt/src/python/CMakeFiles/pygen_gr_dvbt_src_python_49125.dir/build.make gr-dvbt/src/python/CMakeFiles/pygen_gr_dvbt_src_python_49125.dir/build
-.PHONY : pygen_gr_dvbt_src_python_49125/fast
+pygen_gr_dvbt_python_97e9e/fast:
+	$(MAKE) -f gr-dvbt/python/CMakeFiles/pygen_gr_dvbt_python_97e9e.dir/build.make gr-dvbt/python/CMakeFiles/pygen_gr_dvbt_python_97e9e.dir/build
+.PHONY : pygen_gr_dvbt_python_97e9e/fast
 
 #=============================================================================
 # Target rules for targets named gnuradio-audio
@@ -2740,13 +2727,12 @@ help:
 	@echo "... pygen_gr_atsc_src_lib_f9f9a"
 	@echo "... test_atsci"
 	@echo "... pygen_gr_atsc_src_python_68675"
-	@echo "... _dvbt"
-	@echo "... _dvbt_swig_doc_tag"
-	@echo "... _dvbt_swig_tag"
 	@echo "... gnuradio-dvbt"
-	@echo "... pygen_gr_dvbt_src_lib_2c1ae"
-	@echo "... test_dvbti"
-	@echo "... pygen_gr_dvbt_src_python_49125"
+	@echo "... _dvbt_swig"
+	@echo "... _dvbt_swig_doc_tag"
+	@echo "... _dvbt_swig_swig_tag"
+	@echo "... pygen_gr_dvbt_swig_534af"
+	@echo "... pygen_gr_dvbt_python_97e9e"
 	@echo "... gnuradio-audio"
 	@echo "... dial_tone"
 	@echo "... _audio_swig"

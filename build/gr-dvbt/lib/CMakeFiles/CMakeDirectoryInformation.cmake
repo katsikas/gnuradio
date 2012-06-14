@@ -26,8 +26,9 @@ SET(CMAKE_C_INCLUDE_PATH
   "gnuradio-core/src/lib/swig"
   "../gnuradio-core/src/lib/swig"
   "../gnuradio-core/src/lib/hier"
+  "../gr-dvbt/lib"
   "../gr-dvbt/include"
-  "gr-dvbt/lib/../include"
+  "gr-dvbt/lib"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

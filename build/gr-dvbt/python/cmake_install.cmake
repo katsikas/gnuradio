@@ -33,13 +33,18 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/dvbt" TYPE FILE FILES "/home/katsikas/gnuradio/gr-dvbt/python/__init__.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/dvbt" TYPE FILE FILES
+    "/home/katsikas/gnuradio/gr-dvbt/python/__init__.py"
+    "/home/katsikas/gnuradio/gr-dvbt/python/dvbt_source.py"
+    )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/dvbt" TYPE FILE FILES
     "/home/katsikas/gnuradio/build/gr-dvbt/python/__init__.pyc"
+    "/home/katsikas/gnuradio/build/gr-dvbt/python/dvbt_source.pyc"
     "/home/katsikas/gnuradio/build/gr-dvbt/python/__init__.pyo"
+    "/home/katsikas/gnuradio/build/gr-dvbt/python/dvbt_source.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_python")
 

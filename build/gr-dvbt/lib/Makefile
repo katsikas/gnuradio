@@ -180,29 +180,29 @@ gnuradio-dvbt/fast:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build
 .PHONY : gnuradio-dvbt/fast
 
-digital_costas_loop_cc.o: digital_costas_loop_cc.cc.o
-.PHONY : digital_costas_loop_cc.o
+dvbt_pad.o: dvbt_pad.cc.o
+.PHONY : dvbt_pad.o
 
 # target to build an object file
-digital_costas_loop_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/digital_costas_loop_cc.cc.o
-.PHONY : digital_costas_loop_cc.cc.o
+dvbt_pad.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.o
+.PHONY : dvbt_pad.cc.o
 
-digital_costas_loop_cc.i: digital_costas_loop_cc.cc.i
-.PHONY : digital_costas_loop_cc.i
+dvbt_pad.i: dvbt_pad.cc.i
+.PHONY : dvbt_pad.i
 
 # target to preprocess a source file
-digital_costas_loop_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/digital_costas_loop_cc.cc.i
-.PHONY : digital_costas_loop_cc.cc.i
+dvbt_pad.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.i
+.PHONY : dvbt_pad.cc.i
 
-digital_costas_loop_cc.s: digital_costas_loop_cc.cc.s
-.PHONY : digital_costas_loop_cc.s
+dvbt_pad.s: dvbt_pad.cc.s
+.PHONY : dvbt_pad.s
 
 # target to generate assembly for a file
-digital_costas_loop_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/digital_costas_loop_cc.cc.s
-.PHONY : digital_costas_loop_cc.cc.s
+dvbt_pad.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.s
+.PHONY : dvbt_pad.cc.s
 
 # Help Target
 help:
@@ -220,9 +220,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... digital_costas_loop_cc.o"
-	@echo "... digital_costas_loop_cc.i"
-	@echo "... digital_costas_loop_cc.s"
+	@echo "... dvbt_pad.o"
+	@echo "... dvbt_pad.i"
+	@echo "... dvbt_pad.s"
 .PHONY : help
 
 

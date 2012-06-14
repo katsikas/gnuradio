@@ -332,12 +332,6 @@ FFTW3F_THREADS_LIBRARIES:FILEPATH=/usr/lib/libfftw3f_threads.so
 //git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
-//The directory containing a CMake configuration file for GnuradioCore.
-GnuradioCore_DIR:PATH=GnuradioCore_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for Gruel.
-Gruel_DIR:PATH=Gruel_DIR-NOTFOUND
-
 //Path to a program.
 HAVE_XDG_UTILS:FILEPATH=/usr/bin/xdg-desktop-menu
 
@@ -1059,9 +1053,6 @@ _audio_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio
 _digital_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-digital;
 
 //Dependencies for the target
-_dvbt_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-dvbt;
-
-//Dependencies for the target
 _dvbt_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-dvbt;
 
 //Dependencies for the target
@@ -1165,12 +1156,6 @@ gnuradio_BINARY_DIR:STATIC=/home/katsikas/gnuradio/build
 
 //Value Computed by CMake
 gnuradio_SOURCE_DIR:STATIC=/home/katsikas/gnuradio
-
-//Value Computed by CMake
-gr-howto-write-a-block_BINARY_DIR:STATIC=/home/katsikas/gnuradio/build/gr-howto-write-a-block
-
-//Value Computed by CMake
-gr-howto-write-a-block_SOURCE_DIR:STATIC=/home/katsikas/gnuradio/gr-howto-write-a-block
 
 //Dependencies for the target
 gruel_LIB_DEPENDS:STATIC=general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;pthread;
@@ -1386,7 +1371,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=133
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=137
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1526,8 +1511,7 @@ GR_COMEDI_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-comedi/src
 GR_CORE_PYTHONPATH:INTERNAL=/home/katsikas/gnuradio/gnuradio-core/src/python
 GR_DIGITAL_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-digital/include
 GR_DIGITAL_SWIG_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-digital/swig
-GR_DVBT_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-dvbt/src/lib
-GR_DVBT_SWIG_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-dvbt/swig
+GR_DVBT_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-dvbt/lib;/home/katsikas/gnuradio/gr-dvbt/include
 GR_FCD_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-fcd/lib;/home/katsikas/gnuradio/gr-fcd/include/fcd
 GR_FFT_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-fft/lib;/home/katsikas/gnuradio/gr-fft/include
 //Have include arpa/inet.h
@@ -2350,7 +2334,7 @@ Q_WS_QWS:INTERNAL=
 Q_WS_WIN:INTERNAL=
 //Have symbol Q_WS_X11
 Q_WS_X11:INTERNAL=1
-SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
+SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread;-lpthread;-lpthread
 //ADVANCED property for variable: SHD_INCLUDE_DIRS
 SHD_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SHD_LIBRARIES

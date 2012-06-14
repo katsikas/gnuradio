@@ -10,6 +10,7 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 
 # The C and CXX include file search paths:
 SET(CMAKE_C_INCLUDE_PATH
+  "../gr-dvbt/lib"
   "../gr-dvbt/include"
   "../gruel/src/swig"
   "../gnuradio-core/src/lib/swig"
@@ -28,10 +29,9 @@ SET(CMAKE_C_INCLUDE_PATH
   "../gnuradio-core/src/lib/io"
   "gnuradio-core/src/lib/swig"
   "../gnuradio-core/src/lib/hier"
-  "gr-dvbt/swig"
-  "gr-dvbt/swig/../include"
   "/usr/include/python2.7"
   "../gr-dvbt/swig"
+  "gr-dvbt/swig"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

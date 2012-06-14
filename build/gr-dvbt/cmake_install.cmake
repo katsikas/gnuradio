@@ -38,8 +38,12 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/src/lib/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/src/python/cmake_install.cmake")
+  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/include/dvbt/cmake_install.cmake")
+  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/lib/cmake_install.cmake")
+  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/swig/cmake_install.cmake")
+  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/python/cmake_install.cmake")
+  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/grc/cmake_install.cmake")
+  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/doc/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

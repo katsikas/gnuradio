@@ -19,7 +19,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" line="60" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__channel__model_1ab16761accf406596940415bc1e42fb7c" prot="private" static="no" mutable="no">
-        <type>gr_sig_source_c_sptr</type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">gr_sig_source_c_sptr</ref></type>
         <definition>gr_sig_source_c_sptr gr_channel_model::d_freq_offset</definition>
         <argsstring></argsstring>
         <name>d_freq_offset</name>
@@ -58,7 +58,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" line="63" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__channel__model_1a2b2764863771a6f1e4633624ffad26ba" prot="private" static="no" mutable="no">
-        <type>gr_noise_source_c_sptr</type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">gr_noise_source_c_sptr</ref></type>
         <definition>gr_noise_source_c_sptr gr_channel_model::d_noise</definition>
         <argsstring></argsstring>
         <name>d_noise</name>
@@ -294,88 +294,88 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2783">
+      <node id="2851">
         <label>gr_channel_model</label>
         <link refid="classgr__channel__model"/>
-        <childnode refid="2784" relation="public-inheritance">
+        <childnode refid="2852" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2786">
+      <node id="2854">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2787" relation="public-inheritance">
+        <childnode refid="2855" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2784">
+      <node id="2852">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="2785" relation="public-inheritance">
+        <childnode refid="2853" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2787">
+      <node id="2855">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2785">
+      <node id="2853">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2786" relation="public-inheritance">
+        <childnode refid="2854" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2788">
+      <node id="2856">
         <label>gr_channel_model</label>
         <link refid="classgr__channel__model"/>
-        <childnode refid="2789" relation="public-inheritance">
+        <childnode refid="2857" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2791">
+      <node id="2859">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2792" relation="public-inheritance">
+        <childnode refid="2860" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2789">
+      <node id="2857">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="2790" relation="public-inheritance">
+        <childnode refid="2858" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2793">
+      <node id="2861">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2794" relation="usage">
+        <childnode refid="2862" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2796">
+      <node id="2864">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2792">
+      <node id="2860">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2794">
+      <node id="2862">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2790">
+      <node id="2858">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2791" relation="public-inheritance">
+        <childnode refid="2859" relation="public-inheritance">
         </childnode>
-        <childnode refid="2793" relation="usage">
+        <childnode refid="2861" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2795" relation="usage">
+        <childnode refid="2863" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2795">
+      <node id="2863">
         <label>std::string</label>
-        <childnode refid="2796" relation="public-inheritance">
+        <childnode refid="2864" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
