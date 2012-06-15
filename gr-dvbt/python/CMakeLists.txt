@@ -23,8 +23,8 @@ include(GrPython)
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    dvbt_source.py
     dvbt_utils.py
+    dvbt_source.py
     DESTINATION ${GR_PYTHON_DIR}/gnuradio/dvbt
     COMPONENT "dvbt_python"
 )

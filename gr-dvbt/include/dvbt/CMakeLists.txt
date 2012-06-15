@@ -21,8 +21,10 @@
 # Install header files
 ########################################################################
 install(FILES
-    api.h
+    dvbt_api.h
     dvbt_pad.h
+    dvbt_types.h
+    dvbt_consts.h
     DESTINATION ${GR_INCLUDE_DIR}/gnuradio/dvbt
     COMPONENT "dvbt_devel"
 )

@@ -24,47 +24,24 @@ import struct
 import random
 
 
-##################################################################
-def make_transport_stream_packet():
-	"""
-	Create and return an MPEG transport stream according to the DVB-T standard.
-	A ts packet should of 188 bytes length.The first byte is called synchronization 
-	byte and its value is by default 47(HEX) or 71(dec) or 01 000 111(binary).
-	The processing order at the transmitting side shall always start from the MSB.
-	All bytes except the first sync byte are scrambled with a PRBS sequence. The 
-	PRBS sequence shall be initiated at the start of every eight transport packets.
-	To provide an initialization signal for the descrambler, the MPEG-2 sync byte of
-	the first transport packet in a group of eight packets is bit-wise inverted from 
-	47(HEX) to B8(HEX).
-
-	@Return an MPEG TS scrambled stream according to the DVB-T standard.
-	The whole process is known as 
-	Transport multiplex adaptation and randomization for energy dispersal.
-	"""
-			
-	PRBS_PERIOD = 8
-	MPEG_SYNC_BYTE = 0x47
-	MPEG_INVERTED_SYNC_BYTE = 0xB8
-	INIT_PRBS_REGISTERS = [1,0,0,1,0,1,0,1,0,0,0,0,0,0,0] 
-
-		
-		
 ########################################################################################
-
-
-########################################################################################
-def make_fake_transport_stream_packet(npkts,f):
+def create_transport_stream_packet(npkts,f):
     	"""
-    	Return a sequence of 8-bit ints that represents an MPEG Transport Stream packet.
+    	Return a sequence of 188 bytes.The first four bytes are the MPEG TS header
+	bytes and the rest are the MPEG TS data bytes.The first byte of the packet
+	is usually MPEG_SYNC_BYTE = 0x47.A sequence of 8 packets is called super 
+	frame and has its first sync byte inverted MPEG_INVERTED_SYNC_BYTE = 0xB8.
 
     	@param npkts: how many 188-byte packets to return
-
-    	FYI, each ATSC Data Frame contains two Data Fields, each of which contains
-    	312 data segments.  Each transport stream packet maps to a data segment.
     	"""
 
+ 	PRBS_PERIOD = 8
+        MPEG_SYNC_BYTE = 0x47
+        MPEG_INVERTED_SYNC_BYTE = 0xB8
+        INIT_PRBS_REGISTERS = [1,0,0,1,0,1,0,1,0,0,0,0,0,0,0]
+
+	i = 0
     	r = [0] * (npkts * 188)
-    	i = 0
 
     	for j in range(npkts):
 		"""
@@ -91,6 +68,7 @@ def make_fake_transport_stream_packet(npkts,f):
 
 
 def pad_stream(src, sizeof_total, sizeof_pad):
+	print("pad_stream() called")
    	sizeof_valid = sizeof_total - sizeof_pad
     	assert sizeof_valid > 0
     	assert (len(src) % sizeof_valid) == 0
@@ -100,10 +78,12 @@ def pad_stream(src, sizeof_total, sizeof_pad):
         	src_s = i * sizeof_valid
         	dst_s = i * sizeof_total
         	dst[dst_s:dst_s + sizeof_valid] = src[src_s:src_s + sizeof_valid]
+
     	return dst
 
 
 def depad_stream(src, sizeof_total, sizeof_pad):
+	print("depad_stream() called")
     	sizeof_valid = sizeof_total - sizeof_pad
     	assert sizeof_valid > 0
     	assert (len(src) % sizeof_total) == 0

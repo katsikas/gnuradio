@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="pager__flex__parse_8h" kind="file">
+    <compoundname>pager_flex_parse.h</compoundname>
+    <includes refid="pager__api_8h" local="no">pager_api.h</includes>
+    <includes refid="gr__sync__block_8h" local="no">gr_sync_block.h</includes>
+    <includes refid="gr__msg__queue_8h" local="no">gr_msg_queue.h</includes>
+    <includes refid="pageri__flex__modes_8h" local="no">pageri_flex_modes.h</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="14862">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="14840">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14835" relation="include">
+        </childnode>
+      </node>
+      <node id="14831">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14832" relation="include">
+        </childnode>
+        <childnode refid="14856" relation="include">
+        </childnode>
+      </node>
+      <node id="14864">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="14835">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="14847">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="14844">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="14845" relation="include">
+        </childnode>
+        <childnode refid="14846" relation="include">
+        </childnode>
+        <childnode refid="14835" relation="include">
+        </childnode>
+      </node>
+      <node id="14828">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="14834">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14835" relation="include">
+        </childnode>
+        <childnode refid="14836" relation="include">
+        </childnode>
+        <childnode refid="14837" relation="include">
+        </childnode>
+        <childnode refid="14838" relation="include">
+        </childnode>
+      </node>
+      <node id="14860">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="14845" relation="include">
+        </childnode>
+        <childnode refid="14861" relation="include">
+        </childnode>
+        <childnode refid="14862" relation="include">
+        </childnode>
+        <childnode refid="14863" relation="include">
+        </childnode>
+        <childnode refid="14864" relation="include">
+        </childnode>
+      </node>
+      <node id="14854">
+        <label>stdexcept</label>
+      </node>
+      <node id="14861">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="14850">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="14851" relation="include">
+        </childnode>
+        <childnode refid="14852" relation="include">
+        </childnode>
+      </node>
+      <node id="14849">
+        <label>string</label>
+      </node>
+      <node id="14832">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14833" relation="include">
+        </childnode>
+        <childnode refid="14840" relation="include">
+        </childnode>
+        <childnode refid="14841" relation="include">
+        </childnode>
+        <childnode refid="14842" relation="include">
+        </childnode>
+        <childnode refid="14843" relation="include">
+        </childnode>
+        <childnode refid="14849" relation="include">
+        </childnode>
+      </node>
+      <node id="14857">
+        <label>gr_msg_queue.h</label>
+        <link refid="gr__msg__queue_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14858" relation="include">
+        </childnode>
+        <childnode refid="14860" relation="include">
+        </childnode>
+      </node>
+      <node id="14855">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="14837">
+        <label>stddef.h</label>
+      </node>
+      <node id="14845">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="14828" relation="include">
+        </childnode>
+      </node>
+      <node id="14842">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="14851">
+        <label>limits.h</label>
+      </node>
+      <node id="14848">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="14846">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="14845" relation="include">
+        </childnode>
+        <childnode refid="14847" relation="include">
+        </childnode>
+        <childnode refid="14835" relation="include">
+        </childnode>
+        <childnode refid="14848" relation="include">
+        </childnode>
+        <childnode refid="14839" relation="include">
+        </childnode>
+        <childnode refid="14849" relation="include">
+        </childnode>
+        <childnode refid="14850" relation="include">
+        </childnode>
+        <childnode refid="14853" relation="include">
+        </childnode>
+        <childnode refid="14854" relation="include">
+        </childnode>
+        <childnode refid="14855" relation="include">
+        </childnode>
+      </node>
+      <node id="14826">
+        <label>pager_flex_parse.h</label>
+        <link refid="pager_flex_parse.h"/>
+        <childnode refid="14827" relation="include">
+        </childnode>
+        <childnode refid="14829" relation="include">
+        </childnode>
+        <childnode refid="14857" relation="include">
+        </childnode>
+        <childnode refid="14865" relation="include">
+        </childnode>
+        <childnode refid="14866" relation="include">
+        </childnode>
+      </node>
+      <node id="14852">
+        <label>wchar.h</label>
+      </node>
+      <node id="14843">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14844" relation="include">
+        </childnode>
+        <childnode refid="14846" relation="include">
+        </childnode>
+      </node>
+      <node id="14833">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14834" relation="include">
+        </childnode>
+      </node>
+      <node id="14863">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="14827">
+        <label>pager_api.h</label>
+        <link refid="pager__api_8h"/>
+        <childnode refid="14828" relation="include">
+        </childnode>
+      </node>
+      <node id="14836">
+        <label>vector</label>
+      </node>
+      <node id="14865">
+        <label>pageri_flex_modes.h</label>
+        <link refid="pageri__flex__modes_8h"/>
+        <childnode refid="14834" relation="include">
+        </childnode>
+      </node>
+      <node id="14830">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="14828" relation="include">
+        </childnode>
+      </node>
+      <node id="14866">
+        <label>sstream</label>
+      </node>
+      <node id="14858">
+        <label>gr_msg_handler.h</label>
+        <link refid="gr__msg__handler_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14859" relation="include">
+        </childnode>
+      </node>
+      <node id="14841">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="14853">
+        <label>iosfwd</label>
+      </node>
+      <node id="14856">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14846" relation="include">
+        </childnode>
+      </node>
+      <node id="14859">
+        <label>gr_message.h</label>
+        <link refid="gr__message_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14834" relation="include">
+        </childnode>
+        <childnode refid="14849" relation="include">
+        </childnode>
+      </node>
+      <node id="14829">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="14830" relation="include">
+        </childnode>
+        <childnode refid="14831" relation="include">
+        </childnode>
+      </node>
+      <node id="14839">
+        <label>complex</label>
+      </node>
+      <node id="14838">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="14839" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="pager__flex__parse_8h_1ab9e3ceac75172084eddaf022383bb5ba" prot="public" static="no">
+        <name>FIELD_DELIM</name>
+        <initializer>((unsigned char)128)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-pager/lib/pager_flex_parse.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-pager/lib/pager_flex_parse.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-pager/lib/pager_flex_parse.h"/>
+  </compounddef>
+</doxygen>

@@ -28,29 +28,26 @@
 %include "dvbt_swig_doc.i"
 
 %{
-#include "dvbt/dvbt_pad.h" 
+#include "dvbt/dvbt_pad.h"
+#include "dvbt/dvbt_consts.h"
 %}
 
-
-%include "dvbt/dvbt_pad.h" 
-
-
-
-//GR_SWIG_BLOCK_MAGIC2(dvbt, dvbt_pad); 
+%include "dvbt/dvbt_pad.h"
+%include "dvbt/dvbt_consts.h"
 
 
-/* ----------------------------------------------------------------
-GR_SWIG_BLOCK_MAGIC(atsc,pad);
+// ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,pad);
 
-atsc_pad_sptr atsc_make_pad();
+dvbt_pad_sptr dvbt_make_pad();
 
-class atsc_pad : public gr_sync_decimator
+class dvbt_pad : public gr_sync_decimator
 {
-  atsc_pad();
+  dvbt_pad();
 
 public:
   void reset();
 
 };
-*/
+// ----------------------------------------------------------------
 

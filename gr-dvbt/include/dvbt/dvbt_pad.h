@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /*
- * Copyright 2006 Free Software Foundation, Inc.
+ * Copyright 2012 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -22,7 +22,7 @@
 #ifndef INCLUDED_DVBT_PAD_H
 #define INCLUDED_DVBT_PAD_H
 
-#include <dvbt/api.h>
+#include <dvbt/dvbt_api.h>
 #include <gr_sync_decimator.h>
 
 class dvbt_pad;

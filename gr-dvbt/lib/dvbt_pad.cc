@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /*
- * Copyright 2006,2010 Free Software Foundation, Inc.
+ * Copyright 2012 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -25,30 +25,32 @@
 #endif
 
 #include <dvbt/dvbt_pad.h>
+#include <dvbt/dvbt_types.h>
 #include <gr_io_signature.h>
 
 
 dvbt_pad_sptr
 dvbt_make_pad()
 {
-  return gnuradio::get_initial_sptr(new dvbt_pad());
+  	return gnuradio::get_initial_sptr(new dvbt_pad());
 }
 
 dvbt_pad::dvbt_pad()
-  : gr_sync_decimator("dvbt_pad",
-		  gr_make_io_signature(1, 1, sizeof(unsigned char)),
-		  gr_make_io_signature(1, 1, sizeof(unsigned char)),
-		  188)
+	: gr_sync_decimator("dvbt_pad",
+		gr_make_io_signature(1, 1, sizeof(unsigned char)),
+		gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
+		DVBT_MPEG_PACKET_LENGTH)
 {
-  reset();
+	reset();
 }
 
 void
 dvbt_pad::forecast (int noutput_items, gr_vector_int &ninput_items_required)
 {
-  unsigned ninputs = ninput_items_required.size();
-  for (unsigned i = 0; i < ninputs; i++)
-    ninput_items_required[i] = noutput_items * 188;
+	unsigned ninputs = ninput_items_required.size();
+  	for (unsigned i = 0; i < ninputs; i++){
+    		ninput_items_required[i] = noutput_items * DVBT_MPEG_PACKET_LENGTH;
+	}
 }
 
 
@@ -57,8 +59,19 @@ dvbt_pad::work (int noutput_items,
 		       gr_vector_const_void_star &input_items,
 		       gr_vector_void_star &output_items)
 {
+	const unsigned char *in = (const unsigned char *) input_items[0];
+	dvbt_mpeg_packet *out = (dvbt_mpeg_packet *) output_items[0];
 
-  return noutput_items;
+  	int i;
+
+  	for (i = 0; i < noutput_items; i++){
+    		for (int j = 0; j < DVBT_MPEG_PACKET_LENGTH; j++){
+        		out[i].data[j] = in[i * DVBT_MPEG_PACKET_LENGTH + j];
+
+  		}
+	}
+
+  	return noutput_items;
 }
 
 
