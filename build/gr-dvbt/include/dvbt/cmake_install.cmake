@@ -36,6 +36,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_de
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio/dvbt" TYPE FILE FILES
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_api.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h"
+    "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h"
     )

@@ -25,4 +25,5 @@ processing blocks for DVBT and related functions.
 '''
 
 from dvbt_swig import *
+from dvbt_sink import *
 from dvbt_source import *

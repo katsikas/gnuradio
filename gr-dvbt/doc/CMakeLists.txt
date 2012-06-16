@@ -18,6 +18,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(
-    FILES README.dvbt
-    DESTINATION ${GR_PKG_DOC_DIR}
+    	FILES README.dvbt
+    	DESTINATION ${GR_PKG_DOC_DIR}
 )

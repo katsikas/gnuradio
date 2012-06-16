@@ -18,7 +18,7 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    # insert xml file
-    DESTINATION ${GRC_BLOCKS_DIR}
-    COMPONENT "dvbt_python"
+    	# insert xml file
+    	DESTINATION ${GRC_BLOCKS_DIR}
+    	COMPONENT "dvbt_python"
 )

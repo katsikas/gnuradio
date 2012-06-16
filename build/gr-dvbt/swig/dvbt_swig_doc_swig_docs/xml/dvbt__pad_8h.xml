@@ -5,24 +5,24 @@
     <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
     <includes local="no">gr_sync_decimator.h</includes>
     <incdepgraph>
-      <node id="7">
+      <node id="13">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h</label>
         <link refid="dvbt_pad.h"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="15">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="10">
+      <node id="16">
         <label>gr_sync_decimator.h</label>
       </node>
-      <node id="8">
+      <node id="14">
         <label>dvbt/dvbt_api.h</label>
         <link refid="dvbt__api_8h"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" bodystart="28" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="31"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -83,34 +83,37 @@
 <codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
 <codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
 <codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_DVBT_PAD_H</highlight></codeline>
-<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_DVBT_PAD_H</highlight></codeline>
-<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbt__api_8h" kindref="compound">dvbt/dvbt_api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gr_sync_decimator.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28" refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__pad" kindref="compound" tooltip="pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packetinput: unsigned char; output: d...">dvbt_pad</ref>;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;dvbt_pad&gt;<sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_DVBT_PAD_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_DVBT_PAD_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbt__api_8h" kindref="compound">dvbt/dvbt_api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gr_sync_decimator.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref><sp/><ref refid="dvbt__pad_8h_1a3a657c8db9ea6f1ca4b5d69f87861ca4" kindref="member">dvbt_make_pad</ref>();</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="classdvbt__pad" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packetinput: unsigned char; output: d...">dvbt_pad</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_decimator</highlight></codeline>
-<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref><sp/><ref refid="dvbt__pad_8h_1a3a657c8db9ea6f1ca4b5d69f87861ca4" kindref="member">dvbt_make_pad</ref>();</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packetinput: unsigned char; output: d...">dvbt_pad</ref>();</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forecast<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,<sp/>gr_vector_int<sp/>&amp;ninput_items_required);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52" refid="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" kindref="member">reset</ref>()<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>nop<sp/>*/</highlight><highlight class="normal"><sp/>}</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31" refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;dvbt_pad&gt;<sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref><sp/><ref refid="dvbt__pad_8h_1a3a657c8db9ea6f1ca4b5d69f87861ca4" kindref="member">dvbt_make_pad</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classdvbt__pad" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_decimator</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref><sp/><ref refid="dvbt__pad_8h_1a3a657c8db9ea6f1ca4b5d69f87861ca4" kindref="member">dvbt_make_pad</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>forecast<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,<sp/>gr_vector_int<sp/>&amp;ninput_items_required);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_DVBT_PAD_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" kindref="member">reset</ref>()<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>nop<sp/>*/</highlight><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_DVBT_PAD_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h"/>
   </compounddef>

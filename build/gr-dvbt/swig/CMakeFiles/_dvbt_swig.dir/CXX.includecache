@@ -70,6 +70,12 @@ gr_core_api.h
 gr_sync_block.h
 -
 
+../gnuradio-core/src/lib/runtime/gr_sync_interpolator.h
+gr_core_api.h
+-
+gr_sync_block.h
+-
+
 ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr_core_api.h
 -
@@ -96,10 +102,26 @@ stdint.h
 gruel/attributes.h
 -
 
+../gr-dvbt/include/dvbt/dvbt_consts.h
+
+../gr-dvbt/include/dvbt/dvbt_depad.h
+dvbt/dvbt_api.h
+-
+gr_sync_interpolator.h
+-
+
 ../gr-dvbt/include/dvbt/dvbt_pad.h
 dvbt/dvbt_api.h
 -
 gr_sync_decimator.h
+-
+
+../gr-dvbt/include/dvbt/dvbt_types.h
+cstring
+-
+cassert
+-
+dvbt/dvbt_consts.h
 -
 
 ../gruel/src/include/gruel/api.h
@@ -193,6 +215,10 @@ iterator
 -
 dvbt/dvbt_pad.h
 /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_pad.h
+dvbt/dvbt_depad.h
+/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_depad.h
+dvbt/dvbt_types.h
+/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_types.h
 limits.h
 -
 

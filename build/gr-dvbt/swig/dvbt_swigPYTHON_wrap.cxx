@@ -2943,43 +2943,47 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_allocator_type swig_types[0]
-#define SWIGTYPE_p_boost__shared_ptrT_dvbt_pad_t swig_types[1]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[2]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[3]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[4]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[5]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[6]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[7]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[8]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[9]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[10]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[11]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[12]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[13]
-#define SWIGTYPE_p_char swig_types[14]
-#define SWIGTYPE_p_difference_type swig_types[15]
-#define SWIGTYPE_p_dvbt_pad swig_types[16]
-#define SWIGTYPE_p_gr_basic_block swig_types[17]
-#define SWIGTYPE_p_gr_block swig_types[18]
-#define SWIGTYPE_p_gr_hier_block2 swig_types[19]
-#define SWIGTYPE_p_gr_sync_block swig_types[20]
-#define SWIGTYPE_p_gr_sync_decimator swig_types[21]
-#define SWIGTYPE_p_gr_sync_interpolator swig_types[22]
-#define SWIGTYPE_p_gr_top_block swig_types[23]
-#define SWIGTYPE_p_gr_vector_const_void_star swig_types[24]
-#define SWIGTYPE_p_gr_vector_int swig_types[25]
-#define SWIGTYPE_p_gr_vector_void_star swig_types[26]
-#define SWIGTYPE_p_gruel__rt_status_t swig_types[27]
-#define SWIGTYPE_p_long_long swig_types[28]
-#define SWIGTYPE_p_size_type swig_types[29]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[30]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[31]
-#define SWIGTYPE_p_std__invalid_argument swig_types[32]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[33]
-#define SWIGTYPE_p_unsigned_long_long swig_types[34]
-#define SWIGTYPE_p_value_type swig_types[35]
-static swig_type_info *swig_types[37];
-static swig_module_info swig_module = {swig_types, 36, 0, 0, 0, 0};
+#define SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t swig_types[1]
+#define SWIGTYPE_p_boost__shared_ptrT_dvbt_pad_t swig_types[2]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[3]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[4]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[5]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[6]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[7]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[8]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[9]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[10]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[11]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[12]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[13]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[14]
+#define SWIGTYPE_p_char swig_types[15]
+#define SWIGTYPE_p_difference_type swig_types[16]
+#define SWIGTYPE_p_dvbt_depad swig_types[17]
+#define SWIGTYPE_p_dvbt_mpeg_packet swig_types[18]
+#define SWIGTYPE_p_dvbt_pad swig_types[19]
+#define SWIGTYPE_p_gr_basic_block swig_types[20]
+#define SWIGTYPE_p_gr_block swig_types[21]
+#define SWIGTYPE_p_gr_hier_block2 swig_types[22]
+#define SWIGTYPE_p_gr_sync_block swig_types[23]
+#define SWIGTYPE_p_gr_sync_decimator swig_types[24]
+#define SWIGTYPE_p_gr_sync_interpolator swig_types[25]
+#define SWIGTYPE_p_gr_top_block swig_types[26]
+#define SWIGTYPE_p_gr_vector_const_void_star swig_types[27]
+#define SWIGTYPE_p_gr_vector_int swig_types[28]
+#define SWIGTYPE_p_gr_vector_void_star swig_types[29]
+#define SWIGTYPE_p_gruel__rt_status_t swig_types[30]
+#define SWIGTYPE_p_long_long swig_types[31]
+#define SWIGTYPE_p_size_type swig_types[32]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[33]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[34]
+#define SWIGTYPE_p_std__invalid_argument swig_types[35]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[36]
+#define SWIGTYPE_p_unsigned_char swig_types[37]
+#define SWIGTYPE_p_unsigned_long_long swig_types[38]
+#define SWIGTYPE_p_value_type swig_types[39]
+static swig_type_info *swig_types[41];
+static swig_module_info swig_module = {swig_types, 40, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4366,7 +4370,8 @@ namespace swig
 
 
 #include "dvbt/dvbt_pad.h"
-#include "dvbt/dvbt_consts.h"
+#include "dvbt/dvbt_depad.h"
+#include "dvbt/dvbt_types.h"
 
 
 #include <limits.h>
@@ -5638,117 +5643,444 @@ SWIGINTERN PyObject *dvbt_pad_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObj
   return SWIG_Py_Void();
 }
 
-SWIGINTERN int Swig_var_PRBS_PERIOD_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable PRBS_PERIOD is read-only.");
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_PRBS_PERIOD_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_dvbt_make_depad(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_depad_sptr result;
   
-  pyobj = SWIG_From_int(static_cast< int >(PRBS_PERIOD));
-  return pyobj;
+  {
+    try {
+      result = dvbt_make_depad();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new dvbt_depad_sptr(static_cast< const dvbt_depad_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
-SWIGINTERN int Swig_var_MPEG_SYNC_BYTE_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable MPEG_SYNC_BYTE is read-only.");
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_MPEG_SYNC_BYTE_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_dvbt_depad_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  dvbt_depad *arg1 = (dvbt_depad *) 0 ;
+  int arg2 ;
+  gr_vector_const_void_star *arg3 = 0 ;
+  gr_vector_void_star *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "noutput_items",(char *) "input_items",(char *) "output_items", NULL 
+  };
+  int result;
   
-  pyobj = SWIG_From_int(static_cast< int >(MPEG_SYNC_BYTE));
-  return pyobj;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:dvbt_depad_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_depad, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_work" "', argument " "1"" of type '" "dvbt_depad *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_depad * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_depad_work" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_depad_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_depad_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "dvbt_depad_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_depad_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
+  {
+    try {
+      result = (int)(arg1)->work(arg2,*arg3,*arg4);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
-SWIGINTERN int Swig_var_MPEG_INVERTED_SYNC_BYTE_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable MPEG_INVERTED_SYNC_BYTE is read-only.");
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_MPEG_INVERTED_SYNC_BYTE_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_dvbt_depad_reset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_depad *arg1 = (dvbt_depad *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
   
-  pyobj = SWIG_From_int(static_cast< int >(MPEG_INVERTED_SYNC_BYTE));
-  return pyobj;
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_reset",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_depad, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_reset" "', argument " "1"" of type '" "dvbt_depad *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_depad * >(argp1);
+  {
+    try {
+      (arg1)->reset();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
-SWIGINTERN int Swig_var_DVBT_MPEG_DATA_LENGTH_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable DVBT_MPEG_DATA_LENGTH is read-only.");
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_DVBT_MPEG_DATA_LENGTH_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_delete_dvbt_depad(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_depad *arg1 = (dvbt_depad *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
   
-  pyobj = SWIG_From_int(static_cast< int >(DVBT_MPEG_DATA_LENGTH));
-  return pyobj;
+  if(!PyArg_UnpackTuple(args,(char *)"delete_dvbt_depad",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_depad, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_dvbt_depad" "', argument " "1"" of type '" "dvbt_depad *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_depad * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
-SWIGINTERN int Swig_var_DVBT_MPEG_HEADER_LENGTH_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable DVBT_MPEG_HEADER_LENGTH is read-only.");
-  return 1;
+SWIGINTERN PyObject *dvbt_depad_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_dvbt_depad, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
 }
 
-
-SWIGINTERN PyObject *Swig_var_DVBT_MPEG_HEADER_LENGTH_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet__pad__set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  unsigned char *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  pyobj = SWIG_From_int(static_cast< int >(DVBT_MPEG_HEADER_LENGTH));
-  return pyobj;
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_mpeg_packet__pad__set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet__pad__set" "', argument " "1"" of type '" "dvbt_mpeg_packet *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_unsigned_char, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_mpeg_packet__pad__set" "', argument " "2"" of type '" "unsigned char [dvbt_mpeg_packet::NPAD]""'"); 
+  } 
+  arg2 = reinterpret_cast< unsigned char * >(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)dvbt_mpeg_packet::NPAD; ++ii) arg1->_pad_[ii] = arg2[ii];
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""_pad_""' of type '""unsigned char [dvbt_mpeg_packet::NPAD]""'");
+    }
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
-SWIGINTERN int Swig_var_DVBT_MPEG_PACKET_LENGTH_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable DVBT_MPEG_PACKET_LENGTH is read-only.");
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_DVBT_MPEG_PACKET_LENGTH_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet__pad__get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned char *result = 0 ;
   
-  pyobj = SWIG_From_int(static_cast< int >(DVBT_MPEG_PACKET_LENGTH));
-  return pyobj;
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_mpeg_packet__pad__get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet__pad__get" "', argument " "1"" of type '" "dvbt_mpeg_packet *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  result = (unsigned char *)(unsigned char *) ((arg1)->_pad_);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_unsigned_char, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
-SWIGINTERN int Swig_var_DVBT_SUPER_FRAME_LENGTH_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable DVBT_SUPER_FRAME_LENGTH is read-only.");
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_DVBT_SUPER_FRAME_LENGTH_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet_data_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  unsigned char *arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  pyobj = SWIG_From_int(static_cast< int >(DVBT_SUPER_FRAME_LENGTH));
-  return pyobj;
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_mpeg_packet_data_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet_data_set" "', argument " "1"" of type '" "dvbt_mpeg_packet *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_unsigned_char, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_mpeg_packet_data_set" "', argument " "2"" of type '" "unsigned char [DVBT_MPEG_DATA_LENGTH+DVBT_MPEG_HEADER_LENGTH]""'"); 
+  } 
+  arg2 = reinterpret_cast< unsigned char * >(argp2);
+  {
+    if (arg2) {
+      size_t ii = 0;
+      for (; ii < (size_t)DVBT_MPEG_DATA_LENGTH+DVBT_MPEG_HEADER_LENGTH; ++ii) arg1->data[ii] = arg2[ii];
+    } else {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""data""' of type '""unsigned char [DVBT_MPEG_DATA_LENGTH+DVBT_MPEG_HEADER_LENGTH]""'");
+    }
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
-SWIGINTERN int Swig_var_DVBT_MPEG_RS_ENCODED_LENGTH_set(PyObject *) {
-  SWIG_Error(SWIG_AttributeError,"Variable DVBT_MPEG_RS_ENCODED_LENGTH is read-only.");
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_DVBT_MPEG_RS_ENCODED_LENGTH_get(void) {
-  PyObject *pyobj = 0;
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet_data_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned char *result = 0 ;
   
-  pyobj = SWIG_From_int(static_cast< int >(DVBT_MPEG_RS_ENCODED_LENGTH));
-  return pyobj;
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_mpeg_packet_data_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet_data_get" "', argument " "1"" of type '" "dvbt_mpeg_packet *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  result = (unsigned char *)(unsigned char *) ((arg1)->data);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_unsigned_char, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
 }
 
+
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet___eq__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  dvbt_mpeg_packet *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "other", NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_mpeg_packet___eq__",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet___eq__" "', argument " "1"" of type '" "dvbt_mpeg_packet const *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_dvbt_mpeg_packet,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_mpeg_packet___eq__" "', argument " "2"" of type '" "dvbt_mpeg_packet const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_mpeg_packet___eq__" "', argument " "2"" of type '" "dvbt_mpeg_packet const &""'"); 
+  }
+  arg2 = reinterpret_cast< dvbt_mpeg_packet * >(argp2);
+  {
+    try {
+      result = (bool)((dvbt_mpeg_packet const *)arg1)->operator ==((dvbt_mpeg_packet const &)*arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet___ne__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  dvbt_mpeg_packet *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "other", NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_mpeg_packet___ne__",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet___ne__" "', argument " "1"" of type '" "dvbt_mpeg_packet const *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_dvbt_mpeg_packet,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_mpeg_packet___ne__" "', argument " "2"" of type '" "dvbt_mpeg_packet const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_mpeg_packet___ne__" "', argument " "2"" of type '" "dvbt_mpeg_packet const &""'"); 
+  }
+  arg2 = reinterpret_cast< dvbt_mpeg_packet * >(argp2);
+  {
+    try {
+      result = (bool)((dvbt_mpeg_packet const *)arg1)->operator !=((dvbt_mpeg_packet const &)*arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_dvbt_mpeg_packet(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *result = 0 ;
+  
+  {
+    try {
+      result = (dvbt_mpeg_packet *)new dvbt_mpeg_packet();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_dvbt_mpeg_packet, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_dvbt_mpeg_packet(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_dvbt_mpeg_packet",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_dvbt_mpeg_packet" "', argument " "1"" of type '" "dvbt_mpeg_packet *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *dvbt_mpeg_packet_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_dvbt_mpeg_packet, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
 
 SWIGINTERN PyObject *_wrap_new_dvbt_pad_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
@@ -6649,6 +6981,849 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_new_dvbt_depad_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *result = 0 ;
+  
+  {
+    try {
+      result = (boost::shared_ptr< dvbt_depad > *)new boost::shared_ptr< dvbt_depad >();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_dvbt_depad_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_depad *arg1 = (dvbt_depad *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  boost::shared_ptr< dvbt_depad > *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"new_dvbt_depad_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_depad, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_dvbt_depad_sptr" "', argument " "1"" of type '" "dvbt_depad *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_depad * >(argp1);
+  {
+    try {
+      result = (boost::shared_ptr< dvbt_depad > *)new boost::shared_ptr< dvbt_depad >(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_dvbt_depad_sptr(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_dvbt_depad_sptr__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_dvbt_depad, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_dvbt_depad_sptr__SWIG_1(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_dvbt_depad_sptr'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    boost::shared_ptr< dvbt_depad >::shared_ptr()\n"
+    "    boost::shared_ptr< dvbt_depad >::shared_ptr(dvbt_depad *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  dvbt_depad *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (dvbt_depad *)(arg1)->operator ->();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_dvbt_depad, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_dvbt_depad_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_dvbt_depad_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_dvbt_depad_sptr" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  int arg2 ;
+  gr_vector_const_void_star *arg3 = 0 ;
+  gr_vector_void_star *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "noutput_items",(char *) "input_items",(char *) "output_items", NULL 
+  };
+  int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:dvbt_depad_sptr_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_work" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_depad_sptr_work" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_depad_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_depad_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "dvbt_depad_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_depad_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
+  {
+    try {
+      result = (int)(*arg1)->work(arg2,*arg3,*arg4);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_reset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_reset",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_reset" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      (*arg1)->reset();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_history",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->history();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->output_multiple();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  double result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (double)(*arg1)->relative_rate();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_start",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->start();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_stop",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->stop();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_input", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_depad_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_depad_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_read(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_output", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_depad_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_depad_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_written(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_block_detail_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_detail",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_detail" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (*arg1)->detail();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_block_detail_sptr(static_cast< const gr_block_detail_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_set_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  gr_block_detail_sptr arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "detail", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_depad_sptr_set_detail",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_set_detail" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_depad_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_depad_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'");
+    } else {
+      gr_block_detail_sptr * temp = reinterpret_cast< gr_block_detail_sptr * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    try {
+      (*arg1)->set_detail(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_name",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (*arg1)->name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_input_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (*arg1)->input_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_output_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (*arg1)->output_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  long result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_unique_id",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (long)(*arg1)->unique_id();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_basic_block_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_depad_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  {
+    try {
+      result = (*arg1)->to_basic_block();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_basic_block_sptr(static_cast< const gr_basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_depad_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_depad > *arg1 = (boost::shared_ptr< dvbt_depad > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "ninputs",(char *) "noutputs", NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:dvbt_depad_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_depad_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_depad > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_depad > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_depad_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "dvbt_depad_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      result = (bool)(*arg1)->check_topology(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *dvbt_depad_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_depad(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_depad_sptr result;
+  
+  {
+    try {
+      result = dvbt_make_depad();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new dvbt_depad_sptr(static_cast< const dvbt_depad_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_dvbt_depad_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_VARARGS, (char *)"delete_SwigPyIterator(SwigPyIterator self)"},
@@ -6675,7 +7850,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"dvbt_make_pad", _wrap_dvbt_make_pad, METH_VARARGS, (char *)"\n"
 		"dvbt_make_pad() -> dvbt_pad_sptr\n"
 		"\n"
-		"pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packet\n"
+		"put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet\n"
 		"\n"
 		"input: unsigned char; output: dvbt_mpeg_packet\n"
 		""},
@@ -6687,6 +7862,29 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"dvbt_pad_reset", _wrap_dvbt_pad_reset, METH_VARARGS, (char *)"dvbt_pad_reset(dvbt_pad self)"},
 	 { (char *)"delete_dvbt_pad", _wrap_delete_dvbt_pad, METH_VARARGS, (char *)"delete_dvbt_pad(dvbt_pad self)"},
 	 { (char *)"dvbt_pad_swigregister", dvbt_pad_swigregister, METH_VARARGS, NULL},
+	 { (char *)"dvbt_make_depad", _wrap_dvbt_make_depad, METH_VARARGS, (char *)"\n"
+		"dvbt_make_depad() -> dvbt_depad_sptr\n"
+		"\n"
+		"remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char\n"
+		"\n"
+		"input: dvbt_mpeg_packet; output: unsigned char\n"
+		""},
+	 { (char *)"dvbt_depad_work", (PyCFunction) _wrap_dvbt_depad_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"dvbt_depad_work(dvbt_depad self, int noutput_items, gr_vector_const_void_star input_items, \n"
+		"    gr_vector_void_star output_items) -> int\n"
+		""},
+	 { (char *)"dvbt_depad_reset", _wrap_dvbt_depad_reset, METH_VARARGS, (char *)"dvbt_depad_reset(dvbt_depad self)"},
+	 { (char *)"delete_dvbt_depad", _wrap_delete_dvbt_depad, METH_VARARGS, (char *)"delete_dvbt_depad(dvbt_depad self)"},
+	 { (char *)"dvbt_depad_swigregister", dvbt_depad_swigregister, METH_VARARGS, NULL},
+	 { (char *)"dvbt_mpeg_packet__pad__set", _wrap_dvbt_mpeg_packet__pad__set, METH_VARARGS, (char *)"dvbt_mpeg_packet__pad__set(dvbt_mpeg_packet self, unsigned char _pad_)"},
+	 { (char *)"dvbt_mpeg_packet__pad__get", _wrap_dvbt_mpeg_packet__pad__get, METH_VARARGS, (char *)"dvbt_mpeg_packet__pad__get(dvbt_mpeg_packet self) -> unsigned char"},
+	 { (char *)"dvbt_mpeg_packet_data_set", _wrap_dvbt_mpeg_packet_data_set, METH_VARARGS, (char *)"dvbt_mpeg_packet_data_set(dvbt_mpeg_packet self, unsigned char data)"},
+	 { (char *)"dvbt_mpeg_packet_data_get", _wrap_dvbt_mpeg_packet_data_get, METH_VARARGS, (char *)"dvbt_mpeg_packet_data_get(dvbt_mpeg_packet self) -> unsigned char"},
+	 { (char *)"dvbt_mpeg_packet___eq__", (PyCFunction) _wrap_dvbt_mpeg_packet___eq__, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_mpeg_packet___eq__(dvbt_mpeg_packet self, dvbt_mpeg_packet other) -> bool"},
+	 { (char *)"dvbt_mpeg_packet___ne__", (PyCFunction) _wrap_dvbt_mpeg_packet___ne__, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_mpeg_packet___ne__(dvbt_mpeg_packet self, dvbt_mpeg_packet other) -> bool"},
+	 { (char *)"new_dvbt_mpeg_packet", _wrap_new_dvbt_mpeg_packet, METH_VARARGS, (char *)"new_dvbt_mpeg_packet() -> dvbt_mpeg_packet"},
+	 { (char *)"delete_dvbt_mpeg_packet", _wrap_delete_dvbt_mpeg_packet, METH_VARARGS, (char *)"delete_dvbt_mpeg_packet(dvbt_mpeg_packet self)"},
+	 { (char *)"dvbt_mpeg_packet_swigregister", dvbt_mpeg_packet_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_dvbt_pad_sptr", _wrap_new_dvbt_pad_sptr, METH_VARARGS, (char *)"\n"
 		"dvbt_pad_sptr()\n"
 		"new_dvbt_pad_sptr(dvbt_pad p) -> dvbt_pad_sptr\n"
@@ -6718,9 +7916,43 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"pad", _wrap_pad, METH_VARARGS, (char *)"\n"
 		"pad() -> dvbt_pad_sptr\n"
 		"\n"
-		"pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packet\n"
+		"put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet\n"
 		"\n"
 		"input: unsigned char; output: dvbt_mpeg_packet\n"
+		""},
+	 { (char *)"new_dvbt_depad_sptr", _wrap_new_dvbt_depad_sptr, METH_VARARGS, (char *)"\n"
+		"dvbt_depad_sptr()\n"
+		"new_dvbt_depad_sptr(dvbt_depad p) -> dvbt_depad_sptr\n"
+		""},
+	 { (char *)"dvbt_depad_sptr___deref__", _wrap_dvbt_depad_sptr___deref__, METH_VARARGS, (char *)"dvbt_depad_sptr___deref__(dvbt_depad_sptr self) -> dvbt_depad"},
+	 { (char *)"delete_dvbt_depad_sptr", _wrap_delete_dvbt_depad_sptr, METH_VARARGS, (char *)"delete_dvbt_depad_sptr(dvbt_depad_sptr self)"},
+	 { (char *)"dvbt_depad_sptr_work", (PyCFunction) _wrap_dvbt_depad_sptr_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"dvbt_depad_sptr_work(dvbt_depad_sptr self, int noutput_items, gr_vector_const_void_star input_items, \n"
+		"    gr_vector_void_star output_items) -> int\n"
+		""},
+	 { (char *)"dvbt_depad_sptr_reset", _wrap_dvbt_depad_sptr_reset, METH_VARARGS, (char *)"dvbt_depad_sptr_reset(dvbt_depad_sptr self)"},
+	 { (char *)"dvbt_depad_sptr_history", _wrap_dvbt_depad_sptr_history, METH_VARARGS, (char *)"dvbt_depad_sptr_history(dvbt_depad_sptr self) -> unsigned int"},
+	 { (char *)"dvbt_depad_sptr_output_multiple", _wrap_dvbt_depad_sptr_output_multiple, METH_VARARGS, (char *)"dvbt_depad_sptr_output_multiple(dvbt_depad_sptr self) -> int"},
+	 { (char *)"dvbt_depad_sptr_relative_rate", _wrap_dvbt_depad_sptr_relative_rate, METH_VARARGS, (char *)"dvbt_depad_sptr_relative_rate(dvbt_depad_sptr self) -> double"},
+	 { (char *)"dvbt_depad_sptr_start", _wrap_dvbt_depad_sptr_start, METH_VARARGS, (char *)"dvbt_depad_sptr_start(dvbt_depad_sptr self) -> bool"},
+	 { (char *)"dvbt_depad_sptr_stop", _wrap_dvbt_depad_sptr_stop, METH_VARARGS, (char *)"dvbt_depad_sptr_stop(dvbt_depad_sptr self) -> bool"},
+	 { (char *)"dvbt_depad_sptr_nitems_read", (PyCFunction) _wrap_dvbt_depad_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_depad_sptr_nitems_read(dvbt_depad_sptr self, unsigned int which_input) -> uint64_t"},
+	 { (char *)"dvbt_depad_sptr_nitems_written", (PyCFunction) _wrap_dvbt_depad_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_depad_sptr_nitems_written(dvbt_depad_sptr self, unsigned int which_output) -> uint64_t"},
+	 { (char *)"dvbt_depad_sptr_detail", _wrap_dvbt_depad_sptr_detail, METH_VARARGS, (char *)"dvbt_depad_sptr_detail(dvbt_depad_sptr self) -> gr_block_detail_sptr"},
+	 { (char *)"dvbt_depad_sptr_set_detail", (PyCFunction) _wrap_dvbt_depad_sptr_set_detail, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_depad_sptr_set_detail(dvbt_depad_sptr self, gr_block_detail_sptr detail)"},
+	 { (char *)"dvbt_depad_sptr_name", _wrap_dvbt_depad_sptr_name, METH_VARARGS, (char *)"dvbt_depad_sptr_name(dvbt_depad_sptr self) -> string"},
+	 { (char *)"dvbt_depad_sptr_input_signature", _wrap_dvbt_depad_sptr_input_signature, METH_VARARGS, (char *)"dvbt_depad_sptr_input_signature(dvbt_depad_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"dvbt_depad_sptr_output_signature", _wrap_dvbt_depad_sptr_output_signature, METH_VARARGS, (char *)"dvbt_depad_sptr_output_signature(dvbt_depad_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"dvbt_depad_sptr_unique_id", _wrap_dvbt_depad_sptr_unique_id, METH_VARARGS, (char *)"dvbt_depad_sptr_unique_id(dvbt_depad_sptr self) -> long"},
+	 { (char *)"dvbt_depad_sptr_to_basic_block", _wrap_dvbt_depad_sptr_to_basic_block, METH_VARARGS, (char *)"dvbt_depad_sptr_to_basic_block(dvbt_depad_sptr self) -> gr_basic_block_sptr"},
+	 { (char *)"dvbt_depad_sptr_check_topology", (PyCFunction) _wrap_dvbt_depad_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_depad_sptr_check_topology(dvbt_depad_sptr self, int ninputs, int noutputs) -> bool"},
+	 { (char *)"dvbt_depad_sptr_swigregister", dvbt_depad_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"depad", _wrap_depad, METH_VARARGS, (char *)"\n"
+		"depad() -> dvbt_depad_sptr\n"
+		"\n"
+		"remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char\n"
+		"\n"
+		"input: dvbt_mpeg_packet; output: unsigned char\n"
 		""},
 	 { NULL, NULL, 0, NULL }
 };
@@ -6728,6 +7960,12 @@ static PyMethodDef SwigMethods[] = {
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
+static void *_p_dvbt_depadTo_p_gr_sync_interpolator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_interpolator *)  ((dvbt_depad *) x));
+}
+static void *_p_dvbt_depadTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *) (gr_sync_interpolator *) ((dvbt_depad *) x));
+}
 static void *_p_dvbt_padTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *) (gr_sync_decimator *) ((dvbt_pad *) x));
 }
@@ -6736,6 +7974,9 @@ static void *_p_gr_sync_decimatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM
 }
 static void *_p_gr_sync_interpolatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((gr_sync_interpolator *) x));
+}
+static void *_p_dvbt_depadTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *)(gr_sync_interpolator *) ((dvbt_depad *) x));
 }
 static void *_p_dvbt_padTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *)(gr_sync_decimator *) ((dvbt_pad *) x));
@@ -6758,6 +7999,9 @@ static void *_p_gr_sync_interpolatorTo_p_gr_basic_block(void *x, int *SWIGUNUSED
 static void *_p_gr_top_blockTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_hier_block2 *) ((gr_top_block *) x));
 }
+static void *_p_dvbt_depadTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_block *) (gr_sync_block *)(gr_sync_interpolator *) ((dvbt_depad *) x));
+}
 static void *_p_dvbt_padTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *)(gr_sync_decimator *) ((dvbt_pad *) x));
 }
@@ -6774,6 +8018,7 @@ static void *_p_dvbt_padTo_p_gr_sync_decimator(void *x, int *SWIGUNUSEDPARM(newm
     return (void *)((gr_sync_decimator *)  ((dvbt_pad *) x));
 }
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_depad_t = {"_p_boost__shared_ptrT_dvbt_depad_t", "boost::shared_ptr< dvbt_depad > *|dvbt_depad_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_pad_t = {"_p_boost__shared_ptrT_dvbt_pad_t", "boost::shared_ptr< dvbt_pad > *|dvbt_pad_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_basic_block_t = {"_p_boost__shared_ptrT_gr_basic_block_t", "boost::shared_ptr< gr_basic_block > *|gr_basic_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_block_detail_t = {"_p_boost__shared_ptrT_gr_block_detail_t", "boost::shared_ptr< gr_block_detail > *|gr_block_detail_sptr *", 0, 0, (void*)0, 0};
@@ -6789,14 +8034,16 @@ static swig_type_info _swigt__p_boost__shared_ptrT_gr_single_threaded_scheduler_
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_top_block_t = {"_p_boost__shared_ptrT_gr_top_block_t", "boost::shared_ptr< gr_top_block > *|gr_top_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_dvbt_depad = {"_p_dvbt_depad", "dvbt_depad *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_dvbt_mpeg_packet = {"_p_dvbt_mpeg_packet", "dvbt_mpeg_packet *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_dvbt_pad = {"_p_dvbt_pad", "dvbt_pad *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_basic_block = {"_p_gr_basic_block", "gr_basic_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_hier_block2 = {"_p_gr_hier_block2", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_gr_sync_interpolator = {"_p_gr_sync_interpolator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_top_block = {"_p_gr_top_block", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_block = {"_p_gr_block", "gr_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_sync_block = {"_p_gr_sync_block", "gr_sync_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_sync_decimator = {"_p_gr_sync_decimator", "gr_sync_decimator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr_sync_interpolator = {"_p_gr_sync_interpolator", "gr_sync_interpolator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_vector_const_void_star = {"_p_gr_vector_const_void_star", "gr_vector_const_void_star *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_vector_int = {"_p_gr_vector_int", "gr_vector_int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_vector_void_star = {"_p_gr_vector_void_star", "gr_vector_void_star *", 0, 0, (void*)0, 0};
@@ -6807,11 +8054,13 @@ static swig_type_info _swigt__p_std__complexT_double_t = {"_p_std__complexT_doub
 static swig_type_info _swigt__p_std__complexT_float_t = {"_p_std__complexT_float_t", "std::complex< float > *|gr_complex *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__invalid_argument = {"_p_std__invalid_argument", "std::invalid_argument *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_swig__SwigPyIterator = {"_p_swig__SwigPyIterator", "swig::SwigPyIterator *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_long_long = {"_p_unsigned_long_long", "uint64_t *|unsigned long long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_allocator_type,
+  &_swigt__p_boost__shared_ptrT_dvbt_depad_t,
   &_swigt__p_boost__shared_ptrT_dvbt_pad_t,
   &_swigt__p_boost__shared_ptrT_gr_basic_block_t,
   &_swigt__p_boost__shared_ptrT_gr_block_detail_t,
@@ -6827,6 +8076,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_gr_top_block_t,
   &_swigt__p_char,
   &_swigt__p_difference_type,
+  &_swigt__p_dvbt_depad,
+  &_swigt__p_dvbt_mpeg_packet,
   &_swigt__p_dvbt_pad,
   &_swigt__p_gr_basic_block,
   &_swigt__p_gr_block,
@@ -6845,11 +8096,13 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_std__complexT_float_t,
   &_swigt__p_std__invalid_argument,
   &_swigt__p_swig__SwigPyIterator,
+  &_swigt__p_unsigned_char,
   &_swigt__p_unsigned_long_long,
   &_swigt__p_value_type,
 };
 
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_depad_t[] = {  {&_swigt__p_boost__shared_ptrT_dvbt_depad_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_pad_t[] = {  {&_swigt__p_boost__shared_ptrT_dvbt_pad_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_basic_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_basic_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_block_detail_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_block_detail_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -6865,14 +8118,16 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_gr_single_threaded_scheduler_
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_top_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_top_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_dvbt_depad[] = {  {&_swigt__p_dvbt_depad, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_dvbt_mpeg_packet[] = {  {&_swigt__p_dvbt_mpeg_packet, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_dvbt_pad[] = {  {&_swigt__p_dvbt_pad, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_hier_block2[] = {{&_swigt__p_gr_hier_block2, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_sync_interpolator[] = {{&_swigt__p_gr_sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_top_block[] = {{&_swigt__p_gr_top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_decimator[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_decimator, 0, 0},  {&_swigt__p_gr_sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_sync_interpolator[] = {  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_sync_interpolator, 0, 0},  {&_swigt__p_gr_sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_const_void_star[] = {  {&_swigt__p_gr_vector_const_void_star, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_int[] = {  {&_swigt__p_gr_vector_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_void_star[] = {  {&_swigt__p_gr_vector_void_star, 0, 0, 0},{0, 0, 0, 0}};
@@ -6883,11 +8138,13 @@ static swig_cast_info _swigc__p_std__complexT_double_t[] = {  {&_swigt__p_std__c
 static swig_cast_info _swigc__p_std__complexT_float_t[] = {  {&_swigt__p_std__complexT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__invalid_argument[] = {  {&_swigt__p_std__invalid_argument, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_swig__SwigPyIterator[] = {  {&_swigt__p_swig__SwigPyIterator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_allocator_type,
+  _swigc__p_boost__shared_ptrT_dvbt_depad_t,
   _swigc__p_boost__shared_ptrT_dvbt_pad_t,
   _swigc__p_boost__shared_ptrT_gr_basic_block_t,
   _swigc__p_boost__shared_ptrT_gr_block_detail_t,
@@ -6903,6 +8160,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_gr_top_block_t,
   _swigc__p_char,
   _swigc__p_difference_type,
+  _swigc__p_dvbt_depad,
+  _swigc__p_dvbt_mpeg_packet,
   _swigc__p_dvbt_pad,
   _swigc__p_gr_basic_block,
   _swigc__p_gr_block,
@@ -6921,6 +8180,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_std__complexT_float_t,
   _swigc__p_std__invalid_argument,
   _swigc__p_swig__SwigPyIterator,
+  _swigc__p_unsigned_char,
   _swigc__p_unsigned_long_long,
   _swigc__p_value_type,
 };
@@ -7608,15 +8868,7 @@ SWIG_init(void) {
   
   SWIG_InstallConstants(d,swig_const_table);
   
-  PyDict_SetItemString(md,(char*)"cvar", SWIG_globals());
-  SWIG_addvarlink(SWIG_globals(),(char*)"PRBS_PERIOD",Swig_var_PRBS_PERIOD_get, Swig_var_PRBS_PERIOD_set);
-  SWIG_addvarlink(SWIG_globals(),(char*)"MPEG_SYNC_BYTE",Swig_var_MPEG_SYNC_BYTE_get, Swig_var_MPEG_SYNC_BYTE_set);
-  SWIG_addvarlink(SWIG_globals(),(char*)"MPEG_INVERTED_SYNC_BYTE",Swig_var_MPEG_INVERTED_SYNC_BYTE_get, Swig_var_MPEG_INVERTED_SYNC_BYTE_set);
-  SWIG_addvarlink(SWIG_globals(),(char*)"DVBT_MPEG_DATA_LENGTH",Swig_var_DVBT_MPEG_DATA_LENGTH_get, Swig_var_DVBT_MPEG_DATA_LENGTH_set);
-  SWIG_addvarlink(SWIG_globals(),(char*)"DVBT_MPEG_HEADER_LENGTH",Swig_var_DVBT_MPEG_HEADER_LENGTH_get, Swig_var_DVBT_MPEG_HEADER_LENGTH_set);
-  SWIG_addvarlink(SWIG_globals(),(char*)"DVBT_MPEG_PACKET_LENGTH",Swig_var_DVBT_MPEG_PACKET_LENGTH_get, Swig_var_DVBT_MPEG_PACKET_LENGTH_set);
-  SWIG_addvarlink(SWIG_globals(),(char*)"DVBT_SUPER_FRAME_LENGTH",Swig_var_DVBT_SUPER_FRAME_LENGTH_get, Swig_var_DVBT_SUPER_FRAME_LENGTH_set);
-  SWIG_addvarlink(SWIG_globals(),(char*)"DVBT_MPEG_RS_ENCODED_LENGTH",Swig_var_DVBT_MPEG_RS_ENCODED_LENGTH_get, Swig_var_DVBT_MPEG_RS_ENCODED_LENGTH_set);
+  SWIG_Python_SetConstant(d, "dvbt_mpeg_packet_NPAD",SWIG_From_int(static_cast< int >(dvbt_mpeg_packet::NPAD)));
 #if PY_VERSION_HEX >= 0x03000000
   return m;
 #else

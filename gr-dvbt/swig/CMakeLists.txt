@@ -24,8 +24,8 @@ include(GrPython)
 include(GrSwig)
 
 set(GR_SWIG_INCLUDE_DIRS
-    ${GR_DVBT_INCLUDE_DIRS}
-    ${GNURADIO_CORE_SWIG_INCLUDE_DIRS}
+    	${GR_DVBT_INCLUDE_DIRS}
+    	${GNURADIO_CORE_SWIG_INCLUDE_DIRS}
 )
 
 set(GR_SWIG_DOC_FILE ${CMAKE_CURRENT_BINARY_DIR}/dvbt_swig_doc.i)
@@ -36,15 +36,15 @@ set(GR_SWIG_LIBRARIES gnuradio-dvbt)
 GR_SWIG_MAKE(dvbt_swig dvbt_swig.i)
 
 GR_SWIG_INSTALL(
-    TARGETS dvbt_swig
-    DESTINATION ${GR_PYTHON_DIR}/gnuradio/dvbt
-    COMPONENT "dvbt_python"
+    	TARGETS dvbt_swig
+    	DESTINATION ${GR_PYTHON_DIR}/gnuradio/dvbt
+    	COMPONENT "dvbt_python"
 )
 
 install(
-    FILES
-    dvbt_swig.i
-    ${CMAKE_CURRENT_BINARY_DIR}/dvbt_swig_doc.i
-    DESTINATION ${GR_INCLUDE_DIR}/gnuradio/swig
-    COMPONENT "dvbt_swig"
+    	FILES
+    	dvbt_swig.i
+    	${CMAKE_CURRENT_BINARY_DIR}/dvbt_swig_doc.i
+    	DESTINATION ${GR_INCLUDE_DIR}/gnuradio/swig
+    	COMPONENT "dvbt_swig"
 )

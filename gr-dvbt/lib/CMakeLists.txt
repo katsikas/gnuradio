@@ -21,10 +21,10 @@
 # Setup the include and linker paths
 ########################################################################
 include_directories(
-    ${GNURADIO_CORE_INCLUDE_DIRS}
-    ${GR_DVBT_INCLUDE_DIRS}
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_BINARY_DIR}
+    	${GNURADIO_CORE_INCLUDE_DIRS}
+    	${GR_DVBT_INCLUDE_DIRS}
+    	${CMAKE_CURRENT_SOURCE_DIR}
+    	${CMAKE_CURRENT_BINARY_DIR}
 )
 
 include_directories(${DVBT_INCLUDE_DIRS})
@@ -37,13 +37,14 @@ link_directories(${Boost_LIBRARY_DIRS})
 # Setup library
 ########################################################################
 list(APPEND dvbt_sources
-  dvbt_pad.cc
+	dvbt_pad.cc
+  	dvbt_depad.cc
 )
 
 list(APPEND dvbt_libs
-    gnuradio-core
-    ${Boost_LIBRARIES}
-    ${DVBT_LIBRARIES}
+    	gnuradio-core
+    	${Boost_LIBRARIES}
+    	${DVBT_LIBRARIES}
 )
 
 add_library(gnuradio-dvbt SHARED ${dvbt_sources})

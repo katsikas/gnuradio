@@ -59,12 +59,15 @@ gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_block.h
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_depad.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_consts.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_api.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_pad.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_interpolator.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_complex.h
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_types.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: /usr/include/stdint.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/swig/dvbt_swig.i
@@ -84,6 +87,7 @@ gr-dvbt/swig/dvbt_swig.py: gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_consts.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_types.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_depad.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
 gr-dvbt/swig/dvbt_swig_doc.i: gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
@@ -100,6 +104,7 @@ gr-dvbt/swig/dvbt_swig.tag: gr-dvbt/swig/_dvbt_swig_swig_tag
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_consts.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_types.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_depad.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: gr-dvbt/swig/_dvbt_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)

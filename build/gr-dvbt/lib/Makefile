@@ -180,6 +180,30 @@ gnuradio-dvbt/fast:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build
 .PHONY : gnuradio-dvbt/fast
 
+dvbt_depad.o: dvbt_depad.cc.o
+.PHONY : dvbt_depad.o
+
+# target to build an object file
+dvbt_depad.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o
+.PHONY : dvbt_depad.cc.o
+
+dvbt_depad.i: dvbt_depad.cc.i
+.PHONY : dvbt_depad.i
+
+# target to preprocess a source file
+dvbt_depad.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.i
+.PHONY : dvbt_depad.cc.i
+
+dvbt_depad.s: dvbt_depad.cc.s
+.PHONY : dvbt_depad.s
+
+# target to generate assembly for a file
+dvbt_depad.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.s
+.PHONY : dvbt_depad.cc.s
+
 dvbt_pad.o: dvbt_pad.cc.o
 .PHONY : dvbt_pad.o
 
@@ -220,6 +244,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... dvbt_depad.o"
+	@echo "... dvbt_depad.i"
+	@echo "... dvbt_depad.s"
 	@echo "... dvbt_pad.o"
 	@echo "... dvbt_pad.i"
 	@echo "... dvbt_pad.s"

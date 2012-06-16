@@ -19,11 +19,14 @@
  * the Free Software Foundation, Inc., 51 Franklin Street,
  * Boston, MA 02110-1301, USA.
  */
+
+
 #ifndef INCLUDED_DVBT_PAD_H
 #define INCLUDED_DVBT_PAD_H
 
 #include <dvbt/dvbt_api.h>
 #include <gr_sync_decimator.h>
+
 
 class dvbt_pad;
 typedef boost::shared_ptr<dvbt_pad> dvbt_pad_sptr;
@@ -31,7 +34,7 @@ typedef boost::shared_ptr<dvbt_pad> dvbt_pad_sptr;
 DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 /*!
- * \brief pad mpeg ts packets from 188 byte char to
+ * \brief put 4 bytes header and pad mpeg ts packets from 184 byte char to
  * to 256 byte dvbt_mpeg_packet
  * \ingroup dvbt
  *
@@ -39,17 +42,17 @@ DVBT_API dvbt_pad_sptr dvbt_make_pad();
  */
 class DVBT_API dvbt_pad : public gr_sync_decimator
 {
-  friend DVBT_API dvbt_pad_sptr dvbt_make_pad();
+  	friend DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
-  dvbt_pad();
+  	dvbt_pad();
 
 public:
-  void forecast (int noutput_items, gr_vector_int &ninput_items_required);
-  int work (int noutput_items,
-	    gr_vector_const_void_star &input_items,
-	    gr_vector_void_star &output_items);
+	void forecast (int noutput_items, gr_vector_int &ninput_items_required);
+  	int work (int noutput_items,
+	    		gr_vector_const_void_star &input_items,
+	    		gr_vector_void_star &output_items);
 
-  void reset() { /* nop */ }
+  	void reset() { /* nop */ }
 };
 
 

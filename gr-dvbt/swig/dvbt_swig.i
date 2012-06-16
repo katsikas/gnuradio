@@ -29,11 +29,14 @@
 
 %{
 #include "dvbt/dvbt_pad.h"
-#include "dvbt/dvbt_consts.h"
+#include "dvbt/dvbt_depad.h"
+#include "dvbt/dvbt_types.h"
 %}
 
 %include "dvbt/dvbt_pad.h"
-%include "dvbt/dvbt_consts.h"
+%include "dvbt/dvbt_depad.h"
+%include "dvbt/dvbt_types.h"
+
 
 
 // ----------------------------------------------------------------
@@ -43,11 +46,26 @@ dvbt_pad_sptr dvbt_make_pad();
 
 class dvbt_pad : public gr_sync_decimator
 {
-  dvbt_pad();
+	dvbt_pad();
 
 public:
-  void reset();
-
+  	void reset();
 };
+
+
+// ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,depad);
+
+dvbt_depad_sptr dvbt_make_depad();
+
+class dvbt_depad : public gr_sync_interpolator
+{
+  	dvbt_depad();
+
+public:
+  	void reset();
+};
+
+
 // ----------------------------------------------------------------
 

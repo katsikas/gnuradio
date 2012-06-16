@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.o"
+  "CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o"
   "libgnuradio-dvbt-3.6.1git.pdb"
   "libgnuradio-dvbt-3.6.1git.so"
   "libgnuradio-dvbt-3.6.1git.so.0.0.0"
