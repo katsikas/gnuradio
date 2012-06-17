@@ -70,7 +70,7 @@ gr_core_api.h
 gr_block.h
 -
 
-../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
+../gnuradio-core/src/lib/runtime/gr_sync_interpolator.h
 gr_core_api.h
 -
 gr_sync_block.h
@@ -102,10 +102,10 @@ gruel/attributes.h
 
 ../gr-dvbt/include/dvbt/dvbt_consts.h
 
-../gr-dvbt/include/dvbt/dvbt_pad.h
+../gr-dvbt/include/dvbt/dvbt_depad.h
 dvbt/dvbt_api.h
 -
-gr_sync_decimator.h
+gr_sync_interpolator.h
 -
 
 ../gr-dvbt/include/dvbt/dvbt_types.h
@@ -154,10 +154,12 @@ gruel/pmt_sugar.h
 
 ../gruel/src/include/gruel/pmt_sugar.h
 
-/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_pad.cc
+/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_depad.cc
 config.h
 -
-dvbt/dvbt_pad.h
+stdio.h
+-
+dvbt/dvbt_depad.h
 -
 dvbt/dvbt_types.h
 -

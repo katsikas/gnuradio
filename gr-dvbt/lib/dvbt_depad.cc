@@ -51,18 +51,26 @@ dvbt_depad::work (int noutput_items,
 		  gr_vector_void_star &output_items)
 {
 	int i = 0;
-	int j = 0;
-	unsigned char* temp = new unsigned char[DVBT_MPEG_DATA_LENGTH];
+	//int j = 0;
+	//unsigned char* temp = new unsigned char[DVBT_MPEG_DATA_LENGTH];
   	const dvbt_mpeg_packet *in = (const dvbt_mpeg_packet *) input_items[0];
   	unsigned char *out = (unsigned char *) output_items[0];
 
-  	for (i = 0; i < noutput_items/DVBT_MPEG_PACKET_LENGTH; i++){
-    		//memcpy(&out[i * DVBT_MPEG_PACKET_LENGTH], in[i].data, DVBT_MPEG_PACKET_LENGTH);
+
+  	/*for (i = 0; i < noutput_items/DVBT_MPEG_DATA_LENGTH; i++){
 		for(j = 0; j < DVBT_MPEG_DATA_LENGTH; j++){
   			temp[j] = in[i].data[j+4];
 		}
+		/*for(int k=0;k<184;k++){
+			printf("%c",temp[k]);
+		}
 		memcpy(&out[i * DVBT_MPEG_DATA_LENGTH], temp, DVBT_MPEG_DATA_LENGTH);
-	}
+	}*/
+
+	for (i = 0; i < noutput_items/DVBT_MPEG_DATA_LENGTH; i++){
+    		memcpy(&out[i * DVBT_MPEG_DATA_LENGTH], in[i].data+4, DVBT_MPEG_DATA_LENGTH);
+  	}
+
 
   	return i * DVBT_MPEG_DATA_LENGTH;
 }

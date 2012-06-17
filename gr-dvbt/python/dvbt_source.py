@@ -52,7 +52,7 @@ class dvbt_source(gr.hier_block2):
                 #src = gr.vector_source_b(ts,False,1)
 		#########################################################
 
-		src = gr.file_source(gr.sizeof_char*1, file, True)
+		src = gr.file_source(gr.sizeof_char*1, file, False)
 		pad = dvbt_swig.pad()
 
         	gr.hier_block2.__init__(self, "dvbt_source",
