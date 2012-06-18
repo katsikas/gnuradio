@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="dvbt__depad_8h" kind="file">
     <compoundname>dvbt_depad.h</compoundname>
     <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
     <includes local="no">gr_sync_interpolator.h</includes>
     <incdepgraph>
-      <node id="10">
+      <node id="16">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="11">
+      <node id="17">
         <label>gr_sync_interpolator.h</label>
       </node>
-      <node id="8">
+      <node id="14">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h</label>
         <link refid="dvbt_depad.h"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="15">
         <label>dvbt/dvbt_api.h</label>
         <link refid="dvbt__api_8h"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -44,7 +44,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__depad_8h_1a8a8bf60b298c9511755540a362afbb89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__depad_8h_1a626bfd393c886e0d822d1d8281440004" kindref="member">dvbt_depad_sptr</ref></type>
+        <type>DVBT_API <ref refid="dvbt__depad_8h_1a626bfd393c886e0d822d1d8281440004" kindref="member">dvbt_depad_sptr</ref></type>
         <definition>DVBT_API dvbt_depad_sptr dvbt_make_depad</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_depad</name>

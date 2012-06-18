@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classqtgui__sink__f" kind="class" prot="public">
     <compoundname>qtgui_sink_f</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -32,7 +32,7 @@
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="76" bodyfile="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classqtgui__sink__f_1adf5a26caa341c4509ebc0a1337a2e467" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; float &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt;</type>
         <definition>std::vector&lt;float&gt; qtgui_sink_f::d_window</definition>
         <argsstring></argsstring>
         <name>d_window</name>
@@ -245,7 +245,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classqtgui__sink__f_1af3ae39fd1230ebc651a3e853765fabfd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_sink_f_sptr</ref></type>
+        <type>friend GR_QTGUI_API <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_sink_f_sptr</ref></type>
         <definition>GR_QTGUI_API qtgui_sink_f_sptr qtgui_make_sink_f</definition>
         <argsstring>(int fftsize, int wintype, double fc, double bw, const std::string &amp;name, bool plotfreq, bool plotwaterfall, bool plottime, bool plotconst, QWidget *parent)</argsstring>
         <name>qtgui_make_sink_f</name>
@@ -353,7 +353,7 @@
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="69"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a21bc5dc531c6710b44a5cffc0e56ecc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -363,7 +363,7 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items_required</declname>
         </param>
         <briefdescription>
@@ -390,7 +390,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="71"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ab9fd82b54db5532f3921afae6f5b3b4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::initialize</definition>
         <argsstring>()</argsstring>
         <name>initialize</name>
@@ -403,7 +403,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="73"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1aaf58e319f79779526fd898192369497d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::windowreset</definition>
         <argsstring>()</argsstring>
         <name>windowreset</name>
@@ -416,7 +416,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="95"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ad733e1818f82def97b509672657824f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::buildwindow</definition>
         <argsstring>()</argsstring>
         <name>buildwindow</name>
@@ -429,7 +429,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="96"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a5c57e203560ead733e7ad06db3141970" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::fftresize</definition>
         <argsstring>()</argsstring>
         <name>fftresize</name>
@@ -442,7 +442,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="97"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ab8a164c1d2f5e16d4a76797f9d45f04e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::fft</definition>
         <argsstring>(const float *data_in, int size)</argsstring>
         <name>fft</name>
@@ -478,7 +478,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="101"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a1dd0ef494fdb3f436ae0e965a2906cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::exec_</definition>
         <argsstring>()</argsstring>
         <name>exec_</name>
@@ -517,7 +517,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="104"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a51726c4f164e36583dd0b21055960175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_frequency_range</definition>
         <argsstring>(const double centerfreq, const double bandwidth)</argsstring>
         <name>set_frequency_range</name>
@@ -538,7 +538,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="107"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ad3247dc9ab0f0e257506f80fd0fb3bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_time_domain_axis</definition>
         <argsstring>(double min, double max)</argsstring>
         <name>set_time_domain_axis</name>
@@ -559,7 +559,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="109"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1aec34b1d983719c5d31549b2383b91fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_constellation_axis</definition>
         <argsstring>(double xmin, double xmax, double ymin, double ymax)</argsstring>
         <name>set_constellation_axis</name>
@@ -588,7 +588,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="111"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a9a3f81327303ab0d7824648e812ea15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_constellation_pen_size</definition>
         <argsstring>(int size)</argsstring>
         <name>set_constellation_pen_size</name>
@@ -605,7 +605,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="112"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1af5a2d4ed7c3a53690c86a8aca1e7fa7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_frequency_axis</definition>
         <argsstring>(double min, double max)</argsstring>
         <name>set_frequency_axis</name>
@@ -626,7 +626,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="113"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1adfab096988fd615c70fac08dec0d919d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_update_time</definition>
         <argsstring>(double t)</argsstring>
         <name>set_update_time</name>
@@ -653,15 +653,15 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -708,88 +708,232 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7014">
+      <node id="15665">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7015" relation="public-inheritance">
+        <childnode refid="15666" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7012">
+      <node id="15663">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7013" relation="public-inheritance">
+        <childnode refid="15664" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7011">
+      <node id="15662">
         <label>qtgui_sink_f</label>
         <link refid="classqtgui__sink__f"/>
-        <childnode refid="7012" relation="public-inheritance">
+        <childnode refid="15663" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7015">
+      <node id="15666">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7013">
+      <node id="15664">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7014" relation="public-inheritance">
+        <childnode refid="15665" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7019">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="7020" relation="public-inheritance">
+      <node id="15687">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="15681" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="7017">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="7018" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7016">
-        <label>qtgui_sink_f</label>
-        <link refid="classqtgui__sink__f"/>
-        <childnode refid="7017" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7021">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="15680">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7022" relation="usage">
+        <childnode refid="15681" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7024">
+      <node id="15692">
+        <label>T</label>
+      </node>
+      <node id="15670">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="15671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15695">
+        <label>std::vector&lt; float &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="15693">
+        <label>gri_fft_complex</label>
+        <link refid="classgri__fft__complex"/>
+        <childnode refid="15694" relation="usage">
+          <edgelabel>d_inbuf</edgelabel>
+          <edgelabel>d_outbuf</edgelabel>
+        </childnode>
+      </node>
+      <node id="15681">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="15682" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="15689">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="15684">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="15668">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="15669" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15677" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="15677">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15678" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15691">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15692" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15667">
+        <label>qtgui_sink_f</label>
+        <link refid="classqtgui__sink__f"/>
+        <childnode refid="15668" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15693" relation="usage">
+          <edgelabel>d_fft</edgelabel>
+        </childnode>
+        <childnode refid="15675" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+        <childnode refid="15695" relation="usage">
+          <edgelabel>d_window</edgelabel>
+        </childnode>
+      </node>
+      <node id="15678">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="15679" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="15688" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="15690" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="15685">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="15686" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15672">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15673" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15683">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="15684" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="15685" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="15687" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="15676">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7020">
+      <node id="15679">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="15680" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15671">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7022">
+      <node id="15694">
+        <label>std::complex</label>
+      </node>
+      <node id="15682">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15683" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15686">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="15688">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="15689" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="15690">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="15691" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15673">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="15674" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="7018">
+      <node id="15669">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="15670" relation="public-inheritance">
         </childnode>
-        <childnode refid="7021" relation="usage">
+        <childnode refid="15672" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7023" relation="usage">
+        <childnode refid="15675" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7023">
+      <node id="15674">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="15675">
         <label>std::string</label>
-        <childnode refid="7024" relation="public-inheritance">
+        <childnode refid="15676" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -875,7 +1019,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>qtgui_sink_f</scope><name>set_relative_rate</name></member>

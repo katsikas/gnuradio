@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__pfb__arb__resampler__ccf" kind="class" prot="public">
     <compoundname>gr_pfb_arb_resampler_ccf</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
     <includes refid="gr__pfb__arb__resampler__ccf_8h" local="no">gr_pfb_arb_resampler_ccf.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classgr__pfb__arb__resampler__ccf_1ab1e4ae04f6e5284cec6644716c10d73b" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; gr_fir_ccf * &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf*&gt; gr_pfb_arb_resampler_ccf::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -19,7 +19,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" line="116" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__arb__resampler__ccf_1abb21dffd90da6006915a857962e70fe9" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; gr_fir_ccf * &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf*&gt; gr_pfb_arb_resampler_ccf::d_diff_filters</definition>
         <argsstring></argsstring>
         <name>d_diff_filters</name>
@@ -32,7 +32,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" line="117" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__arb__resampler__ccf_1a8e783086f8bd37adc9bcc1facf7f1405" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;float&gt; &gt; gr_pfb_arb_resampler_ccf::d_taps</definition>
         <argsstring></argsstring>
         <name>d_taps</name>
@@ -45,7 +45,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" line="118" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__arb__resampler__ccf_1a50c524f45588f3ce61788f4507e5dc98" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;float&gt; &gt; gr_pfb_arb_resampler_ccf::d_dtaps</definition>
         <argsstring></argsstring>
         <name>d_dtaps</name>
@@ -164,7 +164,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pfb__arb__resampler__ccf_1a7037e124d74e3803f732d3982fdcd2ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_arb_resampler_ccf_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_arb_resampler_ccf_sptr</ref></type>
         <definition>GR_CORE_API gr_pfb_arb_resampler_ccf_sptr gr_make_pfb_arb_resampler_ccf</definition>
         <argsstring>(float rate, const std::vector&lt; float &gt; &amp;taps, unsigned int filter_size)</argsstring>
         <name>gr_make_pfb_arb_resampler_ccf</name>
@@ -173,7 +173,7 @@
           <declname>rate</declname>
         </param>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -222,7 +222,7 @@
           <declname>rate</declname>
         </param>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -260,16 +260,16 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" line="140"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__arb__resampler__ccf_1aceb7bfba388c815451ce501aada94242" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_arb_resampler_ccf::create_diff_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;newtaps, std::vector&lt; float &gt; &amp;difftaps)</argsstring>
         <name>create_diff_taps</name>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>newtaps</declname>
         </param>
         <param>
-          <type>std::vector&lt; float &gt; &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>difftaps</declname>
         </param>
         <briefdescription>
@@ -281,20 +281,20 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" line="143"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__arb__resampler__ccf_1a8340cc27186c92a99f890b6463cd2c08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_arb_resampler_ccf::create_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;newtaps, std::vector&lt; std::vector&lt; float &gt; &gt; &amp;ourtaps, std::vector&lt; gr_fir_ccf * &gt; &amp;ourfilter)</argsstring>
         <name>create_taps</name>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>newtaps</declname>
         </param>
         <param>
-          <type>std::vector&lt; std::vector&lt; float &gt; &gt; &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt; &amp;</type>
           <declname>ourtaps</declname>
         </param>
         <param>
-          <type>std::vector&lt; gr_fir_ccf * &gt; &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt; &amp;</type>
           <declname>ourfilter</declname>
         </param>
         <briefdescription>
@@ -343,7 +343,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" line="158"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__arb__resampler__ccf_1a6750f5b1232fe85982e30f20efdf87db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_arb_resampler_ccf::print_taps</definition>
         <argsstring>()</argsstring>
         <name>print_taps</name>
@@ -356,7 +356,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_ccf.h" line="165"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__arb__resampler__ccf_1ac5fa86f9ca6a1e076ece4d218ff62e42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_arb_resampler_ccf::set_rate</definition>
         <argsstring>(float rate)</argsstring>
         <name>set_rate</name>
@@ -384,15 +384,15 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -440,88 +440,243 @@ general_work must call consume or consume_each to indicate how many items were c
 <para>This block takes in a signal stream and performs arbitrary resampling. The resampling rate can be any real number <emphasis>r</emphasis>. The resampling is done by constructing <emphasis>N</emphasis> filters where <emphasis>N</emphasis> is the interpolation rate. We then calculate <emphasis>D</emphasis> where <emphasis>D = floor(N/r)</emphasis>.</para><para>Using <emphasis>N</emphasis> and <emphasis>D</emphasis>, we can perform rational resampling where <emphasis>N/D</emphasis> is a rational number close to the input rate <emphasis>r</emphasis> where we have <emphasis>N</emphasis> filters and we cycle through them as a polyphase filterbank with a stride of <emphasis>D</emphasis> so that <emphasis>i+1 = (i + D) % N</emphasis>.</para><para>To get the arbitrary rate, we want to interpolate between two points. For each value out, we take an output from the current filter, <emphasis>i</emphasis>, and the next filter <emphasis>i+1</emphasis> and then linearly interpolate between the two based on the real resampling rate we want.</para><para>The linear interpolation only provides us with an approximation to the real sampling rate specified. The error is a quantization error between the two filters we used as our interpolation points. To this end, the number of filters, <emphasis>N</emphasis>, used determines the quantization error; the larger <emphasis>N</emphasis>, the smaller the noise. You can design for a specified noise floor by setting the filter size (parameters <emphasis>filter_size</emphasis>). The size defaults to 32 filters, which is about as good as most implementations need.</para><para>The trick with designing this filter is in how to specify the taps of the prototype filter. Like the PFB interpolator, the taps are specified using the interpolated filter rate. In this case, that rate is the input sample rate multiplied by the number of filters in the filterbank, which is also the interpolation rate. All other values should be relative to this rate.</para><para>For example, for a 32-filter arbitrary resampler and using the GNU Radio&apos;s firdes utility to build the filter, we build a low-pass filter with a sampling rate of <emphasis>fs</emphasis>, a 3-dB bandwidth of <emphasis>BW</emphasis> and a transition bandwidth of <emphasis>TB</emphasis>. We can also specify the out-of-band attenuation to use, <emphasis>ATT</emphasis>, and the filter window function (a Blackman-harris window in this case). The first input is the gain of the filter, which we specify here as the interpolation rate (<emphasis>32</emphasis>).</para><para><bold><emphasis>self._taps = gr.firdes.low_pass_2(32, 32*fs, BW, TB, attenuation_dB=ATT, window=gr.firdes.WIN_BLACKMAN_hARRIS)</emphasis></bold></para><para>The theory behind this block can be found in Chapter 7.5 of the following book.</para><para><bold><emphasis>f. harris, &quot;Multirate Signal Processing for Communication
        Systems&quot;, Upper Saddle River, NJ: Prentice Hall, Inc. 2004.</emphasis></bold> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="4681">
+      <node id="10594">
         <label>gr_pfb_arb_resampler_ccf</label>
         <link refid="classgr__pfb__arb__resampler__ccf"/>
-        <childnode refid="4682" relation="public-inheritance">
+        <childnode refid="10595" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4684">
+      <node id="10597">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4685" relation="public-inheritance">
+        <childnode refid="10598" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4682">
+      <node id="10595">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4683" relation="public-inheritance">
+        <childnode refid="10596" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4685">
+      <node id="10598">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4683">
+      <node id="10596">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4684" relation="public-inheritance">
+        <childnode refid="10597" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4686">
+      <node id="10599">
         <label>gr_pfb_arb_resampler_ccf</label>
         <link refid="classgr__pfb__arb__resampler__ccf"/>
-        <childnode refid="4687" relation="public-inheritance">
+        <childnode refid="10600" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10625" relation="usage">
+          <edgelabel>d_filters</edgelabel>
+          <edgelabel>d_diff_filters</edgelabel>
+        </childnode>
+        <childnode refid="10628" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+          <edgelabel>d_dtaps</edgelabel>
         </childnode>
       </node>
-      <node id="4689">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="4690" relation="public-inheritance">
+      <node id="10619">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="10613" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="4687">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="4688" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4691">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="10612">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4692" relation="usage">
+        <childnode refid="10613" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4694">
+      <node id="10624">
+        <label>T</label>
+      </node>
+      <node id="10628">
+        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="10627" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10602">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="10603" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10627">
+        <label>std::vector&lt; float &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="10613">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="10614" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="10621">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="10616">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="10600">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="10601" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10609" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="10609">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="10610" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="10623">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="10624" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="10610">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="10611" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="10620" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="10622" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="10626">
+        <label>gr_fir_ccf</label>
+        <link refid="classgr__fir__ccf"/>
+        <childnode refid="10627" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+      </node>
+      <node id="10625">
+        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="10626" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10617">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="10618" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10604">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="10605" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="10615">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="10616" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="10617" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="10619" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="10608">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4690">
+      <node id="10611">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="10612" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10603">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4692">
+      <node id="10614">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="10615" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="10618">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="10620">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="10621" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="10622">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="10623" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10605">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="10606" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="4688">
+      <node id="10601">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4689" relation="public-inheritance">
+        <childnode refid="10602" relation="public-inheritance">
         </childnode>
-        <childnode refid="4691" relation="usage">
+        <childnode refid="10604" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4693" relation="usage">
+        <childnode refid="10607" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4693">
+      <node id="10606">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="10607">
         <label>std::string</label>
-        <childnode refid="4694" relation="public-inheritance">
+        <childnode refid="10608" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -594,7 +749,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_output_signature</name></member>
       <member refid="classgr__pfb__arb__resampler__ccf_1ac5fa86f9ca6a1e076ece4d218ff62e42" prot="public" virt="non-virtual"><scope>gr_pfb_arb_resampler_ccf</scope><name>set_rate</name></member>

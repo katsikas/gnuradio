@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__base__error__handler" kind="class" prot="public">
     <compoundname>gr_base_error_handler</compoundname>
     <basecompoundref refid="classgr__error__handler" prot="public" virt="non-virtual">gr_error_handler</basecompoundref>
@@ -76,7 +76,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="101" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" bodystart="101" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="classgr__base__error__handler_1a6d7cc692da78d6eeece40d0733e3998a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_base_error_handler::reset_counts</definition>
         <argsstring>()</argsstring>
         <name>reset_counts</name>
@@ -90,7 +90,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="102" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" bodystart="102" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classgr__base__error__handler_1a840a56a5d19b2269ea9328ba54bd4236" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_base_error_handler::count_error</definition>
         <argsstring>(seriousness s)</argsstring>
         <name>count_error</name>
@@ -113,31 +113,31 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2125">
+      <node id="4340">
         <label>gr_file_error_handler</label>
         <link refid="classgr__file__error__handler"/>
-        <childnode refid="2123" relation="public-inheritance">
+        <childnode refid="4338" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2123">
+      <node id="4338">
         <label>gr_base_error_handler</label>
         <link refid="classgr__base__error__handler"/>
-        <childnode refid="2124" relation="public-inheritance">
+        <childnode refid="4339" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2124">
+      <node id="4339">
         <label>gr_error_handler</label>
         <link refid="classgr__error__handler"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2126">
+      <node id="4341">
         <label>gr_base_error_handler</label>
         <link refid="classgr__base__error__handler"/>
-        <childnode refid="2127" relation="public-inheritance">
+        <childnode refid="4342" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2127">
+      <node id="4342">
         <label>gr_error_handler</label>
         <link refid="classgr__error__handler"/>
       </node>

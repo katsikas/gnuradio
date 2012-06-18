@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_utils_src_python_42d85.
-
-# Include the progress variables for this target.
-include gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_42d85.dir/progress.make
 
 gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_42d85: gr-utils/src/python/plot_data.pyc
 gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_42d85: gr-utils/src/python/plot_fft_base.pyc
@@ -60,7 +60,7 @@ gr-utils/src/python/plot_data.pyc: ../gr-utils/src/python/pyqt_plot.py
 gr-utils/src/python/plot_data.pyc: ../gr-utils/src/python/pyqt_filter.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating plot_data.pyc, plot_fft_base.pyc, plot_psd_base.pyc, pyqt_plot.pyc, pyqt_filter.pyc"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-utils/src/python/plot_data.py /home/katsikas/gnuradio/gr-utils/src/python/plot_fft_base.py /home/katsikas/gnuradio/gr-utils/src/python/plot_psd_base.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_plot.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_filter.py /home/katsikas/gnuradio/build/gr-utils/src/python/plot_data.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/plot_fft_base.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/plot_psd_base.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_plot.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_filter.pyc
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-utils/src/python/plot_data.py /home/katsikas/gnuradio/gr-utils/src/python/plot_fft_base.py /home/katsikas/gnuradio/gr-utils/src/python/plot_psd_base.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_plot.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_filter.py /home/katsikas/gnuradio/build/gr-utils/src/python/plot_data.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/plot_fft_base.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/plot_psd_base.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_plot.pyc /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_filter.pyc
 
 gr-utils/src/python/plot_fft_base.pyc: gr-utils/src/python/plot_data.pyc
 
@@ -77,7 +77,7 @@ gr-utils/src/python/plot_data.pyo: ../gr-utils/src/python/pyqt_plot.py
 gr-utils/src/python/plot_data.pyo: ../gr-utils/src/python/pyqt_filter.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating plot_data.pyo, plot_fft_base.pyo, plot_psd_base.pyo, pyqt_plot.pyo, pyqt_filter.pyo"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-utils/src/python/plot_data.py /home/katsikas/gnuradio/gr-utils/src/python/plot_fft_base.py /home/katsikas/gnuradio/gr-utils/src/python/plot_psd_base.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_plot.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_filter.py /home/katsikas/gnuradio/build/gr-utils/src/python/plot_data.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/plot_fft_base.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/plot_psd_base.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_plot.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_filter.pyo
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-utils/src/python/plot_data.py /home/katsikas/gnuradio/gr-utils/src/python/plot_fft_base.py /home/katsikas/gnuradio/gr-utils/src/python/plot_psd_base.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_plot.py /home/katsikas/gnuradio/gr-utils/src/python/pyqt_filter.py /home/katsikas/gnuradio/build/gr-utils/src/python/plot_data.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/plot_fft_base.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/plot_psd_base.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_plot.pyo /home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_filter.pyo
 
 gr-utils/src/python/plot_fft_base.pyo: gr-utils/src/python/plot_data.pyo
 

@@ -30,13 +30,14 @@
 %{
 #include "dvbt/dvbt_pad.h"
 #include "dvbt/dvbt_depad.h"
-#include "dvbt/dvbt_types.h"
+#include "dvbt/dvbt_randomizer.h"
+#include "dvbt/dvbt_derandomizer.h"
 %}
 
 %include "dvbt/dvbt_pad.h"
 %include "dvbt/dvbt_depad.h"
-%include "dvbt/dvbt_types.h"
-
+%include "dvbt/dvbt_randomizer.h"
+%include "dvbt/dvbt_derandomizer.h"
 
 
 // ----------------------------------------------------------------
@@ -68,4 +69,31 @@ public:
 
 
 // ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,randomizer);
 
+dvbt_randomizer_sptr dvbt_make_randomizer();
+
+class dvbt_randomizer : public gr_sync_block
+{
+	dvbt_randomizer();
+
+public:
+  	void reset();
+};
+
+
+// ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,derandomizer);
+
+dvbt_derandomizer_sptr dvbt_make_derandomizer();
+
+class dvbt_derandomizer : public gr_sync_block
+{
+	dvbt_derandomizer();
+
+public:
+  	void reset();
+};
+
+
+// ----------------------------------------------------------------

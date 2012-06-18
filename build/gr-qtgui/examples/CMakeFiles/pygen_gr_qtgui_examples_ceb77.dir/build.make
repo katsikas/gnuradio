@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_qtgui_examples_ceb77.
-
-# Include the progress variables for this target.
-include gr-qtgui/examples/CMakeFiles/pygen_gr_qtgui_examples_ceb77.dir/progress.make
 
 gr-qtgui/examples/CMakeFiles/pygen_gr_qtgui_examples_ceb77: gr-qtgui/examples/pyqt_example_c.py.exe
 gr-qtgui/examples/CMakeFiles/pygen_gr_qtgui_examples_ceb77: gr-qtgui/examples/pyqt_example_f.py.exe
@@ -50,22 +50,22 @@ gr-qtgui/examples/CMakeFiles/pygen_gr_qtgui_examples_ceb77: gr-qtgui/examples/py
 gr-qtgui/examples/pyqt_example_c.py.exe: ../gr-qtgui/examples/pyqt_example_c.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin pyqt_example_c.py"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_example_c.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_example_c.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_example_c.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_example_c.py' ) .read ( ) ) "
 
 gr-qtgui/examples/pyqt_example_f.py.exe: ../gr-qtgui/examples/pyqt_example_f.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin pyqt_example_f.py"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_example_f.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_example_f.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_example_f.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_example_f.py' ) .read ( ) ) "
 
 gr-qtgui/examples/pyqt_time_c.py.exe: ../gr-qtgui/examples/pyqt_time_c.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin pyqt_time_c.py"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_time_c.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_time_c.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_time_c.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_time_c.py' ) .read ( ) ) "
 
 gr-qtgui/examples/pyqt_time_f.py.exe: ../gr-qtgui/examples/pyqt_time_f.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin pyqt_time_f.py"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_time_f.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_time_f.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-qtgui/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_time_f.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-qtgui/examples/pyqt_time_f.py' ) .read ( ) ) "
 
 pygen_gr_qtgui_examples_ceb77: gr-qtgui/examples/CMakeFiles/pygen_gr_qtgui_examples_ceb77
 pygen_gr_qtgui_examples_ceb77: gr-qtgui/examples/pyqt_example_c.py.exe

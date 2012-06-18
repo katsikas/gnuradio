@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__repeat_8h" kind="file">
     <compoundname>gr_repeat.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__repeat_8h_1a7f0e71988e3007c2b9ffec41749d6cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kindref="member">gr_repeat_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_repeat_sptr gr_make_repeat</definition>
+      <memberdef kind="function" id="gr__repeat_8h_1ab8e55a62daa7e08d85f4f180f6c986c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kindref="member">gr_repeat_sptr</ref></type>
+        <definition>GR_CORE_API gr_repeat_sptr gr_make_repeat</definition>
         <argsstring>(size_t itemsize, int interp)</argsstring>
         <name>gr_make_repeat</name>
         <param>
@@ -101,12 +101,12 @@
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_repeat&gt;<sp/><ref refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kindref="member">gr_repeat_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kindref="member">gr_repeat_sptr</ref><sp/><ref refid="gr__repeat_8h_1a7f0e71988e3007c2b9ffec41749d6cfd" kindref="member">gr_make_repeat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>itemsize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interp);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kindref="member">gr_repeat_sptr</ref><sp/><ref refid="gr__repeat_8h_1ab8e55a62daa7e08d85f4f180f6c986c6" kindref="member">gr_make_repeat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>itemsize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interp);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39" refid="classgr__repeat" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__repeat" kindref="compound" tooltip="Repeat a sample &amp;#39;interp&amp;#39; times in output stream.">gr_repeat</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_interpolator</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kindref="member">gr_repeat_sptr</ref><sp/><ref refid="gr__repeat_8h_1a7f0e71988e3007c2b9ffec41749d6cfd" kindref="member">gr_make_repeat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>itemsize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interp);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kindref="member">gr_repeat_sptr</ref><sp/><ref refid="gr__repeat_8h_1ab8e55a62daa7e08d85f4f180f6c986c6" kindref="member">gr_make_repeat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>itemsize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interp);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classgr__repeat" kindref="compound" tooltip="Repeat a sample &amp;#39;interp&amp;#39; times in output stream.">gr_repeat</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>itemsize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interp);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__fft__vfc_8h" kind="file">
     <compoundname>gr_fft_vfc.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__fft__vfc_8h_1a457586af64b4bc0f2ac0a22b51330d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__fft__vfc_8h_1a57887c3a8d2d8159502b498765f1f738" kindref="member">gr_fft_vfc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_fft_vfc_sptr gr_make_fft_vfc</definition>
+      <memberdef kind="function" id="gr__fft__vfc_8h_1ab6469c7da1ee09b55c69ea3e93e8e180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__fft__vfc_8h_1a57887c3a8d2d8159502b498765f1f738" kindref="member">gr_fft_vfc_sptr</ref></type>
+        <definition>GR_CORE_API gr_fft_vfc_sptr gr_make_fft_vfc</definition>
         <argsstring>(int fft_size, bool forward, const std::vector&lt; float &gt; &amp;window, int nthreads=1)</argsstring>
         <name>gr_make_fft_vfc</name>
         <param>
@@ -113,14 +113,14 @@
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_fft_vfc&gt;<sp/><ref refid="gr__fft__vfc_8h_1a57887c3a8d2d8159502b498765f1f738" kindref="member">gr_fft_vfc_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__fft__vfc_8h_1a57887c3a8d2d8159502b498765f1f738" kindref="member">gr_fft_vfc_sptr</ref></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="gr__fft__vfc_8h_1a457586af64b4bc0f2ac0a22b51330d37" kindref="member">gr_make_fft_vfc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fft_size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>forward,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="gr__fft__vfc_8h_1ab6469c7da1ee09b55c69ea3e93e8e180" kindref="member">gr_make_fft_vfc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fft_size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>forward,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;<sp/>&amp;window,</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classgr__fft__vfc_1aeeca36af16908b594b4b30c1137afd51" kindref="member">nthreads</ref>=1);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44" refid="classgr__fft__vfc" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__fft__vfc" kindref="compound" tooltip="Compute forward FFT. float vector in / complex vector out.">gr_fft_vfc</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__fft__vfc_8h_1a57887c3a8d2d8159502b498765f1f738" kindref="member">gr_fft_vfc_sptr</ref></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="gr__fft__vfc_8h_1a457586af64b4bc0f2ac0a22b51330d37" kindref="member">gr_make_fft_vfc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fft_size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>forward,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="gr__fft__vfc_8h_1ab6469c7da1ee09b55c69ea3e93e8e180" kindref="member">gr_make_fft_vfc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fft_size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>forward,</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;<sp/><sp/>&amp;window,</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nthreads);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>

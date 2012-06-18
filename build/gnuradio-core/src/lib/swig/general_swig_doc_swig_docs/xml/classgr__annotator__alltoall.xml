@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__annotator__alltoall" kind="class" prot="public">
     <compoundname>gr_annotator_alltoall</compoundname>
     <includes refid="gr__annotator__alltoall_8h" local="no">gr_annotator_alltoall.h</includes>
@@ -135,7 +135,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__annotator__alltoall_1ab3d7374f488c81fe33e23d3a07d2b40b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="gr__annotator__alltoall_8h_1a5a3f949f0098e83ad80906e35ceb01a4" kindref="member">gr_annotator_alltoall_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="gr__annotator__alltoall_8h_1a5a3f949f0098e83ad80906e35ceb01a4" kindref="member">gr_annotator_alltoall_sptr</ref></type>
         <definition>GR_CORE_API gr_annotator_alltoall_sptr gr_make_annotator_alltoall</definition>
         <argsstring>(int when, size_t sizeof_stream_item)</argsstring>
         <name>gr_make_annotator_alltoall</name>
@@ -160,6 +160,18 @@
 <para>All-to-all stream annotator testing block. FOR TESTING PURPOSES ONLY. </para>    </briefdescription>
     <detaileddescription>
 <para>This block creates tags to be sent downstream every 10,000 items it sees. The tags contain the name and ID of the instantiated block, use &quot;seq&quot; as a key, and have a counter that increments by 1 for every tag produced that is used as the tag&apos;s value. The tags are propagated using the all-to-all policy.</para><para>It also stores a copy of all tags it sees flow past it. These tags can be recalled externally with the <ref refid="classgr__annotator__alltoall_1ac320a559f67e747da00c165fe2ca3577" kindref="member">data()</ref> member.</para><para>This block is only meant for testing and showing how to use the tags. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="343">
+        <label>gr_annotator_alltoall</label>
+        <link refid="classgr__annotator__alltoall"/>
+        <childnode refid="344" relation="usage">
+          <edgelabel>d_stored_tags</edgelabel>
+        </childnode>
+      </node>
+      <node id="344">
+        <label>std::vector&lt; gr_tag_t &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_annotator_alltoall.h" line="50" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_annotator_alltoall.h" bodystart="49" bodyend="74"/>
     <listofallmembers>
       <member refid="classgr__annotator__alltoall_1a5b3da08455afed1ca038496084bbcdd5" prot="private" virt="non-virtual"><scope>gr_annotator_alltoall</scope><name>d_itemsize</name></member>

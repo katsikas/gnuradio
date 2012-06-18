@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classatsci__equalizer__nop" kind="class" prot="public">
     <compoundname>atsci_equalizer_nop</compoundname>
     <basecompoundref refid="classatsci__equalizer" prot="public" virt="non-virtual">atsci_equalizer</basecompoundref>
@@ -68,7 +68,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_nop.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__equalizer__nop_1a56b9b85bf850d88aa88fcefa44a3eb54" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer_nop::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -112,7 +112,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classatsci__equalizer__nop_1a11feb6978266a24cc44059e3b4998b89" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer_nop::filter_normal</definition>
         <argsstring>(const float *input_samples, float *output_samples, int nsamples)</argsstring>
         <name>filter_normal</name>
@@ -138,7 +138,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_nop.h" line="48"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__equalizer__nop_1a2d21e46afdfcd4dd3ff753d104e51a6f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer_nop::filter_data_seg_sync</definition>
         <argsstring>(const float *input_samples, float *output_samples, int nsamples, int offset)</argsstring>
         <name>filter_data_seg_sync</name>
@@ -168,7 +168,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_nop.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__equalizer__nop_1aabe199fee2a80db95cf5437a68c19901" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer_nop::filter_field_sync</definition>
         <argsstring>(const float *input_samples, float *output_samples, int nsamples, int offset, int which_field)</argsstring>
         <name>filter_field_sync</name>
@@ -207,26 +207,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="337">
+      <node id="654">
         <label>atsci_equalizer</label>
         <link refid="classatsci__equalizer"/>
       </node>
-      <node id="336">
+      <node id="653">
         <label>atsci_equalizer_nop</label>
         <link refid="classatsci__equalizer__nop"/>
-        <childnode refid="337" relation="public-inheritance">
+        <childnode refid="654" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="339">
+      <node id="656">
         <label>atsci_equalizer</label>
         <link refid="classatsci__equalizer"/>
       </node>
-      <node id="338">
+      <node id="655">
         <label>atsci_equalizer_nop</label>
         <link refid="classatsci__equalizer__nop"/>
-        <childnode refid="339" relation="public-inheritance">
+        <childnode refid="656" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__dispatcher" kind="class" prot="public">
     <compoundname>gr_dispatcher</compoundname>
     <includes refid="gr__dispatcher_8h" local="no">gr_dispatcher.h</includes>
@@ -158,6 +158,18 @@
     <detaileddescription>
 <para><simplesect kind="see"><para><ref refid="classgr__select__handler" kindref="compound">gr_select_handler</ref> </para></simplesect>
 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="370">
+        <label>gr_dispatcher</label>
+        <link refid="classgr__dispatcher"/>
+        <childnode refid="371" relation="usage">
+          <edgelabel>d_handler</edgelabel>
+        </childnode>
+      </node>
+      <node id="371">
+        <label>std::vector&lt; gr_select_handler_sptr &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_dispatcher.h" line="43" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_dispatcher.h" bodystart="42" bodyend="67"/>
     <listofallmembers>
       <member refid="classgr__dispatcher_1a761602cfdc4515148d2b2e911e87a33d" prot="public" virt="non-virtual"><scope>gr_dispatcher</scope><name>add_handler</name></member>

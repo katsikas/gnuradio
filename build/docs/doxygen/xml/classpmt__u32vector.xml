@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classpmt__u32vector" kind="class" prot="public">
     <compoundname>pmt_u32vector</compoundname>
     <includes refid="pmt__unv__int_8h" local="no">pmt_unv_int.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classpmt__u32vector_1a1bde9df92e517adfb304b11123dfff04" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref> &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref> &gt;</type>
         <definition>std::vector&lt; uint32_t &gt; pmt_u32vector::d_v</definition>
         <argsstring></argsstring>
         <name>d_v</name>
@@ -105,7 +105,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="133"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__u32vector_1a7c88bd347112d4241de94dedeafe2786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pmt_u32vector::set</definition>
         <argsstring>(size_t k, uint32_t x)</argsstring>
         <name>set</name>
@@ -160,7 +160,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="136"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__u32vector_1a1fee4719d2ad59e74c36b6fc53d02b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>const void *</type>
         <definition>const void* pmt_u32vector::uniform_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_elements</name>
@@ -177,7 +177,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="137"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__u32vector_1a28b8d6da83775c448bf8e2c8806e90a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* pmt_u32vector::uniform_writable_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_writable_elements</name>
@@ -198,6 +198,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="15563">
+        <label>pmt_u32vector</label>
+        <link refid="classpmt__u32vector"/>
+        <childnode refid="15564" relation="usage">
+          <edgelabel>d_v</edgelabel>
+        </childnode>
+      </node>
+      <node id="15564">
+        <label>std::vector&lt; uint32_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="123" bodyfile="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" bodystart="122" bodyend="139"/>
     <listofallmembers>
       <member refid="classpmt__u32vector_1a1bde9df92e517adfb304b11123dfff04" prot="private" virt="non-virtual"><scope>pmt_u32vector</scope><name>d_v</name></member>

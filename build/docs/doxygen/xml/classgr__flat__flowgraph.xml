@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__flat__flowgraph" kind="class" prot="public">
     <compoundname>gr_flat_flowgraph</compoundname>
     <basecompoundref refid="classgr__flowgraph" prot="public" virt="non-virtual">gr_flowgraph</basecompoundref>
     <includes refid="gr__flat__flowgraph_8h" local="no">gr_flat_flowgraph.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__flat__flowgraph_1a1e704bc465208b2f98145a67de1ec399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_flat_flowgraph_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_flat_flowgraph_sptr</ref></type>
         <definition>GR_CORE_API gr_flat_flowgraph_sptr gr_make_flat_flowgraph</definition>
         <argsstring>()</argsstring>
         <name>gr_make_flat_flowgraph</name>
@@ -34,7 +34,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flat_flowgraph.h" line="45"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flat__flowgraph_1a354594c96e13ac9dffb9a593808e5796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flat_flowgraph::setup_connections</definition>
         <argsstring>()</argsstring>
         <name>setup_connections</name>
@@ -47,7 +47,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flat_flowgraph.h" line="48"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flat__flowgraph_1a526fffe4c61d8fc78e3aa00232bd3d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flat_flowgraph::merge_connections</definition>
         <argsstring>(gr_flat_flowgraph_sptr sfg)</argsstring>
         <name>merge_connections</name>
@@ -64,7 +64,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flat_flowgraph.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flat__flowgraph_1a34a3867a2c367e23568b1818784622e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flat_flowgraph::dump</definition>
         <argsstring>()</argsstring>
         <name>dump</name>
@@ -79,12 +79,12 @@
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classgr__flat__flowgraph_1a3565aa3e92d748dbb9904d02e802fbdb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__block_8h_1abbe9231777a14816d919bc9c087c5539" kindref="member">gr_block_vector_t</ref></type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">gr_block_vector_t</ref></type>
         <definition>static gr_block_vector_t gr_flat_flowgraph::make_block_vector</definition>
         <argsstring>(gr_basic_block_vector_t &amp;blocks)</argsstring>
         <name>make_block_vector</name>
         <param>
-          <type><ref refid="gr__basic__block_8h_1a76d2f45845faaf2d72b0002ba045c0d6" kindref="member">gr_basic_block_vector_t</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_basic_block_vector_t</ref> &amp;</type>
           <declname>blocks</declname>
         </param>
         <briefdescription>
@@ -149,7 +149,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flat_flowgraph.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flat__flowgraph_1a7e9c573ab242f877ad0a8f890a1b5ca2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flat_flowgraph::connect_block_inputs</definition>
         <argsstring>(gr_basic_block_sptr block)</argsstring>
         <name>connect_block_inputs</name>
@@ -166,7 +166,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flat_flowgraph.h" line="65"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flat__flowgraph_1a2a96027f80297aa8b56d3a67e9c8eba4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flat_flowgraph::setup_buffer_alignment</definition>
         <argsstring>(gr_block_sptr block)</argsstring>
         <name>setup_buffer_alignment</name>
@@ -188,61 +188,129 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3604">
+      <node id="7529">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
       </node>
-      <node id="3603">
+      <node id="7528">
         <label>gr_flat_flowgraph</label>
         <link refid="classgr__flat__flowgraph"/>
-        <childnode refid="3604" relation="public-inheritance">
+        <childnode refid="7529" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3607">
+      <node id="7532">
         <label>std::vector&lt; gr_edge &gt;</label>
-        <childnode refid="3608" relation="usage">
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="7533" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3611">
+      <node id="7546">
         <label>T</label>
       </node>
-      <node id="3610">
+      <node id="7537">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="7538" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7545">
         <label>boost::shared_ptr&lt; T &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3611" relation="usage">
+        <childnode refid="7546" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3606">
+      <node id="7534">
+        <label>gr_endpoint</label>
+        <link refid="classgr__endpoint"/>
+        <childnode refid="7535" relation="usage">
+          <edgelabel>d_basic_block</edgelabel>
+        </childnode>
+      </node>
+      <node id="7539">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7540" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7543">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="7531">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
-        <childnode refid="3607" relation="usage">
+        <childnode refid="7532" relation="usage">
           <edgelabel>d_edges</edgelabel>
         </childnode>
-        <childnode refid="3609" relation="usage">
+        <childnode refid="7544" relation="usage">
           <edgelabel>d_blocks</edgelabel>
         </childnode>
       </node>
-      <node id="3609">
+      <node id="7538">
+        <label>gruel::msg_accepter</label>
+        <link refid="classgruel_1_1msg__accepter"/>
+      </node>
+      <node id="7544">
         <label>std::vector&lt; gr_basic_block_sptr &gt;</label>
-        <childnode refid="3610" relation="usage">
+        <childnode refid="7545" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3605">
-        <label>gr_flat_flowgraph</label>
-        <link refid="classgr__flat__flowgraph"/>
-        <childnode refid="3606" relation="public-inheritance">
+      <node id="7540">
+        <label>gr_io_signature</label>
+        <link refid="classgr__io__signature"/>
+        <childnode refid="7541" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
         </childnode>
       </node>
-      <node id="3608">
+      <node id="7535">
+        <label>boost::shared_ptr&lt; gr_basic_block &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7536" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7530">
+        <label>gr_flat_flowgraph</label>
+        <link refid="classgr__flat__flowgraph"/>
+        <childnode refid="7531" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7536">
+        <label>gr_basic_block</label>
+        <link refid="classgr__basic__block"/>
+        <childnode refid="7537" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7539" relation="usage">
+          <edgelabel>d_input_signature</edgelabel>
+          <edgelabel>d_output_signature</edgelabel>
+        </childnode>
+        <childnode refid="7542" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="7533">
         <label>gr_edge</label>
         <link refid="classgr__edge"/>
+        <childnode refid="7534" relation="usage">
+          <edgelabel>d_src</edgelabel>
+          <edgelabel>d_dst</edgelabel>
+        </childnode>
+      </node>
+      <node id="7541">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="7542">
+        <label>std::string</label>
+        <childnode refid="7543" relation="public-inheritance">
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flat_flowgraph.h" line="40" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flat_flowgraph.h" bodystart="39" bodyend="75"/>

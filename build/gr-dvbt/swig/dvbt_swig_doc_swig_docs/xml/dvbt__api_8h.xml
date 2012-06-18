@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="dvbt__api_8h" kind="file">
     <compoundname>dvbt_api.h</compoundname>
     <includes local="no">gruel/attributes.h</includes>
     <includedby refid="dvbt__depad_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h</includedby>
+    <includedby refid="dvbt__derandomizer_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h</includedby>
     <includedby refid="dvbt__pad_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h</includedby>
+    <includedby refid="dvbt__randomizer_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h</includedby>
+    <includedby refid="dvbti__randomizer_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>gruel/attributes.h</label>
@@ -17,13 +20,29 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="5">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h</label>
         <link refid="dvbt__pad_8h"/>
+      </node>
+      <node id="4">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h</label>
+        <link refid="dvbt__derandomizer_8h"/>
       </node>
       <node id="3">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h</label>
         <link refid="dvbt__depad_8h"/>
+      </node>
+      <node id="6">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h</label>
+        <link refid="dvbt__randomizer_8h"/>
+      </node>
+      <node id="7">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h</label>
+        <link refid="dvbti__randomizer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_api.h</label>
@@ -31,6 +50,12 @@
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

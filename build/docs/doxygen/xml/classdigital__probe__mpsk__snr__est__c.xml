@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdigital__probe__mpsk__snr__est__c" kind="class" prot="public">
     <compoundname>digital_probe_mpsk_snr_est_c</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -86,7 +86,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__probe__mpsk__snr__est__c_1a70d30e7520a74da6632699ce984f31ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_probe_mpsk_snr_est_c_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_probe_mpsk_snr_est_c_sptr</ref></type>
         <definition>DIGITAL_API digital_probe_mpsk_snr_est_c_sptr digital_make_probe_mpsk_snr_est_c</definition>
         <argsstring>(snr_est_type_t type, int msg_nsamples, double alpha)</argsstring>
         <name>digital_make_probe_mpsk_snr_est_c</name>
@@ -188,11 +188,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -256,7 +256,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_probe_mpsk_snr_est_c.h" line="101"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__probe__mpsk__snr__est__c_1afdbb6ed020fc99d451fe97c1c6df118d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_probe_mpsk_snr_est_c::set_type</definition>
         <argsstring>(snr_est_type_t t)</argsstring>
         <name>set_type</name>
@@ -273,7 +273,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_probe_mpsk_snr_est_c.h" line="104"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__probe__mpsk__snr__est__c_1aa4924015f9d62c4eb91f035f4ff5b9de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_probe_mpsk_snr_est_c::set_msg_nsample</definition>
         <argsstring>(int n)</argsstring>
         <name>set_msg_nsample</name>
@@ -290,7 +290,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_probe_mpsk_snr_est_c.h" line="107"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__probe__mpsk__snr__est__c_1a84120475df9a5a35204577f6ab066d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_probe_mpsk_snr_est_c::set_alpha</definition>
         <argsstring>(double alpha)</argsstring>
         <name>set_alpha</name>
@@ -312,100 +312,227 @@
     <detaileddescription>
 <para>This is a probe block (a sink) that can be used to monitor and retrieve estimations of the signal SNR. This probe is designed for use with M-PSK signals especially. The type of estimator is specified as the <computeroutput>type</computeroutput> parameter in the constructor. The estimators tend to trade off performance for accuracy, although experimentation should be done to figure out the right approach for a given implementation. Further, the current set of estimators are designed and proven theoretically under AWGN conditions; some amount of error should be assumed and/or estimated for real channel conditions. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1670">
+      <node id="3025">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1671" relation="public-inheritance">
+        <childnode refid="3026" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1667">
+      <node id="3022">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1668" relation="public-inheritance">
+        <childnode refid="3023" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1668">
+      <node id="3023">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1669" relation="public-inheritance">
+        <childnode refid="3024" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1671">
+      <node id="3026">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1669">
+      <node id="3024">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1670" relation="public-inheritance">
+        <childnode refid="3025" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1666">
+      <node id="3021">
         <label>digital_probe_mpsk_snr_est_c</label>
         <link refid="classdigital__probe__mpsk__snr__est__c"/>
-        <childnode refid="1667" relation="public-inheritance">
+        <childnode refid="3022" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1676">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="1677" relation="public-inheritance">
+      <node id="3048">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="3042" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1673">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="1674" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1674">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="1675" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1678">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="3041">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1679" relation="usage">
+        <childnode refid="3042" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1681">
+      <node id="3053">
+        <label>T</label>
+      </node>
+      <node id="3031">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="3032" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3028">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="3029" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3042">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="3043" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3050">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="3045">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="3029">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="3030" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3038" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="3038">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3039" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3052">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3053" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3039">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="3040" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="3049" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="3051" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="3046">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="3047" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3033">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3034" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3044">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="3045" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="3046" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="3048" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="3037">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1677">
+      <node id="3040">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="3041" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3032">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1679">
+      <node id="3043">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3044" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3047">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="3049">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="3050" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="3051">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="3052" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3034">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="3035" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="1675">
+      <node id="3030">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1676" relation="public-inheritance">
+        <childnode refid="3031" relation="public-inheritance">
         </childnode>
-        <childnode refid="1678" relation="usage">
+        <childnode refid="3033" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1680" relation="usage">
+        <childnode refid="3036" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1672">
+      <node id="3054">
+        <label>digital_impl_mpsk_snr_est</label>
+        <link refid="classdigital__impl__mpsk__snr__est"/>
+      </node>
+      <node id="3027">
         <label>digital_probe_mpsk_snr_est_c</label>
         <link refid="classdigital__probe__mpsk__snr__est__c"/>
-        <childnode refid="1673" relation="public-inheritance">
+        <childnode refid="3028" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3054" relation="usage">
+          <edgelabel>d_snr_est</edgelabel>
         </childnode>
       </node>
-      <node id="1680">
+      <node id="3035">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="3036">
         <label>std::string</label>
-        <childnode refid="1681" relation="public-inheritance">
+        <childnode refid="3037" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -474,7 +601,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_msg_handler</name></member>
       <member refid="classdigital__probe__mpsk__snr__est__c_1aa4924015f9d62c4eb91f035f4ff5b9de" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_msg_nsample</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_output_signature</name></member>

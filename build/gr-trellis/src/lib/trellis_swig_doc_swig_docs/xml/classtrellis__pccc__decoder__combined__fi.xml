@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classtrellis__pccc__decoder__combined__fi" kind="class" prot="public">
     <compoundname>trellis_pccc_decoder_combined_fi</compoundname>
     <includes refid="trellis__pccc__decoder__combined__fi_8h" local="no">trellis_pccc_decoder_combined_fi.h</includes>
@@ -202,7 +202,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classtrellis__pccc__decoder__combined__fi_1a85614dc51400087f531f800cc90cd72e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__pccc__decoder__combined__fi_8h_1a160350ed0cc859df0ae97053bfb45b07" kindref="member">trellis_pccc_decoder_combined_fi_sptr</ref></type>
+        <type>friend TRELLIS_API <ref refid="trellis__pccc__decoder__combined__fi_8h_1a160350ed0cc859df0ae97053bfb45b07" kindref="member">trellis_pccc_decoder_combined_fi_sptr</ref></type>
         <definition>TRELLIS_API trellis_pccc_decoder_combined_fi_sptr trellis_make_pccc_decoder_combined_fi</definition>
         <argsstring>(const fsm &amp;FSMo, int STo0, int SToK, const fsm &amp;FSMi, int STi0, int STiK, const interleaver &amp;INTERLEAVER, int blocklength, int repetitions, trellis_siso_type_t SISO_TYPE, int D, const std::vector&lt; float &gt; &amp;TABLE, trellis_metric_type_t METRIC_TYPE, float scaling)</argsstring>
         <name>trellis_make_pccc_decoder_combined_fi</name>
@@ -597,6 +597,57 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="643">
+        <label>trellis_pccc_decoder_combined_fi</label>
+        <link refid="classtrellis__pccc__decoder__combined__fi"/>
+        <childnode refid="644" relation="usage">
+          <edgelabel>d_INTERLEAVER</edgelabel>
+        </childnode>
+        <childnode refid="646" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+          <edgelabel>d_TABLE</edgelabel>
+        </childnode>
+        <childnode refid="647" relation="usage">
+          <edgelabel>d_FSMi</edgelabel>
+          <edgelabel>d_FSMo</edgelabel>
+        </childnode>
+      </node>
+      <node id="646">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="648">
+        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="645" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="647">
+        <label>fsm</label>
+        <link refid="classfsm"/>
+        <childnode refid="648" relation="usage">
+          <edgelabel>d_PI</edgelabel>
+          <edgelabel>d_PS</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>d_NS</edgelabel>
+          <edgelabel>d_TMl</edgelabel>
+          <edgelabel>d_TMi</edgelabel>
+          <edgelabel>d_OS</edgelabel>
+        </childnode>
+      </node>
+      <node id="645">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="644">
+        <label>interleaver</label>
+        <link refid="classinterleaver"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>d_DEINTER</edgelabel>
+          <edgelabel>d_INTER</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_fi.h" line="57" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_fi.h" bodystart="56" bodyend="123"/>
     <listofallmembers>
       <member refid="classtrellis__pccc__decoder__combined__fi_1afd776af4347d094bc1075269fbafe375" prot="public" virt="non-virtual"><scope>trellis_pccc_decoder_combined_fi</scope><name>blocklength</name></member>

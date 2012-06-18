@@ -39,6 +39,9 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_de
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h"
+    "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h"
+    "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h"
+    "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_devel")
 

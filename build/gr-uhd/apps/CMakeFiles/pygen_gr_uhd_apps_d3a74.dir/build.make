@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -39,21 +42,18 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_uhd_apps_d3a74.
 
-# Include the progress variables for this target.
-include gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_d3a74.dir/progress.make
-
 gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_d3a74: gr-uhd/apps/hf_radio/radio.py.exe
 gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_d3a74: gr-uhd/apps/hf_radio/ui.py.exe
 
 gr-uhd/apps/hf_radio/radio.py.exe: ../gr-uhd/apps/hf_radio/radio.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin radio.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/radio.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/radio.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/radio.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/radio.py' ) .read ( ) ) "
 
 gr-uhd/apps/hf_radio/ui.py.exe: ../gr-uhd/apps/hf_radio/ui.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin ui.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/ui.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/ui.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/ui.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/ui.py' ) .read ( ) ) "
 
 pygen_gr_uhd_apps_d3a74: gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_d3a74
 pygen_gr_uhd_apps_d3a74: gr-uhd/apps/hf_radio/radio.py.exe

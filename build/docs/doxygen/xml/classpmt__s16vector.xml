@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classpmt__s16vector" kind="class" prot="public">
     <compoundname>pmt_s16vector</compoundname>
     <includes refid="pmt__unv__int_8h" local="no">pmt_unv_int.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classpmt__s16vector_1a2e6e96c67f780cc59d4dbcc6ac842c63" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="stdint_8h_1a269259c924dce846340ddbb810db2e3c" kindref="member">int16_t</ref> &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="stdint_8h_1a269259c924dce846340ddbb810db2e3c" kindref="member">int16_t</ref> &gt;</type>
         <definition>std::vector&lt; int16_t &gt; pmt_s16vector::d_v</definition>
         <argsstring></argsstring>
         <name>d_v</name>
@@ -105,7 +105,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="110"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__s16vector_1a5d2128e1e74e4fb649e3cfd808e5be69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pmt_s16vector::set</definition>
         <argsstring>(size_t k, int16_t x)</argsstring>
         <name>set</name>
@@ -160,7 +160,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="113"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__s16vector_1aab93a3effb9faf478bafe8bdafbad610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>const void *</type>
         <definition>const void* pmt_s16vector::uniform_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_elements</name>
@@ -177,7 +177,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="114"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__s16vector_1add4068fe429c6bdd9bf7545c7d9eb5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* pmt_s16vector::uniform_writable_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_writable_elements</name>
@@ -198,6 +198,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="15503">
+        <label>std::vector&lt; int16_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="15502">
+        <label>pmt_s16vector</label>
+        <link refid="classpmt__s16vector"/>
+        <childnode refid="15503" relation="usage">
+          <edgelabel>d_v</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="100" bodyfile="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" bodystart="99" bodyend="116"/>
     <listofallmembers>
       <member refid="classpmt__s16vector_1a2e6e96c67f780cc59d4dbcc6ac842c63" prot="private" virt="non-virtual"><scope>pmt_s16vector</scope><name>d_v</name></member>

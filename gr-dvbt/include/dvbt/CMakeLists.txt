@@ -26,6 +26,9 @@ install(FILES
     	dvbt_depad.h
     	dvbt_types.h
     	dvbt_consts.h
+	dvbt_randomizer.h
+	dvbt_derandomizer.h
+	dvbti_randomizer.h
     	DESTINATION ${GR_INCLUDE_DIR}/gnuradio/dvbt
     	COMPONENT "dvbt_devel"
 )

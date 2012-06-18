@@ -51,6 +51,7 @@ class dvbt_sink(gr.hier_block2):
                 #src = gr.vector_source_b(ts,False,1)
                 #########################################################
 
+		derandomizer = dvbt_swig.derandomizer()
         	depad = dvbt_swig.depad()
         	sink = gr.file_sink(gr.sizeof_char*1, file)
 		sink.set_unbuffered(False)

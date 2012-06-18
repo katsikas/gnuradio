@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classtrellis__siso__f" kind="class" prot="public">
     <compoundname>trellis_siso_f</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -99,7 +99,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classtrellis__siso__f_1a30833cc3844265e327d67f15349b7f9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">trellis_siso_f_sptr</ref></type>
+        <type>friend TRELLIS_API <ref refid="classboost_1_1shared__ptr" kindref="compound">trellis_siso_f_sptr</ref></type>
         <definition>TRELLIS_API trellis_siso_f_sptr trellis_make_siso_f</definition>
         <argsstring>(const fsm &amp;FSM, int K, int S0, int SK, bool POSTI, bool POSTO, trellis_siso_type_t d_SISO_TYPE)</argsstring>
         <name>trellis_make_siso_f</name>
@@ -276,7 +276,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_f.h" line="88" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_f.h" bodystart="88" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classtrellis__siso__f_1aa5366683a88d6a1394e59cf6312ac911" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void trellis_siso_f::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -286,7 +286,7 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items_required</declname>
         </param>
         <briefdescription>
@@ -323,15 +323,15 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -378,88 +378,233 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7265">
+      <node id="16101">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7266" relation="public-inheritance">
+        <childnode refid="16102" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7263">
+      <node id="16099">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7264" relation="public-inheritance">
+        <childnode refid="16100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7266">
+      <node id="16102">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7262">
+      <node id="16098">
         <label>trellis_siso_f</label>
         <link refid="classtrellis__siso__f"/>
-        <childnode refid="7263" relation="public-inheritance">
+        <childnode refid="16099" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7264">
+      <node id="16100">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7265" relation="public-inheritance">
+        <childnode refid="16101" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7270">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="7271" relation="public-inheritance">
+      <node id="16123">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="16117" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="7268">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="7269" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7272">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="16116">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7273" relation="usage">
+        <childnode refid="16117" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7275">
+      <node id="16128">
+        <label>T</label>
+      </node>
+      <node id="16106">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="16107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16117">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="16118" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="16125">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="16120">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="16104">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="16105" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16113" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="16113">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="16114" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="16127">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="16128" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="16114">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="16115" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="16124" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="16126" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="16121">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="16122" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="16108">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="16109" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="16119">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="16120" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="16121" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="16123" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="16112">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7271">
+      <node id="16115">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="16116" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="16130">
+        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="16110" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="16107">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7273">
+      <node id="16118">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="16119" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="16122">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="16124">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="16125" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="16126">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="16127" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="16109">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="16110" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="7267">
+      <node id="16129">
+        <label>fsm</label>
+        <link refid="classfsm"/>
+        <childnode refid="16130" relation="usage">
+          <edgelabel>d_PI</edgelabel>
+          <edgelabel>d_PS</edgelabel>
+        </childnode>
+        <childnode refid="16110" relation="usage">
+          <edgelabel>d_NS</edgelabel>
+          <edgelabel>d_TMl</edgelabel>
+          <edgelabel>d_TMi</edgelabel>
+          <edgelabel>d_OS</edgelabel>
+        </childnode>
+      </node>
+      <node id="16103">
         <label>trellis_siso_f</label>
         <link refid="classtrellis__siso__f"/>
-        <childnode refid="7268" relation="public-inheritance">
+        <childnode refid="16104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16129" relation="usage">
+          <edgelabel>d_FSM</edgelabel>
         </childnode>
       </node>
-      <node id="7269">
+      <node id="16105">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7270" relation="public-inheritance">
+        <childnode refid="16106" relation="public-inheritance">
         </childnode>
-        <childnode refid="7272" relation="usage">
+        <childnode refid="16108" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7274" relation="usage">
+        <childnode refid="16111" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7274">
+      <node id="16110">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="16111">
         <label>std::string</label>
-        <childnode refid="7275" relation="public-inheritance">
+        <childnode refid="16112" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -527,7 +672,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>trellis_siso_f</scope><name>set_relative_rate</name></member>

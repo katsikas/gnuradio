@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,6 +30,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -217,14 +220,14 @@ gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/trellis.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/cmake -E make_directory /home/katsikas/gnuradio/build/gr-trellis/src/lib
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module trellis -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -outdir /home/katsikas/gnuradio/build/gr-trellis/src/lib -c++ -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-digital/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -o /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellisPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-trellis/src/lib/trellis.i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/swig -python -fvirtual -modern -keyword -w511 -module trellis -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -outdir /home/katsikas/gnuradio/build/gr-trellis/src/lib -c++ -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-digital/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -o /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellisPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-trellis/src/lib/trellis.i
 
 gr-trellis/src/lib/trellis.py: gr-trellis/src/lib/trellisPYTHON_wrap.cxx
 
 gr-trellis/src/lib/trellis_viterbi_combined_sb.h: ../gr-trellis/src/lib/trellis_viterbi_combined_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_combined_sb.h, trellis_viterbi_combined_ss.h, trellis_viterbi_combined_si.h, trellis_viterbi_combined_ib.h, trellis_viterbi_combined_is.h, trellis_viterbi_combined_ii.h, trellis_viterbi_combined_fb.h, trellis_viterbi_combined_fs.h, trellis_viterbi_combined_fi.h, trellis_viterbi_combined_cb.h, trellis_viterbi_combined_cs.h, trellis_viterbi_combined_ci.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.h.t sb ss si ib is ii fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.h.t sb ss si ib is ii fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_viterbi_combined_ss.h: gr-trellis/src/lib/trellis_viterbi_combined_sb.h
 
@@ -251,7 +254,7 @@ gr-trellis/src/lib/trellis_viterbi_combined_ci.h: gr-trellis/src/lib/trellis_vit
 gr-trellis/src/lib/trellis_pccc_encoder_bb.h: ../gr-trellis/src/lib/trellis_pccc_encoder_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_encoder_bb.h, trellis_pccc_encoder_bs.h, trellis_pccc_encoder_bi.h, trellis_pccc_encoder_ss.h, trellis_pccc_encoder_si.h, trellis_pccc_encoder_ii.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.h.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.h.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_pccc_encoder_bs.h: gr-trellis/src/lib/trellis_pccc_encoder_bb.h
 
@@ -266,7 +269,7 @@ gr-trellis/src/lib/trellis_pccc_encoder_ii.h: gr-trellis/src/lib/trellis_pccc_en
 gr-trellis/src/lib/trellis_pccc_encoder_bb.i: ../gr-trellis/src/lib/trellis_pccc_encoder_XX.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_encoder_bb.i, trellis_pccc_encoder_bs.i, trellis_pccc_encoder_bi.i, trellis_pccc_encoder_ss.i, trellis_pccc_encoder_si.i, trellis_pccc_encoder_ii.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.i.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.i.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_pccc_encoder_bs.i: gr-trellis/src/lib/trellis_pccc_encoder_bb.i
 
@@ -281,7 +284,7 @@ gr-trellis/src/lib/trellis_pccc_encoder_ii.i: gr-trellis/src/lib/trellis_pccc_en
 gr-trellis/src/lib/trellis_viterbi_b.i: ../gr-trellis/src/lib/trellis_viterbi_X.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_b.i, trellis_viterbi_s.i, trellis_viterbi_i.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.i.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.i.t b s i
 
 gr-trellis/src/lib/trellis_viterbi_s.i: gr-trellis/src/lib/trellis_viterbi_b.i
 
@@ -290,7 +293,7 @@ gr-trellis/src/lib/trellis_viterbi_i.i: gr-trellis/src/lib/trellis_viterbi_b.i
 gr-trellis/src/lib/trellis_viterbi_b.h: ../gr-trellis/src/lib/trellis_viterbi_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_b.h, trellis_viterbi_s.h, trellis_viterbi_i.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.h.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.h.t b s i
 
 gr-trellis/src/lib/trellis_viterbi_s.h: gr-trellis/src/lib/trellis_viterbi_b.h
 
@@ -299,7 +302,7 @@ gr-trellis/src/lib/trellis_viterbi_i.h: gr-trellis/src/lib/trellis_viterbi_b.h
 gr-trellis/src/lib/trellis_viterbi_combined_sb.i: ../gr-trellis/src/lib/trellis_viterbi_combined_XX.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_combined_sb.i, trellis_viterbi_combined_ss.i, trellis_viterbi_combined_si.i, trellis_viterbi_combined_ib.i, trellis_viterbi_combined_is.i, trellis_viterbi_combined_ii.i, trellis_viterbi_combined_fb.i, trellis_viterbi_combined_fs.i, trellis_viterbi_combined_fi.i, trellis_viterbi_combined_cb.i, trellis_viterbi_combined_cs.i, trellis_viterbi_combined_ci.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.i.t sb ss si ib is ii fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.i.t sb ss si ib is ii fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_viterbi_combined_ss.i: gr-trellis/src/lib/trellis_viterbi_combined_sb.i
 
@@ -326,7 +329,7 @@ gr-trellis/src/lib/trellis_viterbi_combined_ci.i: gr-trellis/src/lib/trellis_vit
 gr-trellis/src/lib/trellis_sccc_encoder_bb.i: ../gr-trellis/src/lib/trellis_sccc_encoder_XX.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_encoder_bb.i, trellis_sccc_encoder_bs.i, trellis_sccc_encoder_bi.i, trellis_sccc_encoder_ss.i, trellis_sccc_encoder_si.i, trellis_sccc_encoder_ii.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.i.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.i.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_sccc_encoder_bs.i: gr-trellis/src/lib/trellis_sccc_encoder_bb.i
 
@@ -341,7 +344,7 @@ gr-trellis/src/lib/trellis_sccc_encoder_ii.i: gr-trellis/src/lib/trellis_sccc_en
 gr-trellis/src/lib/trellis_sccc_encoder_bb.h: ../gr-trellis/src/lib/trellis_sccc_encoder_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_encoder_bb.h, trellis_sccc_encoder_bs.h, trellis_sccc_encoder_bi.h, trellis_sccc_encoder_ss.h, trellis_sccc_encoder_si.h, trellis_sccc_encoder_ii.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.h.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.h.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_sccc_encoder_bs.h: gr-trellis/src/lib/trellis_sccc_encoder_bb.h
 
@@ -356,7 +359,7 @@ gr-trellis/src/lib/trellis_sccc_encoder_ii.h: gr-trellis/src/lib/trellis_sccc_en
 gr-trellis/src/lib/trellis_encoder_bb.i: ../gr-trellis/src/lib/trellis_encoder_XX.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_encoder_bb.i, trellis_encoder_bs.i, trellis_encoder_bi.i, trellis_encoder_ss.i, trellis_encoder_si.i, trellis_encoder_ii.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.i.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.i.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_encoder_bs.i: gr-trellis/src/lib/trellis_encoder_bb.i
 
@@ -371,7 +374,7 @@ gr-trellis/src/lib/trellis_encoder_ii.i: gr-trellis/src/lib/trellis_encoder_bb.i
 gr-trellis/src/lib/trellis_encoder_bb.h: ../gr-trellis/src/lib/trellis_encoder_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_encoder_bb.h, trellis_encoder_bs.h, trellis_encoder_bi.h, trellis_encoder_ss.h, trellis_encoder_si.h, trellis_encoder_ii.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.h.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.h.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_encoder_bs.h: gr-trellis/src/lib/trellis_encoder_bb.h
 
@@ -386,7 +389,7 @@ gr-trellis/src/lib/trellis_encoder_ii.h: gr-trellis/src/lib/trellis_encoder_bb.h
 gr-trellis/src/lib/trellis_pccc_decoder_b.h: ../gr-trellis/src/lib/trellis_pccc_decoder_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_b.h, trellis_pccc_decoder_s.h, trellis_pccc_decoder_i.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.h.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.h.t b s i
 
 gr-trellis/src/lib/trellis_pccc_decoder_s.h: gr-trellis/src/lib/trellis_pccc_decoder_b.h
 
@@ -395,7 +398,7 @@ gr-trellis/src/lib/trellis_pccc_decoder_i.h: gr-trellis/src/lib/trellis_pccc_dec
 gr-trellis/src/lib/trellis_pccc_decoder_b.i: ../gr-trellis/src/lib/trellis_pccc_decoder_X.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_b.i, trellis_pccc_decoder_s.i, trellis_pccc_decoder_i.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.i.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.i.t b s i
 
 gr-trellis/src/lib/trellis_pccc_decoder_s.i: gr-trellis/src/lib/trellis_pccc_decoder_b.i
 
@@ -404,7 +407,7 @@ gr-trellis/src/lib/trellis_pccc_decoder_i.i: gr-trellis/src/lib/trellis_pccc_dec
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.i: ../gr-trellis/src/lib/trellis_sccc_decoder_combined_XX.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_combined_fb.i, trellis_sccc_decoder_combined_fs.i, trellis_sccc_decoder_combined_fi.i, trellis_sccc_decoder_combined_cb.i, trellis_sccc_decoder_combined_cs.i, trellis_sccc_decoder_combined_ci.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.i.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.i.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fs.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.i
 
@@ -419,7 +422,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.i: gr-trellis/src/lib/trelli
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h: ../gr-trellis/src/lib/trellis_sccc_decoder_combined_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_combined_fb.h, trellis_sccc_decoder_combined_fs.h, trellis_sccc_decoder_combined_fi.h, trellis_sccc_decoder_combined_cb.h, trellis_sccc_decoder_combined_cs.h, trellis_sccc_decoder_combined_ci.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.h.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.h.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fs.h: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h
 
@@ -434,7 +437,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.h: gr-trellis/src/lib/trelli
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.i: ../gr-trellis/src/lib/trellis_pccc_decoder_combined_XX.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_combined_fb.i, trellis_pccc_decoder_combined_fs.i, trellis_pccc_decoder_combined_fi.i, trellis_pccc_decoder_combined_cb.i, trellis_pccc_decoder_combined_cs.i, trellis_pccc_decoder_combined_ci.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.i.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.i.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.i
 
@@ -449,7 +452,7 @@ gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.i: gr-trellis/src/lib/trelli
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h: ../gr-trellis/src/lib/trellis_pccc_decoder_combined_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_combined_fb.h, trellis_pccc_decoder_combined_fs.h, trellis_pccc_decoder_combined_fi.h, trellis_pccc_decoder_combined_cb.h, trellis_pccc_decoder_combined_cs.h, trellis_pccc_decoder_combined_ci.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.h.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.h.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.h: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h
 
@@ -464,7 +467,7 @@ gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.h: gr-trellis/src/lib/trelli
 gr-trellis/src/lib/trellis_sccc_decoder_b.i: ../gr-trellis/src/lib/trellis_sccc_decoder_X.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_b.i, trellis_sccc_decoder_s.i, trellis_sccc_decoder_i.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.i.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.i.t b s i
 
 gr-trellis/src/lib/trellis_sccc_decoder_s.i: gr-trellis/src/lib/trellis_sccc_decoder_b.i
 
@@ -473,7 +476,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_i.i: gr-trellis/src/lib/trellis_sccc_dec
 gr-trellis/src/lib/trellis_sccc_decoder_b.h: ../gr-trellis/src/lib/trellis_sccc_decoder_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_b.h, trellis_sccc_decoder_s.h, trellis_sccc_decoder_i.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.h.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.h.t b s i
 
 gr-trellis/src/lib/trellis_sccc_decoder_s.h: gr-trellis/src/lib/trellis_sccc_decoder_b.h
 
@@ -482,7 +485,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_i.h: gr-trellis/src/lib/trellis_sccc_dec
 gr-trellis/src/lib/trellis_metrics_s.i: ../gr-trellis/src/lib/trellis_metrics_X.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_metrics_s.i, trellis_metrics_i.i, trellis_metrics_f.i, trellis_metrics_c.i"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.i.t s i f c
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.i.t s i f c
 
 gr-trellis/src/lib/trellis_metrics_i.i: gr-trellis/src/lib/trellis_metrics_s.i
 
@@ -493,7 +496,7 @@ gr-trellis/src/lib/trellis_metrics_c.i: gr-trellis/src/lib/trellis_metrics_s.i
 gr-trellis/src/lib/trellis_metrics_s.h: ../gr-trellis/src/lib/trellis_metrics_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_metrics_s.h, trellis_metrics_i.h, trellis_metrics_f.h, trellis_metrics_c.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.h.t s i f c
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.h.t s i f c
 
 gr-trellis/src/lib/trellis_metrics_i.h: gr-trellis/src/lib/trellis_metrics_s.h
 
@@ -501,77 +504,77 @@ gr-trellis/src/lib/trellis_metrics_f.h: gr-trellis/src/lib/trellis_metrics_s.h
 
 gr-trellis/src/lib/trellis_metrics_c.h: gr-trellis/src/lib/trellis_metrics_s.h
 
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_f.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_permutation.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/interleaver.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/calc_metric.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_api.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/base.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/core_algorithms.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/siso_type.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_api.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/calc_metric.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/core_algorithms.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_combined_f.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_ii.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_s.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ii.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_si.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_bi.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_bb.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fi.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_permutation.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_f.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/siso_type.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_cs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_cb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_b.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_bb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_bb.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_metrics_f.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_ss.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_metrics_s.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_bb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_metrics_i.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_s.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_bi.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_ii.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_cs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_cs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fi.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_i.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_i.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_metrics_c.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_fs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_s.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_si.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_bi.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ci.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_ii.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_si.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_ss.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_bs.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_bi.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_b.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ci.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_bs.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_cs.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_metrics_s.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_ii.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_s.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_si.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_cb.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_i.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ib.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_ss.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_ii.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_s.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_b.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_ss.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_i.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_bi.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_metrics_i.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_cb.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_bi.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_si.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_is.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_fi.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_cs.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_fb.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_sb.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_b.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_bb.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_decoder_i.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_encoder_si.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ss.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_fs.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_fs.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_ii.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ib.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_i.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_fb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_fi.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_encoder_si.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_ss.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ss.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_s.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_fi.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_sccc_decoder_combined_cs.h
-gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_pccc_encoder_bb.h
+gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_viterbi_combined_ii.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_swig_doc.i"
-	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc.i
+	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python2.7 -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc.i
 
 gr-trellis/src/lib/trellis.tag: gr-trellis/src/lib/trellis_encoder_bb.h
 gr-trellis/src/lib/trellis.tag: gr-trellis/src/lib/trellis_encoder_bs.h
@@ -690,73 +693,73 @@ gr-trellis/src/lib/trellis.tag: gr-trellis/src/lib/_trellis_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && ./_trellis_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis.tag
 
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_f.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_permutation.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/interleaver.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/calc_metric.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_api.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/base.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/core_algorithms.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/siso_type.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_api.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/calc_metric.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/core_algorithms.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_combined_f.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_ii.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_s.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ii.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_si.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_bi.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_bb.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_fi.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_permutation.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_f.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/siso_type.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_cs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_cb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_b.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_bb.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_metrics_f.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_ss.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_metrics_s.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_bb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_metrics_i.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_s.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bi.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_ii.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_cs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_cs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_fi.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_i.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_i.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_metrics_c.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_fs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_s.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_si.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_bi.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ci.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_ii.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_si.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_ss.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_bs.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_bi.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_b.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ci.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_bs.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_cs.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_metrics_s.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_ii.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_s.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_si.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_cb.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_i.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ib.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_ss.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_ii.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_s.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_b.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_ss.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_i.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bi.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_metrics_i.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_cb.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_bi.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_si.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_is.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_fi.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_cs.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_fb.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_sb.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_b.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bb.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_decoder_i.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_si.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ss.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_fs.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_fs.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_ii.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ib.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_i.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_fb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_fi.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_encoder_si.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_ss.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ss.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_s.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_fi.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_sccc_decoder_combined_cs.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_pccc_encoder_bb.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_viterbi_combined_ii.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bb.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bs.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bi.h

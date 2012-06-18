@@ -110,10 +110,26 @@ dvbt/dvbt_api.h
 gr_sync_interpolator.h
 -
 
+../gr-dvbt/include/dvbt/dvbt_derandomizer.h
+dvbt/dvbt_api.h
+-
+gr_sync_block.h
+-
+dvbt/dvbti_randomizer.h
+-
+
 ../gr-dvbt/include/dvbt/dvbt_pad.h
 dvbt/dvbt_api.h
 -
 gr_sync_decimator.h
+-
+
+../gr-dvbt/include/dvbt/dvbt_randomizer.h
+dvbt/dvbt_api.h
+-
+gr_sync_block.h
+-
+dvbt/dvbti_randomizer.h
 -
 
 ../gr-dvbt/include/dvbt/dvbt_types.h
@@ -122,6 +138,12 @@ cstring
 cassert
 -
 dvbt/dvbt_consts.h
+-
+
+../gr-dvbt/include/dvbt/dvbti_randomizer.h
+dvbt/dvbt_api.h
+-
+dvbt/dvbt_types.h
 -
 
 ../gruel/src/include/gruel/api.h
@@ -165,6 +187,8 @@ gruel/pmt_sugar.h
 /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx
 Python.h
 -
+stddef.h
+-
 string.h
 -
 stdexcept
@@ -186,8 +210,6 @@ stdexcept
 string
 -
 stdexcept
--
-stddef.h
 -
 float.h
 -
@@ -217,8 +239,10 @@ dvbt/dvbt_pad.h
 /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_pad.h
 dvbt/dvbt_depad.h
 /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_depad.h
-dvbt/dvbt_types.h
-/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_types.h
+dvbt/dvbt_randomizer.h
+/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_randomizer.h
+dvbt/dvbt_derandomizer.h
+/home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt/dvbt_derandomizer.h
 limits.h
 -
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdigital__cpmmod__bc" kind="class" prot="public">
     <compoundname>digital_cpmmod_bc</compoundname>
     <derivedcompoundref refid="classdigital__gmskmod__bc" prot="public" virt="non-virtual">digital_gmskmod_bc</derivedcompoundref>
@@ -59,9 +59,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__cpmmod__bc_1a0da23de38ac47ae0518f4764f335a768" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="digital__cpmmod__bc_8h_1a1972c502674fc7e701de65b1a207ea93" kindref="member">digital_cpmmod_bc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_cpmmod_bc_sptr digital_make_cpmmod_bc</definition>
+      <memberdef kind="friend" id="classdigital__cpmmod__bc_1a83c2996315f65d54c583d61a02ed6761" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend DIGITAL_API <ref refid="digital__cpmmod__bc_8h_1a1972c502674fc7e701de65b1a207ea93" kindref="member">digital_cpmmod_bc_sptr</ref></type>
+        <definition>DIGITAL_API digital_cpmmod_bc_sptr digital_make_cpmmod_bc</definition>
         <argsstring>(int type, float h, unsigned samples_per_sym, unsigned L, double beta)</argsstring>
         <name>digital_make_cpmmod_bc</name>
         <param>
@@ -186,17 +186,29 @@ Examples:<itemizedlist>
 <listitem><para>Setting h = 0.5, L = 1, type = LREC yields MSK.</para></listitem><listitem><para>Setting h = 0.5, type = GAUSSIAN and beta = 0.3 yields GMSK as used in GSM.</para></listitem></itemizedlist>
 </para><para>The input of this block are symbols from an M-ary alphabet +/-1, +/-3, ..., +/-(M-1). Usually, M = 2 and therefore, the valid inputs are +/-1. The modulator will silently accept any other inputs, though. The output is the phase-modulated signal. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="373">
+      <node id="379">
         <label>digital_gmskmod_bc</label>
         <link refid="classdigital__gmskmod__bc"/>
-        <childnode refid="372" relation="public-inheritance">
+        <childnode refid="378" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="372">
+      <node id="378">
         <label>digital_cpmmod_bc</label>
         <link refid="classdigital__cpmmod__bc"/>
       </node>
     </inheritancegraph>
+    <collaborationgraph>
+      <node id="381">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="380">
+        <label>digital_cpmmod_bc</label>
+        <link refid="classdigital__cpmmod__bc"/>
+        <childnode refid="381" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_cpmmod_bc.h" line="76" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_cpmmod_bc.h" bodystart="75" bodyend="95"/>
     <listofallmembers>
       <member refid="classdigital__cpmmod__bc_1aa3f2226a5b511044afd68fc1ea55b618" prot="private" virt="non-virtual"><scope>digital_cpmmod_bc</scope><name>d_char_to_float</name></member>
@@ -204,7 +216,7 @@ Examples:<itemizedlist>
       <member refid="classdigital__cpmmod__bc_1ab78ac3767ffc9cd491bd1b8eac12d41c" prot="private" virt="non-virtual"><scope>digital_cpmmod_bc</scope><name>d_pulse_shaper</name></member>
       <member refid="classdigital__cpmmod__bc_1aeb475a29c59a338b2385a5c91ef9ad88" prot="private" virt="non-virtual"><scope>digital_cpmmod_bc</scope><name>d_taps</name></member>
       <member refid="classdigital__cpmmod__bc_1aadb14cbaeadc17071047caddda0c17c3" prot="protected" virt="non-virtual"><scope>digital_cpmmod_bc</scope><name>digital_cpmmod_bc</name></member>
-      <member refid="classdigital__cpmmod__bc_1a0da23de38ac47ae0518f4764f335a768" prot="private" virt="non-virtual"><scope>digital_cpmmod_bc</scope><name>digital_make_cpmmod_bc</name></member>
+      <member refid="classdigital__cpmmod__bc_1a83c2996315f65d54c583d61a02ed6761" prot="private" virt="non-virtual"><scope>digital_cpmmod_bc</scope><name>digital_make_cpmmod_bc</name></member>
       <member refid="classdigital__cpmmod__bc_1a7ee3ed441b2e08fedd0bee7362d3b952" prot="public" virt="non-virtual"><scope>digital_cpmmod_bc</scope><name>get_taps</name></member>
     </listofallmembers>
   </compounddef>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classi2c__bbio__pp" kind="class" prot="public">
     <compoundname>i2c_bbio_pp</compoundname>
     <basecompoundref refid="classi2c__bbio" prot="public" virt="non-virtual">i2c_bbio</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classi2c__bbio__pp_1ab2f092c8777dd59526af925385fcad29" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">i2c_bbio_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">i2c_bbio_sptr</ref></type>
         <definition>GR_CORE_API i2c_bbio_sptr make_i2c_bbio_pp</definition>
         <argsstring>(ppio_sptr pp)</argsstring>
         <name>make_i2c_bbio_pp</name>
@@ -59,7 +59,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classi2c__bbio__pp_1afa9830679ddb385644f304c1f7de004c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void i2c_bbio_pp::set_scl</definition>
         <argsstring>(bool state)</argsstring>
         <name>set_scl</name>
@@ -77,7 +77,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/i2c_bbio_pp.h" line="43"/>
       </memberdef>
       <memberdef kind="function" id="classi2c__bbio__pp_1a5567fac14054ae3741110ef457795de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void i2c_bbio_pp::set_sda</definition>
         <argsstring>(bool state)</argsstring>
         <name>set_sda</name>
@@ -109,7 +109,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/i2c_bbio_pp.h" line="45"/>
       </memberdef>
       <memberdef kind="function" id="classi2c__bbio__pp_1a25510872738004a6324c0643c4a69f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void i2c_bbio_pp::lock</definition>
         <argsstring>()</argsstring>
         <name>lock</name>
@@ -123,7 +123,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/i2c_bbio_pp.h" line="47"/>
       </memberdef>
       <memberdef kind="function" id="classi2c__bbio__pp_1aa01b986d0e95999537ee2d5f173dbfed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void i2c_bbio_pp::unlock</definition>
         <argsstring>()</argsstring>
         <name>unlock</name>
@@ -142,27 +142,41 @@
     <detaileddescription>
 <para>This class talks to the <ref refid="classi2c" kindref="compound">i2c</ref> bus on the microtune eval board using the parallel port. This works for both the 4937 and 4702 boards. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="6113">
+      <node id="14506">
         <label>i2c_bbio_pp</label>
         <link refid="classi2c__bbio__pp"/>
-        <childnode refid="6114" relation="public-inheritance">
+        <childnode refid="14507" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6114">
+      <node id="14507">
         <label>i2c_bbio</label>
         <link refid="classi2c__bbio"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6115">
+      <node id="14508">
         <label>i2c_bbio_pp</label>
         <link refid="classi2c__bbio__pp"/>
-        <childnode refid="6116" relation="public-inheritance">
+        <childnode refid="14509" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14510" relation="usage">
+          <edgelabel>d_pp</edgelabel>
         </childnode>
       </node>
-      <node id="6116">
+      <node id="14509">
         <label>i2c_bbio</label>
         <link refid="classi2c__bbio"/>
+      </node>
+      <node id="14511">
+        <label>ppio</label>
+        <link refid="classppio"/>
+      </node>
+      <node id="14510">
+        <label>boost::shared_ptr&lt; ppio &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="14511" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/i2c_bbio_pp.h" line="37" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/i2c_bbio_pp.h" bodystart="37" bodyend="52"/>

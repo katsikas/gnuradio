@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_uhd_apps_c35b4.
-
-# Include the progress variables for this target.
-include gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_c35b4.dir/progress.make
 
 gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_c35b4: gr-uhd/apps/hf_radio/input.py.exe
 gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_c35b4: gr-uhd/apps/hf_radio/output.py.exe
@@ -51,27 +51,27 @@ gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_c35b4: gr-uhd/apps/hf_radio/startup.py.
 gr-uhd/apps/hf_radio/input.py.exe: ../gr-uhd/apps/hf_radio/input.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin input.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/input.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/input.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/input.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/input.py' ) .read ( ) ) "
 
 gr-uhd/apps/hf_radio/output.py.exe: ../gr-uhd/apps/hf_radio/output.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin output.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/output.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/output.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/output.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/output.py' ) .read ( ) ) "
 
 gr-uhd/apps/hf_radio/ssbagc.py.exe: ../gr-uhd/apps/hf_radio/ssbagc.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin ssbagc.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/ssbagc.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/ssbagc.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/ssbagc.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/ssbagc.py' ) .read ( ) ) "
 
 gr-uhd/apps/hf_radio/ssbdemod.py.exe: ../gr-uhd/apps/hf_radio/ssbdemod.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin ssbdemod.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/ssbdemod.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/ssbdemod.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/ssbdemod.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/ssbdemod.py' ) .read ( ) ) "
 
 gr-uhd/apps/hf_radio/startup.py.exe: ../gr-uhd/apps/hf_radio/startup.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin startup.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/startup.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/startup.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/apps/hf_radio/startup.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/apps/hf_radio/startup.py' ) .read ( ) ) "
 
 pygen_gr_uhd_apps_c35b4: gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_c35b4
 pygen_gr_uhd_apps_c35b4: gr-uhd/apps/hf_radio/input.py.exe

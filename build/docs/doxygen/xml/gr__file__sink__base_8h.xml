@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__file__sink__base_8h" kind="file">
     <compoundname>gr_file_sink_base.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -8,48 +8,48 @@
     <includedby refid="gr__file__sink_8h" local="no">gr_file_sink.h</includedby>
     <includedby refid="gr__wavfile__sink_8h" local="no">gr_wavfile_sink.h</includedby>
     <incdepgraph>
-      <node id="7469">
+      <node id="8615">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7470">
+      <node id="8616">
         <label>boost/thread.hpp</label>
       </node>
-      <node id="7471">
+      <node id="8617">
         <label>cstdio</label>
       </node>
-      <node id="7468">
+      <node id="8614">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="7469" relation="include">
+        <childnode refid="8615" relation="include">
         </childnode>
       </node>
-      <node id="7467">
+      <node id="8613">
         <label>gr_file_sink_base.h</label>
         <link refid="gr_file_sink_base.h"/>
-        <childnode refid="7468" relation="include">
+        <childnode refid="8614" relation="include">
         </childnode>
-        <childnode refid="7470" relation="include">
+        <childnode refid="8616" relation="include">
         </childnode>
-        <childnode refid="7471" relation="include">
+        <childnode refid="8617" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7474">
+      <node id="8620">
         <label>gr_wavfile_sink.h</label>
         <link refid="gr__wavfile__sink_8h"/>
       </node>
-      <node id="7473">
+      <node id="8619">
         <label>gr_file_sink.h</label>
         <link refid="gr__file__sink_8h"/>
       </node>
-      <node id="7472">
+      <node id="8618">
         <label>gr_file_sink_base.h</label>
         <link refid="gr_file_sink_base.h"/>
-        <childnode refid="7473" relation="include">
+        <childnode refid="8619" relation="include">
         </childnode>
-        <childnode refid="7474" relation="include">
+        <childnode refid="8620" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

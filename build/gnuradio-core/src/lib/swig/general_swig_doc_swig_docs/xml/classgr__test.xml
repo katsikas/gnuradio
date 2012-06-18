@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__test" kind="class" prot="public">
     <compoundname>gr_test</compoundname>
     <includes refid="gr__test_8h" local="no">gr_test.h</includes>
@@ -496,9 +496,9 @@ This function is called by the runtime system whenever the topology changes. Mos
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classgr__test_1a834c4c9a1df0365810fea217a8869c6d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="gr__test_8h_1a81b0e95fb4d89e2f6e11e685980030c3" kindref="member">gr_test_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_test_sptr gr_make_test</definition>
+      <memberdef kind="friend" id="classgr__test_1a897f390181a82cb289d1bc1f1ab602f5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend GR_CORE_API <ref refid="gr__test_8h_1a81b0e95fb4d89e2f6e11e685980030c3" kindref="member">gr_test_sptr</ref></type>
+        <definition>GR_CORE_API gr_test_sptr gr_make_test</definition>
         <argsstring>(const std::string &amp;name, int min_inputs, int max_inputs, unsigned int sizeof_input_item, int min_outputs, int max_outputs, unsigned int sizeof_output_item, unsigned int history, unsigned int output_multiple, double relative_rate, bool fixed_rate, gr_consume_type_t cons_type, gr_produce_type_t prod_type)</argsstring>
         <name>gr_make_test</name>
         <param>
@@ -583,7 +583,7 @@ This function is called by the runtime system whenever the topology changes. Mos
       <member refid="classgr__test_1abb33a7036cbb39bcfeacf22c6352b50b" prot="public" virt="non-virtual"><scope>gr_test</scope><name>fixed_rate_noutput_to_ninput</name></member>
       <member refid="classgr__test_1a066f8bfd35652cf2f9394bee8e61dc50" prot="public" virt="non-virtual"><scope>gr_test</scope><name>forecast</name></member>
       <member refid="classgr__test_1a871aa0cd617be4a13e5cb036bdb55cd7" prot="public" virt="non-virtual"><scope>gr_test</scope><name>general_work</name></member>
-      <member refid="classgr__test_1a834c4c9a1df0365810fea217a8869c6d" prot="protected" virt="non-virtual"><scope>gr_test</scope><name>gr_make_test</name></member>
+      <member refid="classgr__test_1a897f390181a82cb289d1bc1f1ab602f5" prot="protected" virt="non-virtual"><scope>gr_test</scope><name>gr_make_test</name></member>
       <member refid="classgr__test_1a0de0cde25f060628652711db1fa75909" prot="protected" virt="non-virtual"><scope>gr_test</scope><name>gr_test</name></member>
       <member refid="classgr__test_1a5d96333a3756b37fe54a6a3f88866b64" prot="public" virt="non-virtual"><scope>gr_test</scope><name>set_check_topology</name></member>
       <member refid="classgr__test_1a866d8cbba629307e5e976339048c0234" prot="public" virt="non-virtual"><scope>gr_test</scope><name>set_consume_limit</name></member>

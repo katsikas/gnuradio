@@ -1,7 +1,47 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__sig__source__waveform_8h" kind="file">
     <compoundname>gr_sig_source_waveform.h</compoundname>
+    <includedby refid="gr__sig__source__c_8h" local="no">gr_sig_source_c.h</includedby>
+    <includedby refid="gr__sig__source__f_8h" local="no">gr_sig_source_f.h</includedby>
+    <includedby refid="gr__sig__source__i_8h" local="no">gr_sig_source_i.h</includedby>
+    <includedby refid="gr__sig__source__s_8h" local="no">gr_sig_source_s.h</includedby>
+    <invincdepgraph>
+      <node id="14672">
+        <label>gr_channel_model.h</label>
+        <link refid="gr__channel__model_8h"/>
+      </node>
+      <node id="14670">
+        <label>gr_sig_source_waveform.h</label>
+        <link refid="gr_sig_source_waveform.h"/>
+        <childnode refid="14671" relation="include">
+        </childnode>
+        <childnode refid="14673" relation="include">
+        </childnode>
+        <childnode refid="14674" relation="include">
+        </childnode>
+        <childnode refid="14675" relation="include">
+        </childnode>
+      </node>
+      <node id="14671">
+        <label>gr_sig_source_c.h</label>
+        <link refid="gr__sig__source__c_8h"/>
+        <childnode refid="14672" relation="include">
+        </childnode>
+      </node>
+      <node id="14675">
+        <label>gr_sig_source_s.h</label>
+        <link refid="gr__sig__source__s_8h"/>
+      </node>
+      <node id="14673">
+        <label>gr_sig_source_f.h</label>
+        <link refid="gr__sig__source__f_8h"/>
+      </node>
+      <node id="14674">
+        <label>gr_sig_source_i.h</label>
+        <link refid="gr__sig__source__i_8h"/>
+      </node>
+    </invincdepgraph>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="gr__sig__source__waveform_8h_1af014e40721bc5a916be04d8ce1d8b9b6" prot="public" static="no">
         <name>gr_waveform_t</name>

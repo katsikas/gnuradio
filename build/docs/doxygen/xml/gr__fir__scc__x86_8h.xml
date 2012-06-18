@@ -1,37 +1,96 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__fir__scc__x86_8h" kind="file">
     <compoundname>gr_fir_scc_x86.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__fir__scc__simd_8h" local="no">gr_fir_scc_simd.h</includes>
     <incdepgraph>
-      <node id="7620">
-        <label>gr_fir_scc_simd.h</label>
-        <link refid="gr__fir__scc__simd_8h"/>
-        <childnode refid="7618" relation="include">
+      <node id="9218">
+        <label>gr_fir_scc_generic.h</label>
+        <link refid="gr__fir__scc__generic_8h"/>
+        <childnode refid="9215" relation="include">
         </childnode>
-        <childnode refid="7621" relation="include">
+        <childnode refid="9219" relation="include">
         </childnode>
       </node>
-      <node id="7619">
+      <node id="9222">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="9217">
+        <label>gr_fir_scc_simd.h</label>
+        <link refid="gr__fir__scc__simd_8h"/>
+        <childnode refid="9215" relation="include">
+        </childnode>
+        <childnode refid="9218" relation="include">
+        </childnode>
+      </node>
+      <node id="9216">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7617">
+      <node id="9221">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="9215" relation="include">
+        </childnode>
+        <childnode refid="9222" relation="include">
+        </childnode>
+        <childnode refid="9220" relation="include">
+        </childnode>
+        <childnode refid="9223" relation="include">
+        </childnode>
+        <childnode refid="9224" relation="include">
+        </childnode>
+      </node>
+      <node id="9223">
+        <label>stddef.h</label>
+      </node>
+      <node id="9214">
         <label>gr_fir_scc_x86.h</label>
         <link refid="gr_fir_scc_x86.h"/>
-        <childnode refid="7618" relation="include">
+        <childnode refid="9215" relation="include">
         </childnode>
-        <childnode refid="7620" relation="include">
+        <childnode refid="9217" relation="include">
         </childnode>
       </node>
-      <node id="7621">
-        <label>gr_fir_scc_generic.h</label>
+      <node id="9220">
+        <label>vector</label>
       </node>
-      <node id="7618">
+      <node id="9215">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="7619" relation="include">
+        <childnode refid="9216" relation="include">
+        </childnode>
+      </node>
+      <node id="9226">
+        <label>gr_reverse.h</label>
+        <link refid="gr__reverse_8h"/>
+        <childnode refid="9215" relation="include">
+        </childnode>
+        <childnode refid="9220" relation="include">
+        </childnode>
+        <childnode refid="9224" relation="include">
+        </childnode>
+      </node>
+      <node id="9219">
+        <label>gr_fir_scc.h</label>
+        <link refid="gr__fir__scc_8h"/>
+        <childnode refid="9215" relation="include">
+        </childnode>
+        <childnode refid="9220" relation="include">
+        </childnode>
+        <childnode refid="9221" relation="include">
+        </childnode>
+        <childnode refid="9226" relation="include">
+        </childnode>
+      </node>
+      <node id="9225">
+        <label>complex</label>
+      </node>
+      <node id="9224">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="9225" relation="include">
         </childnode>
       </node>
     </incdepgraph>

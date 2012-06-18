@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__tpb__thread__body" kind="class" prot="public">
     <compoundname>gr_tpb_thread_body</compoundname>
     <includes refid="gr__tpb__thread__body_8h" local="no">gr_tpb_thread_body.h</includes>
@@ -59,6 +59,266 @@
 <para>The body of each thread-per-block thread. </para>    </briefdescription>
     <detaileddescription>
 <para>One of these is instantiated in its own thread for each block. The constructor turns into the main loop which returns when the block is done or is interrupted. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="13592">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="13587" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13586">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13587" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13597">
+        <label>T</label>
+      </node>
+      <node id="13577">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="13578" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13567">
+        <label>gr_block_executor</label>
+        <link refid="classgr__block__executor"/>
+        <childnode refid="13568" relation="usage">
+          <edgelabel>d_output_items</edgelabel>
+        </childnode>
+        <childnode refid="13569" relation="usage">
+          <edgelabel>d_returned_tags</edgelabel>
+        </childnode>
+        <childnode refid="13571" relation="usage">
+          <edgelabel>d_start_nitems_read</edgelabel>
+        </childnode>
+        <childnode refid="13572" relation="usage">
+          <edgelabel>d_ninput_items</edgelabel>
+          <edgelabel>d_ninput_items_required</edgelabel>
+        </childnode>
+        <childnode refid="13573" relation="usage">
+          <edgelabel>d_input_done</edgelabel>
+        </childnode>
+        <childnode refid="13574" relation="usage">
+          <edgelabel>d_block</edgelabel>
+        </childnode>
+        <childnode refid="13598" relation="usage">
+          <edgelabel>d_log</edgelabel>
+        </childnode>
+        <childnode refid="13603" relation="usage">
+          <edgelabel>d_input_items</edgelabel>
+        </childnode>
+      </node>
+      <node id="13587">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="13588" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="13594">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="13599">
+        <label>std::basic_ofstream&lt; char &gt;</label>
+        <childnode refid="13600" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13590">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="13575">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="13576" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13583" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="13583">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13584" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13596">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13597" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13603">
+        <label>std::vector&lt; const void * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="13598">
+        <label>std::ofstream</label>
+        <childnode refid="13599" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13584">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="13585" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="13593" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="13595" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="13591">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="13570" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13574">
+        <label>boost::shared_ptr&lt; gr_block &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13575" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13579">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13580" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13589">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="13590" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="13591" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="13592" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="13582">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="13585">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="13586" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13569">
+        <label>std::vector&lt; gr_tag_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="13570" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13578">
+        <label>gruel::msg_accepter</label>
+        <link refid="classgruel_1_1msg__accepter"/>
+      </node>
+      <node id="13571">
+        <label>std::vector&lt; uint64_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="13566">
+        <label>gr_tpb_thread_body</label>
+        <link refid="classgr__tpb__thread__body"/>
+        <childnode refid="13567" relation="usage">
+          <edgelabel>d_exec</edgelabel>
+        </childnode>
+      </node>
+      <node id="13600">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="13601" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13601">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="13602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13588">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13589" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13570">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="13593">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="13594" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="13595">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="13596" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13580">
+        <label>gr_io_signature</label>
+        <link refid="classgr__io__signature"/>
+        <childnode refid="13572" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="13602">
+        <label>std::ios_base</label>
+      </node>
+      <node id="13573">
+        <label>std::vector&lt; bool &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="13576">
+        <label>gr_basic_block</label>
+        <link refid="classgr__basic__block"/>
+        <childnode refid="13577" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13579" relation="usage">
+          <edgelabel>d_input_signature</edgelabel>
+          <edgelabel>d_output_signature</edgelabel>
+        </childnode>
+        <childnode refid="13581" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="13568">
+        <label>std::vector&lt; void * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="13572">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="13581">
+        <label>std::string</label>
+        <childnode refid="13582" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_tpb_thread_body.h" line="37" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_tpb_thread_body.h" bodystart="37" bodyend="43"/>
     <listofallmembers>
       <member refid="classgr__tpb__thread__body_1a0e25b80d2de7f9273326e4e704f8f46c" prot="private" virt="non-virtual"><scope>gr_tpb_thread_body</scope><name>d_exec</name></member>

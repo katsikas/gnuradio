@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classpmt_1_1pmt__vector" kind="class" prot="public">
     <compoundname>pmt::pmt_vector</compoundname>
     <basecompoundref refid="classpmt_1_1pmt__base" prot="public" virt="non-virtual">pmt::pmt_base</basecompoundref>
     <includes refid="pmt__int_8h" local="no">pmt_int.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classpmt_1_1pmt__vector_1ac4519e3a9a3d20146f76d5d6bada076a" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref> &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref> &gt;</type>
         <definition>std::vector&lt;pmt_t&gt; pmt::pmt_vector::d_v</definition>
         <argsstring></argsstring>
         <name>d_v</name>
@@ -73,7 +73,7 @@
         <location file="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" line="196"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__vector_1a6bc7732a82a3c29ba4f6b3dc06718933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pmt::pmt_vector::set</definition>
         <argsstring>(size_t k, pmt_t obj)</argsstring>
         <name>set</name>
@@ -94,7 +94,7 @@
         <location file="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" line="197"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__vector_1af7609a26f80c46d1721c4467a9929295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pmt::pmt_vector::fill</definition>
         <argsstring>(pmt_t fill)</argsstring>
         <name>fill</name>
@@ -146,26 +146,33 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6976">
+      <node id="15606">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="6975">
+      <node id="15605">
         <label>pmt::pmt_vector</label>
         <link refid="classpmt_1_1pmt__vector"/>
-        <childnode refid="6976" relation="public-inheritance">
+        <childnode refid="15606" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6978">
+      <node id="15609">
+        <label>std::vector&lt; pmt_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="15608">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="6977">
+      <node id="15607">
         <label>pmt::pmt_vector</label>
         <link refid="classpmt_1_1pmt__vector"/>
-        <childnode refid="6978" relation="public-inheritance">
+        <childnode refid="15608" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15609" relation="usage">
+          <edgelabel>d_v</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

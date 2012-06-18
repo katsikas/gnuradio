@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__sync__block" kind="class" prot="public">
     <compoundname>gr_sync_block</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -81,8 +81,8 @@
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
         <reimplements refid="classgr__block_1aa1f2518b5c97126bb015adb9e2027f4a">forecast</reimplements>
-        <reimplementedby refid="classgr__sync__decimator_1a140792c0a9777b6b82eb220cdd424ecd">forecast</reimplementedby>
         <reimplementedby refid="classgr__sync__interpolator_1a81ef017ef4ec17d0808cd1c0e2ceb803">forecast</reimplementedby>
+        <reimplementedby refid="classgr__sync__decimator_1a140792c0a9777b6b82eb220cdd424ecd">forecast</reimplementedby>
         <param>
           <type>int</type>
           <declname>noutput_items</declname>
@@ -120,8 +120,8 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
         <name>general_work</name>
         <reimplements refid="classgr__block_1a137b93d87dc83bbdb6369d33f4ea8197">general_work</reimplements>
-        <reimplementedby refid="classgr__sync__decimator_1a3a7d9a6487780922c14cbb76d46a0586">general_work</reimplementedby>
         <reimplementedby refid="classgr__sync__interpolator_1a49cd2967b214ead14270d97dab932301">general_work</reimplementedby>
+        <reimplementedby refid="classgr__sync__decimator_1a3a7d9a6487780922c14cbb76d46a0586">general_work</reimplementedby>
         <param>
           <type>int</type>
           <declname>noutput_items</declname>
@@ -182,8 +182,8 @@ general_work must call consume or consume_each to indicate how many items were c
         <argsstring>(int ninput)</argsstring>
         <name>fixed_rate_ninput_to_noutput</name>
         <reimplements refid="classgr__block_1a4f17bec4407904b31d45f0d8e78c4683">fixed_rate_ninput_to_noutput</reimplements>
-        <reimplementedby refid="classgr__sync__decimator_1a23c657d3c3f0482369648e1916751f6f">fixed_rate_ninput_to_noutput</reimplementedby>
         <reimplementedby refid="classgr__sync__interpolator_1a943227c6134e71a7867a66977b414533">fixed_rate_ninput_to_noutput</reimplementedby>
+        <reimplementedby refid="classgr__sync__decimator_1a23c657d3c3f0482369648e1916751f6f">fixed_rate_ninput_to_noutput</reimplementedby>
         <param>
           <type>int</type>
           <declname>ninput</declname>
@@ -202,8 +202,8 @@ general_work must call consume or consume_each to indicate how many items were c
         <argsstring>(int noutput)</argsstring>
         <name>fixed_rate_noutput_to_ninput</name>
         <reimplements refid="classgr__block_1a196ae6a4f9a3d0abed3428d2b765a133">fixed_rate_noutput_to_ninput</reimplements>
-        <reimplementedby refid="classgr__sync__decimator_1a90041d67e72c64cb4d0f9a29bfbbd776">fixed_rate_noutput_to_ninput</reimplementedby>
         <reimplementedby refid="classgr__sync__interpolator_1a03961e37cf520668a87f53762e638b9f">fixed_rate_noutput_to_ninput</reimplementedby>
+        <reimplementedby refid="classgr__sync__decimator_1a90041d67e72c64cb4d0f9a29bfbbd776">fixed_rate_noutput_to_ninput</reimplementedby>
         <param>
           <type>int</type>
           <declname>noutput</declname>
@@ -222,73 +222,73 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="446">
+      <node id="483">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="443">
+      <node id="480">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="481" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="447">
+      <node id="484">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="443" relation="public-inheritance">
+        <childnode refid="480" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="444">
+      <node id="481">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="445" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="448">
+      <node id="485">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="443" relation="public-inheritance">
+        <childnode refid="480" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="445">
+      <node id="482">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="446" relation="public-inheritance">
+        <childnode refid="483" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="452">
+      <node id="489">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="449">
+      <node id="486">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="450" relation="public-inheritance">
+        <childnode refid="487" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="450">
+      <node id="487">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="451" relation="public-inheritance">
+        <childnode refid="488" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="454">
+      <node id="491">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="451">
+      <node id="488">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="452" relation="public-inheritance">
+        <childnode refid="489" relation="public-inheritance">
         </childnode>
-        <childnode refid="453" relation="usage">
+        <childnode refid="490" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="453">
+      <node id="490">
         <label>std::string</label>
-        <childnode refid="454" relation="public-inheritance">
+        <childnode refid="491" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -345,7 +345,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_sync_block</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_sync_block</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_sync_block</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_sync_block</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_sync_block</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_sync_block</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_sync_block</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_sync_block</scope><name>set_relative_rate</name></member>

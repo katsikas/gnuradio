@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="ppio_8h" kind="file">
     <compoundname>ppio.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -7,42 +7,42 @@
     <includedby refid="i2c__bbio__pp_8h" local="yes">i2c_bbio_pp.h</includedby>
     <includedby refid="ppio__ppdev_8h" local="no">ppio_ppdev.h</includedby>
     <incdepgraph>
-      <node id="15635">
+      <node id="20264">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="15634">
+      <node id="20263">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="15632">
+      <node id="20261">
         <label>ppio.h</label>
         <link refid="ppio.h"/>
-        <childnode refid="15633" relation="include">
+        <childnode refid="20262" relation="include">
         </childnode>
-        <childnode refid="15635" relation="include">
+        <childnode refid="20264" relation="include">
         </childnode>
       </node>
-      <node id="15633">
+      <node id="20262">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="15634" relation="include">
+        <childnode refid="20263" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="15637">
+      <node id="20266">
         <label>i2c_bbio_pp.h</label>
         <link refid="i2c__bbio__pp_8h"/>
       </node>
-      <node id="15636">
+      <node id="20265">
         <label>ppio.h</label>
         <link refid="ppio.h"/>
-        <childnode refid="15637" relation="include">
+        <childnode refid="20266" relation="include">
         </childnode>
-        <childnode refid="15638" relation="include">
+        <childnode refid="20267" relation="include">
         </childnode>
       </node>
-      <node id="15638">
+      <node id="20267">
         <label>ppio_ppdev.h</label>
         <link refid="ppio__ppdev_8h"/>
       </node>
@@ -50,7 +50,7 @@
     <innerclass refid="classppio" prot="public">ppio</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="ppio_8h_1a817026a008af78fc1c9f9946834f4c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">ppio_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">ppio_sptr</ref></type>
         <definition>GR_CORE_API ppio_sptr make_ppio</definition>
         <argsstring>(int which_pp)</argsstring>
         <name>make_ppio</name>

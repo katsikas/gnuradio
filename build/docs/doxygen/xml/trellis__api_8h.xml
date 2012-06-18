@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="trellis__api_8h" kind="file">
     <compoundname>trellis_api.h</compoundname>
     <includes refid="attributes_8h" local="no">gruel/attributes.h</includes>
@@ -10,79 +10,79 @@
     <includedby refid="trellis__siso__combined__f_8h" local="no">trellis_siso_combined_f.h</includedby>
     <includedby refid="trellis__siso__f_8h" local="no">trellis_siso_f.h</includedby>
     <incdepgraph>
-      <node id="16435">
+      <node id="21152">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="16434">
+      <node id="21151">
         <label>trellis_api.h</label>
         <link refid="trellis_api.h"/>
-        <childnode refid="16435" relation="include">
+        <childnode refid="21152" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="16440">
+      <node id="21157">
         <label>trellis_siso_f.h</label>
         <link refid="trellis__siso__f_8h"/>
       </node>
-      <node id="16439">
+      <node id="21156">
         <label>trellis_siso_combined_f.h</label>
         <link refid="trellis__siso__combined__f_8h"/>
       </node>
-      <node id="16442">
+      <node id="21159">
         <label>trellis_constellation_metrics_cf.h</label>
         <link refid="trellis__constellation__metrics__cf_8h"/>
       </node>
-      <node id="16443">
+      <node id="21160">
         <label>trellis_permutation.h</label>
         <link refid="trellis__permutation_8h"/>
       </node>
-      <node id="16436">
+      <node id="21153">
         <label>trellis_api.h</label>
         <link refid="trellis_api.h"/>
-        <childnode refid="16437" relation="include">
+        <childnode refid="21154" relation="include">
         </childnode>
-        <childnode refid="16441" relation="include">
+        <childnode refid="21158" relation="include">
         </childnode>
-        <childnode refid="16442" relation="include">
+        <childnode refid="21159" relation="include">
         </childnode>
-        <childnode refid="16443" relation="include">
+        <childnode refid="21160" relation="include">
         </childnode>
-        <childnode refid="16439" relation="include">
+        <childnode refid="21156" relation="include">
         </childnode>
-        <childnode refid="16440" relation="include">
+        <childnode refid="21157" relation="include">
         </childnode>
       </node>
-      <node id="16437">
+      <node id="21154">
         <label>fsm.h</label>
         <link refid="fsm_8h"/>
-        <childnode refid="16438" relation="include">
+        <childnode refid="21155" relation="include">
         </childnode>
-        <childnode refid="16439" relation="include">
+        <childnode refid="21156" relation="include">
         </childnode>
-        <childnode refid="16440" relation="include">
+        <childnode refid="21157" relation="include">
         </childnode>
       </node>
-      <node id="16441">
+      <node id="21158">
         <label>interleaver.h</label>
         <link refid="interleaver_8h"/>
-        <childnode refid="16438" relation="include">
+        <childnode refid="21155" relation="include">
         </childnode>
       </node>
-      <node id="16438">
+      <node id="21155">
         <label>core_algorithms.h</label>
         <link refid="core__algorithms_8h"/>
-        <childnode refid="16439" relation="include">
+        <childnode refid="21156" relation="include">
         </childnode>
-        <childnode refid="16440" relation="include">
+        <childnode refid="21157" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
       <memberdef kind="define" id="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" prot="public" static="no">
         <name>TRELLIS_API</name>
-        <initializer><ref refid="attributes_8h_1a17b9cb3c185c92af4799ec9b0a38f3c1" kindref="member">__GR_ATTR_IMPORT</ref></initializer>
+        <initializer>__GR_ATTR_IMPORT</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

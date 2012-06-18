@@ -82,6 +82,12 @@ gr_core_api.h
 boost/shared_ptr.hpp
 -
 
+../gnuradio-core/src/lib/runtime/gr_sync_block.h
+gr_core_api.h
+-
+gr_block.h
+-
+
 ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr_core_api.h
 -
@@ -139,6 +145,38 @@ qapplication.h
 -
 SpectrumGUIClass.h
 ../gr-qtgui/include/SpectrumGUIClass.h
+
+../gr-qtgui/include/qtgui_time_sink_c.h
+Python.h
+-
+gr_qtgui_api.h
+-
+gr_sync_block.h
+-
+gr_firdes.h
+-
+gri_fft.h
+-
+qapplication.h
+-
+timedisplayform.h
+-
+
+../gr-qtgui/include/qtgui_time_sink_f.h
+Python.h
+-
+gr_qtgui_api.h
+-
+gr_sync_block.h
+-
+gr_firdes.h
+-
+gri_fft.h
+-
+qapplication.h
+-
+timedisplayform.h
+-
 
 ../gr-qtgui/include/qtgui_util.h
 qevent.h
@@ -340,6 +378,28 @@ WaterfallDisplayPlot.h
 TimeDomainDisplayPlot.h
 -
 ConstellationDisplayPlot.h
+-
+QValidator
+-
+QTimer
+-
+vector
+-
+
+../gr-qtgui/lib/timedisplayform.h
+spectrumUpdateEvents.h
+-
+FrequencyDisplayPlot.h
+-
+WaterfallDisplayPlot.h
+-
+TimeDomainDisplayPlot.h
+-
+ConstellationDisplayPlot.h
+-
+QtGui/QApplication
+-
+QtGui/QGridLayout
 -
 QValidator
 -
@@ -614,12 +674,90 @@ vector
 ../../../gr-qtgui/lib/timedisplayform.h
 /home/katsikas/gnuradio/build/gr-qtgui/lib/../../../gr-qtgui/lib/timedisplayform.h
 
+/home/katsikas/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.cc
+ConstellationDisplayPlot.h
+-
+qwt_scale_draw.h
+-
+qwt_legend.h
+-
+iostream
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.cc
+FrequencyDisplayPlot.h
+-
+qwt_scale_draw.h
+-
+
 /home/katsikas/gnuradio/gr-qtgui/lib/SpectrumGUIClass.cc
 SpectrumGUIClass.h
 -
 QEvent
 -
 QCustomEvent
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.cc
+TimeDomainDisplayPlot.h
+-
+qwt_scale_draw.h
+-
+qwt_legend.h
+-
+QColor
+-
+iostream
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.cc
+WaterfallDisplayPlot.h
+-
+qwt_color_map.h
+-
+qwt_scale_widget.h
+-
+qwt_scale_draw.h
+-
+qwt_plot_zoomer.h
+-
+qwt_plot_panner.h
+-
+qwt_plot_layout.h
+-
+qapplication.h
+-
+boost/date_time/posix_time/posix_time.hpp
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/plot_waterfall.cc
+qimage.h
+-
+qpen.h
+-
+qpainter.h
+-
+qwt_painter.h
+/home/katsikas/gnuradio/gr-qtgui/lib/qwt_painter.h
+qwt_scale_map.h
+/home/katsikas/gnuradio/gr-qtgui/lib/qwt_scale_map.h
+qwt_color_map.h
+/home/katsikas/gnuradio/gr-qtgui/lib/qwt_color_map.h
+plot_waterfall.h
+/home/katsikas/gnuradio/gr-qtgui/lib/plot_waterfall.h
+qwt_double_interval.h
+/home/katsikas/gnuradio/gr-qtgui/lib/qwt_double_interval.h
+
+/home/katsikas/gnuradio/gr-qtgui/lib/plot_waterfall.h
+qglobal.h
+-
+waterfallGlobalData.h
+-
+qwt_plot_rasteritem.h
+-
+qwt_point_3d.h
+-
+qwt_compat.h
 -
 
 /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_sink_c.cc
@@ -646,6 +784,40 @@ string.h
 QTimer
 -
 
+/home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_c.cc
+config.h
+-
+qtgui_time_sink_c.h
+-
+gr_io_signature.h
+-
+string.h
+-
+QTimer
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_f.cc
+config.h
+-
+qtgui_time_sink_f.h
+-
+gr_io_signature.h
+-
+string.h
+-
+QTimer
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/qtgui_util.cc
+qtgui_util.h
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/spectrumUpdateEvents.cc
+spectrumUpdateEvents.h
+-
+iostream
+-
+
 /home/katsikas/gnuradio/gr-qtgui/lib/spectrumdisplayform.cc
 cmath
 -
@@ -654,6 +826,24 @@ QColorDialog
 QMessageBox
 -
 spectrumdisplayform.h
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/timedisplayform.cc
+cmath
+-
+QColorDialog
+-
+QMessageBox
+-
+timedisplayform.h
+-
+iostream
+-
+
+/home/katsikas/gnuradio/gr-qtgui/lib/waterfallGlobalData.cc
+waterfallGlobalData.h
+-
+cstdio
 -
 
 /usr/include/python2.7/Python.h
@@ -1081,8 +1271,6 @@ QtCore/qbasicatomic.h
 /usr/include/qt4/QtCore/qatomic_arch.h
 QtCore/qglobal.h
 /usr/include/qt4/QtCore/QtCore/qglobal.h
-QtCore/qatomic_integrity.h
-/usr/include/qt4/QtCore/QtCore/qatomic_integrity.h
 QtCore/qatomic_vxworks.h
 /usr/include/qt4/QtCore/QtCore/qatomic_vxworks.h
 QtCore/qatomic_alpha.h
@@ -1125,24 +1313,10 @@ QtCore/qatomic_sh.h
 /usr/include/qt4/QtCore/QtCore/qatomic_sh.h
 QtCore/qatomic_sh4a.h
 /usr/include/qt4/QtCore/QtCore/qatomic_sh4a.h
-QtCore/qatomic_generic.h
-/usr/include/qt4/QtCore/QtCore/qatomic_generic.h
 
 /usr/include/qt4/QtCore/qatomic_arm.h
-QtCore/qatomic_armv7.h
-/usr/include/qt4/QtCore/QtCore/qatomic_armv7.h
-QtCore/qatomic_armv6.h
-/usr/include/qt4/QtCore/QtCore/qatomic_armv6.h
-QtCore/qatomic_armv5.h
-/usr/include/qt4/QtCore/QtCore/qatomic_armv5.h
-
-/usr/include/qt4/QtCore/qatomic_armv5.h
 
 /usr/include/qt4/QtCore/qatomic_armv6.h
-
-/usr/include/qt4/QtCore/qatomic_armv7.h
-QtCore/qatomic_armv6.h
-/usr/include/qt4/QtCore/QtCore/qatomic_armv6.h
 
 /usr/include/qt4/QtCore/qatomic_avr32.h
 
@@ -1160,10 +1334,6 @@ asm/fixed_code.h
 ia64intrin.h
 -
 ia64/sys/inline.h
--
-
-/usr/include/qt4/QtCore/qatomic_integrity.h
-INTEGRITY.h
 -
 
 /usr/include/qt4/QtCore/qatomic_macosx.h
@@ -1245,8 +1415,6 @@ string.h
 -
 stdarg.h
 -
-QtCore/qstring.h
--
 
 /usr/include/qt4/QtCore/qchar.h
 QtCore/qglobal.h
@@ -1286,22 +1454,10 @@ QtCore/qobject.h
 
 /usr/include/qt4/QtCore/qfeatures.h
 
-/usr/include/qt4/QtCore/qfile.h
-QtCore/qiodevice.h
--
-QtCore/qstring.h
--
-stdio.h
--
-f32file.h
--
-
 /usr/include/qt4/QtCore/qglobal.h
 stddef.h
 -
 QtCore/qconfig.h
--
-algorithm
 -
 AvailabilityMacros.h
 -
@@ -1361,10 +1517,6 @@ iterator
 -
 list
 -
-iterator
--
-initializer_list
--
 new
 -
 limits.h
@@ -1373,8 +1525,6 @@ string.h
 -
 
 /usr/include/qt4/QtCore/qlocale.h
-QtCore/qvariant.h
--
 QtCore/qstring.h
 -
 QtCore/qobjectdefs.h
@@ -1509,6 +1659,8 @@ Qt3Support/q3cstring.h
 -
 string
 -
+string
+-
 stdarg.h
 -
 QtCore/qstringbuilder.h
@@ -1516,8 +1668,6 @@ QtCore/qstringbuilder.h
 
 /usr/include/qt4/QtCore/qstringbuilder.h
 QtCore/qstring.h
--
-QtCore/qbytearray.h
 -
 QtCore/qmap.h
 -
@@ -1583,8 +1733,6 @@ stdlib.h
 -
 string.h
 -
-initializer_list
--
 QtCore/QPointF
 -
 QtCore/QPoint
@@ -1605,6 +1753,10 @@ qbuttongroup.h
 /usr/include/qt4/QtGui/QCheckBox
 qcheckbox.h
 /usr/include/qt4/QtGui/qcheckbox.h
+
+/usr/include/qt4/QtGui/QColor
+qcolor.h
+/usr/include/qt4/QtGui/qcolor.h
 
 /usr/include/qt4/QtGui/QColorDialog
 qcolordialog.h
@@ -1637,10 +1789,6 @@ qlabel.h
 /usr/include/qt4/QtGui/QMessageBox
 qmessagebox.h
 /usr/include/qt4/QtGui/qmessagebox.h
-
-/usr/include/qt4/QtGui/QPlatformWindow
-qplatformwindow_qpa.h
-/usr/include/qt4/QtGui/qplatformwindow_qpa.h
 
 /usr/include/qt4/QtGui/QPolygonF
 qpolygon.h
@@ -1832,6 +1980,16 @@ QtGui/qwidget.h
 QtCore/qobject.h
 -
 
+/usr/include/qt4/QtGui/qdrawutil.h
+QtCore/qnamespace.h
+-
+QtCore/qstring.h
+-
+QtCore/qmargins.h
+-
+QtGui/qpixmap.h
+-
+
 /usr/include/qt4/QtGui/qevent.h
 QtGui/qwindowdefs.h
 -
@@ -1856,8 +2014,6 @@ QtCore/qvariant.h
 QtCore/qmap.h
 -
 QtCore/qset.h
--
-QtCore/qfile.h
 -
 
 /usr/include/qt4/QtGui/qfont.h
@@ -2006,6 +2162,38 @@ QtGui/qwindowdefs.h
 QtCore/qrect.h
 -
 
+/usr/include/qt4/QtGui/qpainter.h
+QtCore/qnamespace.h
+-
+QtCore/qrect.h
+-
+QtCore/qpoint.h
+-
+QtCore/qscopedpointer.h
+-
+QtGui/qpixmap.h
+-
+QtGui/qimage.h
+-
+QtGui/qtextoption.h
+-
+QtGui/qdrawutil.h
+-
+QtGui/qpolygon.h
+-
+QtGui/qpen.h
+-
+QtGui/qbrush.h
+-
+QtGui/qmatrix.h
+-
+QtGui/qtransform.h
+-
+QtGui/qfontinfo.h
+-
+QtGui/qfontmetrics.h
+-
+
 /usr/include/qt4/QtGui/qpainterpath.h
 QtGui/qmatrix.h
 -
@@ -2048,20 +2236,6 @@ QtCore/qsharedpointer.h
 QtGui/qimage.h
 -
 QtGui/qtransform.h
--
-
-/usr/include/qt4/QtGui/qplatformwindow_qpa.h
-QtCore/qscopedpointer.h
--
-QtCore/qrect.h
--
-QtCore/qstring.h
--
-QtGui/qwindowdefs.h
--
-
-/usr/include/qt4/QtGui/qplatformwindowformat_qpa.h
-QtGui/QPlatformWindow
 -
 
 /usr/include/qt4/QtGui/qpolygon.h
@@ -2156,6 +2330,14 @@ QtGui/qwidget.h
 QtGui/qicon.h
 -
 
+/usr/include/qt4/QtGui/qtextoption.h
+QtCore/qnamespace.h
+-
+QtCore/qchar.h
+-
+QtCore/qmetatype.h
+-
+
 /usr/include/qt4/QtGui/qtransform.h
 QtGui/qmatrix.h
 -
@@ -2227,8 +2409,6 @@ QtGui/qcursor.h
 -
 QtGui/qkeysequence.h
 -
-QtGui/qplatformwindowformat_qpa.h
--
 QtGui/qevent.h
 -
 
@@ -2273,6 +2453,20 @@ qmemarray.h
 -
 qvector.h
 -
+
+/usr/include/qwt-qt4/qwt_color_map.h
+qglobal.h
+-
+qcolor.h
+-
+qvaluevector.h
+-
+qvector.h
+-
+qwt_array.h
+/usr/include/qwt-qt4/qwt_array.h
+qwt_double_interval.h
+/usr/include/qwt-qt4/qwt_double_interval.h
 
 /usr/include/qwt-qt4/qwt_data.h
 qwt_global.h
@@ -2331,6 +2525,16 @@ qwt_polygon.h
 /usr/include/qwt-qt4/qwt_polygon.h
 qwt_global.h
 /usr/include/qwt-qt4/qwt_global.h
+
+/usr/include/qwt-qt4/qwt_legend.h
+qframe.h
+-
+qwt_global.h
+/usr/include/qwt-qt4/qwt_global.h
+qvaluelist.h
+-
+qlist.h
+-
 
 /usr/include/qwt-qt4/qwt_legend_itemmanager.h
 qwt_global.h
@@ -2463,6 +2667,12 @@ qwt_text.h
 /usr/include/qwt-qt4/qwt_text.h
 qwt_double_rect.h
 /usr/include/qwt-qt4/qwt_double_rect.h
+
+/usr/include/qwt-qt4/qwt_plot_layout.h
+qwt_global.h
+/usr/include/qwt-qt4/qwt_global.h
+qwt_plot.h
+/usr/include/qwt-qt4/qwt_plot.h
 
 /usr/include/qwt-qt4/qwt_plot_magnifier.h
 qwt_global.h

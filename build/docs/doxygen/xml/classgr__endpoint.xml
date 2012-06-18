@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__endpoint" kind="class" prot="public">
     <compoundname>gr_endpoint</compoundname>
     <includes refid="gr__flowgraph_8h" local="no">gr_flowgraph.h</includes>
@@ -116,6 +116,71 @@
 <para>Class representing a specific input or output graph endpoint. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="6437">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="6438" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6434">
+        <label>gr_endpoint</label>
+        <link refid="classgr__endpoint"/>
+        <childnode refid="6435" relation="usage">
+          <edgelabel>d_basic_block</edgelabel>
+        </childnode>
+      </node>
+      <node id="6439">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="6440" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="6443">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="6438">
+        <label>gruel::msg_accepter</label>
+        <link refid="classgruel_1_1msg__accepter"/>
+      </node>
+      <node id="6440">
+        <label>gr_io_signature</label>
+        <link refid="classgr__io__signature"/>
+        <childnode refid="6441" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="6435">
+        <label>boost::shared_ptr&lt; gr_basic_block &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="6436" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="6436">
+        <label>gr_basic_block</label>
+        <link refid="classgr__basic__block"/>
+        <childnode refid="6437" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6439" relation="usage">
+          <edgelabel>d_input_signature</edgelabel>
+          <edgelabel>d_output_signature</edgelabel>
+        </childnode>
+        <childnode refid="6442" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="6441">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="6442">
+        <label>std::string</label>
+        <childnode refid="6443" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="35" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" bodystart="34" bodyend="47"/>
     <listofallmembers>
       <member refid="classgr__endpoint_1a4c93735b0fa242c803270dcbffbbe1c9" prot="public" virt="non-virtual"><scope>gr_endpoint</scope><name>block</name></member>

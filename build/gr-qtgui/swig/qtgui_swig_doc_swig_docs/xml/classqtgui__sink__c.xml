@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classqtgui__sink__c" kind="class" prot="public">
     <compoundname>qtgui_sink_c</compoundname>
     <includes refid="qtgui__sink__c_8h" local="no">qtgui_sink_c.h</includes>
@@ -268,9 +268,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classqtgui__sink__c_1ad9208051847258448498691c3b7b60a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="qtgui__sink__c_8h_1ac4b0c6367d6f268274772d1f53f54c25" kindref="member">qtgui_sink_c_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT qtgui_sink_c_sptr qtgui_make_sink_c</definition>
+      <memberdef kind="friend" id="classqtgui__sink__c_1a95a76adc8bcacc81c516df48b21a0136" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend GR_QTGUI_API <ref refid="qtgui__sink__c_8h_1ac4b0c6367d6f268274772d1f53f54c25" kindref="member">qtgui_sink_c_sptr</ref></type>
+        <definition>GR_QTGUI_API qtgui_sink_c_sptr qtgui_make_sink_c</definition>
         <argsstring>(int fftsize, int wintype, double fc, double bw, const std::string &amp;name, bool plotfreq, bool plotwaterfall, bool plottime, bool plotconst, QWidget *parent)</argsstring>
         <name>qtgui_make_sink_c</name>
         <param>
@@ -684,6 +684,29 @@
 <para>A graphical sink to display freq, spec, time, and const plots.</para><para>This is a QT-based graphical sink the takes a complex stream and plots it. The default action is to plot the signal as a PSD (FFT), spectrogram (waterfall), time domain I&amp;Q, and constellation (I vs. Q) plots. The plots may be turned off by setting the appropriate boolean value in the constructor to False. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="497">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="494">
+        <label>qtgui_sink_c</label>
+        <link refid="classqtgui__sink__c"/>
+        <childnode refid="495" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+        <childnode refid="497" relation="usage">
+          <edgelabel>d_window</edgelabel>
+        </childnode>
+      </node>
+      <node id="496">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="495">
+        <label>std::string</label>
+        <childnode refid="496" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_c.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_c.h" bodystart="56" bodyend="126"/>
     <listofallmembers>
       <member refid="classqtgui__sink__c_1aa8d11c7747ad0d3c36853830c2817f49" prot="private" virt="non-virtual"><scope>qtgui_sink_c</scope><name>buildwindow</name></member>
@@ -714,7 +737,7 @@
       <member refid="classqtgui__sink__c_1ac3f01d7b1f11be4f13f23a1f1770f516" prot="public" virt="non-virtual"><scope>qtgui_sink_c</scope><name>general_work</name></member>
       <member refid="classqtgui__sink__c_1a70273fb0f0b4bc91cb5355832fa9bad4" prot="private" virt="non-virtual"><scope>qtgui_sink_c</scope><name>initialize</name></member>
       <member refid="classqtgui__sink__c_1a9ee787d4ef3ff499db3351c10f29bacc" prot="public" virt="non-virtual"><scope>qtgui_sink_c</scope><name>pyqwidget</name></member>
-      <member refid="classqtgui__sink__c_1ad9208051847258448498691c3b7b60a7" prot="private" virt="non-virtual"><scope>qtgui_sink_c</scope><name>qtgui_make_sink_c</name></member>
+      <member refid="classqtgui__sink__c_1a95a76adc8bcacc81c516df48b21a0136" prot="private" virt="non-virtual"><scope>qtgui_sink_c</scope><name>qtgui_make_sink_c</name></member>
       <member refid="classqtgui__sink__c_1a017dc105d5cc6487c94e5801b71c9c03" prot="private" virt="non-virtual"><scope>qtgui_sink_c</scope><name>qtgui_sink_c</name></member>
       <member refid="classqtgui__sink__c_1acf511aee248f9f7157146c57c2b0e355" prot="public" virt="non-virtual"><scope>qtgui_sink_c</scope><name>qwidget</name></member>
       <member refid="classqtgui__sink__c_1ad5d8ceec45afbd2b6b484286747e2a7e" prot="public" virt="non-virtual"><scope>qtgui_sink_c</scope><name>set_constellation_axis</name></member>

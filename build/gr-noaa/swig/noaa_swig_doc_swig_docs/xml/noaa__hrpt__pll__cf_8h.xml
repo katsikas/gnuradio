@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="noaa__hrpt__pll__cf_8h" kind="file">
     <compoundname>noaa_hrpt_pll_cf.h</compoundname>
     <includes refid="noaa__api_8h" local="no">noaa_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="noaa__hrpt__pll__cf_8h_1af92163c9d771be9e391052c42b6551d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="noaa__hrpt__pll__cf_8h_1a423da58634ee659f10772ad36aebbf54" kindref="member">noaa_hrpt_pll_cf_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT noaa_hrpt_pll_cf_sptr noaa_make_hrpt_pll_cf</definition>
+      <memberdef kind="function" id="noaa__hrpt__pll__cf_8h_1af79a06fa5a9eea550eb54eae636dd255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>NOAA_API <ref refid="noaa__hrpt__pll__cf_8h_1a423da58634ee659f10772ad36aebbf54" kindref="member">noaa_hrpt_pll_cf_sptr</ref></type>
+        <definition>NOAA_API noaa_hrpt_pll_cf_sptr noaa_make_hrpt_pll_cf</definition>
         <argsstring>(float alpha, float beta, float max_offset)</argsstring>
         <name>noaa_make_hrpt_pll_cf</name>
         <param>
@@ -106,11 +106,11 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;noaa_hrpt_pll_cf&gt;<sp/><ref refid="noaa__hrpt__pll__cf_8h_1a423da58634ee659f10772ad36aebbf54" kindref="member">noaa_hrpt_pll_cf_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="noaa__api_8h_1a799d47153d76874e09e71b816d4f4a87" kindref="member">NOAA_API</ref><sp/><ref refid="noaa__hrpt__pll__cf_8h_1a423da58634ee659f10772ad36aebbf54" kindref="member">noaa_hrpt_pll_cf_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="noaa__hrpt__pll__cf_8h_1af92163c9d771be9e391052c42b6551d9" kindref="member">noaa_make_hrpt_pll_cf</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_offset);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="noaa__hrpt__pll__cf_8h_1af79a06fa5a9eea550eb54eae636dd255" kindref="member">noaa_make_hrpt_pll_cf</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_offset);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35" refid="classnoaa__hrpt__pll__cf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="noaa__api_8h_1a799d47153d76874e09e71b816d4f4a87" kindref="member">NOAA_API</ref><sp/><ref refid="classnoaa__hrpt__pll__cf" kindref="compound">noaa_hrpt_pll_cf</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="noaa__api_8h_1a799d47153d76874e09e71b816d4f4a87" kindref="member">NOAA_API</ref><sp/><ref refid="noaa__hrpt__pll__cf_8h_1a423da58634ee659f10772ad36aebbf54" kindref="member">noaa_hrpt_pll_cf_sptr</ref><sp/><ref refid="noaa__hrpt__pll__cf_8h_1af92163c9d771be9e391052c42b6551d9" kindref="member">noaa_make_hrpt_pll_cf</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_offset);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="noaa__api_8h_1a799d47153d76874e09e71b816d4f4a87" kindref="member">NOAA_API</ref><sp/><ref refid="noaa__hrpt__pll__cf_8h_1a423da58634ee659f10772ad36aebbf54" kindref="member">noaa_hrpt_pll_cf_sptr</ref><sp/><ref refid="noaa__hrpt__pll__cf_8h_1af79a06fa5a9eea550eb54eae636dd255" kindref="member">noaa_make_hrpt_pll_cf</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_offset);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classnoaa__hrpt__pll__cf" kindref="compound">noaa_hrpt_pll_cf</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_offset);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d_alpha;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1st<sp/>order<sp/>loop<sp/>constant</highlight><highlight class="normal"></highlight></codeline>

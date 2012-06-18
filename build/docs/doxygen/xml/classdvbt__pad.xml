@@ -1,12 +1,27 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdvbt__pad" kind="class" prot="public">
     <compoundname>dvbt_pad</compoundname>
     <basecompoundref refid="classgr__sync__decimator" prot="public" virt="non-virtual">gr_sync_decimator</basecompoundref>
     <includes refid="dvbt__pad_8h" local="no">dvbt_pad.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdvbt__pad_1a316eceeb3645ee9eb193c0f00aa7f7b6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dvbt_pad::packets</definition>
+        <argsstring></argsstring>
+        <name>packets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__pad_1a3a657c8db9ea6f1ca4b5d69f87861ca4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr-dvbt_2include_2dvbt_2api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_pad_sptr</ref></type>
+        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_pad_sptr</ref></type>
         <definition>DVBT_API dvbt_pad_sptr dvbt_make_pad</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_pad</name>
@@ -16,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="42"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -31,12 +46,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="44"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__pad_1a6935ac19d10ddf87752580b8172bf1a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dvbt_pad::get_packets</definition>
+        <argsstring>()</argsstring>
+        <name>get_packets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__pad_1abb014e0ad8d42545eb6c0bed2b5d663d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbt_pad::set_packets</definition>
+        <argsstring>(int)</argsstring>
+        <name>set_packets</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="60"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classdvbt__pad_1a40b68e3ebedce9c16f81dc94b2d33f67" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbt_pad::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -46,7 +90,7 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items_required</declname>
         </param>
         <briefdescription>
@@ -70,7 +114,7 @@
 Given a request to product <computeroutput>noutput_items</computeroutput>, estimate the number of data items required on each input stream. The estimate doesn&apos;t have to be exact, but should be close. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="47"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="50"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__pad_1aaaa6286955cfde9a63d712b719d3b934" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -83,11 +127,11 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -96,10 +140,10 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="50"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbt_pad::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -109,124 +153,244 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="52" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" bodystart="52" bodyend="52"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="55" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" bodystart="55" bodyend="55"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>pad mpeg ts packets from 188 byte char to to 256 byte dvbt_mpeg_packet</para><para>input: unsigned char; output: dvbt_mpeg_packet </para>    </briefdescription>
+<para>put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref></para><para>input: unsigned char; output: <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref> </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1723">
+      <node id="3168">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1724" relation="public-inheritance">
+        <childnode refid="3169" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1720">
+      <node id="3165">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1721" relation="public-inheritance">
+        <childnode refid="3166" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1719">
+      <node id="3164">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="1720" relation="public-inheritance">
+        <childnode refid="3165" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1721">
+      <node id="3166">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1722" relation="public-inheritance">
+        <childnode refid="3167" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1724">
+      <node id="3169">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1722">
+      <node id="3167">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1723" relation="public-inheritance">
+        <childnode refid="3168" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1718">
+      <node id="3163">
         <label>dvbt_pad</label>
         <link refid="classdvbt__pad"/>
-        <childnode refid="1719" relation="public-inheritance">
+        <childnode refid="3164" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1730">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="1731" relation="public-inheritance">
+      <node id="3192">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="3186" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1727">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="1728" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1726">
-        <label>gr_sync_decimator</label>
-        <link refid="classgr__sync__decimator"/>
-        <childnode refid="1727" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1728">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="1729" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1732">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="3185">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1733" relation="usage">
+        <childnode refid="3186" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1735">
+      <node id="3197">
+        <label>T</label>
+      </node>
+      <node id="3175">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="3176" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3172">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="3173" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3171">
+        <label>gr_sync_decimator</label>
+        <link refid="classgr__sync__decimator"/>
+        <childnode refid="3172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3186">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="3187" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3194">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="3189">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="3173">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="3174" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3182" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="3182">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3183" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3196">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3197" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3183">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="3184" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="3193" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="3195" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="3190">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="3191" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3177">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3178" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3188">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="3189" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="3190" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="3192" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="3181">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1731">
+      <node id="3184">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="3185" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3176">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1733">
+      <node id="3187">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3188" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3191">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="3193">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="3194" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="3195">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="3196" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3178">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="3179" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="1729">
+      <node id="3174">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1730" relation="public-inheritance">
+        <childnode refid="3175" relation="public-inheritance">
         </childnode>
-        <childnode refid="1732" relation="usage">
+        <childnode refid="3177" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1734" relation="usage">
+        <childnode refid="3180" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1725">
+      <node id="3170">
         <label>dvbt_pad</label>
         <link refid="classdvbt__pad"/>
-        <childnode refid="1726" relation="public-inheritance">
+        <childnode refid="3171" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1734">
+      <node id="3179">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="3180">
         <label>std::string</label>
-        <childnode refid="1735" relation="public-inheritance">
+        <childnode refid="3181" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" bodystart="40" bodyend="53"/>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" bodystart="43" bodyend="61"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>dvbt_pad</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>dvbt_pad</scope><name>add_item_tag</name></member>
@@ -250,6 +414,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
       <member refid="classgr__sync__decimator_1a90041d67e72c64cb4d0f9a29bfbbd776" prot="public" virt="virtual"><scope>dvbt_pad</scope><name>fixed_rate_noutput_to_ninput</name></member>
       <member refid="classdvbt__pad_1a40b68e3ebedce9c16f81dc94b2d33f67" prot="public" virt="virtual"><scope>dvbt_pad</scope><name>forecast</name></member>
       <member refid="classgr__sync__decimator_1a3a7d9a6487780922c14cbb76d46a0586" prot="public" virt="virtual"><scope>dvbt_pad</scope><name>general_work</name></member>
+      <member refid="classdvbt__pad_1a6935ac19d10ddf87752580b8172bf1a8" prot="private" virt="non-virtual"><scope>dvbt_pad</scope><name>get_packets</name></member>
       <member refid="classgr__block_1a54f69c4cd5ef5b05ac58d0128256def1" prot="protected" virt="non-virtual"><scope>dvbt_pad</scope><name>get_tags_in_range</name></member>
       <member refid="classgr__block_1ab2650baa0c05713fc04664e69dde565d" prot="protected" virt="non-virtual"><scope>dvbt_pad</scope><name>get_tags_in_range</name></member>
       <member refid="classgr__basic__block_1a84d1e93b57e52efb18a5aa90a3eaf2db" prot="protected" virt="non-virtual"><scope>dvbt_pad</scope><name>gr_basic_block</name></member>
@@ -275,6 +440,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
       <member refid="classgr__block_1ade8590e9cba9ccfe1b870be46b1416c2" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>output_multiple</name></member>
       <member refid="classgr__block_1a245374fe2959e13f0b4311c5bcf4a7f7" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>output_multiple_set</name></member>
       <member refid="classgr__basic__block_1add68b96f012dfe352700b4fd1c3a184a" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>output_signature</name></member>
+      <member refid="classdvbt__pad_1a316eceeb3645ee9eb193c0f00aa7f7b6" prot="private" virt="non-virtual"><scope>dvbt_pad</scope><name>packets</name></member>
       <member refid="classgr__msg__accepter_1a18aa82b4055d3908a4a7d71b05009d8d" prot="public" virt="virtual"><scope>dvbt_pad</scope><name>post</name></member>
       <member refid="classgr__block_1a7617c4eac84059b96d1a4da40c6d542c" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>produce</name></member>
       <member refid="classgr__block_1aa9df8c4d3fb92bde98900831546f8b97" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>relative_rate</name></member>
@@ -287,9 +453,10 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>dvbt_pad</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>dvbt_pad</scope><name>set_output_signature</name></member>
+      <member refid="classdvbt__pad_1abb014e0ad8d42545eb6c0bed2b5d663d" prot="private" virt="non-virtual"><scope>dvbt_pad</scope><name>set_packets</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_relative_rate</name></member>
       <member refid="classgr__block_1af9bce945f28950c1800d8deb6bb997a1" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_tag_propagation_policy</name></member>
       <member refid="classgr__block_1a1f7f6b204a5d383f5903b222aa838eb3" prot="public" virt="non-virtual"><scope>dvbt_pad</scope><name>set_unaligned</name></member>

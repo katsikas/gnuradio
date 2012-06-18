@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__check__counting__s" kind="class" prot="public">
     <compoundname>gr_check_counting_s</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -126,7 +126,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__check__counting__s_1abfee49cdd4c8c6bb17e3fe50d6603877" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_check_counting_s_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_check_counting_s_sptr</ref></type>
         <definition>GR_CORE_API gr_check_counting_s_sptr gr_make_check_counting_s</definition>
         <argsstring>(bool do_32bit)</argsstring>
         <name>gr_make_check_counting_s</name>
@@ -162,7 +162,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" line="58"/>
       </memberdef>
       <memberdef kind="function" id="classgr__check__counting__s_1a2187019ebf6b2fba348475027f9ab235" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_check_counting_s::enter_SEARCHING</definition>
         <argsstring>()</argsstring>
         <name>enter_SEARCHING</name>
@@ -175,7 +175,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" line="60"/>
       </memberdef>
       <memberdef kind="function" id="classgr__check__counting__s_1a0ca45784f5ba37a24862e330af9ba737" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_check_counting_s::enter_LOCKED</definition>
         <argsstring>()</argsstring>
         <name>enter_LOCKED</name>
@@ -188,7 +188,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" line="61"/>
       </memberdef>
       <memberdef kind="function" id="classgr__check__counting__s_1a3882a07e294e7daae4be2a5beb726d01" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_check_counting_s::right</definition>
         <argsstring>()</argsstring>
         <name>right</name>
@@ -201,7 +201,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" line="63" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" bodystart="63" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classgr__check__counting__s_1ad8743f0081de9dfb29d9d4132dca05cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_check_counting_s::wrong</definition>
         <argsstring>()</argsstring>
         <name>wrong</name>
@@ -240,7 +240,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" line="73" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" bodystart="73" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classgr__check__counting__s_1a0b112fbca47d68ec45f9cce0a2b39468" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_check_counting_s::log_error</definition>
         <argsstring>(unsigned short expected, unsigned short actual)</argsstring>
         <name>log_error</name>
@@ -261,7 +261,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_counting_s.h" line="75"/>
       </memberdef>
       <memberdef kind="function" id="classgr__check__counting__s_1a3a8b8ec177d428ae510a9207672d25bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_check_counting_s::log_error_32bit</definition>
         <argsstring>(unsigned int expected, unsigned int actual)</argsstring>
         <name>log_error_32bit</name>
@@ -336,11 +336,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -365,100 +365,220 @@
 </parameterlist>
 This sink is typically used to test the USRP &quot;Counting Mode&quot; or &quot;Counting mode 32 bit&quot;. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2853">
+      <node id="5442">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2854" relation="public-inheritance">
+        <childnode refid="5443" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2850">
+      <node id="5439">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2851" relation="public-inheritance">
+        <childnode refid="5440" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2851">
+      <node id="5440">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2852" relation="public-inheritance">
+        <childnode refid="5441" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2854">
+      <node id="5443">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2852">
+      <node id="5441">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2853" relation="public-inheritance">
+        <childnode refid="5442" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2849">
+      <node id="5438">
         <label>gr_check_counting_s</label>
         <link refid="classgr__check__counting__s"/>
-        <childnode refid="2850" relation="public-inheritance">
+        <childnode refid="5439" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2859">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="2860" relation="public-inheritance">
+      <node id="5465">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="5459" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="2856">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="2857" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2857">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="2858" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2861">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="5458">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2862" relation="usage">
+        <childnode refid="5459" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2864">
+      <node id="5470">
+        <label>T</label>
+      </node>
+      <node id="5448">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="5449" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5445">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="5446" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5459">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="5460" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5467">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="5462">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="5446">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="5447" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5455" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="5455">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5456" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5469">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5470" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5456">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="5457" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="5466" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="5468" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="5463">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="5464" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5450">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5451" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5461">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="5462" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="5463" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="5465" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="5454">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2860">
+      <node id="5457">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="5458" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5449">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2862">
+      <node id="5460">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5461" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5464">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="5466">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="5467" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="5468">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="5469" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5451">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="5452" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="2858">
+      <node id="5447">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2859" relation="public-inheritance">
+        <childnode refid="5448" relation="public-inheritance">
         </childnode>
-        <childnode refid="2861" relation="usage">
+        <childnode refid="5450" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2863" relation="usage">
+        <childnode refid="5453" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2855">
+      <node id="5444">
         <label>gr_check_counting_s</label>
         <link refid="classgr__check__counting__s"/>
-        <childnode refid="2856" relation="public-inheritance">
+        <childnode refid="5445" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2863">
+      <node id="5452">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="5453">
         <label>std::string</label>
-        <childnode refid="2864" relation="public-inheritance">
+        <childnode refid="5454" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -535,7 +655,7 @@ This sink is typically used to test the USRP &quot;Counting Mode&quot; or &quot;
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_check_counting_s</scope><name>set_relative_rate</name></member>

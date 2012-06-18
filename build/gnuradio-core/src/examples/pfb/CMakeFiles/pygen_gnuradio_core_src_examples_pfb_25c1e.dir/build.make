@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gnuradio_core_src_examples_pfb_25c1e.
-
-# Include the progress variables for this target.
-include gnuradio-core/src/examples/pfb/CMakeFiles/pygen_gnuradio_core_src_examples_pfb_25c1e.dir/progress.make
 
 gnuradio-core/src/examples/pfb/CMakeFiles/pygen_gnuradio_core_src_examples_pfb_25c1e: gnuradio-core/src/examples/pfb/channelize.py.exe
 gnuradio-core/src/examples/pfb/CMakeFiles/pygen_gnuradio_core_src_examples_pfb_25c1e: gnuradio-core/src/examples/pfb/chirp_channelize.py.exe
@@ -56,52 +56,52 @@ gnuradio-core/src/examples/pfb/CMakeFiles/pygen_gnuradio_core_src_examples_pfb_2
 gnuradio-core/src/examples/pfb/channelize.py.exe: ../gnuradio-core/src/examples/pfb/channelize.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin channelize.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/channelize.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/channelize.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/channelize.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/channelize.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/chirp_channelize.py.exe: ../gnuradio-core/src/examples/pfb/chirp_channelize.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin chirp_channelize.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/chirp_channelize.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/chirp_channelize.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/chirp_channelize.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/chirp_channelize.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/decimate.py.exe: ../gnuradio-core/src/examples/pfb/decimate.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin decimate.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/decimate.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/decimate.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/decimate.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/decimate.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/fmtest.py.exe: ../gnuradio-core/src/examples/pfb/fmtest.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin fmtest.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/fmtest.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/fmtest.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/fmtest.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/fmtest.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/interpolate.py.exe: ../gnuradio-core/src/examples/pfb/interpolate.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin interpolate.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/interpolate.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/interpolate.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/interpolate.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/interpolate.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/resampler_demo.grc.exe: ../gnuradio-core/src/examples/pfb/resampler_demo.grc
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin resampler_demo.grc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/resampler_demo.grc.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/resampler_demo.grc' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/resampler_demo.grc.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/resampler_demo.grc' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/resampler.py.exe: ../gnuradio-core/src/examples/pfb/resampler.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin resampler.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/resampler.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/resampler.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/resampler.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/resampler.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/synth_filter.py.exe: ../gnuradio-core/src/examples/pfb/synth_filter.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin synth_filter.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/synth_filter.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/synth_filter.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/synth_filter.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/synth_filter.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/synth_to_chan.py.exe: ../gnuradio-core/src/examples/pfb/synth_to_chan.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin synth_to_chan.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/synth_to_chan.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/synth_to_chan.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/synth_to_chan.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/synth_to_chan.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/pfb/reconstruction.py.exe: ../gnuradio-core/src/examples/pfb/reconstruction.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin reconstruction.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/reconstruction.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/reconstruction.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/reconstruction.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/pfb/reconstruction.py' ) .read ( ) ) "
 
 pygen_gnuradio_core_src_examples_pfb_25c1e: gnuradio-core/src/examples/pfb/CMakeFiles/pygen_gnuradio_core_src_examples_pfb_25c1e
 pygen_gnuradio_core_src_examples_pfb_25c1e: gnuradio-core/src/examples/pfb/channelize.py.exe
