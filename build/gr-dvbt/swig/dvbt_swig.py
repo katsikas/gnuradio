@@ -233,6 +233,7 @@ class dvbt_mpeg_packet(object):
     """Proxy of C++ dvbt_mpeg_packet class"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
+    packets = _swig_property(_dvbt_swig.dvbt_mpeg_packet_packets_get, _dvbt_swig.dvbt_mpeg_packet_packets_set)
     NPAD = _dvbt_swig.dvbt_mpeg_packet_NPAD
     _pad_ = _swig_property(_dvbt_swig.dvbt_mpeg_packet__pad__get, _dvbt_swig.dvbt_mpeg_packet__pad__set)
     data = _swig_property(_dvbt_swig.dvbt_mpeg_packet_data_get, _dvbt_swig.dvbt_mpeg_packet_data_set)

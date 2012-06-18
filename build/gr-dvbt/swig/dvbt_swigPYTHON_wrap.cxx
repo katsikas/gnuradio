@@ -5806,6 +5806,58 @@ SWIGINTERN PyObject *dvbt_depad_swigregister(PyObject *SWIGUNUSEDPARM(self), PyO
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet_packets_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_mpeg_packet_packets_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet_packets_set" "', argument " "1"" of type '" "dvbt_mpeg_packet *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_mpeg_packet_packets_set" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  if (arg1) (arg1)->packets = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet_packets_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_mpeg_packet_packets_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_mpeg_packet, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_mpeg_packet_packets_get" "', argument " "1"" of type '" "dvbt_mpeg_packet *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_mpeg_packet * >(argp1);
+  result = (int) ((arg1)->packets);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_dvbt_mpeg_packet__pad__set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   dvbt_mpeg_packet *arg1 = (dvbt_mpeg_packet *) 0 ;
@@ -7876,6 +7928,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"dvbt_depad_reset", _wrap_dvbt_depad_reset, METH_VARARGS, (char *)"dvbt_depad_reset(dvbt_depad self)"},
 	 { (char *)"delete_dvbt_depad", _wrap_delete_dvbt_depad, METH_VARARGS, (char *)"delete_dvbt_depad(dvbt_depad self)"},
 	 { (char *)"dvbt_depad_swigregister", dvbt_depad_swigregister, METH_VARARGS, NULL},
+	 { (char *)"dvbt_mpeg_packet_packets_set", _wrap_dvbt_mpeg_packet_packets_set, METH_VARARGS, (char *)"dvbt_mpeg_packet_packets_set(dvbt_mpeg_packet self, int packets)"},
+	 { (char *)"dvbt_mpeg_packet_packets_get", _wrap_dvbt_mpeg_packet_packets_get, METH_VARARGS, (char *)"dvbt_mpeg_packet_packets_get(dvbt_mpeg_packet self) -> int"},
 	 { (char *)"dvbt_mpeg_packet__pad__set", _wrap_dvbt_mpeg_packet__pad__set, METH_VARARGS, (char *)"dvbt_mpeg_packet__pad__set(dvbt_mpeg_packet self, unsigned char _pad_)"},
 	 { (char *)"dvbt_mpeg_packet__pad__get", _wrap_dvbt_mpeg_packet__pad__get, METH_VARARGS, (char *)"dvbt_mpeg_packet__pad__get(dvbt_mpeg_packet self) -> unsigned char"},
 	 { (char *)"dvbt_mpeg_packet_data_set", _wrap_dvbt_mpeg_packet_data_set, METH_VARARGS, (char *)"dvbt_mpeg_packet_data_set(dvbt_mpeg_packet self, unsigned char data)"},

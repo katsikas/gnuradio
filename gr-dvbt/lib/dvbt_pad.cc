@@ -25,7 +25,8 @@
 #include <config.h>
 #endif
 
-//#include <stdio.h>
+#include <cmath>
+#include <stdio.h>
 #include <dvbt/dvbt_pad.h>
 #include <dvbt/dvbt_types.h>
 #include <gr_io_signature.h>
@@ -43,6 +44,7 @@ dvbt_pad::dvbt_pad(): gr_sync_decimator("dvbt_pad",
 			DVBT_MPEG_DATA_LENGTH)
 {
 	reset();
+	packets = 0;
 }
 
 void
@@ -62,12 +64,21 @@ dvbt_pad::work (int noutput_items,
 {
 	int i = 0;
 	int j = 0;
+	int packets = get_packets();
 	const unsigned char *in = (const unsigned char *) input_items[0];
 	dvbt_mpeg_packet *out = (dvbt_mpeg_packet *) output_items[0];
 
+
   	for (i = 0; i < noutput_items; i++){
 		//memset (out[i].data,0,256);
-		out[i].data[0] = MPEG_SYNC_BYTE;
+		if(( (packets + i ) % 8) != 0){
+                	out[i].data[0] = MPEG_SYNC_BYTE;
+			//printf("%d",out[i].data[0]);
+        	}
+        	else{
+                	out[i].data[0] = MPEG_INVERTED_SYNC_BYTE;
+			//printf("\n%d",out[i].data[0]);
+        	}
 		out[i].data[1] = 0;
 		out[i].data[2] = 0;
 		out[i].data[3] = 0;
@@ -76,15 +87,27 @@ dvbt_pad::work (int noutput_items,
   		}
 	}
 
+	set_packets((i + packets) % PRBS_PERIOD);
 	/*for (i = 0; i < noutput_items; i++){
-                for (j = 0; j < DVBT_MPEG_DATA_LENGTH; j++){
+                for (j = 0; j < DVBT_MPEG_PACKET_LENGTH; j++){
 			printf("%c",out[i].data[j]);
 		}
 	}*/
 
-
   	return noutput_items;
 }
+
+int
+dvbt_pad::get_packets (){
+        return packets;
+}
+
+
+void
+dvbt_pad::set_packets (int remainder){
+	packets = remainder;
+}
+
 
 
 

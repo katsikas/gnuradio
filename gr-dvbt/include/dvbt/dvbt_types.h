@@ -30,6 +30,7 @@
 
 class dvbt_mpeg_packet {
  public:
+  int packets;
   static const int NPAD  = 68;
   unsigned char _pad_[NPAD];			      // pad to power of 2 (256)
   unsigned char data[DVBT_MPEG_DATA_LENGTH + DVBT_MPEG_HEADER_LENGTH];	// 184+4

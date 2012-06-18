@@ -53,6 +53,11 @@ public:
 	    		gr_vector_void_star &output_items);
 
   	void reset() { /* nop */ }
+
+private:
+	int packets;
+	int get_packets();
+	void set_packets(int );
 };
 
 
