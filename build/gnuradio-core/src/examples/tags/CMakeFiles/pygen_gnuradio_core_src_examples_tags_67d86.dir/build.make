@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -42,18 +39,21 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gnuradio_core_src_examples_tags_67d86.
 
+# Include the progress variables for this target.
+include gnuradio-core/src/examples/tags/CMakeFiles/pygen_gnuradio_core_src_examples_tags_67d86.dir/progress.make
+
 gnuradio-core/src/examples/tags/CMakeFiles/pygen_gnuradio_core_src_examples_tags_67d86: gnuradio-core/src/examples/tags/test_file_tags.py.exe
 gnuradio-core/src/examples/tags/CMakeFiles/pygen_gnuradio_core_src_examples_tags_67d86: gnuradio-core/src/examples/tags/uhd_burst_detector.py.exe
 
 gnuradio-core/src/examples/tags/test_file_tags.py.exe: ../gnuradio-core/src/examples/tags/test_file_tags.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_file_tags.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags/test_file_tags.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/tags/test_file_tags.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags/test_file_tags.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/tags/test_file_tags.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/tags/uhd_burst_detector.py.exe: ../gnuradio-core/src/examples/tags/uhd_burst_detector.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin uhd_burst_detector.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags/uhd_burst_detector.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/tags/uhd_burst_detector.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags/uhd_burst_detector.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/tags/uhd_burst_detector.py' ) .read ( ) ) "
 
 pygen_gnuradio_core_src_examples_tags_67d86: gnuradio-core/src/examples/tags/CMakeFiles/pygen_gnuradio_core_src_examples_tags_67d86
 pygen_gnuradio_core_src_examples_tags_67d86: gnuradio-core/src/examples/tags/test_file_tags.py.exe

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="g72x_8h" kind="file">
     <compoundname>g72x.h</compoundname>
     <innerclass refid="structg72x__state" prot="public">g72x_state</innerclass>
       <sectiondef kind="define">
       <memberdef kind="define" id="g72x_8h_1ae359d76f9fbd701c7b5bd1e591d66be9" prot="public" static="no">
         <name>AUDIO_ENCODING_ULAW</name>
-        <initializer>(1)</initializer>
+        <initializer>(1)	/* ISDN u-law */</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -17,7 +17,7 @@
       </memberdef>
       <memberdef kind="define" id="g72x_8h_1a9b68df7c208894b621d7813820cc8b68" prot="public" static="no">
         <name>AUDIO_ENCODING_ALAW</name>
-        <initializer>(2)</initializer>
+        <initializer>(2)	/* ISDN A-law */</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -28,7 +28,7 @@
       </memberdef>
       <memberdef kind="define" id="g72x_8h_1a92c1ad7f36269299ba0bcb7ca9b08221" prot="public" static="no">
         <name>AUDIO_ENCODING_LINEAR</name>
-        <initializer>(3)</initializer>
+        <initializer>(3)	/* PCM 2&apos;s-complement (0-center) */</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -40,7 +40,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="g72x_8h_1a8d2e8abbe77d673980e835b3c9b45424" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void g72x_init_state</definition>
         <argsstring>(struct g72x_state *)</argsstring>
         <name>g72x_init_state</name>
@@ -257,7 +257,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g72x.h" line="110"/>
       </memberdef>
       <memberdef kind="function" id="g72x_8h_1a6e07fabf2aa75120f6124fe33d667b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void update</definition>
         <argsstring>(int code_size, int y, int wi, int fi, int dq, int sr, int dqsez, struct g72x_state *state_ptr)</argsstring>
         <name>update</name>

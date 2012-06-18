@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dvbti__randomizer_8h" kind="file">
+    <compoundname>dvbti_randomizer.h</compoundname>
+    <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
+    <includes refid="dvbt__types_8h" local="no">dvbt/dvbt_types.h</includes>
+    <includedby refid="dvbt__derandomizer_8h" local="no">dvbt_derandomizer.h</includedby>
+    <includedby refid="dvbt__randomizer_8h" local="no">dvbt_randomizer.h</includedby>
+    <incdepgraph>
+      <node id="4039">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="4042">
+        <label>cassert</label>
+      </node>
+      <node id="4037">
+        <label>dvbti_randomizer.h</label>
+        <link refid="dvbti_randomizer.h"/>
+        <childnode refid="4038" relation="include">
+        </childnode>
+        <childnode refid="4040" relation="include">
+        </childnode>
+      </node>
+      <node id="4043">
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
+      </node>
+      <node id="4040">
+        <label>dvbt/dvbt_types.h</label>
+        <link refid="dvbt__types_8h"/>
+        <childnode refid="4041" relation="include">
+        </childnode>
+        <childnode refid="4042" relation="include">
+        </childnode>
+        <childnode refid="4043" relation="include">
+        </childnode>
+      </node>
+      <node id="4038">
+        <label>dvbt/dvbt_api.h</label>
+        <link refid="dvbt__api_8h"/>
+        <childnode refid="4039" relation="include">
+        </childnode>
+      </node>
+      <node id="4041">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4045">
+        <label>dvbt_derandomizer.h</label>
+        <link refid="dvbt__derandomizer_8h"/>
+      </node>
+      <node id="4046">
+        <label>dvbt_randomizer.h</label>
+        <link refid="dvbt__randomizer_8h"/>
+      </node>
+      <node id="4044">
+        <label>dvbti_randomizer.h</label>
+        <link refid="dvbti_randomizer.h"/>
+        <childnode refid="4045" relation="include">
+        </childnode>
+        <childnode refid="4046" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdvbti__randomizer" prot="public">dvbti_randomizer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h"/>
+  </compounddef>
+</doxygen>

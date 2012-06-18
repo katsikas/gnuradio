@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gri__fft_8h" kind="file">
     <compoundname>gri_fft.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -10,65 +10,65 @@
     <includedby refid="qtgui__time__sink__c_8h" local="no">qtgui_time_sink_c.h</includedby>
     <includedby refid="qtgui__time__sink__f_8h" local="no">qtgui_time_sink_f.h</includedby>
     <incdepgraph>
-      <node id="18192">
+      <node id="14075">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="18195">
+      <node id="14078">
         <label>boost/thread.hpp</label>
       </node>
-      <node id="18190">
+      <node id="14073">
         <label>gri_fft.h</label>
         <link refid="gri_fft.h"/>
-        <childnode refid="18191" relation="include">
+        <childnode refid="14074" relation="include">
         </childnode>
-        <childnode refid="18193" relation="include">
+        <childnode refid="14076" relation="include">
         </childnode>
-        <childnode refid="18195" relation="include">
+        <childnode refid="14078" relation="include">
         </childnode>
       </node>
-      <node id="18191">
+      <node id="14074">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="18192" relation="include">
+        <childnode refid="14075" relation="include">
         </childnode>
       </node>
-      <node id="18194">
+      <node id="14077">
         <label>complex</label>
       </node>
-      <node id="18193">
+      <node id="14076">
         <label>gr_complex.h</label>
         <link refid="gr__complex_8h"/>
-        <childnode refid="18194" relation="include">
+        <childnode refid="14077" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="18198">
+      <node id="14081">
         <label>qtgui_sink_f.h</label>
         <link refid="qtgui__sink__f_8h"/>
       </node>
-      <node id="18200">
+      <node id="14083">
         <label>qtgui_time_sink_f.h</label>
         <link refid="qtgui__time__sink__f_8h"/>
       </node>
-      <node id="18196">
+      <node id="14079">
         <label>gri_fft.h</label>
         <link refid="gri_fft.h"/>
-        <childnode refid="18197" relation="include">
+        <childnode refid="14080" relation="include">
         </childnode>
-        <childnode refid="18198" relation="include">
+        <childnode refid="14081" relation="include">
         </childnode>
-        <childnode refid="18199" relation="include">
+        <childnode refid="14082" relation="include">
         </childnode>
-        <childnode refid="18200" relation="include">
+        <childnode refid="14083" relation="include">
         </childnode>
       </node>
-      <node id="18197">
+      <node id="14080">
         <label>qtgui_sink_c.h</label>
         <link refid="qtgui__sink__c_8h"/>
       </node>
-      <node id="18199">
+      <node id="14082">
         <label>qtgui_time_sink_c.h</label>
         <link refid="qtgui__time__sink__c_8h"/>
       </node>
@@ -113,12 +113,12 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="gri__fft_8h_1add5aa27b2f3fe053012daabbf21177a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gri_fft_free</definition>
         <argsstring>(void *b)</argsstring>
         <name>gri_fft_free</name>
         <param>
-          <type>void *</type>
+          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
           <declname>b</declname>
         </param>
         <briefdescription>

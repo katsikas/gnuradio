@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classpmt_1_1pmt__symbol" kind="class" prot="public">
     <compoundname>pmt::pmt_symbol</compoundname>
     <basecompoundref refid="classpmt_1_1pmt__base" prot="public" virt="non-virtual">pmt::pmt_base</basecompoundref>
@@ -92,7 +92,7 @@
         <referencedby refid="classpmt_1_1pmt__symbol_1ae0452887880c2e283ef78219a53a30d0" compoundref="pmt__int_8h" startline="106" endline="106">set_next</referencedby>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__symbol_1ae0452887880c2e283ef78219a53a30d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void pmt::pmt_symbol::set_next</definition>
         <argsstring>(pmt_t next)</argsstring>
         <name>set_next</name>
@@ -115,38 +115,27 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="15534">
+      <node id="6988">
         <label>pmt::pmt_symbol</label>
         <link refid="classpmt_1_1pmt__symbol"/>
-        <childnode refid="15535" relation="public-inheritance">
+        <childnode refid="6989" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15535">
+      <node id="6989">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="15536">
+      <node id="6990">
         <label>pmt::pmt_symbol</label>
         <link refid="classpmt_1_1pmt__symbol"/>
-        <childnode refid="15537" relation="public-inheritance">
-        </childnode>
-        <childnode refid="15538" relation="usage">
-          <edgelabel>d_name</edgelabel>
+        <childnode refid="6991" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15539">
-        <label>std::basic_string&lt; char &gt;</label>
-      </node>
-      <node id="15537">
+      <node id="6991">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
-      </node>
-      <node id="15538">
-        <label>std::string</label>
-        <childnode refid="15539" relation="public-inheritance">
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" line="94" bodyfile="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" bodystart="93" bodyend="107"/>

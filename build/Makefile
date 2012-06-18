@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,9 +35,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,8 +46,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"comedi_devel\" \"comedi_python\" \"comedi_runtime\" \"comedi_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -1509,71 +1506,6 @@ pygen_gr_audio_examples_python_a172e/fast:
 .PHONY : pygen_gr_audio_examples_python_a172e/fast
 
 #=============================================================================
-# Target rules for targets named _comedi
-
-# Build rule for target.
-_comedi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _comedi
-.PHONY : _comedi
-
-# fast build rule for target.
-_comedi/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/_comedi.dir/build.make gr-comedi/src/CMakeFiles/_comedi.dir/build
-.PHONY : _comedi/fast
-
-#=============================================================================
-# Target rules for targets named _comedi_swig_doc_tag
-
-# Build rule for target.
-_comedi_swig_doc_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _comedi_swig_doc_tag
-.PHONY : _comedi_swig_doc_tag
-
-# fast build rule for target.
-_comedi_swig_doc_tag/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/_comedi_swig_doc_tag.dir/build.make gr-comedi/src/CMakeFiles/_comedi_swig_doc_tag.dir/build
-.PHONY : _comedi_swig_doc_tag/fast
-
-#=============================================================================
-# Target rules for targets named _comedi_swig_tag
-
-# Build rule for target.
-_comedi_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _comedi_swig_tag
-.PHONY : _comedi_swig_tag
-
-# fast build rule for target.
-_comedi_swig_tag/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/_comedi_swig_tag.dir/build.make gr-comedi/src/CMakeFiles/_comedi_swig_tag.dir/build
-.PHONY : _comedi_swig_tag/fast
-
-#=============================================================================
-# Target rules for targets named gnuradio-comedi
-
-# Build rule for target.
-gnuradio-comedi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-comedi
-.PHONY : gnuradio-comedi
-
-# fast build rule for target.
-gnuradio-comedi/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/gnuradio-comedi.dir/build.make gr-comedi/src/CMakeFiles/gnuradio-comedi.dir/build
-.PHONY : gnuradio-comedi/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_comedi_src_6e41e
-
-# Build rule for target.
-pygen_gr_comedi_src_6e41e: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_comedi_src_6e41e
-.PHONY : pygen_gr_comedi_src_6e41e
-
-# fast build rule for target.
-pygen_gr_comedi_src_6e41e/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/pygen_gr_comedi_src_6e41e.dir/build.make gr-comedi/src/CMakeFiles/pygen_gr_comedi_src_6e41e.dir/build
-.PHONY : pygen_gr_comedi_src_6e41e/fast
-
-#=============================================================================
 # Target rules for targets named digital_generated_includes
 
 # Build rule for target.
@@ -2053,6 +1985,19 @@ pygen_gr_trellis_src_lib_7ffd1: cmake_check_build_system
 pygen_gr_trellis_src_lib_7ffd1/fast:
 	$(MAKE) -f gr-trellis/src/lib/CMakeFiles/pygen_gr_trellis_src_lib_7ffd1.dir/build.make gr-trellis/src/lib/CMakeFiles/pygen_gr_trellis_src_lib_7ffd1.dir/build
 .PHONY : pygen_gr_trellis_src_lib_7ffd1/fast
+
+#=============================================================================
+# Target rules for targets named gr_trellis_html
+
+# Build rule for target.
+gr_trellis_html: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gr_trellis_html
+.PHONY : gr_trellis_html
+
+# fast build rule for target.
+gr_trellis_html/fast:
+	$(MAKE) -f gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/build.make gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/build
+.PHONY : gr_trellis_html/fast
 
 #=============================================================================
 # Target rules for targets named gr_trellis_xml
@@ -2796,11 +2741,6 @@ help:
 	@echo "... pygen_gr_audio_swig_caec9"
 	@echo "... pygen_gr_audio_swig_e3eae"
 	@echo "... pygen_gr_audio_examples_python_a172e"
-	@echo "... _comedi"
-	@echo "... _comedi_swig_doc_tag"
-	@echo "... _comedi_swig_tag"
-	@echo "... gnuradio-comedi"
-	@echo "... pygen_gr_comedi_src_6e41e"
 	@echo "... digital_generated_includes"
 	@echo "... gnuradio-digital"
 	@echo "... _digital_swig"
@@ -2838,6 +2778,7 @@ help:
 	@echo "... _trellis_swig_tag"
 	@echo "... gnuradio-trellis"
 	@echo "... pygen_gr_trellis_src_lib_7ffd1"
+	@echo "... gr_trellis_html"
 	@echo "... gr_trellis_xml"
 	@echo "... pygen_gr_trellis_src_examples_python_f76b0"
 	@echo "... gnuradio-uhd"

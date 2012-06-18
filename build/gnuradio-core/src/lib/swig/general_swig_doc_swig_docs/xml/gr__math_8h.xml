@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__math_8h" kind="file">
     <compoundname>gr_math.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -44,9 +44,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_math.h" line="35" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_math.h" bodystart="34" bodyend="37"/>
       </memberdef>
-      <memberdef kind="function" id="gr__math_8h_1ae8b14a00eda900ecce92981cce752734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API float</type>
-        <definition>GR_CORE_API float gr_fast_atan2f</definition>
+      <memberdef kind="function" id="gr__math_8h_1a0b274096639485abb50e47035ed6d924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT float</type>
+        <definition>__GR_ATTR_IMPORT float gr_fast_atan2f</definition>
         <argsstring>(float y, float x)</argsstring>
         <name>gr_fast_atan2f</name>
         <param>
@@ -518,11 +518,11 @@ This function calculates the angle of the vector (x,y) based on a table lookup a
 <codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>(x<sp/>&amp;<sp/>(x-1))<sp/>==<sp/>0;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gr__math_8h_1ae8b14a00eda900ecce92981cce752734" kindref="member" tooltip="Fast arc tangent using table lookup and linear interpolation.">gr_fast_atan2f</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gr__math_8h_1a0b274096639485abb50e47035ed6d924" kindref="member" tooltip="Fast arc tangent using table lookup and linear interpolation.">gr_fast_atan2f</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gr__math_8h_1ae8b14a00eda900ecce92981cce752734" kindref="member" tooltip="Fast arc tangent using table lookup and linear interpolation.">gr_fast_atan2f</ref>(gr_complex<sp/>z)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gr__math_8h_1a0b274096639485abb50e47035ed6d924" kindref="member" tooltip="Fast arc tangent using table lookup and linear interpolation.">gr_fast_atan2f</ref>(gr_complex<sp/>z)</highlight></codeline>
 <codeline lineno="58"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="gr__math_8h_1ae8b14a00eda900ecce92981cce752734" kindref="member" tooltip="Fast arc tangent using table lookup and linear interpolation.">gr_fast_atan2f</ref>(z.imag(),<sp/>z.real());</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="gr__math_8h_1a0b274096639485abb50e47035ed6d924" kindref="member" tooltip="Fast arc tangent using table lookup and linear interpolation.">gr_fast_atan2f</ref>(z.imag(),<sp/>z.real());</highlight></codeline>
 <codeline lineno="60"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>bounds<sp/>x<sp/>by<sp/>+/-<sp/>clip<sp/>without<sp/>a<sp/>branch<sp/>*/</highlight><highlight class="normal"></highlight></codeline>

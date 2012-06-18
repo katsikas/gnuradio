@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_utils_src_python_84817.
+
+# Include the progress variables for this target.
+include gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_84817.dir/progress.make
 
 gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_84817: gr-utils/src/python/create-gnuradio-out-of-tree-project.exe
 gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_84817: gr-utils/src/python/gr_plot_char.exe
@@ -61,77 +61,77 @@ gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_84817: gr-utils/src/pyt
 gr-utils/src/python/create-gnuradio-out-of-tree-project.exe: ../gr-utils/src/python/create-gnuradio-out-of-tree-project
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin create-gnuradio-out-of-tree-project"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/create-gnuradio-out-of-tree-project.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/create-gnuradio-out-of-tree-project' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/create-gnuradio-out-of-tree-project.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/create-gnuradio-out-of-tree-project' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_char.exe: ../gr-utils/src/python/gr_plot_char
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_char"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_char.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_char' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_char.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_char' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_const.exe: ../gr-utils/src/python/gr_plot_const
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_const"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_const.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_const' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_const.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_const' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_fft.exe: ../gr-utils/src/python/gr_plot_fft
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_fft"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_fft' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_fft' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_fft_c.exe: ../gr-utils/src/python/gr_plot_fft_c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_fft_c"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft_c.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_fft_c' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft_c.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_fft_c' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_fft_f.exe: ../gr-utils/src/python/gr_plot_fft_f
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_fft_f"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft_f.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_fft_f' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft_f.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_fft_f' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_psd.exe: ../gr-utils/src/python/gr_plot_psd
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_psd"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_psd' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_psd' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_psd_c.exe: ../gr-utils/src/python/gr_plot_psd_c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_psd_c"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd_c.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_psd_c' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd_c.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_psd_c' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_psd_f.exe: ../gr-utils/src/python/gr_plot_psd_f
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_psd_f"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd_f.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_psd_f' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd_f.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_psd_f' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_float.exe: ../gr-utils/src/python/gr_plot_float
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_float"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_float.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_float' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_float.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_float' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_int.exe: ../gr-utils/src/python/gr_plot_int
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_int"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_int.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_int' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_int.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_int' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_iq.exe: ../gr-utils/src/python/gr_plot_iq
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_iq"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_iq.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_iq' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_iq.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_iq' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_short.exe: ../gr-utils/src/python/gr_plot_short
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_short"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_short.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_short' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_short.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_short' ) .read ( ) ) "
 
 gr-utils/src/python/gr_plot_qt.exe: ../gr-utils/src/python/gr_plot_qt
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_qt"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_qt.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_qt' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_qt.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_plot_qt' ) .read ( ) ) "
 
 gr-utils/src/python/gr_filter_design.exe: ../gr-utils/src/python/gr_filter_design
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_filter_design"
-	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_filter_design.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_filter_design' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-utils/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-utils/src/python/gr_filter_design.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-utils/src/python/gr_filter_design' ) .read ( ) ) "
 
 pygen_gr_utils_src_python_84817: gr-utils/src/python/CMakeFiles/pygen_gr_utils_src_python_84817
 pygen_gr_utils_src_python_84817: gr-utils/src/python/create-gnuradio-out-of-tree-project.exe

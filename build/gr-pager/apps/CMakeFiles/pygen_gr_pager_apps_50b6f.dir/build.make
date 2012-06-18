@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -42,6 +39,9 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_pager_apps_50b6f.
 
+# Include the progress variables for this target.
+include gr-pager/apps/CMakeFiles/pygen_gr_pager_apps_50b6f.dir/progress.make
+
 gr-pager/apps/CMakeFiles/pygen_gr_pager_apps_50b6f: gr-pager/apps/usrp_flex.exe
 gr-pager/apps/CMakeFiles/pygen_gr_pager_apps_50b6f: gr-pager/apps/usrp_flex_all.exe
 gr-pager/apps/CMakeFiles/pygen_gr_pager_apps_50b6f: gr-pager/apps/usrp_flex_band.exe
@@ -49,17 +49,17 @@ gr-pager/apps/CMakeFiles/pygen_gr_pager_apps_50b6f: gr-pager/apps/usrp_flex_band
 gr-pager/apps/usrp_flex.exe: ../gr-pager/apps/usrp_flex
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_flex"
-	cd /home/katsikas/gnuradio/build/gr-pager/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-pager/apps/usrp_flex.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-pager/apps/usrp_flex' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-pager/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-pager/apps/usrp_flex.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-pager/apps/usrp_flex' ) .read ( ) ) "
 
 gr-pager/apps/usrp_flex_all.exe: ../gr-pager/apps/usrp_flex_all
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_flex_all"
-	cd /home/katsikas/gnuradio/build/gr-pager/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-pager/apps/usrp_flex_all.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-pager/apps/usrp_flex_all' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-pager/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-pager/apps/usrp_flex_all.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-pager/apps/usrp_flex_all' ) .read ( ) ) "
 
 gr-pager/apps/usrp_flex_band.exe: ../gr-pager/apps/usrp_flex_band
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_flex_band"
-	cd /home/katsikas/gnuradio/build/gr-pager/apps && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-pager/apps/usrp_flex_band.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-pager/apps/usrp_flex_band' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-pager/apps && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-pager/apps/usrp_flex_band.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-pager/apps/usrp_flex_band' ) .read ( ) ) "
 
 pygen_gr_pager_apps_50b6f: gr-pager/apps/CMakeFiles/pygen_gr_pager_apps_50b6f
 pygen_gr_pager_apps_50b6f: gr-pager/apps/usrp_flex.exe

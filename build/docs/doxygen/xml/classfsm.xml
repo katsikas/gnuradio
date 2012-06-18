@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classfsm" kind="class" prot="public">
     <compoundname>fsm</compoundname>
     <includes refid="fsm_8h" local="no">fsm.h</includes>
@@ -44,7 +44,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classfsm_1a2162993c93c5cd73f31395c1de9aafbe" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt;</type>
+        <type>std::vector&lt; int &gt;</type>
         <definition>std::vector&lt;int&gt; fsm::d_NS</definition>
         <argsstring></argsstring>
         <name>d_NS</name>
@@ -57,7 +57,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="47" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classfsm_1aedc7e14477239d892e08d56cc59cf3ea" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt;</type>
+        <type>std::vector&lt; int &gt;</type>
         <definition>std::vector&lt;int&gt; fsm::d_OS</definition>
         <argsstring></argsstring>
         <name>d_OS</name>
@@ -70,7 +70,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="50" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classfsm_1aa63f5582b6c02fab56e90f1605b6852c" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;int&gt; &gt; fsm::d_PS</definition>
         <argsstring></argsstring>
         <name>d_PS</name>
@@ -83,7 +83,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="52" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classfsm_1a5a94e03aeea4c5d5c9c18049bd5e6f1d" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;int&gt; &gt; fsm::d_PI</definition>
         <argsstring></argsstring>
         <name>d_PI</name>
@@ -96,7 +96,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classfsm_1a2c0a4c5410e2af3929299a76484fb389" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt;</type>
+        <type>std::vector&lt; int &gt;</type>
         <definition>std::vector&lt;int&gt; fsm::d_TMl</definition>
         <argsstring></argsstring>
         <name>d_TMl</name>
@@ -109,7 +109,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="61" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classfsm_1a0ddaae6e9dc21ae6b59940ee8a0b477d" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt;</type>
+        <type>std::vector&lt; int &gt;</type>
         <definition>std::vector&lt;int&gt; fsm::d_TMi</definition>
         <argsstring></argsstring>
         <name>d_TMi</name>
@@ -124,7 +124,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classfsm_1a74dedb11be976d9423d4bc80f13b28ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fsm::generate_PS_PI</definition>
         <argsstring>()</argsstring>
         <name>generate_PS_PI</name>
@@ -137,7 +137,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="65"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1a1f556ca4e237adae9630cc10ddb4f73c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fsm::generate_TM</definition>
         <argsstring>()</argsstring>
         <name>generate_TM</name>
@@ -216,11 +216,11 @@
           <declname>O</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
+          <type>const std::vector&lt; int &gt; &amp;</type>
           <declname>NS</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
+          <type>const std::vector&lt; int &gt; &amp;</type>
           <declname>OS</declname>
         </param>
         <briefdescription>
@@ -306,7 +306,7 @@
           <declname>n</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
+          <type>const std::vector&lt; int &gt; &amp;</type>
           <declname>G</declname>
         </param>
         <briefdescription>
@@ -534,7 +534,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="142" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="142" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1ac26a317a2b73bb885a5fc1812ac5159c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
+        <type>const std::vector&lt; int &gt; &amp;</type>
         <definition>const std::vector&lt;int&gt;&amp; fsm::NS</definition>
         <argsstring>() const </argsstring>
         <name>NS</name>
@@ -547,7 +547,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="143" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="143" bodyend="143"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1a339554ffc3f74952e2cac49d5414fff1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
+        <type>const std::vector&lt; int &gt; &amp;</type>
         <definition>const std::vector&lt;int&gt;&amp; fsm::OS</definition>
         <argsstring>() const </argsstring>
         <name>OS</name>
@@ -560,7 +560,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="144" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="144" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1a9477aa18ff75881235e1c2648bc46cff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
+        <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
         <definition>const std::vector&lt; std::vector&lt;int&gt; &gt;&amp; fsm::PS</definition>
         <argsstring>() const </argsstring>
         <name>PS</name>
@@ -573,7 +573,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="145" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="145" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1a5aff353214751b6d1bbce1495c9cf8ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
+        <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
         <definition>const std::vector&lt; std::vector&lt;int&gt; &gt;&amp; fsm::PI</definition>
         <argsstring>() const </argsstring>
         <name>PI</name>
@@ -586,7 +586,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="146" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="146" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1afac5ed3c857cc75fcb654386d30259b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
+        <type>const std::vector&lt; int &gt; &amp;</type>
         <definition>const std::vector&lt;int&gt;&amp; fsm::TMi</definition>
         <argsstring>() const </argsstring>
         <name>TMi</name>
@@ -599,7 +599,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="147" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="147" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1a7806664145c7cb325ccdb04948736f6d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
+        <type>const std::vector&lt; int &gt; &amp;</type>
         <definition>const std::vector&lt;int&gt;&amp; fsm::TMl</definition>
         <argsstring>() const </argsstring>
         <name>TMl</name>
@@ -612,7 +612,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="148" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="148" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1a6dcf93654163e7db294fac2c7375b8e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fsm::write_trellis_svg</definition>
         <argsstring>(std::string filename, int number_stages)</argsstring>
         <name>write_trellis_svg</name>
@@ -648,7 +648,7 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="156"/>
       </memberdef>
       <memberdef kind="function" id="classfsm_1ab8f5c2f0cc9c45adb3ebeeb033f7af12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fsm::write_fsm_txt</definition>
         <argsstring>(std::string filename)</argsstring>
         <name>write_fsm_txt</name>
@@ -677,34 +677,6 @@ This FSM is based on the paper by B. Rimoldi &quot;A decomposition approach to C
 <para>Finite State Machine Specification class. </para>    </briefdescription>
     <detaileddescription>
 <para>An instance of this class represents a finite state machine specification (FSMS) rather than the FSM itself. It particular the state of the FSM is not stored within an instance of this class. </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="3458">
-        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3459" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3457">
-        <label>fsm</label>
-        <link refid="classfsm"/>
-        <childnode refid="3458" relation="usage">
-          <edgelabel>d_PI</edgelabel>
-          <edgelabel>d_PS</edgelabel>
-        </childnode>
-        <childnode refid="3459" relation="usage">
-          <edgelabel>d_NS</edgelabel>
-          <edgelabel>d_TMl</edgelabel>
-          <edgelabel>d_TMi</edgelabel>
-          <edgelabel>d_OS</edgelabel>
-        </childnode>
-      </node>
-      <node id="3459">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" line="37" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h" bodystart="37" bodyend="164"/>
     <listofallmembers>
       <member refid="classfsm_1a0db8c2e0883c4d606951f8d4d3944cb1" prot="private" virt="non-virtual"><scope>fsm</scope><name>d_I</name></member>

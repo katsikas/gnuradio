@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_grc_python_52071.
+
+# Include the progress variables for this target.
+include grc/python/CMakeFiles/pygen_grc_python_52071.dir/progress.make
 
 grc/python/CMakeFiles/pygen_grc_python_52071: grc/python/convert_hier.pyc
 grc/python/CMakeFiles/pygen_grc_python_52071: grc/python/expr_utils.pyc
@@ -81,7 +81,7 @@ grc/python/convert_hier.pyc: ../grc/python/Port.py
 grc/python/convert_hier.pyc: ../grc/python/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating convert_hier.pyc, expr_utils.pyc, extract_docs.pyc, Block.pyc, Connection.pyc, Constants.pyc, FlowGraph.pyc, Generator.pyc, Param.pyc, Platform.pyc, Port.pyc, __init__.pyc"
-	cd /home/katsikas/gnuradio/build/grc/python && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/python/convert_hier.py /home/katsikas/gnuradio/grc/python/expr_utils.py /home/katsikas/gnuradio/grc/python/extract_docs.py /home/katsikas/gnuradio/grc/python/Block.py /home/katsikas/gnuradio/grc/python/Connection.py /home/katsikas/gnuradio/grc/python/Constants.py /home/katsikas/gnuradio/grc/python/FlowGraph.py /home/katsikas/gnuradio/grc/python/Generator.py /home/katsikas/gnuradio/grc/python/Param.py /home/katsikas/gnuradio/grc/python/Platform.py /home/katsikas/gnuradio/grc/python/Port.py /home/katsikas/gnuradio/grc/python/__init__.py /home/katsikas/gnuradio/build/grc/python/convert_hier.pyc /home/katsikas/gnuradio/build/grc/python/expr_utils.pyc /home/katsikas/gnuradio/build/grc/python/extract_docs.pyc /home/katsikas/gnuradio/build/grc/python/Block.pyc /home/katsikas/gnuradio/build/grc/python/Connection.pyc /home/katsikas/gnuradio/build/grc/python/Constants.pyc /home/katsikas/gnuradio/build/grc/python/FlowGraph.pyc /home/katsikas/gnuradio/build/grc/python/Generator.pyc /home/katsikas/gnuradio/build/grc/python/Param.pyc /home/katsikas/gnuradio/build/grc/python/Platform.pyc /home/katsikas/gnuradio/build/grc/python/Port.pyc /home/katsikas/gnuradio/build/grc/python/__init__.pyc
+	cd /home/katsikas/gnuradio/build/grc/python && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/python/convert_hier.py /home/katsikas/gnuradio/grc/python/expr_utils.py /home/katsikas/gnuradio/grc/python/extract_docs.py /home/katsikas/gnuradio/grc/python/Block.py /home/katsikas/gnuradio/grc/python/Connection.py /home/katsikas/gnuradio/grc/python/Constants.py /home/katsikas/gnuradio/grc/python/FlowGraph.py /home/katsikas/gnuradio/grc/python/Generator.py /home/katsikas/gnuradio/grc/python/Param.py /home/katsikas/gnuradio/grc/python/Platform.py /home/katsikas/gnuradio/grc/python/Port.py /home/katsikas/gnuradio/grc/python/__init__.py /home/katsikas/gnuradio/build/grc/python/convert_hier.pyc /home/katsikas/gnuradio/build/grc/python/expr_utils.pyc /home/katsikas/gnuradio/build/grc/python/extract_docs.pyc /home/katsikas/gnuradio/build/grc/python/Block.pyc /home/katsikas/gnuradio/build/grc/python/Connection.pyc /home/katsikas/gnuradio/build/grc/python/Constants.pyc /home/katsikas/gnuradio/build/grc/python/FlowGraph.pyc /home/katsikas/gnuradio/build/grc/python/Generator.pyc /home/katsikas/gnuradio/build/grc/python/Param.pyc /home/katsikas/gnuradio/build/grc/python/Platform.pyc /home/katsikas/gnuradio/build/grc/python/Port.pyc /home/katsikas/gnuradio/build/grc/python/__init__.pyc
 
 grc/python/expr_utils.pyc: grc/python/convert_hier.pyc
 
@@ -119,7 +119,7 @@ grc/python/convert_hier.pyo: ../grc/python/Port.py
 grc/python/convert_hier.pyo: ../grc/python/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating convert_hier.pyo, expr_utils.pyo, extract_docs.pyo, Block.pyo, Connection.pyo, Constants.pyo, FlowGraph.pyo, Generator.pyo, Param.pyo, Platform.pyo, Port.pyo, __init__.pyo"
-	cd /home/katsikas/gnuradio/build/grc/python && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/python/convert_hier.py /home/katsikas/gnuradio/grc/python/expr_utils.py /home/katsikas/gnuradio/grc/python/extract_docs.py /home/katsikas/gnuradio/grc/python/Block.py /home/katsikas/gnuradio/grc/python/Connection.py /home/katsikas/gnuradio/grc/python/Constants.py /home/katsikas/gnuradio/grc/python/FlowGraph.py /home/katsikas/gnuradio/grc/python/Generator.py /home/katsikas/gnuradio/grc/python/Param.py /home/katsikas/gnuradio/grc/python/Platform.py /home/katsikas/gnuradio/grc/python/Port.py /home/katsikas/gnuradio/grc/python/__init__.py /home/katsikas/gnuradio/build/grc/python/convert_hier.pyo /home/katsikas/gnuradio/build/grc/python/expr_utils.pyo /home/katsikas/gnuradio/build/grc/python/extract_docs.pyo /home/katsikas/gnuradio/build/grc/python/Block.pyo /home/katsikas/gnuradio/build/grc/python/Connection.pyo /home/katsikas/gnuradio/build/grc/python/Constants.pyo /home/katsikas/gnuradio/build/grc/python/FlowGraph.pyo /home/katsikas/gnuradio/build/grc/python/Generator.pyo /home/katsikas/gnuradio/build/grc/python/Param.pyo /home/katsikas/gnuradio/build/grc/python/Platform.pyo /home/katsikas/gnuradio/build/grc/python/Port.pyo /home/katsikas/gnuradio/build/grc/python/__init__.pyo
+	cd /home/katsikas/gnuradio/build/grc/python && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/python/convert_hier.py /home/katsikas/gnuradio/grc/python/expr_utils.py /home/katsikas/gnuradio/grc/python/extract_docs.py /home/katsikas/gnuradio/grc/python/Block.py /home/katsikas/gnuradio/grc/python/Connection.py /home/katsikas/gnuradio/grc/python/Constants.py /home/katsikas/gnuradio/grc/python/FlowGraph.py /home/katsikas/gnuradio/grc/python/Generator.py /home/katsikas/gnuradio/grc/python/Param.py /home/katsikas/gnuradio/grc/python/Platform.py /home/katsikas/gnuradio/grc/python/Port.py /home/katsikas/gnuradio/grc/python/__init__.py /home/katsikas/gnuradio/build/grc/python/convert_hier.pyo /home/katsikas/gnuradio/build/grc/python/expr_utils.pyo /home/katsikas/gnuradio/build/grc/python/extract_docs.pyo /home/katsikas/gnuradio/build/grc/python/Block.pyo /home/katsikas/gnuradio/build/grc/python/Connection.pyo /home/katsikas/gnuradio/build/grc/python/Constants.pyo /home/katsikas/gnuradio/build/grc/python/FlowGraph.pyo /home/katsikas/gnuradio/build/grc/python/Generator.pyo /home/katsikas/gnuradio/build/grc/python/Param.pyo /home/katsikas/gnuradio/build/grc/python/Platform.pyo /home/katsikas/gnuradio/build/grc/python/Port.pyo /home/katsikas/gnuradio/build/grc/python/__init__.pyo
 
 grc/python/expr_utils.pyo: grc/python/convert_hier.pyo
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__scheduler__tpb" kind="class" prot="public">
     <compoundname>gr_scheduler_tpb</compoundname>
     <basecompoundref refid="classgr__scheduler" prot="public" virt="non-virtual">gr_scheduler</basecompoundref>
@@ -81,7 +81,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_tpb.h" line="47"/>
       </memberdef>
       <memberdef kind="function" id="classgr__scheduler__tpb_1a1d830db53d8d5d2e962d1797fef63213" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_scheduler_tpb::stop</definition>
         <argsstring>()</argsstring>
         <name>stop</name>
@@ -95,7 +95,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_tpb.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classgr__scheduler__tpb_1a0d3dfd4320dcb92cfcfbdcb91d43bed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_scheduler_tpb::wait</definition>
         <argsstring>()</argsstring>
         <name>wait</name>
@@ -114,39 +114,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="12032">
+      <node id="5168">
         <label>gr_scheduler</label>
         <link refid="classgr__scheduler"/>
       </node>
-      <node id="12031">
+      <node id="5167">
         <label>gr_scheduler_tpb</label>
         <link refid="classgr__scheduler__tpb"/>
-        <childnode refid="12032" relation="public-inheritance">
+        <childnode refid="5168" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="12035">
-        <label>gruel::thread_group</label>
-        <link refid="classgruel_1_1thread__group"/>
-        <childnode refid="12036" relation="usage">
-          <edgelabel>m_threads</edgelabel>
-        </childnode>
-      </node>
-      <node id="12034">
+      <node id="5170">
         <label>gr_scheduler</label>
         <link refid="classgr__scheduler"/>
       </node>
-      <node id="12036">
-        <label>std::list&lt; boost::thread * &gt;</label>
-      </node>
-      <node id="12033">
+      <node id="5169">
         <label>gr_scheduler_tpb</label>
         <link refid="classgr__scheduler__tpb"/>
-        <childnode refid="12034" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12035" relation="usage">
-          <edgelabel>d_threads</edgelabel>
+        <childnode refid="5170" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

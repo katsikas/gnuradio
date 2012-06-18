@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classtrellis__pccc__decoder__s" kind="class" prot="public">
     <compoundname>trellis_pccc_decoder_s</compoundname>
     <includes refid="trellis__pccc__decoder__s_8h" local="no">trellis_pccc_decoder_s.h</includes>
@@ -150,7 +150,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classtrellis__pccc__decoder__s_1af0c843682820399b4326cdf7d782ecc4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend TRELLIS_API <ref refid="trellis__pccc__decoder__s_8h_1a4bd03416e187b0262b665b7d7fe1f421" kindref="member">trellis_pccc_decoder_s_sptr</ref></type>
+        <type>friend <ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__pccc__decoder__s_8h_1a4bd03416e187b0262b665b7d7fe1f421" kindref="member">trellis_pccc_decoder_s_sptr</ref></type>
         <definition>TRELLIS_API trellis_pccc_decoder_s_sptr trellis_make_pccc_decoder_s</definition>
         <argsstring>(const fsm &amp;FSM1, int ST10, int ST1K, const fsm &amp;FSM2, int ST20, int ST2K, const interleaver &amp;INTERLEAVER, int blocklength, int repetitions, trellis_siso_type_t SISO_TYPE)</argsstring>
         <name>trellis_make_pccc_decoder_s</name>
@@ -444,56 +444,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="667">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-      <node id="669">
-        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
-        <childnode refid="666" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="664">
-        <label>trellis_pccc_decoder_s</label>
-        <link refid="classtrellis__pccc__decoder__s"/>
-        <childnode refid="665" relation="usage">
-          <edgelabel>d_INTERLEAVER</edgelabel>
-        </childnode>
-        <childnode refid="667" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-        <childnode refid="668" relation="usage">
-          <edgelabel>d_FSM1</edgelabel>
-          <edgelabel>d_FSM2</edgelabel>
-        </childnode>
-      </node>
-      <node id="668">
-        <label>fsm</label>
-        <link refid="classfsm"/>
-        <childnode refid="669" relation="usage">
-          <edgelabel>d_PI</edgelabel>
-          <edgelabel>d_PS</edgelabel>
-        </childnode>
-        <childnode refid="666" relation="usage">
-          <edgelabel>d_NS</edgelabel>
-          <edgelabel>d_TMl</edgelabel>
-          <edgelabel>d_TMi</edgelabel>
-          <edgelabel>d_OS</edgelabel>
-        </childnode>
-      </node>
-      <node id="666">
-        <label>std::vector&lt; int &gt;</label>
-      </node>
-      <node id="665">
-        <label>interleaver</label>
-        <link refid="classinterleaver"/>
-        <childnode refid="666" relation="usage">
-          <edgelabel>d_DEINTER</edgelabel>
-          <edgelabel>d_INTER</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_s.h" line="52" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_s.h" bodystart="51" bodyend="101"/>
     <listofallmembers>
       <member refid="classtrellis__pccc__decoder__s_1a4aa45edc01bff742027336dd076adad9" prot="public" virt="non-virtual"><scope>trellis_pccc_decoder_s</scope><name>blocklength</name></member>

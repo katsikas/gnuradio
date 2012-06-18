@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__vector__map_8h" kind="file">
     <compoundname>gr_vector_map.h</compoundname>
     <includes local="no">vector</includes>
@@ -55,9 +55,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__vector__map_8h_1a86dc292261f6974f27516d5f1e8400c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API <ref refid="gr__vector__map_8h_1acd4f10e6dbd13f9627fc1887fbe9eace" kindref="member">gr_vector_map_sptr</ref></type>
-        <definition>GR_CORE_API gr_vector_map_sptr gr_make_vector_map</definition>
+      <memberdef kind="function" id="gr__vector__map_8h_1a21507b61de79b7aebde61fe9a81e31fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="gr__vector__map_8h_1acd4f10e6dbd13f9627fc1887fbe9eace" kindref="member">gr_vector_map_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT gr_vector_map_sptr gr_make_vector_map</definition>
         <argsstring>(size_t item_size, std::vector&lt; size_t &gt; in_vlens, std::vector&lt; std::vector&lt; std::vector&lt; size_t &gt; &gt; &gt; mapping)</argsstring>
         <name>gr_make_vector_map</name>
         <param>
@@ -120,13 +120,13 @@
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_vector_map&gt;<sp/><ref refid="gr__vector__map_8h_1acd4f10e6dbd13f9627fc1887fbe9eace" kindref="member">gr_vector_map_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vector__map_8h_1acd4f10e6dbd13f9627fc1887fbe9eace" kindref="member">gr_vector_map_sptr</ref></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="gr__vector__map_8h_1a86dc292261f6974f27516d5f1e8400c4" kindref="member">gr_make_vector_map</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/>std::vector&lt;size_t&gt;<sp/>in_vlens,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="gr__vector__map_8h_1a21507b61de79b7aebde61fe9a81e31fb" kindref="member">gr_make_vector_map</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/>std::vector&lt;size_t&gt;<sp/>in_vlens,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>std::vector&lt;<sp/>std::vector&lt;size_t&gt;<sp/>&gt;<sp/>&gt;<sp/>mapping);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61" refid="classgr__vector__map" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__vector__map" kindref="compound" tooltip="Maps elements from a set of input vectors to a set of output vectors.">gr_vector_map</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="62"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vector__map_8h_1acd4f10e6dbd13f9627fc1887fbe9eace" kindref="member">gr_vector_map_sptr</ref></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__vector__map_8h_1a86dc292261f6974f27516d5f1e8400c4" kindref="member">gr_make_vector_map</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/>std::vector&lt;size_t&gt;<sp/>in_vlens,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__vector__map_8h_1a21507b61de79b7aebde61fe9a81e31fb" kindref="member">gr_make_vector_map</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/>std::vector&lt;size_t&gt;<sp/>in_vlens,</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>std::vector&lt;<sp/>std::vector&lt;size_t&gt;<sp/>&gt;<sp/>&gt;<sp/>mapping);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>d_item_size;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/>std::vector&lt;size_t&gt;<sp/>d_in_vlens;</highlight></codeline>

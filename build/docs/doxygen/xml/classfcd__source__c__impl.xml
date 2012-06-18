@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classfcd__source__c__impl" kind="class" prot="public">
     <compoundname>fcd_source_c_impl</compoundname>
     <basecompoundref refid="classfcd__source__c" prot="public" virt="non-virtual">fcd_source_c</basecompoundref>
     <includes refid="fcd__source__c__impl_8h" local="no">fcd_source_c_impl.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classfcd__source__c__impl_1a5ba212a993dba891df447791fbb70651" prot="private" static="no" mutable="no">
-        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">audio_source::sptr</ref></type>
+        <type><ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref></type>
         <definition>audio_source::sptr fcd_source_c_impl::fcd</definition>
         <argsstring></argsstring>
         <name>fcd</name>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classfcd__source__c__impl_1acd34b05caed83b1ae604bf9458eca469" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_freq</definition>
         <argsstring>(int freq)</argsstring>
         <name>set_freq</name>
@@ -74,7 +74,7 @@ Set the frequency of the Funcube Dongle with 1 Hz resolution applying the freque
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="31"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c__impl_1abde1c7ad7f48474b789ebf6ba163fb6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_freq</definition>
         <argsstring>(float freq)</argsstring>
         <name>set_freq</name>
@@ -101,7 +101,7 @@ This is a convenience function that uses float parameter in order to allow using
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="32"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c__impl_1a858c6a235fac7c378e45be6aed5830ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_freq_khz</definition>
         <argsstring>(int freq)</argsstring>
         <name>set_freq_khz</name>
@@ -128,7 +128,7 @@ Sets the frequency of the Funcube Dongle with 1 kHz resolution applying the freq
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="33"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c__impl_1af794919cde4473ba51a026c12110ffe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_lna_gain</definition>
         <argsstring>(float gain)</argsstring>
         <name>set_lna_gain</name>
@@ -154,7 +154,7 @@ Set the LNA gain in the FCD. Valid range is -5 to 30. Although the LNA gain in t
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="34"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c__impl_1a442356783fdc236f59cc1d879394fc48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_mixer_gain</definition>
         <argsstring>(float gain)</argsstring>
         <name>set_mixer_gain</name>
@@ -180,7 +180,7 @@ Set the mixer gain in the FCD. Valid values are +4 and +12 dB.</para><para>By de
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="35"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c__impl_1a5102547ef0dcff79e1c8f34bba0b3600" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_freq_corr</definition>
         <argsstring>(int ppm)</argsstring>
         <name>set_freq_corr</name>
@@ -206,7 +206,7 @@ Version 1.1 FCDs (S/N 810 or later) need a correction of -12 ppm. Earlier FCDs n
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="36"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c__impl_1a69bb2fa9614f0a4f196c1e82c1df9eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_dc_corr</definition>
         <argsstring>(double _dci, double _dcq)</argsstring>
         <name>set_dc_corr</name>
@@ -243,7 +243,7 @@ Set DC offset correction in the device. Default is 0.0. </para>        </detaile
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="37"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c__impl_1a2f115cbb682cb173f1939af0ae5d822f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void fcd_source_c_impl::set_iq_corr</definition>
         <argsstring>(double _gain, double _phase)</argsstring>
         <name>set_iq_corr</name>
@@ -302,7 +302,7 @@ Set IQ phase and gain balance in the device. The default values are 0.0 for phas
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classfcd__source__c__impl_1afd48da6552ab85cfe5c38537721e3f1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend FCD_API <ref refid="classboost_1_1shared__ptr" kindref="compound">fcd_source_c_sptr</ref></type>
+        <type>friend <ref refid="fcd__api_8h_1ad489a1c52387ece46b65f42f0681814f" kindref="member">FCD_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">fcd_source_c_sptr</ref></type>
         <definition>FCD_API fcd_source_c_sptr fcd_make_source_c</definition>
         <argsstring>(const std::string device_name)</argsstring>
         <name>fcd_make_source_c</name>
@@ -313,7 +313,7 @@ Set IQ phase and gain balance in the device. The default values are 0.0 for phas
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classfcd__source__c" kindref="compound">fcd_source_c</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>This is effectively the public constructor. To avoid accidental use of raw pointers, fcd_source_c&apos;s constructor is private. fcd_make_source_c is the public interface for creating new instances. </para>        </detaileddescription>
+<para>This is effectively the public constructor. To avoid accidental use of raw pointers, <ref refid="classfcd__source__c" kindref="compound">fcd_source_c</ref>&apos;s constructor is private. fcd_make_source_c is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/fcd_source_c_impl.h" line="43"/>
@@ -324,351 +324,100 @@ Set IQ phase and gain balance in the device. The default values are 0.0 for phas
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3253">
+      <node id="1834">
         <label>fcd_source_c_impl</label>
         <link refid="classfcd__source__c__impl"/>
-        <childnode refid="3254" relation="public-inheritance">
+        <childnode refid="1835" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3257">
+      <node id="1838">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3258" relation="public-inheritance">
+        <childnode refid="1839" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3255">
+      <node id="1836">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="3256" relation="public-inheritance">
+        <childnode refid="1837" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3258">
+      <node id="1839">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3254">
+      <node id="1835">
         <label>fcd_source_c</label>
         <link refid="classfcd__source__c"/>
-        <childnode refid="3255" relation="public-inheritance">
+        <childnode refid="1836" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3256">
+      <node id="1837">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3257" relation="public-inheritance">
+        <childnode refid="1838" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3276">
-        <label>std::vector&lt; gr_edge &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3277" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3297">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3291" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3290">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3291" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3280">
-        <label>T</label>
-      </node>
-      <node id="3259">
+      <node id="1840">
         <label>fcd_source_c_impl</label>
         <link refid="classfcd__source__c__impl"/>
-        <childnode refid="3260" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3283" relation="usage">
-          <edgelabel>fcd</edgelabel>
+        <childnode refid="1841" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3282">
-        <label>std::vector&lt; T &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3280" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3263">
+      <node id="1844">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3264" relation="public-inheritance">
+        <childnode refid="1845" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3285">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="3286" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3291">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="3292" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="3299">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="3294">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="3286">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="3262" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3287" relation="usage">
-          <edgelabel>d_detail</edgelabel>
-        </childnode>
-      </node>
-      <node id="3261">
+      <node id="1842">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="3262" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3270" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="1843" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3287">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3288" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3279">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3280" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3288">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="3289" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="3298" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="3300" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="3295">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="3296" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3272">
-        <label>gr_endpoint</label>
-        <link refid="classgr__endpoint"/>
-        <childnode refid="3273" relation="usage">
-          <edgelabel>d_basic_block</edgelabel>
-        </childnode>
-      </node>
-      <node id="3265">
+      <node id="1846">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3266" relation="usage">
+        <childnode refid="1847" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3284">
-        <label>audio_source</label>
-        <link refid="classaudio__source"/>
-        <childnode refid="3285" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3293">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="3294" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="3295" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="3297" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="3269">
+      <node id="1849">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3275">
-        <label>gr_flowgraph</label>
-        <link refid="classgr__flowgraph"/>
-        <childnode refid="3276" relation="usage">
-          <edgelabel>d_edges</edgelabel>
-        </childnode>
-        <childnode refid="3278" relation="usage">
-          <edgelabel>d_blocks</edgelabel>
-        </childnode>
-      </node>
-      <node id="3281">
-        <label>std::vector&lt; gr_endpoint_vector_t &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3282" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3289">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="3290" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3264">
+      <node id="1845">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3283">
-        <label>boost::shared_ptr&lt; audio_source &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3284" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3260">
+      <node id="1841">
         <label>fcd_source_c</label>
         <link refid="classfcd__source__c"/>
-        <childnode refid="3261" relation="public-inheritance">
+        <childnode refid="1842" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3271">
-        <label>std::vector&lt; gr_endpoint &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3272" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3278">
-        <label>std::vector&lt; gr_basic_block_sptr &gt;</label>
-        <childnode refid="3279" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3292">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3293" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3296">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="3298">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="3299" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="3300">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="3279" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3266">
+      <node id="1847">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="3267" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="3273">
-        <label>boost::shared_ptr&lt; gr_basic_block &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3262" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3262">
+      <node id="1843">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3263" relation="public-inheritance">
+        <childnode refid="1844" relation="public-inheritance">
         </childnode>
-        <childnode refid="3265" relation="usage">
+        <childnode refid="1846" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3268" relation="usage">
+        <childnode refid="1848" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3277">
-        <label>gr_edge</label>
-        <link refid="classgr__edge"/>
-        <childnode refid="3272" relation="usage">
-          <edgelabel>d_src</edgelabel>
-          <edgelabel>d_dst</edgelabel>
-        </childnode>
-      </node>
-      <node id="3270">
-        <label>gr_hier_block2_detail</label>
-        <link refid="classgr__hier__block2__detail"/>
-        <childnode refid="3271" relation="usage">
-          <edgelabel>d_outputs</edgelabel>
-        </childnode>
-        <childnode refid="3261" relation="usage">
-          <edgelabel>d_owner</edgelabel>
-        </childnode>
-        <childnode refid="3274" relation="usage">
-          <edgelabel>d_fg</edgelabel>
-        </childnode>
-        <childnode refid="3278" relation="usage">
-          <edgelabel>d_blocks</edgelabel>
-        </childnode>
-        <childnode refid="3270" relation="usage">
-          <edgelabel>d_parent_detail</edgelabel>
-        </childnode>
-        <childnode refid="3281" relation="usage">
-          <edgelabel>d_inputs</edgelabel>
-        </childnode>
-      </node>
-      <node id="3274">
-        <label>boost::shared_ptr&lt; gr_flowgraph &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3275" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3267">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="3268">
+      <node id="1848">
         <label>std::string</label>
-        <childnode refid="3269" relation="public-inheritance">
+        <childnode refid="1849" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -720,7 +469,7 @@ Set IQ phase and gain balance in the device. The default values are 0.0 for phas
       <member refid="classfcd__source__c__impl_1a2f115cbb682cb173f1939af0ae5d822f" prot="public" virt="virtual"><scope>fcd_source_c_impl</scope><name>set_iq_corr</name></member>
       <member refid="classfcd__source__c__impl_1af794919cde4473ba51a026c12110ffe1" prot="public" virt="virtual"><scope>fcd_source_c_impl</scope><name>set_lna_gain</name></member>
       <member refid="classfcd__source__c__impl_1a442356783fdc236f59cc1d879394fc48" prot="public" virt="virtual"><scope>fcd_source_c_impl</scope><name>set_mixer_gain</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>fcd_source_c_impl</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>fcd_source_c_impl</scope><name>set_msg_handler</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>fcd_source_c_impl</scope><name>set_output_signature</name></member>
       <member refid="classgr__basic__block_1a87b0e931b388d349dacd6a5010b5739c" prot="public" virt="non-virtual"><scope>fcd_source_c_impl</scope><name>to_basic_block</name></member>
       <member refid="classgr__hier__block2_1a133eb3a40da0d6355d85383ad20fd4f7" prot="public" virt="non-virtual"><scope>fcd_source_c_impl</scope><name>to_hier_block2</name></member>

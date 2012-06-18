@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -42,18 +39,21 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_wavelet_python_f0416.
 
+# Include the progress variables for this target.
+include gr-wavelet/python/CMakeFiles/pygen_gr_wavelet_python_f0416.dir/progress.make
+
 gr-wavelet/python/CMakeFiles/pygen_gr_wavelet_python_f0416: gr-wavelet/python/__init__.pyc
 gr-wavelet/python/CMakeFiles/pygen_gr_wavelet_python_f0416: gr-wavelet/python/__init__.pyo
 
 gr-wavelet/python/__init__.pyc: ../gr-wavelet/python/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyc"
-	cd /home/katsikas/gnuradio/build/gr-wavelet/python && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wavelet/python/__init__.py /home/katsikas/gnuradio/build/gr-wavelet/python/__init__.pyc
+	cd /home/katsikas/gnuradio/build/gr-wavelet/python && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wavelet/python/__init__.py /home/katsikas/gnuradio/build/gr-wavelet/python/__init__.pyc
 
 gr-wavelet/python/__init__.pyo: ../gr-wavelet/python/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyo"
-	cd /home/katsikas/gnuradio/build/gr-wavelet/python && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wavelet/python/__init__.py /home/katsikas/gnuradio/build/gr-wavelet/python/__init__.pyo
+	cd /home/katsikas/gnuradio/build/gr-wavelet/python && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wavelet/python/__init__.py /home/katsikas/gnuradio/build/gr-wavelet/python/__init__.pyo
 
 pygen_gr_wavelet_python_f0416: gr-wavelet/python/CMakeFiles/pygen_gr_wavelet_python_f0416
 pygen_gr_wavelet_python_f0416: gr-wavelet/python/__init__.pyc

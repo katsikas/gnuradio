@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbt__mpeg__packet__no__sync" kind="class" prot="public">
+    <compoundname>dvbt_mpeg_packet_no_sync</compoundname>
+    <includes refid="dvbt__types_8h" local="no">dvbt_types.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbt_mpeg_packet_no_sync::NPAD</definition>
+        <argsstring></argsstring>
+        <name>NPAD</name>
+        <initializer> 65</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="163" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdvbt__mpeg__packet__no__sync_1a02dae9a82ece311f574ba08e8ae5deb5" prot="public" static="no" mutable="no">
+        <type><ref refid="classplinfo" kindref="compound">plinfo</ref></type>
+        <definition>plinfo dvbt_mpeg_packet_no_sync::pli</definition>
+        <argsstring></argsstring>
+        <name>pli</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="164" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char dvbt_mpeg_packet_no_sync::data[DVBT_MPEG_DATA_LENGTH]</definition>
+        <argsstring>[DVBT_MPEG_DATA_LENGTH]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="165" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="165" bodyend="-1"/>
+        <referencedby refid="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" compoundref="dvbt__types_8h" startline="173" endline="175">operator!=</referencedby>
+        <referencedby refid="classdvbt__mpeg__packet__no__sync_1ad93cd8a7482be41b5089555c7aa4fcf5" compoundref="dvbt__types_8h" startline="169" endline="171">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char dvbt_mpeg_packet_no_sync::_pad_[NPAD]</definition>
+        <argsstring>[NPAD]</argsstring>
+        <name>_pad_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="166" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbt__mpeg__packet__no__sync_1ad93cd8a7482be41b5089555c7aa4fcf5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dvbt_mpeg_packet_no_sync::operator==</definition>
+        <argsstring>(const dvbt_mpeg_packet_no_sync &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdvbt__mpeg__packet__no__sync" kindref="compound">dvbt_mpeg_packet_no_sync</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="169" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="169" bodyend="171"/>
+        <references refid="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" compoundref="dvbt__types_8h" startline="165">data</references>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dvbt_mpeg_packet_no_sync::operator!=</definition>
+        <argsstring>(const dvbt_mpeg_packet_no_sync &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdvbt__mpeg__packet__no__sync" kindref="compound">dvbt_mpeg_packet_no_sync</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="173" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="173" bodyend="175"/>
+        <references refid="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" compoundref="dvbt__types_8h" startline="165">data</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1755">
+        <label>dvbt_mpeg_packet_no_sync</label>
+        <link refid="classdvbt__mpeg__packet__no__sync"/>
+        <childnode refid="1756" relation="usage">
+          <edgelabel>pli</edgelabel>
+        </childnode>
+      </node>
+      <node id="1756">
+        <label>plinfo</label>
+        <link refid="classplinfo"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="160" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="159" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>_pad_</name></member>
+      <member refid="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>data</name></member>
+      <member refid="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>NPAD</name></member>
+      <member refid="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>operator!=</name></member>
+      <member refid="classdvbt__mpeg__packet__no__sync_1ad93cd8a7482be41b5089555c7aa4fcf5" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>operator==</name></member>
+      <member refid="classdvbt__mpeg__packet__no__sync_1a02dae9a82ece311f574ba08e8ae5deb5" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>pli</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

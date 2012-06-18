@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__uhd__usrp__source_8h" kind="file">
     <compoundname>gr_uhd_usrp_source.h</compoundname>
     <includes refid="gr__uhd__api_8h" local="no">gr_uhd_api.h</includes>
@@ -48,9 +48,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__uhd__usrp__source_8h_1a21d8f9c05e6a24d118628e2ed98c2e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_UHD_API boost::shared_ptr&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
-        <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_source&gt; uhd_make_usrp_source</definition>
+      <memberdef kind="function" id="gr__uhd__usrp__source_8h_1a2f347ec7a83c9eafbb2fd742a61a7b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UHD_IMPORT boost::shared_ptr&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
+        <definition>UHD_IMPORT boost::shared_ptr&lt;uhd_usrp_source&gt; uhd_make_usrp_source</definition>
         <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::io_type_t &amp;io_type, size_t num_channels)</argsstring>
         <name>uhd_make_usrp_source</name>
         <param>
@@ -98,9 +98,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="80"/>
       </memberdef>
-      <memberdef kind="function" id="gr__uhd__usrp__source_8h_1ae3f472f2fb42c9cee8380c26b99d4b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_UHD_API boost::shared_ptr&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
-        <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_source&gt; uhd_make_usrp_source</definition>
+      <memberdef kind="function" id="gr__uhd__usrp__source_8h_1ac28dc420ee12760b617bb9b31c3e22d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UHD_IMPORT boost::shared_ptr&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
+        <definition>UHD_IMPORT boost::shared_ptr&lt;uhd_usrp_source&gt; uhd_make_usrp_source</definition>
         <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::stream_args_t &amp;stream_args)</argsstring>
         <name>uhd_make_usrp_source</name>
         <param>
@@ -194,13 +194,13 @@
 <codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref>;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_source&gt;<sp/><ref refid="gr__uhd__usrp__source_8h_1a21d8f9c05e6a24d118628e2ed98c2e4d" kindref="member" tooltip="Make a new USRP source block.The USRP source block receives samples and writes to a stream...">uhd_make_usrp_source</ref>(</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_source&gt;<sp/><ref refid="gr__uhd__usrp__source_8h_1a2f347ec7a83c9eafbb2fd742a61a7b18" kindref="member" tooltip="Make a new USRP source block.The USRP source block receives samples and writes to a stream...">uhd_make_usrp_source</ref>(</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhd::device_addr_t<sp/>&amp;device_addr,</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhd::io_type_t<sp/>&amp;io_type,</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num_channels</highlight></codeline>
 <codeline lineno="80"><highlight class="normal">);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_source&gt;<sp/><ref refid="gr__uhd__usrp__source_8h_1a21d8f9c05e6a24d118628e2ed98c2e4d" kindref="member" tooltip="Make a new USRP source block.The USRP source block receives samples and writes to a stream...">uhd_make_usrp_source</ref>(</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_source&gt;<sp/><ref refid="gr__uhd__usrp__source_8h_1a2f347ec7a83c9eafbb2fd742a61a7b18" kindref="member" tooltip="Make a new USRP source block.The USRP source block receives samples and writes to a stream...">uhd_make_usrp_source</ref>(</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhd::device_addr_t<sp/>&amp;device_addr,</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structuhd_1_1stream__args__t" kindref="compound">uhd::stream_args_t</ref><sp/>&amp;stream_args</highlight></codeline>
 <codeline lineno="107"><highlight class="normal">);</highlight></codeline>

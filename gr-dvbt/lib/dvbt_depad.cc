@@ -40,7 +40,7 @@ dvbt_make_depad()
 dvbt_depad::dvbt_depad(): gr_sync_interpolator("dvbt_depad",
 			 	gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 			 	gr_make_io_signature(1, 1, sizeof(unsigned char)),
-			 	DVBT_MPEG_DATA_LENGTH)
+			 	DVBT_MPEG_PACKET_LENGTH)
 {
   	reset();
 }

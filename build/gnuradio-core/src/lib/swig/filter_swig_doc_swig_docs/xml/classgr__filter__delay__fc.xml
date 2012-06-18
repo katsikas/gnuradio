@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__filter__delay__fc" kind="class" prot="public">
     <compoundname>gr_filter_delay_fc</compoundname>
     <includes refid="gr__filter__delay__fc_8h" local="no">gr_filter_delay_fc.h</includes>
@@ -113,25 +113,6 @@
 <para>Filter-Delay Combination Block.</para><para>The block takes one or two float stream and outputs a complex stream. If only one float stream is input, the real output is a delayed version of this input and the imaginary output is the filtered output. If two floats are connected to the input, then the real output is the delayed version of the first input, and the imaginary output is the filtered output. The delay in the real path accounts for the group delay introduced by the filter in the imaginary path. The filter taps needs to be calculated before initializing this block. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="338">
-        <label>gr_fir_fff</label>
-        <link refid="classgr__fir__fff"/>
-        <childnode refid="339" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-        </childnode>
-      </node>
-      <node id="339">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-      <node id="337">
-        <label>gr_filter_delay_fc</label>
-        <link refid="classgr__filter__delay__fc"/>
-        <childnode refid="338" relation="usage">
-          <edgelabel>d_fir</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_filter_delay_fc.h" line="55" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_filter_delay_fc.h" bodystart="54" bodyend="71"/>
     <listofallmembers>
       <member refid="classgr__filter__delay__fc_1a2e0b5966e044dd3df9b60daffa773328" prot="private" virt="non-virtual"><scope>gr_filter_delay_fc</scope><name>d_delay</name></member>

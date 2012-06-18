@@ -117,13 +117,16 @@ gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/inclu
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_alpha.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_arch.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_arm.h
+gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_armv5.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_armv6.h
+gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_armv7.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_avr32.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_bfin.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_bootstrap.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_generic.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_i386.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_ia64.h
+gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_integrity.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_macosx.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_mips.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qatomic_parisc.h
@@ -148,6 +151,7 @@ gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/inclu
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qdatastream.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qeventloop.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qfeatures.h
+gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qfile.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qglobal.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qhash.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtCore/qiodevice.h
@@ -192,6 +196,7 @@ gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/inclu
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/QHBoxLayout
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/QHeaderView
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/QLabel
+gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/QPlatformWindow
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/QPolygonF
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/QPushButton
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/QRegExpValidator
@@ -241,6 +246,8 @@ gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/inclu
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qpalette.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qpen.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qpixmap.h
+gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qplatformwindow_qpa.h
+gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qplatformwindowformat_qpa.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qpolygon.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qpushbutton.h
 gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/qtgui_swigPYTHON_wrap.cxx.o: /usr/include/qt4/QtGui/qregion.h

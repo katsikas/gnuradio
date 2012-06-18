@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__fll__band__edge__cc" kind="class" prot="public">
     <compoundname>digital_fll_band_edge_cc</compoundname>
     <includes refid="digital__fll__band__edge__cc_8h" local="no">digital_fll_band_edge_cc.h</includes>
@@ -84,9 +84,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__fll__band__edge__cc_1a0cf093022a5ef839fdb4308261c78594" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref></type>
-        <definition>DIGITAL_API digital_fll_band_edge_cc_sptr digital_make_fll_band_edge_cc</definition>
+      <memberdef kind="friend" id="classdigital__fll__band__edge__cc_1a47343f460ab71f33e8bf5574e65ff546" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_fll_band_edge_cc_sptr digital_make_fll_band_edge_cc</definition>
         <argsstring>(float samps_per_sym, float rolloff, int filter_size, float bandwidth)</argsstring>
         <name>digital_make_fll_band_edge_cc</name>
         <param>
@@ -421,19 +421,6 @@
 <para>Frequency Lock Loop using band-edge filters. </para>    </briefdescription>
     <detaileddescription>
 <para>The frequency lock loop derives a band-edge filter that covers the upper and lower bandwidths of a digitally-modulated signal. The bandwidth range is determined by the excess bandwidth (e.g., rolloff factor) of the modulated signal. The placement in frequency of the band-edges is determined by the oversampling ratio (number of samples per symbol) and the excess bandwidth. The size of the filters should be fairly large so as to average over a number of symbols.</para><para>The FLL works by filtering the upper and lower band edges into x_u(t) and x_l(t), respectively. These are combined to form cc(t) = x_u(t) + x_l(t) and ss(t) = x_u(t) - x_l(t). Combining these to form the signal e(t) = Re{cc(t) \times ss(t)^*} (where ^* is the complex conjugate) provides an error signal at the DC term that is directly proportional to the carrier frequency. We then make a second-order loop using the error signal that is the running average of e(t).</para><para>In practice, the above equation can be simplified by just comparing the absolute value squared of the output of both filters: abs(x_l(t))^2 - abs(x_u(t))^2 = norm(x_l(t)) - norm(x_u(t)).</para><para>In theory, the band-edge filter is the derivative of the matched filter in frequency, (H_be(f) = frac{H(f)}{df}). In practice, this comes down to a quarter sine wave at the point of the matched filter&apos;s rolloff (if it&apos;s a raised-cosine, the derivative of a cosine is a sine). Extend this sine by another quarter wave to make a half wave around the band-edges is equivalent in time to the sum of two sinc functions. The baseband filter fot the band edges is therefore derived from this sum of sincs. The band edge filters are then just the baseband signal modulated to the correct place in frequency. All of these calculations are done in the &apos;design_filter&apos; function.</para><para>Note: We use FIR filters here because the filters have to have a flat phase response over the entire frequency range to allow their comparisons to be valid.</para><para>It is very important that the band edge filters be the derivatives of the pulse shaping filter, and that they be linear phase. Otherwise, the variance of the error will be very large. </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="391">
-        <label>digital_fll_band_edge_cc</label>
-        <link refid="classdigital__fll__band__edge__cc"/>
-        <childnode refid="392" relation="usage">
-          <edgelabel>d_taps_upper</edgelabel>
-          <edgelabel>d_taps_lower</edgelabel>
-        </childnode>
-      </node>
-      <node id="392">
-        <label>std::vector&lt; gr_complex &gt;</label>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="90" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" bodystart="89" bodyend="212"/>
     <listofallmembers>
       <member refid="classdigital__fll__band__edge__cc_1a1eaada85b01b468b566295a5cac60fac" prot="private" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>d_filter_size</name></member>
@@ -444,7 +431,7 @@
       <member refid="classdigital__fll__band__edge__cc_1a99365e74a1a812a2103b017adf2c9956" prot="private" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>d_updated</name></member>
       <member refid="classdigital__fll__band__edge__cc_1adff25f647b1c4b2df941fd28c330c314" prot="private" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>design_filter</name></member>
       <member refid="classdigital__fll__band__edge__cc_1a9108d05cbb2bc69aa87577daacfb27d9" prot="private" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>digital_fll_band_edge_cc</name></member>
-      <member refid="classdigital__fll__band__edge__cc_1a0cf093022a5ef839fdb4308261c78594" prot="private" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>digital_make_fll_band_edge_cc</name></member>
+      <member refid="classdigital__fll__band__edge__cc_1a47343f460ab71f33e8bf5574e65ff546" prot="private" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>digital_make_fll_band_edge_cc</name></member>
       <member refid="classdigital__fll__band__edge__cc_1a68f0652ab400187d89279ef48a06e581" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>get_filter_size</name></member>
       <member refid="classdigital__fll__band__edge__cc_1ac914d2310cd29063274ba9084bb2dbc1" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>get_rolloff</name></member>
       <member refid="classdigital__fll__band__edge__cc_1a10c4485e9ae99eca54c836c05068fb62" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>get_samples_per_symbol</name></member>

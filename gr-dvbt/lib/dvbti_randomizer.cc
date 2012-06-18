@@ -21,6 +21,7 @@
  */
 
 
+#include <stdio.h>
 #include <assert.h>
 #include <dvbt/dvbti_randomizer.h>
 
@@ -30,6 +31,7 @@ bool dvbti_randomizer::s_output_map_initialized_p = false;
 
 dvbti_randomizer::dvbti_randomizer ()
 {
+	printf("dvbti constructor \n");
   	d_state = PRELOAD_VALUE;
 
   	if (!s_output_map_initialized_p){
@@ -50,6 +52,7 @@ dvbti_randomizer::dvbti_randomizer ()
 void
 dvbti_randomizer::initialize_output_map ()
 {
+	printf("output map() \n");
   	s_output_map_initialized_p = true;
 
   	for (int i = 0; i < (1 << 14); i++){
@@ -61,12 +64,14 @@ dvbti_randomizer::initialize_output_map ()
 void
 dvbti_randomizer::reset ()
 {
+	printf("dvbti_reset() \n");
   	d_state = PRELOAD_VALUE;
 }
 
 void
 dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet &in)
 {
+	//printf("dvbti_randomize() \n");
   	assert (in.data[0] == MPEG_SYNC_BYTE);	// confirm it's there, then drop
 
   	for (int i = 0; i < DVBT_MPEG_DATA_LENGTH; i++){
@@ -77,6 +82,7 @@ dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_pack
 void
 dvbti_randomizer::derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_sync &in)
 {
+	//printf("dvbti_derandomize() \n");
 	out.data[0] = MPEG_SYNC_BYTE;		// add sync byte to beginning of packet
 
 	for (int i = 0; i < DVBT_MPEG_DATA_LENGTH; i++){
@@ -87,6 +93,7 @@ dvbti_randomizer::derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_
 unsigned char
 dvbti_randomizer::slow_output_map (int st)
 {
+	//printf("slow_map() \n");
   	int output = 0;
 
   	if (st & 0x8000)

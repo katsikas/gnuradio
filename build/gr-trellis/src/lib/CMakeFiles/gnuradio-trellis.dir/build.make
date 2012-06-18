@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -1914,7 +1911,7 @@ gr-trellis/src/lib/CMakeFiles/gnuradio-trellis.dir/trellis_pccc_decoder_combined
 gr-trellis/src/lib/trellis_encoder_bb.h: ../gr-trellis/src/lib/trellis_encoder_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_encoder_bb.h, trellis_encoder_bs.h, trellis_encoder_bi.h, trellis_encoder_ss.h, trellis_encoder_si.h, trellis_encoder_ii.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.h.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.h.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_encoder_bs.h: gr-trellis/src/lib/trellis_encoder_bb.h
 
@@ -1929,7 +1926,7 @@ gr-trellis/src/lib/trellis_encoder_ii.h: gr-trellis/src/lib/trellis_encoder_bb.h
 gr-trellis/src/lib/trellis_encoder_bb.cc: ../gr-trellis/src/lib/trellis_encoder_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_encoder_bb.cc, trellis_encoder_bs.cc, trellis_encoder_bi.cc, trellis_encoder_ss.cc, trellis_encoder_si.cc, trellis_encoder_ii.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.cc.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_encoder_XX trellis_encoder_XX.cc.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_encoder_bs.cc: gr-trellis/src/lib/trellis_encoder_bb.cc
 
@@ -1944,7 +1941,7 @@ gr-trellis/src/lib/trellis_encoder_ii.cc: gr-trellis/src/lib/trellis_encoder_bb.
 gr-trellis/src/lib/trellis_sccc_encoder_bb.h: ../gr-trellis/src/lib/trellis_sccc_encoder_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_encoder_bb.h, trellis_sccc_encoder_bs.h, trellis_sccc_encoder_bi.h, trellis_sccc_encoder_ss.h, trellis_sccc_encoder_si.h, trellis_sccc_encoder_ii.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.h.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.h.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_sccc_encoder_bs.h: gr-trellis/src/lib/trellis_sccc_encoder_bb.h
 
@@ -1959,7 +1956,7 @@ gr-trellis/src/lib/trellis_sccc_encoder_ii.h: gr-trellis/src/lib/trellis_sccc_en
 gr-trellis/src/lib/trellis_sccc_encoder_bb.cc: ../gr-trellis/src/lib/trellis_sccc_encoder_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_encoder_bb.cc, trellis_sccc_encoder_bs.cc, trellis_sccc_encoder_bi.cc, trellis_sccc_encoder_ss.cc, trellis_sccc_encoder_si.cc, trellis_sccc_encoder_ii.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.cc.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_encoder_XX trellis_sccc_encoder_XX.cc.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_sccc_encoder_bs.cc: gr-trellis/src/lib/trellis_sccc_encoder_bb.cc
 
@@ -1974,7 +1971,7 @@ gr-trellis/src/lib/trellis_sccc_encoder_ii.cc: gr-trellis/src/lib/trellis_sccc_e
 gr-trellis/src/lib/trellis_pccc_encoder_bb.h: ../gr-trellis/src/lib/trellis_pccc_encoder_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_encoder_bb.h, trellis_pccc_encoder_bs.h, trellis_pccc_encoder_bi.h, trellis_pccc_encoder_ss.h, trellis_pccc_encoder_si.h, trellis_pccc_encoder_ii.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.h.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.h.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_pccc_encoder_bs.h: gr-trellis/src/lib/trellis_pccc_encoder_bb.h
 
@@ -1989,7 +1986,7 @@ gr-trellis/src/lib/trellis_pccc_encoder_ii.h: gr-trellis/src/lib/trellis_pccc_en
 gr-trellis/src/lib/trellis_pccc_encoder_bb.cc: ../gr-trellis/src/lib/trellis_pccc_encoder_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_encoder_bb.cc, trellis_pccc_encoder_bs.cc, trellis_pccc_encoder_bi.cc, trellis_pccc_encoder_ss.cc, trellis_pccc_encoder_si.cc, trellis_pccc_encoder_ii.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.cc.t bb bs bi ss si ii
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_encoder_XX trellis_pccc_encoder_XX.cc.t bb bs bi ss si ii
 
 gr-trellis/src/lib/trellis_pccc_encoder_bs.cc: gr-trellis/src/lib/trellis_pccc_encoder_bb.cc
 
@@ -2004,7 +2001,7 @@ gr-trellis/src/lib/trellis_pccc_encoder_ii.cc: gr-trellis/src/lib/trellis_pccc_e
 gr-trellis/src/lib/trellis_metrics_s.h: ../gr-trellis/src/lib/trellis_metrics_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_metrics_s.h, trellis_metrics_i.h, trellis_metrics_f.h, trellis_metrics_c.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.h.t s i f c
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.h.t s i f c
 
 gr-trellis/src/lib/trellis_metrics_i.h: gr-trellis/src/lib/trellis_metrics_s.h
 
@@ -2015,7 +2012,7 @@ gr-trellis/src/lib/trellis_metrics_c.h: gr-trellis/src/lib/trellis_metrics_s.h
 gr-trellis/src/lib/trellis_metrics_s.cc: ../gr-trellis/src/lib/trellis_metrics_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_metrics_s.cc, trellis_metrics_i.cc, trellis_metrics_f.cc, trellis_metrics_c.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.cc.t s i f c
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_metrics_X trellis_metrics_X.cc.t s i f c
 
 gr-trellis/src/lib/trellis_metrics_i.cc: gr-trellis/src/lib/trellis_metrics_s.cc
 
@@ -2026,7 +2023,7 @@ gr-trellis/src/lib/trellis_metrics_c.cc: gr-trellis/src/lib/trellis_metrics_s.cc
 gr-trellis/src/lib/trellis_viterbi_b.h: ../gr-trellis/src/lib/trellis_viterbi_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_b.h, trellis_viterbi_s.h, trellis_viterbi_i.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.h.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.h.t b s i
 
 gr-trellis/src/lib/trellis_viterbi_s.h: gr-trellis/src/lib/trellis_viterbi_b.h
 
@@ -2035,7 +2032,7 @@ gr-trellis/src/lib/trellis_viterbi_i.h: gr-trellis/src/lib/trellis_viterbi_b.h
 gr-trellis/src/lib/trellis_viterbi_b.cc: ../gr-trellis/src/lib/trellis_viterbi_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_b.cc, trellis_viterbi_s.cc, trellis_viterbi_i.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.cc.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_X trellis_viterbi_X.cc.t b s i
 
 gr-trellis/src/lib/trellis_viterbi_s.cc: gr-trellis/src/lib/trellis_viterbi_b.cc
 
@@ -2044,7 +2041,7 @@ gr-trellis/src/lib/trellis_viterbi_i.cc: gr-trellis/src/lib/trellis_viterbi_b.cc
 gr-trellis/src/lib/trellis_viterbi_combined_sb.h: ../gr-trellis/src/lib/trellis_viterbi_combined_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_combined_sb.h, trellis_viterbi_combined_ss.h, trellis_viterbi_combined_si.h, trellis_viterbi_combined_ib.h, trellis_viterbi_combined_is.h, trellis_viterbi_combined_ii.h, trellis_viterbi_combined_fb.h, trellis_viterbi_combined_fs.h, trellis_viterbi_combined_fi.h, trellis_viterbi_combined_cb.h, trellis_viterbi_combined_cs.h, trellis_viterbi_combined_ci.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.h.t sb ss si ib is ii fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.h.t sb ss si ib is ii fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_viterbi_combined_ss.h: gr-trellis/src/lib/trellis_viterbi_combined_sb.h
 
@@ -2071,7 +2068,7 @@ gr-trellis/src/lib/trellis_viterbi_combined_ci.h: gr-trellis/src/lib/trellis_vit
 gr-trellis/src/lib/trellis_viterbi_combined_sb.cc: ../gr-trellis/src/lib/trellis_viterbi_combined_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_viterbi_combined_sb.cc, trellis_viterbi_combined_ss.cc, trellis_viterbi_combined_si.cc, trellis_viterbi_combined_ib.cc, trellis_viterbi_combined_is.cc, trellis_viterbi_combined_ii.cc, trellis_viterbi_combined_fb.cc, trellis_viterbi_combined_fs.cc, trellis_viterbi_combined_fi.cc, trellis_viterbi_combined_cb.cc, trellis_viterbi_combined_cs.cc, trellis_viterbi_combined_ci.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.cc.t sb ss si ib is ii fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_viterbi_combined_XX trellis_viterbi_combined_XX.cc.t sb ss si ib is ii fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_viterbi_combined_ss.cc: gr-trellis/src/lib/trellis_viterbi_combined_sb.cc
 
@@ -2098,7 +2095,7 @@ gr-trellis/src/lib/trellis_viterbi_combined_ci.cc: gr-trellis/src/lib/trellis_vi
 gr-trellis/src/lib/trellis_sccc_decoder_b.h: ../gr-trellis/src/lib/trellis_sccc_decoder_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_b.h, trellis_sccc_decoder_s.h, trellis_sccc_decoder_i.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.h.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.h.t b s i
 
 gr-trellis/src/lib/trellis_sccc_decoder_s.h: gr-trellis/src/lib/trellis_sccc_decoder_b.h
 
@@ -2107,7 +2104,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_i.h: gr-trellis/src/lib/trellis_sccc_dec
 gr-trellis/src/lib/trellis_sccc_decoder_b.cc: ../gr-trellis/src/lib/trellis_sccc_decoder_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_b.cc, trellis_sccc_decoder_s.cc, trellis_sccc_decoder_i.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.cc.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_X trellis_sccc_decoder_X.cc.t b s i
 
 gr-trellis/src/lib/trellis_sccc_decoder_s.cc: gr-trellis/src/lib/trellis_sccc_decoder_b.cc
 
@@ -2116,7 +2113,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_i.cc: gr-trellis/src/lib/trellis_sccc_de
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h: ../gr-trellis/src/lib/trellis_sccc_decoder_combined_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_combined_fb.h, trellis_sccc_decoder_combined_fs.h, trellis_sccc_decoder_combined_fi.h, trellis_sccc_decoder_combined_cb.h, trellis_sccc_decoder_combined_cs.h, trellis_sccc_decoder_combined_ci.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.h.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.h.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fs.h: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.h
 
@@ -2131,7 +2128,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.h: gr-trellis/src/lib/trelli
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.cc: ../gr-trellis/src/lib/trellis_sccc_decoder_combined_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_sccc_decoder_combined_fb.cc, trellis_sccc_decoder_combined_fs.cc, trellis_sccc_decoder_combined_fi.cc, trellis_sccc_decoder_combined_cb.cc, trellis_sccc_decoder_combined_cs.cc, trellis_sccc_decoder_combined_ci.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.cc.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_sccc_decoder_combined_XX trellis_sccc_decoder_combined_XX.cc.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_sccc_decoder_combined_fs.cc: gr-trellis/src/lib/trellis_sccc_decoder_combined_fb.cc
 
@@ -2146,7 +2143,7 @@ gr-trellis/src/lib/trellis_sccc_decoder_combined_ci.cc: gr-trellis/src/lib/trell
 gr-trellis/src/lib/trellis_pccc_decoder_b.h: ../gr-trellis/src/lib/trellis_pccc_decoder_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_b.h, trellis_pccc_decoder_s.h, trellis_pccc_decoder_i.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.h.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.h.t b s i
 
 gr-trellis/src/lib/trellis_pccc_decoder_s.h: gr-trellis/src/lib/trellis_pccc_decoder_b.h
 
@@ -2155,7 +2152,7 @@ gr-trellis/src/lib/trellis_pccc_decoder_i.h: gr-trellis/src/lib/trellis_pccc_dec
 gr-trellis/src/lib/trellis_pccc_decoder_b.cc: ../gr-trellis/src/lib/trellis_pccc_decoder_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_b.cc, trellis_pccc_decoder_s.cc, trellis_pccc_decoder_i.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.cc.t b s i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_X trellis_pccc_decoder_X.cc.t b s i
 
 gr-trellis/src/lib/trellis_pccc_decoder_s.cc: gr-trellis/src/lib/trellis_pccc_decoder_b.cc
 
@@ -2164,7 +2161,7 @@ gr-trellis/src/lib/trellis_pccc_decoder_i.cc: gr-trellis/src/lib/trellis_pccc_de
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h: ../gr-trellis/src/lib/trellis_pccc_decoder_combined_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_combined_fb.h, trellis_pccc_decoder_combined_fs.h, trellis_pccc_decoder_combined_fi.h, trellis_pccc_decoder_combined_cb.h, trellis_pccc_decoder_combined_cs.h, trellis_pccc_decoder_combined_ci.h"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.h.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.h.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.h: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.h
 
@@ -2179,7 +2176,7 @@ gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.h: gr-trellis/src/lib/trelli
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.cc: ../gr-trellis/src/lib/trellis_pccc_decoder_combined_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_pccc_decoder_combined_fb.cc, trellis_pccc_decoder_combined_fs.cc, trellis_pccc_decoder_combined_fi.cc, trellis_pccc_decoder_combined_cb.cc, trellis_pccc_decoder_combined_cs.cc, trellis_pccc_decoder_combined_ci.cc"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.cc.t fb fs fi cb cs ci
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_helper.py trellis_pccc_decoder_combined_XX trellis_pccc_decoder_combined_XX.cc.t fb fs fi cb cs ci
 
 gr-trellis/src/lib/trellis_pccc_decoder_combined_fs.cc: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.cc
 

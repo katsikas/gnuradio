@@ -24,6 +24,7 @@
 #include <config.h>
 #endif
 
+#include <stdio.h>
 #include <gr_io_signature.h>
 #include <dvbt/dvbt_consts.h>
 #include <dvbt/dvbt_randomizer.h>
@@ -32,6 +33,7 @@
 dvbt_randomizer_sptr
 dvbt_make_randomizer()
 {
+	printf("dvbt_make_randomizer() \n");
   	return gnuradio::get_initial_sptr(new dvbt_randomizer());
 }
 
@@ -39,12 +41,15 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)))
 {
+	printf("constructor() \n");
+	printf("dvbt_mpeg_packet_no_sync = %d\n",sizeof(dvbt_mpeg_packet_no_sync));
   	reset();
 }
 
 void
 dvbt_randomizer::reset()
 {
+	printf("reset() \n");
   	d_rand.reset();
   	d_field2 = false;
   	d_segno = 0;
@@ -55,6 +60,7 @@ dvbt_randomizer::work (int noutput_items,
 		       gr_vector_const_void_star &input_items,
 		       gr_vector_void_star &output_items)
 {
+	printf("work() \n");
   	const dvbt_mpeg_packet *in = (const dvbt_mpeg_packet *) input_items[0];
   	dvbt_mpeg_packet_no_sync *out = (dvbt_mpeg_packet_no_sync *) output_items[0];
 

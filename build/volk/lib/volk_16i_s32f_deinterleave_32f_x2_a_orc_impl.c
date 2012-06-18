@@ -251,7 +251,7 @@ void
 volk_16ic_s32f_deinterleave_32f_x2_a_orc_impl (orc_uint32 * ORC_RESTRICT d1, orc_uint32 * ORC_RESTRICT d2, const orc_uint32 * ORC_RESTRICT s1, float p1, int n)
 {
   OrcExecutor _ex, *ex = &_ex;
-  static int p_inited = 0;
+  static volatile int p_inited = 0;
   static OrcCode *c = 0;
   void (*func) (OrcExecutor *);
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsci__sssr" kind="class" prot="public">
     <compoundname>atsci_sssr</compoundname>
     <includes refid="atsci__sssr_8h" local="no">atsci_sssr.h</includes>
@@ -224,33 +224,6 @@
 <para>ATSC Segment and Symbol Sync Recovery. </para>    </briefdescription>
     <detaileddescription>
 <para>This class implements data segment sync tracking and symbol timing using the method described in &quot;ATSC/VSB Tutorial - Receiver Technology&quot; by Wayne E. Bretl of Zenith, pgs 41-45. </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="154">
-        <label>sssr::digital_correlator</label>
-        <link refid="classsssr_1_1digital__correlator"/>
-      </node>
-      <node id="153">
-        <label>sssr::seg_sync_integrator</label>
-        <link refid="classsssr_1_1seg__sync__integrator"/>
-      </node>
-      <node id="152">
-        <label>sssr::quad_filter</label>
-        <link refid="classsssr_1_1quad__filter"/>
-      </node>
-      <node id="151">
-        <label>atsci_sssr</label>
-        <link refid="classatsci__sssr"/>
-        <childnode refid="152" relation="usage">
-          <edgelabel>d_quad_filter</edgelabel>
-        </childnode>
-        <childnode refid="153" relation="usage">
-          <edgelabel>d_integrator</edgelabel>
-        </childnode>
-        <childnode refid="154" relation="usage">
-          <edgelabel>d_correlator</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" line="132" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" bodystart="132" bodyend="189"/>
     <listofallmembers>
       <member refid="classatsci__sssr_1a5d4a085ba7b9bafe9095292b032d01c1" prot="public" virt="non-virtual"><scope>atsci_sssr</scope><name>atsci_sssr</name></member>

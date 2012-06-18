@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="group__API" kind="group">
     <compoundname>API</compoundname>
     <title>hidapi API</title>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__API_1ga142ffc1b0b7a7fa412d3862b2a17164b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_init</definition>
         <argsstring>(void)</argsstring>
         <name>hid_init</name>
         <param>
-          <type>void</type>
+          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         </param>
         <briefdescription>
 <para>Initialize the HIDAPI library. </para>        </briefdescription>
@@ -22,12 +22,12 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="96"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gacf5da9ce37132eba69fc259f17f13023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_exit</definition>
         <argsstring>(void)</argsstring>
         <name>hid_exit</name>
         <param>
-          <type>void</type>
+          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         </param>
         <briefdescription>
 <para>Finalize the HIDAPI library. </para>        </briefdescription>
@@ -39,7 +39,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="109"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga135931e04d48078a9fb7aebf663676f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>struct <ref refid="structhid__device__info" kindref="compound">hid_device_info</ref> HID_API_EXPORT *HID_API_CALL</type>
+        <type>struct <ref refid="structhid__device__info" kindref="compound">hid_device_info</ref> <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> *<ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>struct hid_device_info HID_API_EXPORT* HID_API_CALL hid_enumerate</definition>
         <argsstring>(unsigned short vendor_id, unsigned short product_id)</argsstring>
         <name>hid_enumerate</name>
@@ -76,7 +76,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="130"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gafc2d2adf71db3784b783b9a554527aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void HID_API_EXPORT HID_API_CALL</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>void HID_API_EXPORT HID_API_CALL hid_free_enumeration</definition>
         <argsstring>(struct hid_device_info *devs)</argsstring>
         <name>hid_free_enumeration</name>
@@ -101,7 +101,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="140"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gabc0f2cd462ee003ce98d2ad3edfeb871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>HID_API_EXPORT <ref refid="hidapi_8h_1aa6da74d5686d198dd3e5440e60088fcc" kindref="member">hid_device</ref> *HID_API_CALL</type>
+        <type><ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1aa6da74d5686d198dd3e5440e60088fcc" kindref="member">hid_device</ref> *<ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>HID_API_EXPORT hid_device* HID_API_CALL hid_open</definition>
         <argsstring>(unsigned short vendor_id, unsigned short product_id, wchar_t *serial_number)</argsstring>
         <name>hid_open</name>
@@ -149,7 +149,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="158"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga1e87518670f88540c920dc451df608ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>HID_API_EXPORT <ref refid="hidapi_8h_1aa6da74d5686d198dd3e5440e60088fcc" kindref="member">hid_device</ref> *HID_API_CALL</type>
+        <type><ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1aa6da74d5686d198dd3e5440e60088fcc" kindref="member">hid_device</ref> *<ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>HID_API_EXPORT hid_device* HID_API_CALL hid_open_path</definition>
         <argsstring>(const char *path)</argsstring>
         <name>hid_open_path</name>
@@ -175,7 +175,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="173"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gad14ea48e440cf5066df87cc6488493af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_write</definition>
         <argsstring>(hid_device *device, const unsigned char *data, size_t length)</argsstring>
         <name>hid_write</name>
@@ -223,7 +223,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="201"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gaa5c9ed5aa290688ffac03343989ad75a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_read_timeout</definition>
         <argsstring>(hid_device *dev, unsigned char *data, size_t length, int milliseconds)</argsstring>
         <name>hid_read_timeout</name>
@@ -282,7 +282,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="221"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga6b820f3e72097cf7f994e33715dc7af1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_read</definition>
         <argsstring>(hid_device *device, unsigned char *data, size_t length)</argsstring>
         <name>hid_read</name>
@@ -330,7 +330,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="240"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gaf9d54208d314047727598b506577bb87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_set_nonblocking</definition>
         <argsstring>(hid_device *device, int nonblock)</argsstring>
         <name>hid_set_nonblocking</name>
@@ -369,7 +369,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="260"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gae43ab80f741786ac4374216658fd5ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_send_feature_report</definition>
         <argsstring>(hid_device *device, const unsigned char *data, size_t length)</argsstring>
         <name>hid_send_feature_report</name>
@@ -417,7 +417,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="288"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga34d43ac6da0fb785b88fcc2edf13ed65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT HID_API_CALL</type>
+        <type>int <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>int HID_API_EXPORT HID_API_CALL hid_get_feature_report</definition>
         <argsstring>(hid_device *device, unsigned char *data, size_t length)</argsstring>
         <name>hid_get_feature_report</name>
@@ -465,7 +465,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="309"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga9b64828273b8dd052731e79ba9e1a516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void HID_API_EXPORT HID_API_CALL</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> <ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> <ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>void HID_API_EXPORT HID_API_CALL hid_close</definition>
         <argsstring>(hid_device *device)</argsstring>
         <name>hid_close</name>
@@ -490,7 +490,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="316"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga2652b2ff0f3982a8c5791718e2a2e6cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT_CALL</type>
+        <type>int <ref refid="hidapi_8h_1a70c49eda5025c1bc455af77da19ca312" kindref="member">HID_API_EXPORT_CALL</ref></type>
         <definition>int HID_API_EXPORT_CALL hid_get_manufacturer_string</definition>
         <argsstring>(hid_device *device, wchar_t *string, size_t maxlen)</argsstring>
         <name>hid_get_manufacturer_string</name>
@@ -538,7 +538,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="328"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1gaa78526041c4bb470b2c1ad9eb0791c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT_CALL</type>
+        <type>int <ref refid="hidapi_8h_1a70c49eda5025c1bc455af77da19ca312" kindref="member">HID_API_EXPORT_CALL</ref></type>
         <definition>int HID_API_EXPORT_CALL hid_get_product_string</definition>
         <argsstring>(hid_device *device, wchar_t *string, size_t maxlen)</argsstring>
         <name>hid_get_product_string</name>
@@ -586,7 +586,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="340"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga73994b7820264d3604d6ee25de9c66be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT_CALL</type>
+        <type>int <ref refid="hidapi_8h_1a70c49eda5025c1bc455af77da19ca312" kindref="member">HID_API_EXPORT_CALL</ref></type>
         <definition>int HID_API_EXPORT_CALL hid_get_serial_number_string</definition>
         <argsstring>(hid_device *device, wchar_t *string, size_t maxlen)</argsstring>
         <name>hid_get_serial_number_string</name>
@@ -634,7 +634,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="352"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga03810bc0be3c21e9229feff689a9de85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int HID_API_EXPORT_CALL</type>
+        <type>int <ref refid="hidapi_8h_1a70c49eda5025c1bc455af77da19ca312" kindref="member">HID_API_EXPORT_CALL</ref></type>
         <definition>int HID_API_EXPORT_CALL hid_get_indexed_string</definition>
         <argsstring>(hid_device *device, int string_index, wchar_t *string, size_t maxlen)</argsstring>
         <name>hid_get_indexed_string</name>
@@ -693,7 +693,7 @@
         <location file="/home/katsikas/gnuradio/gr-fcd/lib/hid/hidapi.h" line="365"/>
       </memberdef>
       <memberdef kind="function" id="group__API_1ga1b5c0ca1c785b8024f5eb46750a8f606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>HID_API_EXPORT const wchar_t *HID_API_CALL</type>
+        <type><ref refid="hidapi_8h_1aa60150016800ccb88fdf140e8553ae13" kindref="member">HID_API_EXPORT</ref> const wchar_t *<ref refid="hidapi_8h_1af140a25716604e86096670a505a58ee0" kindref="member">HID_API_CALL</ref></type>
         <definition>HID_API_EXPORT const wchar_t* HID_API_CALL hid_error</definition>
         <argsstring>(hid_device *device)</argsstring>
         <name>hid_error</name>

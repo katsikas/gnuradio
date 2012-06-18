@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="wavelet__api_8h" kind="file">
     <compoundname>wavelet_api.h</compoundname>
     <includes refid="attributes_8h" local="no">gruel/attributes.h</includes>
@@ -8,57 +8,57 @@
     <includedby refid="wavelet__wvps__ff_8h" local="no">wavelet_wvps_ff.h</includedby>
     <includedby refid="wavelet__squash__ff__impl_8h" local="no">wavelet_squash_ff_impl.h</includedby>
     <incdepgraph>
-      <node id="22879">
+      <node id="18319">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="22878">
+      <node id="18318">
         <label>wavelet_api.h</label>
         <link refid="wavelet_api.h"/>
-        <childnode refid="22879" relation="include">
+        <childnode refid="18319" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="22883">
+      <node id="18323">
         <label>wavelet_wavelet_ff.h</label>
         <link refid="wavelet__wavelet__ff_8h"/>
-        <childnode refid="22884" relation="include">
+        <childnode refid="18324" relation="include">
         </childnode>
       </node>
-      <node id="22886">
+      <node id="18326">
         <label>wavelet_wvps_ff_impl.h</label>
         <link refid="wavelet__wvps__ff__impl_8h"/>
       </node>
-      <node id="22885">
+      <node id="18325">
         <label>wavelet_wvps_ff.h</label>
         <link refid="wavelet__wvps__ff_8h"/>
-        <childnode refid="22886" relation="include">
+        <childnode refid="18326" relation="include">
         </childnode>
       </node>
-      <node id="22881">
+      <node id="18321">
         <label>wavelet_squash_ff.h</label>
         <link refid="wavelet__squash__ff_8h"/>
-        <childnode refid="22882" relation="include">
+        <childnode refid="18322" relation="include">
         </childnode>
       </node>
-      <node id="22880">
+      <node id="18320">
         <label>wavelet_api.h</label>
         <link refid="wavelet_api.h"/>
-        <childnode refid="22881" relation="include">
+        <childnode refid="18321" relation="include">
         </childnode>
-        <childnode refid="22883" relation="include">
+        <childnode refid="18323" relation="include">
         </childnode>
-        <childnode refid="22885" relation="include">
+        <childnode refid="18325" relation="include">
         </childnode>
-        <childnode refid="22882" relation="include">
+        <childnode refid="18322" relation="include">
         </childnode>
       </node>
-      <node id="22884">
+      <node id="18324">
         <label>wavelet_wavelet_ff_impl.h</label>
         <link refid="wavelet__wavelet__ff__impl_8h"/>
       </node>
-      <node id="22882">
+      <node id="18322">
         <label>wavelet_squash_ff_impl.h</label>
         <link refid="wavelet__squash__ff__impl_8h"/>
       </node>
@@ -66,7 +66,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="wavelet__api_8h_1a9c8352ab43d3afa0c97ee932687f7a1e" prot="public" static="no">
         <name>WAVELET_API</name>
-        <initializer>__GR_ATTR_IMPORT</initializer>
+        <initializer><ref refid="attributes_8h_1a17b9cb3c185c92af4799ec9b0a38f3c1" kindref="member">__GR_ATTR_IMPORT</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

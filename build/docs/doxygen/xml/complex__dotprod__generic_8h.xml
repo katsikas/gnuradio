@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="complex__dotprod__generic_8h" kind="file">
     <compoundname>complex_dotprod_generic.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <incdepgraph>
-      <node id="2509">
+      <node id="2322">
         <label>complex_dotprod_generic.h</label>
         <link refid="complex_dotprod_generic.h"/>
-        <childnode refid="2510" relation="include">
+        <childnode refid="2323" relation="include">
         </childnode>
       </node>
-      <node id="2511">
+      <node id="2324">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="2510">
+      <node id="2323">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="2511" relation="include">
+        <childnode refid="2324" relation="include">
         </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="complex__dotprod__generic_8h_1aac7dc699888bc618247c9780deb479a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API void</type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>GR_CORE_API void complex_dotprod_generic</definition>
         <argsstring>(const short *input, const float *taps, unsigned n_2_complex_blocks, float *result)</argsstring>
         <name>complex_dotprod_generic</name>

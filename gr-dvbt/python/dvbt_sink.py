@@ -58,4 +58,4 @@ class dvbt_sink(gr.hier_block2):
 		gr.hier_block2.__init__(self, "dvbt_sink",
 					depad.input_signature(),
 					gr.io_signature(0, 0, 0))
-        	self.connect(self, depad, sink)
+        	self.connect(self, derandomizer,  depad, sink)

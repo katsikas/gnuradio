@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -42,18 +39,21 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_qtgui_swig_6da89.
 
+# Include the progress variables for this target.
+include gr-qtgui/swig/CMakeFiles/pygen_gr_qtgui_swig_6da89.dir/progress.make
+
 gr-qtgui/swig/CMakeFiles/pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig.pyc
 gr-qtgui/swig/CMakeFiles/pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig.pyo
 
 gr-qtgui/swig/qtgui_swig.pyc: gr-qtgui/swig/qtgui_swig.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qtgui_swig.pyc"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.pyc
+	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.pyc
 
 gr-qtgui/swig/qtgui_swig.pyo: gr-qtgui/swig/qtgui_swig.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qtgui_swig.pyo"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.pyo
+	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.pyo
 
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: /usr/include/python2.7/dictobject.h
@@ -131,7 +131,6 @@ gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: ../gr-qtgui/include/qtgui_time_sink_c.h
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: /usr/include/boost/thread.hpp
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: /usr/include/stdint.h
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: /usr/include/python2.7/pyfpe.h
-gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: gr-qtgui/swig/qtgui_swig_doc.i
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: ../gr-qtgui/lib/timedisplayform.h
 gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_block.h
@@ -166,34 +165,34 @@ gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx: ../gr-qtgui/swig/qtgui_swig.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/cmake -E make_directory /home/katsikas/gnuradio/build/gr-qtgui/swig
-	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/swig -python -fvirtual -modern -keyword -w511 -module qtgui_swig -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-qtgui/include -I/home/katsikas/gnuradio/gr-qtgui/lib -I/home/katsikas/gnuradio/build/gr-qtgui/lib -I/usr/include/qwt-qt4 -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-qtgui/swig -I/home/katsikas/gnuradio/build/gr-qtgui/swig -outdir /home/katsikas/gnuradio/build/gr-qtgui/swig -c++ -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-qtgui/include -I/home/katsikas/gnuradio/gr-qtgui/lib -I/home/katsikas/gnuradio/build/gr-qtgui/lib -I/usr/include/qwt-qt4 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-qtgui/swig -I/home/katsikas/gnuradio/build/gr-qtgui/swig -o /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-qtgui/swig/qtgui_swig.i
+	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module qtgui_swig -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-qtgui/include -I/home/katsikas/gnuradio/gr-qtgui/lib -I/home/katsikas/gnuradio/build/gr-qtgui/lib -I/usr/include/qwt-qt4 -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-qtgui/swig -I/home/katsikas/gnuradio/build/gr-qtgui/swig -outdir /home/katsikas/gnuradio/build/gr-qtgui/swig -c++ -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-qtgui/include -I/home/katsikas/gnuradio/gr-qtgui/lib -I/home/katsikas/gnuradio/build/gr-qtgui/lib -I/usr/include/qwt-qt4 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-qtgui/swig -I/home/katsikas/gnuradio/build/gr-qtgui/swig -o /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-qtgui/swig/qtgui_swig.i
 
 gr-qtgui/swig/qtgui_swig.py: gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx
 
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_c.h
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_f.h
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/gr_qtgui_api.h
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_util.h
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_time_sink_f.h
-gr-qtgui/swig/qtgui_swig_doc.i: gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qtgui_swig_doc.i"
-	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python2.7 -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig_doc.i
-
 gr-qtgui/swig/qtgui_swig.tag: gr-qtgui/swig/qtgui_swig_doc.i
 gr-qtgui/swig/qtgui_swig.tag: gr-qtgui/swig/_qtgui_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qtgui_swig.tag"
 	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && ./_qtgui_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.tag
 
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_time_sink_f.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_c.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_f.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/gr_qtgui_api.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_util.h
+gr-qtgui/swig/qtgui_swig_doc.i: gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qtgui_swig_doc.i"
+	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig_doc.i
+
+gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_time_sink_f.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_sink_c.h
-gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_sink_f.h
+gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/gr_qtgui_api.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_util.h
-gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_time_sink_f.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: gr-qtgui/swig/_qtgui_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for qtgui_swig_doc docs"
@@ -207,8 +206,8 @@ pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig.pyc
 pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig.pyo
 pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swigPYTHON_wrap.cxx
 pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig.py
-pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig_doc.i
 pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig.tag
+pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig_doc.i
 pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml
 pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/combine.xslt
 pygen_gr_qtgui_swig_6da89: gr-qtgui/swig/CMakeFiles/pygen_gr_qtgui_swig_6da89.dir/build.make
