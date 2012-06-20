@@ -24,6 +24,7 @@
 #ifndef INCLUDED_DVBT_DEPAD_H
 #define INCLUDED_DVBT_DEPAD_H
 
+#include <cassert>
 #include <dvbt/dvbt_api.h>
 #include <gr_sync_interpolator.h>
 

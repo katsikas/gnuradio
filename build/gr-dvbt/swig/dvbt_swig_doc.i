@@ -32,6 +32,10 @@ input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;"
 
 
 
+
+
+
+
 %feature("docstring") dvbt_make_derandomizer "\"dewhiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;"
@@ -48,10 +52,6 @@ input: unsigned char; output: dvbt_mpeg_packet"
 
 
 
-
-
-
-
 %feature("docstring") dvbt_make_pad "put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet
 
 input: unsigned char; output: dvbt_mpeg_packet"
@@ -59,6 +59,10 @@ input: unsigned char; output: dvbt_mpeg_packet"
 %feature("docstring") dvbt_randomizer "\"Whiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync"
+
+
+
+
 
 
 

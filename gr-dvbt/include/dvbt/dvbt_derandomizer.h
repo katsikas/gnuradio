@@ -24,6 +24,7 @@
 #ifndef INCLUDED_DVBT_DERANDOMIZER_H
 #define INCLUDED_DVBT_DERANDOMIZER_H
 
+#include <cassert>
 #include <dvbt/dvbt_api.h>
 #include <gr_sync_block.h>
 #include <dvbt/dvbti_randomizer.h>
@@ -44,9 +45,21 @@ class DVBT_API dvbt_derandomizer : public gr_sync_block
 {
 	friend DVBT_API dvbt_derandomizer_sptr dvbt_make_derandomizer();
 
-  	dvbti_randomizer	d_rand;
+	int packets;
+  	dvbti_randomizer d_rand;
+
 
   	dvbt_derandomizer();
+
+	int get_packets(){
+                return packets;
+        }
+
+        void set_packets(int remainder){
+                assert(remainder > 0);
+                packets = remainder;
+        }
+
 
 public:
   	int work (int noutput_items,

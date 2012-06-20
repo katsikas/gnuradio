@@ -24,6 +24,7 @@
 #ifndef INCLUDED_DVBT_RANDOMIZER_H
 #define INCLUDED_DVBT_RANDOMIZER_H
 
+#include <cassert>
 #include <dvbt/dvbt_api.h>
 #include <gr_sync_block.h>
 #include <dvbt/dvbti_randomizer.h>
@@ -43,11 +44,23 @@ class DVBT_API dvbt_randomizer : public gr_sync_block
 {
   	friend DVBT_API dvbt_randomizer_sptr dvbt_make_randomizer();
 
-  	dvbti_randomizer	d_rand;
-  	bool			d_field2;	// user to init plinfo in output
-  	int			d_segno;	// likewise
+	int  packets;
+	int  d_segno;        		// likewise
+  	bool d_field2;			// user to init plinfo in output
+	dvbti_randomizer d_rand;
 
   	dvbt_randomizer();
+
+
+	int get_packets(){
+                return packets;
+        }
+
+        void set_packets(int remainder){
+                assert(remainder > 0);
+                packets = remainder;
+        }
+
 
 public:
   	int work (int noutput_items,

@@ -24,6 +24,7 @@
 #ifndef _DVBT_RANDOMIZER_H_
 #define _DVBT_RANDOMIZER_H_
 
+#include <cassert>
 #include <dvbt/dvbt_api.h>
 #include <dvbt/dvbt_types.h>
 
@@ -33,7 +34,7 @@
  *
  * The data randomizer described in DVBT standard.
  */
-class DVBT_API dvbti_randomizer 
+class DVBT_API dvbti_randomizer
 {
 
 public:
@@ -87,7 +88,9 @@ public:
     		return r;
   	}
 
-  	unsigned int		    d_state;
+
+
+  	unsigned int 		d_state;
 
   	static const unsigned int PRELOAD_VALUE = 0x018f; /* 0xf180 bit reversed */
   	static const unsigned int MASK = 0xa638;

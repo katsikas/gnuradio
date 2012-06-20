@@ -42,11 +42,8 @@ DVBT_API dvbt_pad_sptr dvbt_make_pad();
  */
 class DVBT_API dvbt_pad : public gr_sync_decimator
 {
-	int packets;
 
 	dvbt_pad();
-        int get_packets();
-        void set_packets(int );
 
   	friend DVBT_API dvbt_pad_sptr dvbt_make_pad();
 

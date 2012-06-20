@@ -53,6 +53,7 @@ void
 dvbti_randomizer::initialize_output_map ()
 {
 	printf("output map() \n");
+
   	s_output_map_initialized_p = true;
 
   	for (int i = 0; i < (1 << 14); i++){
@@ -72,21 +73,23 @@ void
 dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet &in)
 {
 	//printf("dvbti_randomize() \n");
-  	assert (in.data[0] == MPEG_SYNC_BYTE);	// confirm it's there, then drop
+  	//assert (in.data[0] == MPEG_SYNC_BYTE);	// confirm it's there, then drop
+	out.data[0] = in.data[0];
 
-  	for (int i = 0; i < DVBT_MPEG_DATA_LENGTH; i++){
-    		out.data[i] = in.data[i + 1] ^ output_and_clk ();
+  	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
+    		out.data[i] = in.data[i] ^ output_and_clk ();
 	}
-} 
+}
 
 void
 dvbti_randomizer::derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_sync &in)
 {
 	//printf("dvbti_derandomize() \n");
-	out.data[0] = MPEG_SYNC_BYTE;		// add sync byte to beginning of packet
+	//out.data[0] = MPEG_SYNC_BYTE;		// add sync byte to beginning of packet
+	printf("aa = %d\n",in.data[0]);
 
-	for (int i = 0; i < DVBT_MPEG_DATA_LENGTH; i++){
-    		out.data[i + 1] = in.data[i] ^ output_and_clk ();
+	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
+    		out.data[i] = in.data[i] ^ output_and_clk ();
 	}
 }
 

@@ -156,15 +156,15 @@ public:
 };
 
 
-class dvbt_mpeg_packet_no_sync 
+class dvbt_mpeg_packet_no_sync
 {
 
 public:
-  	static const int NPAD = 65;
+  	static const int NPAD = 64;
 
   	plinfo        pli;
   	unsigned char _pad_[NPAD];                            // pad to power of 2 (2$
-	unsigned char data[DVBT_MPEG_SYNC_LENGTH];
+	unsigned char data[DVBT_MPEG_PACKET_LENGTH];
 
   	// overload equality operator
   	bool operator== (const dvbt_mpeg_packet_no_sync &other) const {
