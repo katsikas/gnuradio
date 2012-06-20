@@ -3,12 +3,13 @@
   <compounddef id="classdvbt__mpeg__packet" kind="class" prot="public">
     <compoundname>dvbt_mpeg_packet</compoundname>
     <includes refid="dvbt__types_8h" local="no">dvbt_types.h</includes>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classdvbt__mpeg__packet_1a41cc97b0117b03866084b729b61df720" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int dvbt_mpeg_packet::packets</definition>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdvbt__mpeg__packet_1acaa59c39675c10bd11ffe7b5bebaa6ab" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbt_mpeg_packet::NPAD</definition>
         <argsstring></argsstring>
-        <name>packets</name>
+        <name>NPAD</name>
+        <initializer> 68</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -17,6 +18,8 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="142" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="142" bodyend="-1"/>
       </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classdvbt__mpeg__packet_1a006e1cb8cf03999547332be0c20b3c28" prot="public" static="no" mutable="no">
         <type>unsigned char</type>
         <definition>unsigned char dvbt_mpeg_packet::_pad_[NPAD]</definition>
@@ -42,22 +45,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="145" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="145" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classdvbt__mpeg__packet_1acaa59c39675c10bd11ffe7b5bebaa6ab" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int dvbt_mpeg_packet::NPAD</definition>
-        <argsstring></argsstring>
-        <name>NPAD</name>
-        <initializer> 68</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="143" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -107,7 +94,6 @@
       <member refid="classdvbt__mpeg__packet_1acaa59c39675c10bd11ffe7b5bebaa6ab" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet</scope><name>NPAD</name></member>
       <member refid="classdvbt__mpeg__packet_1a3e2a377d4dc0b995aae4de0bb5975c5d" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet</scope><name>operator!=</name></member>
       <member refid="classdvbt__mpeg__packet_1a516b04cdab0eed30a34ec37e6e478c1d" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet</scope><name>operator==</name></member>
-      <member refid="classdvbt__mpeg__packet_1a41cc97b0117b03866084b729b61df720" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet</scope><name>packets</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

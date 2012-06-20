@@ -31,22 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="164" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="164" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" prot="public" static="no" mutable="no">
-        <type>unsigned char</type>
-        <definition>unsigned char dvbt_mpeg_packet_no_sync::data[DVBT_MPEG_DATA_LENGTH]</definition>
-        <argsstring>[DVBT_MPEG_DATA_LENGTH]</argsstring>
-        <name>data</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="165" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="165" bodyend="-1"/>
-        <referencedby refid="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" compoundref="dvbt__types_8h" startline="173" endline="175">operator!=</referencedby>
-        <referencedby refid="classdvbt__mpeg__packet__no__sync_1ad93cd8a7482be41b5089555c7aa4fcf5" compoundref="dvbt__types_8h" startline="169" endline="171">operator==</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" prot="public" static="no" mutable="no">
         <type>unsigned char</type>
@@ -60,6 +45,21 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="166" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbt__mpeg__packet__no__sync_1a711535fccd5e4df281fe94a7d424d38d" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char dvbt_mpeg_packet_no_sync::data[DVBT_MPEG_SYNC_LENGTH]</definition>
+        <argsstring>[DVBT_MPEG_SYNC_LENGTH]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="167" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="167" bodyend="-1"/>
+        <referencedby refid="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" compoundref="dvbt__types_8h" startline="174" endline="176">operator!=</referencedby>
+        <referencedby refid="classdvbt__mpeg__packet__no__sync_1ad93cd8a7482be41b5089555c7aa4fcf5" compoundref="dvbt__types_8h" startline="170" endline="172">operator==</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -78,8 +78,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="169" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="169" bodyend="171"/>
-        <references refid="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" compoundref="dvbt__types_8h" startline="165">data</references>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="170" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="170" bodyend="172"/>
+        <references refid="classdvbt__mpeg__packet__no__sync_1a711535fccd5e4df281fe94a7d424d38d" compoundref="dvbt__types_8h" startline="167">data</references>
       </memberdef>
       <memberdef kind="function" id="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -96,8 +96,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="173" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="173" bodyend="175"/>
-        <references refid="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" compoundref="dvbt__types_8h" startline="165">data</references>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="174" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="174" bodyend="176"/>
+        <references refid="classdvbt__mpeg__packet__no__sync_1a711535fccd5e4df281fe94a7d424d38d" compoundref="dvbt__types_8h" startline="167">data</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -117,10 +117,10 @@
         <link refid="classplinfo"/>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="160" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="159" bodyend="176"/>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="160" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="159" bodyend="177"/>
     <listofallmembers>
       <member refid="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>_pad_</name></member>
-      <member refid="classdvbt__mpeg__packet__no__sync_1a17ef85502fa8752a66c6b1fb77046482" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>data</name></member>
+      <member refid="classdvbt__mpeg__packet__no__sync_1a711535fccd5e4df281fe94a7d424d38d" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>data</name></member>
       <member refid="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>NPAD</name></member>
       <member refid="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>operator!=</name></member>
       <member refid="classdvbt__mpeg__packet__no__sync_1ad93cd8a7482be41b5089555c7aa4fcf5" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_no_sync</scope><name>operator==</name></member>

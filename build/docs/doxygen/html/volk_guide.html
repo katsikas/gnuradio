@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio a08db682 C++ API: Instructions for using Volk in GNU Radio</title>
+<title>GNU Radio a2328c40 C++ API: Instructions for using Volk in GNU Radio</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio a08db682 C++ API
+   <div id="projectname">GNU Radio a2328c40 C++ API
    
    </div>
    
@@ -115,15 +115,15 @@ Hand-Tuning Performance</h3>
 <p>The file looks like:</p>
 <div class="fragment"><pre class="fragment">    volk_&lt;FUNCTION_NAME&gt; &lt;ARCHITECTURE&gt;
 </pre></div><p>Where the "FUNCTION_NAME" is the particular function that you want to over-ride the default value and "ARCHITECTURE" is the VOLK SIMD architecture to use (generic, sse, sse2, sse3, avx, etc.). For example, the following config file tells VOLK to use SSE3 for the aligned and unaligned versions of a function that multiplies two complex streams together.</p>
-<div class="fragment"><pre class="fragment">    volk_32fc_x2_multiply_32fc_a sse3
-    volk_32fc_x2_multiply_32fc_u sse3
+<div class="fragment"><pre class="fragment">    <a class="code" href="volk_8h.html#af39887da3fa314aaffca586a95559988">volk_32fc_x2_multiply_32fc_a</a> sse3
+    <a class="code" href="volk_8h.html#ae9bb819fed06b7d198099ca7b716f3fa">volk_32fc_x2_multiply_32fc_u</a> sse3
 </pre></div><p><b>Tip:</b> if benchmarking GNU Radio blocks, it can be useful to have a volk_config file that sets all architectures to 'generic' as a way to test the vectorized versus non-vectorized implementations. </p>
 </div></div><!-- contents -->
 </div>
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Generated on Mon Jun 18 2012 20:23:30 for GNU Radio a08db682 C++ API by
+    <li class="footer">Generated on Wed Jun 20 2012 02:33:08 for GNU Radio a2328c40 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

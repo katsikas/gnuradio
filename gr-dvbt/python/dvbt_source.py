@@ -54,10 +54,10 @@ class dvbt_source(gr.hier_block2):
 
 		src = gr.file_source(gr.sizeof_char*1, file, False)
 		pad = dvbt_swig.pad()
-		randomizer = dvbt_swig.randomizer()
+		#randomizer = dvbt_swig.randomizer()
 
         	gr.hier_block2.__init__(self, "dvbt_source",
         	                        gr.io_signature(0, 0, 0),
                 	                pad.output_signature())
-        	self.connect(src, pad, randomizer , self)
+        	self.connect(src, pad, self)
 

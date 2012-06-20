@@ -139,8 +139,8 @@ class dvbt_mpeg_packet
 {
 
 public:
-  	int packets;
   	static const int NPAD  = 68;
+
   	unsigned char _pad_[NPAD];			      // pad to power of 2 (256)
   	unsigned char data[DVBT_MPEG_DATA_LENGTH + DVBT_MPEG_HEADER_LENGTH];	// 184+4
 
@@ -161,9 +161,10 @@ class dvbt_mpeg_packet_no_sync
 
 public:
   	static const int NPAD = 65;
+
   	plinfo        pli;
-  	unsigned char data[DVBT_MPEG_DATA_LENGTH];
   	unsigned char _pad_[NPAD];                            // pad to power of 2 (2$
+	unsigned char data[DVBT_MPEG_SYNC_LENGTH];
 
   	// overload equality operator
   	bool operator== (const dvbt_mpeg_packet_no_sync &other) const {

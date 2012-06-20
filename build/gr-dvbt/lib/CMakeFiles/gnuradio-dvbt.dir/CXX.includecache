@@ -70,6 +70,18 @@ gr_core_api.h
 gr_block.h
 -
 
+../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
+gr_core_api.h
+-
+gr_sync_block.h
+-
+
+../gnuradio-core/src/lib/runtime/gr_sync_interpolator.h
+gr_core_api.h
+-
+gr_sync_block.h
+-
+
 ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr_core_api.h
 -
@@ -95,6 +107,26 @@ gruel/attributes.h
 -
 
 ../gr-dvbt/include/dvbt/dvbt_consts.h
+
+../gr-dvbt/include/dvbt/dvbt_depad.h
+dvbt/dvbt_api.h
+-
+gr_sync_interpolator.h
+-
+
+../gr-dvbt/include/dvbt/dvbt_derandomizer.h
+dvbt/dvbt_api.h
+-
+gr_sync_block.h
+-
+dvbt/dvbti_randomizer.h
+-
+
+../gr-dvbt/include/dvbt/dvbt_pad.h
+dvbt/dvbt_api.h
+-
+gr_sync_decimator.h
+-
 
 ../gr-dvbt/include/dvbt/dvbt_randomizer.h
 dvbt/dvbt_api.h
@@ -156,6 +188,42 @@ gruel/pmt_sugar.h
 
 ../gruel/src/include/gruel/pmt_sugar.h
 
+/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_depad.cc
+config.h
+-
+stdio.h
+-
+dvbt/dvbt_depad.h
+-
+dvbt/dvbt_types.h
+-
+gr_io_signature.h
+-
+
+/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_derandomizer.cc
+config.h
+-
+gr_io_signature.h
+-
+dvbt/dvbt_consts.h
+-
+dvbt/dvbt_derandomizer.h
+-
+
+/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_pad.cc
+config.h
+-
+cmath
+-
+stdio.h
+-
+dvbt/dvbt_pad.h
+-
+dvbt/dvbt_types.h
+-
+gr_io_signature.h
+-
+
 /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_randomizer.cc
 config.h
 -
@@ -166,5 +234,13 @@ gr_io_signature.h
 dvbt/dvbt_consts.h
 -
 dvbt/dvbt_randomizer.h
+-
+
+/home/katsikas/gnuradio/gr-dvbt/lib/dvbti_randomizer.cc
+stdio.h
+-
+assert.h
+-
+dvbt/dvbti_randomizer.h
 -
 

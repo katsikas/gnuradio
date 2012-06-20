@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio a08db682 C++ API: dvbt_consts.h File Reference</title>
+<title>GNU Radio a2328c40 C++ API: dvbt_consts.h File Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio a08db682 C++ API
+   <div id="projectname">GNU Radio a2328c40 C++ API
    
    </div>
    
@@ -75,11 +75,13 @@ Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#af62b3dec73d308c0040624d475b61a1d">DVBT_DSEGS_PER_FIELD</a> = 312</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#acaeaa683423623b9b258779e915dad2b">MPEG_INVERTED_SYNC_BYTE</a> = 0xB8</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#ad5ccc6a26f313ce573ef7e19b67dcd8f">DVBT_MPEG_DATA_LENGTH</a> = 184</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#a526d29e3cd24449d577889edf9dd8af8">DVBT_MPEG_SYNC_LENGTH</a> = 187</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#a0c3e3059531c5185a4d0ece5717d6402">DVBT_MPEG_HEADER_LENGTH</a> = 4</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#aec0bf7a17595dad1e9e08ce7f4338bd3">DVBT_MPEG_PACKET_LENGTH</a> = 188</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#ac1b330045acc5311d5f33a9851e84407">DVBT_SUPER_FRAME_LENGTH</a> = 1504</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#a9e818caf55154ea83496d928effb7e8d">MPEG_TRANSPORT_ERROR_BIT</a> = 0x80</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#adbdb31d594deffaed63d1f7e156833b8">DVBT_MPEG_RS_ENCODED_LENGTH</a> = 204</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvbt__consts_8h.html#a157380690862764a31df308d71ad538b">INIT_PRBS_REGISTERS</a> [] = {1,0,0,1,0,1,0,1,0,0,0,0,0,0,0}</td></tr>
 </table>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="af62b3dec73d308c0040624d475b61a1d"></a><!-- doxytag: member="dvbt_consts.h::DVBT_DSEGS_PER_FIELD" ref="af62b3dec73d308c0040624d475b61a1d" args="" -->
@@ -149,12 +151,38 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a526d29e3cd24449d577889edf9dd8af8"></a><!-- doxytag: member="dvbt_consts.h::DVBT_MPEG_SYNC_LENGTH" ref="a526d29e3cd24449d577889edf9dd8af8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="dvbt__consts_8h.html#a526d29e3cd24449d577889edf9dd8af8">DVBT_MPEG_SYNC_LENGTH</a> = 187<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac1b330045acc5311d5f33a9851e84407"></a><!-- doxytag: member="dvbt_consts.h::DVBT_SUPER_FRAME_LENGTH" ref="ac1b330045acc5311d5f33a9851e84407" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const int <a class="el" href="dvbt__consts_8h.html#ac1b330045acc5311d5f33a9851e84407">DVBT_SUPER_FRAME_LENGTH</a> = 1504<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a157380690862764a31df308d71ad538b"></a><!-- doxytag: member="dvbt_consts.h::INIT_PRBS_REGISTERS" ref="a157380690862764a31df308d71ad538b" args="[]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="dvbt__consts_8h.html#a157380690862764a31df308d71ad538b">INIT_PRBS_REGISTERS</a>[] = {1,0,0,1,0,1,0,1,0,0,0,0,0,0,0}<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -220,7 +248,7 @@ Variables</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="dvbt__consts_8h.html">dvbt_consts.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 18 2012 20:23:29 for GNU Radio a08db682 C++ API by
+    <li class="footer">Generated on Wed Jun 20 2012 02:33:07 for GNU Radio a2328c40 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

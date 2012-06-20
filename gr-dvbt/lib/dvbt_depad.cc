@@ -40,7 +40,7 @@ dvbt_make_depad()
 dvbt_depad::dvbt_depad(): gr_sync_interpolator("dvbt_depad",
 			 	gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 			 	gr_make_io_signature(1, 1, sizeof(unsigned char)),
-			 	DVBT_MPEG_PACKET_LENGTH)
+			 	DVBT_MPEG_DATA_LENGTH)
 {
   	reset();
 }
@@ -61,7 +61,7 @@ dvbt_depad::work (int noutput_items,
 		for(j = 0; j < DVBT_MPEG_DATA_LENGTH; j++){
   			temp[j] = in[i].data[j+4];
 		}
-		/*for(int k=0;k<184;k++){
+		for(int k=0;k<184;k++){
 			printf("%c",temp[k]);
 		}
 		memcpy(&out[i * DVBT_MPEG_DATA_LENGTH], temp, DVBT_MPEG_DATA_LENGTH);

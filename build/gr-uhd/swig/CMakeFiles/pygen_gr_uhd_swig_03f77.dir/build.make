@@ -100,7 +100,6 @@ gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/local/include/uhd/types/sensors.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/format.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/local/include/uhd/types/clock_config.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/detail/workaround.hpp
-gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/local/include/gruel/thread.h
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/operators.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/local/include/uhd/config.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/local/include/uhd/types/dict.hpp

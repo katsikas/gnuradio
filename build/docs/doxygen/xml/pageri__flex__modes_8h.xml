@@ -5,19 +5,17 @@
     <includes refid="gr__types_8h" local="no">gr_types.h</includes>
     <includedby refid="pager__flex__parse_8h" local="no">pager_flex_parse.h</includedby>
     <incdepgraph>
-      <node id="15121">
+      <node id="15122">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="15120">
+      <node id="15121">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="15118">
+      <node id="15119">
         <label>gr_types.h</label>
         <link refid="gr__types_8h"/>
-        <childnode refid="15119" relation="include">
-        </childnode>
-        <childnode refid="15121" relation="include">
+        <childnode refid="15120" relation="include">
         </childnode>
         <childnode refid="15122" relation="include">
         </childnode>
@@ -25,44 +23,46 @@
         </childnode>
         <childnode refid="15124" relation="include">
         </childnode>
-      </node>
-      <node id="15123">
-        <label>stddef.h</label>
-      </node>
-      <node id="15122">
-        <label>vector</label>
-      </node>
-      <node id="15117">
-        <label>pageri_flex_modes.h</label>
-        <link refid="pageri_flex_modes.h"/>
-        <childnode refid="15118" relation="include">
+        <childnode refid="15125" relation="include">
         </childnode>
-      </node>
-      <node id="15119">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="15120" relation="include">
-        </childnode>
-      </node>
-      <node id="15125">
-        <label>complex</label>
       </node>
       <node id="15124">
+        <label>stddef.h</label>
+      </node>
+      <node id="15123">
+        <label>vector</label>
+      </node>
+      <node id="15118">
+        <label>pageri_flex_modes.h</label>
+        <link refid="pageri_flex_modes.h"/>
+        <childnode refid="15119" relation="include">
+        </childnode>
+      </node>
+      <node id="15120">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="15121" relation="include">
+        </childnode>
+      </node>
+      <node id="15126">
+        <label>complex</label>
+      </node>
+      <node id="15125">
         <label>gr_complex.h</label>
         <link refid="gr__complex_8h"/>
-        <childnode refid="15125" relation="include">
+        <childnode refid="15126" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="15127">
+      <node id="15128">
         <label>pager_flex_parse.h</label>
         <link refid="pager__flex__parse_8h_source"/>
       </node>
-      <node id="15126">
+      <node id="15127">
         <label>pageri_flex_modes.h</label>
         <link refid="pageri_flex_modes.h"/>
-        <childnode refid="15127" relation="include">
+        <childnode refid="15128" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

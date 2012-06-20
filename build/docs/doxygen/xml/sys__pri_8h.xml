@@ -5,33 +5,33 @@
     <includes refid="gruel_2src_2include_2gruel_2api_8h" local="no">gruel/api.h</includes>
     <includes refid="realtime_8h" local="no">gruel/realtime.h</includes>
     <incdepgraph>
-      <node id="16474">
+      <node id="16476">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="16476">
+      <node id="16478">
         <label>stdexcept</label>
       </node>
-      <node id="16472">
+      <node id="16474">
         <label>sys_pri.h</label>
         <link refid="sys_pri.h"/>
-        <childnode refid="16473" relation="include">
-        </childnode>
         <childnode refid="16475" relation="include">
+        </childnode>
+        <childnode refid="16477" relation="include">
+        </childnode>
+      </node>
+      <node id="16477">
+        <label>gruel/realtime.h</label>
+        <link refid="realtime_8h"/>
+        <childnode refid="16475" relation="include">
+        </childnode>
+        <childnode refid="16478" relation="include">
         </childnode>
       </node>
       <node id="16475">
-        <label>gruel/realtime.h</label>
-        <link refid="realtime_8h"/>
-        <childnode refid="16473" relation="include">
-        </childnode>
-        <childnode refid="16476" relation="include">
-        </childnode>
-      </node>
-      <node id="16473">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="16474" relation="include">
+        <childnode refid="16476" relation="include">
         </childnode>
       </node>
     </incdepgraph>
