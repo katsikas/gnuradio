@@ -41,8 +41,8 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)))
 {
-	printf("sizeof(dvbt_mpeg_packet) = %zu \n",sizeof(dvbt_mpeg_packet));
-	printf("sizeof(dvbt_mpeg_packet_no_sync) = %zu \n",sizeof(dvbt_mpeg_packet_no_sync));
+	//printf("sizeof(dvbt_mpeg_packet) = %zu \n",sizeof(dvbt_mpeg_packet));
+	//printf("sizeof(dvbt_mpeg_packet_no_sync) = %zu \n",sizeof(dvbt_mpeg_packet_no_sync));
   	reset();
 }
 
@@ -76,7 +76,7 @@ dvbt_randomizer::work (int noutput_items,
                         out[i].data[0] = MPEG_SYNC_BYTE;
                 }
                 else{
-                        out[i].data[0] = MPEG_INVERTED_SYNC_BYTE;
+                        out[i].data[0] = ~MPEG_SYNC_BYTE;
                 }
 
     		assert((in[i].data[1] & MPEG_TRANSPORT_ERROR_BIT) == 0);
@@ -103,7 +103,7 @@ dvbt_randomizer::work (int noutput_items,
 
 
 	/*for (i = 0; i < noutput_items; i++){
-                for (int j = 0; j < 4; j++){
+                for (int j = 0; j < 1; j++){
                         printf("%d",out[i].data[j]);
                 }
 		printf("\n");

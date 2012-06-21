@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="core__algorithms_8h" kind="file">
     <compoundname>core_algorithms.h</compoundname>
     <includes local="no">cmath</includes>
@@ -10,77 +10,77 @@
     <includedby refid="trellis__siso__combined__f_8h" local="yes">trellis_siso_combined_f.h</includedby>
     <includedby refid="trellis__siso__f_8h" local="yes">trellis_siso_f.h</includedby>
     <incdepgraph>
-      <node id="2356">
+      <node id="2464">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="2351">
+      <node id="2459">
         <label>cmath</label>
       </node>
-      <node id="2353">
+      <node id="2461">
         <label>digital_metric_type.h</label>
         <link refid="digital__metric__type_8h"/>
       </node>
-      <node id="2352">
+      <node id="2460">
         <label>vector</label>
       </node>
-      <node id="2355">
+      <node id="2463">
         <label>trellis_api.h</label>
         <link refid="trellis__api_8h"/>
-        <childnode refid="2356" relation="include">
+        <childnode refid="2464" relation="include">
         </childnode>
       </node>
-      <node id="2354">
+      <node id="2462">
         <label>fsm.h</label>
         <link refid="fsm_8h"/>
-        <childnode refid="2355" relation="include">
+        <childnode refid="2463" relation="include">
         </childnode>
-        <childnode refid="2352" relation="include">
+        <childnode refid="2460" relation="include">
         </childnode>
-        <childnode refid="2357" relation="include">
+        <childnode refid="2465" relation="include">
         </childnode>
       </node>
-      <node id="2357">
+      <node id="2465">
         <label>iosfwd</label>
       </node>
-      <node id="2358">
+      <node id="2466">
         <label>interleaver.h</label>
         <link refid="interleaver_8h"/>
-        <childnode refid="2355" relation="include">
+        <childnode refid="2463" relation="include">
         </childnode>
-        <childnode refid="2352" relation="include">
+        <childnode refid="2460" relation="include">
         </childnode>
       </node>
-      <node id="2350">
+      <node id="2458">
         <label>core_algorithms.h</label>
         <link refid="core_algorithms.h"/>
-        <childnode refid="2351" relation="include">
+        <childnode refid="2459" relation="include">
         </childnode>
-        <childnode refid="2352" relation="include">
+        <childnode refid="2460" relation="include">
         </childnode>
-        <childnode refid="2353" relation="include">
+        <childnode refid="2461" relation="include">
         </childnode>
-        <childnode refid="2354" relation="include">
+        <childnode refid="2462" relation="include">
         </childnode>
-        <childnode refid="2358" relation="include">
+        <childnode refid="2466" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2361">
+      <node id="2469">
         <label>trellis_siso_f.h</label>
         <link refid="trellis__siso__f_8h"/>
       </node>
-      <node id="2360">
+      <node id="2468">
         <label>trellis_siso_combined_f.h</label>
         <link refid="trellis__siso__combined__f_8h"/>
       </node>
-      <node id="2359">
+      <node id="2467">
         <label>core_algorithms.h</label>
         <link refid="core_algorithms.h"/>
-        <childnode refid="2360" relation="include">
+        <childnode refid="2468" relation="include">
         </childnode>
-        <childnode refid="2361" relation="include">
+        <childnode refid="2469" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -127,13 +127,13 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="35"/>
       </memberdef>
-      <memberdef kind="function" id="core__algorithms_8h_1ac8fe5f61de2cd52149621ebc9ec6cebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="core__algorithms_8h_1a2a99fc309216230256e17531ccf0b4a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void viterbi_algorithm</definition>
         <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, const float *in, T *out)</argsstring>
         <name>viterbi_algorithm</name>
@@ -150,19 +150,19 @@
           <declname>O</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>NS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>OS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PI</declname>
         </param>
         <param>
@@ -193,7 +193,7 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="46"/>
       </memberdef>
-      <memberdef kind="function" id="core__algorithms_8h_1a5bf2a8e1a8e33329eb3ee83e66549be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="core__algorithms_8h_1ad72d465fba98bdfd0cc65dc2801d96ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class Ti</type>
@@ -202,7 +202,7 @@
             <type>class To</type>
           </param>
         </templateparamlist>
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void viterbi_algorithm_combined</definition>
         <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, int D, const std::vector&lt; Ti &gt; &amp;TABLE, trellis_metric_type_t TYPE, const Ti *in, To *out)</argsstring>
         <name>viterbi_algorithm_combined</name>
@@ -219,19 +219,19 @@
           <declname>O</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>NS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>OS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PI</declname>
         </param>
         <param>
@@ -251,7 +251,7 @@
           <declname>D</declname>
         </param>
         <param>
-          <type>const std::vector&lt; Ti &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; Ti &gt; &amp;</type>
           <declname>TABLE</declname>
         </param>
         <param>
@@ -275,7 +275,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="60"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1a7bf8321f8d0a3ac7234ed55ceab69ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void siso_algorithm</definition>
         <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, bool POSTI, bool POSTO, float(*p2mymin)(float, float), const float *priori, const float *prioro, float *post)</argsstring>
         <name>siso_algorithm</name>
@@ -292,19 +292,19 @@
           <declname>O</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>NS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>OS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PI</declname>
         </param>
         <param>
@@ -351,13 +351,13 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="74"/>
       </memberdef>
-      <memberdef kind="function" id="core__algorithms_8h_1aabdff6b3dae1bb3ef0cd940c21b33bbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="core__algorithms_8h_1ae05cf68d8936ad92649593e030b9658c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void siso_algorithm_combined</definition>
         <argsstring>(int I, int S, int O, const std::vector&lt; int &gt; &amp;NS, const std::vector&lt; int &gt; &amp;OS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PS, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;PI, int K, int S0, int SK, bool POSTI, bool POSTO, float(*p2mymin)(float, float), int D, const std::vector&lt; T &gt; &amp;TABLE, trellis_metric_type_t TYPE, const float *priori, const T *observations, float *post)</argsstring>
         <name>siso_algorithm_combined</name>
@@ -374,19 +374,19 @@
           <declname>O</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>NS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>OS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PS</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &gt; &amp;</type>
           <declname>PI</declname>
         </param>
         <param>
@@ -418,7 +418,7 @@
           <declname>D</declname>
         </param>
         <param>
-          <type>const std::vector&lt; T &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; T &gt; &amp;</type>
           <declname>TABLE</declname>
         </param>
         <param>
@@ -445,13 +445,13 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="91"/>
       </memberdef>
-      <memberdef kind="function" id="core__algorithms_8h_1aae8a8b5aa50a3c5916c42f3b0bde33ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="core__algorithms_8h_1a03bcb768588713f1bd57b5f9a746469b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void sccc_decoder</definition>
         <argsstring>(const fsm &amp;FSMo, int STo0, int SToK, const fsm &amp;FSMi, int STi0, int STiK, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), const float *iprioro, T *data)</argsstring>
         <name>sccc_decoder</name>
@@ -511,7 +511,7 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="101"/>
       </memberdef>
-      <memberdef kind="function" id="core__algorithms_8h_1a0bd16c54c564ca06d6651db616ac3383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="core__algorithms_8h_1aecf7197faa9f63ee3ab8bb274d6bccfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class Ti</type>
@@ -520,7 +520,7 @@
             <type>class To</type>
           </param>
         </templateparamlist>
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void sccc_decoder_combined</definition>
         <argsstring>(const fsm &amp;FSMo, int STo0, int SToK, const fsm &amp;FSMi, int STi0, int STiK, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), int D, const std::vector&lt; Ti &gt; &amp;TABLE, trellis_metric_type_t METRIC_TYPE, float scaling, const Ti *observations, To *data)</argsstring>
         <name>sccc_decoder_combined</name>
@@ -569,7 +569,7 @@
           <declname>D</declname>
         </param>
         <param>
-          <type>const std::vector&lt; Ti &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; Ti &gt; &amp;</type>
           <declname>TABLE</declname>
         </param>
         <param>
@@ -596,13 +596,13 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="114"/>
       </memberdef>
-      <memberdef kind="function" id="core__algorithms_8h_1ac4d4d6df572a86446e1aa137a0ccf5f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="core__algorithms_8h_1a3a723a89acb5972f3a647de60c4695b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pccc_decoder</definition>
         <argsstring>(const fsm &amp;FSM1, int ST10, int ST1K, const fsm &amp;FSM2, int ST20, int ST2K, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), const float *cprioro, T *data)</argsstring>
         <name>pccc_decoder</name>
@@ -662,7 +662,7 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="123"/>
       </memberdef>
-      <memberdef kind="function" id="core__algorithms_8h_1ae98fcc16657be84269a48d14cc71d440" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="core__algorithms_8h_1ab93afe04bd1a8a08b2f7ee99b7997df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class Ti</type>
@@ -671,7 +671,7 @@
             <type>class To</type>
           </param>
         </templateparamlist>
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pccc_decoder_combined</definition>
         <argsstring>(const fsm &amp;FSM1, int ST10, int ST1K, const fsm &amp;FSM2, int ST20, int ST2K, const interleaver &amp;INTERLEAVER, int blocklength, int iterations, float(*p2mymin)(float, float), int D, const std::vector&lt; Ti &gt; &amp;TABLE, trellis_metric_type_t METRIC_TYPE, float scaling, const Ti *observations, To *data)</argsstring>
         <name>pccc_decoder_combined</name>
@@ -720,7 +720,7 @@
           <declname>D</declname>
         </param>
         <param>
-          <type>const std::vector&lt; Ti &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; Ti &gt; &amp;</type>
           <declname>TABLE</declname>
         </param>
         <param>

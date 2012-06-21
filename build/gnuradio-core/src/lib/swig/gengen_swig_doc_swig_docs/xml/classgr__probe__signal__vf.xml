@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__probe__signal__vf" kind="class" prot="public">
     <compoundname>gr_probe_signal_vf</compoundname>
     <includes refid="gr__probe__signal__vf_8h" local="no">gr_probe_signal_vf.h</includes>
@@ -126,6 +126,18 @@
 <para>Sink that allows a sample to be grabbed from Python. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="483">
+        <label>gr_probe_signal_vf</label>
+        <link refid="classgr__probe__signal__vf"/>
+        <childnode refid="484" relation="usage">
+          <edgelabel>d_level</edgelabel>
+        </childnode>
+      </node>
+      <node id="484">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_probe_signal_vf.h" line="41" bodyfile="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_probe_signal_vf.h" bodystart="40" bodyend="60"/>
     <listofallmembers>
       <member refid="classgr__probe__signal__vf_1a46ba41237630bfd27699a3cf07327443" prot="private" virt="non-virtual"><scope>gr_probe_signal_vf</scope><name>d_level</name></member>

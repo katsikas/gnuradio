@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__scrambler__bb_8h" kind="file">
     <compoundname>gr_scrambler_bb.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -62,9 +62,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__scrambler__bb_8h_1a94f7fb218d2189f6bb84b8fc4ea9c5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kindref="member">gr_scrambler_bb_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_scrambler_bb_sptr gr_make_scrambler_bb</definition>
+      <memberdef kind="function" id="gr__scrambler__bb_8h_1a894aa775a7d4424e204c11074ce5ec62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kindref="member">gr_scrambler_bb_sptr</ref></type>
+        <definition>GR_CORE_API gr_scrambler_bb_sptr gr_make_scrambler_bb</definition>
         <argsstring>(int mask, int seed, int len)</argsstring>
         <name>gr_make_scrambler_bb</name>
         <param>
@@ -124,11 +124,11 @@
 <codeline lineno="29" refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgr__scrambler__bb" kindref="compound">gr_scrambler_bb</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_scrambler_bb&gt;<sp/><ref refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kindref="member">gr_scrambler_bb_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kindref="member">gr_scrambler_bb_sptr</ref><sp/><ref refid="gr__scrambler__bb_8h_1a94f7fb218d2189f6bb84b8fc4ea9c5f3" kindref="member">gr_make_scrambler_bb</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kindref="member">gr_scrambler_bb_sptr</ref><sp/><ref refid="gr__scrambler__bb_8h_1a894aa775a7d4424e204c11074ce5ec62" kindref="member">gr_make_scrambler_bb</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46" refid="classgr__scrambler__bb" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__scrambler__bb" kindref="compound">gr_scrambler_bb</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kindref="member">gr_scrambler_bb_sptr</ref><sp/><ref refid="gr__scrambler__bb_8h_1a94f7fb218d2189f6bb84b8fc4ea9c5f3" kindref="member">gr_make_scrambler_bb</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kindref="member">gr_scrambler_bb_sptr</ref><sp/><ref refid="gr__scrambler__bb_8h_1a894aa775a7d4424e204c11074ce5ec62" kindref="member">gr_make_scrambler_bb</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="classgri__lfsr" kindref="compound" tooltip="Fibonacci Linear Feedback Shift Register using specified polynomial maskGenerates a maximal length ps...">gri_lfsr</ref><sp/>d_lfsr;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>

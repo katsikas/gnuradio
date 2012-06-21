@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__msg__queue" kind="class" prot="public">
     <compoundname>gr_msg_queue</compoundname>
     <basecompoundref refid="classgr__msg__handler" prot="public" virt="non-virtual">gr_msg_handler</basecompoundref>
@@ -129,7 +129,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_msg_queue.h" line="50"/>
       </memberdef>
       <memberdef kind="function" id="classgr__msg__queue_1a2e2a98602dc08f2999916db33f0dcfaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_msg_queue::handle</definition>
         <argsstring>(gr_message_sptr msg)</argsstring>
         <name>handle</name>
@@ -147,7 +147,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_msg_queue.h" line="53" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_msg_queue.h" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classgr__msg__queue_1ae62e52ad8e7db84d20775b26dd0d7776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_msg_queue::insert_tail</definition>
         <argsstring>(gr_message_sptr msg)</argsstring>
         <name>insert_tail</name>
@@ -198,7 +198,7 @@ Block if queue if full. </para>        </detaileddescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_msg_queue.h" line="73"/>
       </memberdef>
       <memberdef kind="function" id="classgr__msg__queue_1a06f0bf5384d9b877ac53684dd19e05e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_msg_queue::flush</definition>
         <argsstring>()</argsstring>
         <name>flush</name>
@@ -268,26 +268,44 @@ Block if queue if full. </para>        </detaileddescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4465">
+      <node id="8874">
         <label>gr_msg_handler</label>
         <link refid="classgr__msg__handler"/>
       </node>
-      <node id="4464">
+      <node id="8873">
         <label>gr_msg_queue</label>
         <link refid="classgr__msg__queue"/>
-        <childnode refid="4465" relation="public-inheritance">
+        <childnode refid="8874" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4467">
+      <node id="8877">
+        <label>boost::shared_ptr&lt; gr_message &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="8878" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="8878">
+        <label>gr_message</label>
+        <link refid="classgr__message"/>
+        <childnode refid="8877" relation="usage">
+          <edgelabel>d_next</edgelabel>
+        </childnode>
+      </node>
+      <node id="8876">
         <label>gr_msg_handler</label>
         <link refid="classgr__msg__handler"/>
       </node>
-      <node id="4466">
+      <node id="8875">
         <label>gr_msg_queue</label>
         <link refid="classgr__msg__queue"/>
-        <childnode refid="4467" relation="public-inheritance">
+        <childnode refid="8876" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8877" relation="usage">
+          <edgelabel>d_head</edgelabel>
+          <edgelabel>d_tail</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

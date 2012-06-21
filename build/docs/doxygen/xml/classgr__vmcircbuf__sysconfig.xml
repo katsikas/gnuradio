@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__vmcircbuf__sysconfig" kind="class" prot="public">
     <compoundname>gr_vmcircbuf_sysconfig</compoundname>
     <includes refid="gr__vmcircbuf_8h" local="no">gr_vmcircbuf.h</includes>
@@ -50,7 +50,7 @@
         <references refid="classgr__vmcircbuf__factory_1a93e1d9a839a9edc332e1b7b9eb594293">gr_vmcircbuf_factory::make</references>
       </memberdef>
       <memberdef kind="function" id="classgr__vmcircbuf__sysconfig_1ae6b153e2b6b8599cee6fcb65ad62fc48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; <ref refid="classgr__vmcircbuf__factory" kindref="compound">gr_vmcircbuf_factory</ref> * &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classgr__vmcircbuf__factory" kindref="compound">gr_vmcircbuf_factory</ref> * &gt;</type>
         <definition>static std::vector&lt;gr_vmcircbuf_factory *&gt; gr_vmcircbuf_sysconfig::all_factories</definition>
         <argsstring>()</argsstring>
         <name>all_factories</name>
@@ -63,7 +63,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_vmcircbuf.h" line="98"/>
       </memberdef>
       <memberdef kind="function" id="classgr__vmcircbuf__sysconfig_1a8d6e740877362ca36487bff1bcc8f4b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>static void gr_vmcircbuf_sysconfig::set_default_factory</definition>
         <argsstring>(gr_vmcircbuf_factory *f)</argsstring>
         <name>set_default_factory</name>

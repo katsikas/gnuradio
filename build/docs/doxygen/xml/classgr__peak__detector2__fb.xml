@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__peak__detector2__fb" kind="class" prot="public">
     <compoundname>gr_peak_detector2_fb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -112,7 +112,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__peak__detector2__fb_1a6c4c2fbb55c04393e049ac8d15dd63e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_peak_detector2_fb_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_peak_detector2_fb_sptr</ref></type>
         <definition>GR_CORE_API gr_peak_detector2_fb_sptr gr_make_peak_detector2_fb</definition>
         <argsstring>(float threshold_factor_rise, int look_ahead, float alpha)</argsstring>
         <name>gr_make_peak_detector2_fb</name>
@@ -166,7 +166,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classgr__peak__detector2__fb_1ae0ef9660f6a6ca4a689298df284e9d2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_peak_detector2_fb::set_threshold_factor_rise</definition>
         <argsstring>(float thr)</argsstring>
         <name>set_threshold_factor_rise</name>
@@ -191,7 +191,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_peak_detector2_fb.h" line="75" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_peak_detector2_fb.h" bodystart="75" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="classgr__peak__detector2__fb_1a5d5c149b7d93137e3e1b981e82f9291b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_peak_detector2_fb::set_look_ahead</definition>
         <argsstring>(int look)</argsstring>
         <name>set_look_ahead</name>
@@ -216,7 +216,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_peak_detector2_fb.h" line="80" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_peak_detector2_fb.h" bodystart="80" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classgr__peak__detector2__fb_1ac19060f3c2eb37be0e10b1376d41ccfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_peak_detector2_fb::set_alpha</definition>
         <argsstring>(int alpha)</argsstring>
         <name>set_alpha</name>
@@ -293,11 +293,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -336,100 +336,220 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="4735">
+      <node id="9583">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4736" relation="public-inheritance">
+        <childnode refid="9584" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4732">
+      <node id="9580">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4733" relation="public-inheritance">
+        <childnode refid="9581" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4733">
+      <node id="9581">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4734" relation="public-inheritance">
+        <childnode refid="9582" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4736">
+      <node id="9584">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4731">
+      <node id="9579">
         <label>gr_peak_detector2_fb</label>
         <link refid="classgr__peak__detector2__fb"/>
-        <childnode refid="4732" relation="public-inheritance">
+        <childnode refid="9580" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4734">
+      <node id="9582">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4735" relation="public-inheritance">
+        <childnode refid="9583" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4741">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="4742" relation="public-inheritance">
+      <node id="9606">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="9600" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="4738">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="4739" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4739">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="4740" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4743">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="9599">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4744" relation="usage">
+        <childnode refid="9600" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4746">
+      <node id="9611">
+        <label>T</label>
+      </node>
+      <node id="9589">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="9590" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9586">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="9587" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9600">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="9601" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9608">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="9603">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="9587">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="9588" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9596" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="9596">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9597" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9610">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9611" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9597">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="9598" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="9607" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="9609" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="9604">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="9605" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9591">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9592" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9602">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="9603" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="9604" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="9606" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="9595">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4742">
+      <node id="9598">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="9599" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9590">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4737">
+      <node id="9585">
         <label>gr_peak_detector2_fb</label>
         <link refid="classgr__peak__detector2__fb"/>
-        <childnode refid="4738" relation="public-inheritance">
+        <childnode refid="9586" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4744">
+      <node id="9601">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9602" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9605">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="9607">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="9608" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="9609">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="9610" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9592">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="9593" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="4740">
+      <node id="9588">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4741" relation="public-inheritance">
+        <childnode refid="9589" relation="public-inheritance">
         </childnode>
-        <childnode refid="4743" relation="usage">
+        <childnode refid="9591" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4745" relation="usage">
+        <childnode refid="9594" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4745">
+      <node id="9593">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="9594">
         <label>std::string</label>
-        <childnode refid="4746" relation="public-inheritance">
+        <childnode refid="9595" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -501,7 +621,7 @@
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_is_unaligned</name></member>
       <member refid="classgr__peak__detector2__fb_1a5d5c149b7d93137e3e1b981e82f9291b" prot="public" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_look_ahead</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_peak_detector2_fb</scope><name>set_relative_rate</name></member>

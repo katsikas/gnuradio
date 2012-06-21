@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for filter_generated.
-
-# Include the progress variables for this target.
-include gnuradio-core/src/lib/CMakeFiles/filter_generated.dir/progress.make
 
 gnuradio-core/src/lib/CMakeFiles/filter_generated: gnuradio-core/src/lib/filter/gr_fir_ccc.cc
 gnuradio-core/src/lib/CMakeFiles/filter_generated: gnuradio-core/src/lib/filter/gr_fir_ccc_generic.cc
@@ -188,7 +188,7 @@ gnuradio-core/src/lib/filter/gr_fir_ccc.cc: ../gnuradio-core/src/lib/filter/gri_
 gnuradio-core/src/lib/filter/gr_fir_ccc.cc: ../gnuradio-core/src/lib/filter/gri_fir_filter_with_buffer_XXX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "generating filter files"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter && /usr/bin/python -B -c "import os, sys;sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/python');sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/lib/filter');os.environ['srcdir'] = '/home/katsikas/gnuradio/gnuradio-core/src/lib/filter';from generate_all import generate_all;generate_all()"
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter && /usr/bin/python2.7 -B -c "import os, sys;sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/python');sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/lib/filter');os.environ['srcdir'] = '/home/katsikas/gnuradio/gnuradio-core/src/lib/filter';from generate_all import generate_all;generate_all()"
 
 gnuradio-core/src/lib/filter/gr_fir_ccc_generic.cc: gnuradio-core/src/lib/filter/gr_fir_ccc.cc
 

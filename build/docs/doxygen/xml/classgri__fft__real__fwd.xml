@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgri__fft__real__fwd" kind="class" prot="public">
     <compoundname>gri_fft_real_fwd</compoundname>
     <includes refid="gri__fft_8h" local="no">gri_fft.h</includes>
@@ -57,7 +57,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="109" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgri__fft__real__fwd_1a3851fee1d6b13cc686cd32c32b47b3a9" prot="private" static="no" mutable="no">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* gri_fft_real_fwd::d_plan</definition>
         <argsstring></argsstring>
         <name>d_plan</name>
@@ -159,7 +159,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="125" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" bodystart="125" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classgri__fft__real__fwd_1aac743064f82210e5c6b2caeeeac58aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gri_fft_real_fwd::set_nthreads</definition>
         <argsstring>(int n)</argsstring>
         <name>set_nthreads</name>
@@ -189,7 +189,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="135" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" bodystart="135" bodyend="135"/>
       </memberdef>
       <memberdef kind="function" id="classgri__fft__real__fwd_1ad58c1984ecd7cf119577e6e1f9e6cfaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gri_fft_real_fwd::execute</definition>
         <argsstring>()</argsstring>
         <name>execute</name>
@@ -206,6 +206,18 @@
 <para>FFT: real in, complex out. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="12954">
+        <label>std::complex</label>
+      </node>
+      <node id="12953">
+        <label>gri_fft_real_fwd</label>
+        <link refid="classgri__fft__real__fwd"/>
+        <childnode refid="12954" relation="usage">
+          <edgelabel>d_outbuf</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="105" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" bodystart="105" bodyend="141"/>
     <listofallmembers>
       <member refid="classgri__fft__real__fwd_1a3d6ad094e2547786ca95705489a09e0b" prot="private" virt="non-virtual"><scope>gri_fft_real_fwd</scope><name>d_fft_size</name></member>

@@ -1,5 +1,5 @@
 
-#!/usr/bin/python
+#!/usr/bin/python2.7
 
 import sys, os, re
 sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/python')

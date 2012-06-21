@@ -70,7 +70,7 @@ dvbt_derandomizer::work (int noutput_items,
                         out[i].data[0] = MPEG_SYNC_BYTE;
                 }
                 else{
-                        out[i].data[0] = MPEG_INVERTED_SYNC_BYTE;
+                        out[i].data[0] = ~MPEG_SYNC_BYTE;
                 }
 
 

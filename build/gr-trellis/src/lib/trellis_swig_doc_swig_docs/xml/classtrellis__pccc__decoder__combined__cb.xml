@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classtrellis__pccc__decoder__combined__cb" kind="class" prot="public">
     <compoundname>trellis_pccc_decoder_combined_cb</compoundname>
     <includes refid="trellis__pccc__decoder__combined__cb_8h" local="no">trellis_pccc_decoder_combined_cb.h</includes>
@@ -202,7 +202,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classtrellis__pccc__decoder__combined__cb_1a586a5712acc17f01dc7c7b87b1315925" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__pccc__decoder__combined__cb_8h_1aeaffa79587926dff818713132f482963" kindref="member">trellis_pccc_decoder_combined_cb_sptr</ref></type>
+        <type>friend TRELLIS_API <ref refid="trellis__pccc__decoder__combined__cb_8h_1aeaffa79587926dff818713132f482963" kindref="member">trellis_pccc_decoder_combined_cb_sptr</ref></type>
         <definition>TRELLIS_API trellis_pccc_decoder_combined_cb_sptr trellis_make_pccc_decoder_combined_cb</definition>
         <argsstring>(const fsm &amp;FSMo, int STo0, int SToK, const fsm &amp;FSMi, int STi0, int STiK, const interleaver &amp;INTERLEAVER, int blocklength, int repetitions, trellis_siso_type_t SISO_TYPE, int D, const std::vector&lt; gr_complex &gt; &amp;TABLE, trellis_metric_type_t METRIC_TYPE, float scaling)</argsstring>
         <name>trellis_make_pccc_decoder_combined_cb</name>
@@ -597,6 +597,62 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="612">
+        <label>trellis_pccc_decoder_combined_cb</label>
+        <link refid="classtrellis__pccc__decoder__combined__cb"/>
+        <childnode refid="613" relation="usage">
+          <edgelabel>d_INTERLEAVER</edgelabel>
+        </childnode>
+        <childnode refid="615" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+        <childnode refid="616" relation="usage">
+          <edgelabel>d_FSMi</edgelabel>
+          <edgelabel>d_FSMo</edgelabel>
+        </childnode>
+        <childnode refid="618" relation="usage">
+          <edgelabel>d_TABLE</edgelabel>
+        </childnode>
+      </node>
+      <node id="615">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="618">
+        <label>std::vector&lt; gr_complex &gt;</label>
+      </node>
+      <node id="617">
+        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="614" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="616">
+        <label>fsm</label>
+        <link refid="classfsm"/>
+        <childnode refid="617" relation="usage">
+          <edgelabel>d_PI</edgelabel>
+          <edgelabel>d_PS</edgelabel>
+        </childnode>
+        <childnode refid="614" relation="usage">
+          <edgelabel>d_NS</edgelabel>
+          <edgelabel>d_TMl</edgelabel>
+          <edgelabel>d_TMi</edgelabel>
+          <edgelabel>d_OS</edgelabel>
+        </childnode>
+      </node>
+      <node id="614">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="613">
+        <label>interleaver</label>
+        <link refid="classinterleaver"/>
+        <childnode refid="614" relation="usage">
+          <edgelabel>d_DEINTER</edgelabel>
+          <edgelabel>d_INTER</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" line="57" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" bodystart="56" bodyend="123"/>
     <listofallmembers>
       <member refid="classtrellis__pccc__decoder__combined__cb_1a34d2225dff8276bf5ac2218d5b719fd1" prot="public" virt="non-virtual"><scope>trellis_pccc_decoder_combined_cb</scope><name>blocklength</name></member>

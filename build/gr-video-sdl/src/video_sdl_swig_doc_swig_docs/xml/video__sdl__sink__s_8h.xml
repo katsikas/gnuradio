@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="video__sdl__sink__s_8h" kind="file">
     <compoundname>video_sdl_sink_s.h</compoundname>
     <includes refid="video__sdl__api_8h" local="no">video_sdl_api.h</includes>
@@ -57,7 +57,7 @@
       </memberdef>
       <memberdef kind="define" id="video__sdl__sink__s_8h_1a680b7b7dac54df8c9cc91434e6c88d68" prot="public" static="no">
         <name>IMGFMT_YV12</name>
-        <initializer><ref refid="video__sdl__sink__uc_8h_1a1a61cf7243cac43604f2f287649bf5d1" kindref="member">vid_fourcc</ref>(&apos;Y&apos;,&apos;V&apos;,&apos;1&apos;,&apos;2&apos;) /* 12  YVU 4:2:0 */</initializer>
+        <initializer>vid_fourcc(&apos;Y&apos;,&apos;V&apos;,&apos;1&apos;,&apos;2&apos;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -83,9 +83,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="video__sdl__sink__s_8h_1af596fbd25691b3e765455f831c27098d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="video__sdl__sink__s_8h_1a9d4613f4d07e610f15d0b481fe21503e" kindref="member">video_sdl_sink_s_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT video_sdl_sink_s_sptr video_sdl_make_sink_s</definition>
+      <memberdef kind="function" id="video__sdl__sink__s_8h_1a5074acf7415f959ab5f3a75795b787ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VIDEO_SDL_API <ref refid="video__sdl__sink__s_8h_1a9d4613f4d07e610f15d0b481fe21503e" kindref="member">video_sdl_sink_s_sptr</ref></type>
+        <definition>VIDEO_SDL_API video_sdl_sink_s_sptr video_sdl_make_sink_s</definition>
         <argsstring>(double framerate, int width=640, int height=480, unsigned int format=(((unsigned)( &apos;Y&apos;)&lt;&lt; 0)|((unsigned)( &apos;V&apos;)&lt;&lt; 8)|((unsigned)( &apos;1&apos;)&lt;&lt; 16)|((unsigned)( &apos;2&apos;)&lt;&lt; 24)), int dst_width=-1, int dst_height=-1)</argsstring>
         <name>video_sdl_make_sink_s</name>
         <param>
@@ -169,11 +169,11 @@
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;video_sdl_sink_s&gt;<sp/><ref refid="video__sdl__sink__s_8h_1a9d4613f4d07e610f15d0b481fe21503e" kindref="member">video_sdl_sink_s_sptr</ref>;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><ref refid="video__sdl__api_8h_1af8670bf958d8bdc377323c404da83a58" kindref="member">VIDEO_SDL_API</ref><sp/><ref refid="video__sdl__sink__s_8h_1a9d4613f4d07e610f15d0b481fe21503e" kindref="member">video_sdl_sink_s_sptr</ref></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><ref refid="video__sdl__sink__s_8h_1af596fbd25691b3e765455f831c27098d" kindref="member">video_sdl_make_sink_s</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>framerate,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width=640,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height=480,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>format=<ref refid="video__sdl__sink__s_8h_1a680b7b7dac54df8c9cc91434e6c88d68" kindref="member">IMGFMT_YV12</ref>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_width=-1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_height=-1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="video__sdl__sink__s_8h_1a5074acf7415f959ab5f3a75795b787ac" kindref="member">video_sdl_make_sink_s</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>framerate,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width=640,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height=480,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>format=<ref refid="video__sdl__sink__s_8h_1a680b7b7dac54df8c9cc91434e6c88d68" kindref="member">IMGFMT_YV12</ref>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_width=-1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_height=-1);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51" refid="classvideo__sdl__sink__s" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="video__sdl__api_8h_1af8670bf958d8bdc377323c404da83a58" kindref="member">VIDEO_SDL_API</ref><sp/><ref refid="classvideo__sdl__sink__s" kindref="compound" tooltip="video sink using SDL">video_sdl_sink_s</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block<sp/>{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="video__sdl__api_8h_1af8670bf958d8bdc377323c404da83a58" kindref="member">VIDEO_SDL_API</ref><sp/><ref refid="video__sdl__sink__s_8h_1a9d4613f4d07e610f15d0b481fe21503e" kindref="member">video_sdl_sink_s_sptr</ref></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="video__sdl__sink__s_8h_1af596fbd25691b3e765455f831c27098d" kindref="member">video_sdl_make_sink_s</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>framerate,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>format,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_width,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_height);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="video__sdl__sink__s_8h_1a5074acf7415f959ab5f3a75795b787ac" kindref="member">video_sdl_make_sink_s</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>framerate,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>format,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_width,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dst_height);</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_chunk_size;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>

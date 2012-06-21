@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="trellis__siso__combined__f_8h" kind="file">
     <compoundname>trellis_siso_combined_f.h</compoundname>
     <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
@@ -116,9 +116,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="trellis__siso__combined__f_8h_1aa77e1964ee6a2563d9c82662b5dc0583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT trellis_siso_combined_f_sptr trellis_make_siso_combined_f</definition>
+      <memberdef kind="function" id="trellis__siso__combined__f_8h_1a02057bf0b2af9fca7c6cf8b88d1dbb64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRELLIS_API <ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref></type>
+        <definition>TRELLIS_API trellis_siso_combined_f_sptr trellis_make_siso_combined_f</definition>
         <argsstring>(const fsm &amp;FSM, int K, int S0, int SK, bool POSTI, bool POSTO, trellis_siso_type_t d_SISO_TYPE, int D, const std::vector&lt; float &gt; &amp;TABLE, trellis_metric_type_t TYPE)</argsstring>
         <name>trellis_make_siso_combined_f</name>
         <param>
@@ -210,7 +210,7 @@
 <codeline lineno="33" refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtrellis__siso__combined__f" kindref="compound">trellis_siso_combined_f</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;trellis_siso_combined_f&gt;<sp/><ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref>;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref><sp/><ref refid="trellis__siso__combined__f_8h_1aa77e1964ee6a2563d9c82662b5dc0583" kindref="member">trellis_make_siso_combined_f</ref><sp/>(</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref><sp/><ref refid="trellis__siso__combined__f_8h_1a02057bf0b2af9fca7c6cf8b88d1dbb64" kindref="member">trellis_make_siso_combined_f</ref><sp/>(</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfsm" kindref="compound" tooltip="Finite State Machine Specification class.">fsm</ref><sp/>&amp;<ref refid="classtrellis__siso__combined__f_1a7d972824e49c0228634572578f841fe9" kindref="member">FSM</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>underlying<sp/>FSM</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtrellis__siso__combined__f_1a170eb62f411bb6c35aa53e922f1b1517" kindref="member">K</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>block<sp/>size<sp/>in<sp/>trellis<sp/>steps</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtrellis__siso__combined__f_1a4c57abe0acb674e7accd001e1cdca40c" kindref="member">S0</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initial<sp/>state<sp/>(put<sp/>-1<sp/>if<sp/>not<sp/>specified)</highlight><highlight class="normal"></highlight></codeline>
@@ -238,7 +238,7 @@
 <codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;float&gt;<sp/>d_alpha;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;float&gt;<sp/>d_beta;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref><sp/><ref refid="trellis__siso__combined__f_8h_1aa77e1964ee6a2563d9c82662b5dc0583" kindref="member">trellis_make_siso_combined_f</ref><sp/>(</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref><sp/><ref refid="trellis__siso__combined__f_8h_1a02057bf0b2af9fca7c6cf8b88d1dbb64" kindref="member">trellis_make_siso_combined_f</ref><sp/>(</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfsm" kindref="compound" tooltip="Finite State Machine Specification class.">fsm</ref><sp/>&amp;FSM,</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>K,</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>S0,</highlight></codeline>

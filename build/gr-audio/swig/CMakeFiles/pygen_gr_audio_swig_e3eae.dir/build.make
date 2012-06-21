@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -39,21 +42,18 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_audio_swig_e3eae.
 
-# Include the progress variables for this target.
-include gr-audio/swig/CMakeFiles/pygen_gr_audio_swig_e3eae.dir/progress.make
-
 gr-audio/swig/CMakeFiles/pygen_gr_audio_swig_e3eae: gr-audio/swig/__init__.pyc
 gr-audio/swig/CMakeFiles/pygen_gr_audio_swig_e3eae: gr-audio/swig/__init__.pyo
 
 gr-audio/swig/__init__.pyc: ../gr-audio/swig/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyc"
-	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-audio/swig/__init__.py /home/katsikas/gnuradio/build/gr-audio/swig/__init__.pyc
+	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-audio/swig/__init__.py /home/katsikas/gnuradio/build/gr-audio/swig/__init__.pyc
 
 gr-audio/swig/__init__.pyo: ../gr-audio/swig/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyo"
-	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-audio/swig/__init__.py /home/katsikas/gnuradio/build/gr-audio/swig/__init__.pyo
+	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-audio/swig/__init__.py /home/katsikas/gnuradio/build/gr-audio/swig/__init__.pyo
 
 pygen_gr_audio_swig_e3eae: gr-audio/swig/CMakeFiles/pygen_gr_audio_swig_e3eae
 pygen_gr_audio_swig_e3eae: gr-audio/swig/__init__.pyc

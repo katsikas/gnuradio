@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdigital__ofdm__frame__acquisition" kind="class" prot="public">
     <compoundname>digital_ofdm_frame_acquisition</compoundname>
     <includes refid="digital__ofdm__frame__acquisition_8h" local="no">digital_ofdm_frame_acquisition.h</includes>
@@ -162,9 +162,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__ofdm__frame__acquisition_1aa8b596a64e014d123918bf666906bfaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="digital__ofdm__frame__acquisition_8h_1a28b15700bc2fe89911e4d951310c9184" kindref="member">digital_ofdm_frame_acquisition_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_ofdm_frame_acquisition_sptr digital_make_ofdm_frame_acquisition</definition>
+      <memberdef kind="friend" id="classdigital__ofdm__frame__acquisition_1a68c5767d93151cc47209b45aff817c99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend DIGITAL_API <ref refid="digital__ofdm__frame__acquisition_8h_1a28b15700bc2fe89911e4d951310c9184" kindref="member">digital_ofdm_frame_acquisition_sptr</ref></type>
+        <definition>DIGITAL_API digital_ofdm_frame_acquisition_sptr digital_make_ofdm_frame_acquisition</definition>
         <argsstring>(unsigned int occupied_carriers, unsigned int fft_length, unsigned int cplen, const std::vector&lt; gr_complex &gt; &amp;known_symbol, unsigned int max_fft_shift_len)</argsstring>
         <name>digital_make_ofdm_frame_acquisition</name>
         <param>
@@ -434,6 +434,26 @@
 <para>take a vector of complex constellation points in from an FFT and performs a correlation and equalization.</para><para>This block takes the output of an FFT of a received OFDM symbol and finds the start of a frame based on two known symbols. It also looks at the surrounding bins in the FFT output for the correlation in case there is a large frequency shift in the data. This block assumes that the fine frequency shift has already been corrected and that the samples fall in the middle of one FFT bin. </para>    </briefdescription>
     <detaileddescription>
 <para>It then uses one of those known symbols to estimate the channel response over all subcarriers and does a simple 1-tap equalization on all subcarriers. This corrects for the phase and amplitude distortion caused by the channel. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="450">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="451">
+        <label>std::vector&lt; gr_complex &gt;</label>
+      </node>
+      <node id="449">
+        <label>digital_ofdm_frame_acquisition</label>
+        <link refid="classdigital__ofdm__frame__acquisition"/>
+        <childnode refid="450" relation="usage">
+          <edgelabel>d_known_phase_diff</edgelabel>
+          <edgelabel>d_symbol_phase_diff</edgelabel>
+        </childnode>
+        <childnode refid="451" relation="usage">
+          <edgelabel>d_known_symbol</edgelabel>
+          <edgelabel>d_hestimate</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_frame_acquisition.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_frame_acquisition.h" bodystart="57" bodyend="113"/>
     <listofallmembers>
       <member refid="classdigital__ofdm__frame__acquisition_1a26f4eb9de5a68ce0067e2d189982a999" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>calculate_equalizer</name></member>
@@ -451,7 +471,7 @@
       <member refid="classdigital__ofdm__frame__acquisition_1a04bde5aa46f342f706b4ca53006bc289" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>d_phase_lut</name></member>
       <member refid="classdigital__ofdm__frame__acquisition_1a4274283c632e8154136872cd9a3c9b96" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>d_snr_est</name></member>
       <member refid="classdigital__ofdm__frame__acquisition_1afe38142d9c18c5c38a014f3a302248da" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>d_symbol_phase_diff</name></member>
-      <member refid="classdigital__ofdm__frame__acquisition_1aa8b596a64e014d123918bf666906bfaa" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>digital_make_ofdm_frame_acquisition</name></member>
+      <member refid="classdigital__ofdm__frame__acquisition_1a68c5767d93151cc47209b45aff817c99" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>digital_make_ofdm_frame_acquisition</name></member>
       <member refid="classdigital__ofdm__frame__acquisition_1ab78c6018c0c2a8ba38c49d990237fdd1" prot="protected" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>digital_ofdm_frame_acquisition</name></member>
       <member refid="classdigital__ofdm__frame__acquisition_1a9a6e25a485b5b448ffb9dbc79154de83" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>forecast</name></member>
       <member refid="classdigital__ofdm__frame__acquisition_1aa3c370a5204800671828e0976f39b66f" prot="public" virt="non-virtual"><scope>digital_ofdm_frame_acquisition</scope><name>general_work</name></member>

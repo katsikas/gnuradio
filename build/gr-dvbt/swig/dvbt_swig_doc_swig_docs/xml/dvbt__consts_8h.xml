@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="dvbt__consts_8h" kind="file">
     <compoundname>dvbt_consts.h</compoundname>
     <includedby refid="dvbt__types_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h</includedby>
@@ -75,20 +75,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="28" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="28" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="dvbt__consts_8h_1acaeaa683423623b9b258779e915dad2b" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int MPEG_INVERTED_SYNC_BYTE</definition>
-        <argsstring></argsstring>
-        <name>MPEG_INVERTED_SYNC_BYTE</name>
-        <initializer> 0xB8</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ad5ccc6a26f313ce573ef7e19b67dcd8f" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -188,20 +174,6 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="37" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="37" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="dvbt__consts_8h_1a157380690862764a31df308d71ad538b" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int INIT_PRBS_REGISTERS[]</definition>
-        <argsstring>[]</argsstring>
-        <name>INIT_PRBS_REGISTERS</name>
-        <initializer> {1,0,0,1,0,1,0,1,0,0,0,0,0,0,0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="39" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="39" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -236,7 +208,7 @@
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PRBS_PERIOD<sp/>=<sp/>8;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPEG_SYNC_BYTE<sp/>=<sp/>0x47;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_DSEGS_PER_FIELD<sp/>=<sp/>312;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPEG_INVERTED_SYNC_BYTE<sp/>=<sp/>0xB8;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//static<sp/>const<sp/>int<sp/>MPEG_INVERTED_SYNC_BYTE<sp/>=<sp/>0xB8;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_DATA_LENGTH<sp/>=<sp/>184;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_SYNC_LENGTH<sp/>=<sp/>187;</highlight></codeline>
@@ -246,7 +218,7 @@
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPEG_TRANSPORT_ERROR_BIT<sp/>=<sp/>0x80;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_RS_ENCODED_LENGTH<sp/>=<sp/>204;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Packet<sp/>after<sp/>RS<sp/>Encoding</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INIT_PRBS_REGISTERS[]<sp/>=<sp/>{1,0,0,1,0,1,0,1,0,0,0,0,0,0,0};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//static<sp/>const<sp/>int<sp/>INIT_PRBS_REGISTERS[]<sp/>=<sp/>{1,0,0,1,0,1,0,1,0,0,0,0,0,0,0};</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_DVBT_CONSTS_H_</highlight></codeline>
 <codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>

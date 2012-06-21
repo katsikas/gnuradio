@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classpmt_1_1pmt__u64vector" kind="class" prot="public">
     <compoundname>pmt::pmt_u64vector</compoundname>
     <basecompoundref refid="classpmt_1_1pmt__uniform__vector" prot="public" virt="non-virtual">pmt::pmt_uniform_vector</basecompoundref>
     <includes refid="pmt__int_8h" local="no">pmt_int.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classpmt_1_1pmt__u64vector_1ab4964845c29bf3a39b1e571d068e1b21" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref> &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref> &gt;</type>
         <definition>std::vector&lt; uint64_t &gt; pmt::pmt_u64vector::d_v</definition>
         <argsstring></argsstring>
         <name>d_v</name>
@@ -108,7 +108,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="180"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__u64vector_1a99501fa7ca7a81f29a9186f4f5e7620c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pmt::pmt_u64vector::set</definition>
         <argsstring>(size_t k, uint64_t x)</argsstring>
         <name>set</name>
@@ -163,7 +163,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="183"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__u64vector_1ae05f1e990a2d568d4cd14d611bd403c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>const void *</type>
         <definition>const void* pmt::pmt_u64vector::uniform_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_elements</name>
@@ -181,7 +181,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="184"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__u64vector_1a0acbf72dc43e65194b3707a3baa11ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* pmt::pmt_u64vector::uniform_writable_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_writable_elements</name>
@@ -204,39 +204,46 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7013">
+      <node id="14039">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="7014" relation="public-inheritance">
+        <childnode refid="14040" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7012">
+      <node id="14038">
         <label>pmt::pmt_u64vector</label>
         <link refid="classpmt_1_1pmt__u64vector"/>
-        <childnode refid="7013" relation="public-inheritance">
+        <childnode refid="14039" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7014">
+      <node id="14040">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7016">
+      <node id="14042">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="7017" relation="public-inheritance">
+        <childnode refid="14043" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7015">
+      <node id="14041">
         <label>pmt::pmt_u64vector</label>
         <link refid="classpmt_1_1pmt__u64vector"/>
-        <childnode refid="7016" relation="public-inheritance">
+        <childnode refid="14042" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14044" relation="usage">
+          <edgelabel>d_v</edgelabel>
         </childnode>
       </node>
-      <node id="7017">
+      <node id="14043">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
+      </node>
+      <node id="14044">
+        <label>std::vector&lt; uint64_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="170" bodyfile="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" bodystart="169" bodyend="186"/>

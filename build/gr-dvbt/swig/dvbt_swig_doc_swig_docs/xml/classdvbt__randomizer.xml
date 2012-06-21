@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdvbt__randomizer" kind="class" prot="public">
     <compoundname>dvbt_randomizer</compoundname>
     <includes refid="dvbt__randomizer_8h" local="no">dvbt_randomizer.h</includes>
@@ -59,7 +59,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__randomizer_1abe226c84c41f28dd82dd1e82b416ae96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref></type>
+        <type>friend DVBT_API <ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref></type>
         <definition>DVBT_API dvbt_randomizer_sptr dvbt_make_randomizer</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_randomizer</name>
@@ -161,6 +161,19 @@
 <para>&quot;Whiten&quot; incoming mpeg transport stream packets</para><para>input: <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref>; output: <ref refid="classdvbt__mpeg__packet__no__sync" kindref="compound">dvbt_mpeg_packet_no_sync</ref> </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="292">
+        <label>dvbti_randomizer</label>
+        <link refid="classdvbti__randomizer"/>
+      </node>
+      <node id="291">
+        <label>dvbt_randomizer</label>
+        <link refid="classdvbt__randomizer"/>
+        <childnode refid="292" relation="usage">
+          <edgelabel>d_rand</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h" bodystart="43" bodyend="71"/>
     <listofallmembers>
       <member refid="classdvbt__randomizer_1a8ef7ec5b9ccea1a93da214032830327a" prot="private" virt="non-virtual"><scope>dvbt_randomizer</scope><name>d_field2</name></member>

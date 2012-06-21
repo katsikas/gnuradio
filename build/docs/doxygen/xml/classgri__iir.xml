@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgri__iir" kind="class" prot="public">
     <compoundname>gri_iir</compoundname>
     <includes refid="gri__iir_8h" local="no">gri_iir.h</includes>
@@ -22,7 +22,7 @@
     </templateparamlist>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classgri__iir_1aadd595c780fc6b2ee50c7c8b3eb5eea3" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; tap_type &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; tap_type &gt;</type>
         <definition>std::vector&lt;tap_type&gt; gri_iir&lt; i_type, o_type, tap_type &gt;::d_fftaps</definition>
         <argsstring></argsstring>
         <name>d_fftaps</name>
@@ -37,7 +37,7 @@
         <referencedby refid="classgri__iir_1abbc8febf2bccd566121688c66b0b0326" compoundref="gri__iir_8h" startline="90" endline="111">gri_iir&lt; float, float, double &gt;::set_taps</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgri__iir_1ae270ca4360515fbd80cf9ad513b96f24" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; tap_type &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; tap_type &gt;</type>
         <definition>std::vector&lt;tap_type&gt; gri_iir&lt; i_type, o_type, tap_type &gt;::d_fbtaps</definition>
         <argsstring></argsstring>
         <name>d_fbtaps</name>
@@ -80,7 +80,7 @@
         <referencedby refid="classgri__iir_1abbc8febf2bccd566121688c66b0b0326" compoundref="gri__iir_8h" startline="90" endline="111">gri_iir&lt; float, float, double &gt;::set_taps</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgri__iir_1a566a5d039cf32bb27a750b123e8dae7a" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; tap_type &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; tap_type &gt;</type>
         <definition>std::vector&lt;tap_type&gt; gri_iir&lt; i_type, o_type, tap_type &gt;::d_prev_output</definition>
         <argsstring></argsstring>
         <name>d_prev_output</name>
@@ -94,7 +94,7 @@
         <referencedby refid="classgri__iir_1abbc8febf2bccd566121688c66b0b0326" compoundref="gri__iir_8h" startline="90" endline="111">gri_iir&lt; float, float, double &gt;::set_taps</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgri__iir_1aac5a985051761be98d5753f5a1542003" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; i_type &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; i_type &gt;</type>
         <definition>std::vector&lt;i_type&gt; gri_iir&lt; i_type, o_type, tap_type &gt;::d_prev_input</definition>
         <argsstring></argsstring>
         <name>d_prev_input</name>
@@ -115,11 +115,11 @@
         <argsstring>(const std::vector&lt; tap_type &gt; &amp;fftaps, const std::vector&lt; tap_type &gt; &amp;fbtaps)</argsstring>
         <name>gri_iir</name>
         <param>
-          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; tap_type &gt; &amp;</type>
           <declname>fftaps</declname>
         </param>
         <param>
-          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; tap_type &gt; &amp;</type>
           <declname>fbtaps</declname>
         </param>
         <exceptions> throw (std::invalid_argument)</exceptions>
@@ -176,7 +176,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_iir.h" line="73" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_iir.h" bodystart="128" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="classgri__iir_1aef452a0ffbc9d9040b08d58d0bbe0589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gri_iir&lt; i_type, o_type, tap_type &gt;::filter_n</definition>
         <argsstring>(o_type output[], const i_type input[], long n)</argsstring>
         <name>filter_n</name>
@@ -230,16 +230,16 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_iir.h" line="85" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_iir.h" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="classgri__iir_1abbc8febf2bccd566121688c66b0b0326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gri_iir&lt; i_type, o_type, tap_type &gt;::set_taps</definition>
         <argsstring>(const std::vector&lt; tap_type &gt; &amp;fftaps, const std::vector&lt; tap_type &gt; &amp;fbtaps)</argsstring>
         <name>set_taps</name>
         <param>
-          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; tap_type &gt; &amp;</type>
           <declname>fftaps</declname>
         </param>
         <param>
-          <type>const std::vector&lt; tap_type &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; tap_type &gt; &amp;</type>
           <declname>fbtaps</declname>
         </param>
         <exceptions> throw (std::invalid_argument)</exceptions>
@@ -258,29 +258,31 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="6157">
+      <node id="12985">
         <label>gri_iir&lt; i_type, o_type, tap_type &gt;</label>
         <link refid="classgri__iir"/>
-        <childnode refid="6158" relation="usage">
+        <childnode refid="12986" relation="usage">
           <edgelabel>d_fftaps</edgelabel>
           <edgelabel>d_prev_output</edgelabel>
           <edgelabel>d_fbtaps</edgelabel>
         </childnode>
-        <childnode refid="6160" relation="usage">
+        <childnode refid="12988" relation="usage">
           <edgelabel>d_prev_input</edgelabel>
         </childnode>
       </node>
-      <node id="6159">
+      <node id="12987">
         <label>tap_type</label>
       </node>
-      <node id="6158">
+      <node id="12986">
         <label>std::vector&lt; tap_type &gt;</label>
-        <childnode refid="6159" relation="usage">
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="12987" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="6160">
+      <node id="12988">
         <label>std::vector&lt; i_type &gt;</label>
+        <link refid="classstd_1_1vector"/>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_iir.h" line="34" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_iir.h" bodystart="34" bodyend="120"/>

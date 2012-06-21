@@ -173,7 +173,7 @@ void
 volk_8i_convert_16i_a_orc_impl (orc_uint16 * ORC_RESTRICT d1, const orc_uint8 * ORC_RESTRICT s1, int n)
 {
   OrcExecutor _ex, *ex = &_ex;
-  static volatile int p_inited = 0;
+  static int p_inited = 0;
   static OrcCode *c = 0;
   void (*func) (OrcExecutor *);
 

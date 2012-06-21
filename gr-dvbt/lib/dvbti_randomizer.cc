@@ -74,7 +74,7 @@ dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_pack
 {
 	//printf("dvbti_randomize() \n");
   	//assert (in.data[0] == MPEG_SYNC_BYTE);	// confirm it's there, then drop
-	out.data[0] = in.data[0];
+	//out.data[0] = in.data[0];
 
   	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
     		out.data[i] = in.data[i] ^ output_and_clk ();
@@ -86,7 +86,6 @@ dvbti_randomizer::derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_
 {
 	//printf("dvbti_derandomize() \n");
 	//out.data[0] = MPEG_SYNC_BYTE;		// add sync byte to beginning of packet
-	printf("aa = %d\n",in.data[0]);
 
 	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
     		out.data[i] = in.data[i] ^ output_and_clk ();

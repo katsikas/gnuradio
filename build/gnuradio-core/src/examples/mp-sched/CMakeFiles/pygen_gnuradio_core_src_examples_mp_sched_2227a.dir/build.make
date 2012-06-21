@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gnuradio_core_src_examples_mp_sched_2227a.
-
-# Include the progress variables for this target.
-include gnuradio-core/src/examples/mp-sched/CMakeFiles/pygen_gnuradio_core_src_examples_mp_sched_2227a.dir/progress.make
 
 gnuradio-core/src/examples/mp-sched/CMakeFiles/pygen_gnuradio_core_src_examples_mp_sched_2227a: gnuradio-core/src/examples/mp-sched/plot_flops.py.exe
 gnuradio-core/src/examples/mp-sched/CMakeFiles/pygen_gnuradio_core_src_examples_mp_sched_2227a: gnuradio-core/src/examples/mp-sched/run_synthetic.py.exe
@@ -50,22 +50,22 @@ gnuradio-core/src/examples/mp-sched/CMakeFiles/pygen_gnuradio_core_src_examples_
 gnuradio-core/src/examples/mp-sched/plot_flops.py.exe: ../gnuradio-core/src/examples/mp-sched/plot_flops.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin plot_flops.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/plot_flops.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/plot_flops.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/plot_flops.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/plot_flops.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/mp-sched/run_synthetic.py.exe: ../gnuradio-core/src/examples/mp-sched/run_synthetic.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin run_synthetic.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/run_synthetic.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/run_synthetic.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/run_synthetic.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/run_synthetic.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/mp-sched/synthetic.py.exe: ../gnuradio-core/src/examples/mp-sched/synthetic.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin synthetic.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/synthetic.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/synthetic.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/synthetic.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/synthetic.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/mp-sched/wfm_rcv_pll_to_wav.py.exe: ../gnuradio-core/src/examples/mp-sched/wfm_rcv_pll_to_wav.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin wfm_rcv_pll_to_wav.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/wfm_rcv_pll_to_wav.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/wfm_rcv_pll_to_wav.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/wfm_rcv_pll_to_wav.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/mp-sched/wfm_rcv_pll_to_wav.py' ) .read ( ) ) "
 
 pygen_gnuradio_core_src_examples_mp_sched_2227a: gnuradio-core/src/examples/mp-sched/CMakeFiles/pygen_gnuradio_core_src_examples_mp_sched_2227a
 pygen_gnuradio_core_src_examples_mp_sched_2227a: gnuradio-core/src/examples/mp-sched/plot_flops.py.exe

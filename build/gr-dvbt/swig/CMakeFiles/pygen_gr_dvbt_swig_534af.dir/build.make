@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -39,21 +42,18 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_dvbt_swig_534af.
 
-# Include the progress variables for this target.
-include gr-dvbt/swig/CMakeFiles/pygen_gr_dvbt_swig_534af.dir/progress.make
-
 gr-dvbt/swig/CMakeFiles/pygen_gr_dvbt_swig_534af: gr-dvbt/swig/dvbt_swig.pyc
 gr-dvbt/swig/CMakeFiles/pygen_gr_dvbt_swig_534af: gr-dvbt/swig/dvbt_swig.pyo
 
 gr-dvbt/swig/dvbt_swig.pyc: gr-dvbt/swig/dvbt_swig.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dvbt_swig.pyc"
-	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.pyc
+	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.pyc
 
 gr-dvbt/swig/dvbt_swig.pyo: gr-dvbt/swig/dvbt_swig.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dvbt_swig.pyo"
-	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.pyo
+	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.pyo
 
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
@@ -82,7 +82,7 @@ gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/swig/dvbt_swig.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/cmake -E make_directory /home/katsikas/gnuradio/build/gr-dvbt/swig
-	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module dvbt_swig -I/home/katsikas/gnuradio/gr-dvbt/lib -I/home/katsikas/gnuradio/gr-dvbt/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-dvbt/swig -I/home/katsikas/gnuradio/build/gr-dvbt/swig -outdir /home/katsikas/gnuradio/build/gr-dvbt/swig -c++ -I/home/katsikas/gnuradio/gr-dvbt/lib -I/home/katsikas/gnuradio/gr-dvbt/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-dvbt/swig -I/home/katsikas/gnuradio/build/gr-dvbt/swig -o /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-dvbt/swig/dvbt_swig.i
+	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/swig -python -fvirtual -modern -keyword -w511 -module dvbt_swig -I/home/katsikas/gnuradio/gr-dvbt/lib -I/home/katsikas/gnuradio/gr-dvbt/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-dvbt/swig -I/home/katsikas/gnuradio/build/gr-dvbt/swig -outdir /home/katsikas/gnuradio/build/gr-dvbt/swig -c++ -I/home/katsikas/gnuradio/gr-dvbt/lib -I/home/katsikas/gnuradio/gr-dvbt/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-dvbt/swig -I/home/katsikas/gnuradio/build/gr-dvbt/swig -o /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-dvbt/swig/dvbt_swig.i
 
 gr-dvbt/swig/dvbt_swig.py: gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx
 
@@ -93,27 +93,27 @@ gr-dvbt/swig/dvbt_swig.tag: gr-dvbt/swig/_dvbt_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && ./_dvbt_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.tag
 
-gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
-gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_consts.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_types.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_depad.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_randomizer.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_derandomizer.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_randomizer.h
-gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_types.h
-gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_depad.h
-gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
-gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_randomizer.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_consts.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
 gr-dvbt/swig/dvbt_swig_doc.i: gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dvbt_swig_doc.i"
-	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig_doc.i
+	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python2.7 -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig_doc.i
 
-gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
-gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_consts.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_types.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_depad.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_randomizer.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_derandomizer.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_randomizer.h
-gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_types.h
-gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_depad.h
-gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
-gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_randomizer.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_consts.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: gr-dvbt/swig/_dvbt_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for dvbt_swig_doc docs"

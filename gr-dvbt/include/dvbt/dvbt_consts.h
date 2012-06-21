@@ -26,7 +26,7 @@
 static const int PRBS_PERIOD = 8;
 static const int MPEG_SYNC_BYTE = 0x47;
 static const int DVBT_DSEGS_PER_FIELD = 312;
-static const int MPEG_INVERTED_SYNC_BYTE = 0xB8;
+//static const int MPEG_INVERTED_SYNC_BYTE = 0xB8;
 
 static const int DVBT_MPEG_DATA_LENGTH = 184;
 static const int DVBT_MPEG_SYNC_LENGTH = 187;
@@ -36,7 +36,7 @@ static const int DVBT_SUPER_FRAME_LENGTH = 1504;	// Superframe consists of 8 pac
 static const int MPEG_TRANSPORT_ERROR_BIT = 0x80;
 static const int DVBT_MPEG_RS_ENCODED_LENGTH = 204; 	// Packet after RS Encoding
 
-static const int INIT_PRBS_REGISTERS[] = {1,0,0,1,0,1,0,1,0,0,0,0,0,0,0};
+//static const int INIT_PRBS_REGISTERS[] = {1,0,0,1,0,1,0,1,0,0,0,0,0,0,0};
 
 #endif // _DVBT_CONSTS_H_
 

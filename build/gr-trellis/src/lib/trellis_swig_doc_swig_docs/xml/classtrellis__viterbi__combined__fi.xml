@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classtrellis__viterbi__combined__fi" kind="class" prot="public">
     <compoundname>trellis_viterbi_combined_fi</compoundname>
     <includes refid="trellis__viterbi__combined__fi_8h" local="no">trellis_viterbi_combined_fi.h</includes>
@@ -98,7 +98,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classtrellis__viterbi__combined__fi_1aa89c681c849f137b9c6c06da3ca3aa8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__viterbi__combined__fi_8h_1afebf94178bd6aa9c61ab1ead3f917002" kindref="member">trellis_viterbi_combined_fi_sptr</ref></type>
+        <type>friend TRELLIS_API <ref refid="trellis__viterbi__combined__fi_8h_1afebf94178bd6aa9c61ab1ead3f917002" kindref="member">trellis_viterbi_combined_fi_sptr</ref></type>
         <definition>TRELLIS_API trellis_viterbi_combined_fi_sptr trellis_make_viterbi_combined_fi</definition>
         <argsstring>(const fsm &amp;FSM, int K, int S0, int SK, int D, const std::vector&lt; float &gt; &amp;TABLE, trellis_metric_type_t TYPE)</argsstring>
         <name>trellis_make_viterbi_combined_fi</name>
@@ -346,6 +346,44 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="852">
+        <label>trellis_viterbi_combined_fi</label>
+        <link refid="classtrellis__viterbi__combined__fi"/>
+        <childnode refid="853" relation="usage">
+          <edgelabel>d_TABLE</edgelabel>
+        </childnode>
+        <childnode refid="854" relation="usage">
+          <edgelabel>d_FSM</edgelabel>
+        </childnode>
+      </node>
+      <node id="853">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="855">
+        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="856" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="854">
+        <label>fsm</label>
+        <link refid="classfsm"/>
+        <childnode refid="855" relation="usage">
+          <edgelabel>d_PI</edgelabel>
+          <edgelabel>d_PS</edgelabel>
+        </childnode>
+        <childnode refid="856" relation="usage">
+          <edgelabel>d_NS</edgelabel>
+          <edgelabel>d_TMl</edgelabel>
+          <edgelabel>d_TMi</edgelabel>
+          <edgelabel>d_OS</edgelabel>
+        </childnode>
+      </node>
+      <node id="856">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_combined_fi.h" line="51" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_combined_fi.h" bodystart="50" bodyend="97"/>
     <listofallmembers>
       <member refid="classtrellis__viterbi__combined__fi_1a7a7784e57e422e8253fb36b376a91ad6" prot="public" virt="non-virtual"><scope>trellis_viterbi_combined_fi</scope><name>D</name></member>

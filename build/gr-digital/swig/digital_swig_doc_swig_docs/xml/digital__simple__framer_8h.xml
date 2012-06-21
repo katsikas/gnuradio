@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="digital__simple__framer_8h" kind="file">
     <compoundname>digital_simple_framer.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__simple__framer_8h_1a705bb4b781d41cb286a7f458428b1bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__simple__framer_8h_1a83af2cc72133ec490a5c605529df6360" kindref="member">digital_simple_framer_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_simple_framer_sptr digital_make_simple_framer</definition>
+      <memberdef kind="function" id="digital__simple__framer_8h_1a36285b86970b9fc47466271babea80ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__simple__framer_8h_1a83af2cc72133ec490a5c605529df6360" kindref="member">digital_simple_framer_sptr</ref></type>
+        <definition>DIGITAL_API digital_simple_framer_sptr digital_make_simple_framer</definition>
         <argsstring>(int payload_bytesize)</argsstring>
         <name>digital_make_simple_framer</name>
         <param>
@@ -97,7 +97,7 @@
 <codeline lineno="29" refid="digital__simple__framer_8h_1a83af2cc72133ec490a5c605529df6360" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdigital__simple__framer" kindref="compound" tooltip="add sync field, seq number and command field to payloadTakes in enough samples to create a full outpu...">digital_simple_framer</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_simple_framer&gt;<sp/><ref refid="digital__simple__framer_8h_1a83af2cc72133ec490a5c605529df6360" kindref="member">digital_simple_framer_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__simple__framer_8h_1a83af2cc72133ec490a5c605529df6360" kindref="member">digital_simple_framer_sptr</ref><sp/><ref refid="digital__simple__framer_8h_1a705bb4b781d41cb286a7f458428b1bcc" kindref="member">digital_make_simple_framer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__simple__framer_8h_1a83af2cc72133ec490a5c605529df6360" kindref="member">digital_simple_framer_sptr</ref><sp/><ref refid="digital__simple__framer_8h_1a36285b86970b9fc47466271babea80ff" kindref="member">digital_make_simple_framer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44" refid="classdigital__simple__framer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__simple__framer" kindref="compound" tooltip="add sync field, seq number and command field to payloadTakes in enough samples to create a full outpu...">digital_simple_framer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_block</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">{</highlight></codeline>
@@ -107,7 +107,7 @@
 <codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>d_output_block_size;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__simple__framer_8h_1a83af2cc72133ec490a5c605529df6360" kindref="member">digital_simple_framer_sptr</ref></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__simple__framer_8h_1a705bb4b781d41cb286a7f458428b1bcc" kindref="member">digital_make_simple_framer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__simple__framer_8h_1a36285b86970b9fc47466271babea80ff" kindref="member">digital_make_simple_framer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="classdigital__simple__framer" kindref="compound" tooltip="add sync field, seq number and command field to payloadTakes in enough samples to create a full outpu...">digital_simple_framer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>

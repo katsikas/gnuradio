@@ -1,43 +1,43 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__realtime_8h" kind="file">
     <compoundname>gr_realtime.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="realtime_8h" local="no">gruel/realtime.h</includes>
     <incdepgraph>
-      <node id="10632">
+      <node id="12281">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="10635">
+      <node id="12284">
         <label>stdexcept</label>
       </node>
-      <node id="10630">
+      <node id="12279">
         <label>gr_realtime.h</label>
         <link refid="gr_realtime.h"/>
-        <childnode refid="10631" relation="include">
+        <childnode refid="12280" relation="include">
         </childnode>
-        <childnode refid="10633" relation="include">
+        <childnode refid="12282" relation="include">
         </childnode>
       </node>
-      <node id="10633">
+      <node id="12282">
         <label>gruel/realtime.h</label>
         <link refid="realtime_8h"/>
-        <childnode refid="10634" relation="include">
+        <childnode refid="12283" relation="include">
         </childnode>
-        <childnode refid="10635" relation="include">
+        <childnode refid="12284" relation="include">
         </childnode>
       </node>
-      <node id="10634">
+      <node id="12283">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="10632" relation="include">
+        <childnode refid="12281" relation="include">
         </childnode>
       </node>
-      <node id="10631">
+      <node id="12280">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="10632" relation="include">
+        <childnode refid="12281" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -58,7 +58,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__misc_1ga9aeee54f1970b0ab3dfab32ce0888f83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="namespacegruel_1a926b5ecf465d839c1f2865d324d65e49" kindref="member">gr_rt_status_t</ref></type>
+        <type>GR_CORE_API <ref refid="namespacegruel_1a926b5ecf465d839c1f2865d324d65e49" kindref="member">gr_rt_status_t</ref></type>
         <definition>GR_CORE_API gr_rt_status_t gr_enable_realtime_scheduling</definition>
         <argsstring>()</argsstring>
         <name>gr_enable_realtime_scheduling</name>

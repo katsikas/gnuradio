@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__message" kind="class" prot="public">
     <compoundname>gr_message</compoundname>
     <includes refid="gr__message_8h" local="no">gr_message.h</includes>
@@ -124,7 +124,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="67" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classgr__message_1a9b8bf12ae34af4cdf1167187d067f77b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
         <definition>GR_CORE_API gr_message_sptr gr_make_message</definition>
         <argsstring>(long type, double arg1, double arg2, size_t length)</argsstring>
         <name>gr_make_message</name>
@@ -153,7 +153,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="62"/>
       </memberdef>
       <memberdef kind="friend" id="classgr__message_1afb618d22cc9f9edbda64651171841822" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
         <definition>GR_CORE_API gr_message_sptr gr_make_message_from_string</definition>
         <argsstring>(const std::string s, long type, double arg1, double arg2)</argsstring>
         <name>gr_make_message_from_string</name>
@@ -293,7 +293,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="77" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" bodystart="77" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="classgr__message_1a820cbc9a5f12eef31bc55256cd7210b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_message::set_type</definition>
         <argsstring>(long type)</argsstring>
         <name>set_type</name>
@@ -310,7 +310,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="79" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" bodystart="79" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classgr__message_1ac5178f4481065285eb4b4bb5f21ada21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_message::set_arg1</definition>
         <argsstring>(double arg1)</argsstring>
         <name>set_arg1</name>
@@ -328,7 +328,7 @@
         <references refid="gc__spu__macs_8h_1a489500f7b5cfd21fa6730e3a56f1c1f7" compoundref="gc__spu__macs_8h" startline="172">arg1</references>
       </memberdef>
       <memberdef kind="function" id="classgr__message_1ab56c0ea898c120ac37f40bd6d8d838fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_message::set_arg2</definition>
         <argsstring>(double arg2)</argsstring>
         <name>set_arg2</name>
@@ -389,6 +389,22 @@
 <para>Message class. </para>    </briefdescription>
     <detaileddescription>
 <para>The ideas and method names for adjustable message length were lifted from the click modular router &quot;Packet&quot; class. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="8452">
+        <label>boost::shared_ptr&lt; gr_message &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="8451" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="8451">
+        <label>gr_message</label>
+        <link refid="classgr__message"/>
+        <childnode refid="8452" relation="usage">
+          <edgelabel>d_next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="48" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" bodystart="48" bodyend="87"/>
     <listofallmembers>
       <member refid="classgr__message_1a34f11c43ca1e2412b1404a14178d3ccb" prot="public" virt="non-virtual"><scope>gr_message</scope><name>arg1</name></member>

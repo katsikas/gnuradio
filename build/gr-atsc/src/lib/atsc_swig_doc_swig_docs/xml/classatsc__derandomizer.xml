@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classatsc__derandomizer" kind="class" prot="public">
     <compoundname>atsc_derandomizer</compoundname>
     <includes refid="atsc__derandomizer_8h" local="no">atsc_derandomizer.h</includes>
@@ -19,9 +19,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classatsc__derandomizer_1a2afc1c03a24b2497bb993dfe45df4319" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="atsc__derandomizer_8h_1af9e3ff1e4c83f468470b76fd3ca8b95b" kindref="member">atsc_derandomizer_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT atsc_derandomizer_sptr atsc_make_derandomizer</definition>
+      <memberdef kind="friend" id="classatsc__derandomizer_1a79941327ffe2a11e08cdf882995b10fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ATSC_API <ref refid="atsc__derandomizer_8h_1af9e3ff1e4c83f468470b76fd3ca8b95b" kindref="member">atsc_derandomizer_sptr</ref></type>
+        <definition>ATSC_API atsc_derandomizer_sptr atsc_make_derandomizer</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_derandomizer</name>
         <briefdescription>
@@ -92,10 +92,23 @@
 <para>&quot;dewhiten&quot; incoming mpeg transport stream packets</para><para>input: <ref refid="classatsc__mpeg__packet__no__sync" kindref="compound">atsc_mpeg_packet_no_sync</ref>; output: <ref refid="classatsc__mpeg__packet" kindref="compound">atsc_mpeg_packet</ref>; </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="23">
+        <label>atsci_randomizer</label>
+        <link refid="classatsci__randomizer"/>
+      </node>
+      <node id="22">
+        <label>atsc_derandomizer</label>
+        <link refid="classatsc__derandomizer"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>d_rand</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" bodystart="40" bodyend="54"/>
     <listofallmembers>
       <member refid="classatsc__derandomizer_1a4ce45b8195e8f68104e6a8b521c018ac" prot="private" virt="non-virtual"><scope>atsc_derandomizer</scope><name>atsc_derandomizer</name></member>
-      <member refid="classatsc__derandomizer_1a2afc1c03a24b2497bb993dfe45df4319" prot="private" virt="non-virtual"><scope>atsc_derandomizer</scope><name>atsc_make_derandomizer</name></member>
+      <member refid="classatsc__derandomizer_1a79941327ffe2a11e08cdf882995b10fe" prot="private" virt="non-virtual"><scope>atsc_derandomizer</scope><name>atsc_make_derandomizer</name></member>
       <member refid="classatsc__derandomizer_1a93cdc4cfa7bd19713b100287e6e6a424" prot="private" virt="non-virtual"><scope>atsc_derandomizer</scope><name>d_rand</name></member>
       <member refid="classatsc__derandomizer_1a4a5c074ef124eecec3e9a5fbf92cff34" prot="public" virt="non-virtual"><scope>atsc_derandomizer</scope><name>reset</name></member>
       <member refid="classatsc__derandomizer_1a3bfaf2eeb35fd6872336eceb45afd5eb" prot="public" virt="non-virtual"><scope>atsc_derandomizer</scope><name>work</name></member>

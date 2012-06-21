@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_grc_base_64b99.
-
-# Include the progress variables for this target.
-include grc/base/CMakeFiles/pygen_grc_base_64b99.dir/progress.make
 
 grc/base/CMakeFiles/pygen_grc_base_64b99: grc/base/odict.pyc
 grc/base/CMakeFiles/pygen_grc_base_64b99: grc/base/ParseXML.pyc
@@ -78,7 +78,7 @@ grc/base/odict.pyc: ../grc/base/Port.py
 grc/base/odict.pyc: ../grc/base/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating odict.pyc, ParseXML.pyc, Block.pyc, Connection.pyc, Constants.pyc, Element.pyc, FlowGraph.pyc, Param.pyc, Platform.pyc, Port.pyc, __init__.pyc"
-	cd /home/katsikas/gnuradio/build/grc/base && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/base/odict.py /home/katsikas/gnuradio/grc/base/ParseXML.py /home/katsikas/gnuradio/grc/base/Block.py /home/katsikas/gnuradio/grc/base/Connection.py /home/katsikas/gnuradio/grc/base/Constants.py /home/katsikas/gnuradio/grc/base/Element.py /home/katsikas/gnuradio/grc/base/FlowGraph.py /home/katsikas/gnuradio/grc/base/Param.py /home/katsikas/gnuradio/grc/base/Platform.py /home/katsikas/gnuradio/grc/base/Port.py /home/katsikas/gnuradio/grc/base/__init__.py /home/katsikas/gnuradio/build/grc/base/odict.pyc /home/katsikas/gnuradio/build/grc/base/ParseXML.pyc /home/katsikas/gnuradio/build/grc/base/Block.pyc /home/katsikas/gnuradio/build/grc/base/Connection.pyc /home/katsikas/gnuradio/build/grc/base/Constants.pyc /home/katsikas/gnuradio/build/grc/base/Element.pyc /home/katsikas/gnuradio/build/grc/base/FlowGraph.pyc /home/katsikas/gnuradio/build/grc/base/Param.pyc /home/katsikas/gnuradio/build/grc/base/Platform.pyc /home/katsikas/gnuradio/build/grc/base/Port.pyc /home/katsikas/gnuradio/build/grc/base/__init__.pyc
+	cd /home/katsikas/gnuradio/build/grc/base && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/base/odict.py /home/katsikas/gnuradio/grc/base/ParseXML.py /home/katsikas/gnuradio/grc/base/Block.py /home/katsikas/gnuradio/grc/base/Connection.py /home/katsikas/gnuradio/grc/base/Constants.py /home/katsikas/gnuradio/grc/base/Element.py /home/katsikas/gnuradio/grc/base/FlowGraph.py /home/katsikas/gnuradio/grc/base/Param.py /home/katsikas/gnuradio/grc/base/Platform.py /home/katsikas/gnuradio/grc/base/Port.py /home/katsikas/gnuradio/grc/base/__init__.py /home/katsikas/gnuradio/build/grc/base/odict.pyc /home/katsikas/gnuradio/build/grc/base/ParseXML.pyc /home/katsikas/gnuradio/build/grc/base/Block.pyc /home/katsikas/gnuradio/build/grc/base/Connection.pyc /home/katsikas/gnuradio/build/grc/base/Constants.pyc /home/katsikas/gnuradio/build/grc/base/Element.pyc /home/katsikas/gnuradio/build/grc/base/FlowGraph.pyc /home/katsikas/gnuradio/build/grc/base/Param.pyc /home/katsikas/gnuradio/build/grc/base/Platform.pyc /home/katsikas/gnuradio/build/grc/base/Port.pyc /home/katsikas/gnuradio/build/grc/base/__init__.pyc
 
 grc/base/ParseXML.pyc: grc/base/odict.pyc
 
@@ -113,7 +113,7 @@ grc/base/odict.pyo: ../grc/base/Port.py
 grc/base/odict.pyo: ../grc/base/__init__.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating odict.pyo, ParseXML.pyo, Block.pyo, Connection.pyo, Constants.pyo, Element.pyo, FlowGraph.pyo, Param.pyo, Platform.pyo, Port.pyo, __init__.pyo"
-	cd /home/katsikas/gnuradio/build/grc/base && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/base/odict.py /home/katsikas/gnuradio/grc/base/ParseXML.py /home/katsikas/gnuradio/grc/base/Block.py /home/katsikas/gnuradio/grc/base/Connection.py /home/katsikas/gnuradio/grc/base/Constants.py /home/katsikas/gnuradio/grc/base/Element.py /home/katsikas/gnuradio/grc/base/FlowGraph.py /home/katsikas/gnuradio/grc/base/Param.py /home/katsikas/gnuradio/grc/base/Platform.py /home/katsikas/gnuradio/grc/base/Port.py /home/katsikas/gnuradio/grc/base/__init__.py /home/katsikas/gnuradio/build/grc/base/odict.pyo /home/katsikas/gnuradio/build/grc/base/ParseXML.pyo /home/katsikas/gnuradio/build/grc/base/Block.pyo /home/katsikas/gnuradio/build/grc/base/Connection.pyo /home/katsikas/gnuradio/build/grc/base/Constants.pyo /home/katsikas/gnuradio/build/grc/base/Element.pyo /home/katsikas/gnuradio/build/grc/base/FlowGraph.pyo /home/katsikas/gnuradio/build/grc/base/Param.pyo /home/katsikas/gnuradio/build/grc/base/Platform.pyo /home/katsikas/gnuradio/build/grc/base/Port.pyo /home/katsikas/gnuradio/build/grc/base/__init__.pyo
+	cd /home/katsikas/gnuradio/build/grc/base && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/base/odict.py /home/katsikas/gnuradio/grc/base/ParseXML.py /home/katsikas/gnuradio/grc/base/Block.py /home/katsikas/gnuradio/grc/base/Connection.py /home/katsikas/gnuradio/grc/base/Constants.py /home/katsikas/gnuradio/grc/base/Element.py /home/katsikas/gnuradio/grc/base/FlowGraph.py /home/katsikas/gnuradio/grc/base/Param.py /home/katsikas/gnuradio/grc/base/Platform.py /home/katsikas/gnuradio/grc/base/Port.py /home/katsikas/gnuradio/grc/base/__init__.py /home/katsikas/gnuradio/build/grc/base/odict.pyo /home/katsikas/gnuradio/build/grc/base/ParseXML.pyo /home/katsikas/gnuradio/build/grc/base/Block.pyo /home/katsikas/gnuradio/build/grc/base/Connection.pyo /home/katsikas/gnuradio/build/grc/base/Constants.pyo /home/katsikas/gnuradio/build/grc/base/Element.pyo /home/katsikas/gnuradio/build/grc/base/FlowGraph.pyo /home/katsikas/gnuradio/build/grc/base/Param.pyo /home/katsikas/gnuradio/build/grc/base/Platform.pyo /home/katsikas/gnuradio/build/grc/base/Port.pyo /home/katsikas/gnuradio/build/grc/base/__init__.pyo
 
 grc/base/ParseXML.pyo: grc/base/odict.pyo
 

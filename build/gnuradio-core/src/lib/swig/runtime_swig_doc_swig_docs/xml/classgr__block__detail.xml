@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__block__detail" kind="class" prot="public">
     <compoundname>gr_block_detail</compoundname>
     <includes refid="gr__block__detail_8h" local="no">gr_block_detail.h</includes>
@@ -625,16 +625,34 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="344">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
       <node id="341">
         <label>gr_block_detail</label>
         <link refid="classgr__block__detail"/>
         <childnode refid="342" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="343" relation="usage">
           <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="345" relation="usage">
+          <edgelabel>d_output</edgelabel>
         </childnode>
       </node>
       <node id="342">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+      </node>
+      <node id="343">
         <label>gr_tpb_detail</label>
         <link refid="structgr__tpb__detail"/>
+        <childnode refid="344" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="345">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block_detail.h" line="40" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block_detail.h" bodystart="40" bodyend="172"/>

@@ -7,10 +7,10 @@ make[1]: Entering directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMake
 /usr/bin/cmake -E cmake_progress_report /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
 /usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: μοιραίο σφάλμα: intrin.h: Δεν υπάρχει τέτοιο αρχείο ή κατάλογος
+/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: intrin.h: No such file or directory
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] Error 1
 make[1]: Leaving directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] Error 1
 make: *** [cmTryCompileExec/fast] Error 2
 
 
@@ -23,9 +23,9 @@ make[1]: Entering directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMake
 /usr/bin/cmake -E cmake_progress_report /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
 /usr/bin/c++    -Dhave_maltivec   -maltivec -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/src.cxx
-cc1plus: σφάλμα: unrecognized command line option ‘-maltivec’
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+cc1plus: error: unrecognized command line option ‘-maltivec’
 make[1]: Leaving directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
 make: *** [cmTryCompileExec/fast] Error 2
 
 Source file was:
@@ -39,9 +39,9 @@ make[1]: Entering directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMake
 /usr/bin/cmake -E cmake_progress_report /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
 /usr/bin/c++    -Dhave_mfpu_neon   -mfpu=neon -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/src.cxx
-cc1plus: σφάλμα: unrecognized command line option ‘-mfpu=neon’
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+cc1plus: error: unrecognized command line option ‘-mfpu=neon’
 make[1]: Leaving directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
 make: *** [cmTryCompileExec/fast] Error 2
 
 Source file was:
@@ -55,7 +55,7 @@ make[1]: Entering directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMake
 /usr/bin/cmake -E cmake_progress_report /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
 /usr/bin/c++    -Dhave_mfloat_abi_softfp   -mfloat-abi=softfp -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/src.cxx
-cc1plus: σφάλμα: unrecognized command line option ‘-mfloat-abi=softfp’
+cc1plus: error: unrecognized command line option ‘-mfloat-abi=softfp’
 make[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
 make[1]: Leaving directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp'
 make: *** [cmTryCompileExec/fast] Error 2
@@ -75,9 +75,9 @@ Linking CXX executable cmTryCompileExec
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
 /usr/bin/c++      -Dhave_m32    CMakeFiles/cmTryCompileExec.dir/src.cxx.o  -o cmTryCompileExec -rdynamic 
 /usr/bin/ld: i386 architecture of input file `CMakeFiles/cmTryCompileExec.dir/src.cxx.o' is incompatible with i386:x86-64 output
-collect2: η ld επέστρεψε κατάσταση εξόδου 1
-make[1]: *** [cmTryCompileExec] Error 1
+collect2: ld returned 1 exit status
 make[1]: Leaving directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec] Error 1
 make: *** [cmTryCompileExec/fast] Error 2
 
 Source file was:

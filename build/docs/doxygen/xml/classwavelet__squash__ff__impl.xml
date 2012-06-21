@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classwavelet__squash__ff__impl" kind="class" prot="public">
     <compoundname>wavelet_squash_ff_impl</compoundname>
     <basecompoundref refid="classwavelet__squash__ff" prot="public" virt="non-virtual">wavelet_squash_ff</basecompoundref>
@@ -104,11 +104,11 @@
         <argsstring>(const std::vector&lt; float &gt; &amp;igrid, const std::vector&lt; float &gt; &amp;ogrid)</argsstring>
         <name>wavelet_squash_ff_impl</name>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>igrid</declname>
         </param>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>ogrid</declname>
         </param>
         <briefdescription>
@@ -122,16 +122,16 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classwavelet__squash__ff__impl_1ae43a28147189a5e47f8f344842bca3c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="wavelet__api_8h_1a9c8352ab43d3afa0c97ee932687f7a1e" kindref="member">WAVELET_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">wavelet_squash_ff_sptr</ref></type>
+        <type>friend WAVELET_API <ref refid="classboost_1_1shared__ptr" kindref="compound">wavelet_squash_ff_sptr</ref></type>
         <definition>WAVELET_API wavelet_squash_ff_sptr wavelet_make_squash_ff</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;igrid, const std::vector&lt; float &gt; &amp;ogrid)</argsstring>
         <name>wavelet_make_squash_ff</name>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>igrid</declname>
         </param>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>ogrid</declname>
         </param>
         <briefdescription>
@@ -168,11 +168,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -189,112 +189,232 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7732">
+      <node id="15340">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7733" relation="public-inheritance">
+        <childnode refid="15341" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7729">
+      <node id="15337">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7730" relation="public-inheritance">
+        <childnode refid="15338" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7727">
+      <node id="15335">
         <label>wavelet_squash_ff_impl</label>
         <link refid="classwavelet__squash__ff__impl"/>
-        <childnode refid="7728" relation="public-inheritance">
+        <childnode refid="15336" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7730">
+      <node id="15338">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7731" relation="public-inheritance">
+        <childnode refid="15339" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7728">
+      <node id="15336">
         <label>wavelet_squash_ff</label>
         <link refid="classwavelet__squash__ff"/>
-        <childnode refid="7729" relation="public-inheritance">
+        <childnode refid="15337" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7733">
+      <node id="15341">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7731">
+      <node id="15339">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7732" relation="public-inheritance">
+        <childnode refid="15340" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7739">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="7740" relation="public-inheritance">
+      <node id="15364">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="15358" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="7736">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="7737" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7734">
-        <label>wavelet_squash_ff_impl</label>
-        <link refid="classwavelet__squash__ff__impl"/>
-        <childnode refid="7735" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7737">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="7738" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7735">
-        <label>wavelet_squash_ff</label>
-        <link refid="classwavelet__squash__ff"/>
-        <childnode refid="7736" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7741">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="15357">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7742" relation="usage">
+        <childnode refid="15358" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7744">
+      <node id="15369">
+        <label>T</label>
+      </node>
+      <node id="15347">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="15348" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15344">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="15345" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15358">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="15359" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="15366">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="15342">
+        <label>wavelet_squash_ff_impl</label>
+        <link refid="classwavelet__squash__ff__impl"/>
+        <childnode refid="15343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15361">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="15345">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="15346" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15354" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="15354">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15355" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15343">
+        <label>wavelet_squash_ff</label>
+        <link refid="classwavelet__squash__ff"/>
+        <childnode refid="15344" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15368">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15369" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15355">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="15356" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="15365" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="15367" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="15362">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="15363" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15349">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15350" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15360">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="15361" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="15362" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="15364" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="15353">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7740">
+      <node id="15356">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="15357" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15348">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7742">
+      <node id="15359">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="15360" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="15363">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="15365">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="15366" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="15367">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="15368" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15350">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="15351" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="7738">
+      <node id="15346">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7739" relation="public-inheritance">
+        <childnode refid="15347" relation="public-inheritance">
         </childnode>
-        <childnode refid="7741" relation="usage">
+        <childnode refid="15349" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7743" relation="usage">
+        <childnode refid="15352" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7743">
+      <node id="15351">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="15352">
         <label>std::string</label>
-        <childnode refid="7744" relation="public-inheritance">
+        <childnode refid="15353" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -359,7 +479,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>set_relative_rate</name></member>
