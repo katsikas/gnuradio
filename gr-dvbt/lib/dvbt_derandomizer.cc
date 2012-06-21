@@ -45,6 +45,7 @@ dvbt_derandomizer::dvbt_derandomizer()
 	//printf("sizeof(dvbt_mpeg_packet_no_sync) = %d \n",sizeof(dvbt_mpeg_packet_no_sync));
 	//printf("sizeof(dvbt_mpeg_packet) = %d \n",sizeof(dvbt_mpeg_packet));
   	reset();
+	packets = 0;
 }
 
 void
@@ -91,12 +92,12 @@ dvbt_derandomizer::work (int noutput_items,
   		}*/
 	}
 
-	for (i = 0; i < noutput_items; i++){
+	/*for (i = 0; i < noutput_items; i++){
                 for (int j = 0; j < 4; j++){
                         printf("%d",out[i].data[j]);
                 }
                 printf("\n");
-        }
+        }*/
 
   	return noutput_items;
 }

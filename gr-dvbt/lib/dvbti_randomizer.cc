@@ -25,18 +25,11 @@
 #include <assert.h>
 #include <dvbt/dvbti_randomizer.h>
 
-unsigned char dvbti_randomizer::s_output_map[1 << 14];
-bool dvbti_randomizer::s_output_map_initialized_p = false;
-
 
 dvbti_randomizer::dvbti_randomizer ()
 {
 	printf("dvbti constructor \n");
-  	d_state = PRELOAD_VALUE;
-
-  	if (!s_output_map_initialized_p){
-		initialize_output_map ();
-	}
+  	prbs_register = INIT_SEQ;
 }
 
 /*!
@@ -50,24 +43,24 @@ dvbti_randomizer::dvbti_randomizer ()
  * and also get better cache line utilization.
  */
 void
-dvbti_randomizer::initialize_output_map ()
-{
-	printf("output map() \n");
-
-  	s_output_map_initialized_p = true;
-
-  	for (int i = 0; i < (1 << 14); i++){
-    		s_output_map[i] = slow_output_map (i << 2);
-	}
-}
-
-
-void
 dvbti_randomizer::reset ()
 {
 	printf("dvbti_reset() \n");
-  	d_state = PRELOAD_VALUE;
+  	prbs_register = INIT_SEQ;
 }
+
+
+unsigned int dvbti_randomizer::next_state(){
+	//prbs_register &= (1 << 4);
+	//printf("PRBS + %d \n",prbs_register);
+
+	char eightBits = 0;
+	//Set the 5th and 6th bits from the right to 1
+	//byte byte_array[24];
+
+        return prbs_register;
+}
+
 
 void
 dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet &in)
@@ -76,8 +69,10 @@ dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_pack
   	//assert (in.data[0] == MPEG_SYNC_BYTE);	// confirm it's there, then drop
 	//out.data[0] = in.data[0];
 
+	printf("aauuu = %c \n",next_state());
+
   	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
-    		out.data[i] = in.data[i] ^ output_and_clk ();
+    		out.data[i] = in.data[i];
 	}
 }
 
@@ -88,39 +83,6 @@ dvbti_randomizer::derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_
 	//out.data[0] = MPEG_SYNC_BYTE;		// add sync byte to beginning of packet
 
 	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
-    		out.data[i] = in.data[i] ^ output_and_clk ();
+    		out.data[i] = in.data[i];
 	}
-}
-
-unsigned char
-dvbti_randomizer::slow_output_map (int st)
-{
-	//printf("slow_map() \n");
-  	int output = 0;
-
-  	if (st & 0x8000)
-    		output |= 0x01;
-
-  	if (st & 0x2000)
-    		output |= 0x02;
-
-  	if (st & 0x1000)
-    		output |= 0x04;
-
-  	if (st & 0x0200)
-    		output |= 0x08;
-
-  	if (st & 0x0020)
-    		output |= 0x10;
-
-  	if (st & 0x0010)
-    		output |= 0x20;
-
-  	if (st & 0x0008)
-    		output |= 0x40;
-
-  	if (st & 0x0004)
-    		output |= 0x80;
-
-  	return output;
 }

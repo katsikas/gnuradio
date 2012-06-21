@@ -44,13 +44,13 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 	//printf("sizeof(dvbt_mpeg_packet) = %zu \n",sizeof(dvbt_mpeg_packet));
 	//printf("sizeof(dvbt_mpeg_packet_no_sync) = %zu \n",sizeof(dvbt_mpeg_packet_no_sync));
   	reset();
+	packets = 0;
 }
 
 void
 dvbt_randomizer::reset()
 {
 	printf("reset() \n");
-	packets = 0;
 
   	d_rand.reset();
   	d_field2 = false;
