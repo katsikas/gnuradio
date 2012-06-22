@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -10446,7 +10443,7 @@ gnuradio-core/src/lib/filter/gr_fir_ccc.cc: ../gnuradio-core/src/lib/filter/gri_
 gnuradio-core/src/lib/filter/gr_fir_ccc.cc: ../gnuradio-core/src/lib/filter/gri_fir_filter_with_buffer_XXX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_433)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "generating filter files"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter && /usr/bin/python2.7 -B -c "import os, sys;sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/python');sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/lib/filter');os.environ['srcdir'] = '/home/katsikas/gnuradio/gnuradio-core/src/lib/filter';from generate_all import generate_all;generate_all()"
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter && /usr/bin/python -B -c "import os, sys;sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/python');sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/lib/filter');os.environ['srcdir'] = '/home/katsikas/gnuradio/gnuradio-core/src/lib/filter';from generate_all import generate_all;generate_all()"
 
 gnuradio-core/src/lib/filter/gr_fir_ccc_generic.cc: gnuradio-core/src/lib/filter/gr_fir_ccc.cc
 
@@ -10677,12 +10674,12 @@ gnuradio-core/src/lib/filter/gr_rational_resampler_base_scc.i: gnuradio-core/src
 gnuradio-core/src/lib/general/sine_table.h: ../gnuradio-core/src/lib/general/gen_sine_table.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_434)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating general/sine_table.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 /home/katsikas/gnuradio/gnuradio-core/src/lib/general/gen_sine_table.py > /home/katsikas/gnuradio/build/gnuradio-core/src/lib/general/sine_table.h
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python /home/katsikas/gnuradio/gnuradio-core/src/lib/general/gen_sine_table.py > /home/katsikas/gnuradio/build/gnuradio-core/src/lib/general/sine_table.h
 
 gnuradio-core/src/lib/gengen/gr_vector_source_b.h: ../gnuradio-core/src/lib/gengen/gr_vector_source_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_435)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_vector_source_b.h, gengen/gr_vector_source_s.h, gengen/gr_vector_source_i.h, gengen/gr_vector_source_f.h, gengen/gr_vector_source_c.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_source_X gr_vector_source_X.h.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_source_X gr_vector_source_X.h.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_vector_source_s.h: gnuradio-core/src/lib/gengen/gr_vector_source_b.h
 
@@ -10695,7 +10692,7 @@ gnuradio-core/src/lib/gengen/gr_vector_source_c.h: gnuradio-core/src/lib/gengen/
 gnuradio-core/src/lib/gengen/gr_vector_source_b.cc: ../gnuradio-core/src/lib/gengen/gr_vector_source_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_436)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_vector_source_b.cc, gengen/gr_vector_source_s.cc, gengen/gr_vector_source_i.cc, gengen/gr_vector_source_f.cc, gengen/gr_vector_source_c.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_source_X gr_vector_source_X.cc.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_source_X gr_vector_source_X.cc.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_vector_source_s.cc: gnuradio-core/src/lib/gengen/gr_vector_source_b.cc
 
@@ -10708,17 +10705,17 @@ gnuradio-core/src/lib/gengen/gr_vector_source_c.cc: gnuradio-core/src/lib/gengen
 gnuradio-core/src/lib/gengen/gr_vector_insert_b.h: ../gnuradio-core/src/lib/gengen/gr_vector_insert_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_437)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_vector_insert_b.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_insert_X gr_vector_insert_X.h.t b
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_insert_X gr_vector_insert_X.h.t b
 
 gnuradio-core/src/lib/gengen/gr_vector_insert_b.cc: ../gnuradio-core/src/lib/gengen/gr_vector_insert_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_438)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_vector_insert_b.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_insert_X gr_vector_insert_X.cc.t b
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_insert_X gr_vector_insert_X.cc.t b
 
 gnuradio-core/src/lib/gengen/gr_vector_sink_b.h: ../gnuradio-core/src/lib/gengen/gr_vector_sink_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_439)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_vector_sink_b.h, gengen/gr_vector_sink_s.h, gengen/gr_vector_sink_i.h, gengen/gr_vector_sink_f.h, gengen/gr_vector_sink_c.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_sink_X gr_vector_sink_X.h.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_sink_X gr_vector_sink_X.h.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_vector_sink_s.h: gnuradio-core/src/lib/gengen/gr_vector_sink_b.h
 
@@ -10731,7 +10728,7 @@ gnuradio-core/src/lib/gengen/gr_vector_sink_c.h: gnuradio-core/src/lib/gengen/gr
 gnuradio-core/src/lib/gengen/gr_vector_sink_b.cc: ../gnuradio-core/src/lib/gengen/gr_vector_sink_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_440)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_vector_sink_b.cc, gengen/gr_vector_sink_s.cc, gengen/gr_vector_sink_i.cc, gengen/gr_vector_sink_f.cc, gengen/gr_vector_sink_c.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_sink_X gr_vector_sink_X.cc.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_vector_sink_X gr_vector_sink_X.cc.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_vector_sink_s.cc: gnuradio-core/src/lib/gengen/gr_vector_sink_b.cc
 
@@ -10744,7 +10741,7 @@ gnuradio-core/src/lib/gengen/gr_vector_sink_c.cc: gnuradio-core/src/lib/gengen/g
 gnuradio-core/src/lib/gengen/gr_noise_source_s.h: ../gnuradio-core/src/lib/gengen/gr_noise_source_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_441)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_noise_source_s.h, gengen/gr_noise_source_i.h, gengen/gr_noise_source_f.h, gengen/gr_noise_source_c.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_noise_source_X gr_noise_source_X.h.t s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_noise_source_X gr_noise_source_X.h.t s i f c
 
 gnuradio-core/src/lib/gengen/gr_noise_source_i.h: gnuradio-core/src/lib/gengen/gr_noise_source_s.h
 
@@ -10755,7 +10752,7 @@ gnuradio-core/src/lib/gengen/gr_noise_source_c.h: gnuradio-core/src/lib/gengen/g
 gnuradio-core/src/lib/gengen/gr_noise_source_s.cc: ../gnuradio-core/src/lib/gengen/gr_noise_source_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_442)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_noise_source_s.cc, gengen/gr_noise_source_i.cc, gengen/gr_noise_source_f.cc, gengen/gr_noise_source_c.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_noise_source_X gr_noise_source_X.cc.t s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_noise_source_X gr_noise_source_X.cc.t s i f c
 
 gnuradio-core/src/lib/gengen/gr_noise_source_i.cc: gnuradio-core/src/lib/gengen/gr_noise_source_s.cc
 
@@ -10766,7 +10763,7 @@ gnuradio-core/src/lib/gengen/gr_noise_source_c.cc: gnuradio-core/src/lib/gengen/
 gnuradio-core/src/lib/gengen/gr_sig_source_s.h: ../gnuradio-core/src/lib/gengen/gr_sig_source_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_443)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_sig_source_s.h, gengen/gr_sig_source_i.h, gengen/gr_sig_source_f.h, gengen/gr_sig_source_c.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sig_source_X gr_sig_source_X.h.t s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sig_source_X gr_sig_source_X.h.t s i f c
 
 gnuradio-core/src/lib/gengen/gr_sig_source_i.h: gnuradio-core/src/lib/gengen/gr_sig_source_s.h
 
@@ -10777,7 +10774,7 @@ gnuradio-core/src/lib/gengen/gr_sig_source_c.h: gnuradio-core/src/lib/gengen/gr_
 gnuradio-core/src/lib/gengen/gr_sig_source_s.cc: ../gnuradio-core/src/lib/gengen/gr_sig_source_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_444)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_sig_source_s.cc, gengen/gr_sig_source_i.cc, gengen/gr_sig_source_f.cc, gengen/gr_sig_source_c.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sig_source_X gr_sig_source_X.cc.t s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sig_source_X gr_sig_source_X.cc.t s i f c
 
 gnuradio-core/src/lib/gengen/gr_sig_source_i.cc: gnuradio-core/src/lib/gengen/gr_sig_source_s.cc
 
@@ -10788,7 +10785,7 @@ gnuradio-core/src/lib/gengen/gr_sig_source_c.cc: gnuradio-core/src/lib/gengen/gr
 gnuradio-core/src/lib/gengen/gr_probe_signal_b.h: ../gnuradio-core/src/lib/gengen/gr_probe_signal_X.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_445)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_probe_signal_b.h, gengen/gr_probe_signal_s.h, gengen/gr_probe_signal_i.h, gengen/gr_probe_signal_f.h, gengen/gr_probe_signal_c.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_X gr_probe_signal_X.h.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_X gr_probe_signal_X.h.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_probe_signal_s.h: gnuradio-core/src/lib/gengen/gr_probe_signal_b.h
 
@@ -10801,7 +10798,7 @@ gnuradio-core/src/lib/gengen/gr_probe_signal_c.h: gnuradio-core/src/lib/gengen/g
 gnuradio-core/src/lib/gengen/gr_probe_signal_b.cc: ../gnuradio-core/src/lib/gengen/gr_probe_signal_X.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_446)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_probe_signal_b.cc, gengen/gr_probe_signal_s.cc, gengen/gr_probe_signal_i.cc, gengen/gr_probe_signal_f.cc, gengen/gr_probe_signal_c.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_X gr_probe_signal_X.cc.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_X gr_probe_signal_X.cc.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_probe_signal_s.cc: gnuradio-core/src/lib/gengen/gr_probe_signal_b.cc
 
@@ -10814,7 +10811,7 @@ gnuradio-core/src/lib/gengen/gr_probe_signal_c.cc: gnuradio-core/src/lib/gengen/
 gnuradio-core/src/lib/gengen/gr_probe_signal_vb.h: ../gnuradio-core/src/lib/gengen/gr_probe_signal_vX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_447)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_probe_signal_vb.h, gengen/gr_probe_signal_vs.h, gengen/gr_probe_signal_vi.h, gengen/gr_probe_signal_vf.h, gengen/gr_probe_signal_vc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_vX gr_probe_signal_vX.h.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_vX gr_probe_signal_vX.h.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_probe_signal_vs.h: gnuradio-core/src/lib/gengen/gr_probe_signal_vb.h
 
@@ -10827,7 +10824,7 @@ gnuradio-core/src/lib/gengen/gr_probe_signal_vc.h: gnuradio-core/src/lib/gengen/
 gnuradio-core/src/lib/gengen/gr_probe_signal_vb.cc: ../gnuradio-core/src/lib/gengen/gr_probe_signal_vX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_448)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_probe_signal_vb.cc, gengen/gr_probe_signal_vs.cc, gengen/gr_probe_signal_vi.cc, gengen/gr_probe_signal_vf.cc, gengen/gr_probe_signal_vc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_vX gr_probe_signal_vX.cc.t b s i f c
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_probe_signal_vX gr_probe_signal_vX.cc.t b s i f c
 
 gnuradio-core/src/lib/gengen/gr_probe_signal_vs.cc: gnuradio-core/src/lib/gengen/gr_probe_signal_vb.cc
 
@@ -10840,7 +10837,7 @@ gnuradio-core/src/lib/gengen/gr_probe_signal_vc.cc: gnuradio-core/src/lib/gengen
 gnuradio-core/src/lib/gengen/gr_add_const_ss.h: ../gnuradio-core/src/lib/gengen/gr_add_const_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_449)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_add_const_ss.h, gengen/gr_add_const_ii.h, gengen/gr_add_const_ff.h, gengen/gr_add_const_cc.h, gengen/gr_add_const_sf.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_XX gr_add_const_XX.h.t ss ii ff cc sf
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_XX gr_add_const_XX.h.t ss ii ff cc sf
 
 gnuradio-core/src/lib/gengen/gr_add_const_ii.h: gnuradio-core/src/lib/gengen/gr_add_const_ss.h
 
@@ -10853,7 +10850,7 @@ gnuradio-core/src/lib/gengen/gr_add_const_sf.h: gnuradio-core/src/lib/gengen/gr_
 gnuradio-core/src/lib/gengen/gr_add_const_ss.cc: ../gnuradio-core/src/lib/gengen/gr_add_const_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_450)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_add_const_ss.cc, gengen/gr_add_const_ii.cc, gengen/gr_add_const_ff.cc, gengen/gr_add_const_cc.cc, gengen/gr_add_const_sf.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_XX gr_add_const_XX.cc.t ss ii ff cc sf
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_XX gr_add_const_XX.cc.t ss ii ff cc sf
 
 gnuradio-core/src/lib/gengen/gr_add_const_ii.cc: gnuradio-core/src/lib/gengen/gr_add_const_ss.cc
 
@@ -10866,21 +10863,21 @@ gnuradio-core/src/lib/gengen/gr_add_const_sf.cc: gnuradio-core/src/lib/gengen/gr
 gnuradio-core/src/lib/gengen/gr_multiply_const_ss.h: ../gnuradio-core/src/lib/gengen/gr_multiply_const_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_451)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_multiply_const_ss.h, gengen/gr_multiply_const_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_XX gr_multiply_const_XX.h.t ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_XX gr_multiply_const_XX.h.t ss ii
 
 gnuradio-core/src/lib/gengen/gr_multiply_const_ii.h: gnuradio-core/src/lib/gengen/gr_multiply_const_ss.h
 
 gnuradio-core/src/lib/gengen/gr_multiply_const_ss.cc: ../gnuradio-core/src/lib/gengen/gr_multiply_const_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_452)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_multiply_const_ss.cc, gengen/gr_multiply_const_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_XX gr_multiply_const_XX.cc.t ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_XX gr_multiply_const_XX.cc.t ss ii
 
 gnuradio-core/src/lib/gengen/gr_multiply_const_ii.cc: gnuradio-core/src/lib/gengen/gr_multiply_const_ss.cc
 
 gnuradio-core/src/lib/gengen/gr_add_ss.h: ../gnuradio-core/src/lib/gengen/gr_add_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_453)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_add_ss.h, gengen/gr_add_ii.h, gengen/gr_add_cc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_XX gr_add_XX.h.t ss ii cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_XX gr_add_XX.h.t ss ii cc
 
 gnuradio-core/src/lib/gengen/gr_add_ii.h: gnuradio-core/src/lib/gengen/gr_add_ss.h
 
@@ -10889,7 +10886,7 @@ gnuradio-core/src/lib/gengen/gr_add_cc.h: gnuradio-core/src/lib/gengen/gr_add_ss
 gnuradio-core/src/lib/gengen/gr_add_ss.cc: ../gnuradio-core/src/lib/gengen/gr_add_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_454)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_add_ss.cc, gengen/gr_add_ii.cc, gengen/gr_add_cc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_XX gr_add_XX.cc.t ss ii cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_XX gr_add_XX.cc.t ss ii cc
 
 gnuradio-core/src/lib/gengen/gr_add_ii.cc: gnuradio-core/src/lib/gengen/gr_add_ss.cc
 
@@ -10898,7 +10895,7 @@ gnuradio-core/src/lib/gengen/gr_add_cc.cc: gnuradio-core/src/lib/gengen/gr_add_s
 gnuradio-core/src/lib/gengen/gr_sub_ss.h: ../gnuradio-core/src/lib/gengen/gr_sub_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_455)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_sub_ss.h, gengen/gr_sub_ii.h, gengen/gr_sub_ff.h, gengen/gr_sub_cc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sub_XX gr_sub_XX.h.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sub_XX gr_sub_XX.h.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_sub_ii.h: gnuradio-core/src/lib/gengen/gr_sub_ss.h
 
@@ -10909,7 +10906,7 @@ gnuradio-core/src/lib/gengen/gr_sub_cc.h: gnuradio-core/src/lib/gengen/gr_sub_ss
 gnuradio-core/src/lib/gengen/gr_sub_ss.cc: ../gnuradio-core/src/lib/gengen/gr_sub_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_456)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_sub_ss.cc, gengen/gr_sub_ii.cc, gengen/gr_sub_ff.cc, gengen/gr_sub_cc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sub_XX gr_sub_XX.cc.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sub_XX gr_sub_XX.cc.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_sub_ii.cc: gnuradio-core/src/lib/gengen/gr_sub_ss.cc
 
@@ -10920,21 +10917,21 @@ gnuradio-core/src/lib/gengen/gr_sub_cc.cc: gnuradio-core/src/lib/gengen/gr_sub_s
 gnuradio-core/src/lib/gengen/gr_multiply_ss.h: ../gnuradio-core/src/lib/gengen/gr_multiply_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_457)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_multiply_ss.h, gengen/gr_multiply_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_XX gr_multiply_XX.h.t ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_XX gr_multiply_XX.h.t ss ii
 
 gnuradio-core/src/lib/gengen/gr_multiply_ii.h: gnuradio-core/src/lib/gengen/gr_multiply_ss.h
 
 gnuradio-core/src/lib/gengen/gr_multiply_ss.cc: ../gnuradio-core/src/lib/gengen/gr_multiply_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_458)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_multiply_ss.cc, gengen/gr_multiply_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_XX gr_multiply_XX.cc.t ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_XX gr_multiply_XX.cc.t ss ii
 
 gnuradio-core/src/lib/gengen/gr_multiply_ii.cc: gnuradio-core/src/lib/gengen/gr_multiply_ss.cc
 
 gnuradio-core/src/lib/gengen/gr_divide_ss.h: ../gnuradio-core/src/lib/gengen/gr_divide_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_459)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_divide_ss.h, gengen/gr_divide_ii.h, gengen/gr_divide_ff.h, gengen/gr_divide_cc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_divide_XX gr_divide_XX.h.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_divide_XX gr_divide_XX.h.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_divide_ii.h: gnuradio-core/src/lib/gengen/gr_divide_ss.h
 
@@ -10945,7 +10942,7 @@ gnuradio-core/src/lib/gengen/gr_divide_cc.h: gnuradio-core/src/lib/gengen/gr_div
 gnuradio-core/src/lib/gengen/gr_divide_ss.cc: ../gnuradio-core/src/lib/gengen/gr_divide_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_460)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_divide_ss.cc, gengen/gr_divide_ii.cc, gengen/gr_divide_ff.cc, gengen/gr_divide_cc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_divide_XX gr_divide_XX.cc.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_divide_XX gr_divide_XX.cc.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_divide_ii.cc: gnuradio-core/src/lib/gengen/gr_divide_ss.cc
 
@@ -10956,7 +10953,7 @@ gnuradio-core/src/lib/gengen/gr_divide_cc.cc: gnuradio-core/src/lib/gengen/gr_di
 gnuradio-core/src/lib/gengen/gr_mute_ss.h: ../gnuradio-core/src/lib/gengen/gr_mute_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_461)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_mute_ss.h, gengen/gr_mute_ii.h, gengen/gr_mute_ff.h, gengen/gr_mute_cc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_mute_XX gr_mute_XX.h.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_mute_XX gr_mute_XX.h.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_mute_ii.h: gnuradio-core/src/lib/gengen/gr_mute_ss.h
 
@@ -10967,7 +10964,7 @@ gnuradio-core/src/lib/gengen/gr_mute_cc.h: gnuradio-core/src/lib/gengen/gr_mute_
 gnuradio-core/src/lib/gengen/gr_mute_ss.cc: ../gnuradio-core/src/lib/gengen/gr_mute_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_462)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_mute_ss.cc, gengen/gr_mute_ii.cc, gengen/gr_mute_ff.cc, gengen/gr_mute_cc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_mute_XX gr_mute_XX.cc.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_mute_XX gr_mute_XX.cc.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_mute_ii.cc: gnuradio-core/src/lib/gengen/gr_mute_ss.cc
 
@@ -10978,7 +10975,7 @@ gnuradio-core/src/lib/gengen/gr_mute_cc.cc: gnuradio-core/src/lib/gengen/gr_mute
 gnuradio-core/src/lib/gengen/gr_add_const_vss.h: ../gnuradio-core/src/lib/gengen/gr_add_const_vXX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_463)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_add_const_vss.h, gengen/gr_add_const_vii.h, gengen/gr_add_const_vff.h, gengen/gr_add_const_vcc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_vXX gr_add_const_vXX.h.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_vXX gr_add_const_vXX.h.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_add_const_vii.h: gnuradio-core/src/lib/gengen/gr_add_const_vss.h
 
@@ -10989,7 +10986,7 @@ gnuradio-core/src/lib/gengen/gr_add_const_vcc.h: gnuradio-core/src/lib/gengen/gr
 gnuradio-core/src/lib/gengen/gr_add_const_vss.cc: ../gnuradio-core/src/lib/gengen/gr_add_const_vXX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_464)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_add_const_vss.cc, gengen/gr_add_const_vii.cc, gengen/gr_add_const_vff.cc, gengen/gr_add_const_vcc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_vXX gr_add_const_vXX.cc.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_add_const_vXX gr_add_const_vXX.cc.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_add_const_vii.cc: gnuradio-core/src/lib/gengen/gr_add_const_vss.cc
 
@@ -11000,7 +10997,7 @@ gnuradio-core/src/lib/gengen/gr_add_const_vcc.cc: gnuradio-core/src/lib/gengen/g
 gnuradio-core/src/lib/gengen/gr_multiply_const_vss.h: ../gnuradio-core/src/lib/gengen/gr_multiply_const_vXX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_465)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_multiply_const_vss.h, gengen/gr_multiply_const_vii.h, gengen/gr_multiply_const_vff.h, gengen/gr_multiply_const_vcc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_vXX gr_multiply_const_vXX.h.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_vXX gr_multiply_const_vXX.h.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_multiply_const_vii.h: gnuradio-core/src/lib/gengen/gr_multiply_const_vss.h
 
@@ -11011,7 +11008,7 @@ gnuradio-core/src/lib/gengen/gr_multiply_const_vcc.h: gnuradio-core/src/lib/geng
 gnuradio-core/src/lib/gengen/gr_multiply_const_vss.cc: ../gnuradio-core/src/lib/gengen/gr_multiply_const_vXX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_466)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_multiply_const_vss.cc, gengen/gr_multiply_const_vii.cc, gengen/gr_multiply_const_vff.cc, gengen/gr_multiply_const_vcc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_vXX gr_multiply_const_vXX.cc.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_multiply_const_vXX gr_multiply_const_vXX.cc.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_multiply_const_vii.cc: gnuradio-core/src/lib/gengen/gr_multiply_const_vss.cc
 
@@ -11022,7 +11019,7 @@ gnuradio-core/src/lib/gengen/gr_multiply_const_vcc.cc: gnuradio-core/src/lib/gen
 gnuradio-core/src/lib/gengen/gr_integrate_ss.h: ../gnuradio-core/src/lib/gengen/gr_integrate_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_467)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_integrate_ss.h, gengen/gr_integrate_ii.h, gengen/gr_integrate_ff.h, gengen/gr_integrate_cc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_integrate_XX gr_integrate_XX.h.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_integrate_XX gr_integrate_XX.h.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_integrate_ii.h: gnuradio-core/src/lib/gengen/gr_integrate_ss.h
 
@@ -11033,7 +11030,7 @@ gnuradio-core/src/lib/gengen/gr_integrate_cc.h: gnuradio-core/src/lib/gengen/gr_
 gnuradio-core/src/lib/gengen/gr_integrate_ss.cc: ../gnuradio-core/src/lib/gengen/gr_integrate_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_468)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_integrate_ss.cc, gengen/gr_integrate_ii.cc, gengen/gr_integrate_ff.cc, gengen/gr_integrate_cc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_integrate_XX gr_integrate_XX.cc.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_integrate_XX gr_integrate_XX.cc.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_integrate_ii.cc: gnuradio-core/src/lib/gengen/gr_integrate_ss.cc
 
@@ -11044,7 +11041,7 @@ gnuradio-core/src/lib/gengen/gr_integrate_cc.cc: gnuradio-core/src/lib/gengen/gr
 gnuradio-core/src/lib/gengen/gr_moving_average_ss.h: ../gnuradio-core/src/lib/gengen/gr_moving_average_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_469)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_moving_average_ss.h, gengen/gr_moving_average_ii.h, gengen/gr_moving_average_ff.h, gengen/gr_moving_average_cc.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_moving_average_XX gr_moving_average_XX.h.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_moving_average_XX gr_moving_average_XX.h.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_moving_average_ii.h: gnuradio-core/src/lib/gengen/gr_moving_average_ss.h
 
@@ -11055,7 +11052,7 @@ gnuradio-core/src/lib/gengen/gr_moving_average_cc.h: gnuradio-core/src/lib/genge
 gnuradio-core/src/lib/gengen/gr_moving_average_ss.cc: ../gnuradio-core/src/lib/gengen/gr_moving_average_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_470)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_moving_average_ss.cc, gengen/gr_moving_average_ii.cc, gengen/gr_moving_average_ff.cc, gengen/gr_moving_average_cc.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_moving_average_XX gr_moving_average_XX.cc.t ss ii ff cc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_moving_average_XX gr_moving_average_XX.cc.t ss ii ff cc
 
 gnuradio-core/src/lib/gengen/gr_moving_average_ii.cc: gnuradio-core/src/lib/gengen/gr_moving_average_ss.cc
 
@@ -11066,7 +11063,7 @@ gnuradio-core/src/lib/gengen/gr_moving_average_cc.cc: gnuradio-core/src/lib/geng
 gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bf.h: ../gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_471)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_chunks_to_symbols_bf.h, gengen/gr_chunks_to_symbols_bc.h, gengen/gr_chunks_to_symbols_sf.h, gengen/gr_chunks_to_symbols_sc.h, gengen/gr_chunks_to_symbols_if.h, gengen/gr_chunks_to_symbols_ic.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_chunks_to_symbols_XX gr_chunks_to_symbols_XX.h.t bf bc sf sc if ic
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_chunks_to_symbols_XX gr_chunks_to_symbols_XX.h.t bf bc sf sc if ic
 
 gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bc.h: gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bf.h
 
@@ -11081,7 +11078,7 @@ gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_ic.h: gnuradio-core/src/lib/ge
 gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bf.cc: ../gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_472)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_chunks_to_symbols_bf.cc, gengen/gr_chunks_to_symbols_bc.cc, gengen/gr_chunks_to_symbols_sf.cc, gengen/gr_chunks_to_symbols_sc.cc, gengen/gr_chunks_to_symbols_if.cc, gengen/gr_chunks_to_symbols_ic.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_chunks_to_symbols_XX gr_chunks_to_symbols_XX.cc.t bf bc sf sc if ic
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_chunks_to_symbols_XX gr_chunks_to_symbols_XX.cc.t bf bc sf sc if ic
 
 gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bc.cc: gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bf.cc
 
@@ -11096,7 +11093,7 @@ gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_ic.cc: gnuradio-core/src/lib/g
 gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_bb.h: ../gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_473)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_unpacked_to_packed_bb.h, gengen/gr_unpacked_to_packed_ss.h, gengen/gr_unpacked_to_packed_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_unpacked_to_packed_XX gr_unpacked_to_packed_XX.h.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_unpacked_to_packed_XX gr_unpacked_to_packed_XX.h.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_ss.h: gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_bb.h
 
@@ -11105,7 +11102,7 @@ gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_ii.h: gnuradio-core/src/lib/g
 gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_bb.cc: ../gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_474)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_unpacked_to_packed_bb.cc, gengen/gr_unpacked_to_packed_ss.cc, gengen/gr_unpacked_to_packed_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_unpacked_to_packed_XX gr_unpacked_to_packed_XX.cc.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_unpacked_to_packed_XX gr_unpacked_to_packed_XX.cc.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_ss.cc: gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_bb.cc
 
@@ -11114,7 +11111,7 @@ gnuradio-core/src/lib/gengen/gr_unpacked_to_packed_ii.cc: gnuradio-core/src/lib/
 gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_bb.h: ../gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_475)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_packed_to_unpacked_bb.h, gengen/gr_packed_to_unpacked_ss.h, gengen/gr_packed_to_unpacked_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_packed_to_unpacked_XX gr_packed_to_unpacked_XX.h.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_packed_to_unpacked_XX gr_packed_to_unpacked_XX.h.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_ss.h: gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_bb.h
 
@@ -11123,7 +11120,7 @@ gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_ii.h: gnuradio-core/src/lib/g
 gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_bb.cc: ../gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_476)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_packed_to_unpacked_bb.cc, gengen/gr_packed_to_unpacked_ss.cc, gengen/gr_packed_to_unpacked_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_packed_to_unpacked_XX gr_packed_to_unpacked_XX.cc.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_packed_to_unpacked_XX gr_packed_to_unpacked_XX.cc.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_ss.cc: gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_bb.cc
 
@@ -11132,7 +11129,7 @@ gnuradio-core/src/lib/gengen/gr_packed_to_unpacked_ii.cc: gnuradio-core/src/lib/
 gnuradio-core/src/lib/gengen/gr_xor_bb.h: ../gnuradio-core/src/lib/gengen/gr_xor_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_477)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_xor_bb.h, gengen/gr_xor_ss.h, gengen/gr_xor_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_xor_XX gr_xor_XX.h.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_xor_XX gr_xor_XX.h.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_xor_ss.h: gnuradio-core/src/lib/gengen/gr_xor_bb.h
 
@@ -11141,7 +11138,7 @@ gnuradio-core/src/lib/gengen/gr_xor_ii.h: gnuradio-core/src/lib/gengen/gr_xor_bb
 gnuradio-core/src/lib/gengen/gr_xor_bb.cc: ../gnuradio-core/src/lib/gengen/gr_xor_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_478)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_xor_bb.cc, gengen/gr_xor_ss.cc, gengen/gr_xor_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_xor_XX gr_xor_XX.cc.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_xor_XX gr_xor_XX.cc.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_xor_ss.cc: gnuradio-core/src/lib/gengen/gr_xor_bb.cc
 
@@ -11150,7 +11147,7 @@ gnuradio-core/src/lib/gengen/gr_xor_ii.cc: gnuradio-core/src/lib/gengen/gr_xor_b
 gnuradio-core/src/lib/gengen/gr_and_bb.h: ../gnuradio-core/src/lib/gengen/gr_and_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_479)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_and_bb.h, gengen/gr_and_ss.h, gengen/gr_and_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_XX gr_and_XX.h.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_XX gr_and_XX.h.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_and_ss.h: gnuradio-core/src/lib/gengen/gr_and_bb.h
 
@@ -11159,7 +11156,7 @@ gnuradio-core/src/lib/gengen/gr_and_ii.h: gnuradio-core/src/lib/gengen/gr_and_bb
 gnuradio-core/src/lib/gengen/gr_and_bb.cc: ../gnuradio-core/src/lib/gengen/gr_and_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_480)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_and_bb.cc, gengen/gr_and_ss.cc, gengen/gr_and_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_XX gr_and_XX.cc.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_XX gr_and_XX.cc.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_and_ss.cc: gnuradio-core/src/lib/gengen/gr_and_bb.cc
 
@@ -11168,7 +11165,7 @@ gnuradio-core/src/lib/gengen/gr_and_ii.cc: gnuradio-core/src/lib/gengen/gr_and_b
 gnuradio-core/src/lib/gengen/gr_and_const_bb.h: ../gnuradio-core/src/lib/gengen/gr_and_const_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_481)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_and_const_bb.h, gengen/gr_and_const_ss.h, gengen/gr_and_const_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_const_XX gr_and_const_XX.h.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_const_XX gr_and_const_XX.h.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_and_const_ss.h: gnuradio-core/src/lib/gengen/gr_and_const_bb.h
 
@@ -11177,7 +11174,7 @@ gnuradio-core/src/lib/gengen/gr_and_const_ii.h: gnuradio-core/src/lib/gengen/gr_
 gnuradio-core/src/lib/gengen/gr_and_const_bb.cc: ../gnuradio-core/src/lib/gengen/gr_and_const_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_482)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_and_const_bb.cc, gengen/gr_and_const_ss.cc, gengen/gr_and_const_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_const_XX gr_and_const_XX.cc.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_and_const_XX gr_and_const_XX.cc.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_and_const_ss.cc: gnuradio-core/src/lib/gengen/gr_and_const_bb.cc
 
@@ -11186,7 +11183,7 @@ gnuradio-core/src/lib/gengen/gr_and_const_ii.cc: gnuradio-core/src/lib/gengen/gr
 gnuradio-core/src/lib/gengen/gr_or_bb.h: ../gnuradio-core/src/lib/gengen/gr_or_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_483)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_or_bb.h, gengen/gr_or_ss.h, gengen/gr_or_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_or_XX gr_or_XX.h.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_or_XX gr_or_XX.h.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_or_ss.h: gnuradio-core/src/lib/gengen/gr_or_bb.h
 
@@ -11195,7 +11192,7 @@ gnuradio-core/src/lib/gengen/gr_or_ii.h: gnuradio-core/src/lib/gengen/gr_or_bb.h
 gnuradio-core/src/lib/gengen/gr_or_bb.cc: ../gnuradio-core/src/lib/gengen/gr_or_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_484)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_or_bb.cc, gengen/gr_or_ss.cc, gengen/gr_or_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_or_XX gr_or_XX.cc.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_or_XX gr_or_XX.cc.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_or_ss.cc: gnuradio-core/src/lib/gengen/gr_or_bb.cc
 
@@ -11204,7 +11201,7 @@ gnuradio-core/src/lib/gengen/gr_or_ii.cc: gnuradio-core/src/lib/gengen/gr_or_bb.
 gnuradio-core/src/lib/gengen/gr_not_bb.h: ../gnuradio-core/src/lib/gengen/gr_not_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_485)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_not_bb.h, gengen/gr_not_ss.h, gengen/gr_not_ii.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_not_XX gr_not_XX.h.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_not_XX gr_not_XX.h.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_not_ss.h: gnuradio-core/src/lib/gengen/gr_not_bb.h
 
@@ -11213,7 +11210,7 @@ gnuradio-core/src/lib/gengen/gr_not_ii.h: gnuradio-core/src/lib/gengen/gr_not_bb
 gnuradio-core/src/lib/gengen/gr_not_bb.cc: ../gnuradio-core/src/lib/gengen/gr_not_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_486)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_not_bb.cc, gengen/gr_not_ss.cc, gengen/gr_not_ii.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_not_XX gr_not_XX.cc.t bb ss ii
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_not_XX gr_not_XX.cc.t bb ss ii
 
 gnuradio-core/src/lib/gengen/gr_not_ss.cc: gnuradio-core/src/lib/gengen/gr_not_bb.cc
 
@@ -11222,7 +11219,7 @@ gnuradio-core/src/lib/gengen/gr_not_ii.cc: gnuradio-core/src/lib/gengen/gr_not_b
 gnuradio-core/src/lib/gengen/gr_sample_and_hold_bb.h: ../gnuradio-core/src/lib/gengen/gr_sample_and_hold_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_487)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_sample_and_hold_bb.h, gengen/gr_sample_and_hold_ss.h, gengen/gr_sample_and_hold_ii.h, gengen/gr_sample_and_hold_ff.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sample_and_hold_XX gr_sample_and_hold_XX.h.t bb ss ii ff
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sample_and_hold_XX gr_sample_and_hold_XX.h.t bb ss ii ff
 
 gnuradio-core/src/lib/gengen/gr_sample_and_hold_ss.h: gnuradio-core/src/lib/gengen/gr_sample_and_hold_bb.h
 
@@ -11233,7 +11230,7 @@ gnuradio-core/src/lib/gengen/gr_sample_and_hold_ff.h: gnuradio-core/src/lib/geng
 gnuradio-core/src/lib/gengen/gr_sample_and_hold_bb.cc: ../gnuradio-core/src/lib/gengen/gr_sample_and_hold_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_488)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_sample_and_hold_bb.cc, gengen/gr_sample_and_hold_ss.cc, gengen/gr_sample_and_hold_ii.cc, gengen/gr_sample_and_hold_ff.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sample_and_hold_XX gr_sample_and_hold_XX.cc.t bb ss ii ff
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_sample_and_hold_XX gr_sample_and_hold_XX.cc.t bb ss ii ff
 
 gnuradio-core/src/lib/gengen/gr_sample_and_hold_ss.cc: gnuradio-core/src/lib/gengen/gr_sample_and_hold_bb.cc
 
@@ -11244,7 +11241,7 @@ gnuradio-core/src/lib/gengen/gr_sample_and_hold_ff.cc: gnuradio-core/src/lib/gen
 gnuradio-core/src/lib/gengen/gr_argmax_fs.h: ../gnuradio-core/src/lib/gengen/gr_argmax_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_489)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_argmax_fs.h, gengen/gr_argmax_is.h, gengen/gr_argmax_ss.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_argmax_XX gr_argmax_XX.h.t fs is ss
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_argmax_XX gr_argmax_XX.h.t fs is ss
 
 gnuradio-core/src/lib/gengen/gr_argmax_is.h: gnuradio-core/src/lib/gengen/gr_argmax_fs.h
 
@@ -11253,7 +11250,7 @@ gnuradio-core/src/lib/gengen/gr_argmax_ss.h: gnuradio-core/src/lib/gengen/gr_arg
 gnuradio-core/src/lib/gengen/gr_argmax_fs.cc: ../gnuradio-core/src/lib/gengen/gr_argmax_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_490)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_argmax_fs.cc, gengen/gr_argmax_is.cc, gengen/gr_argmax_ss.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_argmax_XX gr_argmax_XX.cc.t fs is ss
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_argmax_XX gr_argmax_XX.cc.t fs is ss
 
 gnuradio-core/src/lib/gengen/gr_argmax_is.cc: gnuradio-core/src/lib/gengen/gr_argmax_fs.cc
 
@@ -11262,7 +11259,7 @@ gnuradio-core/src/lib/gengen/gr_argmax_ss.cc: gnuradio-core/src/lib/gengen/gr_ar
 gnuradio-core/src/lib/gengen/gr_max_ff.h: ../gnuradio-core/src/lib/gengen/gr_max_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_491)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_max_ff.h, gengen/gr_max_ii.h, gengen/gr_max_ss.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_max_XX gr_max_XX.h.t ff ii ss
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_max_XX gr_max_XX.h.t ff ii ss
 
 gnuradio-core/src/lib/gengen/gr_max_ii.h: gnuradio-core/src/lib/gengen/gr_max_ff.h
 
@@ -11271,7 +11268,7 @@ gnuradio-core/src/lib/gengen/gr_max_ss.h: gnuradio-core/src/lib/gengen/gr_max_ff
 gnuradio-core/src/lib/gengen/gr_max_ff.cc: ../gnuradio-core/src/lib/gengen/gr_max_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_492)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_max_ff.cc, gengen/gr_max_ii.cc, gengen/gr_max_ss.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_max_XX gr_max_XX.cc.t ff ii ss
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_max_XX gr_max_XX.cc.t ff ii ss
 
 gnuradio-core/src/lib/gengen/gr_max_ii.cc: gnuradio-core/src/lib/gengen/gr_max_ff.cc
 
@@ -11280,7 +11277,7 @@ gnuradio-core/src/lib/gengen/gr_max_ss.cc: gnuradio-core/src/lib/gengen/gr_max_f
 gnuradio-core/src/lib/gengen/gr_peak_detector_fb.h: ../gnuradio-core/src/lib/gengen/gr_peak_detector_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_493)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_peak_detector_fb.h, gengen/gr_peak_detector_ib.h, gengen/gr_peak_detector_sb.h"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_peak_detector_XX gr_peak_detector_XX.h.t fb ib sb
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_peak_detector_XX gr_peak_detector_XX.h.t fb ib sb
 
 gnuradio-core/src/lib/gengen/gr_peak_detector_ib.h: gnuradio-core/src/lib/gengen/gr_peak_detector_fb.h
 
@@ -11289,7 +11286,7 @@ gnuradio-core/src/lib/gengen/gr_peak_detector_sb.h: gnuradio-core/src/lib/gengen
 gnuradio-core/src/lib/gengen/gr_peak_detector_fb.cc: ../gnuradio-core/src/lib/gengen/gr_peak_detector_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_494)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen/gr_peak_detector_fb.cc, gengen/gr_peak_detector_ib.cc, gengen/gr_peak_detector_sb.cc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_peak_detector_XX gr_peak_detector_XX.cc.t fb ib sb
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_helper.py gr_peak_detector_XX gr_peak_detector_XX.cc.t fb ib sb
 
 gnuradio-core/src/lib/gengen/gr_peak_detector_ib.cc: gnuradio-core/src/lib/gengen/gr_peak_detector_fb.cc
 
@@ -12174,7 +12171,7 @@ gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: /usr/lib/libboost_thre
 gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: /usr/lib/libfftw3f.so
 gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: /usr/lib/libfftw3f_threads.so
 gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: volk/lib/libvolk.so.0.0.0
-gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: /usr/lib/liborc-0.4.so
+gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: /usr/lib/x86_64-linux-gnu/liborc-0.4.so
 gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make
 gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0: gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-core-3.6.1git.so"

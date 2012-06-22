@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "dvbt_swig.pyo"
   "dvbt_swigPYTHON_wrap.cxx"
   "dvbt_swig.py"
-  "dvbt_swig.tag"
   "dvbt_swig_doc.i"
+  "dvbt_swig.tag"
   "dvbt_swig_doc_swig_docs/xml/index.xml"
   "dvbt_swig_doc_swig_docs/xml/combine.xslt"
 )

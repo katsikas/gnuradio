@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgruel_1_1msg__queue" kind="class" prot="public">
     <compoundname>gruel::msg_queue</compoundname>
     <includes refid="msg__queue_8h" local="no">msg_queue.h</includes>
@@ -222,18 +222,6 @@ Block if queue if full. </para>        </detaileddescription>
 <para>thread-safe message queue </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="462">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="461">
-        <label>gruel::msg_queue</label>
-        <link refid="classgruel_1_1msg__queue"/>
-        <childnode refid="462" relation="usage">
-          <edgelabel>d_msgs</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h" line="40" bodyfile="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h" bodystart="40" bodyend="87"/>
     <listofallmembers>
       <member refid="classgruel_1_1msg__queue_1a4ced37ac20a7a620540a03992bf74ab0" prot="public" virt="non-virtual"><scope>gruel::msg_queue</scope><name>count</name></member>

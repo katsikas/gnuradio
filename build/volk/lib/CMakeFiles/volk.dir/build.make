@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,101 +46,9 @@ include volk/lib/CMakeFiles/volk.dir/progress.make
 # Include the compile flags for this target's objects.
 include volk/lib/CMakeFiles/volk.dir/flags.make
 
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c > CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: volk/lib/volk_32i_x2_or_32i_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c > CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o
-
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: volk/lib/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c
 
@@ -164,101 +69,55 @@ volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o.provid
 
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c > CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c > CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: volk/lib/volk_16u_byteswap_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_max_32f_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c > CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c > CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c > CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o
 
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_subtract_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_subtract_32f_a_orc_impl.c
 
@@ -279,78 +138,32 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o.provides: v
 
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: volk/lib/volk_32f_s32f_normalize_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c > CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o
 
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_add_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_add_32f_a_orc_impl.c
 
@@ -371,101 +184,32 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o.provides: volk/l
 
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_min_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c > CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: volk/lib/volk_8i_convert_16i_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c > CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_18)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.i
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.s
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides
-
-volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o
 
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: volk/lib/volk_32fc_32f_multiply_32fc_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_32f_multiply_32fc_a_orc_impl.c
 
@@ -486,9 +230,124 @@ volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o.provides
 
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o
 
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: volk/lib/volk_8i_convert_16i_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c > CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c > CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c -o CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: volk/lib/volk_32i_x2_and_32i_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c > CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: volk/lib/volk_32i_x2_or_32i_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c > CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o
+
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: volk/lib/volk_32f_sqrt_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_sqrt_32f_a_orc_impl.c
 
@@ -511,7 +370,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o.provides.build: vo
 
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_divide_32f_a_orc_impl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_divide_32f_a_orc_impl.c
 
@@ -532,97 +391,235 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o.provides: vol
 
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_max_32f_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c > CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c > CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: volk/lib/volk_32f_s32f_normalize_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: volk/lib/volk_16u_byteswap_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c > CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.i
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.s
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides
+
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o
+
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c > CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_23)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c > CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c > CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c -o CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c -o CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: volk/lib/volk_32f_x2_min_32f_a_orc_impl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_24)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c > CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o
 
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: volk/lib/volk_32i_x2_and_32i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_25)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o   -c /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c
 
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c > CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.i
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.i"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c > CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.i
 
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c -o CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.s
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.s"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c -o CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.s
 
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires:
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires:
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires
 
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides.build
-.PHONY : volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires
+	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides.build
+.PHONY : volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides
 
-volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o
 
 volk/lib/CMakeFiles/volk.dir/volk_prefs.c.o: volk/lib/CMakeFiles/volk.dir/flags.make
 volk/lib/CMakeFiles/volk.dir/volk_prefs.c.o: ../volk/lib/volk_prefs.c
@@ -923,2094 +920,2094 @@ volk/lib/CMakeFiles/volk.dir/volk_machine_avx_64_orc.c.o.provides: volk/lib/CMak
 
 volk/lib/CMakeFiles/volk.dir/volk_machine_avx_64_orc.c.o.provides.build: volk/lib/CMakeFiles/volk.dir/volk_machine_avx_64_orc.c.o
 
-volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c: ../volk/orc/volk_16ic_deinterleave_16i_x2_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_39)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16ic_deinterleave_16i_x2_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16ic_deinterleave_16i_x2_a_orc_impl.orc
-
-volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_multiply_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_40)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_multiply_32f_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_multiply_32f_a_orc_impl.orc
-
-volk/lib/volk_32i_x2_or_32i_a_orc_impl.c: ../volk/orc/volk_32i_x2_or_32i_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_41)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32i_x2_or_32i_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32i_x2_or_32i_a_orc_impl.orc
-
-volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_dot_prod_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_42)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_dot_prod_32f_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_dot_prod_32f_a_orc_impl.orc
-
 volk/lib/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c: ../volk/orc/volk_32fc_s32fc_multiply_32fc_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_s32fc_multiply_32fc_a_orc_impl.c"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_s32fc_multiply_32fc_a_orc_impl.orc
 
-volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c: ../volk/orc/volk_32fc_x2_multiply_32fc_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_44)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_x2_multiply_32fc_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_x2_multiply_32fc_a_orc_impl.orc
+volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c: ../volk/orc/volk_32fc_s32f_magnitude_16i_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_s32f_magnitude_16i_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_s32f_magnitude_16i_a_orc_impl.orc
 
-volk/lib/volk_16u_byteswap_a_orc_impl.c: ../volk/orc/volk_16u_byteswap_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_45)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16u_byteswap_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16u_byteswap_a_orc_impl.orc
-
-volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c: ../volk/orc/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_46)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.orc
-
-volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c: ../volk/orc/volk_16ic_deinterleave_real_8i_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_47)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16ic_deinterleave_real_8i_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16ic_deinterleave_real_8i_a_orc_impl.orc
+volk/lib/volk_32f_x2_max_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_max_32f_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_max_32f_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_max_32f_a_orc_impl.orc
 
 volk/lib/volk_32f_x2_subtract_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_subtract_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_subtract_32f_a_orc_impl.c"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_subtract_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_subtract_32f_a_orc_impl.orc
 
-volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c: ../volk/orc/volk_32f_s32f_multiply_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_49)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_s32f_multiply_32f_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_s32f_multiply_32f_a_orc_impl.orc
-
-volk/lib/volk_32f_s32f_normalize_a_orc_impl.c: ../volk/orc/volk_32f_s32f_normalize_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_50)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_s32f_normalize_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_s32f_normalize_a_orc_impl.orc
-
-volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c: ../volk/orc/volk_16ic_magnitude_16i_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_51)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16ic_magnitude_16i_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16ic_magnitude_16i_a_orc_impl.orc
+volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_dot_prod_32f_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_dot_prod_32f_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_dot_prod_32f_a_orc_impl.orc
 
 volk/lib/volk_32f_x2_add_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_add_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_add_32f_a_orc_impl.c"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_add_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_add_32f_a_orc_impl.orc
 
-volk/lib/volk_32f_x2_min_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_min_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_53)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_min_32f_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_min_32f_a_orc_impl.orc
-
-volk/lib/volk_8i_convert_16i_a_orc_impl.c: ../volk/orc/volk_8i_convert_16i_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_54)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_8i_convert_16i_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_8i_convert_16i_a_orc_impl.orc
-
-volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c: ../volk/orc/volk_32fc_magnitude_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_55)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_magnitude_32f_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_magnitude_32f_a_orc_impl.orc
-
-volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c: ../volk/orc/volk_8i_s32f_convert_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_56)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_8i_s32f_convert_32f_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_8i_s32f_convert_32f_a_orc_impl.orc
+volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c: ../volk/orc/volk_32fc_x2_multiply_32fc_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_x2_multiply_32fc_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_x2_multiply_32fc_a_orc_impl.orc
 
 volk/lib/volk_32fc_32f_multiply_32fc_a_orc_impl.c: ../volk/orc/volk_32fc_32f_multiply_32fc_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_32f_multiply_32fc_a_orc_impl.c"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_32f_multiply_32fc_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_32f_multiply_32fc_a_orc_impl.orc
 
+volk/lib/volk_8i_convert_16i_a_orc_impl.c: ../volk/orc/volk_8i_convert_16i_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_8i_convert_16i_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_8i_convert_16i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_8i_convert_16i_a_orc_impl.orc
+
+volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c: ../volk/orc/volk_16sc_magnitude_32f_aligned16_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16sc_magnitude_32f_aligned16_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16sc_magnitude_32f_aligned16_orc_impl.orc
+
+volk/lib/volk_32i_x2_and_32i_a_orc_impl.c: ../volk/orc/volk_32i_x2_and_32i_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32i_x2_and_32i_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32i_x2_and_32i_a_orc_impl.orc
+
+volk/lib/volk_32i_x2_or_32i_a_orc_impl.c: ../volk/orc/volk_32i_x2_or_32i_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32i_x2_or_32i_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_or_32i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32i_x2_or_32i_a_orc_impl.orc
+
+volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c: ../volk/orc/volk_32f_s32f_multiply_32f_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_s32f_multiply_32f_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_s32f_multiply_32f_a_orc_impl.orc
+
 volk/lib/volk_32f_sqrt_32f_a_orc_impl.c: ../volk/orc/volk_32f_sqrt_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_sqrt_32f_a_orc_impl.c"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_sqrt_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_sqrt_32f_a_orc_impl.orc
 
 volk/lib/volk_32f_x2_divide_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_divide_32f_a_orc_impl.orc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_divide_32f_a_orc_impl.c"
 	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_divide_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_divide_32f_a_orc_impl.orc
 
-volk/lib/volk_32f_x2_max_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_max_32f_a_orc_impl.orc
+volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c: ../volk/orc/volk_32fc_magnitude_32f_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_magnitude_32f_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_magnitude_32f_a_orc_impl.orc
+
+volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c: ../volk/orc/volk_16ic_deinterleave_16i_x2_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16ic_deinterleave_16i_x2_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16ic_deinterleave_16i_x2_a_orc_impl.orc
+
+volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c: ../volk/orc/volk_16ic_deinterleave_real_8i_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16ic_deinterleave_real_8i_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16ic_deinterleave_real_8i_a_orc_impl.orc
+
+volk/lib/volk_32f_s32f_normalize_a_orc_impl.c: ../volk/orc/volk_32f_s32f_normalize_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_s32f_normalize_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_s32f_normalize_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_s32f_normalize_a_orc_impl.orc
+
+volk/lib/volk_16u_byteswap_a_orc_impl.c: ../volk/orc/volk_16u_byteswap_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16u_byteswap_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16u_byteswap_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16u_byteswap_a_orc_impl.orc
+
+volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_multiply_32f_a_orc_impl.orc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_multiply_32f_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_multiply_32f_a_orc_impl.orc
+
+volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c: ../volk/orc/volk_16ic_magnitude_16i_a_orc_impl.orc
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_60)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_max_32f_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_max_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_max_32f_a_orc_impl.orc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16ic_magnitude_16i_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16ic_magnitude_16i_a_orc_impl.orc
 
-volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c: ../volk/orc/volk_16sc_magnitude_32f_aligned16_orc_impl.orc
+volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c: ../volk/orc/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.orc
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_61)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16sc_magnitude_32f_aligned16_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16sc_magnitude_32f_aligned16_orc_impl.orc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.orc
 
-volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c: ../volk/orc/volk_32fc_s32f_magnitude_16i_a_orc_impl.orc
+volk/lib/volk_32f_x2_min_32f_a_orc_impl.c: ../volk/orc/volk_32f_x2_min_32f_a_orc_impl.orc
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_62)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32fc_s32f_magnitude_16i_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32fc_s32f_magnitude_16i_a_orc_impl.orc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32f_x2_min_32f_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32f_x2_min_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32f_x2_min_32f_a_orc_impl.orc
 
-volk/lib/volk_32i_x2_and_32i_a_orc_impl.c: ../volk/orc/volk_32i_x2_and_32i_a_orc_impl.orc
+volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c: ../volk/orc/volk_8i_s32f_convert_32f_a_orc_impl.orc
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_63)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_32i_x2_and_32i_a_orc_impl.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_32i_x2_and_32i_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_32i_x2_and_32i_a_orc_impl.orc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_8i_s32f_convert_32f_a_orc_impl.c"
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/orcc --include math.h --implementation -o /home/katsikas/gnuradio/build/volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c /home/katsikas/gnuradio/volk/orc/volk_8i_s32f_convert_32f_a_orc_impl.orc
 
 volk/include/volk/volk.h: ../volk/gen/archs.xml
 volk/include/volk/volk.h: ../volk/gen/machines.xml
-volk/include/volk/volk.h: ../volk/gen/volk_arch_defs.py
-volk/include/volk/volk.h: ../volk/gen/volk_compile_utils.py
 volk/include/volk/volk.h: ../volk/gen/volk_tmpl_utils.py
 volk/include/volk/volk.h: ../volk/gen/volk_kernel_defs.py
+volk/include/volk/volk.h: ../volk/gen/volk_compile_utils.py
+volk/include/volk/volk.h: ../volk/gen/volk_arch_defs.py
 volk/include/volk/volk.h: ../volk/gen/volk_machine_defs.py
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_complex.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_prefs.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_common.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_common.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_complex.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_prefs.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/include/volk/volk.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/include/volk/volk.h: ../volk/tmpl/volk.tmpl.h
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../include/volk/volk.h"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk.h
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk.h
 
 volk/lib/volk.c: ../volk/gen/archs.xml
 volk/lib/volk.c: ../volk/gen/machines.xml
-volk/lib/volk.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_common.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_common.h
-volk/lib/volk.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk.c: ../volk/tmpl/volk.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk.c
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk.c
 
 volk/include/volk/volk_typedefs.h: ../volk/gen/archs.xml
 volk/include/volk/volk_typedefs.h: ../volk/gen/machines.xml
-volk/include/volk/volk_typedefs.h: ../volk/gen/volk_arch_defs.py
-volk/include/volk/volk_typedefs.h: ../volk/gen/volk_compile_utils.py
 volk/include/volk/volk_typedefs.h: ../volk/gen/volk_tmpl_utils.py
 volk/include/volk/volk_typedefs.h: ../volk/gen/volk_kernel_defs.py
+volk/include/volk/volk_typedefs.h: ../volk/gen/volk_compile_utils.py
+volk/include/volk/volk_typedefs.h: ../volk/gen/volk_arch_defs.py
 volk/include/volk/volk_typedefs.h: ../volk/gen/volk_machine_defs.py
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_complex.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_prefs.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_common.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_common.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_complex.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_prefs.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/include/volk/volk_typedefs.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/include/volk/volk_typedefs.h: ../volk/tmpl/volk_typedefs.tmpl.h
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../include/volk/volk_typedefs.h"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_typedefs.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk_typedefs.h
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_typedefs.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk_typedefs.h
 
 volk/include/volk/volk_cpu.h: ../volk/gen/archs.xml
 volk/include/volk/volk_cpu.h: ../volk/gen/machines.xml
-volk/include/volk/volk_cpu.h: ../volk/gen/volk_arch_defs.py
-volk/include/volk/volk_cpu.h: ../volk/gen/volk_compile_utils.py
 volk/include/volk/volk_cpu.h: ../volk/gen/volk_tmpl_utils.py
 volk/include/volk/volk_cpu.h: ../volk/gen/volk_kernel_defs.py
+volk/include/volk/volk_cpu.h: ../volk/gen/volk_compile_utils.py
+volk/include/volk/volk_cpu.h: ../volk/gen/volk_arch_defs.py
 volk/include/volk/volk_cpu.h: ../volk/gen/volk_machine_defs.py
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_complex.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_prefs.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_common.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_common.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_complex.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_prefs.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/include/volk/volk_cpu.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/include/volk/volk_cpu.h: ../volk/tmpl/volk_cpu.tmpl.h
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../include/volk/volk_cpu.h"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_cpu.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk_cpu.h
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_cpu.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk_cpu.h
 
 volk/lib/volk_cpu.c: ../volk/gen/archs.xml
 volk/lib/volk_cpu.c: ../volk/gen/machines.xml
-volk/lib/volk_cpu.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_cpu.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_cpu.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_cpu.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_cpu.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_cpu.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_cpu.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_cpu.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_cpu.c: ../volk/tmpl/volk_cpu.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_cpu.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_cpu.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_cpu.c
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_cpu.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_cpu.c
 
 volk/include/volk/volk_config_fixed.h: ../volk/gen/archs.xml
 volk/include/volk/volk_config_fixed.h: ../volk/gen/machines.xml
-volk/include/volk/volk_config_fixed.h: ../volk/gen/volk_arch_defs.py
-volk/include/volk/volk_config_fixed.h: ../volk/gen/volk_compile_utils.py
 volk/include/volk/volk_config_fixed.h: ../volk/gen/volk_tmpl_utils.py
 volk/include/volk/volk_config_fixed.h: ../volk/gen/volk_kernel_defs.py
+volk/include/volk/volk_config_fixed.h: ../volk/gen/volk_compile_utils.py
+volk/include/volk/volk_config_fixed.h: ../volk/gen/volk_arch_defs.py
 volk/include/volk/volk_config_fixed.h: ../volk/gen/volk_machine_defs.py
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_complex.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_prefs.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_common.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_common.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_complex.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_prefs.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/include/volk/volk_config_fixed.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/include/volk/volk_config_fixed.h: ../volk/tmpl/volk_config_fixed.tmpl.h
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../include/volk/volk_config_fixed.h"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_config_fixed.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk_config_fixed.h
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_config_fixed.tmpl.h --output /home/katsikas/gnuradio/build/volk/include/volk/volk_config_fixed.h
 
 volk/lib/volk_machines.h: ../volk/gen/archs.xml
 volk/lib/volk_machines.h: ../volk/gen/machines.xml
-volk/lib/volk_machines.h: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machines.h: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machines.h: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machines.h: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machines.h: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machines.h: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machines.h: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_common.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_common.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machines.h: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machines.h: ../volk/tmpl/volk_machines.tmpl.h
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machines.h"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machines.tmpl.h --output /home/katsikas/gnuradio/build/volk/lib/volk_machines.h
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machines.tmpl.h --output /home/katsikas/gnuradio/build/volk/lib/volk_machines.h
 
 volk/lib/volk_machines.c: ../volk/gen/archs.xml
 volk/lib/volk_machines.c: ../volk/gen/machines.xml
-volk/lib/volk_machines.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machines.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machines.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machines.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machines.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machines.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machines.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machines.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machines.c: ../volk/tmpl/volk_machines.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machines.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machines.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machines.c
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machines.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machines.c
 
 volk/lib/volk_machine_generic_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_generic_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_generic_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_generic_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_generic_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_generic_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_generic_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_generic_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_generic_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_generic_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_generic_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_generic_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_generic_orc.c generic_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_generic_orc.c generic_orc
 
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_sse2_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_sse2_64_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_sse2_64_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse2_64_orc.c sse2_64_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse2_64_orc.c sse2_64_orc
 
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_sse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_sse3_64_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_sse3_64_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse3_64_orc.c sse3_64_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse3_64_orc.c sse3_64_orc
 
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_ssse3_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_ssse3_64_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_ssse3_64_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_ssse3_64_orc.c ssse3_64_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_ssse3_64_orc.c ssse3_64_orc
 
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_sse4_a_64_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_sse4_a_64_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse4_a_64_orc.c sse4_a_64_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse4_a_64_orc.c sse4_a_64_orc
 
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_sse4_1_64_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_sse4_1_64_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse4_1_64_orc.c sse4_1_64_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse4_1_64_orc.c sse4_1_64_orc
 
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_sse4_2_64_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_sse4_2_64_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse4_2_64_orc.c sse4_2_64_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_sse4_2_64_orc.c sse4_2_64_orc
 
 volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/archs.xml
 volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/machines.xml
-volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/volk_arch_defs.py
-volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/volk_compile_utils.py
 volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/volk_tmpl_utils.py
 volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/volk_kernel_defs.py
+volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/volk_compile_utils.py
+volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/volk_arch_defs.py
 volk/lib/volk_machine_avx_64_orc.c: ../volk/gen/volk_machine_defs.py
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_x5_add_quad_16i_x4_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_complex.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16u_byteswap_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_magnitude_16i_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_rotatorpuppet_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_sqrt_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_8i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_s32f_interleave_16ic_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_stddev_and_mean_32f_x2_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_64f_x2_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_prefs.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_x2_and_32i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_32f_multiply_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_x2_min_64f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_divide_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64u_popcnt_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_imag_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_x2_power_spectral_density_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_x4_quad_max_star_16i_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_square_dist_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_x2_multiply_conjugate_16ic_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_convert_8i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_subtract_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64u_byteswap_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x3_sum_of_poly_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_8i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_interleave_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_squared_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_accumulator_s32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_permute_and_scalar_add_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_common.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_min_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_x2_max_64f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32u_byteswap_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_branch_4_state_8_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_16i_x2_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_dot_prod_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_max_star_horizontal_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_dot_prod_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_normalize_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_32i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_x2_or_32i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_index_max_16u_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32i_s32f_convert_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32u_popcnt_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_convert_16i_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_common.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_complex.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_conjugate_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_x2_rotator_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_magnitude_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_s32f_convert_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_32f_x2_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_multiply_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_s32f_deinterleave_real_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_prefs.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_power_spectrum_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_multiply_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_power_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_32f_x2_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_64f_convert_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16i_max_star_16i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_s32f_magnitude_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_magnitude_32f_u.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_max_32f_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_atan2_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_x2_conjugate_dot_prod_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8i_s32f_convert_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_index_max_16u_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32fc_multiply_32fc_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_deinterleave_real_64f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_add_32f_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32fc_s32f_deinterleave_real_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_convert_16i_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_x2_multiply_32f_u.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_16ic_deinterleave_real_16i_a.h
-volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_real_8i_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_8ic_deinterleave_16i_x2_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_convert_64f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_stddev_32f_a.h
+volk/lib/volk_machine_avx_64_orc.c: ../volk/include/volk/volk_32f_s32f_32f_fm_detect_32f_a.h
 volk/lib/volk_machine_avx_64_orc.c: ../volk/tmpl/volk_machine_xxx.tmpl.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating volk_machine_avx_64_orc.c"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_avx_64_orc.c avx_64_orc
+	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/python -B /home/katsikas/gnuradio/volk/gen/volk_tmpl_utils.py --input /home/katsikas/gnuradio/volk/tmpl/volk_machine_xxx.tmpl.c --output /home/katsikas/gnuradio/build/volk/lib/volk_machine_avx_64_orc.c avx_64_orc
 
 # Object files for target volk
 volk_OBJECTS = \
-"CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o" \
 "CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o" \
 "CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o" \
 "CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o" \
 "CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o" \
 "CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o" \
 "CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o" \
-"CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o" \
+"CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o" \
 "CMakeFiles/volk.dir/volk_prefs.c.o" \
 "CMakeFiles/volk.dir/volk_rank_archs.c.o" \
 "CMakeFiles/volk.dir/volk.c.o" \
@@ -3028,31 +3025,31 @@ volk_OBJECTS = \
 # External object files for target volk
 volk_EXTERNAL_OBJECTS =
 
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o
-volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o
+volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_prefs.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_rank_archs.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk.c.o
@@ -3066,7 +3063,7 @@ volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_a_64_o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_1_64_orc.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_2_64_orc.c.o
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/volk_machine_avx_64_orc.c.o
-volk/lib/libvolk.so.0.0.0: /usr/lib/liborc-0.4.so
+volk/lib/libvolk.so.0.0.0: /usr/lib/x86_64-linux-gnu/liborc-0.4.so
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/build.make
 volk/lib/libvolk.so.0.0.0: volk/lib/CMakeFiles/volk.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library libvolk.so"
@@ -3079,31 +3076,31 @@ volk/lib/libvolk.so: volk/lib/libvolk.so.0.0.0
 volk/lib/CMakeFiles/volk.dir/build: volk/lib/libvolk.so
 .PHONY : volk/lib/CMakeFiles/volk.dir/build
 
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o.requires
-volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o.requires
+volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_prefs.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk_rank_archs.c.o.requires
 volk/lib/CMakeFiles/volk.dir/requires: volk/lib/CMakeFiles/volk.dir/volk.c.o.requires
@@ -3123,31 +3120,31 @@ volk/lib/CMakeFiles/volk.dir/clean:
 	cd /home/katsikas/gnuradio/build/volk/lib && $(CMAKE_COMMAND) -P CMakeFiles/volk.dir/cmake_clean.cmake
 .PHONY : volk/lib/CMakeFiles/volk.dir/clean
 
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32i_x2_or_32i_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16u_byteswap_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_max_32f_a_orc_impl.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_subtract_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_s32f_normalize_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_dot_prod_32f_a_orc_impl.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_add_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_min_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_8i_convert_16i_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_x2_multiply_32fc_a_orc_impl.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_32f_multiply_32fc_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_8i_convert_16i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32i_x2_and_32i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32i_x2_or_32i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_s32f_multiply_32f_a_orc_impl.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_sqrt_32f_a_orc_impl.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_divide_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_max_32f_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16sc_magnitude_32f_aligned16_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_s32f_magnitude_16i_a_orc_impl.c
-volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32i_x2_and_32i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32fc_magnitude_32f_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16ic_deinterleave_16i_x2_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16ic_deinterleave_real_8i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_s32f_normalize_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16u_byteswap_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_multiply_32f_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16ic_magnitude_16i_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_32f_x2_min_32f_a_orc_impl.c
+volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk_8i_s32f_convert_32f_a_orc_impl.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/include/volk/volk.h
 volk/lib/CMakeFiles/volk.dir/depend: volk/lib/volk.c
 volk/lib/CMakeFiles/volk.dir/depend: volk/include/volk/volk_typedefs.h

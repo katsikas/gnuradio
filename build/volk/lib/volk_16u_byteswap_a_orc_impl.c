@@ -163,7 +163,7 @@ void
 volk_16u_byteswap_a_orc_impl (orc_uint16 * ORC_RESTRICT d1, int n)
 {
   OrcExecutor _ex, *ex = &_ex;
-  static int p_inited = 0;
+  static volatile int p_inited = 0;
   static OrcCode *c = 0;
   void (*func) (OrcExecutor *);
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__qtgui__api_8h" kind="file">
     <compoundname>gr_qtgui_api.h</compoundname>
     <includes refid="attributes_8h" local="no">gruel/attributes.h</includes>
@@ -9,49 +9,49 @@
     <includedby refid="qtgui__time__sink__f_8h" local="no">qtgui_time_sink_f.h</includedby>
     <includedby refid="qtgui__util_8h" local="no">qtgui_util.h</includedby>
     <incdepgraph>
-      <node id="12019">
+      <node id="10556">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="12018">
+      <node id="10555">
         <label>gr_qtgui_api.h</label>
         <link refid="gr_qtgui_api.h"/>
-        <childnode refid="12019" relation="include">
+        <childnode refid="10556" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="12022">
+      <node id="10559">
         <label>qtgui_sink_f.h</label>
         <link refid="qtgui__sink__f_8h"/>
       </node>
-      <node id="12024">
+      <node id="10561">
         <label>qtgui_time_sink_f.h</label>
         <link refid="qtgui__time__sink__f_8h"/>
       </node>
-      <node id="12020">
+      <node id="10557">
         <label>gr_qtgui_api.h</label>
         <link refid="gr_qtgui_api.h"/>
-        <childnode refid="12021" relation="include">
+        <childnode refid="10558" relation="include">
         </childnode>
-        <childnode refid="12022" relation="include">
+        <childnode refid="10559" relation="include">
         </childnode>
-        <childnode refid="12023" relation="include">
+        <childnode refid="10560" relation="include">
         </childnode>
-        <childnode refid="12024" relation="include">
+        <childnode refid="10561" relation="include">
         </childnode>
-        <childnode refid="12025" relation="include">
+        <childnode refid="10562" relation="include">
         </childnode>
       </node>
-      <node id="12025">
+      <node id="10562">
         <label>qtgui_util.h</label>
         <link refid="qtgui__util_8h"/>
       </node>
-      <node id="12021">
+      <node id="10558">
         <label>qtgui_sink_c.h</label>
         <link refid="qtgui__sink__c_8h"/>
       </node>
-      <node id="12023">
+      <node id="10560">
         <label>qtgui_time_sink_c.h</label>
         <link refid="qtgui__time__sink__c_8h"/>
       </node>
@@ -59,7 +59,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" prot="public" static="no">
         <name>GR_QTGUI_API</name>
-        <initializer>__GR_ATTR_IMPORT</initializer>
+        <initializer><ref refid="attributes_8h_1a17b9cb3c185c92af4799ec9b0a38f3c1" kindref="member">__GR_ATTR_IMPORT</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

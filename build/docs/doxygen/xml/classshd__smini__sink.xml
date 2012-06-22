@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classshd__smini__sink" kind="class" prot="public">
     <compoundname>shd_smini_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="virtual">gr_sync_block</basecompoundref>
     <includes refid="gr__shd__smini__sink_8h" local="no">gr_shd_smini_sink.h</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classshd__smini__sink_1abf236d9f9e2ee69408fef828f2b44c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_subdev_spec</definition>
         <argsstring>(const std::string &amp;spec, size_t mboard=0)=0</argsstring>
         <name>set_subdev_spec</name>
@@ -43,7 +43,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="46"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1af2c09389e6915ce36397251ab39579eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_samp_rate</definition>
         <argsstring>(double rate)=0</argsstring>
         <name>set_samp_rate</name>
@@ -73,7 +73,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_samp_rate</name>
         <param>
-          <type>void</type>
+          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -215,7 +215,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="95"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a5723773f6e51cd34f6dd2d5c4f8d359e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_gain</definition>
         <argsstring>(double gain, size_t chan=0)=0</argsstring>
         <name>set_gain</name>
@@ -252,7 +252,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="102"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a951c2123241fa267b7a180543afc4f7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_gain</definition>
         <argsstring>(double gain, const std::string &amp;name, size_t chan=0)=0</argsstring>
         <name>set_gain</name>
@@ -365,7 +365,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="127"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a976ee0f24105ee1823f85f5a3b9186ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
+        <type>std::vector&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; shd_smini_sink::get_gain_names</definition>
         <argsstring>(size_t chan=0)=0</argsstring>
         <name>get_gain_names</name>
@@ -457,7 +457,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="150"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a6ff165544c3e08f07ccf8431e6be9713" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_antenna</definition>
         <argsstring>(const std::string &amp;ant, size_t chan=0)=0</argsstring>
         <name>set_antenna</name>
@@ -521,7 +521,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="165"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1aaa33cafc2aa500a20846fd7ab7ad816b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
+        <type>std::vector&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; shd_smini_sink::get_antennas</definition>
         <argsstring>(size_t chan=0)=0</argsstring>
         <name>get_antennas</name>
@@ -548,7 +548,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="172"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1aa9d0095aaaa0213370d3347faa4d28c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_bandwidth</definition>
         <argsstring>(double bandwidth, size_t chan=0)=0</argsstring>
         <name>set_bandwidth</name>
@@ -623,7 +623,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="188"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a127fb51e59ab8a471b47e4f7e1aab760" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
+        <type>std::vector&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; shd_smini_sink::get_dboard_sensor_names</definition>
         <argsstring>(size_t chan=0)=0</argsstring>
         <name>get_dboard_sensor_names</name>
@@ -688,7 +688,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="204"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a5fec674c05656cf104e1ddac71ca883f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
+        <type>std::vector&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; shd_smini_sink::get_mboard_sensor_names</definition>
         <argsstring>(size_t mboard=0)=0</argsstring>
         <name>get_mboard_sensor_names</name>
@@ -715,7 +715,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="211"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a7858effe51e6e97cd4cf302a7f8dbe64" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_clock_config</definition>
         <argsstring>(const shd::clock_config_t &amp;clock_config, size_t mboard=0)=0</argsstring>
         <name>set_clock_config</name>
@@ -779,7 +779,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="226"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1ac06628a3eb2b1675feb7a66ea48f6e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_clock_rate</definition>
         <argsstring>(double rate, size_t mboard=0)=0</argsstring>
         <name>set_clock_rate</name>
@@ -870,7 +870,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="247"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a079be2e26740e62b8f5b76cba94c8e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_time_now</definition>
         <argsstring>(const shd::time_spec_t &amp;time_spec, size_t mboard=0)=0</argsstring>
         <name>set_time_now</name>
@@ -907,7 +907,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="255"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a54304eb9b186cc3b345e40d280f5fa23" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_time_next_pps</definition>
         <argsstring>(const shd::time_spec_t &amp;time_spec)=0</argsstring>
         <name>set_time_next_pps</name>
@@ -932,7 +932,7 @@
         <location file="/home/katsikas/gnuradio/gr-shd/include/gr_shd_smini_sink.h" line="261"/>
       </memberdef>
       <memberdef kind="function" id="classshd__smini__sink_1a02fc022a51968d3a7c27fa5b0ba5bf39" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void shd_smini_sink::set_time_unknown_pps</definition>
         <argsstring>(const shd::time_spec_t &amp;time_spec)=0</argsstring>
         <name>set_time_unknown_pps</name>
@@ -981,7 +981,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_device</name>
         <param>
-          <type>void</type>
+          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -998,220 +998,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="14292">
+      <node id="7186">
         <label>shd_smini_sink</label>
         <link refid="classshd__smini__sink"/>
-        <childnode refid="14293" relation="public-inheritance">
+        <childnode refid="7187" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14296">
+      <node id="7190">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="14297" relation="public-inheritance">
+        <childnode refid="7191" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14293">
+      <node id="7187">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="14294" relation="public-inheritance">
+        <childnode refid="7188" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14294">
+      <node id="7188">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="14295" relation="public-inheritance">
+        <childnode refid="7189" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14297">
+      <node id="7191">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="14295">
+      <node id="7189">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="14296" relation="public-inheritance">
+        <childnode refid="7190" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="14319">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="14313" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="14312">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="14313" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="14298">
+      <node id="7192">
         <label>shd_smini_sink</label>
         <link refid="classshd__smini__sink"/>
-        <childnode refid="14299" relation="public-inheritance">
+        <childnode refid="7193" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14324">
-        <label>T</label>
-      </node>
-      <node id="14302">
+      <node id="7196">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="14303" relation="public-inheritance">
+        <childnode refid="7197" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14299">
+      <node id="7193">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="14300" relation="public-inheritance">
+        <childnode refid="7194" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14313">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="14314" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="14321">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="14316">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="14300">
+      <node id="7194">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="14301" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14309" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="7195" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14309">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="14310" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="14323">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="14324" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="14310">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="14311" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="14320" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="14322" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="14317">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="14318" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="14304">
+      <node id="7198">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="14305" relation="usage">
+        <childnode refid="7199" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="14315">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="14316" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="14317" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="14319" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="14308">
+      <node id="7201">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="14311">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="14312" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="14303">
+      <node id="7197">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="14314">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="14315" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="14318">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="14320">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="14321" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="14322">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="14323" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="14305">
+      <node id="7199">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="14306" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="14301">
+      <node id="7195">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="14302" relation="public-inheritance">
+        <childnode refid="7196" relation="public-inheritance">
         </childnode>
-        <childnode refid="14304" relation="usage">
+        <childnode refid="7198" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="14307" relation="usage">
+        <childnode refid="7200" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="14306">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="14307">
+      <node id="7200">
         <label>std::string</label>
-        <childnode refid="14308" relation="public-inheritance">
+        <childnode refid="7201" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1296,7 +1176,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>shd_smini_sink</scope><name>set_relative_rate</name></member>

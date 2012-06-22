@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__tpb__thread__body" kind="class" prot="public">
     <compoundname>gr_tpb_thread_body</compoundname>
     <includes refid="gr__tpb__thread__body_8h" local="no">gr_tpb_thread_body.h</includes>
@@ -59,89 +59,6 @@
 <para>The body of each thread-per-block thread. </para>    </briefdescription>
     <detaileddescription>
 <para>One of these is instantiated in its own thread for each block. The constructor turns into the main loop which returns when the block is done or is interrupted. </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="558">
-        <label>gr_block_executor</label>
-        <link refid="classgr__block__executor"/>
-        <childnode refid="559" relation="usage">
-          <edgelabel>d_output_items</edgelabel>
-        </childnode>
-        <childnode refid="560" relation="usage">
-          <edgelabel>d_returned_tags</edgelabel>
-        </childnode>
-        <childnode refid="562" relation="usage">
-          <edgelabel>d_start_nitems_read</edgelabel>
-        </childnode>
-        <childnode refid="563" relation="usage">
-          <edgelabel>d_ninput_items</edgelabel>
-          <edgelabel>d_ninput_items_required</edgelabel>
-        </childnode>
-        <childnode refid="564" relation="usage">
-          <edgelabel>d_input_done</edgelabel>
-        </childnode>
-        <childnode refid="565" relation="usage">
-          <edgelabel>d_log</edgelabel>
-        </childnode>
-        <childnode refid="570" relation="usage">
-          <edgelabel>d_input_items</edgelabel>
-        </childnode>
-      </node>
-      <node id="566">
-        <label>std::basic_ofstream&lt; char &gt;</label>
-        <childnode refid="567" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="570">
-        <label>std::vector&lt; const void * &gt;</label>
-      </node>
-      <node id="565">
-        <label>std::ofstream</label>
-        <childnode refid="566" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="560">
-        <label>std::vector&lt; gr_tag_t &gt;</label>
-        <childnode refid="561" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="562">
-        <label>std::vector&lt; uint64_t &gt;</label>
-      </node>
-      <node id="557">
-        <label>gr_tpb_thread_body</label>
-        <link refid="classgr__tpb__thread__body"/>
-        <childnode refid="558" relation="usage">
-          <edgelabel>d_exec</edgelabel>
-        </childnode>
-      </node>
-      <node id="567">
-        <label>std::basic_ostream&lt; Char &gt;</label>
-        <childnode refid="568" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="568">
-        <label>std::basic_ios&lt; Char &gt;</label>
-        <childnode refid="569" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="561">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="569">
-        <label>std::ios_base</label>
-      </node>
-      <node id="564">
-        <label>std::vector&lt; bool &gt;</label>
-      </node>
-      <node id="559">
-        <label>std::vector&lt; void * &gt;</label>
-      </node>
-      <node id="563">
-        <label>std::vector&lt; int &gt;</label>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_tpb_thread_body.h" line="37" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_tpb_thread_body.h" bodystart="37" bodyend="43"/>
     <listofallmembers>
       <member refid="classgr__tpb__thread__body_1a0e25b80d2de7f9273326e4e704f8f46c" prot="private" virt="non-virtual"><scope>gr_tpb_thread_body</scope><name>d_exec</name></member>

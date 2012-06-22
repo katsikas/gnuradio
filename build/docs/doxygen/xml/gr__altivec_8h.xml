@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__altivec_8h" kind="file">
     <compoundname>gr_altivec.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -8,41 +8,41 @@
     <includes local="no">stddef.h</includes>
     <includes local="no">stdio.h</includes>
     <incdepgraph>
-      <node id="4800">
+      <node id="4690">
         <label>gr_altivec.h</label>
         <link refid="gr_altivec.h"/>
-        <childnode refid="4801" relation="include">
+        <childnode refid="4691" relation="include">
         </childnode>
-        <childnode refid="4803" relation="include">
+        <childnode refid="4693" relation="include">
         </childnode>
-        <childnode refid="4804" relation="include">
+        <childnode refid="4694" relation="include">
         </childnode>
-        <childnode refid="4805" relation="include">
+        <childnode refid="4695" relation="include">
         </childnode>
-        <childnode refid="4806" relation="include">
+        <childnode refid="4696" relation="include">
         </childnode>
       </node>
-      <node id="4803">
+      <node id="4693">
         <label>altivec.h</label>
       </node>
-      <node id="4802">
+      <node id="4692">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="4804">
+      <node id="4694">
         <label>gr_vec_types.h</label>
         <link refid="gr__vec__types_8h"/>
       </node>
-      <node id="4805">
+      <node id="4695">
         <label>stddef.h</label>
       </node>
-      <node id="4801">
+      <node id="4691">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="4802" relation="include">
+        <childnode refid="4692" relation="include">
         </childnode>
       </node>
-      <node id="4806">
+      <node id="4696">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -50,7 +50,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="gr__altivec_8h_1ac896c73a5d99e82b2050d5f3d394e009" prot="public" static="no">
         <name>VS</name>
-        <initializer>sizeof(vec_float4)</initializer>
+        <initializer>sizeof(<ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref>)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,7 +61,7 @@
       </memberdef>
       <memberdef kind="define" id="gr__altivec_8h_1a3398b7abf987dee5bf61d884c096fe95" prot="public" static="no">
         <name>FLOATS_PER_VEC</name>
-        <initializer>(sizeof(vec_float4)/sizeof(float))</initializer>
+        <initializer>(sizeof(<ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref>)/sizeof(float))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -73,7 +73,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__altivec_8h_1ac7d0999da4f75444d13655a54f284e03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API void</type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>GR_CORE_API void gr_print_vector_float</definition>
         <argsstring>(FILE *fp, vec_float4 v)</argsstring>
         <name>gr_print_vector_float</name>
@@ -82,7 +82,7 @@
           <declname>fp</declname>
         </param>
         <param>
-          <type>vec_float4</type>
+          <type><ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -94,7 +94,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="59"/>
       </memberdef>
       <memberdef kind="function" id="gr__altivec_8h_1a9d65f8c2bb147639f7058f764968e76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API void</type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>GR_CORE_API void gr_pvf</definition>
         <argsstring>(FILE *fp, const char *label, vec_float4 v)</argsstring>
         <name>gr_pvf</name>
@@ -107,7 +107,7 @@
           <declname>label</declname>
         </param>
         <param>
-          <type>vec_float4</type>
+          <type><ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -124,7 +124,7 @@
         <argsstring>(vec_float4 v)</argsstring>
         <name>horizontal_add_f</name>
         <param>
-          <type>vec_float4</type>
+          <type><ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>

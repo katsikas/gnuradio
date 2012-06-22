@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgri__mmse__fir__interpolator__cc" kind="class" prot="public">
     <compoundname>gri_mmse_fir_interpolator_cc</compoundname>
     <includes refid="gri__mmse__fir__interpolator__cc_8h" local="no">gri_mmse_fir_interpolator_cc.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classgri__mmse__fir__interpolator__cc_1a339ff39a576abda306191912ebe7a249" prot="protected" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
+        <type>std::vector&lt; gr_fir_ccf * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf *&gt; gri_mmse_fir_interpolator_cc::filters</definition>
         <argsstring></argsstring>
         <name>filters</name>
@@ -112,29 +112,13 @@
 </itemizedlist>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="13005">
-        <label>std::vector&lt; float &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="13004">
-        <label>gr_fir_ccf</label>
-        <link refid="classgr__fir__ccf"/>
-        <childnode refid="13005" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-        </childnode>
-      </node>
-      <node id="13003">
+      <node id="6172">
         <label>std::vector&lt; gr_fir_ccf * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="13004" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
       </node>
-      <node id="13002">
+      <node id="6171">
         <label>gri_mmse_fir_interpolator_cc</label>
         <link refid="classgri__mmse__fir__interpolator__cc"/>
-        <childnode refid="13003" relation="usage">
+        <childnode refid="6172" relation="usage">
           <edgelabel>filters</edgelabel>
         </childnode>
       </node>

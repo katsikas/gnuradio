@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsci__viterbi__decoder" kind="class" prot="public">
     <compoundname>atsci_viterbi_decoder</compoundname>
     <includes refid="atsci__viterbi__decoder_8h" local="no">atsci_viterbi_decoder.h</includes>
@@ -80,7 +80,7 @@
       </sectiondef>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classatsci__viterbi__decoder_1a39c2fe5681f848febdb0a4e539149b0a" prot="protected" static="no" mutable="no">
-        <type><ref refid="classatsci__single__viterbi" kindref="compound">single_viterbi_t</ref></type>
+        <type><ref refid="atsci__viterbi__decoder_8h_1a5a4b08f1993f0d8dcb33154a29cb60c7" kindref="member">single_viterbi_t</ref></type>
         <definition>single_viterbi_t atsci_viterbi_decoder::viterbi[NCODERS]</definition>
         <argsstring>[NCODERS]</argsstring>
         <name>viterbi</name>
@@ -93,7 +93,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_viterbi_decoder.h" line="76" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_viterbi_decoder.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classatsci__viterbi__decoder_1a6f18e07f0fef8528aae13ca91c95207a" prot="protected" static="no" mutable="no">
-        <type><ref refid="classinterleaver__fifo" kindref="compound">fifo_t</ref> *</type>
+        <type><ref refid="classatsci__viterbi__decoder_1a5622901db53ec79a2aa69b0bcb79f0df" kindref="member">fifo_t</ref> *</type>
         <definition>fifo_t* atsci_viterbi_decoder::fifo[NCODERS]</definition>
         <argsstring>[NCODERS]</argsstring>
         <name>fifo</name>
@@ -134,7 +134,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_viterbi_decoder.h" line="49"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__viterbi__decoder_1a7862d3e3509e248f8c4cca29cb294c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsci_viterbi_decoder::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -147,7 +147,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_viterbi_decoder.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__viterbi__decoder_1a8e6b3e440c5194313c257c12cf3f7639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsci_viterbi_decoder::decode</definition>
         <argsstring>(atsc_mpeg_packet_rs_encoded out[NCODERS], const atsc_soft_data_segment in[NCODERS])</argsstring>
         <name>decode</name>
@@ -172,7 +172,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classatsci__viterbi__decoder_1af6b11c2fc9c6da1b810161107985a1a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsci_viterbi_decoder::decode_helper</definition>
         <argsstring>(unsigned char out[OUTPUT_SIZE], const float in[INPUT_SIZE])</argsstring>
         <name>decode_helper</name>
@@ -200,21 +200,21 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="705">
+      <node id="378">
         <label>interleaver_fifo&lt; unsigned char &gt;</label>
         <link refid="classinterleaver__fifo"/>
       </node>
-      <node id="704">
+      <node id="377">
         <label>atsci_viterbi_decoder</label>
         <link refid="classatsci__viterbi__decoder"/>
-        <childnode refid="705" relation="usage">
+        <childnode refid="378" relation="usage">
           <edgelabel>fifo</edgelabel>
         </childnode>
-        <childnode refid="706" relation="usage">
+        <childnode refid="379" relation="usage">
           <edgelabel>viterbi</edgelabel>
         </childnode>
       </node>
-      <node id="706">
+      <node id="379">
         <label>atsci_single_viterbi</label>
         <link refid="classatsci__single__viterbi"/>
       </node>

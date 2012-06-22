@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__probe__mpsk__snr__est__c" kind="class" prot="public">
     <compoundname>digital_probe_mpsk_snr_est_c</compoundname>
     <includes refid="digital__probe__mpsk__snr__est__c_8h" local="no">digital_probe_mpsk_snr_est_c.h</includes>
@@ -84,9 +84,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__probe__mpsk__snr__est__c_1a70d30e7520a74da6632699ce984f31ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="digital__probe__mpsk__snr__est__c_8h_1afbcc9786901e266e6fefcb1a5e92a212" kindref="member">digital_probe_mpsk_snr_est_c_sptr</ref></type>
-        <definition>DIGITAL_API digital_probe_mpsk_snr_est_c_sptr digital_make_probe_mpsk_snr_est_c</definition>
+      <memberdef kind="friend" id="classdigital__probe__mpsk__snr__est__c_1aa95f7cd3a056ee6fde44956665067250" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="digital__probe__mpsk__snr__est__c_8h_1afbcc9786901e266e6fefcb1a5e92a212" kindref="member">digital_probe_mpsk_snr_est_c_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_probe_mpsk_snr_est_c_sptr digital_make_probe_mpsk_snr_est_c</definition>
         <argsstring>(snr_est_type_t type, int msg_nsamples, double alpha)</argsstring>
         <name>digital_make_probe_mpsk_snr_est_c</name>
         <param>
@@ -309,19 +309,6 @@
 <para>A probe for computing SNR of a signal. </para>    </briefdescription>
     <detaileddescription>
 <para>This is a probe block (a sink) that can be used to monitor and retrieve estimations of the signal SNR. This probe is designed for use with M-PSK signals especially. The type of estimator is specified as the <computeroutput>type</computeroutput> parameter in the constructor. The estimators tend to trade off performance for accuracy, although experimentation should be done to figure out the right approach for a given implementation. Further, the current set of estimators are designed and proven theoretically under AWGN conditions; some amount of error should be assumed and/or estimated for real channel conditions. </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="485">
-        <label>digital_impl_mpsk_snr_est</label>
-        <link refid="classdigital__impl__mpsk__snr__est"/>
-      </node>
-      <node id="484">
-        <label>digital_probe_mpsk_snr_est_c</label>
-        <link refid="classdigital__probe__mpsk__snr__est__c"/>
-        <childnode refid="485" relation="usage">
-          <edgelabel>d_snr_est</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_probe_mpsk_snr_est_c.h" line="52" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_probe_mpsk_snr_est_c.h" bodystart="51" bodyend="111"/>
     <listofallmembers>
       <member refid="classdigital__probe__mpsk__snr__est__c_1ac3ec88dfad49c85b12e2f63a9be38f89" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>alpha</name></member>
@@ -331,7 +318,7 @@
       <member refid="classdigital__probe__mpsk__snr__est__c_1adcefeff05bb1013c01545842bfa2a439" prot="private" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>d_nsamples</name></member>
       <member refid="classdigital__probe__mpsk__snr__est__c_1ad8fd20de6f1aa0db8d1c9c64e791dd1f" prot="private" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>d_snr_est</name></member>
       <member refid="classdigital__probe__mpsk__snr__est__c_1af6406a87a84b00b1404102819387fade" prot="private" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>d_type</name></member>
-      <member refid="classdigital__probe__mpsk__snr__est__c_1a70d30e7520a74da6632699ce984f31ac" prot="private" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>digital_make_probe_mpsk_snr_est_c</name></member>
+      <member refid="classdigital__probe__mpsk__snr__est__c_1aa95f7cd3a056ee6fde44956665067250" prot="private" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>digital_make_probe_mpsk_snr_est_c</name></member>
       <member refid="classdigital__probe__mpsk__snr__est__c_1adef3415d883d964e3885400144f7306c" prot="private" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>digital_probe_mpsk_snr_est_c</name></member>
       <member refid="classdigital__probe__mpsk__snr__est__c_1a44c73c4b2ed290d5e81e91b317ee8a7e" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>msg_nsample</name></member>
       <member refid="classdigital__probe__mpsk__snr__est__c_1a84120475df9a5a35204577f6ab066d13" prot="public" virt="non-virtual"><scope>digital_probe_mpsk_snr_est_c</scope><name>set_alpha</name></member>

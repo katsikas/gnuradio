@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__pfb__decimator__ccf" kind="class" prot="public">
     <compoundname>gr_pfb_decimator_ccf</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="gr__pfb__decimator__ccf_8h" local="no">gr_pfb_decimator_ccf.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classgr__pfb__decimator__ccf_1a9c7c552b7d609e570ea6e1afadad3326" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
+        <type>std::vector&lt; gr_fir_ccf * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf*&gt; gr_pfb_decimator_ccf::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -19,7 +19,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_decimator_ccf.h" line="110" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_decimator_ccf.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__decimator__ccf_1a1a189cb676113beef09378b5d77f8b0d" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;float&gt; &gt; gr_pfb_decimator_ccf::d_taps</definition>
         <argsstring></argsstring>
         <name>d_taps</name>
@@ -112,7 +112,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pfb__decimator__ccf_1ab8c247c5c7f1543939a20c984073fcec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_decimator_ccf_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_decimator_ccf_sptr</ref></type>
         <definition>GR_CORE_API gr_pfb_decimator_ccf_sptr gr_make_pfb_decimator_ccf</definition>
         <argsstring>(unsigned int decim, const std::vector&lt; float &gt; &amp;taps, unsigned int channel)</argsstring>
         <name>gr_make_pfb_decimator_ccf</name>
@@ -121,7 +121,7 @@
           <declname>decim</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -170,7 +170,7 @@
           <declname>decim</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -223,12 +223,12 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_decimator_ccf.h" line="130"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__decimator__ccf_1a9eddbddd0ed4c621375ad99e10de7789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_pfb_decimator_ccf::set_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>set_taps</name>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -248,7 +248,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_decimator_ccf.h" line="136"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__decimator__ccf_1a3935f2bfaed6c3e18eba4fdbe07b7aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_pfb_decimator_ccf::print_taps</definition>
         <argsstring>()</argsstring>
         <name>print_taps</name>
@@ -271,11 +271,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -293,266 +293,100 @@
 <para>This block takes in a signal stream and performs interger down- sampling (decimation) with a polyphase filterbank. The first input is the integer specifying how much to decimate by. The second input is a vector (Python list) of floating-point taps of the prototype filter. The third input specifies the channel to extract. By default, the zeroth channel is used, which is the baseband channel (first Nyquist zone).</para><para>The <emphasis>channel</emphasis> parameter specifies which channel to use since this class is capable of bandpass decimation. Given a complex input stream at a sampling rate of <emphasis>fs</emphasis> and a decimation rate of <emphasis>decim</emphasis>, the input frequency domain is split into <emphasis>decim</emphasis> channels that represent the Nyquist zones. Using the polyphase filterbank, we can select any one of these channels to decimate.</para><para>The output signal will be the basebanded and decimated signal from that channel. This concept is very similar to the PFB channelizer (see <ref refid="classgr__pfb__channelizer__ccf" kindref="compound">gr_pfb_channelizer_ccf</ref>) where only a single channel is extracted at a time.</para><para>The filter&apos;s taps should be based on the sampling rate before decimation.</para><para>For example, using the GNU Radio&apos;s firdes utility to building filters, we build a low-pass filter with a sampling rate of <emphasis>fs</emphasis>, a 3-dB bandwidth of <emphasis>BW</emphasis> and a transition bandwidth of <emphasis>TB</emphasis>. We can also specify the out-of-band attenuation to use, <emphasis>ATT</emphasis>, and the filter window function (a Blackman-harris window in this case). The first input is the gain of the filter, which we specify here as unity.</para><para><bold><emphasis>self._taps = gr.firdes.low_pass_2(1, fs, BW, TB, attenuation_dB=ATT, window=gr.firdes.WIN_BLACKMAN_hARRIS)</emphasis></bold></para><para>The PFB decimator code takes the taps generated above and builds a set of filters. The set contains <emphasis>decim</emphasis> number of filters and each filter contains ceil(taps.size()/decim) number of taps. Each tap from the filter prototype is sequentially inserted into the next filter. When all of the input taps are used, the remaining filters in the filterbank are filled out with 0&apos;s to make sure each filter has the same number of taps.</para><para>The theory behind this block can be found in Chapter 6 of the following book.</para><para><bold><emphasis>f. harris, &quot;Multirate Signal Processing for Communication
        Systems,&quot; Upper Saddle River, NJ: Prentice Hall, Inc. 2004.</emphasis></bold> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="9793">
+      <node id="4821">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="9794" relation="public-inheritance">
+        <childnode refid="4822" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9790">
+      <node id="4818">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="9791" relation="public-inheritance">
+        <childnode refid="4819" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9791">
+      <node id="4819">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="9792" relation="public-inheritance">
+        <childnode refid="4820" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9789">
+      <node id="4817">
         <label>gr_pfb_decimator_ccf</label>
         <link refid="classgr__pfb__decimator__ccf"/>
-        <childnode refid="9790" relation="public-inheritance">
+        <childnode refid="4818" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9794">
+      <node id="4822">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="9792">
+      <node id="4820">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="9793" relation="public-inheritance">
+        <childnode refid="4821" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9816">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="9810" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="9809">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="9810" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="9821">
-        <label>T</label>
-      </node>
-      <node id="9827">
-        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="9799">
+      <node id="4827">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="9800" relation="public-inheritance">
+        <childnode refid="4828" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9796">
+      <node id="4824">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="9797" relation="public-inheritance">
+        <childnode refid="4825" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9826">
-        <label>std::vector&lt; float &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="9822">
-        <label>gri_fft_complex</label>
-        <link refid="classgri__fft__complex"/>
-        <childnode refid="9823" relation="usage">
-          <edgelabel>d_inbuf</edgelabel>
-          <edgelabel>d_outbuf</edgelabel>
-        </childnode>
-      </node>
-      <node id="9810">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="9811" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="9818">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="9813">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="9797">
+      <node id="4825">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="9798" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9806" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="4826" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9806">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="9807" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="9820">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="9821" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="9795">
+      <node id="4823">
         <label>gr_pfb_decimator_ccf</label>
         <link refid="classgr__pfb__decimator__ccf"/>
-        <childnode refid="9796" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9822" relation="usage">
-          <edgelabel>d_fft</edgelabel>
-        </childnode>
-        <childnode refid="9823" relation="usage">
-          <edgelabel>d_rotator</edgelabel>
-        </childnode>
-        <childnode refid="9824" relation="usage">
-          <edgelabel>d_filters</edgelabel>
-        </childnode>
-        <childnode refid="9827" relation="usage">
-          <edgelabel>d_taps</edgelabel>
+        <childnode refid="4824" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9807">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="9808" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="9817" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="9819" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="9825">
-        <label>gr_fir_ccf</label>
-        <link refid="classgr__fir__ccf"/>
-        <childnode refid="9826" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-        </childnode>
-      </node>
-      <node id="9824">
-        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="9825" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="9814">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="9815" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="9801">
+      <node id="4829">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="9802" relation="usage">
+        <childnode refid="4830" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="9812">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="9813" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="9814" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="9816" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="9805">
+      <node id="4832">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="9808">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="9809" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="9800">
+      <node id="4828">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="9823">
-        <label>std::complex</label>
-      </node>
-      <node id="9811">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="9812" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="9815">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="9817">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="9818" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="9819">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="9820" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="9802">
+      <node id="4830">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="9803" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="9798">
+      <node id="4826">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="9799" relation="public-inheritance">
+        <childnode refid="4827" relation="public-inheritance">
         </childnode>
-        <childnode refid="9801" relation="usage">
+        <childnode refid="4829" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="9804" relation="usage">
+        <childnode refid="4831" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="9803">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="9804">
+      <node id="4831">
         <label>std::string</label>
-        <childnode refid="9805" relation="public-inheritance">
+        <childnode refid="4832" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -621,7 +455,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_pfb_decimator_ccf</scope><name>set_relative_rate</name></member>

@@ -1,100 +1,41 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__fir__scc__simd_8h" kind="file">
     <compoundname>gr_fir_scc_simd.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
-    <includes refid="gr__fir__scc__generic_8h" local="no">gr_fir_scc_generic.h</includes>
+    <includes local="no">gr_fir_scc_generic.h</includes>
     <includedby refid="gr__fir__scc__x86_8h" local="no">gr_fir_scc_x86.h</includedby>
     <incdepgraph>
-      <node id="8561">
-        <label>gr_fir_scc_generic.h</label>
-        <link refid="gr__fir__scc__generic_8h"/>
-        <childnode refid="8559" relation="include">
-        </childnode>
-        <childnode refid="8562" relation="include">
-        </childnode>
-      </node>
-      <node id="8565">
-        <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="8558">
+      <node id="7766">
         <label>gr_fir_scc_simd.h</label>
         <link refid="gr_fir_scc_simd.h"/>
-        <childnode refid="8559" relation="include">
+        <childnode refid="7767" relation="include">
         </childnode>
-        <childnode refid="8561" relation="include">
+        <childnode refid="7769" relation="include">
         </childnode>
       </node>
-      <node id="8560">
+      <node id="7768">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="8564">
-        <label>gr_types.h</label>
-        <link refid="gr__types_8h"/>
-        <childnode refid="8559" relation="include">
-        </childnode>
-        <childnode refid="8565" relation="include">
-        </childnode>
-        <childnode refid="8563" relation="include">
-        </childnode>
-        <childnode refid="8566" relation="include">
-        </childnode>
-        <childnode refid="8567" relation="include">
-        </childnode>
+      <node id="7769">
+        <label>gr_fir_scc_generic.h</label>
       </node>
-      <node id="8566">
-        <label>stddef.h</label>
-      </node>
-      <node id="8563">
-        <label>vector</label>
-      </node>
-      <node id="8559">
+      <node id="7767">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="8560" relation="include">
-        </childnode>
-      </node>
-      <node id="8569">
-        <label>gr_reverse.h</label>
-        <link refid="gr__reverse_8h"/>
-        <childnode refid="8559" relation="include">
-        </childnode>
-        <childnode refid="8563" relation="include">
-        </childnode>
-        <childnode refid="8567" relation="include">
-        </childnode>
-      </node>
-      <node id="8562">
-        <label>gr_fir_scc.h</label>
-        <link refid="gr__fir__scc_8h"/>
-        <childnode refid="8559" relation="include">
-        </childnode>
-        <childnode refid="8563" relation="include">
-        </childnode>
-        <childnode refid="8564" relation="include">
-        </childnode>
-        <childnode refid="8569" relation="include">
-        </childnode>
-      </node>
-      <node id="8568">
-        <label>complex</label>
-      </node>
-      <node id="8567">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="8568" relation="include">
+        <childnode refid="7768" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="8570">
+      <node id="7770">
         <label>gr_fir_scc_simd.h</label>
         <link refid="gr_fir_scc_simd.h"/>
-        <childnode refid="8571" relation="include">
+        <childnode refid="7771" relation="include">
         </childnode>
       </node>
-      <node id="8571">
+      <node id="7771">
         <label>gr_fir_scc_x86.h</label>
         <link refid="gr__fir__scc__x86_8h"/>
       </node>

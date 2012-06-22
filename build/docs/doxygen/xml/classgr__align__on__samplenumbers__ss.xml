@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__align__on__samplenumbers__ss" kind="class" prot="public">
     <compoundname>gr_align_on_samplenumbers_ss</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -72,7 +72,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_align_on_samplenumbers_ss.h" line="60" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_align_on_samplenumbers_ss.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__align__on__samplenumbers__ss_1a9c5a2d01950bb864bbc27b15e9bc1f35" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; align_state &gt;</type>
+        <type>std::vector&lt; align_state &gt;</type>
         <definition>std::vector&lt;align_state&gt; gr_align_on_samplenumbers_ss::d_state</definition>
         <argsstring></argsstring>
         <name>d_state</name>
@@ -87,7 +87,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__align__on__samplenumbers__ss_1ac02c802afc3e8b2f6cb7d9516b5da38e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_align_on_samplenumbers_ss_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_align_on_samplenumbers_ss_sptr</ref></type>
         <definition>GR_CORE_API gr_align_on_samplenumbers_ss_sptr gr_make_align_on_samplenumbers_ss</definition>
         <argsstring>(int nchan, int align_interval)</argsstring>
         <name>gr_make_align_on_samplenumbers_ss</name>
@@ -184,7 +184,7 @@ This function is called by the runtime system whenever the topology changes. Mos
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_align_on_samplenumbers_ss.h" line="81"/>
       </memberdef>
       <memberdef kind="function" id="classgr__align__on__samplenumbers__ss_1a0ae31942c98cd81ab111d9f1c6d6f194" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_align_on_samplenumbers_ss::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -194,7 +194,7 @@ This function is called by the runtime system whenever the topology changes. Mos
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items_required</declname>
         </param>
         <briefdescription>
@@ -231,15 +231,15 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -286,222 +286,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3912">
+      <node id="2137">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3913" relation="public-inheritance">
+        <childnode refid="2138" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3910">
+      <node id="2135">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3911" relation="public-inheritance">
+        <childnode refid="2136" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3909">
+      <node id="2134">
         <label>gr_align_on_samplenumbers_ss</label>
         <link refid="classgr__align__on__samplenumbers__ss"/>
-        <childnode refid="3910" relation="public-inheritance">
+        <childnode refid="2135" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3913">
+      <node id="2138">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3911">
+      <node id="2136">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3912" relation="public-inheritance">
+        <childnode refid="2137" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3934">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3928" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3927">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3928" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3939">
-        <label>T</label>
-      </node>
-      <node id="3917">
+      <node id="2142">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3918" relation="public-inheritance">
+        <childnode refid="2143" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3928">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="3929" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="3936">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="3931">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="3915">
+      <node id="2140">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3916" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3924" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="2141" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3924">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3925" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3938">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3939" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3925">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="3926" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="3935" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="3937" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="3932">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="3933" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3919">
+      <node id="2144">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3920" relation="usage">
+        <childnode refid="2145" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3914">
+      <node id="2139">
         <label>gr_align_on_samplenumbers_ss</label>
         <link refid="classgr__align__on__samplenumbers__ss"/>
-        <childnode refid="3915" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3940" relation="usage">
-          <edgelabel>d_state</edgelabel>
+        <childnode refid="2140" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3930">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="3931" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="3932" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="3934" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="3923">
+      <node id="2147">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3926">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="3927" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3918">
+      <node id="2143">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3929">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3930" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3933">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="3935">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="3936" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="3937">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="3938" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3920">
+      <node id="2145">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="3921" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="3940">
-        <label>std::vector&lt; align_state &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3941" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3916">
+      <node id="2141">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3917" relation="public-inheritance">
+        <childnode refid="2142" relation="public-inheritance">
         </childnode>
-        <childnode refid="3919" relation="usage">
+        <childnode refid="2144" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3922" relation="usage">
+        <childnode refid="2146" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3941">
-        <label>gr_align_on_samplenumbers_ss::align_state</label>
-      </node>
-      <node id="3921">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="3922">
+      <node id="2146">
         <label>std::string</label>
-        <childnode refid="3923" relation="public-inheritance">
+        <childnode refid="2147" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -565,7 +431,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_align_on_samplenumbers_ss</scope><name>set_relative_rate</name></member>

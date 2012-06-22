@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__pfb__clock__sync__fff" kind="class" prot="public">
     <compoundname>digital_pfb_clock_sync_fff</compoundname>
     <includes refid="digital__pfb__clock__sync__fff_8h" local="no">digital_pfb_clock_sync_fff.h</includes>
@@ -292,9 +292,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__pfb__clock__sync__fff_1a5c83026ee01559c72c66efaaf3f26407" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" kindref="member">digital_pfb_clock_sync_fff_sptr</ref></type>
-        <definition>DIGITAL_API digital_pfb_clock_sync_fff_sptr digital_make_pfb_clock_sync_fff</definition>
+      <memberdef kind="friend" id="classdigital__pfb__clock__sync__fff_1a4aab76be440cc7cbc48907d2c207c234" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" kindref="member">digital_pfb_clock_sync_fff_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_pfb_clock_sync_fff_sptr digital_make_pfb_clock_sync_fff</definition>
         <argsstring>(double sps, float gain, const std::vector&lt; float &gt; &amp;taps, unsigned int filter_size, float init_phase, float max_rate_deviation, int osps)</argsstring>
         <name>digital_make_pfb_clock_sync_fff</name>
         <param>
@@ -844,32 +844,6 @@
 <listitem><para><computeroutput>osps</computeroutput> (default=1): The osps is the number of output samples per symbol. By default, the algorithm produces 1 sample per symbol, sampled at the exact sample value. This osps value was added to better work with equalizers, which do a better job of modeling the channel if they have 2 samps/sym. </para></listitem>
 </itemizedlist>
 </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="476">
-        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
-        <childnode refid="477" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="477">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-      <node id="478">
-        <label>std::vector&lt; gr_fir_fff * &gt;</label>
-      </node>
-      <node id="475">
-        <label>digital_pfb_clock_sync_fff</label>
-        <link refid="classdigital__pfb__clock__sync__fff"/>
-        <childnode refid="476" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-          <edgelabel>d_dtaps</edgelabel>
-        </childnode>
-        <childnode refid="478" relation="usage">
-          <edgelabel>d_filters</edgelabel>
-          <edgelabel>d_diff_filters</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_fff.h" line="156" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_fff.h" bodystart="155" bodyend="374"/>
     <listofallmembers>
       <member refid="classdigital__pfb__clock__sync__fff_1a84beda67e942a29432dd1b82ae526ad4" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>check_topology</name></member>
@@ -896,7 +870,7 @@
       <member refid="classdigital__pfb__clock__sync__fff_1ac732fe3552b74547726ffcc8e582b050" prot="private" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>d_taps</name></member>
       <member refid="classdigital__pfb__clock__sync__fff_1a6fa49cdb275e78611b5401fd55f1f5a9" prot="private" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>d_taps_per_filter</name></member>
       <member refid="classdigital__pfb__clock__sync__fff_1a07239bea7e88a7be4d87380d8d067b80" prot="private" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>d_updated</name></member>
-      <member refid="classdigital__pfb__clock__sync__fff_1a5c83026ee01559c72c66efaaf3f26407" prot="private" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>digital_make_pfb_clock_sync_fff</name></member>
+      <member refid="classdigital__pfb__clock__sync__fff_1a4aab76be440cc7cbc48907d2c207c234" prot="private" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>digital_make_pfb_clock_sync_fff</name></member>
       <member refid="classdigital__pfb__clock__sync__fff_1a985474dccfc8224ae2b5d2f87c3913b9" prot="private" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>digital_pfb_clock_sync_fff</name></member>
       <member refid="classdigital__pfb__clock__sync__fff_1a6710ad08b7ffd10d0ae1974b9208202c" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>general_work</name></member>
       <member refid="classdigital__pfb__clock__sync__fff_1ae8bac8fb1e3f797b54a26e6866d66308" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_fff</scope><name>get_alpha</name></member>

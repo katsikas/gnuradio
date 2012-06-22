@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_wxgui_grc_c899d.
+
+# Include the progress variables for this target.
+include gr-wxgui/grc/CMakeFiles/pygen_gr_wxgui_grc_c899d.dir/progress.make
 
 gr-wxgui/grc/CMakeFiles/pygen_gr_wxgui_grc_c899d: gr-wxgui/grc/__init__.pyc
 gr-wxgui/grc/CMakeFiles/pygen_gr_wxgui_grc_c899d: gr-wxgui/grc/panel.pyc
@@ -54,7 +54,7 @@ gr-wxgui/grc/__init__.pyc: ../gr-wxgui/grc/panel.py
 gr-wxgui/grc/__init__.pyc: ../gr-wxgui/grc/top_block_gui.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyc, panel.pyc, top_block_gui.pyc"
-	cd /home/katsikas/gnuradio/build/gr-wxgui/grc && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/grc/__init__.py /home/katsikas/gnuradio/gr-wxgui/grc/panel.py /home/katsikas/gnuradio/gr-wxgui/grc/top_block_gui.py /home/katsikas/gnuradio/build/gr-wxgui/grc/__init__.pyc /home/katsikas/gnuradio/build/gr-wxgui/grc/panel.pyc /home/katsikas/gnuradio/build/gr-wxgui/grc/top_block_gui.pyc
+	cd /home/katsikas/gnuradio/build/gr-wxgui/grc && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/grc/__init__.py /home/katsikas/gnuradio/gr-wxgui/grc/panel.py /home/katsikas/gnuradio/gr-wxgui/grc/top_block_gui.py /home/katsikas/gnuradio/build/gr-wxgui/grc/__init__.pyc /home/katsikas/gnuradio/build/gr-wxgui/grc/panel.pyc /home/katsikas/gnuradio/build/gr-wxgui/grc/top_block_gui.pyc
 
 gr-wxgui/grc/panel.pyc: gr-wxgui/grc/__init__.pyc
 
@@ -65,7 +65,7 @@ gr-wxgui/grc/__init__.pyo: ../gr-wxgui/grc/panel.py
 gr-wxgui/grc/__init__.pyo: ../gr-wxgui/grc/top_block_gui.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyo, panel.pyo, top_block_gui.pyo"
-	cd /home/katsikas/gnuradio/build/gr-wxgui/grc && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/grc/__init__.py /home/katsikas/gnuradio/gr-wxgui/grc/panel.py /home/katsikas/gnuradio/gr-wxgui/grc/top_block_gui.py /home/katsikas/gnuradio/build/gr-wxgui/grc/__init__.pyo /home/katsikas/gnuradio/build/gr-wxgui/grc/panel.pyo /home/katsikas/gnuradio/build/gr-wxgui/grc/top_block_gui.pyo
+	cd /home/katsikas/gnuradio/build/gr-wxgui/grc && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/grc/__init__.py /home/katsikas/gnuradio/gr-wxgui/grc/panel.py /home/katsikas/gnuradio/gr-wxgui/grc/top_block_gui.py /home/katsikas/gnuradio/build/gr-wxgui/grc/__init__.pyo /home/katsikas/gnuradio/build/gr-wxgui/grc/panel.pyo /home/katsikas/gnuradio/build/gr-wxgui/grc/top_block_gui.pyo
 
 gr-wxgui/grc/panel.pyo: gr-wxgui/grc/__init__.pyo
 

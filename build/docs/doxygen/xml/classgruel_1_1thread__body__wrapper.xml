@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgruel_1_1thread__body__wrapper" kind="class" prot="public">
     <compoundname>gruel::thread_body_wrapper</compoundname>
     <includes refid="thread__body__wrapper_8h" local="no">thread_body_wrapper.h</includes>
@@ -61,7 +61,7 @@
         <references refid="volk_8tmpl_8h_1ace3ce91bc48f67ffceaeed6831ee2c57">name</references>
       </memberdef>
       <memberdef kind="function" id="classgruel_1_1thread__body__wrapper_1af0d76a18a7dd6bf93dfcc3f8356d4954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gruel::thread_body_wrapper&lt; F &gt;::operator()</definition>
         <argsstring>()</argsstring>
         <name>operator()</name>
@@ -79,23 +79,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="14459">
-        <label>gruel::thread_body_wrapper&lt; F &gt;</label>
-        <link refid="classgruel_1_1thread__body__wrapper"/>
-        <childnode refid="14460" relation="usage">
-          <edgelabel>d_name</edgelabel>
-        </childnode>
-      </node>
-      <node id="14461">
-        <label>std::basic_string&lt; char &gt;</label>
-      </node>
-      <node id="14460">
-        <label>std::string</label>
-        <childnode refid="14461" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/thread_body_wrapper.h" line="36" bodyfile="/home/katsikas/gnuradio/gruel/src/include/gruel/thread_body_wrapper.h" bodystart="35" bodyend="66"/>
     <listofallmembers>
       <member refid="classgruel_1_1thread__body__wrapper_1aeb3a412295da93e7939ea89e7f8232b4" prot="private" virt="non-virtual"><scope>gruel::thread_body_wrapper</scope><name>d_f</name></member>

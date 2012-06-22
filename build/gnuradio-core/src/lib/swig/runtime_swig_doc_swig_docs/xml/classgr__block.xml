@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__block" kind="class" prot="public">
     <compoundname>gr_block</compoundname>
     <basecompoundref refid="classgr__basic__block" prot="public" virt="non-virtual">gr_basic_block</basecompoundref>
@@ -248,9 +248,9 @@
         <definition>virtual void gr_block::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
-        <reimplementedby refid="classgr__sync__interpolator_1a81ef017ef4ec17d0808cd1c0e2ceb803">forecast</reimplementedby>
         <reimplementedby refid="classgr__sync__decimator_1a140792c0a9777b6b82eb220cdd424ecd">forecast</reimplementedby>
         <reimplementedby refid="classgr__sync__block_1a1327e83509baf039aa3c816ea81a8f22">forecast</reimplementedby>
+        <reimplementedby refid="classgr__sync__interpolator_1a81ef017ef4ec17d0808cd1c0e2ceb803">forecast</reimplementedby>
         <param>
           <type>int</type>
           <declname>noutput_items</declname>
@@ -287,9 +287,9 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <definition>virtual int gr_block::general_work</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)=0</argsstring>
         <name>general_work</name>
-        <reimplementedby refid="classgr__sync__interpolator_1a49cd2967b214ead14270d97dab932301">general_work</reimplementedby>
         <reimplementedby refid="classgr__sync__decimator_1a3a7d9a6487780922c14cbb76d46a0586">general_work</reimplementedby>
         <reimplementedby refid="classgr__sync__block_1a56ca60b6bc20a3510f71d961891fa81b">general_work</reimplementedby>
+        <reimplementedby refid="classgr__sync__interpolator_1a49cd2967b214ead14270d97dab932301">general_work</reimplementedby>
         <param>
           <type>int</type>
           <declname>noutput_items</declname>
@@ -613,9 +613,9 @@ This control is similar to the output_multiple setting, except that if the numbe
         <definition>virtual int gr_block::fixed_rate_ninput_to_noutput</definition>
         <argsstring>(int ninput)</argsstring>
         <name>fixed_rate_ninput_to_noutput</name>
-        <reimplementedby refid="classgr__sync__interpolator_1a943227c6134e71a7867a66977b414533">fixed_rate_ninput_to_noutput</reimplementedby>
-        <reimplementedby refid="classgr__sync__decimator_1a23c657d3c3f0482369648e1916751f6f">fixed_rate_ninput_to_noutput</reimplementedby>
         <reimplementedby refid="classgr__sync__block_1a0cbbc0ce275498411248e678038710b2">fixed_rate_ninput_to_noutput</reimplementedby>
+        <reimplementedby refid="classgr__sync__decimator_1a23c657d3c3f0482369648e1916751f6f">fixed_rate_ninput_to_noutput</reimplementedby>
+        <reimplementedby refid="classgr__sync__interpolator_1a943227c6134e71a7867a66977b414533">fixed_rate_ninput_to_noutput</reimplementedby>
         <param>
           <type>int</type>
           <declname>ninput</declname>
@@ -633,9 +633,9 @@ This control is similar to the output_multiple setting, except that if the numbe
         <definition>virtual int gr_block::fixed_rate_noutput_to_ninput</definition>
         <argsstring>(int noutput)</argsstring>
         <name>fixed_rate_noutput_to_ninput</name>
-        <reimplementedby refid="classgr__sync__interpolator_1a03961e37cf520668a87f53762e638b9f">fixed_rate_noutput_to_ninput</reimplementedby>
-        <reimplementedby refid="classgr__sync__decimator_1a90041d67e72c64cb4d0f9a29bfbbd776">fixed_rate_noutput_to_ninput</reimplementedby>
         <reimplementedby refid="classgr__sync__block_1adaecb00ae09408c22e46c44d09aad53e">fixed_rate_noutput_to_ninput</reimplementedby>
+        <reimplementedby refid="classgr__sync__decimator_1a90041d67e72c64cb4d0f9a29bfbbd776">fixed_rate_noutput_to_ninput</reimplementedby>
+        <reimplementedby refid="classgr__sync__interpolator_1a03961e37cf520668a87f53762e638b9f">fixed_rate_noutput_to_ninput</reimplementedby>
         <param>
           <type>int</type>
           <declname>noutput</declname>
@@ -1165,7 +1165,7 @@ This control is similar to the output_multiple setting, except that if the numbe
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_block</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_block</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_block</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_block</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_block</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_block</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_block</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_block</scope><name>set_relative_rate</name></member>

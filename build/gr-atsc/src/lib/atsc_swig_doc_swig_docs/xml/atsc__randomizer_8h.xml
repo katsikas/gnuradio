@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="atsc__randomizer_8h" kind="file">
     <compoundname>atsc_randomizer.h</compoundname>
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
@@ -74,9 +74,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="atsc__randomizer_8h_1a70fbf20c0ddc76b31d7f8b261862a39e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>ATSC_API <ref refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" kindref="member">atsc_randomizer_sptr</ref></type>
-        <definition>ATSC_API atsc_randomizer_sptr atsc_make_randomizer</definition>
+      <memberdef kind="function" id="atsc__randomizer_8h_1a56cf37f90d04046db8d6dff817a3b643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" kindref="member">atsc_randomizer_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT atsc_randomizer_sptr atsc_make_randomizer</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_randomizer</name>
         <briefdescription>
@@ -124,11 +124,11 @@
 <codeline lineno="29" refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classatsc__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packetsinput: atsc_mpeg_packet; output: atsc_mpeg_packet_no_s...">atsc_randomizer</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;atsc_randomizer&gt;<sp/><ref refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" kindref="member">atsc_randomizer_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" kindref="member">atsc_randomizer_sptr</ref><sp/><ref refid="atsc__randomizer_8h_1a70fbf20c0ddc76b31d7f8b261862a39e" kindref="member">atsc_make_randomizer</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" kindref="member">atsc_randomizer_sptr</ref><sp/><ref refid="atsc__randomizer_8h_1a56cf37f90d04046db8d6dff817a3b643" kindref="member">atsc_make_randomizer</ref>();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40" refid="classatsc__randomizer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="classatsc__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packetsinput: atsc_mpeg_packet; output: atsc_mpeg_packet_no_s...">atsc_randomizer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" kindref="member">atsc_randomizer_sptr</ref><sp/><ref refid="atsc__randomizer_8h_1a70fbf20c0ddc76b31d7f8b261862a39e" kindref="member">atsc_make_randomizer</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__randomizer_8h_1ac03f645dd301ef3e2018b6e10d7fec2a" kindref="member">atsc_randomizer_sptr</ref><sp/><ref refid="atsc__randomizer_8h_1a56cf37f90d04046db8d6dff817a3b643" kindref="member">atsc_make_randomizer</ref>();</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classatsci__randomizer" kindref="compound" tooltip="ATSC data &amp;quot;whitener&amp;quot;.">atsci_randomizer</ref><sp/><sp/><sp/><sp/><sp/><sp/>d_rand;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_field2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>user<sp/>to<sp/>init<sp/>plinfo<sp/>in<sp/>output</highlight><highlight class="normal"></highlight></codeline>

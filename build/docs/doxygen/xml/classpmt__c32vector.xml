@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classpmt__c32vector" kind="class" prot="public">
     <compoundname>pmt_c32vector</compoundname>
     <includes refid="pmt__unv__int_8h" local="no">pmt_unv_int.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classpmt__c32vector_1a73cf469475b28960062748178e336b38" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::complex&lt; float &gt; &gt;</type>
+        <type>std::vector&lt; std::complex&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::complex&lt;float&gt; &gt; pmt_c32vector::d_v</definition>
         <argsstring></argsstring>
         <name>d_v</name>
@@ -105,7 +105,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="271"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__c32vector_1a05b6b114ec19101d4b99dff28740d6fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void pmt_c32vector::set</definition>
         <argsstring>(size_t k, std::complex&lt; float &gt; x)</argsstring>
         <name>set</name>
@@ -160,7 +160,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="274"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__c32vector_1abdc90dcf26489be1a9b81865079935cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const void *</type>
+        <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
         <definition>const void* pmt_c32vector::uniform_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_elements</name>
@@ -177,7 +177,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="275"/>
       </memberdef>
       <memberdef kind="function" id="classpmt__c32vector_1a59701f88643958c39dee7c59d6ef712f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void *</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
         <definition>void* pmt_c32vector::uniform_writable_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_writable_elements</name>
@@ -198,26 +198,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="13872">
-        <label>std::vector&lt; std::complex&lt; float &gt; &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="13873" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="13873">
-        <label>std::complex&lt; float &gt;</label>
-      </node>
-      <node id="13871">
-        <label>pmt_c32vector</label>
-        <link refid="classpmt__c32vector"/>
-        <childnode refid="13872" relation="usage">
-          <edgelabel>d_v</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="261" bodyfile="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" bodystart="260" bodyend="277"/>
     <listofallmembers>
       <member refid="classpmt__c32vector_1a73cf469475b28960062748178e336b38" prot="private" virt="non-virtual"><scope>pmt_c32vector</scope><name>d_v</name></member>

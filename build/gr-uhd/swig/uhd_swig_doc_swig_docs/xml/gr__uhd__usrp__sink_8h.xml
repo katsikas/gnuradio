@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__uhd__usrp__sink_8h" kind="file">
     <compoundname>gr_uhd_usrp_sink.h</compoundname>
     <includes refid="gr__uhd__api_8h" local="no">gr_uhd_api.h</includes>
@@ -48,9 +48,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__uhd__usrp__sink_8h_1ae6b24e6bb291ec3aeddd50b7c48721b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_UHD_API boost::shared_ptr&lt; <ref refid="classuhd__usrp__sink" kindref="compound">uhd_usrp_sink</ref> &gt;</type>
-        <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_sink&gt; uhd_make_usrp_sink</definition>
+      <memberdef kind="function" id="gr__uhd__usrp__sink_8h_1a06a9e4bc3c337ab6a56fcc6dd1b03cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UHD_IMPORT boost::shared_ptr&lt; <ref refid="classuhd__usrp__sink" kindref="compound">uhd_usrp_sink</ref> &gt;</type>
+        <definition>UHD_IMPORT boost::shared_ptr&lt;uhd_usrp_sink&gt; uhd_make_usrp_sink</definition>
         <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::io_type_t &amp;io_type, size_t num_channels)</argsstring>
         <name>uhd_make_usrp_sink</name>
         <param>
@@ -98,9 +98,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="84"/>
       </memberdef>
-      <memberdef kind="function" id="gr__uhd__usrp__sink_8h_1a36272ab409789053aed7b1a059c61e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_UHD_API boost::shared_ptr&lt; <ref refid="classuhd__usrp__sink" kindref="compound">uhd_usrp_sink</ref> &gt;</type>
-        <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_sink&gt; uhd_make_usrp_sink</definition>
+      <memberdef kind="function" id="gr__uhd__usrp__sink_8h_1acaceaef2a2e0d2d124c68e89c6955667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UHD_IMPORT boost::shared_ptr&lt; <ref refid="classuhd__usrp__sink" kindref="compound">uhd_usrp_sink</ref> &gt;</type>
+        <definition>UHD_IMPORT boost::shared_ptr&lt;uhd_usrp_sink&gt; uhd_make_usrp_sink</definition>
         <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::stream_args_t &amp;stream_args)</argsstring>
         <name>uhd_make_usrp_sink</name>
         <param>
@@ -194,13 +194,13 @@
 <codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classuhd__usrp__sink" kindref="compound">uhd_usrp_sink</ref>;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_sink&gt;<sp/><ref refid="gr__uhd__usrp__sink_8h_1ae6b24e6bb291ec3aeddd50b7c48721b0" kindref="member" tooltip="Make a new USRP sink block.The USRP sink block reads a stream and transmits the samples. The sink block also provides API calls for transmitter settings.">uhd_make_usrp_sink</ref>(</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_sink&gt;<sp/><ref refid="gr__uhd__usrp__sink_8h_1a06a9e4bc3c337ab6a56fcc6dd1b03cb0" kindref="member" tooltip="Make a new USRP sink block.The USRP sink block reads a stream and transmits the samples. The sink block also provides API calls for transmitter settings.">uhd_make_usrp_sink</ref>(</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhd::device_addr_t<sp/>&amp;device_addr,</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhd::io_type_t<sp/>&amp;io_type,</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num_channels</highlight></codeline>
 <codeline lineno="84"><highlight class="normal">);</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_sink&gt;<sp/><ref refid="gr__uhd__usrp__sink_8h_1ae6b24e6bb291ec3aeddd50b7c48721b0" kindref="member" tooltip="Make a new USRP sink block.The USRP sink block reads a stream and transmits the samples. The sink block also provides API calls for transmitter settings.">uhd_make_usrp_sink</ref>(</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref><sp/>boost::shared_ptr&lt;uhd_usrp_sink&gt;<sp/><ref refid="gr__uhd__usrp__sink_8h_1a06a9e4bc3c337ab6a56fcc6dd1b03cb0" kindref="member" tooltip="Make a new USRP sink block.The USRP sink block reads a stream and transmits the samples. The sink block also provides API calls for transmitter settings.">uhd_make_usrp_sink</ref>(</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uhd::device_addr_t<sp/>&amp;device_addr,</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structuhd_1_1stream__args__t" kindref="compound">uhd::stream_args_t</ref><sp/>&amp;stream_args</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">);</highlight></codeline>

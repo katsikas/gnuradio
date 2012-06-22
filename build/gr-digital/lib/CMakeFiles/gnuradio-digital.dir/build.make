@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -1238,7 +1235,7 @@ gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_simple_framer.cc.o.provid
 gr-digital/lib/digital_chunks_to_symbols_bf.cc: ../gr-digital/lib/digital_chunks_to_symbols_XX.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating digital_chunks_to_symbols_bf.cc, digital_chunks_to_symbols_bc.cc, digital_chunks_to_symbols_sf.cc, digital_chunks_to_symbols_sc.cc, digital_chunks_to_symbols_if.cc, digital_chunks_to_symbols_ic.cc"
-	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-digital/lib/generate_helper.py digital_chunks_to_symbols_XX digital_chunks_to_symbols_XX.cc.t bf bc sf sc if ic
+	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-digital/lib/generate_helper.py digital_chunks_to_symbols_XX digital_chunks_to_symbols_XX.cc.t bf bc sf sc if ic
 
 gr-digital/lib/digital_chunks_to_symbols_bc.cc: gr-digital/lib/digital_chunks_to_symbols_bf.cc
 

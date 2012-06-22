@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for digital_generated_includes.
+
+# Include the progress variables for this target.
+include gr-digital/include/CMakeFiles/digital_generated_includes.dir/progress.make
 
 gr-digital/include/CMakeFiles/digital_generated_includes: gr-digital/include/digital_chunks_to_symbols_bf.h
 gr-digital/include/CMakeFiles/digital_generated_includes: gr-digital/include/digital_chunks_to_symbols_bc.h
@@ -52,7 +52,7 @@ gr-digital/include/CMakeFiles/digital_generated_includes: gr-digital/include/dig
 gr-digital/include/digital_chunks_to_symbols_bf.h: ../gr-digital/include/digital_chunks_to_symbols_XX.h.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating digital_chunks_to_symbols_bf.h, digital_chunks_to_symbols_bc.h, digital_chunks_to_symbols_sf.h, digital_chunks_to_symbols_sc.h, digital_chunks_to_symbols_if.h, digital_chunks_to_symbols_ic.h"
-	cd /home/katsikas/gnuradio/build/gr-digital/include && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-digital/include/generate_helper.py digital_chunks_to_symbols_XX digital_chunks_to_symbols_XX.h.t bf bc sf sc if ic
+	cd /home/katsikas/gnuradio/build/gr-digital/include && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-digital/include/generate_helper.py digital_chunks_to_symbols_XX digital_chunks_to_symbols_XX.h.t bf bc sf sc if ic
 
 gr-digital/include/digital_chunks_to_symbols_bc.h: gr-digital/include/digital_chunks_to_symbols_bf.h
 

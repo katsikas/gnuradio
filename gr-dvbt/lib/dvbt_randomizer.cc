@@ -33,7 +33,6 @@
 dvbt_randomizer_sptr
 dvbt_make_randomizer()
 {
-	printf("dvbt_make_randomizer() \n");
   	return gnuradio::get_initial_sptr(new dvbt_randomizer());
 }
 
@@ -41,8 +40,6 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)))
 {
-	//printf("sizeof(dvbt_mpeg_packet) = %zu \n",sizeof(dvbt_mpeg_packet));
-	//printf("sizeof(dvbt_mpeg_packet_no_sync) = %zu \n",sizeof(dvbt_mpeg_packet_no_sync));
   	reset();
 	packets = 0;
 }
@@ -50,8 +47,6 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 void
 dvbt_randomizer::reset()
 {
-	printf("reset() \n");
-
   	d_rand.reset();
   	d_field2 = false;
   	d_segno = 0;
@@ -62,7 +57,6 @@ dvbt_randomizer::work (int noutput_items,
 		       gr_vector_const_void_star &input_items,
 		       gr_vector_void_star &output_items)
 {
-	printf("work() \n");
 	int i = 0;
 	int packets = get_packets();
 
@@ -74,19 +68,19 @@ dvbt_randomizer::work (int noutput_items,
     		assert((in[i].data[0] == MPEG_SYNC_BYTE));
 		if(( (packets + i ) % 8) != 0){
                         out[i].data[0] = MPEG_SYNC_BYTE;
+			d_rand.next_state(1);
                 }
                 else{
                         out[i].data[0] = ~MPEG_SYNC_BYTE;
+			d_rand.reset();
                 }
-
-    		assert((in[i].data[1] & MPEG_TRANSPORT_ERROR_BIT) == 0);
 
     		// initialize plinfo for downstream
     		//
     		// We do this here because the randomizer is effectively
     		// the head of the tx processing chain
     		//
-    		out[i].pli.set_regular_seg(d_field2, d_segno);
+    		/*out[i].pli.set_regular_seg(d_field2, d_segno);
     		d_segno++;
     		if (d_segno == 312){
       			d_segno = 0;
@@ -95,7 +89,7 @@ dvbt_randomizer::work (int noutput_items,
 
     		if (out[i].pli.first_regular_seg_p()){
     	  		d_rand.reset();
-		}
+		}*/
     		d_rand.randomize(out[i], in[i]);
   	}
 

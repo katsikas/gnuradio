@@ -1,50 +1,50 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__dispatcher_8h" kind="file">
     <compoundname>gr_dispatcher.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__select__handler_8h" local="no">gr_select_handler.h</includes>
     <includes local="no">vector</includes>
     <incdepgraph>
-      <node id="7561">
+      <node id="7212">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="7559">
+      <node id="7210">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7557">
+      <node id="7208">
         <label>gr_dispatcher.h</label>
         <link refid="gr_dispatcher.h"/>
-        <childnode refid="7558" relation="include">
+        <childnode refid="7209" relation="include">
         </childnode>
-        <childnode refid="7560" relation="include">
+        <childnode refid="7211" relation="include">
         </childnode>
-        <childnode refid="7562" relation="include">
+        <childnode refid="7213" relation="include">
         </childnode>
       </node>
-      <node id="7560">
+      <node id="7211">
         <label>gr_select_handler.h</label>
         <link refid="gr__select__handler_8h"/>
-        <childnode refid="7558" relation="include">
+        <childnode refid="7209" relation="include">
         </childnode>
-        <childnode refid="7561" relation="include">
+        <childnode refid="7212" relation="include">
         </childnode>
       </node>
-      <node id="7562">
+      <node id="7213">
         <label>vector</label>
       </node>
-      <node id="7558">
+      <node id="7209">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="7559" relation="include">
+        <childnode refid="7210" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classgr__dispatcher" prot="public">gr_dispatcher</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__dispatcher_8h_1a388a8a1097577fa96df011634f9b4fa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_dispatcher_sptr</ref></type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_dispatcher_sptr</ref></type>
         <definition>GR_CORE_API gr_dispatcher_sptr gr_dispatcher_singleton</definition>
         <argsstring>()</argsstring>
         <name>gr_dispatcher_singleton</name>
@@ -57,7 +57,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_dispatcher.h" line="33"/>
       </memberdef>
       <memberdef kind="function" id="gr__dispatcher_8h_1adc59ca2913cbff8f258843e2c411a690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_dispatcher_sptr</ref></type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_dispatcher_sptr</ref></type>
         <definition>GR_CORE_API gr_dispatcher_sptr gr_make_dispatcher</definition>
         <argsstring>()</argsstring>
         <name>gr_make_dispatcher</name>

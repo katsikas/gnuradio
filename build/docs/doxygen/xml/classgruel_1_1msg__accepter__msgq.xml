@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgruel_1_1msg__accepter__msgq" kind="class" prot="public">
     <compoundname>gruel::msg_accepter_msgq</compoundname>
     <basecompoundref refid="classgruel_1_1msg__accepter" prot="public" virt="non-virtual">gruel::msg_accepter</basecompoundref>
@@ -51,7 +51,7 @@
         <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h" line="41"/>
       </memberdef>
       <memberdef kind="function" id="classgruel_1_1msg__accepter__msgq_1a51cf8cbbe261984c04c50a98674ebbc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void gruel::msg_accepter_msgq::post</definition>
         <argsstring>(pmt::pmt_t msg)</argsstring>
         <name>post</name>
@@ -87,47 +87,41 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="13575">
+      <node id="6686">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13574">
+      <node id="6685">
         <label>gruel::msg_accepter_msgq</label>
         <link refid="classgruel_1_1msg__accepter__msgq"/>
-        <childnode refid="13575" relation="public-inheritance">
+        <childnode refid="6686" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="13580">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="13577">
+      <node id="6688">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13576">
+      <node id="6687">
         <label>gruel::msg_accepter_msgq</label>
         <link refid="classgruel_1_1msg__accepter__msgq"/>
-        <childnode refid="13577" relation="public-inheritance">
+        <childnode refid="6688" relation="public-inheritance">
         </childnode>
-        <childnode refid="13578" relation="usage">
+        <childnode refid="6689" relation="usage">
           <edgelabel>d_msg_queue</edgelabel>
         </childnode>
       </node>
-      <node id="13578">
+      <node id="6689">
         <label>boost::shared_ptr&lt; msg_queue &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="13579" relation="usage">
+        <childnode refid="6690" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="13579">
+      <node id="6690">
         <label>gruel::msg_queue</label>
         <link refid="classgruel_1_1msg__queue"/>
-        <childnode refid="13580" relation="usage">
-          <edgelabel>d_msgs</edgelabel>
-        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h" line="35" bodyfile="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h" bodystart="34" bodyend="46"/>

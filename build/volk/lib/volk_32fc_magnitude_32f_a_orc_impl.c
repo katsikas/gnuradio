@@ -265,7 +265,7 @@ void
 volk_32fc_magnitude_32f_a_orc_impl (orc_uint32 * ORC_RESTRICT d1, const orc_uint64 * ORC_RESTRICT s1, int n)
 {
   OrcExecutor _ex, *ex = &_ex;
-  static int p_inited = 0;
+  static volatile int p_inited = 0;
   static OrcCode *c = 0;
   void (*func) (OrcExecutor *);
 

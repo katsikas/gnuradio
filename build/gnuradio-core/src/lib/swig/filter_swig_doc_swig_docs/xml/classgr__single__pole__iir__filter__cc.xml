@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__single__pole__iir__filter__cc" kind="class" prot="public">
     <compoundname>gr_single_pole_iir_filter_cc</compoundname>
     <includes refid="gr__single__pole__iir__filter__cc_8h" local="no">gr_single_pole_iir_filter_cc.h</includes>
@@ -150,25 +150,6 @@
  </htmlonly></para><para> 
  H(z) = \ frac{alpha}{1 - (1-alpha) z^{-1}}
  </para><para>Note that some texts define the system function with a + in the denominator. If you&apos;re using that convention, you&apos;ll need to negate the feedback tap. </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="900">
-        <label>gr_single_pole_iir_filter_cc</label>
-        <link refid="classgr__single__pole__iir__filter__cc"/>
-        <childnode refid="901" relation="usage">
-          <edgelabel>d_iir</edgelabel>
-        </childnode>
-      </node>
-      <node id="901">
-        <label>std::vector&lt; gr_single_pole_iir&lt; gr_complex, gr_complex, double &gt; &gt;</label>
-        <childnode refid="902" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="902">
-        <label>gr_single_pole_iir&lt; gr_complex, gr_complex, double &gt;</label>
-        <link refid="classgr__single__pole__iir"/>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_single_pole_iir_filter_cc.h" line="68" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_single_pole_iir_filter_cc.h" bodystart="67" bodyend="86"/>
     <listofallmembers>
       <member refid="classgr__single__pole__iir__filter__cc_1a75122191fba2c8217866e660af320542" prot="private" virt="non-virtual"><scope>gr_single_pole_iir_filter_cc</scope><name>d_iir</name></member>

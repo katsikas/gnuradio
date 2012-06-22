@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "fcd_swig.pyo"
   "fcd_swigPYTHON_wrap.cxx"
   "fcd_swig.py"
-  "fcd_swig.tag"
   "fcd_swig_doc.i"
+  "fcd_swig.tag"
   "fcd_swig_doc_swig_docs/xml/index.xml"
   "fcd_swig_doc_swig_docs/xml/combine.xslt"
 )

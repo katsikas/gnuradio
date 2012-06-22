@@ -42,8 +42,6 @@ dvbt_derandomizer::dvbt_derandomizer()
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)))
 {
-	//printf("sizeof(dvbt_mpeg_packet_no_sync) = %d \n",sizeof(dvbt_mpeg_packet_no_sync));
-	//printf("sizeof(dvbt_mpeg_packet) = %d \n",sizeof(dvbt_mpeg_packet));
   	reset();
 	packets = 0;
 }
@@ -69,15 +67,17 @@ dvbt_derandomizer::work (int noutput_items,
 
 		if(( (packets + i ) % 8) != 0){
                         out[i].data[0] = MPEG_SYNC_BYTE;
+			d_rand.next_state(1);
                 }
                 else{
                         out[i].data[0] = ~MPEG_SYNC_BYTE;
+			d_rand.reset();
                 }
 
 
-    		if (in[i].pli.first_regular_seg_p()){
+    		/*if (in[i].pli.first_regular_seg_p()){
       			d_rand.reset();
-		}
+		}*/
 
     		d_rand.derandomize(out[i], in[i]);
 
@@ -92,8 +92,11 @@ dvbt_derandomizer::work (int noutput_items,
   		}*/
 	}
 
-	/*for (i = 0; i < noutput_items; i++){
-                for (int j = 0; j < 4; j++){
+	set_packets((i + packets) % PRBS_PERIOD);
+
+
+        /*for (i = 0; i < noutput_items; i++){
+                for (int j = 0; j < 1; j++){
                         printf("%d",out[i].data[j]);
                 }
                 printf("\n");

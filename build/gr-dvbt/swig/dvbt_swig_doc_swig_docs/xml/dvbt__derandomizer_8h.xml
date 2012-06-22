@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dvbt__derandomizer_8h" kind="file">
     <compoundname>dvbt_derandomizer.h</compoundname>
     <includes local="no">cassert</includes>
@@ -28,26 +28,36 @@
       <node id="21">
         <label>cassert</label>
       </node>
+      <node id="27">
+        <label>string</label>
+      </node>
+      <node id="26">
+        <label>bitset</label>
+      </node>
       <node id="25">
         <label>dvbt/dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="22" relation="include">
-        </childnode>
         <childnode refid="26" relation="include">
         </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
       </node>
-      <node id="28">
+      <node id="30">
         <label>dvbt/dvbt_consts.h</label>
         <link refid="dvbt__consts_8h"/>
       </node>
-      <node id="26">
+      <node id="28">
         <label>dvbt/dvbt_types.h</label>
         <link refid="dvbt__types_8h"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
       </node>
       <node id="22">
@@ -56,7 +66,7 @@
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="29">
         <label>cstring</label>
       </node>
     </incdepgraph>
@@ -78,7 +88,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__derandomizer_8h_1a8458e520bba80d8dc60b8952a428d5c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>DVBT_API <ref refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" kindref="member">dvbt_derandomizer_sptr</ref></type>
+        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" kindref="member">dvbt_derandomizer_sptr</ref></type>
         <definition>DVBT_API dvbt_derandomizer_sptr dvbt_make_derandomizer</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_derandomizer</name>

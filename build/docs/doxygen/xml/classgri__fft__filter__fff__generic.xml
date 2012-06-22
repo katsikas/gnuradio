@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgri__fft__filter__fff__generic" kind="class" prot="public">
     <compoundname>gri_fft_filter_fff_generic</compoundname>
     <includes refid="gri__fft__filter__fff__generic_8h" local="no">gri_fft_filter_fff_generic.h</includes>
@@ -96,7 +96,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_fft_filter_fff_generic.h" line="42" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_fft_filter_fff_generic.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgri__fft__filter__fff__generic_1a6b38e3dcf4c47f85207b7a4be3834d43" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt;</type>
+        <type>std::vector&lt; float &gt;</type>
         <definition>std::vector&lt;float&gt; gri_fft_filter_fff_generic::d_tail</definition>
         <argsstring></argsstring>
         <name>d_tail</name>
@@ -109,7 +109,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_fft_filter_fff_generic.h" line="43" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_fft_filter_fff_generic.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgri__fft__filter__fff__generic_1a561a6a5bb37f8a46f23afe49fb95ac26" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt;</type>
+        <type>std::vector&lt; float &gt;</type>
         <definition>std::vector&lt;float&gt; gri_fft_filter_fff_generic::d_new_taps</definition>
         <argsstring></argsstring>
         <name>d_new_taps</name>
@@ -137,7 +137,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classgri__fft__filter__fff__generic_1a4e234a04f49e961e2f22f4ee0726d33f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gri_fft_filter_fff_generic::compute_sizes</definition>
         <argsstring>(int ntaps)</argsstring>
         <name>compute_sizes</name>
@@ -178,7 +178,7 @@
           <declname>decimation</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -235,7 +235,7 @@
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>set_taps</name>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -255,7 +255,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_fft_filter_fff_generic.h" line="71"/>
       </memberdef>
       <memberdef kind="function" id="classgri__fft__filter__fff__generic_1a540039061c403603397faad9ed0d08d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gri_fft_filter_fff_generic::set_nthreads</definition>
         <argsstring>(int n)</argsstring>
         <name>set_nthreads</name>
@@ -336,46 +336,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="12942">
-        <label>std::vector&lt; float &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="12939">
-        <label>gri_fft_filter_fff_generic</label>
-        <link refid="classgri__fft__filter__fff__generic"/>
-        <childnode refid="12940" relation="usage">
-          <edgelabel>d_invfft</edgelabel>
-        </childnode>
-        <childnode refid="12941" relation="usage">
-          <edgelabel>d_xformed_taps</edgelabel>
-        </childnode>
-        <childnode refid="12942" relation="usage">
-          <edgelabel>d_new_taps</edgelabel>
-          <edgelabel>d_tail</edgelabel>
-        </childnode>
-        <childnode refid="12943" relation="usage">
-          <edgelabel>d_fwdfft</edgelabel>
-        </childnode>
-      </node>
-      <node id="12940">
-        <label>gri_fft_real_rev</label>
-        <link refid="classgri__fft__real__rev"/>
-        <childnode refid="12941" relation="usage">
-          <edgelabel>d_inbuf</edgelabel>
-        </childnode>
-      </node>
-      <node id="12941">
-        <label>std::complex</label>
-      </node>
-      <node id="12943">
-        <label>gri_fft_real_fwd</label>
-        <link refid="classgri__fft__real__fwd"/>
-        <childnode refid="12941" relation="usage">
-          <edgelabel>d_outbuf</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_fft_filter_fff_generic.h" line="34" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_fft_filter_fff_generic.h" bodystart="33" bodyend="92"/>
     <listofallmembers>
       <member refid="classgri__fft__filter__fff__generic_1a4e234a04f49e961e2f22f4ee0726d33f" prot="private" virt="non-virtual"><scope>gri_fft_filter_fff_generic</scope><name>compute_sizes</name></member>

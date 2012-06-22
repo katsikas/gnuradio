@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsc__interleaver" kind="class" prot="public">
     <compoundname>atsc_interleaver</compoundname>
     <includes refid="atsc__interleaver_8h" local="no">atsc_interleaver.h</includes>
@@ -19,9 +19,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classatsc__interleaver_1a20588b406bbb818345a88485991a6328" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend ATSC_API <ref refid="atsc__interleaver_8h_1a54f3e78ded8da752f55932141d99d484" kindref="member">atsc_interleaver_sptr</ref></type>
-        <definition>ATSC_API atsc_interleaver_sptr atsc_make_interleaver</definition>
+      <memberdef kind="friend" id="classatsc__interleaver_1a1e2440dedddad7c38a8e9a5fa0210647" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="atsc__interleaver_8h_1a54f3e78ded8da752f55932141d99d484" kindref="member">atsc_interleaver_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT atsc_interleaver_sptr atsc_make_interleaver</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_interleaver</name>
         <briefdescription>
@@ -92,42 +92,10 @@
 <para>Interleave RS encoded ATSC data ( <ref refid="classatsc__mpeg__packet__rs__encoded" kindref="compound">atsc_mpeg_packet_rs_encoded</ref> --&gt; <ref refid="classatsc__mpeg__packet__rs__encoded" kindref="compound">atsc_mpeg_packet_rs_encoded</ref>)*</para><para>input: <ref refid="classatsc__mpeg__packet__rs__encoded" kindref="compound">atsc_mpeg_packet_rs_encoded</ref>; output: <ref refid="classatsc__mpeg__packet__rs__encoded" kindref="compound">atsc_mpeg_packet_rs_encoded</ref>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="41">
-        <label>convolutional_interleaver&lt; unsigned char &gt;</label>
-        <link refid="classconvolutional__interleaver"/>
-        <childnode refid="42" relation="usage">
-          <edgelabel>m_fifo</edgelabel>
-        </childnode>
-      </node>
-      <node id="43">
-        <label>interleaver_fifo&lt; unsigned char &gt;</label>
-        <link refid="classinterleaver__fifo"/>
-      </node>
-      <node id="39">
-        <label>atsc_interleaver</label>
-        <link refid="classatsc__interleaver"/>
-        <childnode refid="40" relation="usage">
-          <edgelabel>d_interleaver</edgelabel>
-        </childnode>
-      </node>
-      <node id="42">
-        <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <childnode refid="43" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="40">
-        <label>atsci_data_interleaver</label>
-        <link refid="classatsci__data__interleaver"/>
-        <childnode refid="41" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_interleaver.h" line="40" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_interleaver.h" bodystart="39" bodyend="53"/>
     <listofallmembers>
       <member refid="classatsc__interleaver_1a4b5d0874088bae9ebb915175a2768764" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>atsc_interleaver</name></member>
-      <member refid="classatsc__interleaver_1a20588b406bbb818345a88485991a6328" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>atsc_make_interleaver</name></member>
+      <member refid="classatsc__interleaver_1a1e2440dedddad7c38a8e9a5fa0210647" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>atsc_make_interleaver</name></member>
       <member refid="classatsc__interleaver_1acd806eb9a5d182ee9df9359371e770f0" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>d_interleaver</name></member>
       <member refid="classatsc__interleaver_1abd1836bfb7ff324a863fa2eaed686597" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>reset</name></member>
       <member refid="classatsc__interleaver_1a3ae6bd5c79bb0b721ce6e17fe9db797d" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>work</name></member>

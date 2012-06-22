@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dvbt__randomizer_8h" kind="file">
     <compoundname>dvbt_randomizer.h</compoundname>
     <includes local="no">cassert</includes>
@@ -7,56 +7,66 @@
     <includes local="no">gr_sync_block.h</includes>
     <includes refid="dvbti__randomizer_8h" local="no">dvbt/dvbti_randomizer.h</includes>
     <incdepgraph>
-      <node id="38">
+      <node id="40">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="39">
+      <node id="41">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="36">
+      <node id="38">
         <label>cassert</label>
       </node>
-      <node id="35">
+      <node id="44">
+        <label>string</label>
+      </node>
+      <node id="37">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h</label>
         <link refid="dvbt_randomizer.h"/>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-      </node>
-      <node id="40">
-        <label>dvbt/dvbti_randomizer.h</label>
-        <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="37" relation="include">
-        </childnode>
         <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
         </childnode>
       </node>
       <node id="43">
+        <label>bitset</label>
+      </node>
+      <node id="42">
+        <label>dvbt/dvbti_randomizer.h</label>
+        <link refid="dvbti__randomizer_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
         <label>dvbt/dvbt_consts.h</label>
         <link refid="dvbt__consts_8h"/>
       </node>
-      <node id="41">
+      <node id="45">
         <label>dvbt/dvbt_types.h</label>
         <link refid="dvbt__types_8h"/>
-        <childnode refid="42" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="43" relation="include">
-        </childnode>
-      </node>
-      <node id="37">
-        <label>dvbt/dvbt_api.h</label>
-        <link refid="dvbt__api_8h"/>
         <childnode refid="38" relation="include">
         </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
       </node>
-      <node id="42">
+      <node id="39">
+        <label>dvbt/dvbt_api.h</label>
+        <link refid="dvbt__api_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
         <label>cstring</label>
       </node>
     </incdepgraph>
@@ -78,7 +88,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__randomizer_8h_1abe226c84c41f28dd82dd1e82b416ae96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>DVBT_API <ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref></type>
+        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref></type>
         <definition>DVBT_API dvbt_randomizer_sptr dvbt_make_randomizer</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_randomizer</name>

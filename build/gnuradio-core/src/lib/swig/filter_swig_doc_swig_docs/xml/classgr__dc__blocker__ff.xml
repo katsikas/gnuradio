@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__dc__blocker__ff" kind="class" prot="public">
     <compoundname>gr_dc_blocker_ff</compoundname>
     <includes refid="gr__dc__blocker__ff_8h" local="no">gr_dc_blocker_ff.h</includes>
@@ -214,31 +214,6 @@
 <para>a computationally efficient controllable DC blocker </para>    </briefdescription>
     <detaileddescription>
 <para>This block implements a computationally efficient DC blocker that produces a tighter notch filter around DC for a smaller group delay than an equivalent FIR filter or using a single pole IIR filter (though the IIR filter is computationally cheaper).</para><para>The block defaults to using a delay line of length 32 and the long form of the filter. Optionally, the delay line length can be changed to alter the width of the DC notch (longer lines will decrease the width).</para><para>The long form of the filter produces a nearly flat response outside of the notch but at the cost of a group delay of 2D-2.</para><para>The short form of the filter does not have as flat a response in the passband but has a group delay of only D-1 and is cheaper to compute.</para><para>The theory behind this block can be found in the paper:</para><para><bold><emphasis>R. Yates, &quot;DC Blocker Algorithms,&quot; IEEE Signal Processing Magazine, Mar. 2008, pp 132-134.</emphasis></bold> </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="326">
-        <label>std::deque&lt; float &gt;</label>
-      </node>
-      <node id="325">
-        <label>gr_dc_blocker_ff</label>
-        <link refid="classgr__dc__blocker__ff"/>
-        <childnode refid="326" relation="usage">
-          <edgelabel>d_delay_line</edgelabel>
-        </childnode>
-        <childnode refid="327" relation="usage">
-          <edgelabel>d_ma_0</edgelabel>
-          <edgelabel>d_ma_1</edgelabel>
-          <edgelabel>d_ma_2</edgelabel>
-          <edgelabel>d_ma_3</edgelabel>
-        </childnode>
-      </node>
-      <node id="327">
-        <label>moving_averager_f</label>
-        <link refid="classmoving__averager__f"/>
-        <childnode refid="326" relation="usage">
-          <edgelabel>d_delay_line</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_dc_blocker_ff.h" line="78" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_dc_blocker_ff.h" bodystart="77" bodyend="110"/>
     <listofallmembers>
       <member refid="classgr__dc__blocker__ff_1ae9bd50731a6165fc4295856426072a25" prot="private" virt="non-virtual"><scope>gr_dc_blocker_ff</scope><name>d_delay_line</name></member>
