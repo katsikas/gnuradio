@@ -45,9 +45,7 @@ class DVBT_API dvbt_randomizer : public gr_sync_block
   	friend DVBT_API dvbt_randomizer_sptr dvbt_make_randomizer();
 
 	int  packets;
-	int  d_segno;        		// likewise
-  	bool d_field2;			// user to init plinfo in output
-	dvbti_randomizer d_rand;
+	dvbti_randomizer core_rand;
 
   	dvbt_randomizer();
 

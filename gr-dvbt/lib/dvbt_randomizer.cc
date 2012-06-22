@@ -47,9 +47,7 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 void
 dvbt_randomizer::reset()
 {
-  	d_rand.reset();
-  	d_field2 = false;
-  	d_segno = 0;
+  	core_rand.reset();
 }
 
 int
@@ -68,33 +66,15 @@ dvbt_randomizer::work (int noutput_items,
     		assert((in[i].data[0] == MPEG_SYNC_BYTE));
 		if(( (packets + i ) % 8) != 0){
                         out[i].data[0] = MPEG_SYNC_BYTE;
-			d_rand.next_state(1);
+			core_rand.next_state(1);
                 }
                 else{
                         out[i].data[0] = ~MPEG_SYNC_BYTE;
-			d_rand.reset();
+			core_rand.reset();
                 }
-
-    		// initialize plinfo for downstream
-    		//
-    		// We do this here because the randomizer is effectively
-    		// the head of the tx processing chain
-    		//
-    		/*out[i].pli.set_regular_seg(d_field2, d_segno);
-    		d_segno++;
-    		if (d_segno == 312){
-      			d_segno = 0;
-      			d_field2 = !d_field2;
-    		}
-
-    		if (out[i].pli.first_regular_seg_p()){
-    	  		d_rand.reset();
-		}*/
-    		d_rand.randomize(out[i], in[i]);
+    		core_rand.randomize(out[i], in[i]);
   	}
-
 	set_packets((i + packets) % PRBS_PERIOD);
-
 
 	/*for (i = 0; i < noutput_items; i++){
                 for (int j = 0; j < 1; j++){

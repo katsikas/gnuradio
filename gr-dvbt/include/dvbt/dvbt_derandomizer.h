@@ -46,8 +46,7 @@ class DVBT_API dvbt_derandomizer : public gr_sync_block
 	friend DVBT_API dvbt_derandomizer_sptr dvbt_make_derandomizer();
 
 	int packets;
-  	dvbti_randomizer d_rand;
-
+  	dvbti_randomizer core_rand;
 
   	dvbt_derandomizer();
 

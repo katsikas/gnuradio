@@ -49,7 +49,7 @@ dvbt_derandomizer::dvbt_derandomizer()
 void
 dvbt_derandomizer::reset()
 {
-  	d_rand.reset();
+  	core_rand.reset();
 }
 
 int
@@ -67,33 +67,16 @@ dvbt_derandomizer::work (int noutput_items,
 
 		if(( (packets + i ) % 8) != 0){
                         out[i].data[0] = MPEG_SYNC_BYTE;
-			d_rand.next_state(1);
+			core_rand.next_state(1);
                 }
                 else{
                         out[i].data[0] = ~MPEG_SYNC_BYTE;
-			d_rand.reset();
+			core_rand.reset();
                 }
-
-
-    		/*if (in[i].pli.first_regular_seg_p()){
-      			d_rand.reset();
-		}*/
-
-    		d_rand.derandomize(out[i], in[i]);
-
-    		// Check the pipeline info for error status and and set the
-    		// corresponding bit in transport packet header.
-
-    		/*if (in[i].pli.transport_error_p()){
-      			out[i].data[1] |= MPEG_TRANSPORT_ERROR_BIT;
-    		}
-		else{
-      			out[i].data[1] &= ~MPEG_TRANSPORT_ERROR_BIT;
-  		}*/
+    		core_rand.derandomize(out[i], in[i]);
 	}
 
 	set_packets((i + packets) % PRBS_PERIOD);
-
 
         /*for (i = 0; i < noutput_items; i++){
                 for (int j = 0; j < 1; j++){
