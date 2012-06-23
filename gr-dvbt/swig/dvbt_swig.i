@@ -30,12 +30,16 @@
 %{
 #include "dvbt/dvbt_pad.h"
 #include "dvbt/dvbt_depad.h"
+#include "dvbt/dvbt_rs_encoder.h"
+#include "dvbt/dvbt_rs_decoder.h"
 #include "dvbt/dvbt_randomizer.h"
 #include "dvbt/dvbt_derandomizer.h"
 %}
 
 %include "dvbt/dvbt_pad.h"
 %include "dvbt/dvbt_depad.h"
+%include "dvbt/dvbt_rs_encoder.h"
+%include "dvbt/dvbt_rs_decoder.h"
 %include "dvbt/dvbt_randomizer.h"
 %include "dvbt/dvbt_derandomizer.h"
 
@@ -90,6 +94,34 @@ dvbt_derandomizer_sptr dvbt_make_derandomizer();
 class dvbt_derandomizer : public gr_sync_block
 {
 	dvbt_derandomizer();
+
+public:
+  	void reset();
+};
+
+
+// ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,rs_encoder);
+
+dvbt_rs_encoder_sptr dvbt_make_rs_encoder();
+
+class dvbt_rs_encoder : public gr_sync_block
+{
+  	dvbt_rs_encoder();
+
+public:
+  	void reset();
+};
+
+
+// ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,rs_decoder);
+
+dvbt_rs_decoder_sptr dvbt_make_rs_decoder();
+
+class dvbt_rs_decoder : public gr_sync_block
+{
+  	dvbt_rs_decoder();
 
 public:
   	void reset();

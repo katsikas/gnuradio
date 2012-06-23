@@ -58,27 +58,28 @@ dvbt_derandomizer::work (int noutput_items,
 			 gr_vector_void_star &output_items)
 {
 	int i = 0;
-	int packets = get_packets();
   	const dvbt_mpeg_packet_no_sync *in = (const dvbt_mpeg_packet_no_sync *) input_items[0];
   	dvbt_mpeg_packet *out = (dvbt_mpeg_packet *) output_items[0];
 
-  	for (i = 0; i < noutput_items; i++){
-		assert(in[i].pli.regular_seg_p());
+	for (i = 0; i < noutput_items; i++){
+                assert(in[i].pli.regular_seg_p());
 
-		if(( (packets + i ) % 8) != 0){
-                        out[i].data[0] = MPEG_SYNC_BYTE;
-			core_rand.next_state(1);
+                if(in[i].data[0] == MPEG_SYNC_BYTE){
+			out[i].data[0] = MPEG_SYNC_BYTE;
+                        core_rand.next_state(1);
                 }
-                else{
-                        out[i].data[0] = ~MPEG_SYNC_BYTE;
-			core_rand.reset();
+                else if(in[i].data[0] == MPEG_INVERTED_SYNC_BYTE){
+			out[i].data[0] = MPEG_INVERTED_SYNC_BYTE;
+                        core_rand.reset();
                 }
-    		core_rand.derandomize(out[i], in[i]);
-	}
+		else{
+			printf("NEVER HERE!!!\n");
+			assert((out[i].data[0] == MPEG_SYNC_BYTE) || (out[i].data[0] == MPEG_INVERTED_SYNC_BYTE));
+		}
+                core_rand.derandomize(out[i], in[i]);
+        }
 
-	set_packets((i + packets) % PRBS_PERIOD);
-
-        /*for (i = 0; i < noutput_items; i++){
+	/*for (i = 0; i < noutput_items; i++){
                 for (int j = 0; j < 1; j++){
                         printf("%d",out[i].data[j]);
                 }

@@ -32,10 +32,6 @@ input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;"
 
 
 
-
-
-
-
 %feature("docstring") dvbt_make_derandomizer "\"dewhiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;"
@@ -74,6 +70,40 @@ input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync"
 
 input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync"
 
+%feature("docstring") dvbt_rs_decoder "Reed-Solomon decoder for DVBT
+
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_no_sync."
+
+
+
+
+
+
+
+%feature("docstring") dvbt_make_rs_decoder "Reed-Solomon decoder for DVBT
+
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_no_sync."
+
+%feature("docstring") dvbt_rs_encoder "Reed-Solomon encoder for DVBT
+
+input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
+
+
+
+
+
+
+
+%feature("docstring") dvbt_make_rs_encoder "Reed-Solomon encoder for DVBT
+
+input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
+
+
+
+
+
+
+
 
 
 
@@ -101,3 +131,55 @@ must be called during the Data Segment Sync interval prior to the first data seg
 %feature("docstring") dvbti_randomizer::randomize "randomize (whiten) mpeg packet and remove leading MPEG-2 sync byte"
 
 %feature("docstring") dvbti_randomizer::derandomize "derandomize (de-whiten) mpeg packet and add leading MPEG-2 sync byte"
+
+%feature("docstring") dvbti_reed_solomon "DVBT Reed-Solomon encoder / decoder.
+
+RS(204,188) code described in DVBT standard."
+
+
+
+
+
+%feature("docstring") dvbti_reed_solomon::encode "Add RS error correction encoding."
+
+%feature("docstring") dvbti_reed_solomon::decode "Decode RS encoded packet."
+
+%feature("docstring") plinfo "pipeline info that flows with data
+
+Not all modules need all the info"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%feature("docstring") plinfo::delay "Set  such that it reflects a  pipeline delay from ."
+
+%feature("docstring") plinfo::sanity_check "confirm that  is plausible"

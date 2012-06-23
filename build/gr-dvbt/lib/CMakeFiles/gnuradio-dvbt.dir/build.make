@@ -92,9 +92,55 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o.provides: gr-dvbt/lib/C
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o.provides.build: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o
 
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/flags.make
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o: ../gr-dvbt/lib/dvbt_rs_encoder.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o -c /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_rs_encoder.cc
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.i"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_rs_encoder.cc > CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.i
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.s"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_rs_encoder.cc -o CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.s
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.requires:
+.PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.requires
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.provides: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.requires
+	$(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.provides.build
+.PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.provides
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.provides.build: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/flags.make
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o: ../gr-dvbt/lib/dvbt_rs_decoder.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o -c /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_rs_decoder.cc
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.i"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_rs_decoder.cc > CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.i
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.s"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_rs_decoder.cc -o CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.s
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.requires:
+.PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.requires
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.provides: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.requires
+	$(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.provides.build
+.PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.provides
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.provides.build: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o
+
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/flags.make
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o: ../gr-dvbt/lib/dvbt_randomizer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o"
 	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o -c /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_randomizer.cc
 
@@ -117,7 +163,7 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o.provides.build: gr
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/flags.make
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o: ../gr-dvbt/lib/dvbt_derandomizer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o"
 	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o -c /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_derandomizer.cc
 
@@ -140,7 +186,7 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o.provides.build: 
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/flags.make
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o: ../gr-dvbt/lib/dvbti_randomizer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o"
 	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o -c /home/katsikas/gnuradio/gr-dvbt/lib/dvbti_randomizer.cc
 
@@ -161,22 +207,51 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o.provides: gr-dvbt
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o.provides.build: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o
 
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/flags.make
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o: ../gr-dvbt/lib/dvbti_reed_solomon.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o -c /home/katsikas/gnuradio/gr-dvbt/lib/dvbti_reed_solomon.cc
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.i"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-dvbt/lib/dvbti_reed_solomon.cc > CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.i
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.s"
+	cd /home/katsikas/gnuradio/build/gr-dvbt/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-dvbt/lib/dvbti_reed_solomon.cc -o CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.s
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.requires:
+.PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.requires
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.provides: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.requires
+	$(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.provides.build
+.PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.provides
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.provides.build: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o
+
 # Object files for target gnuradio-dvbt
 gnuradio__dvbt_OBJECTS = \
 "CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.o" \
 "CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o" \
+"CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o" \
+"CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o" \
 "CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o" \
 "CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o" \
-"CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o"
+"CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o" \
+"CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o"
 
 # External object files for target gnuradio-dvbt
 gnuradio__dvbt_EXTERNAL_OBJECTS =
 
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.o
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o
+gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o
+gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o
+gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
 gr-dvbt/lib/libgnuradio-dvbt-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so
@@ -206,9 +281,12 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build: gr-dvbt/lib/libgnuradio-dvbt-3.6
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_pad.cc.o.requires
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_depad.cc.o.requires
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o.requires
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o.requires
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.o.requires
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.o.requires
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o.requires
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires: gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o.requires
 .PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/requires
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/clean:

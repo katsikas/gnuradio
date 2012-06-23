@@ -50,16 +50,6 @@ class DVBT_API dvbt_derandomizer : public gr_sync_block
 
   	dvbt_derandomizer();
 
-	int get_packets(){
-                return packets;
-        }
-
-        void set_packets(int remainder){
-                assert(remainder > 0);
-                packets = remainder;
-        }
-
-
 public:
   	int work (int noutput_items,
 	    	gr_vector_const_void_star &input_items,

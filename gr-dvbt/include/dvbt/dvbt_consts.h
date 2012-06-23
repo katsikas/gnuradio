@@ -29,6 +29,7 @@ static const int DVBT_MPEG_DATA_LENGTH = 184;
 static const int DVBT_MPEG_SYNC_LENGTH = 187;
 static const int DVBT_MPEG_HEADER_LENGTH = 4;
 static const int DVBT_MPEG_PACKET_LENGTH = 188;		// TS Header + Data
+static const int MPEG_INVERTED_SYNC_BYTE = 0xB8;
 static const int DVBT_SUPER_FRAME_LENGTH = 1504;	// Superframe consists of 8 packets
 static const int DVBT_MPEG_RS_ENCODED_LENGTH = 204; 	// Packet after RS Encoding
 

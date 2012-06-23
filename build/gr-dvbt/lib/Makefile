@@ -276,6 +276,54 @@ dvbt_randomizer.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_randomizer.cc.s
 .PHONY : dvbt_randomizer.cc.s
 
+dvbt_rs_decoder.o: dvbt_rs_decoder.cc.o
+.PHONY : dvbt_rs_decoder.o
+
+# target to build an object file
+dvbt_rs_decoder.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.o
+.PHONY : dvbt_rs_decoder.cc.o
+
+dvbt_rs_decoder.i: dvbt_rs_decoder.cc.i
+.PHONY : dvbt_rs_decoder.i
+
+# target to preprocess a source file
+dvbt_rs_decoder.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.i
+.PHONY : dvbt_rs_decoder.cc.i
+
+dvbt_rs_decoder.s: dvbt_rs_decoder.cc.s
+.PHONY : dvbt_rs_decoder.s
+
+# target to generate assembly for a file
+dvbt_rs_decoder.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_decoder.cc.s
+.PHONY : dvbt_rs_decoder.cc.s
+
+dvbt_rs_encoder.o: dvbt_rs_encoder.cc.o
+.PHONY : dvbt_rs_encoder.o
+
+# target to build an object file
+dvbt_rs_encoder.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.o
+.PHONY : dvbt_rs_encoder.cc.o
+
+dvbt_rs_encoder.i: dvbt_rs_encoder.cc.i
+.PHONY : dvbt_rs_encoder.i
+
+# target to preprocess a source file
+dvbt_rs_encoder.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.i
+.PHONY : dvbt_rs_encoder.cc.i
+
+dvbt_rs_encoder.s: dvbt_rs_encoder.cc.s
+.PHONY : dvbt_rs_encoder.s
+
+# target to generate assembly for a file
+dvbt_rs_encoder.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.s
+.PHONY : dvbt_rs_encoder.cc.s
+
 dvbti_randomizer.o: dvbti_randomizer.cc.o
 .PHONY : dvbti_randomizer.o
 
@@ -299,6 +347,30 @@ dvbti_randomizer.s: dvbti_randomizer.cc.s
 dvbti_randomizer.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.s
 .PHONY : dvbti_randomizer.cc.s
+
+dvbti_reed_solomon.o: dvbti_reed_solomon.cc.o
+.PHONY : dvbti_reed_solomon.o
+
+# target to build an object file
+dvbti_reed_solomon.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o
+.PHONY : dvbti_reed_solomon.cc.o
+
+dvbti_reed_solomon.i: dvbti_reed_solomon.cc.i
+.PHONY : dvbti_reed_solomon.i
+
+# target to preprocess a source file
+dvbti_reed_solomon.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.i
+.PHONY : dvbti_reed_solomon.cc.i
+
+dvbti_reed_solomon.s: dvbti_reed_solomon.cc.s
+.PHONY : dvbti_reed_solomon.s
+
+# target to generate assembly for a file
+dvbti_reed_solomon.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.s
+.PHONY : dvbti_reed_solomon.cc.s
 
 # Help Target
 help:
@@ -328,9 +400,18 @@ help:
 	@echo "... dvbt_randomizer.o"
 	@echo "... dvbt_randomizer.i"
 	@echo "... dvbt_randomizer.s"
+	@echo "... dvbt_rs_decoder.o"
+	@echo "... dvbt_rs_decoder.i"
+	@echo "... dvbt_rs_decoder.s"
+	@echo "... dvbt_rs_encoder.o"
+	@echo "... dvbt_rs_encoder.i"
+	@echo "... dvbt_rs_encoder.s"
 	@echo "... dvbti_randomizer.o"
 	@echo "... dvbti_randomizer.i"
 	@echo "... dvbti_randomizer.s"
+	@echo "... dvbti_reed_solomon.o"
+	@echo "... dvbti_reed_solomon.i"
+	@echo "... dvbti_reed_solomon.s"
 .PHONY : help
 
 

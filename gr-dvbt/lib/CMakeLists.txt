@@ -39,9 +39,12 @@ link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND dvbt_sources
 	dvbt_pad.cc
   	dvbt_depad.cc
+	dvbt_rs_encoder.cc
+	dvbt_rs_decoder.cc
 	dvbt_randomizer.cc
 	dvbt_derandomizer.cc
 	dvbti_randomizer.cc
+	dvbti_reed_solomon.cc
 )
 
 list(APPEND dvbt_libs

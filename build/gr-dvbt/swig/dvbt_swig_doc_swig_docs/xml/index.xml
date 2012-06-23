@@ -61,11 +61,7 @@
   </compound>
   <compound refid="classstd_1_1list_1_1const__iterator" kind="class"><name>std::list::const_iterator</name>
   </compound>
-  <compound refid="classstd_1_1deque_1_1const__reverse__iterator" kind="class"><name>std::deque::const_reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1list_1_1const__reverse__iterator" kind="class"><name>std::list::const_reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1const__reverse__iterator" kind="class"><name>std::multimap::const_reverse_iterator</name>
+  <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
   </compound>
@@ -77,9 +73,13 @@
   </compound>
   <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
+  <compound refid="classstd_1_1multimap_1_1const__reverse__iterator" kind="class"><name>std::multimap::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1const__reverse__iterator" kind="class"><name>std::deque::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1const__reverse__iterator" kind="class"><name>std::wstring::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1const__reverse__iterator" kind="class"><name>std::list::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque" kind="class"><name>std::deque</name>
     <member refid="classstd_1_1deque_1a090b92581de438d2e14bedc190f0b0f9" kind="variable"><name>elements</name></member>
@@ -97,8 +97,6 @@
     <member refid="classdvbt__derandomizer_1af5f524e0791b9ecdbe89de2b5079eb46" kind="variable"><name>core_rand</name></member>
     <member refid="classdvbt__derandomizer_1a8458e520bba80d8dc60b8952a428d5c6" kind="friend"><name>dvbt_make_derandomizer</name></member>
     <member refid="classdvbt__derandomizer_1a7aa6bc8fa0db91f400be564d5c960506" kind="function"><name>dvbt_derandomizer</name></member>
-    <member refid="classdvbt__derandomizer_1aa72b91abe5f09c8a9dcba7fd6c165167" kind="function"><name>get_packets</name></member>
-    <member refid="classdvbt__derandomizer_1ab2e68010df7c2a98e4003bb869f8dcff" kind="function"><name>set_packets</name></member>
     <member refid="classdvbt__derandomizer_1a3dd3df1cd6274fd98b3431df8377cfdc" kind="function"><name>work</name></member>
     <member refid="classdvbt__derandomizer_1a8255fd7c10a3ebba1fedbc5800f77cdd" kind="function"><name>reset</name></member>
   </compound>
@@ -111,10 +109,19 @@
   </compound>
   <compound refid="classdvbt__mpeg__packet__no__sync" kind="class"><name>dvbt_mpeg_packet_no_sync</name>
     <member refid="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" kind="variable"><name>NPAD</name></member>
+    <member refid="classdvbt__mpeg__packet__no__sync_1a02dae9a82ece311f574ba08e8ae5deb5" kind="variable"><name>pli</name></member>
     <member refid="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" kind="variable"><name>_pad_</name></member>
     <member refid="classdvbt__mpeg__packet__no__sync_1ab2b3f500b5989af8b34e160c7ed3531c" kind="variable"><name>data</name></member>
     <member refid="classdvbt__mpeg__packet__no__sync_1ad93cd8a7482be41b5089555c7aa4fcf5" kind="function"><name>operator==</name></member>
     <member refid="classdvbt__mpeg__packet__no__sync_1ae6082f133b8f5d4403209659e647e939" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classdvbt__mpeg__packet__rs__encoded" kind="class"><name>dvbt_mpeg_packet_rs_encoded</name>
+    <member refid="classdvbt__mpeg__packet__rs__encoded_1af86e8743bc4795399fdc805d0d2ecf49" kind="variable"><name>NPAD</name></member>
+    <member refid="classdvbt__mpeg__packet__rs__encoded_1a8fbab8f8cbb88cbc2cb90a5fafdb90f3" kind="variable"><name>pli</name></member>
+    <member refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kind="variable"><name>data</name></member>
+    <member refid="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" kind="variable"><name>_pad_</name></member>
+    <member refid="classdvbt__mpeg__packet__rs__encoded_1a10ed4b0752799c714e548a8e9727f4cf" kind="function"><name>operator==</name></member>
+    <member refid="classdvbt__mpeg__packet__rs__encoded_1a26312ab6286832574b01f35978a0c272" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="classdvbt__pad" kind="class"><name>dvbt_pad</name>
     <member refid="classdvbt__pad_1ab728fe4a6ba77046a684362c2e454636" kind="function"><name>dvbt_pad</name></member>
@@ -133,6 +140,20 @@
     <member refid="classdvbt__randomizer_1a85433e3ec268b4593a4e1f117bc8c99f" kind="function"><name>work</name></member>
     <member refid="classdvbt__randomizer_1ab1662ce23864b73df5606f525b3c0909" kind="function"><name>reset</name></member>
   </compound>
+  <compound refid="classdvbt__rs__decoder" kind="class"><name>dvbt_rs_decoder</name>
+    <member refid="classdvbt__rs__decoder_1a4e5cdf25b45e00cf5d49f994dca03b3f" kind="variable"><name>d_rs_decoder</name></member>
+    <member refid="classdvbt__rs__decoder_1a6d448109419f7a48b2f950fa078842db" kind="friend"><name>dvbt_make_rs_decoder</name></member>
+    <member refid="classdvbt__rs__decoder_1a5a6a76fa6fc766f1dfe12be3d6732daa" kind="function"><name>dvbt_rs_decoder</name></member>
+    <member refid="classdvbt__rs__decoder_1a27d43d6a026223398eab4ab0acf3ce5d" kind="function"><name>work</name></member>
+    <member refid="classdvbt__rs__decoder_1a383bc55461fea1eca38ab74917ce1378" kind="function"><name>reset</name></member>
+  </compound>
+  <compound refid="classdvbt__rs__encoder" kind="class"><name>dvbt_rs_encoder</name>
+    <member refid="classdvbt__rs__encoder_1af2071e4d605cd23b2dae2dc53cb5e1f9" kind="variable"><name>d_rs_encoder</name></member>
+    <member refid="classdvbt__rs__encoder_1ac816ac0e141751c8ee519ffd1c3803d9" kind="friend"><name>dvbt_make_rs_encoder</name></member>
+    <member refid="classdvbt__rs__encoder_1a00c36fcde30341c3683d264019c614e9" kind="function"><name>dvbt_rs_encoder</name></member>
+    <member refid="classdvbt__rs__encoder_1ae05bb074524f531284015d08fa688d22" kind="function"><name>work</name></member>
+    <member refid="classdvbt__rs__encoder_1a0b68a74a0f90b73061772a8f8000a870" kind="function"><name>reset</name></member>
+  </compound>
   <compound refid="classdvbti__randomizer" kind="class"><name>dvbti_randomizer</name>
     <member refid="classdvbti__randomizer_1a5397e48371e7e2f50fa23bc17107133a" kind="variable"><name>prbs_sequence</name></member>
     <member refid="classdvbti__randomizer_1a098ed142d3d4668d1af8eb9d822a41e2" kind="variable"><name>bit_sequence</name></member>
@@ -142,6 +163,13 @@
     <member refid="classdvbti__randomizer_1a3d6559e29849d09a25d8da71ee98be0b" kind="function"><name>next_state</name></member>
     <member refid="classdvbti__randomizer_1ae618888f6815d7c0f0c723468ab98999" kind="function"><name>randomize</name></member>
     <member refid="classdvbti__randomizer_1ab1697c623374304da910e65b16a01a6b" kind="function"><name>derandomize</name></member>
+  </compound>
+  <compound refid="classdvbti__reed__solomon" kind="class"><name>dvbti_reed_solomon</name>
+    <member refid="classdvbti__reed__solomon_1ad4afae1623fbeb548248da411bf78b6e" kind="variable"><name>d_rs</name></member>
+    <member refid="classdvbti__reed__solomon_1a4545d83af075d23e3630e567cdc2a9f5" kind="function"><name>dvbti_reed_solomon</name></member>
+    <member refid="classdvbti__reed__solomon_1adc7ee170beb4e5ce3f2e57ebbe96830e" kind="function"><name>~dvbti_reed_solomon</name></member>
+    <member refid="classdvbti__reed__solomon_1a5b23e42f8d2354166350622379890c9d" kind="function"><name>encode</name></member>
+    <member refid="classdvbti__reed__solomon_1a5af9107f7e422083ffcbba2c523b8077" kind="function"><name>decode</name></member>
   </compound>
   <compound refid="classstd_1_1exception" kind="class"><name>std::exception</name>
   </compound>
@@ -161,11 +189,13 @@
   </compound>
   <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
   </compound>
+  <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
+  </compound>
   <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
-  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
+  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
@@ -175,11 +205,9 @@
   </compound>
   <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
-  </compound>
   <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
   </compound>
-  <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
+  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
   </compound>
   <compound refid="classstd_1_1length__error" kind="class"><name>std::length_error</name>
   </compound>
@@ -209,6 +237,34 @@
   </compound>
   <compound refid="classstd_1_1overflow__error" kind="class"><name>std::overflow_error</name>
   </compound>
+  <compound refid="classplinfo" kind="class"><name>plinfo</name>
+    <member refid="classplinfo_1aeb30858d8f4ff27ae8e609bad64ae01d" kind="variable"><name>_flags</name></member>
+    <member refid="classplinfo_1adfc5aa3d68e7d81299ce774ff3d08f93" kind="variable"><name>_segno</name></member>
+    <member refid="classplinfo_1a37debcf201a535eacd07dfa184ae7229" kind="variable"><name>fl_regular_seg</name></member>
+    <member refid="classplinfo_1ae2e21079493045786f5abd39292b8438" kind="variable"><name>fl_field_sync1</name></member>
+    <member refid="classplinfo_1a07c74a60a76912485b923b3eb20943df" kind="variable"><name>fl_field_sync2</name></member>
+    <member refid="classplinfo_1a4bd64848947619d4817872309c47814e" kind="variable"><name>fl_first_regular_seg</name></member>
+    <member refid="classplinfo_1aa99a1eea30cfa550e7813299a32b5d24" kind="variable"><name>fl_field2</name></member>
+    <member refid="classplinfo_1acc6d33113f98fa4a97fdc79097374e8a" kind="variable"><name>fl_transport_error</name></member>
+    <member refid="classplinfo_1a0e97b5f98e1cb344abd5c41806ab707e" kind="function"><name>plinfo</name></member>
+    <member refid="classplinfo_1a18300b4d2fead86bce9a07aa16ce7761" kind="function"><name>field_sync1_p</name></member>
+    <member refid="classplinfo_1a904e79ef01df225b807b619f9a6064fa" kind="function"><name>field_sync2_p</name></member>
+    <member refid="classplinfo_1a7a56c55909014f80814dd326464d7922" kind="function"><name>field_sync_p</name></member>
+    <member refid="classplinfo_1af4a0c397d755e80e394305393e71164c" kind="function"><name>regular_seg_p</name></member>
+    <member refid="classplinfo_1af2a97fde4b955f80d649704d7bc31050" kind="function"><name>in_field1_p</name></member>
+    <member refid="classplinfo_1a30c11e0ad5ec6f691e2a84ad661f6782" kind="function"><name>in_field2_p</name></member>
+    <member refid="classplinfo_1a4b1db59b81ec09ed2fe5b422f569ddd3" kind="function"><name>first_regular_seg_p</name></member>
+    <member refid="classplinfo_1a5fd0ba5f9c7dc741c074bdc629651d5c" kind="function"><name>transport_error_p</name></member>
+    <member refid="classplinfo_1ac563cec97e64bbe0e62b30ad0ae6ff3b" kind="function"><name>segno</name></member>
+    <member refid="classplinfo_1a02b25069563db6d9fabc3fcfeb1f8cfd" kind="function"><name>flags</name></member>
+    <member refid="classplinfo_1ad186ced5afd703e8b2d9050529922486" kind="function"><name>set_field_sync1</name></member>
+    <member refid="classplinfo_1a9d96111b514998189bfca10f6f33ac8d" kind="function"><name>set_field_sync2</name></member>
+    <member refid="classplinfo_1ab8d8940b47977a87c45f43f74f9307dd" kind="function"><name>set_transport_error</name></member>
+    <member refid="classplinfo_1a98ba1771e81afc67b91061e2ff75a98c" kind="function"><name>operator==</name></member>
+    <member refid="classplinfo_1a264ff6d9b8d4c56ca1be980d73afb65d" kind="function"><name>operator!=</name></member>
+    <member refid="classplinfo_1a01ea3fce8eb54cdf7f20197f14c05aec" kind="function"><name>delay</name></member>
+    <member refid="classplinfo_1ad5aa65fd17fd5f72ae791cad72079393" kind="function"><name>sanity_check</name></member>
+  </compound>
   <compound refid="classstd_1_1priority__queue" kind="class"><name>std::priority_queue</name>
     <member refid="classstd_1_1priority__queue_1a4df2ae826d2b2caf4a6755adbd34a836" kind="variable"><name>elements</name></member>
   </compound>
@@ -217,25 +273,25 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
+  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
+  <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
@@ -301,6 +357,7 @@
     <member refid="dvbt__consts_8h_1a526d29e3cd24449d577889edf9dd8af8" kind="variable"><name>DVBT_MPEG_SYNC_LENGTH</name></member>
     <member refid="dvbt__consts_8h_1a0c3e3059531c5185a4d0ece5717d6402" kind="variable"><name>DVBT_MPEG_HEADER_LENGTH</name></member>
     <member refid="dvbt__consts_8h_1aec0bf7a17595dad1e9e08ce7f4338bd3" kind="variable"><name>DVBT_MPEG_PACKET_LENGTH</name></member>
+    <member refid="dvbt__consts_8h_1acaeaa683423623b9b258779e915dad2b" kind="variable"><name>MPEG_INVERTED_SYNC_BYTE</name></member>
     <member refid="dvbt__consts_8h_1ac1b330045acc5311d5f33a9851e84407" kind="variable"><name>DVBT_SUPER_FRAME_LENGTH</name></member>
     <member refid="dvbt__consts_8h_1adbdb31d594deffaed63d1f7e156833b8" kind="variable"><name>DVBT_MPEG_RS_ENCODED_LENGTH</name></member>
   </compound>
@@ -320,9 +377,19 @@
     <member refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kind="typedef"><name>dvbt_randomizer_sptr</name></member>
     <member refid="dvbt__randomizer_8h_1abe226c84c41f28dd82dd1e82b416ae96" kind="function"><name>dvbt_make_randomizer</name></member>
   </compound>
+  <compound refid="dvbt__rs__decoder_8h" kind="file"><name>dvbt_rs_decoder.h</name>
+    <member refid="dvbt__rs__decoder_8h_1ac9f51a3d1e0500e3dd6e6e5e2d02e5b7" kind="typedef"><name>dvbt_rs_decoder_sptr</name></member>
+    <member refid="dvbt__rs__decoder_8h_1a6d448109419f7a48b2f950fa078842db" kind="function"><name>dvbt_make_rs_decoder</name></member>
+  </compound>
+  <compound refid="dvbt__rs__encoder_8h" kind="file"><name>dvbt_rs_encoder.h</name>
+    <member refid="dvbt__rs__encoder_8h_1a525aec97d27c4cd6ffad7d0a193872e5" kind="typedef"><name>dvbt_rs_encoder_sptr</name></member>
+    <member refid="dvbt__rs__encoder_8h_1ac816ac0e141751c8ee519ffd1c3803d9" kind="function"><name>dvbt_make_rs_encoder</name></member>
+  </compound>
   <compound refid="dvbt__types_8h" kind="file"><name>dvbt_types.h</name>
   </compound>
   <compound refid="dvbti__randomizer_8h" kind="file"><name>dvbti_randomizer.h</name>
+  </compound>
+  <compound refid="dvbti__reed__solomon_8h" kind="file"><name>dvbti_reed_solomon.h</name>
   </compound>
   <compound refid="dir_187696d1b53b79a4ea64d728cb064b29" kind="dir"><name>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/</name>
   </compound>

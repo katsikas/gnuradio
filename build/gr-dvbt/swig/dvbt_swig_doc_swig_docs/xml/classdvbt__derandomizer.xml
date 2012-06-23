@@ -60,36 +60,6 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="51"/>
       </memberdef>
-      <memberdef kind="function" id="classdvbt__derandomizer_1aa72b91abe5f09c8a9dcba7fd6c165167" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int dvbt_derandomizer::get_packets</definition>
-        <argsstring>()</argsstring>
-        <name>get_packets</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="53" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="53" bodyend="55"/>
-      </memberdef>
-      <memberdef kind="function" id="classdvbt__derandomizer_1ab2e68010df7c2a98e4003bb869f8dcff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void dvbt_derandomizer::set_packets</definition>
-        <argsstring>(int remainder)</argsstring>
-        <name>set_packets</name>
-        <param>
-          <type>int</type>
-          <declname>remainder</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="57" bodyend="60"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classdvbt__derandomizer_1a3dd3df1cd6274fd98b3431df8377cfdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -115,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="66"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__derandomizer_1a8255fd7c10a3ebba1fedbc5800f77cdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -128,22 +98,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="68"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;dewhiten&quot; incoming mpeg transport stream packets</para><para>input: <ref refid="classdvbt__mpeg__packet__no__sync" kindref="compound">dvbt_mpeg_packet_no_sync</ref>; output: <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref>; </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="45" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="44" bodyend="69"/>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="45" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="44" bodyend="59"/>
     <listofallmembers>
       <member refid="classdvbt__derandomizer_1af5f524e0791b9ecdbe89de2b5079eb46" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>core_rand</name></member>
       <member refid="classdvbt__derandomizer_1a7aa6bc8fa0db91f400be564d5c960506" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>dvbt_derandomizer</name></member>
       <member refid="classdvbt__derandomizer_1a8458e520bba80d8dc60b8952a428d5c6" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>dvbt_make_derandomizer</name></member>
-      <member refid="classdvbt__derandomizer_1aa72b91abe5f09c8a9dcba7fd6c165167" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>get_packets</name></member>
       <member refid="classdvbt__derandomizer_1a498fc050c471a83fe91a1234e9a38a43" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>packets</name></member>
       <member refid="classdvbt__derandomizer_1a8255fd7c10a3ebba1fedbc5800f77cdd" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>reset</name></member>
-      <member refid="classdvbt__derandomizer_1ab2e68010df7c2a98e4003bb869f8dcff" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_packets</name></member>
       <member refid="classdvbt__derandomizer_1a3dd3df1cd6274fd98b3431df8377cfdc" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>work</name></member>
     </listofallmembers>
   </compounddef>

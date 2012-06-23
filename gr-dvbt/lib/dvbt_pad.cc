@@ -25,6 +25,7 @@
 #include <config.h>
 #endif
 
+#include <stdio.h>
 #include <dvbt/dvbt_pad.h>
 #include <dvbt/dvbt_types.h>
 #include <gr_io_signature.h>
