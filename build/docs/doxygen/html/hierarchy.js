@@ -64,7 +64,9 @@ var hierarchy =
     ] ],
     [ "dvbt_mpeg_packet", "classdvbt__mpeg__packet.html", null ],
     [ "dvbt_mpeg_packet_no_sync", "classdvbt__mpeg__packet__no__sync.html", null ],
+    [ "dvbt_mpeg_packet_rs_encoded", "classdvbt__mpeg__packet__rs__encoded.html", null ],
     [ "dvbti_randomizer", "classdvbti__randomizer.html", null ],
+    [ "dvbti_reed_solomon", "classdvbti__reed__solomon.html", null ],
     [ "FCD_CAPS_STRUCT", "structFCD__CAPS__STRUCT.html", null ],
     [ "gr::fft::fft_complex", "classgr_1_1fft_1_1fft__complex.html", null ],
     [ "gr::fft::fft_real_fwd", "classgr_1_1fft_1_1fft__real__fwd.html", null ],
@@ -334,6 +336,8 @@ var hierarchy =
               [ "digital_scrambler_bb", "classdigital__scrambler__bb.html", null ],
               [ "dvbt_derandomizer", "classdvbt__derandomizer.html", null ],
               [ "dvbt_randomizer", "classdvbt__randomizer.html", null ],
+              [ "dvbt_rs_decoder", "classdvbt__rs__decoder.html", null ],
+              [ "dvbt_rs_encoder", "classdvbt__rs__encoder.html", null ],
               [ "gr::fft::fft_vcc", "classgr_1_1fft_1_1fft__vcc.html", [
                 [ "gr::fft::fft_vcc_fftw", "classgr_1_1fft_1_1fft__vcc__fftw.html", null ]
               ] ],

@@ -5,28 +5,28 @@
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
     <includes refid="atsci__fs__correlator_8h" local="no">atsci_fs_correlator.h</includes>
     <incdepgraph>
-      <node id="1152">
+      <node id="1154">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="1153">
+      <node id="1155">
         <label>atsci_fs_correlator.h</label>
         <link refid="atsci__fs__correlator_8h"/>
-        <childnode refid="1151" relation="include">
-        </childnode>
-      </node>
-      <node id="1150">
-        <label>atsci_fs_correlator_naive.h</label>
-        <link refid="atsci_fs_correlator_naive.h"/>
-        <childnode refid="1151" relation="include">
-        </childnode>
         <childnode refid="1153" relation="include">
         </childnode>
       </node>
-      <node id="1151">
+      <node id="1152">
+        <label>atsci_fs_correlator_naive.h</label>
+        <link refid="atsci_fs_correlator_naive.h"/>
+        <childnode refid="1153" relation="include">
+        </childnode>
+        <childnode refid="1155" relation="include">
+        </childnode>
+      </node>
+      <node id="1153">
         <label>atsc_api.h</label>
         <link refid="atsc__api_8h"/>
-        <childnode refid="1152" relation="include">
+        <childnode refid="1154" relation="include">
         </childnode>
       </node>
     </incdepgraph>

@@ -147,112 +147,112 @@
     <detaileddescription>
 <para>The input is a stream of (possibly noise corrupted) floating point values nominally spanning [-1.0, 1.0], representing the encoded channel symbols 0 (-1.0) and 1 (1.0), with erased symbols at 0.0.</para><para>The output is MSB first packed bytes of decoded values.</para><para>As a rate 1/2 code, there will be one output byte for every 16 input symbols.</para><para>This block is designed for continuous data streaming, not packetized data. The first 32 bits out will be zeroes, with the output delayed four bytes from the corresponding inputs. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="3181">
+      <node id="3222">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3182" relation="public-inheritance">
+        <childnode refid="3223" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3178">
+      <node id="3219">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3179" relation="public-inheritance">
+        <childnode refid="3220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3177">
+      <node id="3218">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="3178" relation="public-inheritance">
+        <childnode refid="3219" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3176">
+      <node id="3217">
         <label>gr_decode_ccsds_27_fb</label>
         <link refid="classgr__decode__ccsds__27__fb"/>
-        <childnode refid="3177" relation="public-inheritance">
+        <childnode refid="3218" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3179">
+      <node id="3220">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3180" relation="public-inheritance">
+        <childnode refid="3221" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3182">
+      <node id="3223">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3180">
+      <node id="3221">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3181" relation="public-inheritance">
+        <childnode refid="3222" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3188">
+      <node id="3229">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3189" relation="public-inheritance">
+        <childnode refid="3230" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3185">
+      <node id="3226">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3186" relation="public-inheritance">
+        <childnode refid="3227" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3184">
+      <node id="3225">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="3185" relation="public-inheritance">
+        <childnode refid="3226" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3183">
+      <node id="3224">
         <label>gr_decode_ccsds_27_fb</label>
         <link refid="classgr__decode__ccsds__27__fb"/>
-        <childnode refid="3184" relation="public-inheritance">
+        <childnode refid="3225" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3186">
+      <node id="3227">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3187" relation="public-inheritance">
+        <childnode refid="3228" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3190">
+      <node id="3231">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3191" relation="usage">
+        <childnode refid="3232" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3193">
+      <node id="3234">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3189">
+      <node id="3230">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3191">
+      <node id="3232">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3187">
+      <node id="3228">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3188" relation="public-inheritance">
+        <childnode refid="3229" relation="public-inheritance">
         </childnode>
-        <childnode refid="3190" relation="usage">
+        <childnode refid="3231" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3192" relation="usage">
+        <childnode refid="3233" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3192">
+      <node id="3233">
         <label>std::string</label>
-        <childnode refid="3193" relation="public-inheritance">
+        <childnode refid="3234" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

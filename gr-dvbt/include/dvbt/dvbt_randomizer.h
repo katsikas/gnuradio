@@ -44,20 +44,9 @@ class DVBT_API dvbt_randomizer : public gr_sync_block
 {
   	friend DVBT_API dvbt_randomizer_sptr dvbt_make_randomizer();
 
-	int  packets;
 	dvbti_randomizer core_rand;
 
   	dvbt_randomizer();
-
-
-	int get_packets(){
-                return packets;
-        }
-
-        void set_packets(int remainder){
-                assert(remainder > 0);
-                packets = remainder;
-        }
 
 
 public:

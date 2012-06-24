@@ -60,19 +60,13 @@ dvbt_pad::work (int noutput_items,
 		gr_vector_const_void_star &input_items,
 		gr_vector_void_star &output_items)
 {
-	int i = 0;
-	int j = 0;
 	const unsigned char *in = (const unsigned char *) input_items[0];
 	dvbt_mpeg_packet *out = (dvbt_mpeg_packet *) output_items[0];
 
 
-  	for (i = 0; i < noutput_items; i++){
+  	for (int i = 0; i < noutput_items; i++){
 		//memset (out[i].data,0,256);
-                out[i].data[0] = MPEG_SYNC_BYTE;
-		out[i].data[1] = 0;
-		out[i].data[2] = 0;
-		out[i].data[3] = 0;
-    		for (j = 0; j < DVBT_MPEG_DATA_LENGTH; j++){
+    		for (int j = 0; j < DVBT_MPEG_DATA_LENGTH; j++){
         		out[i].data[j+4] = in[i * DVBT_MPEG_DATA_LENGTH + j];
   		}
 	}

@@ -62,10 +62,6 @@ input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync"
 
 
 
-
-
-
-
 %feature("docstring") dvbt_make_randomizer "\"Whiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync"
@@ -147,6 +143,12 @@ RS(204,188) code described in DVBT standard."
 %feature("docstring") plinfo "pipeline info that flows with data
 
 Not all modules need all the info"
+
+
+
+
+
+
 
 
 

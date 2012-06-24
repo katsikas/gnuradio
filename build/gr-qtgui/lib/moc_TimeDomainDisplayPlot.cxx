@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'TimeDomainDisplayPlot.h'
 **
-** Created: Thu Jun 21 20:42:19 2012
+** Created: Sun Jun 24 13:34:22 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!

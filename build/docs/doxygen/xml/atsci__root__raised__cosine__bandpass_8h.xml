@@ -5,33 +5,33 @@
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
     <includes refid="atsci__root__raised__cosine_8h" local="no">atsci_root_raised_cosine.h</includes>
     <incdepgraph>
-      <node id="1188">
+      <node id="1190">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="1186">
+      <node id="1188">
         <label>atsci_root_raised_cosine_bandpass.h</label>
         <link refid="atsci_root_raised_cosine_bandpass.h"/>
-        <childnode refid="1187" relation="include">
-        </childnode>
         <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+      </node>
+      <node id="1191">
+        <label>atsci_root_raised_cosine.h</label>
+        <link refid="atsci__root__raised__cosine_8h"/>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
         </childnode>
       </node>
       <node id="1189">
-        <label>atsci_root_raised_cosine.h</label>
-        <link refid="atsci__root__raised__cosine_8h"/>
-        <childnode refid="1187" relation="include">
-        </childnode>
+        <label>atsc_api.h</label>
+        <link refid="atsc__api_8h"/>
         <childnode refid="1190" relation="include">
         </childnode>
       </node>
-      <node id="1187">
-        <label>atsc_api.h</label>
-        <link refid="atsc__api_8h"/>
-        <childnode refid="1188" relation="include">
-        </childnode>
-      </node>
-      <node id="1190">
+      <node id="1192">
         <label>gr_fir_builder.h</label>
       </node>
     </incdepgraph>

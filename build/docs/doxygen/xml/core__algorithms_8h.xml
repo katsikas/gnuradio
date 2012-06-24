@@ -10,77 +10,77 @@
     <includedby refid="trellis__siso__combined__f_8h" local="yes">trellis_siso_combined_f.h</includedby>
     <includedby refid="trellis__siso__f_8h" local="yes">trellis_siso_f.h</includedby>
     <incdepgraph>
-      <node id="2356">
+      <node id="2361">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="2351">
+      <node id="2356">
         <label>cmath</label>
       </node>
-      <node id="2353">
+      <node id="2358">
         <label>digital_metric_type.h</label>
         <link refid="digital__metric__type_8h"/>
       </node>
-      <node id="2352">
+      <node id="2357">
         <label>vector</label>
       </node>
-      <node id="2355">
+      <node id="2360">
         <label>trellis_api.h</label>
         <link refid="trellis__api_8h"/>
-        <childnode refid="2356" relation="include">
+        <childnode refid="2361" relation="include">
         </childnode>
       </node>
-      <node id="2354">
+      <node id="2359">
         <label>fsm.h</label>
         <link refid="fsm_8h"/>
-        <childnode refid="2355" relation="include">
+        <childnode refid="2360" relation="include">
         </childnode>
-        <childnode refid="2352" relation="include">
+        <childnode refid="2357" relation="include">
+        </childnode>
+        <childnode refid="2362" relation="include">
+        </childnode>
+      </node>
+      <node id="2362">
+        <label>iosfwd</label>
+      </node>
+      <node id="2363">
+        <label>interleaver.h</label>
+        <link refid="interleaver_8h"/>
+        <childnode refid="2360" relation="include">
         </childnode>
         <childnode refid="2357" relation="include">
         </childnode>
       </node>
-      <node id="2357">
-        <label>iosfwd</label>
-      </node>
-      <node id="2358">
-        <label>interleaver.h</label>
-        <link refid="interleaver_8h"/>
-        <childnode refid="2355" relation="include">
-        </childnode>
-        <childnode refid="2352" relation="include">
-        </childnode>
-      </node>
-      <node id="2350">
+      <node id="2355">
         <label>core_algorithms.h</label>
         <link refid="core_algorithms.h"/>
-        <childnode refid="2351" relation="include">
+        <childnode refid="2356" relation="include">
         </childnode>
-        <childnode refid="2352" relation="include">
-        </childnode>
-        <childnode refid="2353" relation="include">
-        </childnode>
-        <childnode refid="2354" relation="include">
+        <childnode refid="2357" relation="include">
         </childnode>
         <childnode refid="2358" relation="include">
+        </childnode>
+        <childnode refid="2359" relation="include">
+        </childnode>
+        <childnode refid="2363" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2361">
+      <node id="2366">
         <label>trellis_siso_f.h</label>
         <link refid="trellis__siso__f_8h"/>
       </node>
-      <node id="2360">
+      <node id="2365">
         <label>trellis_siso_combined_f.h</label>
         <link refid="trellis__siso__combined__f_8h"/>
       </node>
-      <node id="2359">
+      <node id="2364">
         <label>core_algorithms.h</label>
         <link refid="core_algorithms.h"/>
-        <childnode refid="2360" relation="include">
+        <childnode refid="2365" relation="include">
         </childnode>
-        <childnode refid="2361" relation="include">
+        <childnode refid="2366" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

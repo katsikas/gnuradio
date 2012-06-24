@@ -33,7 +33,6 @@ var classplinfo =
     [ "set_field_sync2", "classplinfo.html#a9d96111b514998189bfca10f6f33ac8d", null ],
     [ "set_field_sync2", "classplinfo.html#a9d96111b514998189bfca10f6f33ac8d", null ],
     [ "set_regular_seg", "classplinfo.html#a615c5375f70e40637093c10027001233", null ],
-    [ "set_regular_seg", "classplinfo.html#a615c5375f70e40637093c10027001233", null ],
     [ "set_transport_error", "classplinfo.html#ab8d8940b47977a87c45f43f74f9307dd", null ],
     [ "set_transport_error", "classplinfo.html#ab8d8940b47977a87c45f43f74f9307dd", null ],
     [ "transport_error_p", "classplinfo.html#a5fd0ba5f9c7dc741c074bdc629651d5c", null ],

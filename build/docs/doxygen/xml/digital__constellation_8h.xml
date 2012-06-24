@@ -13,82 +13,82 @@
     <includedby refid="digital__lms__dd__equalizer__cc_8h" local="no">digital_lms_dd_equalizer_cc.h</includedby>
     <includedby refid="trellis__constellation__metrics__cf_8h" local="no">trellis_constellation_metrics_cf.h</includedby>
     <incdepgraph>
-      <node id="2628">
+      <node id="2633">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="2634">
+      <node id="2639">
         <label>digital_metric_type.h</label>
         <link refid="digital__metric__type_8h"/>
       </node>
-      <node id="2629">
+      <node id="2634">
         <label>vector</label>
       </node>
-      <node id="2633">
+      <node id="2638">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
-      <node id="2630">
+      <node id="2635">
         <label>math.h</label>
       </node>
-      <node id="2627">
+      <node id="2632">
         <label>digital_api.h</label>
         <link refid="digital__api_8h"/>
-        <childnode refid="2628" relation="include">
+        <childnode refid="2633" relation="include">
         </childnode>
       </node>
-      <node id="2626">
+      <node id="2631">
         <label>digital_constellation.h</label>
         <link refid="digital_constellation.h"/>
-        <childnode refid="2627" relation="include">
-        </childnode>
-        <childnode refid="2629" relation="include">
-        </childnode>
-        <childnode refid="2630" relation="include">
-        </childnode>
-        <childnode refid="2631" relation="include">
-        </childnode>
-        <childnode refid="2633" relation="include">
+        <childnode refid="2632" relation="include">
         </childnode>
         <childnode refid="2634" relation="include">
         </childnode>
-      </node>
-      <node id="2632">
-        <label>complex</label>
-      </node>
-      <node id="2631">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="2632" relation="include">
+        <childnode refid="2635" relation="include">
         </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="2637">
-        <label>digital_constellation_receiver_cb.h</label>
-        <link refid="digital__constellation__receiver__cb_8h"/>
-      </node>
-      <node id="2638">
-        <label>digital_lms_dd_equalizer_cc.h</label>
-        <link refid="digital__lms__dd__equalizer__cc_8h"/>
-      </node>
-      <node id="2639">
-        <label>trellis_constellation_metrics_cf.h</label>
-        <link refid="trellis__constellation__metrics__cf_8h"/>
-      </node>
-      <node id="2636">
-        <label>digital_constellation_decoder_cb.h</label>
-        <link refid="digital__constellation__decoder__cb_8h"/>
-      </node>
-      <node id="2635">
-        <label>digital_constellation.h</label>
-        <link refid="digital_constellation.h"/>
         <childnode refid="2636" relation="include">
-        </childnode>
-        <childnode refid="2637" relation="include">
         </childnode>
         <childnode refid="2638" relation="include">
         </childnode>
         <childnode refid="2639" relation="include">
+        </childnode>
+      </node>
+      <node id="2637">
+        <label>complex</label>
+      </node>
+      <node id="2636">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="2637" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2642">
+        <label>digital_constellation_receiver_cb.h</label>
+        <link refid="digital__constellation__receiver__cb_8h"/>
+      </node>
+      <node id="2643">
+        <label>digital_lms_dd_equalizer_cc.h</label>
+        <link refid="digital__lms__dd__equalizer__cc_8h"/>
+      </node>
+      <node id="2644">
+        <label>trellis_constellation_metrics_cf.h</label>
+        <link refid="trellis__constellation__metrics__cf_8h"/>
+      </node>
+      <node id="2641">
+        <label>digital_constellation_decoder_cb.h</label>
+        <link refid="digital__constellation__decoder__cb_8h"/>
+      </node>
+      <node id="2640">
+        <label>digital_constellation.h</label>
+        <link refid="digital_constellation.h"/>
+        <childnode refid="2641" relation="include">
+        </childnode>
+        <childnode refid="2642" relation="include">
+        </childnode>
+        <childnode refid="2643" relation="include">
+        </childnode>
+        <childnode refid="2644" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

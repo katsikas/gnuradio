@@ -43,7 +43,6 @@ dvbt_derandomizer::dvbt_derandomizer()
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)))
 {
   	reset();
-	packets = 0;
 }
 
 void
@@ -80,7 +79,7 @@ dvbt_derandomizer::work (int noutput_items,
         }
 
 	/*for (i = 0; i < noutput_items; i++){
-                for (int j = 0; j < 1; j++){
+                for (int j = 0; j < 4; j++){
                         printf("%d",out[i].data[j]);
                 }
                 printf("\n");

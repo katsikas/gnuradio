@@ -29,6 +29,7 @@
 #include <dvbt/dvbt_types.h>
 #include <dvbt/dvbt_randomizer.h>
 
+unsigned int plinfo::packets = 0;
 
 dvbt_randomizer_sptr
 dvbt_make_randomizer()
@@ -40,8 +41,9 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)))
 {
+	//printf("sizeof(dvbt_mpeg_packet) = %d \n",sizeof(dvbt_mpeg_packet));
+	//printf("sizeof(dvbt_mpeg_packet_no_sync) = %d \n",sizeof(dvbt_mpeg_packet_no_sync));
   	reset();
-	packets = 0;
 }
 
 void
@@ -56,14 +58,12 @@ dvbt_randomizer::work (int noutput_items,
 		       gr_vector_void_star &output_items)
 {
 	int i = 0;
-	int packets = get_packets();
-
   	const dvbt_mpeg_packet *in = (const dvbt_mpeg_packet *) input_items[0];
   	dvbt_mpeg_packet_no_sync *out = (dvbt_mpeg_packet_no_sync *) output_items[0];
 
+	int packets = out[0].pli.get_packets();
   	for (i = 0; i < noutput_items; i++){
 		// sanity check incoming data.
-    		assert((in[i].data[0] == MPEG_SYNC_BYTE));
 		if(( (packets + i ) % 8) != 0){
                         out[i].data[0] = MPEG_SYNC_BYTE;
 			core_rand.next_state(1);
@@ -73,10 +73,10 @@ dvbt_randomizer::work (int noutput_items,
 			core_rand.reset();
                 }
     		core_rand.randomize(out[i], in[i]);
-  	}
-	set_packets((i + packets) % PRBS_PERIOD);
+	}
+	out[i].pli.set_packets((i + packets) % PRBS_PERIOD);
 
-	/*for (i = 0; i < noutput_items; i++){
+	/*for (int i = 0; i < noutput_items; i++){
                 for (int j = 0; j < 1; j++){
                         printf("%d",out[i].data[j]);
                 }

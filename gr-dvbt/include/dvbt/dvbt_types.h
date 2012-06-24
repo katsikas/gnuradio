@@ -36,107 +36,118 @@
  */
 class plinfo {
 public:
-  plinfo () : _flags (0), _segno (0) { }
+  	plinfo () : _flags (0), _segno (0) { }
 
-  // accessors
+  	// accessors
 
-  bool field_sync1_p () const { return (_flags & fl_field_sync1) != 0; }
-  bool field_sync2_p () const { return (_flags & fl_field_sync2) != 0; }
-  bool field_sync_p ()  const { return field_sync1_p () || field_sync2_p (); }
+  	unsigned int get_packets(){
+                return packets;
+        }
 
-  bool regular_seg_p () const { return (_flags & fl_regular_seg) != 0; }
+        void set_packets(int remainder){
+                assert(remainder > 0);
+                packets = remainder;
+        }
 
-  bool in_field1_p ()   const { return (_flags & fl_field2) == 0; }
-  bool in_field2_p ()   const { return (_flags & fl_field2) != 0; }
 
-  bool first_regular_seg_p () const { return (_flags & fl_first_regular_seg) != 0; }
 
-  bool transport_error_p ()   const { return (_flags & fl_transport_error) != 0; }
+  	bool field_sync1_p () const { return (_flags & fl_field_sync1) != 0; }
+  	bool field_sync2_p () const { return (_flags & fl_field_sync2) != 0; }
+  	bool field_sync_p ()  const { return field_sync1_p () || field_sync2_p (); }
 
-  unsigned int segno ()	const { return _segno; }
-  unsigned int flags () const { return _flags; }
+  	bool regular_seg_p () const { return (_flags & fl_regular_seg) != 0; }
 
-  // setters
+  	bool in_field1_p ()   const { return (_flags & fl_field2) == 0; }
+  	bool in_field2_p ()   const { return (_flags & fl_field2) != 0; }
 
-  void set_field_sync1 ()
-  {
-    _segno = 0;
-    _flags = fl_field_sync1;
-  }
+  	bool first_regular_seg_p () const { return (_flags & fl_first_regular_seg) != 0; }
 
-  void set_field_sync2 ()
-  {
-    _segno = 0;
-    _flags = fl_field_sync2 | fl_field2;
-  }
+  	bool transport_error_p ()   const { return (_flags & fl_transport_error) != 0; }
 
-  /*void set_regular_seg (bool field2, int segno)
-  {
-    assert (0 <= segno && segno < ATSC_DSEGS_PER_FIELD);
-    _segno = segno;
-    _flags = fl_regular_seg;
-    if (segno == 0)
-      _flags |= fl_first_regular_seg;
-    if (segno >= ATSC_DSEGS_PER_FIELD)
-      _flags |= fl_transport_error;
-    if (field2)
-      _flags |= fl_field2;
-  }*/
+  	unsigned int segno ()	const { return _segno; }
+  	unsigned int flags () const { return _flags; }
 
-  void set_transport_error (bool error){
-    if (error)
-      _flags |= fl_transport_error;
-    else
-      _flags &= ~fl_transport_error;
-  }
+  	// setters
 
-  // overload equality operator
-  bool operator== (const plinfo &other) const {
-    return (_flags == other._flags && _segno == other._segno);
-  }
+  	void set_field_sync1 (){
+    		_segno = 0;
+    		_flags = fl_field_sync1;
+  	}
 
-  bool operator!= (const plinfo &other) const {
-    return !(_flags == other._flags && _segno == other._segno);
-  }
+  	void set_field_sync2 (){
+    		_segno = 0;
+    		_flags = fl_field_sync2 | fl_field2;
+  	}
 
-  /*!
-   * Set \p OUT such that it reflects a \p NSEGS_OF_DELAY
-   * pipeline delay from \p IN.
-   */
-  static void delay (plinfo &out, const plinfo &in, int nsegs_of_delay);
+  	void set_regular_seg (bool field2, int segno)
+  	{
+    		//assert (0 <= segno && segno < ATSC_DSEGS_PER_FIELD);
+   		 _segno = segno;
+    		_flags = fl_regular_seg;
+    	if (segno == 0)
+      		_flags |= fl_first_regular_seg;
+    	//if (segno >= ATSC_DSEGS_PER_FIELD)
+      	//	_flags |= fl_transport_error;
+    	if (field2)
+      		_flags |= fl_field2;
+  	}
 
-  /*!
-   * confirm that \p X is plausible
-   */
-  static void sanity_check (const plinfo &in);
+  	void set_transport_error (bool error){
+    		if (error)
+      			_flags |= fl_transport_error;
+    		else
+      			_flags &= ~fl_transport_error;
+  	}
+
+  	// overload equality operator
+  	bool operator== (const plinfo &other) const {
+    		return (_flags == other._flags && _segno == other._segno);
+  	}
+
+  	bool operator!= (const plinfo &other) const {
+    		return !(_flags == other._flags && _segno == other._segno);
+  	}
+
+       /*!
+   	* Set \p OUT such that it reflects a \p NSEGS_OF_DELAY
+   	* pipeline delay from \p IN.
+   	*/
+  	static void delay (plinfo &out, const plinfo &in, int nsegs_of_delay);
+
+       /*!
+   	* confirm that \p X is plausible
+   	*/
+  	static void sanity_check (const plinfo &in);
 
 
 protected:
-  unsigned short	_flags;		// bitmask
-  unsigned short	_segno;		// segment number [0,311]
+  	unsigned short	_flags;		// bitmask
+  	unsigned short	_segno;		// segment number [0,311]
 
-  // these three are mutually exclusive
-  //     This is a regular data segment.
-  static const int	fl_regular_seg		= 0x0001;
-  //	 This is a field sync segment, for 1st half of a field.
-  static const int	fl_field_sync1		= 0x0002;
-  //	 This is a field sync segment, for 2nd half of a field.
-  static const int	fl_field_sync2		= 0x0004;
+  	static unsigned int packets;
 
-  // This bit is on ONLY when fl_regular_seg is set AND when this is
-  // the first regular data segment AFTER a field sync segment.  This
-  // segment causes various processing modules to reset.
-  static const int	fl_first_regular_seg 	= 0x0008;
+  	// these three are mutually exclusive
+  	//     This is a regular data segment.
+  	static const int	fl_regular_seg		= 0x0001;
+  	//	 This is a field sync segment, for 1st half of a field.
+  	static const int	fl_field_sync1		= 0x0002;
+  	//	 This is a field sync segment, for 2nd half of a field.
+  	static const int	fl_field_sync2		= 0x0004;
 
-  // which field are we in?
-  static const int	fl_field2		= 0x0010;	// else field 1
+  	// This bit is on ONLY when fl_regular_seg is set AND when this is
+  	// the first regular data segment AFTER a field sync segment.  This
+  	// segment causes various processing modules to reset.
+  	static const int	fl_first_regular_seg 	= 0x0008;
 
-  // This bit is set when Reed-Solomon decoding detects an error that it
-  // can't correct.  Note that other error detection (e.g. Viterbi) do not
-  // set it, since Reed-Solomon will correct many of those.  This bit is
-  // then copied into the final Transport Stream packet so that MPEG
-  // software can see that the 188-byte data segment has been corrupted.
-  static const int	fl_transport_error	= 0x0020;
+  	// which field are we in?
+  	static const int	fl_field2		= 0x0010;	// else field 1
+
+  	// This bit is set when Reed-Solomon decoding detects an error that it
+  	// can't correct.  Note that other error detection (e.g. Viterbi) do not
+  	// set it, since Reed-Solomon will correct many of those.  This bit is
+  	// then copied into the final Transport Stream packet so that MPEG
+  	// software can see that the 188-byte data segment has been corrupted.
+  	static const int	fl_transport_error	= 0x0020;
 };
 
 
@@ -146,7 +157,6 @@ class dvbt_mpeg_packet
 
 public:
   	static const int NPAD  = 68;
-
   	unsigned char _pad_[NPAD];			      // pad to power of 2 (256)
   	unsigned char data[DVBT_MPEG_DATA_LENGTH + DVBT_MPEG_HEADER_LENGTH];	// 184+4
 
@@ -183,20 +193,20 @@ public:
 
 
 class dvbt_mpeg_packet_rs_encoded {
- public:
-  static const int NPAD = 48;
-  plinfo	pli;
-  unsigned char	data[DVBT_MPEG_RS_ENCODED_LENGTH];
-  unsigned char _pad_[NPAD];				// pad to power of 2 (256)
+public:
+  	static const int NPAD = 48;
+  	plinfo	pli;
+  	unsigned char	data[DVBT_MPEG_RS_ENCODED_LENGTH];
+  	unsigned char _pad_[NPAD];				// pad to power of 2 (256)
 
-  // overload equality operator
-  bool operator== (const dvbt_mpeg_packet_rs_encoded &other) const {
-    return std::memcmp (data, other.data, sizeof (data)) == 0;
-  }
+  	// overload equality operator
+  	bool operator== (const dvbt_mpeg_packet_rs_encoded &other) const {
+    		return std::memcmp (data, other.data, sizeof (data)) == 0;
+  	}
 
-  bool operator!= (const dvbt_mpeg_packet_rs_encoded &other) const {
-    return !(std::memcmp (data, other.data, sizeof (data)) == 0);
-  }
+  	bool operator!= (const dvbt_mpeg_packet_rs_encoded &other) const {
+    		return !(std::memcmp (data, other.data, sizeof (data)) == 0);
+  	}	
 };
 
 #endif /* _DVBT_TYPES_H_ */

@@ -41,6 +41,7 @@ dvbt_rs_encoder::dvbt_rs_encoder(): gr_sync_block("dvbt_rs_encoder",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_rs_encoded)))
 {
+	//printf("sizeof(dvbt_mpeg_packet_rs_en) = %d \n",sizeof(dvbt_mpeg_packet_rs_encoded));
   	reset();
 }
 

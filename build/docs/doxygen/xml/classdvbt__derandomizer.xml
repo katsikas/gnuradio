@@ -18,11 +18,11 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="48" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="48" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdvbt__derandomizer_1a078afff8c0a6073bdab59af469f7f6db" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classdvbt__derandomizer_1af5f524e0791b9ecdbe89de2b5079eb46" prot="private" static="no" mutable="no">
         <type><ref refid="classdvbti__randomizer" kindref="compound">dvbti_randomizer</ref></type>
-        <definition>dvbti_randomizer dvbt_derandomizer::d_rand</definition>
+        <definition>dvbti_randomizer dvbt_derandomizer::core_rand</definition>
         <argsstring></argsstring>
-        <name>d_rand</name>
+        <name>core_rand</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -59,37 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="52"/>
-      </memberdef>
-      <memberdef kind="function" id="classdvbt__derandomizer_1aa72b91abe5f09c8a9dcba7fd6c165167" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int dvbt_derandomizer::get_packets</definition>
-        <argsstring>()</argsstring>
-        <name>get_packets</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="54" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="54" bodyend="56"/>
-      </memberdef>
-      <memberdef kind="function" id="classdvbt__derandomizer_1ab2e68010df7c2a98e4003bb869f8dcff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
-        <definition>void dvbt_derandomizer::set_packets</definition>
-        <argsstring>(int remainder)</argsstring>
-        <name>set_packets</name>
-        <param>
-          <type>int</type>
-          <declname>remainder</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="58" bodyend="61"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="51"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -117,7 +87,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="67"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__derandomizer_1a8255fd7c10a3ebba1fedbc5800f77cdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
@@ -130,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="69"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -235,7 +205,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="45" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="44" bodyend="70"/>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="45" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="44" bodyend="59"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>add_item_tag</name></member>
@@ -245,11 +215,11 @@
       <member refid="classgr__basic__block_1a1cedb1704b6c00977c681b378ede384c" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>color</name></member>
       <member refid="classgr__block_1ac76b4c53af762a819bca003d5b5cb4d1" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>consume</name></member>
       <member refid="classgr__block_1a64e9a2096975841b72ff3c1662d27df9" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>consume_each</name></member>
+      <member refid="classdvbt__derandomizer_1af5f524e0791b9ecdbe89de2b5079eb46" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>core_rand</name></member>
       <member refid="classgr__basic__block_1a7fb7e692e3b98a82410b396ef263bb41" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>d_color</name></member>
       <member refid="classgr__basic__block_1a2c8da0c28bbbfb0e759278c9b9459e96" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>d_input_signature</name></member>
       <member refid="classgr__basic__block_1afd352cc073ef28012d4d079a863f5401" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>d_name</name></member>
       <member refid="classgr__basic__block_1a76d64ed7a79566e3310306ae6f194d75" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>d_output_signature</name></member>
-      <member refid="classdvbt__derandomizer_1a078afff8c0a6073bdab59af469f7f6db" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>d_rand</name></member>
       <member refid="classgr__basic__block_1a0d2999c04f47327f93dd7def5dc704f8" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>d_unique_id</name></member>
       <member refid="classgr__block_1afb276858409ac55d62fca1c87d7d4083" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>detail</name></member>
       <member refid="classdvbt__derandomizer_1a7aa6bc8fa0db91f400be564d5c960506" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>dvbt_derandomizer</name></member>
@@ -259,7 +229,6 @@
       <member refid="classgr__sync__block_1adaecb00ae09408c22e46c44d09aad53e" prot="public" virt="virtual"><scope>dvbt_derandomizer</scope><name>fixed_rate_noutput_to_ninput</name></member>
       <member refid="classgr__sync__block_1a1327e83509baf039aa3c816ea81a8f22" prot="public" virt="virtual"><scope>dvbt_derandomizer</scope><name>forecast</name></member>
       <member refid="classgr__sync__block_1a56ca60b6bc20a3510f71d961891fa81b" prot="public" virt="virtual"><scope>dvbt_derandomizer</scope><name>general_work</name></member>
-      <member refid="classdvbt__derandomizer_1aa72b91abe5f09c8a9dcba7fd6c165167" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>get_packets</name></member>
       <member refid="classgr__block_1a54f69c4cd5ef5b05ac58d0128256def1" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>get_tags_in_range</name></member>
       <member refid="classgr__block_1ab2650baa0c05713fc04664e69dde565d" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>get_tags_in_range</name></member>
       <member refid="classgr__basic__block_1a84d1e93b57e52efb18a5aa90a3eaf2db" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>gr_basic_block</name></member>
@@ -298,7 +267,6 @@
       <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_output_signature</name></member>
-      <member refid="classdvbt__derandomizer_1ab2e68010df7c2a98e4003bb869f8dcff" prot="private" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_packets</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_relative_rate</name></member>
       <member refid="classgr__block_1af9bce945f28950c1800d8deb6bb997a1" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_tag_propagation_policy</name></member>
       <member refid="classgr__block_1a1f7f6b204a5d383f5903b222aa838eb3" prot="public" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>set_unaligned</name></member>

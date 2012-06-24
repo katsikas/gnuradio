@@ -4,33 +4,51 @@
     <compoundname>dvbt_consts.h</compoundname>
     <includedby refid="dvbt__types_8h" local="no">dvbt_types.h</includedby>
     <invincdepgraph>
-      <node id="3887">
+      <node id="3895">
         <label>dvbt_derandomizer.h</label>
         <link refid="dvbt__derandomizer_8h"/>
       </node>
-      <node id="3888">
+      <node id="3897">
+        <label>dvbti_reed_solomon.h</label>
+        <link refid="dvbti__reed__solomon_8h"/>
+        <childnode refid="3898" relation="include">
+        </childnode>
+        <childnode refid="3899" relation="include">
+        </childnode>
+      </node>
+      <node id="3896">
         <label>dvbt_randomizer.h</label>
         <link refid="dvbt__randomizer_8h"/>
       </node>
-      <node id="3886">
+      <node id="3899">
+        <label>dvbt_rs_encoder.h</label>
+        <link refid="dvbt__rs__encoder_8h"/>
+      </node>
+      <node id="3894">
         <label>dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="3887" relation="include">
+        <childnode refid="3895" relation="include">
         </childnode>
-        <childnode refid="3888" relation="include">
+        <childnode refid="3896" relation="include">
         </childnode>
       </node>
-      <node id="3884">
+      <node id="3892">
         <label>dvbt_consts.h</label>
         <link refid="dvbt_consts.h"/>
-        <childnode refid="3885" relation="include">
+        <childnode refid="3893" relation="include">
         </childnode>
       </node>
-      <node id="3885">
+      <node id="3893">
         <label>dvbt_types.h</label>
         <link refid="dvbt__types_8h"/>
-        <childnode refid="3886" relation="include">
+        <childnode refid="3894" relation="include">
         </childnode>
+        <childnode refid="3897" relation="include">
+        </childnode>
+      </node>
+      <node id="3898">
+        <label>dvbt_rs_decoder.h</label>
+        <link refid="dvbt__rs__decoder_8h"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="var">
@@ -62,21 +80,6 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="27" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="27" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="dvbt__consts_8h_1af62b3dec73d308c0040624d475b61a1d" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int DVBT_DSEGS_PER_FIELD</definition>
-        <argsstring></argsstring>
-        <name>DVBT_DSEGS_PER_FIELD</name>
-        <initializer> 312</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="28" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="28" bodyend="-1"/>
-        <referencedby refid="classplinfo_1a615c5375f70e40637093c10027001233" compoundref="dvbt__types_8h" startline="67" endline="77">plinfo::set_regular_seg</referencedby>
-      </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ad5ccc6a26f313ce573ef7e19b67dcd8f" prot="public" static="yes" mutable="no">
         <type>const int</type>
         <definition>const int DVBT_MPEG_DATA_LENGTH</definition>
@@ -89,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="28" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1a526d29e3cd24449d577889edf9dd8af8" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -103,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1a0c3e3059531c5185a4d0ece5717d6402" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -117,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="30" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1aec0bf7a17595dad1e9e08ce7f4338bd3" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -131,7 +134,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="34" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dvbt__consts_8h_1acaeaa683423623b9b258779e915dad2b" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int MPEG_INVERTED_SYNC_BYTE</definition>
+        <argsstring></argsstring>
+        <name>MPEG_INVERTED_SYNC_BYTE</name>
+        <initializer> 0xB8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ac1b330045acc5311d5f33a9851e84407" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -145,21 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="dvbt__consts_8h_1a9e818caf55154ea83496d928effb7e8d" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int MPEG_TRANSPORT_ERROR_BIT</definition>
-        <argsstring></argsstring>
-        <name>MPEG_TRANSPORT_ERROR_BIT</name>
-        <initializer> 0x80</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1adbdb31d594deffaed63d1f7e156833b8" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -173,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="37" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="37" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

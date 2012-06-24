@@ -232,112 +232,112 @@
 <para>This block takes in a signal stream and performs interger up- sampling (interpolation) with a polyphase filterbank. The first input is the integer specifying how much to interpolate by. The second input is a vector (Python list) of floating-point taps of the prototype filter.</para><para>The filter&apos;s taps should be based on the interpolation rate specified. That is, the bandwidth specified is relative to the bandwidth after interpolation.</para><para>For example, using the GNU Radio&apos;s firdes utility to building filters, we build a low-pass filter with a sampling rate of <emphasis>fs</emphasis>, a 3-dB bandwidth of <emphasis>BW</emphasis> and a transition bandwidth of <emphasis>TB</emphasis>. We can also specify the out-of-band attenuation to use, ATT, and the filter window function (a Blackman-harris window in this case). The first input is the gain, which is also specified as the interpolation rate so that the output levels are the same as the input (this creates an overall increase in power).</para><para><bold><emphasis>self._taps = gr.firdes.low_pass_2(interp, interp*fs, BW, TB, attenuation_dB=ATT, window=gr.firdes.WIN_BLACKMAN_hARRIS)</emphasis></bold></para><para>The PFB interpolator code takes the taps generated above and builds a set of filters. The set contains <emphasis>interp</emphasis> number of filters and each filter contains ceil(taps.size()/interp) number of taps. Each tap from the filter prototype is sequentially inserted into the next filter. When all of the input taps are used, the remaining filters in the filterbank are filled out with 0&apos;s to make sure each filter has the same number of taps.</para><para>The theory behind this block can be found in Chapter 7.1 of the following book.</para><para><bold><emphasis>f. harris, &quot;Multirate Signal Processing for Communication
        Systems&lt;/EM&gt;,&quot; Upper Saddle River, NJ: Prentice Hall, Inc. 2004.</emphasis></bold> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="4838">
+      <node id="4881">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4839" relation="public-inheritance">
+        <childnode refid="4882" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4835">
+      <node id="4878">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4836" relation="public-inheritance">
+        <childnode refid="4879" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4836">
+      <node id="4879">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4837" relation="public-inheritance">
+        <childnode refid="4880" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4834">
+      <node id="4877">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="4835" relation="public-inheritance">
+        <childnode refid="4878" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4833">
+      <node id="4876">
         <label>gr_pfb_interpolator_ccf</label>
         <link refid="classgr__pfb__interpolator__ccf"/>
-        <childnode refid="4834" relation="public-inheritance">
+        <childnode refid="4877" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4839">
+      <node id="4882">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4837">
+      <node id="4880">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4838" relation="public-inheritance">
+        <childnode refid="4881" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4845">
+      <node id="4888">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4846" relation="public-inheritance">
+        <childnode refid="4889" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4842">
+      <node id="4885">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4843" relation="public-inheritance">
+        <childnode refid="4886" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4843">
+      <node id="4886">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4844" relation="public-inheritance">
+        <childnode refid="4887" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4841">
+      <node id="4884">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="4842" relation="public-inheritance">
+        <childnode refid="4885" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4847">
+      <node id="4890">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4848" relation="usage">
+        <childnode refid="4891" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4850">
+      <node id="4893">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4840">
+      <node id="4883">
         <label>gr_pfb_interpolator_ccf</label>
         <link refid="classgr__pfb__interpolator__ccf"/>
-        <childnode refid="4841" relation="public-inheritance">
+        <childnode refid="4884" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4846">
+      <node id="4889">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4848">
+      <node id="4891">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4844">
+      <node id="4887">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4845" relation="public-inheritance">
+        <childnode refid="4888" relation="public-inheritance">
         </childnode>
-        <childnode refid="4847" relation="usage">
+        <childnode refid="4890" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4849" relation="usage">
+        <childnode refid="4892" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4849">
+      <node id="4892">
         <label>std::string</label>
-        <childnode refid="4850" relation="public-inheritance">
+        <childnode refid="4893" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
