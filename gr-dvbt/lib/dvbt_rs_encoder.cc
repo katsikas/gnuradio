@@ -53,12 +53,17 @@ dvbt_rs_encoder::work (int noutput_items,
   	const dvbt_mpeg_packet_no_sync *in = (const dvbt_mpeg_packet_no_sync *) input_items[0];
   	dvbt_mpeg_packet_rs_encoded *out = (dvbt_mpeg_packet_rs_encoded *) output_items[0];
 
-
   	for (int i = 0; i < noutput_items; i++){
-		assert(in[i].pli.regular_seg_p());
     		out[i].pli = in[i].pli;			// copy pipeline info...
     		d_rs_encoder.encode(out[i], in[i]);
   	}
+
+	/*for (int i = 0; i < noutput_items; i++){
+                for (int j = 0; j < 1; j++){
+                        printf("%d",out[i].data[j]);
+                }
+                printf("\n");
+        }*/
 
   	return noutput_items;
 }

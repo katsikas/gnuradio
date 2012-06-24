@@ -72,11 +72,10 @@ gr-fcd/swig/CMakeFiles/_fcd_swig.dir/fcd_swigPYTHON_wrap.cxx.o.provides.build: g
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
-gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: gr-fcd/swig/fcd_swig_doc.i
+gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gr-fcd/include/fcd/fcd_api.h
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_basic_block.h
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gr-fcd/include/fcd/fcd_source_c.h
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
-gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gr-fcd/include/fcd/fcd_api.h
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gr-fcd/swig/fcd_swig.i
 gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: /usr/include/stdint.h
@@ -94,18 +93,18 @@ gr-fcd/swig/fcd_swigPYTHON_wrap.cxx: ../gr-fcd/swig/fcd_swig.i
 
 gr-fcd/swig/fcd_swig.py: gr-fcd/swig/fcd_swigPYTHON_wrap.cxx
 
-gr-fcd/swig/fcd_swig_doc.i: ../gr-fcd/swig/../lib/fcd_source_c_impl.h
-gr-fcd/swig/fcd_swig_doc.i: gr-fcd/swig/fcd_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fcd_swig_doc.i"
-	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-fcd/swig/fcd_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-fcd/swig/fcd_swig_doc.i
-
 gr-fcd/swig/fcd_swig.tag: gr-fcd/swig/fcd_swig_doc.i
 gr-fcd/swig/fcd_swig.tag: gr-fcd/swig/_fcd_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fcd_swig.tag"
 	cd /home/katsikas/gnuradio/build/gr-fcd/swig && ./_fcd_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-fcd/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-fcd/swig/fcd_swig.tag
+
+gr-fcd/swig/fcd_swig_doc.i: ../gr-fcd/swig/../lib/fcd_source_c_impl.h
+gr-fcd/swig/fcd_swig_doc.i: gr-fcd/swig/fcd_swig_doc_swig_docs/xml/index.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fcd_swig_doc.i"
+	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-fcd/swig/fcd_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-fcd/swig/fcd_swig_doc.i
 
 gr-fcd/swig/fcd_swig_doc_swig_docs/xml/index.xml: ../gr-fcd/swig/../lib/fcd_source_c_impl.h
 gr-fcd/swig/fcd_swig_doc_swig_docs/xml/index.xml: gr-fcd/swig/_fcd_swig_doc_tag
@@ -154,8 +153,8 @@ gr-fcd/swig/CMakeFiles/_fcd_swig.dir/clean:
 
 gr-fcd/swig/CMakeFiles/_fcd_swig.dir/depend: gr-fcd/swig/fcd_swigPYTHON_wrap.cxx
 gr-fcd/swig/CMakeFiles/_fcd_swig.dir/depend: gr-fcd/swig/fcd_swig.py
-gr-fcd/swig/CMakeFiles/_fcd_swig.dir/depend: gr-fcd/swig/fcd_swig_doc.i
 gr-fcd/swig/CMakeFiles/_fcd_swig.dir/depend: gr-fcd/swig/fcd_swig.tag
+gr-fcd/swig/CMakeFiles/_fcd_swig.dir/depend: gr-fcd/swig/fcd_swig_doc.i
 gr-fcd/swig/CMakeFiles/_fcd_swig.dir/depend: gr-fcd/swig/fcd_swig_doc_swig_docs/xml/index.xml
 gr-fcd/swig/CMakeFiles/_fcd_swig.dir/depend: gr-fcd/swig/fcd_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-fcd/swig /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-fcd/swig /home/katsikas/gnuradio/build/gr-fcd/swig/CMakeFiles/_fcd_swig.dir/DependInfo.cmake --color=$(COLOR)

@@ -585,7 +585,6 @@ var files =
     [ "vocoder_gsm_fr_encode_sp.h", "vocoder__gsm__fr__encode__sp_8h.html", "vocoder__gsm__fr__encode__sp_8h" ],
     [ "vocoder_ulaw_decode_bs.h", "vocoder__ulaw__decode__bs_8h.html", "vocoder__ulaw__decode__bs_8h" ],
     [ "vocoder_ulaw_encode_sb.h", "vocoder__ulaw__encode__sb_8h.html", "vocoder__ulaw__encode__sb_8h" ],
-    [ "volk.h", "volk_8h.html", "volk_8h" ],
     [ "volk.tmpl.h", "volk_8tmpl_8h.html", "volk_8tmpl_8h" ],
     [ "volk_16i_branch_4_state_8_a.h", "volk__16i__branch__4__state__8__a_8h.html", null ],
     [ "volk_16i_convert_8i_a.h", "volk__16i__convert__8i__a_8h.html", null ],

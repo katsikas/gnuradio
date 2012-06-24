@@ -61,7 +61,6 @@ gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gr-pager/lib/pager_flex_parse.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gr-pager/lib/pager_slicer_fb.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gr-pager/lib/pager_flex_deinterleave.h
-gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gr-pager/lib/pager_flex_frame.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gr-pager/lib/pager_api.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
@@ -78,7 +77,7 @@ gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gruel/src/include/gruel/attributes.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio.i
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
-gr-pager/swig/pager_swigPYTHON_wrap.cxx: gr-pager/swig/pager_swig_doc.i
+gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gr-pager/lib/pager_flex_frame.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_block.h
 gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_complex.h
@@ -97,6 +96,13 @@ gr-pager/swig/pager_swigPYTHON_wrap.cxx: ../gr-pager/swig/pager_swig.i
 
 gr-pager/swig/pager_swig.py: gr-pager/swig/pager_swigPYTHON_wrap.cxx
 
+gr-pager/swig/pager_swig.tag: gr-pager/swig/pager_swig_doc.i
+gr-pager/swig/pager_swig.tag: gr-pager/swig/_pager_swig_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating pager_swig.tag"
+	cd /home/katsikas/gnuradio/build/gr-pager/swig && ./_pager_swig_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-pager/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-pager/swig/pager_swig.tag
+
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_slicer_fb.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_api.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_flex_frame.h
@@ -107,16 +113,9 @@ gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pageri_util.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pageri_bch3221.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_flex_sync.h
 gr-pager/swig/pager_swig_doc.i: gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating pager_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-pager/swig/pager_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-pager/swig/pager_swig_doc.i
-
-gr-pager/swig/pager_swig.tag: gr-pager/swig/pager_swig_doc.i
-gr-pager/swig/pager_swig.tag: gr-pager/swig/_pager_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating pager_swig.tag"
-	cd /home/katsikas/gnuradio/build/gr-pager/swig && ./_pager_swig_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-pager/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-pager/swig/pager_swig.tag
 
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_slicer_fb.h
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_api.h
@@ -140,8 +139,8 @@ pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig.pyc
 pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig.pyo
 pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swigPYTHON_wrap.cxx
 pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig.py
-pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig_doc.i
 pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig.tag
+pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig_doc.i
 pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml
 pygen_gr_pager_swig_6905b: gr-pager/swig/pager_swig_doc_swig_docs/xml/combine.xslt
 pygen_gr_pager_swig_6905b: gr-pager/swig/CMakeFiles/pygen_gr_pager_swig_6905b.dir/build.make

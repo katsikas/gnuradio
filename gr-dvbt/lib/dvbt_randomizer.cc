@@ -66,18 +66,23 @@ dvbt_randomizer::work (int noutput_items,
 		// sanity check incoming data.
 		if(( (packets + i ) % 8) != 0){
                         out[i].data[0] = MPEG_SYNC_BYTE;
+			out[i].data[1] = out[i].pli.get_flag01();
 			core_rand.next_state(1);
                 }
                 else{
                         out[i].data[0] = ~MPEG_SYNC_BYTE;
 			core_rand.reset();
                 }
+		out[i].data[1] = out[i].pli.get_flag01();
+		out[i].data[2] = out[i].pli.get_flag02();
+		out[i].data[3] = out[i].pli.get_flag03();
+
     		core_rand.randomize(out[i], in[i]);
 	}
 	out[i].pli.set_packets((i + packets) % PRBS_PERIOD);
 
 	/*for (int i = 0; i < noutput_items; i++){
-                for (int j = 0; j < 1; j++){
+                for (int j = 0; j < 4; j++){
                         printf("%d",out[i].data[j]);
                 }
 		printf("\n");

@@ -6,50 +6,117 @@
     <includes refid="msg__accepter_8h" local="no">gruel/msg_accepter.h</includes>
     <includes refid="msg__queue_8h" local="no">gruel/msg_queue.h</includes>
     <incdepgraph>
-      <node id="14931">
+      <node id="14937">
         <label>boost/thread/mutex.hpp</label>
       </node>
-      <node id="14933">
+      <node id="14939">
         <label>boost/thread/condition_variable.hpp</label>
       </node>
-      <node id="14918">
+      <node id="14924">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="14917">
+      <node id="14923">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="14915">
+      <node id="14921">
         <label>gruel/msg_accepter.h</label>
         <link refid="msg__accepter_8h"/>
-        <childnode refid="14913" relation="include">
+        <childnode refid="14919" relation="include">
         </childnode>
-        <childnode refid="14916" relation="include">
+        <childnode refid="14922" relation="include">
         </childnode>
-        <childnode refid="14918" relation="include">
+        <childnode refid="14924" relation="include">
         </childnode>
       </node>
-      <node id="14914">
+      <node id="14920">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="14928">
+      <node id="14934">
         <label>gruel/msg_queue.h</label>
         <link refid="msg__queue_8h"/>
-        <childnode refid="14913" relation="include">
+        <childnode refid="14919" relation="include">
         </childnode>
+        <childnode refid="14935" relation="include">
+        </childnode>
+        <childnode refid="14922" relation="include">
+        </childnode>
+        <childnode refid="14940" relation="include">
+        </childnode>
+      </node>
+      <node id="14935">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="14919" relation="include">
+        </childnode>
+        <childnode refid="14936" relation="include">
+        </childnode>
+        <childnode refid="14937" relation="include">
+        </childnode>
+        <childnode refid="14938" relation="include">
+        </childnode>
+        <childnode refid="14939" relation="include">
+        </childnode>
+      </node>
+      <node id="14932">
+        <label>stdexcept</label>
+      </node>
+      <node id="14936">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="14928">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
         <childnode refid="14929" relation="include">
         </childnode>
-        <childnode refid="14916" relation="include">
+        <childnode refid="14930" relation="include">
+        </childnode>
+      </node>
+      <node id="14927">
+        <label>string</label>
+      </node>
+      <node id="14933">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="14919">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="14920" relation="include">
+        </childnode>
+      </node>
+      <node id="14918">
+        <label>msg_accepter_msgq.h</label>
+        <link refid="msg_accepter_msgq.h"/>
+        <childnode refid="14919" relation="include">
+        </childnode>
+        <childnode refid="14921" relation="include">
         </childnode>
         <childnode refid="14934" relation="include">
         </childnode>
       </node>
       <node id="14929">
-        <label>gruel/thread.h</label>
-        <link refid="thread_8h"/>
-        <childnode refid="14913" relation="include">
+        <label>limits.h</label>
+      </node>
+      <node id="14925">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="14922">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="14919" relation="include">
         </childnode>
-        <childnode refid="14930" relation="include">
+        <childnode refid="14923" relation="include">
+        </childnode>
+        <childnode refid="14924" relation="include">
+        </childnode>
+        <childnode refid="14925" relation="include">
+        </childnode>
+        <childnode refid="14926" relation="include">
+        </childnode>
+        <childnode refid="14927" relation="include">
+        </childnode>
+        <childnode refid="14928" relation="include">
         </childnode>
         <childnode refid="14931" relation="include">
         </childnode>
@@ -58,86 +125,19 @@
         <childnode refid="14933" relation="include">
         </childnode>
       </node>
-      <node id="14926">
-        <label>stdexcept</label>
-      </node>
       <node id="14930">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="14922">
-        <label>stdint.h</label>
-        <link refid="stdint_8h"/>
-        <childnode refid="14923" relation="include">
-        </childnode>
-        <childnode refid="14924" relation="include">
-        </childnode>
-      </node>
-      <node id="14921">
-        <label>string</label>
-      </node>
-      <node id="14927">
-        <label>gruel/pmt_sugar.h</label>
-        <link refid="pmt__sugar_8h"/>
-      </node>
-      <node id="14913">
-        <label>gruel/api.h</label>
-        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="14914" relation="include">
-        </childnode>
-      </node>
-      <node id="14912">
-        <label>msg_accepter_msgq.h</label>
-        <link refid="msg_accepter_msgq.h"/>
-        <childnode refid="14913" relation="include">
-        </childnode>
-        <childnode refid="14915" relation="include">
-        </childnode>
-        <childnode refid="14928" relation="include">
-        </childnode>
-      </node>
-      <node id="14923">
-        <label>limits.h</label>
-      </node>
-      <node id="14919">
-        <label>boost/any.hpp</label>
-      </node>
-      <node id="14916">
-        <label>gruel/pmt.h</label>
-        <link refid="pmt_8h"/>
-        <childnode refid="14913" relation="include">
-        </childnode>
-        <childnode refid="14917" relation="include">
-        </childnode>
-        <childnode refid="14918" relation="include">
-        </childnode>
-        <childnode refid="14919" relation="include">
-        </childnode>
-        <childnode refid="14920" relation="include">
-        </childnode>
-        <childnode refid="14921" relation="include">
-        </childnode>
-        <childnode refid="14922" relation="include">
-        </childnode>
-        <childnode refid="14925" relation="include">
-        </childnode>
-        <childnode refid="14926" relation="include">
-        </childnode>
-        <childnode refid="14927" relation="include">
-        </childnode>
-      </node>
-      <node id="14924">
         <label>wchar.h</label>
       </node>
-      <node id="14932">
+      <node id="14938">
         <label>boost/thread/locks.hpp</label>
       </node>
-      <node id="14925">
+      <node id="14931">
         <label>iosfwd</label>
       </node>
-      <node id="14934">
+      <node id="14940">
         <label>deque</label>
       </node>
-      <node id="14920">
+      <node id="14926">
         <label>complex</label>
       </node>
     </incdepgraph>

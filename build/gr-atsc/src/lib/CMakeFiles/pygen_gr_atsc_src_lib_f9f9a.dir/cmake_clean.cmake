@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "atsc.pyo"
   "atscPYTHON_wrap.cxx"
   "atsc.py"
-  "atsc_swig_doc.i"
   "atsc.tag"
+  "atsc_swig_doc.i"
   "atsc_swig_doc_swig_docs/xml/index.xml"
   "atsc_swig_doc_swig_docs/xml/combine.xslt"
 )

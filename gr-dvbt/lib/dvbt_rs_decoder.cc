@@ -55,7 +55,6 @@ dvbt_rs_decoder::work (int noutput_items,
   	dvbt_mpeg_packet_no_sync *out = (dvbt_mpeg_packet_no_sync *) output_items[0];
 
   	for (int i = 0; i < noutput_items; i++){
-    		assert(in[i].pli.regular_seg_p());
     		out[i].pli = in[i].pli;			// copy pipeline info...
 
     		int nerrors_corrrected = d_rs_decoder.decode(out[i], in[i]);

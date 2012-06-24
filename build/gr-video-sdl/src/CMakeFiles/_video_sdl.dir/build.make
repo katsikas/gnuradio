@@ -72,16 +72,15 @@ gr-video-sdl/src/CMakeFiles/_video_sdl.dir/video_sdlPYTHON_wrap.cxx.o.provides.b
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
-gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gr-video-sdl/src/video_sdl_api.h
+gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_block.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gr-video-sdl/src/video_sdl_sink_s.h
-gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: gr-video-sdl/src/video_sdl_swig_doc.i
+gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gr-video-sdl/src/video_sdl_api.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_block.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gr-video-sdl/src/video_sdl.i
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gr-video-sdl/src/video_sdl_sink_uc.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_complex.h
-gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_block.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: /usr/include/stdint.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
 gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gruel/src/include/gruel/attributes.h
@@ -95,20 +94,20 @@ gr-video-sdl/src/video_sdlPYTHON_wrap.cxx: ../gr-video-sdl/src/video_sdl.i
 
 gr-video-sdl/src/video_sdl.py: gr-video-sdl/src/video_sdlPYTHON_wrap.cxx
 
+gr-video-sdl/src/video_sdl.tag: gr-video-sdl/src/video_sdl_swig_doc.i
+gr-video-sdl/src/video_sdl.tag: gr-video-sdl/src/_video_sdl_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating video_sdl.tag"
+	cd /home/katsikas/gnuradio/build/gr-video-sdl/src && ./_video_sdl_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-video-sdl/src && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-video-sdl/src/video_sdl.tag
+
 gr-video-sdl/src/video_sdl_swig_doc.i: ../gr-video-sdl/src/video_sdl_sink_uc.h
 gr-video-sdl/src/video_sdl_swig_doc.i: ../gr-video-sdl/src/video_sdl_sink_s.h
 gr-video-sdl/src/video_sdl_swig_doc.i: ../gr-video-sdl/src/video_sdl_api.h
 gr-video-sdl/src/video_sdl_swig_doc.i: gr-video-sdl/src/video_sdl_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating video_sdl_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-video-sdl/src/video_sdl_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-video-sdl/src/video_sdl_swig_doc.i
-
-gr-video-sdl/src/video_sdl.tag: gr-video-sdl/src/video_sdl_swig_doc.i
-gr-video-sdl/src/video_sdl.tag: gr-video-sdl/src/_video_sdl_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating video_sdl.tag"
-	cd /home/katsikas/gnuradio/build/gr-video-sdl/src && ./_video_sdl_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-video-sdl/src && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-video-sdl/src/video_sdl.tag
 
 gr-video-sdl/src/video_sdl_swig_doc_swig_docs/xml/index.xml: ../gr-video-sdl/src/video_sdl_sink_uc.h
 gr-video-sdl/src/video_sdl_swig_doc_swig_docs/xml/index.xml: ../gr-video-sdl/src/video_sdl_sink_s.h
@@ -158,8 +157,8 @@ gr-video-sdl/src/CMakeFiles/_video_sdl.dir/clean:
 
 gr-video-sdl/src/CMakeFiles/_video_sdl.dir/depend: gr-video-sdl/src/video_sdlPYTHON_wrap.cxx
 gr-video-sdl/src/CMakeFiles/_video_sdl.dir/depend: gr-video-sdl/src/video_sdl.py
-gr-video-sdl/src/CMakeFiles/_video_sdl.dir/depend: gr-video-sdl/src/video_sdl_swig_doc.i
 gr-video-sdl/src/CMakeFiles/_video_sdl.dir/depend: gr-video-sdl/src/video_sdl.tag
+gr-video-sdl/src/CMakeFiles/_video_sdl.dir/depend: gr-video-sdl/src/video_sdl_swig_doc.i
 gr-video-sdl/src/CMakeFiles/_video_sdl.dir/depend: gr-video-sdl/src/video_sdl_swig_doc_swig_docs/xml/index.xml
 gr-video-sdl/src/CMakeFiles/_video_sdl.dir/depend: gr-video-sdl/src/video_sdl_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-video-sdl/src /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-video-sdl/src /home/katsikas/gnuradio/build/gr-video-sdl/src/CMakeFiles/_video_sdl.dir/DependInfo.cmake --color=$(COLOR)

@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "GNU Radio f9929348 C++ API", "index.html", [
+  [ "GNU Radio 6504c476 C++ API", "index.html", [
     [ "Main Page", "index.html", null ],
     [ "Related Pages", "pages.html", "pages" ],
     [ "Modules", "modules.html", "modules" ],
