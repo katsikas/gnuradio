@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="msg__queue_8h" kind="file">
     <compoundname>msg_queue.h</compoundname>
     <includes refid="gruel_2src_2include_2gruel_2api_8h" local="no">gruel/api.h</includes>
@@ -8,40 +8,38 @@
     <includes local="no">deque</includes>
     <includedby refid="msg__accepter__msgq_8h" local="no">msg_accepter_msgq.h</includedby>
     <incdepgraph>
-      <node id="14964">
+      <node id="14965">
         <label>boost/thread/mutex.hpp</label>
       </node>
-      <node id="14966">
+      <node id="14967">
         <label>boost/thread/condition_variable.hpp</label>
       </node>
-      <node id="14969">
+      <node id="14970">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="14968">
+      <node id="14969">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="14961">
+      <node id="14962">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="14959">
+      <node id="14960">
         <label>msg_queue.h</label>
         <link refid="msg_queue.h"/>
-        <childnode refid="14960" relation="include">
-        </childnode>
-        <childnode refid="14962" relation="include">
-        </childnode>
-        <childnode refid="14967" relation="include">
-        </childnode>
-        <childnode refid="14979" relation="include">
-        </childnode>
-      </node>
-      <node id="14962">
-        <label>gruel/thread.h</label>
-        <link refid="thread_8h"/>
-        <childnode refid="14960" relation="include">
+        <childnode refid="14961" relation="include">
         </childnode>
         <childnode refid="14963" relation="include">
+        </childnode>
+        <childnode refid="14968" relation="include">
+        </childnode>
+        <childnode refid="14980" relation="include">
+        </childnode>
+      </node>
+      <node id="14963">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="14961" relation="include">
         </childnode>
         <childnode refid="14964" relation="include">
         </childnode>
@@ -49,46 +47,46 @@
         </childnode>
         <childnode refid="14966" relation="include">
         </childnode>
-      </node>
-      <node id="14977">
-        <label>stdexcept</label>
-      </node>
-      <node id="14963">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="14973">
-        <label>stdint.h</label>
-        <link refid="stdint_8h"/>
-        <childnode refid="14974" relation="include">
+        <childnode refid="14967" relation="include">
         </childnode>
-        <childnode refid="14975" relation="include">
-        </childnode>
-      </node>
-      <node id="14972">
-        <label>string</label>
       </node>
       <node id="14978">
+        <label>stdexcept</label>
+      </node>
+      <node id="14964">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="14974">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="14975" relation="include">
+        </childnode>
+        <childnode refid="14976" relation="include">
+        </childnode>
+      </node>
+      <node id="14973">
+        <label>string</label>
+      </node>
+      <node id="14979">
         <label>gruel/pmt_sugar.h</label>
         <link refid="pmt__sugar_8h"/>
       </node>
-      <node id="14960">
+      <node id="14961">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="14961" relation="include">
+        <childnode refid="14962" relation="include">
         </childnode>
       </node>
-      <node id="14974">
+      <node id="14975">
         <label>limits.h</label>
       </node>
-      <node id="14970">
+      <node id="14971">
         <label>boost/any.hpp</label>
       </node>
-      <node id="14967">
+      <node id="14968">
         <label>gruel/pmt.h</label>
         <link refid="pmt_8h"/>
-        <childnode refid="14960" relation="include">
-        </childnode>
-        <childnode refid="14968" relation="include">
+        <childnode refid="14961" relation="include">
         </childnode>
         <childnode refid="14969" relation="include">
         </childnode>
@@ -100,37 +98,39 @@
         </childnode>
         <childnode refid="14973" relation="include">
         </childnode>
-        <childnode refid="14976" relation="include">
+        <childnode refid="14974" relation="include">
         </childnode>
         <childnode refid="14977" relation="include">
         </childnode>
         <childnode refid="14978" relation="include">
         </childnode>
-      </node>
-      <node id="14975">
-        <label>wchar.h</label>
-      </node>
-      <node id="14965">
-        <label>boost/thread/locks.hpp</label>
+        <childnode refid="14979" relation="include">
+        </childnode>
       </node>
       <node id="14976">
+        <label>wchar.h</label>
+      </node>
+      <node id="14966">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="14977">
         <label>iosfwd</label>
       </node>
-      <node id="14979">
+      <node id="14980">
         <label>deque</label>
       </node>
-      <node id="14971">
+      <node id="14972">
         <label>complex</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="14980">
+      <node id="14981">
         <label>msg_queue.h</label>
         <link refid="msg_queue.h"/>
-        <childnode refid="14981" relation="include">
+        <childnode refid="14982" relation="include">
         </childnode>
       </node>
-      <node id="14981">
+      <node id="14982">
         <label>msg_accepter_msgq.h</label>
         <link refid="msg__accepter__msgq_8h"/>
       </node>

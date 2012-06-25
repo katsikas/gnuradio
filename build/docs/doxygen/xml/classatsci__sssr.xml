@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classatsci__sssr" kind="class" prot="public">
     <compoundname>atsci_sssr</compoundname>
     <includes refid="atsci__sssr_8h" local="no">atsci_sssr.h</includes>
@@ -124,7 +124,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" line="144" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" bodystart="144" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__sssr_1afb90cafd126c69cfe23d4063e857e528" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsci_sssr::incr_symbol_index</definition>
         <argsstring>()</argsstring>
         <name>incr_symbol_index</name>
@@ -165,7 +165,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" line="163"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__sssr_1ac46c8a0e3e4072d34d8194f9d07ab6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsci_sssr::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -178,7 +178,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" line="168"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__sssr_1a99f9a44542cb646d95d877c37bd7f96a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsci_sssr::update</definition>
         <argsstring>(sssr::sample_t sample_in, bool *seg_locked, int *symbol_index, double *timing_adjust)</argsstring>
         <name>update</name>
@@ -211,6 +211,33 @@
 <para>ATSC Segment and Symbol Sync Recovery. </para>    </briefdescription>
     <detaileddescription>
 <para>This class implements data segment sync tracking and symbol timing using the method described in &quot;ATSC/VSB Tutorial - Receiver Technology&quot; by Wayne E. Bretl of Zenith, pgs 41-45. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="695">
+        <label>sssr::digital_correlator</label>
+        <link refid="classsssr_1_1digital__correlator"/>
+      </node>
+      <node id="694">
+        <label>sssr::seg_sync_integrator</label>
+        <link refid="classsssr_1_1seg__sync__integrator"/>
+      </node>
+      <node id="693">
+        <label>sssr::quad_filter</label>
+        <link refid="classsssr_1_1quad__filter"/>
+      </node>
+      <node id="692">
+        <label>atsci_sssr</label>
+        <link refid="classatsci__sssr"/>
+        <childnode refid="693" relation="usage">
+          <edgelabel>d_quad_filter</edgelabel>
+        </childnode>
+        <childnode refid="694" relation="usage">
+          <edgelabel>d_integrator</edgelabel>
+        </childnode>
+        <childnode refid="695" relation="usage">
+          <edgelabel>d_correlator</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" line="132" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_sssr.h" bodystart="132" bodyend="189"/>
     <listofallmembers>
       <member refid="classatsci__sssr_1a5d4a085ba7b9bafe9095292b032d01c1" prot="public" virt="non-virtual"><scope>atsci_sssr</scope><name>atsci_sssr</name></member>

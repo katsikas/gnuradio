@@ -1,54 +1,52 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="pager__flex__sync_8h" kind="file">
     <compoundname>pager_flex_sync.h</compoundname>
     <includes refid="pager__api_8h" local="no">pager_api.h</includes>
     <includes refid="gr__block_8h" local="no">gr_block.h</includes>
     <incdepgraph>
-      <node id="15189">
+      <node id="15190">
         <label>gr_sptr_magic.h</label>
         <link refid="gr__sptr__magic_8h_source"/>
-        <childnode refid="15180" relation="include">
+        <childnode refid="15181" relation="include">
         </childnode>
-        <childnode refid="15184" relation="include">
+        <childnode refid="15185" relation="include">
+        </childnode>
+      </node>
+      <node id="15180">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="15181" relation="include">
+        </childnode>
+        <childnode refid="15182" relation="include">
+        </childnode>
+        <childnode refid="15206" relation="include">
+        </childnode>
+      </node>
+      <node id="15185">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="15197">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="15194">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="15195" relation="include">
+        </childnode>
+        <childnode refid="15196" relation="include">
+        </childnode>
+        <childnode refid="15185" relation="include">
         </childnode>
       </node>
       <node id="15179">
-        <label>gr_block.h</label>
-        <link refid="gr__block_8h"/>
-        <childnode refid="15180" relation="include">
-        </childnode>
-        <childnode refid="15181" relation="include">
-        </childnode>
-        <childnode refid="15205" relation="include">
-        </childnode>
-      </node>
-      <node id="15184">
-        <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="15196">
-        <label>boost/intrusive_ptr.hpp</label>
-      </node>
-      <node id="15193">
-        <label>gruel/msg_accepter.h</label>
-        <link refid="msg__accepter_8h"/>
-        <childnode refid="15194" relation="include">
-        </childnode>
-        <childnode refid="15195" relation="include">
-        </childnode>
-        <childnode refid="15184" relation="include">
-        </childnode>
-      </node>
-      <node id="15178">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="15183">
+      <node id="15184">
         <label>gr_types.h</label>
         <link refid="gr__types_8h"/>
-        <childnode refid="15180" relation="include">
-        </childnode>
-        <childnode refid="15184" relation="include">
+        <childnode refid="15181" relation="include">
         </childnode>
         <childnode refid="15185" relation="include">
         </childnode>
@@ -56,29 +54,29 @@
         </childnode>
         <childnode refid="15187" relation="include">
         </childnode>
+        <childnode refid="15188" relation="include">
+        </childnode>
       </node>
-      <node id="15203">
+      <node id="15204">
         <label>stdexcept</label>
       </node>
-      <node id="15199">
+      <node id="15200">
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
-        <childnode refid="15200" relation="include">
-        </childnode>
         <childnode refid="15201" relation="include">
         </childnode>
+        <childnode refid="15202" relation="include">
+        </childnode>
       </node>
-      <node id="15198">
+      <node id="15199">
         <label>string</label>
       </node>
-      <node id="15181">
+      <node id="15182">
         <label>gr_basic_block.h</label>
         <link refid="gr__basic__block_8h"/>
-        <childnode refid="15180" relation="include">
+        <childnode refid="15181" relation="include">
         </childnode>
-        <childnode refid="15182" relation="include">
-        </childnode>
-        <childnode refid="15189" relation="include">
+        <childnode refid="15183" relation="include">
         </childnode>
         <childnode refid="15190" relation="include">
         </childnode>
@@ -86,127 +84,129 @@
         </childnode>
         <childnode refid="15192" relation="include">
         </childnode>
-        <childnode refid="15198" relation="include">
-        </childnode>
-      </node>
-      <node id="15204">
-        <label>gruel/pmt_sugar.h</label>
-        <link refid="pmt__sugar_8h"/>
-      </node>
-      <node id="15186">
-        <label>stddef.h</label>
-      </node>
-      <node id="15194">
-        <label>gruel/api.h</label>
-        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="15178" relation="include">
-        </childnode>
-      </node>
-      <node id="15191">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="15200">
-        <label>limits.h</label>
-      </node>
-      <node id="15197">
-        <label>boost/any.hpp</label>
-      </node>
-      <node id="15195">
-        <label>gruel/pmt.h</label>
-        <link refid="pmt_8h"/>
-        <childnode refid="15194" relation="include">
-        </childnode>
-        <childnode refid="15196" relation="include">
-        </childnode>
-        <childnode refid="15184" relation="include">
-        </childnode>
-        <childnode refid="15197" relation="include">
-        </childnode>
-        <childnode refid="15188" relation="include">
-        </childnode>
-        <childnode refid="15198" relation="include">
+        <childnode refid="15193" relation="include">
         </childnode>
         <childnode refid="15199" relation="include">
         </childnode>
-        <childnode refid="15202" relation="include">
+      </node>
+      <node id="15205">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="15187">
+        <label>stddef.h</label>
+      </node>
+      <node id="15195">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="15179" relation="include">
+        </childnode>
+      </node>
+      <node id="15192">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="15201">
+        <label>limits.h</label>
+      </node>
+      <node id="15198">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="15196">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="15195" relation="include">
+        </childnode>
+        <childnode refid="15197" relation="include">
+        </childnode>
+        <childnode refid="15185" relation="include">
+        </childnode>
+        <childnode refid="15198" relation="include">
+        </childnode>
+        <childnode refid="15189" relation="include">
+        </childnode>
+        <childnode refid="15199" relation="include">
+        </childnode>
+        <childnode refid="15200" relation="include">
         </childnode>
         <childnode refid="15203" relation="include">
         </childnode>
         <childnode refid="15204" relation="include">
         </childnode>
-      </node>
-      <node id="15201">
-        <label>wchar.h</label>
-      </node>
-      <node id="15192">
-        <label>gr_msg_accepter.h</label>
-        <link refid="gr__msg__accepter_8h"/>
-        <childnode refid="15180" relation="include">
+        <childnode refid="15205" relation="include">
         </childnode>
-        <childnode refid="15193" relation="include">
-        </childnode>
-        <childnode refid="15195" relation="include">
-        </childnode>
-      </node>
-      <node id="15182">
-        <label>gr_runtime_types.h</label>
-        <link refid="gr__runtime__types_8h"/>
-        <childnode refid="15180" relation="include">
-        </childnode>
-        <childnode refid="15183" relation="include">
-        </childnode>
-      </node>
-      <node id="15177">
-        <label>pager_api.h</label>
-        <link refid="pager__api_8h"/>
-        <childnode refid="15178" relation="include">
-        </childnode>
-      </node>
-      <node id="15185">
-        <label>vector</label>
-      </node>
-      <node id="15180">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="15178" relation="include">
-        </childnode>
-      </node>
-      <node id="15190">
-        <label>boost/enable_shared_from_this.hpp</label>
       </node>
       <node id="15202">
-        <label>iosfwd</label>
+        <label>wchar.h</label>
       </node>
-      <node id="15176">
-        <label>pager_flex_sync.h</label>
-        <link refid="pager_flex_sync.h"/>
-        <childnode refid="15177" relation="include">
+      <node id="15193">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="15181" relation="include">
         </childnode>
+        <childnode refid="15194" relation="include">
+        </childnode>
+        <childnode refid="15196" relation="include">
+        </childnode>
+      </node>
+      <node id="15183">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="15181" relation="include">
+        </childnode>
+        <childnode refid="15184" relation="include">
+        </childnode>
+      </node>
+      <node id="15178">
+        <label>pager_api.h</label>
+        <link refid="pager__api_8h"/>
         <childnode refid="15179" relation="include">
         </childnode>
       </node>
-      <node id="15205">
-        <label>gr_tags.h</label>
-        <link refid="gr__tags_8h"/>
+      <node id="15186">
+        <label>vector</label>
+      </node>
+      <node id="15181">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="15179" relation="include">
+        </childnode>
+      </node>
+      <node id="15191">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="15203">
+        <label>iosfwd</label>
+      </node>
+      <node id="15177">
+        <label>pager_flex_sync.h</label>
+        <link refid="pager_flex_sync.h"/>
+        <childnode refid="15178" relation="include">
+        </childnode>
         <childnode refid="15180" relation="include">
         </childnode>
-        <childnode refid="15195" relation="include">
+      </node>
+      <node id="15206">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="15181" relation="include">
+        </childnode>
+        <childnode refid="15196" relation="include">
         </childnode>
       </node>
-      <node id="15188">
+      <node id="15189">
         <label>complex</label>
       </node>
-      <node id="15187">
+      <node id="15188">
         <label>gr_complex.h</label>
         <link refid="gr__complex_8h"/>
-        <childnode refid="15188" relation="include">
+        <childnode refid="15189" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classpager__flex__sync" prot="public">pager_flex_sync</innerclass>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="pager__flex__sync_8h_1aec8352e70df9b254fb74b9634edc4ae1" prot="public" static="no">
-        <type>std::vector&lt; <ref refid="gr__types_8h_1ac024c9b55248cfd6d3feb4353efde07b" kindref="member">gr_int64</ref> &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__types_8h_1ac024c9b55248cfd6d3feb4353efde07b" kindref="member">gr_int64</ref> &gt;</type>
         <definition>typedef std::vector&lt;gr_int64&gt; gr_int64_vector</definition>
         <argsstring></argsstring>
         <name>gr_int64_vector</name>
@@ -221,7 +221,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="pager__flex__sync_8h_1a4178399f54c3fc565ff542e1dd2d7aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="pager__api_8h_1a0466fe431406887375cfa789a185150e" kindref="member">PAGER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">pager_flex_sync_sptr</ref></type>
+        <type>PAGER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">pager_flex_sync_sptr</ref></type>
         <definition>PAGER_API pager_flex_sync_sptr pager_make_flex_sync</definition>
         <argsstring>()</argsstring>
         <name>pager_make_flex_sync</name>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classppio" kind="class" prot="public">
     <compoundname>ppio</compoundname>
     <derivedcompoundref refid="classppio__ppdev" prot="public" virt="non-virtual">ppio_ppdev</derivedcompoundref>
@@ -32,7 +32,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/ppio.h" line="41"/>
       </memberdef>
       <memberdef kind="function" id="classppio_1a35cafb679f12d1ee4e72383c7d82eadb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void ppio::write_data</definition>
         <argsstring>(unsigned char v)=0</argsstring>
         <name>write_data</name>
@@ -64,7 +64,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/ppio.h" line="44"/>
       </memberdef>
       <memberdef kind="function" id="classppio_1a1dbabe3d613baf632c3e079b1c0e1848" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void ppio::write_control</definition>
         <argsstring>(unsigned char v)=0</argsstring>
         <name>write_control</name>
@@ -110,7 +110,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/ppio.h" line="47"/>
       </memberdef>
       <memberdef kind="function" id="classppio_1a194e2b6c44cb5ddeada3560f6dd09400" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void ppio::lock</definition>
         <argsstring>()=0</argsstring>
         <name>lock</name>
@@ -124,7 +124,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/ppio.h" line="49"/>
       </memberdef>
       <memberdef kind="function" id="classppio_1a2e03adcebd0c137b80e440aa50a46676" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void ppio::unlock</definition>
         <argsstring>()=0</argsstring>
         <name>unlock</name>
@@ -143,13 +143,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7108">
+      <node id="11880">
         <label>ppio_ppdev</label>
         <link refid="classppio__ppdev"/>
-        <childnode refid="7107" relation="public-inheritance">
+        <childnode refid="11879" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7107">
+      <node id="11879">
         <label>ppio</label>
         <link refid="classppio"/>
       </node>

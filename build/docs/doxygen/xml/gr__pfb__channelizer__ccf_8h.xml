@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__pfb__channelizer__ccf_8h" kind="file">
     <compoundname>gr_pfb_channelizer_ccf.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -229,7 +229,7 @@
     <innerclass refid="classgr__pfb__channelizer__ccf" prot="public">gr_pfb_channelizer_ccf</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__pfb__channelizer__ccf_8h_1afc4095ac8b5859e85ac8986800768004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_channelizer_ccf_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_channelizer_ccf_sptr</ref></type>
         <definition>GR_CORE_API gr_pfb_channelizer_ccf_sptr gr_make_pfb_channelizer_ccf</definition>
         <argsstring>(unsigned int numchans, const std::vector&lt; float &gt; &amp;taps, float oversample_rate=1)</argsstring>
         <name>gr_make_pfb_channelizer_ccf</name>
@@ -238,7 +238,7 @@
           <declname>numchans</declname>
         </param>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>

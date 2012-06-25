@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="realtime_8h" kind="file">
     <compoundname>realtime.h</compoundname>
     <includes refid="gruel_2src_2include_2gruel_2api_8h" local="no">gruel/api.h</includes>
@@ -7,43 +7,43 @@
     <includedby refid="gr__realtime_8h" local="no">gr_realtime.h</includedby>
     <includedby refid="sys__pri_8h" local="no">sys_pri.h</includedby>
     <incdepgraph>
-      <node id="16145">
+      <node id="16141">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="16146">
+      <node id="16142">
         <label>stdexcept</label>
+      </node>
+      <node id="16139">
+        <label>realtime.h</label>
+        <link refid="realtime.h"/>
+        <childnode refid="16140" relation="include">
+        </childnode>
+        <childnode refid="16142" relation="include">
+        </childnode>
+      </node>
+      <node id="16140">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="16141" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16145">
+        <label>sys_pri.h</label>
+        <link refid="sys__pri_8h"/>
+      </node>
+      <node id="16144">
+        <label>gr_realtime.h</label>
+        <link refid="gr__realtime_8h"/>
       </node>
       <node id="16143">
         <label>realtime.h</label>
         <link refid="realtime.h"/>
         <childnode refid="16144" relation="include">
         </childnode>
-        <childnode refid="16146" relation="include">
-        </childnode>
-      </node>
-      <node id="16144">
-        <label>gruel/api.h</label>
-        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
         <childnode refid="16145" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="16149">
-        <label>sys_pri.h</label>
-        <link refid="sys__pri_8h"/>
-      </node>
-      <node id="16148">
-        <label>gr_realtime.h</label>
-        <link refid="gr__realtime_8h"/>
-      </node>
-      <node id="16147">
-        <label>realtime.h</label>
-        <link refid="realtime.h"/>
-        <childnode refid="16148" relation="include">
-        </childnode>
-        <childnode refid="16149" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

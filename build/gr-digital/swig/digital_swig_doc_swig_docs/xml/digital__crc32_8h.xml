@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="digital__crc32_8h" kind="file">
     <compoundname>digital_crc32.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -33,9 +33,9 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__crc32_8h_1a700f31fac9b9ee9601d24259c87d7b83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT unsigned int</type>
-        <definition>__GR_ATTR_IMPORT unsigned int digital_update_crc32</definition>
+      <memberdef kind="function" id="digital__crc32_8h_1ae63384dcd8da7016cc4a9024cbca580d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API unsigned int</type>
+        <definition>DIGITAL_API unsigned int digital_update_crc32</definition>
         <argsstring>(unsigned int crc, const unsigned char *buf, size_t len)</argsstring>
         <name>digital_update_crc32</name>
         <param>
@@ -58,9 +58,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_crc32.h" line="40"/>
       </memberdef>
-      <memberdef kind="function" id="digital__crc32_8h_1acf66679f4042ac8ff582fc3e87b36750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT unsigned int</type>
-        <definition>__GR_ATTR_IMPORT unsigned int digital_update_crc32</definition>
+      <memberdef kind="function" id="digital__crc32_8h_1a048d5fb7d70acb79ee822c2dc208d0e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API unsigned int</type>
+        <definition>DIGITAL_API unsigned int digital_update_crc32</definition>
         <argsstring>(unsigned int crc, const std::string buf)</argsstring>
         <name>digital_update_crc32</name>
         <param>
@@ -79,9 +79,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_crc32.h" line="43"/>
       </memberdef>
-      <memberdef kind="function" id="digital__crc32_8h_1ab40046e96066ec6384055a8d364d8a5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT unsigned int</type>
-        <definition>__GR_ATTR_IMPORT unsigned int digital_crc32</definition>
+      <memberdef kind="function" id="digital__crc32_8h_1a6f7a1d980a8c22376fbf6f0f8890e6cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API unsigned int</type>
+        <definition>DIGITAL_API unsigned int digital_crc32</definition>
         <argsstring>(const unsigned char *buf, size_t len)</argsstring>
         <name>digital_crc32</name>
         <param>
@@ -100,9 +100,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_crc32.h" line="46"/>
       </memberdef>
-      <memberdef kind="function" id="digital__crc32_8h_1a2c7f9d46f1a8f00c20f137c9758c14d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT unsigned int</type>
-        <definition>__GR_ATTR_IMPORT unsigned int digital_crc32</definition>
+      <memberdef kind="function" id="digital__crc32_8h_1aa70f6c37c8ab8b3006ec82987b3619af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API unsigned int</type>
+        <definition>DIGITAL_API unsigned int digital_crc32</definition>
         <argsstring>(const std::string buf)</argsstring>
         <name>digital_crc32</name>
         <param>
@@ -153,16 +153,16 @@
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gr_types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><ref refid="digital__crc32_8h_1a700f31fac9b9ee9601d24259c87d7b83" kindref="member" tooltip="update running CRC-32Update a running CRC with the bytes buf[0..len-1] The CRC should be initialized ...">digital_update_crc32</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="digital__crc32_8h_1ae63384dcd8da7016cc4a9024cbca580d" kindref="member" tooltip="update running CRC-32Update a running CRC with the bytes buf[0..len-1] The CRC should be initialized ...">digital_update_crc32</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><ref refid="digital__crc32_8h_1a700f31fac9b9ee9601d24259c87d7b83" kindref="member" tooltip="update running CRC-32Update a running CRC with the bytes buf[0..len-1] The CRC should be initialized ...">digital_update_crc32</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>buf);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="digital__crc32_8h_1ae63384dcd8da7016cc4a9024cbca580d" kindref="member" tooltip="update running CRC-32Update a running CRC with the bytes buf[0..len-1] The CRC should be initialized ...">digital_update_crc32</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>buf);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><ref refid="digital__crc32_8h_1ab40046e96066ec6384055a8d364d8a5e" kindref="member">digital_crc32</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="digital__crc32_8h_1a6f7a1d980a8c22376fbf6f0f8890e6cb" kindref="member">digital_crc32</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><ref refid="digital__crc32_8h_1ab40046e96066ec6384055a8d364d8a5e" kindref="member">digital_crc32</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>buf);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="digital__crc32_8h_1a6f7a1d980a8c22376fbf6f0f8890e6cb" kindref="member">digital_crc32</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>buf);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_CRC32_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>

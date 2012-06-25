@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__pwr__squelch__ff" kind="class" prot="public">
     <compoundname>gr_pwr_squelch_ff</compoundname>
     <basecompoundref refid="classgr__squelch__base__ff" prot="public" virt="non-virtual">gr_squelch_base_ff</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pwr__squelch__ff_1adc040edea98121c3deea37dc215acdb5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pwr_squelch_ff_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pwr_squelch_ff_sptr</ref></type>
         <definition>GR_CORE_API gr_pwr_squelch_ff_sptr gr_make_pwr_squelch_ff</definition>
         <argsstring>(double db, double alpha, int ramp, bool gate)</argsstring>
         <name>gr_make_pwr_squelch_ff</name>
@@ -109,7 +109,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classgr__pwr__squelch__ff_1a30c140dc3446051aa19defcf0994a1f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_pwr_squelch_ff::update_state</definition>
         <argsstring>(const float &amp;in)</argsstring>
         <name>update_state</name>
@@ -143,7 +143,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classgr__pwr__squelch__ff_1a21ef3df4e480010e2e92020a352ff441" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::vector&lt; float &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt;</type>
         <definition>std::vector&lt;float&gt; gr_pwr_squelch_ff::squelch_range</definition>
         <argsstring>() const </argsstring>
         <name>squelch_range</name>
@@ -170,7 +170,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" line="58" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" bodystart="58" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pwr__squelch__ff_1a89074b4a36fce15f322873de74cc5e84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pwr_squelch_ff::set_threshold</definition>
         <argsstring>(double db)</argsstring>
         <name>set_threshold</name>
@@ -187,7 +187,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" line="59" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pwr__squelch__ff_1a16af7fef6ad197132e4fe5c52e153ab2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pwr_squelch_ff::set_alpha</definition>
         <argsstring>(double alpha)</argsstring>
         <name>set_alpha</name>
@@ -209,101 +209,228 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5084">
+      <node id="9029">
         <label>gr_pwr_squelch_ff</label>
         <link refid="classgr__pwr__squelch__ff"/>
-        <childnode refid="5085" relation="public-inheritance">
+        <childnode refid="9030" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5088">
+      <node id="9033">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5089" relation="public-inheritance">
+        <childnode refid="9034" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5086">
+      <node id="9031">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5087" relation="public-inheritance">
+        <childnode refid="9032" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5085">
+      <node id="9030">
         <label>gr_squelch_base_ff</label>
         <link refid="classgr__squelch__base__ff"/>
-        <childnode refid="5086" relation="public-inheritance">
+        <childnode refid="9031" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5089">
+      <node id="9034">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5087">
+      <node id="9032">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5088" relation="public-inheritance">
+        <childnode refid="9033" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5090">
-        <label>gr_pwr_squelch_ff</label>
-        <link refid="classgr__pwr__squelch__ff"/>
-        <childnode refid="5091" relation="public-inheritance">
+      <node id="9056">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="9050" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="5094">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="5095" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5092">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="5093" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5096">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="9049">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5097" relation="usage">
+        <childnode refid="9050" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5091">
-        <label>gr_squelch_base_ff</label>
-        <link refid="classgr__squelch__base__ff"/>
-        <childnode refid="5092" relation="public-inheritance">
+      <node id="9061">
+        <label>T</label>
+      </node>
+      <node id="9035">
+        <label>gr_pwr_squelch_ff</label>
+        <link refid="classgr__pwr__squelch__ff"/>
+        <childnode refid="9036" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9062" relation="usage">
+          <edgelabel>d_iir</edgelabel>
         </childnode>
       </node>
-      <node id="5099">
+      <node id="9039">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="9040" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9050">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="9051" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9058">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="9053">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="9037">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="9038" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9046" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="9046">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9047" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9060">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9061" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9047">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="9048" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="9057" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="9059" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="9054">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="9055" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9041">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9042" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9052">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="9053" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="9054" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="9056" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="9036">
+        <label>gr_squelch_base_ff</label>
+        <link refid="classgr__squelch__base__ff"/>
+        <childnode refid="9037" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9045">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5095">
+      <node id="9048">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="9049" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9040">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5097">
+      <node id="9051">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9052" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9055">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="9057">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="9058" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="9059">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="9060" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9042">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="9043" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="5093">
+      <node id="9038">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5094" relation="public-inheritance">
+        <childnode refid="9039" relation="public-inheritance">
         </childnode>
-        <childnode refid="5096" relation="usage">
+        <childnode refid="9041" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5098" relation="usage">
+        <childnode refid="9044" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5098">
+      <node id="9043">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="9044">
         <label>std::string</label>
-        <childnode refid="5099" relation="public-inheritance">
+        <childnode refid="9045" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="9062">
+        <label>gr_single_pole_iir&lt; double, double, double &gt;</label>
+        <link refid="classgr__single__pole__iir"/>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" line="42" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" bodystart="41" bodyend="61"/>
@@ -369,7 +496,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_output_signature</name></member>
       <member refid="classgr__squelch__base__ff_1af132863176c3cd8e2d3fd93563efc30c" prot="public" virt="non-virtual"><scope>gr_pwr_squelch_ff</scope><name>set_ramp</name></member>

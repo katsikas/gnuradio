@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "qtgui_swig.pyo"
   "qtgui_swigPYTHON_wrap.cxx"
   "qtgui_swig.py"
-  "qtgui_swig.tag"
   "qtgui_swig_doc.i"
+  "qtgui_swig.tag"
   "qtgui_swig_doc_swig_docs/xml/index.xml"
   "qtgui_swig_doc_swig_docs/xml/combine.xslt"
 )

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__ctcss__squelch__ff" kind="class" prot="public">
     <compoundname>gr_ctcss_squelch_ff</compoundname>
     <basecompoundref refid="classgr__squelch__base__ff" prot="public" virt="non-virtual">gr_squelch_base_ff</basecompoundref>
@@ -99,7 +99,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__ctcss__squelch__ff_1a5ffdc00770218eb902dadc285dc3ea22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ctcss_squelch_ff_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ctcss_squelch_ff_sptr</ref></type>
         <definition>GR_CORE_API gr_ctcss_squelch_ff_sptr gr_make_ctcss_squelch_ff</definition>
         <argsstring>(int rate, float freq, float level, int len, int ramp, bool gate)</argsstring>
         <name>gr_make_ctcss_squelch_ff</name>
@@ -194,7 +194,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classgr__ctcss__squelch__ff_1a5437e033ee9e42874cf16e751a73ff78" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_ctcss_squelch_ff::update_state</definition>
         <argsstring>(const float &amp;in)</argsstring>
         <name>update_state</name>
@@ -228,7 +228,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classgr__ctcss__squelch__ff_1a133380235e76cf3043f50bd80a1cb663" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>std::vector&lt; float &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt;</type>
         <definition>std::vector&lt;float&gt; gr_ctcss_squelch_ff::squelch_range</definition>
         <argsstring>() const </argsstring>
         <name>squelch_range</name>
@@ -255,7 +255,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_ctcss_squelch_ff.h" line="63" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_ctcss_squelch_ff.h" bodystart="63" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="classgr__ctcss__squelch__ff_1a24889c3a5c009e634fed7c8c814f13bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_ctcss_squelch_ff::set_level</definition>
         <argsstring>(float level)</argsstring>
         <name>set_level</name>
@@ -290,100 +290,229 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3173">
+      <node id="5431">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3174" relation="public-inheritance">
+        <childnode refid="5432" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3171">
+      <node id="5429">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3172" relation="public-inheritance">
+        <childnode refid="5430" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3170">
+      <node id="5428">
         <label>gr_squelch_base_ff</label>
         <link refid="classgr__squelch__base__ff"/>
-        <childnode refid="3171" relation="public-inheritance">
+        <childnode refid="5429" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3174">
+      <node id="5432">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3172">
+      <node id="5430">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3173" relation="public-inheritance">
+        <childnode refid="5431" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3169">
+      <node id="5427">
         <label>gr_ctcss_squelch_ff</label>
         <link refid="classgr__ctcss__squelch__ff"/>
-        <childnode refid="3170" relation="public-inheritance">
+        <childnode refid="5428" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3179">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="3180" relation="public-inheritance">
+      <node id="5454">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="5448" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3177">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="3178" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3181">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="5447">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3182" relation="usage">
+        <childnode refid="5448" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3176">
-        <label>gr_squelch_base_ff</label>
-        <link refid="classgr__squelch__base__ff"/>
-        <childnode refid="3177" relation="public-inheritance">
+      <node id="5459">
+        <label>T</label>
+      </node>
+      <node id="5437">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="5438" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3184">
+      <node id="5448">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="5449" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5456">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="5451">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="5435">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="5436" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5444" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="5444">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5445" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5458">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5459" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5445">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="5446" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="5455" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="5457" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="5452">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="5453" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5439">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5440" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5450">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="5451" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="5452" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="5454" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="5434">
+        <label>gr_squelch_base_ff</label>
+        <link refid="classgr__squelch__base__ff"/>
+        <childnode refid="5435" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5443">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3180">
+      <node id="5446">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="5447" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5438">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3182">
+      <node id="5449">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="5450" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="5453">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="5455">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="5456" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="5457">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="5458" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5460">
+        <label>gri_goertzel</label>
+        <link refid="classgri__goertzel"/>
+      </node>
+      <node id="5440">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="5441" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="3178">
+      <node id="5436">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3179" relation="public-inheritance">
+        <childnode refid="5437" relation="public-inheritance">
         </childnode>
-        <childnode refid="3181" relation="usage">
+        <childnode refid="5439" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3183" relation="usage">
+        <childnode refid="5442" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3175">
+      <node id="5433">
         <label>gr_ctcss_squelch_ff</label>
         <link refid="classgr__ctcss__squelch__ff"/>
-        <childnode refid="3176" relation="public-inheritance">
+        <childnode refid="5434" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5460" relation="usage">
+          <edgelabel>d_goertzel_l</edgelabel>
+          <edgelabel>d_goertzel_r</edgelabel>
+          <edgelabel>d_goertzel_c</edgelabel>
         </childnode>
       </node>
-      <node id="3183">
+      <node id="5441">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="5442">
         <label>std::string</label>
-        <childnode refid="3184" relation="public-inheritance">
+        <childnode refid="5443" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -457,7 +586,7 @@
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_is_unaligned</name></member>
       <member refid="classgr__ctcss__squelch__ff_1a24889c3a5c009e634fed7c8c814f13bf" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_level</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_output_signature</name></member>
       <member refid="classgr__squelch__base__ff_1af132863176c3cd8e2d3fd93563efc30c" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>set_ramp</name></member>

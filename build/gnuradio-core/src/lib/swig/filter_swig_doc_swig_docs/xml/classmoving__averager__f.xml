@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classmoving__averager__f" kind="class" prot="public">
     <compoundname>moving_averager_f</compoundname>
     <includes refid="gr__dc__blocker__ff_8h" local="no">gr_dc_blocker_ff.h</includes>
@@ -136,6 +136,18 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1090">
+        <label>std::deque&lt; float &gt;</label>
+      </node>
+      <node id="1089">
+        <label>moving_averager_f</label>
+        <link refid="classmoving__averager__f"/>
+        <childnode refid="1090" relation="usage">
+          <edgelabel>d_delay_line</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_dc_blocker_ff.h" line="32" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_dc_blocker_ff.h" bodystart="31" bodyend="44"/>
     <listofallmembers>
       <member refid="classmoving__averager__f_1aaa32fa2e26b90b656729d0a3b4fc5f13" prot="private" virt="non-virtual"><scope>moving_averager_f</scope><name>d_delay_line</name></member>

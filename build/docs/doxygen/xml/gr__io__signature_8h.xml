@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__io__signature_8h" kind="file">
     <compoundname>gr_io_signature.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -101,7 +101,7 @@
     <innerclass refid="classgr__io__signature" prot="public">gr_io_signature</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__internal_1ga379fa59e3a3aeba3d1e89c3d33b5475d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
         <definition>GR_CORE_API gr_io_signature_sptr gr_make_io_signature</definition>
         <argsstring>(int min_streams, int max_streams, int sizeof_stream_item)</argsstring>
         <name>gr_make_io_signature</name>
@@ -148,7 +148,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="gr__io__signature_8h_1a847ac64aa4e58b616385ba28571d2925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
         <definition>GR_CORE_API gr_io_signature_sptr gr_make_io_signature2</definition>
         <argsstring>(int min_streams, int max_streams, int sizeof_stream_item1, int sizeof_stream_item2)</argsstring>
         <name>gr_make_io_signature2</name>
@@ -206,7 +206,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="gr__io__signature_8h_1a162562070175ea86c9e55f601e5805a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
         <definition>GR_CORE_API gr_io_signature_sptr gr_make_io_signature3</definition>
         <argsstring>(int min_streams, int max_streams, int sizeof_stream_item1, int sizeof_stream_item2, int sizeof_stream_item3)</argsstring>
         <name>gr_make_io_signature3</name>
@@ -275,7 +275,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" line="69"/>
       </memberdef>
       <memberdef kind="function" id="gr__io__signature_8h_1ae5b9cf375fcb66b7c874e9defaf8a8cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
         <definition>GR_CORE_API gr_io_signature_sptr gr_make_io_signaturev</definition>
         <argsstring>(int min_streams, int max_streams, const std::vector&lt; int &gt; &amp;sizeof_stream_items)</argsstring>
         <name>gr_make_io_signaturev</name>
@@ -288,7 +288,7 @@
           <declname>max_streams</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>sizeof_stream_items</declname>
         </param>
         <briefdescription>

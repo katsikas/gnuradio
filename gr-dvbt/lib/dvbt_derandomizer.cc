@@ -37,8 +37,7 @@ dvbt_make_derandomizer()
 	return gnuradio::get_initial_sptr(new dvbt_derandomizer());
 }
 
-dvbt_derandomizer::dvbt_derandomizer()
-  : gr_sync_block("dvbt_derandomizer",
+dvbt_derandomizer::dvbt_derandomizer(): gr_sync_block("dvbt_derandomizer",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)))
 {
@@ -71,7 +70,7 @@ dvbt_derandomizer::work (int noutput_items,
                         core_rand.reset();
                 }
 		else{
-			printf("NEVER HERE!!!\n");
+			//printf("NEVER HERE!!!\n");
 			assert((out[i].data[0] == MPEG_SYNC_BYTE) || (out[i].data[0] == MPEG_INVERTED_SYNC_BYTE));
 		}
                 core_rand.derandomize(out[i], in[i]);

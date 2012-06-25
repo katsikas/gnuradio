@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__pfb__clock__sync__ccf_8h" kind="file">
     <compoundname>gr_pfb_clock_sync_ccf.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -200,7 +200,7 @@
     <innerclass refid="classgr__pfb__clock__sync__ccf" prot="public">gr_pfb_clock_sync_ccf</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__pfb__clock__sync__ccf_8h_1abd4a84adddc5566612d047d379b9eb2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_clock_sync_ccf_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_clock_sync_ccf_sptr</ref></type>
         <definition>GR_CORE_API gr_pfb_clock_sync_ccf_sptr gr_make_pfb_clock_sync_ccf</definition>
         <argsstring>(double sps, float loop_bw, const std::vector&lt; float &gt; &amp;taps, unsigned int filter_size=32, float init_phase=0, float max_rate_deviation=1.5, int osps=1)</argsstring>
         <name>gr_make_pfb_clock_sync_ccf</name>
@@ -213,7 +213,7 @@
           <declname>loop_bw</declname>
         </param>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -258,7 +258,7 @@
 <parametername>taps</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>(vector&lt;int&gt;) The filter taps. </para></parameterdescription>
+<para>(<ref refid="classstd_1_1vector" kindref="compound">vector&lt;int&gt;</ref>) The filter taps. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>

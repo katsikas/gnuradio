@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="group__vocoder__blk" kind="group">
     <compoundname>vocoder_blk</compoundname>
     <title>Voice Encoders and Decoders</title>
@@ -21,7 +21,7 @@
     <innerclass refid="classvocoder__ulaw__encode__sb" prot="public">vocoder_ulaw_encode_sb</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__vocoder__blk_1ga40312ddfd1a1633dfcf5ceb5d2965ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="vocoder__api_8h_1a8a56d8b0d26cf75df04dcad9064a0aeb" kindref="member">VOCODER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_cvsd_decode_bs_sptr</ref></type>
+        <type>VOCODER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_cvsd_decode_bs_sptr</ref></type>
         <definition>VOCODER_API vocoder_cvsd_decode_bs_sptr vocoder_make_cvsd_decode_bs</definition>
         <argsstring>(short min_step=10, short max_step=1280, double step_decay=0.9990234375, double accum_decay=0.96875, int K=32, int J=4, short pos_accum_max=32767, short neg_accum_max=-32767)</argsstring>
         <name>vocoder_make_cvsd_decode_bs</name>
@@ -131,7 +131,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/include/vocoder_cvsd_decode_bs.h" line="57"/>
       </memberdef>
       <memberdef kind="function" id="group__vocoder__blk_1gaa50f5d6389e5fc6b2545a780efedf225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="vocoder__api_8h_1a8a56d8b0d26cf75df04dcad9064a0aeb" kindref="member">VOCODER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_cvsd_encode_sb_sptr</ref></type>
+        <type>VOCODER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_cvsd_encode_sb_sptr</ref></type>
         <definition>VOCODER_API vocoder_cvsd_encode_sb_sptr vocoder_make_cvsd_encode_sb</definition>
         <argsstring>(short min_step=10, short max_step=1280, double step_decay=0.9990234375, double accum_decay=0.96875, int K=32, int J=4, short pos_accum_max=32767, short neg_accum_max=-32767)</argsstring>
         <name>vocoder_make_cvsd_encode_sb</name>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__wavfile__sink_8h" kind="file">
     <compoundname>gr_wavfile_sink.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -230,7 +230,7 @@
     <innerclass refid="classgr__wavfile__sink" prot="public">gr_wavfile_sink</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__wavfile__sink_8h_1a6c865788ef6efc963b9e4a876c50b75e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_wavfile_sink_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_wavfile_sink_sptr</ref></type>
         <definition>GR_CORE_API gr_wavfile_sink_sptr gr_make_wavfile_sink</definition>
         <argsstring>(const char *filename, int n_channels, unsigned int sample_rate, int bits_per_sample=16)</argsstring>
         <name>gr_make_wavfile_sink</name>

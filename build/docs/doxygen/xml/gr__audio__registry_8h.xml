@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__audio__registry_8h" kind="file">
     <compoundname>gr_audio_registry.h</compoundname>
     <includes refid="gr__audio__sink_8h" local="no">gr_audio_sink.h</includes>
@@ -247,10 +247,10 @@
         <name>AUDIO_REGISTER_SOURCE</name>
         <param><defname>prio</defname></param>
         <param><defname>arch</defname></param>
-        <initializer>static <ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_fcn(int, const std::string &amp;, bool); \
-    <ref refid="gr__audio__registry_8h_1af219f108649b100b772a524c8a227318" kindref="member">AUDIO_REGISTER_FIXTURE</ref>(<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_reg){ \
-        <ref refid="gr__audio__registry_8h_1a5f5ac081fe36ee44a7f16cc13b8f9c38" kindref="member">audio_register_source</ref>(prio, #<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>, &amp;<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_fcn); \
-    } static <ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_fcn</initializer>
+        <initializer>static <ref refid="classboost_1_1shared__ptr" kindref="compound">audio_source::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_fcn(int, const std::string &amp;, bool); \
+    AUDIO_REGISTER_FIXTURE(<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_reg){ \
+        audio_register_source(prio, #<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>, &amp;<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_fcn); \
+    } static <ref refid="classboost_1_1shared__ptr" kindref="compound">audio_source::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_source_fcn</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -263,10 +263,10 @@
         <name>AUDIO_REGISTER_SINK</name>
         <param><defname>prio</defname></param>
         <param><defname>arch</defname></param>
-        <initializer>static <ref refid="classaudio__sink_1a233a664687d3341ae518c52232a90975" kindref="member">audio_sink::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_fcn(int, const std::string &amp;, bool); \
-    <ref refid="gr__audio__registry_8h_1af219f108649b100b772a524c8a227318" kindref="member">AUDIO_REGISTER_FIXTURE</ref>(<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_reg){ \
-        <ref refid="gr__audio__registry_8h_1a475bfa90e6c698301d163c4b9f54b441" kindref="member">audio_register_sink</ref>(prio, #<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>, &amp;<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_fcn); \
-    } static <ref refid="classaudio__sink_1a233a664687d3341ae518c52232a90975" kindref="member">audio_sink::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_fcn</initializer>
+        <initializer>static <ref refid="classboost_1_1shared__ptr" kindref="compound">audio_sink::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_fcn(int, const std::string &amp;, bool); \
+    AUDIO_REGISTER_FIXTURE(<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_reg){ \
+        audio_register_sink(prio, #<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>, &amp;<ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_fcn); \
+    } static <ref refid="classboost_1_1shared__ptr" kindref="compound">audio_sink::sptr</ref> <ref refid="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" kindref="member">arch</ref>##_sink_fcn</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -314,7 +314,7 @@
       </sectiondef>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="gr__audio__registry_8h_1a0d6b234927948ff935779449ee5b31db" prot="public" static="no">
-        <type><ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref>(*</type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">audio_source::sptr</ref>(*</type>
         <definition>typedef audio_source::sptr(* source_factory_t)(int, const std::string &amp;, bool)</definition>
         <argsstring>)(int, const std::string &amp;, bool)</argsstring>
         <name>source_factory_t</name>
@@ -327,7 +327,7 @@
         <location file="/home/katsikas/gnuradio/gr-audio/lib/gr_audio_registry.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-audio/lib/gr_audio_registry.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="gr__audio__registry_8h_1adef594880e6ebd92538fa7a2b11a42e7" prot="public" static="no">
-        <type><ref refid="classaudio__sink_1a233a664687d3341ae518c52232a90975" kindref="member">audio_sink::sptr</ref>(*</type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">audio_sink::sptr</ref>(*</type>
         <definition>typedef audio_sink::sptr(* sink_factory_t)(int, const std::string &amp;, bool)</definition>
         <argsstring>)(int, const std::string &amp;, bool)</argsstring>
         <name>sink_factory_t</name>
@@ -342,7 +342,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__audio__registry_8h_1a5f5ac081fe36ee44a7f16cc13b8f9c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void audio_register_source</definition>
         <argsstring>(reg_prio_type prio, const std::string &amp;arch, source_factory_t source)</argsstring>
         <name>audio_register_source</name>
@@ -367,7 +367,7 @@
         <location file="/home/katsikas/gnuradio/gr-audio/lib/gr_audio_registry.h" line="38"/>
       </memberdef>
       <memberdef kind="function" id="gr__audio__registry_8h_1a475bfa90e6c698301d163c4b9f54b441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void audio_register_sink</definition>
         <argsstring>(reg_prio_type prio, const std::string &amp;arch, sink_factory_t sink)</argsstring>
         <name>audio_register_sink</name>

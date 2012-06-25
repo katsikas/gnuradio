@@ -43,8 +43,14 @@ list(APPEND dvbt_sources
 	dvbt_rs_decoder.cc
 	dvbt_randomizer.cc
 	dvbt_derandomizer.cc
+	dvbt_interleaver.cc
+	dvbt_deinterleaver.cc
+
 	dvbti_randomizer.cc
 	dvbti_reed_solomon.cc
+	dvbti_data_interleaver.cc
+
+	plinfo.cc
 )
 
 list(APPEND dvbt_libs

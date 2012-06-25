@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__test_8h" kind="file">
     <compoundname>gr_test.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -210,7 +210,7 @@
     <innerclass refid="classgr__test" prot="public">gr_test</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__test_8h_1a037b4307bd9b60f43d7275933b8c1314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_test_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_test_sptr</ref></type>
         <definition>GR_CORE_API gr_test_sptr gr_make_test</definition>
         <argsstring>(const std::string &amp;name=std::string(&quot;gr_test&quot;), int min_inputs=1, int max_inputs=1, unsigned int sizeof_input_item=1, int min_outputs=1, int max_outputs=1, unsigned int sizeof_output_item=1, unsigned int history=1, unsigned int output_multiple=1, double relative_rate=1.0, bool fixed_rate=true, gr_consume_type_t cons_type=CONSUME_NOUTPUT_ITEMS, gr_produce_type_t prod_type=PRODUCE_NOUTPUT_ITEMS)</argsstring>
         <name>gr_make_test</name>
@@ -272,12 +272,12 @@
         <param>
           <type><ref refid="gr__test__types_8h_1a7e11c1089ad4d0f3c0d4c0cea0281fa6" kindref="member">gr_consume_type_t</ref></type>
           <declname>cons_type</declname>
-          <defval><ref refid="gr__test__types_8h_1a7e11c1089ad4d0f3c0d4c0cea0281fa6a4091f414fb071161bd0fa54c6879695d" kindref="member">CONSUME_NOUTPUT_ITEMS</ref></defval>
+          <defval>CONSUME_NOUTPUT_ITEMS</defval>
         </param>
         <param>
           <type><ref refid="gr__test__types_8h_1afc8b997c194075e5d0d5cb793e829329" kindref="member">gr_produce_type_t</ref></type>
           <declname>prod_type</declname>
-          <defval><ref refid="gr__test__types_8h_1afc8b997c194075e5d0d5cb793e829329acc1c979665b05a7393265cb8b834a82b" kindref="member">PRODUCE_NOUTPUT_ITEMS</ref></defval>
+          <defval>PRODUCE_NOUTPUT_ITEMS</defval>
         </param>
         <briefdescription>
         </briefdescription>

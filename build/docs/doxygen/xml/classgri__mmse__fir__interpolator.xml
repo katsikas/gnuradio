@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgri__mmse__fir__interpolator" kind="class" prot="public">
     <compoundname>gri_mmse_fir_interpolator</compoundname>
     <includes refid="gri__mmse__fir__interpolator_8h" local="no">gri_mmse_fir_interpolator.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classgri__mmse__fir__interpolator_1a032cd8df0c724463c192da99a85b29d7" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; gr_fir_fff * &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; gr_fir_fff * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff *&gt; gri_mmse_fir_interpolator::filters</definition>
         <argsstring></argsstring>
         <name>filters</name>
@@ -104,13 +104,14 @@
 </itemizedlist>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="6214">
+      <node id="10982">
         <label>std::vector&lt; gr_fir_fff * &gt;</label>
+        <link refid="classstd_1_1vector"/>
       </node>
-      <node id="6213">
+      <node id="10981">
         <label>gri_mmse_fir_interpolator</label>
         <link refid="classgri__mmse__fir__interpolator"/>
-        <childnode refid="6214" relation="usage">
+        <childnode refid="10982" relation="usage">
           <edgelabel>filters</edgelabel>
         </childnode>
       </node>

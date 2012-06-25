@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__basic__block_8h" kind="file">
     <compoundname>gr_basic_block.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -2004,7 +2004,7 @@
     <innerclass refid="classgr__basic__block" prot="public">gr_basic_block</innerclass>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="gr__basic__block_8h_1a76d2f45845faaf2d72b0002ba045c0d6" prot="public" static="no">
-        <type>std::vector&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_basic_block_sptr</ref> &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_basic_block_sptr</ref> &gt;</type>
         <definition>typedef std::vector&lt;gr_basic_block_sptr&gt; gr_basic_block_vector_t</definition>
         <argsstring></argsstring>
         <name>gr_basic_block_vector_t</name>
@@ -2017,7 +2017,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_basic_block.h" line="159" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_basic_block.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="gr__basic__block_8h_1aae6b0ac6b0a67267a5bf7a6bd9a73259" prot="public" static="no">
-        <type>std::vector&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_basic_block_sptr</ref> &gt;::iterator</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_basic_block_sptr</ref> &gt;::iterator</type>
         <definition>typedef std::vector&lt;gr_basic_block_sptr&gt;::iterator gr_basic_block_viter_t</definition>
         <argsstring></argsstring>
         <name>gr_basic_block_viter_t</name>
@@ -2053,7 +2053,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_basic_block.h" line="155" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_basic_block.h" bodystart="154" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="gr__basic__block_8h_1ae3ed22898fcc8bff34adb077179eaf1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> long</type>
+        <type>GR_CORE_API long</type>
         <definition>GR_CORE_API long gr_basic_block_ncurrently_allocated</definition>
         <argsstring>()</argsstring>
         <name>gr_basic_block_ncurrently_allocated</name>

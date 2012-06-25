@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__flowgraph" kind="class" prot="public">
     <compoundname>gr_flowgraph</compoundname>
     <derivedcompoundref refid="classgr__flat__flowgraph" prot="public" virt="non-virtual">gr_flat_flowgraph</derivedcompoundref>
@@ -603,40 +603,48 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="384">
+      <node id="395">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
       </node>
-      <node id="385">
+      <node id="396">
         <label>gr_flat_flowgraph</label>
         <link refid="classgr__flat__flowgraph"/>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="395" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="387">
+      <node id="398">
         <label>std::vector&lt; gr_edge &gt;</label>
-        <childnode refid="388" relation="usage">
+        <childnode refid="399" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="386">
+      <node id="400">
+        <label>gr_endpoint</label>
+        <link refid="classgr__endpoint"/>
+      </node>
+      <node id="397">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
-        <childnode refid="387" relation="usage">
+        <childnode refid="398" relation="usage">
           <edgelabel>d_edges</edgelabel>
         </childnode>
-        <childnode refid="389" relation="usage">
+        <childnode refid="401" relation="usage">
           <edgelabel>d_blocks</edgelabel>
         </childnode>
       </node>
-      <node id="389">
+      <node id="401">
         <label>std::vector&lt; gr_basic_block_sptr &gt;</label>
       </node>
-      <node id="388">
+      <node id="399">
         <label>gr_edge</label>
         <link refid="classgr__edge"/>
+        <childnode refid="400" relation="usage">
+          <edgelabel>d_src</edgelabel>
+          <edgelabel>d_dst</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="92" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" bodystart="91" bodyend="158"/>

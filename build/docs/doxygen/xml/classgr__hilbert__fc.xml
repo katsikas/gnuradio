@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__hilbert__fc" kind="class" prot="public">
     <compoundname>gr_hilbert_fc</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -57,11 +57,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -94,7 +94,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__hilbert__fc_1ab1a52ea38763bf89ac138bfbc3fd3376" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_hilbert_fc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_hilbert_fc_sptr</ref></type>
         <definition>GR_CORE_API gr_hilbert_fc_sptr gr_make_hilbert_fc</definition>
         <argsstring>(unsigned int ntaps)</argsstring>
         <name>gr_make_hilbert_fc</name>
@@ -116,100 +116,220 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3976">
+      <node id="7010">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3977" relation="public-inheritance">
+        <childnode refid="7011" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3973">
+      <node id="7007">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3974" relation="public-inheritance">
+        <childnode refid="7008" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3974">
+      <node id="7008">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3975" relation="public-inheritance">
+        <childnode refid="7009" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3972">
+      <node id="7006">
         <label>gr_hilbert_fc</label>
         <link refid="classgr__hilbert__fc"/>
-        <childnode refid="3973" relation="public-inheritance">
+        <childnode refid="7007" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3977">
+      <node id="7011">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3975">
+      <node id="7009">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3976" relation="public-inheritance">
+        <childnode refid="7010" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3982">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="3983" relation="public-inheritance">
+      <node id="7033">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="7027" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3979">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="3980" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3980">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="3981" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3984">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="7026">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3985" relation="usage">
+        <childnode refid="7027" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3987">
-        <label>std::basic_string&lt; char &gt;</label>
+      <node id="7038">
+        <label>T</label>
       </node>
-      <node id="3978">
-        <label>gr_hilbert_fc</label>
-        <link refid="classgr__hilbert__fc"/>
-        <childnode refid="3979" relation="public-inheritance">
+      <node id="7016">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="7017" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3983">
+      <node id="7013">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="7014" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7027">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="7028" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="7035">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="7030">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="7014">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="7015" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7023" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="7023">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7024" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7037">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7038" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7024">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="7025" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="7034" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="7036" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="7031">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="7032" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7018">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7019" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7029">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="7030" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="7031" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="7033" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="7022">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="7012">
+        <label>gr_hilbert_fc</label>
+        <link refid="classgr__hilbert__fc"/>
+        <childnode refid="7013" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7025">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="7026" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7017">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3985">
+      <node id="7028">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7029" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7032">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="7034">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="7035" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="7036">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="7037" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7019">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="7020" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="3981">
+      <node id="7015">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3982" relation="public-inheritance">
+        <childnode refid="7016" relation="public-inheritance">
         </childnode>
-        <childnode refid="3984" relation="usage">
+        <childnode refid="7018" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3986" relation="usage">
+        <childnode refid="7021" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3986">
+      <node id="7020">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="7021">
         <label>std::string</label>
-        <childnode refid="3987" relation="public-inheritance">
+        <childnode refid="7022" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -271,7 +391,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_hilbert_fc</scope><name>set_relative_rate</name></member>

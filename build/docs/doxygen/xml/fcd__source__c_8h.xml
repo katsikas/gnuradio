@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="fcd__source__c_8h" kind="file">
     <compoundname>fcd_source_c.h</compoundname>
     <includes refid="fcd__api_8h" local="no">fcd_api.h</includes>
@@ -209,7 +209,7 @@
     <innerclass refid="classfcd__source__c" prot="public">fcd_source_c</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="fcd__source__c_8h_1a5f58c850659b2170e205bc8db09d7c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="fcd__api_8h_1ad489a1c52387ece46b65f42f0681814f" kindref="member">FCD_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">fcd_source_c_sptr</ref></type>
+        <type>FCD_API <ref refid="classboost_1_1shared__ptr" kindref="compound">fcd_source_c_sptr</ref></type>
         <definition>FCD_API fcd_source_c_sptr fcd_make_source_c</definition>
         <argsstring>(const std::string device_name=&quot;&quot;)</argsstring>
         <name>fcd_make_source_c</name>
@@ -221,7 +221,7 @@
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classfcd__source__c" kindref="compound">fcd_source_c</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>This is effectively the public constructor. To avoid accidental use of raw pointers, <ref refid="classfcd__source__c" kindref="compound">fcd_source_c</ref>&apos;s constructor is private. fcd_make_source_c is the public interface for creating new instances. </para>        </detaileddescription>
+<para>This is effectively the public constructor. To avoid accidental use of raw pointers, fcd_source_c&apos;s constructor is private. fcd_make_source_c is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="38"/>

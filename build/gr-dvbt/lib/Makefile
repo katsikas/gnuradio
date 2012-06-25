@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,6 +35,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -46,8 +49,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"comedi_devel\" \"comedi_python\" \"comedi_runtime\" \"comedi_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -180,6 +183,30 @@ gnuradio-dvbt/fast:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build
 .PHONY : gnuradio-dvbt/fast
 
+dvbt_deinterleaver.o: dvbt_deinterleaver.cc.o
+.PHONY : dvbt_deinterleaver.o
+
+# target to build an object file
+dvbt_deinterleaver.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_deinterleaver.cc.o
+.PHONY : dvbt_deinterleaver.cc.o
+
+dvbt_deinterleaver.i: dvbt_deinterleaver.cc.i
+.PHONY : dvbt_deinterleaver.i
+
+# target to preprocess a source file
+dvbt_deinterleaver.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_deinterleaver.cc.i
+.PHONY : dvbt_deinterleaver.cc.i
+
+dvbt_deinterleaver.s: dvbt_deinterleaver.cc.s
+.PHONY : dvbt_deinterleaver.s
+
+# target to generate assembly for a file
+dvbt_deinterleaver.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_deinterleaver.cc.s
+.PHONY : dvbt_deinterleaver.cc.s
+
 dvbt_depad.o: dvbt_depad.cc.o
 .PHONY : dvbt_depad.o
 
@@ -227,6 +254,30 @@ dvbt_derandomizer.s: dvbt_derandomizer.cc.s
 dvbt_derandomizer.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_derandomizer.cc.s
 .PHONY : dvbt_derandomizer.cc.s
+
+dvbt_interleaver.o: dvbt_interleaver.cc.o
+.PHONY : dvbt_interleaver.o
+
+# target to build an object file
+dvbt_interleaver.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_interleaver.cc.o
+.PHONY : dvbt_interleaver.cc.o
+
+dvbt_interleaver.i: dvbt_interleaver.cc.i
+.PHONY : dvbt_interleaver.i
+
+# target to preprocess a source file
+dvbt_interleaver.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_interleaver.cc.i
+.PHONY : dvbt_interleaver.cc.i
+
+dvbt_interleaver.s: dvbt_interleaver.cc.s
+.PHONY : dvbt_interleaver.s
+
+# target to generate assembly for a file
+dvbt_interleaver.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_interleaver.cc.s
+.PHONY : dvbt_interleaver.cc.s
 
 dvbt_pad.o: dvbt_pad.cc.o
 .PHONY : dvbt_pad.o
@@ -324,6 +375,30 @@ dvbt_rs_encoder.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.s
 .PHONY : dvbt_rs_encoder.cc.s
 
+dvbti_data_interleaver.o: dvbti_data_interleaver.cc.o
+.PHONY : dvbti_data_interleaver.o
+
+# target to build an object file
+dvbti_data_interleaver.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.o
+.PHONY : dvbti_data_interleaver.cc.o
+
+dvbti_data_interleaver.i: dvbti_data_interleaver.cc.i
+.PHONY : dvbti_data_interleaver.i
+
+# target to preprocess a source file
+dvbti_data_interleaver.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.i
+.PHONY : dvbti_data_interleaver.cc.i
+
+dvbti_data_interleaver.s: dvbti_data_interleaver.cc.s
+.PHONY : dvbti_data_interleaver.s
+
+# target to generate assembly for a file
+dvbti_data_interleaver.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.s
+.PHONY : dvbti_data_interleaver.cc.s
+
 dvbti_randomizer.o: dvbti_randomizer.cc.o
 .PHONY : dvbti_randomizer.o
 
@@ -372,6 +447,30 @@ dvbti_reed_solomon.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.s
 .PHONY : dvbti_reed_solomon.cc.s
 
+plinfo.o: plinfo.cc.o
+.PHONY : plinfo.o
+
+# target to build an object file
+plinfo.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/plinfo.cc.o
+.PHONY : plinfo.cc.o
+
+plinfo.i: plinfo.cc.i
+.PHONY : plinfo.i
+
+# target to preprocess a source file
+plinfo.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/plinfo.cc.i
+.PHONY : plinfo.cc.i
+
+plinfo.s: plinfo.cc.s
+.PHONY : plinfo.s
+
+# target to generate assembly for a file
+plinfo.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/plinfo.cc.s
+.PHONY : plinfo.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -388,12 +487,18 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... dvbt_deinterleaver.o"
+	@echo "... dvbt_deinterleaver.i"
+	@echo "... dvbt_deinterleaver.s"
 	@echo "... dvbt_depad.o"
 	@echo "... dvbt_depad.i"
 	@echo "... dvbt_depad.s"
 	@echo "... dvbt_derandomizer.o"
 	@echo "... dvbt_derandomizer.i"
 	@echo "... dvbt_derandomizer.s"
+	@echo "... dvbt_interleaver.o"
+	@echo "... dvbt_interleaver.i"
+	@echo "... dvbt_interleaver.s"
 	@echo "... dvbt_pad.o"
 	@echo "... dvbt_pad.i"
 	@echo "... dvbt_pad.s"
@@ -406,12 +511,18 @@ help:
 	@echo "... dvbt_rs_encoder.o"
 	@echo "... dvbt_rs_encoder.i"
 	@echo "... dvbt_rs_encoder.s"
+	@echo "... dvbti_data_interleaver.o"
+	@echo "... dvbti_data_interleaver.i"
+	@echo "... dvbti_data_interleaver.s"
 	@echo "... dvbti_randomizer.o"
 	@echo "... dvbti_randomizer.i"
 	@echo "... dvbti_randomizer.s"
 	@echo "... dvbti_reed_solomon.o"
 	@echo "... dvbti_reed_solomon.i"
 	@echo "... dvbti_reed_solomon.s"
+	@echo "... plinfo.o"
+	@echo "... plinfo.i"
+	@echo "... plinfo.s"
 .PHONY : help
 
 

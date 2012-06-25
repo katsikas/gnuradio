@@ -55,8 +55,8 @@ public:
         }
 
   	void set_transport_error (bool error){
-    		if (error)
-      			printf("ERROR!!! \n");
+    		/*if (error)
+      			printf("ERROR!!! \n");*/
   	}
 
        /*!

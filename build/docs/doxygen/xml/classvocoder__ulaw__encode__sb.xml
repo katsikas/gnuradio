@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classvocoder__ulaw__encode__sb" kind="class" prot="public">
     <compoundname>vocoder_ulaw_encode_sb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="vocoder__ulaw__encode__sb_8h" local="no">vocoder_ulaw_encode_sb.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classvocoder__ulaw__encode__sb_1ad34fb94a70c1322d21c14855e1e36e43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="vocoder__api_8h_1a8a56d8b0d26cf75df04dcad9064a0aeb" kindref="member">VOCODER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_ulaw_encode_sb_sptr</ref></type>
+        <type>friend VOCODER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_ulaw_encode_sb_sptr</ref></type>
         <definition>VOCODER_API vocoder_ulaw_encode_sb_sptr vocoder_make_ulaw_encode_sb</definition>
         <argsstring>()</argsstring>
         <name>vocoder_make_ulaw_encode_sb</name>
@@ -59,11 +59,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -80,100 +80,220 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7737">
+      <node id="13055">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7738" relation="public-inheritance">
+        <childnode refid="13056" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7734">
+      <node id="13052">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7735" relation="public-inheritance">
+        <childnode refid="13053" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7735">
+      <node id="13053">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7736" relation="public-inheritance">
+        <childnode refid="13054" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7733">
+      <node id="13051">
         <label>vocoder_ulaw_encode_sb</label>
         <link refid="classvocoder__ulaw__encode__sb"/>
-        <childnode refid="7734" relation="public-inheritance">
+        <childnode refid="13052" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7738">
+      <node id="13056">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7736">
+      <node id="13054">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7737" relation="public-inheritance">
+        <childnode refid="13055" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7743">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="7744" relation="public-inheritance">
+      <node id="13078">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="13072" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="7740">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="7741" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7741">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="7742" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7739">
-        <label>vocoder_ulaw_encode_sb</label>
-        <link refid="classvocoder__ulaw__encode__sb"/>
-        <childnode refid="7740" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7745">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="13071">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7746" relation="usage">
+        <childnode refid="13072" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7748">
+      <node id="13083">
+        <label>T</label>
+      </node>
+      <node id="13061">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="13062" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13058">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="13059" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13072">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="13073" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="13080">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="13075">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="13059">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="13060" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13068" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="13068">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13069" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13057">
+        <label>vocoder_ulaw_encode_sb</label>
+        <link refid="classvocoder__ulaw__encode__sb"/>
+        <childnode refid="13058" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13082">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13083" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13069">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="13070" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="13079" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="13081" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="13076">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="13077" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13063">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13064" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13074">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="13075" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="13076" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="13078" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="13067">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7744">
+      <node id="13070">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="13071" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13062">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7746">
+      <node id="13073">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="13074" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="13077">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="13079">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="13080" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="13081">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="13082" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13064">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="13065" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="7742">
+      <node id="13060">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7743" relation="public-inheritance">
+        <childnode refid="13061" relation="public-inheritance">
         </childnode>
-        <childnode refid="7745" relation="usage">
+        <childnode refid="13063" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7747" relation="usage">
+        <childnode refid="13066" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7747">
+      <node id="13065">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="13066">
         <label>std::string</label>
-        <childnode refid="7748" relation="public-inheritance">
+        <childnode refid="13067" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -231,7 +351,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>vocoder_ulaw_encode_sb</scope><name>set_relative_rate</name></member>

@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="dvbt__depad_8h" kind="file">
     <compoundname>dvbt_depad.h</compoundname>
     <includes local="no">cassert</includes>
     <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
     <includes local="no">gr_sync_interpolator.h</includes>
     <incdepgraph>
-      <node id="23">
+      <node id="54">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="24">
+      <node id="55">
         <label>gr_sync_interpolator.h</label>
       </node>
-      <node id="20">
+      <node id="51">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h</label>
         <link refid="dvbt_depad.h"/>
-        <childnode refid="21" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="52">
         <label>cassert</label>
       </node>
-      <node id="22">
+      <node id="53">
         <label>dvbt/dvbt_api.h</label>
         <link refid="dvbt__api_8h"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="54" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -50,7 +50,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__depad_8h_1a8a8bf60b298c9511755540a362afbb89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__depad_8h_1a626bfd393c886e0d822d1d8281440004" kindref="member">dvbt_depad_sptr</ref></type>
+        <type>DVBT_API <ref refid="dvbt__depad_8h_1a626bfd393c886e0d822d1d8281440004" kindref="member">dvbt_depad_sptr</ref></type>
         <definition>DVBT_API dvbt_depad_sptr dvbt_make_depad</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_depad</name>

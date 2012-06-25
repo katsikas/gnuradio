@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__fir__fcc" kind="class" prot="public">
     <compoundname>gr_fir_fcc</compoundname>
     <derivedcompoundref refid="classgr__fir__fcc__generic" prot="public" virt="non-virtual">gr_fir_fcc_generic</derivedcompoundref>
@@ -196,44 +196,44 @@
     <detaileddescription>
 <para>The trailing suffix has the form _IOT where I codes the input type, O codes the output type, and T codes the tap type. I,O,T are elements of the set &apos;s&apos; (short), &apos;f&apos; (float), &apos;c&apos; (gr_complex), &apos;i&apos; (int) </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="447">
+      <node id="457">
         <label>gr_fir_fcc_sse</label>
         <link refid="classgr__fir__fcc__sse"/>
-        <childnode refid="445" relation="public-inheritance">
+        <childnode refid="455" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="443">
+      <node id="453">
         <label>gr_fir_fcc</label>
         <link refid="classgr__fir__fcc"/>
       </node>
-      <node id="444">
+      <node id="454">
         <label>gr_fir_fcc_generic</label>
         <link refid="classgr__fir__fcc__generic"/>
-        <childnode refid="443" relation="public-inheritance">
+        <childnode refid="453" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="446">
+      <node id="456">
         <label>gr_fir_fcc_3dnow</label>
         <link refid="classgr__fir__fcc__3dnow"/>
-        <childnode refid="445" relation="public-inheritance">
+        <childnode refid="455" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="445">
+      <node id="455">
         <label>gr_fir_fcc_simd</label>
         <link refid="classgr__fir__fcc__simd"/>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="454" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="448">
+      <node id="458">
         <label>gr_fir_fcc</label>
         <link refid="classgr__fir__fcc"/>
-        <childnode refid="449" relation="usage">
+        <childnode refid="459" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="449">
+      <node id="459">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
     </collaborationgraph>

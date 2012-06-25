@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="qtgui__sink__f_8h" kind="file">
     <compoundname>qtgui_sink_f.h</compoundname>
     <includes local="no">Python.h</includes>
@@ -10,68 +10,102 @@
     <includes local="no">qapplication.h</includes>
     <includes local="yes">SpectrumGUIClass.h</includes>
     <incdepgraph>
-      <node id="16026">
+      <node id="16022">
         <label>gr_sptr_magic.h</label>
         <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="16013" relation="include">
+        </childnode>
         <childnode refid="16017" relation="include">
         </childnode>
-        <childnode refid="16021" relation="include">
-        </childnode>
-      </node>
-      <node id="16016">
-        <label>gr_block.h</label>
-        <link refid="gr__block_8h"/>
-        <childnode refid="16017" relation="include">
-        </childnode>
-        <childnode refid="16018" relation="include">
-        </childnode>
-        <childnode refid="16042" relation="include">
-        </childnode>
-      </node>
-      <node id="16021">
-        <label>boost/shared_ptr.hpp</label>
       </node>
       <node id="16012">
-        <label>qtgui_sink_f.h</label>
-        <link refid="qtgui_sink_f.h"/>
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
         <childnode refid="16013" relation="include">
         </childnode>
         <childnode refid="16014" relation="include">
         </childnode>
-        <childnode refid="16016" relation="include">
+        <childnode refid="16038" relation="include">
+        </childnode>
+      </node>
+      <node id="16017">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="16008">
+        <label>qtgui_sink_f.h</label>
+        <link refid="qtgui_sink_f.h"/>
+        <childnode refid="16009" relation="include">
+        </childnode>
+        <childnode refid="16010" relation="include">
+        </childnode>
+        <childnode refid="16012" relation="include">
+        </childnode>
+        <childnode refid="16039" relation="include">
+        </childnode>
+        <childnode refid="16041" relation="include">
         </childnode>
         <childnode refid="16043" relation="include">
         </childnode>
-        <childnode refid="16045" relation="include">
-        </childnode>
-        <childnode refid="16047" relation="include">
-        </childnode>
-        <childnode refid="16048" relation="include">
+        <childnode refid="16044" relation="include">
         </childnode>
       </node>
-      <node id="16033">
+      <node id="16029">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="16030">
+      <node id="16026">
         <label>gruel/msg_accepter.h</label>
         <link refid="msg__accepter_8h"/>
-        <childnode refid="16031" relation="include">
+        <childnode refid="16027" relation="include">
         </childnode>
-        <childnode refid="16032" relation="include">
+        <childnode refid="16028" relation="include">
         </childnode>
-        <childnode refid="16021" relation="include">
+        <childnode refid="16017" relation="include">
         </childnode>
       </node>
-      <node id="16015">
+      <node id="16011">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="16020">
+      <node id="16016">
         <label>gr_types.h</label>
         <link refid="gr__types_8h"/>
+        <childnode refid="16013" relation="include">
+        </childnode>
         <childnode refid="16017" relation="include">
         </childnode>
-        <childnode refid="16021" relation="include">
+        <childnode refid="16018" relation="include">
+        </childnode>
+        <childnode refid="16019" relation="include">
+        </childnode>
+        <childnode refid="16020" relation="include">
+        </childnode>
+      </node>
+      <node id="16040">
+        <label>cmath</label>
+      </node>
+      <node id="16036">
+        <label>stdexcept</label>
+      </node>
+      <node id="16032">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="16033" relation="include">
+        </childnode>
+        <childnode refid="16034" relation="include">
+        </childnode>
+      </node>
+      <node id="16044">
+        <label>SpectrumGUIClass.h</label>
+      </node>
+      <node id="16031">
+        <label>string</label>
+      </node>
+      <node id="16014">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="16013" relation="include">
+        </childnode>
+        <childnode refid="16015" relation="include">
         </childnode>
         <childnode refid="16022" relation="include">
         </childnode>
@@ -79,186 +113,152 @@
         </childnode>
         <childnode refid="16024" relation="include">
         </childnode>
-      </node>
-      <node id="16044">
-        <label>cmath</label>
-      </node>
-      <node id="16040">
-        <label>stdexcept</label>
-      </node>
-      <node id="16036">
-        <label>stdint.h</label>
-        <link refid="stdint_8h"/>
-        <childnode refid="16037" relation="include">
+        <childnode refid="16025" relation="include">
         </childnode>
-        <childnode refid="16038" relation="include">
+        <childnode refid="16031" relation="include">
         </childnode>
       </node>
-      <node id="16048">
-        <label>SpectrumGUIClass.h</label>
-      </node>
-      <node id="16035">
-        <label>string</label>
-      </node>
-      <node id="16018">
-        <label>gr_basic_block.h</label>
-        <link refid="gr__basic__block_8h"/>
-        <childnode refid="16017" relation="include">
-        </childnode>
-        <childnode refid="16019" relation="include">
-        </childnode>
-        <childnode refid="16026" relation="include">
-        </childnode>
-        <childnode refid="16027" relation="include">
-        </childnode>
-        <childnode refid="16028" relation="include">
-        </childnode>
-        <childnode refid="16029" relation="include">
-        </childnode>
-        <childnode refid="16035" relation="include">
-        </childnode>
-      </node>
-      <node id="16046">
+      <node id="16042">
         <label>boost/thread.hpp</label>
       </node>
-      <node id="16041">
+      <node id="16037">
         <label>gruel/pmt_sugar.h</label>
         <link refid="pmt__sugar_8h"/>
       </node>
-      <node id="16023">
+      <node id="16019">
         <label>stddef.h</label>
       </node>
-      <node id="16031">
+      <node id="16027">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="16015" relation="include">
+        <childnode refid="16011" relation="include">
         </childnode>
       </node>
-      <node id="16047">
+      <node id="16043">
         <label>qapplication.h</label>
       </node>
-      <node id="16028">
+      <node id="16024">
         <label>boost/function.hpp</label>
       </node>
-      <node id="16037">
+      <node id="16033">
         <label>limits.h</label>
       </node>
-      <node id="16034">
+      <node id="16030">
         <label>boost/any.hpp</label>
       </node>
-      <node id="16032">
+      <node id="16028">
         <label>gruel/pmt.h</label>
         <link refid="pmt_8h"/>
-        <childnode refid="16031" relation="include">
+        <childnode refid="16027" relation="include">
         </childnode>
-        <childnode refid="16033" relation="include">
+        <childnode refid="16029" relation="include">
+        </childnode>
+        <childnode refid="16017" relation="include">
+        </childnode>
+        <childnode refid="16030" relation="include">
         </childnode>
         <childnode refid="16021" relation="include">
         </childnode>
-        <childnode refid="16034" relation="include">
+        <childnode refid="16031" relation="include">
         </childnode>
-        <childnode refid="16025" relation="include">
+        <childnode refid="16032" relation="include">
         </childnode>
         <childnode refid="16035" relation="include">
         </childnode>
         <childnode refid="16036" relation="include">
         </childnode>
-        <childnode refid="16039" relation="include">
-        </childnode>
-        <childnode refid="16040" relation="include">
-        </childnode>
-        <childnode refid="16041" relation="include">
+        <childnode refid="16037" relation="include">
         </childnode>
       </node>
-      <node id="16014">
+      <node id="16010">
         <label>gr_qtgui_api.h</label>
         <link refid="gr__qtgui__api_8h"/>
-        <childnode refid="16015" relation="include">
+        <childnode refid="16011" relation="include">
         </childnode>
       </node>
-      <node id="16038">
+      <node id="16034">
         <label>wchar.h</label>
       </node>
-      <node id="16029">
+      <node id="16025">
         <label>gr_msg_accepter.h</label>
         <link refid="gr__msg__accepter_8h"/>
-        <childnode refid="16017" relation="include">
+        <childnode refid="16013" relation="include">
         </childnode>
-        <childnode refid="16030" relation="include">
+        <childnode refid="16026" relation="include">
         </childnode>
-        <childnode refid="16032" relation="include">
+        <childnode refid="16028" relation="include">
         </childnode>
       </node>
-      <node id="16019">
+      <node id="16015">
         <label>gr_runtime_types.h</label>
         <link refid="gr__runtime__types_8h"/>
-        <childnode refid="16017" relation="include">
+        <childnode refid="16013" relation="include">
+        </childnode>
+        <childnode refid="16016" relation="include">
+        </childnode>
+      </node>
+      <node id="16009">
+        <label>Python.h</label>
+      </node>
+      <node id="16018">
+        <label>vector</label>
+      </node>
+      <node id="16041">
+        <label>gri_fft.h</label>
+        <link refid="gri__fft_8h"/>
+        <childnode refid="16013" relation="include">
+        </childnode>
+        <childnode refid="16020" relation="include">
+        </childnode>
+        <childnode refid="16042" relation="include">
+        </childnode>
+      </node>
+      <node id="16013">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="16011" relation="include">
+        </childnode>
+      </node>
+      <node id="16023">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="16039">
+        <label>gr_firdes.h</label>
+        <link refid="gr__firdes_8h"/>
+        <childnode refid="16013" relation="include">
+        </childnode>
+        <childnode refid="16018" relation="include">
+        </childnode>
+        <childnode refid="16040" relation="include">
         </childnode>
         <childnode refid="16020" relation="include">
         </childnode>
       </node>
-      <node id="16013">
-        <label>Python.h</label>
-      </node>
-      <node id="16022">
-        <label>vector</label>
-      </node>
-      <node id="16045">
-        <label>gri_fft.h</label>
-        <link refid="gri__fft_8h"/>
-        <childnode refid="16017" relation="include">
-        </childnode>
-        <childnode refid="16024" relation="include">
-        </childnode>
-        <childnode refid="16046" relation="include">
-        </childnode>
-      </node>
-      <node id="16017">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="16015" relation="include">
-        </childnode>
-      </node>
-      <node id="16027">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="16043">
-        <label>gr_firdes.h</label>
-        <link refid="gr__firdes_8h"/>
-        <childnode refid="16017" relation="include">
-        </childnode>
-        <childnode refid="16022" relation="include">
-        </childnode>
-        <childnode refid="16044" relation="include">
-        </childnode>
-        <childnode refid="16024" relation="include">
-        </childnode>
-      </node>
-      <node id="16039">
+      <node id="16035">
         <label>iosfwd</label>
       </node>
-      <node id="16042">
+      <node id="16038">
         <label>gr_tags.h</label>
         <link refid="gr__tags_8h"/>
-        <childnode refid="16017" relation="include">
+        <childnode refid="16013" relation="include">
         </childnode>
-        <childnode refid="16032" relation="include">
+        <childnode refid="16028" relation="include">
         </childnode>
       </node>
-      <node id="16025">
+      <node id="16021">
         <label>complex</label>
       </node>
-      <node id="16024">
+      <node id="16020">
         <label>gr_complex.h</label>
         <link refid="gr__complex_8h"/>
-        <childnode refid="16025" relation="include">
+        <childnode refid="16021" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classqtgui__sink__f" prot="public">qtgui_sink_f</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="qtgui__sink__f_8h_1a736fe3c399b4eb19f5980a7452c91f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_sink_f_sptr</ref></type>
+        <type>GR_QTGUI_API <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_sink_f_sptr</ref></type>
         <definition>GR_QTGUI_API qtgui_sink_f_sptr qtgui_make_sink_f</definition>
         <argsstring>(int fftsize, int wintype, double fc=0, double bw=1.0, const std::string &amp;name=&quot;Spectrum Display&quot;, bool plotfreq=true, bool plotwaterfall=true, bool plottime=true, bool plotconst=false, QWidget *parent=NULL)</argsstring>
         <name>qtgui_make_sink_f</name>

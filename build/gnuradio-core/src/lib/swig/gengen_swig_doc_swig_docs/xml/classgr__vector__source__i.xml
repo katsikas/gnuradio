@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__vector__source__i" kind="class" prot="public">
     <compoundname>gr_vector_source_i</compoundname>
     <includes refid="gr__vector__source__i_8h" local="no">gr_vector_source_i.h</includes>
@@ -172,6 +172,18 @@
 <para>source of int&apos;s that gets its data from a vector </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="549">
+        <label>gr_vector_source_i</label>
+        <link refid="classgr__vector__source__i"/>
+        <childnode refid="550" relation="usage">
+          <edgelabel>d_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="550">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_vector_source_i.h" line="39" bodyfile="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_vector_source_i.h" bodystart="39" bodyend="56"/>
     <listofallmembers>
       <member refid="classgr__vector__source__i_1a87d47d37e5ce539a6a8d1db38f619042" prot="private" virt="non-virtual"><scope>gr_vector_source_i</scope><name>d_data</name></member>

@@ -16,8 +16,8 @@ FILE(REMOVE_RECURSE
   "gnuradio_core_runtime.pyo"
   "gnuradio_core_runtimePYTHON_wrap.cxx"
   "gnuradio_core_runtime.py"
-  "gnuradio_core_runtime.tag"
   "runtime_swig_doc.i"
+  "gnuradio_core_runtime.tag"
   "runtime_swig_doc_swig_docs/xml/index.xml"
   "runtime_swig_doc_swig_docs/xml/combine.xslt"
 )

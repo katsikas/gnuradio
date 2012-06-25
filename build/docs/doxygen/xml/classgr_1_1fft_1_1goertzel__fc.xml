@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr_1_1fft_1_1goertzel__fc" kind="class" prot="public">
     <compoundname>gr::fft::goertzel_fc</compoundname>
     <basecompoundref refid="classgr__sync__decimator" prot="public" virt="virtual">gr_sync_decimator</basecompoundref>
@@ -22,7 +22,7 @@
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="group__dft__blk_1ga022d0bdf026c27b202cf6aa8e8681b31" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classgr_1_1fft_1_1goertzel__fc_1a9ebc45dd680b877c2e4115661a890e30" kindref="member">sptr</ref></type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">sptr</ref></type>
         <definition>static sptr gr::fft::goertzel_fc::make</definition>
         <argsstring>(int rate, int len, float freq)</argsstring>
         <name>make</name>
@@ -49,7 +49,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classgr_1_1fft_1_1goertzel__fc_1a80d458fd91ec73fd006d9f3345096d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr::fft::goertzel_fc::set_freq</definition>
         <argsstring>(float freq)=0</argsstring>
         <name>set_freq</name>
@@ -67,7 +67,7 @@
         <location file="/home/katsikas/gnuradio/gr-fft/include/fft/goertzel_fc.h" line="45"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1fft_1_1goertzel__fc_1a101d8004ce4d9fcdc42d51e14d63fd0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr::fft::goertzel_fc::set_rate</definition>
         <argsstring>(int rate)=0</argsstring>
         <name>set_rate</name>
@@ -118,118 +118,238 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1990">
+      <node id="3613">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1991" relation="public-inheritance">
+        <childnode refid="3614" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1987">
+      <node id="3610">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1988" relation="public-inheritance">
+        <childnode refid="3611" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1986">
+      <node id="3609">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="1987" relation="public-inheritance">
+        <childnode refid="3610" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1988">
+      <node id="3611">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1989" relation="public-inheritance">
+        <childnode refid="3612" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1991">
+      <node id="3614">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1985">
+      <node id="3608">
         <label>gr::fft::goertzel_fc</label>
         <link refid="classgr_1_1fft_1_1goertzel__fc"/>
-        <childnode refid="1986" relation="public-inheritance">
+        <childnode refid="3609" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1989">
+      <node id="3612">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1990" relation="public-inheritance">
+        <childnode refid="3613" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1992">
+      <node id="3615">
         <label>gr::fft::goertzel_fc_impl</label>
         <link refid="classgr_1_1fft_1_1goertzel__fc__impl"/>
-        <childnode refid="1985" relation="public-inheritance">
+        <childnode refid="3608" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1998">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="1999" relation="public-inheritance">
+      <node id="3638">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="3632" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1995">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="1996" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1994">
-        <label>gr_sync_decimator</label>
-        <link refid="classgr__sync__decimator"/>
-        <childnode refid="1995" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1996">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="1997" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2000">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="3631">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2001" relation="usage">
+        <childnode refid="3632" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2003">
+      <node id="3643">
+        <label>T</label>
+      </node>
+      <node id="3621">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="3622" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3618">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="3619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3617">
+        <label>gr_sync_decimator</label>
+        <link refid="classgr__sync__decimator"/>
+        <childnode refid="3618" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3632">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="3633" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3640">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="3635">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="3619">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="3620" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3628" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="3628">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3629" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3642">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3643" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3629">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="3630" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="3639" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="3641" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="3636">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="3637" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3623">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3624" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3634">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="3635" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="3636" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="3638" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="3627">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1999">
+      <node id="3630">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="3631" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3622">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2001">
+      <node id="3633">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="3634" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="3637">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="3639">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="3640" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="3641">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="3642" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3624">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="3625" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="1993">
+      <node id="3616">
         <label>gr::fft::goertzel_fc</label>
         <link refid="classgr_1_1fft_1_1goertzel__fc"/>
-        <childnode refid="1994" relation="public-inheritance">
+        <childnode refid="3617" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1997">
+      <node id="3620">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1998" relation="public-inheritance">
+        <childnode refid="3621" relation="public-inheritance">
         </childnode>
-        <childnode refid="2000" relation="usage">
+        <childnode refid="3623" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2002" relation="usage">
+        <childnode refid="3626" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2002">
+      <node id="3625">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="3626">
         <label>std::string</label>
-        <childnode refid="2003" relation="public-inheritance">
+        <childnode refid="3627" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -295,7 +415,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_output_signature</name></member>
       <member refid="classgr_1_1fft_1_1goertzel__fc_1a101d8004ce4d9fcdc42d51e14d63fd0f" prot="public" virt="pure-virtual"><scope>gr::fft::goertzel_fc</scope><name>set_rate</name></member>

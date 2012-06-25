@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__audio__source_8h" kind="file">
     <compoundname>gr_audio_source.h</compoundname>
     <includes refid="gr__audio__api_8h" local="no">gr_audio_api.h</includes>
@@ -276,7 +276,7 @@
     <innerclass refid="classaudio__source" prot="public">audio_source</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__audio__source_8h_1afc73b1338ea18aed2bb49b50997a52ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__audio__api_8h_1a222adfe41ab381b8e026445ba45db5a1" kindref="member">GR_AUDIO_API</ref> <ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref></type>
+        <type>GR_AUDIO_API <ref refid="classboost_1_1shared__ptr" kindref="compound">audio_source::sptr</ref></type>
         <definition>GR_AUDIO_API audio_source::sptr audio_make_source</definition>
         <argsstring>(int sampling_rate, const std::string device_name=&quot;&quot;, bool ok_to_block=true)</argsstring>
         <name>audio_make_source</name>

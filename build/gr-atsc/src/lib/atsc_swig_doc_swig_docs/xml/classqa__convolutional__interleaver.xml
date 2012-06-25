@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classqa__convolutional__interleaver" kind="class" prot="public">
     <compoundname>qa_convolutional_interleaver</compoundname>
     <includes refid="qa__convolutional__interleaver_8h" local="no">qa_convolutional_interleaver.h</includes>
@@ -239,6 +239,33 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="787">
+        <label>std::vector&lt; interleaver_fifo&lt; int &gt; * &gt;</label>
+        <childnode refid="788" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="788">
+        <label>interleaver_fifo&lt; int &gt;</label>
+        <link refid="classinterleaver__fifo"/>
+      </node>
+      <node id="785">
+        <label>qa_convolutional_interleaver</label>
+        <link refid="classqa__convolutional__interleaver"/>
+        <childnode refid="786" relation="usage">
+          <edgelabel>intl</edgelabel>
+          <edgelabel>deintl</edgelabel>
+        </childnode>
+      </node>
+      <node id="786">
+        <label>convolutional_interleaver&lt; int &gt;</label>
+        <link refid="classconvolutional__interleaver"/>
+        <childnode refid="787" relation="usage">
+          <edgelabel>m_fifo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/qa_convolutional_interleaver.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/qa_convolutional_interleaver.h" bodystart="31" bodyend="66"/>
     <listofallmembers>
       <member refid="classqa__convolutional__interleaver_1addbad5a676dfe8d610764761a4e30779" prot="private" virt="non-virtual"><scope>qa_convolutional_interleaver</scope><name>CPPUNIT_TEST</name></member>

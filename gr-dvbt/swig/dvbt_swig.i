@@ -34,6 +34,8 @@
 #include "dvbt/dvbt_rs_decoder.h"
 #include "dvbt/dvbt_randomizer.h"
 #include "dvbt/dvbt_derandomizer.h"
+#include "dvbt/dvbt_interleaver.h"
+#include "dvbt/dvbt_deinterleaver.h"
 %}
 
 %include "dvbt/dvbt_pad.h"
@@ -42,6 +44,8 @@
 %include "dvbt/dvbt_rs_decoder.h"
 %include "dvbt/dvbt_randomizer.h"
 %include "dvbt/dvbt_derandomizer.h"
+%include "dvbt/dvbt_interleaver.h"
+%include "dvbt/dvbt_deinterleaver.h"
 
 
 // ----------------------------------------------------------------
@@ -129,3 +133,32 @@ public:
 
 
 // ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,interleaver);
+
+dvbt_interleaver_sptr dvbt_make_interleaver();
+
+class dvbt_interleaver : public gr_sync_block
+{
+  	dvbt_interleaver();
+
+public:
+  	void reset();
+};
+
+
+// ----------------------------------------------------------------
+GR_SWIG_BLOCK_MAGIC(dvbt,deinterleaver);
+
+dvbt_deinterleaver_sptr dvbt_make_deinterleaver();
+
+class dvbt_deinterleaver : public gr_sync_block
+{
+  	dvbt_deinterleaver();
+
+public:
+  	void reset();
+};
+
+
+// ----------------------------------------------------------------
+

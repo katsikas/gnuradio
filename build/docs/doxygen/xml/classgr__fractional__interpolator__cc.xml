@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__fractional__interpolator__cc" kind="class" prot="public">
     <compoundname>gr_fractional_interpolator_cc</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -60,7 +60,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" line="44"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fractional__interpolator__cc_1a570e5166c62a42c1731275ca202c14af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_fractional_interpolator_cc::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -70,7 +70,7 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items_required</declname>
         </param>
         <briefdescription>
@@ -107,15 +107,15 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -183,7 +183,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" line="52" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fractional__interpolator__cc_1a595b87d7eab91b7180623bea2bba4755" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_fractional_interpolator_cc::set_mu</definition>
         <argsstring>(float mu)</argsstring>
         <name>set_mu</name>
@@ -200,7 +200,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" line="53" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fractional__interpolator__cc_1accd16b85f3b80df0b62329d005742582" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_fractional_interpolator_cc::set_interp_ratio</definition>
         <argsstring>(float interp_ratio)</argsstring>
         <name>set_interp_ratio</name>
@@ -242,7 +242,7 @@ general_work must call consume or consume_each to indicate how many items were c
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__fractional__interpolator__cc_1ad407c222a242098d200cd26389732735" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fractional_interpolator_cc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fractional_interpolator_cc_sptr</ref></type>
         <definition>GR_CORE_API gr_fractional_interpolator_cc_sptr gr_make_fractional_interpolator_cc</definition>
         <argsstring>(float phase_shift, float interp_ratio)</argsstring>
         <name>gr_make_fractional_interpolator_cc</name>
@@ -268,88 +268,222 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3823">
+      <node id="6674">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3824" relation="public-inheritance">
+        <childnode refid="6675" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3821">
+      <node id="6672">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3822" relation="public-inheritance">
+        <childnode refid="6673" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3820">
+      <node id="6671">
         <label>gr_fractional_interpolator_cc</label>
         <link refid="classgr__fractional__interpolator__cc"/>
-        <childnode refid="3821" relation="public-inheritance">
+        <childnode refid="6672" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3824">
+      <node id="6675">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3822">
+      <node id="6673">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3823" relation="public-inheritance">
+        <childnode refid="6674" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3828">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="3829" relation="public-inheritance">
+      <node id="6696">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="6690" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3826">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="3827" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3825">
-        <label>gr_fractional_interpolator_cc</label>
-        <link refid="classgr__fractional__interpolator__cc"/>
-        <childnode refid="3826" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3830">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="6689">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3831" relation="usage">
+        <childnode refid="6690" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3833">
+      <node id="6701">
+        <label>T</label>
+      </node>
+      <node id="6679">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="6680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6690">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="6691" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="6698">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="6693">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="6677">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="6678" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6686" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="6686">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="6687" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="6700">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="6701" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="6687">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="6688" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="6697" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="6699" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="6703">
+        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="6694">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="6695" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6676">
+        <label>gr_fractional_interpolator_cc</label>
+        <link refid="classgr__fractional__interpolator__cc"/>
+        <childnode refid="6677" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6702" relation="usage">
+          <edgelabel>d_interp</edgelabel>
+        </childnode>
+      </node>
+      <node id="6681">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="6682" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="6692">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="6693" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="6694" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="6696" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="6685">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3829">
+      <node id="6688">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="6689" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6680">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3831">
+      <node id="6702">
+        <label>gri_mmse_fir_interpolator_cc</label>
+        <link refid="classgri__mmse__fir__interpolator__cc"/>
+        <childnode refid="6703" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="6691">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="6692" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="6695">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="6697">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="6698" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="6699">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="6700" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6682">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="6683" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="3827">
+      <node id="6678">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3828" relation="public-inheritance">
+        <childnode refid="6679" relation="public-inheritance">
         </childnode>
-        <childnode refid="3830" relation="usage">
+        <childnode refid="6681" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3832" relation="usage">
+        <childnode refid="6684" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3832">
+      <node id="6683">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="6684">
         <label>std::string</label>
-        <childnode refid="3833" relation="public-inheritance">
+        <childnode refid="6685" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -413,7 +547,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_input_signature</name></member>
       <member refid="classgr__fractional__interpolator__cc_1accd16b85f3b80df0b62329d005742582" prot="public" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_interp_ratio</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_msg_handler</name></member>
       <member refid="classgr__fractional__interpolator__cc_1a595b87d7eab91b7180623bea2bba4755" prot="public" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_mu</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_fractional_interpolator_cc</scope><name>set_output_signature</name></member>

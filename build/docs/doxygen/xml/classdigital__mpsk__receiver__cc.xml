@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdigital__mpsk__receiver__cc" kind="class" prot="public">
     <compoundname>digital_mpsk_receiver_cc</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -55,7 +55,7 @@ This is a function pointer that is set in the constructor to point to the proper
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="276" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" bodystart="276" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__mpsk__receiver__cc_1a1901da131f08202d3e0e3f8c96f92ee9" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_mpsk_receiver_cc::d_constellation</definition>
         <argsstring></argsstring>
         <name>d_constellation</name>
@@ -341,7 +341,7 @@ This is a function pointer that is set in the constructor to point to the proper
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="86"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a75feb942fe43508c987d7e9be20545ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -351,7 +351,7 @@ This is a function pointer that is set in the constructor to point to the proper
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items_required</declname>
         </param>
         <briefdescription>
@@ -388,15 +388,15 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -529,7 +529,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="113" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" bodystart="113" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a80da2b745a4a80e9716f972dc89266d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::set_modulation_order</definition>
         <argsstring>(unsigned int M)</argsstring>
         <name>set_modulation_order</name>
@@ -546,7 +546,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="116"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a3ce3ea9c4f738f43caa865793bda9766" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::set_theta</definition>
         <argsstring>(float theta)</argsstring>
         <name>set_theta</name>
@@ -563,7 +563,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="119" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" bodystart="119" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a8b54df22ac8ab9260a79e5b805d4487e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::set_mu</definition>
         <argsstring>(float mu)</argsstring>
         <name>set_mu</name>
@@ -580,7 +580,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="122" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" bodystart="122" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1acb44184ada75462c1ebdc3d9a269e697" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::set_omega</definition>
         <argsstring>(float omega)</argsstring>
         <name>set_omega</name>
@@ -597,7 +597,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="125" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" bodystart="125" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1ac570840c538938e1fd8284211a12772b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::set_gain_mu</definition>
         <argsstring>(float gain_mu)</argsstring>
         <name>set_gain_mu</name>
@@ -614,7 +614,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="133" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" bodystart="133" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a1c57b7a442d60b0b757e57657d010492" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::set_gain_omega</definition>
         <argsstring>(float gain_omega)</argsstring>
         <name>set_gain_omega</name>
@@ -631,7 +631,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="136" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" bodystart="136" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a371b785ba6dec71989ec2cd815d2d67f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::set_gain_omega_rel</definition>
         <argsstring>(float omega_rel)</argsstring>
         <name>set_gain_omega_rel</name>
@@ -774,7 +774,7 @@ The constructor also chooses which phase detector and decision maker to use in t
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="164"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a680f424d4ad89ee7638b3900443bf53f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::make_constellation</definition>
         <argsstring>()</argsstring>
         <name>make_constellation</name>
@@ -787,7 +787,7 @@ The constructor also chooses which phase detector and decision maker to use in t
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="166"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a9703aa1b873a1a3ec096e479ab3206fe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::mm_sampler</definition>
         <argsstring>(const gr_complex symbol)</argsstring>
         <name>mm_sampler</name>
@@ -804,7 +804,7 @@ The constructor also chooses which phase detector and decision maker to use in t
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="167"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1a0f3116485947f02eab5c13b11e1b003b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::mm_error_tracking</definition>
         <argsstring>(gr_complex sample)</argsstring>
         <name>mm_error_tracking</name>
@@ -821,7 +821,7 @@ The constructor also chooses which phase detector and decision maker to use in t
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_mpsk_receiver_cc.h" line="168"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__mpsk__receiver__cc_1ac356f722f41cf8b92d914f31bb017e0f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_mpsk_receiver_cc::phase_error_tracking</definition>
         <argsstring>(gr_complex sample)</argsstring>
         <name>phase_error_tracking</name>
@@ -1014,7 +1014,7 @@ This decision maker is a simple slicer function that makes a decision on the sym
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__mpsk__receiver__cc_1a41e056f958d47947947830cd7f9ce0b3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_mpsk_receiver_cc_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_mpsk_receiver_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_mpsk_receiver_cc_sptr digital_make_mpsk_receiver_cc</definition>
         <argsstring>(unsigned int M, float theta, float loop_bw, float fmin, float fmax, float mu, float gain_mu, float omega, float gain_omega, float omega_rel)</argsstring>
         <name>digital_make_mpsk_receiver_cc</name>
@@ -1073,100 +1073,259 @@ This decision maker is a simple slicer function that makes a decision on the sym
 <para>The phase and frequency synchronization are based on a Costas loop that finds the error of the incoming signal point compared to its nearest constellation point. The frequency and phase of the NCO are updated according to this error. There are optimized phase error detectors for BPSK and QPSK, but 8PSK is done using a brute-force computation of the constellation points to find the minimum.</para><para>The symbol synchronization is done using a modified Mueller and Muller circuit from the paper:</para><para>&quot;G. R. Danesfahani, T. G. Jeans, &quot;Optimisation of modified Mueller and Muller algorithm,&quot; Electronics Letters, Vol. 31, no. 13, 22
  June 1995, pp. 1032 - 1033.&quot;</para><para>This circuit interpolates the downconverted sample (using the NCO developed by the Costas loop) every mu samples, then it finds the sampling error based on this and the past symbols and the decision made on the samples. Like the phase error detector, there are optimized decision algorithms for BPSK and QPKS, but 8PSK uses another brute force computation against all possible symbols. The modifications to the M&amp;M used here reduce self-noise. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1467">
+      <node id="2540">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1468" relation="public-inheritance">
+        <childnode refid="2541" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1465">
+      <node id="2538">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1466" relation="public-inheritance">
+        <childnode refid="2539" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1464">
+      <node id="2537">
         <label>digital_mpsk_receiver_cc</label>
         <link refid="classdigital__mpsk__receiver__cc"/>
-        <childnode refid="1465" relation="public-inheritance">
+        <childnode refid="2538" relation="public-inheritance">
         </childnode>
-        <childnode refid="1469" relation="public-inheritance">
+        <childnode refid="2542" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1468">
+      <node id="2541">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1469">
+      <node id="2542">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1466">
+      <node id="2539">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1467" relation="public-inheritance">
+        <childnode refid="2540" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1473">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="1474" relation="public-inheritance">
+      <node id="2563">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="2557" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1471">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="1472" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1470">
-        <label>digital_mpsk_receiver_cc</label>
-        <link refid="classdigital__mpsk__receiver__cc"/>
-        <childnode refid="1471" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1479" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1475">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="2556">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1476" relation="usage">
+        <childnode refid="2557" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1478">
+      <node id="2568">
+        <label>T</label>
+      </node>
+      <node id="2546">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="2547" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2557">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="2558" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2565">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="2560">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="2544">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="2545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2553" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="2553">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2554" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2567">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2568" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2554">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="2555" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="2564" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="2566" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="2571">
+        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="2543">
+        <label>digital_mpsk_receiver_cc</label>
+        <link refid="classdigital__mpsk__receiver__cc"/>
+        <childnode refid="2544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2569" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2570" relation="usage">
+          <edgelabel>d_interp</edgelabel>
+        </childnode>
+        <childnode refid="2572" relation="usage">
+          <edgelabel>d_c_2T</edgelabel>
+          <edgelabel>d_c_1T</edgelabel>
+          <edgelabel>d_c_0T</edgelabel>
+          <edgelabel>d_p_2T</edgelabel>
+          <edgelabel>d_p_1T</edgelabel>
+          <edgelabel>d_p_0T</edgelabel>
+        </childnode>
+        <childnode refid="2573" relation="usage">
+          <edgelabel>d_constellation</edgelabel>
+        </childnode>
+      </node>
+      <node id="2561">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="2562" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2573">
+        <label>std::vector&lt; gr_complex &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="2574" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2548">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2549" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2559">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="2560" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="2561" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="2563" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="2552">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1474">
+      <node id="2555">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="2556" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2547">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1479">
+      <node id="2570">
+        <label>gri_mmse_fir_interpolator_cc</label>
+        <link refid="classgri__mmse__fir__interpolator__cc"/>
+        <childnode refid="2571" relation="usage">
+          <edgelabel>filters</edgelabel>
+        </childnode>
+      </node>
+      <node id="2574">
+        <label>std::complex</label>
+      </node>
+      <node id="2558">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2559" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2562">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="2564">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="2565" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="2569">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1476">
+      <node id="2566">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="2567" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2549">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="2550" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="1472">
+      <node id="2545">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1473" relation="public-inheritance">
+        <childnode refid="2546" relation="public-inheritance">
         </childnode>
-        <childnode refid="1475" relation="usage">
+        <childnode refid="2548" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1477" relation="usage">
+        <childnode refid="2551" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1477">
+      <node id="2572">
+        <label>std::complex&lt; float &gt;</label>
+      </node>
+      <node id="2550">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="2551">
         <label>std::string</label>
-        <childnode refid="1478" relation="public-inheritance">
+        <childnode refid="2552" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1291,7 +1450,7 @@ This decision maker is a simple slicer function that makes a decision on the sym
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_is_unaligned</name></member>
       <member refid="classgri__control__loop_1a35b2e90ed2b8a1a757f550e76d4a81c8" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_loop_bandwidth</name></member>
       <member refid="classdigital__mpsk__receiver__cc_1a80da2b745a4a80e9716f972dc89266d6" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_modulation_order</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_msg_handler</name></member>
       <member refid="classdigital__mpsk__receiver__cc_1a8b54df22ac8ab9260a79e5b805d4487e" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_mu</name></member>
       <member refid="classdigital__mpsk__receiver__cc_1acb44184ada75462c1ebdc3d9a269e697" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_omega</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>digital_mpsk_receiver_cc</scope><name>set_output_multiple</name></member>

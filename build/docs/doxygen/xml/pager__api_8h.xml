@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="pager__api_8h" kind="file">
     <compoundname>pager_api.h</compoundname>
     <includes refid="attributes_8h" local="no">gruel/attributes.h</includes>
@@ -9,27 +9,25 @@
     <includedby refid="pager__flex__sync_8h" local="no">pager_flex_sync.h</includedby>
     <includedby refid="pager__slicer__fb_8h" local="no">pager_slicer_fb.h</includedby>
     <incdepgraph>
-      <node id="15089">
+      <node id="15090">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="15088">
+      <node id="15089">
         <label>pager_api.h</label>
         <link refid="pager_api.h"/>
-        <childnode refid="15089" relation="include">
+        <childnode refid="15090" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="15093">
+      <node id="15094">
         <label>pager_flex_parse.h</label>
         <link refid="pager__flex__parse_8h_source"/>
       </node>
-      <node id="15090">
+      <node id="15091">
         <label>pager_api.h</label>
         <link refid="pager_api.h"/>
-        <childnode refid="15091" relation="include">
-        </childnode>
         <childnode refid="15092" relation="include">
         </childnode>
         <childnode refid="15093" relation="include">
@@ -38,20 +36,22 @@
         </childnode>
         <childnode refid="15095" relation="include">
         </childnode>
+        <childnode refid="15096" relation="include">
+        </childnode>
       </node>
-      <node id="15091">
+      <node id="15092">
         <label>pager_flex_deinterleave.h</label>
         <link refid="pager__flex__deinterleave_8h"/>
       </node>
-      <node id="15095">
+      <node id="15096">
         <label>pager_slicer_fb.h</label>
         <link refid="pager__slicer__fb_8h"/>
       </node>
-      <node id="15094">
+      <node id="15095">
         <label>pager_flex_sync.h</label>
         <link refid="pager__flex__sync_8h"/>
       </node>
-      <node id="15092">
+      <node id="15093">
         <label>pager_flex_frame.h</label>
         <link refid="pager__flex__frame_8h"/>
       </node>
@@ -59,7 +59,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="pager__api_8h_1a0466fe431406887375cfa789a185150e" prot="public" static="no">
         <name>PAGER_API</name>
-        <initializer><ref refid="attributes_8h_1a17b9cb3c185c92af4799ec9b0a38f3c1" kindref="member">__GR_ATTR_IMPORT</ref></initializer>
+        <initializer>__GR_ATTR_IMPORT</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

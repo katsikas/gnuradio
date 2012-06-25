@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="atsc__depad_8h" kind="file">
     <compoundname>atsc_depad.h</compoundname>
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="atsc__depad_8h_1aa74268be2a742293e664604f055b4367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" kindref="member">atsc_depad_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT atsc_depad_sptr atsc_make_depad</definition>
+      <memberdef kind="function" id="atsc__depad_8h_1a7272f0cd79d01b5070017939f61449bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ATSC_API <ref refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" kindref="member">atsc_depad_sptr</ref></type>
+        <definition>ATSC_API atsc_depad_sptr atsc_make_depad</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_depad</name>
         <briefdescription>
@@ -92,11 +92,11 @@
 <codeline lineno="28" refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classatsc__depad" kindref="compound" tooltip="depad mpeg ts packets from 256 byte atsc_mpeg_packet to 188 byte charinput: atsc_mpeg_packet; output:...">atsc_depad</ref>;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;atsc_depad&gt;<sp/><ref refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" kindref="member">atsc_depad_sptr</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" kindref="member">atsc_depad_sptr</ref><sp/><ref refid="atsc__depad_8h_1aa74268be2a742293e664604f055b4367" kindref="member">atsc_make_depad</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" kindref="member">atsc_depad_sptr</ref><sp/><ref refid="atsc__depad_8h_1a7272f0cd79d01b5070017939f61449bb" kindref="member">atsc_make_depad</ref>();</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39" refid="classatsc__depad" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="classatsc__depad" kindref="compound" tooltip="depad mpeg ts packets from 256 byte atsc_mpeg_packet to 188 byte charinput: atsc_mpeg_packet; output:...">atsc_depad</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_interpolator</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" kindref="member">atsc_depad_sptr</ref><sp/><ref refid="atsc__depad_8h_1aa74268be2a742293e664604f055b4367" kindref="member">atsc_make_depad</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__depad_8h_1ac935780639dc53ea9e2112855e2ff964" kindref="member">atsc_depad_sptr</ref><sp/><ref refid="atsc__depad_8h_1a7272f0cd79d01b5070017939f61449bb" kindref="member">atsc_make_depad</ref>();</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classatsc__depad" kindref="compound" tooltip="depad mpeg ts packets from 256 byte atsc_mpeg_packet to 188 byte charinput: atsc_mpeg_packet; output:...">atsc_depad</ref>();</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>

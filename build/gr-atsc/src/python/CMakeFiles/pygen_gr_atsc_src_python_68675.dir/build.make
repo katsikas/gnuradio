@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_atsc_src_python_68675.
-
-# Include the progress variables for this target.
-include gr-atsc/src/python/CMakeFiles/pygen_gr_atsc_src_python_68675.dir/progress.make
 
 gr-atsc/src/python/CMakeFiles/pygen_gr_atsc_src_python_68675: gr-atsc/src/python/btl-fsd.py.exe
 gr-atsc/src/python/CMakeFiles/pygen_gr_atsc_src_python_68675: gr-atsc/src/python/fpll.py.exe
@@ -51,27 +51,27 @@ gr-atsc/src/python/CMakeFiles/pygen_gr_atsc_src_python_68675: gr-atsc/src/python
 gr-atsc/src/python/btl-fsd.py.exe: ../gr-atsc/src/python/btl-fsd.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin btl-fsd.py"
-	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/btl-fsd.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/btl-fsd.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/btl-fsd.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/btl-fsd.py' ) .read ( ) ) "
 
 gr-atsc/src/python/fpll.py.exe: ../gr-atsc/src/python/fpll.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin fpll.py"
-	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/fpll.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/fpll.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/fpll.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/fpll.py' ) .read ( ) ) "
 
 gr-atsc/src/python/interp.py.exe: ../gr-atsc/src/python/interp.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin interp.py"
-	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/interp.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/interp.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/interp.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/interp.py' ) .read ( ) ) "
 
 gr-atsc/src/python/xlate.py.exe: ../gr-atsc/src/python/xlate.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin xlate.py"
-	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/xlate.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/xlate.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/xlate.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/xlate.py' ) .read ( ) ) "
 
 gr-atsc/src/python/viterbi-out.py.exe: ../gr-atsc/src/python/viterbi-out.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin viterbi-out.py"
-	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/viterbi-out.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/viterbi-out.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-atsc/src/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-atsc/src/python/viterbi-out.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-atsc/src/python/viterbi-out.py' ) .read ( ) ) "
 
 pygen_gr_atsc_src_python_68675: gr-atsc/src/python/CMakeFiles/pygen_gr_atsc_src_python_68675
 pygen_gr_atsc_src_python_68675: gr-atsc/src/python/btl-fsd.py.exe

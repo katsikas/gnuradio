@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classatsci__fs__checker__naive" kind="class" prot="public">
     <compoundname>atsci_fs_checker_naive</compoundname>
     <basecompoundref refid="classatsci__fs__checker" prot="public" virt="non-virtual">atsci_fs_checker</basecompoundref>
@@ -263,7 +263,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_fs_checker_naive.h" line="59"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__fs__checker__naive_1a5b1d57432945874baa43624bd07f2d70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_fs_checker_naive::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -277,7 +277,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_fs_checker_naive.h" line="62"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__fs__checker__naive_1ad17bd92ef8fc404335894be3c002ed25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsci_fs_checker_naive::filter</definition>
         <argsstring>(float input_sample, atsc::syminfo input_tag, float *output_sample, atsc::syminfo *output_tag)</argsstring>
         <name>filter</name>
@@ -326,25 +326,32 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="347">
+      <node id="662">
         <label>atsci_fs_checker_naive</label>
         <link refid="classatsci__fs__checker__naive"/>
-        <childnode refid="348" relation="public-inheritance">
+        <childnode refid="663" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="348">
+      <node id="663">
         <label>atsci_fs_checker</label>
         <link refid="classatsci__fs__checker"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="349">
+      <node id="666">
+        <label>atsc::syminfo</label>
+        <link refid="structatsc_1_1syminfo"/>
+      </node>
+      <node id="664">
         <label>atsci_fs_checker_naive</label>
         <link refid="classatsci__fs__checker__naive"/>
-        <childnode refid="350" relation="public-inheritance">
+        <childnode refid="665" relation="public-inheritance">
+        </childnode>
+        <childnode refid="666" relation="usage">
+          <edgelabel>d_tag_sr</edgelabel>
         </childnode>
       </node>
-      <node id="350">
+      <node id="665">
         <label>atsci_fs_checker</label>
         <link refid="classatsci__fs__checker"/>
       </node>

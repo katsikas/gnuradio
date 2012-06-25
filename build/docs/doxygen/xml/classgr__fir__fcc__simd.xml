@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__fir__fcc__simd" kind="class" prot="public">
     <compoundname>gr_fir_fcc_simd</compoundname>
     <derivedcompoundref refid="classgr__fir__fcc__3dnow" prot="public" virt="non-virtual">gr_fir_fcc_3dnow</derivedcompoundref>
@@ -7,7 +7,7 @@
     <includes refid="gr__fir__fcc__simd_8h" local="no">gr_fir_fcc_simd.h</includes>
       <sectiondef kind="protected-type">
       <memberdef kind="typedef" id="classgr__fir__fcc__simd_1a14a79e1e8b9284727079c214a1ed68c7" prot="protected" static="no">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref>(*</type>
+        <type>void(*</type>
         <definition>typedef void(* gr_fir_fcc_simd::fcomplex_dotprod_t)(const float *input, const float *taps, unsigned n_2_complex_blocks, float *result)</definition>
         <argsstring>)(const float *input, const float *taps, unsigned n_2_complex_blocks, float *result)</argsstring>
         <name>fcomplex_dotprod_t</name>
@@ -68,7 +68,7 @@
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;taps)</argsstring>
         <name>gr_fir_fcc_simd</name>
         <param>
-          <type>const std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -93,12 +93,12 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_fcc_simd.h" line="59"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fir__fcc__simd_1addafd951a10d29910605186df87db899" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_fir_fcc_simd::set_taps</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;taps)</argsstring>
         <name>set_taps</name>
         <param>
-          <type>const std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -133,19 +133,19 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3648">
+      <node id="6376">
         <label>gr_fir_fcc_sse</label>
         <link refid="classgr__fir__fcc__sse"/>
-        <childnode refid="3646" relation="public-inheritance">
+        <childnode refid="6374" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3647">
+      <node id="6375">
         <label>gr_fir_fcc_3dnow</label>
         <link refid="classgr__fir__fcc__3dnow"/>
-        <childnode refid="3646" relation="public-inheritance">
+        <childnode refid="6374" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3646">
+      <node id="6374">
         <label>gr_fir_fcc_simd</label>
         <link refid="classgr__fir__fcc__simd"/>
       </node>
