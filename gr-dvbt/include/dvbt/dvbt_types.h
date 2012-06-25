@@ -146,7 +146,7 @@ public:
 
   	bool operator!= (const dvbt_mpeg_packet_rs_encoded &other) const {
     		return !(std::memcmp (data, other.data, sizeof (data)) == 0);
-  	}	
+  	}
 };
 
 #endif /* _DVBT_TYPES_H_ */

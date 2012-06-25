@@ -21,6 +21,7 @@
  */
 
 
+#include <stdio.h>
 #include <dvbt/dvbti_data_interleaver.h>
 
 
@@ -32,8 +33,13 @@ dvbti_data_interleaver::interleave (dvbt_mpeg_packet_rs_encoded &out,
   	plinfo::sanity_check (in.pli);
 
   	out.pli = in.pli;			// copy pipeline info
-  	/*if (in.pli.first_regular_seg_p ())	// reset commutator if required
+  	/*if (in.pli.get_packets() %8 == 0)	// reset commutator if required
     		sync ();*/
+
+	if(in.data[0] == MPEG_INVERTED_SYNC_BYTE){
+		//printf("mpikeeeeee \n");
+		sync ();
+	}
 
   	transform (out.data, in.data, sizeof (in.data));
 }
@@ -47,13 +53,16 @@ dvbti_data_deinterleaver::deinterleave (dvbt_mpeg_packet_rs_encoded &out,
   	plinfo::sanity_check (in.pli);
 
   	// reset commutator if required using INPUT pipeline info
-  	/*if (in.pli.first_regular_seg_p ())
+  	/*if (in.pli.get_packets() %8 == 0)
     		sync ();
 	*/
+	if(in.data[0] == MPEG_INVERTED_SYNC_BYTE)
+                sync ();
 
-  	// remap OUTPUT pipeline info to reflect 52 data segment end-to-end delay
 
-  	plinfo::delay (out.pli, in.pli, 52);
+  	// remap OUTPUT pipeline info to reflect 17 data segment end-to-end delay
+
+  	plinfo::delay (out.pli, in.pli, 17);
 
   	// now do the actual deinterleaving
 
