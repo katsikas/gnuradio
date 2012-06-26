@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="quantise_8h" kind="file">
     <compoundname>quantise.h</compoundname>
       <sectiondef kind="define">
@@ -16,7 +16,7 @@
       </memberdef>
       <memberdef kind="define" id="quantise_8h_1a7e06332d7ea01ed08f8f455df41272bb" prot="public" static="no">
         <name>WO_LEVELS</name>
-        <initializer>(1&lt;&lt;WO_BITS)</initializer>
+        <initializer>(1&lt;&lt;<ref refid="quantise_8h_1a35e21391e1b7e4df6bb383c552d5541e" kindref="member">WO_BITS</ref>)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -38,7 +38,7 @@
       </memberdef>
       <memberdef kind="define" id="quantise_8h_1a1e2787c64ea7b91af74449ba708a2d7c" prot="public" static="no">
         <name>E_LEVELS</name>
-        <initializer>(1&lt;&lt;E_BITS)</initializer>
+        <initializer>(1&lt;&lt;<ref refid="quantise_8h_1a4ef43416c3082b95dfc7b9b4b37ed4a7" kindref="member">E_BITS</ref>)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -72,7 +72,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="quantise_8h_1ac5e5ac486c99c05b4643a32ffffa1342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void quantise_init</definition>
         <argsstring>()</argsstring>
         <name>quantise_init</name>
@@ -125,7 +125,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="38"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1a27e08518f3f10364fdccfed5143ddabe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void aks_to_M2</definition>
         <argsstring>(float ak[], int order, MODEL *model, float E, float *snr, int dump)</argsstring>
         <name>aks_to_M2</name>
@@ -197,7 +197,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="43"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1a7cc136c8b47d55703d462f4374d22f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void encode_lsps</definition>
         <argsstring>(int indexes[], float lsp[], int order)</argsstring>
         <name>encode_lsps</name>
@@ -224,7 +224,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="45"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1ae399dc1b48613450d0509a9f0bb6a936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void decode_lsps</definition>
         <argsstring>(float lsp[], int indexes[], int order)</argsstring>
         <name>decode_lsps</name>
@@ -251,7 +251,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="46"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1ab60be04693bc430f953dc0ec3274264d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void lspd_quantise</definition>
         <argsstring>(float lsp[], float lsp_[], int order)</argsstring>
         <name>lspd_quantise</name>
@@ -278,7 +278,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="47"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1a141ee786c47fe0d1b63e5f6717f427a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void lspdvq_quantise</definition>
         <argsstring>(float lsp[], float lsp_[], int order)</argsstring>
         <name>lspdvq_quantise</name>
@@ -339,7 +339,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1a7db4561db183a1a1e70bc089a64caa3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void encode_amplitudes</definition>
         <argsstring>(int lsp_indexes[], int *energy_index, MODEL *model, float Sn[], float w[])</argsstring>
         <name>encode_amplitudes</name>
@@ -415,7 +415,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1a9a1318571a086d065b560c8d4b9d3fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void pack</definition>
         <argsstring>(unsigned char *bits, unsigned int *nbit, int index, unsigned int index_bits)</argsstring>
         <name>pack</name>
@@ -486,7 +486,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="69"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1a597b6feeb13fa196bcf928ebed184812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void apply_lpc_correction</definition>
         <argsstring>(MODEL *model)</argsstring>
         <name>apply_lpc_correction</name>
@@ -540,7 +540,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.h" line="77"/>
       </memberdef>
       <memberdef kind="function" id="quantise_8h_1a52eb2d5170f56428935df1e9e4273ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void bw_expand_lsps</definition>
         <argsstring>(float lsp[], int order)</argsstring>
         <name>bw_expand_lsps</name>

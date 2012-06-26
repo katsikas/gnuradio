@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsci__data__interleaver" kind="class" prot="public">
     <compoundname>atsci_data_interleaver</compoundname>
     <basecompoundref refid="classconvolutional__interleaver" prot="public" virt="non-virtual">convolutional_interleaver&lt; unsigned char &gt;</basecompoundref>
@@ -19,7 +19,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_data_interleaver.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_data_interleaver.h" bodystart="35" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__data__interleaver_1a1c2fdd4a60651792871f86fc5da01254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsci_data_interleaver::interleave</definition>
         <argsstring>(atsc_mpeg_packet_rs_encoded &amp;out, const atsc_mpeg_packet_rs_encoded &amp;in)</argsstring>
         <name>interleave</name>
@@ -45,41 +45,40 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="630">
+      <node id="318">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
       </node>
-      <node id="629">
+      <node id="317">
         <label>atsci_data_interleaver</label>
         <link refid="classatsci__data__interleaver"/>
-        <childnode refid="630" relation="public-inheritance">
+        <childnode refid="318" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="632">
+      <node id="320">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="633" relation="usage">
+        <childnode refid="321" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="634">
+      <node id="322">
         <label>interleaver_fifo&lt; unsigned char &gt;</label>
         <link refid="classinterleaver__fifo"/>
       </node>
-      <node id="633">
+      <node id="321">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="634" relation="usage">
+        <childnode refid="322" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="631">
+      <node id="319">
         <label>atsci_data_interleaver</label>
         <link refid="classatsci__data__interleaver"/>
-        <childnode refid="632" relation="public-inheritance">
+        <childnode refid="320" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -87,17 +86,24 @@
     <listofallmembers>
       <member refid="classatsci__data__interleaver_1a785aa6bf56cf4d1fe8babe004093ef0d" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>atsci_data_interleaver</name></member>
       <member refid="classconvolutional__interleaver_1ac01f306da38de29b1282f1e5cc5e51c7" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>convolutional_interleaver</name></member>
+      <member refid="classconvolutional__interleaver_1ac01f306da38de29b1282f1e5cc5e51c7" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>convolutional_interleaver</name></member>
+      <member refid="classconvolutional__interleaver_1a95147618a994510cdc46db6f0ee23e27" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>end_to_end_delay</name></member>
       <member refid="classconvolutional__interleaver_1a95147618a994510cdc46db6f0ee23e27" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>end_to_end_delay</name></member>
       <member refid="classatsci__data__interleaver_1a1c2fdd4a60651792871f86fc5da01254" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>interleave</name></member>
       <member refid="classconvolutional__interleaver_1a0ad9833447e269c5e527c4bfdf6ec252" prot="protected" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>m_commutator</name></member>
-      <member refid="classconvolutional__interleaver_1a361938024041b40e650ff6ad3492d0d7" prot="protected" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>m_fifo</name></member>
+      <member refid="classconvolutional__interleaver_1aad6a006467d51a669510251e8f6076fa" prot="protected" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>m_fifo</name></member>
       <member refid="classconvolutional__interleaver_1a64583ae8484756fba1845db8adee1bc7" prot="protected" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>m_fifo_size_incr</name></member>
       <member refid="classconvolutional__interleaver_1a0e5b1c5a67032ce5ec79291e8bc957d1" prot="protected" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>m_nbanks</name></member>
       <member refid="classconvolutional__interleaver_1a758195fcfe60037184a30e39e718126a" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>reset</name></member>
+      <member refid="classconvolutional__interleaver_1a758195fcfe60037184a30e39e718126a" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>reset</name></member>
+      <member refid="classconvolutional__interleaver_1ad47cdb2855d94872bea06fec637b82eb" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>sync</name></member>
       <member refid="classconvolutional__interleaver_1ad47cdb2855d94872bea06fec637b82eb" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>sync</name></member>
       <member refid="classconvolutional__interleaver_1af49e21b50b9b59f0faf0d08d447dd67a" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>transform</name></member>
       <member refid="classconvolutional__interleaver_1afe0e221849f0feb4796f620e1858231b" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>transform</name></member>
+      <member refid="classconvolutional__interleaver_1af49e21b50b9b59f0faf0d08d447dd67a" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>transform</name></member>
+      <member refid="classconvolutional__interleaver_1afe0e221849f0feb4796f620e1858231b" prot="public" virt="non-virtual"><scope>atsci_data_interleaver</scope><name>transform</name></member>
       <member refid="classconvolutional__interleaver_1a4fb48a3b97910049994ea2be0bc91c40" prot="public" virt="virtual"><scope>atsci_data_interleaver</scope><name>~convolutional_interleaver</name></member>
+      <member refid="classconvolutional__interleaver_1a74961fe1b9744a1182a7c3b91f63e8d5" prot="public" virt="virtual"><scope>atsci_data_interleaver</scope><name>~convolutional_interleaver</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

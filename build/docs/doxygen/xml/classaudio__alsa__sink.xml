@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classaudio__alsa__sink" kind="class" prot="public">
     <compoundname>audio_alsa_sink</compoundname>
     <basecompoundref refid="classaudio__sink" prot="public" virt="non-virtual">audio_sink</basecompoundref>
@@ -231,7 +231,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classaudio__alsa__sink_1ae5e0131617cc87e221ddb8d1e0967e28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void audio_alsa_sink::output_error_msg</definition>
         <argsstring>(const char *msg, int err)</argsstring>
         <name>output_error_msg</name>
@@ -252,7 +252,7 @@
         <location file="/home/katsikas/gnuradio/gr-audio/lib/alsa/audio_alsa_sink.h" line="69"/>
       </memberdef>
       <memberdef kind="function" id="classaudio__alsa__sink_1adb562d19fb770acd09b56c647f17ebb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void audio_alsa_sink::bail</definition>
         <argsstring>(const char *msg, int err)</argsstring>
         <name>bail</name>
@@ -362,11 +362,11 @@ This function is called by the runtime system whenever the topology changes. Mos
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -385,7 +385,7 @@ This function is called by the runtime system whenever the topology changes. Mos
         <argsstring>(const void *buffer, unsigned nframes, unsigned sizeof_frame)</argsstring>
         <name>write_buffer</name>
         <param>
-          <type>const void *</type>
+          <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
           <declname>buffer</declname>
         </param>
         <param>
@@ -414,11 +414,11 @@ This function is called by the runtime system whenever the topology changes. Mos
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -439,11 +439,11 @@ This function is called by the runtime system whenever the topology changes. Mos
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -464,11 +464,11 @@ This function is called by the runtime system whenever the topology changes. Mos
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -489,11 +489,11 @@ This function is called by the runtime system whenever the topology changes. Mos
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -510,242 +510,112 @@ This function is called by the runtime system whenever the topology changes. Mos
     <detaileddescription>
 <para>Input samples must be in the range [-1,1]. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="708">
+      <node id="385">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="709" relation="public-inheritance">
+        <childnode refid="386" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="705">
+      <node id="382">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="706" relation="public-inheritance">
+        <childnode refid="383" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="706">
+      <node id="383">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="707" relation="public-inheritance">
+        <childnode refid="384" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="703">
+      <node id="380">
         <label>audio_alsa_sink</label>
         <link refid="classaudio__alsa__sink"/>
-        <childnode refid="704" relation="public-inheritance">
+        <childnode refid="381" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="709">
+      <node id="386">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="704">
+      <node id="381">
         <label>audio_sink</label>
         <link refid="classaudio__sink"/>
-        <childnode refid="705" relation="public-inheritance">
+        <childnode refid="382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="707">
+      <node id="384">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="708" relation="public-inheritance">
+        <childnode refid="385" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="732">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="726" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="725">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="726" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="737">
-        <label>T</label>
-      </node>
-      <node id="715">
+      <node id="392">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="716" relation="public-inheritance">
+        <childnode refid="393" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="712">
+      <node id="389">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="713" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="726">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="727" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="734">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="729">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="713">
+      <node id="390">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="714" relation="public-inheritance">
-        </childnode>
-        <childnode refid="722" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="391" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="722">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="723" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="736">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="737" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="738">
-        <label>std::vector&lt; const void * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="723">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="724" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="733" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="735" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="730">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="731" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="717">
+      <node id="394">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="718" relation="usage">
+        <childnode refid="395" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="728">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="729" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="730" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="732" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="721">
+      <node id="397">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="724">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="725" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="710">
+      <node id="387">
         <label>audio_alsa_sink</label>
         <link refid="classaudio__alsa__sink"/>
-        <childnode refid="711" relation="public-inheritance">
-        </childnode>
-        <childnode refid="720" relation="usage">
-          <edgelabel>d_device_name</edgelabel>
-        </childnode>
-        <childnode refid="738" relation="usage">
-          <edgelabel>d_worker</edgelabel>
+        <childnode refid="388" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="716">
+      <node id="393">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="711">
+      <node id="388">
         <label>audio_sink</label>
         <link refid="classaudio__sink"/>
-        <childnode refid="712" relation="public-inheritance">
+        <childnode refid="389" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="727">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="728" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="731">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="733">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="734" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="735">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="736" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="718">
+      <node id="395">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="719" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="714">
+      <node id="391">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="715" relation="public-inheritance">
+        <childnode refid="392" relation="public-inheritance">
         </childnode>
-        <childnode refid="717" relation="usage">
+        <childnode refid="394" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="720" relation="usage">
+        <childnode refid="396" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="719">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="720">
+      <node id="396">
         <label>std::string</label>
-        <childnode refid="721" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -822,7 +692,7 @@ This function is called by the runtime system whenever the topology changes. Mos
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>audio_alsa_sink</scope><name>set_relative_rate</name></member>

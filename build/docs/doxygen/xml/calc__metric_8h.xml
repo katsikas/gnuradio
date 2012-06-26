@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="calc__metric_8h" kind="file">
     <compoundname>calc_metric.h</compoundname>
     <includes local="no">vector</includes>
@@ -7,53 +7,53 @@
     <includes refid="digital__metric__type_8h" local="no">digital_metric_type.h</includes>
     <includedby refid="trellis__siso__combined__f_8h" local="yes">trellis_siso_combined_f.h</includedby>
     <incdepgraph>
-      <node id="2226">
+      <node id="2231">
         <label>digital_metric_type.h</label>
         <link refid="digital__metric__type_8h"/>
-      </node>
-      <node id="2222">
-        <label>calc_metric.h</label>
-        <link refid="calc_metric.h"/>
-        <childnode refid="2223" relation="include">
-        </childnode>
-        <childnode refid="2224" relation="include">
-        </childnode>
-        <childnode refid="2226" relation="include">
-        </childnode>
-      </node>
-      <node id="2223">
-        <label>vector</label>
-      </node>
-      <node id="2225">
-        <label>complex</label>
-      </node>
-      <node id="2224">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="2225" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="2228">
-        <label>trellis_siso_combined_f.h</label>
-        <link refid="trellis__siso__combined__f_8h"/>
       </node>
       <node id="2227">
         <label>calc_metric.h</label>
         <link refid="calc_metric.h"/>
         <childnode refid="2228" relation="include">
         </childnode>
+        <childnode refid="2229" relation="include">
+        </childnode>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2228">
+        <label>vector</label>
+      </node>
+      <node id="2230">
+        <label>complex</label>
+      </node>
+      <node id="2229">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="2230" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2233">
+        <label>trellis_siso_combined_f.h</label>
+        <link refid="trellis__siso__combined__f_8h"/>
+      </node>
+      <node id="2232">
+        <label>calc_metric.h</label>
+        <link refid="calc_metric.h"/>
+        <childnode refid="2233" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">
-      <memberdef kind="function" id="calc__metric_8h_1a152557a23987b356ff5fcfdd68d67c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="calc__metric_8h_1ad394c7f147175f9d64a026110fca8410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void calc_metric</definition>
         <argsstring>(int O, int D, const std::vector&lt; T &gt; &amp;TABLE, const T *in, float *metric, trellis_metric_type_t type)</argsstring>
         <name>calc_metric</name>
@@ -66,7 +66,7 @@
           <declname>D</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; T &gt; &amp;</type>
+          <type>const std::vector&lt; T &gt; &amp;</type>
           <declname>TABLE</declname>
         </param>
         <param>
@@ -90,7 +90,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/calc_metric.h" line="32"/>
       </memberdef>
       <memberdef kind="function" id="calc__metric_8h_1a944b71c8605ff5b47ef3f856d0cc7ced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void calc_metric</definition>
         <argsstring>(int O, int D, const std::vector&lt; gr_complex &gt; &amp;TABLE, const gr_complex *in, float *metric, trellis_metric_type_t type)</argsstring>
         <name>calc_metric</name>
@@ -103,7 +103,7 @@
           <declname>D</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
           <declname>TABLE</declname>
         </param>
         <param>

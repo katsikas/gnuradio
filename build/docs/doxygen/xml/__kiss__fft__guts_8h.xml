@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="__kiss__fft__guts_8h" kind="file">
     <compoundname>_kiss_fft_guts.h</compoundname>
     <includes refid="kiss__fft_8h" local="yes">kiss_fft.h</includes>
@@ -86,6 +86,7 @@
         <name>C_FIXDIV</name>
         <param><defname>c</defname></param>
         <param><defname>div</defname></param>
+        <initializer>/* NOOP */</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +114,7 @@
         <param><defname>a</defname></param>
         <param><defname>op</defname></param>
         <param><defname>b</defname></param>
+        <initializer>/* noop */</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -127,8 +129,8 @@
         <param><defname>a</defname></param>
         <param><defname>b</defname></param>
         <initializer>do { \
-	    CHECK_OVERFLOW_OP((a).r,+,(b).r)\
-	    CHECK_OVERFLOW_OP((a).i,+,(b).i)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((a).r,+,(b).r)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((a).i,+,(b).i)\
 	    (res).r=(a).r+(b).r;  (res).i=(a).i+(b).i; \
     }while(0)</initializer>
         <briefdescription>
@@ -145,8 +147,8 @@
         <param><defname>a</defname></param>
         <param><defname>b</defname></param>
         <initializer>do { \
-	    CHECK_OVERFLOW_OP((a).r,-,(b).r)\
-	    CHECK_OVERFLOW_OP((a).i,-,(b).i)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((a).r,-,(b).r)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((a).i,-,(b).i)\
 	    (res).r=(a).r-(b).r;  (res).i=(a).i-(b).i; \
     }while(0)</initializer>
         <briefdescription>
@@ -162,8 +164,8 @@
         <param><defname>res</defname></param>
         <param><defname>a</defname></param>
         <initializer>do { \
-	    CHECK_OVERFLOW_OP((res).r,+,(a).r)\
-	    CHECK_OVERFLOW_OP((res).i,+,(a).i)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((res).r,+,(a).r)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((res).i,+,(a).i)\
 	    (res).r += (a).r;  (res).i += (a).i;\
     }while(0)</initializer>
         <briefdescription>
@@ -179,8 +181,8 @@
         <param><defname>res</defname></param>
         <param><defname>a</defname></param>
         <initializer>do {\
-	    CHECK_OVERFLOW_OP((res).r,-,(a).r)\
-	    CHECK_OVERFLOW_OP((res).i,-,(a).i)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((res).r,-,(a).r)\
+	    <ref refid="__kiss__fft__guts_8h_1a664c056b2a7093f88391d7db3558aa24" kindref="member">CHECK_OVERFLOW_OP</ref>((res).i,-,(a).i)\
 	    (res).r -= (a).r;  (res).i -= (a).i; \
     }while(0)</initializer>
         <briefdescription>
@@ -232,8 +234,8 @@
         <param><defname>x</defname></param>
         <param><defname>phase</defname></param>
         <initializer>do{ \
-		(x)-&gt;r = KISS_FFT_COS(phase);\
-		(x)-&gt;i = KISS_FFT_SIN(phase);\
+		(x)-&gt;r = <ref refid="__kiss__fft__guts_8h_1a2e780e8fe86d9c3e7b6a469f61aaf5d1" kindref="member">KISS_FFT_COS</ref>(phase);\
+		(x)-&gt;i = <ref refid="__kiss__fft__guts_8h_1a2d4fc93cde15512f1946f364d5271dd3" kindref="member">KISS_FFT_SIN</ref>(phase);\
 	}while(0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -258,7 +260,7 @@
       <memberdef kind="define" id="__kiss__fft__guts_8h_1abd992e9886fb74f97bf0b6e057fe08a5" prot="public" static="no">
         <name>KISS_FFT_TMP_ALLOC</name>
         <param><defname>nbytes</defname></param>
-        <initializer>KISS_FFT_MALLOC(nbytes)</initializer>
+        <initializer><ref refid="kiss__fft_8h_1aa6e24524bfa0247ac606c950e43a9a4d" kindref="member">KISS_FFT_MALLOC</ref>(nbytes)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -270,7 +272,7 @@
       <memberdef kind="define" id="__kiss__fft__guts_8h_1ab915c572fe96a51a3528b7419248b655" prot="public" static="no">
         <name>KISS_FFT_TMP_FREE</name>
         <param><defname>ptr</defname></param>
-        <initializer>KISS_FFT_FREE(ptr)</initializer>
+        <initializer><ref refid="kiss__fft_8h_1a167bff53d1f15bc13289353390b7faae" kindref="member">KISS_FFT_FREE</ref>(ptr)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

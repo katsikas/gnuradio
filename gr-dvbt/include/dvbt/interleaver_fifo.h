@@ -65,6 +65,7 @@ protected:
 template<class symbol_type>
 interleaver_fifo<symbol_type>::interleaver_fifo (unsigned int size)
 {
+	//printf("size = %d \n",size);
   	m_size = size;
   	m_position = 0;
   	m_fifo = new symbol_type[size];

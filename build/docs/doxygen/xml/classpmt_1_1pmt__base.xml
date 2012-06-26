@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classpmt_1_1pmt__base" kind="class" prot="public">
     <compoundname>pmt::pmt_base</compoundname>
     <derivedcompoundref refid="classpmt_1_1pmt__any" prot="public" virt="non-virtual">pmt::pmt_any</derivedcompoundref>
@@ -92,10 +92,10 @@
         <definition>virtual bool pmt::pmt_base::is_number</definition>
         <argsstring>() const </argsstring>
         <name>is_number</name>
-        <reimplementedby refid="classpmt_1_1pmt__complex_1ad99809d63391bca08b0d3642b0547f97">is_number</reimplementedby>
-        <reimplementedby refid="classpmt_1_1pmt__real_1ae40dddf78f99a9f141d6a3078b45ed09">is_number</reimplementedby>
-        <reimplementedby refid="classpmt_1_1pmt__uint64_1a0fd0d49abcf236465b498a1e9f1152ce">is_number</reimplementedby>
         <reimplementedby refid="classpmt_1_1pmt__integer_1a49f79239d8d2c1504d18e904b208c4e2">is_number</reimplementedby>
+        <reimplementedby refid="classpmt_1_1pmt__uint64_1a0fd0d49abcf236465b498a1e9f1152ce">is_number</reimplementedby>
+        <reimplementedby refid="classpmt_1_1pmt__real_1ae40dddf78f99a9f141d6a3078b45ed09">is_number</reimplementedby>
+        <reimplementedby refid="classpmt_1_1pmt__complex_1ad99809d63391bca08b0d3642b0547f97">is_number</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -262,6 +262,7 @@
         <definition>virtual bool pmt::pmt_base::is_u8vector</definition>
         <argsstring>() const </argsstring>
         <name>is_u8vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__u8vector_1a634ad8b4dca0de147006491b37d61338">is_u8vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -275,6 +276,7 @@
         <definition>virtual bool pmt::pmt_base::is_s8vector</definition>
         <argsstring>() const </argsstring>
         <name>is_s8vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__s8vector_1ac10b6b255b8d751ed84021f94d24e29b">is_s8vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -288,6 +290,7 @@
         <definition>virtual bool pmt::pmt_base::is_u16vector</definition>
         <argsstring>() const </argsstring>
         <name>is_u16vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__u16vector_1af6a8f795181cebd88fbe98d1205bf27f">is_u16vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -301,6 +304,7 @@
         <definition>virtual bool pmt::pmt_base::is_s16vector</definition>
         <argsstring>() const </argsstring>
         <name>is_s16vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__s16vector_1a98898dc8cab9cb4a77bd079db1304666">is_s16vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -314,6 +318,7 @@
         <definition>virtual bool pmt::pmt_base::is_u32vector</definition>
         <argsstring>() const </argsstring>
         <name>is_u32vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__u32vector_1a705b448a8fb6f91f228fc1a7df0e6dd0">is_u32vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -327,6 +332,7 @@
         <definition>virtual bool pmt::pmt_base::is_s32vector</definition>
         <argsstring>() const </argsstring>
         <name>is_s32vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__s32vector_1a66b4d3163e2ab6b61ebac8f530126a3a">is_s32vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -340,6 +346,7 @@
         <definition>virtual bool pmt::pmt_base::is_u64vector</definition>
         <argsstring>() const </argsstring>
         <name>is_u64vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__u64vector_1a4d7705adb698cf2a04f0491b54a73d0c">is_u64vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -353,6 +360,7 @@
         <definition>virtual bool pmt::pmt_base::is_s64vector</definition>
         <argsstring>() const </argsstring>
         <name>is_s64vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__s64vector_1a010dc2a767b66bb6a12036aff135dc98">is_s64vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -366,6 +374,7 @@
         <definition>virtual bool pmt::pmt_base::is_f32vector</definition>
         <argsstring>() const </argsstring>
         <name>is_f32vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__f32vector_1a5faeebe3236b1d907bf29ed39ac8620e">is_f32vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -379,6 +388,7 @@
         <definition>virtual bool pmt::pmt_base::is_f64vector</definition>
         <argsstring>() const </argsstring>
         <name>is_f64vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__f64vector_1abd1198a7194c53cea3c38c44fa73efa6">is_f64vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -392,6 +402,7 @@
         <definition>virtual bool pmt::pmt_base::is_c32vector</definition>
         <argsstring>() const </argsstring>
         <name>is_c32vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__c32vector_1a170747608495953fba7e1e2c74a5a207">is_c32vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -405,6 +416,7 @@
         <definition>virtual bool pmt::pmt_base::is_c64vector</definition>
         <argsstring>() const </argsstring>
         <name>is_c64vector</name>
+        <reimplementedby refid="classpmt_1_1pmt__c64vector_1a554a2a2deb85a2f6e0e369c2bf71fdd7">is_c64vector</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -416,7 +428,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classpmt_1_1pmt__base_1ad14131bcf9939d78fd055307b22b34a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend void</type>
+        <type>friend <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void intrusive_ptr_add_ref</definition>
         <argsstring>(pmt_base *p)</argsstring>
         <name>intrusive_ptr_add_ref</name>
@@ -433,7 +445,7 @@
         <location file="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" line="74"/>
       </memberdef>
       <memberdef kind="friend" id="classpmt_1_1pmt__base_1ae5f9ec3f2c0186fd836bd1051c7e948b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend void</type>
+        <type>friend <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void intrusive_ptr_release</definition>
         <argsstring>(pmt_base *p)</argsstring>
         <name>intrusive_ptr_release</name>
@@ -455,80 +467,152 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11787">
+      <node id="6955">
         <label>pmt::pmt_symbol</label>
         <link refid="classpmt_1_1pmt__symbol"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11790">
+      <node id="6958">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11785">
+      <node id="6953">
         <label>pmt::pmt_pair</label>
         <link refid="classpmt_1_1pmt__pair"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11783">
+      <node id="6963">
+        <label>pmt::pmt_s16vector</label>
+        <link refid="classpmt_1_1pmt__s16vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6951">
         <label>pmt::pmt_integer</label>
         <link refid="classpmt_1_1pmt__integer"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11784">
+      <node id="6952">
         <label>pmt::pmt_null</label>
         <link refid="classpmt_1_1pmt__null"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11789">
+      <node id="6966">
+        <label>pmt::pmt_s8vector</label>
+        <link refid="classpmt_1_1pmt__s8vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6968">
+        <label>pmt::pmt_u32vector</label>
+        <link refid="classpmt_1_1pmt__u32vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6969">
+        <label>pmt::pmt_u64vector</label>
+        <link refid="classpmt_1_1pmt__u64vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6961">
+        <label>pmt::pmt_f32vector</label>
+        <link refid="classpmt_1_1pmt__f32vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6962">
+        <label>pmt::pmt_f64vector</label>
+        <link refid="classpmt_1_1pmt__f64vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6957">
         <label>pmt::pmt_uint64</label>
         <link refid="classpmt_1_1pmt__uint64"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11781">
+      <node id="6949">
         <label>pmt::pmt_bool</label>
         <link refid="classpmt_1_1pmt__bool"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11779">
+      <node id="6947">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="11791">
+      <node id="6959">
+        <label>pmt::pmt_c32vector</label>
+        <link refid="classpmt_1_1pmt__c32vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6967">
+        <label>pmt::pmt_u16vector</label>
+        <link refid="classpmt_1_1pmt__u16vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6971">
         <label>pmt::pmt_vector</label>
         <link refid="classpmt_1_1pmt__vector"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11786">
+      <node id="6960">
+        <label>pmt::pmt_c64vector</label>
+        <link refid="classpmt_1_1pmt__c64vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6954">
         <label>pmt::pmt_real</label>
         <link refid="classpmt_1_1pmt__real"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11780">
+      <node id="6964">
+        <label>pmt::pmt_s32vector</label>
+        <link refid="classpmt_1_1pmt__s32vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6965">
+        <label>pmt::pmt_s64vector</label>
+        <link refid="classpmt_1_1pmt__s64vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6948">
         <label>pmt::pmt_any</label>
         <link refid="classpmt_1_1pmt__any"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11788">
+      <node id="6970">
+        <label>pmt::pmt_u8vector</label>
+        <link refid="classpmt_1_1pmt__u8vector"/>
+        <childnode refid="6958" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6956">
         <label>pmt::pmt_tuple</label>
         <link refid="classpmt_1_1pmt__tuple"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11782">
+      <node id="6950">
         <label>pmt::pmt_complex</label>
         <link refid="classpmt_1_1pmt__complex"/>
-        <childnode refid="11779" relation="public-inheritance">
+        <childnode refid="6947" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

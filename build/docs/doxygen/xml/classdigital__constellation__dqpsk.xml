@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__constellation__dqpsk" kind="class" prot="public">
     <compoundname>digital_constellation_dqpsk</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
@@ -39,7 +39,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__constellation__dqpsk_1ae6e2d07e4940cc4854eec7288bc936aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_dqpsk_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_dqpsk_sptr</ref></type>
         <definition>DIGITAL_API digital_constellation_dqpsk_sptr digital_make_constellation_dqpsk</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_dqpsk</name>
@@ -57,47 +57,45 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1834">
+      <node id="1104">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="1833">
+      <node id="1103">
         <label>digital_constellation_dqpsk</label>
         <link refid="classdigital__constellation__dqpsk"/>
-        <childnode refid="1834" relation="public-inheritance">
+        <childnode refid="1104" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1838">
+      <node id="1108">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="1839" relation="usage">
+        <childnode refid="1109" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1837">
+      <node id="1107">
         <label>std::vector&lt; unsigned int &gt;</label>
-        <link refid="classstd_1_1vector"/>
       </node>
-      <node id="1836">
+      <node id="1106">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="1837" relation="usage">
+        <childnode refid="1107" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="1838" relation="usage">
+        <childnode refid="1108" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="1835">
+      <node id="1105">
         <label>digital_constellation_dqpsk</label>
         <link refid="classdigital__constellation__dqpsk"/>
-        <childnode refid="1836" relation="public-inheritance">
+        <childnode refid="1106" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1839">
+      <node id="1109">
         <label>std::complex</label>
       </node>
     </collaborationgraph>

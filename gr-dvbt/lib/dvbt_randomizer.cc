@@ -66,7 +66,6 @@ dvbt_randomizer::work (int noutput_items,
 		// sanity check incoming data.
 		if(( (packets + i ) % 8) != 0){
                         out[i].data[0] = MPEG_SYNC_BYTE;
-			out[i].data[1] = out[i].pli.get_flag01();
 			core_rand.next_state(1);
                 }
                 else{

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gnuradio_core_src_examples_volk_benchmark_7e5ca.
+
+# Include the progress variables for this target.
+include gnuradio-core/src/examples/volk_benchmark/CMakeFiles/pygen_gnuradio_core_src_examples_volk_benchmark_7e5ca.dir/progress.make
 
 gnuradio-core/src/examples/volk_benchmark/CMakeFiles/pygen_gnuradio_core_src_examples_volk_benchmark_7e5ca: gnuradio-core/src/examples/volk_benchmark/volk_math.py.exe
 gnuradio-core/src/examples/volk_benchmark/CMakeFiles/pygen_gnuradio_core_src_examples_volk_benchmark_7e5ca: gnuradio-core/src/examples/volk_benchmark/volk_plot.py.exe
@@ -50,22 +50,22 @@ gnuradio-core/src/examples/volk_benchmark/CMakeFiles/pygen_gnuradio_core_src_exa
 gnuradio-core/src/examples/volk_benchmark/volk_math.py.exe: ../gnuradio-core/src/examples/volk_benchmark/volk_math.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin volk_math.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_math.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_math.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_math.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_math.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/volk_benchmark/volk_plot.py.exe: ../gnuradio-core/src/examples/volk_benchmark/volk_plot.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin volk_plot.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_plot.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_plot.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_plot.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_plot.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/volk_benchmark/volk_test_funcs.py.exe: ../gnuradio-core/src/examples/volk_benchmark/volk_test_funcs.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin volk_test_funcs.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_test_funcs.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_test_funcs.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_test_funcs.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_test_funcs.py' ) .read ( ) ) "
 
 gnuradio-core/src/examples/volk_benchmark/volk_types.py.exe: ../gnuradio-core/src/examples/volk_benchmark/volk_types.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin volk_types.py"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_types.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_types.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/volk_types.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gnuradio-core/src/examples/volk_benchmark/volk_types.py' ) .read ( ) ) "
 
 pygen_gnuradio_core_src_examples_volk_benchmark_7e5ca: gnuradio-core/src/examples/volk_benchmark/CMakeFiles/pygen_gnuradio_core_src_examples_volk_benchmark_7e5ca
 pygen_gnuradio_core_src_examples_volk_benchmark_7e5ca: gnuradio-core/src/examples/volk_benchmark/volk_math.py.exe

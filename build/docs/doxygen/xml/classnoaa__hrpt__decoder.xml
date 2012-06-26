@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classnoaa__hrpt__decoder" kind="class" prot="public">
     <compoundname>noaa_hrpt_decoder</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -164,7 +164,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classnoaa__hrpt__decoder_1a2126bc2c4cf01401af092e125af3b837" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend NOAA_API <ref refid="classboost_1_1shared__ptr" kindref="compound">noaa_hrpt_decoder_sptr</ref></type>
+        <type>friend <ref refid="noaa__api_8h_1a799d47153d76874e09e71b816d4f4a87" kindref="member">NOAA_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">noaa_hrpt_decoder_sptr</ref></type>
         <definition>NOAA_API noaa_hrpt_decoder_sptr noaa_make_hrpt_decoder</definition>
         <argsstring>(bool verbose, bool output_files)</argsstring>
         <name>noaa_make_hrpt_decoder</name>
@@ -208,7 +208,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="38"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a7271314996e2d2222b464241be7dfa30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void noaa_hrpt_decoder::process_mfnum</definition>
         <argsstring>()</argsstring>
         <name>process_mfnum</name>
@@ -221,7 +221,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="62"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1af44cf80b54b5b0dcbd950154d238944c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void noaa_hrpt_decoder::process_address</definition>
         <argsstring>()</argsstring>
         <name>process_address</name>
@@ -234,7 +234,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="63"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a4f6b64017c19c70364d00f0c429b8e7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void noaa_hrpt_decoder::process_day_of_year</definition>
         <argsstring>()</argsstring>
         <name>process_day_of_year</name>
@@ -247,7 +247,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1afdda2a57b4445784edaa4012b2808b9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void noaa_hrpt_decoder::process_milli1</definition>
         <argsstring>()</argsstring>
         <name>process_milli1</name>
@@ -260,7 +260,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="65"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a78f16378ead3d2c2100edb4e0134739b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void noaa_hrpt_decoder::process_milli2</definition>
         <argsstring>()</argsstring>
         <name>process_milli2</name>
@@ -273,7 +273,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="66"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a7588b5c3e1baa99c931152187a60d147" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void noaa_hrpt_decoder::process_milli3</definition>
         <argsstring>()</argsstring>
         <name>process_milli3</name>
@@ -311,11 +311,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -332,220 +332,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11534">
+      <node id="6805">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11535" relation="public-inheritance">
+        <childnode refid="6806" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11531">
+      <node id="6802">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="11532" relation="public-inheritance">
+        <childnode refid="6803" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11532">
+      <node id="6803">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11533" relation="public-inheritance">
+        <childnode refid="6804" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11535">
+      <node id="6806">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11530">
+      <node id="6801">
         <label>noaa_hrpt_decoder</label>
         <link refid="classnoaa__hrpt__decoder"/>
-        <childnode refid="11531" relation="public-inheritance">
+        <childnode refid="6802" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11533">
+      <node id="6804">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11534" relation="public-inheritance">
+        <childnode refid="6805" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="11557">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="11551" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="11550">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11551" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="11562">
-        <label>T</label>
-      </node>
-      <node id="11540">
+      <node id="6811">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11541" relation="public-inheritance">
+        <childnode refid="6812" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11537">
+      <node id="6808">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="11538" relation="public-inheritance">
+        <childnode refid="6809" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11551">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="11552" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="11559">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="11554">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="11538">
+      <node id="6809">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11539" relation="public-inheritance">
-        </childnode>
-        <childnode refid="11547" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="6810" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11547">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11548" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="11561">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11562" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="11548">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="11549" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="11558" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="11560" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="11555">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="11556" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="11542">
+      <node id="6813">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11543" relation="usage">
+        <childnode refid="6814" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="11553">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="11554" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="11555" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="11557" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="11546">
+      <node id="6816">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="11549">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="11550" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="11541">
+      <node id="6812">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11552">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11553" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="11556">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="11558">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="11559" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="11560">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="11561" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="11543">
+      <node id="6814">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="11544" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="11536">
+      <node id="6807">
         <label>noaa_hrpt_decoder</label>
         <link refid="classnoaa__hrpt__decoder"/>
-        <childnode refid="11537" relation="public-inheritance">
+        <childnode refid="6808" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11539">
+      <node id="6810">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11540" relation="public-inheritance">
+        <childnode refid="6811" relation="public-inheritance">
         </childnode>
-        <childnode refid="11542" relation="usage">
+        <childnode refid="6813" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="11545" relation="usage">
+        <childnode refid="6815" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="11544">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="11545">
+      <node id="6815">
         <label>std::string</label>
-        <childnode refid="11546" relation="public-inheritance">
+        <childnode refid="6816" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -623,7 +503,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>noaa_hrpt_decoder</scope><name>set_relative_rate</name></member>

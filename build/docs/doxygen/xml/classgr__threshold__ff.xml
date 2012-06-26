@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__threshold__ff" kind="class" prot="public">
     <compoundname>gr_threshold_ff</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__threshold__ff_1aa67cff92d587a9415a6e8e9d5752603e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_threshold_ff_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_threshold_ff_sptr</ref></type>
         <definition>GR_CORE_API gr_threshold_ff_sptr gr_make_threshold_ff</definition>
         <argsstring>(float lo, float hi, float initial_state)</argsstring>
         <name>gr_make_threshold_ff</name>
@@ -114,7 +114,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" line="47" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="classgr__threshold__ff_1a9cee87fd72eff2597ecce2e92b3517dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_threshold_ff::set_lo</definition>
         <argsstring>(float lo)</argsstring>
         <name>set_lo</name>
@@ -144,7 +144,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" line="49" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" bodystart="49" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classgr__threshold__ff_1ac63ad3e1b905be86d52038ff6d4b9f4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_threshold_ff::set_hi</definition>
         <argsstring>(float hi)</argsstring>
         <name>set_hi</name>
@@ -174,7 +174,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" line="51" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classgr__threshold__ff_1af5f0d309f329902fd15027b3ccc12122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_threshold_ff::set_last_state</definition>
         <argsstring>(float last_state)</argsstring>
         <name>set_last_state</name>
@@ -201,11 +201,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -222,220 +222,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="10324">
+      <node id="5915">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="10325" relation="public-inheritance">
+        <childnode refid="5916" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10321">
+      <node id="5912">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="10322" relation="public-inheritance">
+        <childnode refid="5913" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10322">
+      <node id="5913">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="10323" relation="public-inheritance">
+        <childnode refid="5914" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10320">
+      <node id="5911">
         <label>gr_threshold_ff</label>
         <link refid="classgr__threshold__ff"/>
-        <childnode refid="10321" relation="public-inheritance">
+        <childnode refid="5912" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10325">
+      <node id="5916">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="10323">
+      <node id="5914">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="10324" relation="public-inheritance">
+        <childnode refid="5915" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10347">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="10341" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10340">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10341" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10352">
-        <label>T</label>
-      </node>
-      <node id="10330">
+      <node id="5921">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="10331" relation="public-inheritance">
+        <childnode refid="5922" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10327">
+      <node id="5918">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="10328" relation="public-inheritance">
+        <childnode refid="5919" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10341">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="10342" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="10349">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="10344">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="10328">
+      <node id="5919">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="10329" relation="public-inheritance">
-        </childnode>
-        <childnode refid="10337" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="5920" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10337">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10338" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10351">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10352" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10338">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="10339" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="10348" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="10350" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="10345">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="10346" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10332">
+      <node id="5923">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10333" relation="usage">
+        <childnode refid="5924" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="10343">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="10344" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="10345" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="10347" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="10336">
+      <node id="5926">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="10326">
+      <node id="5917">
         <label>gr_threshold_ff</label>
         <link refid="classgr__threshold__ff"/>
-        <childnode refid="10327" relation="public-inheritance">
+        <childnode refid="5918" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10339">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="10340" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10331">
+      <node id="5922">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="10342">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10343" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10346">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="10348">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="10349" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="10350">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="10351" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10333">
+      <node id="5924">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="10334" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="10329">
+      <node id="5920">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="10330" relation="public-inheritance">
+        <childnode refid="5921" relation="public-inheritance">
         </childnode>
-        <childnode refid="10332" relation="usage">
+        <childnode refid="5923" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="10335" relation="usage">
+        <childnode refid="5925" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="10334">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="10335">
+      <node id="5925">
         <label>std::string</label>
-        <childnode refid="10336" relation="public-inheritance">
+        <childnode refid="5926" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -504,7 +384,7 @@
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_is_unaligned</name></member>
       <member refid="classgr__threshold__ff_1af5f0d309f329902fd15027b3ccc12122" prot="public" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_last_state</name></member>
       <member refid="classgr__threshold__ff_1a9cee87fd72eff2597ecce2e92b3517dc" prot="public" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_lo</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_threshold_ff</scope><name>set_relative_rate</name></member>

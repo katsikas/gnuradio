@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__rational__resampler__base__fcc" kind="class" prot="public">
     <compoundname>gr_rational_resampler_base_fcc</compoundname>
     <includes refid="gr__rational__resampler__base__fcc_8h" local="no">gr_rational_resampler_base_fcc.h</includes>
@@ -309,34 +309,6 @@
 <para>Rational Resampling Polyphase FIR filter with float input, gr_complex output and gr_complex taps. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="874">
-        <label>gr_fir_fcc</label>
-        <link refid="classgr__fir__fcc"/>
-        <childnode refid="875" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-        </childnode>
-      </node>
-      <node id="875">
-        <label>std::vector&lt; gr_complex &gt;</label>
-      </node>
-      <node id="873">
-        <label>std::vector&lt; gr_fir_fcc * &gt;</label>
-        <childnode refid="874" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="872">
-        <label>gr_rational_resampler_base_fcc</label>
-        <link refid="classgr__rational__resampler__base__fcc"/>
-        <childnode refid="873" relation="usage">
-          <edgelabel>d_firs</edgelabel>
-        </childnode>
-        <childnode refid="875" relation="usage">
-          <edgelabel>d_new_taps</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/gr_rational_resampler_base_fcc.h" line="49" bodyfile="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/gr_rational_resampler_base_fcc.h" bodystart="48" bodyend="85"/>
     <listofallmembers>
       <member refid="classgr__rational__resampler__base__fcc_1afa47af8ef6a62dd2910b120c9a4eeb1c" prot="private" virt="non-virtual"><scope>gr_rational_resampler_base_fcc</scope><name>d_ctr</name></member>

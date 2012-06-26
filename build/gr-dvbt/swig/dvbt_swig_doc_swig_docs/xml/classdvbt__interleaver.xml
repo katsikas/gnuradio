@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdvbt__interleaver" kind="class" prot="public">
     <compoundname>dvbt_interleaver</compoundname>
     <includes refid="dvbt__interleaver_8h" local="no">dvbt_interleaver.h</includes>
@@ -20,7 +20,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__interleaver_1ae30534de9db162760adc697924429969" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DVBT_API <ref refid="dvbt__interleaver_8h_1a295abae0695662570591165126c3f106" kindref="member">dvbt_interleaver_sptr</ref></type>
+        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__interleaver_8h_1a295abae0695662570591165126c3f106" kindref="member">dvbt_interleaver_sptr</ref></type>
         <definition>DVBT_API dvbt_interleaver_sptr dvbt_make_interleaver</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_interleaver</name>
@@ -92,38 +92,6 @@
 <para>Interleave RS encoded DVBT data ( <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref> --&gt; <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>)*</para><para>input: <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>; output: <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="299">
-        <label>convolutional_interleaver&lt; unsigned char &gt;</label>
-        <link refid="classconvolutional__interleaver"/>
-        <childnode refid="300" relation="usage">
-          <edgelabel>m_fifo</edgelabel>
-        </childnode>
-      </node>
-      <node id="298">
-        <label>dvbti_data_interleaver</label>
-        <link refid="classdvbti__data__interleaver"/>
-        <childnode refid="299" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="301">
-        <label>interleaver_fifo&lt; unsigned char &gt;</label>
-        <link refid="classinterleaver__fifo"/>
-      </node>
-      <node id="297">
-        <label>dvbt_interleaver</label>
-        <link refid="classdvbt__interleaver"/>
-        <childnode refid="298" relation="usage">
-          <edgelabel>d_interleaver</edgelabel>
-        </childnode>
-      </node>
-      <node id="300">
-        <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <childnode refid="301" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_interleaver.h" line="43" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_interleaver.h" bodystart="42" bodyend="56"/>
     <listofallmembers>
       <member refid="classdvbt__interleaver_1af5a43f75c720cfa103ddc53debe79170" prot="private" virt="non-virtual"><scope>dvbt_interleaver</scope><name>d_interleaver</name></member>

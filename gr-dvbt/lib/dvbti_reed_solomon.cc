@@ -21,6 +21,7 @@
  */
 
 
+#include <stdio.h>
 #include <assert.h>
 #include <string.h>
 #include <dvbt/dvbti_reed_solomon.h>
@@ -60,6 +61,7 @@ dvbti_reed_solomon::~dvbti_reed_solomon ()
 void
 dvbti_reed_solomon::encode (dvbt_mpeg_packet_rs_encoded &out, const dvbt_mpeg_packet_no_sync &in)
 {
+
   	unsigned char tmp[K];
 
   	assert ((int)(amount_of_pad + sizeof (in.data)) == K);

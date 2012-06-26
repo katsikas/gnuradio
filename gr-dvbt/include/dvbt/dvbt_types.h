@@ -54,9 +54,8 @@ public:
                 packets = remainder;
         }
 
-  	void set_transport_error (bool error){
-    		/*if (error)
-      			printf("ERROR!!! \n");*/
+  	void set_transport_error (int  error){
+      		printf("ERROR!!!: %d \n",error);
   	}
 
        /*!
@@ -76,11 +75,11 @@ protected:
   	static unsigned int packets;
   	// these three are mutually exclusive
   	//     This is a regular data segment.
-  	static const int	flag01		= 0x0000;
+  	static const int	flag01		= 0x0001;
   	//	 This is a field sync segment, for 1st half of a field.
-  	static const int	flag02		= 0x0000;
+  	static const int	flag02		= 0x0002;
   	//	 This is a field sync segment, for 2nd half of a field.
-  	static const int	flag03		= 0x0000;
+  	static const int	flag03		= 0x0003;
 
   	// This bit is set when Reed-Solomon decoding detects an error that it
   	// can't correct.  Note that other error detection (e.g. Viterbi) do not

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__lms__dd__equalizer__cc" kind="class" prot="public">
     <compoundname>digital_lms_dd_equalizer_cc</compoundname>
     <basecompoundref refid="classgr__adaptive__fir__ccc" prot="public" virt="non-virtual">gr_adaptive_fir_ccc</basecompoundref>
@@ -19,7 +19,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" line="77" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__lms__dd__equalizer__cc_1a018b8ea424c696cc604872eb89474eac" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_lms_dd_equalizer_cc::d_taps</definition>
         <argsstring></argsstring>
         <name>d_taps</name>
@@ -48,7 +48,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__lms__dd__equalizer__cc_1a874b0a76a8fb89614d1ffb8086b9f74e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_lms_dd_equalizer_cc_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_lms_dd_equalizer_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_lms_dd_equalizer_cc_sptr digital_make_lms_dd_equalizer_cc</definition>
         <argsstring>(int num_taps, float mu, int sps, digital_constellation_sptr cnst)</argsstring>
         <name>digital_make_lms_dd_equalizer_cc</name>
@@ -129,7 +129,7 @@
         <references refid="classgr__adaptive__fir__ccc_1aae045dd303aa7363bdae104600d5bad1">gr_adaptive_fir_ccc::error</references>
       </memberdef>
       <memberdef kind="function" id="classdigital__lms__dd__equalizer__cc_1aed00b745b5eb8e2f17bd72aab5641192" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void digital_lms_dd_equalizer_cc::update_tap</definition>
         <argsstring>(gr_complex &amp;tap, const gr_complex &amp;in)</argsstring>
         <name>update_tap</name>
@@ -167,7 +167,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" line="102" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" bodystart="101" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__lms__dd__equalizer__cc_1a6b3917e69eedfd9effcae25a6a0d1c06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_lms_dd_equalizer_cc::set_gain</definition>
         <argsstring>(float mu)</argsstring>
         <name>set_gain</name>
@@ -189,292 +189,143 @@
     <detaileddescription>
 <para>y[n] = conj(w[n]) u[n] d[n] = decision(y[n]) e[n] = d[n] - y[n] w[n+1] = w[n] + mu u[n] conj(e[n])</para><para>Where mu is a gain value (between 0 and 1 and usualy small, around 0.001 - 0.01.</para><para>This block uses the <ref refid="classdigital__constellation" kindref="compound">digital_constellation</ref> object for making the decision from y[n]. Create the constellation object for whatever constellation is to be used and pass in the object. In Python, you can use something like: self.constellation = digital.constellation_qpsk() To create a QPSK constellation (see the <ref refid="classdigital__constellation" kindref="compound">digital_constellation</ref> block for more details as to what constellations are available or how to create your own). You then pass the object to this block as an sptr, or using &quot;self.constellation.base()&quot;.</para><para>The theory for this algorithm can be found in Chapter 9 of: S. Haykin, Adaptive Filter Theory, Upper Saddle River, NJ: Prentice Hall, 1996. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2467">
+      <node id="1431">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2468" relation="public-inheritance">
+        <childnode refid="1432" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2464">
+      <node id="1428">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2465" relation="public-inheritance">
+        <childnode refid="1429" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2463">
+      <node id="1427">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="2464" relation="public-inheritance">
+        <childnode refid="1428" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2461">
+      <node id="1425">
         <label>digital_lms_dd_equalizer_cc</label>
         <link refid="classdigital__lms__dd__equalizer__cc"/>
-        <childnode refid="2462" relation="public-inheritance">
+        <childnode refid="1426" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2465">
+      <node id="1429">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2466" relation="public-inheritance">
+        <childnode refid="1430" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2468">
+      <node id="1432">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2462">
+      <node id="1426">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="2463" relation="public-inheritance">
+        <childnode refid="1427" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2466">
+      <node id="1430">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2467" relation="public-inheritance">
+        <childnode refid="1431" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2492">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="2486" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2485">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2486" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2497">
-        <label>T</label>
-      </node>
-      <node id="2475">
+      <node id="1439">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2476" relation="public-inheritance">
+        <childnode refid="1440" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2472">
+      <node id="1436">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2473" relation="public-inheritance">
+        <childnode refid="1437" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2471">
+      <node id="1435">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="2472" relation="public-inheritance">
+        <childnode refid="1436" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2469">
+      <node id="1433">
         <label>digital_lms_dd_equalizer_cc</label>
         <link refid="classdigital__lms__dd__equalizer__cc"/>
-        <childnode refid="2470" relation="public-inheritance">
-        </childnode>
-        <childnode refid="2501" relation="usage">
-          <edgelabel>d_cnst</edgelabel>
-        </childnode>
-        <childnode refid="2499" relation="usage">
-          <edgelabel>d_taps</edgelabel>
+        <childnode refid="1434" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2486">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="2487" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="2494">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="2489">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="2473">
+      <node id="1437">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2474" relation="public-inheritance">
-        </childnode>
-        <childnode refid="2482" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="1438" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2482">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2483" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2496">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2497" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2483">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="2484" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="2493" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="2495" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="2490">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="2491" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2499">
+      <node id="1446">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="2500" relation="usage">
+        <childnode refid="1447" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="2477">
+      <node id="1441">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2478" relation="usage">
+        <childnode refid="1442" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2488">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="2489" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="2490" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="2492" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="2501">
-        <label>boost::shared_ptr&lt; digital_constellation &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2502" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2481">
+      <node id="1444">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2503">
-        <label>std::vector&lt; unsigned int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="2484">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="2485" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2502">
-        <label>digital_constellation</label>
-        <link refid="classdigital__constellation"/>
-        <childnode refid="2503" relation="usage">
-          <edgelabel>d_pre_diff_code</edgelabel>
-        </childnode>
-        <childnode refid="2499" relation="usage">
-          <edgelabel>d_constellation</edgelabel>
-        </childnode>
-      </node>
-      <node id="2476">
+      <node id="1440">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2500">
+      <node id="1447">
         <label>std::complex</label>
       </node>
-      <node id="2487">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2488" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2491">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="2493">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="2494" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="2495">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="2496" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2478">
+      <node id="1442">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="2479" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="2470">
+      <node id="1434">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="2471" relation="public-inheritance">
+        <childnode refid="1435" relation="public-inheritance">
         </childnode>
-        <childnode refid="2498" relation="usage">
+        <childnode refid="1445" relation="usage">
           <edgelabel>d_error</edgelabel>
         </childnode>
-        <childnode refid="2499" relation="usage">
+        <childnode refid="1446" relation="usage">
           <edgelabel>d_taps</edgelabel>
-          <edgelabel>d_new_taps</edgelabel>
         </childnode>
       </node>
-      <node id="2474">
+      <node id="1438">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2475" relation="public-inheritance">
+        <childnode refid="1439" relation="public-inheritance">
         </childnode>
-        <childnode refid="2477" relation="usage">
+        <childnode refid="1441" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2480" relation="usage">
+        <childnode refid="1443" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2498">
+      <node id="1445">
         <label>std::complex&lt; float &gt;</label>
       </node>
-      <node id="2479">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="2480">
+      <node id="1443">
         <label>std::string</label>
-        <childnode refid="2481" relation="public-inheritance">
+        <childnode refid="1444" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -547,7 +398,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>digital_lms_dd_equalizer_cc</scope><name>set_relative_rate</name></member>

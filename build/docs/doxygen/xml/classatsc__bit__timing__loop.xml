@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsc__bit__timing__loop" kind="class" prot="public">
     <compoundname>atsc_bit_timing_loop</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -73,7 +73,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__bit__timing__loop_1abf4c176537c5c9472ec57e06f6bbcd77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_bit_timing_loop_sptr</ref></type>
+        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_bit_timing_loop_sptr</ref></type>
         <definition>ATSC_API atsc_bit_timing_loop_sptr atsc_make_bit_timing_loop</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_bit_timing_loop</name>
@@ -112,11 +112,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -128,7 +128,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1ab498a7e74189eae2c749d4bd67d28d7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsc_bit_timing_loop::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -154,7 +154,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="57" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a49cf7f38cd3b63f255f43d300bf4cfe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsc_bit_timing_loop::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -164,7 +164,7 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items_required</declname>
         </param>
         <briefdescription>
@@ -201,15 +201,15 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -251,7 +251,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a6609142ff4a9c86541eb03b488660b02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsc_bit_timing_loop::set_mu</definition>
         <argsstring>(double a_mu)</argsstring>
         <name>set_mu</name>
@@ -268,7 +268,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="68" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a7b1125e67697ddde8ff91fe51bbc442e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsc_bit_timing_loop::set_no_update</definition>
         <argsstring>(bool a_no_update)</argsstring>
         <name>set_no_update</name>
@@ -285,7 +285,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="69" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="69" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1ad9f08a571fadeacdd9c752f0bd0c151a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsc_bit_timing_loop::set_loop_filter_tap</definition>
         <argsstring>(double tap)</argsstring>
         <name>set_loop_filter_tap</name>
@@ -302,7 +302,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="70" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a4c9f26080ab7342049b234bdb32d0f6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsc_bit_timing_loop::set_timing_rate</definition>
         <argsstring>(double rate)</argsstring>
         <name>set_timing_rate</name>
@@ -354,89 +354,17 @@ general_work must call consume or consume_each to indicate how many items were c
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="32">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="26" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="25">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="26" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="37">
-        <label>T</label>
-      </node>
       <node id="15">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
         <childnode refid="16" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="27" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="34">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="29">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
       <node id="13">
         <label>gr_block</label>
         <link refid="classgr__block"/>
         <childnode refid="14" relation="public-inheritance">
         </childnode>
-        <childnode refid="22" relation="usage">
-          <edgelabel>d_detail</edgelabel>
-        </childnode>
-      </node>
-      <node id="22">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="23" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="36">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="37" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="23">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="24" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="33" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="35" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="30">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="31" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="45">
-        <label>std::vector&lt; gr_fir_fff * &gt;</label>
-        <link refid="classstd_1_1vector"/>
       </node>
       <node id="17">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
@@ -445,97 +373,20 @@ general_work must call consume or consume_each to indicate how many items were c
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="28">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="29" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="30" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="32" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="21">
+      <node id="20">
         <label>std::basic_string&lt; char &gt;</label>
-      </node>
-      <node id="24">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="25" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="41">
-        <label>sssr::digital_correlator</label>
-        <link refid="classsssr_1_1digital__correlator"/>
       </node>
       <node id="16">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="44">
-        <label>gri_mmse_fir_interpolator</label>
-        <link refid="classgri__mmse__fir__interpolator"/>
-        <childnode refid="45" relation="usage">
-          <edgelabel>filters</edgelabel>
-        </childnode>
-      </node>
-      <node id="40">
-        <label>sssr::seg_sync_integrator</label>
-        <link refid="classsssr_1_1seg__sync__integrator"/>
-      </node>
-      <node id="42">
+      <node id="22">
         <label>atsci_interpolator</label>
         <link refid="classatsci__interpolator"/>
-        <childnode refid="43" relation="usage">
-          <edgelabel>d_loop</edgelabel>
-        </childnode>
-        <childnode refid="44" relation="usage">
-          <edgelabel>d_interp</edgelabel>
-        </childnode>
-      </node>
-      <node id="39">
-        <label>sssr::quad_filter</label>
-        <link refid="classsssr_1_1quad__filter"/>
-      </node>
-      <node id="27">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="28" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="31">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="33">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="34" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="35">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="36" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
       </node>
       <node id="18">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="19" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
-      </node>
-      <node id="43">
-        <label>gr_single_pole_iir&lt; float, float, float &gt;</label>
-        <link refid="classgr__single__pole__iir"/>
       </node>
       <node id="14">
         <label>gr_basic_block</label>
@@ -546,42 +397,29 @@ general_work must call consume or consume_each to indicate how many items were c
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="38">
+      <node id="21">
         <label>atsci_sssr</label>
         <link refid="classatsci__sssr"/>
-        <childnode refid="39" relation="usage">
-          <edgelabel>d_quad_filter</edgelabel>
-        </childnode>
-        <childnode refid="40" relation="usage">
-          <edgelabel>d_integrator</edgelabel>
-        </childnode>
-        <childnode refid="41" relation="usage">
-          <edgelabel>d_correlator</edgelabel>
-        </childnode>
       </node>
       <node id="12">
         <label>atsc_bit_timing_loop</label>
         <link refid="classatsc__bit__timing__loop"/>
         <childnode refid="13" relation="public-inheritance">
         </childnode>
-        <childnode refid="38" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>d_sssr</edgelabel>
         </childnode>
-        <childnode refid="42" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>d_interp</edgelabel>
         </childnode>
       </node>
       <node id="19">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="20">
         <label>std::string</label>
-        <childnode refid="21" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -646,7 +484,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_is_unaligned</name></member>
       <member refid="classatsc__bit__timing__loop_1ad9f08a571fadeacdd9c752f0bd0c151a" prot="public" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_loop_filter_tap</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_msg_handler</name></member>
       <member refid="classatsc__bit__timing__loop_1a6609142ff4a9c86541eb03b488660b02" prot="public" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_mu</name></member>
       <member refid="classatsc__bit__timing__loop_1a7b1125e67697ddde8ff91fe51bbc442e" prot="public" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_no_update</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>atsc_bit_timing_loop</scope><name>set_output_multiple</name></member>

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_uhd_examples_python_2cf17.
+
+# Include the progress variables for this target.
+include gr-uhd/examples/python/CMakeFiles/pygen_gr_uhd_examples_python_2cf17.dir/progress.make
 
 gr-uhd/examples/python/CMakeFiles/pygen_gr_uhd_examples_python_2cf17: gr-uhd/examples/python/fm_tx4.py.exe
 gr-uhd/examples/python/CMakeFiles/pygen_gr_uhd_examples_python_2cf17: gr-uhd/examples/python/fm_tx_2_daughterboards.py.exe
@@ -62,82 +62,82 @@ gr-uhd/examples/python/CMakeFiles/pygen_gr_uhd_examples_python_2cf17: gr-uhd/exa
 gr-uhd/examples/python/fm_tx4.py.exe: ../gr-uhd/examples/python/fm_tx4.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin fm_tx4.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/fm_tx4.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/fm_tx4.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/fm_tx4.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/fm_tx4.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/fm_tx_2_daughterboards.py.exe: ../gr-uhd/examples/python/fm_tx_2_daughterboards.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin fm_tx_2_daughterboards.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/fm_tx_2_daughterboards.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/fm_tx_2_daughterboards.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/fm_tx_2_daughterboards.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/fm_tx_2_daughterboards.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/max_power.py.exe: ../gr-uhd/examples/python/max_power.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin max_power.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/max_power.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/max_power.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/max_power.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/max_power.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_am_mw_rcv.py.exe: ../gr-uhd/examples/python/usrp_am_mw_rcv.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_am_mw_rcv.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_am_mw_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_am_mw_rcv.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_am_mw_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_am_mw_rcv.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_nbfm_ptt.py.exe: ../gr-uhd/examples/python/usrp_nbfm_ptt.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_nbfm_ptt.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_nbfm_ptt.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_nbfm_ptt.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_nbfm_ptt.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_nbfm_ptt.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_nbfm_rcv.py.exe: ../gr-uhd/examples/python/usrp_nbfm_rcv.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_nbfm_rcv.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_nbfm_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_nbfm_rcv.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_nbfm_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_nbfm_rcv.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_spectrum_sense.py.exe: ../gr-uhd/examples/python/usrp_spectrum_sense.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_spectrum_sense.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_spectrum_sense.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_spectrum_sense.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_spectrum_sense.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_spectrum_sense.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_tv_rcv_nogui.py.exe: ../gr-uhd/examples/python/usrp_tv_rcv_nogui.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_tv_rcv_nogui.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_tv_rcv_nogui.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_tv_rcv_nogui.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_tv_rcv_nogui.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_tv_rcv_nogui.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_tv_rcv.py.exe: ../gr-uhd/examples/python/usrp_tv_rcv.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_tv_rcv.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_tv_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_tv_rcv.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_tv_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_tv_rcv.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_wfm_rcv2_nogui.py.exe: ../gr-uhd/examples/python/usrp_wfm_rcv2_nogui.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_wfm_rcv2_nogui.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv2_nogui.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv2_nogui.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv2_nogui.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv2_nogui.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_wfm_rcv_fmdet.py.exe: ../gr-uhd/examples/python/usrp_wfm_rcv_fmdet.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_wfm_rcv_fmdet.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_fmdet.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_fmdet.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_fmdet.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_fmdet.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_wfm_rcv_nogui.py.exe: ../gr-uhd/examples/python/usrp_wfm_rcv_nogui.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_wfm_rcv_nogui.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_nogui.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_nogui.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_nogui.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_nogui.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_wfm_rcv_pll.py.exe: ../gr-uhd/examples/python/usrp_wfm_rcv_pll.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_wfm_rcv_pll.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_pll.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_pll.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_pll.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_pll.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_wfm_rcv.py.exe: ../gr-uhd/examples/python/usrp_wfm_rcv.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_wfm_rcv.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_wfm_rcv_sca.py.exe: ../gr-uhd/examples/python/usrp_wfm_rcv_sca.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_wfm_rcv_sca.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_sca.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_sca.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wfm_rcv_sca.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wfm_rcv_sca.py' ) .read ( ) ) "
 
 gr-uhd/examples/python/usrp_wxapt_rcv.py.exe: ../gr-uhd/examples/python/usrp_wxapt_rcv.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin usrp_wxapt_rcv.py"
-	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wxapt_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wxapt_rcv.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-uhd/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-uhd/examples/python/usrp_wxapt_rcv.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-uhd/examples/python/usrp_wxapt_rcv.py' ) .read ( ) ) "
 
 pygen_gr_uhd_examples_python_2cf17: gr-uhd/examples/python/CMakeFiles/pygen_gr_uhd_examples_python_2cf17
 pygen_gr_uhd_examples_python_2cf17: gr-uhd/examples/python/fm_tx4.py.exe

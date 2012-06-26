@@ -24,6 +24,7 @@
 #ifndef _CONVOLUTIONAL_INTERLEAVER_H_
 #define _CONVOLUTIONAL_INTERLEAVER_H_
 
+#include <stdio.h>
 #include <vector>
 #include <assert.h>
 #include <dvbt/interleaver_fifo.h>
@@ -115,6 +116,7 @@ template<class symbol_type> int
 convolutional_interleaver<symbol_type>::end_to_end_delay ()
 {
   	int m = m_nbanks * m_fifo_size_incr;
+	printf("delay = \n" ,m * (m_nbanks - 1));
   	return m * (m_nbanks - 1);
 }
 

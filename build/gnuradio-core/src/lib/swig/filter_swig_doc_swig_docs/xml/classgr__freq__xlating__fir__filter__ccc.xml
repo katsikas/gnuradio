@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__freq__xlating__fir__filter__ccc" kind="class" prot="public">
     <compoundname>gr_freq_xlating_fir_filter_ccc</compoundname>
     <includes refid="gr__freq__xlating__fir__filter__ccc_8h" local="no">gr_freq_xlating_fir_filter_ccc.h</includes>
@@ -237,30 +237,30 @@
     <detaileddescription>
 <para>Uses a single input array to produce a single output array. Additional inputs and/or outputs are ignored. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="738">
+      <node id="708">
         <label>gr_fir_ccc</label>
         <link refid="classgr__fir__ccc"/>
-        <childnode refid="739" relation="usage">
+        <childnode refid="709" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="739">
+      <node id="709">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="737">
+      <node id="707">
         <label>gr_freq_xlating_fir_filter_ccc</label>
         <link refid="classgr__freq__xlating__fir__filter__ccc"/>
-        <childnode refid="738" relation="usage">
+        <childnode refid="708" relation="usage">
           <edgelabel>d_composite_fir</edgelabel>
         </childnode>
-        <childnode refid="740" relation="usage">
+        <childnode refid="710" relation="usage">
           <edgelabel>d_r</edgelabel>
         </childnode>
-        <childnode refid="739" relation="usage">
+        <childnode refid="709" relation="usage">
           <edgelabel>d_proto_taps</edgelabel>
         </childnode>
       </node>
-      <node id="740">
+      <node id="710">
         <label>gr_rotator</label>
         <link refid="classgr__rotator"/>
       </node>

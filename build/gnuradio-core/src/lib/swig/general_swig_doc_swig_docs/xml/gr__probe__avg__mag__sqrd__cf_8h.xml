@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__probe__avg__mag__sqrd__cf_8h" kind="file">
     <compoundname>gr_probe_avg_mag_sqrd_cf.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -49,9 +49,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__probe__avg__mag__sqrd__cf_8h_1ae81eade01e99cc29e4dee5c2913ab727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API <ref refid="gr__probe__avg__mag__sqrd__cf_8h_1a7e9ff8f58c799bc9f6c8cac566380aa4" kindref="member">gr_probe_avg_mag_sqrd_cf_sptr</ref></type>
-        <definition>GR_CORE_API gr_probe_avg_mag_sqrd_cf_sptr gr_make_probe_avg_mag_sqrd_cf</definition>
+      <memberdef kind="function" id="gr__probe__avg__mag__sqrd__cf_8h_1a97b33f015d3f2d4301a7193354a4922a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="gr__probe__avg__mag__sqrd__cf_8h_1a7e9ff8f58c799bc9f6c8cac566380aa4" kindref="member">gr_probe_avg_mag_sqrd_cf_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT gr_probe_avg_mag_sqrd_cf_sptr gr_make_probe_avg_mag_sqrd_cf</definition>
         <argsstring>(double threshold_db, double alpha=0.0001)</argsstring>
         <name>gr_make_probe_avg_mag_sqrd_cf</name>
         <param>
@@ -109,7 +109,7 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_probe_avg_mag_sqrd_cf&gt;<sp/><ref refid="gr__probe__avg__mag__sqrd__cf_8h_1a7e9ff8f58c799bc9f6c8cac566380aa4" kindref="member">gr_probe_avg_mag_sqrd_cf_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__probe__avg__mag__sqrd__cf_8h_1a7e9ff8f58c799bc9f6c8cac566380aa4" kindref="member">gr_probe_avg_mag_sqrd_cf_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="gr__probe__avg__mag__sqrd__cf_8h_1ae81eade01e99cc29e4dee5c2913ab727" kindref="member">gr_make_probe_avg_mag_sqrd_cf</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>threshold_db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>0.0001);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="gr__probe__avg__mag__sqrd__cf_8h_1a97b33f015d3f2d4301a7193354a4922a" kindref="member">gr_make_probe_avg_mag_sqrd_cf</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>threshold_db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>0.0001);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47" refid="classgr__probe__avg__mag__sqrd__cf" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__probe__avg__mag__sqrd__cf" kindref="compound" tooltip="compute avg magnitude squared.input: gr_complex output: gr_float">gr_probe_avg_mag_sqrd_cf</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="48"><highlight class="normal">{</highlight></codeline>
@@ -119,7 +119,7 @@
 <codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_level;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__probe__avg__mag__sqrd__cf_8h_1a7e9ff8f58c799bc9f6c8cac566380aa4" kindref="member">gr_probe_avg_mag_sqrd_cf_sptr</ref></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="gr__probe__avg__mag__sqrd__cf_8h_1ae81eade01e99cc29e4dee5c2913ab727" kindref="member">gr_make_probe_avg_mag_sqrd_cf</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>threshold_db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="gr__probe__avg__mag__sqrd__cf_8h_1a97b33f015d3f2d4301a7193354a4922a" kindref="member">gr_make_probe_avg_mag_sqrd_cf</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>threshold_db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="classgr__probe__avg__mag__sqrd__cf" kindref="compound" tooltip="compute avg magnitude squared.input: gr_complex output: gr_float">gr_probe_avg_mag_sqrd_cf</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>threshold_db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>

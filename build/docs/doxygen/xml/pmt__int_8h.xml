@@ -1,105 +1,106 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="pmt__int_8h" kind="file">
     <compoundname>pmt_int.h</compoundname>
     <includes refid="pmt_8h" local="no">gruel/pmt.h</includes>
     <includes local="no">boost/utility.hpp</includes>
     <includes local="no">boost/detail/atomic_count.hpp</includes>
-    <includes local="yes">pmt_unv_int.h</includes>
+    <includes refid="pmt__unv__int_8h" local="yes">pmt_unv_int.h</includes>
     <incdepgraph>
-      <node id="15606">
+      <node id="15759">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="15605">
+      <node id="15758">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="15604">
+      <node id="15757">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="15601">
+      <node id="15754">
         <label>pmt_int.h</label>
         <link refid="pmt_int.h"/>
-        <childnode refid="15602" relation="include">
+        <childnode refid="15755" relation="include">
         </childnode>
-        <childnode refid="15616" relation="include">
+        <childnode refid="15769" relation="include">
         </childnode>
-        <childnode refid="15617" relation="include">
+        <childnode refid="15770" relation="include">
         </childnode>
-        <childnode refid="15618" relation="include">
+        <childnode refid="15771" relation="include">
         </childnode>
       </node>
-      <node id="15614">
+      <node id="15767">
         <label>stdexcept</label>
       </node>
-      <node id="15610">
+      <node id="15763">
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
-        <childnode refid="15611" relation="include">
+        <childnode refid="15764" relation="include">
         </childnode>
-        <childnode refid="15612" relation="include">
+        <childnode refid="15765" relation="include">
         </childnode>
       </node>
-      <node id="15609">
+      <node id="15762">
         <label>string</label>
       </node>
-      <node id="15617">
+      <node id="15770">
         <label>boost/detail/atomic_count.hpp</label>
       </node>
-      <node id="15615">
+      <node id="15768">
         <label>gruel/pmt_sugar.h</label>
         <link refid="pmt__sugar_8h"/>
       </node>
-      <node id="15618">
-        <label>pmt_unv_int.h</label>
-      </node>
-      <node id="15603">
+      <node id="15756">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="15604" relation="include">
+        <childnode refid="15757" relation="include">
         </childnode>
       </node>
-      <node id="15611">
+      <node id="15764">
         <label>limits.h</label>
       </node>
-      <node id="15607">
+      <node id="15760">
         <label>boost/any.hpp</label>
       </node>
-      <node id="15602">
+      <node id="15755">
         <label>gruel/pmt.h</label>
         <link refid="pmt_8h"/>
-        <childnode refid="15603" relation="include">
+        <childnode refid="15756" relation="include">
         </childnode>
-        <childnode refid="15605" relation="include">
+        <childnode refid="15758" relation="include">
         </childnode>
-        <childnode refid="15606" relation="include">
+        <childnode refid="15759" relation="include">
         </childnode>
-        <childnode refid="15607" relation="include">
+        <childnode refid="15760" relation="include">
         </childnode>
-        <childnode refid="15608" relation="include">
+        <childnode refid="15761" relation="include">
         </childnode>
-        <childnode refid="15609" relation="include">
+        <childnode refid="15762" relation="include">
         </childnode>
-        <childnode refid="15610" relation="include">
+        <childnode refid="15763" relation="include">
         </childnode>
-        <childnode refid="15613" relation="include">
+        <childnode refid="15766" relation="include">
         </childnode>
-        <childnode refid="15614" relation="include">
+        <childnode refid="15767" relation="include">
         </childnode>
-        <childnode refid="15615" relation="include">
+        <childnode refid="15768" relation="include">
         </childnode>
       </node>
-      <node id="15612">
+      <node id="15765">
         <label>wchar.h</label>
       </node>
-      <node id="15616">
+      <node id="15769">
         <label>boost/utility.hpp</label>
       </node>
-      <node id="15613">
+      <node id="15766">
         <label>iosfwd</label>
       </node>
-      <node id="15608">
+      <node id="15761">
         <label>complex</label>
+      </node>
+      <node id="15771">
+        <label>pmt_unv_int.h</label>
+        <link refid="pmt__unv__int_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="classpmt_1_1pmt__base" prot="public">pmt::pmt_base</innerclass>
@@ -115,6 +116,18 @@
     <innerclass refid="classpmt_1_1pmt__tuple" prot="public">pmt::pmt_tuple</innerclass>
     <innerclass refid="classpmt_1_1pmt__any" prot="public">pmt::pmt_any</innerclass>
     <innerclass refid="classpmt_1_1pmt__uniform__vector" prot="public">pmt::pmt_uniform_vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__u8vector" prot="public">pmt::pmt_u8vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__s8vector" prot="public">pmt::pmt_s8vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__u16vector" prot="public">pmt::pmt_u16vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__s16vector" prot="public">pmt::pmt_s16vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__u32vector" prot="public">pmt::pmt_u32vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__s32vector" prot="public">pmt::pmt_s32vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__u64vector" prot="public">pmt::pmt_u64vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__s64vector" prot="public">pmt::pmt_s64vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__f32vector" prot="public">pmt::pmt_f32vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__f64vector" prot="public">pmt::pmt_f64vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__c32vector" prot="public">pmt::pmt_c32vector</innerclass>
+    <innerclass refid="classpmt_1_1pmt__c64vector" prot="public">pmt::pmt_c64vector</innerclass>
     <innernamespace refid="namespacepmt">pmt</innernamespace>
       <sectiondef kind="define">
       <memberdef kind="define" id="pmt__int_8h_1a5c42c14236dcb8ac2b832e55e9cb55dd" prot="public" static="no">

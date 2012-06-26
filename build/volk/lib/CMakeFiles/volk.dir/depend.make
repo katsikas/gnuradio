@@ -15,6 +15,7 @@ volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: v
 volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -31,6 +32,7 @@ volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: volk/
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -47,6 +49,7 @@ volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: volk
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -63,6 +66,7 @@ volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: volk/lib/vo
 volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -79,6 +83,7 @@ volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: vol
 volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -95,6 +100,7 @@ volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: volk/lib/volk_16u
 volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -111,6 +117,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: volk/lib
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -127,6 +134,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: volk/lib/vo
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -143,6 +151,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: volk/lib/volk_32f
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -159,6 +168,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: volk/lib/volk_3
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -175,6 +185,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: volk/lib/vol
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -191,6 +202,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: volk/lib/v
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -207,6 +219,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: volk/lib/volk_3
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -223,6 +236,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: volk/lib/volk_3
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -239,6 +253,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: volk/lib/v
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -255,6 +270,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: volk/lib/v
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -271,6 +287,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: volk/li
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -287,6 +304,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: volk/lib/vo
 volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -303,6 +321,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: volk/l
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -319,6 +338,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: volk/
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -335,6 +355,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: volk/lib
 volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -351,6 +372,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: volk/lib/volk_3
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -367,6 +389,7 @@ volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: volk/lib/volk_32
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -383,6 +406,7 @@ volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: volk/lib/volk_8
 volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h
@@ -399,6 +423,7 @@ volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: volk/lib/v
 volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc-stdint.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orc.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcarm.h
+volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orccpuinsn.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcdebug.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcfunctions.h
 volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o: /usr/include/orc-0.4/orc/orcmmx.h

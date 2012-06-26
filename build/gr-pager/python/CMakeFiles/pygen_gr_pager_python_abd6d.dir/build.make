@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_pager_python_abd6d.
+
+# Include the progress variables for this target.
+include gr-pager/python/CMakeFiles/pygen_gr_pager_python_abd6d.dir/progress.make
 
 gr-pager/python/CMakeFiles/pygen_gr_pager_python_abd6d: gr-pager/python/__init__.pyc
 gr-pager/python/CMakeFiles/pygen_gr_pager_python_abd6d: gr-pager/python/pager_utils.pyc
@@ -54,7 +54,7 @@ gr-pager/python/__init__.pyc: ../gr-pager/python/pager_utils.py
 gr-pager/python/__init__.pyc: ../gr-pager/python/flex_demod.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyc, pager_utils.pyc, flex_demod.pyc"
-	cd /home/katsikas/gnuradio/build/gr-pager/python && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-pager/python/__init__.py /home/katsikas/gnuradio/gr-pager/python/pager_utils.py /home/katsikas/gnuradio/gr-pager/python/flex_demod.py /home/katsikas/gnuradio/build/gr-pager/python/__init__.pyc /home/katsikas/gnuradio/build/gr-pager/python/pager_utils.pyc /home/katsikas/gnuradio/build/gr-pager/python/flex_demod.pyc
+	cd /home/katsikas/gnuradio/build/gr-pager/python && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-pager/python/__init__.py /home/katsikas/gnuradio/gr-pager/python/pager_utils.py /home/katsikas/gnuradio/gr-pager/python/flex_demod.py /home/katsikas/gnuradio/build/gr-pager/python/__init__.pyc /home/katsikas/gnuradio/build/gr-pager/python/pager_utils.pyc /home/katsikas/gnuradio/build/gr-pager/python/flex_demod.pyc
 
 gr-pager/python/pager_utils.pyc: gr-pager/python/__init__.pyc
 
@@ -65,7 +65,7 @@ gr-pager/python/__init__.pyo: ../gr-pager/python/pager_utils.py
 gr-pager/python/__init__.pyo: ../gr-pager/python/flex_demod.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyo, pager_utils.pyo, flex_demod.pyo"
-	cd /home/katsikas/gnuradio/build/gr-pager/python && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-pager/python/__init__.py /home/katsikas/gnuradio/gr-pager/python/pager_utils.py /home/katsikas/gnuradio/gr-pager/python/flex_demod.py /home/katsikas/gnuradio/build/gr-pager/python/__init__.pyo /home/katsikas/gnuradio/build/gr-pager/python/pager_utils.pyo /home/katsikas/gnuradio/build/gr-pager/python/flex_demod.pyo
+	cd /home/katsikas/gnuradio/build/gr-pager/python && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-pager/python/__init__.py /home/katsikas/gnuradio/gr-pager/python/pager_utils.py /home/katsikas/gnuradio/gr-pager/python/flex_demod.py /home/katsikas/gnuradio/build/gr-pager/python/__init__.pyo /home/katsikas/gnuradio/build/gr-pager/python/pager_utils.pyo /home/katsikas/gnuradio/build/gr-pager/python/flex_demod.pyo
 
 gr-pager/python/pager_utils.pyo: gr-pager/python/__init__.pyo
 

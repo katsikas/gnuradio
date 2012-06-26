@@ -33,6 +33,10 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_docs")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gnuradio-3.6.1git/html" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-trellis/doc/gr-trellis.html")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_docs")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_docs")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gnuradio-3.6.1git/xml" TYPE FILE FILES
     "/home/katsikas/gnuradio/build/gr-trellis/doc/test_tcm.py.xml"
     "/home/katsikas/gnuradio/build/gr-trellis/doc/test_viterbi_equalization1.py.xml"

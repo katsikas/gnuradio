@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="volk_8tmpl_8h" kind="file">
     <compoundname>volk.tmpl.h</compoundname>
     <includes local="no">volk/volk_typedefs.h</includes>
@@ -7,64 +7,64 @@
     <includes refid="volk__common_8h" local="no">volk/volk_common.h</includes>
     <includes refid="volk__complex_8h" local="no">volk/volk_complex.h</includes>
     <incdepgraph>
-      <node id="17541">
+      <node id="17691">
         <label>volk/volk_config_fixed.h</label>
       </node>
-      <node id="17547">
+      <node id="17697">
         <label>volk/volk_complex.h</label>
         <link refid="volk__complex_8h"/>
-        <childnode refid="17548" relation="include">
+        <childnode refid="17698" relation="include">
         </childnode>
       </node>
-      <node id="17542">
+      <node id="17692">
         <label>volk/volk_common.h</label>
         <link refid="volk__common_8h"/>
-        <childnode refid="17543" relation="include">
+        <childnode refid="17693" relation="include">
         </childnode>
       </node>
-      <node id="17543">
+      <node id="17693">
         <label>inttypes.h</label>
         <link refid="inttypes_8h"/>
-        <childnode refid="17544" relation="include">
+        <childnode refid="17694" relation="include">
         </childnode>
       </node>
-      <node id="17544">
+      <node id="17694">
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
-        <childnode refid="17545" relation="include">
+        <childnode refid="17695" relation="include">
         </childnode>
-        <childnode refid="17546" relation="include">
+        <childnode refid="17696" relation="include">
         </childnode>
       </node>
-      <node id="17545">
+      <node id="17695">
         <label>limits.h</label>
       </node>
-      <node id="17546">
+      <node id="17696">
         <label>wchar.h</label>
       </node>
-      <node id="17539">
+      <node id="17689">
         <label>volk.tmpl.h</label>
         <link refid="volk.tmpl.h"/>
-        <childnode refid="17540" relation="include">
+        <childnode refid="17690" relation="include">
         </childnode>
-        <childnode refid="17541" relation="include">
+        <childnode refid="17691" relation="include">
         </childnode>
-        <childnode refid="17542" relation="include">
+        <childnode refid="17692" relation="include">
         </childnode>
-        <childnode refid="17547" relation="include">
+        <childnode refid="17697" relation="include">
         </childnode>
       </node>
-      <node id="17548">
+      <node id="17698">
         <label>complex.h</label>
       </node>
-      <node id="17540">
+      <node id="17690">
         <label>volk/volk_typedefs.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structvolk__func__desc" prot="public">volk_func_desc</innerclass>
       <sectiondef kind="var">
       <memberdef kind="variable" id="volk_8tmpl_8h_1ace3ce91bc48f67ffceaeed6831ee2c57" prot="public" static="no" mutable="no">
-        <type>VOLK_API $<ref refid="volk__typedefs_8tmpl_8h_1a0dcdb3a7dd616396603c4c979589e115" kindref="member">kern</ref> pname $<ref refid="volk__typedefs_8tmpl_8h_1a0dcdb3a7dd616396603c4c979589e115" kindref="member">kern</ref></type>
+        <type><ref refid="volk__common_8h_1aad4656ebd3cf8ae30363d8bc205a72be" kindref="member">VOLK_API</ref> $<ref refid="volk__typedefs_8tmpl_8h_1a0dcdb3a7dd616396603c4c979589e115" kindref="member">kern</ref> pname $<ref refid="volk__typedefs_8tmpl_8h_1a0dcdb3a7dd616396603c4c979589e115" kindref="member">kern</ref></type>
         <definition>VOLK_API $kern pname $kern name</definition>
         <argsstring></argsstring>
         <name>name</name>
@@ -78,7 +78,7 @@
         <referencedby refid="classgruel_1_1thread__body__wrapper_1ad7604718c4881adbbf0a7085004755b2" compoundref="thread__body__wrapper_8h" startline="42" endline="43">gruel::thread_body_wrapper&lt; F &gt;::thread_body_wrapper</referencedby>
       </memberdef>
       <memberdef kind="variable" id="volk_8tmpl_8h_1a67d51f263e40e30e3a17a4af18551894" prot="public" static="no" mutable="no">
-        <type>VOLK_API const char *</type>
+        <type><ref refid="volk__common_8h_1aad4656ebd3cf8ae30363d8bc205a72be" kindref="member">VOLK_API</ref> const char *</type>
         <definition>VOLK_API const char* arch</definition>
         <argsstring></argsstring>
         <name>arch</name>
@@ -93,12 +93,12 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="volk_8tmpl_8h_1a1bedaae028349fdd660fe18343f4d941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VOLK_API unsigned int</type>
+        <type><ref refid="volk__common_8h_1aad4656ebd3cf8ae30363d8bc205a72be" kindref="member">VOLK_API</ref> unsigned int</type>
         <definition>VOLK_API unsigned int volk_get_alignment</definition>
         <argsstring>(void)</argsstring>
         <name>volk_get_alignment</name>
         <param>
-          <type>void</type>
+          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -109,7 +109,7 @@
         <location file="/home/katsikas/gnuradio/volk/tmpl/volk.tmpl.h" line="38"/>
       </memberdef>
       <memberdef kind="function" id="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VOLK_API</type>
+        <type><ref refid="volk__common_8h_1aad4656ebd3cf8ae30363d8bc205a72be" kindref="member">VOLK_API</ref></type>
         <definition>VOLK_API void</definition>
         <argsstring>(kern.name) _manual($kern.arglist_namedefs</argsstring>
         <name>void</name>
@@ -126,7 +126,7 @@
         <location file="/home/katsikas/gnuradio/volk/tmpl/volk.tmpl.h" line="42"/>
       </memberdef>
       <memberdef kind="function" id="volk_8tmpl_8h_1a098cb5b65fb4e69a68ecd5fb2142e973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VOLK_API struct</type>
+        <type><ref refid="volk__common_8h_1aad4656ebd3cf8ae30363d8bc205a72be" kindref="member">VOLK_API</ref> struct</type>
         <definition>VOLK_API struct volk_func_desc</definition>
         <argsstring>(kern.name) _get_func_desc(void)</argsstring>
         <name>volk_func_desc</name>

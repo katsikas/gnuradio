@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__impl__mpsk__snr__est" kind="class" prot="public">
     <compoundname>digital_impl_mpsk_snr_est</compoundname>
     <derivedcompoundref refid="classdigital__impl__mpsk__snr__est__m2m4" prot="public" virt="non-virtual">digital_impl_mpsk_snr_est_m2m4</derivedcompoundref>
@@ -111,11 +111,11 @@
         <definition>virtual int digital_impl_mpsk_snr_est::update</definition>
         <argsstring>(int noutput_items, const gr_complex *in)</argsstring>
         <name>update</name>
-        <reimplementedby refid="classdigital__impl__mpsk__snr__est__svr_1a6f10114367ded5f0a2c91f984640d0c0">update</reimplementedby>
-        <reimplementedby refid="classdigital__impl__snr__est__m2m4_1a621b7d54e234f3f3ddbbea31bfb6b5f0">update</reimplementedby>
-        <reimplementedby refid="classdigital__impl__mpsk__snr__est__m2m4_1aae1ad088c745b95d505ae77bce3d62d9">update</reimplementedby>
-        <reimplementedby refid="classdigital__impl__mpsk__snr__est__skew_1a45082450419eb65dd3b3fc032ac872e7">update</reimplementedby>
         <reimplementedby refid="classdigital__impl__mpsk__snr__est__simple_1acbe8fc6dc13f5f0ac1d29366c98c56ff">update</reimplementedby>
+        <reimplementedby refid="classdigital__impl__mpsk__snr__est__skew_1a45082450419eb65dd3b3fc032ac872e7">update</reimplementedby>
+        <reimplementedby refid="classdigital__impl__mpsk__snr__est__m2m4_1aae1ad088c745b95d505ae77bce3d62d9">update</reimplementedby>
+        <reimplementedby refid="classdigital__impl__snr__est__m2m4_1a621b7d54e234f3f3ddbbea31bfb6b5f0">update</reimplementedby>
+        <reimplementedby refid="classdigital__impl__mpsk__snr__est__svr_1a6f10114367ded5f0a2c91f984640d0c0">update</reimplementedby>
         <param>
           <type>int</type>
           <declname>noutput_items</declname>
@@ -137,11 +137,11 @@
         <definition>virtual double digital_impl_mpsk_snr_est::snr</definition>
         <argsstring>()</argsstring>
         <name>snr</name>
-        <reimplementedby refid="classdigital__impl__mpsk__snr__est__svr_1a84eff8ccc5e85cbe230285b060637dd3">snr</reimplementedby>
-        <reimplementedby refid="classdigital__impl__snr__est__m2m4_1ab7643fdd46b30bb35f5a7ec0d106c50b">snr</reimplementedby>
-        <reimplementedby refid="classdigital__impl__mpsk__snr__est__m2m4_1a60f445f2b32f9b5a03f09f8fee9dbf20">snr</reimplementedby>
-        <reimplementedby refid="classdigital__impl__mpsk__snr__est__skew_1a242dc4c68ec079bce2070721cdb8fa7c">snr</reimplementedby>
         <reimplementedby refid="classdigital__impl__mpsk__snr__est__simple_1a9652972b96f3a12bece375db55592899">snr</reimplementedby>
+        <reimplementedby refid="classdigital__impl__mpsk__snr__est__skew_1a242dc4c68ec079bce2070721cdb8fa7c">snr</reimplementedby>
+        <reimplementedby refid="classdigital__impl__mpsk__snr__est__m2m4_1a60f445f2b32f9b5a03f09f8fee9dbf20">snr</reimplementedby>
+        <reimplementedby refid="classdigital__impl__snr__est__m2m4_1ab7643fdd46b30bb35f5a7ec0d106c50b">snr</reimplementedby>
+        <reimplementedby refid="classdigital__impl__mpsk__snr__est__svr_1a84eff8ccc5e85cbe230285b060637dd3">snr</reimplementedby>
         <briefdescription>
 <para>Use the register values to compute a new estimate. </para>        </briefdescription>
         <detaileddescription>
@@ -156,37 +156,37 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="407">
+      <node id="398">
         <label>digital_impl_mpsk_snr_est_m2m4</label>
         <link refid="classdigital__impl__mpsk__snr__est__m2m4"/>
-        <childnode refid="406" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="410">
+      <node id="401">
         <label>digital_impl_mpsk_snr_est_svr</label>
         <link refid="classdigital__impl__mpsk__snr__est__svr"/>
-        <childnode refid="406" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="409">
+      <node id="400">
         <label>digital_impl_mpsk_snr_est_skew</label>
         <link refid="classdigital__impl__mpsk__snr__est__skew"/>
-        <childnode refid="406" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="411">
+      <node id="402">
         <label>digital_impl_snr_est_m2m4</label>
         <link refid="classdigital__impl__snr__est__m2m4"/>
-        <childnode refid="406" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="408">
+      <node id="399">
         <label>digital_impl_mpsk_snr_est_simple</label>
         <link refid="classdigital__impl__mpsk__snr__est__simple"/>
-        <childnode refid="406" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="406">
+      <node id="397">
         <label>digital_impl_mpsk_snr_est</label>
         <link refid="classdigital__impl__mpsk__snr__est"/>
       </node>

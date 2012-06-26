@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_vocoder_examples_864cb.
+
+# Include the progress variables for this target.
+include gr-vocoder/examples/CMakeFiles/pygen_gr_vocoder_examples_864cb.dir/progress.make
 
 gr-vocoder/examples/CMakeFiles/pygen_gr_vocoder_examples_864cb: gr-vocoder/examples/alaw_audio_loopback.py.exe
 gr-vocoder/examples/CMakeFiles/pygen_gr_vocoder_examples_864cb: gr-vocoder/examples/codec2_audio_loopback.py.exe
@@ -54,42 +54,42 @@ gr-vocoder/examples/CMakeFiles/pygen_gr_vocoder_examples_864cb: gr-vocoder/examp
 gr-vocoder/examples/alaw_audio_loopback.py.exe: ../gr-vocoder/examples/alaw_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin alaw_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/alaw_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/alaw_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/alaw_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/alaw_audio_loopback.py' ) .read ( ) ) "
 
 gr-vocoder/examples/codec2_audio_loopback.py.exe: ../gr-vocoder/examples/codec2_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin codec2_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/codec2_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/codec2_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/codec2_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/codec2_audio_loopback.py' ) .read ( ) ) "
 
 gr-vocoder/examples/cvsd_audio_loopback.py.exe: ../gr-vocoder/examples/cvsd_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin cvsd_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/cvsd_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/cvsd_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/cvsd_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/cvsd_audio_loopback.py' ) .read ( ) ) "
 
 gr-vocoder/examples/g721_audio_loopback.py.exe: ../gr-vocoder/examples/g721_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin g721_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/g721_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/g721_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/g721_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/g721_audio_loopback.py' ) .read ( ) ) "
 
 gr-vocoder/examples/g723_24_audio_loopback.py.exe: ../gr-vocoder/examples/g723_24_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin g723_24_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/g723_24_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/g723_24_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/g723_24_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/g723_24_audio_loopback.py' ) .read ( ) ) "
 
 gr-vocoder/examples/g723_40_audio_loopback.py.exe: ../gr-vocoder/examples/g723_40_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin g723_40_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/g723_40_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/g723_40_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/g723_40_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/g723_40_audio_loopback.py' ) .read ( ) ) "
 
 gr-vocoder/examples/gsm_audio_loopback.py.exe: ../gr-vocoder/examples/gsm_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gsm_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/gsm_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/gsm_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/gsm_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/gsm_audio_loopback.py' ) .read ( ) ) "
 
 gr-vocoder/examples/ulaw_audio_loopback.py.exe: ../gr-vocoder/examples/ulaw_audio_loopback.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin ulaw_audio_loopback.py"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/ulaw_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/ulaw_audio_loopback.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-vocoder/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-vocoder/examples/ulaw_audio_loopback.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-vocoder/examples/ulaw_audio_loopback.py' ) .read ( ) ) "
 
 pygen_gr_vocoder_examples_864cb: gr-vocoder/examples/CMakeFiles/pygen_gr_vocoder_examples_864cb
 pygen_gr_vocoder_examples_864cb: gr-vocoder/examples/alaw_audio_loopback.py.exe

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="digital__clock__recovery__mm__cc_8h" kind="file">
     <compoundname>digital_clock_recovery_mm_cc.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -55,9 +55,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__clock__recovery__mm__cc_8h_1a1486d68d441ab33b6ab44b7ac8080ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>DIGITAL_API <ref refid="digital__clock__recovery__mm__cc_8h_1a3e20d62e3848f61446d0f015f1f4c207" kindref="member">digital_clock_recovery_mm_cc_sptr</ref></type>
-        <definition>DIGITAL_API digital_clock_recovery_mm_cc_sptr digital_make_clock_recovery_mm_cc</definition>
+      <memberdef kind="function" id="digital__clock__recovery__mm__cc_8h_1a978a9ac329f8a1d21585f4410a481ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="digital__clock__recovery__mm__cc_8h_1a3e20d62e3848f61446d0f015f1f4c207" kindref="member">digital_clock_recovery_mm_cc_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_clock_recovery_mm_cc_sptr digital_make_clock_recovery_mm_cc</definition>
         <argsstring>(float omega, float gain_omega, float mu, float gain_mu, float omega_relative_limit=0.001)</argsstring>
         <name>digital_make_clock_recovery_mm_cc</name>
         <param>
@@ -132,7 +132,7 @@
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__clock__recovery__mm__cc_8h_1a3e20d62e3848f61446d0f015f1f4c207" kindref="member">digital_clock_recovery_mm_cc_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><ref refid="digital__clock__recovery__mm__cc_8h_1a1486d68d441ab33b6ab44b7ac8080ea3" kindref="member">digital_make_clock_recovery_mm_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classdigital__clock__recovery__mm__cc_1a5aa2464738752643018e672c7fbd45e9" kindref="member">omega</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classdigital__clock__recovery__mm__cc_1a15380c164a2cf5b80a8865f7e7588bf8" kindref="member">gain_omega</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="digital__clock__recovery__mm__cc_8h_1a978a9ac329f8a1d21585f4410a481ed6" kindref="member">digital_make_clock_recovery_mm_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classdigital__clock__recovery__mm__cc_1a5aa2464738752643018e672c7fbd45e9" kindref="member">omega</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classdigital__clock__recovery__mm__cc_1a15380c164a2cf5b80a8865f7e7588bf8" kindref="member">gain_omega</ref>,</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classdigital__clock__recovery__mm__cc_1a854a6d13e4d08044d0fc743094fa7529" kindref="member">mu</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classdigital__clock__recovery__mm__cc_1a67727112bbe37394b301a8d42f34a074" kindref="member">gain_mu</ref>,</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega_relative_limit=0.001);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
@@ -191,7 +191,7 @@
 <codeline lineno="109"><highlight class="normal"><sp/><sp/>gr_complex<sp/>slicer_45deg<sp/>(gr_complex<sp/>sample);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__clock__recovery__mm__cc_8h_1a3e20d62e3848f61446d0f015f1f4c207" kindref="member">digital_clock_recovery_mm_cc_sptr</ref></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="digital__clock__recovery__mm__cc_8h_1a1486d68d441ab33b6ab44b7ac8080ea3" kindref="member">digital_make_clock_recovery_mm_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain_omega,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="digital__clock__recovery__mm__cc_8h_1a978a9ac329f8a1d21585f4410a481ed6" kindref="member">digital_make_clock_recovery_mm_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain_omega,</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mu,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain_mu,<sp/></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>omega_relative_limit);</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">};</highlight></codeline>
