@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gnuradio_core_src_python_gnuradio_gr_e70e3.
-
-# Include the progress variables for this target.
-include gnuradio-core/src/python/gnuradio/gr/CMakeFiles/pygen_gnuradio_core_src_python_gnuradio_gr_e70e3.dir/progress.make
 
 gnuradio-core/src/python/gnuradio/gr/CMakeFiles/pygen_gnuradio_core_src_python_gnuradio_gr_e70e3: gnuradio-core/src/python/gnuradio/gr/__init__.pyc
 gnuradio-core/src/python/gnuradio/gr/CMakeFiles/pygen_gnuradio_core_src_python_gnuradio_gr_e70e3: gnuradio-core/src/python/gnuradio/gr/exceptions.pyc
@@ -72,7 +72,7 @@ gnuradio-core/src/python/gnuradio/gr/__init__.pyc: ../gnuradio-core/src/python/g
 gnuradio-core/src/python/gnuradio/gr/__init__.pyc: ../gnuradio-core/src/python/gnuradio/gr/pubsub.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyc, exceptions.pyc, gr_threading.pyc, gr_threading_23.pyc, gr_threading_24.pyc, hier_block2.pyc, prefs.pyc, top_block.pyc, pubsub.pyc"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/__init__.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/exceptions.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/hier_block2.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/prefs.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/top_block.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/pubsub.py /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/__init__.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/exceptions.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/hier_block2.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/prefs.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/top_block.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/pubsub.pyc
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/__init__.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/exceptions.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/hier_block2.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/prefs.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/top_block.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/pubsub.py /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/__init__.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/exceptions.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/hier_block2.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/prefs.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/top_block.pyc /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/pubsub.pyc
 
 gnuradio-core/src/python/gnuradio/gr/exceptions.pyc: gnuradio-core/src/python/gnuradio/gr/__init__.pyc
 
@@ -101,7 +101,7 @@ gnuradio-core/src/python/gnuradio/gr/__init__.pyo: ../gnuradio-core/src/python/g
 gnuradio-core/src/python/gnuradio/gr/__init__.pyo: ../gnuradio-core/src/python/gnuradio/gr/pubsub.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyo, exceptions.pyo, gr_threading.pyo, gr_threading_23.pyo, gr_threading_24.pyo, hier_block2.pyo, prefs.pyo, top_block.pyo, pubsub.pyo"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/__init__.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/exceptions.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/hier_block2.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/prefs.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/top_block.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/pubsub.py /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/__init__.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/exceptions.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/hier_block2.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/prefs.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/top_block.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/pubsub.pyo
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/__init__.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/exceptions.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/hier_block2.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/prefs.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/top_block.py /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr/pubsub.py /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/__init__.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/exceptions.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/hier_block2.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/prefs.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/top_block.pyo /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/pubsub.pyo
 
 gnuradio-core/src/python/gnuradio/gr/exceptions.pyo: gnuradio-core/src/python/gnuradio/gr/__init__.pyo
 

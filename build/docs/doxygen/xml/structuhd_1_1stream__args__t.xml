@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="structuhd_1_1stream__args__t" kind="struct" prot="public">
     <compoundname>uhd::stream_args_t</compoundname>
     <includes refid="gr__uhd__usrp__sink_8h" local="no">gr_uhd_usrp_sink.h</includes>
@@ -44,7 +44,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structuhd_1_1stream__args__t_1a82f6c25a968b1b1ba7881dbcb074f36e" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; size_t &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; size_t &gt;</type>
         <definition>std::vector&lt; size_t &gt; uhd::stream_args_t::channels</definition>
         <argsstring></argsstring>
         <name>channels</name>
@@ -110,26 +110,27 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="7332">
+      <node id="12255">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7330">
+      <node id="12253">
         <label>uhd::stream_args_t</label>
         <link refid="structuhd_1_1stream__args__t"/>
-        <childnode refid="7331" relation="usage">
+        <childnode refid="12254" relation="usage">
           <edgelabel>otw_format</edgelabel>
           <edgelabel>cpu_format</edgelabel>
         </childnode>
-        <childnode refid="7333" relation="usage">
+        <childnode refid="12256" relation="usage">
           <edgelabel>channels</edgelabel>
         </childnode>
       </node>
-      <node id="7333">
+      <node id="12256">
         <label>std::vector&lt; size_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
       </node>
-      <node id="7331">
+      <node id="12254">
         <label>std::string</label>
-        <childnode refid="7332" relation="public-inheritance">
+        <childnode refid="12255" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

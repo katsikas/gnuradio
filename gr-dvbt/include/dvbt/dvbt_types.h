@@ -40,13 +40,11 @@ public:
   	plinfo ();
 
   	// accessors
-  	unsigned int get_packets() { return packets; }
-	int get_flag01()	    const { return flag01;			}
-	int get_flag02()            const { return flag02;			}
-	int get_flag03()            const { return flag03;			}
-	int get_transport_error()   const { return fl_transport_error; 		}
-	bool transport_error_p ()   const { return (fl_transport_error) != 0;   }
-
+	int get_flag01()	    	const { return flag01;			}
+	int get_flag02()            	const { return flag02;			}
+	int get_flag03()            	const { return flag03;			}
+	bool get_transport_error()	const { return transport_error;   	}
+	unsigned int get_packets()            { return packets;                 }
 
   	// setters
 	void set_packets(int remainder){
@@ -54,9 +52,16 @@ public:
                 packets = remainder;
         }
 
-  	void set_transport_error (int  error){
-      		printf("ERROR!!!: %d \n",error);
-  	}
+  	void set_transport_error (int error){
+      		if(error == -1){
+			//printf("Uncorrectable error. %d \n",error);
+			transport_error = true;
+  		}
+		else{
+			printf("Correctable = %d \n",error);
+			transport_error = false;
+		}
+	}
 
        /*!
    	* Set \p OUT such that it reflects a \p NSEGS_OF_DELAY
@@ -86,7 +91,8 @@ protected:
   	// set it, since Reed-Solomon will correct many of those.  This bit is
   	// then copied into the final Transport Stream packet so that MPEG
   	// software can see that the 188-byte data segment has been corrupted.
-  	static const int	fl_transport_error	= 0x0020;
+  	bool transport_error;
+	//static const int	fl_transport_error	= 0x0020;
 };
 
 

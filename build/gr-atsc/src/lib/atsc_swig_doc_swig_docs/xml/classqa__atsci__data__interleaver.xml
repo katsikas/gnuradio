@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classqa__atsci__data__interleaver" kind="class" prot="public">
     <compoundname>qa_atsci_data_interleaver</compoundname>
     <includes refid="qa__atsci__data__interleaver_8h" local="no">qa_atsci_data_interleaver.h</includes>
@@ -214,6 +214,50 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="747">
+        <label>convolutional_interleaver&lt; unsigned char &gt;</label>
+        <link refid="classconvolutional__interleaver"/>
+        <childnode refid="748" relation="usage">
+          <edgelabel>m_fifo</edgelabel>
+        </childnode>
+      </node>
+      <node id="749">
+        <label>interleaver_fifo&lt; unsigned char &gt;</label>
+        <link refid="classinterleaver__fifo"/>
+      </node>
+      <node id="746">
+        <label>atsci_data_deinterleaver</label>
+        <link refid="classatsci__data__deinterleaver"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+        <childnode refid="749" relation="usage">
+          <edgelabel>alignment_fifo</edgelabel>
+        </childnode>
+      </node>
+      <node id="748">
+        <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
+        <childnode refid="749" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="750">
+        <label>atsci_data_interleaver</label>
+        <link refid="classatsci__data__interleaver"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>qa_atsci_data_interleaver</label>
+        <link refid="classqa__atsci__data__interleaver"/>
+        <childnode refid="746" relation="usage">
+          <edgelabel>inbound</edgelabel>
+        </childnode>
+        <childnode refid="750" relation="usage">
+          <edgelabel>outbound</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/qa_atsci_data_interleaver.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/qa_atsci_data_interleaver.h" bodystart="32" bodyend="57"/>
     <listofallmembers>
       <member refid="classqa__atsci__data__interleaver_1a89242b3fe06e70783f28a75b6c06ca86" prot="private" virt="non-virtual"><scope>qa_atsci_data_interleaver</scope><name>chk_assert</name></member>

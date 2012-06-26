@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__misc_8h" kind="file">
     <compoundname>gr_misc.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -27,9 +27,9 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__misc_8h_1a6ec67e6e53063307e029bb3627022bf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT unsigned int</type>
-        <definition>__GR_ATTR_IMPORT unsigned int gr_rounduppow2</definition>
+      <memberdef kind="function" id="gr__misc_8h_1a28799b6e53b0cbd3e73cec248866ecca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API unsigned int</type>
+        <definition>GR_CORE_API unsigned int gr_rounduppow2</definition>
         <argsstring>(unsigned int n)</argsstring>
         <name>gr_rounduppow2</name>
         <param>
@@ -44,9 +44,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_misc.h" line="30"/>
       </memberdef>
-      <memberdef kind="function" id="gr__misc_8h_1a0a2e3a2fc513351eb5dff62b6502a167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT void</type>
-        <definition>__GR_ATTR_IMPORT void gr_zero_vector</definition>
+      <memberdef kind="function" id="gr__misc_8h_1a5a28673315841003f842c40aa472d594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API void</type>
+        <definition>GR_CORE_API void gr_zero_vector</definition>
         <argsstring>(std::vector&lt; float &gt; &amp;v)</argsstring>
         <name>gr_zero_vector</name>
         <param>
@@ -61,9 +61,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_misc.h" line="33"/>
       </memberdef>
-      <memberdef kind="function" id="gr__misc_8h_1a74a6d8829143f24b5db8c6549e66c36c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT void</type>
-        <definition>__GR_ATTR_IMPORT void gr_zero_vector</definition>
+      <memberdef kind="function" id="gr__misc_8h_1ae9c9543c2c1d461c835b444ce1432ac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API void</type>
+        <definition>GR_CORE_API void gr_zero_vector</definition>
         <argsstring>(std::vector&lt; double &gt; &amp;v)</argsstring>
         <name>gr_zero_vector</name>
         <param>
@@ -78,9 +78,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_misc.h" line="34"/>
       </memberdef>
-      <memberdef kind="function" id="gr__misc_8h_1a46afb83f36a9892d50462fa1bf5dc5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT void</type>
-        <definition>__GR_ATTR_IMPORT void gr_zero_vector</definition>
+      <memberdef kind="function" id="gr__misc_8h_1a919c0c38bc010707df907f95123bc080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API void</type>
+        <definition>GR_CORE_API void gr_zero_vector</definition>
         <argsstring>(std::vector&lt; int &gt; &amp;v)</argsstring>
         <name>gr_zero_vector</name>
         <param>
@@ -95,9 +95,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_misc.h" line="35"/>
       </memberdef>
-      <memberdef kind="function" id="gr__misc_8h_1a9802abcf3b9de8bb6862a10632ac3246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT void</type>
-        <definition>__GR_ATTR_IMPORT void gr_zero_vector</definition>
+      <memberdef kind="function" id="gr__misc_8h_1aa25951f6dce6b466ccf6094aaa95201f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API void</type>
+        <definition>GR_CORE_API void gr_zero_vector</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; &amp;v)</argsstring>
         <name>gr_zero_vector</name>
         <param>
@@ -147,13 +147,13 @@
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gr_types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><ref refid="gr__misc_8h_1a6ec67e6e53063307e029bb3627022bf3" kindref="member">gr_rounduppow2</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="gr__misc_8h_1a28799b6e53b0cbd3e73cec248866ecca" kindref="member">gr_rounduppow2</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FIXME<sp/>should<sp/>be<sp/>template</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a0a2e3a2fc513351eb5dff62b6502a167" kindref="member">gr_zero_vector</ref>(std::vector&lt;float&gt;<sp/>&amp;v);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a0a2e3a2fc513351eb5dff62b6502a167" kindref="member">gr_zero_vector</ref>(std::vector&lt;double&gt;<sp/>&amp;v);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a0a2e3a2fc513351eb5dff62b6502a167" kindref="member">gr_zero_vector</ref>(std::vector&lt;int&gt;<sp/>&amp;v);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a0a2e3a2fc513351eb5dff62b6502a167" kindref="member">gr_zero_vector</ref>(std::vector&lt;gr_complex&gt;<sp/>&amp;v);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a5a28673315841003f842c40aa472d594" kindref="member">gr_zero_vector</ref>(std::vector&lt;float&gt;<sp/>&amp;v);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a5a28673315841003f842c40aa472d594" kindref="member">gr_zero_vector</ref>(std::vector&lt;double&gt;<sp/>&amp;v);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a5a28673315841003f842c40aa472d594" kindref="member">gr_zero_vector</ref>(std::vector&lt;int&gt;<sp/>&amp;v);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gr__misc_8h_1a5a28673315841003f842c40aa472d594" kindref="member">gr_zero_vector</ref>(std::vector&lt;gr_complex&gt;<sp/>&amp;v);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_MISC_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>

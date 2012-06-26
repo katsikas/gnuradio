@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_digital_examples_75972.
-
-# Include the progress variables for this target.
-include gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_75972.dir/progress.make
 
 gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_75972: gr-digital/examples/narrowband/transmit_path.py.exe
 gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_75972: gr-digital/examples/narrowband/receive_path.py.exe
@@ -56,52 +56,52 @@ gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_75972: gr-digital/examp
 gr-digital/examples/narrowband/transmit_path.py.exe: ../gr-digital/examples/narrowband/transmit_path.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin transmit_path.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/transmit_path.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/transmit_path.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/transmit_path.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/transmit_path.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/receive_path.py.exe: ../gr-digital/examples/narrowband/receive_path.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin receive_path.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/receive_path.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/receive_path.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/receive_path.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/receive_path.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/uhd_interface.py.exe: ../gr-digital/examples/narrowband/uhd_interface.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin uhd_interface.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/uhd_interface.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/uhd_interface.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/uhd_interface.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/uhd_interface.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/benchmark_tx.py.exe: ../gr-digital/examples/narrowband/benchmark_tx.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin benchmark_tx.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/benchmark_tx.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/benchmark_tx.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/benchmark_tx.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/benchmark_tx.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/benchmark_rx.py.exe: ../gr-digital/examples/narrowband/benchmark_rx.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin benchmark_rx.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/benchmark_rx.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/benchmark_rx.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/benchmark_rx.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/benchmark_rx.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/tx_voice.py.exe: ../gr-digital/examples/narrowband/tx_voice.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin tx_voice.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/tx_voice.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/tx_voice.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/tx_voice.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/tx_voice.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/rx_voice.py.exe: ../gr-digital/examples/narrowband/rx_voice.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin rx_voice.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/rx_voice.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/rx_voice.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/rx_voice.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/rx_voice.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/digital_bert_rx.py.exe: ../gr-digital/examples/narrowband/digital_bert_rx.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin digital_bert_rx.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/digital_bert_rx.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/digital_bert_rx.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/digital_bert_rx.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/digital_bert_rx.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/digital_bert_tx.py.exe: ../gr-digital/examples/narrowband/digital_bert_tx.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin digital_bert_tx.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/digital_bert_tx.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/digital_bert_tx.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/digital_bert_tx.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/digital_bert_tx.py' ) .read ( ) ) "
 
 gr-digital/examples/narrowband/tunnel.py.exe: ../gr-digital/examples/narrowband/tunnel.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin tunnel.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/tunnel.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/tunnel.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/tunnel.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/narrowband/tunnel.py' ) .read ( ) ) "
 
 pygen_gr_digital_examples_75972: gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_75972
 pygen_gr_digital_examples_75972: gr-digital/examples/narrowband/transmit_path.py.exe

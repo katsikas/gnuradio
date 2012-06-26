@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classmicrotune__4702" kind="class" prot="public">
     <compoundname>microtune_4702</compoundname>
     <basecompoundref refid="classmicrotune__xxxx" prot="public" virt="non-virtual">microtune_xxxx</basecompoundref>
@@ -152,26 +152,40 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6440">
+      <node id="11255">
         <label>microtune_xxxx</label>
         <link refid="classmicrotune__xxxx"/>
       </node>
-      <node id="6439">
+      <node id="11254">
         <label>microtune_4702</label>
         <link refid="classmicrotune__4702"/>
-        <childnode refid="6440" relation="public-inheritance">
+        <childnode refid="11255" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6442">
+      <node id="11257">
         <label>microtune_xxxx</label>
         <link refid="classmicrotune__xxxx"/>
       </node>
-      <node id="6441">
+      <node id="11258">
+        <label>boost::shared_ptr&lt; i2c &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="11259" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="11259">
+        <label>i2c</label>
+        <link refid="classi2c"/>
+      </node>
+      <node id="11256">
         <label>microtune_4702</label>
         <link refid="classmicrotune__4702"/>
-        <childnode refid="6442" relation="public-inheritance">
+        <childnode refid="11257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11258" relation="usage">
+          <edgelabel>d_i2c</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

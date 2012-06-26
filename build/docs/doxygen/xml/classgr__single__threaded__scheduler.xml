@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__single__threaded__scheduler" kind="class" prot="public">
     <compoundname>gr_single_threaded_scheduler</compoundname>
     <includes refid="gr__single__threaded__scheduler_8h" local="no">gr_single_threaded_scheduler.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classgr__single__threaded__scheduler_1a416ba9691ee2faac0a22d958d8cbb501" prot="private" static="no" mutable="no">
-        <type>const std::vector&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_block_sptr</ref> &gt;</type>
+        <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_block_sptr</ref> &gt;</type>
         <definition>const std::vector&lt;gr_block_sptr&gt; gr_single_threaded_scheduler::d_blocks</definition>
         <argsstring></argsstring>
         <name>d_blocks</name>
@@ -59,7 +59,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h" line="41"/>
       </memberdef>
       <memberdef kind="function" id="classgr__single__threaded__scheduler_1a937072503e76c5e8b0a9c88776afe22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_single_threaded_scheduler::run</definition>
         <argsstring>()</argsstring>
         <name>run</name>
@@ -72,7 +72,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h" line="43"/>
       </memberdef>
       <memberdef kind="function" id="classgr__single__threaded__scheduler_1a39aac14f6c8a30fbf698712631ea03ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_single_threaded_scheduler::stop</definition>
         <argsstring>()</argsstring>
         <name>stop</name>
@@ -92,7 +92,7 @@
         <argsstring>(const std::vector&lt; gr_block_sptr &gt; &amp;blocks)</argsstring>
         <name>gr_single_threaded_scheduler</name>
         <param>
-          <type>const std::vector&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_block_sptr</ref> &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_block_sptr</ref> &gt; &amp;</type>
           <declname>blocks</declname>
         </param>
         <briefdescription>
@@ -104,7 +104,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classgr__single__threaded__scheduler_1a68a17e3d751386a5c6414ba256722720" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_single_threaded_scheduler::main_loop</definition>
         <argsstring>()</argsstring>
         <name>main_loop</name>
@@ -119,12 +119,12 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__single__threaded__scheduler_1aa02b46e119bff0e0cc254e4b9beaaa12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_single_threaded_scheduler_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_single_threaded_scheduler_sptr</ref></type>
         <definition>GR_CORE_API gr_single_threaded_scheduler_sptr gr_make_single_threaded_scheduler</definition>
         <argsstring>(const std::vector&lt; gr_block_sptr &gt; &amp;blocks)</argsstring>
         <name>gr_make_single_threaded_scheduler</name>
         <param>
-          <type>const std::vector&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_block_sptr</ref> &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_block_sptr</ref> &gt; &amp;</type>
           <declname>blocks</declname>
         </param>
         <briefdescription>
@@ -140,6 +140,58 @@
 <para>Simple scheduler for stream computations. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="9660">
+        <label>T</label>
+      </node>
+      <node id="9662">
+        <label>std::basic_ofstream&lt; char &gt;</label>
+        <childnode refid="9663" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9659">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="9660" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="9661">
+        <label>std::ofstream</label>
+        <childnode refid="9662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9663">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="9664" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9664">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="9665" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9665">
+        <label>std::ios_base</label>
+      </node>
+      <node id="9658">
+        <label>std::vector&lt; gr_block_sptr &gt;</label>
+        <childnode refid="9659" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9657">
+        <label>gr_single_threaded_scheduler</label>
+        <link refid="classgr__single__threaded__scheduler"/>
+        <childnode refid="9658" relation="usage">
+          <edgelabel>d_blocks</edgelabel>
+        </childnode>
+        <childnode refid="9661" relation="usage">
+          <edgelabel>d_log</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h" line="39" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h" bodystart="39" bodyend="57"/>
     <listofallmembers>
       <member refid="classgr__single__threaded__scheduler_1a416ba9691ee2faac0a22d958d8cbb501" prot="private" virt="non-virtual"><scope>gr_single_threaded_scheduler</scope><name>d_blocks</name></member>

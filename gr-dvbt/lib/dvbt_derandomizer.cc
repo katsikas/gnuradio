@@ -26,6 +26,7 @@
 #endif
 
 #include <stdio.h>
+#include <assert.h>
 #include <gr_io_signature.h>
 #include <dvbt/dvbt_consts.h>
 #include <dvbt/dvbt_derandomizer.h>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__io__signature" kind="class" prot="public">
     <compoundname>gr_io_signature</compoundname>
     <includes refid="gr__io__signature_8h" local="no">gr_io_signature.h</includes>
@@ -31,7 +31,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" line="93" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__io__signature_1af37938af5ad637ceda114ea4719646ba" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; int &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt;</type>
         <definition>std::vector&lt;int&gt; gr_io_signature::d_sizeof_stream_item</definition>
         <argsstring></argsstring>
         <name>d_sizeof_stream_item</name>
@@ -75,7 +75,7 @@
           <declname>max_streams</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>sizeof_stream_items</declname>
         </param>
         <briefdescription>
@@ -89,7 +89,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__io__signature_1ae5b9cf375fcb66b7c874e9defaf8a8cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_io_signature_sptr</ref></type>
         <definition>GR_CORE_API gr_io_signature_sptr gr_make_io_signaturev</definition>
         <argsstring>(int min_streams, int max_streams, const std::vector&lt; int &gt; &amp;sizeof_stream_items)</argsstring>
         <name>gr_make_io_signaturev</name>
@@ -102,7 +102,7 @@
           <declname>max_streams</declname>
         </param>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt; &amp;</type>
           <declname>sizeof_stream_items</declname>
         </param>
         <briefdescription>
@@ -194,7 +194,7 @@ If there are more streams than there are entries in sizeof_stream_items, the val
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" line="112"/>
       </memberdef>
       <memberdef kind="function" id="classgr__io__signature_1abc83a822adb84f8ea2cccce70a7c3ba4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; int &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; int &gt;</type>
         <definition>std::vector&lt;int&gt; gr_io_signature::sizeof_stream_items</definition>
         <argsstring>() const </argsstring>
         <name>sizeof_stream_items</name>
@@ -211,6 +211,19 @@ If there are more streams than there are entries in sizeof_stream_items, the val
 <para>i/o signature for input and output ports. </para>    </briefdescription>
     <detaileddescription>
 <para>misc </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="7307">
+        <label>gr_io_signature</label>
+        <link refid="classgr__io__signature"/>
+        <childnode refid="7308" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="7308">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" line="91" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_io_signature.h" bodystart="91" bodyend="114"/>
     <listofallmembers>
       <member refid="classgr__io__signature_1ad6606b5e021a69ff0b85ce06a6973feb" prot="private" virt="non-virtual"><scope>gr_io_signature</scope><name>d_max_streams</name></member>

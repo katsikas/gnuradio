@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdigital__packet__sink" kind="class" prot="public">
     <compoundname>digital_packet_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -227,12 +227,12 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__packet__sink_1a629303d0843d0ce6a44ffadd1cd85b5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_packet_sink_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_packet_sink_sptr</ref></type>
         <definition>DIGITAL_API digital_packet_sink_sptr digital_make_packet_sink</definition>
         <argsstring>(const std::vector&lt; unsigned char &gt; &amp;sync_vector, gr_msg_queue_sptr target_queue, int threshold)</argsstring>
         <name>digital_make_packet_sink</name>
         <param>
-          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; unsigned char &gt; &amp;</type>
           <declname>sync_vector</declname>
         </param>
         <param>
@@ -259,7 +259,7 @@
         <argsstring>(const std::vector&lt; unsigned char &gt; &amp;sync_vector, gr_msg_queue_sptr target_queue, int threshold)</argsstring>
         <name>digital_packet_sink</name>
         <param>
-          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; unsigned char &gt; &amp;</type>
           <declname>sync_vector</declname>
         </param>
         <param>
@@ -279,7 +279,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_packet_sink.h" line="94"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__packet__sink_1a65022bc72119138da6ca451b7d5fe805" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_packet_sink::enter_search</definition>
         <argsstring>()</argsstring>
         <name>enter_search</name>
@@ -292,7 +292,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_packet_sink.h" line="96"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__packet__sink_1a9c296570e79b8b0332d22bfbe8372c07" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_packet_sink::enter_have_sync</definition>
         <argsstring>()</argsstring>
         <name>enter_have_sync</name>
@@ -305,7 +305,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_packet_sink.h" line="97"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__packet__sink_1ad80bd30646af6a8a20ac76864b190c57" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_packet_sink::enter_have_header</definition>
         <argsstring>(int payload_len)</argsstring>
         <name>enter_have_header</name>
@@ -390,11 +390,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -446,100 +446,258 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1592">
+      <node id="2828">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1593" relation="public-inheritance">
+        <childnode refid="2829" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1589">
+      <node id="2825">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1590" relation="public-inheritance">
+        <childnode refid="2826" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1590">
+      <node id="2826">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1591" relation="public-inheritance">
+        <childnode refid="2827" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1588">
+      <node id="2824">
         <label>digital_packet_sink</label>
         <link refid="classdigital__packet__sink"/>
-        <childnode refid="1589" relation="public-inheritance">
+        <childnode refid="2825" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1593">
+      <node id="2829">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1591">
+      <node id="2827">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1592" relation="public-inheritance">
+        <childnode refid="2828" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1598">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="1599" relation="public-inheritance">
+      <node id="2851">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="2845" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1595">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="1596" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1596">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="1597" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1600">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="2860">
+        <label>boost::shared_ptr&lt; gr_message &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1601" relation="usage">
+        <childnode refid="2861" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1603">
-        <label>std::basic_string&lt; char &gt;</label>
-      </node>
-      <node id="1594">
-        <label>digital_packet_sink</label>
-        <link refid="classdigital__packet__sink"/>
-        <childnode refid="1595" relation="public-inheritance">
+      <node id="2857">
+        <label>boost::shared_ptr&lt; gr_msg_queue &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2858" relation="usage">
+          <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1599">
+      <node id="2844">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2845" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2856">
+        <label>T</label>
+      </node>
+      <node id="2834">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="2835" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2831">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="2832" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2861">
+        <label>gr_message</label>
+        <link refid="classgr__message"/>
+        <childnode refid="2860" relation="usage">
+          <edgelabel>d_next</edgelabel>
+        </childnode>
+      </node>
+      <node id="2845">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="2846" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2853">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="2848">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="2832">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="2833" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2841" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="2841">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2842" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2855">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2856" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2842">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="2843" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="2852" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="2854" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="2849">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="2850" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2836">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2837" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2847">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="2848" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="2849" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="2851" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="2859">
+        <label>gr_msg_handler</label>
+        <link refid="classgr__msg__handler"/>
+      </node>
+      <node id="2840">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2830">
+        <label>digital_packet_sink</label>
+        <link refid="classdigital__packet__sink"/>
+        <childnode refid="2831" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2857" relation="usage">
+          <edgelabel>d_target_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="2843">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="2844" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2835">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1601">
+      <node id="2846">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="2847" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="2850">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="2852">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="2853" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="2854">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="2855" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2837">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="2838" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="1597">
+      <node id="2833">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1598" relation="public-inheritance">
+        <childnode refid="2834" relation="public-inheritance">
         </childnode>
-        <childnode refid="1600" relation="usage">
+        <childnode refid="2836" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1602" relation="usage">
+        <childnode refid="2839" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1602">
+      <node id="2858">
+        <label>gr_msg_queue</label>
+        <link refid="classgr__msg__queue"/>
+        <childnode refid="2859" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2860" relation="usage">
+          <edgelabel>d_head</edgelabel>
+          <edgelabel>d_tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="2838">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="2839">
         <label>std::string</label>
-        <childnode refid="1603" relation="public-inheritance">
+        <childnode refid="2840" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -619,7 +777,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>digital_packet_sink</scope><name>set_relative_rate</name></member>

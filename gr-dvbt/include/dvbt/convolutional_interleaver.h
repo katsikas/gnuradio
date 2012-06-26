@@ -75,6 +75,7 @@ convolutional_interleaver<symbol_type>::convolutional_interleaver (
 					   int nbanks,
 					   int fifo_size_incr)
 {
+	printf("convolutional interleaver \n");
   	assert (nbanks >= 1);
   	assert (fifo_size_incr >= 1);
 
@@ -106,6 +107,7 @@ convolutional_interleaver<symbol_type>::~convolutional_interleaver ()
 template<class symbol_type> void
 convolutional_interleaver<symbol_type>::reset ()
 {
+	printf("reset interleaver \n");
   	sync ();
   	for (int i = 0; i < m_nbanks; i++)
     		m_fifo[i]->reset ();

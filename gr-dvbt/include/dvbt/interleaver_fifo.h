@@ -24,6 +24,7 @@
 #ifndef _INTERLEAVER_FIFO_H_
 #define _INTERLEAVER_FIFO_H_
 
+#include <stdio.h>
 #include <string.h>
 #include <dvbt/interleaver_fifo.h>
 
@@ -83,6 +84,7 @@ interleaver_fifo<symbol_type>::~interleaver_fifo ()
 template<class symbol_type> void
 interleaver_fifo<symbol_type>::reset ()
 {
+	printf("reset interleaver \n");
   	m_position = 0;
   	memset (m_fifo, 0, m_size * sizeof (symbol_type));
 }

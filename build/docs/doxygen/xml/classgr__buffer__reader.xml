@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__buffer__reader" kind="class" prot="public">
     <compoundname>gr_buffer_reader</compoundname>
     <includes refid="gr__buffer_8h" local="no">gr_buffer.h</includes>
@@ -18,7 +18,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="282" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" bodystart="282" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classgr__buffer__reader_1adc1ca197033760254a594982fde1a4a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_buffer_reader_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_buffer_reader_sptr</ref></type>
         <definition>GR_CORE_API gr_buffer_reader_sptr gr_buffer_add_reader</definition>
         <argsstring>(gr_buffer_sptr buf, int nzero_preload, gr_block_sptr link)</argsstring>
         <name>gr_buffer_add_reader</name>
@@ -173,7 +173,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="231" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" bodystart="231" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="classgr__buffer__reader_1aa0a07401b38ed900cb53e72193233ddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>const void *</type>
         <definition>const void* gr_buffer_reader::read_pointer</definition>
         <argsstring>()</argsstring>
         <name>read_pointer</name>
@@ -186,7 +186,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="238"/>
       </memberdef>
       <memberdef kind="function" id="classgr__buffer__reader_1a6a8e969300be7ffa49811109f27005c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_buffer_reader::update_read_pointer</definition>
         <argsstring>(int nitems)</argsstring>
         <name>update_read_pointer</name>
@@ -203,7 +203,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="243"/>
       </memberdef>
       <memberdef kind="function" id="classgr__buffer__reader_1a8b550f828745a575387ead9701174665" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_buffer_reader::set_done</definition>
         <argsstring>(bool done)</argsstring>
         <name>set_done</name>
@@ -285,12 +285,12 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="259" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" bodystart="259" bodyend="259"/>
       </memberdef>
       <memberdef kind="function" id="classgr__buffer__reader_1aaab943f9a5a9f25a86f66d6bf8c27fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_buffer_reader::get_tags_in_range</definition>
         <argsstring>(std::vector&lt; gr_tag_t &gt; &amp;v, uint64_t abs_start, uint64_t abs_end)</argsstring>
         <name>get_tags_in_range</name>
         <param>
-          <type>std::vector&lt; <ref refid="structgr__tag__t" kindref="compound">gr_tag_t</ref> &gt; &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="structgr__tag__t" kindref="compound">gr_tag_t</ref> &gt; &amp;</type>
           <declname>v</declname>
         </param>
         <param>
@@ -363,6 +363,57 @@
 <para>How we keep track of the readers of a <ref refid="classgr__buffer" kindref="compound">gr_buffer</ref>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="4893">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="4887" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4887">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="4888" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="4890">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="4891">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="4892" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4889">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="4890" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="4891" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="4893" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="4888">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="4889" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="4892">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="211" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" bodystart="211" bodyend="294"/>
     <listofallmembers>
       <member refid="classgr__buffer__reader_1aa1f9fc3b86fea8da9cfdb6f693b0d8b1" prot="public" virt="non-virtual"><scope>gr_buffer_reader</scope><name>buffer</name></member>

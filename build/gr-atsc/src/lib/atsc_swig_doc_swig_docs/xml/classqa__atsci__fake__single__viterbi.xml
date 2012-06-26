@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classqa__atsci__fake__single__viterbi" kind="class" prot="public">
     <compoundname>qa_atsci_fake_single_viterbi</compoundname>
     <includes refid="qa__atsci__fake__single__viterbi_8h" local="no">qa_atsci_fake_single_viterbi.h</includes>
@@ -158,6 +158,26 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="756">
+        <label>atsci_basic_trellis_encoder</label>
+        <link refid="classatsci__basic__trellis__encoder"/>
+      </node>
+      <node id="757">
+        <label>atsci_fake_single_viterbi</label>
+        <link refid="classatsci__fake__single__viterbi"/>
+      </node>
+      <node id="755">
+        <label>qa_atsci_fake_single_viterbi</label>
+        <link refid="classqa__atsci__fake__single__viterbi"/>
+        <childnode refid="756" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+        <childnode refid="757" relation="usage">
+          <edgelabel>decoder</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/qa_atsci_fake_single_viterbi.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/qa_atsci_fake_single_viterbi.h" bodystart="32" bodyend="49"/>
     <listofallmembers>
       <member refid="classqa__atsci__fake__single__viterbi_1a4ec183907c940161ae140a2b5117526f" prot="private" virt="non-virtual"><scope>qa_atsci_fake_single_viterbi</scope><name>CPPUNIT_TEST</name></member>

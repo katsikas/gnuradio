@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__fir__fsf__3dnow" kind="class" prot="public">
     <compoundname>gr_fir_fsf_3dnow</compoundname>
     <basecompoundref refid="classgr__fir__fsf__simd" prot="public" virt="non-virtual">gr_fir_fsf_simd</basecompoundref>
@@ -24,7 +24,7 @@
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>gr_fir_fsf_3dnow</name>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -41,26 +41,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3719">
+      <node id="6489">
         <label>gr_fir_fsf_simd</label>
         <link refid="classgr__fir__fsf__simd"/>
       </node>
-      <node id="3718">
+      <node id="6488">
         <label>gr_fir_fsf_3dnow</label>
         <link refid="classgr__fir__fsf__3dnow"/>
-        <childnode refid="3719" relation="public-inheritance">
+        <childnode refid="6489" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3721">
+      <node id="6491">
         <label>gr_fir_fsf_simd</label>
         <link refid="classgr__fir__fsf__simd"/>
       </node>
-      <node id="3720">
+      <node id="6490">
         <label>gr_fir_fsf_3dnow</label>
         <link refid="classgr__fir__fsf__3dnow"/>
-        <childnode refid="3721" relation="public-inheritance">
+        <childnode refid="6491" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

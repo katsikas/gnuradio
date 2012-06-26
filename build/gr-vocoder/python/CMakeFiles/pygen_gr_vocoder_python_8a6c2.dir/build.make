@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_vocoder_python_8a6c2.
-
-# Include the progress variables for this target.
-include gr-vocoder/python/CMakeFiles/pygen_gr_vocoder_python_8a6c2.dir/progress.make
 
 gr-vocoder/python/CMakeFiles/pygen_gr_vocoder_python_8a6c2: gr-vocoder/python/__init__.pyc
 gr-vocoder/python/CMakeFiles/pygen_gr_vocoder_python_8a6c2: gr-vocoder/python/cvsd.pyc
@@ -51,7 +51,7 @@ gr-vocoder/python/__init__.pyc: ../gr-vocoder/python/__init__.py
 gr-vocoder/python/__init__.pyc: ../gr-vocoder/python/cvsd.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyc, cvsd.pyc"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/python && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-vocoder/python/__init__.py /home/katsikas/gnuradio/gr-vocoder/python/cvsd.py /home/katsikas/gnuradio/build/gr-vocoder/python/__init__.pyc /home/katsikas/gnuradio/build/gr-vocoder/python/cvsd.pyc
+	cd /home/katsikas/gnuradio/build/gr-vocoder/python && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-vocoder/python/__init__.py /home/katsikas/gnuradio/gr-vocoder/python/cvsd.py /home/katsikas/gnuradio/build/gr-vocoder/python/__init__.pyc /home/katsikas/gnuradio/build/gr-vocoder/python/cvsd.pyc
 
 gr-vocoder/python/cvsd.pyc: gr-vocoder/python/__init__.pyc
 
@@ -59,7 +59,7 @@ gr-vocoder/python/__init__.pyo: ../gr-vocoder/python/__init__.py
 gr-vocoder/python/__init__.pyo: ../gr-vocoder/python/cvsd.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __init__.pyo, cvsd.pyo"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/python && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-vocoder/python/__init__.py /home/katsikas/gnuradio/gr-vocoder/python/cvsd.py /home/katsikas/gnuradio/build/gr-vocoder/python/__init__.pyo /home/katsikas/gnuradio/build/gr-vocoder/python/cvsd.pyo
+	cd /home/katsikas/gnuradio/build/gr-vocoder/python && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-vocoder/python/__init__.py /home/katsikas/gnuradio/gr-vocoder/python/cvsd.py /home/katsikas/gnuradio/build/gr-vocoder/python/__init__.pyo /home/katsikas/gnuradio/build/gr-vocoder/python/cvsd.pyo
 
 gr-vocoder/python/cvsd.pyo: gr-vocoder/python/__init__.pyo
 

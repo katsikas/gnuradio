@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__single__threaded__scheduler" kind="class" prot="public">
     <compoundname>gr_single_threaded_scheduler</compoundname>
     <includes refid="gr__single__threaded__scheduler_8h" local="no">gr_single_threaded_scheduler.h</includes>
@@ -140,6 +140,44 @@
 <para>Simple scheduler for stream computations. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="476">
+        <label>std::basic_ofstream&lt; char &gt;</label>
+        <childnode refid="477" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>std::ofstream</label>
+        <childnode refid="476" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="477">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="478">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="479">
+        <label>std::ios_base</label>
+      </node>
+      <node id="474">
+        <label>std::vector&lt; gr_block_sptr &gt;</label>
+      </node>
+      <node id="473">
+        <label>gr_single_threaded_scheduler</label>
+        <link refid="classgr__single__threaded__scheduler"/>
+        <childnode refid="474" relation="usage">
+          <edgelabel>d_blocks</edgelabel>
+        </childnode>
+        <childnode refid="475" relation="usage">
+          <edgelabel>d_log</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h" line="39" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h" bodystart="39" bodyend="57"/>
     <listofallmembers>
       <member refid="classgr__single__threaded__scheduler_1a416ba9691ee2faac0a22d958d8cbb501" prot="private" virt="non-virtual"><scope>gr_single_threaded_scheduler</scope><name>d_blocks</name></member>

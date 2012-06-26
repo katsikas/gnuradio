@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_wxgui_src_python_89532.
-
-# Include the progress variables for this target.
-include gr-wxgui/src/python/CMakeFiles/pygen_gr_wxgui_src_python_89532.dir/progress.make
 
 gr-wxgui/src/python/CMakeFiles/pygen_gr_wxgui_src_python_89532: gr-wxgui/src/python/plotter/__init__.pyc
 gr-wxgui/src/python/CMakeFiles/pygen_gr_wxgui_src_python_89532: gr-wxgui/src/python/plotter/bar_plotter.pyc
@@ -69,7 +69,7 @@ gr-wxgui/src/python/plotter/__init__.pyc: ../gr-wxgui/src/python/plotter/plotter
 gr-wxgui/src/python/plotter/__init__.pyc: ../gr-wxgui/src/python/plotter/waterfall_plotter.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating plotter/__init__.pyc, plotter/bar_plotter.pyc, plotter/channel_plotter.pyc, plotter/common.pyc, plotter/gltext.pyc, plotter/grid_plotter_base.pyc, plotter/plotter_base.pyc, plotter/waterfall_plotter.pyc"
-	cd /home/katsikas/gnuradio/build/gr-wxgui/src/python && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/__init__.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/bar_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/channel_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/common.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/gltext.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/grid_plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/waterfall_plotter.py /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/__init__.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/bar_plotter.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/channel_plotter.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/common.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/gltext.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/grid_plotter_base.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/plotter_base.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/waterfall_plotter.pyc
+	cd /home/katsikas/gnuradio/build/gr-wxgui/src/python && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/__init__.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/bar_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/channel_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/common.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/gltext.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/grid_plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/waterfall_plotter.py /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/__init__.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/bar_plotter.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/channel_plotter.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/common.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/gltext.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/grid_plotter_base.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/plotter_base.pyc /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/waterfall_plotter.pyc
 
 gr-wxgui/src/python/plotter/bar_plotter.pyc: gr-wxgui/src/python/plotter/__init__.pyc
 
@@ -95,7 +95,7 @@ gr-wxgui/src/python/plotter/__init__.pyo: ../gr-wxgui/src/python/plotter/plotter
 gr-wxgui/src/python/plotter/__init__.pyo: ../gr-wxgui/src/python/plotter/waterfall_plotter.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating plotter/__init__.pyo, plotter/bar_plotter.pyo, plotter/channel_plotter.pyo, plotter/common.pyo, plotter/gltext.pyo, plotter/grid_plotter_base.pyo, plotter/plotter_base.pyo, plotter/waterfall_plotter.pyo"
-	cd /home/katsikas/gnuradio/build/gr-wxgui/src/python && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/__init__.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/bar_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/channel_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/common.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/gltext.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/grid_plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/waterfall_plotter.py /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/__init__.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/bar_plotter.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/channel_plotter.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/common.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/gltext.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/grid_plotter_base.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/plotter_base.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/waterfall_plotter.pyo
+	cd /home/katsikas/gnuradio/build/gr-wxgui/src/python && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/__init__.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/bar_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/channel_plotter.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/common.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/gltext.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/grid_plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/plotter_base.py /home/katsikas/gnuradio/gr-wxgui/src/python/plotter/waterfall_plotter.py /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/__init__.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/bar_plotter.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/channel_plotter.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/common.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/gltext.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/grid_plotter_base.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/plotter_base.pyo /home/katsikas/gnuradio/build/gr-wxgui/src/python/plotter/waterfall_plotter.pyo
 
 gr-wxgui/src/python/plotter/bar_plotter.pyo: gr-wxgui/src/python/plotter/__init__.pyo
 

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_grc_grc_gnuradio_eb699.
-
-# Include the progress variables for this target.
-include grc/grc_gnuradio/CMakeFiles/pygen_grc_grc_gnuradio_eb699.dir/progress.make
 
 grc/grc_gnuradio/CMakeFiles/pygen_grc_grc_gnuradio_eb699: grc/grc_gnuradio/blks2/__init__.pyc
 grc/grc_gnuradio/CMakeFiles/pygen_grc_grc_gnuradio_eb699: grc/grc_gnuradio/blks2/error_rate.pyc
@@ -60,7 +60,7 @@ grc/grc_gnuradio/blks2/__init__.pyc: ../grc/grc_gnuradio/blks2/selector.py
 grc/grc_gnuradio/blks2/__init__.pyc: ../grc/grc_gnuradio/blks2/tcp.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating blks2/__init__.pyc, blks2/error_rate.pyc, blks2/packet.pyc, blks2/selector.pyc, blks2/tcp.pyc"
-	cd /home/katsikas/gnuradio/build/grc/grc_gnuradio && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/__init__.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/error_rate.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/packet.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/selector.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/tcp.py /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/__init__.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/error_rate.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/packet.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/selector.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/tcp.pyc
+	cd /home/katsikas/gnuradio/build/grc/grc_gnuradio && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/__init__.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/error_rate.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/packet.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/selector.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/tcp.py /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/__init__.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/error_rate.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/packet.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/selector.pyc /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/tcp.pyc
 
 grc/grc_gnuradio/blks2/error_rate.pyc: grc/grc_gnuradio/blks2/__init__.pyc
 
@@ -77,7 +77,7 @@ grc/grc_gnuradio/blks2/__init__.pyo: ../grc/grc_gnuradio/blks2/selector.py
 grc/grc_gnuradio/blks2/__init__.pyo: ../grc/grc_gnuradio/blks2/tcp.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating blks2/__init__.pyo, blks2/error_rate.pyo, blks2/packet.pyo, blks2/selector.pyo, blks2/tcp.pyo"
-	cd /home/katsikas/gnuradio/build/grc/grc_gnuradio && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/__init__.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/error_rate.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/packet.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/selector.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/tcp.py /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/__init__.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/error_rate.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/packet.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/selector.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/tcp.pyo
+	cd /home/katsikas/gnuradio/build/grc/grc_gnuradio && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/__init__.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/error_rate.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/packet.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/selector.py /home/katsikas/gnuradio/grc/grc_gnuradio/blks2/tcp.py /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/__init__.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/error_rate.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/packet.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/selector.pyo /home/katsikas/gnuradio/build/grc/grc_gnuradio/blks2/tcp.pyo
 
 grc/grc_gnuradio/blks2/error_rate.pyo: grc/grc_gnuradio/blks2/__init__.pyo
 

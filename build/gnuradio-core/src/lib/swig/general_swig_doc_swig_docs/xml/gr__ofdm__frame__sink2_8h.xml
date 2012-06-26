@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__ofdm__frame__sink2_8h" kind="file">
     <compoundname>gr_ofdm_frame_sink2.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -55,9 +55,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__ofdm__frame__sink2_8h_1a1b22311f9a79d849ad2ef48e1c4b7ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__ofdm__frame__sink2_8h_1a522b1af8d0b718212d1ae1604d2df24a" kindref="member">gr_ofdm_frame_sink2_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_ofdm_frame_sink2_sptr gr_make_ofdm_frame_sink2</definition>
+      <memberdef kind="function" id="gr__ofdm__frame__sink2_8h_1a896c0a0dab277b4cdcf742418f922f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__ofdm__frame__sink2_8h_1a522b1af8d0b718212d1ae1604d2df24a" kindref="member">gr_ofdm_frame_sink2_sptr</ref></type>
+        <definition>GR_CORE_API gr_ofdm_frame_sink2_sptr gr_make_ofdm_frame_sink2</definition>
         <argsstring>(gr_constellation_sptr constell, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain=0.25, float freq_gain=0.25 *0.25/4.0)</argsstring>
         <name>gr_make_ofdm_frame_sink2</name>
         <param>
@@ -130,14 +130,14 @@
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_ofdm_frame_sink2&gt;<sp/><ref refid="gr__ofdm__frame__sink2_8h_1a522b1af8d0b718212d1ae1604d2df24a" kindref="member">gr_ofdm_frame_sink2_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__ofdm__frame__sink2_8h_1a522b1af8d0b718212d1ae1604d2df24a" kindref="member">gr_ofdm_frame_sink2_sptr</ref></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="gr__ofdm__frame__sink2_8h_1a1b22311f9a79d849ad2ef48e1c4b7ad7" kindref="member">gr_make_ofdm_frame_sink2</ref><sp/>(gr_constellation_sptr<sp/>constell,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="gr__ofdm__frame__sink2_8h_1a896c0a0dab277b4cdcf742418f922f47" kindref="member">gr_make_ofdm_frame_sink2</ref><sp/>(gr_constellation_sptr<sp/>constell,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_msg_queue_sptr<sp/>target_queue,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>occupied_tones,</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>phase_gain=0.25,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_gain=0.25*0.25/4.0);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49" refid="classgr__ofdm__frame__sink2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__ofdm__frame__sink2" kindref="compound" tooltip="Takes an OFDM symbol in, demaps it into bits of 0&amp;#39;s and 1&amp;#39;s, packs them into packets, and sends to to a message queue sink.NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.">gr_ofdm_frame_sink2</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__ofdm__frame__sink2_8h_1a522b1af8d0b718212d1ae1604d2df24a" kindref="member">gr_ofdm_frame_sink2_sptr</ref></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="gr__ofdm__frame__sink2_8h_1a1b22311f9a79d849ad2ef48e1c4b7ad7" kindref="member">gr_make_ofdm_frame_sink2</ref><sp/>(gr_constellation_sptr<sp/>constell,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="gr__ofdm__frame__sink2_8h_1a896c0a0dab277b4cdcf742418f922f47" kindref="member">gr_make_ofdm_frame_sink2</ref><sp/>(gr_constellation_sptr<sp/>constell,</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_msg_queue_sptr<sp/>target_queue,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>occupied_tones,</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>phase_gain,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_gain);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>

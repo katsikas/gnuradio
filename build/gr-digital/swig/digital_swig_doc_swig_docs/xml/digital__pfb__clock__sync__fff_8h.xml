@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="digital__pfb__clock__sync__fff_8h" kind="file">
     <compoundname>digital_pfb_clock_sync_fff.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__pfb__clock__sync__fff_8h_1ab55c948cd88a967b323cb9fd62c2fe50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" kindref="member">digital_pfb_clock_sync_fff_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_pfb_clock_sync_fff_sptr digital_make_pfb_clock_sync_fff</definition>
+      <memberdef kind="function" id="digital__pfb__clock__sync__fff_8h_1a9210ea35e1f5d459b1a5407ff538ae1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" kindref="member">digital_pfb_clock_sync_fff_sptr</ref></type>
+        <definition>DIGITAL_API digital_pfb_clock_sync_fff_sptr digital_make_pfb_clock_sync_fff</definition>
         <argsstring>(double sps, float gain, const std::vector&lt; float &gt; &amp;taps, unsigned int filter_size=32, float init_phase=0, float max_rate_deviation=1.5, int osps=1)</argsstring>
         <name>digital_make_pfb_clock_sync_fff</name>
         <param>
@@ -176,7 +176,7 @@
 <codeline lineno="30" refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdigital__pfb__clock__sync__fff" kindref="compound" tooltip="Timing synchronizer using polyphase filterbanks.">digital_pfb_clock_sync_fff</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_pfb_clock_sync_fff&gt;<sp/><ref refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" kindref="member">digital_pfb_clock_sync_fff_sptr</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" kindref="member">digital_pfb_clock_sync_fff_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="digital__pfb__clock__sync__fff_8h_1ab55c948cd88a967b323cb9fd62c2fe50" kindref="member">digital_make_pfb_clock_sync_fff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="digital__pfb__clock__sync__fff_8h_1a9210ea35e1f5d459b1a5407ff538ae1a" kindref="member">digital_make_pfb_clock_sync_fff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain,</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;<sp/>&amp;taps,</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filter_size=32,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>init_phase=0,</highlight></codeline>
@@ -189,7 +189,7 @@
 <codeline lineno="156"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__pfb__clock__sync__fff_8h_1af3817fe0d6ca1c682779d977237d310f" kindref="member">digital_pfb_clock_sync_fff_sptr</ref></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__pfb__clock__sync__fff_8h_1ab55c948cd88a967b323cb9fd62c2fe50" kindref="member">digital_make_pfb_clock_sync_fff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__pfb__clock__sync__fff_8h_1a9210ea35e1f5d459b1a5407ff538ae1a" kindref="member">digital_make_pfb_clock_sync_fff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain,</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;<sp/>&amp;taps,</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filter_size,</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>init_phase,</highlight></codeline>

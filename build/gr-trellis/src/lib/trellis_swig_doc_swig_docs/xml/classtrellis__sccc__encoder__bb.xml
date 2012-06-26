@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classtrellis__sccc__encoder__bb" kind="class" prot="public">
     <compoundname>trellis_sccc_encoder_bb</compoundname>
     <includes refid="trellis__sccc__encoder__bb_8h" local="no">trellis_sccc_encoder_bb.h</includes>
@@ -98,7 +98,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classtrellis__sccc__encoder__bb_1adfcddd8a639cc54734c9d5b4ea454aae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__sccc__encoder__bb_8h_1a63ca9f01438d7b7104b4a8649e94987c" kindref="member">trellis_sccc_encoder_bb_sptr</ref></type>
+        <type>friend TRELLIS_API <ref refid="trellis__sccc__encoder__bb_8h_1a63ca9f01438d7b7104b4a8649e94987c" kindref="member">trellis_sccc_encoder_bb_sptr</ref></type>
         <definition>TRELLIS_API trellis_sccc_encoder_bb_sptr trellis_make_sccc_encoder_bb</definition>
         <argsstring>(const fsm &amp;FSMo, int STo, const fsm &amp;FSMi, int STi, const interleaver &amp;INTERLEAVER, int blocklength)</argsstring>
         <name>trellis_make_sccc_encoder_bb</name>
@@ -283,6 +283,53 @@
 <para>SCCC encoder. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="780">
+        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="778" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="779">
+        <label>fsm</label>
+        <link refid="classfsm"/>
+        <childnode refid="780" relation="usage">
+          <edgelabel>d_PI</edgelabel>
+          <edgelabel>d_PS</edgelabel>
+        </childnode>
+        <childnode refid="778" relation="usage">
+          <edgelabel>d_NS</edgelabel>
+          <edgelabel>d_TMl</edgelabel>
+          <edgelabel>d_TMi</edgelabel>
+          <edgelabel>d_OS</edgelabel>
+        </childnode>
+      </node>
+      <node id="776">
+        <label>trellis_sccc_encoder_bb</label>
+        <link refid="classtrellis__sccc__encoder__bb"/>
+        <childnode refid="777" relation="usage">
+          <edgelabel>d_INTERLEAVER</edgelabel>
+        </childnode>
+        <childnode refid="778" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+        <childnode refid="779" relation="usage">
+          <edgelabel>d_FSMi</edgelabel>
+          <edgelabel>d_FSMo</edgelabel>
+        </childnode>
+      </node>
+      <node id="778">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="777">
+        <label>interleaver</label>
+        <link refid="classinterleaver"/>
+        <childnode refid="778" relation="usage">
+          <edgelabel>d_DEINTER</edgelabel>
+          <edgelabel>d_INTER</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_sccc_encoder_bb.h" line="49" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_sccc_encoder_bb.h" bodystart="48" bodyend="82"/>
     <listofallmembers>
       <member refid="classtrellis__sccc__encoder__bb_1ab07af19473dcd74fa44a063195985bd2" prot="public" virt="non-virtual"><scope>trellis_sccc_encoder_bb</scope><name>blocklength</name></member>

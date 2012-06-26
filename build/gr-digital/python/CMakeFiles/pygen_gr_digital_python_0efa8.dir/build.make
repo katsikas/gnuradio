@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_digital_python_0efa8.
-
-# Include the progress variables for this target.
-include gr-digital/python/CMakeFiles/pygen_gr_digital_python_0efa8.dir/progress.make
 
 gr-digital/python/CMakeFiles/pygen_gr_digital_python_0efa8: gr-digital/python/utils/__init__.pyc
 gr-digital/python/CMakeFiles/pygen_gr_digital_python_0efa8: gr-digital/python/utils/gray_code.pyc
@@ -57,7 +57,7 @@ gr-digital/python/utils/__init__.pyc: ../gr-digital/python/utils/mod_codes.py
 gr-digital/python/utils/__init__.pyc: ../gr-digital/python/utils/alignment.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating utils/__init__.pyc, utils/gray_code.pyc, utils/mod_codes.pyc, utils/alignment.pyc"
-	cd /home/katsikas/gnuradio/build/gr-digital/python && /usr/bin/python /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-digital/python/utils/__init__.py /home/katsikas/gnuradio/gr-digital/python/utils/gray_code.py /home/katsikas/gnuradio/gr-digital/python/utils/mod_codes.py /home/katsikas/gnuradio/gr-digital/python/utils/alignment.py /home/katsikas/gnuradio/build/gr-digital/python/utils/__init__.pyc /home/katsikas/gnuradio/build/gr-digital/python/utils/gray_code.pyc /home/katsikas/gnuradio/build/gr-digital/python/utils/mod_codes.pyc /home/katsikas/gnuradio/build/gr-digital/python/utils/alignment.pyc
+	cd /home/katsikas/gnuradio/build/gr-digital/python && /usr/bin/python2.7 /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-digital/python/utils/__init__.py /home/katsikas/gnuradio/gr-digital/python/utils/gray_code.py /home/katsikas/gnuradio/gr-digital/python/utils/mod_codes.py /home/katsikas/gnuradio/gr-digital/python/utils/alignment.py /home/katsikas/gnuradio/build/gr-digital/python/utils/__init__.pyc /home/katsikas/gnuradio/build/gr-digital/python/utils/gray_code.pyc /home/katsikas/gnuradio/build/gr-digital/python/utils/mod_codes.pyc /home/katsikas/gnuradio/build/gr-digital/python/utils/alignment.pyc
 
 gr-digital/python/utils/gray_code.pyc: gr-digital/python/utils/__init__.pyc
 
@@ -71,7 +71,7 @@ gr-digital/python/utils/__init__.pyo: ../gr-digital/python/utils/mod_codes.py
 gr-digital/python/utils/__init__.pyo: ../gr-digital/python/utils/alignment.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating utils/__init__.pyo, utils/gray_code.pyo, utils/mod_codes.pyo, utils/alignment.pyo"
-	cd /home/katsikas/gnuradio/build/gr-digital/python && /usr/bin/python -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-digital/python/utils/__init__.py /home/katsikas/gnuradio/gr-digital/python/utils/gray_code.py /home/katsikas/gnuradio/gr-digital/python/utils/mod_codes.py /home/katsikas/gnuradio/gr-digital/python/utils/alignment.py /home/katsikas/gnuradio/build/gr-digital/python/utils/__init__.pyo /home/katsikas/gnuradio/build/gr-digital/python/utils/gray_code.pyo /home/katsikas/gnuradio/build/gr-digital/python/utils/mod_codes.pyo /home/katsikas/gnuradio/build/gr-digital/python/utils/alignment.pyo
+	cd /home/katsikas/gnuradio/build/gr-digital/python && /usr/bin/python2.7 -O /home/katsikas/gnuradio/build/python_compile_helper.py /home/katsikas/gnuradio/gr-digital/python/utils/__init__.py /home/katsikas/gnuradio/gr-digital/python/utils/gray_code.py /home/katsikas/gnuradio/gr-digital/python/utils/mod_codes.py /home/katsikas/gnuradio/gr-digital/python/utils/alignment.py /home/katsikas/gnuradio/build/gr-digital/python/utils/__init__.pyo /home/katsikas/gnuradio/build/gr-digital/python/utils/gray_code.pyo /home/katsikas/gnuradio/build/gr-digital/python/utils/mod_codes.pyo /home/katsikas/gnuradio/build/gr-digital/python/utils/alignment.pyo
 
 gr-digital/python/utils/gray_code.pyo: gr-digital/python/utils/__init__.pyo
 

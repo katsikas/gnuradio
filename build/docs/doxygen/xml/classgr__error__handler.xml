@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__error__handler" kind="class" prot="public">
     <compoundname>gr_error_handler</compoundname>
     <derivedcompoundref refid="classgr__base__error__handler" prot="public" virt="non-virtual">gr_base_error_handler</derivedcompoundref>
@@ -84,7 +84,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="66"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1afa1961db0bbabc7c60eead7fb7504077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_error_handler::message</definition>
         <argsstring>(const char *format,...)</argsstring>
         <name>message</name>
@@ -104,7 +104,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="75"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1a13d50e7ef1b43188e251d81848b2df5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_error_handler::warning</definition>
         <argsstring>(const char *format,...)</argsstring>
         <name>warning</name>
@@ -124,7 +124,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="76"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1ab003d40bd2e62c0752cf360fd108a5e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_error_handler::error</definition>
         <argsstring>(const char *format,...)</argsstring>
         <name>error</name>
@@ -144,7 +144,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="77"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1a56fbba06b32920561658b754061ab9e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_error_handler::fatal</definition>
         <argsstring>(const char *format,...)</argsstring>
         <name>fatal</name>
@@ -192,7 +192,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="81"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1a0117862e4ecd8b796350d28d4c1d6b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_error_handler::reset_counts</definition>
         <argsstring>()=0</argsstring>
         <name>reset_counts</name>
@@ -206,7 +206,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="82"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1ab92f420c36ee81721c93115cbc0b9938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_error_handler::verror</definition>
         <argsstring>(seriousness s, const char *format, va_list)</argsstring>
         <name>verror</name>
@@ -230,7 +230,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="84"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1a59378e1e8cce6bd5ffb3590fe12df812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_error_handler::verror_text</definition>
         <argsstring>(seriousness s, const std::string &amp;text)</argsstring>
         <name>verror_text</name>
@@ -292,7 +292,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="71"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1a7f14a22e361763884a85fcc28b3972fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>static void gr_error_handler::set_default_handler</definition>
         <argsstring>(gr_error_handler *errh)</argsstring>
         <name>set_default_handler</name>
@@ -311,7 +311,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classgr__error__handler_1a35313fe01713794db3970c27cff1a58e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_error_handler::count_error</definition>
         <argsstring>(seriousness s)=0</argsstring>
         <name>count_error</name>
@@ -329,7 +329,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h" line="88"/>
       </memberdef>
       <memberdef kind="function" id="classgr__error__handler_1a8bcabeeba9939e944ea1d167ffdb0a46" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_error_handler::handle_text</definition>
         <argsstring>(seriousness s, const std::string &amp;str)=0</argsstring>
         <name>handle_text</name>
@@ -380,19 +380,19 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3421">
+      <node id="5956">
         <label>gr_file_error_handler</label>
         <link refid="classgr__file__error__handler"/>
-        <childnode refid="3420" relation="public-inheritance">
+        <childnode refid="5955" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3420">
+      <node id="5955">
         <label>gr_base_error_handler</label>
         <link refid="classgr__base__error__handler"/>
-        <childnode refid="3419" relation="public-inheritance">
+        <childnode refid="5954" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3419">
+      <node id="5954">
         <label>gr_error_handler</label>
         <link refid="classgr__error__handler"/>
       </node>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__buffer" kind="class" prot="public">
     <compoundname>gr_buffer</compoundname>
     <includes refid="gr__buffer_8h" local="no">gr_buffer.h</includes>
@@ -664,6 +664,45 @@ The total size of the buffer will be rounded up to a system dependent boundary. 
 <para>Single writer, multiple reader fifo. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="365">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <childnode refid="366" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="366">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+      </node>
+      <node id="362">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="363">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="364" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="361">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="362" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="363" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="365" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="364">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="53" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" bodystart="53" bodyend="189"/>
     <listofallmembers>
       <member refid="classgr__buffer_1a616aa3e09d83804ea3d6045e4f7f5153" prot="public" virt="non-virtual"><scope>gr_buffer</scope><name>add_item_tag</name></member>

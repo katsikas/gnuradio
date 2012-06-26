@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgruel_1_1msg__queue" kind="class" prot="public">
     <compoundname>gruel::msg_queue</compoundname>
     <includes refid="msg__queue_8h" local="no">msg_queue.h</includes>
@@ -102,7 +102,7 @@
         <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classgruel_1_1msg__queue_1a5e820de615a7c49cca2799a024f3babf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gruel::msg_queue::insert_tail</definition>
         <argsstring>(pmt::pmt_t msg)</argsstring>
         <name>insert_tail</name>
@@ -153,7 +153,7 @@ Block if queue if full. </para>        </detaileddescription>
         <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h" line="71"/>
       </memberdef>
       <memberdef kind="function" id="classgruel_1_1msg__queue_1a7380917a960d737ae1261dbb8df27da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gruel::msg_queue::flush</definition>
         <argsstring>()</argsstring>
         <name>flush</name>
@@ -222,6 +222,18 @@ Block if queue if full. </para>        </detaileddescription>
 <para>thread-safe message queue </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="11618">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="11617">
+        <label>gruel::msg_queue</label>
+        <link refid="classgruel_1_1msg__queue"/>
+        <childnode refid="11618" relation="usage">
+          <edgelabel>d_msgs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h" line="40" bodyfile="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h" bodystart="40" bodyend="87"/>
     <listofallmembers>
       <member refid="classgruel_1_1msg__queue_1a4ced37ac20a7a620540a03992bf74ab0" prot="public" virt="non-virtual"><scope>gruel::msg_queue</scope><name>count</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classvocoder__cvsd__decode__bs" kind="class" prot="public">
     <compoundname>vocoder_cvsd_decode_bs</compoundname>
     <basecompoundref refid="classgr__sync__interpolator" prot="public" virt="non-virtual">gr_sync_interpolator</basecompoundref>
@@ -177,7 +177,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classvocoder__cvsd__decode__bs_1a4f5a8f0701b973f9fbdd8ab07738bd43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="vocoder__api_8h_1a8a56d8b0d26cf75df04dcad9064a0aeb" kindref="member">VOCODER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_cvsd_decode_bs_sptr</ref></type>
+        <type>friend VOCODER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_cvsd_decode_bs_sptr</ref></type>
         <definition>VOCODER_API vocoder_cvsd_decode_bs_sptr vocoder_make_cvsd_decode_bs</definition>
         <argsstring>(short min_step, short max_step, double step_decay, double accum_decay, int K, int J, short pos_accum_max, short neg_accum_max)</argsstring>
         <name>vocoder_make_cvsd_decode_bs</name>
@@ -513,11 +513,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -532,114 +532,234 @@
     <briefdescription>
 <para>This block performs CVSD audio decoding. Its design and implementation is modeled after the CVSD encoder/decoder specifications defined in the Bluetooth standard. </para>    </briefdescription>
     <detaileddescription>
-<para>CVSD is a method for encoding speech that seeks to reduce the bandwidth required for digital voice transmission. CVSD takes advantage of strong correlation between samples, quantizing the difference in amplitude between two consecutive samples. This difference requires fewer quantization levels as compared to other methods that quantize the actual amplitude level, reducing the bandwidth. CVSD employs a two level quantizer (one bit) and an adaptive algorithm that allows for continuous step size adjustment.</para><para>The coder can represent low amplitude signals with accuracy without sacrificing performance on large amplitude signals, a trade off that occurs in some non-adaptive modulations.</para><para>The CVSD decoder effectively provides 1-to-8 decompression. More specifically, for each incoming input bit, the decoder outputs one audio sample. If the input is a &quot;1&quot; bit, the internal reference is increased appropriately and then outputted as the next estimated audio sample. If the input is a &quot;0&quot; bit, the internal reference is decreased appropriately and then likewise outputted as the next estimated audio sample. Grouping 8 input bits together, the encoder essentially produces 8 output audio samples for everyone one input byte.</para><para>This decoder requires that output audio samples are 2-byte short signed integers. The result bandwidth conversion, therefore, is 1 byte of encoded audio data to 16 output bytes of raw audio data.</para><para>The CVSD decoder module must be post-fixed by a down-converter to under-sample the audio data after decoding. The Bluetooth standard specifically calls for a 8-to-1 decimating down-converter. This is required so that so that output sampling rate equals the original input sampling rate present before the encoder. In all cases, the output down-converter rate must be the inverse of the input up-converter rate before the CVSD encoder.</para><para>References: 1. Continuously Variable Slope Delta Modulation (CVSD) A Tutorial, Available: <ulink url="http://www.eetkorea.com/ARTICLES/2003AUG/A/2003AUG29_NTEK_RFD_AN02.PDF">http://www.eetkorea.com/ARTICLES/2003AUG/A/2003AUG29_NTEK_RFD_AN02.PDF</ulink>. 2. Specification of The Bluetooth System Available: <ulink url="http://grouper.ieee.org/groups/802/15/Bluetooth/core_10_b.pdf">http://grouper.ieee.org/groups/802/15/Bluetooth/core_10_b.pdf</ulink>. 3. McGarrity, S., Bluetooth Full Duplex Voice and Data Transmission. 2002. Bluetooth Voice Simulink® Model, Available: <ulink url="http://www.mathworks.com/company/newsletters/digest/nov01/bluetooth.html">http://www.mathworks.com/company/newsletters/digest/nov01/bluetooth.html</ulink> </para>    </detaileddescription>
+<para>CVSD is a method for encoding speech that seeks to reduce the bandwidth required for digital voice transmission. CVSD takes advantage of strong correlation between samples, quantizing the difference in amplitude between two consecutive samples. This difference requires fewer quantization levels as compared to other methods that quantize the actual amplitude level, reducing the bandwidth. CVSD employs a two level quantizer (one bit) and an adaptive algorithm that allows for continuous step size adjustment.</para><para>The coder can represent low amplitude signals with accuracy without sacrificing performance on large amplitude signals, a trade off that occurs in some non-adaptive modulations.</para><para>The CVSD decoder effectively provides 1-to-8 decompression. More specifically, for each incoming input bit, the decoder outputs one audio sample. If the input is a &quot;1&quot; bit, the internal reference is increased appropriately and then outputted as the next estimated audio sample. If the input is a &quot;0&quot; bit, the internal reference is decreased appropriately and then likewise outputted as the next estimated audio sample. Grouping 8 input bits together, the encoder essentially produces 8 output audio samples for everyone one input byte.</para><para>This decoder requires that output audio samples are 2-byte short signed integers. The result bandwidth conversion, therefore, is 1 byte of encoded audio data to 16 output bytes of raw audio data.</para><para>The CVSD decoder module must be post-fixed by a down-converter to under-sample the audio data after decoding. The Bluetooth standard specifically calls for a 8-to-1 decimating down-converter. This is required so that so that output sampling rate equals the original input sampling rate present before the encoder. In all cases, the output down-converter rate must be the inverse of the input up-converter rate before the CVSD encoder.</para><para>References: 1. Continuously Variable Slope Delta Modulation (CVSD) A Tutorial, Available: <ulink url="http://www.eetkorea.com/ARTICLES/2003AUG/A/2003AUG29_NTEK_RFD_AN02.PDF.">http://www.eetkorea.com/ARTICLES/2003AUG/A/2003AUG29_NTEK_RFD_AN02.PDF.</ulink> 2. Specification of The Bluetooth System Available: <ulink url="http://grouper.ieee.org/groups/802/15/Bluetooth/core_10_b.pdf.">http://grouper.ieee.org/groups/802/15/Bluetooth/core_10_b.pdf.</ulink> 3. McGarrity, S., Bluetooth Full Duplex Voice and Data Transmission. 2002. Bluetooth Voice Simulink® Model, Available: <ulink url="http://www.mathworks.com/company/newsletters/digest/nov01/bluetooth.html">http://www.mathworks.com/company/newsletters/digest/nov01/bluetooth.html</ulink> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="7603">
+      <node id="12774">
         <label>vocoder_cvsd_decode_bs</label>
         <link refid="classvocoder__cvsd__decode__bs"/>
-        <childnode refid="7604" relation="public-inheritance">
+        <childnode refid="12775" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7608">
+      <node id="12779">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7609" relation="public-inheritance">
+        <childnode refid="12780" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7605">
+      <node id="12776">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7606" relation="public-inheritance">
+        <childnode refid="12777" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7606">
+      <node id="12777">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7607" relation="public-inheritance">
+        <childnode refid="12778" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7604">
+      <node id="12775">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="7605" relation="public-inheritance">
+        <childnode refid="12776" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7609">
+      <node id="12780">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7607">
+      <node id="12778">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7608" relation="public-inheritance">
+        <childnode refid="12779" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7610">
-        <label>vocoder_cvsd_decode_bs</label>
-        <link refid="classvocoder__cvsd__decode__bs"/>
-        <childnode refid="7611" relation="public-inheritance">
+      <node id="12803">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="12797" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="7615">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="7616" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7612">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="7613" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7613">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="7614" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7611">
-        <label>gr_sync_interpolator</label>
-        <link refid="classgr__sync__interpolator"/>
-        <childnode refid="7612" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7617">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="12796">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7618" relation="usage">
+        <childnode refid="12797" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7620">
+      <node id="12808">
+        <label>T</label>
+      </node>
+      <node id="12781">
+        <label>vocoder_cvsd_decode_bs</label>
+        <link refid="classvocoder__cvsd__decode__bs"/>
+        <childnode refid="12782" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12786">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="12787" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12783">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="12784" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12797">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="12798" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="12805">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="12800">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="12784">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="12785" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12793" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="12793">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12794" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12782">
+        <label>gr_sync_interpolator</label>
+        <link refid="classgr__sync__interpolator"/>
+        <childnode refid="12783" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12807">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12808" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12794">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="12795" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="12804" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="12806" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="12801">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="12802" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12788">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12789" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12799">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="12800" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="12801" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="12803" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="12792">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7616">
+      <node id="12795">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="12796" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12787">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7618">
+      <node id="12798">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12799" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12802">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="12804">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="12805" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="12806">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="12807" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12789">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="12790" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="7614">
+      <node id="12785">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7615" relation="public-inheritance">
+        <childnode refid="12786" relation="public-inheritance">
         </childnode>
-        <childnode refid="7617" relation="usage">
+        <childnode refid="12788" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7619" relation="usage">
+        <childnode refid="12791" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7619">
+      <node id="12790">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="12791">
         <label>std::string</label>
-        <childnode refid="7620" relation="public-inheritance">
+        <childnode refid="12792" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -724,7 +844,7 @@
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_input_signature</name></member>
       <member refid="classgr__sync__interpolator_1a25bb02d6ac26404780bdd217355107ad" prot="public" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_interpolation</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>vocoder_cvsd_decode_bs</scope><name>set_relative_rate</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classplinfo" kind="class" prot="public">
     <compoundname>plinfo</compoundname>
     <includes refid="atsc__types_8h" local="no">atsc_types.h</includes>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="76" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="76" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="75" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="75" bodyend="-1"/>
         <referencedby refid="classplinfo_1a87e99abcef77568b8c421b7ee1861c2b" compoundref="dvbt__types_8h" startline="43" endline="43">get_packets</referencedby>
         <referencedby refid="classplinfo_1afb2b5ab7300ac10f7dcada5155229b7b" compoundref="dvbt__types_8h" startline="52" endline="55">set_packets</referencedby>
       </memberdef>
@@ -172,14 +172,14 @@
         <definition>const int plinfo::flag01</definition>
         <argsstring></argsstring>
         <name>flag01</name>
-        <initializer> 0x0000</initializer>
+        <initializer> 0x0001</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="79" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="79" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="78" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="78" bodyend="-1"/>
         <referencedby refid="classplinfo_1af7fe8e3333ce61653e7ac24b0c788d2d" compoundref="dvbt__types_8h" startline="44" endline="44">get_flag01</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classplinfo_1a928923616270b985463a1c351fbf67f7" prot="protected" static="yes" mutable="no">
@@ -187,14 +187,14 @@
         <definition>const int plinfo::flag02</definition>
         <argsstring></argsstring>
         <name>flag02</name>
-        <initializer> 0x0000</initializer>
+        <initializer> 0x0002</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="81" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="81" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="80" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="80" bodyend="-1"/>
         <referencedby refid="classplinfo_1ac2db546068baa9cfb7af3485579e05fa" compoundref="dvbt__types_8h" startline="45" endline="45">get_flag02</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classplinfo_1ad5bc16692e9c4e230eea858aeadea850" prot="protected" static="yes" mutable="no">
@@ -202,14 +202,14 @@
         <definition>const int plinfo::flag03</definition>
         <argsstring></argsstring>
         <name>flag03</name>
-        <initializer> 0x0000</initializer>
+        <initializer> 0x0003</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="83" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="83" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="82" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="82" bodyend="-1"/>
         <referencedby refid="classplinfo_1a60221bdf17bfc710e22c1517e6bfa305" compoundref="dvbt__types_8h" startline="46" endline="46">get_flag03</referencedby>
       </memberdef>
       </sectiondef>
@@ -379,7 +379,7 @@
         <references refid="classplinfo_1aeb30858d8f4ff27ae8e609bad64ae01d" compoundref="atsc__types_8h" startline="114">_flags</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1ad186ced5afd703e8b2d9050529922486" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void plinfo::set_field_sync1</definition>
         <argsstring>()</argsstring>
         <name>set_field_sync1</name>
@@ -395,7 +395,7 @@
         <references refid="classplinfo_1ae2e21079493045786f5abd39292b8438" compoundref="atsc__types_8h" startline="121">fl_field_sync1</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1a9d96111b514998189bfca10f6f33ac8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void plinfo::set_field_sync2</definition>
         <argsstring>()</argsstring>
         <name>set_field_sync2</name>
@@ -412,7 +412,7 @@
         <references refid="classplinfo_1a07c74a60a76912485b923b3eb20943df" compoundref="atsc__types_8h" startline="123">fl_field_sync2</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1a615c5375f70e40637093c10027001233" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void plinfo::set_regular_seg</definition>
         <argsstring>(bool field2, int segno)</argsstring>
         <name>set_regular_seg</name>
@@ -441,7 +441,7 @@
         <references refid="classplinfo_1ac563cec97e64bbe0e62b30ad0ae6ff3b" compoundref="atsc__types_8h" startline="55" endline="55">segno</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1ab8d8940b47977a87c45f43f74f9307dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void plinfo::set_transport_error</definition>
         <argsstring>(bool error)</argsstring>
         <name>set_transport_error</name>
@@ -522,7 +522,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="43" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="43" bodyend="43"/>
-        <references refid="classplinfo_1ad510fb86e6e47a9085d698e9ad0cc130" compoundref="dvbt__types_8h" startline="76">packets</references>
+        <references refid="classplinfo_1ad510fb86e6e47a9085d698e9ad0cc130" compoundref="dvbt__types_8h" startline="75">packets</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1af7fe8e3333ce61653e7ac24b0c788d2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -536,7 +536,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="44" bodyend="44"/>
-        <references refid="classplinfo_1acc08c6b31f3506e0a2a93b457625a7af" compoundref="dvbt__types_8h" startline="79">flag01</references>
+        <references refid="classplinfo_1acc08c6b31f3506e0a2a93b457625a7af" compoundref="dvbt__types_8h" startline="78">flag01</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1ac2db546068baa9cfb7af3485579e05fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -550,7 +550,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="45" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="45" bodyend="45"/>
-        <references refid="classplinfo_1a928923616270b985463a1c351fbf67f7" compoundref="dvbt__types_8h" startline="81">flag02</references>
+        <references refid="classplinfo_1a928923616270b985463a1c351fbf67f7" compoundref="dvbt__types_8h" startline="80">flag02</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1a60221bdf17bfc710e22c1517e6bfa305" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -564,7 +564,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="46" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="46" bodyend="46"/>
-        <references refid="classplinfo_1ad5bc16692e9c4e230eea858aeadea850" compoundref="dvbt__types_8h" startline="83">flag03</references>
+        <references refid="classplinfo_1ad5bc16692e9c4e230eea858aeadea850" compoundref="dvbt__types_8h" startline="82">flag03</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1ace6a7da7c887836701074544faccc520" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -595,7 +595,7 @@
         <references refid="classplinfo_1af0e7392d24522db302e84fb6e102429f" compoundref="atsc__types_8h" startline="138">fl_transport_error</references>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1afb2b5ab7300ac10f7dcada5155229b7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void plinfo::set_packets</definition>
         <argsstring>(int remainder)</argsstring>
         <name>set_packets</name>
@@ -610,15 +610,15 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="52" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="52" bodyend="55"/>
-        <references refid="classplinfo_1ad510fb86e6e47a9085d698e9ad0cc130" compoundref="dvbt__types_8h" startline="76">packets</references>
+        <references refid="classplinfo_1ad510fb86e6e47a9085d698e9ad0cc130" compoundref="dvbt__types_8h" startline="75">packets</references>
       </memberdef>
-      <memberdef kind="function" id="classplinfo_1ab8d8940b47977a87c45f43f74f9307dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+      <memberdef kind="function" id="classplinfo_1af38983bd1752f45fc14a5d91d5ff7381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
         <definition>void plinfo::set_transport_error</definition>
-        <argsstring>(bool error)</argsstring>
+        <argsstring>(int error)</argsstring>
         <name>set_transport_error</name>
         <param>
-          <type>bool</type>
+          <type>int</type>
           <declname>error</declname>
         </param>
         <briefdescription>
@@ -627,12 +627,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="57" bodyend="60"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="57" bodyend="59"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classplinfo_1a01ea3fce8eb54cdf7f20197f14c05aec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>static void plinfo::delay</definition>
         <argsstring>(plinfo &amp;out, const plinfo &amp;in, int nsegs_of_delay)</argsstring>
         <name>delay</name>
@@ -657,7 +657,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_types.h" line="105"/>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1ad5aa65fd17fd5f72ae791cad72079393" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>static void plinfo::sanity_check</definition>
         <argsstring>(const plinfo &amp;in)</argsstring>
         <name>sanity_check</name>
@@ -674,7 +674,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_types.h" line="110"/>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1a01ea3fce8eb54cdf7f20197f14c05aec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>static void plinfo::delay</definition>
         <argsstring>(plinfo &amp;out, const plinfo &amp;in, int nsegs_of_delay)</argsstring>
         <name>delay</name>
@@ -696,10 +696,10 @@
 <para>Set <computeroutput>OUT</computeroutput> such that it reflects a <computeroutput>NSEGS_OF_DELAY</computeroutput> pipeline delay from <computeroutput>IN</computeroutput>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="66"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="65"/>
       </memberdef>
       <memberdef kind="function" id="classplinfo_1ad5aa65fd17fd5f72ae791cad72079393" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>static void plinfo::sanity_check</definition>
         <argsstring>(const plinfo &amp;in)</argsstring>
         <name>sanity_check</name>
@@ -713,7 +713,7 @@
 <para>confirm that <computeroutput>X</computeroutput> is plausible </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="71"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -761,7 +761,7 @@
       <member refid="classplinfo_1afb2b5ab7300ac10f7dcada5155229b7b" prot="public" virt="non-virtual"><scope>plinfo</scope><name>set_packets</name></member>
       <member refid="classplinfo_1a615c5375f70e40637093c10027001233" prot="public" virt="non-virtual"><scope>plinfo</scope><name>set_regular_seg</name></member>
       <member refid="classplinfo_1ab8d8940b47977a87c45f43f74f9307dd" prot="public" virt="non-virtual"><scope>plinfo</scope><name>set_transport_error</name></member>
-      <member refid="classplinfo_1ab8d8940b47977a87c45f43f74f9307dd" prot="public" virt="non-virtual"><scope>plinfo</scope><name>set_transport_error</name></member>
+      <member refid="classplinfo_1af38983bd1752f45fc14a5d91d5ff7381" prot="public" virt="non-virtual"><scope>plinfo</scope><name>set_transport_error</name></member>
       <member refid="classplinfo_1a5fd0ba5f9c7dc741c074bdc629651d5c" prot="public" virt="non-virtual"><scope>plinfo</scope><name>transport_error_p</name></member>
       <member refid="classplinfo_1a5fd0ba5f9c7dc741c074bdc629651d5c" prot="public" virt="non-virtual"><scope>plinfo</scope><name>transport_error_p</name></member>
     </listofallmembers>

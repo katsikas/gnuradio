@@ -1,46 +1,60 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="volk__machines_8tmpl_8h" kind="file">
     <compoundname>volk_machines.tmpl.h</compoundname>
     <includes refid="volk__common_8h" local="no">volk/volk_common.h</includes>
-    <includes local="no">volk/volk_typedefs.h</includes>
+    <includes refid="volk__typedefs_8h" local="no">volk/volk_typedefs.h</includes>
     <incdepgraph>
-      <node id="18590">
+      <node id="18610">
+        <label>volk/volk_complex.h</label>
+        <link refid="volk__complex_8h"/>
+        <childnode refid="18611" relation="include">
+        </childnode>
+      </node>
+      <node id="18604">
         <label>volk/volk_common.h</label>
         <link refid="volk__common_8h"/>
-        <childnode refid="18591" relation="include">
+        <childnode refid="18605" relation="include">
         </childnode>
       </node>
-      <node id="18591">
+      <node id="18605">
         <label>inttypes.h</label>
         <link refid="inttypes_8h"/>
-        <childnode refid="18592" relation="include">
+        <childnode refid="18606" relation="include">
         </childnode>
       </node>
-      <node id="18589">
+      <node id="18603">
         <label>volk_machines.tmpl.h</label>
         <link refid="volk_machines.tmpl.h"/>
-        <childnode refid="18590" relation="include">
+        <childnode refid="18604" relation="include">
         </childnode>
-        <childnode refid="18595" relation="include">
+        <childnode refid="18609" relation="include">
         </childnode>
       </node>
-      <node id="18592">
+      <node id="18606">
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
-        <childnode refid="18593" relation="include">
+        <childnode refid="18607" relation="include">
         </childnode>
-        <childnode refid="18594" relation="include">
+        <childnode refid="18608" relation="include">
         </childnode>
       </node>
-      <node id="18593">
+      <node id="18609">
+        <label>volk/volk_typedefs.h</label>
+        <link refid="volk__typedefs_8h"/>
+        <childnode refid="18605" relation="include">
+        </childnode>
+        <childnode refid="18610" relation="include">
+        </childnode>
+      </node>
+      <node id="18607">
         <label>limits.h</label>
       </node>
-      <node id="18594">
+      <node id="18608">
         <label>wchar.h</label>
       </node>
-      <node id="18595">
-        <label>volk/volk_typedefs.h</label>
+      <node id="18611">
+        <label>complex.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structvolk__machine" prot="public">volk_machine</innerclass>

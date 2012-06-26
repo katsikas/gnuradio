@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__scheduler__sts" kind="class" prot="public">
     <compoundname>gr_scheduler_sts</compoundname>
     <basecompoundref refid="classgr__scheduler" prot="public" virt="non-virtual">gr_scheduler</basecompoundref>
@@ -80,7 +80,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_sts.h" line="47"/>
       </memberdef>
       <memberdef kind="function" id="classgr__scheduler__sts_1a3f8dd7ae4f1140e7e45b073eaf438c2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_scheduler_sts::stop</definition>
         <argsstring>()</argsstring>
         <name>stop</name>
@@ -94,7 +94,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_sts.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classgr__scheduler__sts_1a04c1d2ea387752e303586164eac90fc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_scheduler_sts::wait</definition>
         <argsstring>()</argsstring>
         <name>wait</name>
@@ -113,27 +113,40 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5256">
+      <node id="9366">
         <label>gr_scheduler_sts</label>
         <link refid="classgr__scheduler__sts"/>
-        <childnode refid="5257" relation="public-inheritance">
+        <childnode refid="9367" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5257">
+      <node id="9367">
         <label>gr_scheduler</label>
         <link refid="classgr__scheduler"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5258">
+      <node id="9368">
         <label>gr_scheduler_sts</label>
         <link refid="classgr__scheduler__sts"/>
-        <childnode refid="5259" relation="public-inheritance">
+        <childnode refid="9369" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9370" relation="usage">
+          <edgelabel>d_threads</edgelabel>
         </childnode>
       </node>
-      <node id="5259">
+      <node id="9370">
+        <label>gruel::thread_group</label>
+        <link refid="classgruel_1_1thread__group"/>
+        <childnode refid="9371" relation="usage">
+          <edgelabel>m_threads</edgelabel>
+        </childnode>
+      </node>
+      <node id="9369">
         <label>gr_scheduler</label>
         <link refid="classgr__scheduler"/>
+      </node>
+      <node id="9371">
+        <label>std::list&lt; boost::thread * &gt;</label>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_sts.h" line="32" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_sts.h" bodystart="31" bodyend="58"/>

@@ -32,9 +32,6 @@ Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=/usr/lib/libboost_date_time-mt.so
 //Boost date_time library (release)
 Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=/usr/lib/libboost_date_time-mt.so
 
-//The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=Boost_DIR-NOTFOUND
-
 //The Boost FILESYSTEM library
 Boost_FILESYSTEM_LIBRARY:FILEPATH=/usr/lib/libboost_filesystem-mt.so
 
@@ -266,6 +263,9 @@ ENABLE_GR_ATSC:BOOL=ON
 //enable gr-audio support
 ENABLE_GR_AUDIO:BOOL=ON
 
+//enable gr-comedi support
+ENABLE_GR_COMEDI:BOOL=ON
+
 //enable gnuradio-core support
 ENABLE_GR_CORE:BOOL=ON
 
@@ -366,10 +366,10 @@ ORCC_EXECUTABLE:FILEPATH=/usr/bin/orcc
 ORC_INCLUDE_DIR:PATH=/usr/include/orc-0.4
 
 //Path to a library.
-ORC_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/liborc-0.4.so
+ORC_LIB:FILEPATH=/usr/lib/liborc-0.4.so
 
 //Path to a file.
-ORC_LIBRARY_DIR:PATH=/usr/lib/x86_64-linux-gnu
+ORC_LIBRARY_DIR:PATH=/usr/lib
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
@@ -381,7 +381,7 @@ PORTAUDIO_INCLUDE_DIRS:PATH=PORTAUDIO_INCLUDE_DIRS-NOTFOUND
 PORTAUDIO_LIBRARIES:FILEPATH=PORTAUDIO_LIBRARIES-NOTFOUND
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2.7
 
 //Path to a file.
 PYTHON_INCLUDE_DIR:PATH=/usr/include/python2.7
@@ -414,13 +414,16 @@ QT_DBUSCPP2XML_EXECUTABLE:FILEPATH=/usr/bin/qdbuscpp2xml
 QT_DBUSXML2CPP_EXECUTABLE:FILEPATH=/usr/bin/qdbusxml2cpp
 
 //Path to a program.
-QT_DESIGNER_EXECUTABLE:FILEPATH=/usr/bin/designer-qt4
+QT_DESIGNER_EXECUTABLE:FILEPATH=QT_DESIGNER_EXECUTABLE-NOTFOUND
 
 //The location of the Qt docs
 QT_DOC_DIR:PATH=/usr/share/qt4/doc
 
+//The location of the Qt imports
+QT_IMPORTS_DIR:PATH=QT_IMPORTS_DIR-NOTFOUND
+
 //Path to a program.
-QT_LINGUIST_EXECUTABLE:FILEPATH=/usr/bin/linguist-qt4
+QT_LINGUIST_EXECUTABLE:FILEPATH=QT_LINGUIST_EXECUTABLE-NOTFOUND
 
 //Path to a program.
 QT_LRELEASE_EXECUTABLE:FILEPATH=/usr/bin/lrelease-qt4
@@ -468,7 +471,7 @@ QT_QCNCODECS_PLUGIN_DEBUG:FILEPATH=QT_QCNCODECS_PLUGIN_DEBUG-NOTFOUND
 QT_QCNCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqcncodecs.so
 
 //Path to a program.
-QT_QCOLLECTIONGENERATOR_EXECUTABLE:FILEPATH=/usr/bin/qcollectiongenerator
+QT_QCOLLECTIONGENERATOR_EXECUTABLE:FILEPATH=QT_QCOLLECTIONGENERATOR_EXECUTABLE-NOTFOUND
 
 //Path to a library.
 QT_QCOREWLANBEARER_PLUGIN_DEBUG:FILEPATH=QT_QCOREWLANBEARER_PLUGIN_DEBUG-NOTFOUND
@@ -573,7 +576,7 @@ QT_QSQLITE2_PLUGIN_RELEASE:FILEPATH=QT_QSQLITE2_PLUGIN_RELEASE-NOTFOUND
 QT_QSQLITE_PLUGIN_DEBUG:FILEPATH=QT_QSQLITE_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QSQLITE_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/sqldrivers/libqsqlite.so
+QT_QSQLITE_PLUGIN_RELEASE:FILEPATH=QT_QSQLITE_PLUGIN_RELEASE-NOTFOUND
 
 //Path to a library.
 QT_QSQLMYSQL_PLUGIN_DEBUG:FILEPATH=QT_QSQLMYSQL_PLUGIN_DEBUG-NOTFOUND
@@ -680,7 +683,7 @@ QT_QTCLUCENE_LIBRARY_DEBUG:FILEPATH=QT_QTCLUCENE_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 QT_QTCLUCENE_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtCLucene.so
 
-//Path to a file.
+//(This variable does not exist and should not be used)
 QT_QTCORE_INCLUDE_DIR:PATH=/usr/include/qt4/QtCore
 
 //The Qt QTCORE library
@@ -999,13 +1002,13 @@ QWT_INCLUDE_DIRS:PATH=/usr/include/qwt-qt4
 QWT_LIBRARIES:FILEPATH=/usr/lib/libqwt-qt4.so
 
 //Path to a library.
-SDLMAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDLmain.a
+SDLMAIN_LIBRARY:FILEPATH=/usr/lib/libSDLmain.a
 
 //Path to a file.
 SDL_INCLUDE_DIR:PATH=/usr/include/SDL
 
 //Where the SDL Library can be found
-SDL_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread
+SDL_LIBRARY:STRING=/usr/lib/libSDLmain.a;/usr/lib/libSDL.so;-lpthread
 
 //Path to a file.
 SHD_INCLUDE_DIRS:PATH=SHD_INCLUDE_DIRS-NOTFOUND
@@ -1020,13 +1023,13 @@ SHELL:FILEPATH=/bin/sh
 SPHINX_EXECUTABLE:FILEPATH=SPHINX_EXECUTABLE-NOTFOUND
 
 //Path to a file.
-SWIG_DIR:PATH=/usr/share/swig2.0
+SWIG_DIR:PATH=/usr/share/swig1.3
 
 //Path to a program.
-SWIG_EXECUTABLE:FILEPATH=/usr/bin/swig2.0
+SWIG_EXECUTABLE:FILEPATH=/usr/bin/swig
 
 //Swig version
-SWIG_VERSION:STRING=2.0.4
+SWIG_VERSION:STRING=1.3.40
 
 //Path to a file.
 SYS_OSS_INCLUDE_DIR:PATH=SYS_OSS_INCLUDE_DIR-NOTFOUND
@@ -1041,13 +1044,16 @@ UHD_INCLUDE_DIRS:PATH=/usr/local/include
 UHD_LIBRARIES:FILEPATH=/usr/local/lib/libuhd.so
 
 //Path to a program.
-XMLTO_EXECUTABLE:FILEPATH=/usr/bin/xmlto
+XMLTO_EXECUTABLE:FILEPATH=XMLTO_EXECUTABLE-NOTFOUND
 
 //Dependencies for the target
 _atsc_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-atsc;
 
 //Dependencies for the target
 _audio_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-audio;
+
+//Dependencies for the target
+_comedi_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-comedi;
 
 //Dependencies for the target
 _digital_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-digital;
@@ -1113,6 +1119,9 @@ gnuradio-atsc_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost
 gnuradio-audio_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/x86_64-linux-gnu/libasound.so;
 
 //Dependencies for the target
+gnuradio-comedi_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;comedi;
+
+//Dependencies for the target
 gnuradio-core_LIB_DEPENDS:STATIC=general;gruel;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/libfftw3f.so;general;/usr/lib/libfftw3f_threads.so;general;rt;general;volk;
 
 //Dependencies for the target
@@ -1143,7 +1152,7 @@ gnuradio-trellis_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libbo
 gnuradio-uhd_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/local/lib/libuhd.so;
 
 //Dependencies for the target
-gnuradio-video-sdl_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/x86_64-linux-gnu/libSDLmain.a;general;/usr/lib/x86_64-linux-gnu/libSDL.so;general;-lpthread;
+gnuradio-video-sdl_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/libSDLmain.a;general;/usr/lib/libSDL.so;general;-lpthread;
 
 //Dependencies for the target
 gnuradio-vocoder_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;
@@ -1167,7 +1176,7 @@ test-gnuradio-core_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/lib
 volk_BINARY_DIR:STATIC=/home/katsikas/gnuradio/build/volk
 
 //Dependencies for the target
-volk_LIB_DEPENDS:STATIC=general;dl;general;/usr/lib/x86_64-linux-gnu/liborc-0.4.so;
+volk_LIB_DEPENDS:STATIC=general;dl;general;/usr/lib/liborc-0.4.so;
 
 //Value Computed by CMake
 volk_SOURCE_DIR:STATIC=/home/katsikas/gnuradio/volk
@@ -1210,7 +1219,7 @@ ALSA_PKGCONF_STATIC_LIBS:INTERNAL=
 ALSA_PKGCONF_STATIC_LIBS_L:INTERNAL=
 ALSA_PKGCONF_STATIC_LIBS_OTHER:INTERNAL=
 ALSA_PKGCONF_STATIC_LIBS_PATHS:INTERNAL=
-ALSA_PKGCONF_VERSION:INTERNAL=1.0.25
+ALSA_PKGCONF_VERSION:INTERNAL=1.0.24.1
 ALSA_PKGCONF_alsa_INCLUDEDIR:INTERNAL=
 ALSA_PKGCONF_alsa_LIBDIR:INTERNAL=
 ALSA_PKGCONF_alsa_PREFIX:INTERNAL=
@@ -1288,7 +1297,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=2
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=8
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=7
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=5
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -1327,6 +1336,8 @@ CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_DETERMINE_CXX_ABI_COMPILED:INTERNAL=TRUE
 //Result of TRY_COMPILE
 CMAKE_DETERMINE_C_ABI_COMPILED:INTERNAL=TRUE
+//Path to cache edit program executable.
+CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/cmake-gui
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -1371,7 +1382,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=137
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=138
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1405,23 +1416,33 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 COMEDI_CFLAGS:INTERNAL=
 COMEDI_CFLAGS_I:INTERNAL=
 COMEDI_CFLAGS_OTHER:INTERNAL=
-COMEDI_FOUND:INTERNAL=
-COMEDI_INCLUDEDIR:INTERNAL=
-COMEDI_LIBDIR:INTERNAL=
+COMEDI_FOUND:INTERNAL=1
+COMEDI_INCLUDEDIR:INTERNAL=/usr/include
+COMEDI_INCLUDE_DIRS:INTERNAL=
+COMEDI_LDFLAGS:INTERNAL=-lcomedi
+COMEDI_LDFLAGS_OTHER:INTERNAL=
+COMEDI_LIBDIR:INTERNAL=/usr/lib
+COMEDI_LIBRARIES:INTERNAL=comedi
+COMEDI_LIBRARY_DIRS:INTERNAL=
 COMEDI_LIBS:INTERNAL=
 COMEDI_LIBS_L:INTERNAL=
 COMEDI_LIBS_OTHER:INTERNAL=
 COMEDI_LIBS_PATHS:INTERNAL=
-COMEDI_PREFIX:INTERNAL=
+COMEDI_PREFIX:INTERNAL=/usr
 COMEDI_STATIC_CFLAGS:INTERNAL=
 COMEDI_STATIC_CFLAGS_I:INTERNAL=
 COMEDI_STATIC_CFLAGS_OTHER:INTERNAL=
+COMEDI_STATIC_INCLUDE_DIRS:INTERNAL=
+COMEDI_STATIC_LDFLAGS:INTERNAL=-lcomedi
+COMEDI_STATIC_LDFLAGS_OTHER:INTERNAL=
 COMEDI_STATIC_LIBDIR:INTERNAL=
+COMEDI_STATIC_LIBRARIES:INTERNAL=comedi
+COMEDI_STATIC_LIBRARY_DIRS:INTERNAL=
 COMEDI_STATIC_LIBS:INTERNAL=
 COMEDI_STATIC_LIBS_L:INTERNAL=
 COMEDI_STATIC_LIBS_OTHER:INTERNAL=
 COMEDI_STATIC_LIBS_PATHS:INTERNAL=
-COMEDI_VERSION:INTERNAL=
+COMEDI_VERSION:INTERNAL=0.8.1
 COMEDI_comedilib_INCLUDEDIR:INTERNAL=
 COMEDI_comedilib_LIBDIR:INTERNAL=
 COMEDI_comedilib_PREFIX:INTERNAL=
@@ -1447,7 +1468,7 @@ ENABLE_GRC_cached:INTERNAL=ON
 ENABLE_GRUEL_cached:INTERNAL=ON
 ENABLE_GR_ATSC_cached:INTERNAL=ON
 ENABLE_GR_AUDIO_cached:INTERNAL=ON
-ENABLE_GR_COMEDI_cached:INTERNAL=OFF
+ENABLE_GR_COMEDI_cached:INTERNAL=ON
 ENABLE_GR_CORE_cached:INTERNAL=ON
 ENABLE_GR_DIGITAL_cached:INTERNAL=ON
 ENABLE_GR_DVBT_cached:INTERNAL=ON
@@ -1483,17 +1504,17 @@ FIND_PACKAGE_MESSAGE_DETAILS_FFTW3F:INTERNAL=[/usr/lib/libfftw3f.so][/usr/includ
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v()]
 //Details about finding ORC
-FIND_PACKAGE_MESSAGE_DETAILS_ORC:INTERNAL=[/usr/lib/x86_64-linux-gnu/liborc-0.4.so][/usr/include/orc-0.4][/usr/bin/orcc][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_ORC:INTERNAL=[/usr/lib/liborc-0.4.so][/usr/include/orc-0.4][/usr/bin/orcc][v()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.3()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2.7][v()]
 //Details about finding PythonLibs
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/libpython2.7.so][/usr/include/python2.7][v()]
 //Details about finding Qt4
-FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/bin/moc-qt4][/usr/bin/rcc][/usr/include/qt4][/usr/lib/x86_64-linux-gnu][/usr/include/qt4/QtCore][/usr/lib/x86_64-linux-gnu/libQtCore.so][/usr/include/qt4/QtGui][/usr/lib/x86_64-linux-gnu/libQtGui.so][/usr/bin/uic-qt4][v4.8.1(4.2.0)]
+FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/bin/moc-qt4][/usr/bin/rcc][/usr/include/qt4][/usr/lib/x86_64-linux-gnu][/usr/include/qt4/QtCore][/usr/lib/x86_64-linux-gnu/libQtCore.so][/usr/include/qt4/QtGui][/usr/lib/x86_64-linux-gnu/libQtGui.so][/usr/bin/uic-qt4][v4.7.4(4.2.0)]
 //Details about finding Qwt
 FIND_PACKAGE_MESSAGE_DETAILS_Qwt:INTERNAL=[/usr/lib/libqwt-qt4.so][/usr/include/qwt-qt4][v()]
 //Details about finding SWIG
-FIND_PACKAGE_MESSAGE_DETAILS_SWIG:INTERNAL=[/usr/bin/swig2.0][/usr/share/swig2.0][v2.0.4()]
+FIND_PACKAGE_MESSAGE_DETAILS_SWIG:INTERNAL=[/usr/bin/swig][/usr/share/swig1.3][v1.3.40()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding UHD
@@ -1697,16 +1718,16 @@ LIBUSB_PKG_STATIC_CFLAGS:INTERNAL=-I/usr/include/libusb-1.0
 LIBUSB_PKG_STATIC_CFLAGS_I:INTERNAL=
 LIBUSB_PKG_STATIC_CFLAGS_OTHER:INTERNAL=
 LIBUSB_PKG_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/libusb-1.0
-LIBUSB_PKG_STATIC_LDFLAGS:INTERNAL=-pthread;-lusb-1.0;-lrt
-LIBUSB_PKG_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+LIBUSB_PKG_STATIC_LDFLAGS:INTERNAL=-lusb-1.0
+LIBUSB_PKG_STATIC_LDFLAGS_OTHER:INTERNAL=
 LIBUSB_PKG_STATIC_LIBDIR:INTERNAL=
-LIBUSB_PKG_STATIC_LIBRARIES:INTERNAL=usb-1.0;rt
+LIBUSB_PKG_STATIC_LIBRARIES:INTERNAL=usb-1.0
 LIBUSB_PKG_STATIC_LIBRARY_DIRS:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS_L:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS_OTHER:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS_PATHS:INTERNAL=
-LIBUSB_PKG_VERSION:INTERNAL=1.0.9-rc3
+LIBUSB_PKG_VERSION:INTERNAL=1.0.8
 LIBUSB_PKG_libusb-1.0_INCLUDEDIR:INTERNAL=
 LIBUSB_PKG_libusb-1.0_LIBDIR:INTERNAL=
 LIBUSB_PKG_libusb-1.0_PREFIX:INTERNAL=
@@ -1780,7 +1801,7 @@ PC_FFTW3F_STATIC_LIBS:INTERNAL=
 PC_FFTW3F_STATIC_LIBS_L:INTERNAL=
 PC_FFTW3F_STATIC_LIBS_OTHER:INTERNAL=
 PC_FFTW3F_STATIC_LIBS_PATHS:INTERNAL=
-PC_FFTW3F_VERSION:INTERNAL=3.3
+PC_FFTW3F_VERSION:INTERNAL=3.2.2
 PC_FFTW3F_fftw3f _INCLUDEDIR:INTERNAL=
 PC_FFTW3F_fftw3f _LIBDIR:INTERNAL=
 PC_FFTW3F_fftw3f _PREFIX:INTERNAL=
@@ -1793,7 +1814,7 @@ PC_ORC_INCLUDEDIR:INTERNAL=/usr/include/orc-0.4
 PC_ORC_INCLUDE_DIRS:INTERNAL=/usr/include/orc-0.4
 PC_ORC_LDFLAGS:INTERNAL=-lorc-0.4
 PC_ORC_LDFLAGS_OTHER:INTERNAL=
-PC_ORC_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+PC_ORC_LIBDIR:INTERNAL=/usr/lib
 PC_ORC_LIBRARIES:INTERNAL=orc-0.4
 PC_ORC_LIBRARY_DIRS:INTERNAL=
 PC_ORC_LIBS:INTERNAL=
@@ -1814,7 +1835,7 @@ PC_ORC_STATIC_LIBS:INTERNAL=
 PC_ORC_STATIC_LIBS_L:INTERNAL=
 PC_ORC_STATIC_LIBS_OTHER:INTERNAL=
 PC_ORC_STATIC_LIBS_PATHS:INTERNAL=
-PC_ORC_VERSION:INTERNAL=0.4.16
+PC_ORC_VERSION:INTERNAL=0.4.14
 PC_ORC_orc-0.4 > 0.4.11_INCLUDEDIR:INTERNAL=
 PC_ORC_orc-0.4 > 0.4.11_LIBDIR:INTERNAL=
 PC_ORC_orc-0.4 > 0.4.11_PREFIX:INTERNAL=
@@ -1896,7 +1917,7 @@ PC_UHD_STATIC_LIBS:INTERNAL=
 PC_UHD_STATIC_LIBS_L:INTERNAL=
 PC_UHD_STATIC_LIBS_OTHER:INTERNAL=
 PC_UHD_STATIC_LIBS_PATHS:INTERNAL=
-PC_UHD_VERSION:INTERNAL=003.004.001-129-g23344268
+PC_UHD_VERSION:INTERNAL=003.004.001-111-g869e5ff1
 PC_UHD_uhd_INCLUDEDIR:INTERNAL=
 PC_UHD_uhd_LIBDIR:INTERNAL=
 PC_UHD_uhd_PREFIX:INTERNAL=
@@ -1937,6 +1958,8 @@ QT_DESIGNER_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_DOC_DIR
 QT_DOC_DIR-ADVANCED:INTERNAL=1
 QT_HEADERS_DIR:INTERNAL=/usr/include/qt4
+//ADVANCED property for variable: QT_IMPORTS_DIR
+QT_IMPORTS_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_LIBRARY_DIR
 QT_LIBRARY_DIR-ADVANCED:INTERNAL=1
 //Qt library dir
@@ -2334,7 +2357,7 @@ Q_WS_QWS:INTERNAL=
 Q_WS_WIN:INTERNAL=
 //Have symbol Q_WS_X11
 Q_WS_X11:INTERNAL=1
-SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread
+SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDLmain.a;/usr/lib/libSDL.so;-lpthread
 //ADVANCED property for variable: SHD_INCLUDE_DIRS
 SHD_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SHD_LIBRARIES
@@ -2386,8 +2409,8 @@ __pkg_config_checked_PC_PORTAUDIO:INTERNAL=1
 __pkg_config_checked_PC_SHD:INTERNAL=1
 __pkg_config_checked_PC_UHD:INTERNAL=1
 __pkg_config_checked__JACK:INTERNAL=1
-_gr_disabled_components:INTERNAL=sphinx;gr-comedi;gr-shd
-_gr_enabled_components:INTERNAL=python-support;testing-support;volk;doxygen;gruel;gnuradio-core;gnuradio-companion;gr-fft;gr-atsc;gr-dvbt;gr-audio;gr-digital;gr-noaa;gr-pager;gr-qtgui;gr-trellis;gr-uhd;gr-utils;gr-video-sdl;gr-vocoder;gr-fcd;gr-wavelet;gr-wxgui
+_gr_disabled_components:INTERNAL=sphinx;gr-shd
+_gr_enabled_components:INTERNAL=python-support;testing-support;volk;doxygen;gruel;gnuradio-core;gnuradio-companion;gr-fft;gr-atsc;gr-dvbt;gr-audio;gr-comedi;gr-digital;gr-noaa;gr-pager;gr-qtgui;gr-trellis;gr-uhd;gr-utils;gr-video-sdl;gr-vocoder;gr-fcd;gr-wavelet;gr-wxgui
 //Test have_funsafe_math_optimizations
 have_funsafe_math_optimizations:INTERNAL=1
 //Test have_m32

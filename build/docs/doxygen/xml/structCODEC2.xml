@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="structCODEC2" kind="struct" prot="public">
     <compoundname>CODEC2</compoundname>
     <includes refid="codec2__internal_8h" local="no">codec2_internal.h</includes>
@@ -70,7 +70,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/codec2_internal.h" line="43" bodyfile="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/codec2_internal.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structCODEC2_1abcb055f551f3d72344c7d534a48ead54" prot="public" static="no" mutable="no">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* CODEC2::nlp</definition>
         <argsstring></argsstring>
         <name>nlp</name>
@@ -179,21 +179,21 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="871">
+      <node id="1437">
         <label>COMP</label>
         <link refid="structCOMP"/>
       </node>
-      <node id="870">
+      <node id="1436">
         <label>MODEL</label>
         <link refid="structMODEL"/>
       </node>
-      <node id="869">
+      <node id="1435">
         <label>CODEC2</label>
         <link refid="structCODEC2"/>
-        <childnode refid="870" relation="usage">
+        <childnode refid="1436" relation="usage">
           <edgelabel>prev_model</edgelabel>
         </childnode>
-        <childnode refid="871" relation="usage">
+        <childnode refid="1437" relation="usage">
           <edgelabel>W</edgelabel>
         </childnode>
       </node>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classGrAtscSegSymSyncImpl" kind="class" prot="public">
     <compoundname>GrAtscSegSymSyncImpl</compoundname>
     <basecompoundref refid="classGrAtscSegSymSync" prot="public" virt="non-virtual">GrAtscSegSymSync</basecompoundref>
@@ -189,25 +189,60 @@
     <detaileddescription>
 <para>This class implements data segment sync tracking and symbol timing using a variation of the method described in &quot;ATSC/VSB Tutorial - Receiver Technology&quot; by Wayne E. Bretl of Zenith, pgs 41-45. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="502">
+      <node id="533">
         <label>GrAtscSegSymSyncImpl</label>
         <link refid="classGrAtscSegSymSyncImpl"/>
-        <childnode refid="503" relation="public-inheritance">
+        <childnode refid="534" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="503">
+      <node id="534">
         <label>GrAtscSegSymSync</label>
         <link refid="classGrAtscSegSymSync"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="504">
+      <node id="540">
+        <label>sssr::digital_correlator</label>
+        <link refid="classsssr_1_1digital__correlator"/>
+      </node>
+      <node id="539">
+        <label>sssr::seg_sync_integrator</label>
+        <link refid="classsssr_1_1seg__sync__integrator"/>
+      </node>
+      <node id="541">
+        <label>atsci_interpolator</label>
+        <link refid="classatsci__interpolator"/>
+      </node>
+      <node id="535">
         <label>GrAtscSegSymSyncImpl</label>
         <link refid="classGrAtscSegSymSyncImpl"/>
-        <childnode refid="505" relation="public-inheritance">
+        <childnode refid="536" relation="public-inheritance">
+        </childnode>
+        <childnode refid="537" relation="usage">
+          <edgelabel>d_sssr</edgelabel>
+        </childnode>
+        <childnode refid="541" relation="usage">
+          <edgelabel>d_interp</edgelabel>
         </childnode>
       </node>
-      <node id="505">
+      <node id="538">
+        <label>sssr::quad_filter</label>
+        <link refid="classsssr_1_1quad__filter"/>
+      </node>
+      <node id="537">
+        <label>atsci_sssr</label>
+        <link refid="classatsci__sssr"/>
+        <childnode refid="538" relation="usage">
+          <edgelabel>d_quad_filter</edgelabel>
+        </childnode>
+        <childnode refid="539" relation="usage">
+          <edgelabel>d_integrator</edgelabel>
+        </childnode>
+        <childnode refid="540" relation="usage">
+          <edgelabel>d_correlator</edgelabel>
+        </childnode>
+      </node>
+      <node id="536">
         <label>GrAtscSegSymSync</label>
         <link refid="classGrAtscSegSymSync"/>
       </node>

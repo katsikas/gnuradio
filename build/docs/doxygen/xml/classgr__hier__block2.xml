@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__hier__block2" kind="class" prot="public">
     <compoundname>gr_hier_block2</compoundname>
     <basecompoundref refid="classgr__basic__block" prot="public" virt="non-virtual">gr_basic_block</basecompoundref>
@@ -38,7 +38,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="47" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classgr__hier__block2_1a4208bfce645e916d5b58b8e7b57e7649" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_hier_block2_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_hier_block2_sptr</ref></type>
         <definition>GR_CORE_API gr_hier_block2_sptr gr_make_hier_block2</definition>
         <argsstring>(const std::string &amp;name, gr_io_signature_sptr input_signature, gr_io_signature_sptr output_signature)</argsstring>
         <name>gr_make_hier_block2</name>
@@ -85,7 +85,7 @@
         <argsstring>(void)</argsstring>
         <name>gr_hier_block2</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -136,7 +136,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1a1106680d50c01b757d0a5af3f6f10681" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classgr__hier__block2_1a39c600cf628c730eba5bd32cb7ccc861" kindref="member">opaque_self</ref></type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">opaque_self</ref></type>
         <definition>opaque_self gr_hier_block2::self</definition>
         <argsstring>()</argsstring>
         <name>self</name>
@@ -149,7 +149,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="80"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1af2eac32d80a8ead56e28835b2dbf5e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_hier_block2::connect</definition>
         <argsstring>(gr_basic_block_sptr block)</argsstring>
         <name>connect</name>
@@ -166,7 +166,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="88"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1a48d8026ae9bd00fc5dddb6940531796d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_hier_block2::connect</definition>
         <argsstring>(gr_basic_block_sptr src, int src_port, gr_basic_block_sptr dst, int dst_port)</argsstring>
         <name>connect</name>
@@ -195,7 +195,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="98"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1a3af3d7708f89011dfc398bc16f7222cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_hier_block2::disconnect</definition>
         <argsstring>(gr_basic_block_sptr block)</argsstring>
         <name>disconnect</name>
@@ -212,7 +212,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="107"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1a25407d2027f825dc5395abe3536a4ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_hier_block2::disconnect</definition>
         <argsstring>(gr_basic_block_sptr src, int src_port, gr_basic_block_sptr dst, int dst_port)</argsstring>
         <name>disconnect</name>
@@ -241,7 +241,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="117"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1ad695c24808d24ad09428380fd213306d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_hier_block2::disconnect_all</definition>
         <argsstring>()</argsstring>
         <name>disconnect_all</name>
@@ -254,7 +254,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="125"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1ac99f0dc1037ec2ca81721da8127c6d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_hier_block2::lock</definition>
         <argsstring>()</argsstring>
         <name>lock</name>
@@ -268,7 +268,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="136"/>
       </memberdef>
       <memberdef kind="function" id="classgr__hier__block2_1a35d938ecc725c7992fb104cb2f321ebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_hier_block2::unlock</definition>
         <argsstring>()</argsstring>
         <name>unlock</name>
@@ -309,116 +309,236 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Hierarchical container class for <ref refid="classgr__block" kindref="compound">gr_block</ref>&apos;s and <ref refid="classgr__hier__block2" kindref="compound">gr_hier_block2</ref>&apos;s. </para>    </briefdescription>
+<para>Hierarchical container class for gr_block&apos;s and gr_hier_block2&apos;s. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4008">
+      <node id="7049">
         <label>gr_channel_model</label>
         <link refid="classgr__channel__model"/>
-        <childnode refid="4000" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4007">
+      <node id="7048">
         <label>fcd_source_c_impl</label>
         <link refid="classfcd__source__c__impl"/>
-        <childnode refid="4006" relation="public-inheritance">
+        <childnode refid="7047" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4002">
+      <node id="7043">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4003" relation="public-inheritance">
+        <childnode refid="7044" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4000">
+      <node id="7041">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="4001" relation="public-inheritance">
+        <childnode refid="7042" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4005">
+      <node id="7046">
         <label>digital_gmskmod_bc</label>
         <link refid="classdigital__gmskmod__bc"/>
-        <childnode refid="4004" relation="public-inheritance">
+        <childnode refid="7045" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4004">
+      <node id="7045">
         <label>digital_cpmmod_bc</label>
         <link refid="classdigital__cpmmod__bc"/>
-        <childnode refid="4000" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4003">
+      <node id="7044">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4006">
+      <node id="7047">
         <label>fcd_source_c</label>
         <link refid="classfcd__source__c"/>
-        <childnode refid="4000" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4009">
+      <node id="7050">
         <label>gr_top_block</label>
         <link refid="classgr__top__block"/>
-        <childnode refid="4000" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4001">
+      <node id="7042">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4002" relation="public-inheritance">
+        <childnode refid="7043" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4012">
+      <node id="7066">
+        <label>std::vector&lt; gr_edge &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="7067" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7070">
+        <label>T</label>
+      </node>
+      <node id="7072">
+        <label>std::vector&lt; T &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="7070" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7053">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4013" relation="public-inheritance">
+        <childnode refid="7054" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4010">
+      <node id="7051">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="4011" relation="public-inheritance">
+        <childnode refid="7052" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7060" relation="usage">
+          <edgelabel>d_detail</edgelabel>
         </childnode>
       </node>
-      <node id="4014">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="7069">
+        <label>boost::shared_ptr&lt; T &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4015" relation="usage">
+        <childnode refid="7070" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4017">
+      <node id="7062">
+        <label>gr_endpoint</label>
+        <link refid="classgr__endpoint"/>
+        <childnode refid="7063" relation="usage">
+          <edgelabel>d_basic_block</edgelabel>
+        </childnode>
+      </node>
+      <node id="7055">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7056" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7059">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4013">
+      <node id="7065">
+        <label>gr_flowgraph</label>
+        <link refid="classgr__flowgraph"/>
+        <childnode refid="7066" relation="usage">
+          <edgelabel>d_edges</edgelabel>
+        </childnode>
+        <childnode refid="7068" relation="usage">
+          <edgelabel>d_blocks</edgelabel>
+        </childnode>
+      </node>
+      <node id="7071">
+        <label>std::vector&lt; gr_endpoint_vector_t &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="7072" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7054">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4015">
+      <node id="7061">
+        <label>std::vector&lt; gr_endpoint &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="7062" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7068">
+        <label>std::vector&lt; gr_basic_block_sptr &gt;</label>
+        <childnode refid="7069" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7056">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="7057" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="4011">
+      <node id="7063">
+        <label>boost::shared_ptr&lt; gr_basic_block &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7052" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7052">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4012" relation="public-inheritance">
+        <childnode refid="7053" relation="public-inheritance">
         </childnode>
-        <childnode refid="4014" relation="usage">
+        <childnode refid="7055" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4016" relation="usage">
+        <childnode refid="7058" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4016">
+      <node id="7067">
+        <label>gr_edge</label>
+        <link refid="classgr__edge"/>
+        <childnode refid="7062" relation="usage">
+          <edgelabel>d_src</edgelabel>
+          <edgelabel>d_dst</edgelabel>
+        </childnode>
+      </node>
+      <node id="7060">
+        <label>gr_hier_block2_detail</label>
+        <link refid="classgr__hier__block2__detail"/>
+        <childnode refid="7061" relation="usage">
+          <edgelabel>d_outputs</edgelabel>
+        </childnode>
+        <childnode refid="7051" relation="usage">
+          <edgelabel>d_owner</edgelabel>
+        </childnode>
+        <childnode refid="7064" relation="usage">
+          <edgelabel>d_fg</edgelabel>
+        </childnode>
+        <childnode refid="7068" relation="usage">
+          <edgelabel>d_blocks</edgelabel>
+        </childnode>
+        <childnode refid="7060" relation="usage">
+          <edgelabel>d_parent_detail</edgelabel>
+        </childnode>
+        <childnode refid="7071" relation="usage">
+          <edgelabel>d_inputs</edgelabel>
+        </childnode>
+      </node>
+      <node id="7064">
+        <label>boost::shared_ptr&lt; gr_flowgraph &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="7065" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="7057">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="7058">
         <label>std::string</label>
-        <childnode refid="4017" relation="public-inheritance">
+        <childnode refid="7059" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -460,7 +580,7 @@
       <member refid="classgr__hier__block2_1a1106680d50c01b757d0a5af3f6f10681" prot="public" virt="non-virtual"><scope>gr_hier_block2</scope><name>self</name></member>
       <member refid="classgr__basic__block_1a0821ef947158670d53bf0739f3c8877b" prot="protected" virt="non-virtual"><scope>gr_hier_block2</scope><name>set_color</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_hier_block2</scope><name>set_input_signature</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_hier_block2</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_hier_block2</scope><name>set_msg_handler</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_hier_block2</scope><name>set_output_signature</name></member>
       <member refid="classgr__basic__block_1a87b0e931b388d349dacd6a5010b5739c" prot="public" virt="non-virtual"><scope>gr_hier_block2</scope><name>to_basic_block</name></member>
       <member refid="classgr__hier__block2_1a133eb3a40da0d6355d85383ad20fd4f7" prot="public" virt="non-virtual"><scope>gr_hier_block2</scope><name>to_hier_block2</name></member>

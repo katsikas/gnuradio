@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="digital__mpsk__snr__est__cc_8h" kind="file">
     <compoundname>digital_mpsk_snr_est_cc.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -54,9 +54,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__mpsk__snr__est__cc_8h_1a254b647ebe8c091e8a864e8e8d17f4f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__mpsk__snr__est__cc_8h_1a75352c1ff5c72dc05dd099fda2a0d5e6" kindref="member">digital_mpsk_snr_est_cc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_mpsk_snr_est_cc_sptr digital_make_mpsk_snr_est_cc</definition>
+      <memberdef kind="function" id="digital__mpsk__snr__est__cc_8h_1a443884b814d896b060e5bffbfd734185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__mpsk__snr__est__cc_8h_1a75352c1ff5c72dc05dd099fda2a0d5e6" kindref="member">digital_mpsk_snr_est_cc_sptr</ref></type>
+        <definition>DIGITAL_API digital_mpsk_snr_est_cc_sptr digital_make_mpsk_snr_est_cc</definition>
         <argsstring>(snr_est_type_t type, int tag_nsamples=10000, double alpha=0.001)</argsstring>
         <name>digital_make_mpsk_snr_est_cc</name>
         <param>
@@ -144,7 +144,7 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_mpsk_snr_est_cc&gt;<sp/><ref refid="digital__mpsk__snr__est__cc_8h_1a75352c1ff5c72dc05dd099fda2a0d5e6" kindref="member">digital_mpsk_snr_est_cc_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__mpsk__snr__est__cc_8h_1a75352c1ff5c72dc05dd099fda2a0d5e6" kindref="member">digital_mpsk_snr_est_cc_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="digital__mpsk__snr__est__cc_8h_1a254b647ebe8c091e8a864e8e8d17f4f0" kindref="member">digital_make_mpsk_snr_est_cc</ref>(<ref refid="digital__impl__mpsk__snr__est_8h_1ad332265a312e8dfe1584460d8859a853" kindref="member" tooltip="Enum for the type of SNR estimator to select.">snr_est_type_t</ref><sp/><ref refid="classdigital__mpsk__snr__est__cc_1a97cb4e40f765e26ea4b8117f3845ce07" kindref="member" tooltip="Return the type of estimator in use.">type</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="digital__mpsk__snr__est__cc_8h_1a443884b814d896b060e5bffbfd734185" kindref="member">digital_make_mpsk_snr_est_cc</ref>(<ref refid="digital__impl__mpsk__snr__est_8h_1ad332265a312e8dfe1584460d8859a853" kindref="member" tooltip="Enum for the type of SNR estimator to select.">snr_est_type_t</ref><sp/><ref refid="classdigital__mpsk__snr__est__cc_1a97cb4e40f765e26ea4b8117f3845ce07" kindref="member" tooltip="Return the type of estimator in use.">type</ref>,</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tag_nsamples=10000,</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classdigital__mpsk__snr__est__cc_1aae641ea42023a25abd970172d9110278" kindref="member" tooltip="Get the running-average coefficient.">alpha</ref>=0.001);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
@@ -161,7 +161,7 @@
 <codeline lineno="62"><highlight class="normal"><sp/><sp/>pmt::pmt_t<sp/>d_key,<sp/>d_me;<sp/></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__mpsk__snr__est__cc_8h_1a75352c1ff5c72dc05dd099fda2a0d5e6" kindref="member">digital_mpsk_snr_est_cc_sptr</ref></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__mpsk__snr__est__cc_8h_1a254b647ebe8c091e8a864e8e8d17f4f0" kindref="member">digital_make_mpsk_snr_est_cc</ref>(<ref refid="digital__impl__mpsk__snr__est_8h_1ad332265a312e8dfe1584460d8859a853" kindref="member" tooltip="Enum for the type of SNR estimator to select.">snr_est_type_t</ref><sp/>type,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__mpsk__snr__est__cc_8h_1a443884b814d896b060e5bffbfd734185" kindref="member">digital_make_mpsk_snr_est_cc</ref>(<ref refid="digital__impl__mpsk__snr__est_8h_1ad332265a312e8dfe1584460d8859a853" kindref="member" tooltip="Enum for the type of SNR estimator to select.">snr_est_type_t</ref><sp/>type,</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tag_nsamples,</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha);</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight></codeline>

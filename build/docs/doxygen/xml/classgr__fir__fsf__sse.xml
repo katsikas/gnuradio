@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__fir__fsf__sse" kind="class" prot="public">
     <compoundname>gr_fir_fsf_sse</compoundname>
     <basecompoundref refid="classgr__fir__fsf__simd" prot="public" virt="non-virtual">gr_fir_fsf_simd</basecompoundref>
@@ -24,7 +24,7 @@
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>gr_fir_fsf_sse</name>
         <param>
-          <type>const std::vector&lt; float &gt; &amp;</type>
+          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -41,26 +41,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3727">
+      <node id="6497">
         <label>gr_fir_fsf_simd</label>
         <link refid="classgr__fir__fsf__simd"/>
       </node>
-      <node id="3726">
+      <node id="6496">
         <label>gr_fir_fsf_sse</label>
         <link refid="classgr__fir__fsf__sse"/>
-        <childnode refid="3727" relation="public-inheritance">
+        <childnode refid="6497" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3729">
+      <node id="6499">
         <label>gr_fir_fsf_simd</label>
         <link refid="classgr__fir__fsf__simd"/>
       </node>
-      <node id="3728">
+      <node id="6498">
         <label>gr_fir_fsf_sse</label>
         <link refid="classgr__fir__fsf__sse"/>
-        <childnode refid="3729" relation="public-inheritance">
+        <childnode refid="6499" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

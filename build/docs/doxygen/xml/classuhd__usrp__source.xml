@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classuhd__usrp__source" kind="class" prot="public">
     <compoundname>uhd_usrp_source</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="virtual">gr_sync_block</basecompoundref>
     <includes refid="gr__uhd__usrp__source_8h" local="no">gr_uhd_usrp_source.h</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classuhd__usrp__source_1a098415bf9256d38f268ec06d27d3ec22" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_start_time</definition>
         <argsstring>(const uhd::time_spec_t &amp;time)=0</argsstring>
         <name>set_start_time</name>
@@ -60,7 +60,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="132"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a7ded245f9d8d9027d46d2449ffb6ae97" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_subdev_spec</definition>
         <argsstring>(const std::string &amp;spec, size_t mboard=0)=0</argsstring>
         <name>set_subdev_spec</name>
@@ -124,7 +124,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="146"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a4e6c866d9f7ac398e0378e8fd1266748" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_samp_rate</definition>
         <argsstring>(double rate)=0</argsstring>
         <name>set_samp_rate</name>
@@ -154,7 +154,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_samp_rate</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -171,7 +171,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_samp_rates</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -313,7 +313,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="201"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a6e0323a31c2404460ccba0978d25d120" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_gain</definition>
         <argsstring>(double gain, size_t chan=0)=0</argsstring>
         <name>set_gain</name>
@@ -350,7 +350,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="208"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1adce31c5d66915d91af5c8165a272e15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_gain</definition>
         <argsstring>(double gain, const std::string &amp;name, size_t chan=0)=0</argsstring>
         <name>set_gain</name>
@@ -463,7 +463,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="231"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1abc730283026c05d41d1f3b1571913e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; uhd_usrp_source::get_gain_names</definition>
         <argsstring>(size_t chan=0)=0</argsstring>
         <name>get_gain_names</name>
@@ -555,7 +555,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="253"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a80a874fd2f977b9125d2057cc0e6741f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_antenna</definition>
         <argsstring>(const std::string &amp;ant, size_t chan=0)=0</argsstring>
         <name>set_antenna</name>
@@ -619,7 +619,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="267"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a042b955d03a1d7c8074dc33f14e12eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; uhd_usrp_source::get_antennas</definition>
         <argsstring>(size_t chan=0)=0</argsstring>
         <name>get_antennas</name>
@@ -646,7 +646,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="274"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1aac839d2aede27fb344e563addebeb03e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_bandwidth</definition>
         <argsstring>(double bandwidth, size_t chan=0)=0</argsstring>
         <name>set_bandwidth</name>
@@ -683,7 +683,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="281"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a09750c5a9e76f924b335fa5ac407231f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_auto_dc_offset</definition>
         <argsstring>(const bool enb, size_t chan=0)=0</argsstring>
         <name>set_auto_dc_offset</name>
@@ -720,7 +720,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="295"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a61442d924a4a074332c76a578dcb49f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_dc_offset</definition>
         <argsstring>(const std::complex&lt; double &gt; &amp;offset, size_t chan=0)=0</argsstring>
         <name>set_dc_offset</name>
@@ -757,7 +757,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="304"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1abf2d4f92fcb4bc3075106ee9a06e86c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_iq_balance</definition>
         <argsstring>(const std::complex&lt; double &gt; &amp;correction, size_t chan=0)=0</argsstring>
         <name>set_iq_balance</name>
@@ -832,7 +832,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="321"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a720dd7c5baeeda76bf3e3e9a9a6ccc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; uhd_usrp_source::get_sensor_names</definition>
         <argsstring>(size_t chan=0)=0</argsstring>
         <name>get_sensor_names</name>
@@ -881,7 +881,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="331" bodyfile="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" bodystart="331" bodyend="333"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1aee82d2a48723a644642ffbb375e40d84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
         <definition>std::vector&lt;std::string&gt; uhd_usrp_source::get_dboard_sensor_names</definition>
         <argsstring>(size_t chan=0)</argsstring>
         <name>get_dboard_sensor_names</name>
@@ -937,7 +937,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="346"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a9a7347ba86913bc5ff2fbd5cf2f0ed4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; uhd_usrp_source::get_mboard_sensor_names</definition>
         <argsstring>(size_t mboard=0)=0</argsstring>
         <name>get_mboard_sensor_names</name>
@@ -964,7 +964,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="353"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a6797858f58b161d2c66d4519c2337eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_clock_config</definition>
         <argsstring>(const uhd::clock_config_t &amp;clock_config, size_t mboard=0)=0</argsstring>
         <name>set_clock_config</name>
@@ -1001,7 +1001,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="361"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a04aabd4317b904289f770e545c6e52ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_time_source</definition>
         <argsstring>(const std::string &amp;source, const size_t mboard=0)=0</argsstring>
         <name>set_time_source</name>
@@ -1064,7 +1064,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="378"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a5725592e7d2bbf5ab5cd562df193aa1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; uhd_usrp_source::get_time_sources</definition>
         <argsstring>(const size_t mboard)=0</argsstring>
         <name>get_time_sources</name>
@@ -1090,7 +1090,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="385"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a0e672aa5ecf6e22de5815c0c19b356b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_clock_source</definition>
         <argsstring>(const std::string &amp;source, const size_t mboard=0)=0</argsstring>
         <name>set_clock_source</name>
@@ -1153,7 +1153,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="401"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a73534f99742923ca9821c82dc71ce99e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::string &gt;</type>
         <definition>virtual std::vector&lt;std::string&gt; uhd_usrp_source::get_clock_sources</definition>
         <argsstring>(const size_t mboard)=0</argsstring>
         <name>get_clock_sources</name>
@@ -1206,7 +1206,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="415"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1afd038f67e7ead83907ff71898b338dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_clock_rate</definition>
         <argsstring>(double rate, size_t mboard=0)=0</argsstring>
         <name>set_clock_rate</name>
@@ -1297,7 +1297,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="436"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1abb1130d4972028db5d7dd3469e0e1210" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_time_now</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec, size_t mboard=0)=0</argsstring>
         <name>set_time_now</name>
@@ -1334,7 +1334,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="443"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1ab60744003625381fc9605a1e672d8117" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_time_next_pps</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec)=0</argsstring>
         <name>set_time_next_pps</name>
@@ -1359,7 +1359,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="449"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a39aa1985039b6bf9d6118a32ff24c556" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_time_unknown_pps</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec)=0</argsstring>
         <name>set_time_unknown_pps</name>
@@ -1384,7 +1384,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="455"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a59558860e816995c0cbbc43a44523ab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_command_time</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec, size_t mboard=0)=0</argsstring>
         <name>set_command_time</name>
@@ -1421,7 +1421,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="467"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a0d8565f5a74690699935073ae8cb1594" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::clear_command_time</definition>
         <argsstring>(size_t mboard=0)=0</argsstring>
         <name>clear_command_time</name>
@@ -1471,7 +1471,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_device</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1483,7 +1483,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="486"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a4dc92d62ea23db79934689b32e04dc39" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_source::set_user_register</definition>
         <argsstring>(const uint8_t addr, const uint32_t data, size_t mboard=0)=0</argsstring>
         <name>set_user_register</name>
@@ -1531,7 +1531,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="495"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a23cf2561f308164b1e6593ddf801bf46" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::complex&lt; float &gt; &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::complex&lt; float &gt; &gt;</type>
         <definition>virtual std::vector&lt;std::complex&lt;float&gt; &gt; uhd_usrp_source::finite_acquisition</definition>
         <argsstring>(const size_t nsamps)=0</argsstring>
         <name>finite_acquisition</name>
@@ -1557,7 +1557,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="505"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__source_1a460e44146689c8b82454d7d71a1266ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; std::vector&lt; std::complex&lt; float &gt; &gt; &gt;</type>
+        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; std::complex&lt; float &gt; &gt; &gt;</type>
         <definition>virtual std::vector&lt;std::vector&lt;std::complex&lt;float&gt; &gt; &gt; uhd_usrp_source::finite_acquisition_v</definition>
         <argsstring>(const size_t nsamps)=0</argsstring>
         <name>finite_acquisition_v</name>
@@ -1588,100 +1588,220 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7472">
+      <node id="12527">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7473" relation="public-inheritance">
+        <childnode refid="12528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7469">
+      <node id="12524">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7470" relation="public-inheritance">
+        <childnode refid="12525" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7470">
+      <node id="12525">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7471" relation="public-inheritance">
+        <childnode refid="12526" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7468">
+      <node id="12523">
         <label>uhd_usrp_source</label>
         <link refid="classuhd__usrp__source"/>
-        <childnode refid="7469" relation="public-inheritance">
+        <childnode refid="12524" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7473">
+      <node id="12528">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7471">
+      <node id="12526">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7472" relation="public-inheritance">
+        <childnode refid="12527" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7478">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-        <childnode refid="7479" relation="public-inheritance">
+      <node id="12550">
+        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
+        <link refid="classstd_1_1vector"/>
+        <childnode refid="12544" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="7475">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="7476" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7476">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="7477" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7480">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+      <node id="12543">
+        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7481" relation="usage">
+        <childnode refid="12544" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7483">
-        <label>std::basic_string&lt; char &gt;</label>
+      <node id="12555">
+        <label>T</label>
       </node>
-      <node id="7474">
-        <label>uhd_usrp_source</label>
-        <link refid="classuhd__usrp__source"/>
-        <childnode refid="7475" relation="public-inheritance">
+      <node id="12533">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+        <childnode refid="12534" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7479">
+      <node id="12530">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="12531" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12544">
+        <label>gr_buffer_reader</label>
+        <link refid="classgr__buffer__reader"/>
+        <childnode refid="12545" relation="usage">
+          <edgelabel>d_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="12552">
+        <label>std::deque&lt; pmt::pmt_t &gt;</label>
+      </node>
+      <node id="12547">
+        <label>gr_vmcircbuf</label>
+        <link refid="classgr__vmcircbuf"/>
+      </node>
+      <node id="12531">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="12532" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12540" relation="usage">
+          <edgelabel>d_detail</edgelabel>
+        </childnode>
+      </node>
+      <node id="12540">
+        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12541" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12554">
+        <label>boost::shared_ptr&lt; T &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12555" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12541">
+        <label>gr_block_detail</label>
+        <link refid="classgr__block__detail"/>
+        <childnode refid="12542" relation="usage">
+          <edgelabel>d_input</edgelabel>
+        </childnode>
+        <childnode refid="12551" relation="usage">
+          <edgelabel>d_tpb</edgelabel>
+        </childnode>
+        <childnode refid="12553" relation="usage">
+          <edgelabel>d_output</edgelabel>
+        </childnode>
+      </node>
+      <node id="12548">
+        <label>std::deque&lt; gr_tag_t &gt;</label>
+        <childnode refid="12549" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12535">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12536" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12546">
+        <label>gr_buffer</label>
+        <link refid="classgr__buffer"/>
+        <childnode refid="12547" relation="usage">
+          <edgelabel>d_vmcircbuf</edgelabel>
+        </childnode>
+        <childnode refid="12548" relation="usage">
+          <edgelabel>d_item_tags</edgelabel>
+        </childnode>
+        <childnode refid="12550" relation="usage">
+          <edgelabel>d_readers</edgelabel>
+        </childnode>
+      </node>
+      <node id="12539">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="12542">
+        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
+        <childnode refid="12543" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12529">
+        <label>uhd_usrp_source</label>
+        <link refid="classuhd__usrp__source"/>
+        <childnode refid="12530" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12534">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7481">
+      <node id="12545">
+        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="12546" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="12549">
+        <label>gr_tag_t</label>
+        <link refid="structgr__tag__t"/>
+      </node>
+      <node id="12551">
+        <label>gr_tpb_detail</label>
+        <link refid="structgr__tpb__detail"/>
+        <childnode refid="12552" relation="usage">
+          <edgelabel>msg_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="12553">
+        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
+        <childnode refid="12554" relation="usage">
+          <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12536">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
+        <childnode refid="12537" relation="usage">
+          <edgelabel>d_sizeof_stream_item</edgelabel>
+        </childnode>
       </node>
-      <node id="7477">
+      <node id="12532">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7478" relation="public-inheritance">
+        <childnode refid="12533" relation="public-inheritance">
         </childnode>
-        <childnode refid="7480" relation="usage">
+        <childnode refid="12535" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7482" relation="usage">
+        <childnode refid="12538" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7482">
+      <node id="12537">
+        <label>std::vector&lt; int &gt;</label>
+        <link refid="classstd_1_1vector"/>
+      </node>
+      <node id="12538">
         <label>std::string</label>
-        <childnode refid="7483" relation="public-inheritance">
+        <childnode refid="12539" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1783,7 +1903,7 @@
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>uhd_usrp_source</scope><name>set_input_signature</name></member>
       <member refid="classuhd__usrp__source_1abf2d4f92fcb4bc3075106ee9a06e86c8" prot="public" virt="pure-virtual"><scope>uhd_usrp_source</scope><name>set_iq_balance</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>uhd_usrp_source</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>uhd_usrp_source</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>uhd_usrp_source</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>uhd_usrp_source</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>uhd_usrp_source</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>uhd_usrp_source</scope><name>set_relative_rate</name></member>

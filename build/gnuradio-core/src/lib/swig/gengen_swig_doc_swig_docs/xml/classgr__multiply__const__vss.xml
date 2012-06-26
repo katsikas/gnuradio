@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__multiply__const__vss" kind="class" prot="public">
     <compoundname>gr_multiply_const_vss</compoundname>
     <includes refid="gr__multiply__const__vss_8h" local="no">gr_multiply_const_vss.h</includes>
@@ -117,6 +117,18 @@
 <para>output vector = input vector * constant vector (element-wise) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="420">
+        <label>gr_multiply_const_vss</label>
+        <link refid="classgr__multiply__const__vss"/>
+        <childnode refid="421" relation="usage">
+          <edgelabel>d_k</edgelabel>
+        </childnode>
+      </node>
+      <node id="421">
+        <label>std::vector&lt; short &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_multiply_const_vss.h" line="41" bodyfile="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_multiply_const_vss.h" bodystart="40" bodyend="54"/>
     <listofallmembers>
       <member refid="classgr__multiply__const__vss_1a8c1112fe7552e739905dfc316db27108" prot="private" virt="non-virtual"><scope>gr_multiply_const_vss</scope><name>d_k</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="gr__audio__source_8h" kind="file">
     <compoundname>gr_audio_source.h</compoundname>
     <includes refid="gr__audio__api_8h" local="no">gr_audio_api.h</includes>
@@ -13,86 +13,134 @@
     <includedby refid="audio__windows__source_8h" local="no">audio_windows_source.h</includedby>
     <includedby refid="fcd__source__c__impl_8h" local="no">fcd_source_c_impl.h</includedby>
     <incdepgraph>
-      <node id="5098">
+      <node id="5086">
         <label>gr_sptr_magic.h</label>
         <link refid="gr__sptr__magic_8h_source"/>
-        <childnode refid="5088" relation="include">
+        <childnode refid="5076" relation="include">
         </childnode>
-        <childnode refid="5093" relation="include">
+        <childnode refid="5081" relation="include">
         </childnode>
       </node>
-      <node id="5089">
+      <node id="5077">
         <label>gr_block.h</label>
         <link refid="gr__block_8h"/>
-        <childnode refid="5088" relation="include">
+        <childnode refid="5076" relation="include">
         </childnode>
-        <childnode refid="5090" relation="include">
+        <childnode refid="5078" relation="include">
         </childnode>
-        <childnode refid="5114" relation="include">
+        <childnode refid="5102" relation="include">
         </childnode>
       </node>
-      <node id="5093">
+      <node id="5081">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="5105">
+      <node id="5093">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="5102">
+      <node id="5090">
         <label>gruel/msg_accepter.h</label>
         <link refid="msg__accepter_8h"/>
-        <childnode refid="5103" relation="include">
+        <childnode refid="5091" relation="include">
         </childnode>
-        <childnode refid="5104" relation="include">
+        <childnode refid="5092" relation="include">
         </childnode>
-        <childnode refid="5093" relation="include">
+        <childnode refid="5081" relation="include">
         </childnode>
       </node>
-      <node id="5086">
+      <node id="5074">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="5092">
+      <node id="5080">
         <label>gr_types.h</label>
         <link refid="gr__types_8h"/>
+        <childnode refid="5076" relation="include">
+        </childnode>
+        <childnode refid="5081" relation="include">
+        </childnode>
+        <childnode refid="5082" relation="include">
+        </childnode>
+        <childnode refid="5083" relation="include">
+        </childnode>
+        <childnode refid="5084" relation="include">
+        </childnode>
+      </node>
+      <node id="5100">
+        <label>stdexcept</label>
+      </node>
+      <node id="5096">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5097" relation="include">
+        </childnode>
+        <childnode refid="5098" relation="include">
+        </childnode>
+      </node>
+      <node id="5073">
+        <label>gr_audio_api.h</label>
+        <link refid="gr__audio__api_8h"/>
+        <childnode refid="5074" relation="include">
+        </childnode>
+      </node>
+      <node id="5095">
+        <label>string</label>
+      </node>
+      <node id="5078">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="5076" relation="include">
+        </childnode>
+        <childnode refid="5079" relation="include">
+        </childnode>
+        <childnode refid="5086" relation="include">
+        </childnode>
+        <childnode refid="5087" relation="include">
+        </childnode>
         <childnode refid="5088" relation="include">
+        </childnode>
+        <childnode refid="5089" relation="include">
+        </childnode>
+        <childnode refid="5095" relation="include">
+        </childnode>
+      </node>
+      <node id="5101">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="5083">
+        <label>stddef.h</label>
+      </node>
+      <node id="5091">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="5074" relation="include">
+        </childnode>
+      </node>
+      <node id="5088">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="5097">
+        <label>limits.h</label>
+      </node>
+      <node id="5094">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="5092">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="5091" relation="include">
         </childnode>
         <childnode refid="5093" relation="include">
         </childnode>
+        <childnode refid="5081" relation="include">
+        </childnode>
         <childnode refid="5094" relation="include">
+        </childnode>
+        <childnode refid="5085" relation="include">
         </childnode>
         <childnode refid="5095" relation="include">
         </childnode>
         <childnode refid="5096" relation="include">
-        </childnode>
-      </node>
-      <node id="5112">
-        <label>stdexcept</label>
-      </node>
-      <node id="5108">
-        <label>stdint.h</label>
-        <link refid="stdint_8h"/>
-        <childnode refid="5109" relation="include">
-        </childnode>
-        <childnode refid="5110" relation="include">
-        </childnode>
-      </node>
-      <node id="5085">
-        <label>gr_audio_api.h</label>
-        <link refid="gr__audio__api_8h"/>
-        <childnode refid="5086" relation="include">
-        </childnode>
-      </node>
-      <node id="5107">
-        <label>string</label>
-      </node>
-      <node id="5090">
-        <label>gr_basic_block.h</label>
-        <link refid="gr__basic__block_8h"/>
-        <childnode refid="5088" relation="include">
-        </childnode>
-        <childnode refid="5091" relation="include">
-        </childnode>
-        <childnode refid="5098" relation="include">
         </childnode>
         <childnode refid="5099" relation="include">
         </childnode>
@@ -100,183 +148,135 @@
         </childnode>
         <childnode refid="5101" relation="include">
         </childnode>
-        <childnode refid="5107" relation="include">
+      </node>
+      <node id="5098">
+        <label>wchar.h</label>
+      </node>
+      <node id="5089">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="5076" relation="include">
+        </childnode>
+        <childnode refid="5090" relation="include">
+        </childnode>
+        <childnode refid="5092" relation="include">
         </childnode>
       </node>
-      <node id="5113">
-        <label>gruel/pmt_sugar.h</label>
-        <link refid="pmt__sugar_8h"/>
-      </node>
-      <node id="5095">
-        <label>stddef.h</label>
-      </node>
-      <node id="5103">
-        <label>gruel/api.h</label>
-        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="5086" relation="include">
+      <node id="5079">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="5076" relation="include">
+        </childnode>
+        <childnode refid="5080" relation="include">
         </childnode>
       </node>
-      <node id="5100">
-        <label>boost/function.hpp</label>
+      <node id="5082">
+        <label>vector</label>
       </node>
+      <node id="5076">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="5074" relation="include">
+        </childnode>
+      </node>
+      <node id="5087">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="5099">
+        <label>iosfwd</label>
+      </node>
+      <node id="5102">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="5076" relation="include">
+        </childnode>
+        <childnode refid="5092" relation="include">
+        </childnode>
+      </node>
+      <node id="5072">
+        <label>gr_audio_source.h</label>
+        <link refid="gr_audio_source.h"/>
+        <childnode refid="5073" relation="include">
+        </childnode>
+        <childnode refid="5075" relation="include">
+        </childnode>
+      </node>
+      <node id="5075">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="5076" relation="include">
+        </childnode>
+        <childnode refid="5077" relation="include">
+        </childnode>
+      </node>
+      <node id="5085">
+        <label>complex</label>
+      </node>
+      <node id="5084">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="5085" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="5109">
-        <label>limits.h</label>
+        <label>audio_portaudio_source.h</label>
+        <link refid="audio__portaudio__source_8h"/>
       </node>
-      <node id="5106">
-        <label>boost/any.hpp</label>
+      <node id="5105">
+        <label>gr_audio_registry.h</label>
+        <link refid="gr__audio__registry_8h"/>
+      </node>
+      <node id="5108">
+        <label>audio_osx_source.h</label>
+        <link refid="audio__osx__source_8h"/>
+      </node>
+      <node id="5107">
+        <label>audio_oss_source.h</label>
+        <link refid="audio__oss__source_8h"/>
+      </node>
+      <node id="5111">
+        <label>fcd_source_c_impl.h</label>
+        <link refid="fcd__source__c__impl_8h"/>
       </node>
       <node id="5104">
-        <label>gruel/pmt.h</label>
-        <link refid="pmt_8h"/>
-        <childnode refid="5103" relation="include">
+        <label>audio_alsa_source.h</label>
+        <link refid="audio__alsa__source_8h"/>
+      </node>
+      <node id="5110">
+        <label>audio_windows_source.h</label>
+        <link refid="audio__windows__source_8h"/>
+      </node>
+      <node id="5106">
+        <label>audio_jack_source.h</label>
+        <link refid="audio__jack__source_8h"/>
+      </node>
+      <node id="5103">
+        <label>gr_audio_source.h</label>
+        <link refid="gr_audio_source.h"/>
+        <childnode refid="5104" relation="include">
         </childnode>
         <childnode refid="5105" relation="include">
         </childnode>
-        <childnode refid="5093" relation="include">
-        </childnode>
         <childnode refid="5106" relation="include">
-        </childnode>
-        <childnode refid="5097" relation="include">
         </childnode>
         <childnode refid="5107" relation="include">
         </childnode>
         <childnode refid="5108" relation="include">
         </childnode>
+        <childnode refid="5109" relation="include">
+        </childnode>
+        <childnode refid="5110" relation="include">
+        </childnode>
         <childnode refid="5111" relation="include">
-        </childnode>
-        <childnode refid="5112" relation="include">
-        </childnode>
-        <childnode refid="5113" relation="include">
-        </childnode>
-      </node>
-      <node id="5110">
-        <label>wchar.h</label>
-      </node>
-      <node id="5101">
-        <label>gr_msg_accepter.h</label>
-        <link refid="gr__msg__accepter_8h"/>
-        <childnode refid="5088" relation="include">
-        </childnode>
-        <childnode refid="5102" relation="include">
-        </childnode>
-        <childnode refid="5104" relation="include">
-        </childnode>
-      </node>
-      <node id="5091">
-        <label>gr_runtime_types.h</label>
-        <link refid="gr__runtime__types_8h"/>
-        <childnode refid="5088" relation="include">
-        </childnode>
-        <childnode refid="5092" relation="include">
-        </childnode>
-      </node>
-      <node id="5094">
-        <label>vector</label>
-      </node>
-      <node id="5088">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="5086" relation="include">
-        </childnode>
-      </node>
-      <node id="5099">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="5111">
-        <label>iosfwd</label>
-      </node>
-      <node id="5114">
-        <label>gr_tags.h</label>
-        <link refid="gr__tags_8h"/>
-        <childnode refid="5088" relation="include">
-        </childnode>
-        <childnode refid="5104" relation="include">
-        </childnode>
-      </node>
-      <node id="5084">
-        <label>gr_audio_source.h</label>
-        <link refid="gr_audio_source.h"/>
-        <childnode refid="5085" relation="include">
-        </childnode>
-        <childnode refid="5087" relation="include">
-        </childnode>
-      </node>
-      <node id="5087">
-        <label>gr_sync_block.h</label>
-        <link refid="gr__sync__block_8h"/>
-        <childnode refid="5088" relation="include">
-        </childnode>
-        <childnode refid="5089" relation="include">
-        </childnode>
-      </node>
-      <node id="5097">
-        <label>complex</label>
-      </node>
-      <node id="5096">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="5097" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="5121">
-        <label>audio_portaudio_source.h</label>
-        <link refid="audio__portaudio__source_8h"/>
-      </node>
-      <node id="5117">
-        <label>gr_audio_registry.h</label>
-        <link refid="gr__audio__registry_8h"/>
-      </node>
-      <node id="5120">
-        <label>audio_osx_source.h</label>
-        <link refid="audio__osx__source_8h"/>
-      </node>
-      <node id="5119">
-        <label>audio_oss_source.h</label>
-        <link refid="audio__oss__source_8h"/>
-      </node>
-      <node id="5123">
-        <label>fcd_source_c_impl.h</label>
-        <link refid="fcd__source__c__impl_8h"/>
-      </node>
-      <node id="5116">
-        <label>audio_alsa_source.h</label>
-        <link refid="audio__alsa__source_8h"/>
-      </node>
-      <node id="5122">
-        <label>audio_windows_source.h</label>
-        <link refid="audio__windows__source_8h"/>
-      </node>
-      <node id="5118">
-        <label>audio_jack_source.h</label>
-        <link refid="audio__jack__source_8h"/>
-      </node>
-      <node id="5115">
-        <label>gr_audio_source.h</label>
-        <link refid="gr_audio_source.h"/>
-        <childnode refid="5116" relation="include">
-        </childnode>
-        <childnode refid="5117" relation="include">
-        </childnode>
-        <childnode refid="5118" relation="include">
-        </childnode>
-        <childnode refid="5119" relation="include">
-        </childnode>
-        <childnode refid="5120" relation="include">
-        </childnode>
-        <childnode refid="5121" relation="include">
-        </childnode>
-        <childnode refid="5122" relation="include">
-        </childnode>
-        <childnode refid="5123" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classaudio__source" prot="public">audio_source</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__audio__source_8h_1afc73b1338ea18aed2bb49b50997a52ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__audio__api_8h_1a222adfe41ab381b8e026445ba45db5a1" kindref="member">GR_AUDIO_API</ref> <ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref></type>
+        <type>GR_AUDIO_API <ref refid="classboost_1_1shared__ptr" kindref="compound">audio_source::sptr</ref></type>
         <definition>GR_AUDIO_API audio_source::sptr audio_make_source</definition>
         <argsstring>(int sampling_rate, const std::string device_name=&quot;&quot;, bool ok_to_block=true)</argsstring>
         <name>audio_make_source</name>

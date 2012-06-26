@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classatsci__equalizer" kind="class" prot="public">
     <compoundname>atsci_equalizer</compoundname>
     <derivedcompoundref refid="classatsci__equalizer__lms" prot="public" virt="non-virtual">atsci_equalizer_lms</derivedcompoundref>
@@ -75,13 +75,13 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer.h" line="55"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__equalizer_1ae1f4fea799066b5a030bf9cedd9f9141" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
+        <reimplementedby refid="classatsci__equalizer__nop_1a56b9b85bf850d88aa88fcefa44a3eb54">reset</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms2_1a343eccda6d3406e61d4e3f7a3f03584a">reset</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms_1ada8cd96d000ac03af7b53276651bfab7">reset</reimplementedby>
-        <reimplementedby refid="classatsci__equalizer__nop_1a56b9b85bf850d88aa88fcefa44a3eb54">reset</reimplementedby>
         <briefdescription>
 <para>reset state (e.g., on channel change) </para>        </briefdescription>
         <detaileddescription>
@@ -91,7 +91,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__equalizer_1a652624aa36e1a9973e63fa22e05fceb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer::filter</definition>
         <argsstring>(const float *input_samples, const atsc::syminfo *input_tags, float *output_samples, int nsamples)</argsstring>
         <name>filter</name>
@@ -124,9 +124,9 @@
         <definition>virtual int atsci_equalizer::ntaps</definition>
         <argsstring>() const =0</argsstring>
         <name>ntaps</name>
+        <reimplementedby refid="classatsci__equalizer__nop_1a0940bb621986b9827d24200e19b0d5dd">ntaps</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms2_1ade874736b434c36c3e1916c737208406">ntaps</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms_1a175be27cd2a7066c00ef70e73a4d8a21">ntaps</reimplementedby>
-        <reimplementedby refid="classatsci__equalizer__nop_1a0940bb621986b9827d24200e19b0d5dd">ntaps</reimplementedby>
         <briefdescription>
 <para>how much history the input data stream requires. </para>        </briefdescription>
         <detaileddescription>
@@ -140,9 +140,9 @@
         <definition>virtual int atsci_equalizer::npretaps</definition>
         <argsstring>() const =0</argsstring>
         <name>npretaps</name>
+        <reimplementedby refid="classatsci__equalizer__nop_1aea25eeb6ebfbebb2f2faa891a5cd2610">npretaps</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms2_1ae9e1dd9e384136c7eae624428a79a4a6">npretaps</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms_1a22680b8926f2ce6bd5c5fb38e25de25b">npretaps</reimplementedby>
-        <reimplementedby refid="classatsci__equalizer__nop_1aea25eeb6ebfbebb2f2faa891a5cd2610">npretaps</reimplementedby>
         <briefdescription>
 <para>how many taps are &quot;in the future&quot;. </para>        </briefdescription>
         <detaileddescription>
@@ -154,13 +154,13 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classatsci__equalizer_1af41b4d5184df08f6df672752d1d3c9d3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer::filter_normal</definition>
         <argsstring>(const float *input_samples, float *output_samples, int nsamples)=0</argsstring>
         <name>filter_normal</name>
+        <reimplementedby refid="classatsci__equalizer__nop_1a11feb6978266a24cc44059e3b4998b89">filter_normal</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms2_1a4733555f4c5f69d0619ccdad90c9ff0f">filter_normal</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms_1af29b102348176dc728260eb52d4954d4">filter_normal</reimplementedby>
-        <reimplementedby refid="classatsci__equalizer__nop_1a11feb6978266a24cc44059e3b4998b89">filter_normal</reimplementedby>
         <param>
           <type>const float *</type>
           <declname>input_samples</declname>
@@ -182,13 +182,13 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer.h" line="126"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__equalizer_1a1826a36e71cd5b23b37212a382363a59" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer::filter_data_seg_sync</definition>
         <argsstring>(const float *input_samples, float *output_samples, int nsamples, int offset)=0</argsstring>
         <name>filter_data_seg_sync</name>
+        <reimplementedby refid="classatsci__equalizer__nop_1a2d21e46afdfcd4dd3ff753d104e51a6f">filter_data_seg_sync</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms2_1a2b010d57187868eb372bb5e0903be619">filter_data_seg_sync</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms_1a4d8b1c86277efdb78890150b564b71ef">filter_data_seg_sync</reimplementedby>
-        <reimplementedby refid="classatsci__equalizer__nop_1a2d21e46afdfcd4dd3ff753d104e51a6f">filter_data_seg_sync</reimplementedby>
         <param>
           <type>const float *</type>
           <declname>input_samples</declname>
@@ -214,13 +214,13 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer.h" line="141"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__equalizer_1a4731ead6a02b3ebba75f3e0b70eefe55" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void atsci_equalizer::filter_field_sync</definition>
         <argsstring>(const float *input_samples, float *output_samples, int nsamples, int offset, int which_field)=0</argsstring>
         <name>filter_field_sync</name>
+        <reimplementedby refid="classatsci__equalizer__nop_1aabe199fee2a80db95cf5437a68c19901">filter_field_sync</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms2_1a8545c2e4fc07d4a7ec4d4ed403108cce">filter_field_sync</reimplementedby>
         <reimplementedby refid="classatsci__equalizer__lms_1a16f3f405c5eee8cd233d87e6ee67748b">filter_field_sync</reimplementedby>
-        <reimplementedby refid="classatsci__equalizer__nop_1aabe199fee2a80db95cf5437a68c19901">filter_field_sync</reimplementedby>
         <param>
           <type>const float *</type>
           <declname>input_samples</declname>
@@ -255,26 +255,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="325">
+      <node id="637">
         <label>atsci_equalizer_lms2</label>
         <link refid="classatsci__equalizer__lms2"/>
-        <childnode refid="323" relation="public-inheritance">
+        <childnode refid="635" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="324">
+      <node id="636">
         <label>atsci_equalizer_lms</label>
         <link refid="classatsci__equalizer__lms"/>
-        <childnode refid="323" relation="public-inheritance">
+        <childnode refid="635" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="323">
+      <node id="635">
         <label>atsci_equalizer</label>
         <link refid="classatsci__equalizer"/>
       </node>
-      <node id="326">
+      <node id="638">
         <label>atsci_equalizer_nop</label>
         <link refid="classatsci__equalizer__nop"/>
-        <childnode refid="323" relation="public-inheritance">
+        <childnode refid="635" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

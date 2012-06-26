@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classgr__fir__filter__ccc" kind="class" prot="public">
     <compoundname>gr_fir_filter_ccc</compoundname>
     <includes refid="gr__fir__filter__ccc_8h" local="no">gr_fir_filter_ccc.h</includes>
@@ -164,6 +164,28 @@
 <para>FIR filter with gr_complex input, gr_complex output and gr_complex taps. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="565">
+        <label>gr_fir_ccc</label>
+        <link refid="classgr__fir__ccc"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+      </node>
+      <node id="566">
+        <label>std::vector&lt; gr_complex &gt;</label>
+      </node>
+      <node id="564">
+        <label>gr_fir_filter_ccc</label>
+        <link refid="classgr__fir__filter__ccc"/>
+        <childnode refid="565" relation="usage">
+          <edgelabel>d_fir</edgelabel>
+        </childnode>
+        <childnode refid="566" relation="usage">
+          <edgelabel>d_new_taps</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/gr_fir_filter_ccc.h" line="45" bodyfile="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/gr_fir_filter_ccc.h" bodystart="44" bodyend="67"/>
     <listofallmembers>
       <member refid="classgr__fir__filter__ccc_1ae17d7e254457771ba013fa60de55222d" prot="private" virt="non-virtual"><scope>gr_fir_filter_ccc</scope><name>d_fir</name></member>

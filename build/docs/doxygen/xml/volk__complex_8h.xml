@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="volk__complex_8h" kind="file">
     <compoundname>volk_complex.h</compoundname>
     <includes local="no">complex.h</includes>
+    <includedby refid="volk_8h" local="no">volk.h</includedby>
     <includedby refid="volk__32f__x3__sum__of__poly__32f__a_8h" local="no">volk_32f_x3_sum_of_poly_32f_a.h</includedby>
     <includedby refid="volk__32fc__conjugate__32fc__a_8h" local="no">volk_32fc_conjugate_32fc_a.h</includedby>
     <includedby refid="volk__32fc__conjugate__32fc__u_8h" local="no">volk_32fc_conjugate_32fc_u.h</includedby>
@@ -25,33 +26,26 @@
     <includedby refid="volk__8ic__x2__s32f__multiply__conjugate__32fc__a_8h" local="no">volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h</includedby>
     <includedby refid="volk_8tmpl_8h" local="no">volk.tmpl.h</includedby>
     <includedby refid="volk__typedefs_8tmpl_8h" local="no">volk_typedefs.tmpl.h</includedby>
+    <includedby refid="volk__typedefs_8h" local="no">volk_typedefs.h</includedby>
     <incdepgraph>
-      <node id="18553">
+      <node id="18557">
         <label>volk_complex.h</label>
         <link refid="volk_complex.h"/>
-        <childnode refid="18554" relation="include">
+        <childnode refid="18558" relation="include">
         </childnode>
       </node>
-      <node id="18554">
+      <node id="18558">
         <label>complex.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="18562">
+      <node id="18567">
         <label>volk_32fc_s32fc_rotatorpuppet_32fc_a.h</label>
         <link refid="volk__32fc__s32fc__rotatorpuppet__32fc__a_8h"/>
       </node>
-      <node id="18555">
+      <node id="18559">
         <label>volk_complex.h</label>
         <link refid="volk_complex.h"/>
-        <childnode refid="18556" relation="include">
-        </childnode>
-        <childnode refid="18557" relation="include">
-        </childnode>
-        <childnode refid="18558" relation="include">
-        </childnode>
-        <childnode refid="18559" relation="include">
-        </childnode>
         <childnode refid="18560" relation="include">
         </childnode>
         <childnode refid="18561" relation="include">
@@ -88,90 +82,120 @@
         </childnode>
         <childnode refid="18577" relation="include">
         </childnode>
+        <childnode refid="18578" relation="include">
+        </childnode>
+        <childnode refid="18579" relation="include">
+        </childnode>
+        <childnode refid="18580" relation="include">
+        </childnode>
+        <childnode refid="18581" relation="include">
+        </childnode>
+        <childnode refid="18582" relation="include">
+        </childnode>
+        <childnode refid="18583" relation="include">
+        </childnode>
       </node>
-      <node id="18560">
+      <node id="18565">
         <label>volk_32fc_s32fc_multiply_32fc_a.h</label>
         <link refid="volk__32fc__s32fc__multiply__32fc__a_8h"/>
       </node>
-      <node id="18561">
+      <node id="18584">
+        <label>volk_machines.tmpl.h</label>
+        <link refid="volk__machines_8tmpl_8h"/>
+      </node>
+      <node id="18566">
         <label>volk_32fc_s32fc_multiply_32fc_u.h</label>
         <link refid="volk__32fc__s32fc__multiply__32fc__u_8h"/>
       </node>
-      <node id="18556">
+      <node id="18561">
         <label>volk_32f_x3_sum_of_poly_32f_a.h</label>
         <link refid="volk__32f__x3__sum__of__poly__32f__a_8h"/>
       </node>
-      <node id="18557">
+      <node id="18562">
         <label>volk_32fc_conjugate_32fc_a.h</label>
         <link refid="volk__32fc__conjugate__32fc__a_8h"/>
       </node>
-      <node id="18577">
+      <node id="18582">
         <label>volk_typedefs.tmpl.h</label>
         <link refid="volk__typedefs_8tmpl_8h"/>
       </node>
-      <node id="18558">
+      <node id="18583">
+        <label>volk_typedefs.h</label>
+        <link refid="volk__typedefs_8h"/>
+        <childnode refid="18560" relation="include">
+        </childnode>
+        <childnode refid="18581" relation="include">
+        </childnode>
+        <childnode refid="18584" relation="include">
+        </childnode>
+      </node>
+      <node id="18563">
         <label>volk_32fc_conjugate_32fc_u.h</label>
         <link refid="volk__32fc__conjugate__32fc__u_8h"/>
       </node>
-      <node id="18573">
+      <node id="18578">
         <label>volk_32fc_x2_square_dist_32f_a.h</label>
         <link refid="volk__32fc__x2__square__dist__32f__a_8h"/>
       </node>
-      <node id="18563">
+      <node id="18568">
         <label>volk_32fc_s32fc_x2_rotator_32fc_a.h</label>
         <link refid="volk__32fc__s32fc__x2__rotator__32fc__a_8h"/>
-        <childnode refid="18562" relation="include">
+        <childnode refid="18567" relation="include">
         </childnode>
       </node>
-      <node id="18575">
+      <node id="18580">
         <label>volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h</label>
         <link refid="volk__8ic__x2__s32f__multiply__conjugate__32fc__a_8h"/>
       </node>
-      <node id="18569">
+      <node id="18574">
         <label>volk_32fc_x2_multiply_32fc_u.h</label>
         <link refid="volk__32fc__x2__multiply__32fc__u_8h"/>
       </node>
-      <node id="18576">
+      <node id="18581">
         <label>volk.tmpl.h</label>
         <link refid="volk_8tmpl_8h"/>
       </node>
-      <node id="18570">
+      <node id="18575">
         <label>volk_32fc_x2_multiply_conjugate_32fc_a.h</label>
         <link refid="volk__32fc__x2__multiply__conjugate__32fc__a_8h"/>
       </node>
-      <node id="18568">
+      <node id="18573">
         <label>volk_32fc_x2_multiply_32fc_a.h</label>
         <link refid="volk__32fc__x2__multiply__32fc__a_8h"/>
       </node>
-      <node id="18571">
+      <node id="18576">
         <label>volk_32fc_x2_multiply_conjugate_32fc_u.h</label>
         <link refid="volk__32fc__x2__multiply__conjugate__32fc__u_8h"/>
       </node>
-      <node id="18572">
+      <node id="18577">
         <label>volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h</label>
         <link refid="volk__32fc__x2__s32f__square__dist__scalar__mult__32f__a_8h"/>
       </node>
-      <node id="18566">
+      <node id="18571">
         <label>volk_32fc_x2_dot_prod_32fc_a.h</label>
         <link refid="volk__32fc__x2__dot__prod__32fc__a_8h"/>
       </node>
-      <node id="18559">
+      <node id="18564">
         <label>volk_32fc_index_max_16u_a.h</label>
         <link refid="volk__32fc__index__max__16u__a_8h"/>
       </node>
-      <node id="18567">
+      <node id="18572">
         <label>volk_32fc_x2_dot_prod_32fc_u.h</label>
         <link refid="volk__32fc__x2__dot__prod__32fc__u_8h"/>
       </node>
-      <node id="18564">
+      <node id="18560">
+        <label>volk.h</label>
+        <link refid="volk_8h"/>
+      </node>
+      <node id="18569">
         <label>volk_32fc_x2_conjugate_dot_prod_32fc_a.h</label>
         <link refid="volk__32fc__x2__conjugate__dot__prod__32fc__a_8h"/>
       </node>
-      <node id="18565">
+      <node id="18570">
         <label>volk_32fc_x2_conjugate_dot_prod_32fc_u.h</label>
         <link refid="volk__32fc__x2__conjugate__dot__prod__32fc__u_8h"/>
       </node>
-      <node id="18574">
+      <node id="18579">
         <label>volk_8ic_x2_multiply_conjugate_16ic_a.h</label>
         <link refid="volk__8ic__x2__multiply__conjugate__16ic__a_8h"/>
       </node>

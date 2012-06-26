@@ -226,8 +226,6 @@ Not all modules need all the info"
 
 
 
-
-
 %feature("docstring") plinfo::delay "Set  such that it reflects a  pipeline delay from ."
 
 %feature("docstring") plinfo::sanity_check "confirm that  is plausible"

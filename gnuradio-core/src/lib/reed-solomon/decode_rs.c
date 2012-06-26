@@ -133,7 +133,6 @@ DTYPE *data, int *eras_pos, int no_eras){
    * locator polynomial
    */
   r = no_eras;
-	printf("no erras = %d\n",no_eras);
   el = no_eras;
   while ((unsigned int)(++r) <= NROOTS) {	/* r is the step number */
     /* Compute discrepancy at the r-th step in poly-form */

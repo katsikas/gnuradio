@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="inttypes_8h" kind="file">
     <compoundname>inttypes.h</compoundname>
     <includes refid="stdint_8h" local="no">stdint.h</includes>
@@ -104,102 +104,131 @@
     <includedby refid="volk__8ic__x2__s32f__multiply__conjugate__32fc__a_8h" local="no">volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h</includedby>
     <includedby refid="volk__common_8h" local="no">volk_common.h</includedby>
     <includedby refid="volk__typedefs_8tmpl_8h" local="no">volk_typedefs.tmpl.h</includedby>
+    <includedby refid="volk__typedefs_8h" local="no">volk_typedefs.h</includedby>
     <incdepgraph>
-      <node id="14577">
+      <node id="14567">
         <label>inttypes.h</label>
         <link refid="inttypes.h"/>
-        <childnode refid="14578" relation="include">
+        <childnode refid="14568" relation="include">
         </childnode>
       </node>
-      <node id="14578">
+      <node id="14568">
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
-        <childnode refid="14579" relation="include">
+        <childnode refid="14569" relation="include">
         </childnode>
-        <childnode refid="14580" relation="include">
+        <childnode refid="14570" relation="include">
         </childnode>
       </node>
-      <node id="14579">
+      <node id="14569">
         <label>limits.h</label>
       </node>
-      <node id="14580">
+      <node id="14570">
         <label>wchar.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="14640">
+      <node id="14630">
         <label>volk_32fc_magnitude_32f_a.h</label>
         <link refid="volk__32fc__magnitude__32f__a_8h"/>
       </node>
-      <node id="14643">
+      <node id="14681">
+        <label>volk_cpu.h</label>
+        <link refid="volk__cpu_8h"/>
+      </node>
+      <node id="14633">
         <label>volk_32fc_magnitude_squared_32f_u.h</label>
         <link refid="volk__32fc__magnitude__squared__32f__u_8h"/>
       </node>
-      <node id="14681">
+      <node id="14671">
         <label>volk_common.h</label>
         <link refid="volk__common_8h"/>
+        <childnode refid="14672" relation="include">
+        </childnode>
+        <childnode refid="14577" relation="include">
+        </childnode>
+        <childnode refid="14586" relation="include">
+        </childnode>
         <childnode refid="14587" relation="include">
+        </childnode>
+        <childnode refid="14588" relation="include">
+        </childnode>
+        <childnode refid="14589" relation="include">
+        </childnode>
+        <childnode refid="14591" relation="include">
+        </childnode>
+        <childnode refid="14594" relation="include">
         </childnode>
         <childnode refid="14596" relation="include">
         </childnode>
         <childnode refid="14597" relation="include">
         </childnode>
-        <childnode refid="14598" relation="include">
-        </childnode>
         <childnode refid="14599" relation="include">
         </childnode>
         <childnode refid="14601" relation="include">
-        </childnode>
-        <childnode refid="14604" relation="include">
-        </childnode>
-        <childnode refid="14606" relation="include">
         </childnode>
         <childnode refid="14607" relation="include">
         </childnode>
         <childnode refid="14609" relation="include">
         </childnode>
-        <childnode refid="14611" relation="include">
+        <childnode refid="14673" relation="include">
         </childnode>
-        <childnode refid="14617" relation="include">
+        <childnode refid="14618" relation="include">
         </childnode>
-        <childnode refid="14619" relation="include">
+        <childnode refid="14629" relation="include">
         </childnode>
-        <childnode refid="14682" relation="include">
+        <childnode refid="14635" relation="include">
         </childnode>
-        <childnode refid="14628" relation="include">
+        <childnode refid="14636" relation="include">
         </childnode>
-        <childnode refid="14639" relation="include">
+        <childnode refid="14674" relation="include">
         </childnode>
-        <childnode refid="14645" relation="include">
+        <childnode refid="14675" relation="include">
         </childnode>
-        <childnode refid="14646" relation="include">
+        <childnode refid="14676" relation="include">
         </childnode>
-        <childnode refid="14683" relation="include">
+        <childnode refid="14667" relation="include">
         </childnode>
-        <childnode refid="14684" relation="include">
-        </childnode>
-        <childnode refid="14685" relation="include">
+        <childnode refid="14668" relation="include">
         </childnode>
         <childnode refid="14677" relation="include">
         </childnode>
         <childnode refid="14678" relation="include">
         </childnode>
-        <childnode refid="14686" relation="include">
+        <childnode refid="14679" relation="include">
         </childnode>
-        <childnode refid="14687" relation="include">
+        <childnode refid="14680" relation="include">
         </childnode>
-        <childnode refid="14688" relation="include">
-        </childnode>
-        <childnode refid="14689" relation="include">
+        <childnode refid="14681" relation="include">
         </childnode>
       </node>
-      <node id="14607">
+      <node id="14597">
         <label>volk_32f_s32f_convert_16i_a.h</label>
         <link refid="volk__32f__s32f__convert__16i__a_8h"/>
       </node>
-      <node id="14581">
+      <node id="14571">
         <label>inttypes.h</label>
         <link refid="inttypes.h"/>
+        <childnode refid="14572" relation="include">
+        </childnode>
+        <childnode refid="14573" relation="include">
+        </childnode>
+        <childnode refid="14574" relation="include">
+        </childnode>
+        <childnode refid="14575" relation="include">
+        </childnode>
+        <childnode refid="14576" relation="include">
+        </childnode>
+        <childnode refid="14577" relation="include">
+        </childnode>
+        <childnode refid="14578" relation="include">
+        </childnode>
+        <childnode refid="14579" relation="include">
+        </childnode>
+        <childnode refid="14580" relation="include">
+        </childnode>
+        <childnode refid="14581" relation="include">
+        </childnode>
         <childnode refid="14582" relation="include">
         </childnode>
         <childnode refid="14583" relation="include">
@@ -380,446 +409,442 @@
         </childnode>
         <childnode refid="14671" relation="include">
         </childnode>
-        <childnode refid="14672" relation="include">
+        <childnode refid="14682" relation="include">
         </childnode>
-        <childnode refid="14673" relation="include">
-        </childnode>
-        <childnode refid="14674" relation="include">
-        </childnode>
-        <childnode refid="14675" relation="include">
-        </childnode>
-        <childnode refid="14676" relation="include">
-        </childnode>
-        <childnode refid="14677" relation="include">
-        </childnode>
-        <childnode refid="14678" relation="include">
-        </childnode>
-        <childnode refid="14679" relation="include">
-        </childnode>
-        <childnode refid="14680" relation="include">
-        </childnode>
-        <childnode refid="14681" relation="include">
-        </childnode>
-        <childnode refid="14690" relation="include">
+        <childnode refid="14683" relation="include">
         </childnode>
       </node>
-      <node id="14668">
+      <node id="14658">
         <label>volk_64u_byteswap_a.h</label>
         <link refid="volk__64u__byteswap__a_8h"/>
       </node>
-      <node id="14642">
+      <node id="14632">
         <label>volk_32fc_magnitude_squared_32f_a.h</label>
         <link refid="volk__32fc__magnitude__squared__32f__a_8h"/>
       </node>
-      <node id="14682">
+      <node id="14673">
         <label>volk_32f_x2_dot_prod_32f_a.h</label>
         <link refid="volk__32f__x2__dot__prod__32f__a_8h"/>
       </node>
-      <node id="14592">
+      <node id="14582">
         <label>volk_16i_x5_add_quad_16i_x4_a.h</label>
         <link refid="volk__16i__x5__add__quad__16i__x4__a_8h"/>
       </node>
-      <node id="14677">
+      <node id="14667">
         <label>volk_8ic_s32f_deinterleave_32f_x2_a.h</label>
         <link refid="volk__8ic__s32f__deinterleave__32f__x2__a_8h"/>
       </node>
-      <node id="14650">
+      <node id="14640">
         <label>volk_32fc_s32fc_multiply_32fc_a.h</label>
         <link refid="volk__32fc__s32fc__multiply__32fc__a_8h"/>
       </node>
-      <node id="14635">
+      <node id="14625">
         <label>volk_32fc_deinterleave_64f_x2_a.h</label>
         <link refid="volk__32fc__deinterleave__64f__x2__a_8h"/>
       </node>
-      <node id="14676">
+      <node id="14666">
         <label>volk_8ic_deinterleave_real_8i_a.h</label>
         <link refid="volk__8ic__deinterleave__real__8i__a_8h"/>
       </node>
-      <node id="14587">
+      <node id="14577">
         <label>volk_16i_max_star_horizontal_16i_a.h</label>
         <link refid="volk__16i__max__star__horizontal__16i__a_8h"/>
       </node>
-      <node id="14646">
+      <node id="14636">
         <label>volk_32fc_s32f_magnitude_16i_a.h</label>
         <link refid="volk__32fc__s32f__magnitude__16i__a_8h"/>
       </node>
-      <node id="14613">
+      <node id="14603">
         <label>volk_32f_s32f_multiply_32f_a.h</label>
         <link refid="volk__32f__s32f__multiply__32f__a_8h"/>
       </node>
-      <node id="14670">
+      <node id="14660">
         <label>volk_8i_convert_16i_a.h</label>
         <link refid="volk__8i__convert__16i__a_8h"/>
       </node>
-      <node id="14616">
+      <node id="14606">
         <label>volk_32f_s32f_power_32f_a.h</label>
         <link refid="volk__32f__s32f__power__32f__a_8h"/>
       </node>
-      <node id="14593">
+      <node id="14583">
         <label>volk_16ic_deinterleave_16i_x2_a.h</label>
         <link refid="volk__16ic__deinterleave__16i__x2__a_8h"/>
       </node>
-      <node id="14641">
+      <node id="14631">
         <label>volk_32fc_magnitude_32f_u.h</label>
         <link refid="volk__32fc__magnitude__32f__u_8h"/>
       </node>
-      <node id="14674">
+      <node id="14664">
         <label>volk_8ic_deinterleave_16i_x2_a.h</label>
         <link refid="volk__8ic__deinterleave__16i__x2__a_8h"/>
       </node>
-      <node id="14637">
+      <node id="14627">
         <label>volk_32fc_deinterleave_real_32f_a.h</label>
         <link refid="volk__32fc__deinterleave__real__32f__a_8h"/>
       </node>
-      <node id="14666">
+      <node id="14656">
         <label>volk_64f_x2_max_64f_a.h</label>
         <link refid="volk__64f__x2__max__64f__a_8h"/>
       </node>
-      <node id="14619">
+      <node id="14609">
         <label>volk_32f_stddev_and_mean_32f_x2_a.h</label>
         <link refid="volk__32f__stddev__and__mean__32f__x2__a_8h"/>
       </node>
-      <node id="14583">
+      <node id="14573">
         <label>volk_16i_branch_4_state_8_a.h</label>
         <link refid="volk__16i__branch__4__state__8__a_8h"/>
       </node>
-      <node id="14622">
+      <node id="14612">
         <label>volk_32f_x2_divide_32f_a.h</label>
         <link refid="volk__32f__x2__divide__32f__a_8h"/>
       </node>
-      <node id="14610">
+      <node id="14600">
         <label>volk_32f_s32f_convert_32i_u.h</label>
         <link refid="volk__32f__s32f__convert__32i__u_8h"/>
       </node>
-      <node id="14689">
+      <node id="14680">
         <label>volk_machines.tmpl.h</label>
         <link refid="volk__machines_8tmpl_8h"/>
       </node>
-      <node id="14597">
+      <node id="14587">
         <label>volk_16ic_s32f_deinterleave_32f_x2_a.h</label>
         <link refid="volk__16ic__s32f__deinterleave__32f__x2__a_8h"/>
       </node>
-      <node id="14589">
+      <node id="14579">
         <label>volk_16i_s32f_convert_32f_a.h</label>
         <link refid="volk__16i__s32f__convert__32f__a_8h"/>
       </node>
-      <node id="14601">
+      <node id="14591">
         <label>volk_32f_accumulator_s32f_a.h</label>
         <link refid="volk__32f__accumulator__s32f__a_8h"/>
       </node>
-      <node id="14651">
+      <node id="14641">
         <label>volk_32fc_s32fc_multiply_32fc_u.h</label>
         <link refid="volk__32fc__s32fc__multiply__32fc__u_8h"/>
       </node>
-      <node id="14630">
+      <node id="14620">
         <label>volk_32f_x3_sum_of_poly_32f_a.h</label>
         <link refid="volk__32f__x3__sum__of__poly__32f__a_8h"/>
       </node>
-      <node id="14590">
+      <node id="14580">
         <label>volk_16i_s32f_convert_32f_u.h</label>
         <link refid="volk__16i__s32f__convert__32f__u_8h"/>
       </node>
-      <node id="14609">
+      <node id="14599">
         <label>volk_32f_s32f_convert_32i_a.h</label>
         <link refid="volk__32f__s32f__convert__32i__a_8h"/>
       </node>
-      <node id="14632">
+      <node id="14622">
         <label>volk_32fc_conjugate_32fc_a.h</label>
         <link refid="volk__32fc__conjugate__32fc__a_8h"/>
       </node>
-      <node id="14631">
+      <node id="14621">
         <label>volk_32fc_32f_multiply_32fc_a.h</label>
         <link refid="volk__32fc__32f__multiply__32fc__a_8h"/>
       </node>
-      <node id="14671">
+      <node id="14661">
         <label>volk_8i_convert_16i_u.h</label>
         <link refid="volk__8i__convert__16i__u_8h"/>
       </node>
-      <node id="14591">
+      <node id="14581">
         <label>volk_16i_x4_quad_max_star_16i_a.h</label>
         <link refid="volk__16i__x4__quad__max__star__16i__a_8h"/>
       </node>
-      <node id="14620">
+      <node id="14610">
         <label>volk_32f_x2_add_32f_a.h</label>
         <link refid="volk__32f__x2__add__32f__a_8h"/>
       </node>
-      <node id="14690">
+      <node id="14682">
         <label>volk_typedefs.tmpl.h</label>
         <link refid="volk__typedefs_8tmpl_8h"/>
       </node>
-      <node id="14594">
+      <node id="14584">
         <label>volk_16ic_deinterleave_real_16i_a.h</label>
         <link refid="volk__16ic__deinterleave__real__16i__a_8h"/>
       </node>
-      <node id="14658">
+      <node id="14648">
         <label>volk_32i_s32f_convert_32f_a.h</label>
         <link refid="volk__32i__s32f__convert__32f__a_8h"/>
       </node>
-      <node id="14644">
+      <node id="14683">
+        <label>volk_typedefs.h</label>
+        <link refid="volk__typedefs_8h"/>
+        <childnode refid="14672" relation="include">
+        </childnode>
+        <childnode refid="14678" relation="include">
+        </childnode>
+        <childnode refid="14680" relation="include">
+        </childnode>
+      </node>
+      <node id="14634">
         <label>volk_32fc_s32f_atan2_32f_a.h</label>
         <link refid="volk__32fc__s32f__atan2__32f__a_8h"/>
       </node>
-      <node id="14633">
+      <node id="14623">
         <label>volk_32fc_conjugate_32fc_u.h</label>
         <link refid="volk__32fc__conjugate__32fc__u_8h"/>
       </node>
-      <node id="14595">
+      <node id="14585">
         <label>volk_16ic_deinterleave_real_8i_a.h</label>
         <link refid="volk__16ic__deinterleave__real__8i__a_8h"/>
       </node>
-      <node id="14659">
+      <node id="14649">
         <label>volk_32i_s32f_convert_32f_u.h</label>
         <link refid="volk__32i__s32f__convert__32f__u_8h"/>
       </node>
-      <node id="14660">
+      <node id="14650">
         <label>volk_32i_x2_and_32i_a.h</label>
         <link refid="volk__32i__x2__and__32i__a_8h"/>
       </node>
-      <node id="14582">
+      <node id="14572">
         <label>fcd.h</label>
         <link refid="fcd_8h"/>
       </node>
-      <node id="14636">
+      <node id="14626">
         <label>volk_32fc_deinterleave_imag_32f_a.h</label>
         <link refid="volk__32fc__deinterleave__imag__32f__a_8h"/>
       </node>
-      <node id="14629">
+      <node id="14619">
         <label>volk_32f_x2_subtract_32f_a.h</label>
         <link refid="volk__32f__x2__subtract__32f__a_8h"/>
       </node>
-      <node id="14617">
+      <node id="14607">
         <label>volk_32f_s32f_stddev_32f_a.h</label>
         <link refid="volk__32f__s32f__stddev__32f__a_8h"/>
       </node>
-      <node id="14628">
+      <node id="14618">
         <label>volk_32f_x2_s32f_interleave_16ic_a.h</label>
         <link refid="volk__32f__x2__s32f__interleave__16ic__a_8h"/>
       </node>
-      <node id="14657">
+      <node id="14647">
         <label>volk_32fc_x2_square_dist_32f_a.h</label>
         <link refid="volk__32fc__x2__square__dist__32f__a_8h"/>
       </node>
-      <node id="14665">
+      <node id="14655">
         <label>volk_64f_convert_32f_u.h</label>
         <link refid="volk__64f__convert__32f__u_8h"/>
       </node>
-      <node id="14603">
+      <node id="14593">
         <label>volk_32f_convert_64f_u.h</label>
         <link refid="volk__32f__convert__64f__u_8h"/>
       </node>
-      <node id="14621">
+      <node id="14611">
         <label>volk_32f_x2_add_32f_u.h</label>
         <link refid="volk__32f__x2__add__32f__u_8h"/>
       </node>
-      <node id="14606">
+      <node id="14596">
         <label>volk_32f_s32f_calc_spectral_noise_floor_32f_a.h</label>
         <link refid="volk__32f__s32f__calc__spectral__noise__floor__32f__a_8h"/>
       </node>
-      <node id="14625">
+      <node id="14615">
         <label>volk_32f_x2_min_32f_a.h</label>
         <link refid="volk__32f__x2__min__32f__a_8h"/>
       </node>
-      <node id="14664">
+      <node id="14654">
         <label>volk_64f_convert_32f_a.h</label>
         <link refid="volk__64f__convert__32f__a_8h"/>
       </node>
-      <node id="14602">
+      <node id="14592">
         <label>volk_32f_convert_64f_a.h</label>
         <link refid="volk__32f__convert__64f__a_8h"/>
       </node>
-      <node id="14680">
+      <node id="14670">
         <label>volk_8ic_x2_s32f_multiply_conjugate_32fc_a.h</label>
         <link refid="volk__8ic__x2__s32f__multiply__conjugate__32fc__a_8h"/>
       </node>
-      <node id="14653">
+      <node id="14643">
         <label>volk_32fc_x2_multiply_32fc_u.h</label>
         <link refid="volk__32fc__x2__multiply__32fc__u_8h"/>
       </node>
-      <node id="14687">
+      <node id="14678">
         <label>volk.tmpl.h</label>
         <link refid="volk_8tmpl_8h"/>
       </node>
-      <node id="14654">
+      <node id="14644">
         <label>volk_32fc_x2_multiply_conjugate_32fc_a.h</label>
         <link refid="volk__32fc__x2__multiply__conjugate__32fc__a_8h"/>
       </node>
-      <node id="14649">
+      <node id="14639">
         <label>volk_32fc_s32f_x2_power_spectral_density_32f_a.h</label>
         <link refid="volk__32fc__s32f__x2__power__spectral__density__32f__a_8h"/>
       </node>
-      <node id="14663">
+      <node id="14653">
         <label>volk_32u_popcnt_a.h</label>
         <link refid="volk__32u__popcnt__a_8h"/>
       </node>
-      <node id="14645">
+      <node id="14635">
         <label>volk_32fc_s32f_deinterleave_real_16i_a.h</label>
         <link refid="volk__32fc__s32f__deinterleave__real__16i__a_8h"/>
       </node>
-      <node id="14627">
+      <node id="14617">
         <label>volk_32f_x2_multiply_32f_u.h</label>
         <link refid="volk__32f__x2__multiply__32f__u_8h"/>
       </node>
-      <node id="14652">
+      <node id="14642">
         <label>volk_32fc_x2_multiply_32fc_a.h</label>
         <link refid="volk__32fc__x2__multiply__32fc__a_8h"/>
       </node>
-      <node id="14675">
+      <node id="14665">
         <label>volk_8ic_deinterleave_real_16i_a.h</label>
         <link refid="volk__8ic__deinterleave__real__16i__a_8h"/>
       </node>
-      <node id="14586">
+      <node id="14576">
         <label>volk_16i_max_star_16i_a.h</label>
         <link refid="volk__16i__max__star__16i__a_8h"/>
       </node>
-      <node id="14626">
+      <node id="14616">
         <label>volk_32f_x2_multiply_32f_a.h</label>
         <link refid="volk__32f__x2__multiply__32f__a_8h"/>
       </node>
-      <node id="14678">
+      <node id="14668">
         <label>volk_8ic_s32f_deinterleave_real_32f_a.h</label>
         <link refid="volk__8ic__s32f__deinterleave__real__32f__a_8h"/>
       </node>
-      <node id="14604">
+      <node id="14594">
         <label>volk_32f_index_max_16u_a.h</label>
         <link refid="volk__32f__index__max__16u__a_8h"/>
       </node>
-      <node id="14598">
+      <node id="14588">
         <label>volk_16ic_s32f_deinterleave_real_32f_a.h</label>
         <link refid="volk__16ic__s32f__deinterleave__real__32f__a_8h"/>
       </node>
-      <node id="14661">
+      <node id="14651">
         <label>volk_32i_x2_or_32i_a.h</label>
         <link refid="volk__32i__x2__or__32i__a_8h"/>
       </node>
-      <node id="14647">
+      <node id="14637">
         <label>volk_32fc_s32f_power_32fc_a.h</label>
         <link refid="volk__32fc__s32f__power__32fc__a_8h"/>
       </node>
-      <node id="14655">
+      <node id="14645">
         <label>volk_32fc_x2_multiply_conjugate_32fc_u.h</label>
         <link refid="volk__32fc__x2__multiply__conjugate__32fc__u_8h"/>
       </node>
-      <node id="14656">
+      <node id="14646">
         <label>volk_32fc_x2_s32f_square_dist_scalar_mult_32f_a.h</label>
         <link refid="volk__32fc__x2__s32f__square__dist__scalar__mult__32f__a_8h"/>
       </node>
-      <node id="14684">
+      <node id="14675">
         <label>volk_32fc_x2_dot_prod_32fc_a.h</label>
         <link refid="volk__32fc__x2__dot__prod__32fc__a_8h"/>
       </node>
-      <node id="14669">
+      <node id="14659">
         <label>volk_64u_popcnt_a.h</label>
         <link refid="volk__64u__popcnt__a_8h"/>
       </node>
-      <node id="14639">
+      <node id="14629">
         <label>volk_32fc_index_max_16u_a.h</label>
         <link refid="volk__32fc__index__max__16u__a_8h"/>
       </node>
-      <node id="14685">
+      <node id="14676">
         <label>volk_32fc_x2_dot_prod_32fc_u.h</label>
         <link refid="volk__32fc__x2__dot__prod__32fc__u_8h"/>
       </node>
-      <node id="14686">
+      <node id="14672">
+        <label>volk.h</label>
+        <link refid="volk_8h"/>
+      </node>
+      <node id="14677">
         <label>volk_prefs.h</label>
         <link refid="volk__prefs_8h"/>
       </node>
-      <node id="14634">
+      <node id="14624">
         <label>volk_32fc_deinterleave_32f_x2_a.h</label>
         <link refid="volk__32fc__deinterleave__32f__x2__a_8h"/>
       </node>
-      <node id="14667">
+      <node id="14657">
         <label>volk_64f_x2_min_64f_a.h</label>
         <link refid="volk__64f__x2__min__64f__a_8h"/>
       </node>
-      <node id="14605">
+      <node id="14595">
         <label>volk_32f_s32f_32f_fm_detect_32f_a.h</label>
         <link refid="volk__32f__s32f__32f__fm__detect__32f__a_8h"/>
       </node>
-      <node id="14600">
+      <node id="14590">
         <label>volk_16u_byteswap_a.h</label>
         <link refid="volk__16u__byteswap__a_8h"/>
       </node>
-      <node id="14624">
+      <node id="14614">
         <label>volk_32f_x2_max_32f_a.h</label>
         <link refid="volk__32f__x2__max__32f__a_8h"/>
       </node>
-      <node id="14683">
+      <node id="14674">
         <label>volk_32fc_x2_conjugate_dot_prod_32fc_a.h</label>
         <link refid="volk__32fc__x2__conjugate__dot__prod__32fc__a_8h"/>
       </node>
-      <node id="14611">
+      <node id="14601">
         <label>volk_32f_s32f_convert_8i_a.h</label>
         <link refid="volk__32f__s32f__convert__8i__a_8h"/>
       </node>
-      <node id="14584">
+      <node id="14574">
         <label>volk_16i_convert_8i_a.h</label>
         <link refid="volk__16i__convert__8i__a_8h"/>
       </node>
-      <node id="14673">
+      <node id="14663">
         <label>volk_8i_s32f_convert_32f_u.h</label>
         <link refid="volk__8i__s32f__convert__32f__u_8h"/>
       </node>
-      <node id="14648">
+      <node id="14638">
         <label>volk_32fc_s32f_power_spectrum_32f_a.h</label>
         <link refid="volk__32fc__s32f__power__spectrum__32f__a_8h"/>
       </node>
-      <node id="14614">
+      <node id="14604">
         <label>volk_32f_s32f_multiply_32f_u.h</label>
         <link refid="volk__32f__s32f__multiply__32f__u_8h"/>
       </node>
-      <node id="14585">
+      <node id="14575">
         <label>volk_16i_convert_8i_u.h</label>
         <link refid="volk__16i__convert__8i__u_8h"/>
       </node>
-      <node id="14596">
+      <node id="14586">
         <label>volk_16ic_magnitude_16i_a.h</label>
         <link refid="volk__16ic__magnitude__16i__a_8h"/>
       </node>
-      <node id="14672">
+      <node id="14662">
         <label>volk_8i_s32f_convert_32f_a.h</label>
         <link refid="volk__8i__s32f__convert__32f__a_8h"/>
       </node>
-      <node id="14623">
+      <node id="14613">
         <label>volk_32f_x2_interleave_32fc_a.h</label>
         <link refid="volk__32f__x2__interleave__32fc__a_8h"/>
       </node>
-      <node id="14688">
+      <node id="14679">
         <label>volk_cpu.tmpl.h</label>
         <link refid="volk__cpu_8tmpl_8h"/>
       </node>
-      <node id="14612">
+      <node id="14602">
         <label>volk_32f_s32f_convert_8i_u.h</label>
         <link refid="volk__32f__s32f__convert__8i__u_8h"/>
       </node>
-      <node id="14608">
+      <node id="14598">
         <label>volk_32f_s32f_convert_16i_u.h</label>
         <link refid="volk__32f__s32f__convert__16i__u_8h"/>
       </node>
-      <node id="14615">
+      <node id="14605">
         <label>volk_32f_s32f_normalize_a.h</label>
         <link refid="volk__32f__s32f__normalize__a_8h"/>
       </node>
-      <node id="14588">
+      <node id="14578">
         <label>volk_16i_permute_and_scalar_add_a.h</label>
         <link refid="volk__16i__permute__and__scalar__add__a_8h"/>
       </node>
-      <node id="14662">
+      <node id="14652">
         <label>volk_32u_byteswap_a.h</label>
         <link refid="volk__32u__byteswap__a_8h"/>
       </node>
-      <node id="14638">
+      <node id="14628">
         <label>volk_32fc_deinterleave_real_64f_a.h</label>
         <link refid="volk__32fc__deinterleave__real__64f__a_8h"/>
       </node>
-      <node id="14618">
+      <node id="14608">
         <label>volk_32f_sqrt_32f_a.h</label>
         <link refid="volk__32f__sqrt__32f__a_8h"/>
       </node>
-      <node id="14599">
+      <node id="14589">
         <label>volk_16ic_s32f_magnitude_32f_a.h</label>
         <link refid="volk__16ic__s32f__magnitude__32f__a_8h"/>
       </node>
-      <node id="14679">
+      <node id="14669">
         <label>volk_8ic_x2_multiply_conjugate_16ic_a.h</label>
         <link refid="volk__8ic__x2__multiply__conjugate__16ic__a_8h"/>
       </node>

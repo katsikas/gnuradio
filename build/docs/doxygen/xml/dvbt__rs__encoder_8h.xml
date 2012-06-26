@@ -1,96 +1,154 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="dvbt__rs__encoder_8h" kind="file">
     <compoundname>dvbt_rs_encoder.h</compoundname>
     <includes refid="gr__sync__block_8h" local="no">gr_sync_block.h</includes>
     <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
     <includes refid="dvbti__reed__solomon_8h" local="no">dvbt/dvbti_reed_solomon.h</includes>
     <incdepgraph>
-      <node id="4200">
+      <node id="4188">
         <label>gr_sptr_magic.h</label>
         <link refid="gr__sptr__magic_8h_source"/>
-        <childnode refid="4189" relation="include">
+        <childnode refid="4177" relation="include">
         </childnode>
-        <childnode refid="4195" relation="include">
+        <childnode refid="4183" relation="include">
         </childnode>
       </node>
-      <node id="4191">
+      <node id="4179">
         <label>gr_block.h</label>
         <link refid="gr__block_8h"/>
-        <childnode refid="4189" relation="include">
+        <childnode refid="4177" relation="include">
         </childnode>
-        <childnode refid="4192" relation="include">
+        <childnode refid="4180" relation="include">
         </childnode>
-        <childnode refid="4216" relation="include">
+        <childnode refid="4204" relation="include">
         </childnode>
       </node>
-      <node id="4195">
+      <node id="4183">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="4207">
+      <node id="4195">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="4204">
+      <node id="4192">
         <label>gruel/msg_accepter.h</label>
         <link refid="msg__accepter_8h"/>
+        <childnode refid="4193" relation="include">
+        </childnode>
+        <childnode refid="4194" relation="include">
+        </childnode>
+        <childnode refid="4183" relation="include">
+        </childnode>
+      </node>
+      <node id="4178">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="4182">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="4177" relation="include">
+        </childnode>
+        <childnode refid="4183" relation="include">
+        </childnode>
+        <childnode refid="4184" relation="include">
+        </childnode>
+        <childnode refid="4185" relation="include">
+        </childnode>
+        <childnode refid="4186" relation="include">
+        </childnode>
+      </node>
+      <node id="4206">
+        <label>dvbt/dvbti_reed_solomon.h</label>
+        <link refid="dvbti__reed__solomon_8h"/>
+        <childnode refid="4205" relation="include">
+        </childnode>
+        <childnode refid="4207" relation="include">
+        </childnode>
+      </node>
+      <node id="4210">
+        <label>cassert</label>
+      </node>
+      <node id="4202">
+        <label>stdexcept</label>
+      </node>
+      <node id="4198">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="4199" relation="include">
+        </childnode>
+        <childnode refid="4200" relation="include">
+        </childnode>
+      </node>
+      <node id="4197">
+        <label>string</label>
+      </node>
+      <node id="4180">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="4177" relation="include">
+        </childnode>
+        <childnode refid="4181" relation="include">
+        </childnode>
+        <childnode refid="4188" relation="include">
+        </childnode>
+        <childnode refid="4189" relation="include">
+        </childnode>
+        <childnode refid="4190" relation="include">
+        </childnode>
+        <childnode refid="4191" relation="include">
+        </childnode>
+        <childnode refid="4197" relation="include">
+        </childnode>
+      </node>
+      <node id="4203">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="4185">
+        <label>stddef.h</label>
+      </node>
+      <node id="4193">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="4178" relation="include">
+        </childnode>
+      </node>
+      <node id="4175">
+        <label>dvbt_rs_encoder.h</label>
+        <link refid="dvbt_rs_encoder.h"/>
+        <childnode refid="4176" relation="include">
+        </childnode>
         <childnode refid="4205" relation="include">
         </childnode>
         <childnode refid="4206" relation="include">
         </childnode>
-        <childnode refid="4195" relation="include">
-        </childnode>
       </node>
       <node id="4190">
-        <label>gruel/attributes.h</label>
-        <link refid="attributes_8h"/>
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="4199">
+        <label>limits.h</label>
+      </node>
+      <node id="4196">
+        <label>boost/any.hpp</label>
       </node>
       <node id="4194">
-        <label>gr_types.h</label>
-        <link refid="gr__types_8h"/>
-        <childnode refid="4189" relation="include">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="4193" relation="include">
         </childnode>
         <childnode refid="4195" relation="include">
         </childnode>
+        <childnode refid="4183" relation="include">
+        </childnode>
         <childnode refid="4196" relation="include">
+        </childnode>
+        <childnode refid="4187" relation="include">
         </childnode>
         <childnode refid="4197" relation="include">
         </childnode>
         <childnode refid="4198" relation="include">
-        </childnode>
-      </node>
-      <node id="4218">
-        <label>dvbt/dvbti_reed_solomon.h</label>
-        <link refid="dvbti__reed__solomon_8h"/>
-        <childnode refid="4217" relation="include">
-        </childnode>
-        <childnode refid="4219" relation="include">
-        </childnode>
-      </node>
-      <node id="4222">
-        <label>cassert</label>
-      </node>
-      <node id="4214">
-        <label>stdexcept</label>
-      </node>
-      <node id="4210">
-        <label>stdint.h</label>
-        <link refid="stdint_8h"/>
-        <childnode refid="4211" relation="include">
-        </childnode>
-        <childnode refid="4212" relation="include">
-        </childnode>
-      </node>
-      <node id="4209">
-        <label>string</label>
-      </node>
-      <node id="4192">
-        <label>gr_basic_block.h</label>
-        <link refid="gr__basic__block_8h"/>
-        <childnode refid="4189" relation="include">
-        </childnode>
-        <childnode refid="4193" relation="include">
-        </childnode>
-        <childnode refid="4200" relation="include">
         </childnode>
         <childnode refid="4201" relation="include">
         </childnode>
@@ -98,159 +156,101 @@
         </childnode>
         <childnode refid="4203" relation="include">
         </childnode>
-        <childnode refid="4209" relation="include">
+      </node>
+      <node id="4200">
+        <label>wchar.h</label>
+      </node>
+      <node id="4191">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="4177" relation="include">
+        </childnode>
+        <childnode refid="4192" relation="include">
+        </childnode>
+        <childnode refid="4194" relation="include">
         </childnode>
       </node>
-      <node id="4215">
-        <label>gruel/pmt_sugar.h</label>
-        <link refid="pmt__sugar_8h"/>
-      </node>
-      <node id="4197">
-        <label>stddef.h</label>
-      </node>
-      <node id="4205">
-        <label>gruel/api.h</label>
-        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="4190" relation="include">
+      <node id="4181">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="4177" relation="include">
+        </childnode>
+        <childnode refid="4182" relation="include">
         </childnode>
       </node>
-      <node id="4187">
-        <label>dvbt_rs_encoder.h</label>
-        <link refid="dvbt_rs_encoder.h"/>
-        <childnode refid="4188" relation="include">
-        </childnode>
-        <childnode refid="4217" relation="include">
-        </childnode>
-        <childnode refid="4218" relation="include">
-        </childnode>
-      </node>
-      <node id="4202">
-        <label>boost/function.hpp</label>
+      <node id="4184">
+        <label>vector</label>
       </node>
       <node id="4211">
-        <label>limits.h</label>
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
       </node>
-      <node id="4208">
-        <label>boost/any.hpp</label>
+      <node id="4177">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="4178" relation="include">
+        </childnode>
       </node>
-      <node id="4206">
-        <label>gruel/pmt.h</label>
-        <link refid="pmt_8h"/>
-        <childnode refid="4205" relation="include">
+      <node id="4189">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="4201">
+        <label>iosfwd</label>
+      </node>
+      <node id="4204">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="4177" relation="include">
         </childnode>
-        <childnode refid="4207" relation="include">
+        <childnode refid="4194" relation="include">
         </childnode>
-        <childnode refid="4195" relation="include">
-        </childnode>
+      </node>
+      <node id="4207">
+        <label>dvbt/dvbt_types.h</label>
+        <link refid="dvbt__types_8h"/>
         <childnode refid="4208" relation="include">
-        </childnode>
-        <childnode refid="4199" relation="include">
         </childnode>
         <childnode refid="4209" relation="include">
         </childnode>
         <childnode refid="4210" relation="include">
         </childnode>
-        <childnode refid="4213" relation="include">
-        </childnode>
-        <childnode refid="4214" relation="include">
-        </childnode>
-        <childnode refid="4215" relation="include">
+        <childnode refid="4211" relation="include">
         </childnode>
       </node>
-      <node id="4212">
-        <label>wchar.h</label>
-      </node>
-      <node id="4203">
-        <label>gr_msg_accepter.h</label>
-        <link refid="gr__msg__accepter_8h"/>
-        <childnode refid="4189" relation="include">
-        </childnode>
-        <childnode refid="4204" relation="include">
-        </childnode>
-        <childnode refid="4206" relation="include">
-        </childnode>
-      </node>
-      <node id="4193">
-        <label>gr_runtime_types.h</label>
-        <link refid="gr__runtime__types_8h"/>
-        <childnode refid="4189" relation="include">
-        </childnode>
-        <childnode refid="4194" relation="include">
-        </childnode>
-      </node>
-      <node id="4196">
-        <label>vector</label>
-      </node>
-      <node id="4223">
-        <label>dvbt/dvbt_consts.h</label>
-        <link refid="dvbt__consts_8h"/>
-      </node>
-      <node id="4189">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="4190" relation="include">
-        </childnode>
-      </node>
-      <node id="4201">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="4213">
-        <label>iosfwd</label>
-      </node>
-      <node id="4216">
-        <label>gr_tags.h</label>
-        <link refid="gr__tags_8h"/>
-        <childnode refid="4189" relation="include">
-        </childnode>
-        <childnode refid="4206" relation="include">
-        </childnode>
-      </node>
-      <node id="4219">
-        <label>dvbt/dvbt_types.h</label>
-        <link refid="dvbt__types_8h"/>
-        <childnode refid="4220" relation="include">
-        </childnode>
-        <childnode refid="4221" relation="include">
-        </childnode>
-        <childnode refid="4222" relation="include">
-        </childnode>
-        <childnode refid="4223" relation="include">
-        </childnode>
-      </node>
-      <node id="4188">
+      <node id="4176">
         <label>gr_sync_block.h</label>
         <link refid="gr__sync__block_8h"/>
-        <childnode refid="4189" relation="include">
+        <childnode refid="4177" relation="include">
         </childnode>
-        <childnode refid="4191" relation="include">
+        <childnode refid="4179" relation="include">
         </childnode>
       </node>
-      <node id="4199">
+      <node id="4187">
         <label>complex</label>
       </node>
-      <node id="4220">
+      <node id="4208">
         <label>stdio.h</label>
       </node>
-      <node id="4217">
+      <node id="4205">
         <label>dvbt/dvbt_api.h</label>
         <link refid="dvbt__api_8h"/>
-        <childnode refid="4190" relation="include">
+        <childnode refid="4178" relation="include">
         </childnode>
       </node>
-      <node id="4221">
+      <node id="4209">
         <label>cstring</label>
       </node>
-      <node id="4198">
+      <node id="4186">
         <label>gr_complex.h</label>
         <link refid="gr__complex_8h"/>
-        <childnode refid="4199" relation="include">
+        <childnode refid="4187" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classdvbt__rs__encoder" prot="public">dvbt_rs_encoder</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__rs__encoder_8h_1ac816ac0e141751c8ee519ffd1c3803d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_rs_encoder_sptr</ref></type>
+        <type>DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_rs_encoder_sptr</ref></type>
         <definition>DVBT_API dvbt_rs_encoder_sptr dvbt_make_rs_encoder</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_rs_encoder</name>

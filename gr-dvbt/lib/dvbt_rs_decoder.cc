@@ -57,13 +57,13 @@ dvbt_rs_decoder::work (int noutput_items,
   	for (int i = 0; i < noutput_items; i++){
     		out[i].pli = in[i].pli;			// copy pipeline info...
 
-    		int nerrors_corrrected = d_rs_decoder.decode(out[i], in[i]);
+     		int nerrors_corrrected = d_rs_decoder.decode(out[i], in[i]);
 		//printf("we have %d errors in packet \n",nerrors_corrrected);
     		out[i].pli.set_transport_error(nerrors_corrrected);
   	}
 
 	/*for (int i = 0; i < noutput_items; i++){
-                printf("%d\n",out[i].data[1]);
+                printf("%d\n",out[i].data[0]);
         }*/
 
   	return noutput_items;

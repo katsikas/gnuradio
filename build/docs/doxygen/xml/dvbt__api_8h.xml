@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="dvbt__api_8h" kind="file">
     <compoundname>dvbt_api.h</compoundname>
     <includes refid="attributes_8h" local="no">gruel/attributes.h</includes>
@@ -15,97 +15,97 @@
     <includedby refid="dvbti__randomizer_8h" local="no">dvbti_randomizer.h</includedby>
     <includedby refid="dvbti__reed__solomon_8h" local="no">dvbti_reed_solomon.h</includedby>
     <incdepgraph>
-      <node id="3895">
+      <node id="3883">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="3894">
+      <node id="3882">
         <label>dvbt_api.h</label>
         <link refid="dvbt_api.h"/>
-        <childnode refid="3895" relation="include">
+        <childnode refid="3883" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3901">
+      <node id="3889">
         <label>dvbt_pad.h</label>
         <link refid="dvbt__pad_8h"/>
       </node>
-      <node id="3899">
+      <node id="3887">
         <label>dvbt_derandomizer.h</label>
         <link refid="dvbt__derandomizer_8h"/>
       </node>
-      <node id="3907">
+      <node id="3895">
         <label>dvbti_reed_solomon.h</label>
         <link refid="dvbti__reed__solomon_8h"/>
-        <childnode refid="3903" relation="include">
+        <childnode refid="3891" relation="include">
         </childnode>
-        <childnode refid="3904" relation="include">
+        <childnode refid="3892" relation="include">
         </childnode>
       </node>
-      <node id="3898">
+      <node id="3886">
         <label>dvbt_depad.h</label>
         <link refid="dvbt__depad_8h"/>
       </node>
-      <node id="3905">
+      <node id="3893">
         <label>dvbti_data_interleaver.h</label>
         <link refid="dvbti__data__interleaver_8h"/>
-        <childnode refid="3897" relation="include">
+        <childnode refid="3885" relation="include">
         </childnode>
-        <childnode refid="3900" relation="include">
+        <childnode refid="3888" relation="include">
         </childnode>
       </node>
-      <node id="3902">
+      <node id="3890">
         <label>dvbt_randomizer.h</label>
         <link refid="dvbt__randomizer_8h"/>
       </node>
-      <node id="3904">
+      <node id="3892">
         <label>dvbt_rs_encoder.h</label>
         <link refid="dvbt__rs__encoder_8h"/>
       </node>
-      <node id="3900">
+      <node id="3888">
         <label>dvbt_interleaver.h</label>
         <link refid="dvbt__interleaver_8h"/>
       </node>
-      <node id="3906">
+      <node id="3894">
         <label>dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="3899" relation="include">
+        <childnode refid="3887" relation="include">
         </childnode>
-        <childnode refid="3902" relation="include">
+        <childnode refid="3890" relation="include">
         </childnode>
       </node>
-      <node id="3897">
+      <node id="3885">
         <label>dvbt_deinterleaver.h</label>
         <link refid="dvbt__deinterleaver_8h"/>
       </node>
-      <node id="3896">
+      <node id="3884">
         <label>dvbt_api.h</label>
         <link refid="dvbt_api.h"/>
-        <childnode refid="3897" relation="include">
+        <childnode refid="3885" relation="include">
         </childnode>
-        <childnode refid="3898" relation="include">
+        <childnode refid="3886" relation="include">
         </childnode>
-        <childnode refid="3899" relation="include">
+        <childnode refid="3887" relation="include">
         </childnode>
-        <childnode refid="3900" relation="include">
+        <childnode refid="3888" relation="include">
         </childnode>
-        <childnode refid="3901" relation="include">
+        <childnode refid="3889" relation="include">
         </childnode>
-        <childnode refid="3902" relation="include">
+        <childnode refid="3890" relation="include">
         </childnode>
-        <childnode refid="3903" relation="include">
+        <childnode refid="3891" relation="include">
         </childnode>
-        <childnode refid="3904" relation="include">
+        <childnode refid="3892" relation="include">
         </childnode>
-        <childnode refid="3905" relation="include">
+        <childnode refid="3893" relation="include">
         </childnode>
-        <childnode refid="3906" relation="include">
+        <childnode refid="3894" relation="include">
         </childnode>
-        <childnode refid="3907" relation="include">
+        <childnode refid="3895" relation="include">
         </childnode>
       </node>
-      <node id="3903">
+      <node id="3891">
         <label>dvbt_rs_decoder.h</label>
         <link refid="dvbt__rs__decoder_8h"/>
       </node>
@@ -113,7 +113,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" prot="public" static="no">
         <name>DVBT_API</name>
-        <initializer><ref refid="attributes_8h_1a17b9cb3c185c92af4799ec9b0a38f3c1" kindref="member">__GR_ATTR_IMPORT</ref></initializer>
+        <initializer>__GR_ATTR_IMPORT</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

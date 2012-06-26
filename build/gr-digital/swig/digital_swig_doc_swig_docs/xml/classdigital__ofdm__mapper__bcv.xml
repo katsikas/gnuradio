@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classdigital__ofdm__mapper__bcv" kind="class" prot="public">
     <compoundname>digital_ofdm_mapper_bcv</compoundname>
     <includes refid="digital__ofdm__mapper__bcv_8h" local="no">digital_ofdm_mapper_bcv.h</includes>
@@ -188,9 +188,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__ofdm__mapper__bcv_1a829399ed7fd23e001500aa81af974243" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="digital__ofdm__mapper__bcv_8h_1aae24553a9aaa704912bf8db4b8299be9" kindref="member">digital_ofdm_mapper_bcv_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_ofdm_mapper_bcv_sptr digital_make_ofdm_mapper_bcv</definition>
+      <memberdef kind="friend" id="classdigital__ofdm__mapper__bcv_1ab169bade36697c1011a05e718a6512f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend DIGITAL_API <ref refid="digital__ofdm__mapper__bcv_8h_1aae24553a9aaa704912bf8db4b8299be9" kindref="member">digital_ofdm_mapper_bcv_sptr</ref></type>
+        <definition>DIGITAL_API digital_ofdm_mapper_bcv_sptr digital_make_ofdm_mapper_bcv</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;constellation, unsigned msgq_limit, unsigned occupied_carriers, unsigned int fft_length)</argsstring>
         <name>digital_make_ofdm_mapper_bcv</name>
         <param>
@@ -324,6 +324,24 @@
 <para>take a stream of bytes in and map to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="464">
+        <label>std::vector&lt; gr_complex &gt;</label>
+      </node>
+      <node id="462">
+        <label>digital_ofdm_mapper_bcv</label>
+        <link refid="classdigital__ofdm__mapper__bcv"/>
+        <childnode refid="463" relation="usage">
+          <edgelabel>d_subcarrier_map</edgelabel>
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>d_constellation</edgelabel>
+        </childnode>
+      </node>
+      <node id="463">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_mapper_bcv.h" line="47" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_mapper_bcv.h" bodystart="46" bodyend="86"/>
     <listofallmembers>
       <member refid="classdigital__ofdm__mapper__bcv_1a8337fc683a4254645f2bf93e7c7fd74f" prot="private" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>d_bit_offset</name></member>
@@ -340,7 +358,7 @@
       <member refid="classdigital__ofdm__mapper__bcv_1a6c76062f1aaf5d365b9e2e29c2db6d93" prot="private" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>d_pending_flag</name></member>
       <member refid="classdigital__ofdm__mapper__bcv_1a70e3f3dddc2b441fa9043980d26d4ed2" prot="private" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>d_resid</name></member>
       <member refid="classdigital__ofdm__mapper__bcv_1a3e45f7c45bb24384b9c583b3782926b9" prot="private" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>d_subcarrier_map</name></member>
-      <member refid="classdigital__ofdm__mapper__bcv_1a829399ed7fd23e001500aa81af974243" prot="private" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>digital_make_ofdm_mapper_bcv</name></member>
+      <member refid="classdigital__ofdm__mapper__bcv_1ab169bade36697c1011a05e718a6512f1" prot="private" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>digital_make_ofdm_mapper_bcv</name></member>
       <member refid="classdigital__ofdm__mapper__bcv_1a8083a554a950a2f07fe4ddf8ac0b61c1" prot="protected" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>digital_ofdm_mapper_bcv</name></member>
       <member refid="classdigital__ofdm__mapper__bcv_1a79778080dded57e08c5b408693a48acc" prot="public" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>msgq</name></member>
       <member refid="classdigital__ofdm__mapper__bcv_1ab3253c14666fbf588d91866d75b26cee" prot="private" virt="non-virtual"><scope>digital_ofdm_mapper_bcv</scope><name>randsym</name></member>

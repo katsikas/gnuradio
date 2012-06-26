@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
   <compounddef id="classqtgui__time__sink__c" kind="class" prot="public">
     <compoundname>qtgui_time_sink_c</compoundname>
     <includes refid="qtgui__time__sink__c_8h" local="no">qtgui_time_sink_c.h</includes>
@@ -164,9 +164,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classqtgui__time__sink__c_1a1278eaff2a780c1ca484b6bc0d7234cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="qtgui__time__sink__c_8h_1ad2aef84c7395317a7a600cb42421c9c2" kindref="member">qtgui_time_sink_c_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT qtgui_time_sink_c_sptr qtgui_make_time_sink_c</definition>
+      <memberdef kind="friend" id="classqtgui__time__sink__c_1a0661a1ac5ea85d62780291a1d425e783" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend GR_QTGUI_API <ref refid="qtgui__time__sink__c_8h_1ad2aef84c7395317a7a600cb42421c9c2" kindref="member">qtgui_time_sink_c_sptr</ref></type>
+        <definition>GR_QTGUI_API qtgui_time_sink_c_sptr qtgui_make_time_sink_c</definition>
         <argsstring>(int size, double bw, const std::string &amp;name, int nconnections, QWidget *parent)</argsstring>
         <name>qtgui_make_time_sink_c</name>
         <param>
@@ -410,6 +410,29 @@
 <para>A graphical sink to display multiple signals in time.</para><para>This is a QT-based graphical sink the takes set of a complex streams and plots them in the time domain. For each signal, both the signal&apos;s I and Q parts are plotted, and they are all plotted with a different color, and the <emphasis>set_title</emphasis> and <emphasis>set_color</emphasis> functions can be used to change the lable and color for a given input number. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="504">
+        <label>qtgui_time_sink_c</label>
+        <link refid="classqtgui__time__sink__c"/>
+        <childnode refid="505" relation="usage">
+          <edgelabel>d_residbufs</edgelabel>
+        </childnode>
+        <childnode refid="506" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="507">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="505">
+        <label>std::vector&lt; double * &gt;</label>
+      </node>
+      <node id="506">
+        <label>std::string</label>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_time_sink_c.h" line="54" bodyfile="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_time_sink_c.h" bodystart="53" bodyend="99"/>
     <listofallmembers>
       <member refid="classqtgui__time__sink__c_1a89a2a74ab1101a7f5c29e3ea41fcdbb3" prot="private" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>d_bandwidth</name></member>
@@ -427,7 +450,7 @@
       <member refid="classqtgui__time__sink__c_1a7b0c1b298503d313d34b1495f81bd3b6" prot="public" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>exec_</name></member>
       <member refid="classqtgui__time__sink__c_1a17888b8892e7c724e255ec333d4ed60e" prot="private" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>initialize</name></member>
       <member refid="classqtgui__time__sink__c_1accf967f7bf6beabd9e8d462407567305" prot="public" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>pyqwidget</name></member>
-      <member refid="classqtgui__time__sink__c_1a1278eaff2a780c1ca484b6bc0d7234cd" prot="private" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>qtgui_make_time_sink_c</name></member>
+      <member refid="classqtgui__time__sink__c_1a0661a1ac5ea85d62780291a1d425e783" prot="private" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>qtgui_make_time_sink_c</name></member>
       <member refid="classqtgui__time__sink__c_1a86b0c474dcc83ed035470a82937ab4d7" prot="private" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>qtgui_time_sink_c</name></member>
       <member refid="classqtgui__time__sink__c_1aa1dfe53226784e52e811dc75706d22b5" prot="public" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>qwidget</name></member>
       <member refid="classqtgui__time__sink__c_1abfb03034fe9095126a6e229bfdf25fee" prot="public" virt="non-virtual"><scope>qtgui_time_sink_c</scope><name>set_color</name></member>

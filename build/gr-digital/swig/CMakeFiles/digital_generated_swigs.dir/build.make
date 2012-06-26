@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for digital_generated_swigs.
-
-# Include the progress variables for this target.
-include gr-digital/swig/CMakeFiles/digital_generated_swigs.dir/progress.make
 
 gr-digital/swig/CMakeFiles/digital_generated_swigs: gr-digital/swig/digital_chunks_to_symbols_bf.i
 gr-digital/swig/CMakeFiles/digital_generated_swigs: gr-digital/swig/digital_chunks_to_symbols_bc.i
@@ -52,7 +52,7 @@ gr-digital/swig/CMakeFiles/digital_generated_swigs: gr-digital/swig/digital_chun
 gr-digital/swig/digital_chunks_to_symbols_bf.i: ../gr-digital/swig/digital_chunks_to_symbols_XX.i.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating digital_chunks_to_symbols_bf.i, digital_chunks_to_symbols_bc.i, digital_chunks_to_symbols_sf.i, digital_chunks_to_symbols_sc.i, digital_chunks_to_symbols_if.i, digital_chunks_to_symbols_ic.i"
-	cd /home/katsikas/gnuradio/build/gr-digital/swig && /usr/bin/python -B /home/katsikas/gnuradio/build/gr-digital/swig/generate_helper.py digital_chunks_to_symbols_XX digital_chunks_to_symbols_XX.i.t bf bc sf sc if ic
+	cd /home/katsikas/gnuradio/build/gr-digital/swig && /usr/bin/python2.7 -B /home/katsikas/gnuradio/build/gr-digital/swig/generate_helper.py digital_chunks_to_symbols_XX digital_chunks_to_symbols_XX.i.t bf bc sf sc if ic
 
 gr-digital/swig/digital_chunks_to_symbols_bc.i: gr-digital/swig/digital_chunks_to_symbols_bf.i
 

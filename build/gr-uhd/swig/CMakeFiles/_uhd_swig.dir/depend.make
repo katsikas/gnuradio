@@ -19,12 +19,6 @@ gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gr-uhd/includ
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gr-uhd/include/gr_uhd_api.h
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gr-uhd/include/gr_uhd_usrp_sink.h
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gr-uhd/include/gr_uhd_usrp_source.h
-gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/api.h
-gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/attributes.h
-gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/msg_accepter.h
-gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/pmt.h
-gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/pmt_sugar.h
-gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/thread.h
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: gr-uhd/swig/uhd_swigPYTHON_wrap.cxx
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/Python.h
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/abstract.h
@@ -87,6 +81,12 @@ gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/include/pyt
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/unicodeobject.h
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/warnings.h
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/weakrefobject.h
+gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/api.h
+gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/attributes.h
+gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/msg_accepter.h
+gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/pmt.h
+gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/pmt_sugar.h
+gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/gruel/thread.h
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/uhd/config.hpp
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/uhd/deprecated.hpp
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o: /usr/local/include/uhd/device.hpp
