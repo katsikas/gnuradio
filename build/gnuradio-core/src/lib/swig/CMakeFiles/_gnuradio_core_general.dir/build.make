@@ -588,6 +588,7 @@ gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../
 gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../general/gr_streams_to_stream.h
 gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../general/gr_interleaved_short_to_complex.h
 gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../general/gri_float_to_int.h
+gnuradio-core/src/lib/swig/general_swig_doc.i: gnuradio-core/src/lib/swig/../general/sine_table.h
 gnuradio-core/src/lib/swig/general_swig_doc.i: gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating general_swig_doc.i"
@@ -827,6 +828,7 @@ gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../general/gr_streams_to_stream.h
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../general/gr_interleaved_short_to_complex.h
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../general/gri_float_to_int.h
+gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../general/sine_table.h
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/runtime_swig_doc.i
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/_general_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
