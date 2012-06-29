@@ -23,7 +23,6 @@
 #ifndef _INTERLEAVER_FIFO_H_
 #define _INTERLEAVER_FIFO_H_
 
-
 #include <interleaver_fifo.h>
 #include <string.h>
 

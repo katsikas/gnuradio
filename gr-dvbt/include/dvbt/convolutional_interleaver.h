@@ -51,6 +51,7 @@ public:
 
   	//! transform a single symbol
   	symbol_type transform (symbol_type input){
+		//printf("commutator = %d | input = %d \n",m_commutator,input);
     		symbol_type retval = m_fifo[m_commutator]->stuff (input);
     		m_commutator++;
     		if (m_commutator >= m_nbanks)
@@ -75,7 +76,6 @@ convolutional_interleaver<symbol_type>::convolutional_interleaver (
 					   int nbanks,
 					   int fifo_size_incr)
 {
-	printf("convolutional interleaver \n");
   	assert (nbanks >= 1);
   	assert (fifo_size_incr >= 1);
 
@@ -85,13 +85,15 @@ convolutional_interleaver<symbol_type>::convolutional_interleaver (
   	m_fifo.resize (nbanks);
 
   	if (interleave_p){	// configure as interleaver
-    		for (int i = 0; i < nbanks; i++)
+    		for (int i = 0; i < nbanks; i++){
       			m_fifo[i] = new interleaver_fifo<symbol_type>(i * fifo_size_incr);
-  	}
+  		}
+	}
   	else {		// configure as de-interleaver
-    		for (int i = 0; i < nbanks; i++)
+    		for (int i = 0; i < nbanks; i++){
       			m_fifo[nbanks - 1 - i] = new interleaver_fifo<symbol_type>(i * fifo_size_incr);
-  	}
+  		}
+	}
   	sync ();
 }
 
@@ -107,7 +109,6 @@ convolutional_interleaver<symbol_type>::~convolutional_interleaver ()
 template<class symbol_type> void
 convolutional_interleaver<symbol_type>::reset ()
 {
-	printf("reset interleaver \n");
   	sync ();
   	for (int i = 0; i < m_nbanks; i++)
     		m_fifo[i]->reset ();
@@ -129,8 +130,11 @@ convolutional_interleaver<symbol_type>::transform (symbol_type *out,
 						   int nsymbols)
 {
   	// we may want to unroll this a couple of times...
-  	for (int i = 0; i < nsymbols; i++)
+	//printf("\n NEW PACKET RECEIVED \n");
+  	for (int i = 0; i < nsymbols; i++){
     		out[i] = transform (in[i]);
+		//printf("in[ %d ] = %d | out[i] = %d \n",i,in[i],out[i]);
+	}
 }
 
 #endif /* _CONVOLUTIONAL_INTERLEAVER_H_ */

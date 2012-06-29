@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_trellis_src_examples_python_f76b0.
+
+# Include the progress variables for this target.
+include gr-trellis/src/examples/python/CMakeFiles/pygen_gr_trellis_src_examples_python_f76b0.dir/progress.make
 
 gr-trellis/src/examples/python/CMakeFiles/pygen_gr_trellis_src_examples_python_f76b0: gr-trellis/src/examples/python/fsm_utils.py.exe
 gr-trellis/src/examples/python/CMakeFiles/pygen_gr_trellis_src_examples_python_f76b0: gr-trellis/src/examples/python/test_tcm.py.exe
@@ -58,62 +58,62 @@ gr-trellis/src/examples/python/CMakeFiles/pygen_gr_trellis_src_examples_python_f
 gr-trellis/src/examples/python/fsm_utils.py.exe: ../gr-trellis/src/examples/python/fsm_utils.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin fsm_utils.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/fsm_utils.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_utils.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/fsm_utils.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_utils.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_tcm.py.exe: ../gr-trellis/src/examples/python/test_tcm.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_tcm.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_tcm.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_tcm.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_tcm_parallel.py.exe: ../gr-trellis/src/examples/python/test_tcm_parallel.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_tcm_parallel.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm_parallel.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_tcm_parallel.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm_parallel.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_tcm_parallel.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_tcm_combined.py.exe: ../gr-trellis/src/examples/python/test_tcm_combined.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_tcm_combined.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm_combined.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_tcm_combined.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm_combined.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_tcm_combined.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_sccc_hard.py.exe: ../gr-trellis/src/examples/python/test_sccc_hard.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_sccc_hard.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_hard.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_sccc_hard.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_hard.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_sccc_hard.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_sccc_soft.py.exe: ../gr-trellis/src/examples/python/test_sccc_soft.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_sccc_soft.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_soft.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_sccc_soft.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_soft.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_sccc_soft.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_sccc_turbo.py.exe: ../gr-trellis/src/examples/python/test_sccc_turbo.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_sccc_turbo.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_turbo.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_sccc_turbo.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_turbo.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_sccc_turbo.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_viterbi_equalization1.py.exe: ../gr-trellis/src/examples/python/test_viterbi_equalization1.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_viterbi_equalization1.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization1.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_viterbi_equalization1.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization1.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_viterbi_equalization1.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_viterbi_equalization.py.exe: ../gr-trellis/src/examples/python/test_viterbi_equalization.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_viterbi_equalization.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_viterbi_equalization.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_viterbi_equalization.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_turbo_equalization.py.exe: ../gr-trellis/src/examples/python/test_turbo_equalization.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_turbo_equalization.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_turbo_equalization.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_turbo_equalization.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_turbo_equalization1.py.exe: ../gr-trellis/src/examples/python/test_turbo_equalization1.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_turbo_equalization1.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization1.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_turbo_equalization1.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization1.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_turbo_equalization1.py' ) .read ( ) ) "
 
 gr-trellis/src/examples/python/test_turbo_equalization2.py.exe: ../gr-trellis/src/examples/python/test_turbo_equalization2.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin test_turbo_equalization2.py"
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization2.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_turbo_equalization2.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/examples/python && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization2.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-trellis/src/examples/python/test_turbo_equalization2.py' ) .read ( ) ) "
 
 pygen_gr_trellis_src_examples_python_f76b0: gr-trellis/src/examples/python/CMakeFiles/pygen_gr_trellis_src_examples_python_f76b0
 pygen_gr_trellis_src_examples_python_f76b0: gr-trellis/src/examples/python/fsm_utils.py.exe

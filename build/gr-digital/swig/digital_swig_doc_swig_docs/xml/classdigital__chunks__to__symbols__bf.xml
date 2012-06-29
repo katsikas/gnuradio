@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__chunks__to__symbols__bf" kind="class" prot="public">
     <compoundname>digital_chunks_to_symbols_bf</compoundname>
     <includes refid="digital__chunks__to__symbols__bf_8h" local="no">digital_chunks_to_symbols_bf.h</includes>
@@ -33,7 +33,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__chunks__to__symbols__bf_1aecbf15e407863390438fd9e41668f08d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="digital__chunks__to__symbols__bf_8h_1a499c8796f0ec2588720d216029de380e" kindref="member">digital_chunks_to_symbols_bf_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="digital__chunks__to__symbols__bf_8h_1a499c8796f0ec2588720d216029de380e" kindref="member">digital_chunks_to_symbols_bf_sptr</ref></type>
         <definition>DIGITAL_API digital_chunks_to_symbols_bf_sptr digital_make_chunks_to_symbols_bf</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;symbol_table, const int D)</argsstring>
         <name>digital_make_chunks_to_symbols_bf</name>
@@ -157,18 +157,6 @@
     <detaileddescription>
 <para>out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1</para><para>The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols.</para><para><simplesect kind="see"><para>gr_packed_to_unpacked_bb, gr_unpacked_to_packed_bb, </para><simplesectsep/><para>gr_packed_to_unpacked_ss, gr_unpacked_to_packed_ss, </para><simplesectsep/><para><ref refid="classdigital__chunks__to__symbols__bf" kindref="compound">digital_chunks_to_symbols_bf</ref>, <ref refid="classdigital__chunks__to__symbols__bc" kindref="compound">digital_chunks_to_symbols_bc</ref>. </para><simplesectsep/><para><ref refid="classdigital__chunks__to__symbols__sf" kindref="compound">digital_chunks_to_symbols_sf</ref>, <ref refid="classdigital__chunks__to__symbols__sc" kindref="compound">digital_chunks_to_symbols_sc</ref>. </para></simplesect>
 </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="282">
-        <label>digital_chunks_to_symbols_bf</label>
-        <link refid="classdigital__chunks__to__symbols__bf"/>
-        <childnode refid="283" relation="usage">
-          <edgelabel>d_symbol_table</edgelabel>
-        </childnode>
-      </node>
-      <node id="283">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gr-digital/include/digital_chunks_to_symbols_bf.h" line="57" bodyfile="/home/katsikas/gnuradio/build/gr-digital/include/digital_chunks_to_symbols_bf.h" bodystart="56" bodyend="73"/>
     <listofallmembers>
       <member refid="classdigital__chunks__to__symbols__bf_1a1f4cce815ac556409172588e7ed907db" prot="public" virt="non-virtual"><scope>digital_chunks_to_symbols_bf</scope><name>check_topology</name></member>

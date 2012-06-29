@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdvbt__deinterleaver" kind="class" prot="public">
     <compoundname>dvbt_deinterleaver</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__deinterleaver_1a2994b4b6627e21e53d50db0f9d701a3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_deinterleaver_sptr</ref></type>
+        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_deinterleaver_sptr</ref></type>
         <definition>DVBT_API dvbt_deinterleaver_sptr dvbt_make_deinterleaver</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_deinterleaver</name>
@@ -61,11 +61,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -77,7 +77,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_deinterleaver.h" line="54"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__deinterleaver_1a296b21d5a75c2e5b9d7f1269f7eb88f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void dvbt_deinterleaver::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -95,251 +95,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3106">
+      <node id="1722">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3107" relation="public-inheritance">
+        <childnode refid="1723" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3103">
+      <node id="1719">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3104" relation="public-inheritance">
+        <childnode refid="1720" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3104">
+      <node id="1720">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3105" relation="public-inheritance">
+        <childnode refid="1721" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3107">
+      <node id="1723">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3105">
+      <node id="1721">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3106" relation="public-inheritance">
+        <childnode refid="1722" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3102">
+      <node id="1718">
         <label>dvbt_deinterleaver</label>
         <link refid="classdvbt__deinterleaver"/>
-        <childnode refid="3103" relation="public-inheritance">
+        <childnode refid="1719" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3129">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3123" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3122">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3123" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3134">
-        <label>T</label>
-      </node>
-      <node id="3136">
-        <label>convolutional_interleaver&lt; unsigned char &gt;</label>
-        <link refid="classconvolutional__interleaver"/>
-        <childnode refid="3137" relation="usage">
-          <edgelabel>m_fifo</edgelabel>
-        </childnode>
-      </node>
-      <node id="3112">
+      <node id="1728">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3113" relation="public-inheritance">
+        <childnode refid="1729" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3109">
+      <node id="1725">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3110" relation="public-inheritance">
+        <childnode refid="1726" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3138">
-        <label>interleaver_fifo&lt; unsigned char &gt;</label>
-        <link refid="classinterleaver__fifo"/>
-      </node>
-      <node id="3123">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="3124" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="3131">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="3126">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="3110">
+      <node id="1726">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3111" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3119" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="1727" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3119">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3120" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3133">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3134" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3135">
-        <label>dvbti_data_deinterleaver</label>
-        <link refid="classdvbti__data__deinterleaver"/>
-        <childnode refid="3136" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3138" relation="usage">
-          <edgelabel>alignment_fifo</edgelabel>
-        </childnode>
-      </node>
-      <node id="3120">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="3121" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="3130" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="3132" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="3127">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="3128" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3114">
+      <node id="1730">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3115" relation="usage">
+        <childnode refid="1731" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3125">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="3126" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="3127" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="3129" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="3118">
+      <node id="1733">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3121">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="3122" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3113">
+      <node id="1729">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3137">
-        <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3138" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3124">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3125" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3128">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="3130">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="3131" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="3132">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="3133" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3115">
+      <node id="1731">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="3116" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="3111">
+      <node id="1727">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3112" relation="public-inheritance">
+        <childnode refid="1728" relation="public-inheritance">
         </childnode>
-        <childnode refid="3114" relation="usage">
+        <childnode refid="1730" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3117" relation="usage">
+        <childnode refid="1732" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3108">
+      <node id="1724">
         <label>dvbt_deinterleaver</label>
         <link refid="classdvbt__deinterleaver"/>
-        <childnode refid="3109" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3135" relation="usage">
-          <edgelabel>d_deinterleaver</edgelabel>
+        <childnode refid="1725" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3116">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="3117">
+      <node id="1732">
         <label>std::string</label>
-        <childnode refid="3118" relation="public-inheritance">
+        <childnode refid="1733" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -401,7 +250,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>dvbt_deinterleaver</scope><name>set_relative_rate</name></member>

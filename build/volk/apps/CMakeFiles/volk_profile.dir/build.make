@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -107,7 +104,6 @@ volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o
 volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o
 volk/apps/volk_profile: volk/lib/libvolk.so.0.0.0
 volk/apps/volk_profile: /usr/lib/libboost_unit_test_framework-mt.so
-volk/apps/volk_profile: /usr/lib/liborc-0.4.so
 volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/build.make
 volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable volk_profile"

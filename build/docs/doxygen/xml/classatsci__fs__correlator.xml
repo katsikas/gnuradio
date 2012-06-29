@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsci__fs__correlator" kind="class" prot="public">
     <compoundname>atsci_fs_correlator</compoundname>
     <derivedcompoundref refid="classatsci__fs__correlator__naive" prot="public" virt="non-virtual">atsci_fs_correlator_naive</derivedcompoundref>
@@ -32,7 +32,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_fs_correlator.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__fs__correlator_1aa251873fbc7ec1e7460d7f2d906a46bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void atsci_fs_correlator::reset</definition>
         <argsstring>()=0</argsstring>
         <name>reset</name>
@@ -46,7 +46,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_fs_correlator.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__fs__correlator_1a25cb4d3011665c60e295b1604af7d50f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void atsci_fs_correlator::filter</definition>
         <argsstring>(float input_sample, float *output_sample, float *output_tag)=0</argsstring>
         <name>filter</name>
@@ -91,14 +91,14 @@
     <detaileddescription>
 <para>Processes input samples one at a time looking for an occurence of either the field sync 1 or field sync 2 pattern.</para><para>For each sample processed, an output sample and an output tag are produced. The output samples are identical to the input samples but are delayed by a number of samples given by <computeroutput><ref refid="classatsci__fs__correlator_1a247f5cc5edc94c0a9e00a511416a540e" kindref="member">delay()</ref></computeroutput>. The output tag associated with the the given output sample indicates whether this sample is the beginning of one of the field syncs or is an ordinary sample. The tags are defined in <ref refid="atsci__sync__tag_8h" kindref="compound">atsci_sync_tag.h</ref>.</para><para>For ease of use, the field sync patterns are defined to begin with the first symbol of the 4 symbol data segment sync pattern that immediately proceeds the actual PN 511 code. This makes it easier for downstream code to determine the location of data segment syncs merely by counting. They&apos;ll occur every 832 samples assuming everything is working. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="667">
+      <node id="351">
         <label>atsci_fs_correlator</label>
         <link refid="classatsci__fs__correlator"/>
       </node>
-      <node id="668">
+      <node id="352">
         <label>atsci_fs_correlator_naive</label>
         <link refid="classatsci__fs__correlator__naive"/>
-        <childnode refid="667" relation="public-inheritance">
+        <childnode refid="351" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

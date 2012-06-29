@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_digital_examples_d033c.
+
+# Include the progress variables for this target.
+include gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_d033c.dir/progress.make
 
 gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_d033c: gr-digital/examples/ofdm/benchmark_add_channel.py.exe
 gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_d033c: gr-digital/examples/ofdm/benchmark_rx.py.exe
@@ -55,47 +55,47 @@ gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_d033c: gr-digital/examp
 gr-digital/examples/ofdm/benchmark_add_channel.py.exe: ../gr-digital/examples/ofdm/benchmark_add_channel.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin benchmark_add_channel.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_add_channel.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/benchmark_add_channel.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_add_channel.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/benchmark_add_channel.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/benchmark_rx.py.exe: ../gr-digital/examples/ofdm/benchmark_rx.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin benchmark_rx.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_rx.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/benchmark_rx.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_rx.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/benchmark_rx.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/benchmark_tx.py.exe: ../gr-digital/examples/ofdm/benchmark_tx.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin benchmark_tx.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_tx.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/benchmark_tx.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_tx.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/benchmark_tx.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/gr_plot_ofdm.py.exe: ../gr-digital/examples/ofdm/gr_plot_ofdm.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gr_plot_ofdm.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/gr_plot_ofdm.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/gr_plot_ofdm.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/gr_plot_ofdm.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/gr_plot_ofdm.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/ofdm_mod_demod_test.py.exe: ../gr-digital/examples/ofdm/ofdm_mod_demod_test.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin ofdm_mod_demod_test.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/ofdm_mod_demod_test.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/ofdm_mod_demod_test.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/ofdm_mod_demod_test.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/ofdm_mod_demod_test.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/receive_path.py.exe: ../gr-digital/examples/ofdm/receive_path.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin receive_path.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/receive_path.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/receive_path.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/receive_path.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/receive_path.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/transmit_path.py.exe: ../gr-digital/examples/ofdm/transmit_path.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin transmit_path.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/transmit_path.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/transmit_path.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/transmit_path.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/transmit_path.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/tunnel.py.exe: ../gr-digital/examples/ofdm/tunnel.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin tunnel.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/tunnel.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/tunnel.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/tunnel.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/tunnel.py' ) .read ( ) ) "
 
 gr-digital/examples/ofdm/uhd_interface.py.exe: ../gr-digital/examples/ofdm/uhd_interface.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin uhd_interface.py"
-	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/uhd_interface.py.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/uhd_interface.py' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/gr-digital/examples && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/uhd_interface.py.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/gr-digital/examples/ofdm/uhd_interface.py' ) .read ( ) ) "
 
 pygen_gr_digital_examples_d033c: gr-digital/examples/CMakeFiles/pygen_gr_digital_examples_d033c
 pygen_gr_digital_examples_d033c: gr-digital/examples/ofdm/benchmark_add_channel.py.exe

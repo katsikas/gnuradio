@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__hier__block2__detail" kind="class" prot="public">
     <compoundname>gr_hier_block2_detail</compoundname>
     <includes refid="gr__hier__block2__detail_8h" local="no">gr_hier_block2_detail.h</includes>
@@ -409,85 +409,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="430">
-        <label>T</label>
-      </node>
-      <node id="429">
-        <label>std::vector&lt; T &gt;</label>
-        <childnode refid="430" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="424">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-      </node>
-      <node id="422">
-        <label>gr_hier_block2</label>
-        <link refid="classgr__hier__block2"/>
-        <childnode refid="423" relation="public-inheritance">
-        </childnode>
-        <childnode refid="419" relation="usage">
-          <edgelabel>d_detail</edgelabel>
-        </childnode>
-      </node>
-      <node id="421">
-        <label>gr_endpoint</label>
-        <link refid="classgr__endpoint"/>
-      </node>
-      <node id="426">
-        <label>std::basic_string&lt; char &gt;</label>
-      </node>
-      <node id="428">
-        <label>std::vector&lt; gr_endpoint_vector_t &gt;</label>
-        <childnode refid="429" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="420">
-        <label>std::vector&lt; gr_endpoint &gt;</label>
-        <childnode refid="421" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="427">
-        <label>std::vector&lt; gr_basic_block_sptr &gt;</label>
-      </node>
-      <node id="423">
-        <label>gr_basic_block</label>
-        <link refid="classgr__basic__block"/>
-        <childnode refid="424" relation="public-inheritance">
-        </childnode>
-        <childnode refid="425" relation="usage">
-          <edgelabel>d_name</edgelabel>
-        </childnode>
-      </node>
-      <node id="419">
-        <label>gr_hier_block2_detail</label>
-        <link refid="classgr__hier__block2__detail"/>
-        <childnode refid="420" relation="usage">
-          <edgelabel>d_outputs</edgelabel>
-        </childnode>
-        <childnode refid="422" relation="usage">
-          <edgelabel>d_owner</edgelabel>
-        </childnode>
-        <childnode refid="427" relation="usage">
-          <edgelabel>d_blocks</edgelabel>
-        </childnode>
-        <childnode refid="419" relation="usage">
-          <edgelabel>d_parent_detail</edgelabel>
-        </childnode>
-        <childnode refid="428" relation="usage">
-          <edgelabel>d_inputs</edgelabel>
-        </childnode>
-      </node>
-      <node id="425">
-        <label>std::string</label>
-        <childnode refid="426" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2_detail.h" line="34" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2_detail.h" bodystart="33" bodyend="67"/>
     <listofallmembers>
       <member refid="classgr__hier__block2__detail_1ad33539482e34829c0efbee60a2bf657b" prot="public" virt="non-virtual"><scope>gr_hier_block2_detail</scope><name>connect</name></member>

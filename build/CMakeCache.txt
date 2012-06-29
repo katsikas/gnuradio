@@ -18,7 +18,7 @@
 ALSA_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a library.
-ALSA_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libasound.so
+ALSA_LIBRARY:FILEPATH=/usr/lib/i386-linux-gnu/libasound.so
 
 //Modify search path for Boost components
 BOOST_ROOT:STRING=
@@ -31,6 +31,9 @@ Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=/usr/lib/libboost_date_time-mt.so
 
 //Boost date_time library (release)
 Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=/usr/lib/libboost_date_time-mt.so
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
 
 //The Boost FILESYSTEM library
 Boost_FILESYSTEM_LIBRARY:FILEPATH=/usr/lib/libboost_filesystem-mt.so
@@ -263,9 +266,6 @@ ENABLE_GR_ATSC:BOOL=ON
 //enable gr-audio support
 ENABLE_GR_AUDIO:BOOL=ON
 
-//enable gr-comedi support
-ENABLE_GR_COMEDI:BOOL=ON
-
 //enable gnuradio-core support
 ENABLE_GR_CORE:BOOL=ON
 
@@ -274,9 +274,6 @@ ENABLE_GR_DIGITAL:BOOL=ON
 
 //enable gr-dvbt support
 ENABLE_GR_DVBT:BOOL=ON
-
-//enable gr-fcd support
-ENABLE_GR_FCD:BOOL=ON
 
 //enable gr-fft support
 ENABLE_GR_FFT:BOOL=ON
@@ -292,9 +289,6 @@ ENABLE_GR_QTGUI:BOOL=ON
 
 //enable gr-trellis support
 ENABLE_GR_TRELLIS:BOOL=ON
-
-//enable gr-uhd support
-ENABLE_GR_UHD:BOOL=ON
 
 //enable gr-utils support
 ENABLE_GR_UTILS:BOOL=ON
@@ -342,10 +336,10 @@ JACK_INCLUDE_DIR:PATH=JACK_INCLUDE_DIR-NOTFOUND
 JACK_LIBRARY:FILEPATH=JACK_LIBRARY-NOTFOUND
 
 //Path to a file.
-LIBUSB_INCLUDE_DIR:PATH=/usr/include/libusb-1.0
+LIBUSB_INCLUDE_DIR:PATH=LIBUSB_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
-LIBUSB_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libusb-1.0.so
+LIBUSB_LIBRARIES:FILEPATH=LIBUSB_LIBRARIES-NOTFOUND
 
 //lib directory suffix
 LIB_SUFFIX:STRING=
@@ -360,16 +354,16 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 MACHINE_OSS_INCLUDE_DIR:PATH=MACHINE_OSS_INCLUDE_DIR-NOTFOUND
 
 //Path to a program.
-ORCC_EXECUTABLE:FILEPATH=/usr/bin/orcc
+ORCC_EXECUTABLE:FILEPATH=ORCC_EXECUTABLE-NOTFOUND
 
 //Path to a file.
-ORC_INCLUDE_DIR:PATH=/usr/include/orc-0.4
+ORC_INCLUDE_DIR:PATH=ORC_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
-ORC_LIB:FILEPATH=/usr/lib/liborc-0.4.so
+ORC_LIB:FILEPATH=ORC_LIB-NOTFOUND
 
 //Path to a file.
-ORC_LIBRARY_DIR:PATH=/usr/lib
+ORC_LIBRARY_DIR:PATH=ORC_LIBRARY_DIR-NOTFOUND
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
@@ -381,7 +375,7 @@ PORTAUDIO_INCLUDE_DIRS:PATH=PORTAUDIO_INCLUDE_DIRS-NOTFOUND
 PORTAUDIO_LIBRARIES:FILEPATH=PORTAUDIO_LIBRARIES-NOTFOUND
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2.7
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
 //Path to a file.
 PYTHON_INCLUDE_DIR:PATH=/usr/include/python2.7
@@ -418,9 +412,6 @@ QT_DESIGNER_EXECUTABLE:FILEPATH=QT_DESIGNER_EXECUTABLE-NOTFOUND
 
 //The location of the Qt docs
 QT_DOC_DIR:PATH=/usr/share/qt4/doc
-
-//The location of the Qt imports
-QT_IMPORTS_DIR:PATH=QT_IMPORTS_DIR-NOTFOUND
 
 //Path to a program.
 QT_LINGUIST_EXECUTABLE:FILEPATH=QT_LINGUIST_EXECUTABLE-NOTFOUND
@@ -462,13 +453,13 @@ QT_PHONON_QT7_PLUGIN_DEBUG:FILEPATH=QT_PHONON_QT7_PLUGIN_DEBUG-NOTFOUND
 QT_PHONON_QT7_PLUGIN_RELEASE:FILEPATH=QT_PHONON_QT7_PLUGIN_RELEASE-NOTFOUND
 
 //The location of the Qt plugins
-QT_PLUGINS_DIR:PATH=/usr/lib/x86_64-linux-gnu/qt4/plugins
+QT_PLUGINS_DIR:PATH=/usr/lib/i386-linux-gnu/qt4/plugins
 
 //Path to a library.
 QT_QCNCODECS_PLUGIN_DEBUG:FILEPATH=QT_QCNCODECS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QCNCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqcncodecs.so
+QT_QCNCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/codecs/libqcncodecs.so
 
 //Path to a program.
 QT_QCOLLECTIONGENERATOR_EXECUTABLE:FILEPATH=QT_QCOLLECTIONGENERATOR_EXECUTABLE-NOTFOUND
@@ -483,7 +474,7 @@ QT_QCOREWLANBEARER_PLUGIN_RELEASE:FILEPATH=QT_QCOREWLANBEARER_PLUGIN_RELEASE-NOT
 QT_QDECLARATIVEVIEW_PLUGIN_DEBUG:FILEPATH=QT_QDECLARATIVEVIEW_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QDECLARATIVEVIEW_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/designer/libqdeclarativeview.so
+QT_QDECLARATIVEVIEW_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/designer/libqdeclarativeview.so
 
 //Path to a library.
 QT_QDECORATIONDEFAULT_PLUGIN_DEBUG:FILEPATH=QT_QDECORATIONDEFAULT_PLUGIN_DEBUG-NOTFOUND
@@ -501,25 +492,25 @@ QT_QDECORATIONWINDOWS_PLUGIN_RELEASE:FILEPATH=QT_QDECORATIONWINDOWS_PLUGIN_RELEA
 QT_QGENERICBEARER_PLUGIN_DEBUG:FILEPATH=QT_QGENERICBEARER_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QGENERICBEARER_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/bearer/libqgenericbearer.so
+QT_QGENERICBEARER_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/bearer/libqgenericbearer.so
 
 //Path to a library.
 QT_QGIF_PLUGIN_DEBUG:FILEPATH=QT_QGIF_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QGIF_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqgif.so
+QT_QGIF_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/imageformats/libqgif.so
 
 //Path to a library.
 QT_QGLGRAPHICSSYSTEM_PLUGIN_DEBUG:FILEPATH=QT_QGLGRAPHICSSYSTEM_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QGLGRAPHICSSYSTEM_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/graphicssystems/libqglgraphicssystem.so
+QT_QGLGRAPHICSSYSTEM_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/graphicssystems/libqglgraphicssystem.so
 
 //Path to a library.
 QT_QICO_PLUGIN_DEBUG:FILEPATH=QT_QICO_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QICO_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqico.so
+QT_QICO_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/imageformats/libqico.so
 
 //Path to a library.
 QT_QIMSW_MULTI_PLUGIN_DEBUG:FILEPATH=QT_QIMSW_MULTI_PLUGIN_DEBUG-NOTFOUND
@@ -531,19 +522,19 @@ QT_QIMSW_MULTI_PLUGIN_RELEASE:FILEPATH=QT_QIMSW_MULTI_PLUGIN_RELEASE-NOTFOUND
 QT_QJPCODECS_PLUGIN_DEBUG:FILEPATH=QT_QJPCODECS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QJPCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqjpcodecs.so
+QT_QJPCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/codecs/libqjpcodecs.so
 
 //Path to a library.
 QT_QJPEG_PLUGIN_DEBUG:FILEPATH=QT_QJPEG_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QJPEG_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqjpeg.so
+QT_QJPEG_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/imageformats/libqjpeg.so
 
 //Path to a library.
 QT_QKRCODECS_PLUGIN_DEBUG:FILEPATH=QT_QKRCODECS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QKRCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqkrcodecs.so
+QT_QKRCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/codecs/libqkrcodecs.so
 
 //The qmake executable for the Qt installation to use
 QT_QMAKE_EXECUTABLE:FILEPATH=/usr/bin/qmake
@@ -552,7 +543,7 @@ QT_QMAKE_EXECUTABLE:FILEPATH=/usr/bin/qmake
 QT_QMNG_PLUGIN_DEBUG:FILEPATH=QT_QMNG_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QMNG_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqmng.so
+QT_QMNG_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/imageformats/libqmng.so
 
 //Path to a library.
 QT_QSQLDB2_PLUGIN_DEBUG:FILEPATH=QT_QSQLDB2_PLUGIN_DEBUG-NOTFOUND
@@ -576,13 +567,13 @@ QT_QSQLITE2_PLUGIN_RELEASE:FILEPATH=QT_QSQLITE2_PLUGIN_RELEASE-NOTFOUND
 QT_QSQLITE_PLUGIN_DEBUG:FILEPATH=QT_QSQLITE_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QSQLITE_PLUGIN_RELEASE:FILEPATH=QT_QSQLITE_PLUGIN_RELEASE-NOTFOUND
+QT_QSQLITE_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/sqldrivers/libqsqlite.so
 
 //Path to a library.
 QT_QSQLMYSQL_PLUGIN_DEBUG:FILEPATH=QT_QSQLMYSQL_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QSQLMYSQL_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/sqldrivers/libqsqlmysql.so
+QT_QSQLMYSQL_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/sqldrivers/libqsqlmysql.so
 
 //Path to a library.
 QT_QSQLOCI_PLUGIN_DEBUG:FILEPATH=QT_QSQLOCI_PLUGIN_DEBUG-NOTFOUND
@@ -612,43 +603,43 @@ QT_QSQLTDS_PLUGIN_RELEASE:FILEPATH=QT_QSQLTDS_PLUGIN_RELEASE-NOTFOUND
 QT_QSVGICON_PLUGIN_DEBUG:FILEPATH=QT_QSVGICON_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QSVGICON_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/iconengines/libqsvgicon.so
+QT_QSVGICON_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/iconengines/libqsvgicon.so
 
 //Path to a library.
 QT_QSVG_PLUGIN_DEBUG:FILEPATH=QT_QSVG_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QSVG_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqsvg.so
+QT_QSVG_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/imageformats/libqsvg.so
 
 //Path to a library.
 QT_QT3SUPPORTWIDGETS_PLUGIN_DEBUG:FILEPATH=QT_QT3SUPPORTWIDGETS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QT3SUPPORTWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/designer/libqt3supportwidgets.so
+QT_QT3SUPPORTWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/designer/libqt3supportwidgets.so
 
 //Path to a file.
 QT_QT3SUPPORT_INCLUDE_DIR:PATH=/usr/include/qt4/Qt3Support
 
 //The Qt QT3SUPPORT library
-QT_QT3SUPPORT_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQt3Support.so
+QT_QT3SUPPORT_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQt3Support.so
 
 //Path to a library.
 QT_QT3SUPPORT_LIBRARY_DEBUG:FILEPATH=QT_QT3SUPPORT_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QT3SUPPORT_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQt3Support.so
+QT_QT3SUPPORT_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQt3Support.so
 
 //Path to a library.
 QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_DEBUG:FILEPATH=QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/accessible/libqtaccessiblecompatwidgets.so
+QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/accessible/libqtaccessiblecompatwidgets.so
 
 //Path to a library.
 QT_QTACCESSIBLEWIDGETS_PLUGIN_DEBUG:FILEPATH=QT_QTACCESSIBLEWIDGETS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTACCESSIBLEWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/accessible/libqtaccessiblewidgets.so
+QT_QTACCESSIBLEWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/accessible/libqtaccessiblewidgets.so
 
 //Path to a file.
 QT_QTASSISTANTCLIENT_INCLUDE_DIR:PATH=QT_QTASSISTANTCLIENT_INCLUDE_DIR-NOTFOUND
@@ -675,103 +666,103 @@ QT_QTASSISTANT_LIBRARY_DEBUG:FILEPATH=QT_QTASSISTANT_LIBRARY_DEBUG-NOTFOUND
 QT_QTASSISTANT_LIBRARY_RELEASE:FILEPATH=QT_QTASSISTANT_LIBRARY_RELEASE-NOTFOUND
 
 //The Qt QTCLUCENE library
-QT_QTCLUCENE_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtCLucene.so
+QT_QTCLUCENE_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtCLucene.so
 
 //Path to a library.
 QT_QTCLUCENE_LIBRARY_DEBUG:FILEPATH=QT_QTCLUCENE_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTCLUCENE_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtCLucene.so
+QT_QTCLUCENE_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtCLucene.so
 
-//(This variable does not exist and should not be used)
+//Path to a file.
 QT_QTCORE_INCLUDE_DIR:PATH=/usr/include/qt4/QtCore
 
 //The Qt QTCORE library
-QT_QTCORE_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtCore.so
+QT_QTCORE_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtCore.so
 
 //Path to a library.
 QT_QTCORE_LIBRARY_DEBUG:FILEPATH=QT_QTCORE_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTCORE_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtCore.so
+QT_QTCORE_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtCore.so
 
 //Path to a file.
 QT_QTDBUS_INCLUDE_DIR:PATH=/usr/include/qt4/QtDBus
 
 //The Qt QTDBUS library
-QT_QTDBUS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDBus.so
+QT_QTDBUS_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtDBus.so
 
 //Path to a library.
 QT_QTDBUS_LIBRARY_DEBUG:FILEPATH=QT_QTDBUS_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTDBUS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDBus.so
+QT_QTDBUS_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtDBus.so
 
 //Path to a file.
 QT_QTDECLARATIVE_INCLUDE_DIR:PATH=/usr/include/qt4/QtDeclarative
 
 //The Qt QTDECLARATIVE library
-QT_QTDECLARATIVE_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+QT_QTDECLARATIVE_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtDeclarative.so
 
 //Path to a library.
 QT_QTDECLARATIVE_LIBRARY_DEBUG:FILEPATH=QT_QTDECLARATIVE_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTDECLARATIVE_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+QT_QTDECLARATIVE_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtDeclarative.so
 
 //Path to a file.
 QT_QTDESIGNERCOMPONENTS_INCLUDE_DIR:PATH=/usr/include/qt4/QtDesigner
 
 //The Qt QTDESIGNERCOMPONENTS library
-QT_QTDESIGNERCOMPONENTS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDesignerComponents.so
+QT_QTDESIGNERCOMPONENTS_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtDesignerComponents.so
 
 //Path to a library.
 QT_QTDESIGNERCOMPONENTS_LIBRARY_DEBUG:FILEPATH=QT_QTDESIGNERCOMPONENTS_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTDESIGNERCOMPONENTS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDesignerComponents.so
+QT_QTDESIGNERCOMPONENTS_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtDesignerComponents.so
 
 //Path to a file.
 QT_QTDESIGNER_INCLUDE_DIR:PATH=/usr/include/qt4/QtDesigner
 
 //The Qt QTDESIGNER library
-QT_QTDESIGNER_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDesigner.so
+QT_QTDESIGNER_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtDesigner.so
 
 //Path to a library.
 QT_QTDESIGNER_LIBRARY_DEBUG:FILEPATH=QT_QTDESIGNER_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTDESIGNER_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDesigner.so
+QT_QTDESIGNER_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtDesigner.so
 
 //Path to a file.
 QT_QTGUI_INCLUDE_DIR:PATH=/usr/include/qt4/QtGui
 
 //The Qt QTGUI library
-QT_QTGUI_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtGui.so
+QT_QTGUI_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtGui.so
 
 //Path to a library.
 QT_QTGUI_LIBRARY_DEBUG:FILEPATH=QT_QTGUI_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTGUI_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtGui.so
+QT_QTGUI_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtGui.so
 
 //Path to a file.
 QT_QTHELP_INCLUDE_DIR:PATH=/usr/include/qt4/QtHelp
 
 //The Qt QTHELP library
-QT_QTHELP_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtHelp.so
+QT_QTHELP_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtHelp.so
 
 //Path to a library.
 QT_QTHELP_LIBRARY_DEBUG:FILEPATH=QT_QTHELP_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTHELP_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtHelp.so
+QT_QTHELP_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtHelp.so
 
 //Path to a library.
 QT_QTIFF_PLUGIN_DEBUG:FILEPATH=QT_QTIFF_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTIFF_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqtiff.so
+QT_QTIFF_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/imageformats/libqtiff.so
 
 //Path to a file.
 QT_QTMOTIF_INCLUDE_DIR:PATH=QT_QTMOTIF_INCLUDE_DIR-NOTFOUND
@@ -801,13 +792,13 @@ QT_QTMULTIMEDIA_LIBRARY_RELEASE:FILEPATH=QT_QTMULTIMEDIA_LIBRARY_RELEASE-NOTFOUN
 QT_QTNETWORK_INCLUDE_DIR:PATH=/usr/include/qt4/QtNetwork
 
 //The Qt QTNETWORK library
-QT_QTNETWORK_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtNetwork.so
+QT_QTNETWORK_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtNetwork.so
 
 //Path to a library.
 QT_QTNETWORK_LIBRARY_DEBUG:FILEPATH=QT_QTNETWORK_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTNETWORK_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtNetwork.so
+QT_QTNETWORK_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtNetwork.so
 
 //Path to a file.
 QT_QTNSPLUGIN_INCLUDE_DIR:PATH=QT_QTNSPLUGIN_INCLUDE_DIR-NOTFOUND
@@ -825,145 +816,145 @@ QT_QTNSPLUGIN_LIBRARY_RELEASE:FILEPATH=QT_QTNSPLUGIN_LIBRARY_RELEASE-NOTFOUND
 QT_QTOPENGL_INCLUDE_DIR:PATH=/usr/include/qt4/QtOpenGL
 
 //The Qt QTOPENGL library
-QT_QTOPENGL_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtOpenGL.so
+QT_QTOPENGL_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtOpenGL.so
 
 //Path to a library.
 QT_QTOPENGL_LIBRARY_DEBUG:FILEPATH=QT_QTOPENGL_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTOPENGL_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtOpenGL.so
+QT_QTOPENGL_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtOpenGL.so
 
 //Path to a library.
 QT_QTRACEGRAPHICSSYSTEM_PLUGIN_DEBUG:FILEPATH=QT_QTRACEGRAPHICSSYSTEM_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTRACEGRAPHICSSYSTEM_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/graphicssystems/libqtracegraphicssystem.so
+QT_QTRACEGRAPHICSSYSTEM_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/graphicssystems/libqtracegraphicssystem.so
 
 //Path to a library.
 QT_QTSCRIPTDBUS_PLUGIN_DEBUG:FILEPATH=QT_QTSCRIPTDBUS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTSCRIPTDBUS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/script/libqtscriptdbus.so
+QT_QTSCRIPTDBUS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/script/libqtscriptdbus.so
 
 //Path to a file.
 QT_QTSCRIPTTOOLS_INCLUDE_DIR:PATH=/usr/include/qt4/QtScriptTools
 
 //The Qt QTSCRIPTTOOLS library
-QT_QTSCRIPTTOOLS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtScriptTools.so
+QT_QTSCRIPTTOOLS_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtScriptTools.so
 
 //Path to a library.
 QT_QTSCRIPTTOOLS_LIBRARY_DEBUG:FILEPATH=QT_QTSCRIPTTOOLS_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTSCRIPTTOOLS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtScriptTools.so
+QT_QTSCRIPTTOOLS_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtScriptTools.so
 
 //Path to a file.
 QT_QTSCRIPT_INCLUDE_DIR:PATH=/usr/include/qt4/QtScript
 
 //The Qt QTSCRIPT library
-QT_QTSCRIPT_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtScript.so
+QT_QTSCRIPT_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtScript.so
 
 //Path to a library.
 QT_QTSCRIPT_LIBRARY_DEBUG:FILEPATH=QT_QTSCRIPT_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTSCRIPT_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtScript.so
+QT_QTSCRIPT_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtScript.so
 
 //Path to a file.
 QT_QTSQL_INCLUDE_DIR:PATH=/usr/include/qt4/QtSql
 
 //The Qt QTSQL library
-QT_QTSQL_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtSql.so
+QT_QTSQL_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtSql.so
 
 //Path to a library.
 QT_QTSQL_LIBRARY_DEBUG:FILEPATH=QT_QTSQL_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTSQL_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtSql.so
+QT_QTSQL_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtSql.so
 
 //Path to a file.
 QT_QTSVG_INCLUDE_DIR:PATH=/usr/include/qt4/QtSvg
 
 //The Qt QTSVG library
-QT_QTSVG_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtSvg.so
+QT_QTSVG_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtSvg.so
 
 //Path to a library.
 QT_QTSVG_LIBRARY_DEBUG:FILEPATH=QT_QTSVG_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTSVG_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtSvg.so
+QT_QTSVG_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtSvg.so
 
 //Path to a file.
 QT_QTTEST_INCLUDE_DIR:PATH=/usr/include/qt4/QtTest
 
 //The Qt QTTEST library
-QT_QTTEST_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtTest.so
+QT_QTTEST_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtTest.so
 
 //Path to a library.
 QT_QTTEST_LIBRARY_DEBUG:FILEPATH=QT_QTTEST_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTTEST_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtTest.so
+QT_QTTEST_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtTest.so
 
 //Path to a file.
 QT_QTUITOOLS_INCLUDE_DIR:PATH=/usr/include/qt4/QtUiTools
 
 //The Qt QTUITOOLS library
-QT_QTUITOOLS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtUiTools.a
+QT_QTUITOOLS_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtUiTools.a
 
 //Path to a library.
 QT_QTUITOOLS_LIBRARY_DEBUG:FILEPATH=QT_QTUITOOLS_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTUITOOLS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtUiTools.a
+QT_QTUITOOLS_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtUiTools.a
 
 //Path to a library.
 QT_QTWCODECS_PLUGIN_DEBUG:FILEPATH=QT_QTWCODECS_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTWCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqtwcodecs.so
+QT_QTWCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/codecs/libqtwcodecs.so
 
 //Path to a file.
 QT_QTWEBKIT_INCLUDE_DIR:PATH=/usr/include/qt4/QtWebKit
 
 //The Qt QTWEBKIT library
-QT_QTWEBKIT_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtWebKit.so
+QT_QTWEBKIT_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtWebKit.so
 
 //Path to a library.
 QT_QTWEBKIT_LIBRARY_DEBUG:FILEPATH=QT_QTWEBKIT_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTWEBKIT_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtWebKit.so
+QT_QTWEBKIT_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtWebKit.so
 
 //Path to a file.
 QT_QTXMLPATTERNS_INCLUDE_DIR:PATH=/usr/include/qt4/QtXmlPatterns
 
 //The Qt QTXMLPATTERNS library
-QT_QTXMLPATTERNS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+QT_QTXMLPATTERNS_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtXmlPatterns.so
 
 //Path to a library.
 QT_QTXMLPATTERNS_LIBRARY_DEBUG:FILEPATH=QT_QTXMLPATTERNS_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTXMLPATTERNS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+QT_QTXMLPATTERNS_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtXmlPatterns.so
 
 //Path to a file.
 QT_QTXML_INCLUDE_DIR:PATH=/usr/include/qt4/QtXml
 
 //The Qt QTXML library
-QT_QTXML_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtXml.so
+QT_QTXML_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libQtXml.so
 
 //Path to a library.
 QT_QTXML_LIBRARY_DEBUG:FILEPATH=QT_QTXML_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QTXML_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtXml.so
+QT_QTXML_LIBRARY_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/libQtXml.so
 
 //Path to a library.
 QT_QWEBVIEW_PLUGIN_DEBUG:FILEPATH=QT_QWEBVIEW_PLUGIN_DEBUG-NOTFOUND
 
 //Path to a library.
-QT_QWEBVIEW_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/designer/libqwebview.so
+QT_QWEBVIEW_PLUGIN_RELEASE:FILEPATH=/usr/lib/i386-linux-gnu/qt4/plugins/designer/libqwebview.so
 
 //Path to a library.
 QT_QWSTSLIBMOUSEHANDLER_PLUGIN_DEBUG:FILEPATH=QT_QWSTSLIBMOUSEHANDLER_PLUGIN_DEBUG-NOTFOUND
@@ -1002,13 +993,13 @@ QWT_INCLUDE_DIRS:PATH=/usr/include/qwt-qt4
 QWT_LIBRARIES:FILEPATH=/usr/lib/libqwt-qt4.so
 
 //Path to a library.
-SDLMAIN_LIBRARY:FILEPATH=/usr/lib/libSDLmain.a
+SDLMAIN_LIBRARY:FILEPATH=/usr/lib/i386-linux-gnu/libSDLmain.a
 
 //Path to a file.
 SDL_INCLUDE_DIR:PATH=/usr/include/SDL
 
 //Where the SDL Library can be found
-SDL_LIBRARY:STRING=/usr/lib/libSDLmain.a;/usr/lib/libSDL.so;-lpthread
+SDL_LIBRARY:STRING=/usr/lib/i386-linux-gnu/libSDLmain.a;/usr/lib/i386-linux-gnu/libSDL.so;-lpthread
 
 //Path to a file.
 SHD_INCLUDE_DIRS:PATH=SHD_INCLUDE_DIRS-NOTFOUND
@@ -1023,13 +1014,13 @@ SHELL:FILEPATH=/bin/sh
 SPHINX_EXECUTABLE:FILEPATH=SPHINX_EXECUTABLE-NOTFOUND
 
 //Path to a file.
-SWIG_DIR:PATH=/usr/share/swig1.3
+SWIG_DIR:PATH=/usr/share/swig2.0
 
 //Path to a program.
-SWIG_EXECUTABLE:FILEPATH=/usr/bin/swig
+SWIG_EXECUTABLE:FILEPATH=/usr/bin/swig2.0
 
 //Swig version
-SWIG_VERSION:STRING=1.3.40
+SWIG_VERSION:STRING=2.0.4
 
 //Path to a file.
 SYS_OSS_INCLUDE_DIR:PATH=SYS_OSS_INCLUDE_DIR-NOTFOUND
@@ -1038,10 +1029,10 @@ SYS_OSS_INCLUDE_DIR:PATH=SYS_OSS_INCLUDE_DIR-NOTFOUND
 TRY_SHM_VMCIRCBUF:BOOL=ON
 
 //Path to a file.
-UHD_INCLUDE_DIRS:PATH=/usr/local/include
+UHD_INCLUDE_DIRS:PATH=UHD_INCLUDE_DIRS-NOTFOUND
 
 //Path to a library.
-UHD_LIBRARIES:FILEPATH=/usr/local/lib/libuhd.so
+UHD_LIBRARIES:FILEPATH=UHD_LIBRARIES-NOTFOUND
 
 //Path to a program.
 XMLTO_EXECUTABLE:FILEPATH=XMLTO_EXECUTABLE-NOTFOUND
@@ -1053,16 +1044,10 @@ _atsc_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-atsc;
 _audio_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-audio;
 
 //Dependencies for the target
-_comedi_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-comedi;
-
-//Dependencies for the target
 _digital_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-digital;
 
 //Dependencies for the target
 _dvbt_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-dvbt;
-
-//Dependencies for the target
-_fcd_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-fcd;
 
 //Dependencies for the target
 _fft_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-fft;
@@ -1101,9 +1086,6 @@ _qtgui_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio
 _trellis_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-trellis;
 
 //Dependencies for the target
-_uhd_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-uhd;general;/usr/local/lib/libuhd.so;
-
-//Dependencies for the target
 _video_sdl_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-video-sdl;
 
 //Dependencies for the target
@@ -1116,10 +1098,7 @@ _wavelet_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnurad
 gnuradio-atsc_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;
 
 //Dependencies for the target
-gnuradio-audio_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/x86_64-linux-gnu/libasound.so;
-
-//Dependencies for the target
-gnuradio-comedi_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;comedi;
+gnuradio-audio_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/i386-linux-gnu/libasound.so;
 
 //Dependencies for the target
 gnuradio-core_LIB_DEPENDS:STATIC=general;gruel;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/libfftw3f.so;general;/usr/lib/libfftw3f_threads.so;general;rt;general;volk;
@@ -1131,9 +1110,6 @@ gnuradio-digital_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libbo
 gnuradio-dvbt_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;
 
 //Dependencies for the target
-gnuradio-fcd_LIB_DEPENDS:STATIC=general;gnuradio-core;general;gnuradio-audio;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/x86_64-linux-gnu/libusb-1.0.so;general;rt;
-
-//Dependencies for the target
 gnuradio-fft_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/libfftw3f.so;
 
 //Dependencies for the target
@@ -1143,16 +1119,13 @@ gnuradio-noaa_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost
 gnuradio-pager_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;
 
 //Dependencies for the target
-gnuradio-qtgui_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/x86_64-linux-gnu/libQtGui.so;general;/usr/lib/x86_64-linux-gnu/libQtCore.so;general;/usr/lib/libqwt-qt4.so;general;/usr/lib/libpython2.7.so;
+gnuradio-qtgui_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/i386-linux-gnu/libQtGui.so;general;/usr/lib/i386-linux-gnu/libQtCore.so;general;/usr/lib/libqwt-qt4.so;general;/usr/lib/libpython2.7.so;
 
 //Dependencies for the target
 gnuradio-trellis_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;
 
 //Dependencies for the target
-gnuradio-uhd_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/local/lib/libuhd.so;
-
-//Dependencies for the target
-gnuradio-video-sdl_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/libSDLmain.a;general;/usr/lib/libSDL.so;general;-lpthread;
+gnuradio-video-sdl_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;general;/usr/lib/i386-linux-gnu/libSDLmain.a;general;/usr/lib/i386-linux-gnu/libSDL.so;general;-lpthread;
 
 //Dependencies for the target
 gnuradio-vocoder_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/libboost_date_time-mt.so;general;/usr/lib/libboost_program_options-mt.so;general;/usr/lib/libboost_filesystem-mt.so;general;/usr/lib/libboost_system-mt.so;general;/usr/lib/libboost_thread-mt.so;
@@ -1176,7 +1149,7 @@ test-gnuradio-core_LIB_DEPENDS:STATIC=general;gnuradio-core;general;/usr/lib/lib
 volk_BINARY_DIR:STATIC=/home/katsikas/gnuradio/build/volk
 
 //Dependencies for the target
-volk_LIB_DEPENDS:STATIC=general;dl;general;/usr/lib/liborc-0.4.so;
+volk_LIB_DEPENDS:STATIC=general;dl;
 
 //Value Computed by CMake
 volk_SOURCE_DIR:STATIC=/home/katsikas/gnuradio/volk
@@ -1198,7 +1171,7 @@ ALSA_PKGCONF_INCLUDEDIR:INTERNAL=/usr/include
 ALSA_PKGCONF_INCLUDE_DIRS:INTERNAL=/usr/include/alsa
 ALSA_PKGCONF_LDFLAGS:INTERNAL=-lasound
 ALSA_PKGCONF_LDFLAGS_OTHER:INTERNAL=
-ALSA_PKGCONF_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+ALSA_PKGCONF_LIBDIR:INTERNAL=/usr/lib/i386-linux-gnu
 ALSA_PKGCONF_LIBRARIES:INTERNAL=asound
 ALSA_PKGCONF_LIBRARY_DIRS:INTERNAL=
 ALSA_PKGCONF_LIBS:INTERNAL=
@@ -1219,7 +1192,7 @@ ALSA_PKGCONF_STATIC_LIBS:INTERNAL=
 ALSA_PKGCONF_STATIC_LIBS_L:INTERNAL=
 ALSA_PKGCONF_STATIC_LIBS_OTHER:INTERNAL=
 ALSA_PKGCONF_STATIC_LIBS_PATHS:INTERNAL=
-ALSA_PKGCONF_VERSION:INTERNAL=1.0.24.1
+ALSA_PKGCONF_VERSION:INTERNAL=1.0.25
 ALSA_PKGCONF_alsa_INCLUDEDIR:INTERNAL=
 ALSA_PKGCONF_alsa_LIBDIR:INTERNAL=
 ALSA_PKGCONF_alsa_PREFIX:INTERNAL=
@@ -1249,7 +1222,7 @@ Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_LIBRARY_DIRS
 Boost_LIBRARY_DIRS-ADVANCED:INTERNAL=1
 //The library version string for boost libraries
-Boost_LIB_VERSION:INTERNAL=1_46_1
+Boost_LIB_VERSION:INTERNAL=1_48
 //Whether the Boost PROGRAM_OPTIONS library found
 Boost_PROGRAM_OPTIONS_FOUND:INTERNAL=ON
 //ADVANCED property for variable: Boost_PROGRAM_OPTIONS_LIBRARY
@@ -1283,7 +1256,7 @@ Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE
 Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //The version number for boost libraries
-Boost_VERSION:INTERNAL=104601
+Boost_VERSION:INTERNAL=104800
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_BUILD_TOOL
@@ -1297,7 +1270,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=2
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=8
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=5
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=7
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -1336,8 +1309,6 @@ CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_DETERMINE_CXX_ABI_COMPILED:INTERNAL=TRUE
 //Result of TRY_COMPILE
 CMAKE_DETERMINE_C_ABI_COMPILED:INTERNAL=TRUE
-//Path to cache edit program executable.
-CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/cmake-gui
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -1382,7 +1353,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=138
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=120
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1416,33 +1387,23 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 COMEDI_CFLAGS:INTERNAL=
 COMEDI_CFLAGS_I:INTERNAL=
 COMEDI_CFLAGS_OTHER:INTERNAL=
-COMEDI_FOUND:INTERNAL=1
-COMEDI_INCLUDEDIR:INTERNAL=/usr/include
-COMEDI_INCLUDE_DIRS:INTERNAL=
-COMEDI_LDFLAGS:INTERNAL=-lcomedi
-COMEDI_LDFLAGS_OTHER:INTERNAL=
-COMEDI_LIBDIR:INTERNAL=/usr/lib
-COMEDI_LIBRARIES:INTERNAL=comedi
-COMEDI_LIBRARY_DIRS:INTERNAL=
+COMEDI_FOUND:INTERNAL=
+COMEDI_INCLUDEDIR:INTERNAL=
+COMEDI_LIBDIR:INTERNAL=
 COMEDI_LIBS:INTERNAL=
 COMEDI_LIBS_L:INTERNAL=
 COMEDI_LIBS_OTHER:INTERNAL=
 COMEDI_LIBS_PATHS:INTERNAL=
-COMEDI_PREFIX:INTERNAL=/usr
+COMEDI_PREFIX:INTERNAL=
 COMEDI_STATIC_CFLAGS:INTERNAL=
 COMEDI_STATIC_CFLAGS_I:INTERNAL=
 COMEDI_STATIC_CFLAGS_OTHER:INTERNAL=
-COMEDI_STATIC_INCLUDE_DIRS:INTERNAL=
-COMEDI_STATIC_LDFLAGS:INTERNAL=-lcomedi
-COMEDI_STATIC_LDFLAGS_OTHER:INTERNAL=
 COMEDI_STATIC_LIBDIR:INTERNAL=
-COMEDI_STATIC_LIBRARIES:INTERNAL=comedi
-COMEDI_STATIC_LIBRARY_DIRS:INTERNAL=
 COMEDI_STATIC_LIBS:INTERNAL=
 COMEDI_STATIC_LIBS_L:INTERNAL=
 COMEDI_STATIC_LIBS_OTHER:INTERNAL=
 COMEDI_STATIC_LIBS_PATHS:INTERNAL=
-COMEDI_VERSION:INTERNAL=0.8.1
+COMEDI_VERSION:INTERNAL=
 COMEDI_comedilib_INCLUDEDIR:INTERNAL=
 COMEDI_comedilib_LIBDIR:INTERNAL=
 COMEDI_comedilib_PREFIX:INTERNAL=
@@ -1468,18 +1429,18 @@ ENABLE_GRC_cached:INTERNAL=ON
 ENABLE_GRUEL_cached:INTERNAL=ON
 ENABLE_GR_ATSC_cached:INTERNAL=ON
 ENABLE_GR_AUDIO_cached:INTERNAL=ON
-ENABLE_GR_COMEDI_cached:INTERNAL=ON
+ENABLE_GR_COMEDI_cached:INTERNAL=OFF
 ENABLE_GR_CORE_cached:INTERNAL=ON
 ENABLE_GR_DIGITAL_cached:INTERNAL=ON
 ENABLE_GR_DVBT_cached:INTERNAL=ON
-ENABLE_GR_FCD_cached:INTERNAL=ON
+ENABLE_GR_FCD_cached:INTERNAL=OFF
 ENABLE_GR_FFT_cached:INTERNAL=ON
 ENABLE_GR_NOAA_cached:INTERNAL=ON
 ENABLE_GR_PAGER_cached:INTERNAL=ON
 ENABLE_GR_QTGUI_cached:INTERNAL=ON
 ENABLE_GR_SHD_cached:INTERNAL=OFF
 ENABLE_GR_TRELLIS_cached:INTERNAL=ON
-ENABLE_GR_UHD_cached:INTERNAL=ON
+ENABLE_GR_UHD_cached:INTERNAL=OFF
 ENABLE_GR_UTILS_cached:INTERNAL=ON
 ENABLE_GR_VIDEO_SDL_cached:INTERNAL=ON
 ENABLE_GR_VOCODER_cached:INTERNAL=ON
@@ -1503,22 +1464,18 @@ FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_FFTW3F:INTERNAL=[/usr/lib/libfftw3f.so][/usr/include][v()]
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v()]
-//Details about finding ORC
-FIND_PACKAGE_MESSAGE_DETAILS_ORC:INTERNAL=[/usr/lib/liborc-0.4.so][/usr/include/orc-0.4][/usr/bin/orcc][v()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2.7][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.3()]
 //Details about finding PythonLibs
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/libpython2.7.so][/usr/include/python2.7][v()]
 //Details about finding Qt4
-FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/bin/moc-qt4][/usr/bin/rcc][/usr/include/qt4][/usr/lib/x86_64-linux-gnu][/usr/include/qt4/QtCore][/usr/lib/x86_64-linux-gnu/libQtCore.so][/usr/include/qt4/QtGui][/usr/lib/x86_64-linux-gnu/libQtGui.so][/usr/bin/uic-qt4][v4.7.4(4.2.0)]
+FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/bin/moc-qt4][/usr/bin/rcc][/usr/include/qt4][/usr/lib/i386-linux-gnu][/usr/include/qt4/QtCore][/usr/lib/i386-linux-gnu/libQtCore.so][/usr/include/qt4/QtGui][/usr/lib/i386-linux-gnu/libQtGui.so][/usr/bin/uic-qt4][v4.8.1(4.2.0)]
 //Details about finding Qwt
 FIND_PACKAGE_MESSAGE_DETAILS_Qwt:INTERNAL=[/usr/lib/libqwt-qt4.so][/usr/include/qwt-qt4][v()]
 //Details about finding SWIG
-FIND_PACKAGE_MESSAGE_DETAILS_SWIG:INTERNAL=[/usr/bin/swig][/usr/share/swig1.3][v1.3.40()]
+FIND_PACKAGE_MESSAGE_DETAILS_SWIG:INTERNAL=[/usr/bin/swig2.0][/usr/share/swig2.0][v2.0.4()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Details about finding UHD
-FIND_PACKAGE_MESSAGE_DETAILS_UHD:INTERNAL=[/usr/local/lib/libuhd.so][/usr/local/include][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 GNURADIO_CORE_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gruel/src/include;/home/katsikas/gnuradio/build/gruel/src/include;/usr/include;/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime;/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general;/home/katsikas/gnuradio/gnuradio-core/src/lib/general;/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen;/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen;/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter;/home/katsikas/gnuradio/gnuradio-core/src/lib/filter;/home/katsikas/gnuradio/gnuradio-core/src/lib/missing;/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon;/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi;/home/katsikas/gnuradio/gnuradio-core/src/lib/io;/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig;/home/katsikas/gnuradio/gnuradio-core/src/lib/swig;/home/katsikas/gnuradio/gnuradio-core/src/lib/hier
@@ -1546,7 +1503,7 @@ GR_PAGER_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-pager/lib
 GR_QTGUI_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-qtgui/include;/home/katsikas/gnuradio/gr-qtgui/lib;/home/katsikas/gnuradio/build/gr-qtgui/lib
 GR_SHD_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-shd/include;SHD_INCLUDE_DIRS-NOTFOUND
 GR_TRELLIS_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/build/gr-trellis/src/lib;/home/katsikas/gnuradio/gr-trellis/src/lib
-GR_UHD_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-uhd/include;/usr/local/include
+GR_UHD_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-uhd/include;UHD_INCLUDE_DIRS-NOTFOUND
 GR_VIDEO_SDL_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-video-sdl/src
 GR_VOCODER_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-vocoder/include
 GR_WAVELET_INCLUDE_DIRS:INTERNAL=/home/katsikas/gnuradio/gr-wavelet/lib;/home/katsikas/gnuradio/gr-wavelet/include/wavelet
@@ -1693,41 +1650,31 @@ HAVE_WARN_SIGN_COMPARE:INTERNAL=1
 //Have include windows.h
 HAVE_WINDOWS_H:INTERNAL=
 //libusb-1.0 found
-LIBUSB_FOUND:INTERNAL=TRUE
+LIBUSB_FOUND:INTERNAL=FALSE
 //ADVANCED property for variable: LIBUSB_INCLUDE_DIR
 LIBUSB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LIBUSB_LIBRARIES
 LIBUSB_LIBRARIES-ADVANCED:INTERNAL=1
-LIBUSB_PKG_CFLAGS:INTERNAL=-I/usr/include/libusb-1.0
+LIBUSB_PKG_CFLAGS:INTERNAL=
 LIBUSB_PKG_CFLAGS_I:INTERNAL=
 LIBUSB_PKG_CFLAGS_OTHER:INTERNAL=
-LIBUSB_PKG_FOUND:INTERNAL=1
-LIBUSB_PKG_INCLUDEDIR:INTERNAL=/usr/include
-LIBUSB_PKG_INCLUDE_DIRS:INTERNAL=/usr/include/libusb-1.0
-LIBUSB_PKG_LDFLAGS:INTERNAL=-lusb-1.0
-LIBUSB_PKG_LDFLAGS_OTHER:INTERNAL=
-LIBUSB_PKG_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-LIBUSB_PKG_LIBRARIES:INTERNAL=usb-1.0
-LIBUSB_PKG_LIBRARY_DIRS:INTERNAL=
+LIBUSB_PKG_FOUND:INTERNAL=
+LIBUSB_PKG_INCLUDEDIR:INTERNAL=
+LIBUSB_PKG_LIBDIR:INTERNAL=
 LIBUSB_PKG_LIBS:INTERNAL=
 LIBUSB_PKG_LIBS_L:INTERNAL=
 LIBUSB_PKG_LIBS_OTHER:INTERNAL=
 LIBUSB_PKG_LIBS_PATHS:INTERNAL=
-LIBUSB_PKG_PREFIX:INTERNAL=/usr
-LIBUSB_PKG_STATIC_CFLAGS:INTERNAL=-I/usr/include/libusb-1.0
+LIBUSB_PKG_PREFIX:INTERNAL=
+LIBUSB_PKG_STATIC_CFLAGS:INTERNAL=
 LIBUSB_PKG_STATIC_CFLAGS_I:INTERNAL=
 LIBUSB_PKG_STATIC_CFLAGS_OTHER:INTERNAL=
-LIBUSB_PKG_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/libusb-1.0
-LIBUSB_PKG_STATIC_LDFLAGS:INTERNAL=-lusb-1.0
-LIBUSB_PKG_STATIC_LDFLAGS_OTHER:INTERNAL=
 LIBUSB_PKG_STATIC_LIBDIR:INTERNAL=
-LIBUSB_PKG_STATIC_LIBRARIES:INTERNAL=usb-1.0
-LIBUSB_PKG_STATIC_LIBRARY_DIRS:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS_L:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS_OTHER:INTERNAL=
 LIBUSB_PKG_STATIC_LIBS_PATHS:INTERNAL=
-LIBUSB_PKG_VERSION:INTERNAL=1.0.8
+LIBUSB_PKG_VERSION:INTERNAL=
 LIBUSB_PKG_libusb-1.0_INCLUDEDIR:INTERNAL=
 LIBUSB_PKG_libusb-1.0_LIBDIR:INTERNAL=
 LIBUSB_PKG_libusb-1.0_PREFIX:INTERNAL=
@@ -1801,41 +1748,31 @@ PC_FFTW3F_STATIC_LIBS:INTERNAL=
 PC_FFTW3F_STATIC_LIBS_L:INTERNAL=
 PC_FFTW3F_STATIC_LIBS_OTHER:INTERNAL=
 PC_FFTW3F_STATIC_LIBS_PATHS:INTERNAL=
-PC_FFTW3F_VERSION:INTERNAL=3.2.2
+PC_FFTW3F_VERSION:INTERNAL=3.3
 PC_FFTW3F_fftw3f _INCLUDEDIR:INTERNAL=
 PC_FFTW3F_fftw3f _LIBDIR:INTERNAL=
 PC_FFTW3F_fftw3f _PREFIX:INTERNAL=
 PC_FFTW3F_fftw3f _VERSION:INTERNAL=
-PC_ORC_CFLAGS:INTERNAL=-I/usr/include/orc-0.4
+PC_ORC_CFLAGS:INTERNAL=
 PC_ORC_CFLAGS_I:INTERNAL=
 PC_ORC_CFLAGS_OTHER:INTERNAL=
-PC_ORC_FOUND:INTERNAL=1
-PC_ORC_INCLUDEDIR:INTERNAL=/usr/include/orc-0.4
-PC_ORC_INCLUDE_DIRS:INTERNAL=/usr/include/orc-0.4
-PC_ORC_LDFLAGS:INTERNAL=-lorc-0.4
-PC_ORC_LDFLAGS_OTHER:INTERNAL=
-PC_ORC_LIBDIR:INTERNAL=/usr/lib
-PC_ORC_LIBRARIES:INTERNAL=orc-0.4
-PC_ORC_LIBRARY_DIRS:INTERNAL=
+PC_ORC_FOUND:INTERNAL=
+PC_ORC_INCLUDEDIR:INTERNAL=
+PC_ORC_LIBDIR:INTERNAL=
 PC_ORC_LIBS:INTERNAL=
 PC_ORC_LIBS_L:INTERNAL=
 PC_ORC_LIBS_OTHER:INTERNAL=
 PC_ORC_LIBS_PATHS:INTERNAL=
-PC_ORC_PREFIX:INTERNAL=/usr
-PC_ORC_STATIC_CFLAGS:INTERNAL=-I/usr/include/orc-0.4
+PC_ORC_PREFIX:INTERNAL=
+PC_ORC_STATIC_CFLAGS:INTERNAL=
 PC_ORC_STATIC_CFLAGS_I:INTERNAL=
 PC_ORC_STATIC_CFLAGS_OTHER:INTERNAL=
-PC_ORC_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/orc-0.4
-PC_ORC_STATIC_LDFLAGS:INTERNAL=-lorc-0.4;-lm;-lrt
-PC_ORC_STATIC_LDFLAGS_OTHER:INTERNAL=
 PC_ORC_STATIC_LIBDIR:INTERNAL=
-PC_ORC_STATIC_LIBRARIES:INTERNAL=orc-0.4;m;rt
-PC_ORC_STATIC_LIBRARY_DIRS:INTERNAL=
 PC_ORC_STATIC_LIBS:INTERNAL=
 PC_ORC_STATIC_LIBS_L:INTERNAL=
 PC_ORC_STATIC_LIBS_OTHER:INTERNAL=
 PC_ORC_STATIC_LIBS_PATHS:INTERNAL=
-PC_ORC_VERSION:INTERNAL=0.4.14
+PC_ORC_VERSION:INTERNAL=
 PC_ORC_orc-0.4 > 0.4.11_INCLUDEDIR:INTERNAL=
 PC_ORC_orc-0.4 > 0.4.11_LIBDIR:INTERNAL=
 PC_ORC_orc-0.4 > 0.4.11_PREFIX:INTERNAL=
@@ -1888,36 +1825,26 @@ PC_SHD_shd_INCLUDEDIR:INTERNAL=
 PC_SHD_shd_LIBDIR:INTERNAL=
 PC_SHD_shd_PREFIX:INTERNAL=
 PC_SHD_shd_VERSION:INTERNAL=
-PC_UHD_CFLAGS:INTERNAL=-I/usr/local/include
+PC_UHD_CFLAGS:INTERNAL=
 PC_UHD_CFLAGS_I:INTERNAL=
 PC_UHD_CFLAGS_OTHER:INTERNAL=
-PC_UHD_FOUND:INTERNAL=1
-PC_UHD_INCLUDEDIR:INTERNAL=/usr/local/include
-PC_UHD_INCLUDE_DIRS:INTERNAL=/usr/local/include
-PC_UHD_LDFLAGS:INTERNAL=-L/usr/local/lib;-luhd
-PC_UHD_LDFLAGS_OTHER:INTERNAL=
-PC_UHD_LIBDIR:INTERNAL=/usr/local/lib
-PC_UHD_LIBRARIES:INTERNAL=uhd
-PC_UHD_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+PC_UHD_FOUND:INTERNAL=
+PC_UHD_INCLUDEDIR:INTERNAL=
+PC_UHD_LIBDIR:INTERNAL=
 PC_UHD_LIBS:INTERNAL=
 PC_UHD_LIBS_L:INTERNAL=
 PC_UHD_LIBS_OTHER:INTERNAL=
 PC_UHD_LIBS_PATHS:INTERNAL=
-PC_UHD_PREFIX:INTERNAL=/usr/local
-PC_UHD_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
+PC_UHD_PREFIX:INTERNAL=
+PC_UHD_STATIC_CFLAGS:INTERNAL=
 PC_UHD_STATIC_CFLAGS_I:INTERNAL=
 PC_UHD_STATIC_CFLAGS_OTHER:INTERNAL=
-PC_UHD_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-PC_UHD_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-luhd
-PC_UHD_STATIC_LDFLAGS_OTHER:INTERNAL=
 PC_UHD_STATIC_LIBDIR:INTERNAL=
-PC_UHD_STATIC_LIBRARIES:INTERNAL=uhd
-PC_UHD_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
 PC_UHD_STATIC_LIBS:INTERNAL=
 PC_UHD_STATIC_LIBS_L:INTERNAL=
 PC_UHD_STATIC_LIBS_OTHER:INTERNAL=
 PC_UHD_STATIC_LIBS_PATHS:INTERNAL=
-PC_UHD_VERSION:INTERNAL=003.004.001-111-g869e5ff1
+PC_UHD_VERSION:INTERNAL=
 PC_UHD_uhd_INCLUDEDIR:INTERNAL=
 PC_UHD_uhd_LIBDIR:INTERNAL=
 PC_UHD_uhd_PREFIX:INTERNAL=
@@ -1958,12 +1885,10 @@ QT_DESIGNER_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_DOC_DIR
 QT_DOC_DIR-ADVANCED:INTERNAL=1
 QT_HEADERS_DIR:INTERNAL=/usr/include/qt4
-//ADVANCED property for variable: QT_IMPORTS_DIR
-QT_IMPORTS_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_LIBRARY_DIR
 QT_LIBRARY_DIR-ADVANCED:INTERNAL=1
 //Qt library dir
-QT_LIBRARY_DIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+QT_LIBRARY_DIR:INTERNAL=/usr/lib/i386-linux-gnu
 //ADVANCED property for variable: QT_LINGUIST_EXECUTABLE
 QT_LINGUIST_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_LRELEASE_EXECUTABLE
@@ -2357,15 +2282,15 @@ Q_WS_QWS:INTERNAL=
 Q_WS_WIN:INTERNAL=
 //Have symbol Q_WS_X11
 Q_WS_X11:INTERNAL=1
-SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDLmain.a;/usr/lib/libSDL.so;-lpthread
+SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/i386-linux-gnu/libSDLmain.a;/usr/lib/i386-linux-gnu/libSDL.so;-lpthread
 //ADVANCED property for variable: SHD_INCLUDE_DIRS
 SHD_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SHD_LIBRARIES
 SHD_LIBRARIES-ADVANCED:INTERNAL=1
 //CHECK_TYPE_SIZE: sizeof(void*[8])
-SIZEOF_CPU:INTERNAL=64
+SIZEOF_CPU:INTERNAL=32
 //CHECK_TYPE_SIZE: sizeof(void*)
-SIZEOF_VOID_P:INTERNAL=8
+SIZEOF_VOID_P:INTERNAL=4
 //ADVANCED property for variable: SPHINX_EXECUTABLE
 SPHINX_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SYS_OSS_INCLUDE_DIR
@@ -2409,16 +2334,16 @@ __pkg_config_checked_PC_PORTAUDIO:INTERNAL=1
 __pkg_config_checked_PC_SHD:INTERNAL=1
 __pkg_config_checked_PC_UHD:INTERNAL=1
 __pkg_config_checked__JACK:INTERNAL=1
-_gr_disabled_components:INTERNAL=sphinx;gr-shd
-_gr_enabled_components:INTERNAL=python-support;testing-support;volk;doxygen;gruel;gnuradio-core;gnuradio-companion;gr-fft;gr-atsc;gr-dvbt;gr-audio;gr-comedi;gr-digital;gr-noaa;gr-pager;gr-qtgui;gr-trellis;gr-uhd;gr-utils;gr-video-sdl;gr-vocoder;gr-fcd;gr-wavelet;gr-wxgui
+_gr_disabled_components:INTERNAL=sphinx;gr-comedi;gr-uhd;gr-shd;gr-fcd
+_gr_enabled_components:INTERNAL=python-support;testing-support;volk;doxygen;gruel;gnuradio-core;gnuradio-companion;gr-fft;gr-atsc;gr-dvbt;gr-audio;gr-digital;gr-noaa;gr-pager;gr-qtgui;gr-trellis;gr-utils;gr-video-sdl;gr-vocoder;gr-wavelet;gr-wxgui
 //Test have_funsafe_math_optimizations
 have_funsafe_math_optimizations:INTERNAL=1
 //Test have_m32
-have_m32:INTERNAL=
+have_m32:INTERNAL=1
 //Test have_m3dnow
 have_m3dnow:INTERNAL=1
 //Test have_m64
-have_m64:INTERNAL=1
+have_m64:INTERNAL=
 //Test have_maltivec
 have_maltivec:INTERNAL=
 //Test have_mavx

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__constellation__receiver__cb" kind="class" prot="public">
     <compoundname>digital_constellation_receiver_cb</compoundname>
     <includes refid="digital__constellation__receiver__cb_8h" local="no">digital_constellation_receiver_cb.h</includes>
@@ -200,9 +200,9 @@ The constructor also chooses which phase detector and decision maker to use in t
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__constellation__receiver__cb_1a1e95698688ce7d95f489834e14f570fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="digital__constellation__receiver__cb_8h_1ab8942c1d42e816da49c5db0ef2381225" kindref="member">digital_constellation_receiver_cb_sptr</ref></type>
-        <definition>DIGITAL_API digital_constellation_receiver_cb_sptr digital_make_constellation_receiver_cb</definition>
+      <memberdef kind="friend" id="classdigital__constellation__receiver__cb_1a3ee222febdb2f54cd1c1f4de3868f084" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="digital__constellation__receiver__cb_8h_1ab8942c1d42e816da49c5db0ef2381225" kindref="member">digital_constellation_receiver_cb_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_constellation_receiver_cb_sptr digital_make_constellation_receiver_cb</definition>
         <argsstring>(digital_constellation_sptr constell, float loop_bw, float fmin, float fmax)</argsstring>
         <name>digital_make_constellation_receiver_cb</name>
         <param>
@@ -243,7 +243,7 @@ The constructor also chooses which phase detector and decision maker to use in t
       <member refid="classdigital__constellation__receiver__cb_1a6ca026c06e983dbb73263f13614e6e07" prot="private" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>d_dl_idx</name></member>
       <member refid="classdigital__constellation__receiver__cb_1af7830ee615fe7851dfb4fa90fe62d77a" prot="private" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>d_M</name></member>
       <member refid="classdigital__constellation__receiver__cb_1a9abc9ee651b5dc5263ff5fd66a5e13b8" prot="protected" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>digital_constellation_receiver_cb</name></member>
-      <member refid="classdigital__constellation__receiver__cb_1a1e95698688ce7d95f489834e14f570fe" prot="private" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>digital_make_constellation_receiver_cb</name></member>
+      <member refid="classdigital__constellation__receiver__cb_1a3ee222febdb2f54cd1c1f4de3868f084" prot="private" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>digital_make_constellation_receiver_cb</name></member>
       <member refid="classdigital__constellation__receiver__cb_1a06c10301f2d1c0fe7ea9c13701fe898a" prot="private" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>DLLEN</name></member>
       <member refid="classdigital__constellation__receiver__cb_1a8243ab960b918764374270ef798173f0" prot="public" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>general_work</name></member>
       <member refid="classdigital__constellation__receiver__cb_1a6209a7fcfe993273b9cd1eea28e84929" prot="protected" virt="non-virtual"><scope>digital_constellation_receiver_cb</scope><name>phase_error_tracking</name></member>

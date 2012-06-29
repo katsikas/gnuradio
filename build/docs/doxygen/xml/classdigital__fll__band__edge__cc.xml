@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__fll__band__edge__cc" kind="class" prot="public">
     <compoundname>digital_fll_band_edge_cc</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -46,7 +46,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="106" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__fll__band__edge__cc_1a3a95eba897f26e5a8d85df20f6d6da64" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_fll_band_edge_cc::d_taps_lower</definition>
         <argsstring></argsstring>
         <name>d_taps_lower</name>
@@ -59,7 +59,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="108" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__fll__band__edge__cc_1a38e73c0da37f5294bbce687d96c7c9c9" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_fll_band_edge_cc::d_taps_upper</definition>
         <argsstring></argsstring>
         <name>d_taps_upper</name>
@@ -87,7 +87,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__fll__band__edge__cc_1a0cf093022a5ef839fdb4308261c78594" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_fll_band_edge_cc_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_fll_band_edge_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_fll_band_edge_cc_sptr digital_make_fll_band_edge_cc</definition>
         <argsstring>(float samps_per_sym, float rolloff, int filter_size, float bandwidth)</argsstring>
         <name>digital_make_fll_band_edge_cc</name>
@@ -205,7 +205,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="120"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__fll__band__edge__cc_1adff25f647b1c4b2df941fd28c330c314" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_fll_band_edge_cc::design_filter</definition>
         <argsstring>(float samps_per_sym, float rolloff, int filter_size)</argsstring>
         <name>design_filter</name>
@@ -267,7 +267,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="133"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__fll__band__edge__cc_1a715ad2b58ed72215e9c18dded5e795fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_fll_band_edge_cc::set_samples_per_symbol</definition>
         <argsstring>(float sps)</argsstring>
         <name>set_samples_per_symbol</name>
@@ -292,7 +292,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="149"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__fll__band__edge__cc_1a21e095d982156aa20d6520c3a727792f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_fll_band_edge_cc::set_rolloff</definition>
         <argsstring>(float rolloff)</argsstring>
         <name>set_rolloff</name>
@@ -317,7 +317,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="166"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__fll__band__edge__cc_1aa8636daf360b3d8d568706cd91bcba0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_fll_band_edge_cc::set_filter_size</definition>
         <argsstring>(int filter_size)</argsstring>
         <name>set_filter_size</name>
@@ -381,7 +381,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="202"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__fll__band__edge__cc_1acadafb1a31af91565c94c0d579337a45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_fll_band_edge_cc::print_taps</definition>
         <argsstring>()</argsstring>
         <name>print_taps</name>
@@ -404,11 +404,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -425,247 +425,112 @@
     <detaileddescription>
 <para>The frequency lock loop derives a band-edge filter that covers the upper and lower bandwidths of a digitally-modulated signal. The bandwidth range is determined by the excess bandwidth (e.g., rolloff factor) of the modulated signal. The placement in frequency of the band-edges is determined by the oversampling ratio (number of samples per symbol) and the excess bandwidth. The size of the filters should be fairly large so as to average over a number of symbols.</para><para>The FLL works by filtering the upper and lower band edges into x_u(t) and x_l(t), respectively. These are combined to form cc(t) = x_u(t) + x_l(t) and ss(t) = x_u(t) - x_l(t). Combining these to form the signal e(t) = Re{cc(t) \times ss(t)^*} (where ^* is the complex conjugate) provides an error signal at the DC term that is directly proportional to the carrier frequency. We then make a second-order loop using the error signal that is the running average of e(t).</para><para>In practice, the above equation can be simplified by just comparing the absolute value squared of the output of both filters: abs(x_l(t))^2 - abs(x_u(t))^2 = norm(x_l(t)) - norm(x_u(t)).</para><para>In theory, the band-edge filter is the derivative of the matched filter in frequency, (H_be(f) = frac{H(f)}{df}). In practice, this comes down to a quarter sine wave at the point of the matched filter&apos;s rolloff (if it&apos;s a raised-cosine, the derivative of a cosine is a sine). Extend this sine by another quarter wave to make a half wave around the band-edges is equivalent in time to the sum of two sinc functions. The baseband filter fot the band edges is therefore derived from this sum of sincs. The band edge filters are then just the baseband signal modulated to the correct place in frequency. All of these calculations are done in the &apos;design_filter&apos; function.</para><para>Note: We use FIR filters here because the filters have to have a flat phase response over the entire frequency range to allow their comparisons to be valid.</para><para>It is very important that the band edge filters be the derivatives of the pulse shaping filter, and that they be linear phase. Otherwise, the variance of the error will be very large. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2198">
+      <node id="1291">
         <label>digital_fll_band_edge_cc</label>
         <link refid="classdigital__fll__band__edge__cc"/>
-        <childnode refid="2199" relation="public-inheritance">
+        <childnode refid="1292" relation="public-inheritance">
         </childnode>
-        <childnode refid="2204" relation="public-inheritance">
+        <childnode refid="1297" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2202">
+      <node id="1295">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2203" relation="public-inheritance">
+        <childnode refid="1296" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2199">
+      <node id="1292">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2200" relation="public-inheritance">
+        <childnode refid="1293" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2200">
+      <node id="1293">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2201" relation="public-inheritance">
+        <childnode refid="1294" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2203">
+      <node id="1296">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2204">
+      <node id="1297">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="2201">
+      <node id="1294">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2202" relation="public-inheritance">
+        <childnode refid="1295" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2226">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="2220" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2219">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2220" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2231">
-        <label>T</label>
-      </node>
-      <node id="2205">
+      <node id="1298">
         <label>digital_fll_band_edge_cc</label>
         <link refid="classdigital__fll__band__edge__cc"/>
-        <childnode refid="2206" relation="public-inheritance">
+        <childnode refid="1299" relation="public-inheritance">
         </childnode>
-        <childnode refid="2232" relation="public-inheritance">
-        </childnode>
-        <childnode refid="2233" relation="usage">
-          <edgelabel>d_taps_upper</edgelabel>
-          <edgelabel>d_taps_lower</edgelabel>
+        <childnode refid="1308" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2209">
+      <node id="1302">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2210" relation="public-inheritance">
+        <childnode refid="1303" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2206">
+      <node id="1299">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2207" relation="public-inheritance">
+        <childnode refid="1300" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2220">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="2221" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="2228">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="2223">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="2207">
+      <node id="1300">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2208" relation="public-inheritance">
-        </childnode>
-        <childnode refid="2216" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="1301" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2216">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2217" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2230">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2231" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2217">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="2218" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="2227" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="2229" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="2224">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="2225" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2233">
-        <label>std::vector&lt; gr_complex &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="2234" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2211">
+      <node id="1304">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2212" relation="usage">
+        <childnode refid="1305" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2222">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="2223" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="2224" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="2226" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="2215">
+      <node id="1307">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2218">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="2219" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2210">
+      <node id="1303">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2234">
-        <label>std::complex</label>
-      </node>
-      <node id="2221">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2222" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2225">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="2227">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="2228" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="2232">
+      <node id="1308">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="2229">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="2230" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2212">
+      <node id="1305">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="2213" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="2208">
+      <node id="1301">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2209" relation="public-inheritance">
+        <childnode refid="1302" relation="public-inheritance">
         </childnode>
-        <childnode refid="2211" relation="usage">
+        <childnode refid="1304" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2214" relation="usage">
+        <childnode refid="1306" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2213">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="2214">
+      <node id="1306">
         <label>std::string</label>
-        <childnode refid="2215" relation="public-inheritance">
+        <childnode refid="1307" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -760,7 +625,7 @@
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_is_unaligned</name></member>
       <member refid="classgri__control__loop_1a35b2e90ed2b8a1a757f550e76d4a81c8" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_loop_bandwidth</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_output_signature</name></member>
       <member refid="classgri__control__loop_1a6c8bf0e6f168c23ab16afa6c33f4a1cb" prot="public" virt="non-virtual"><scope>digital_fll_band_edge_cc</scope><name>set_phase</name></member>

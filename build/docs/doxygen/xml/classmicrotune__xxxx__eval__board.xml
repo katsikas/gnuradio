@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classmicrotune__xxxx__eval__board" kind="class" prot="public">
     <compoundname>microtune_xxxx_eval_board</compoundname>
     <derivedcompoundref refid="classmicrotune__4702__eval__board" prot="public" virt="non-virtual">microtune_4702_eval_board</derivedcompoundref>
@@ -92,7 +92,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_xxxx_eval_board.h" line="47"/>
       </memberdef>
       <memberdef kind="function" id="classmicrotune__xxxx__eval__board_1adb0dc9f8e36e6960d92993f46a6c6909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void microtune_xxxx_eval_board::set_RF_AGC_voltage</definition>
         <argsstring>(float volts)</argsstring>
         <name>set_RF_AGC_voltage</name>
@@ -109,7 +109,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_xxxx_eval_board.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classmicrotune__xxxx__eval__board_1aa013afa53992233db6020ee1e973f486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void microtune_xxxx_eval_board::set_IF_AGC_voltage</definition>
         <argsstring>(float volts)</argsstring>
         <name>set_IF_AGC_voltage</name>
@@ -126,7 +126,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_xxxx_eval_board.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classmicrotune__xxxx__eval__board_1a309de3cd072b0414f2f76498d1536cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void microtune_xxxx_eval_board::set_AGC</definition>
         <argsstring>(float value_0_1000)=0</argsstring>
         <name>set_AGC</name>
@@ -214,7 +214,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classmicrotune__xxxx__eval__board_1a954b8910ed7f25102a4184363520e6ef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void microtune_xxxx_eval_board::write_dac</definition>
         <argsstring>(int which, int value)</argsstring>
         <name>write_dac</name>
@@ -235,7 +235,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_xxxx_eval_board.h" line="89"/>
       </memberdef>
       <memberdef kind="function" id="classmicrotune__xxxx__eval__board_1ad851b7f020220283207210ae0d547116" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void microtune_xxxx_eval_board::write_both_dacs</definition>
         <argsstring>(int val0, int val1)</argsstring>
         <name>write_both_dacs</name>
@@ -261,60 +261,60 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11290">
+      <node id="9515">
         <label>microtune_4937_eval_board</label>
         <link refid="classmicrotune__4937__eval__board"/>
-        <childnode refid="11288" relation="public-inheritance">
+        <childnode refid="9513" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11288">
+      <node id="9513">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
       </node>
-      <node id="11289">
+      <node id="9514">
         <label>microtune_4702_eval_board</label>
         <link refid="classmicrotune__4702__eval__board"/>
-        <childnode refid="11288" relation="public-inheritance">
+        <childnode refid="9513" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="11292">
+      <node id="9517">
         <label>microtune_xxxx</label>
         <link refid="classmicrotune__xxxx"/>
       </node>
-      <node id="11291">
+      <node id="9516">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
-        <childnode refid="11292" relation="usage">
+        <childnode refid="9517" relation="usage">
           <edgelabel>d_tuner</edgelabel>
         </childnode>
-        <childnode refid="11293" relation="usage">
+        <childnode refid="9518" relation="usage">
           <edgelabel>d_i2c</edgelabel>
         </childnode>
-        <childnode refid="11295" relation="usage">
+        <childnode refid="9520" relation="usage">
           <edgelabel>d_ppio</edgelabel>
         </childnode>
       </node>
-      <node id="11293">
+      <node id="9518">
         <label>boost::shared_ptr&lt; i2c &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11294" relation="usage">
+        <childnode refid="9519" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="11294">
+      <node id="9519">
         <label>i2c</label>
         <link refid="classi2c"/>
       </node>
-      <node id="11296">
+      <node id="9521">
         <label>ppio</label>
         <link refid="classppio"/>
       </node>
-      <node id="11295">
+      <node id="9520">
         <label>boost::shared_ptr&lt; ppio &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11296" relation="usage">
+        <childnode refid="9521" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>

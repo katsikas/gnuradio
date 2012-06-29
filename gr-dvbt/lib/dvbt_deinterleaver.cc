@@ -52,8 +52,13 @@ dvbt_deinterleaver::work (int noutput_items,
   	dvbt_mpeg_packet_rs_encoded *out = (dvbt_mpeg_packet_rs_encoded *) output_items[0];
 
   	for (int i = 0; i < noutput_items; i++){
+		//printf("deinterleave packet number = %d \n",i);
     		d_deinterleaver.deinterleave (out[i], in[i]);
   	}
+
+	for (int i = 0; i < noutput_items; i++){
+                printf("out[0] = %d %d %d %d %d %d %d\n",out[i].data[0],out[i].data[1],out[i].data[2],out[i].data[3],out[i].data[4],out[i].data[5],out[i].data[6]);
+        }
 
   	return noutput_items;
 }

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__rotator" kind="class" prot="public">
     <compoundname>gr_rotator</compoundname>
     <includes refid="gr__rotator_8h" local="no">gr_rotator.h</includes>
@@ -59,7 +59,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_rotator.h" line="35" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_rotator.h" bodystart="35" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classgr__rotator_1aa518f379c0b0786a3ef7c7f857836de8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_rotator::set_phase</definition>
         <argsstring>(gr_complex phase)</argsstring>
         <name>set_phase</name>
@@ -76,7 +76,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_rotator.h" line="37" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_rotator.h" bodystart="37" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="classgr__rotator_1a103c9129edbc45c9932fa90baf28dc58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_rotator::set_phase_incr</definition>
         <argsstring>(gr_complex incr)</argsstring>
         <name>set_phase_incr</name>
@@ -114,19 +114,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="9361">
-        <label>std::complex&lt; float &gt;</label>
-      </node>
-      <node id="9360">
-        <label>gr_rotator</label>
-        <link refid="classgr__rotator"/>
-        <childnode refid="9361" relation="usage">
-          <edgelabel>d_phase_incr</edgelabel>
-          <edgelabel>d_phase</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_rotator.h" line="29" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_rotator.h" bodystart="29" bodyend="52"/>
     <listofallmembers>
       <member refid="classgr__rotator_1a4adf9451a3ac8584193cbe38cf28deb0" prot="private" virt="non-virtual"><scope>gr_rotator</scope><name>d_counter</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__oscope__guts" kind="class" prot="public">
     <compoundname>gr_oscope_guts</compoundname>
     <includes refid="gr__oscope__guts_8h" local="no">gr_oscope_guts.h</includes>
@@ -337,7 +337,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="74"/>
       </memberdef>
       <memberdef kind="function" id="classgr__oscope__guts_1a23b61aa4afc936f4df4244ecdb12eaf9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_oscope_guts::trigger_changed</definition>
         <argsstring>()</argsstring>
         <name>trigger_changed</name>
@@ -350,7 +350,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="76"/>
       </memberdef>
       <memberdef kind="function" id="classgr__oscope__guts_1a2c6de63332b22cd167d55f444be1789d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_oscope_guts::update_rate_or_decimation_changed</definition>
         <argsstring>()</argsstring>
         <name>update_rate_or_decimation_changed</name>
@@ -376,7 +376,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="78"/>
       </memberdef>
       <memberdef kind="function" id="classgr__oscope__guts_1a3a3dcfe85f2f4964dd6c588c510b5cdc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_oscope_guts::write_output_records</definition>
         <argsstring>()</argsstring>
         <name>write_output_records</name>
@@ -389,7 +389,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="79"/>
       </memberdef>
       <memberdef kind="function" id="classgr__oscope__guts_1ac92a6cbd369c2b58068913e6a6c5be49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_oscope_guts::enter_hold_off</definition>
         <argsstring>()</argsstring>
         <name>enter_hold_off</name>
@@ -402,7 +402,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="81"/>
       </memberdef>
       <memberdef kind="function" id="classgr__oscope__guts_1a665ac00f3f52e7db941723319bf4eb00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_oscope_guts::enter_look_for_trigger</definition>
         <argsstring>()</argsstring>
         <name>enter_look_for_trigger</name>
@@ -415,7 +415,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="82"/>
       </memberdef>
       <memberdef kind="function" id="classgr__oscope__guts_1acc6ff0ea29b7fe6b8810546fa6718982" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_oscope_guts::enter_post_trigger</definition>
         <argsstring>()</argsstring>
         <name>enter_post_trigger</name>
@@ -464,7 +464,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="88"/>
       </memberdef>
       <memberdef kind="function" id="classgr__oscope__guts_1a36c880bef593417876568a7264bc07c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_oscope_guts::process_sample</definition>
         <argsstring>(const float *channel_data)</argsstring>
         <name>process_sample</name>
@@ -751,50 +751,6 @@
 <para>guts of oscilloscope trigger and buffer module </para>    </briefdescription>
     <detaileddescription>
 <para>This module processes sets of samples provided the <computeroutput>process_sample</computeroutput> method. When appropriate given the updateRate, sampleRate and trigger conditions, process_sample will periodically write output records of captured data to output_fd. For each trigger event, nchannels records will be written. Each record consists of get_samples_per_output_record binary floats. The trigger instant occurs at the 1/2 way point in the buffer. Thus, output records consist of 50% pre-trigger data and 50% post-trigger data. </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="8267">
-        <label>gr_oscope_guts</label>
-        <link refid="classgr__oscope__guts"/>
-        <childnode refid="8268" relation="usage">
-          <edgelabel>d_msgq</edgelabel>
-        </childnode>
-      </node>
-      <node id="8271">
-        <label>boost::shared_ptr&lt; gr_message &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="8272" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="8268">
-        <label>boost::shared_ptr&lt; gr_msg_queue &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="8269" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="8272">
-        <label>gr_message</label>
-        <link refid="classgr__message"/>
-        <childnode refid="8271" relation="usage">
-          <edgelabel>d_next</edgelabel>
-        </childnode>
-      </node>
-      <node id="8270">
-        <label>gr_msg_handler</label>
-        <link refid="classgr__msg__handler"/>
-      </node>
-      <node id="8269">
-        <label>gr_msg_queue</label>
-        <link refid="classgr__msg__queue"/>
-        <childnode refid="8270" relation="public-inheritance">
-        </childnode>
-        <childnode refid="8271" relation="usage">
-          <edgelabel>d_head</edgelabel>
-          <edgelabel>d_tail</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" line="44" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_oscope_guts.h" bodystart="44" bodyend="121"/>
     <listofallmembers>
       <member refid="classgr__oscope__guts_1abd8669b734f4cbad968cf70fa4374a3e" prot="private" virt="non-virtual"><scope>gr_oscope_guts</scope><name>d_buffer</name></member>

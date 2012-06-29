@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -616,8 +613,8 @@ gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnurad
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libQtGui.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libQtCore.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/i386-linux-gnu/libQtGui.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/i386-linux-gnu/libQtCore.so
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libqwt-qt4.so
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libpython2.7.so
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0

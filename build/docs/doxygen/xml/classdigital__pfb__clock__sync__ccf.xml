@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__pfb__clock__sync__ccf" kind="class" prot="public">
     <compoundname>digital_pfb_clock_sync_ccf</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -123,7 +123,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="187" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__pfb__clock__sync__ccf_1ad3393da397f72d023fe2f8ba2d71d78b" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; gr_fir_ccf * &gt;</type>
+        <type>std::vector&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf*&gt; digital_pfb_clock_sync_ccf::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -136,7 +136,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="188" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__pfb__clock__sync__ccf_1ae41a1eb5a95a238a68acafd03e5262fd" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; gr_fir_ccf * &gt;</type>
+        <type>std::vector&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf*&gt; digital_pfb_clock_sync_ccf::d_diff_filters</definition>
         <argsstring></argsstring>
         <name>d_diff_filters</name>
@@ -149,7 +149,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="189" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__pfb__clock__sync__ccf_1ad149793c2508a1716356e0608be28852" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;float&gt; &gt; digital_pfb_clock_sync_ccf::d_taps</definition>
         <argsstring></argsstring>
         <name>d_taps</name>
@@ -162,7 +162,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="190" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__pfb__clock__sync__ccf_1a70e84ff04d7f8c8da1b0f3ba61d48d8b" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;float&gt; &gt; digital_pfb_clock_sync_ccf::d_dtaps</definition>
         <argsstring></argsstring>
         <name>d_dtaps</name>
@@ -294,7 +294,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__pfb__clock__sync__ccf_1aba31291f95b36e7097a770a7923739e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_pfb_clock_sync_ccf_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_pfb_clock_sync_ccf_sptr</ref></type>
         <definition>DIGITAL_API digital_pfb_clock_sync_ccf_sptr digital_make_pfb_clock_sync_ccf</definition>
         <argsstring>(double sps, float loop_bw, const std::vector&lt; float &gt; &amp;taps, unsigned int filter_size, float init_phase, float max_rate_deviation, int osps)</argsstring>
         <name>digital_make_pfb_clock_sync_ccf</name>
@@ -307,7 +307,7 @@
           <declname>loop_bw</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -348,7 +348,7 @@
 <parametername>taps</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>(<ref refid="classstd_1_1vector" kindref="compound">vector&lt;int&gt;</ref>) The filter taps. </para></parameterdescription>
+<para>(vector&lt;int&gt;) The filter taps. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -400,7 +400,7 @@
           <declname>loop_bw</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
@@ -428,16 +428,16 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="211"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1afedb8dde3d7a2daee301273596c7ad54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::create_diff_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;newtaps, std::vector&lt; float &gt; &amp;difftaps)</argsstring>
         <name>create_diff_taps</name>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>newtaps</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>std::vector&lt; float &gt; &amp;</type>
           <declname>difftaps</declname>
         </param>
         <briefdescription>
@@ -464,7 +464,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="217"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1a55cddf6ebf45153b264ddc16ed945fff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::update_gains</definition>
         <argsstring>()</argsstring>
         <name>update_gains</name>
@@ -477,20 +477,20 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="226"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1a71e4fbee0cf05d7ee4793723ba241fcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::set_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;taps, std::vector&lt; std::vector&lt; float &gt; &gt; &amp;ourtaps, std::vector&lt; gr_fir_ccf * &gt; &amp;ourfilter)</argsstring>
         <name>set_taps</name>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &amp;</type>
+          <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt; &amp;</type>
+          <type>std::vector&lt; std::vector&lt; float &gt; &gt; &amp;</type>
           <declname>ourtaps</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; gr_fir_ccf * &gt; &amp;</type>
+          <type>std::vector&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt; &amp;</type>
           <declname>ourfilter</declname>
         </param>
         <briefdescription>
@@ -502,7 +502,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="233"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1ac1737a843e820439938e900e16599062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;float&gt; &gt; digital_pfb_clock_sync_ccf::get_taps</definition>
         <argsstring>()</argsstring>
         <name>get_taps</name>
@@ -515,7 +515,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="238"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1a3ab63f4703895d25cd78c9a9aa6e6042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
         <definition>std::vector&lt; std::vector&lt;float&gt; &gt; digital_pfb_clock_sync_ccf::get_diff_taps</definition>
         <argsstring>()</argsstring>
         <name>get_diff_taps</name>
@@ -528,7 +528,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="243"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1a52f1c4a07393094a639c100d853da3b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt;</type>
+        <type>std::vector&lt; float &gt;</type>
         <definition>std::vector&lt;float&gt; digital_pfb_clock_sync_ccf::get_channel_taps</definition>
         <argsstring>(int channel)</argsstring>
         <name>get_channel_taps</name>
@@ -545,7 +545,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="248"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1ab8bcd7341876c7754ef696063915fc63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; float &gt;</type>
+        <type>std::vector&lt; float &gt;</type>
         <definition>std::vector&lt;float&gt; digital_pfb_clock_sync_ccf::get_diff_channel_taps</definition>
         <argsstring>(int channel)</argsstring>
         <name>get_diff_channel_taps</name>
@@ -588,7 +588,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="263"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1ac5810e595c9d84576e73fc546a15c53b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::set_loop_bandwidth</definition>
         <argsstring>(float bw)</argsstring>
         <name>set_loop_bandwidth</name>
@@ -613,7 +613,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="284"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1ad8854bf38c795c7c939ffb11bc2ca474" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::set_damping_factor</definition>
         <argsstring>(float df)</argsstring>
         <name>set_damping_factor</name>
@@ -638,7 +638,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="300"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1a2a3c47923d5a62ca6cddf112d6691f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::set_alpha</definition>
         <argsstring>(float alpha)</argsstring>
         <name>set_alpha</name>
@@ -663,7 +663,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="313"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1a7ed197aa5aae112a337af55e452af025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::set_beta</definition>
         <argsstring>(float beta)</argsstring>
         <name>set_beta</name>
@@ -688,7 +688,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_pfb_clock_sync_ccf.h" line="326"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__pfb__clock__sync__ccf_1ab0c8b9c09960fb6a7a33704846e62d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_pfb_clock_sync_ccf::set_max_rate_deviation</definition>
         <argsstring>(float m)</argsstring>
         <name>set_max_rate_deviation</name>
@@ -818,15 +818,15 @@ This function is called by the runtime system whenever the topology changes. Mos
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_int</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1ab02d0a829d67d39e3ac3163016d3a8be" kindref="member">gr_vector_int</ref> &amp;</type>
           <declname>ninput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -894,224 +894,88 @@ general_work must call consume or consume_each to indicate how many items were c
 </itemizedlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2865">
+      <node id="1607">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2866" relation="public-inheritance">
+        <childnode refid="1608" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2862">
+      <node id="1604">
         <label>digital_pfb_clock_sync_ccf</label>
         <link refid="classdigital__pfb__clock__sync__ccf"/>
-        <childnode refid="2863" relation="public-inheritance">
+        <childnode refid="1605" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2863">
+      <node id="1605">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2864" relation="public-inheritance">
+        <childnode refid="1606" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2866">
+      <node id="1608">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2864">
+      <node id="1606">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2865" relation="public-inheritance">
+        <childnode refid="1607" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2887">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="2881" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2880">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2881" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2892">
-        <label>T</label>
-      </node>
-      <node id="2894">
-        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="2870">
+      <node id="1612">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2871" relation="public-inheritance">
+        <childnode refid="1613" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2881">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="2882" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="2889">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="2867">
+      <node id="1609">
         <label>digital_pfb_clock_sync_ccf</label>
         <link refid="classdigital__pfb__clock__sync__ccf"/>
-        <childnode refid="2868" relation="public-inheritance">
-        </childnode>
-        <childnode refid="2893" relation="usage">
-          <edgelabel>d_filters</edgelabel>
-          <edgelabel>d_diff_filters</edgelabel>
-        </childnode>
-        <childnode refid="2894" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-          <edgelabel>d_dtaps</edgelabel>
+        <childnode refid="1610" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2884">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="2868">
+      <node id="1610">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2869" relation="public-inheritance">
-        </childnode>
-        <childnode refid="2877" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="1611" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2877">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2878" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2891">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2892" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2878">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="2879" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="2888" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="2890" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="2893">
-        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="2885">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="2886" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2872">
+      <node id="1614">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2873" relation="usage">
+        <childnode refid="1615" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2883">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="2884" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="2885" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="2887" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="2876">
+      <node id="1617">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2879">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="2880" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2871">
+      <node id="1613">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2882">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2883" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="2886">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="2888">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="2889" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="2890">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="2891" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="2873">
+      <node id="1615">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="2874" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="2869">
+      <node id="1611">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2870" relation="public-inheritance">
+        <childnode refid="1612" relation="public-inheritance">
         </childnode>
-        <childnode refid="2872" relation="usage">
+        <childnode refid="1614" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2875" relation="usage">
+        <childnode refid="1616" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2874">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="2875">
+      <node id="1616">
         <label>std::string</label>
-        <childnode refid="2876" relation="public-inheritance">
+        <childnode refid="1617" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1208,7 +1072,7 @@ general_work must call consume or consume_each to indicate how many items were c
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_is_unaligned</name></member>
       <member refid="classdigital__pfb__clock__sync__ccf_1ac5810e595c9d84576e73fc546a15c53b" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_loop_bandwidth</name></member>
       <member refid="classdigital__pfb__clock__sync__ccf_1ab0c8b9c09960fb6a7a33704846e62d24" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_max_rate_deviation</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>digital_pfb_clock_sync_ccf</scope><name>set_relative_rate</name></member>

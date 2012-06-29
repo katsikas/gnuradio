@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -42,12 +39,15 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_grc_scripts_e1740.
 
+# Include the progress variables for this target.
+include grc/scripts/CMakeFiles/pygen_grc_scripts_e1740.dir/progress.make
+
 grc/scripts/CMakeFiles/pygen_grc_scripts_e1740: grc/scripts/gnuradio-companion.exe
 
 grc/scripts/gnuradio-companion.exe: ../grc/scripts/gnuradio-companion
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Shebangin gnuradio-companion"
-	cd /home/katsikas/gnuradio/build/grc/scripts && /usr/bin/python2.7 -c "open ( '/home/katsikas/gnuradio/build/grc/scripts/gnuradio-companion.exe', 'w' ) .write ( '#!/usr/bin/python2.7\n'+open ( '/home/katsikas/gnuradio/grc/scripts/gnuradio-companion' ) .read ( ) ) "
+	cd /home/katsikas/gnuradio/build/grc/scripts && /usr/bin/python -c "open ( '/home/katsikas/gnuradio/build/grc/scripts/gnuradio-companion.exe', 'w' ) .write ( '#!/usr/bin/python\n'+open ( '/home/katsikas/gnuradio/grc/scripts/gnuradio-companion' ) .read ( ) ) "
 
 pygen_grc_scripts_e1740: grc/scripts/CMakeFiles/pygen_grc_scripts_e1740
 pygen_grc_scripts_e1740: grc/scripts/gnuradio-companion.exe

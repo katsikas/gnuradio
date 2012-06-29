@@ -32,21 +32,3 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   SET(CMAKE_INSTALL_SO_NO_EXE "1")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "uhd_devel")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-uhd/gnuradio-uhd.pc")
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "uhd_devel")
-
-IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/include/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/lib/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/doc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/examples/c++/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/swig/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/grc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/apps/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/examples/python/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/examples/grc/cmake_install.cmake")
-
-ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
-

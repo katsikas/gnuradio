@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdvbti__data__deinterleaver" kind="class" prot="public">
     <compoundname>dvbti_data_deinterleaver</compoundname>
     <basecompoundref refid="classconvolutional__interleaver" prot="public" virt="non-virtual">convolutional_interleaver&lt; unsigned char &gt;</basecompoundref>
@@ -34,7 +34,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h" line="50" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h" bodystart="49" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__data__deinterleaver_1abf6ec0c6bf7770611f4029234bb23570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void dvbti_data_deinterleaver::deinterleave</definition>
         <argsstring>(dvbt_mpeg_packet_rs_encoded &amp;out, const dvbt_mpeg_packet_rs_encoded &amp;in)</argsstring>
         <name>deinterleave</name>
@@ -57,7 +57,7 @@
       </sectiondef>
       <sectiondef kind="private-static-func">
       <memberdef kind="function" id="classdvbti__data__deinterleaver_1adf0dc3c401e278e5fdabe8f7754e2a1a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>static void dvbti_data_deinterleaver::remap_pli</definition>
         <argsstring>(plinfo &amp;out, const plinfo &amp;in)</argsstring>
         <name>remap_pli</name>
@@ -83,42 +83,38 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3395">
+      <node id="1859">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
       </node>
-      <node id="3394">
+      <node id="1858">
         <label>dvbti_data_deinterleaver</label>
         <link refid="classdvbti__data__deinterleaver"/>
-        <childnode refid="3395" relation="public-inheritance">
+        <childnode refid="1859" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3397">
+      <node id="1861">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="3398" relation="usage">
+        <childnode refid="1862" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="3399">
+      <node id="1863">
         <label>interleaver_fifo&lt; unsigned char &gt;</label>
         <link refid="classinterleaver__fifo"/>
       </node>
-      <node id="3396">
+      <node id="1860">
         <label>dvbti_data_deinterleaver</label>
         <link refid="classdvbti__data__deinterleaver"/>
-        <childnode refid="3397" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3399" relation="usage">
-          <edgelabel>alignment_fifo</edgelabel>
+        <childnode refid="1861" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3398">
+      <node id="1862">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3399" relation="usage">
+        <childnode refid="1863" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr_1_1fft_1_1fft__real__rev" kind="class" prot="public">
     <compoundname>gr::fft::fft_real_rev</compoundname>
     <includes refid="gr-fft_2include_2fft_2fft_8h" local="no">fft.h</includes>
@@ -57,7 +57,7 @@
         <location file="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" line="157" bodyfile="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr_1_1fft_1_1fft__real__rev_1a857bc4329b1279fdbd1279fd16df56b9" prot="private" static="no" mutable="no">
-        <type>void *</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
         <definition>void* gr::fft::fft_real_rev::d_plan</definition>
         <argsstring></argsstring>
         <name>d_plan</name>
@@ -159,7 +159,7 @@
         <location file="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" line="173" bodyfile="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" bodystart="173" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1fft_1_1fft__real__rev_1af573f69db2adb52f2c216315c48b7ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr::fft::fft_real_rev::set_nthreads</definition>
         <argsstring>(int n)</argsstring>
         <name>set_nthreads</name>
@@ -189,7 +189,7 @@
         <location file="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" line="183" bodyfile="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" bodystart="183" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1fft_1_1fft__real__rev_1a19e59c7b839a0294919f99ded42cc39c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr::fft::fft_real_rev::execute</definition>
         <argsstring>()</argsstring>
         <name>execute</name>
@@ -206,18 +206,6 @@
 <para>FFT: complex in, float out. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="3525">
-        <label>std::complex</label>
-      </node>
-      <node id="3524">
-        <label>gr::fft::fft_real_rev</label>
-        <link refid="classgr_1_1fft_1_1fft__real__rev"/>
-        <childnode refid="3525" relation="usage">
-          <edgelabel>d_inbuf</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" line="153" bodyfile="/home/katsikas/gnuradio/gr-fft/include/fft/fft.h" bodystart="153" bodyend="190"/>
     <listofallmembers>
       <member refid="classgr_1_1fft_1_1fft__real__rev_1a72bf9146e8533755a07d3af8346eb647" prot="private" virt="non-virtual"><scope>gr::fft::fft_real_rev</scope><name>d_fft_size</name></member>

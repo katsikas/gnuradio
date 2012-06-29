@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -332,7 +329,7 @@ gruel/src/lib/pmt/pmt_unv_int.h: ../gruel/src/lib/pmt/unv_template.cc.t
 gruel/src/lib/pmt/pmt_unv_int.h: ../gruel/src/lib/pmt/unv_qa_template.cc.t
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating pmt/pmt_unv_int.h, pmt/qa_pmt_unv.h, pmt/pmt_unv.cc, pmt/qa_pmt_unv.cc"
-	cd /home/katsikas/gnuradio/build/gruel/src/lib/pmt && /usr/bin/python2.7 -B -c "import os,sys;srcdir='/home/katsikas/gnuradio/gruel/src/lib/pmt';sys.path.append ( srcdir ) ;os.environ['srcdir']=srcdir;from generate_unv import main;main ( ) "
+	cd /home/katsikas/gnuradio/build/gruel/src/lib/pmt && /usr/bin/python -B -c "import os,sys;srcdir='/home/katsikas/gnuradio/gruel/src/lib/pmt';sys.path.append ( srcdir ) ;os.environ['srcdir']=srcdir;from generate_unv import main;main ( ) "
 
 gruel/src/lib/pmt/qa_pmt_unv.h: gruel/src/lib/pmt/pmt_unv_int.h
 
@@ -344,7 +341,7 @@ gruel/src/include/gruel/pmt_serial_tags.h: ../gruel/src/lib/pmt/gen-serial-tags.
 gruel/src/include/gruel/pmt_serial_tags.h: ../gruel/src/lib/pmt/pmt-serial-tags.scm
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../include/gruel/pmt_serial_tags.h"
-	cd /home/katsikas/gnuradio/build/gruel/src/lib && /usr/bin/python2.7 /home/katsikas/gnuradio/gruel/src/lib/pmt/gen-serial-tags.py /home/katsikas/gnuradio/gruel/src/lib/pmt/pmt-serial-tags.scm /home/katsikas/gnuradio/build/gruel/src/include/gruel/pmt_serial_tags.h
+	cd /home/katsikas/gnuradio/build/gruel/src/lib && /usr/bin/python /home/katsikas/gnuradio/gruel/src/lib/pmt/gen-serial-tags.py /home/katsikas/gnuradio/gruel/src/lib/pmt/pmt-serial-tags.scm /home/katsikas/gnuradio/build/gruel/src/include/gruel/pmt_serial_tags.h
 
 # Object files for target gruel
 gruel_OBJECTS = \

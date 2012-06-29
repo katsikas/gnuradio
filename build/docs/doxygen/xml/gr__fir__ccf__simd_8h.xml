@@ -1,42 +1,101 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__fir__ccf__simd_8h" kind="file">
     <compoundname>gr_fir_ccf_simd.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
-    <includes local="no">gr_fir_ccf_generic.h</includes>
+    <includes refid="gr__fir__ccf__generic_8h" local="no">gr_fir_ccf_generic.h</includes>
     <includedby refid="gr__fir__ccf__x86_8h" local="no">gr_fir_ccf_x86.h</includedby>
     <incdepgraph>
-      <node id="7946">
+      <node id="9911">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="9906">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7947">
-        <label>gr_fir_ccf_generic.h</label>
+      <node id="9910">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="9905" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9909" relation="include">
+        </childnode>
+        <childnode refid="9912" relation="include">
+        </childnode>
+        <childnode refid="9913" relation="include">
+        </childnode>
       </node>
-      <node id="7945">
+      <node id="9912">
+        <label>stddef.h</label>
+      </node>
+      <node id="9908">
+        <label>gr_fir_ccf.h</label>
+        <link refid="gr__fir__ccf_8h"/>
+        <childnode refid="9905" relation="include">
+        </childnode>
+        <childnode refid="9909" relation="include">
+        </childnode>
+        <childnode refid="9910" relation="include">
+        </childnode>
+        <childnode refid="9915" relation="include">
+        </childnode>
+      </node>
+      <node id="9909">
+        <label>vector</label>
+      </node>
+      <node id="9905">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="7946" relation="include">
+        <childnode refid="9906" relation="include">
         </childnode>
       </node>
-      <node id="7944">
+      <node id="9915">
+        <label>gr_reverse.h</label>
+        <link refid="gr__reverse_8h"/>
+        <childnode refid="9905" relation="include">
+        </childnode>
+        <childnode refid="9909" relation="include">
+        </childnode>
+        <childnode refid="9913" relation="include">
+        </childnode>
+      </node>
+      <node id="9907">
+        <label>gr_fir_ccf_generic.h</label>
+        <link refid="gr__fir__ccf__generic_8h"/>
+        <childnode refid="9905" relation="include">
+        </childnode>
+        <childnode refid="9908" relation="include">
+        </childnode>
+      </node>
+      <node id="9914">
+        <label>complex</label>
+      </node>
+      <node id="9913">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="9914" relation="include">
+        </childnode>
+      </node>
+      <node id="9904">
         <label>gr_fir_ccf_simd.h</label>
         <link refid="gr_fir_ccf_simd.h"/>
-        <childnode refid="7945" relation="include">
+        <childnode refid="9905" relation="include">
         </childnode>
-        <childnode refid="7947" relation="include">
+        <childnode refid="9907" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7949">
+      <node id="9917">
         <label>gr_fir_ccf_x86.h</label>
         <link refid="gr__fir__ccf__x86_8h"/>
       </node>
-      <node id="7948">
+      <node id="9916">
         <label>gr_fir_ccf_simd.h</label>
         <link refid="gr_fir_ccf_simd.h"/>
-        <childnode refid="7949" relation="include">
+        <childnode refid="9917" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

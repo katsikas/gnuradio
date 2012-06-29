@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdvbt__rs__encoder" kind="class" prot="public">
     <compoundname>dvbt_rs_encoder</compoundname>
     <includes refid="dvbt__rs__encoder_8h" local="no">dvbt_rs_encoder.h</includes>
@@ -20,7 +20,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__rs__encoder_1ac816ac0e141751c8ee519ffd1c3803d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DVBT_API <ref refid="dvbt__rs__encoder_8h_1a525aec97d27c4cd6ffad7d0a193872e5" kindref="member">dvbt_rs_encoder_sptr</ref></type>
+        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__rs__encoder_8h_1a525aec97d27c4cd6ffad7d0a193872e5" kindref="member">dvbt_rs_encoder_sptr</ref></type>
         <definition>DVBT_API dvbt_rs_encoder_sptr dvbt_make_rs_encoder</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_rs_encoder</name>
@@ -92,19 +92,6 @@
 <para>Reed-Solomon encoder for DVBT</para><para>input: <ref refid="classdvbt__mpeg__packet__no__sync" kindref="compound">dvbt_mpeg_packet_no_sync</ref>; output: <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="323">
-        <label>dvbt_rs_encoder</label>
-        <link refid="classdvbt__rs__encoder"/>
-        <childnode refid="324" relation="usage">
-          <edgelabel>d_rs_encoder</edgelabel>
-        </childnode>
-      </node>
-      <node id="324">
-        <label>dvbti_reed_solomon</label>
-        <link refid="classdvbti__reed__solomon"/>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_encoder.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_encoder.h" bodystart="43" bodyend="57"/>
     <listofallmembers>
       <member refid="classdvbt__rs__encoder_1af2071e4d605cd23b2dae2dc53cb5e1f9" prot="private" virt="non-virtual"><scope>dvbt_rs_encoder</scope><name>d_rs_encoder</name></member>

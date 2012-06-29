@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classpmt_1_1pmt__tuple" kind="class" prot="public">
     <compoundname>pmt::pmt_tuple</compoundname>
     <basecompoundref refid="classpmt_1_1pmt__base" prot="public" virt="non-virtual">pmt::pmt_base</basecompoundref>
     <includes refid="pmt__int_8h" local="no">pmt_int.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classpmt_1_1pmt__tuple_1af79917b4a8c7f9dd59686de5d35c08e1" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="namespacepmt_1ab4b70d9293452eb74dd07c670e6811fa" kindref="member">pmt_t</ref> &gt;</type>
         <definition>std::vector&lt;pmt_t&gt; pmt::pmt_tuple::d_v</definition>
         <argsstring></argsstring>
         <name>d_v</name>
@@ -99,7 +99,7 @@
         <location file="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" line="216" bodyfile="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" bodystart="216" bodyend="216"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__tuple_1a267c10c0a84bb08199e37e14119914c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void pmt::pmt_tuple::_set</definition>
         <argsstring>(size_t k, pmt_t v)</argsstring>
         <name>_set</name>
@@ -125,33 +125,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11950">
+      <node id="10271">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="11949">
+      <node id="10270">
         <label>pmt::pmt_tuple</label>
         <link refid="classpmt_1_1pmt__tuple"/>
-        <childnode refid="11950" relation="public-inheritance">
+        <childnode refid="10271" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="11953">
-        <label>std::vector&lt; pmt_t &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="11952">
+      <node id="10273">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="11951">
+      <node id="10272">
         <label>pmt::pmt_tuple</label>
         <link refid="classpmt_1_1pmt__tuple"/>
-        <childnode refid="11952" relation="public-inheritance">
-        </childnode>
-        <childnode refid="11953" relation="usage">
-          <edgelabel>d_v</edgelabel>
+        <childnode refid="10273" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

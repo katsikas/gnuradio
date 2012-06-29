@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__wavfile__sink" kind="class" prot="public">
     <compoundname>gr_wavfile_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -177,7 +177,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__wavfile__sink_1adc32235705d45ce42260c1dc76f831c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_wavfile_sink_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_wavfile_sink_sptr</ref></type>
         <definition>GR_CORE_API gr_wavfile_sink_sptr gr_make_wavfile_sink</definition>
         <argsstring>(const char *filename, int n_channels, unsigned int sample_rate, int bits_per_sample)</argsstring>
         <name>gr_make_wavfile_sink</name>
@@ -254,7 +254,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_wavfile_sink.h" line="86"/>
       </memberdef>
       <memberdef kind="function" id="classgr__wavfile__sink_1a35f3a886f6ae00996ad92fdda3c801aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_wavfile_sink::do_update</definition>
         <argsstring>()</argsstring>
         <name>do_update</name>
@@ -267,7 +267,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_wavfile_sink.h" line="93"/>
       </memberdef>
       <memberdef kind="function" id="classgr__wavfile__sink_1a70ef4694ab76a50e47bc7eefa8dbf699" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_wavfile_sink::close_wav</definition>
         <argsstring>()</argsstring>
         <name>close_wav</name>
@@ -312,7 +312,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_wavfile_sink.h" line="109"/>
       </memberdef>
       <memberdef kind="function" id="classgr__wavfile__sink_1a53790ce139385802d2249d94a3872b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_wavfile_sink::close</definition>
         <argsstring>()</argsstring>
         <name>close</name>
@@ -325,7 +325,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_wavfile_sink.h" line="115"/>
       </memberdef>
       <memberdef kind="function" id="classgr__wavfile__sink_1a7dbab3fa08b9a3ba1e3d49e9ac2b919a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_wavfile_sink::set_sample_rate</definition>
         <argsstring>(unsigned int sample_rate)</argsstring>
         <name>set_sample_rate</name>
@@ -342,7 +342,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_wavfile_sink.h" line="122"/>
       </memberdef>
       <memberdef kind="function" id="classgr__wavfile__sink_1aa4a5e558c4056a947fb3fa5544fa5618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_wavfile_sink::set_bits_per_sample</definition>
         <argsstring>(int bits_per_sample)</argsstring>
         <name>set_bits_per_sample</name>
@@ -369,11 +369,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -390,220 +390,100 @@
     <detaileddescription>
 <para>Values must be floats within [-1;1]. Check <ref refid="classgr__wavfile__sink_1adc32235705d45ce42260c1dc76f831c5" kindref="member">gr_make_wavfile_sink()</ref> for extra info. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="10942">
+      <node id="9154">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="10943" relation="public-inheritance">
+        <childnode refid="9155" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10939">
+      <node id="9151">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="10940" relation="public-inheritance">
+        <childnode refid="9152" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10940">
+      <node id="9152">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="10941" relation="public-inheritance">
+        <childnode refid="9153" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10938">
+      <node id="9150">
         <label>gr_wavfile_sink</label>
         <link refid="classgr__wavfile__sink"/>
-        <childnode refid="10939" relation="public-inheritance">
+        <childnode refid="9151" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10943">
+      <node id="9155">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="10941">
+      <node id="9153">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="10942" relation="public-inheritance">
+        <childnode refid="9154" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10965">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="10959" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10958">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10959" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10970">
-        <label>T</label>
-      </node>
-      <node id="10948">
+      <node id="9160">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="10949" relation="public-inheritance">
+        <childnode refid="9161" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10945">
+      <node id="9157">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="10946" relation="public-inheritance">
+        <childnode refid="9158" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10959">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="10960" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="10967">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="10962">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="10946">
+      <node id="9158">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="10947" relation="public-inheritance">
-        </childnode>
-        <childnode refid="10955" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="9159" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10944">
+      <node id="9156">
         <label>gr_wavfile_sink</label>
         <link refid="classgr__wavfile__sink"/>
-        <childnode refid="10945" relation="public-inheritance">
+        <childnode refid="9157" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10955">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10956" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10969">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10970" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10956">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="10957" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="10966" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="10968" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="10963">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="10964" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10950">
+      <node id="9162">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10951" relation="usage">
+        <childnode refid="9163" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="10961">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="10962" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="10963" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="10965" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="10954">
+      <node id="9165">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="10957">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="10958" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10949">
+      <node id="9161">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="10960">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10961" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="10964">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="10966">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="10967" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="10968">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="10969" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="10951">
+      <node id="9163">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="10952" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="10947">
+      <node id="9159">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="10948" relation="public-inheritance">
+        <childnode refid="9160" relation="public-inheritance">
         </childnode>
-        <childnode refid="10950" relation="usage">
+        <childnode refid="9162" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="10953" relation="usage">
+        <childnode refid="9164" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="10952">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="10953">
+      <node id="9164">
         <label>std::string</label>
-        <childnode refid="10954" relation="public-inheritance">
+        <childnode refid="9165" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -682,7 +562,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_wavfile_sink</scope><name>set_relative_rate</name></member>

@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,9 +35,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,8 +46,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"comedi_devel\" \"comedi_python\" \"comedi_runtime\" \"comedi_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -1509,71 +1506,6 @@ pygen_gr_audio_examples_python_a172e/fast:
 .PHONY : pygen_gr_audio_examples_python_a172e/fast
 
 #=============================================================================
-# Target rules for targets named _comedi
-
-# Build rule for target.
-_comedi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _comedi
-.PHONY : _comedi
-
-# fast build rule for target.
-_comedi/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/_comedi.dir/build.make gr-comedi/src/CMakeFiles/_comedi.dir/build
-.PHONY : _comedi/fast
-
-#=============================================================================
-# Target rules for targets named _comedi_swig_doc_tag
-
-# Build rule for target.
-_comedi_swig_doc_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _comedi_swig_doc_tag
-.PHONY : _comedi_swig_doc_tag
-
-# fast build rule for target.
-_comedi_swig_doc_tag/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/_comedi_swig_doc_tag.dir/build.make gr-comedi/src/CMakeFiles/_comedi_swig_doc_tag.dir/build
-.PHONY : _comedi_swig_doc_tag/fast
-
-#=============================================================================
-# Target rules for targets named _comedi_swig_tag
-
-# Build rule for target.
-_comedi_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _comedi_swig_tag
-.PHONY : _comedi_swig_tag
-
-# fast build rule for target.
-_comedi_swig_tag/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/_comedi_swig_tag.dir/build.make gr-comedi/src/CMakeFiles/_comedi_swig_tag.dir/build
-.PHONY : _comedi_swig_tag/fast
-
-#=============================================================================
-# Target rules for targets named gnuradio-comedi
-
-# Build rule for target.
-gnuradio-comedi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-comedi
-.PHONY : gnuradio-comedi
-
-# fast build rule for target.
-gnuradio-comedi/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/gnuradio-comedi.dir/build.make gr-comedi/src/CMakeFiles/gnuradio-comedi.dir/build
-.PHONY : gnuradio-comedi/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_comedi_src_6e41e
-
-# Build rule for target.
-pygen_gr_comedi_src_6e41e: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_comedi_src_6e41e
-.PHONY : pygen_gr_comedi_src_6e41e
-
-# fast build rule for target.
-pygen_gr_comedi_src_6e41e/fast:
-	$(MAKE) -f gr-comedi/src/CMakeFiles/pygen_gr_comedi_src_6e41e.dir/build.make gr-comedi/src/CMakeFiles/pygen_gr_comedi_src_6e41e.dir/build
-.PHONY : pygen_gr_comedi_src_6e41e/fast
-
-#=============================================================================
 # Target rules for targets named digital_generated_includes
 
 # Build rule for target.
@@ -2081,188 +2013,6 @@ pygen_gr_trellis_src_examples_python_f76b0/fast:
 .PHONY : pygen_gr_trellis_src_examples_python_f76b0/fast
 
 #=============================================================================
-# Target rules for targets named gnuradio-uhd
-
-# Build rule for target.
-gnuradio-uhd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-uhd
-.PHONY : gnuradio-uhd
-
-# fast build rule for target.
-gnuradio-uhd/fast:
-	$(MAKE) -f gr-uhd/lib/CMakeFiles/gnuradio-uhd.dir/build.make gr-uhd/lib/CMakeFiles/gnuradio-uhd.dir/build
-.PHONY : gnuradio-uhd/fast
-
-#=============================================================================
-# Target rules for targets named tags_demo
-
-# Build rule for target.
-tags_demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tags_demo
-.PHONY : tags_demo
-
-# fast build rule for target.
-tags_demo/fast:
-	$(MAKE) -f gr-uhd/examples/c++/CMakeFiles/tags_demo.dir/build.make gr-uhd/examples/c++/CMakeFiles/tags_demo.dir/build
-.PHONY : tags_demo/fast
-
-#=============================================================================
-# Target rules for targets named _uhd_swig
-
-# Build rule for target.
-_uhd_swig: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _uhd_swig
-.PHONY : _uhd_swig
-
-# fast build rule for target.
-_uhd_swig/fast:
-	$(MAKE) -f gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build.make gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build
-.PHONY : _uhd_swig/fast
-
-#=============================================================================
-# Target rules for targets named _uhd_swig_doc_tag
-
-# Build rule for target.
-_uhd_swig_doc_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _uhd_swig_doc_tag
-.PHONY : _uhd_swig_doc_tag
-
-# fast build rule for target.
-_uhd_swig_doc_tag/fast:
-	$(MAKE) -f gr-uhd/swig/CMakeFiles/_uhd_swig_doc_tag.dir/build.make gr-uhd/swig/CMakeFiles/_uhd_swig_doc_tag.dir/build
-.PHONY : _uhd_swig_doc_tag/fast
-
-#=============================================================================
-# Target rules for targets named _uhd_swig_swig_tag
-
-# Build rule for target.
-_uhd_swig_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _uhd_swig_swig_tag
-.PHONY : _uhd_swig_swig_tag
-
-# fast build rule for target.
-_uhd_swig_swig_tag/fast:
-	$(MAKE) -f gr-uhd/swig/CMakeFiles/_uhd_swig_swig_tag.dir/build.make gr-uhd/swig/CMakeFiles/_uhd_swig_swig_tag.dir/build
-.PHONY : _uhd_swig_swig_tag/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_swig_03f77
-
-# Build rule for target.
-pygen_gr_uhd_swig_03f77: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_swig_03f77
-.PHONY : pygen_gr_uhd_swig_03f77
-
-# fast build rule for target.
-pygen_gr_uhd_swig_03f77/fast:
-	$(MAKE) -f gr-uhd/swig/CMakeFiles/pygen_gr_uhd_swig_03f77.dir/build.make gr-uhd/swig/CMakeFiles/pygen_gr_uhd_swig_03f77.dir/build
-.PHONY : pygen_gr_uhd_swig_03f77/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_swig_410bc
-
-# Build rule for target.
-pygen_gr_uhd_swig_410bc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_swig_410bc
-.PHONY : pygen_gr_uhd_swig_410bc
-
-# fast build rule for target.
-pygen_gr_uhd_swig_410bc/fast:
-	$(MAKE) -f gr-uhd/swig/CMakeFiles/pygen_gr_uhd_swig_410bc.dir/build.make gr-uhd/swig/CMakeFiles/pygen_gr_uhd_swig_410bc.dir/build
-.PHONY : pygen_gr_uhd_swig_410bc/fast
-
-#=============================================================================
-# Target rules for targets named uhd_grc_xml_blocks
-
-# Build rule for target.
-uhd_grc_xml_blocks: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uhd_grc_xml_blocks
-.PHONY : uhd_grc_xml_blocks
-
-# fast build rule for target.
-uhd_grc_xml_blocks/fast:
-	$(MAKE) -f gr-uhd/grc/CMakeFiles/uhd_grc_xml_blocks.dir/build.make gr-uhd/grc/CMakeFiles/uhd_grc_xml_blocks.dir/build
-.PHONY : uhd_grc_xml_blocks/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_apps_03323
-
-# Build rule for target.
-pygen_gr_uhd_apps_03323: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_apps_03323
-.PHONY : pygen_gr_uhd_apps_03323
-
-# fast build rule for target.
-pygen_gr_uhd_apps_03323/fast:
-	$(MAKE) -f gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_03323.dir/build.make gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_03323.dir/build
-.PHONY : pygen_gr_uhd_apps_03323/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_apps_299c1
-
-# Build rule for target.
-pygen_gr_uhd_apps_299c1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_apps_299c1
-.PHONY : pygen_gr_uhd_apps_299c1
-
-# fast build rule for target.
-pygen_gr_uhd_apps_299c1/fast:
-	$(MAKE) -f gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_299c1.dir/build.make gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_299c1.dir/build
-.PHONY : pygen_gr_uhd_apps_299c1/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_apps_9fb64
-
-# Build rule for target.
-pygen_gr_uhd_apps_9fb64: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_apps_9fb64
-.PHONY : pygen_gr_uhd_apps_9fb64
-
-# fast build rule for target.
-pygen_gr_uhd_apps_9fb64/fast:
-	$(MAKE) -f gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_9fb64.dir/build.make gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_9fb64.dir/build
-.PHONY : pygen_gr_uhd_apps_9fb64/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_apps_c35b4
-
-# Build rule for target.
-pygen_gr_uhd_apps_c35b4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_apps_c35b4
-.PHONY : pygen_gr_uhd_apps_c35b4
-
-# fast build rule for target.
-pygen_gr_uhd_apps_c35b4/fast:
-	$(MAKE) -f gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_c35b4.dir/build.make gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_c35b4.dir/build
-.PHONY : pygen_gr_uhd_apps_c35b4/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_apps_d3a74
-
-# Build rule for target.
-pygen_gr_uhd_apps_d3a74: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_apps_d3a74
-.PHONY : pygen_gr_uhd_apps_d3a74
-
-# fast build rule for target.
-pygen_gr_uhd_apps_d3a74/fast:
-	$(MAKE) -f gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_d3a74.dir/build.make gr-uhd/apps/CMakeFiles/pygen_gr_uhd_apps_d3a74.dir/build
-.PHONY : pygen_gr_uhd_apps_d3a74/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_uhd_examples_python_2cf17
-
-# Build rule for target.
-pygen_gr_uhd_examples_python_2cf17: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_uhd_examples_python_2cf17
-.PHONY : pygen_gr_uhd_examples_python_2cf17
-
-# fast build rule for target.
-pygen_gr_uhd_examples_python_2cf17/fast:
-	$(MAKE) -f gr-uhd/examples/python/CMakeFiles/pygen_gr_uhd_examples_python_2cf17.dir/build.make gr-uhd/examples/python/CMakeFiles/pygen_gr_uhd_examples_python_2cf17.dir/build
-.PHONY : pygen_gr_uhd_examples_python_2cf17/fast
-
-#=============================================================================
 # Target rules for targets named pygen_gr_utils_src_python_42d85
 
 # Build rule for target.
@@ -2456,97 +2206,6 @@ pygen_gr_vocoder_examples_864cb: cmake_check_build_system
 pygen_gr_vocoder_examples_864cb/fast:
 	$(MAKE) -f gr-vocoder/examples/CMakeFiles/pygen_gr_vocoder_examples_864cb.dir/build.make gr-vocoder/examples/CMakeFiles/pygen_gr_vocoder_examples_864cb.dir/build
 .PHONY : pygen_gr_vocoder_examples_864cb/fast
-
-#=============================================================================
-# Target rules for targets named gnuradio-fcd
-
-# Build rule for target.
-gnuradio-fcd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-fcd
-.PHONY : gnuradio-fcd
-
-# fast build rule for target.
-gnuradio-fcd/fast:
-	$(MAKE) -f gr-fcd/lib/CMakeFiles/gnuradio-fcd.dir/build.make gr-fcd/lib/CMakeFiles/gnuradio-fcd.dir/build
-.PHONY : gnuradio-fcd/fast
-
-#=============================================================================
-# Target rules for targets named _fcd_swig
-
-# Build rule for target.
-_fcd_swig: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _fcd_swig
-.PHONY : _fcd_swig
-
-# fast build rule for target.
-_fcd_swig/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/_fcd_swig.dir/build.make gr-fcd/swig/CMakeFiles/_fcd_swig.dir/build
-.PHONY : _fcd_swig/fast
-
-#=============================================================================
-# Target rules for targets named _fcd_swig_doc_tag
-
-# Build rule for target.
-_fcd_swig_doc_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _fcd_swig_doc_tag
-.PHONY : _fcd_swig_doc_tag
-
-# fast build rule for target.
-_fcd_swig_doc_tag/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/_fcd_swig_doc_tag.dir/build.make gr-fcd/swig/CMakeFiles/_fcd_swig_doc_tag.dir/build
-.PHONY : _fcd_swig_doc_tag/fast
-
-#=============================================================================
-# Target rules for targets named _fcd_swig_swig_tag
-
-# Build rule for target.
-_fcd_swig_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _fcd_swig_swig_tag
-.PHONY : _fcd_swig_swig_tag
-
-# fast build rule for target.
-_fcd_swig_swig_tag/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/_fcd_swig_swig_tag.dir/build.make gr-fcd/swig/CMakeFiles/_fcd_swig_swig_tag.dir/build
-.PHONY : _fcd_swig_swig_tag/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_fcd_swig_f28d3
-
-# Build rule for target.
-pygen_gr_fcd_swig_f28d3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_fcd_swig_f28d3
-.PHONY : pygen_gr_fcd_swig_f28d3
-
-# fast build rule for target.
-pygen_gr_fcd_swig_f28d3/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/pygen_gr_fcd_swig_f28d3.dir/build.make gr-fcd/swig/CMakeFiles/pygen_gr_fcd_swig_f28d3.dir/build
-.PHONY : pygen_gr_fcd_swig_f28d3/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_fcd_python_ebc65
-
-# Build rule for target.
-pygen_gr_fcd_python_ebc65: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_fcd_python_ebc65
-.PHONY : pygen_gr_fcd_python_ebc65
-
-# fast build rule for target.
-pygen_gr_fcd_python_ebc65/fast:
-	$(MAKE) -f gr-fcd/python/CMakeFiles/pygen_gr_fcd_python_ebc65.dir/build.make gr-fcd/python/CMakeFiles/pygen_gr_fcd_python_ebc65.dir/build
-.PHONY : pygen_gr_fcd_python_ebc65/fast
-
-#=============================================================================
-# Target rules for targets named fcd_nfm_rx
-
-# Build rule for target.
-fcd_nfm_rx: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fcd_nfm_rx
-.PHONY : fcd_nfm_rx
-
-# fast build rule for target.
-fcd_nfm_rx/fast:
-	$(MAKE) -f gr-fcd/examples/c++/CMakeFiles/fcd_nfm_rx.dir/build.make gr-fcd/examples/c++/CMakeFiles/fcd_nfm_rx.dir/build
-.PHONY : fcd_nfm_rx/fast
 
 #=============================================================================
 # Target rules for targets named gnuradio-wavelet
@@ -2796,11 +2455,6 @@ help:
 	@echo "... pygen_gr_audio_swig_caec9"
 	@echo "... pygen_gr_audio_swig_e3eae"
 	@echo "... pygen_gr_audio_examples_python_a172e"
-	@echo "... _comedi"
-	@echo "... _comedi_swig_doc_tag"
-	@echo "... _comedi_swig_tag"
-	@echo "... gnuradio-comedi"
-	@echo "... pygen_gr_comedi_src_6e41e"
 	@echo "... digital_generated_includes"
 	@echo "... gnuradio-digital"
 	@echo "... _digital_swig"
@@ -2840,20 +2494,6 @@ help:
 	@echo "... pygen_gr_trellis_src_lib_7ffd1"
 	@echo "... gr_trellis_xml"
 	@echo "... pygen_gr_trellis_src_examples_python_f76b0"
-	@echo "... gnuradio-uhd"
-	@echo "... tags_demo"
-	@echo "... _uhd_swig"
-	@echo "... _uhd_swig_doc_tag"
-	@echo "... _uhd_swig_swig_tag"
-	@echo "... pygen_gr_uhd_swig_03f77"
-	@echo "... pygen_gr_uhd_swig_410bc"
-	@echo "... uhd_grc_xml_blocks"
-	@echo "... pygen_gr_uhd_apps_03323"
-	@echo "... pygen_gr_uhd_apps_299c1"
-	@echo "... pygen_gr_uhd_apps_9fb64"
-	@echo "... pygen_gr_uhd_apps_c35b4"
-	@echo "... pygen_gr_uhd_apps_d3a74"
-	@echo "... pygen_gr_uhd_examples_python_2cf17"
 	@echo "... pygen_gr_utils_src_python_42d85"
 	@echo "... pygen_gr_utils_src_python_84817"
 	@echo "... _video_sdl"
@@ -2869,13 +2509,6 @@ help:
 	@echo "... pygen_gr_vocoder_swig_6b1e5"
 	@echo "... pygen_gr_vocoder_python_8a6c2"
 	@echo "... pygen_gr_vocoder_examples_864cb"
-	@echo "... gnuradio-fcd"
-	@echo "... _fcd_swig"
-	@echo "... _fcd_swig_doc_tag"
-	@echo "... _fcd_swig_swig_tag"
-	@echo "... pygen_gr_fcd_swig_f28d3"
-	@echo "... pygen_gr_fcd_python_ebc65"
-	@echo "... fcd_nfm_rx"
 	@echo "... gnuradio-wavelet"
 	@echo "... _wavelet_swig"
 	@echo "... _wavelet_swig_doc_tag"

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsc__deinterleaver" kind="class" prot="public">
     <compoundname>atsc_deinterleaver</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__deinterleaver_1a9e6cb117cc2d3270227d0adb31889162" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_deinterleaver_sptr</ref></type>
+        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_deinterleaver_sptr</ref></type>
         <definition>ATSC_API atsc_deinterleaver_sptr atsc_make_deinterleaver</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_deinterleaver</name>
@@ -61,11 +61,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -77,7 +77,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_deinterleaver.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__deinterleaver_1ad6886f20b6a4745fd456bcacd13e14ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void atsc_deinterleaver::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -95,251 +95,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="53">
+      <node id="30">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="54" relation="public-inheritance">
+        <childnode refid="31" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="50">
+      <node id="27">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="51" relation="public-inheritance">
+        <childnode refid="28" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="51">
+      <node id="28">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="52" relation="public-inheritance">
+        <childnode refid="29" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="49">
+      <node id="26">
         <label>atsc_deinterleaver</label>
         <link refid="classatsc__deinterleaver"/>
-        <childnode refid="50" relation="public-inheritance">
+        <childnode refid="27" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="54">
+      <node id="31">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="52">
+      <node id="29">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="53" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="76">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="70" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="69">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="70" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="81">
-        <label>T</label>
-      </node>
-      <node id="83">
-        <label>convolutional_interleaver&lt; unsigned char &gt;</label>
-        <link refid="classconvolutional__interleaver"/>
-        <childnode refid="84" relation="usage">
-          <edgelabel>m_fifo</edgelabel>
-        </childnode>
-      </node>
-      <node id="59">
+      <node id="36">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="37" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="56">
+      <node id="33">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="57" relation="public-inheritance">
+        <childnode refid="34" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="85">
-        <label>interleaver_fifo&lt; unsigned char &gt;</label>
-        <link refid="classinterleaver__fifo"/>
-      </node>
-      <node id="70">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="71" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="78">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="73">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="57">
+      <node id="34">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="58" relation="public-inheritance">
-        </childnode>
-        <childnode refid="66" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="35" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="66">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="67" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="80">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="81" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="67">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="68" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="77" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="79" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="74">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="75" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="61">
+      <node id="38">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="62" relation="usage">
+        <childnode refid="39" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="72">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="73" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="74" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="76" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="65">
+      <node id="41">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="55">
+      <node id="32">
         <label>atsc_deinterleaver</label>
         <link refid="classatsc__deinterleaver"/>
-        <childnode refid="56" relation="public-inheritance">
-        </childnode>
-        <childnode refid="82" relation="usage">
-          <edgelabel>d_deinterleaver</edgelabel>
+        <childnode refid="33" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="82">
-        <label>atsci_data_deinterleaver</label>
-        <link refid="classatsci__data__deinterleaver"/>
-        <childnode refid="83" relation="public-inheritance">
-        </childnode>
-        <childnode refid="85" relation="usage">
-          <edgelabel>alignment_fifo</edgelabel>
-        </childnode>
-      </node>
-      <node id="68">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="69" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="60">
+      <node id="37">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="84">
-        <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="85" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="71">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="72" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="75">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="77">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="78" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="79">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="80" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="62">
+      <node id="39">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="63" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="58">
+      <node id="35">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="59" relation="public-inheritance">
+        <childnode refid="36" relation="public-inheritance">
         </childnode>
-        <childnode refid="61" relation="usage">
+        <childnode refid="38" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="64" relation="usage">
+        <childnode refid="40" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="63">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="64">
+      <node id="40">
         <label>std::string</label>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="41" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -401,7 +250,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>atsc_deinterleaver</scope><name>set_relative_rate</name></member>

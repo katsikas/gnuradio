@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgri__lfsr__32k" kind="class" prot="public">
     <compoundname>gri_lfsr_32k</compoundname>
     <includes refid="gri__lfsr__32k_8h" local="no">gri_lfsr_32k.h</includes>
@@ -46,7 +46,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h" line="42" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classgri__lfsr__32k_1a9d9abc511f09c9f9091202b91aac2ff4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gri_lfsr_32k::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -102,19 +102,6 @@
 <para>generate pseudo-random sequence of length 32768 bits.</para><para>This is based on <ref refid="classgri__lfsr__15__1__0" kindref="compound">gri_lfsr_15_1_0</ref> with an extra 0 added at the end of the sequence. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="11072">
-        <label>gri_lfsr_32k</label>
-        <link refid="classgri__lfsr__32k"/>
-        <childnode refid="11073" relation="usage">
-          <edgelabel>d_lfsr</edgelabel>
-        </childnode>
-      </node>
-      <node id="11073">
-        <label>gri_lfsr_15_1_0</label>
-        <link refid="classgri__lfsr__15__1__0"/>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h" line="37" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h" bodystart="37" bodyend="78"/>
     <listofallmembers>
       <member refid="classgri__lfsr__32k_1ac5440e4977d3f072c8889746ece452ee" prot="private" virt="non-virtual"><scope>gri_lfsr_32k</scope><name>d_count</name></member>

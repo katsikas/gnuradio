@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -211,7 +208,7 @@ gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/libboost_program_opti
 gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/libboost_filesystem-mt.so
 gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/libboost_system-mt.so
 gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/libboost_thread-mt.so
-gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libasound.so
+gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/i386-linux-gnu/libasound.so
 gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
 gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
 gr-audio/lib/libgnuradio-audio-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so

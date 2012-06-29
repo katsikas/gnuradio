@@ -34,19 +34,19 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_text_box.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_numbersink2.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/notebook.xml"
     "/home/katsikas/gnuradio/gr-wxgui/grc/variable_check_box.xml"
+    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_slider.xml"
+    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_histosink2.xml"
+    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_constellationsink2.xml"
+    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_numbersink2.xml"
     "/home/katsikas/gnuradio/gr-wxgui/grc/variable_chooser.xml"
     "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_fftsink2.xml"
     "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_scopesink2.xml"
     "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_waterfallsink2.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_slider.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_constellationsink2.xml"
     "/home/katsikas/gnuradio/gr-wxgui/grc/variable_static_text.xml"
+    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_text_box.xml"
     "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_termsink.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_histosink2.xml"
+    "/home/katsikas/gnuradio/gr-wxgui/grc/notebook.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
 

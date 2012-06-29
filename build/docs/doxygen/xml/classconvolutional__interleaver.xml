@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classconvolutional__interleaver" kind="class" prot="public">
     <compoundname>convolutional_interleaver</compoundname>
     <includes refid="gr-atsc_2src_2lib_2convolutional__interleaver_8h" local="no">convolutional_interleaver.h</includes>
@@ -54,7 +54,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" line="65" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classconvolutional__interleaver_1aad6a006467d51a669510251e8f6076fa" prot="protected" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classinterleaver__fifo" kindref="compound">interleaver_fifo</ref>&lt; symbol_type &gt; * &gt;</type>
+        <type>std::vector&lt; <ref refid="classinterleaver__fifo" kindref="compound">interleaver_fifo</ref>&lt; symbol_type &gt; * &gt;</type>
         <definition>std::vector&lt; interleaver_fifo&lt; symbol_type &gt; * &gt; convolutional_interleaver&lt; symbol_type &gt;::m_fifo</definition>
         <argsstring></argsstring>
         <name>m_fifo</name>
@@ -108,7 +108,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" line="39" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" bodystart="95" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="classconvolutional__interleaver_1a758195fcfe60037184a30e39e718126a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void convolutional_interleaver&lt; symbol_type &gt;::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -121,7 +121,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" line="42" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" bodystart="102" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="classconvolutional__interleaver_1ad47cdb2855d94872bea06fec637b82eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void convolutional_interleaver&lt; symbol_type &gt;::sync</definition>
         <argsstring>()</argsstring>
         <name>sync</name>
@@ -164,7 +164,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" line="51" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" bodystart="51" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classconvolutional__interleaver_1afe0e221849f0feb4796f620e1858231b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void convolutional_interleaver&lt; symbol_type &gt;::transform</definition>
         <argsstring>(symbol_type *out, const symbol_type *in, int nsymbols)</argsstring>
         <name>transform</name>
@@ -227,7 +227,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/convolutional_interleaver.h" line="41"/>
       </memberdef>
       <memberdef kind="function" id="classconvolutional__interleaver_1a758195fcfe60037184a30e39e718126a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void convolutional_interleaver&lt; symbol_type &gt;::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -240,7 +240,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/convolutional_interleaver.h" line="44"/>
       </memberdef>
       <memberdef kind="function" id="classconvolutional__interleaver_1ad47cdb2855d94872bea06fec637b82eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void convolutional_interleaver&lt; symbol_type &gt;::sync</definition>
         <argsstring>()</argsstring>
         <name>sync</name>
@@ -283,7 +283,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/convolutional_interleaver.h" line="53" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/convolutional_interleaver.h" bodystart="53" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classconvolutional__interleaver_1afe0e221849f0feb4796f620e1858231b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void convolutional_interleaver&lt; symbol_type &gt;::transform</definition>
         <argsstring>(symbol_type *out, const symbol_type *in, int nsymbols)</argsstring>
         <name>transform</name>
@@ -313,16 +313,15 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="1549">
+      <node id="949">
         <label>convolutional_interleaver&lt; symbol_type &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="1550" relation="usage">
+        <childnode refid="950" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="1550">
+      <node id="950">
         <label>std::vector&lt; interleaver_fifo&lt; symbol_type &gt; * &gt;</label>
-        <link refid="classstd_1_1vector"/>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/convolutional_interleaver.h" bodystart="35" bodyend="67"/>

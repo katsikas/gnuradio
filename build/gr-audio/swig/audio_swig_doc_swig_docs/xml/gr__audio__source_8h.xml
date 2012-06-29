@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__audio__source_8h" kind="file">
     <compoundname>gr_audio_source.h</compoundname>
     <includes refid="gr__audio__api_8h" local="no">gr_audio_api.h</includes>
@@ -28,9 +28,9 @@
     </incdepgraph>
     <innerclass refid="classaudio__source" prot="public">audio_source</innerclass>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__audio__source_8h_1afc73b1338ea18aed2bb49b50997a52ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_AUDIO_API <ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref></type>
-        <definition>GR_AUDIO_API audio_source::sptr audio_make_source</definition>
+      <memberdef kind="function" id="gr__audio__source_8h_1a3e8887517fb72e4785f2bab808d5de65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT audio_source::sptr audio_make_source</definition>
         <argsstring>(int sampling_rate, const std::string device_name=&quot;&quot;, bool ok_to_block=true)</argsstring>
         <name>audio_make_source</name>
         <param>
@@ -102,7 +102,7 @@
 <codeline lineno="34" refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;audio_source&gt;<sp/><ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">sptr</ref>;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><ref refid="gr__audio__api_8h_1a222adfe41ab381b8e026445ba45db5a1" kindref="member">GR_AUDIO_API</ref><sp/><ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref><sp/><ref refid="gr__audio__source_8h_1afc73b1338ea18aed2bb49b50997a52ac" kindref="member">audio_make_source</ref>(</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="gr__audio__api_8h_1a222adfe41ab381b8e026445ba45db5a1" kindref="member">GR_AUDIO_API</ref><sp/><ref refid="classaudio__source_1a2135ef650ecacb1d5d18367d28b67ed8" kindref="member">audio_source::sptr</ref><sp/><ref refid="gr__audio__source_8h_1a3e8887517fb72e4785f2bab808d5de65" kindref="member">audio_make_source</ref>(</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sampling_rate,</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>device_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ok_to_block<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"></highlight></codeline>

@@ -34,8 +34,8 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "audio_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-audio/grc/audio_sink.xml"
     "/home/katsikas/gnuradio/gr-audio/grc/audio_source.xml"
+    "/home/katsikas/gnuradio/gr-audio/grc/audio_sink.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "audio_python")
 

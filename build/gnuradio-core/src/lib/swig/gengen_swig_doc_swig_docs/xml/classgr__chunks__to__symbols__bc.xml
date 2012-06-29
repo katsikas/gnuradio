@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__chunks__to__symbols__bc" kind="class" prot="public">
     <compoundname>gr_chunks_to_symbols_bc</compoundname>
     <includes refid="gr__chunks__to__symbols__bc_8h" local="no">gr_chunks_to_symbols_bc.h</includes>
@@ -157,18 +157,6 @@
     <detaileddescription>
 <para>out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1</para><para>The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols.</para><para><simplesect kind="see"><para><ref refid="classgr__packed__to__unpacked__bb" kindref="compound">gr_packed_to_unpacked_bb</ref>, <ref refid="classgr__unpacked__to__packed__bb" kindref="compound">gr_unpacked_to_packed_bb</ref>, </para><simplesectsep/><para><ref refid="classgr__packed__to__unpacked__ss" kindref="compound">gr_packed_to_unpacked_ss</ref>, <ref refid="classgr__unpacked__to__packed__ss" kindref="compound">gr_unpacked_to_packed_ss</ref>, </para><simplesectsep/><para><ref refid="classgr__chunks__to__symbols__bf" kindref="compound">gr_chunks_to_symbols_bf</ref>, <ref refid="classgr__chunks__to__symbols__bc" kindref="compound">gr_chunks_to_symbols_bc</ref>. </para><simplesectsep/><para><ref refid="classgr__chunks__to__symbols__sf" kindref="compound">gr_chunks_to_symbols_sf</ref>, <ref refid="classgr__chunks__to__symbols__sc" kindref="compound">gr_chunks_to_symbols_sc</ref>. </para></simplesect>
 </para>    </detaileddescription>
-    <collaborationgraph>
-      <node id="360">
-        <label>std::vector&lt; gr_complex &gt;</label>
-      </node>
-      <node id="359">
-        <label>gr_chunks_to_symbols_bc</label>
-        <link refid="classgr__chunks__to__symbols__bc"/>
-        <childnode refid="360" relation="usage">
-          <edgelabel>d_symbol_table</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bc.h" line="56" bodyfile="/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/gr_chunks_to_symbols_bc.h" bodystart="55" bodyend="71"/>
     <listofallmembers>
       <member refid="classgr__chunks__to__symbols__bc_1a920ba2d9d2e19eb23abca959990f526a" prot="public" virt="non-virtual"><scope>gr_chunks_to_symbols_bc</scope><name>check_topology</name></member>

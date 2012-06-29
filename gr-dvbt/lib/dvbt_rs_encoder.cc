@@ -59,10 +59,7 @@ dvbt_rs_encoder::work (int noutput_items,
   	}
 
 	/*for (int i = 0; i < noutput_items; i++){
-                for (int j = 0; j < 1; j++){
-                        printf("%d",out[i].data[j]);
-                }
-                printf("\n");
+                printf("out[0] = %d %d %d %d %d %d %d\n",out[i].data[0],out[i].data[1],out[i].data[2],out[i].data[3],out[i].data[4],out[i].data[5],out[i].data[6]);
         }*/
 
   	return noutput_items;

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__adaptive__fir__ccc" kind="class" prot="public">
     <compoundname>gr_adaptive_fir_ccc</compoundname>
     <basecompoundref refid="classgr__sync__decimator" prot="public" virt="non-virtual">gr_sync_decimator</basecompoundref>
@@ -9,7 +9,7 @@
     <includes refid="gr__adaptive__fir__ccc_8h" local="no">gr_adaptive_fir_ccc.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classgr__adaptive__fir__ccc_1ad270334cd3ee265642162f49a7638031" prot="private" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; gr_adaptive_fir_ccc::d_new_taps</definition>
         <argsstring></argsstring>
         <name>d_new_taps</name>
@@ -48,12 +48,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_adaptive_fir_ccc.h" line="40" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_adaptive_fir_ccc.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classdigital__cma__equalizer__cc_1a299074f6d312ac2c36c7139df078fc76" compoundref="digital__cma__equalizer__cc_8h" startline="70" endline="74">digital_cma_equalizer_cc::update_tap</referencedby>
         <referencedby refid="classdigital__lms__dd__equalizer__cc_1aed00b745b5eb8e2f17bd72aab5641192" compoundref="digital__lms__dd__equalizer__cc_8h" startline="95" endline="98">digital_lms_dd_equalizer_cc::update_tap</referencedby>
         <referencedby refid="classdigital__kurtotic__equalizer__cc_1a4a99ad177cd29cf268cbb17d70ea455a" compoundref="digital__kurtotic__equalizer__cc_8h" startline="99" endline="102">digital_kurtotic_equalizer_cc::update_tap</referencedby>
-        <referencedby refid="classdigital__cma__equalizer__cc_1a299074f6d312ac2c36c7139df078fc76" compoundref="digital__cma__equalizer__cc_8h" startline="70" endline="74">digital_cma_equalizer_cc::update_tap</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgr__adaptive__fir__ccc_1a941d6aec36e0aa1c7def91e1a292d480" prot="protected" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; gr_adaptive_fir_ccc::d_taps</definition>
         <argsstring></argsstring>
         <name>d_taps</name>
@@ -73,9 +73,9 @@
         <definition>virtual gr_complex gr_adaptive_fir_ccc::error</definition>
         <argsstring>(const gr_complex &amp;out)=0</argsstring>
         <name>error</name>
-        <reimplementedby refid="classdigital__lms__dd__equalizer__cc_1aeff7f61076e6c97458fc1655b77aa08f">error</reimplementedby>
-        <reimplementedby refid="classdigital__kurtotic__equalizer__cc_1afffe77d4e9aa59ef7b06830faeda3f03">error</reimplementedby>
         <reimplementedby refid="classdigital__cma__equalizer__cc_1aa61284ce4950c180ab1f99fd9c6ef83d">error</reimplementedby>
+        <reimplementedby refid="classdigital__kurtotic__equalizer__cc_1afffe77d4e9aa59ef7b06830faeda3f03">error</reimplementedby>
+        <reimplementedby refid="classdigital__lms__dd__equalizer__cc_1aeff7f61076e6c97458fc1655b77aa08f">error</reimplementedby>
         <param>
           <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &amp;</type>
           <declname>out</declname>
@@ -90,13 +90,13 @@
         <referencedby refid="classdigital__lms__dd__equalizer__cc_1aeff7f61076e6c97458fc1655b77aa08f" compoundref="digital__lms__dd__equalizer__cc_8h" startline="87" endline="93">digital_lms_dd_equalizer_cc::error</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__adaptive__fir__ccc_1ab58ea7d9ff7433232d1d6310c2676b48" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void gr_adaptive_fir_ccc::update_tap</definition>
         <argsstring>(gr_complex &amp;tap, const gr_complex &amp;in)=0</argsstring>
         <name>update_tap</name>
+        <reimplementedby refid="classdigital__cma__equalizer__cc_1a299074f6d312ac2c36c7139df078fc76">update_tap</reimplementedby>
         <reimplementedby refid="classdigital__lms__dd__equalizer__cc_1aed00b745b5eb8e2f17bd72aab5641192">update_tap</reimplementedby>
         <reimplementedby refid="classdigital__kurtotic__equalizer__cc_1a4a99ad177cd29cf268cbb17d70ea455a">update_tap</reimplementedby>
-        <reimplementedby refid="classdigital__cma__equalizer__cc_1a299074f6d312ac2c36c7139df078fc76">update_tap</reimplementedby>
         <param>
           <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &amp;</type>
           <declname>tap</declname>
@@ -144,7 +144,7 @@
           <declname>decimation</declname>
         </param>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -158,12 +158,12 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classgr__adaptive__fir__ccc_1a6f6d8283d7e725935c8af60901d60e15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void gr_adaptive_fir_ccc::set_taps</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;taps)</argsstring>
         <name>set_taps</name>
         <param>
-          <type>const <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
@@ -185,11 +185,11 @@
           <declname>noutput_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_const_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1a9852a3d906d823cb70eb9c29e7f2a43d" kindref="member">gr_vector_const_void_star</ref> &amp;</type>
           <declname>input_items</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">gr_vector_void_star</ref> &amp;</type>
+          <type><ref refid="gr__types_8h_1acd3f499576e769966ea44554b359d949" kindref="member">gr_vector_void_star</ref> &amp;</type>
           <declname>output_items</declname>
         </param>
         <briefdescription>
@@ -206,271 +206,149 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3775">
+      <node id="2075">
         <label>digital_cma_equalizer_cc</label>
         <link refid="classdigital__cma__equalizer__cc"/>
-        <childnode refid="3768" relation="public-inheritance">
+        <childnode refid="2068" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3773">
+      <node id="2073">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3774" relation="public-inheritance">
+        <childnode refid="2074" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3770">
+      <node id="2070">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3771" relation="public-inheritance">
+        <childnode refid="2071" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3769">
+      <node id="2069">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="3770" relation="public-inheritance">
+        <childnode refid="2070" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3777">
+      <node id="2077">
         <label>digital_lms_dd_equalizer_cc</label>
         <link refid="classdigital__lms__dd__equalizer__cc"/>
-        <childnode refid="3768" relation="public-inheritance">
+        <childnode refid="2068" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3776">
+      <node id="2076">
         <label>digital_kurtotic_equalizer_cc</label>
         <link refid="classdigital__kurtotic__equalizer__cc"/>
-        <childnode refid="3768" relation="public-inheritance">
+        <childnode refid="2068" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3771">
+      <node id="2071">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3772" relation="public-inheritance">
+        <childnode refid="2072" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3774">
+      <node id="2074">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3768">
+      <node id="2068">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="3769" relation="public-inheritance">
+        <childnode refid="2069" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3772">
+      <node id="2072">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3773" relation="public-inheritance">
+        <childnode refid="2073" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3800">
-        <label>std::vector&lt; gr_buffer_reader * &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3794" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3793">
-        <label>boost::shared_ptr&lt; gr_buffer_reader &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3794" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3805">
-        <label>T</label>
-      </node>
-      <node id="3783">
+      <node id="2083">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3784" relation="public-inheritance">
+        <childnode refid="2084" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3780">
+      <node id="2080">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3781" relation="public-inheritance">
+        <childnode refid="2081" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3779">
+      <node id="2079">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="3780" relation="public-inheritance">
+        <childnode refid="2080" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3794">
-        <label>gr_buffer_reader</label>
-        <link refid="classgr__buffer__reader"/>
-        <childnode refid="3795" relation="usage">
-          <edgelabel>d_buffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="3802">
-        <label>std::deque&lt; pmt::pmt_t &gt;</label>
-      </node>
-      <node id="3797">
-        <label>gr_vmcircbuf</label>
-        <link refid="classgr__vmcircbuf"/>
-      </node>
-      <node id="3781">
+      <node id="2081">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3782" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3790" relation="usage">
-          <edgelabel>d_detail</edgelabel>
+        <childnode refid="2082" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3790">
-        <label>boost::shared_ptr&lt; gr_block_detail &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3791" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3804">
-        <label>boost::shared_ptr&lt; T &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3805" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3791">
-        <label>gr_block_detail</label>
-        <link refid="classgr__block__detail"/>
-        <childnode refid="3792" relation="usage">
-          <edgelabel>d_input</edgelabel>
-        </childnode>
-        <childnode refid="3801" relation="usage">
-          <edgelabel>d_tpb</edgelabel>
-        </childnode>
-        <childnode refid="3803" relation="usage">
-          <edgelabel>d_output</edgelabel>
-        </childnode>
-      </node>
-      <node id="3798">
-        <label>std::deque&lt; gr_tag_t &gt;</label>
-        <childnode refid="3799" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3807">
+      <node id="2090">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="3808" relation="usage">
+        <childnode refid="2091" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3785">
+      <node id="2085">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3786" relation="usage">
+        <childnode refid="2086" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3796">
-        <label>gr_buffer</label>
-        <link refid="classgr__buffer"/>
-        <childnode refid="3797" relation="usage">
-          <edgelabel>d_vmcircbuf</edgelabel>
-        </childnode>
-        <childnode refid="3798" relation="usage">
-          <edgelabel>d_item_tags</edgelabel>
-        </childnode>
-        <childnode refid="3800" relation="usage">
-          <edgelabel>d_readers</edgelabel>
-        </childnode>
-      </node>
-      <node id="3789">
+      <node id="2088">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3792">
-        <label>std::vector&lt; gr_buffer_reader_sptr &gt;</label>
-        <childnode refid="3793" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3784">
+      <node id="2084">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3808">
+      <node id="2091">
         <label>std::complex</label>
       </node>
-      <node id="3795">
-        <label>boost::shared_ptr&lt; gr_buffer &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3796" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="3799">
-        <label>gr_tag_t</label>
-        <link refid="structgr__tag__t"/>
-      </node>
-      <node id="3801">
-        <label>gr_tpb_detail</label>
-        <link refid="structgr__tpb__detail"/>
-        <childnode refid="3802" relation="usage">
-          <edgelabel>msg_queue</edgelabel>
-        </childnode>
-      </node>
-      <node id="3803">
-        <label>std::vector&lt; gr_buffer_sptr &gt;</label>
-        <childnode refid="3804" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="3786">
+      <node id="2086">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
-        <childnode refid="3787" relation="usage">
-          <edgelabel>d_sizeof_stream_item</edgelabel>
-        </childnode>
       </node>
-      <node id="3778">
+      <node id="2078">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="3779" relation="public-inheritance">
+        <childnode refid="2079" relation="public-inheritance">
         </childnode>
-        <childnode refid="3806" relation="usage">
+        <childnode refid="2089" relation="usage">
           <edgelabel>d_error</edgelabel>
         </childnode>
-        <childnode refid="3807" relation="usage">
+        <childnode refid="2090" relation="usage">
           <edgelabel>d_taps</edgelabel>
-          <edgelabel>d_new_taps</edgelabel>
         </childnode>
       </node>
-      <node id="3782">
+      <node id="2082">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3783" relation="public-inheritance">
+        <childnode refid="2083" relation="public-inheritance">
         </childnode>
-        <childnode refid="3785" relation="usage">
+        <childnode refid="2085" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3788" relation="usage">
+        <childnode refid="2087" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3806">
+      <node id="2089">
         <label>std::complex&lt; float &gt;</label>
       </node>
-      <node id="3787">
-        <label>std::vector&lt; int &gt;</label>
-        <link refid="classstd_1_1vector"/>
-      </node>
-      <node id="3788">
+      <node id="2087">
         <label>std::string</label>
-        <childnode refid="3789" relation="public-inheritance">
+        <childnode refid="2088" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -539,7 +417,7 @@
       <member refid="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_history</name></member>
       <member refid="classgr__basic__block_1a419d0fbba0ca02d822cbc299b979de54" prot="protected" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_input_signature</name></member>
       <member refid="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_is_unaligned</name></member>
-      <member refid="classgr__basic__block_1a4bce973a0db4ebc616a25e8865e1a271" prot="public" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_msg_handler</name></member>
+      <member refid="classgr__basic__block_1a4e78d61b09a066f5719dbb9c18f3d441" prot="public" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_msg_handler</name></member>
       <member refid="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_output_multiple</name></member>
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>gr_adaptive_fir_ccc</scope><name>set_relative_rate</name></member>

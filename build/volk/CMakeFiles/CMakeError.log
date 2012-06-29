@@ -62,7 +62,7 @@ make: *** [cmTryCompileExec/fast] Error 2
 
 Source file was:
 int main() { return 0;}
-Performing C++ SOURCE FILE Test have_m32 failed with the following output:
+Performing C++ SOURCE FILE Test have_m64 failed with the following output:
 Change Dir: /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
@@ -70,11 +70,11 @@ Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
 make[1]: Entering directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
-/usr/bin/c++    -Dhave_m32   -m32 -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/src.cxx
+/usr/bin/c++    -Dhave_m64   -m64 -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp/src.cxx
 Linking CXX executable cmTryCompileExec
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/c++      -Dhave_m32    CMakeFiles/cmTryCompileExec.dir/src.cxx.o  -o cmTryCompileExec -rdynamic 
-/usr/bin/ld: i386 architecture of input file `CMakeFiles/cmTryCompileExec.dir/src.cxx.o' is incompatible with i386:x86-64 output
+/usr/bin/c++      -Dhave_m64    CMakeFiles/cmTryCompileExec.dir/src.cxx.o  -o cmTryCompileExec -rdynamic 
+/usr/bin/ld: i386:x86-64 architecture of input file `CMakeFiles/cmTryCompileExec.dir/src.cxx.o' is incompatible with i386 output
 collect2: ld returned 1 exit status
 make[1]: *** [cmTryCompileExec] Error 1
 make[1]: Leaving directory `/home/katsikas/gnuradio/build/volk/CMakeFiles/CMakeTmp'

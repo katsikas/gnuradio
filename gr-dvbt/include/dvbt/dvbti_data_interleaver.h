@@ -47,7 +47,7 @@ public:
 class DVBT_API dvbti_data_deinterleaver : public convolutional_interleaver<unsigned char> {
 public:
   	dvbti_data_deinterleaver () :
-    	convolutional_interleaver<unsigned char>(false, 12, 17), alignment_fifo (192) {}//156
+    	convolutional_interleaver<unsigned char>(false, 12, 17), alignment_fifo (5*204) {}//204
 
   	void deinterleave (dvbt_mpeg_packet_rs_encoded &out,
 		     	const dvbt_mpeg_packet_rs_encoded &in);

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classtrellis__siso__combined__f" kind="class" prot="public">
     <compoundname>trellis_siso_combined_f</compoundname>
     <includes refid="trellis__siso__combined__f_8h" local="no">trellis_siso_combined_f.h</includes>
@@ -136,9 +136,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classtrellis__siso__combined__f_1a02057bf0b2af9fca7c6cf8b88d1dbb64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend TRELLIS_API <ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref></type>
-        <definition>TRELLIS_API trellis_siso_combined_f_sptr trellis_make_siso_combined_f</definition>
+      <memberdef kind="friend" id="classtrellis__siso__combined__f_1aa77e1964ee6a2563d9c82662b5dc0583" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="trellis__siso__combined__f_8h_1a6313d1610fed73454aac89afbb461ec9" kindref="member">trellis_siso_combined_f_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT trellis_siso_combined_f_sptr trellis_make_siso_combined_f</definition>
         <argsstring>(const fsm &amp;FSM, int K, int S0, int SK, bool POSTI, bool POSTO, trellis_siso_type_t d_SISO_TYPE, int D, const std::vector&lt; float &gt; &amp;TABLE, trellis_metric_type_t TYPE)</argsstring>
         <name>trellis_make_siso_combined_f</name>
         <param>
@@ -431,44 +431,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="813">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-      <node id="815">
-        <label>std::vector&lt; std::vector&lt; int &gt; &gt;</label>
-        <childnode refid="816" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
-      </node>
-      <node id="814">
-        <label>fsm</label>
-        <link refid="classfsm"/>
-        <childnode refid="815" relation="usage">
-          <edgelabel>d_PI</edgelabel>
-          <edgelabel>d_PS</edgelabel>
-        </childnode>
-        <childnode refid="816" relation="usage">
-          <edgelabel>d_NS</edgelabel>
-          <edgelabel>d_TMl</edgelabel>
-          <edgelabel>d_TMi</edgelabel>
-          <edgelabel>d_OS</edgelabel>
-        </childnode>
-      </node>
-      <node id="812">
-        <label>trellis_siso_combined_f</label>
-        <link refid="classtrellis__siso__combined__f"/>
-        <childnode refid="813" relation="usage">
-          <edgelabel>d_TABLE</edgelabel>
-        </childnode>
-        <childnode refid="814" relation="usage">
-          <edgelabel>d_FSM</edgelabel>
-        </childnode>
-      </node>
-      <node id="816">
-        <label>std::vector&lt; int &gt;</label>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h" line="53" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h" bodystart="52" bodyend="110"/>
     <listofallmembers>
       <member refid="classtrellis__siso__combined__f_1ac712fe4ac232b2110d7018fed64f8ca6" prot="public" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>D</name></member>
@@ -492,7 +454,7 @@
       <member refid="classtrellis__siso__combined__f_1aaf86c0d29d38c1f3f2012d9c4e028bdf" prot="public" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>SISO_TYPE</name></member>
       <member refid="classtrellis__siso__combined__f_1ae6adb9e0da13599557a55f050c649e7c" prot="public" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>SK</name></member>
       <member refid="classtrellis__siso__combined__f_1a7f839e8dec64172d723ea8f9755319ea" prot="public" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>TABLE</name></member>
-      <member refid="classtrellis__siso__combined__f_1a02057bf0b2af9fca7c6cf8b88d1dbb64" prot="private" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>trellis_make_siso_combined_f</name></member>
+      <member refid="classtrellis__siso__combined__f_1aa77e1964ee6a2563d9c82662b5dc0583" prot="private" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>trellis_make_siso_combined_f</name></member>
       <member refid="classtrellis__siso__combined__f_1a535d295d051cd56a331666cd51eb0271" prot="private" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>trellis_siso_combined_f</name></member>
       <member refid="classtrellis__siso__combined__f_1a385969822bb84b440d0a98f2a7f331e5" prot="public" virt="non-virtual"><scope>trellis_siso_combined_f</scope><name>TYPE</name></member>
     </listofallmembers>

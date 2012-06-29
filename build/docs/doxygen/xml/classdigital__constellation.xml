@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__constellation" kind="class" prot="public">
     <compoundname>digital_constellation</compoundname>
     <derivedcompoundref refid="classdigital__constellation__8psk" prot="public" virt="non-virtual">digital_constellation_8psk</derivedcompoundref>
@@ -11,7 +11,7 @@
     <includes refid="digital__constellation_8h" local="no">digital_constellation.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classdigital__constellation_1a211cb46f32e643e682ba79942991ab6c" prot="protected" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_constellation::d_constellation</definition>
         <argsstring></argsstring>
         <name>d_constellation</name>
@@ -24,7 +24,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="117" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__constellation_1a0b3bdd72a55f984c715a6a2cea544aa9" prot="protected" static="no" mutable="no">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; unsigned int &gt;</type>
+        <type>std::vector&lt; unsigned int &gt;</type>
         <definition>std::vector&lt;unsigned int&gt; digital_constellation::d_pre_diff_code</definition>
         <argsstring></argsstring>
         <name>d_pre_diff_code</name>
@@ -96,11 +96,11 @@
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int dimensionality)</argsstring>
         <name>digital_constellation</name>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+          <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
           <declname>constellation</declname>
         </param>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; unsigned int &gt;</type>
+          <type>std::vector&lt; unsigned int &gt;</type>
           <declname>pre_diff_code</declname>
         </param>
         <param>
@@ -133,7 +133,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a9adc0058846951213f3076a6d71d09c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_constellation::map_to_points</definition>
         <argsstring>(unsigned int value, gr_complex *points)</argsstring>
         <name>map_to_points</name>
@@ -154,7 +154,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="67"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1ab2ad381559b3d86e19fd2a52e98cfa4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_constellation::map_to_points_v</definition>
         <argsstring>(unsigned int value)</argsstring>
         <name>map_to_points_v</name>
@@ -175,12 +175,12 @@
         <definition>virtual unsigned int digital_constellation::decision_maker</definition>
         <argsstring>(const gr_complex *sample)=0</argsstring>
         <name>decision_maker</name>
-        <reimplementedby refid="classdigital__constellation__8psk_1ae327b4987e3ebcbe66b036fe6351a37c">decision_maker</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__dqpsk_1af18d1533cfeeb6b75dd8f35ba422a3e5">decision_maker</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__qpsk_1abc72f3b7a6f5f6ab0c9d06dbabde0ad3">decision_maker</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__bpsk_1aeb53d9e6c461c98c4cfd059089afdfe9">decision_maker</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__sector_1a97f516d26eb9790ca2789396d69a2a2d">decision_maker</reimplementedby>
         <reimplementedby refid="classdigital__constellation__calcdist_1a2374be4a2753db634e06ace6a0fbffad">decision_maker</reimplementedby>
+        <reimplementedby refid="classdigital__constellation__sector_1a97f516d26eb9790ca2789396d69a2a2d">decision_maker</reimplementedby>
+        <reimplementedby refid="classdigital__constellation__bpsk_1aeb53d9e6c461c98c4cfd059089afdfe9">decision_maker</reimplementedby>
+        <reimplementedby refid="classdigital__constellation__qpsk_1abc72f3b7a6f5f6ab0c9d06dbabde0ad3">decision_maker</reimplementedby>
+        <reimplementedby refid="classdigital__constellation__dqpsk_1af18d1533cfeeb6b75dd8f35ba422a3e5">decision_maker</reimplementedby>
+        <reimplementedby refid="classdigital__constellation__8psk_1ae327b4987e3ebcbe66b036fe6351a37c">decision_maker</reimplementedby>
         <param>
           <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> *</type>
           <declname>sample</declname>
@@ -199,7 +199,7 @@
         <argsstring>(std::vector&lt; gr_complex &gt; sample)</argsstring>
         <name>decision_maker_v</name>
         <param>
-          <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+          <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
           <declname>sample</declname>
         </param>
         <briefdescription>
@@ -253,7 +253,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="77"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a294e60dcefca6e6ec3b1c8aba87b4747" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void digital_constellation::calc_metric</definition>
         <argsstring>(const gr_complex *sample, float *metric, trellis_metric_type_t type)</argsstring>
         <name>calc_metric</name>
@@ -278,7 +278,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="81"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a308f152beb841d8f8ec1d256c5b09f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void digital_constellation::calc_euclidean_metric</definition>
         <argsstring>(const gr_complex *sample, float *metric)</argsstring>
         <name>calc_euclidean_metric</name>
@@ -299,7 +299,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="82"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1adeaf24c5989ac2b04ac6d830cda7cf3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>virtual void digital_constellation::calc_hard_symbol_metric</definition>
         <argsstring>(const gr_complex *sample, float *metric)</argsstring>
         <name>calc_hard_symbol_metric</name>
@@ -320,7 +320,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="83"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a3ca25b687414f95bcedaed3566d4fd17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_constellation::points</definition>
         <argsstring>()</argsstring>
         <name>points</name>
@@ -333,7 +333,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="86" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="86" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a30688592ec5f65dc6f9a879d7c75eeb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
         <definition>std::vector&lt;gr_complex&gt; digital_constellation::s_points</definition>
         <argsstring>()</argsstring>
         <name>s_points</name>
@@ -346,7 +346,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="89"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a51297ec3a5bd3493631ccea3fb1e7ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &gt;</type>
+        <type>std::vector&lt; std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt; &gt;</type>
         <definition>std::vector&lt;std::vector&lt;gr_complex&gt; &gt; digital_constellation::v_points</definition>
         <argsstring>()</argsstring>
         <name>v_points</name>
@@ -372,7 +372,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="93" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="93" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a96ea5720f7ed2b4a4c71ba6b04f6592a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_constellation::set_pre_diff_code</definition>
         <argsstring>(bool a)</argsstring>
         <name>set_pre_diff_code</name>
@@ -389,7 +389,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="95" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="95" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1a75727d03f76f9db555fde2097622dfde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classstd_1_1vector" kindref="compound">std::vector</ref>&lt; unsigned int &gt;</type>
+        <type>std::vector&lt; unsigned int &gt;</type>
         <definition>std::vector&lt;unsigned int&gt; digital_constellation::pre_diff_code</definition>
         <argsstring>()</argsstring>
         <name>pre_diff_code</name>
@@ -507,7 +507,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="125"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation_1abfe17dc18f2e2adbd2559bf454a3c756" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
         <definition>void digital_constellation::calc_arity</definition>
         <argsstring>()</argsstring>
         <name>calc_arity</name>
@@ -525,83 +525,81 @@
     <detaileddescription>
 <para>Standard constellations (BPSK, QPSK, QAM, etc) can be inherited from this class and overloaded to perform optimized slicing and constellation mappings. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1764">
+      <node id="1056">
         <label>digital_constellation_8psk</label>
         <link refid="classdigital__constellation__8psk"/>
-        <childnode refid="1763" relation="public-inheritance">
+        <childnode refid="1055" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1770">
+      <node id="1062">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="1769" relation="public-inheritance">
+        <childnode refid="1061" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1763">
+      <node id="1055">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="1771">
+      <node id="1063">
         <label>digital_constellation_rect</label>
         <link refid="classdigital__constellation__rect"/>
-        <childnode refid="1769" relation="public-inheritance">
+        <childnode refid="1061" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1765">
+      <node id="1057">
         <label>digital_constellation_bpsk</label>
         <link refid="classdigital__constellation__bpsk"/>
-        <childnode refid="1763" relation="public-inheritance">
+        <childnode refid="1055" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1767">
+      <node id="1059">
         <label>digital_constellation_dqpsk</label>
         <link refid="classdigital__constellation__dqpsk"/>
-        <childnode refid="1763" relation="public-inheritance">
+        <childnode refid="1055" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1768">
+      <node id="1060">
         <label>digital_constellation_qpsk</label>
         <link refid="classdigital__constellation__qpsk"/>
-        <childnode refid="1763" relation="public-inheritance">
+        <childnode refid="1055" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1766">
+      <node id="1058">
         <label>digital_constellation_calcdist</label>
         <link refid="classdigital__constellation__calcdist"/>
-        <childnode refid="1763" relation="public-inheritance">
+        <childnode refid="1055" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1769">
+      <node id="1061">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="1763" relation="public-inheritance">
+        <childnode refid="1055" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1774">
+      <node id="1066">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <link refid="classstd_1_1vector"/>
-        <childnode refid="1775" relation="usage">
+        <childnode refid="1067" relation="usage">
           <edgelabel>p</edgelabel>
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1773">
+      <node id="1065">
         <label>std::vector&lt; unsigned int &gt;</label>
-        <link refid="classstd_1_1vector"/>
       </node>
-      <node id="1772">
+      <node id="1064">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="1773" relation="usage">
+        <childnode refid="1065" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="1774" relation="usage">
+        <childnode refid="1066" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="1775">
+      <node id="1067">
         <label>std::complex</label>
       </node>
     </collaborationgraph>

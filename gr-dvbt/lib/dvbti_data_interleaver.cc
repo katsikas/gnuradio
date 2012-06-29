@@ -33,11 +33,6 @@ dvbti_data_interleaver::interleave (dvbt_mpeg_packet_rs_encoded &out,
 
   	out.pli = in.pli;			// copy pipeline info
 
-	/*if(in.data[0] == MPEG_INVERTED_SYNC_BYTE){
-                printf("mpikeeeeee \n");
-                sync ();
-        }*/
-
   	transform (out.data, in.data, sizeof (in.data));
 }
 
@@ -46,13 +41,7 @@ void
 dvbti_data_deinterleaver::deinterleave (dvbt_mpeg_packet_rs_encoded &out,
 				       const dvbt_mpeg_packet_rs_encoded &in)
 {
-  	//assert (in.pli.regular_seg_p ());
   	plinfo::sanity_check (in.pli);
-
-	/*if(in.data[0] == MPEG_INVERTED_SYNC_BYTE){
-                printf("mpikeeeeee \n");
-                sync ();
-        }*/
 
   	// remap OUTPUT pipeline info to reflect 12 data segment end-to-end delay
   	plinfo::delay (out.pli, in.pli, 12);
@@ -60,6 +49,7 @@ dvbti_data_deinterleaver::deinterleave (dvbt_mpeg_packet_rs_encoded &out,
   	// now do the actual deinterleaving
   	for (unsigned int i = 0; i < sizeof (in.data); i++){
     		out.data[i] = alignment_fifo.stuff (transform (in.data[i]));
+		//out.data[i] = transform (in.data[i]);
   	}
 }
 

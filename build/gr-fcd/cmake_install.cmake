@@ -32,20 +32,3 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   SET(CMAKE_INSTALL_SO_NO_EXE "1")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "fcd_devel")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-fcd/gnuradio-fcd.pc")
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "fcd_devel")
-
-IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/include/fcd/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/lib/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/swig/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/python/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/grc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/examples/grc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/examples/c++/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/doc/cmake_install.cmake")
-
-ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
-
