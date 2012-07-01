@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 8c75818d C++ API: dvbti_data_interleaver.h Source File</title>
+<title>GNU Radio fa0eff61 C++ API: dvbti_data_interleaver.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 8c75818d C++ API
+   <div id="projectname">GNU Radio fa0eff61 C++ API
    
    </div>
    
@@ -112,7 +112,7 @@
 <a name="l00047"></a><a class="code" href="classdvbti__data__deinterleaver.html">00047</a> <span class="keyword">class </span><a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classdvbti__data__deinterleaver.html" title="dvbt convolutional data deinterleaver">dvbti_data_deinterleaver</a> : <span class="keyword">public</span> <a class="code" href="classconvolutional__interleaver.html" title="template class for generic convolutional interleaver">convolutional_interleaver</a>&lt;unsigned char&gt; {
 <a name="l00048"></a>00048 <span class="keyword">public</span>:
 <a name="l00049"></a><a class="code" href="classdvbti__data__deinterleaver.html#a148f0100bea69f0c52fec418d4b93359">00049</a>         <a class="code" href="classdvbti__data__deinterleaver.html" title="dvbt convolutional data deinterleaver">dvbti_data_deinterleaver</a> () :
-<a name="l00050"></a>00050         <a class="code" href="classconvolutional__interleaver.html" title="template class for generic convolutional interleaver">convolutional_interleaver</a>&lt;unsigned char&gt;(false, 12, 17), alignment_fifo (192) {}<span class="comment">//156</span>
+<a name="l00050"></a>00050         <a class="code" href="classconvolutional__interleaver.html" title="template class for generic convolutional interleaver">convolutional_interleaver</a>&lt;unsigned char&gt;(false, 12, 17), alignment_fifo (5*204) {}<span class="comment">//204</span>
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052         <span class="keywordtype">void</span> deinterleave (<a class="code" href="classdvbt__mpeg__packet__rs__encoded.html">dvbt_mpeg_packet_rs_encoded</a> &amp;out,
 <a name="l00053"></a>00053                         <span class="keyword">const</span> <a class="code" href="classdvbt__mpeg__packet__rs__encoded.html">dvbt_mpeg_packet_rs_encoded</a> &amp;in);
@@ -137,7 +137,7 @@
     <ul>
       <li class="navelem"><a class="el" href="dvbti__data__interleaver_8h.html">dvbti_data_interleaver.h</a>      </li>
 
-    <li class="footer">Generated on Thu Jun 28 2012 13:51:47 for GNU Radio 8c75818d C++ API by
+    <li class="footer">Generated on Sat Jun 30 2012 17:02:37 for GNU Radio fa0eff61 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "GNU Radio 8c75818d C++ API", "index.html", [
+  [ "GNU Radio fa0eff61 C++ API", "index.html", [
     [ "Main Page", "index.html", null ],
     [ "Related Pages", "pages.html", "pages" ],
     [ "Modules", "modules.html", "modules" ],
@@ -34,7 +34,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
-        [ "Variables", "globals_vars.html", "globals_vars" ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", "globals_eval" ],

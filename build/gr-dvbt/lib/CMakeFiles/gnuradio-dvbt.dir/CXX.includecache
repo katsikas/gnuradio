@@ -74,18 +74,6 @@ gr_core_api.h
 gr_block.h
 -
 
-../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
-gr_core_api.h
--
-gr_sync_block.h
--
-
-../gnuradio-core/src/lib/runtime/gr_sync_interpolator.h
-gr_core_api.h
--
-gr_sync_block.h
--
-
 ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr_core_api.h
 -
@@ -106,37 +94,11 @@ gr_complex.h
 stdint.h
 -
 
-../gr-dvbt/include/dvbt/convolutional_interleaver.h
-stdio.h
--
-vector
--
-assert.h
--
-dvbt/interleaver_fifo.h
--
-
 ../gr-dvbt/include/dvbt/dvbt_api.h
 gruel/attributes.h
 -
 
 ../gr-dvbt/include/dvbt/dvbt_consts.h
-
-../gr-dvbt/include/dvbt/dvbt_deinterleaver.h
-gr_sync_block.h
--
-dvbt/dvbt_api.h
--
-dvbt/dvbti_data_interleaver.h
--
-
-../gr-dvbt/include/dvbt/dvbt_depad.h
-cassert
--
-dvbt/dvbt_api.h
--
-gr_sync_interpolator.h
--
 
 ../gr-dvbt/include/dvbt/dvbt_derandomizer.h
 cassert
@@ -146,20 +108,6 @@ dvbt/dvbt_api.h
 gr_sync_block.h
 -
 dvbt/dvbti_randomizer.h
--
-
-../gr-dvbt/include/dvbt/dvbt_interleaver.h
-gr_sync_block.h
--
-dvbt/dvbt_api.h
--
-dvbt/dvbti_data_interleaver.h
--
-
-../gr-dvbt/include/dvbt/dvbt_pad.h
-dvbt/dvbt_api.h
--
-gr_sync_decimator.h
 -
 
 ../gr-dvbt/include/dvbt/dvbt_randomizer.h
@@ -198,16 +146,6 @@ cassert
 dvbt/dvbt_consts.h
 -
 
-../gr-dvbt/include/dvbt/dvbti_data_interleaver.h
-stdio.h
--
-dvbt/dvbt_api.h
--
-dvbt/dvbt_types.h
--
-dvbt/convolutional_interleaver.h
--
-
 ../gr-dvbt/include/dvbt/dvbti_randomizer.h
 bitset
 -
@@ -222,14 +160,6 @@ dvbt/dvbt_types.h
 dvbt/dvbt_api.h
 -
 dvbt/dvbt_types.h
--
-
-../gr-dvbt/include/dvbt/interleaver_fifo.h
-stdio.h
--
-string.h
--
-dvbt/interleaver_fifo.h
 -
 
 ../gruel/src/include/gruel/api.h
@@ -270,28 +200,6 @@ gruel/pmt_sugar.h
 
 ../gruel/src/include/gruel/pmt_sugar.h
 
-/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_deinterleaver.cc
-config.h
--
-gr_io_signature.h
--
-dvbt/dvbt_consts.h
--
-dvbt/dvbt_deinterleaver.h
--
-
-/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_depad.cc
-config.h
--
-stdio.h
--
-dvbt/dvbt_depad.h
--
-dvbt/dvbt_types.h
--
-gr_io_signature.h
--
-
 /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_derandomizer.cc
 config.h
 -
@@ -304,30 +212,6 @@ gr_io_signature.h
 dvbt/dvbt_consts.h
 -
 dvbt/dvbt_derandomizer.h
--
-
-/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_interleaver.cc
-config.h
--
-stdio.h
--
-gr_io_signature.h
--
-dvbt/dvbt_consts.h
--
-dvbt/dvbt_interleaver.h
--
-
-/home/katsikas/gnuradio/gr-dvbt/lib/dvbt_pad.cc
-config.h
--
-stdio.h
--
-dvbt/dvbt_pad.h
--
-dvbt/dvbt_types.h
--
-gr_io_signature.h
 -
 
 /home/katsikas/gnuradio/gr-dvbt/lib/dvbt_randomizer.cc
@@ -366,24 +250,6 @@ dvbt/dvbt_consts.h
 dvbt/dvbt_rs_encoder.h
 -
 
-/home/katsikas/gnuradio/gr-dvbt/lib/dvbti_data_interleaver.cc
-stdio.h
--
-dvbt/dvbti_data_interleaver.h
--
-
-/home/katsikas/gnuradio/gr-dvbt/lib/dvbti_randomizer.cc
-bitset
--
-string
--
-stdio.h
--
-assert.h
--
-dvbt/dvbti_randomizer.h
--
-
 /home/katsikas/gnuradio/gr-dvbt/lib/dvbti_reed_solomon.cc
 stdio.h
 -
@@ -395,10 +261,4 @@ dvbt/dvbti_reed_solomon.h
 -
 rs.h
 /home/katsikas/gnuradio/gr-dvbt/lib/rs.h
-
-/home/katsikas/gnuradio/gr-dvbt/lib/plinfo.cc
-assert.h
--
-dvbt/dvbt_types.h
--
 

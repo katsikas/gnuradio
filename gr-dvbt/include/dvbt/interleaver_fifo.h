@@ -24,7 +24,6 @@
 #ifndef _INTERLEAVER_FIFO_H_
 #define _INTERLEAVER_FIFO_H_
 
-#include <stdio.h>
 #include <string.h>
 #include <dvbt/interleaver_fifo.h>
 

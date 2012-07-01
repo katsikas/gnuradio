@@ -609,88 +609,88 @@ This function is called by the runtime system whenever the topology changes. Mos
     <detaileddescription>
 <para>This block can be usefull when testing the runtime system. You can force this block to have a large history, decimation factor and/or large output_multiple. The runtime system should detect this and create large enough buffers all through the signal chain. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="8654">
+      <node id="5900">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="8655" relation="public-inheritance">
+        <childnode refid="5901" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8651">
+      <node id="5897">
         <label>gr_test</label>
         <link refid="classgr__test"/>
-        <childnode refid="8652" relation="public-inheritance">
+        <childnode refid="5898" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8652">
+      <node id="5898">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="8653" relation="public-inheritance">
+        <childnode refid="5899" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8655">
+      <node id="5901">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="8653">
+      <node id="5899">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="8654" relation="public-inheritance">
+        <childnode refid="5900" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="8659">
+      <node id="5905">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="8660" relation="public-inheritance">
+        <childnode refid="5906" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8656">
+      <node id="5902">
         <label>gr_test</label>
         <link refid="classgr__test"/>
-        <childnode refid="8657" relation="public-inheritance">
+        <childnode refid="5903" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8657">
+      <node id="5903">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="8658" relation="public-inheritance">
+        <childnode refid="5904" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8661">
+      <node id="5907">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="8662" relation="usage">
+        <childnode refid="5908" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="8664">
+      <node id="5910">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="8660">
+      <node id="5906">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="8662">
+      <node id="5908">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="8658">
+      <node id="5904">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="8659" relation="public-inheritance">
+        <childnode refid="5905" relation="public-inheritance">
         </childnode>
-        <childnode refid="8661" relation="usage">
+        <childnode refid="5907" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="8663" relation="usage">
+        <childnode refid="5909" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="8663">
+      <node id="5909">
         <label>std::string</label>
-        <childnode refid="8664" relation="public-inheritance">
+        <childnode refid="5910" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

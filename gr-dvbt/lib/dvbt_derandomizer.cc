@@ -74,6 +74,7 @@ dvbt_derandomizer::work (int noutput_items,
 			//printf("NEVER HERE!!!\n");
 			assert((out[i].data[0] == MPEG_SYNC_BYTE) || (out[i].data[0] == MPEG_INVERTED_SYNC_BYTE));
 		}
+
                 core_rand.derandomize(out[i], in[i]);
         }
 

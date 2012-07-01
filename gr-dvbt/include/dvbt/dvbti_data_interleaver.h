@@ -15,6 +15,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
+
  * along with GNU Radio; see the file COPYING.  If not, write to
  * the Free Software Foundation, Inc., 51 Franklin Street,
  * Boston, MA 02110-1301, USA.
@@ -35,7 +36,8 @@
  */
 class DVBT_API dvbti_data_interleaver : public convolutional_interleaver<unsigned char> {
 public:
-  	dvbti_data_interleaver () : convolutional_interleaver<unsigned char>(true, 12, 17) {}
+  	dvbti_data_interleaver () : convolutional_interleaver<unsigned char>
+					(true, OUTER_INTERLEAVER_BANKS, OUTER_INTERLEAVER_INC_SIZE) {}
 
   	void interleave (dvbt_mpeg_packet_rs_encoded &out,
 			const dvbt_mpeg_packet_rs_encoded &in);
@@ -46,8 +48,8 @@ public:
  */
 class DVBT_API dvbti_data_deinterleaver : public convolutional_interleaver<unsigned char> {
 public:
-  	dvbti_data_deinterleaver () :
-    	convolutional_interleaver<unsigned char>(false, 12, 17), alignment_fifo (5*204) {}//204
+  	dvbti_data_deinterleaver () : convolutional_interleaver<unsigned char>
+					(false, OUTER_INTERLEAVER_BANKS, OUTER_INTERLEAVER_INC_SIZE), alignment_fifo (0) {} //204
 
   	void deinterleave (dvbt_mpeg_packet_rs_encoded &out,
 		     	const dvbt_mpeg_packet_rs_encoded &in);

@@ -24,7 +24,6 @@
 #ifndef _CONVOLUTIONAL_INTERLEAVER_H_
 #define _CONVOLUTIONAL_INTERLEAVER_H_
 
-#include <stdio.h>
 #include <vector>
 #include <assert.h>
 #include <dvbt/interleaver_fifo.h>
@@ -54,6 +53,9 @@ public:
 		//printf("commutator = %d | input = %d \n",m_commutator,input);
     		symbol_type retval = m_fifo[m_commutator]->stuff (input);
     		m_commutator++;
+
+		end_to_end_delay ();
+
     		if (m_commutator >= m_nbanks)
       			m_commutator = 0;
     		return retval;
@@ -119,7 +121,7 @@ template<class symbol_type> int
 convolutional_interleaver<symbol_type>::end_to_end_delay ()
 {
   	int m = m_nbanks * m_fifo_size_incr;
-	printf("delay = \n" ,m * (m_nbanks - 1));
+	//printf("delay = \n" ,m * (m_nbanks - 1));
   	return m * (m_nbanks - 1);
 }
 
@@ -130,10 +132,8 @@ convolutional_interleaver<symbol_type>::transform (symbol_type *out,
 						   int nsymbols)
 {
   	// we may want to unroll this a couple of times...
-	//printf("\n NEW PACKET RECEIVED \n");
   	for (int i = 0; i < nsymbols; i++){
     		out[i] = transform (in[i]);
-		//printf("in[ %d ] = %d | out[i] = %d \n",i,in[i],out[i]);
 	}
 }
 

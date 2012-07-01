@@ -87,16 +87,16 @@ gr-audio/swig/audio_swig.tag: gr-audio/swig/_audio_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-audio/swig && ./_audio_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig.tag
 
-gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_sink.h
 gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_api.h
+gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_sink.h
 gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_source.h
 gr-audio/swig/audio_swig_doc.i: gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating audio_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig_doc.i
 
-gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_sink.h
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_api.h
+gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_sink.h
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_source.h
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: gr-audio/swig/_audio_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)

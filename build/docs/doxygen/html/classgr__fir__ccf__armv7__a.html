@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 8c75818d C++ API: gr_fir_ccf_armv7_a Class Reference</title>
+<title>GNU Radio fa0eff61 C++ API: gr_fir_ccf_armv7_a Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 8c75818d C++ API
+   <div id="projectname">GNU Radio fa0eff61 C++ API
    
    </div>
    
@@ -66,21 +66,11 @@
 <div class="title">gr_fir_ccf_armv7_a Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="gr_fir_ccf_armv7_a" --><!-- doxytag: inherits="gr_fir_ccf_generic" -->
-<p>armv7_a using NEON coprocessor version of <a class="el" href="classgr__fir__ccf.html" title="Abstract class for FIR with gr_complex input, gr_complex output and float tapsThis is the abstract cl...">gr_fir_ccf</a>  
+<!-- doxytag: class="gr_fir_ccf_armv7_a" -->
+<p>armv7_a using NEON coprocessor version of gr_fir_ccf  
  <a href="classgr__fir__ccf__armv7__a.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gr__fir__ccf__armv7__a_8h_source.html">gr_fir_ccf_armv7_a.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for gr_fir_ccf_armv7_a:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classgr__fir__ccf__armv7__a.png" usemap="#gr_fir_ccf_armv7_a_map" alt=""/>
-  <map id="gr_fir_ccf_armv7_a_map" name="gr_fir_ccf_armv7_a_map">
-<area href="classgr__fir__ccf__generic.html" title="Concrete class for generic implementation of FIR with gr_complex input, gr_complex output and float t..." alt="gr_fir_ccf_generic" shape="rect" coords="0,56,124,80"/>
-<area href="classgr__fir__ccf.html" title="Abstract class for FIR with gr_complex input, gr_complex output and float tapsThis is the abstract cl..." alt="gr_fir_ccf" shape="rect" coords="0,0,124,24"/>
-</map>
- </div></div>
 
 <p><a href="classgr__fir__ccf__armv7__a-members.html">List of all members.</a></p>
 <table class="memberdecls">
@@ -90,16 +80,14 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__ccf__armv7__a.html#ae9f1e4c56c46d0f19e50187d532aa936">gr_fir_ccf_armv7_a</a> (const std::vector&lt; float &gt; &amp;<a class="el" href="interpolator__taps_8h.html#a30bf032e13c2a9fc4a98e14e390cd65a">taps</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__ccf__armv7__a.html#aa279acb5bb2cf89416dd2ed38023bf92">~gr_fir_ccf_armv7_a</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="volk_8tmpl_8h.html#a8dc2b7da310a28e667530ba0e8ca4cc4">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__ccf__armv7__a.html#a448c85dfefd3c8d75aa715c2a2204010">set_taps</a> (const std::vector&lt; float &gt; &amp;<a class="el" href="interpolator__taps_8h.html#a30bf032e13c2a9fc4a98e14e390cd65a">taps</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">install <code>new_taps</code> as the current taps.  <a href="#a448c85dfefd3c8d75aa715c2a2204010"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__ccf__armv7__a.html#a4b307c8b6bb4189b3c7fc084bb3305b3">filter</a> (const <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> input[])</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">compute a single output value.  <a href="#a4b307c8b6bb4189b3c7fc084bb3305b3"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__ccf__armv7__a.html#a4e679697a947b83692adbbbe9144b01f">d_naligned_taps</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__ccf__armv7__a.html#ad7945cad301667970c5a60fc5438b5a7">d_aligned_taps</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>armv7_a using NEON coprocessor version of <a class="el" href="classgr__fir__ccf.html" title="Abstract class for FIR with gr_complex input, gr_complex output and float tapsThis is the abstract cl...">gr_fir_ccf</a> </p>
+<div class="textblock"><p>armv7_a using NEON coprocessor version of gr_fir_ccf </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a93af05791acbaeed93970dfd9ca11531"></a><!-- doxytag: member="gr_fir_ccf_armv7_a::gr_fir_ccf_armv7_a" ref="a93af05791acbaeed93970dfd9ca11531" args="()" -->
 <div class="memitem">
@@ -166,12 +154,6 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>compute a single output value. </p>
-<p><code>input</code> must have <a class="el" href="classgr__fir__ccf.html#a03fb8ba5795cd467c6bd6314ac4a4d78">ntaps()</a> valid entries. input[0] .. input[<a class="el" href="classgr__fir__ccf.html#a03fb8ba5795cd467c6bd6314ac4a4d78">ntaps()</a> - 1] are referenced to compute the output value.</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>the filtered input value. </dd></dl>
-
-<p>Reimplemented from <a class="el" href="classgr__fir__ccf__generic.html#aa3965e06fadc82c0ffde8949842b6088">gr_fir_ccf_generic</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a448c85dfefd3c8d75aa715c2a2204010"></a><!-- doxytag: member="gr_fir_ccf_armv7_a::set_taps" ref="a448c85dfefd3c8d75aa715c2a2204010" args="(const std::vector&lt; float &gt; &amp;taps)" -->
@@ -188,10 +170,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>install <code>new_taps</code> as the current taps. </p>
-
-<p>Reimplemented from <a class="el" href="classgr__fir__ccf.html#afaa800d2c0901730c37101bdfff9386d">gr_fir_ccf</a>.</p>
 
 </div>
 </div>
@@ -231,7 +209,7 @@ Protected Attributes</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="classgr__fir__ccf__armv7__a.html">gr_fir_ccf_armv7_a</a>      </li>
 
-    <li class="footer">Generated on Thu Jun 28 2012 13:51:57 for GNU Radio 8c75818d C++ API by
+    <li class="footer">Generated on Sat Jun 30 2012 17:02:46 for GNU Radio fa0eff61 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

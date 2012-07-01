@@ -44,7 +44,7 @@ dvbti_data_deinterleaver::deinterleave (dvbt_mpeg_packet_rs_encoded &out,
   	plinfo::sanity_check (in.pli);
 
   	// remap OUTPUT pipeline info to reflect 12 data segment end-to-end delay
-  	plinfo::delay (out.pli, in.pli, 12);
+  	plinfo::delay (out.pli, in.pli, OUTER_INTERLEAVER_BANKS);
 
   	// now do the actual deinterleaving
   	for (unsigned int i = 0; i < sizeof (in.data); i++){

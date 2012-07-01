@@ -41,8 +41,6 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)))
 {
-	//printf("sizeof(dvbt_mpeg_packet) = %d \n",sizeof(dvbt_mpeg_packet));
-	//printf("sizeof(dvbt_mpeg_packet_no_sync) = %d \n",sizeof(dvbt_mpeg_packet_no_sync));
   	reset();
 }
 
@@ -61,6 +59,7 @@ dvbt_randomizer::work (int noutput_items,
   	const dvbt_mpeg_packet *in = (const dvbt_mpeg_packet *) input_items[0];
   	dvbt_mpeg_packet_no_sync *out = (dvbt_mpeg_packet_no_sync *) output_items[0];
 
+	// get the number of packets remaining until the next 8 packet reset
 	int packets = out[0].pli.get_packets();
   	for (i = 0; i < noutput_items; i++){
 		// sanity check incoming data.
@@ -78,6 +77,8 @@ dvbt_randomizer::work (int noutput_items,
 
     		core_rand.randomize(out[i], in[i]);
 	}
+
+	// store the number of packets until the next 8 packets reset
 	out[i].pli.set_packets((i + packets) % PRBS_PERIOD);
 
 	/*for (int i = 0; i < noutput_items; i++){

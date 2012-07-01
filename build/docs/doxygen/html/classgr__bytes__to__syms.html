@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 8c75818d C++ API: gr_bytes_to_syms Class Reference</title>
+<title>GNU Radio fa0eff61 C++ API: gr_bytes_to_syms Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 8c75818d C++ API
+   <div id="projectname">GNU Radio fa0eff61 C++ API
    
    </div>
    
@@ -100,10 +100,10 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Convert stream of bytes to stream of +/- 1 symbols</p>
 <p>input: stream of bytes; output: stream of float. </p>
 <p>This block is deprecated.</p>
-<p>The combination of <a class="el" href="classgr__packed__to__unpacked__bb.html" title="Convert a stream of packed bytes or shorts to stream of unpacked bytes or shorts.input: stream of uns...">gr_packed_to_unpacked_bb</a> followed by <a class="el" href="classgr__chunks__to__symbols__bf.html" title="Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex onstellation ...">gr_chunks_to_symbols_bf</a> or <a class="el" href="classgr__chunks__to__symbols__bc.html" title="Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex onstellation ...">gr_chunks_to_symbols_bc</a> handles the general case of mapping from a stream of bytes into arbitrary float or complex symbols.</p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classgr__packed__to__unpacked__bb.html" title="Convert a stream of packed bytes or shorts to stream of unpacked bytes or shorts.input: stream of uns...">gr_packed_to_unpacked_bb</a>, <a class="el" href="classgr__unpacked__to__packed__bb.html" title="Convert a stream of unpacked bytes or shorts into a stream of packed bytes or shorts.input: stream of unsigned char; output: stream of unsigned char.">gr_unpacked_to_packed_bb</a>, </dd>
+<p>The combination of gr_packed_to_unpacked_bb followed by gr_chunks_to_symbols_bf or gr_chunks_to_symbols_bc handles the general case of mapping from a stream of bytes into arbitrary float or complex symbols.</p>
+<dl class="see"><dt><b>See also:</b></dt><dd>gr_packed_to_unpacked_bb, gr_unpacked_to_packed_bb, </dd>
 <dd>
-<a class="el" href="classgr__chunks__to__symbols__bf.html" title="Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex onstellation ...">gr_chunks_to_symbols_bf</a>, <a class="el" href="classgr__chunks__to__symbols__bc.html" title="Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex onstellation ...">gr_chunks_to_symbols_bc</a>. </dd></dl>
+gr_chunks_to_symbols_bf, gr_chunks_to_symbols_bc. </dd></dl>
 </div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="afd4de8ccc174981180054c187af061e3"></a><!-- doxytag: member="gr_bytes_to_syms::work" ref="afd4de8ccc174981180054c187af061e3" args="(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)" -->
 <div class="memitem">
@@ -169,7 +169,7 @@ Friends</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="classgr__bytes__to__syms.html">gr_bytes_to_syms</a>      </li>
 
-    <li class="footer">Generated on Thu Jun 28 2012 13:51:55 for GNU Radio 8c75818d C++ API by
+    <li class="footer">Generated on Sat Jun 30 2012 17:02:45 for GNU Radio fa0eff61 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

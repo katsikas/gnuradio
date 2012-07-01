@@ -189,8 +189,8 @@
     <member refid="classdvbti__data__interleaver_1a8f9ae2065fd566edcb728e457e58c11d" kind="function"><name>interleave</name></member>
   </compound>
   <compound refid="classdvbti__randomizer" kind="class"><name>dvbti_randomizer</name>
-    <member refid="classdvbti__randomizer_1a5397e48371e7e2f50fa23bc17107133a" kind="variable"><name>prbs_sequence</name></member>
-    <member refid="classdvbti__randomizer_1a098ed142d3d4668d1af8eb9d822a41e2" kind="variable"><name>bit_sequence</name></member>
+    <member refid="classdvbti__randomizer_1a83514d133dc18fc09bc9b46ee9c50daf" kind="variable"><name>prbs_sequence</name></member>
+    <member refid="classdvbti__randomizer_1a12222ef4c42591f6291b1ec32f59987f" kind="variable"><name>bit_sequence</name></member>
     <member refid="classdvbti__randomizer_1a6f1d633aea38428cef45620fe142fd5e" kind="variable"><name>init_sequence</name></member>
     <member refid="classdvbti__randomizer_1aeafbf0cb3e658d086516c699e9c03815" kind="function"><name>dvbti_randomizer</name></member>
     <member refid="classdvbti__randomizer_1ad409bf32e8f6f05bb253de83b560eb24" kind="function"><name>reset</name></member>
@@ -199,7 +199,7 @@
     <member refid="classdvbti__randomizer_1ab1697c623374304da910e65b16a01a6b" kind="function"><name>derandomize</name></member>
   </compound>
   <compound refid="classdvbti__reed__solomon" kind="class"><name>dvbti_reed_solomon</name>
-    <member refid="classdvbti__reed__solomon_1ad4afae1623fbeb548248da411bf78b6e" kind="variable"><name>d_rs</name></member>
+    <member refid="classdvbti__reed__solomon_1a39f7258a84acfa3e7331e0e1835d3b7b" kind="variable"><name>core_rs</name></member>
     <member refid="classdvbti__reed__solomon_1a4545d83af075d23e3630e567cdc2a9f5" kind="function"><name>dvbti_reed_solomon</name></member>
     <member refid="classdvbti__reed__solomon_1adc7ee170beb4e5ce3f2e57ebbe96830e" kind="function"><name>~dvbti_reed_solomon</name></member>
     <member refid="classdvbti__reed__solomon_1a5b23e42f8d2354166350622379890c9d" kind="function"><name>encode</name></member>
@@ -305,9 +305,9 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
   </compound>
@@ -323,7 +323,7 @@
   </compound>
   <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
+  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
@@ -386,13 +386,16 @@
   </compound>
   <compound refid="dvbt__consts_8h" kind="file"><name>dvbt_consts.h</name>
     <member refid="dvbt__consts_8h_1a328f7f7dda4afa064c8bfb6106f2ede5" kind="variable"><name>PRBS_PERIOD</name></member>
+    <member refid="dvbt__consts_8h_1ae741aa9f589229ac85bbddc2710e9990" kind="variable"><name>PRBS_SEQUENCE</name></member>
+    <member refid="dvbt__consts_8h_1ace183d250be0f261977268861342b8a6" kind="variable"><name>BITS_SEQUENCE</name></member>
     <member refid="dvbt__consts_8h_1abbeaca3389cdaadb1abb10137ca7cfe6" kind="variable"><name>MPEG_SYNC_BYTE</name></member>
     <member refid="dvbt__consts_8h_1ad5ccc6a26f313ce573ef7e19b67dcd8f" kind="variable"><name>DVBT_MPEG_DATA_LENGTH</name></member>
-    <member refid="dvbt__consts_8h_1a526d29e3cd24449d577889edf9dd8af8" kind="variable"><name>DVBT_MPEG_SYNC_LENGTH</name></member>
     <member refid="dvbt__consts_8h_1a0c3e3059531c5185a4d0ece5717d6402" kind="variable"><name>DVBT_MPEG_HEADER_LENGTH</name></member>
+    <member refid="dvbt__consts_8h_1a82ae58ec3aa7e0e61b974cc54a93e309" kind="variable"><name>OUTER_INTERLEAVER_BANKS</name></member>
     <member refid="dvbt__consts_8h_1aec0bf7a17595dad1e9e08ce7f4338bd3" kind="variable"><name>DVBT_MPEG_PACKET_LENGTH</name></member>
     <member refid="dvbt__consts_8h_1acaeaa683423623b9b258779e915dad2b" kind="variable"><name>MPEG_INVERTED_SYNC_BYTE</name></member>
     <member refid="dvbt__consts_8h_1ac1b330045acc5311d5f33a9851e84407" kind="variable"><name>DVBT_SUPER_FRAME_LENGTH</name></member>
+    <member refid="dvbt__consts_8h_1a060a14b51d0d831304fe2f593af85aa6" kind="variable"><name>OUTER_INTERLEAVER_INC_SIZE</name></member>
     <member refid="dvbt__consts_8h_1adbdb31d594deffaed63d1f7e156833b8" kind="variable"><name>DVBT_MPEG_RS_ENCODED_LENGTH</name></member>
   </compound>
   <compound refid="dvbt__deinterleaver_8h" kind="file"><name>dvbt_deinterleaver.h</name>

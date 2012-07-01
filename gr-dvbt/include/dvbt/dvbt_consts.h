@@ -23,15 +23,18 @@
 #ifndef _DVBT_CONSTS_H_
 #define _DVBT_CONSTS_H_
 
-static const int PRBS_PERIOD = 8;
-static const int MPEG_SYNC_BYTE = 0x47;
-static const int DVBT_MPEG_DATA_LENGTH = 184;
-static const int DVBT_MPEG_SYNC_LENGTH = 187;
-static const int DVBT_MPEG_HEADER_LENGTH = 4;
+static const int PRBS_PERIOD = 8;			// PRBS generator resets every PRBS_PERIOD packets
+static const int PRBS_SEQUENCE = 15;                    // PRBS generator reset$
+static const int BITS_SEQUENCE = 187*8;                    // PRBS generator reset$
+static const int MPEG_SYNC_BYTE = 0x47;			// Synchronizaton byte
+static const int DVBT_MPEG_DATA_LENGTH = 184;		// MPEG payload
+static const int DVBT_MPEG_HEADER_LENGTH = 4;		// Header bytes length
+static const int OUTER_INTERLEAVER_BANKS = 12;          // Number of rows
 static const int DVBT_MPEG_PACKET_LENGTH = 188;		// TS Header + Data
-static const int MPEG_INVERTED_SYNC_BYTE = 0xB8;
+static const int MPEG_INVERTED_SYNC_BYTE = 0xB8;	// Inverted Syncronization byte
 static const int DVBT_SUPER_FRAME_LENGTH = 1504;	// Superframe consists of 8 packets
-static const int DVBT_MPEG_RS_ENCODED_LENGTH = 204; 	// Packet after RS Encoding
+static const int OUTER_INTERLEAVER_INC_SIZE = 17;	// Fifo incremental size
+static const int DVBT_MPEG_RS_ENCODED_LENGTH = 204;     // Packet after RS Encoding
 
 #endif // _DVBT_CONSTS_H_
 

@@ -169,100 +169,100 @@
 </parameterlist>
 The scrambler works by XORing the incoming bit stream by the output of the LFSR. Optionally, after &apos;count&apos; bits have been processed, the shift register is reset to the seed value. This allows processing fixed length vectors of samples. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2323">
+      <node id="2131">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2324" relation="public-inheritance">
+        <childnode refid="2132" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2320">
+      <node id="2128">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2321" relation="public-inheritance">
+        <childnode refid="2129" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2321">
+      <node id="2129">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2322" relation="public-inheritance">
+        <childnode refid="2130" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2324">
+      <node id="2132">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2322">
+      <node id="2130">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2323" relation="public-inheritance">
+        <childnode refid="2131" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2319">
+      <node id="2127">
         <label>gr_additive_scrambler_bb</label>
         <link refid="classgr__additive__scrambler__bb"/>
-        <childnode refid="2320" relation="public-inheritance">
+        <childnode refid="2128" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2329">
+      <node id="2137">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2330" relation="public-inheritance">
+        <childnode refid="2138" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2326">
+      <node id="2134">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2327" relation="public-inheritance">
+        <childnode refid="2135" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2327">
+      <node id="2135">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2328" relation="public-inheritance">
+        <childnode refid="2136" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2331">
+      <node id="2139">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2332" relation="usage">
+        <childnode refid="2140" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2334">
+      <node id="2142">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2330">
+      <node id="2138">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2332">
+      <node id="2140">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2328">
+      <node id="2136">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2329" relation="public-inheritance">
+        <childnode refid="2137" relation="public-inheritance">
         </childnode>
-        <childnode refid="2331" relation="usage">
+        <childnode refid="2139" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2333" relation="usage">
+        <childnode refid="2141" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2333">
+      <node id="2141">
         <label>std::string</label>
-        <childnode refid="2334" relation="public-inheritance">
+        <childnode refid="2142" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2325">
+      <node id="2133">
         <label>gr_additive_scrambler_bb</label>
         <link refid="classgr__additive__scrambler__bb"/>
-        <childnode refid="2326" relation="public-inheritance">
+        <childnode refid="2134" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

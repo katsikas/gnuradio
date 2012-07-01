@@ -34,14 +34,14 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_sink_x.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_entry.xml"
     "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_check_box.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_time_sink_x.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_range.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_sink_x.xml"
     "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_chooser.xml"
     "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_label.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_entry.xml"
     "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_tab_widget.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_range.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_time_sink_x.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
 

@@ -117,29 +117,29 @@ gr-pager/swig/pager_swig.tag: gr-pager/swig/_pager_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-pager/swig && ./_pager_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-pager/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-pager/swig/pager_swig.tag
 
+gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_flex_deinterleave.h
+gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_api.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_flex_frame.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_flex_sync.h
+gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pageri_flex_modes.h
+gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_slicer_fb.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pageri_util.h
-gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_flex_deinterleave.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pageri_bch3221.h
 gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_flex_parse.h
-gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_slicer_fb.h
-gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pager_api.h
-gr-pager/swig/pager_swig_doc.i: ../gr-pager/swig/../lib/pageri_flex_modes.h
 gr-pager/swig/pager_swig_doc.i: gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating pager_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-pager/swig/pager_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-pager/swig/pager_swig_doc.i
 
+gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_flex_deinterleave.h
+gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_api.h
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_flex_frame.h
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_flex_sync.h
+gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pageri_flex_modes.h
+gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_slicer_fb.h
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pageri_util.h
-gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_flex_deinterleave.h
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pageri_bch3221.h
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_flex_parse.h
-gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_slicer_fb.h
-gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pager_api.h
-gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: ../gr-pager/swig/../lib/pageri_flex_modes.h
 gr-pager/swig/pager_swig_doc_swig_docs/xml/index.xml: gr-pager/swig/_pager_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for pager_swig_doc docs"

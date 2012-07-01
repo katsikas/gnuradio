@@ -51,7 +51,7 @@ public:
   	int decode (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet_rs_encoded &in);
 
 private:
-  	void	*d_rs;
+  	void	*core_rs;
 };
 
 #endif /* _DVBT_REED_SOLOMON_H_ */

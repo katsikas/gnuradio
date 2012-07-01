@@ -41,8 +41,6 @@ dvbt_rs_decoder::dvbt_rs_decoder(): gr_sync_block("dvbt_rs_decoder",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_rs_encoded)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)))
 {
-	//printf("dvbt_mpeg_packet_no_sync = %d \n", sizeof(dvbt_mpeg_packet_no_sync));
-        //printf("dvbt_mpeg_packet_rs_encoded = %d \n", sizeof(dvbt_mpeg_packet_rs_encoded));
   	reset();
 }
 
@@ -57,8 +55,11 @@ dvbt_rs_decoder::work (int noutput_items,
   	for (int i = 0; i < noutput_items; i++){
     		out[i].pli = in[i].pli;			// copy pipeline info...
 
+	       /**
+		* reed-solomon decoding returns the number of corrected errors
+		* (up to 8) in success or -1 if packet corrupted.
+		**/
      		int nerrors_corrrected = d_rs_decoder.decode(out[i], in[i]);
-		//printf("we have %d errors in packet \n",nerrors_corrrected);
     		out[i].pli.set_transport_error(nerrors_corrrected);
   	}
 

@@ -60,9 +60,10 @@ public:
   	void derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_sync &in);
 
 private:
-	bitset<15> prbs_sequence;
-	bitset<187*8> bit_sequence;
+	bitset<PRBS_SEQUENCE> prbs_sequence;
+	bitset<BITS_SEQUENCE> bit_sequence;
 	static const string init_sequence;
 };
 
 #endif /* _DVBT_RANDOMIZER_H_ */
+

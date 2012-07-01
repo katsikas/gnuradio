@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 8c75818d C++ API: convolutional_interleaver.h Source File</title>
+<title>GNU Radio fa0eff61 C++ API: convolutional_interleaver.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 8c75818d C++ API
+   <div id="projectname">GNU Radio fa0eff61 C++ API
    
    </div>
    
@@ -116,31 +116,31 @@
 <a name="l00051"></a>00051 <span class="comment"></span>
 <a name="l00052"></a>00052 <span class="comment">        //! transform a single symbol</span>
 <a name="l00053"></a><a class="code" href="classconvolutional__interleaver.html#af49e21b50b9b59f0faf0d08d447dd67a">00053</a> <span class="comment"></span>        symbol_type <a class="code" href="classconvolutional__interleaver.html#af49e21b50b9b59f0faf0d08d447dd67a" title="transform a single symbol">transform</a> (symbol_type input){
-<a name="l00054"></a>00054                 symbol_type <a class="code" href="gc__spu__macs_8h.html#a696b31d3fc8a0a0f24948f98d0e4a4d1">retval</a> = <a class="code" href="classconvolutional__interleaver.html#aad6a006467d51a669510251e8f6076fa">m_fifo</a>[<a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a>]-&gt;stuff (input);
-<a name="l00055"></a>00055                 <a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a>++;
-<a name="l00056"></a>00056                 <span class="keywordflow">if</span> (<a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a> &gt;= <a class="code" href="classconvolutional__interleaver.html#a0e5b1c5a67032ce5ec79291e8bc957d1">m_nbanks</a>)
-<a name="l00057"></a>00057                         <a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a> = 0;
-<a name="l00058"></a>00058                 <span class="keywordflow">return</span> <a class="code" href="gc__spu__macs_8h.html#a696b31d3fc8a0a0f24948f98d0e4a4d1">retval</a>;
-<a name="l00059"></a>00059         }
-<a name="l00060"></a>00060 <span class="comment"></span>
-<a name="l00061"></a>00061 <span class="comment">        //! transform a bunch of symbols</span>
-<a name="l00062"></a>00062 <span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classconvolutional__interleaver.html#af49e21b50b9b59f0faf0d08d447dd67a" title="transform a single symbol">transform</a> (symbol_type *out, <span class="keyword">const</span> symbol_type *in, <span class="keywordtype">int</span> nsymbols);
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064 <span class="keyword">protected</span>:
-<a name="l00065"></a>00065         <span class="keywordtype">int</span>     <a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a>;
-<a name="l00066"></a>00066         <span class="keywordtype">int</span>     <a class="code" href="classconvolutional__interleaver.html#a0e5b1c5a67032ce5ec79291e8bc957d1">m_nbanks</a>;
-<a name="l00067"></a>00067         <span class="keywordtype">int</span>     <a class="code" href="classconvolutional__interleaver.html#a64583ae8484756fba1845db8adee1bc7">m_fifo_size_incr</a>;
-<a name="l00068"></a>00068         std::vector&lt;interleaver_fifo&lt;symbol_type&gt; *&gt; <a class="code" href="classconvolutional__interleaver.html#aad6a006467d51a669510251e8f6076fa">m_fifo</a>;
-<a name="l00069"></a>00069 };
-<a name="l00070"></a>00070 
+<a name="l00054"></a>00054                 <span class="comment">//printf(&quot;commutator = %d | input = %d \n&quot;,m_commutator,input);</span>
+<a name="l00055"></a>00055                 symbol_type <a class="code" href="gc__spu__macs_8h.html#a696b31d3fc8a0a0f24948f98d0e4a4d1">retval</a> = <a class="code" href="classconvolutional__interleaver.html#aad6a006467d51a669510251e8f6076fa">m_fifo</a>[<a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a>]-&gt;stuff (input);
+<a name="l00056"></a>00056                 <a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a>++;
+<a name="l00057"></a>00057                 <span class="keywordflow">if</span> (<a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a> &gt;= <a class="code" href="classconvolutional__interleaver.html#a0e5b1c5a67032ce5ec79291e8bc957d1">m_nbanks</a>)
+<a name="l00058"></a>00058                         <a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a> = 0;
+<a name="l00059"></a>00059                 <span class="keywordflow">return</span> <a class="code" href="gc__spu__macs_8h.html#a696b31d3fc8a0a0f24948f98d0e4a4d1">retval</a>;
+<a name="l00060"></a>00060         }
+<a name="l00061"></a>00061 <span class="comment"></span>
+<a name="l00062"></a>00062 <span class="comment">        //! transform a bunch of symbols</span>
+<a name="l00063"></a>00063 <span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classconvolutional__interleaver.html#af49e21b50b9b59f0faf0d08d447dd67a" title="transform a single symbol">transform</a> (symbol_type *out, <span class="keyword">const</span> symbol_type *in, <span class="keywordtype">int</span> nsymbols);
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 <span class="keyword">protected</span>:
+<a name="l00066"></a>00066         <span class="keywordtype">int</span>     <a class="code" href="classconvolutional__interleaver.html#a0ad9833447e269c5e527c4bfdf6ec252">m_commutator</a>;
+<a name="l00067"></a>00067         <span class="keywordtype">int</span>     <a class="code" href="classconvolutional__interleaver.html#a0e5b1c5a67032ce5ec79291e8bc957d1">m_nbanks</a>;
+<a name="l00068"></a>00068         <span class="keywordtype">int</span>     <a class="code" href="classconvolutional__interleaver.html#a64583ae8484756fba1845db8adee1bc7">m_fifo_size_incr</a>;
+<a name="l00069"></a>00069         std::vector&lt;interleaver_fifo&lt;symbol_type&gt; *&gt; <a class="code" href="classconvolutional__interleaver.html#aad6a006467d51a669510251e8f6076fa">m_fifo</a>;
+<a name="l00070"></a>00070 };
 <a name="l00071"></a>00071 
-<a name="l00072"></a>00072 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt;
-<a name="l00073"></a>00073 <a class="code" href="classconvolutional__interleaver.html#ac01f306da38de29b1282f1e5cc5e51c7">convolutional_interleaver&lt;symbol_type&gt;::convolutional_interleaver</a> (
-<a name="l00074"></a>00074                                            <span class="keywordtype">bool</span> interleave_p,
-<a name="l00075"></a>00075                                            <span class="keywordtype">int</span> nbanks,
-<a name="l00076"></a>00076                                            <span class="keywordtype">int</span> fifo_size_incr)
-<a name="l00077"></a>00077 {
-<a name="l00078"></a>00078         printf(<span class="stringliteral">&quot;convolutional interleaver \n&quot;</span>);
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt;
+<a name="l00074"></a>00074 <a class="code" href="classconvolutional__interleaver.html#ac01f306da38de29b1282f1e5cc5e51c7">convolutional_interleaver&lt;symbol_type&gt;::convolutional_interleaver</a> (
+<a name="l00075"></a>00075                                            <span class="keywordtype">bool</span> interleave_p,
+<a name="l00076"></a>00076                                            <span class="keywordtype">int</span> nbanks,
+<a name="l00077"></a>00077                                            <span class="keywordtype">int</span> fifo_size_incr)
+<a name="l00078"></a>00078 {
 <a name="l00079"></a>00079         assert (nbanks &gt;= 1);
 <a name="l00080"></a>00080         assert (fifo_size_incr &gt;= 1);
 <a name="l00081"></a>00081 
@@ -150,62 +150,66 @@
 <a name="l00085"></a>00085         m_fifo.resize (nbanks);
 <a name="l00086"></a>00086 
 <a name="l00087"></a>00087         <span class="keywordflow">if</span> (interleave_p){      <span class="comment">// configure as interleaver</span>
-<a name="l00088"></a>00088                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nbanks; i++)
+<a name="l00088"></a>00088                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nbanks; i++){
 <a name="l00089"></a>00089                         m_fifo[i] = <span class="keyword">new</span> <a class="code" href="classinterleaver__fifo.html" title="template class for interleaver fifo">interleaver_fifo&lt;symbol_type&gt;</a>(i * fifo_size_incr);
-<a name="l00090"></a>00090         }
-<a name="l00091"></a>00091         <span class="keywordflow">else</span> {          <span class="comment">// configure as de-interleaver</span>
-<a name="l00092"></a>00092                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nbanks; i++)
-<a name="l00093"></a>00093                         m_fifo[nbanks - 1 - i] = <span class="keyword">new</span> <a class="code" href="classinterleaver__fifo.html" title="template class for interleaver fifo">interleaver_fifo&lt;symbol_type&gt;</a>(i * fifo_size_incr);
-<a name="l00094"></a>00094         }
-<a name="l00095"></a>00095         sync ();
-<a name="l00096"></a>00096 }
-<a name="l00097"></a>00097 
-<a name="l00098"></a>00098 
-<a name="l00099"></a>00099 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt;
-<a name="l00100"></a>00100 <a class="code" href="classconvolutional__interleaver.html#a4fb48a3b97910049994ea2be0bc91c40">convolutional_interleaver&lt;symbol_type&gt;::~convolutional_interleaver</a> ()
-<a name="l00101"></a>00101 {
-<a name="l00102"></a>00102         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m_nbanks; i++)
-<a name="l00103"></a>00103                 <span class="keyword">delete</span> m_fifo[i];
-<a name="l00104"></a>00104 }
-<a name="l00105"></a>00105 
-<a name="l00106"></a>00106 
-<a name="l00107"></a>00107 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt; <span class="keywordtype">void</span>
-<a name="l00108"></a>00108 <a class="code" href="classconvolutional__interleaver.html#a758195fcfe60037184a30e39e718126a" title="reset interleaver (flushes contents and resets commutator)">convolutional_interleaver&lt;symbol_type&gt;::reset</a> ()
-<a name="l00109"></a>00109 {
-<a name="l00110"></a>00110         printf(<span class="stringliteral">&quot;reset interleaver \n&quot;</span>);
-<a name="l00111"></a>00111         sync ();
-<a name="l00112"></a>00112         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m_nbanks; i++)
-<a name="l00113"></a>00113                 m_fifo[i]-&gt;reset ();
-<a name="l00114"></a>00114 }
-<a name="l00115"></a>00115 
+<a name="l00090"></a>00090                 }
+<a name="l00091"></a>00091         }
+<a name="l00092"></a>00092         <span class="keywordflow">else</span> {          <span class="comment">// configure as de-interleaver</span>
+<a name="l00093"></a>00093                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nbanks; i++){
+<a name="l00094"></a>00094                         m_fifo[nbanks - 1 - i] = <span class="keyword">new</span> <a class="code" href="classinterleaver__fifo.html" title="template class for interleaver fifo">interleaver_fifo&lt;symbol_type&gt;</a>(i * fifo_size_incr);
+<a name="l00095"></a>00095                 }
+<a name="l00096"></a>00096         }
+<a name="l00097"></a>00097         sync ();
+<a name="l00098"></a>00098 }
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt;
+<a name="l00102"></a>00102 <a class="code" href="classconvolutional__interleaver.html#a4fb48a3b97910049994ea2be0bc91c40">convolutional_interleaver&lt;symbol_type&gt;::~convolutional_interleaver</a> ()
+<a name="l00103"></a>00103 {
+<a name="l00104"></a>00104         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m_nbanks; i++)
+<a name="l00105"></a>00105                 <span class="keyword">delete</span> m_fifo[i];
+<a name="l00106"></a>00106 }
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt; <span class="keywordtype">void</span>
+<a name="l00110"></a>00110 <a class="code" href="classconvolutional__interleaver.html#a758195fcfe60037184a30e39e718126a" title="reset interleaver (flushes contents and resets commutator)">convolutional_interleaver&lt;symbol_type&gt;::reset</a> ()
+<a name="l00111"></a>00111 {
+<a name="l00112"></a>00112         sync ();
+<a name="l00113"></a>00113         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m_nbanks; i++)
+<a name="l00114"></a>00114                 m_fifo[i]-&gt;reset ();
+<a name="l00115"></a>00115 }
 <a name="l00116"></a>00116 
-<a name="l00117"></a>00117 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt; <span class="keywordtype">int</span>
-<a name="l00118"></a>00118 <a class="code" href="classconvolutional__interleaver.html#a95147618a994510cdc46db6f0ee23e27" title="return end to end delay in symbols (delay through concatenated interleaver / deinterleaver)">convolutional_interleaver&lt;symbol_type&gt;::end_to_end_delay</a> ()
-<a name="l00119"></a>00119 {
-<a name="l00120"></a>00120         <span class="keywordtype">int</span> m = m_nbanks * m_fifo_size_incr;
-<a name="l00121"></a>00121         printf(<span class="stringliteral">&quot;delay = \n&quot;</span> ,m * (m_nbanks - 1));
-<a name="l00122"></a>00122         <span class="keywordflow">return</span> m * (m_nbanks - 1);
-<a name="l00123"></a>00123 }
-<a name="l00124"></a>00124 
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt; <span class="keywordtype">int</span>
+<a name="l00119"></a>00119 <a class="code" href="classconvolutional__interleaver.html#a95147618a994510cdc46db6f0ee23e27" title="return end to end delay in symbols (delay through concatenated interleaver / deinterleaver)">convolutional_interleaver&lt;symbol_type&gt;::end_to_end_delay</a> ()
+<a name="l00120"></a>00120 {
+<a name="l00121"></a>00121         <span class="keywordtype">int</span> m = m_nbanks * m_fifo_size_incr;
+<a name="l00122"></a>00122         printf(<span class="stringliteral">&quot;delay = \n&quot;</span> ,m * (m_nbanks - 1));
+<a name="l00123"></a>00123         <span class="keywordflow">return</span> m * (m_nbanks - 1);
+<a name="l00124"></a>00124 }
 <a name="l00125"></a>00125 
-<a name="l00126"></a>00126 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt; <span class="keywordtype">void</span>
-<a name="l00127"></a>00127 <a class="code" href="classconvolutional__interleaver.html#af49e21b50b9b59f0faf0d08d447dd67a" title="transform a single symbol">convolutional_interleaver&lt;symbol_type&gt;::transform</a> (symbol_type *out,
-<a name="l00128"></a>00128                                                    <span class="keyword">const</span> symbol_type *in,
-<a name="l00129"></a>00129                                                    <span class="keywordtype">int</span> nsymbols)
-<a name="l00130"></a>00130 {
-<a name="l00131"></a>00131         <span class="comment">// we may want to unroll this a couple of times...</span>
-<a name="l00132"></a>00132         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nsymbols; i++)
-<a name="l00133"></a>00133                 out[i] = transform (in[i]);
-<a name="l00134"></a>00134 }
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136 <span class="preprocessor">#endif </span><span class="comment">/* _CONVOLUTIONAL_INTERLEAVER_H_ */</span>
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 <span class="keyword">template</span>&lt;<span class="keyword">class</span> symbol_type&gt; <span class="keywordtype">void</span>
+<a name="l00128"></a>00128 <a class="code" href="classconvolutional__interleaver.html#af49e21b50b9b59f0faf0d08d447dd67a" title="transform a single symbol">convolutional_interleaver&lt;symbol_type&gt;::transform</a> (symbol_type *out,
+<a name="l00129"></a>00129                                                    <span class="keyword">const</span> symbol_type *in,
+<a name="l00130"></a>00130                                                    <span class="keywordtype">int</span> nsymbols)
+<a name="l00131"></a>00131 {
+<a name="l00132"></a>00132         <span class="comment">// we may want to unroll this a couple of times...</span>
+<a name="l00133"></a>00133         <span class="comment">//printf(&quot;\n NEW PACKET RECEIVED \n&quot;);</span>
+<a name="l00134"></a>00134         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nsymbols; i++){
+<a name="l00135"></a>00135                 out[i] = transform (in[i]);
+<a name="l00136"></a>00136                 <span class="comment">//printf(&quot;in[ %d ] = %d | out[i] = %d \n&quot;,i,in[i],out[i]);</span>
+<a name="l00137"></a>00137         }
+<a name="l00138"></a>00138 }
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140 <span class="preprocessor">#endif </span><span class="comment">/* _CONVOLUTIONAL_INTERLEAVER_H_ */</span>
 </pre></div></div><!-- contents -->
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="gr-dvbt_2include_2dvbt_2convolutional__interleaver_8h.html">convolutional_interleaver.h</a>      </li>
 
-    <li class="footer">Generated on Thu Jun 28 2012 13:51:47 for GNU Radio 8c75818d C++ API by
+    <li class="footer">Generated on Sat Jun 30 2012 17:02:37 for GNU Radio fa0eff61 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

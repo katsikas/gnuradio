@@ -93,9 +93,9 @@ gr-noaa/swig/noaa_swig.tag: gr-noaa/swig/_noaa_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-noaa/swig && ./_noaa_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig.tag
 
+gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
-gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_api.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc.i: gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml
@@ -103,9 +103,9 @@ gr-noaa/swig/noaa_swig_doc.i: gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating noaa_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig_doc.i
 
+gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
-gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_api.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: gr-noaa/swig/_noaa_swig_doc_tag

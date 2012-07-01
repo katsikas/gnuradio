@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 8c75818d C++ API: volk_machines.tmpl.h Source File</title>
+<title>GNU Radio fa0eff61 C++ API: volk_machines.tmpl.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 8c75818d C++ API
+   <div id="projectname">GNU Radio fa0eff61 C++ API
    
    </div>
    
@@ -94,20 +94,20 @@
 <a name="l00029"></a>00029 
 <a name="l00030"></a><a class="code" href="structvolk__machine.html">00030</a> <span class="keyword">struct </span><a class="code" href="structvolk__machine.html">volk_machine</a> {
 <a name="l00031"></a><a class="code" href="structvolk__machine.html#a80486bb1fa14e550bfbadb3427ad267f">00031</a>     <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structvolk__machine.html#a80486bb1fa14e550bfbadb3427ad267f">caps</a>; <span class="comment">//capabilities (i.e., archs compiled into this machine, in the volk_get_lvarch format)</span>
-<a name="l00032"></a><a class="code" href="structvolk__machine.html#ac11135977c7280cdd42b248b0c08124f">00032</a>     <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structvolk__machine.html#ac11135977c7280cdd42b248b0c08124f">name</a>;
+<a name="l00032"></a><a class="code" href="structvolk__machine.html#a98e77e1bede37d0dc3de16f9f0da1074">00032</a>     <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structvolk__machine.html#a98e77e1bede37d0dc3de16f9f0da1074">name</a>;
 <a name="l00033"></a><a class="code" href="structvolk__machine.html#a7e9236ca7262abe31a5062f24e935642">00033</a>     <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structvolk__machine.html#a7e9236ca7262abe31a5062f24e935642">alignment</a>; <span class="comment">//the maximum byte alignment required for functions in this library</span>
 <a name="l00034"></a>00034 <span class="preprocessor">    #for $kern in $kernels</span>
 <a name="l00035"></a><a class="code" href="structvolk__machine.html#ae89d27c5a008cfcb35c7e67be395bec3">00035</a> <span class="preprocessor"></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *$(<a class="code" href="volk__typedefs_8tmpl_8h.html#a0dcdb3a7dd616396603c4c979589e115">kern</a>.name)<a class="code" href="structvolk__machine.html#ae89d27c5a008cfcb35c7e67be395bec3">_name</a>;
 <a name="l00036"></a><a class="code" href="structvolk__machine.html#aa38b2ce821ae6c549ee9275bf0b4a673">00036</a>     <span class="keyword">const</span> <span class="keywordtype">char</span> *$(<a class="code" href="volk__typedefs_8tmpl_8h.html#a0dcdb3a7dd616396603c4c979589e115">kern</a>.name)<a class="code" href="structvolk__machine.html#aa38b2ce821ae6c549ee9275bf0b4a673">_indices</a>[$(len($archs))];
 <a name="l00037"></a>00037     <span class="keyword">const</span> <span class="keywordtype">int</span> $(<a class="code" href="volk__typedefs_8tmpl_8h.html#a0dcdb3a7dd616396603c4c979589e115">kern</a>.name)_arch_defs[$(len($archs))];
 <a name="l00038"></a>00038     <span class="keyword">const</span> $(<a class="code" href="volk__typedefs_8tmpl_8h.html#a0dcdb3a7dd616396603c4c979589e115">kern</a>.pname) $(<a class="code" href="volk__typedefs_8tmpl_8h.html#a0dcdb3a7dd616396603c4c979589e115">kern</a>.name)_archs[$(len($archs))];
-<a name="l00039"></a>00039     <a class="code" href="structvolk__machine.html#a3d7d8c8cfb25d20e3bd6411d0e9dc5e7">const</a> <span class="keywordtype">int</span> $(<a class="code" href="volk__typedefs_8tmpl_8h.html#a0dcdb3a7dd616396603c4c979589e115">kern</a>.<a class="code" href="structvolk__machine.html#ac11135977c7280cdd42b248b0c08124f">name</a>)_n_archs;
+<a name="l00039"></a>00039     <a class="code" href="structvolk__machine.html#a3d7d8c8cfb25d20e3bd6411d0e9dc5e7">const</a> <span class="keywordtype">int</span> $(<a class="code" href="volk__typedefs_8tmpl_8h.html#a0dcdb3a7dd616396603c4c979589e115">kern</a>.<a class="code" href="structvolk__machine.html#a98e77e1bede37d0dc3de16f9f0da1074">name</a>)_n_archs;
 <a name="l00040"></a>00040     <span class="preprocessor">#end for</span>
 <a name="l00041"></a>00041 <span class="preprocessor"></span>};
 <a name="l00042"></a>00042 
 <a name="l00043"></a>00043 <span class="preprocessor">#for $machine in $machines</span>
 <a name="l00044"></a>00044 <span class="preprocessor"></span><span class="preprocessor">#ifdef LV_MACHINE_$(machine.name.upper())</span>
-<a name="l00045"></a>00045 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structvolk__machine.html">volk_machine</a> volk_machine_$(machine.<a class="code" href="structvolk__machine.html#ac11135977c7280cdd42b248b0c08124f">name</a>);
+<a name="l00045"></a>00045 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structvolk__machine.html">volk_machine</a> volk_machine_$(machine.<a class="code" href="structvolk__machine.html#a98e77e1bede37d0dc3de16f9f0da1074">name</a>);
 <a name="l00046"></a>00046 <span class="preprocessor">#endif</span>
 <a name="l00047"></a>00047 <span class="preprocessor"></span><span class="preprocessor">#end for</span>
 <a name="l00048"></a>00048 <span class="preprocessor"></span>
@@ -120,7 +120,7 @@
     <ul>
       <li class="navelem"><a class="el" href="volk__machines_8tmpl_8h.html">volk_machines.tmpl.h</a>      </li>
 
-    <li class="footer">Generated on Thu Jun 28 2012 13:51:49 for GNU Radio 8c75818d C++ API by
+    <li class="footer">Generated on Sat Jun 30 2012 17:02:39 for GNU Radio fa0eff61 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

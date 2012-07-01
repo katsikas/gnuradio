@@ -239,88 +239,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
 <para>Muxes N streams together producing an output stream that contains N0 items from the first stream, N1 items from the second, etc. and repeats:</para><para>[N0, N1, N2, ..., Nm, N0, N1, ...] </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="7991">
+      <node id="5449">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7992" relation="public-inheritance">
+        <childnode refid="5450" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7989">
+      <node id="5447">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7990" relation="public-inheritance">
+        <childnode refid="5448" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7992">
+      <node id="5450">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7990">
+      <node id="5448">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7991" relation="public-inheritance">
+        <childnode refid="5449" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7988">
+      <node id="5446">
         <label>gr_stream_mux</label>
         <link refid="classgr__stream__mux"/>
-        <childnode refid="7989" relation="public-inheritance">
+        <childnode refid="5447" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7996">
+      <node id="5454">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7997" relation="public-inheritance">
+        <childnode refid="5455" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7994">
+      <node id="5452">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7995" relation="public-inheritance">
+        <childnode refid="5453" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7998">
+      <node id="5456">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7999" relation="usage">
+        <childnode refid="5457" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="8001">
+      <node id="5459">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7997">
+      <node id="5455">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7999">
+      <node id="5457">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7995">
+      <node id="5453">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7996" relation="public-inheritance">
+        <childnode refid="5454" relation="public-inheritance">
         </childnode>
-        <childnode refid="7998" relation="usage">
+        <childnode refid="5456" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="8000" relation="usage">
+        <childnode refid="5458" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7993">
+      <node id="5451">
         <label>gr_stream_mux</label>
         <link refid="classgr__stream__mux"/>
-        <childnode refid="7994" relation="public-inheritance">
+        <childnode refid="5452" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8000">
+      <node id="5458">
         <label>std::string</label>
-        <childnode refid="8001" relation="public-inheritance">
+        <childnode refid="5459" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

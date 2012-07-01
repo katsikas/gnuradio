@@ -44,7 +44,7 @@ static const int amount_of_pad	 = N - DVBT_MPEG_RS_ENCODED_LENGTH;	  // 51
 
 dvbti_reed_solomon::dvbti_reed_solomon ()
 {
-	d_rs = init_rs_char (rs_init_symsize, rs_init_gfpoly,
+	core_rs = init_rs_char (rs_init_symsize, rs_init_gfpoly,
 			rs_init_fcr, rs_init_prim, rs_init_nroots);
 
   	assert (d_rs != 0);
@@ -52,10 +52,10 @@ dvbti_reed_solomon::dvbti_reed_solomon ()
 
 dvbti_reed_solomon::~dvbti_reed_solomon ()
 {
-  	if (d_rs){
-    		free_rs_char (d_rs);
+  	if (core_rs){
+    		free_rs_char (core_rs);
 	}
-  	d_rs = 0;
+  	core_rs = 0;
 }
 
 void
@@ -74,7 +74,7 @@ dvbti_reed_solomon::encode (dvbt_mpeg_packet_rs_encoded &out, const dvbt_mpeg_pa
   	memcpy (out.data, in.data, sizeof (in.data));
 
   	// now compute parity bytes and add them to tail end of output packet
-  	encode_rs_char (d_rs, tmp, &out.data[sizeof (in.data)]);
+  	encode_rs_char (core_rs, tmp, &out.data[sizeof (in.data)]);
 }
 
 int
@@ -90,7 +90,7 @@ dvbti_reed_solomon::decode (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packe
   	memcpy (&tmp[amount_of_pad], in.data, sizeof (in.data));
 
   	// correct message...
-  	ncorrections = decode_rs_char (d_rs, tmp, 0, 0);
+  	ncorrections = decode_rs_char (core_rs, tmp, 0, 0);
 
   	// copy corrected message to output, skipping prefix zero padding
   	memcpy (out.data, &tmp[amount_of_pad], sizeof (out.data));

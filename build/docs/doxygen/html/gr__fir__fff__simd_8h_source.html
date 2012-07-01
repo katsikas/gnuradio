@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 8c75818d C++ API: gr_fir_fff_simd.h Source File</title>
+<title>GNU Radio fa0eff61 C++ API: gr_fir_fff_simd.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 8c75818d C++ API
+   <div id="projectname">GNU Radio fa0eff61 C++ API
    
    </div>
    
@@ -88,7 +88,7 @@
 <a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define INCLUDED_GR_FIR_FFF_SIMD_H</span>
 <a name="l00024"></a>00024 <span class="preprocessor"></span>
 <a name="l00025"></a>00025 <span class="preprocessor">#include &lt;<a class="code" href="gr__core__api_8h.html">gr_core_api.h</a>&gt;</span>
-<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;<a class="code" href="gr__fir__fff__generic_8h.html">gr_fir_fff_generic.h</a>&gt;</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;gr_fir_fff_generic.h&gt;</span>
 <a name="l00027"></a>00027 <span class="comment"></span>
 <a name="l00028"></a>00028 <span class="comment">/*!</span>
 <a name="l00029"></a>00029 <span class="comment"> * \brief common base class for SIMD versions of gr_fir_fff</span>
@@ -98,7 +98,7 @@
 <a name="l00033"></a>00033 <span class="comment"> * subclasses.</span>
 <a name="l00034"></a>00034 <span class="comment"> */</span>
 <a name="l00035"></a>00035 
-<a name="l00036"></a><a class="code" href="classgr__fir__fff__simd.html">00036</a> <span class="keyword">class </span><a class="code" href="gr__core__api_8h.html#a8b8937b0c61edd85ab57ce8203543248">GR_CORE_API</a> <a class="code" href="classgr__fir__fff__simd.html" title="common base class for SIMD versions of gr_fir_fffThis base class handles alignment issues common to S...">gr_fir_fff_simd</a> : <span class="keyword">public</span> <a class="code" href="classgr__fir__fff__generic.html" title="Concrete class for generic implementation of FIR with float input, float output and float taps...">gr_fir_fff_generic</a>
+<a name="l00036"></a><a class="code" href="classgr__fir__fff__simd.html">00036</a> <span class="keyword">class </span><a class="code" href="gr__core__api_8h.html#a8b8937b0c61edd85ab57ce8203543248">GR_CORE_API</a> <a class="code" href="classgr__fir__fff__simd.html" title="common base class for SIMD versions of gr_fir_fffThis base class handles alignment issues common to S...">gr_fir_fff_simd</a> : <span class="keyword">public</span> gr_fir_fff_generic
 <a name="l00037"></a>00037 {
 <a name="l00038"></a>00038 <span class="keyword">protected</span>:
 <a name="l00039"></a><a class="code" href="classgr__fir__fff__simd.html#ac557d2ce1a74caf9ab7e3213c078cbed">00039</a>   <span class="keyword">typedef</span> float (*float_dotprod_t)(<span class="keyword">const</span> <span class="keywordtype">float</span> *input,
@@ -122,8 +122,8 @@
 <a name="l00057"></a>00057   ~<a class="code" href="classgr__fir__fff__simd.html" title="common base class for SIMD versions of gr_fir_fffThis base class handles alignment issues common to S...">gr_fir_fff_simd</a> ();
 <a name="l00058"></a>00058 
 <a name="l00059"></a>00059   <span class="comment">// MANIPULATORS</span>
-<a name="l00060"></a>00060   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgr__fir__fff.html#ad692c67d571c9fdd45a214bac28c38d6" title="install new_taps as the current taps.">set_taps</a> (<span class="keyword">const</span> std::vector&lt;float&gt; &amp;<a class="code" href="interpolator__taps_8h.html#a30bf032e13c2a9fc4a98e14e390cd65a">taps</a>);
-<a name="l00061"></a>00061   <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="classgr__fir__fff__generic.html#a9c78953f14ec2db18421d53309ab2541" title="compute a single output value.">filter</a> (<span class="keyword">const</span> <span class="keywordtype">float</span> input[]);
+<a name="l00060"></a>00060   <span class="keyword">virtual</span> <span class="keywordtype">void</span> set_taps (<span class="keyword">const</span> std::vector&lt;float&gt; &amp;<a class="code" href="interpolator__taps_8h.html#a30bf032e13c2a9fc4a98e14e390cd65a">taps</a>);
+<a name="l00061"></a>00061   <span class="keyword">virtual</span> <span class="keywordtype">float</span> filter (<span class="keyword">const</span> <span class="keywordtype">float</span> input[]);
 <a name="l00062"></a>00062 };
 <a name="l00063"></a>00063 
 <a name="l00064"></a>00064 <span class="preprocessor">#endif</span>
@@ -133,7 +133,7 @@
     <ul>
       <li class="navelem"><a class="el" href="gr__fir__fff__simd_8h.html">gr_fir_fff_simd.h</a>      </li>
 
-    <li class="footer">Generated on Thu Jun 28 2012 13:51:47 for GNU Radio 8c75818d C++ API by
+    <li class="footer">Generated on Sat Jun 30 2012 17:02:38 for GNU Radio fa0eff61 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

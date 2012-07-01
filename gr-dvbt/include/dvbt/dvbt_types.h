@@ -54,7 +54,7 @@ public:
 
   	void set_transport_error (int error){
       		if(error == -1){
-			//printf("Uncorrectable error. %d \n",error);
+			printf("Uncorrectable error. %d \n",error);
 			transport_error = true;
   		}
 		else{
