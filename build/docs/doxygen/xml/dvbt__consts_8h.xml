@@ -4,67 +4,67 @@
     <compoundname>dvbt_consts.h</compoundname>
     <includedby refid="dvbt__types_8h" local="no">dvbt_types.h</includedby>
     <invincdepgraph>
-      <node id="3916">
+      <node id="3915">
         <label>dvbt_derandomizer.h</label>
         <link refid="dvbt__derandomizer_8h"/>
       </node>
-      <node id="3918">
+      <node id="3917">
         <label>dvbti_reed_solomon.h</label>
         <link refid="dvbti__reed__solomon_8h"/>
+        <childnode refid="3918" relation="include">
+        </childnode>
         <childnode refid="3919" relation="include">
         </childnode>
-        <childnode refid="3920" relation="include">
-        </childnode>
       </node>
-      <node id="3912">
+      <node id="3911">
         <label>dvbti_data_interleaver.h</label>
         <link refid="dvbti__data__interleaver_8h"/>
+        <childnode refid="3912" relation="include">
+        </childnode>
         <childnode refid="3913" relation="include">
         </childnode>
-        <childnode refid="3914" relation="include">
-        </childnode>
       </node>
-      <node id="3917">
+      <node id="3916">
         <label>dvbt_randomizer.h</label>
         <link refid="dvbt__randomizer_8h"/>
       </node>
-      <node id="3920">
+      <node id="3919">
         <label>dvbt_rs_encoder.h</label>
         <link refid="dvbt__rs__encoder_8h"/>
       </node>
-      <node id="3914">
+      <node id="3913">
         <label>dvbt_interleaver.h</label>
         <link refid="dvbt__interleaver_8h"/>
       </node>
-      <node id="3915">
+      <node id="3914">
         <label>dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
+        <childnode refid="3915" relation="include">
+        </childnode>
         <childnode refid="3916" relation="include">
+        </childnode>
+      </node>
+      <node id="3909">
+        <label>dvbt_consts.h</label>
+        <link refid="dvbt_consts.h"/>
+        <childnode refid="3910" relation="include">
+        </childnode>
+      </node>
+      <node id="3912">
+        <label>dvbt_deinterleaver.h</label>
+        <link refid="dvbt__deinterleaver_8h"/>
+      </node>
+      <node id="3910">
+        <label>dvbt_types.h</label>
+        <link refid="dvbt__types_8h"/>
+        <childnode refid="3911" relation="include">
+        </childnode>
+        <childnode refid="3914" relation="include">
         </childnode>
         <childnode refid="3917" relation="include">
         </childnode>
       </node>
-      <node id="3910">
-        <label>dvbt_consts.h</label>
-        <link refid="dvbt_consts.h"/>
-        <childnode refid="3911" relation="include">
-        </childnode>
-      </node>
-      <node id="3913">
-        <label>dvbt_deinterleaver.h</label>
-        <link refid="dvbt__deinterleaver_8h"/>
-      </node>
-      <node id="3911">
-        <label>dvbt_types.h</label>
-        <link refid="dvbt__types_8h"/>
-        <childnode refid="3912" relation="include">
-        </childnode>
-        <childnode refid="3915" relation="include">
-        </childnode>
-        <childnode refid="3918" relation="include">
-        </childnode>
-      </node>
-      <node id="3919">
+      <node id="3918">
         <label>dvbt_rs_decoder.h</label>
         <link refid="dvbt__rs__decoder_8h"/>
       </node>
@@ -84,6 +84,34 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="26" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="26" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="dvbt__consts_8h_1ae741aa9f589229ac85bbddc2710e9990" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int PRBS_SEQUENCE</definition>
+        <argsstring></argsstring>
+        <name>PRBS_SEQUENCE</name>
+        <initializer> 15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="27" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dvbt__consts_8h_1ace183d250be0f261977268861342b8a6" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int BITS_SEQUENCE</definition>
+        <argsstring></argsstring>
+        <name>BITS_SEQUENCE</name>
+        <initializer> 187*8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="28" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1abbeaca3389cdaadb1abb10137ca7cfe6" prot="public" static="yes" mutable="no">
         <type>const int</type>
         <definition>const int MPEG_SYNC_BYTE</definition>
@@ -96,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="27" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="27" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ad5ccc6a26f313ce573ef7e19b67dcd8f" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -110,21 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="28" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="28" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="dvbt__consts_8h_1a526d29e3cd24449d577889edf9dd8af8" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int DVBT_MPEG_SYNC_LENGTH</definition>
-        <argsstring></argsstring>
-        <name>DVBT_MPEG_SYNC_LENGTH</name>
-        <initializer> 187</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="30" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1a0c3e3059531c5185a4d0ece5717d6402" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -138,7 +152,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="30" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dvbt__consts_8h_1a82ae58ec3aa7e0e61b974cc54a93e309" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int OUTER_INTERLEAVER_BANKS</definition>
+        <argsstring></argsstring>
+        <name>OUTER_INTERLEAVER_BANKS</name>
+        <initializer> 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1aec0bf7a17595dad1e9e08ce7f4338bd3" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -152,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1acaeaa683423623b9b258779e915dad2b" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -166,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ac1b330045acc5311d5f33a9851e84407" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -180,7 +208,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dvbt__consts_8h_1a060a14b51d0d831304fe2f593af85aa6" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int OUTER_INTERLEAVER_INC_SIZE</definition>
+        <argsstring></argsstring>
+        <name>OUTER_INTERLEAVER_INC_SIZE</name>
+        <initializer> 17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1adbdb31d594deffaed63d1f7e156833b8" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -194,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="34" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="37" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -5,33 +5,33 @@
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__fir__fsf__simd_8h" local="no">gr_fir_fsf_simd.h</includes>
     <incdepgraph>
-      <node id="8011">
+      <node id="8010">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="8009">
+      <node id="8008">
         <label>gr_fir_fsf_x86.h</label>
         <link refid="gr_fir_fsf_x86.h"/>
-        <childnode refid="8010" relation="include">
+        <childnode refid="8009" relation="include">
         </childnode>
-        <childnode refid="8012" relation="include">
-        </childnode>
-      </node>
-      <node id="8013">
-        <label>gr_fir_fsf_generic.h</label>
-      </node>
-      <node id="8010">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
         <childnode refid="8011" relation="include">
         </childnode>
       </node>
       <node id="8012">
-        <label>gr_fir_fsf_simd.h</label>
-        <link refid="gr__fir__fsf__simd_8h"/>
+        <label>gr_fir_fsf_generic.h</label>
+      </node>
+      <node id="8009">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
         <childnode refid="8010" relation="include">
         </childnode>
-        <childnode refid="8013" relation="include">
+      </node>
+      <node id="8011">
+        <label>gr_fir_fsf_simd.h</label>
+        <link refid="gr__fir__fsf__simd_8h"/>
+        <childnode refid="8009" relation="include">
+        </childnode>
+        <childnode refid="8012" relation="include">
         </childnode>
       </node>
     </incdepgraph>

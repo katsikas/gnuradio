@@ -190,22 +190,22 @@ gr-qtgui/swig/qtgui_swig.tag: gr-qtgui/swig/_qtgui_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && ./_qtgui_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-qtgui/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig.tag
 
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_f.h
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_util.h
-gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_time_sink_f.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_sink_f.h
+gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc.i: ../gr-qtgui/swig/../include/gr_qtgui_api.h
 gr-qtgui/swig/qtgui_swig_doc.i: gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qtgui_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-qtgui/swig/qtgui_swig_doc.i
 
-gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_sink_f.h
-gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_util.h
-gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
+gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_time_sink_f.h
+gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_sink_f.h
+gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/qtgui_time_sink_c.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: ../gr-qtgui/swig/../include/gr_qtgui_api.h
 gr-qtgui/swig/qtgui_swig_doc_swig_docs/xml/index.xml: gr-qtgui/swig/_qtgui_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)

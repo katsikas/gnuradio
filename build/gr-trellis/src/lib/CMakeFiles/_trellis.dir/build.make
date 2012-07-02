@@ -507,35 +507,35 @@ gr-trellis/src/lib/trellis_pccc_decoder_combined_cs.i: gr-trellis/src/lib/trelli
 
 gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.i
 
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_api.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/quicksort_index.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/base.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_combined_f.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/interleaver.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/core_algorithms.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_permutation.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/calc_metric.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/siso_type.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_f.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/interleaver.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/core_algorithms.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_api.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_permutation.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_combined_f.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc.i
 
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_api.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/quicksort_index.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/base.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_combined_f.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/interleaver.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/core_algorithms.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_permutation.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/calc_metric.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/siso_type.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_f.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/interleaver.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/core_algorithms.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_api.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_permutation.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_combined_f.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bb.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bs.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bi.h

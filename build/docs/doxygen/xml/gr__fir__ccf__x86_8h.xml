@@ -5,33 +5,33 @@
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__fir__ccf__simd_8h" local="no">gr_fir_ccf_simd.h</includes>
     <incdepgraph>
-      <node id="7965">
+      <node id="7964">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7963">
+      <node id="7962">
         <label>gr_fir_ccf_x86.h</label>
         <link refid="gr_fir_ccf_x86.h"/>
-        <childnode refid="7964" relation="include">
+        <childnode refid="7963" relation="include">
         </childnode>
-        <childnode refid="7966" relation="include">
-        </childnode>
-      </node>
-      <node id="7967">
-        <label>gr_fir_ccf_generic.h</label>
-      </node>
-      <node id="7964">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
         <childnode refid="7965" relation="include">
         </childnode>
       </node>
       <node id="7966">
-        <label>gr_fir_ccf_simd.h</label>
-        <link refid="gr__fir__ccf__simd_8h"/>
+        <label>gr_fir_ccf_generic.h</label>
+      </node>
+      <node id="7963">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
         <childnode refid="7964" relation="include">
         </childnode>
-        <childnode refid="7967" relation="include">
+      </node>
+      <node id="7965">
+        <label>gr_fir_ccf_simd.h</label>
+        <link refid="gr__fir__ccf__simd_8h"/>
+        <childnode refid="7963" relation="include">
+        </childnode>
+        <childnode refid="7966" relation="include">
         </childnode>
       </node>
     </incdepgraph>

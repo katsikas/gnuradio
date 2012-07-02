@@ -5,48 +5,50 @@
     <includes refid="fcd__source__c_8h" local="no">fcd_source_c.h</includes>
     <includes refid="gr__audio__source_8h" local="no">gr_audio_source.h</includes>
     <incdepgraph>
-      <node id="4342">
+      <node id="4341">
         <label>gr_sptr_magic.h</label>
         <link refid="gr__sptr__magic_8h_source"/>
-        <childnode refid="4333" relation="include">
+        <childnode refid="4332" relation="include">
         </childnode>
-        <childnode refid="4337" relation="include">
+        <childnode refid="4336" relation="include">
         </childnode>
       </node>
-      <node id="4361">
+      <node id="4360">
         <label>gr_block.h</label>
         <link refid="gr__block_8h"/>
+        <childnode refid="4332" relation="include">
+        </childnode>
         <childnode refid="4333" relation="include">
         </childnode>
-        <childnode refid="4334" relation="include">
-        </childnode>
-        <childnode refid="4362" relation="include">
+        <childnode refid="4361" relation="include">
         </childnode>
       </node>
-      <node id="4337">
+      <node id="4336">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="4349">
+      <node id="4348">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="4346">
+      <node id="4345">
         <label>gruel/msg_accepter.h</label>
         <link refid="msg__accepter_8h"/>
+        <childnode refid="4346" relation="include">
+        </childnode>
         <childnode refid="4347" relation="include">
         </childnode>
-        <childnode refid="4348" relation="include">
-        </childnode>
-        <childnode refid="4337" relation="include">
+        <childnode refid="4336" relation="include">
         </childnode>
       </node>
-      <node id="4331">
+      <node id="4330">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="4336">
+      <node id="4335">
         <label>gr_types.h</label>
         <link refid="gr__types_8h"/>
-        <childnode refid="4333" relation="include">
+        <childnode refid="4332" relation="include">
+        </childnode>
+        <childnode refid="4336" relation="include">
         </childnode>
         <childnode refid="4337" relation="include">
         </childnode>
@@ -54,43 +56,43 @@
         </childnode>
         <childnode refid="4339" relation="include">
         </childnode>
-        <childnode refid="4340" relation="include">
-        </childnode>
       </node>
-      <node id="4329">
+      <node id="4328">
         <label>fcd_source_c.h</label>
         <link refid="fcd__source__c_8h"/>
-        <childnode refid="4330" relation="include">
+        <childnode refid="4329" relation="include">
         </childnode>
-        <childnode refid="4332" relation="include">
-        </childnode>
-      </node>
-      <node id="4356">
-        <label>stdexcept</label>
-      </node>
-      <node id="4352">
-        <label>stdint.h</label>
-        <link refid="stdint_8h"/>
-        <childnode refid="4353" relation="include">
-        </childnode>
-        <childnode refid="4354" relation="include">
-        </childnode>
-      </node>
-      <node id="4359">
-        <label>gr_audio_api.h</label>
-        <link refid="gr__audio__api_8h"/>
         <childnode refid="4331" relation="include">
         </childnode>
       </node>
+      <node id="4355">
+        <label>stdexcept</label>
+      </node>
       <node id="4351">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="4352" relation="include">
+        </childnode>
+        <childnode refid="4353" relation="include">
+        </childnode>
+      </node>
+      <node id="4358">
+        <label>gr_audio_api.h</label>
+        <link refid="gr__audio__api_8h"/>
+        <childnode refid="4330" relation="include">
+        </childnode>
+      </node>
+      <node id="4350">
         <label>string</label>
       </node>
-      <node id="4334">
+      <node id="4333">
         <label>gr_basic_block.h</label>
         <link refid="gr__basic__block_8h"/>
-        <childnode refid="4333" relation="include">
+        <childnode refid="4332" relation="include">
         </childnode>
-        <childnode refid="4335" relation="include">
+        <childnode refid="4334" relation="include">
+        </childnode>
+        <childnode refid="4341" relation="include">
         </childnode>
         <childnode refid="4342" relation="include">
         </childnode>
@@ -98,146 +100,144 @@
         </childnode>
         <childnode refid="4344" relation="include">
         </childnode>
-        <childnode refid="4345" relation="include">
-        </childnode>
-        <childnode refid="4351" relation="include">
+        <childnode refid="4350" relation="include">
         </childnode>
       </node>
-      <node id="4357">
+      <node id="4356">
         <label>gruel/pmt_sugar.h</label>
         <link refid="pmt__sugar_8h"/>
       </node>
-      <node id="4332">
+      <node id="4331">
         <label>gr_hier_block2.h</label>
         <link refid="gr__hier__block2_8h"/>
+        <childnode refid="4332" relation="include">
+        </childnode>
         <childnode refid="4333" relation="include">
         </childnode>
-        <childnode refid="4334" relation="include">
-        </childnode>
       </node>
-      <node id="4339">
+      <node id="4338">
         <label>stddef.h</label>
       </node>
-      <node id="4347">
+      <node id="4346">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="4331" relation="include">
+        <childnode refid="4330" relation="include">
         </childnode>
       </node>
-      <node id="4328">
+      <node id="4327">
         <label>fcd_source_c_impl.h</label>
         <link refid="fcd_source_c_impl.h"/>
-        <childnode refid="4329" relation="include">
+        <childnode refid="4328" relation="include">
         </childnode>
-        <childnode refid="4358" relation="include">
+        <childnode refid="4357" relation="include">
         </childnode>
       </node>
-      <node id="4344">
+      <node id="4343">
         <label>boost/function.hpp</label>
       </node>
-      <node id="4353">
+      <node id="4352">
         <label>limits.h</label>
       </node>
-      <node id="4350">
+      <node id="4349">
         <label>boost/any.hpp</label>
       </node>
-      <node id="4348">
+      <node id="4347">
         <label>gruel/pmt.h</label>
         <link refid="pmt_8h"/>
-        <childnode refid="4347" relation="include">
+        <childnode refid="4346" relation="include">
+        </childnode>
+        <childnode refid="4348" relation="include">
+        </childnode>
+        <childnode refid="4336" relation="include">
         </childnode>
         <childnode refid="4349" relation="include">
         </childnode>
-        <childnode refid="4337" relation="include">
+        <childnode refid="4340" relation="include">
         </childnode>
         <childnode refid="4350" relation="include">
         </childnode>
-        <childnode refid="4341" relation="include">
-        </childnode>
         <childnode refid="4351" relation="include">
         </childnode>
-        <childnode refid="4352" relation="include">
+        <childnode refid="4354" relation="include">
         </childnode>
         <childnode refid="4355" relation="include">
         </childnode>
         <childnode refid="4356" relation="include">
         </childnode>
-        <childnode refid="4357" relation="include">
-        </childnode>
       </node>
-      <node id="4354">
+      <node id="4353">
         <label>wchar.h</label>
       </node>
-      <node id="4345">
+      <node id="4344">
         <label>gr_msg_accepter.h</label>
         <link refid="gr__msg__accepter_8h"/>
-        <childnode refid="4333" relation="include">
+        <childnode refid="4332" relation="include">
         </childnode>
-        <childnode refid="4346" relation="include">
+        <childnode refid="4345" relation="include">
         </childnode>
-        <childnode refid="4348" relation="include">
+        <childnode refid="4347" relation="include">
         </childnode>
       </node>
-      <node id="4335">
+      <node id="4334">
         <label>gr_runtime_types.h</label>
         <link refid="gr__runtime__types_8h"/>
-        <childnode refid="4333" relation="include">
+        <childnode refid="4332" relation="include">
         </childnode>
-        <childnode refid="4336" relation="include">
+        <childnode refid="4335" relation="include">
         </childnode>
       </node>
-      <node id="4338">
+      <node id="4337">
         <label>vector</label>
       </node>
-      <node id="4330">
+      <node id="4329">
         <label>fcd_api.h</label>
         <link refid="fcd__api_8h"/>
-        <childnode refid="4331" relation="include">
+        <childnode refid="4330" relation="include">
         </childnode>
       </node>
-      <node id="4333">
+      <node id="4332">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="4331" relation="include">
+        <childnode refid="4330" relation="include">
         </childnode>
       </node>
-      <node id="4343">
+      <node id="4342">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
-      <node id="4355">
+      <node id="4354">
         <label>iosfwd</label>
       </node>
-      <node id="4362">
+      <node id="4361">
         <label>gr_tags.h</label>
         <link refid="gr__tags_8h"/>
-        <childnode refid="4333" relation="include">
+        <childnode refid="4332" relation="include">
         </childnode>
-        <childnode refid="4348" relation="include">
+        <childnode refid="4347" relation="include">
         </childnode>
       </node>
-      <node id="4358">
+      <node id="4357">
         <label>gr_audio_source.h</label>
         <link refid="gr__audio__source_8h"/>
+        <childnode refid="4358" relation="include">
+        </childnode>
         <childnode refid="4359" relation="include">
+        </childnode>
+      </node>
+      <node id="4359">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="4332" relation="include">
         </childnode>
         <childnode refid="4360" relation="include">
         </childnode>
       </node>
-      <node id="4360">
-        <label>gr_sync_block.h</label>
-        <link refid="gr__sync__block_8h"/>
-        <childnode refid="4333" relation="include">
-        </childnode>
-        <childnode refid="4361" relation="include">
-        </childnode>
-      </node>
-      <node id="4341">
+      <node id="4340">
         <label>complex</label>
       </node>
-      <node id="4340">
+      <node id="4339">
         <label>gr_complex.h</label>
         <link refid="gr__complex_8h"/>
-        <childnode refid="4341" relation="include">
+        <childnode refid="4340" relation="include">
         </childnode>
       </node>
     </incdepgraph>

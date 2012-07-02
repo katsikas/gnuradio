@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio fa0eff61 C++ API: Instructions for using Volk in GNU Radio</title>
+<title>GNU Radio 4bffbef7 C++ API: Instructions for using Volk in GNU Radio</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio fa0eff61 C++ API
+   <div id="projectname">GNU Radio 4bffbef7 C++ API
    
    </div>
    
@@ -79,7 +79,7 @@ Introduction</h2>
 Setting and Using Memory Alignment Information</h2>
 <p>For Volk to work as best as possible, we want to use memory-aligned SIMD calls, which means we have to have some way of knowing and controlling the alignment of the buffers passed to <a class="el" href="classgr__block.html" title="The abstract base class for all &#39;terminal&#39; processing blocks.A signal processing flow is constructed ...">gr_block</a>'s work function. We set the alignment requirement for SIMD aligned memory calls with:</p>
 <div class="fragment"><pre class="fragment">  <span class="keyword">const</span> <span class="keywordtype">int</span> alignment_multiple =
-    <a class="code" href="volk_8h.html#a1bedaae028349fdd660fe18343f4d941">volk_get_alignment</a>() / output_item_size;
+    <a class="code" href="volk_8tmpl_8h.html#a1bedaae028349fdd660fe18343f4d941">volk_get_alignment</a>() / output_item_size;
   set_alignment(alignment_multiple);
 </pre></div><p>The Volk function 'volk_get_alignment' provides the alignment of the the machine architecture. We then base the alignment on the number of output items required to maintain the alignment, so we divide the number of alignment bytes by the number of bytes in an output items (sizeof(float), sizeof(gr_complex), etc.). This value is then set per block with the 'set_alignment' function.</p>
 <p>Because the scheduler tries to optimize throughput, the number of items available per call to work will change and depends on the availability of the read and write buffers. This means that it sometimes cannot produce a buffer that is properly memory aligned. This is an inevitable consequence of the scheduler system. Instead of requiring alignment, the scheduler enforces the alignment as much as possible, and when a buffer becomes unaligned, the scheduler will work to correct it as much as possible. If a block's buffers are unaligned, then, the scheduler sets a flag to indicate as much so that the block can then decide what best to do. The next section discusses the use of the aligned/unaligned information in a <a class="el" href="classgr__block.html" title="The abstract base class for all &#39;terminal&#39; processing blocks.A signal processing flow is constructed ...">gr_block</a>'s work function.</p>
@@ -123,7 +123,7 @@ Hand-Tuning Performance</h3>
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Generated on Sat Jun 30 2012 17:02:40 for GNU Radio fa0eff61 C++ API by
+    <li class="footer">Generated on Mon Jul 2 2012 11:23:04 for GNU Radio 4bffbef7 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

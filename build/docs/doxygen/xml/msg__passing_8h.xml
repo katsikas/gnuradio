@@ -6,60 +6,64 @@
     <includes refid="pmt_8h" local="no">gruel/pmt.h</includes>
     <includes refid="msg__accepter_8h" local="no">gruel/msg_accepter.h</includes>
     <incdepgraph>
-      <node id="15104">
+      <node id="15102">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="15103">
+      <node id="15101">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="15114">
+      <node id="15112">
         <label>gruel/msg_accepter.h</label>
         <link refid="msg__accepter_8h"/>
+        <childnode refid="15098" relation="include">
+        </childnode>
         <childnode refid="15100" relation="include">
         </childnode>
         <childnode refid="15102" relation="include">
         </childnode>
-        <childnode refid="15104" relation="include">
-        </childnode>
       </node>
-      <node id="15101">
+      <node id="15099">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="15112">
+      <node id="15110">
         <label>stdexcept</label>
       </node>
-      <node id="15108">
+      <node id="15106">
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
-        <childnode refid="15109" relation="include">
+        <childnode refid="15107" relation="include">
         </childnode>
-        <childnode refid="15110" relation="include">
+        <childnode refid="15108" relation="include">
         </childnode>
       </node>
-      <node id="15107">
+      <node id="15105">
         <label>string</label>
       </node>
-      <node id="15113">
+      <node id="15111">
         <label>gruel/pmt_sugar.h</label>
         <link refid="pmt__sugar_8h"/>
       </node>
-      <node id="15100">
+      <node id="15098">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="15101" relation="include">
+        <childnode refid="15099" relation="include">
         </childnode>
       </node>
-      <node id="15109">
+      <node id="15107">
         <label>limits.h</label>
       </node>
-      <node id="15105">
+      <node id="15103">
         <label>boost/any.hpp</label>
       </node>
-      <node id="15102">
+      <node id="15100">
         <label>gruel/pmt.h</label>
         <link refid="pmt_8h"/>
-        <childnode refid="15100" relation="include">
+        <childnode refid="15098" relation="include">
+        </childnode>
+        <childnode refid="15101" relation="include">
+        </childnode>
+        <childnode refid="15102" relation="include">
         </childnode>
         <childnode refid="15103" relation="include">
         </childnode>
@@ -69,34 +73,30 @@
         </childnode>
         <childnode refid="15106" relation="include">
         </childnode>
-        <childnode refid="15107" relation="include">
+        <childnode refid="15109" relation="include">
         </childnode>
-        <childnode refid="15108" relation="include">
+        <childnode refid="15110" relation="include">
         </childnode>
         <childnode refid="15111" relation="include">
         </childnode>
-        <childnode refid="15112" relation="include">
-        </childnode>
-        <childnode refid="15113" relation="include">
-        </childnode>
       </node>
-      <node id="15110">
+      <node id="15108">
         <label>wchar.h</label>
       </node>
-      <node id="15111">
+      <node id="15109">
         <label>iosfwd</label>
       </node>
-      <node id="15106">
+      <node id="15104">
         <label>complex</label>
       </node>
-      <node id="15099">
+      <node id="15097">
         <label>msg_passing.h</label>
         <link refid="msg_passing.h"/>
+        <childnode refid="15098" relation="include">
+        </childnode>
         <childnode refid="15100" relation="include">
         </childnode>
-        <childnode refid="15102" relation="include">
-        </childnode>
-        <childnode refid="15114" relation="include">
+        <childnode refid="15112" relation="include">
         </childnode>
       </node>
     </incdepgraph>

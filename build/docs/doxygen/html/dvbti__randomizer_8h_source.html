@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio fa0eff61 C++ API: dvbti_randomizer.h Source File</title>
+<title>GNU Radio 4bffbef7 C++ API: dvbti_randomizer.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio fa0eff61 C++ API
+   <div id="projectname">GNU Radio 4bffbef7 C++ API
    
    </div>
    
@@ -125,19 +125,20 @@
 <a name="l00060"></a>00060 <span class="comment"></span>        <span class="keywordtype">void</span> derandomize (<a class="code" href="classdvbt__mpeg__packet.html">dvbt_mpeg_packet</a> &amp;out, <span class="keyword">const</span> <a class="code" href="classdvbt__mpeg__packet__no__sync.html">dvbt_mpeg_packet_no_sync</a> &amp;in);
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062 <span class="keyword">private</span>:
-<a name="l00063"></a>00063         bitset&lt;15&gt; prbs_sequence;
-<a name="l00064"></a>00064         bitset&lt;187*8&gt; bit_sequence;
+<a name="l00063"></a>00063         bitset&lt;PRBS_SEQUENCE&gt; prbs_sequence;
+<a name="l00064"></a>00064         bitset&lt;BITS_SEQUENCE&gt; bit_sequence;
 <a name="l00065"></a>00065         <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">string</span> init_sequence;
 <a name="l00066"></a>00066 };
 <a name="l00067"></a>00067 
 <a name="l00068"></a>00068 <span class="preprocessor">#endif </span><span class="comment">/* _DVBT_RANDOMIZER_H_ */</span>
+<a name="l00069"></a>00069 
 </pre></div></div><!-- contents -->
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="dvbti__randomizer_8h.html">dvbti_randomizer.h</a>      </li>
 
-    <li class="footer">Generated on Sat Jun 30 2012 17:02:37 for GNU Radio fa0eff61 C++ API by
+    <li class="footer">Generated on Mon Jul 2 2012 11:23:01 for GNU Radio 4bffbef7 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

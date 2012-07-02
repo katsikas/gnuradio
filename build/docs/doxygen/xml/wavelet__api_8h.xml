@@ -8,57 +8,57 @@
     <includedby refid="wavelet__wvps__ff_8h" local="no">wavelet_wvps_ff.h</includedby>
     <includedby refid="wavelet__squash__ff__impl_8h" local="no">wavelet_squash_ff_impl.h</includedby>
     <incdepgraph>
-      <node id="18659">
+      <node id="18657">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
+      </node>
+      <node id="18656">
+        <label>wavelet_api.h</label>
+        <link refid="wavelet_api.h"/>
+        <childnode refid="18657" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18661">
+        <label>wavelet_wavelet_ff.h</label>
+        <link refid="wavelet__wavelet__ff_8h"/>
+        <childnode refid="18662" relation="include">
+        </childnode>
+      </node>
+      <node id="18664">
+        <label>wavelet_wvps_ff_impl.h</label>
+        <link refid="wavelet__wvps__ff__impl_8h"/>
+      </node>
+      <node id="18663">
+        <label>wavelet_wvps_ff.h</label>
+        <link refid="wavelet__wvps__ff_8h"/>
+        <childnode refid="18664" relation="include">
+        </childnode>
+      </node>
+      <node id="18659">
+        <label>wavelet_squash_ff.h</label>
+        <link refid="wavelet__squash__ff_8h"/>
+        <childnode refid="18660" relation="include">
+        </childnode>
       </node>
       <node id="18658">
         <label>wavelet_api.h</label>
         <link refid="wavelet_api.h"/>
         <childnode refid="18659" relation="include">
         </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="18663">
-        <label>wavelet_wavelet_ff.h</label>
-        <link refid="wavelet__wavelet__ff_8h"/>
-        <childnode refid="18664" relation="include">
-        </childnode>
-      </node>
-      <node id="18666">
-        <label>wavelet_wvps_ff_impl.h</label>
-        <link refid="wavelet__wvps__ff__impl_8h"/>
-      </node>
-      <node id="18665">
-        <label>wavelet_wvps_ff.h</label>
-        <link refid="wavelet__wvps__ff_8h"/>
-        <childnode refid="18666" relation="include">
-        </childnode>
-      </node>
-      <node id="18661">
-        <label>wavelet_squash_ff.h</label>
-        <link refid="wavelet__squash__ff_8h"/>
-        <childnode refid="18662" relation="include">
-        </childnode>
-      </node>
-      <node id="18660">
-        <label>wavelet_api.h</label>
-        <link refid="wavelet_api.h"/>
         <childnode refid="18661" relation="include">
         </childnode>
         <childnode refid="18663" relation="include">
         </childnode>
-        <childnode refid="18665" relation="include">
-        </childnode>
-        <childnode refid="18662" relation="include">
+        <childnode refid="18660" relation="include">
         </childnode>
       </node>
-      <node id="18664">
+      <node id="18662">
         <label>wavelet_wavelet_ff_impl.h</label>
         <link refid="wavelet__wavelet__ff__impl_8h"/>
       </node>
-      <node id="18662">
+      <node id="18660">
         <label>wavelet_squash_ff_impl.h</label>
         <link refid="wavelet__squash__ff__impl_8h"/>
       </node>
