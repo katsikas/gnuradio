@@ -28,34 +28,15 @@
 void
 plinfo::delay (plinfo &out, const plinfo &in, int nsegs_of_delay)
 {
-  /*assert (in.regular_seg_p ());
-  assert (nsegs_of_delay >= 0);
-
-  int	s = in.segno ();
-  if (in.in_field2_p ())
-    s += DVBT_MPEG_RS_ENCODED_LENGTH; // ATSC_DSEGS_PER_FIELD
-
-  s -= nsegs_of_delay;
-  if (s < 0)
-    s += 2 * DVBT_MPEG_RS_ENCODED_LENGTH;
-
-  assert (0 <= s && s < 2 * DVBT_MPEG_RS_ENCODED_LENGTH);
-
-  if (s < DVBT_MPEG_RS_ENCODED_LENGTH)
-    out.set_regular_seg (false, s);				// field 1
-  else
-    out.set_regular_seg (true, s - DVBT_MPEG_RS_ENCODED_LENGTH);	// field 2*/
+	// call gnuradio-core delay function!
+	assert (nsegs_of_delay == 12);
 }
 
 void
 plinfo::sanity_check (const plinfo &x)
 {
-  // basic sanity checks...
-  /*assert (x.segno () >= 0);
-  assert (x.segno () < (unsigned) DVBT_MPEG_RS_ENCODED_LENGTH);
-  assert ((x.flags () & ~0x3f) == 0);
-
-  assert (x.regular_seg_p () ^ x.field_sync_p ());
-  assert ((x.segno () != 0) ^ x.first_regular_seg_p ());*/
+  	// basic sanity checks...
+	assert (packets >= 0);
+	assert (transport_error == false);
 }
 

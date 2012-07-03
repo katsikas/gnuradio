@@ -49,7 +49,6 @@ dvbti_data_deinterleaver::deinterleave (dvbt_mpeg_packet_rs_encoded &out,
   	// now do the actual deinterleaving
   	for (unsigned int i = 0; i < sizeof (in.data); i++){
     		out.data[i] = alignment_fifo.stuff (transform (in.data[i]));
-		//out.data[i] = transform (in.data[i]);
   	}
 }
 
