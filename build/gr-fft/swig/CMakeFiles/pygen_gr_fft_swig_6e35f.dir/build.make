@@ -69,10 +69,11 @@ gr-fft/swig/fft_swigPYTHON_wrap.cxx: /usr/include/stdint.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/include/fft/fft_vfc.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/include/fft/api.h
-gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gruel/src/include/gruel/attributes.h
+gr-fft/swig/fft_swigPYTHON_wrap.cxx: gr-fft/swig/fft_swig_doc.i
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/include/fft/fft_vcc.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio.i
+gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gruel/src/include/gruel/attributes.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: gr-fft/swig/fft_swig.tag
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/swig/fft_swig.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
@@ -82,13 +83,6 @@ gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/swig/fft_swig.i
 
 gr-fft/swig/fft_swig.py: gr-fft/swig/fft_swigPYTHON_wrap.cxx
 
-gr-fft/swig/fft_swig.tag: gr-fft/swig/fft_swig_doc.i
-gr-fft/swig/fft_swig.tag: gr-fft/swig/_fft_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fft_swig.tag"
-	cd /home/katsikas/gnuradio/build/gr-fft/swig && ./_fft_swig_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-fft/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig.tag
-
 gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vfc.h
 gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel_fc.h
 gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft.h
@@ -96,9 +90,16 @@ gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/api.h
 gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vcc.h
 gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel.h
 gr-fft/swig/fft_swig_doc.i: gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fft_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig_doc.i
+
+gr-fft/swig/fft_swig.tag: gr-fft/swig/fft_swig_doc.i
+gr-fft/swig/fft_swig.tag: gr-fft/swig/_fft_swig_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fft_swig.tag"
+	cd /home/katsikas/gnuradio/build/gr-fft/swig && ./_fft_swig_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-fft/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig.tag
 
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft_vfc.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/goertzel_fc.h
@@ -119,8 +120,8 @@ pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig.pyc
 pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig.pyo
 pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swigPYTHON_wrap.cxx
 pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig.py
-pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig.tag
 pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig_doc.i
+pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig.tag
 pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml
 pygen_gr_fft_swig_6e35f: gr-fft/swig/fft_swig_doc_swig_docs/xml/combine.xslt
 pygen_gr_fft_swig_6e35f: gr-fft/swig/CMakeFiles/pygen_gr_fft_swig_6e35f.dir/build.make

@@ -45,9 +45,12 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_de
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_interleaver.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_deinterleaver.h"
+    "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_trellis_encoder.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_reed_solomon.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h"
+    "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h"
+    "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_basic_trellis_encoder.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/interleaver_fifo.h"
     "/home/katsikas/gnuradio/gr-dvbt/include/dvbt/convolutional_interleaver.h"
     )

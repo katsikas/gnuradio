@@ -32,12 +32,17 @@ install(FILES
 	dvbt_derandomizer.h
 	dvbt_interleaver.h
 	dvbt_deinterleaver.h
+	dvbt_trellis_encoder.h
+
 	dvbti_randomizer.h
 	dvbti_reed_solomon.h
 	dvbti_data_interleaver.h
+	dvbti_trellis_encoder.h
+	dvbti_basic_trellis_encoder.h
 
 	interleaver_fifo.h
 	convolutional_interleaver.h
+
     	DESTINATION ${GR_INCLUDE_DIR}/gnuradio/dvbt
     	COMPONENT "dvbt_devel"
 )

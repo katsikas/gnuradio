@@ -25,10 +25,13 @@ gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/in
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbt_randomizer.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbt_rs_decoder.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbt_rs_encoder.h
+gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbt_trellis_encoder.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbt_types.h
+gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbti_basic_trellis_encoder.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbti_data_interleaver.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbti_randomizer.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbti_reed_solomon.h
+gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/dvbti_trellis_encoder.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gr-dvbt/include/dvbt/interleaver_fifo.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/api.h
 gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/dvbt_swigPYTHON_wrap.cxx.o: ../gruel/src/include/gruel/attributes.h

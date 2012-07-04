@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "noaa_swig.pyo"
   "noaa_swigPYTHON_wrap.cxx"
   "noaa_swig.py"
-  "noaa_swig.tag"
   "noaa_swig_doc.i"
+  "noaa_swig.tag"
   "noaa_swig_doc_swig_docs/xml/index.xml"
   "noaa_swig_doc_swig_docs/xml/combine.xslt"
 )

@@ -95,6 +95,7 @@ gr-atsc/src/lib/atscPYTHON_wrap.cxx: ../gr-atsc/src/lib/atsc_api.h
 gr-atsc/src/lib/atscPYTHON_wrap.cxx: ../gr-atsc/src/lib/atsc_pad.h
 gr-atsc/src/lib/atscPYTHON_wrap.cxx: /usr/include/stdint.h
 gr-atsc/src/lib/atscPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
+gr-atsc/src/lib/atscPYTHON_wrap.cxx: gr-atsc/src/lib/atsc_swig_doc.i
 gr-atsc/src/lib/atscPYTHON_wrap.cxx: ../gruel/src/include/gruel/attributes.h
 gr-atsc/src/lib/atscPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
 gr-atsc/src/lib/atscPYTHON_wrap.cxx: ../gr-atsc/src/lib/atsc_depad.h
@@ -137,13 +138,6 @@ gr-atsc/src/lib/atscPYTHON_wrap.cxx: ../gr-atsc/src/lib/atsc.i
 	cd /home/katsikas/gnuradio/build/gr-atsc/src/lib && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module atsc -I/home/katsikas/gnuradio/gr-atsc/src/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-atsc/src/lib -I/home/katsikas/gnuradio/build/gr-atsc/src/lib -outdir /home/katsikas/gnuradio/build/gr-atsc/src/lib -c++ -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-atsc/src/lib -I/home/katsikas/gnuradio/build/gr-atsc/src/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/usr/include/python2.7 -o /home/katsikas/gnuradio/build/gr-atsc/src/lib/atscPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-atsc/src/lib/atsc.i
 
 gr-atsc/src/lib/atsc.py: gr-atsc/src/lib/atscPYTHON_wrap.cxx
-
-gr-atsc/src/lib/atsc.tag: gr-atsc/src/lib/atsc_swig_doc.i
-gr-atsc/src/lib/atsc.tag: gr-atsc/src/lib/_atsc_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating atsc.tag"
-	cd /home/katsikas/gnuradio/build/gr-atsc/src/lib && ./_atsc_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-atsc/src/lib && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-atsc/src/lib/atsc.tag
 
 gr-atsc/src/lib/atsc_swig_doc.i: ../gr-atsc/src/lib/atsci_root_raised_cosine.h
 gr-atsc/src/lib/atsc_swig_doc.i: ../gr-atsc/src/lib/atsci_fake_single_viterbi.h
@@ -236,9 +230,16 @@ gr-atsc/src/lib/atsc_swig_doc.i: ../gr-atsc/src/lib/GrAtscConvert2xTo20.h
 gr-atsc/src/lib/atsc_swig_doc.i: ../gr-atsc/src/lib/qa_atsci_fs_correlator.h
 gr-atsc/src/lib/atsc_swig_doc.i: ../gr-atsc/src/lib/atsc_deinterleaver.h
 gr-atsc/src/lib/atsc_swig_doc.i: gr-atsc/src/lib/atsc_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating atsc_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-atsc/src/lib/atsc_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-atsc/src/lib/atsc_swig_doc.i
+
+gr-atsc/src/lib/atsc.tag: gr-atsc/src/lib/atsc_swig_doc.i
+gr-atsc/src/lib/atsc.tag: gr-atsc/src/lib/_atsc_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating atsc.tag"
+	cd /home/katsikas/gnuradio/build/gr-atsc/src/lib && ./_atsc_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-atsc/src/lib && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-atsc/src/lib/atsc.tag
 
 gr-atsc/src/lib/atsc_swig_doc_swig_docs/xml/index.xml: ../gr-atsc/src/lib/atsci_root_raised_cosine.h
 gr-atsc/src/lib/atsc_swig_doc_swig_docs/xml/index.xml: ../gr-atsc/src/lib/atsci_fake_single_viterbi.h
@@ -373,8 +374,8 @@ gr-atsc/src/lib/CMakeFiles/_atsc.dir/clean:
 
 gr-atsc/src/lib/CMakeFiles/_atsc.dir/depend: gr-atsc/src/lib/atscPYTHON_wrap.cxx
 gr-atsc/src/lib/CMakeFiles/_atsc.dir/depend: gr-atsc/src/lib/atsc.py
-gr-atsc/src/lib/CMakeFiles/_atsc.dir/depend: gr-atsc/src/lib/atsc.tag
 gr-atsc/src/lib/CMakeFiles/_atsc.dir/depend: gr-atsc/src/lib/atsc_swig_doc.i
+gr-atsc/src/lib/CMakeFiles/_atsc.dir/depend: gr-atsc/src/lib/atsc.tag
 gr-atsc/src/lib/CMakeFiles/_atsc.dir/depend: gr-atsc/src/lib/atsc_swig_doc_swig_docs/xml/index.xml
 gr-atsc/src/lib/CMakeFiles/_atsc.dir/depend: gr-atsc/src/lib/atsc_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-atsc/src/lib /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-atsc/src/lib /home/katsikas/gnuradio/build/gr-atsc/src/lib/CMakeFiles/_atsc.dir/DependInfo.cmake --color=$(COLOR)

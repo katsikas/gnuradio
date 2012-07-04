@@ -72,6 +72,7 @@ gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/gnuradio_core_r
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
+gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_realtime.i
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_top_block.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_top_block.i
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_error_handler.i
@@ -88,7 +89,7 @@ gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-cor
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_block_detail.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_interpolator.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_interpolator.i
-gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.i
+gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: gnuradio-core/src/lib/swig/runtime_swig_doc.i
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: /usr/include/stdint.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
@@ -114,7 +115,7 @@ gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-cor
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_io_signature.i
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gruel/src/include/gruel/realtime.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_block.i
-gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_realtime.i
+gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_single_threaded_scheduler.i
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_select_handler.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_msg_queue.h
 gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_msg_queue.i
@@ -130,13 +131,6 @@ gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx: ../gnuradio-cor
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module gnuradio_core_runtime -I/usr/include -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -outdir /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -c++ -I/usr/include -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -o /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx /home/katsikas/gnuradio/gnuradio-core/src/lib/swig/gnuradio_core_runtime.i
 
 gnuradio-core/src/lib/swig/gnuradio_core_runtime.py: gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx
-
-gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag: gnuradio-core/src/lib/swig/runtime_swig_doc.i
-gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag: gnuradio-core/src/lib/swig/_gnuradio_core_runtime_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gnuradio_core_runtime.tag"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_gnuradio_core_runtime_swig_tag
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag
 
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/gr_select_handler.h
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/qa_runtime.h
@@ -195,9 +189,16 @@ gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/gr_sync_interpolator.h
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/qa_set_msg_handler.h
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating runtime_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/runtime_swig_doc.i
+
+gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag: gnuradio-core/src/lib/swig/runtime_swig_doc.i
+gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag: gnuradio-core/src/lib/swig/_gnuradio_core_runtime_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gnuradio_core_runtime.tag"
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_gnuradio_core_runtime_swig_tag
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag
 
 gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../runtime/gr_select_handler.h
 gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../runtime/qa_runtime.h
@@ -297,8 +298,8 @@ gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/clean:
 
 gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/depend: gnuradio-core/src/lib/swig/gnuradio_core_runtimePYTHON_wrap.cxx
 gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/depend: gnuradio-core/src/lib/swig/gnuradio_core_runtime.py
-gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/depend: gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag
 gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/depend: gnuradio-core/src/lib/swig/runtime_swig_doc.i
+gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/depend: gnuradio-core/src/lib/swig/gnuradio_core_runtime.tag
 gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/depend: gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml
 gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/depend: gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gnuradio-core/src/lib/swig /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/DependInfo.cmake --color=$(COLOR)

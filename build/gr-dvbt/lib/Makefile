@@ -372,6 +372,54 @@ dvbt_rs_encoder.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.s
 .PHONY : dvbt_rs_encoder.cc.s
 
+dvbt_trellis_encoder.o: dvbt_trellis_encoder.cc.o
+.PHONY : dvbt_trellis_encoder.o
+
+# target to build an object file
+dvbt_trellis_encoder.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.o
+.PHONY : dvbt_trellis_encoder.cc.o
+
+dvbt_trellis_encoder.i: dvbt_trellis_encoder.cc.i
+.PHONY : dvbt_trellis_encoder.i
+
+# target to preprocess a source file
+dvbt_trellis_encoder.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.i
+.PHONY : dvbt_trellis_encoder.cc.i
+
+dvbt_trellis_encoder.s: dvbt_trellis_encoder.cc.s
+.PHONY : dvbt_trellis_encoder.s
+
+# target to generate assembly for a file
+dvbt_trellis_encoder.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.s
+.PHONY : dvbt_trellis_encoder.cc.s
+
+dvbti_basic_trellis_encoder.o: dvbti_basic_trellis_encoder.cc.o
+.PHONY : dvbti_basic_trellis_encoder.o
+
+# target to build an object file
+dvbti_basic_trellis_encoder.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.o
+.PHONY : dvbti_basic_trellis_encoder.cc.o
+
+dvbti_basic_trellis_encoder.i: dvbti_basic_trellis_encoder.cc.i
+.PHONY : dvbti_basic_trellis_encoder.i
+
+# target to preprocess a source file
+dvbti_basic_trellis_encoder.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.i
+.PHONY : dvbti_basic_trellis_encoder.cc.i
+
+dvbti_basic_trellis_encoder.s: dvbti_basic_trellis_encoder.cc.s
+.PHONY : dvbti_basic_trellis_encoder.s
+
+# target to generate assembly for a file
+dvbti_basic_trellis_encoder.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.s
+.PHONY : dvbti_basic_trellis_encoder.cc.s
+
 dvbti_data_interleaver.o: dvbti_data_interleaver.cc.o
 .PHONY : dvbti_data_interleaver.o
 
@@ -444,6 +492,30 @@ dvbti_reed_solomon.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.s
 .PHONY : dvbti_reed_solomon.cc.s
 
+dvbti_trellis_encoder.o: dvbti_trellis_encoder.cc.o
+.PHONY : dvbti_trellis_encoder.o
+
+# target to build an object file
+dvbti_trellis_encoder.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o
+.PHONY : dvbti_trellis_encoder.cc.o
+
+dvbti_trellis_encoder.i: dvbti_trellis_encoder.cc.i
+.PHONY : dvbti_trellis_encoder.i
+
+# target to preprocess a source file
+dvbti_trellis_encoder.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.i
+.PHONY : dvbti_trellis_encoder.cc.i
+
+dvbti_trellis_encoder.s: dvbti_trellis_encoder.cc.s
+.PHONY : dvbti_trellis_encoder.s
+
+# target to generate assembly for a file
+dvbti_trellis_encoder.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.s
+.PHONY : dvbti_trellis_encoder.cc.s
+
 plinfo.o: plinfo.cc.o
 .PHONY : plinfo.o
 
@@ -508,6 +580,12 @@ help:
 	@echo "... dvbt_rs_encoder.o"
 	@echo "... dvbt_rs_encoder.i"
 	@echo "... dvbt_rs_encoder.s"
+	@echo "... dvbt_trellis_encoder.o"
+	@echo "... dvbt_trellis_encoder.i"
+	@echo "... dvbt_trellis_encoder.s"
+	@echo "... dvbti_basic_trellis_encoder.o"
+	@echo "... dvbti_basic_trellis_encoder.i"
+	@echo "... dvbti_basic_trellis_encoder.s"
 	@echo "... dvbti_data_interleaver.o"
 	@echo "... dvbti_data_interleaver.i"
 	@echo "... dvbti_data_interleaver.s"
@@ -517,6 +595,9 @@ help:
 	@echo "... dvbti_reed_solomon.o"
 	@echo "... dvbti_reed_solomon.i"
 	@echo "... dvbti_reed_solomon.s"
+	@echo "... dvbti_trellis_encoder.o"
+	@echo "... dvbti_trellis_encoder.i"
+	@echo "... dvbti_trellis_encoder.s"
 	@echo "... plinfo.o"
 	@echo "... plinfo.i"
 	@echo "... plinfo.s"

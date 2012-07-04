@@ -45,10 +45,13 @@ list(APPEND dvbt_sources
 	dvbt_derandomizer.cc
 	dvbt_interleaver.cc
 	dvbt_deinterleaver.cc
+	dvbt_trellis_encoder.cc
 
 	dvbti_randomizer.cc
 	dvbti_reed_solomon.cc
 	dvbti_data_interleaver.cc
+	dvbti_trellis_encoder.cc
+	dvbti_basic_trellis_encoder.cc
 
 	plinfo.cc
 )

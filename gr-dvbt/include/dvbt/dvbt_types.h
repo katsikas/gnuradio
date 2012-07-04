@@ -123,7 +123,7 @@ class dvbt_mpeg_packet_no_sync
 public:
   	static const int NPAD = 67;
   	plinfo        pli;
-  	unsigned char _pad_[NPAD];                            // pad to power of 2 (256)
+  	unsigned char _pad_[NPAD];                 		// pad to power of 2 (256)
 	unsigned char data[DVBT_MPEG_PACKET_LENGTH];
 
   	// overload equality operator
@@ -141,8 +141,9 @@ class dvbt_mpeg_packet_rs_encoded {
 public:
   	static const int NPAD = 51;
   	plinfo	pli;
+	unsigned char _pad_[NPAD];				// pad to power of 2 (256)
   	unsigned char	data[DVBT_MPEG_RS_ENCODED_LENGTH];
-  	unsigned char _pad_[NPAD];				// pad to power of 2 (256)
+  	
 
   	// overload equality operator
   	bool operator== (const dvbt_mpeg_packet_rs_encoded &other) const {
@@ -153,5 +154,27 @@ public:
     		return !(std::memcmp (data, other.data, sizeof (data)) == 0);
   	}
 };
+
+
+//! contains 832 3 bit symbols.  The low 3 bits in the byte hold the symbol.
+
+class dvbt_data_segment {
+public:
+  	static const int NPAD = 188;
+  	plinfo	pli;
+	unsigned char _pad_[NPAD];				// pad to power of 2 (1024)
+  	unsigned char	data[DVBT_DATA_SEGMENT_LENGTH];
+  					
+
+  	// overload equality operator
+  	bool operator== (const dvbt_data_segment &other) const {
+    		return std::memcmp (data, other.data, sizeof (data)) == 0;
+  	}
+
+  	bool operator!= (const dvbt_data_segment &other) const {
+    		return !(std::memcmp (data, other.data, sizeof (data)) == 0);
+  	}
+};
+
 
 #endif /* _DVBT_TYPES_H_ */

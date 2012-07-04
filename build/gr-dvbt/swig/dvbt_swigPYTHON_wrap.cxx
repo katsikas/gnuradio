@@ -2951,49 +2951,51 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_boost__shared_ptrT_dvbt_randomizer_t swig_types[6]
 #define SWIGTYPE_p_boost__shared_ptrT_dvbt_rs_decoder_t swig_types[7]
 #define SWIGTYPE_p_boost__shared_ptrT_dvbt_rs_encoder_t swig_types[8]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[9]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[10]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[11]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[12]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[13]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[14]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[15]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[16]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[17]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[18]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[19]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[20]
-#define SWIGTYPE_p_char swig_types[21]
-#define SWIGTYPE_p_difference_type swig_types[22]
-#define SWIGTYPE_p_dvbt_deinterleaver swig_types[23]
-#define SWIGTYPE_p_dvbt_depad swig_types[24]
-#define SWIGTYPE_p_dvbt_derandomizer swig_types[25]
-#define SWIGTYPE_p_dvbt_interleaver swig_types[26]
-#define SWIGTYPE_p_dvbt_pad swig_types[27]
-#define SWIGTYPE_p_dvbt_randomizer swig_types[28]
-#define SWIGTYPE_p_dvbt_rs_decoder swig_types[29]
-#define SWIGTYPE_p_dvbt_rs_encoder swig_types[30]
-#define SWIGTYPE_p_gr_basic_block swig_types[31]
-#define SWIGTYPE_p_gr_block swig_types[32]
-#define SWIGTYPE_p_gr_hier_block2 swig_types[33]
-#define SWIGTYPE_p_gr_sync_block swig_types[34]
-#define SWIGTYPE_p_gr_sync_decimator swig_types[35]
-#define SWIGTYPE_p_gr_sync_interpolator swig_types[36]
-#define SWIGTYPE_p_gr_top_block swig_types[37]
-#define SWIGTYPE_p_gr_vector_const_void_star swig_types[38]
-#define SWIGTYPE_p_gr_vector_int swig_types[39]
-#define SWIGTYPE_p_gr_vector_void_star swig_types[40]
-#define SWIGTYPE_p_gruel__rt_status_t swig_types[41]
-#define SWIGTYPE_p_long_long swig_types[42]
-#define SWIGTYPE_p_size_type swig_types[43]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[44]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[45]
-#define SWIGTYPE_p_std__invalid_argument swig_types[46]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[47]
-#define SWIGTYPE_p_unsigned_long_long swig_types[48]
-#define SWIGTYPE_p_value_type swig_types[49]
-static swig_type_info *swig_types[51];
-static swig_module_info swig_module = {swig_types, 50, 0, 0, 0, 0};
+#define SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t swig_types[9]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[10]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[11]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[12]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[13]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[14]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[15]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[16]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[17]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[18]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[19]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[20]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[21]
+#define SWIGTYPE_p_char swig_types[22]
+#define SWIGTYPE_p_difference_type swig_types[23]
+#define SWIGTYPE_p_dvbt_deinterleaver swig_types[24]
+#define SWIGTYPE_p_dvbt_depad swig_types[25]
+#define SWIGTYPE_p_dvbt_derandomizer swig_types[26]
+#define SWIGTYPE_p_dvbt_interleaver swig_types[27]
+#define SWIGTYPE_p_dvbt_pad swig_types[28]
+#define SWIGTYPE_p_dvbt_randomizer swig_types[29]
+#define SWIGTYPE_p_dvbt_rs_decoder swig_types[30]
+#define SWIGTYPE_p_dvbt_rs_encoder swig_types[31]
+#define SWIGTYPE_p_dvbt_trellis_encoder swig_types[32]
+#define SWIGTYPE_p_gr_basic_block swig_types[33]
+#define SWIGTYPE_p_gr_block swig_types[34]
+#define SWIGTYPE_p_gr_hier_block2 swig_types[35]
+#define SWIGTYPE_p_gr_sync_block swig_types[36]
+#define SWIGTYPE_p_gr_sync_decimator swig_types[37]
+#define SWIGTYPE_p_gr_sync_interpolator swig_types[38]
+#define SWIGTYPE_p_gr_top_block swig_types[39]
+#define SWIGTYPE_p_gr_vector_const_void_star swig_types[40]
+#define SWIGTYPE_p_gr_vector_int swig_types[41]
+#define SWIGTYPE_p_gr_vector_void_star swig_types[42]
+#define SWIGTYPE_p_gruel__rt_status_t swig_types[43]
+#define SWIGTYPE_p_long_long swig_types[44]
+#define SWIGTYPE_p_size_type swig_types[45]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[46]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[47]
+#define SWIGTYPE_p_std__invalid_argument swig_types[48]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[49]
+#define SWIGTYPE_p_unsigned_long_long swig_types[50]
+#define SWIGTYPE_p_value_type swig_types[51]
+static swig_type_info *swig_types[53];
+static swig_module_info swig_module = {swig_types, 52, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4387,6 +4389,8 @@ namespace swig
 #include "dvbt/dvbt_derandomizer.h"
 #include "dvbt/dvbt_interleaver.h"
 #include "dvbt/dvbt_deinterleaver.h"
+#include <dvbt/dvbt_trellis_encoder.h>
+//#include <dvbt/dvbt_viterbi_decoder.h>
 
 
 #include <limits.h>
@@ -6796,6 +6800,169 @@ SWIGINTERN PyObject *dvbt_deinterleaver_swigregister(PyObject *SWIGUNUSEDPARM(se
   PyObject *obj;
   if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_dvbt_deinterleaver, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_dvbt_make_trellis_encoder(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_trellis_encoder_sptr result;
+  
+  {
+    try {
+      result = dvbt_make_trellis_encoder();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new dvbt_trellis_encoder_sptr(static_cast< const dvbt_trellis_encoder_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  dvbt_trellis_encoder *arg1 = (dvbt_trellis_encoder *) 0 ;
+  int arg2 ;
+  gr_vector_const_void_star *arg3 = 0 ;
+  gr_vector_void_star *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "noutput_items",(char *) "input_items",(char *) "output_items", NULL 
+  };
+  int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:dvbt_trellis_encoder_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_trellis_encoder, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_work" "', argument " "1"" of type '" "dvbt_trellis_encoder *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_trellis_encoder * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_trellis_encoder_work" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_trellis_encoder_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_trellis_encoder_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "dvbt_trellis_encoder_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_trellis_encoder_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
+  {
+    try {
+      result = (int)(arg1)->work(arg2,*arg3,*arg4);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_reset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_trellis_encoder *arg1 = (dvbt_trellis_encoder *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_reset",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_trellis_encoder, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_reset" "', argument " "1"" of type '" "dvbt_trellis_encoder *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_trellis_encoder * >(argp1);
+  {
+    try {
+      (arg1)->reset();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_dvbt_trellis_encoder(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_trellis_encoder *arg1 = (dvbt_trellis_encoder *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_dvbt_trellis_encoder",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_trellis_encoder, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_dvbt_trellis_encoder" "', argument " "1"" of type '" "dvbt_trellis_encoder *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_trellis_encoder * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *dvbt_trellis_encoder_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_dvbt_trellis_encoder, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -13599,6 +13766,849 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_new_dvbt_trellis_encoder_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *result = 0 ;
+  
+  {
+    try {
+      result = (boost::shared_ptr< dvbt_trellis_encoder > *)new boost::shared_ptr< dvbt_trellis_encoder >();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_dvbt_trellis_encoder_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_trellis_encoder *arg1 = (dvbt_trellis_encoder *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  boost::shared_ptr< dvbt_trellis_encoder > *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"new_dvbt_trellis_encoder_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_dvbt_trellis_encoder, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_dvbt_trellis_encoder_sptr" "', argument " "1"" of type '" "dvbt_trellis_encoder *""'"); 
+  }
+  arg1 = reinterpret_cast< dvbt_trellis_encoder * >(argp1);
+  {
+    try {
+      result = (boost::shared_ptr< dvbt_trellis_encoder > *)new boost::shared_ptr< dvbt_trellis_encoder >(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_dvbt_trellis_encoder_sptr(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_dvbt_trellis_encoder_sptr__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_dvbt_trellis_encoder, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_dvbt_trellis_encoder_sptr__SWIG_1(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_dvbt_trellis_encoder_sptr'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    boost::shared_ptr< dvbt_trellis_encoder >::shared_ptr()\n"
+    "    boost::shared_ptr< dvbt_trellis_encoder >::shared_ptr(dvbt_trellis_encoder *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  dvbt_trellis_encoder *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (dvbt_trellis_encoder *)(arg1)->operator ->();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_dvbt_trellis_encoder, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_dvbt_trellis_encoder_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_dvbt_trellis_encoder_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_dvbt_trellis_encoder_sptr" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  int arg2 ;
+  gr_vector_const_void_star *arg3 = 0 ;
+  gr_vector_void_star *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "noutput_items",(char *) "input_items",(char *) "output_items", NULL 
+  };
+  int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:dvbt_trellis_encoder_sptr_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_work" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_trellis_encoder_sptr_work" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_trellis_encoder_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_trellis_encoder_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "dvbt_trellis_encoder_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_trellis_encoder_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
+  {
+    try {
+      result = (int)(*arg1)->work(arg2,*arg3,*arg4);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_reset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_reset",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_reset" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      (*arg1)->reset();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_history",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->history();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->output_multiple();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  double result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (double)(*arg1)->relative_rate();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_start",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->start();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_stop",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->stop();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_input", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_trellis_encoder_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_trellis_encoder_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_read(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_output", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_trellis_encoder_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_trellis_encoder_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_written(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_block_detail_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_detail",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_detail" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (*arg1)->detail();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_block_detail_sptr(static_cast< const gr_block_detail_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_set_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  gr_block_detail_sptr arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "detail", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:dvbt_trellis_encoder_sptr_set_detail",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_set_detail" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_trellis_encoder_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_trellis_encoder_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'");
+    } else {
+      gr_block_detail_sptr * temp = reinterpret_cast< gr_block_detail_sptr * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    try {
+      (*arg1)->set_detail(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_name",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (*arg1)->name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_input_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (*arg1)->input_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_output_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (*arg1)->output_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  long result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_unique_id",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (long)(*arg1)->unique_id();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_basic_block_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"dvbt_trellis_encoder_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  {
+    try {
+      result = (*arg1)->to_basic_block();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_basic_block_sptr(static_cast< const gr_basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_dvbt_trellis_encoder_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< dvbt_trellis_encoder > *arg1 = (boost::shared_ptr< dvbt_trellis_encoder > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "ninputs",(char *) "noutputs", NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:dvbt_trellis_encoder_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_trellis_encoder_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< dvbt_trellis_encoder > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< dvbt_trellis_encoder > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_trellis_encoder_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "dvbt_trellis_encoder_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      result = (bool)(*arg1)->check_topology(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *dvbt_trellis_encoder_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_trellis_encoder(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  dvbt_trellis_encoder_sptr result;
+  
+  {
+    try {
+      result = dvbt_make_trellis_encoder();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new dvbt_trellis_encoder_sptr(static_cast< const dvbt_trellis_encoder_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_dvbt_trellis_encoder_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_VARARGS, (char *)"delete_SwigPyIterator(SwigPyIterator self)"},
@@ -13735,6 +14745,14 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"dvbt_deinterleaver_reset", _wrap_dvbt_deinterleaver_reset, METH_VARARGS, (char *)"dvbt_deinterleaver_reset(dvbt_deinterleaver self)"},
 	 { (char *)"delete_dvbt_deinterleaver", _wrap_delete_dvbt_deinterleaver, METH_VARARGS, (char *)"delete_dvbt_deinterleaver(dvbt_deinterleaver self)"},
 	 { (char *)"dvbt_deinterleaver_swigregister", dvbt_deinterleaver_swigregister, METH_VARARGS, NULL},
+	 { (char *)"dvbt_make_trellis_encoder", _wrap_dvbt_make_trellis_encoder, METH_VARARGS, (char *)"dvbt_make_trellis_encoder() -> dvbt_trellis_encoder_sptr"},
+	 { (char *)"dvbt_trellis_encoder_work", (PyCFunction) _wrap_dvbt_trellis_encoder_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"dvbt_trellis_encoder_work(dvbt_trellis_encoder self, int noutput_items, gr_vector_const_void_star input_items, \n"
+		"    gr_vector_void_star output_items) -> int\n"
+		""},
+	 { (char *)"dvbt_trellis_encoder_reset", _wrap_dvbt_trellis_encoder_reset, METH_VARARGS, (char *)"dvbt_trellis_encoder_reset(dvbt_trellis_encoder self)"},
+	 { (char *)"delete_dvbt_trellis_encoder", _wrap_delete_dvbt_trellis_encoder, METH_VARARGS, (char *)"delete_dvbt_trellis_encoder(dvbt_trellis_encoder self)"},
+	 { (char *)"dvbt_trellis_encoder_swigregister", dvbt_trellis_encoder_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_dvbt_pad_sptr", _wrap_new_dvbt_pad_sptr, METH_VARARGS, (char *)"\n"
 		"dvbt_pad_sptr()\n"
 		"new_dvbt_pad_sptr(dvbt_pad p) -> dvbt_pad_sptr\n"
@@ -14008,6 +15026,34 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded.\n"
 		""},
+	 { (char *)"new_dvbt_trellis_encoder_sptr", _wrap_new_dvbt_trellis_encoder_sptr, METH_VARARGS, (char *)"\n"
+		"dvbt_trellis_encoder_sptr()\n"
+		"new_dvbt_trellis_encoder_sptr(dvbt_trellis_encoder p) -> dvbt_trellis_encoder_sptr\n"
+		""},
+	 { (char *)"dvbt_trellis_encoder_sptr___deref__", _wrap_dvbt_trellis_encoder_sptr___deref__, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr___deref__(dvbt_trellis_encoder_sptr self) -> dvbt_trellis_encoder"},
+	 { (char *)"delete_dvbt_trellis_encoder_sptr", _wrap_delete_dvbt_trellis_encoder_sptr, METH_VARARGS, (char *)"delete_dvbt_trellis_encoder_sptr(dvbt_trellis_encoder_sptr self)"},
+	 { (char *)"dvbt_trellis_encoder_sptr_work", (PyCFunction) _wrap_dvbt_trellis_encoder_sptr_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"dvbt_trellis_encoder_sptr_work(dvbt_trellis_encoder_sptr self, int noutput_items, \n"
+		"    gr_vector_const_void_star input_items, gr_vector_void_star output_items) -> int\n"
+		""},
+	 { (char *)"dvbt_trellis_encoder_sptr_reset", _wrap_dvbt_trellis_encoder_sptr_reset, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_reset(dvbt_trellis_encoder_sptr self)"},
+	 { (char *)"dvbt_trellis_encoder_sptr_history", _wrap_dvbt_trellis_encoder_sptr_history, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_history(dvbt_trellis_encoder_sptr self) -> unsigned int"},
+	 { (char *)"dvbt_trellis_encoder_sptr_output_multiple", _wrap_dvbt_trellis_encoder_sptr_output_multiple, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_output_multiple(dvbt_trellis_encoder_sptr self) -> int"},
+	 { (char *)"dvbt_trellis_encoder_sptr_relative_rate", _wrap_dvbt_trellis_encoder_sptr_relative_rate, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_relative_rate(dvbt_trellis_encoder_sptr self) -> double"},
+	 { (char *)"dvbt_trellis_encoder_sptr_start", _wrap_dvbt_trellis_encoder_sptr_start, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_start(dvbt_trellis_encoder_sptr self) -> bool"},
+	 { (char *)"dvbt_trellis_encoder_sptr_stop", _wrap_dvbt_trellis_encoder_sptr_stop, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_stop(dvbt_trellis_encoder_sptr self) -> bool"},
+	 { (char *)"dvbt_trellis_encoder_sptr_nitems_read", (PyCFunction) _wrap_dvbt_trellis_encoder_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_trellis_encoder_sptr_nitems_read(dvbt_trellis_encoder_sptr self, unsigned int which_input) -> uint64_t"},
+	 { (char *)"dvbt_trellis_encoder_sptr_nitems_written", (PyCFunction) _wrap_dvbt_trellis_encoder_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_trellis_encoder_sptr_nitems_written(dvbt_trellis_encoder_sptr self, unsigned int which_output) -> uint64_t"},
+	 { (char *)"dvbt_trellis_encoder_sptr_detail", _wrap_dvbt_trellis_encoder_sptr_detail, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_detail(dvbt_trellis_encoder_sptr self) -> gr_block_detail_sptr"},
+	 { (char *)"dvbt_trellis_encoder_sptr_set_detail", (PyCFunction) _wrap_dvbt_trellis_encoder_sptr_set_detail, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_trellis_encoder_sptr_set_detail(dvbt_trellis_encoder_sptr self, gr_block_detail_sptr detail)"},
+	 { (char *)"dvbt_trellis_encoder_sptr_name", _wrap_dvbt_trellis_encoder_sptr_name, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_name(dvbt_trellis_encoder_sptr self) -> string"},
+	 { (char *)"dvbt_trellis_encoder_sptr_input_signature", _wrap_dvbt_trellis_encoder_sptr_input_signature, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_input_signature(dvbt_trellis_encoder_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"dvbt_trellis_encoder_sptr_output_signature", _wrap_dvbt_trellis_encoder_sptr_output_signature, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_output_signature(dvbt_trellis_encoder_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"dvbt_trellis_encoder_sptr_unique_id", _wrap_dvbt_trellis_encoder_sptr_unique_id, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_unique_id(dvbt_trellis_encoder_sptr self) -> long"},
+	 { (char *)"dvbt_trellis_encoder_sptr_to_basic_block", _wrap_dvbt_trellis_encoder_sptr_to_basic_block, METH_VARARGS, (char *)"dvbt_trellis_encoder_sptr_to_basic_block(dvbt_trellis_encoder_sptr self) -> gr_basic_block_sptr"},
+	 { (char *)"dvbt_trellis_encoder_sptr_check_topology", (PyCFunction) _wrap_dvbt_trellis_encoder_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"dvbt_trellis_encoder_sptr_check_topology(dvbt_trellis_encoder_sptr self, int ninputs, int noutputs) -> bool"},
+	 { (char *)"dvbt_trellis_encoder_sptr_swigregister", dvbt_trellis_encoder_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"trellis_encoder", _wrap_trellis_encoder, METH_VARARGS, (char *)"trellis_encoder() -> dvbt_trellis_encoder_sptr"},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -14019,6 +15065,9 @@ static void *_p_dvbt_depadTo_p_gr_sync_interpolator(void *x, int *SWIGUNUSEDPARM
 }
 static void *_p_dvbt_rs_encoderTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((dvbt_rs_encoder *) x));
+}
+static void *_p_dvbt_trellis_encoderTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *)  ((dvbt_trellis_encoder *) x));
 }
 static void *_p_dvbt_depadTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *) (gr_sync_interpolator *) ((dvbt_depad *) x));
@@ -14089,8 +15138,14 @@ static void *_p_gr_sync_decimatorTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPAR
 static void *_p_dvbt_rs_encoderTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((dvbt_rs_encoder *) x));
 }
+static void *_p_dvbt_trellis_encoderTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((dvbt_trellis_encoder *) x));
+}
 static void *_p_dvbt_rs_encoderTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *) ((dvbt_rs_encoder *) x));
+}
+static void *_p_dvbt_trellis_encoderTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_block *) (gr_sync_block *) ((dvbt_trellis_encoder *) x));
 }
 static void *_p_dvbt_depadTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *)(gr_sync_interpolator *) ((dvbt_depad *) x));
@@ -14134,6 +15189,7 @@ static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_pad_t = {"_p_boost__shar
 static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_randomizer_t = {"_p_boost__shared_ptrT_dvbt_randomizer_t", "boost::shared_ptr< dvbt_randomizer > *|dvbt_randomizer_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_rs_decoder_t = {"_p_boost__shared_ptrT_dvbt_rs_decoder_t", "boost::shared_ptr< dvbt_rs_decoder > *|dvbt_rs_decoder_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_rs_encoder_t = {"_p_boost__shared_ptrT_dvbt_rs_encoder_t", "boost::shared_ptr< dvbt_rs_encoder > *|dvbt_rs_encoder_sptr *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_dvbt_trellis_encoder_t = {"_p_boost__shared_ptrT_dvbt_trellis_encoder_t", "boost::shared_ptr< dvbt_trellis_encoder > *|dvbt_trellis_encoder_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_basic_block_t = {"_p_boost__shared_ptrT_gr_basic_block_t", "boost::shared_ptr< gr_basic_block > *|gr_basic_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_block_detail_t = {"_p_boost__shared_ptrT_gr_block_detail_t", "boost::shared_ptr< gr_block_detail > *|gr_block_detail_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_block_t = {"_p_boost__shared_ptrT_gr_block_t", "boost::shared_ptr< gr_block > *|gr_block_sptr *", 0, 0, (void*)0, 0};
@@ -14156,6 +15212,7 @@ static swig_type_info _swigt__p_dvbt_pad = {"_p_dvbt_pad", "dvbt_pad *", 0, 0, (
 static swig_type_info _swigt__p_dvbt_randomizer = {"_p_dvbt_randomizer", "dvbt_randomizer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_dvbt_rs_decoder = {"_p_dvbt_rs_decoder", "dvbt_rs_decoder *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_dvbt_rs_encoder = {"_p_dvbt_rs_encoder", "dvbt_rs_encoder *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_dvbt_trellis_encoder = {"_p_dvbt_trellis_encoder", "dvbt_trellis_encoder *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_basic_block = {"_p_gr_basic_block", "gr_basic_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_hier_block2 = {"_p_gr_hier_block2", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_top_block = {"_p_gr_top_block", 0, 0, 0, 0, 0};
@@ -14186,6 +15243,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_dvbt_randomizer_t,
   &_swigt__p_boost__shared_ptrT_dvbt_rs_decoder_t,
   &_swigt__p_boost__shared_ptrT_dvbt_rs_encoder_t,
+  &_swigt__p_boost__shared_ptrT_dvbt_trellis_encoder_t,
   &_swigt__p_boost__shared_ptrT_gr_basic_block_t,
   &_swigt__p_boost__shared_ptrT_gr_block_detail_t,
   &_swigt__p_boost__shared_ptrT_gr_block_t,
@@ -14208,6 +15266,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_dvbt_randomizer,
   &_swigt__p_dvbt_rs_decoder,
   &_swigt__p_dvbt_rs_encoder,
+  &_swigt__p_dvbt_trellis_encoder,
   &_swigt__p_gr_basic_block,
   &_swigt__p_gr_block,
   &_swigt__p_gr_hier_block2,
@@ -14238,6 +15297,7 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_pad_t[] = {  {&_swigt__p
 static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_randomizer_t[] = {  {&_swigt__p_boost__shared_ptrT_dvbt_randomizer_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_rs_decoder_t[] = {  {&_swigt__p_boost__shared_ptrT_dvbt_rs_decoder_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_rs_encoder_t[] = {  {&_swigt__p_boost__shared_ptrT_dvbt_rs_encoder_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_dvbt_trellis_encoder_t[] = {  {&_swigt__p_boost__shared_ptrT_dvbt_trellis_encoder_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_basic_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_basic_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_block_detail_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_block_detail_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_block_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -14260,11 +15320,12 @@ static swig_cast_info _swigc__p_dvbt_pad[] = {  {&_swigt__p_dvbt_pad, 0, 0, 0},{
 static swig_cast_info _swigc__p_dvbt_randomizer[] = {  {&_swigt__p_dvbt_randomizer, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_dvbt_rs_decoder[] = {  {&_swigt__p_dvbt_rs_decoder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_dvbt_rs_encoder[] = {  {&_swigt__p_dvbt_rs_encoder, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_dvbt_trellis_encoder[] = {  {&_swigt__p_dvbt_trellis_encoder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_hier_block2[] = {{&_swigt__p_gr_hier_block2, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_top_block[] = {{&_swigt__p_gr_top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_deinterleaver, _p_dvbt_deinterleaverTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_interleaver, _p_dvbt_interleaverTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_derandomizer, _p_dvbt_derandomizerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_randomizer, _p_dvbt_randomizerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_rs_decoder, _p_dvbt_rs_decoderTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_rs_encoder, _p_dvbt_rs_encoderTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_dvbt_rs_encoder, _p_dvbt_rs_encoderTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_rs_decoder, _p_dvbt_rs_decoderTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_randomizer, _p_dvbt_randomizerTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_derandomizer, _p_dvbt_derandomizerTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_interleaver, _p_dvbt_interleaverTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_deinterleaver, _p_dvbt_deinterleaverTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_dvbt_rs_encoder, _p_dvbt_rs_encoderTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_rs_decoder, _p_dvbt_rs_decoderTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_randomizer, _p_dvbt_randomizerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_derandomizer, _p_dvbt_derandomizerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_interleaver, _p_dvbt_interleaverTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_deinterleaver, _p_dvbt_deinterleaverTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_deinterleaver, _p_dvbt_deinterleaverTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_interleaver, _p_dvbt_interleaverTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_derandomizer, _p_dvbt_derandomizerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_randomizer, _p_dvbt_randomizerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_rs_decoder, _p_dvbt_rs_decoderTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_trellis_encoder, _p_dvbt_trellis_encoderTo_p_gr_basic_block, 0, 0},  {&_swigt__p_dvbt_rs_encoder, _p_dvbt_rs_encoderTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_dvbt_rs_encoder, _p_dvbt_rs_encoderTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_trellis_encoder, _p_dvbt_trellis_encoderTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_rs_decoder, _p_dvbt_rs_decoderTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_randomizer, _p_dvbt_randomizerTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_derandomizer, _p_dvbt_derandomizerTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_interleaver, _p_dvbt_interleaverTo_p_gr_block, 0, 0},  {&_swigt__p_dvbt_deinterleaver, _p_dvbt_deinterleaverTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_dvbt_rs_encoder, _p_dvbt_rs_encoderTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_trellis_encoder, _p_dvbt_trellis_encoderTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_rs_decoder, _p_dvbt_rs_decoderTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_randomizer, _p_dvbt_randomizerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_derandomizer, _p_dvbt_derandomizerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_interleaver, _p_dvbt_interleaverTo_p_gr_sync_block, 0, 0},  {&_swigt__p_dvbt_deinterleaver, _p_dvbt_deinterleaverTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_decimator[] = {  {&_swigt__p_dvbt_pad, _p_dvbt_padTo_p_gr_sync_decimator, 0, 0},  {&_swigt__p_gr_sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_interpolator[] = {  {&_swigt__p_dvbt_depad, _p_dvbt_depadTo_p_gr_sync_interpolator, 0, 0},  {&_swigt__p_gr_sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_const_void_star[] = {  {&_swigt__p_gr_vector_const_void_star, 0, 0, 0},{0, 0, 0, 0}};
@@ -14290,6 +15351,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_dvbt_randomizer_t,
   _swigc__p_boost__shared_ptrT_dvbt_rs_decoder_t,
   _swigc__p_boost__shared_ptrT_dvbt_rs_encoder_t,
+  _swigc__p_boost__shared_ptrT_dvbt_trellis_encoder_t,
   _swigc__p_boost__shared_ptrT_gr_basic_block_t,
   _swigc__p_boost__shared_ptrT_gr_block_detail_t,
   _swigc__p_boost__shared_ptrT_gr_block_t,
@@ -14312,6 +15374,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_dvbt_randomizer,
   _swigc__p_dvbt_rs_decoder,
   _swigc__p_dvbt_rs_encoder,
+  _swigc__p_dvbt_trellis_encoder,
   _swigc__p_gr_basic_block,
   _swigc__p_gr_block,
   _swigc__p_gr_hier_block2,
