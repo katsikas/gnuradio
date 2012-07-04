@@ -33,27 +33,51 @@ link_directories(${DVBT_LIBRARY_DIRS})
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
+
+
+if(NOT CMAKE_CROSSCOMPILING)
+    add_executable(dvbti_viterbi_gen dvbti_viterbi_gen.cc)
+    export(TARGETS dvbti_viterbi_gen APPEND FILE ${EXPORT_FILE})
+endif()
+
+
+set(dvbti_viterbi_mux_cc ${CMAKE_CURRENT_BINARY_DIR}/dvbti_viterbi_mux.cc)
+
+add_custom_command(
+    OUTPUT ${dvbti_viterbi_mux_cc}
+    DEPENDS dvbti_viterbi_gen
+    COMMAND dvbti_viterbi_gen -o ${dvbti_viterbi_mux_cc}
+)
+
+
 ########################################################################
 # Setup library
 ########################################################################
 list(APPEND dvbt_sources
+	${dvbti_viterbi_mux_cc}
+	plinfo.cc 
+
 	dvbt_pad.cc
-  	dvbt_depad.cc
 	dvbt_rs_encoder.cc
-	dvbt_rs_decoder.cc
 	dvbt_randomizer.cc
-	dvbt_derandomizer.cc
 	dvbt_interleaver.cc
-	dvbt_deinterleaver.cc
 	dvbt_trellis_encoder.cc
 
+	dvbt_depad.cc
+	dvbt_rs_decoder.cc
+	dvbt_derandomizer.cc
+	dvbt_deinterleaver.cc
+	dvbt_viterbi_decoder.cc
+	
 	dvbti_randomizer.cc
+	dvbti_viterbi_gen.cc
 	dvbti_reed_solomon.cc
-	dvbti_data_interleaver.cc
+	dvbti_single_viterbi.cc
 	dvbti_trellis_encoder.cc
+	dvbti_viterbi_decoder.cc
+	dvbti_data_interleaver.cc
+	dvbti_fake_single_viterbi.cc
 	dvbti_basic_trellis_encoder.cc
-
-	plinfo.cc
 )
 
 list(APPEND dvbt_libs

@@ -57,6 +57,7 @@ gr-dvbt/swig/dvbt_swig.pyo: gr-dvbt/swig/dvbt_swig.py
 
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbti_basic_trellis_encoder.h
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_rs_encoder.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/swig/dvbt_swig.i
@@ -69,6 +70,7 @@ gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbti_reed_solomo
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/convolutional_interleaver.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_interpolator.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_pad.h
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/interleaver_fifo.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbti_trellis_encoder.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: /usr/include/stdint.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
@@ -84,9 +86,12 @@ gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_block
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_trellis_encoder.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_complex.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbti_randomizer.h
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbti_single_viterbi.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_derandomizer.h
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_deinterleaver.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_randomizer.h
+gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: /usr/include/stdio.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/include/dvbt/dvbt_types.h
 gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: gr-dvbt/swig/dvbt_swig.tag
@@ -99,9 +104,12 @@ gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx: ../gr-dvbt/swig/dvbt_swig.i
 gr-dvbt/swig/dvbt_swig.py: gr-dvbt/swig/dvbt_swigPYTHON_wrap.cxx
 
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_randomizer.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_fake_single_viterbi.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_basic_trellis_encoder.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_viterbi_decoder.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_data_interleaver.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_viterbi_decoder.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_deinterleaver.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_derandomizer.h
@@ -117,6 +125,7 @@ gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/interleaver_fifo.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_interleaver.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_rs_decoder.h
 gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbt_rs_encoder.h
+gr-dvbt/swig/dvbt_swig_doc.i: ../gr-dvbt/swig/../include/dvbt/dvbti_single_viterbi.h
 gr-dvbt/swig/dvbt_swig_doc.i: gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dvbt_swig_doc.i"
@@ -130,9 +139,12 @@ gr-dvbt/swig/dvbt_swig.tag: gr-dvbt/swig/_dvbt_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-dvbt/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-dvbt/swig/dvbt_swig.tag
 
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_randomizer.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_fake_single_viterbi.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_api.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_basic_trellis_encoder.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_viterbi_decoder.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_data_interleaver.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_viterbi_decoder.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_pad.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_deinterleaver.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_derandomizer.h
@@ -148,6 +160,7 @@ gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/d
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_interleaver.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_rs_decoder.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbt_rs_encoder.h
+gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: ../gr-dvbt/swig/../include/dvbt/dvbti_single_viterbi.h
 gr-dvbt/swig/dvbt_swig_doc_swig_docs/xml/index.xml: gr-dvbt/swig/_dvbt_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for dvbt_swig_doc docs"

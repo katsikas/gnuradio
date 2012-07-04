@@ -122,6 +122,34 @@ input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
 
 input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
 
+%feature("docstring") dvbt_trellis_encoder "DVBT 12-way interleaved trellis encoder (dvbt_mpeg_packet_rs_encoded --> dvbt_data_segment)
+
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_data_segment."
+
+
+
+
+
+
+
+%feature("docstring") dvbt_make_trellis_encoder "DVBT 12-way interleaved trellis encoder (dvbt_mpeg_packet_rs_encoded --> dvbt_data_segment)
+
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_data_segment."
+
+%feature("docstring") dvbt_viterbi_decoder "DVBT 12-way interleaved viterbi decoder (dvbt_soft_data_segment --> dvbt_mpeg_packet_rs_encoded)
+
+input: dvbt_soft_data_segment; output: dvbt_mpeg_packet_rs_encoded."
+
+
+
+
+
+
+
+%feature("docstring") dvbt_make_viterbi_decoder "DVBT 12-way interleaved viterbi decoder (dvbt_soft_data_segment --> dvbt_mpeg_packet_rs_encoded)
+
+input: dvbt_soft_data_segment; output: dvbt_mpeg_packet_rs_encoded."
+
 %feature("docstring") convolutional_interleaver "template class for generic convolutional interleaver"
 
 
@@ -136,6 +164,7 @@ input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
 
 %feature("docstring") convolutional_interleaver::transform "transform a single symbol"
 
+%feature("docstring") dvbt_data_segment "contains 832 3 bit symbols. The low 3 bits in the byte hold the symbol."
 
 
 
@@ -153,6 +182,29 @@ input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
 
 
 
+
+
+
+
+
+
+%feature("docstring") dvbt_soft_data_segment "Contains 832 bipolar floating point symbols. Nominal values are +/- {1, 3, 5, 7}. This data type represents the input to the viterbi decoder."
+
+
+
+
+
+%feature("docstring") dvbti_basic_trellis_encoder "DVBT trellis encoder building block.
+
+Note this is NOT the 12x interleaved interface.
+
+This implements a single instance of the DVBT trellis encoder. This is a rate 2/3 encoder (really a constraint length 3, rate 1/2 encoder with the top bit passed through unencoded. This does not implement the \"precoding\" of the top bit, because the NTSC rejection filter is not supported."
+
+
+
+%feature("docstring") dvbti_basic_trellis_encoder::encode "Encode two bit INPUT into 3 bit return value. Domain is [0,3], Range is [0,7]. The mapping to bipolar levels is not done."
+
+%feature("docstring") dvbti_basic_trellis_encoder::reset "reset encoder state"
 
 %feature("docstring") dvbti_data_deinterleaver "dvbt convolutional data deinterleaver"
 
@@ -167,6 +219,16 @@ input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
 
 
 
+
+%feature("docstring") dvbti_fake_single_viterbi "single channel viterbi decoder"
+
+
+
+%feature("docstring") dvbti_fake_single_viterbi::decode "ideally takes on the values +/- 1,3,5,7 return is decoded dibit in the range [0, 3]"
+
+
+
+%feature("docstring") dvbti_fake_single_viterbi::delay "internal delay of decoder"
 
 %feature("docstring") dvbti_randomizer "DVBT data \"whitener\".
 
@@ -195,6 +257,40 @@ RS(204,188) code described in DVBT standard."
 %feature("docstring") dvbti_reed_solomon::encode "Add RS error correction encoding."
 
 %feature("docstring") dvbti_reed_solomon::decode "Decode RS encoded packet."
+
+%feature("docstring") dvbti_single_viterbi "single channel viterbi decoder"
+
+
+
+%feature("docstring") dvbti_single_viterbi::decode "ideally takes on the values +/- 1,3,5,7 return is decoded dibit in the range [0, 3]"
+
+
+
+%feature("docstring") dvbti_single_viterbi::delay "internal delay of decoder"
+
+%feature("docstring") dvbti_trellis_encoder "fancy, schmancy 12-way interleaved trellis encoder for DVBT"
+
+
+
+
+
+%feature("docstring") dvbti_trellis_encoder::reset "reset all encoder states"
+
+%feature("docstring") dvbti_trellis_encoder::encode "Take 12 RS encoded, convolutionally interleaved segments and produce 12 trellis coded data segments. We work in groups of 12 because that's the smallest number of segments that composes a single full cycle of the encoder mux."
+
+
+
+%feature("docstring") dvbti_viterbi_decoder "fancy, schmancy 12-way interleaved viterbi decoder for DVBT"
+
+
+
+
+
+%feature("docstring") dvbti_viterbi_decoder::reset "reset all decoder states"
+
+%feature("docstring") dvbti_viterbi_decoder::decode "Take 12 data segments of soft decisions (floats) and produce 12 RS encoded data segments. We work in groups of 12 because that's the smallest number of segments that composes a single full cycle of the decoder mux."
+
+
 
 %feature("docstring") interleaver_fifo "template class for interleaver fifo"
 

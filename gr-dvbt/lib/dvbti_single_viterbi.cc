@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /*
- * Copyright 2002 Free Software Foundation, Inc.
+ * Copyright 2012 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -20,49 +20,51 @@
  * Boston, MA 02110-1301, USA.
  */
 
+
 #include <math.h>
-#include <atsci_single_viterbi.h>
+#include <dvbt/dvbti_single_viterbi.h>
 #include <iostream>
 
 using std::cerr;
 using std::cout;
 
-const float atsci_single_viterbi::was_sent[32] = {
-  -7,-3,-7,-3,-7,-3,-7,-3,
-  -5,-1,-5,-1,-5,-1,-5,-1,
-  1,5,1,5,1,5,1,5,
-  3,7,3,7,3,7,3,7
+
+const float dvbti_single_viterbi::was_sent[32] = {
+  	-7,-3,-7,-3,-7,-3,-7,-3,
+  	-5,-1,-5,-1,-5,-1,-5,-1,
+  	1,5,1,5,1,5,1,5,
+  	3,7,3,7,3,7,3,7
 };
 
-const int atsci_single_viterbi::transition_table[32] = {
-  0,2,4,6,
-  2,0,6,4,
-  1,3,5,7,
-  3,1,7,5,
-  4,6,0,2,
-  6,4,2,0,
-  5,7,1,3,
-  7,5,3,1
+const int dvbti_single_viterbi::transition_table[32] = {
+  	0,2,4,6,
+  	2,0,6,4,
+  	1,3,5,7,
+  	3,1,7,5,
+  	4,6,0,2,
+  	6,4,2,0,
+  	5,7,1,3,
+  	7,5,3,1
 };
 
 void
-atsci_single_viterbi::reset()
+dvbti_single_viterbi::reset()
 {
-  for (unsigned int i = 0; i<2; i++)
-    for (unsigned int j = 0; j<8; j++) {
-      path_metrics[i][j] = 0;
-      traceback[i][j] = 0;
-    }
-  phase = 0;
+  	for (unsigned int i = 0; i<2; i++)
+    		for (unsigned int j = 0; j<8; j++) {
+      			path_metrics[i][j] = 0;
+      			traceback[i][j] = 0;
+    		}
+  		phase = 0;
 }
 
-atsci_single_viterbi::atsci_single_viterbi()
+dvbti_single_viterbi::dvbti_single_viterbi()
 {
-  reset();
+  	reset();
 }
 
 char
-atsci_single_viterbi::decode(float input)
+dvbti_single_viterbi::decode(float input)
 {
   for (unsigned int next_state = 0; next_state < 8; next_state++) {
     unsigned int index = next_state << 2;

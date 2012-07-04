@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbti__single__viterbi" kind="class" prot="public">
+    <compoundname>dvbti_single_viterbi</compoundname>
+    <includes refid="dvbti__single__viterbi_8h" local="no">dvbti_single_viterbi.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdvbti__single__viterbi_1a52dabd173554e1d1165ba6a5da6d1238" prot="public" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int dvbti_single_viterbi::TB_LEN</definition>
+        <argsstring></argsstring>
+        <name>TB_LEN</name>
+        <initializer> 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdvbti__single__viterbi_1ad9882b6ff98e0e3e997f1610973aa787" prot="protected" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char dvbti_single_viterbi::phase</definition>
+        <argsstring></argsstring>
+        <name>phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="52" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbti__single__viterbi_1a1df0f69f80cb3270a22589a943a99a1d" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dvbti_single_viterbi::path_metrics[2][8]</definition>
+        <argsstring>[2][8]</argsstring>
+        <name>path_metrics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="53" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbti__single__viterbi_1a17d1f25d68e99112e7bce11d866a6370" prot="protected" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long dvbti_single_viterbi::traceback[2][8]</definition>
+        <argsstring>[2][8]</argsstring>
+        <name>traceback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="55" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdvbti__single__viterbi_1a29994aa57c11e593a6ce319aa0317b69" prot="protected" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float dvbti_single_viterbi::was_sent[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>was_sent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="54" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbti__single__viterbi_1a9c07644a50aa0a866769c3ae09fd2203" prot="protected" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbti_single_viterbi::transition_table[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>transition_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="56" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbti__single__viterbi_1a233abf623ac508eb76fc8ce081244b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbti_single_viterbi::dvbti_single_viterbi</definition>
+        <argsstring>()</argsstring>
+        <name>dvbti_single_viterbi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__single__viterbi_1a6d46fe9aab6c9a41a0fcacffd30517ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char dvbti_single_viterbi::decode</definition>
+        <argsstring>(float input)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>float</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>INPUT</computeroutput> ideally takes on the values +/- 1,3,5,7 return is decoded dibit in the range [0, 3] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__single__viterbi_1ad0d3c28658701b8078afcc35639d1274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbti_single_viterbi::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__single__viterbi_1ac88b6a0b92e2d79b84dd2e3b27bbb6db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int dvbti_single_viterbi::delay</definition>
+        <argsstring>()</argsstring>
+        <name>delay</name>
+        <briefdescription>
+<para>internal delay of decoder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="49" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>single channel viterbi decoder </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_single_viterbi.h" bodystart="32" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classdvbti__single__viterbi_1a6d46fe9aab6c9a41a0fcacffd30517ec" prot="public" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>decode</name></member>
+      <member refid="classdvbti__single__viterbi_1ac88b6a0b92e2d79b84dd2e3b27bbb6db" prot="public" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>delay</name></member>
+      <member refid="classdvbti__single__viterbi_1a233abf623ac508eb76fc8ce081244b0a" prot="public" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>dvbti_single_viterbi</name></member>
+      <member refid="classdvbti__single__viterbi_1a1df0f69f80cb3270a22589a943a99a1d" prot="protected" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>path_metrics</name></member>
+      <member refid="classdvbti__single__viterbi_1ad9882b6ff98e0e3e997f1610973aa787" prot="protected" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>phase</name></member>
+      <member refid="classdvbti__single__viterbi_1ad0d3c28658701b8078afcc35639d1274" prot="public" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>reset</name></member>
+      <member refid="classdvbti__single__viterbi_1a52dabd173554e1d1165ba6a5da6d1238" prot="public" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>TB_LEN</name></member>
+      <member refid="classdvbti__single__viterbi_1a17d1f25d68e99112e7bce11d866a6370" prot="protected" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>traceback</name></member>
+      <member refid="classdvbti__single__viterbi_1a9c07644a50aa0a866769c3ae09fd2203" prot="protected" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>transition_table</name></member>
+      <member refid="classdvbti__single__viterbi_1a29994aa57c11e593a6ce319aa0317b69" prot="protected" virt="non-virtual"><scope>dvbti_single_viterbi</scope><name>was_sent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

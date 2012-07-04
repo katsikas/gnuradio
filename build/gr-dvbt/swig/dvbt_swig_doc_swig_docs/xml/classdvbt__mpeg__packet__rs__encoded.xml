@@ -33,11 +33,11 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="143" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="143" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" prot="public" static="no" mutable="no">
         <type>unsigned char</type>
-        <definition>unsigned char dvbt_mpeg_packet_rs_encoded::data[DVBT_MPEG_RS_ENCODED_LENGTH]</definition>
-        <argsstring>[DVBT_MPEG_RS_ENCODED_LENGTH]</argsstring>
-        <name>data</name>
+        <definition>unsigned char dvbt_mpeg_packet_rs_encoded::_pad_[NPAD]</definition>
+        <argsstring>[NPAD]</argsstring>
+        <name>_pad_</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -46,11 +46,11 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="144" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="144" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" prot="public" static="no" mutable="no">
         <type>unsigned char</type>
-        <definition>unsigned char dvbt_mpeg_packet_rs_encoded::_pad_[NPAD]</definition>
-        <argsstring>[NPAD]</argsstring>
-        <name>_pad_</name>
+        <definition>unsigned char dvbt_mpeg_packet_rs_encoded::data[DVBT_MPEG_RS_ENCODED_LENGTH]</definition>
+        <argsstring>[DVBT_MPEG_RS_ENCODED_LENGTH]</argsstring>
+        <name>data</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="148" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="148" bodyend="150"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="149" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="149" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__mpeg__packet__rs__encoded_1a26312ab6286832574b01f35978a0c272" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="152" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="152" bodyend="154"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="153" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="153" bodyend="155"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -101,19 +101,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="295">
+      <node id="298">
         <label>dvbt_mpeg_packet_rs_encoded</label>
         <link refid="classdvbt__mpeg__packet__rs__encoded"/>
-        <childnode refid="296" relation="usage">
+        <childnode refid="299" relation="usage">
           <edgelabel>pli</edgelabel>
         </childnode>
       </node>
-      <node id="296">
+      <node id="299">
         <label>plinfo</label>
         <link refid="classplinfo"/>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="140" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="140" bodyend="155"/>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="140" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="140" bodyend="156"/>
     <listofallmembers>
       <member refid="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_rs_encoded</scope><name>_pad_</name></member>
       <member refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" prot="public" virt="non-virtual"><scope>dvbt_mpeg_packet_rs_encoded</scope><name>data</name></member>

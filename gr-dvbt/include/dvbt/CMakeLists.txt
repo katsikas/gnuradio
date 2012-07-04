@@ -22,22 +22,28 @@
 ########################################################################
 install(FILES
 	dvbt_api.h
-    	dvbt_pad.h
-    	dvbt_depad.h
-    	dvbt_types.h
+	dvbt_types.h
     	dvbt_consts.h
-	dvbt_rs_encoder.h
-	dvbt_rs_decoder.h
-	dvbt_randomizer.h
-	dvbt_derandomizer.h
-	dvbt_interleaver.h
-	dvbt_deinterleaver.h
-	dvbt_trellis_encoder.h
 
+    	dvbt_pad.h
+	dvbt_rs_encoder.h
+	dvbt_randomizer.h
+	dvbt_interleaver.h
+	dvbt_trellis_encoder.h
+	
+    	dvbt_depad.h
+    	dvbt_rs_decoder.h
+	dvbt_derandomizer.h
+	dvbt_deinterleaver.h
+	dvbt_viterbi_decoder.h
+	
 	dvbti_randomizer.h
 	dvbti_reed_solomon.h
-	dvbti_data_interleaver.h
+	dvbti_single_viterbi.h
 	dvbti_trellis_encoder.h
+	dvbti_viterbi_decoder.h
+	dvbti_data_interleaver.h
+	dvbti_fake_single_viterbi.h
 	dvbti_basic_trellis_encoder.h
 
 	interleaver_fifo.h

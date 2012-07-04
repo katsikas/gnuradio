@@ -1324,6 +1324,19 @@ pygen_gr_atsc_src_python_68675/fast:
 .PHONY : pygen_gr_atsc_src_python_68675/fast
 
 #=============================================================================
+# Target rules for targets named dvbti_viterbi_gen
+
+# Build rule for target.
+dvbti_viterbi_gen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dvbti_viterbi_gen
+.PHONY : dvbti_viterbi_gen
+
+# fast build rule for target.
+dvbti_viterbi_gen/fast:
+	$(MAKE) -f gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build.make gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build
+.PHONY : dvbti_viterbi_gen/fast
+
+#=============================================================================
 # Target rules for targets named gnuradio-dvbt
 
 # Build rule for target.
@@ -2441,6 +2454,7 @@ help:
 	@echo "... pygen_gr_atsc_src_lib_f9f9a"
 	@echo "... test_atsci"
 	@echo "... pygen_gr_atsc_src_python_68675"
+	@echo "... dvbti_viterbi_gen"
 	@echo "... gnuradio-dvbt"
 	@echo "... _dvbt_swig"
 	@echo "... _dvbt_swig_doc_tag"

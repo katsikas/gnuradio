@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /*
- * Copyright 2002 Free Software Foundation, Inc.
+ * Copyright 2012 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -20,39 +20,40 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef _ATSCSINGLEVITERBI_H_
-#define _ATSCSINGLEVITERBI_H_
 
-#include <atsc_api.h>
+#ifndef _DVBTSINGLEVITERBI_H_
+#define _DVBTSINGLEVITERBI_H_
+
+#include <dvbt/dvbt_api.h>
 
 /*!
  * \brief single channel viterbi decoder
  */
-class ATSC_API atsci_single_viterbi
+class DVBT_API dvbti_single_viterbi
 {
 
 public:
-  atsci_single_viterbi ();
+  	dvbti_single_viterbi ();
 
-  static const unsigned int TB_LEN = 32;
+  	static const unsigned int TB_LEN = 32;
 
-  /*!
-   * \p INPUT ideally takes on the values +/- 1,3,5,7
-   * return is decoded dibit in the range [0, 3]
-   */
-  char decode (float input);
+       /*!
+   	* \p INPUT ideally takes on the values +/- 1,3,5,7
+   	* return is decoded dibit in the range [0, 3]
+   	*/
+  	char decode (float input);
 
-  void reset ();
+  	void reset ();
 
-  //! internal delay of decoder
-  int delay () { return TB_LEN - 1; }
+  	//! internal delay of decoder
+  	int delay () { return TB_LEN - 1; }
 
 protected:
-  static const int transition_table[32];
-  static const float was_sent[32];
-  float path_metrics [2][8];
-  unsigned long long traceback [2][8];
-  unsigned char phase;
+  	unsigned char phase;
+	float path_metrics [2][8];
+  	static const float was_sent[32];
+  	unsigned long long traceback [2][8];
+	static const int transition_table[32];
 };
 
 #endif

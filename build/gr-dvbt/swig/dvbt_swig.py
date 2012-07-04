@@ -441,10 +441,20 @@ dvbt_deinterleaver_swigregister(dvbt_deinterleaver)
 
 
 def dvbt_make_trellis_encoder():
-  """dvbt_make_trellis_encoder() -> dvbt_trellis_encoder_sptr"""
+  """
+    dvbt_make_trellis_encoder() -> dvbt_trellis_encoder_sptr
+
+    DVBT 12-way interleaved trellis encoder (dvbt_mpeg_packet_rs_encoded --> dvbt_data_segment)
+
+    input: dvbt_mpeg_packet_rs_encoded; output: dvbt_data_segment.
+    """
   return _dvbt_swig.dvbt_make_trellis_encoder()
 class dvbt_trellis_encoder(object):
-    """Proxy of C++ dvbt_trellis_encoder class"""
+    """
+    DVBT 12-way interleaved trellis encoder (dvbt_mpeg_packet_rs_encoded --> dvbt_data_segment)
+
+    input: dvbt_mpeg_packet_rs_encoded; output: dvbt_data_segment.
+    """
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
@@ -463,6 +473,41 @@ class dvbt_trellis_encoder(object):
     __del__ = lambda self : None;
 dvbt_trellis_encoder_swigregister = _dvbt_swig.dvbt_trellis_encoder_swigregister
 dvbt_trellis_encoder_swigregister(dvbt_trellis_encoder)
+
+
+def dvbt_make_viterbi_decoder():
+  """
+    dvbt_make_viterbi_decoder() -> dvbt_viterbi_decoder_sptr
+
+    DVBT 12-way interleaved viterbi decoder (dvbt_soft_data_segment --> dvbt_mpeg_packet_rs_encoded)
+
+    input: dvbt_soft_data_segment; output: dvbt_mpeg_packet_rs_encoded.
+    """
+  return _dvbt_swig.dvbt_make_viterbi_decoder()
+class dvbt_viterbi_decoder(object):
+    """
+    DVBT 12-way interleaved viterbi decoder (dvbt_soft_data_segment --> dvbt_mpeg_packet_rs_encoded)
+
+    input: dvbt_soft_data_segment; output: dvbt_mpeg_packet_rs_encoded.
+    """
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+    def work(self, *args, **kwargs):
+        """
+        work(self, int noutput_items, gr_vector_const_void_star input_items, 
+            gr_vector_void_star output_items) -> int
+        """
+        return _dvbt_swig.dvbt_viterbi_decoder_work(self, *args, **kwargs)
+
+    def reset(self):
+        """reset(self)"""
+        return _dvbt_swig.dvbt_viterbi_decoder_reset(self)
+
+    __swig_destroy__ = _dvbt_swig.delete_dvbt_viterbi_decoder
+    __del__ = lambda self : None;
+dvbt_viterbi_decoder_swigregister = _dvbt_swig.dvbt_viterbi_decoder_swigregister
+dvbt_viterbi_decoder_swigregister(dvbt_viterbi_decoder)
 
 class dvbt_pad_sptr(object):
     """Proxy of C++ boost::shared_ptr<(dvbt_pad)> class"""
@@ -1396,7 +1441,117 @@ dvbt_trellis_encoder_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.n
 
 
 def trellis_encoder():
-  """trellis_encoder() -> dvbt_trellis_encoder_sptr"""
+  """
+    trellis_encoder() -> dvbt_trellis_encoder_sptr
+
+    DVBT 12-way interleaved trellis encoder (dvbt_mpeg_packet_rs_encoded --> dvbt_data_segment)
+
+    input: dvbt_mpeg_packet_rs_encoded; output: dvbt_data_segment.
+    """
   return _dvbt_swig.trellis_encoder()
+class dvbt_viterbi_decoder_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(dvbt_viterbi_decoder)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(self) -> dvbt_viterbi_decoder_sptr
+        __init__(self, dvbt_viterbi_decoder p) -> dvbt_viterbi_decoder_sptr
+        """
+        this = _dvbt_swig.new_dvbt_viterbi_decoder_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(self) -> dvbt_viterbi_decoder"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr___deref__(self)
+
+    __swig_destroy__ = _dvbt_swig.delete_dvbt_viterbi_decoder_sptr
+    __del__ = lambda self : None;
+    def work(self, *args, **kwargs):
+        """
+        work(self, int noutput_items, gr_vector_const_void_star input_items, 
+            gr_vector_void_star output_items) -> int
+        """
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_work(self, *args, **kwargs)
+
+    def reset(self):
+        """reset(self)"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_reset(self)
+
+    def history(self):
+        """history(self) -> unsigned int"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_history(self)
+
+    def output_multiple(self):
+        """output_multiple(self) -> int"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(self) -> double"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_relative_rate(self)
+
+    def start(self):
+        """start(self) -> bool"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_start(self)
+
+    def stop(self):
+        """stop(self) -> bool"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(self, unsigned int which_input) -> uint64_t"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(self, unsigned int which_output) -> uint64_t"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_nitems_written(self, *args, **kwargs)
+
+    def detail(self):
+        """detail(self) -> gr_block_detail_sptr"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_detail(self)
+
+    def set_detail(self, *args, **kwargs):
+        """set_detail(self, gr_block_detail_sptr detail)"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_set_detail(self, *args, **kwargs)
+
+    def name(self):
+        """name(self) -> string"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_name(self)
+
+    def input_signature(self):
+        """input_signature(self) -> gr_io_signature_sptr"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(self) -> gr_io_signature_sptr"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(self) -> long"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(self) -> gr_basic_block_sptr"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(self, int ninputs, int noutputs) -> bool"""
+        return _dvbt_swig.dvbt_viterbi_decoder_sptr_check_topology(self, *args, **kwargs)
+
+dvbt_viterbi_decoder_sptr_swigregister = _dvbt_swig.dvbt_viterbi_decoder_sptr_swigregister
+dvbt_viterbi_decoder_sptr_swigregister(dvbt_viterbi_decoder_sptr)
+
+dvbt_viterbi_decoder_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
+
+
+def viterbi_decoder():
+  """
+    viterbi_decoder() -> dvbt_viterbi_decoder_sptr
+
+    DVBT 12-way interleaved viterbi decoder (dvbt_soft_data_segment --> dvbt_mpeg_packet_rs_encoded)
+
+    input: dvbt_soft_data_segment; output: dvbt_mpeg_packet_rs_encoded.
+    """
+  return _dvbt_swig.viterbi_decoder()
 
 

@@ -213,6 +213,32 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.o: ../gruel/src
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.o: ../gruel/src/include/gruel/pmt_sugar.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.o: ../gr-dvbt/lib/dvbt_trellis_encoder.cc
 
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/general/gr_core_api.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_basic_block.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_block.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_complex.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_io_signature.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_msg_accepter.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_runtime_types.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_sptr_magic.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_sync_block.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_tags.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gnuradio-core/src/lib/runtime/gr_types.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_api.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_consts.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_types.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_single_viterbi.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/interleaver_fifo.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gruel/src/include/gruel/api.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gruel/src/include/gruel/attributes.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gruel/src/include/gruel/msg_accepter.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gruel/src/include/gruel/pmt.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gruel/src/include/gruel/pmt_sugar.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o: ../gr-dvbt/lib/dvbt_viterbi_decoder.cc
+
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_api.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_basic_trellis_encoder.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.o: ../gruel/src/include/gruel/attributes.h
@@ -226,6 +252,11 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.o: ../gr-dvbt
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.o: ../gr-dvbt/include/dvbt/interleaver_fifo.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.o: ../gruel/src/include/gruel/attributes.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.o: ../gr-dvbt/lib/dvbti_data_interleaver.cc
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_fake_single_viterbi.cc.o: ../gr-dvbt/include/dvbt/dvbt_api.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_fake_single_viterbi.cc.o: ../gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_fake_single_viterbi.cc.o: ../gruel/src/include/gruel/attributes.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_fake_single_viterbi.cc.o: ../gr-dvbt/lib/dvbti_fake_single_viterbi.cc
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o: ../gr-dvbt/include/dvbt/dvbt_api.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_randomizer.cc.o: ../gr-dvbt/include/dvbt/dvbt_consts.h
@@ -243,6 +274,11 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o: ../gr-dvbt/inc
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o: ../gruel/src/include/gruel/attributes.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.o: ../gr-dvbt/lib/dvbti_reed_solomon.cc
 
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_single_viterbi.cc.o: ../gr-dvbt/include/dvbt/dvbt_api.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_single_viterbi.cc.o: ../gr-dvbt/include/dvbt/dvbti_single_viterbi.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_single_viterbi.cc.o: ../gruel/src/include/gruel/attributes.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_single_viterbi.cc.o: ../gr-dvbt/lib/dvbti_single_viterbi.cc
+
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_api.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_consts.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_types.h
@@ -250,6 +286,20 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o: ../gr-dvbt/
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_trellis_encoder.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o: ../gruel/src/include/gruel/attributes.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o: ../gr-dvbt/lib/dvbti_trellis_encoder.cc
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_api.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_consts.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbt_types.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_single_viterbi.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/interleaver_fifo.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gruel/src/include/gruel/attributes.h
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/lib/dvbti_viterbi_decoder.cc
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_gen.cc.o: ../gr-dvbt/lib/dvbti_viterbi_gen.cc
+
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_mux.cc.o: gr-dvbt/lib/dvbti_viterbi_mux.cc
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/plinfo.cc.o: ../gr-dvbt/include/dvbt/dvbt_consts.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/plinfo.cc.o: ../gr-dvbt/include/dvbt/dvbt_types.h

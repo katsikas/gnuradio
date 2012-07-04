@@ -177,4 +177,27 @@ public:
 };
 
 
+/*!
+ * Contains 832 bipolar floating point symbols.
+ * Nominal values are +/- {1, 3, 5, 7}.
+ * This data type represents the input to the viterbi decoder.
+ */
+
+class dvbt_soft_data_segment {
+public:
+  	static const int NPAD = 764;
+  	plinfo	pli;
+	unsigned char _pad_[NPAD];			// pad to power of 2 (4096)
+  	float	data[DVBT_DATA_SEGMENT_LENGTH];
+  	
+  	// overload equality operator
+  	bool operator== (const dvbt_data_segment &other) const {
+    		return std::memcmp (data, other.data, sizeof (data)) == 0;
+  	}
+
+  	bool operator!= (const dvbt_data_segment &other) const {
+    		return !(std::memcmp (data, other.data, sizeof (data)) == 0);
+  	}
+};
+
 #endif /* _DVBT_TYPES_H_ */

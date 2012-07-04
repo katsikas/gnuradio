@@ -37,7 +37,7 @@
 #include "dvbt/dvbt_interleaver.h"
 #include "dvbt/dvbt_deinterleaver.h"
 #include <dvbt/dvbt_trellis_encoder.h>
-//#include <dvbt/dvbt_viterbi_decoder.h>
+#include <dvbt/dvbt_viterbi_decoder.h>
 %}
 
 %include "dvbt/dvbt_pad.h"
@@ -49,7 +49,7 @@
 %include "dvbt/dvbt_interleaver.h"
 %include "dvbt/dvbt_deinterleaver.h"
 %include "dvbt/dvbt_trellis_encoder.h"
-//%include "dvbt/dvbt_viterbi_decoder.h"
+%include "dvbt/dvbt_viterbi_decoder.h"
 
 
 // ----------------------------------------------------------------
@@ -178,7 +178,7 @@ public:
 };
 
 
-/* ----------------------------------------------------------------
+// ----------------------------------------------------------------
 GR_SWIG_BLOCK_MAGIC(dvbt,viterbi_decoder);
 
 dvbt_viterbi_decoder_sptr dvbt_make_viterbi_decoder();
@@ -193,5 +193,4 @@ public:
 
 
 // ----------------------------------------------------------------
-*/
 

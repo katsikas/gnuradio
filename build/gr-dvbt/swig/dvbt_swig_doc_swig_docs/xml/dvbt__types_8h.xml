@@ -9,89 +9,115 @@
     <includedby refid="dvbti__data__interleaver_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h</includedby>
     <includedby refid="dvbti__randomizer_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h</includedby>
     <includedby refid="dvbti__reed__solomon_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_reed_solomon.h</includedby>
+    <includedby refid="dvbti__trellis__encoder_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h</includedby>
+    <includedby refid="dvbti__viterbi__decoder_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h</includedby>
     <incdepgraph>
-      <node id="129">
+      <node id="153">
         <label>cassert</label>
       </node>
-      <node id="130">
+      <node id="154">
         <label>dvbt/dvbt_consts.h</label>
         <link refid="dvbt__consts_8h"/>
       </node>
-      <node id="126">
+      <node id="150">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h</label>
         <link refid="dvbt_types.h"/>
-        <childnode refid="127" relation="include">
+        <childnode refid="151" relation="include">
         </childnode>
-        <childnode refid="128" relation="include">
+        <childnode refid="152" relation="include">
         </childnode>
-        <childnode refid="129" relation="include">
+        <childnode refid="153" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="154" relation="include">
         </childnode>
       </node>
-      <node id="127">
+      <node id="151">
         <label>stdio.h</label>
       </node>
-      <node id="128">
+      <node id="152">
         <label>cstring</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="136">
+      <node id="160">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h</label>
         <link refid="dvbt__derandomizer_8h"/>
       </node>
-      <node id="138">
+      <node id="162">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_reed_solomon.h</label>
         <link refid="dvbti__reed__solomon_8h"/>
-        <childnode refid="139" relation="include">
+        <childnode refid="163" relation="include">
         </childnode>
-        <childnode refid="140" relation="include">
+        <childnode refid="164" relation="include">
         </childnode>
       </node>
-      <node id="132">
+      <node id="168">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h</label>
+        <link refid="dvbt__viterbi__decoder_8h"/>
+      </node>
+      <node id="156">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h</label>
         <link refid="dvbti__data__interleaver_8h"/>
-        <childnode refid="133" relation="include">
+        <childnode refid="157" relation="include">
         </childnode>
-        <childnode refid="134" relation="include">
+        <childnode refid="158" relation="include">
         </childnode>
       </node>
-      <node id="137">
+      <node id="161">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h</label>
         <link refid="dvbt__randomizer_8h"/>
       </node>
-      <node id="140">
+      <node id="165">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h</label>
+        <link refid="dvbti__trellis__encoder_8h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_encoder.h</label>
         <link refid="dvbt__rs__encoder_8h"/>
       </node>
-      <node id="134">
+      <node id="166">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_trellis_encoder.h</label>
+        <link refid="dvbt__trellis__encoder_8h"/>
+      </node>
+      <node id="158">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_interleaver.h</label>
         <link refid="dvbt__interleaver_8h"/>
       </node>
-      <node id="135">
+      <node id="159">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="136" relation="include">
+        <childnode refid="160" relation="include">
         </childnode>
-        <childnode refid="137" relation="include">
+        <childnode refid="161" relation="include">
         </childnode>
       </node>
-      <node id="133">
+      <node id="157">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_deinterleaver.h</label>
         <link refid="dvbt__deinterleaver_8h"/>
       </node>
-      <node id="131">
+      <node id="155">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h</label>
         <link refid="dvbt_types.h"/>
-        <childnode refid="132" relation="include">
+        <childnode refid="156" relation="include">
         </childnode>
-        <childnode refid="135" relation="include">
+        <childnode refid="159" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
         </childnode>
       </node>
-      <node id="139">
+      <node id="167">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h</label>
+        <link refid="dvbti__viterbi__decoder_8h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h</label>
         <link refid="dvbt__rs__decoder_8h"/>
       </node>
@@ -100,6 +126,8 @@
     <innerclass refid="classdvbt__mpeg__packet" prot="public">dvbt_mpeg_packet</innerclass>
     <innerclass refid="classdvbt__mpeg__packet__no__sync" prot="public">dvbt_mpeg_packet_no_sync</innerclass>
     <innerclass refid="classdvbt__mpeg__packet__rs__encoded" prot="public">dvbt_mpeg_packet_rs_encoded</innerclass>
+    <innerclass refid="classdvbt__data__segment" prot="public">dvbt_data_segment</innerclass>
+    <innerclass refid="classdvbt__soft__data__segment" prot="public">dvbt_soft_data_segment</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -218,7 +246,7 @@
 <codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="124" refid="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" kindref="member">NPAD</ref><sp/>=<sp/>67;</highlight></codeline>
 <codeline lineno="125" refid="classdvbt__mpeg__packet__no__sync_1a02dae9a82ece311f574ba08e8ae5deb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classplinfo" kindref="compound" tooltip="pipeline info that flows with data">plinfo</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__mpeg__packet__no__sync_1a02dae9a82ece311f574ba08e8ae5deb5" kindref="member">pli</ref>;</highlight></codeline>
-<codeline lineno="126" refid="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" kindref="member">_pad_</ref>[<ref refid="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" kindref="member">NPAD</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pad<sp/>to<sp/>power<sp/>of<sp/>2<sp/>(256)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__no__sync_1afad17ea1d600a65ecd0f1974f7a89bd5" kindref="member">_pad_</ref>[<ref refid="classdvbt__mpeg__packet__no__sync_1a070854243b2641ffc6838cc37c2bfb34" kindref="member">NPAD</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pad<sp/>to<sp/>power<sp/>of<sp/>2<sp/>(256)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="127" refid="classdvbt__mpeg__packet__no__sync_1ab2b3f500b5989af8b34e160c7ed3531c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__no__sync_1ab2b3f500b5989af8b34e160c7ed3531c" kindref="member">data</ref>[DVBT_MPEG_PACKET_LENGTH];</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overload<sp/>equality<sp/>operator</highlight><highlight class="normal"></highlight></codeline>
@@ -236,20 +264,59 @@
 <codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="142" refid="classdvbt__mpeg__packet__rs__encoded_1af86e8743bc4795399fdc805d0d2ecf49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1af86e8743bc4795399fdc805d0d2ecf49" kindref="member">NPAD</ref><sp/>=<sp/>51;</highlight></codeline>
 <codeline lineno="143" refid="classdvbt__mpeg__packet__rs__encoded_1a8fbab8f8cbb88cbc2cb90a5fafdb90f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classplinfo" kindref="compound" tooltip="pipeline info that flows with data">plinfo</ref><sp/><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a8fbab8f8cbb88cbc2cb90a5fafdb90f3" kindref="member">pli</ref>;</highlight></codeline>
-<codeline lineno="144" refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>[DVBT_MPEG_RS_ENCODED_LENGTH];</highlight></codeline>
-<codeline lineno="145" refid="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" kindref="member">_pad_</ref>[<ref refid="classdvbt__mpeg__packet__rs__encoded_1af86e8743bc4795399fdc805d0d2ecf49" kindref="member">NPAD</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pad<sp/>to<sp/>power<sp/>of<sp/>2<sp/>(256)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overload<sp/>equality<sp/>operator</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="148" refid="classdvbt__mpeg__packet__rs__encoded_1a10ed4b0752799c714e548a8e9727f4cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a10ed4b0752799c714e548a8e9727f4cf" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::memcmp<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>))<sp/>==<sp/>0;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="152" refid="classdvbt__mpeg__packet__rs__encoded_1a26312ab6286832574b01f35978a0c272" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a26312ab6286832574b01f35978a0c272" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(std::memcmp<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>))<sp/>==<sp/>0);</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="155"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_DVBT_TYPES_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a51dc6ddfe40bbb860acc17c32f2a0f82" kindref="member">_pad_</ref>[<ref refid="classdvbt__mpeg__packet__rs__encoded_1af86e8743bc4795399fdc805d0d2ecf49" kindref="member">NPAD</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pad<sp/>to<sp/>power<sp/>of<sp/>2<sp/>(256)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>[DVBT_MPEG_RS_ENCODED_LENGTH];</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overload<sp/>equality<sp/>operator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classdvbt__mpeg__packet__rs__encoded_1a10ed4b0752799c714e548a8e9727f4cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a10ed4b0752799c714e548a8e9727f4cf" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::memcmp<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>))<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classdvbt__mpeg__packet__rs__encoded_1a26312ab6286832574b01f35978a0c272" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded_1a26312ab6286832574b01f35978a0c272" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(std::memcmp<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded_1a399953801d626a0401582616ba3090d4" kindref="member">data</ref>))<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classdvbt__data__segment" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__data__segment" kindref="compound" tooltip="contains 832 3 bit symbols. The low 3 bits in the byte hold the symbol.">dvbt_data_segment</ref><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="163" refid="classdvbt__data__segment_1a2c1355b865c52f6d778c6804112e954a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment_1a2c1355b865c52f6d778c6804112e954a" kindref="member">NPAD</ref><sp/>=<sp/>188;</highlight></codeline>
+<codeline lineno="164" refid="classdvbt__data__segment_1acf64acaf2ebd997edba3239bcf076a09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classplinfo" kindref="compound" tooltip="pipeline info that flows with data">plinfo</ref><sp/><sp/><ref refid="classdvbt__data__segment_1acf64acaf2ebd997edba3239bcf076a09" kindref="member">pli</ref>;</highlight></codeline>
+<codeline lineno="165" refid="classdvbt__data__segment_1a6a294f2cee0eb82b54b8b1a6f1624711" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment_1a6a294f2cee0eb82b54b8b1a6f1624711" kindref="member">_pad_</ref>[<ref refid="classdvbt__data__segment_1a2c1355b865c52f6d778c6804112e954a" kindref="member">NPAD</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pad<sp/>to<sp/>power<sp/>of<sp/>2<sp/>(1024)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>[DVBT_DATA_SEGMENT_LENGTH];</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overload<sp/>equality<sp/>operator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classdvbt__data__segment_1a105f328742b08659ed08a02424b48ad2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment_1a105f328742b08659ed08a02424b48ad2" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment" kindref="compound" tooltip="contains 832 3 bit symbols. The low 3 bits in the byte hold the symbol.">dvbt_data_segment</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::memcmp<sp/>(<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>))<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="classdvbt__data__segment_1abd4fcda45bc9711a7059a86768294be6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment_1abd4fcda45bc9711a7059a86768294be6" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment" kindref="compound" tooltip="contains 832 3 bit symbols. The low 3 bits in the byte hold the symbol.">dvbt_data_segment</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(std::memcmp<sp/>(<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>))<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classdvbt__soft__data__segment" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__soft__data__segment" kindref="compound">dvbt_soft_data_segment</ref><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="188" refid="classdvbt__soft__data__segment_1a72270ad57ad9183fe94d4ccb8b76c8ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdvbt__soft__data__segment_1a72270ad57ad9183fe94d4ccb8b76c8ed" kindref="member">NPAD</ref><sp/>=<sp/>764;</highlight></codeline>
+<codeline lineno="189" refid="classdvbt__soft__data__segment_1aa12596cad0347b41e8783e7c54853e80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classplinfo" kindref="compound" tooltip="pipeline info that flows with data">plinfo</ref><sp/><sp/><ref refid="classdvbt__soft__data__segment_1aa12596cad0347b41e8783e7c54853e80" kindref="member">pli</ref>;</highlight></codeline>
+<codeline lineno="190" refid="classdvbt__soft__data__segment_1a0712b924d3379589233c6c24dde9f353" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classdvbt__soft__data__segment_1a0712b924d3379589233c6c24dde9f353" kindref="member">_pad_</ref>[<ref refid="classdvbt__soft__data__segment_1a72270ad57ad9183fe94d4ccb8b76c8ed" kindref="member">NPAD</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pad<sp/>to<sp/>power<sp/>of<sp/>2<sp/>(4096)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" kindref="member">data</ref>[DVBT_DATA_SEGMENT_LENGTH];</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overload<sp/>equality<sp/>operator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classdvbt__soft__data__segment_1a8c793c7fcfb9d83b55ae75dfc07d279a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__soft__data__segment_1a8c793c7fcfb9d83b55ae75dfc07d279a" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment" kindref="compound" tooltip="contains 832 3 bit symbols. The low 3 bits in the byte hold the symbol.">dvbt_data_segment</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::memcmp<sp/>(<ref refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" kindref="member">data</ref>))<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="classdvbt__soft__data__segment_1a1039e970bedf228bf1b42843213214ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdvbt__soft__data__segment_1a1039e970bedf228bf1b42843213214ea" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__data__segment" kindref="compound" tooltip="contains 832 3 bit symbols. The low 3 bits in the byte hold the symbol.">dvbt_data_segment</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(std::memcmp<sp/>(<ref refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" kindref="member">data</ref>,<sp/>other.<ref refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kindref="member">data</ref>,<sp/>sizeof<sp/>(<ref refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" kindref="member">data</ref>))<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_DVBT_TYPES_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h"/>
   </compounddef>
