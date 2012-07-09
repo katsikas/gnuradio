@@ -32,6 +32,7 @@ GR_PYTHON_INSTALL(
     gmsk.py
     modulation_utils.py
     ofdm.py
+    dvbt_ofdm.py
     ofdm_packet_utils.py
     ofdm_receiver.py
     ofdm_sync_fixed.py
@@ -43,7 +44,6 @@ GR_PYTHON_INSTALL(
     psk.py
     qam.py
     qpsk.py
-    DVBT_ofdm.py
     DESTINATION ${GR_PYTHON_DIR}/gnuradio/digital
     COMPONENT "digital_python"
 )

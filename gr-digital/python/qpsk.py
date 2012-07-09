@@ -63,6 +63,8 @@ class qpsk_mod(generic_mod):
         See generic_mod block for list of parameters.
 	"""
 
+	print("me kalese")
+
         constellation_points = _def_constellation_points
         constellation = digital_swig.constellation_qpsk()
         if constellation_points != 4:

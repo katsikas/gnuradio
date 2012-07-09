@@ -42,6 +42,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/gr-digital/python/gmsk.py"
     "/home/katsikas/gnuradio/gr-digital/python/modulation_utils.py"
     "/home/katsikas/gnuradio/gr-digital/python/ofdm.py"
+    "/home/katsikas/gnuradio/gr-digital/python/dvbt_ofdm.py"
     "/home/katsikas/gnuradio/gr-digital/python/ofdm_packet_utils.py"
     "/home/katsikas/gnuradio/gr-digital/python/ofdm_receiver.py"
     "/home/katsikas/gnuradio/gr-digital/python/ofdm_sync_fixed.py"
@@ -53,7 +54,6 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/gr-digital/python/psk.py"
     "/home/katsikas/gnuradio/gr-digital/python/qam.py"
     "/home/katsikas/gnuradio/gr-digital/python/qpsk.py"
-    "/home/katsikas/gnuradio/gr-digital/python/DVBT_ofdm.py"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
@@ -67,6 +67,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/build/gr-digital/python/gmsk.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/modulation_utils.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm.pyc"
+    "/home/katsikas/gnuradio/build/gr-digital/python/dvbt_ofdm.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm_packet_utils.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm_receiver.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm_sync_fixed.pyc"
@@ -78,7 +79,6 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/build/gr-digital/python/psk.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/qam.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/qpsk.pyc"
-    "/home/katsikas/gnuradio/build/gr-digital/python/DVBT_ofdm.pyc"
     "/home/katsikas/gnuradio/build/gr-digital/python/__init__.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/bpsk.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/cpm.pyo"
@@ -87,6 +87,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/build/gr-digital/python/gmsk.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/modulation_utils.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm.pyo"
+    "/home/katsikas/gnuradio/build/gr-digital/python/dvbt_ofdm.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm_packet_utils.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm_receiver.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/ofdm_sync_fixed.pyo"
@@ -98,7 +99,6 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/build/gr-digital/python/psk.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/qam.pyo"
     "/home/katsikas/gnuradio/build/gr-digital/python/qpsk.pyo"
-    "/home/katsikas/gnuradio/build/gr-digital/python/DVBT_ofdm.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
