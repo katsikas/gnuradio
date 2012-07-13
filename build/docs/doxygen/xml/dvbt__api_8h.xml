@@ -11,101 +11,158 @@
     <includedby refid="dvbt__randomizer_8h" local="no">dvbt_randomizer.h</includedby>
     <includedby refid="dvbt__rs__decoder_8h" local="no">dvbt_rs_decoder.h</includedby>
     <includedby refid="dvbt__rs__encoder_8h" local="no">dvbt_rs_encoder.h</includedby>
+    <includedby refid="dvbt__trellis__encoder_8h" local="no">dvbt_trellis_encoder.h</includedby>
+    <includedby refid="dvbt__viterbi__decoder_8h" local="no">dvbt_viterbi_decoder.h</includedby>
+    <includedby refid="dvbti__basic__trellis__encoder_8h" local="no">dvbti_basic_trellis_encoder.h</includedby>
     <includedby refid="dvbti__data__interleaver_8h" local="no">dvbti_data_interleaver.h</includedby>
+    <includedby refid="dvbti__fake__single__viterbi_8h" local="no">dvbti_fake_single_viterbi.h</includedby>
     <includedby refid="dvbti__randomizer_8h" local="no">dvbti_randomizer.h</includedby>
     <includedby refid="dvbti__reed__solomon_8h" local="no">dvbti_reed_solomon.h</includedby>
+    <includedby refid="dvbti__single__viterbi_8h" local="no">dvbti_single_viterbi.h</includedby>
+    <includedby refid="dvbti__trellis__encoder_8h" local="no">dvbti_trellis_encoder.h</includedby>
+    <includedby refid="dvbti__viterbi__decoder_8h" local="no">dvbti_viterbi_decoder.h</includedby>
     <incdepgraph>
-      <node id="3895">
+      <node id="4122">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="3894">
+      <node id="4121">
         <label>dvbt_api.h</label>
         <link refid="dvbt_api.h"/>
-        <childnode refid="3895" relation="include">
+        <childnode refid="4122" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3901">
+      <node id="4128">
         <label>dvbt_pad.h</label>
         <link refid="dvbt__pad_8h"/>
       </node>
-      <node id="3899">
+      <node id="4126">
         <label>dvbt_derandomizer.h</label>
         <link refid="dvbt__derandomizer_8h"/>
       </node>
-      <node id="3907">
+      <node id="4139">
         <label>dvbti_reed_solomon.h</label>
         <link refid="dvbti__reed__solomon_8h"/>
-        <childnode refid="3903" relation="include">
+        <childnode refid="4130" relation="include">
         </childnode>
-        <childnode refid="3904" relation="include">
+        <childnode refid="4131" relation="include">
         </childnode>
       </node>
-      <node id="3898">
+      <node id="4125">
         <label>dvbt_depad.h</label>
         <link refid="dvbt__depad_8h"/>
       </node>
-      <node id="3905">
+      <node id="4137">
+        <label>dvbti_fake_single_viterbi.h</label>
+        <link refid="dvbti__fake__single__viterbi_8h"/>
+      </node>
+      <node id="4133">
+        <label>dvbt_viterbi_decoder.h</label>
+        <link refid="dvbt__viterbi__decoder_8h"/>
+      </node>
+      <node id="4136">
         <label>dvbti_data_interleaver.h</label>
         <link refid="dvbti__data__interleaver_8h"/>
-        <childnode refid="3897" relation="include">
+        <childnode refid="4124" relation="include">
         </childnode>
-        <childnode refid="3900" relation="include">
+        <childnode refid="4127" relation="include">
         </childnode>
       </node>
-      <node id="3902">
+      <node id="4129">
         <label>dvbt_randomizer.h</label>
         <link refid="dvbt__randomizer_8h"/>
       </node>
-      <node id="3904">
+      <node id="4135">
+        <label>dvbti_trellis_encoder.h</label>
+        <link refid="dvbti__trellis__encoder_8h"/>
+        <childnode refid="4132" relation="include">
+        </childnode>
+      </node>
+      <node id="4131">
         <label>dvbt_rs_encoder.h</label>
         <link refid="dvbt__rs__encoder_8h"/>
       </node>
-      <node id="3900">
+      <node id="4132">
+        <label>dvbt_trellis_encoder.h</label>
+        <link refid="dvbt__trellis__encoder_8h"/>
+      </node>
+      <node id="4127">
         <label>dvbt_interleaver.h</label>
         <link refid="dvbt__interleaver_8h"/>
       </node>
-      <node id="3906">
+      <node id="4138">
         <label>dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="3899" relation="include">
+        <childnode refid="4126" relation="include">
         </childnode>
-        <childnode refid="3902" relation="include">
+        <childnode refid="4129" relation="include">
         </childnode>
       </node>
-      <node id="3897">
+      <node id="4140">
+        <label>dvbti_single_viterbi.h</label>
+        <link refid="dvbti__single__viterbi_8h"/>
+        <childnode refid="4141" relation="include">
+        </childnode>
+      </node>
+      <node id="4124">
         <label>dvbt_deinterleaver.h</label>
         <link refid="dvbt__deinterleaver_8h"/>
       </node>
-      <node id="3896">
-        <label>dvbt_api.h</label>
-        <link refid="dvbt_api.h"/>
-        <childnode refid="3897" relation="include">
-        </childnode>
-        <childnode refid="3898" relation="include">
-        </childnode>
-        <childnode refid="3899" relation="include">
-        </childnode>
-        <childnode refid="3900" relation="include">
-        </childnode>
-        <childnode refid="3901" relation="include">
-        </childnode>
-        <childnode refid="3902" relation="include">
-        </childnode>
-        <childnode refid="3903" relation="include">
-        </childnode>
-        <childnode refid="3904" relation="include">
-        </childnode>
-        <childnode refid="3905" relation="include">
-        </childnode>
-        <childnode refid="3906" relation="include">
-        </childnode>
-        <childnode refid="3907" relation="include">
+      <node id="4134">
+        <label>dvbti_basic_trellis_encoder.h</label>
+        <link refid="dvbti__basic__trellis__encoder_8h"/>
+        <childnode refid="4135" relation="include">
         </childnode>
       </node>
-      <node id="3903">
+      <node id="4141">
+        <label>dvbti_viterbi_decoder.h</label>
+        <link refid="dvbti__viterbi__decoder_8h"/>
+        <childnode refid="4133" relation="include">
+        </childnode>
+      </node>
+      <node id="4123">
+        <label>dvbt_api.h</label>
+        <link refid="dvbt_api.h"/>
+        <childnode refid="4124" relation="include">
+        </childnode>
+        <childnode refid="4125" relation="include">
+        </childnode>
+        <childnode refid="4126" relation="include">
+        </childnode>
+        <childnode refid="4127" relation="include">
+        </childnode>
+        <childnode refid="4128" relation="include">
+        </childnode>
+        <childnode refid="4129" relation="include">
+        </childnode>
+        <childnode refid="4130" relation="include">
+        </childnode>
+        <childnode refid="4131" relation="include">
+        </childnode>
+        <childnode refid="4132" relation="include">
+        </childnode>
+        <childnode refid="4133" relation="include">
+        </childnode>
+        <childnode refid="4134" relation="include">
+        </childnode>
+        <childnode refid="4136" relation="include">
+        </childnode>
+        <childnode refid="4137" relation="include">
+        </childnode>
+        <childnode refid="4138" relation="include">
+        </childnode>
+        <childnode refid="4139" relation="include">
+        </childnode>
+        <childnode refid="4140" relation="include">
+        </childnode>
+        <childnode refid="4135" relation="include">
+        </childnode>
+        <childnode refid="4141" relation="include">
+        </childnode>
+      </node>
+      <node id="4130">
         <label>dvbt_rs_decoder.h</label>
         <link refid="dvbt__rs__decoder_8h"/>
       </node>

@@ -296,6 +296,7 @@ gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/include/dvbt/interleaver_fifo.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gruel/src/include/gruel/attributes.h
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: ../gr-dvbt/lib/dvbti_viterbi_decoder.cc
+gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o: gr-dvbt/lib/dvbti_viterbi_mux.cc
 
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_gen.cc.o: ../gr-dvbt/lib/dvbti_viterbi_gen.cc
 

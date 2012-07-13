@@ -34,6 +34,7 @@ from gmsk import *
 from cpm import *
 from pkt import *
 from crc import *
+from dvbt_constellations import *
 from modulation_utils import *
 from ofdm import *
 from dvbt_ofdm import *

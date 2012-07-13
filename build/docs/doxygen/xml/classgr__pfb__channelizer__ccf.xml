@@ -423,88 +423,88 @@ general_work must call consume or consume_each to indicate how many items were c
 <para>This block takes in complex inputs and channelizes it to <emphasis>M</emphasis> channels of equal bandwidth. Each of the resulting channels is decimated to the new rate that is the input sampling rate <emphasis>fs</emphasis> divided by the number of channels, <emphasis>M</emphasis>.</para><para>The PFB channelizer code takes the taps generated above and builds a set of filters. The set contains <emphasis>M</emphasis> number of filters and each filter contains ceil(taps.size()/decim) number of taps. Each tap from the filter prototype is sequentially inserted into the next filter. When all of the input taps are used, the remaining filters in the filterbank are filled out with 0&apos;s to make sure each filter has the same number of taps.</para><para>Each filter operates using the gr_fir filter classs of GNU Radio, which takes the input stream at <emphasis>i</emphasis> and performs the inner product calculation to <emphasis>i+(n-1)</emphasis> where <emphasis>n</emphasis> is the number of filter taps. To efficiently handle this in the GNU Radio structure, each filter input must come from its own input stream. So the channelizer must be provided with <emphasis>M</emphasis> streams where the input stream has been deinterleaved. This is most easily done using the <ref refid="classgr__stream__to__streams" kindref="compound">gr_stream_to_streams</ref> block.</para><para>The output is then produced as a vector, where index <emphasis>i</emphasis> in the vector is the next sample from the <emphasis>i</emphasis>th channel. This is most easily handled by sending the output to a <ref refid="classgr__vector__to__streams" kindref="compound">gr_vector_to_streams</ref> block to handle the conversion and passing <emphasis>M</emphasis> streams out.</para><para>The input and output formatting is done using a hier_block2 called pfb_channelizer_ccf. This can take in a single stream and outputs <emphasis>M</emphasis> streams based on the behavior described above.</para><para>The filter&apos;s taps should be based on the input sampling rate.</para><para>For example, using the GNU Radio&apos;s firdes utility to building filters, we build a low-pass filter with a sampling rate of <emphasis>fs</emphasis>, a 3-dB bandwidth of <emphasis>BW</emphasis> and a transition bandwidth of <emphasis>TB</emphasis>. We can also specify the out-of-band attenuation to use, <emphasis>ATT</emphasis>, and the filter window function (a Blackman-harris window in this case). The first input is the gain of the filter, which we specify here as unity.</para><para><bold><emphasis>self._taps = gr.firdes.low_pass_2(1, fs, BW, TB, attenuation_dB=ATT, window=gr.firdes.WIN_BLACKMAN_hARRIS)</emphasis></bold></para><para>The filter output can also be overs ampled. The over sampling rate is the ratio of the the actual output sampling rate to the normal output sampling rate. It must be rationally related to the number of channels as N/i for i in [1,N], which gives an outputsample rate of [fs/N, fs] where fs is the input sample rate and N is the number of channels.</para><para>For example, for 6 channels with fs = 6000 Hz, the normal rate is 6000/6 = 1000 Hz. Allowable oversampling rates are 6/6, 6/5, 6/4, 6/3, 6/2, and 6/1 where the output sample rate of a 6/1 oversample ratio is 6000 Hz, or 6 times the normal 1000 Hz. A rate of 6/5 = 1.2, so the output rate would be 1200 Hz.</para><para>The theory behind this block can be found in Chapter 6 of the following book.</para><para><bold><emphasis>f. harris, &quot;Multirate Signal Processing for Communication
        Systems,&quot; Upper Saddle River, NJ: Prentice Hall, Inc. 2004.</emphasis></bold> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="4871">
+      <node id="6389">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4872" relation="public-inheritance">
+        <childnode refid="6390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4869">
+      <node id="6387">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4870" relation="public-inheritance">
+        <childnode refid="6388" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4872">
+      <node id="6390">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4868">
+      <node id="6386">
         <label>gr_pfb_channelizer_ccf</label>
         <link refid="classgr__pfb__channelizer__ccf"/>
-        <childnode refid="4869" relation="public-inheritance">
+        <childnode refid="6387" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4870">
+      <node id="6388">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4871" relation="public-inheritance">
+        <childnode refid="6389" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4876">
+      <node id="6394">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4877" relation="public-inheritance">
+        <childnode refid="6395" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4874">
+      <node id="6392">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4875" relation="public-inheritance">
+        <childnode refid="6393" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4878">
+      <node id="6396">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4879" relation="usage">
+        <childnode refid="6397" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4881">
+      <node id="6399">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4877">
+      <node id="6395">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4873">
+      <node id="6391">
         <label>gr_pfb_channelizer_ccf</label>
         <link refid="classgr__pfb__channelizer__ccf"/>
-        <childnode refid="4874" relation="public-inheritance">
+        <childnode refid="6392" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4879">
+      <node id="6397">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4875">
+      <node id="6393">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4876" relation="public-inheritance">
+        <childnode refid="6394" relation="public-inheritance">
         </childnode>
-        <childnode refid="4878" relation="usage">
+        <childnode refid="6396" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4880" relation="usage">
+        <childnode refid="6398" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4880">
+      <node id="6398">
         <label>std::string</label>
-        <childnode refid="4881" relation="public-inheritance">
+        <childnode refid="6399" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

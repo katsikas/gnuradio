@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dvbti__viterbi__decoder_8h" kind="file">
+    <compoundname>dvbti_viterbi_decoder.h</compoundname>
+    <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
+    <includes refid="dvbt__types_8h" local="no">dvbt/dvbt_types.h</includes>
+    <includes refid="gr-dvbt_2include_2dvbt_2interleaver__fifo_8h" local="no">dvbt/interleaver_fifo.h</includes>
+    <includes refid="dvbti__single__viterbi_8h" local="no">dvbt/dvbti_single_viterbi.h</includes>
+    <includedby refid="dvbt__viterbi__decoder_8h" local="no">dvbt_viterbi_decoder.h</includedby>
+    <incdepgraph>
+      <node id="4634">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="4638">
+        <label>cassert</label>
+      </node>
+      <node id="4640">
+        <label>dvbt/interleaver_fifo.h</label>
+        <link refid="gr-dvbt_2include_2dvbt_2interleaver__fifo_8h"/>
+        <childnode refid="4641" relation="include">
+        </childnode>
+        <childnode refid="4640" relation="include">
+        </childnode>
+      </node>
+      <node id="4641">
+        <label>string.h</label>
+      </node>
+      <node id="4639">
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
+      </node>
+      <node id="4642">
+        <label>dvbt/dvbti_single_viterbi.h</label>
+        <link refid="dvbti__single__viterbi_8h"/>
+        <childnode refid="4633" relation="include">
+        </childnode>
+      </node>
+      <node id="4635">
+        <label>dvbt/dvbt_types.h</label>
+        <link refid="dvbt__types_8h"/>
+        <childnode refid="4636" relation="include">
+        </childnode>
+        <childnode refid="4637" relation="include">
+        </childnode>
+        <childnode refid="4638" relation="include">
+        </childnode>
+        <childnode refid="4639" relation="include">
+        </childnode>
+      </node>
+      <node id="4632">
+        <label>dvbti_viterbi_decoder.h</label>
+        <link refid="dvbti_viterbi_decoder.h"/>
+        <childnode refid="4633" relation="include">
+        </childnode>
+        <childnode refid="4635" relation="include">
+        </childnode>
+        <childnode refid="4640" relation="include">
+        </childnode>
+        <childnode refid="4642" relation="include">
+        </childnode>
+      </node>
+      <node id="4636">
+        <label>stdio.h</label>
+      </node>
+      <node id="4633">
+        <label>dvbt/dvbt_api.h</label>
+        <link refid="dvbt__api_8h"/>
+        <childnode refid="4634" relation="include">
+        </childnode>
+      </node>
+      <node id="4637">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4644">
+        <label>dvbt_viterbi_decoder.h</label>
+        <link refid="dvbt__viterbi__decoder_8h"/>
+      </node>
+      <node id="4643">
+        <label>dvbti_viterbi_decoder.h</label>
+        <link refid="dvbti_viterbi_decoder.h"/>
+        <childnode refid="4644" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdvbti__viterbi__decoder" prot="public">dvbti_viterbi_decoder</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dvbti__viterbi__decoder_8h_1a946ecb7d9c6de0cab7f98aa467c5ba5f" prot="public" static="no">
+        <name>USE_SIMPLE_SLICER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" line="27" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dvbti__viterbi__decoder_8h_1a5a7bdf1f5e06cdc2f6153bc6f9db4926" prot="public" static="no">
+        <type><ref refid="classdvbti__single__viterbi" kindref="compound">dvbti_single_viterbi</ref></type>
+        <definition>typedef dvbti_single_viterbi single_viterbi_t</definition>
+        <argsstring></argsstring>
+        <name>single_viterbi_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h"/>
+  </compounddef>
+</doxygen>

@@ -24,6 +24,18 @@ var group__converter__blk =
       [ "gr_uchar_to_float", "classgr__uchar__to__float.html", null ],
       [ "gr_unpack_k_bits_bb", "classgr__unpack__k__bits__bb.html", null ],
       [ "digital_binary_slicer_fb", "classdigital__binary__slicer__fb.html", null ],
-      [ "digital_bytes_to_syms", "classdigital__bytes__to__syms.html", null ]
+      [ "digital_bytes_to_syms", "classdigital__bytes__to__syms.html", null ],
+      [ "gr_chunks_to_symbols_bc", "classgr__chunks__to__symbols__bc.html", null ],
+      [ "gr_chunks_to_symbols_bf", "classgr__chunks__to__symbols__bf.html", null ],
+      [ "gr_chunks_to_symbols_ic", "classgr__chunks__to__symbols__ic.html", null ],
+      [ "gr_chunks_to_symbols_if", "classgr__chunks__to__symbols__if.html", null ],
+      [ "gr_chunks_to_symbols_sc", "classgr__chunks__to__symbols__sc.html", null ],
+      [ "gr_chunks_to_symbols_sf", "classgr__chunks__to__symbols__sf.html", null ],
+      [ "gr_packed_to_unpacked_bb", "classgr__packed__to__unpacked__bb.html", null ],
+      [ "gr_packed_to_unpacked_ii", "classgr__packed__to__unpacked__ii.html", null ],
+      [ "gr_packed_to_unpacked_ss", "classgr__packed__to__unpacked__ss.html", null ],
+      [ "gr_unpacked_to_packed_bb", "classgr__unpacked__to__packed__bb.html", null ],
+      [ "gr_unpacked_to_packed_ii", "classgr__unpacked__to__packed__ii.html", null ],
+      [ "gr_unpacked_to_packed_ss", "classgr__unpacked__to__packed__ss.html", null ]
     ] ]
 ];

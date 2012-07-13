@@ -54,6 +54,7 @@ def create_encodings(mod_code, arity):
 #                           PSK constellation
 # /////////////////////////////////////////////////////////////////////////////
 
+
 def psk_constellation(m=_def_constellation_points, mod_code=_def_mod_code):
     """
     Creates a PSK constellation object.

@@ -97,12 +97,12 @@ gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/swig/fft_swig.i
 
 gr-fft/swig/fft_swig.py: gr-fft/swig/fft_swigPYTHON_wrap.cxx
 
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vfc.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel_fc.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft.h
 gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/api.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vcc.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel_fc.h
 gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vcc.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vfc.h
 gr-fft/swig/fft_swig_doc.i: gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fft_swig_doc.i"
@@ -115,12 +115,12 @@ gr-fft/swig/fft_swig.tag: gr-fft/swig/_fft_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-fft/swig && ./_fft_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-fft/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig.tag
 
-gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft_vfc.h
-gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/goertzel_fc.h
-gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/api.h
-gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft_vcc.h
+gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/goertzel_fc.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/goertzel.h
+gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft.h
+gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft_vcc.h
+gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft_vfc.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: gr-fft/swig/_fft_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for fft_swig_doc docs"

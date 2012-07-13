@@ -1,6 +1,21 @@
 var group__sink__blk =
 [
     [ "Classes", "group__sink__blk.html", [
+      [ "gr_probe_signal_b", "classgr__probe__signal__b.html", null ],
+      [ "gr_probe_signal_c", "classgr__probe__signal__c.html", null ],
+      [ "gr_probe_signal_f", "classgr__probe__signal__f.html", null ],
+      [ "gr_probe_signal_i", "classgr__probe__signal__i.html", null ],
+      [ "gr_probe_signal_s", "classgr__probe__signal__s.html", null ],
+      [ "gr_probe_signal_vb", "classgr__probe__signal__vb.html", null ],
+      [ "gr_probe_signal_vc", "classgr__probe__signal__vc.html", null ],
+      [ "gr_probe_signal_vf", "classgr__probe__signal__vf.html", null ],
+      [ "gr_probe_signal_vi", "classgr__probe__signal__vi.html", null ],
+      [ "gr_probe_signal_vs", "classgr__probe__signal__vs.html", null ],
+      [ "gr_vector_sink_b", "classgr__vector__sink__b.html", null ],
+      [ "gr_vector_sink_c", "classgr__vector__sink__c.html", null ],
+      [ "gr_vector_sink_f", "classgr__vector__sink__f.html", null ],
+      [ "gr_vector_sink_i", "classgr__vector__sink__i.html", null ],
+      [ "gr_vector_sink_s", "classgr__vector__sink__s.html", null ],
       [ "gr_bin_statistics_f", "classgr__bin__statistics__f.html", null ],
       [ "gr_check_counting_s", "classgr__check__counting__s.html", null ],
       [ "gr_check_lfsr_32k_s", "classgr__check__lfsr__32k__s.html", null ],

@@ -106,23 +106,23 @@ gruel/src/swig/pmt_swigPYTHON_wrap.cxx: ../gruel/src/swig/pmt_swig.i
 
 gruel/src/swig/pmt_swig.py: gruel/src/swig/pmt_swigPYTHON_wrap.cxx
 
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/pmt_sugar.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_queue.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/attributes.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/thread_group.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_passing.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/high_res_timer.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/thread.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_accepter_msgq.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/thread_body_wrapper.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/api.h
-gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_accepter.h
 gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/sys_pri.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/thread_group.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/api.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/pmt_sugar.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/thread.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/thread_body_wrapper.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_queue.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_passing.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/attributes.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/high_res_timer.h
 gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/realtime.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_accepter.h
+gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/msg_accepter_msgq.h
 gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/pmt.h
 gruel/src/swig/pmt_swig_doc.i: ../gruel/src/swig/../include/gruel/pmt_pool.h
-gruel/src/swig/pmt_swig_doc.i: gruel/src/swig/../include/gruel/inet.h
 gruel/src/swig/pmt_swig_doc.i: gruel/src/swig/../include/gruel/pmt_serial_tags.h
+gruel/src/swig/pmt_swig_doc.i: gruel/src/swig/../include/gruel/inet.h
 gruel/src/swig/pmt_swig_doc.i: gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating pmt_swig_doc.i"
@@ -135,23 +135,23 @@ gruel/src/swig/pmt_swig.tag: gruel/src/swig/_pmt_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gruel/src/swig && ./_pmt_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gruel/src/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gruel/src/swig/pmt_swig.tag
 
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/pmt_sugar.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_queue.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/attributes.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/thread_group.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_passing.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/high_res_timer.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/thread.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_accepter_msgq.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/thread_body_wrapper.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/api.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_accepter.h
 gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/sys_pri.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/thread_group.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/api.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/pmt_sugar.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/thread.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/thread_body_wrapper.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_queue.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_passing.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/attributes.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/high_res_timer.h
 gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/realtime.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_accepter.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/msg_accepter_msgq.h
 gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/pmt.h
 gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: ../gruel/src/swig/../include/gruel/pmt_pool.h
-gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: gruel/src/swig/../include/gruel/inet.h
 gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: gruel/src/swig/../include/gruel/pmt_serial_tags.h
+gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: gruel/src/swig/../include/gruel/inet.h
 gruel/src/swig/pmt_swig_doc_swig_docs/xml/index.xml: gruel/src/swig/_pmt_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for pmt_swig_doc docs"

@@ -81,8 +81,8 @@ gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gr-audio/swig/audio_swig.i
 
 gr-audio/swig/audio_swig.py: gr-audio/swig/audio_swigPYTHON_wrap.cxx
 
-gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_api.h
 gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_sink.h
+gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_api.h
 gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_source.h
 gr-audio/swig/audio_swig_doc.i: gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
@@ -96,8 +96,8 @@ gr-audio/swig/audio_swig.tag: gr-audio/swig/_audio_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-audio/swig && ./_audio_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig.tag
 
-gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_api.h
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_sink.h
+gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_api.h
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_source.h
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: gr-audio/swig/_audio_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)

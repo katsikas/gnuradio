@@ -1,6 +1,7 @@
 var dvbt__consts_8h =
 [
     [ "BITS_SEQUENCE", "dvbt__consts_8h.html#ace183d250be0f261977268861342b8a6", null ],
+    [ "DVBT_DATA_SEGMENT_LENGTH", "dvbt__consts_8h.html#a5f3f7cfabe741054d5fab464827b9d3e", null ],
     [ "DVBT_MPEG_DATA_LENGTH", "dvbt__consts_8h.html#ad5ccc6a26f313ce573ef7e19b67dcd8f", null ],
     [ "DVBT_MPEG_HEADER_LENGTH", "dvbt__consts_8h.html#a0c3e3059531c5185a4d0ece5717d6402", null ],
     [ "DVBT_MPEG_PACKET_LENGTH", "dvbt__consts_8h.html#aec0bf7a17595dad1e9e08ce7f4338bd3", null ],

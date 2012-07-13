@@ -26,7 +26,7 @@ import digital_swig
 import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
-import psk, qam
+import psk, qam, dvbt_constellations
 
 # /////////////////////////////////////////////////////////////////////////////
 #                   mod/demod with packets as i/o
@@ -89,16 +89,16 @@ class dvbt_ofdm_mod(gr.hier_block2):
 
         rot = 1
         if self._modulation == "qpsk":
-            rot = (0.707+0.707j)
+            rot = (0.707 + 0.707j) 	# 0,707106781
             
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):
-            constel = psk.psk_constellation(arity)
-            rotated_const = map(lambda pt: pt * rot, constel.points())
+            constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
+            rotated_const = [(0.707+0.707j), (0.707-0.707j), (-0.707+0.707j), (-0.707-0.707j)]
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())
-        #print rotated_const
+        print rotated_const
         self._pkt_input = digital_swig.ofdm_mapper_bcv(rotated_const,
                                                        msgq_limit,
                                                        options.occupied_tones,
@@ -229,7 +229,7 @@ class dvbt_ofdm_demod(gr.hier_block2):
         
         rot = 1
         if self._modulation == "qpsk":
-            rot = (0.707+0.707j)
+            rot = (0.70710+0.70710j)
 
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):

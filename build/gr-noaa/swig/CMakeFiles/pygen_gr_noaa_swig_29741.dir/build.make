@@ -87,11 +87,11 @@ gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gr-noaa/swig/noaa_swig.i
 
 gr-noaa/swig/noaa_swig.py: gr-noaa/swig/noaa_swigPYTHON_wrap.cxx
 
-gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
-gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
+gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_api.h
+gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc.i: gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating noaa_swig_doc.i"
@@ -104,11 +104,11 @@ gr-noaa/swig/noaa_swig.tag: gr-noaa/swig/_noaa_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-noaa/swig && ./_noaa_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig.tag
 
-gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
-gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
+gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_api.h
+gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: gr-noaa/swig/_noaa_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for noaa_swig_doc docs"
