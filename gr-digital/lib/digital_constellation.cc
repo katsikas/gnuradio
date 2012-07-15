@@ -24,6 +24,7 @@
 #include "config.h"
 #endif
 
+#include <stdio.h>
 #include <gr_io_signature.h>
 #include <digital_constellation.h>
 #include <digital_metric_type.h>
@@ -366,8 +367,11 @@ unsigned int
 digital_constellation_psk::calc_sector_value (unsigned int sector)
 {
   float phase = sector * M_TWOPI / n_sectors;
+  printf("phase = %f \n",phase);
   gr_complex sector_center = gr_complex(cos(phase), sin(phase));
   unsigned int closest_point = get_closest_point(&sector_center);
+  printf("Closest point  = %d \n",closest_point);
+
   return closest_point;
 }
 

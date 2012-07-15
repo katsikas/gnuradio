@@ -56,6 +56,8 @@ class dvbt_ofdm_mod(gr.hier_block2):
 				gr.io_signature(0, 0, 0),       # Input signature
 				gr.io_signature(1, 1, gr.sizeof_gr_complex)) # Output signature
 
+	
+	Sqrt_Two = 0.707        # 0.707107
         self._pad_for_usrp = pad_for_usrp
         self._modulation = options.modulation
         self._fft_length = options.fft_length
@@ -84,17 +86,14 @@ class dvbt_ofdm_mod(gr.hier_block2):
             
         symbol_length = options.fft_length + options.cp_length
         
-        mods = {"bpsk": 2, "qpsk": 4, "qam16": 16, "qam64": 64}
+        mods = {"qpsk": 4, "qam16": 16, "qam64": 64}
         arity = mods[self._modulation]
 
-        rot = 1
-        if self._modulation == "qpsk":
-            rot = (0.707 + 0.707j) 	# 0,707106781
-            
+        rot = 1            
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):
             constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
-            rotated_const = [(0.707+0.707j), (0.707-0.707j), (-0.707+0.707j), (-0.707-0.707j)]
+            rotated_const = map(lambda pt: pt * Sqrt_Two, constel.points())
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())
@@ -199,6 +198,7 @@ class dvbt_ofdm_demod(gr.hier_block2):
 				gr.io_signature(1, 1, gr.sizeof_gr_complex)) # Output signature
 
 
+	Sqrt_Two = 0.707 	# 0.707107
         self._rcvd_pktq = gr.msg_queue()          # holds packets from the PHY
 
         self._modulation = options.modulation
@@ -224,17 +224,14 @@ class dvbt_ofdm_demod(gr.hier_block2):
                                        self._snr, preambles,
                                        options.log)
 
-        mods = {"bpsk": 2, "qpsk": 4, "8psk": 8, "qam8": 8, "qam16": 16, "qam64": 64, "qam256": 256}
+        mods = {"qpsk": 4, "qam16": 16, "qam64": 64}
         arity = mods[self._modulation]
         
         rot = 1
-        if self._modulation == "qpsk":
-            rot = (0.70710+0.70710j)
-
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):
-            constel = psk.psk_constellation(arity)
-            rotated_const = map(lambda pt: pt * rot, constel.points())
+            constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
+            rotated_const = map(lambda pt: pt * Sqrt_Two, constel.points())
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())

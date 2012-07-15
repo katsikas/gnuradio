@@ -96,7 +96,7 @@ class ofdm_mod(gr.hier_block2):
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())
-        #print rotated_const
+        print rotated_const
         self._pkt_input = digital_swig.ofdm_mapper_bcv(rotated_const,
                                                        msgq_limit,
                                                        options.occupied_tones,
