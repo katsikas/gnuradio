@@ -378,6 +378,14 @@ Constellation which calculates the distance to each point in the constellation f
 
 %feature("docstring") digital_make_constellation_dqpsk "Digital constellation for DQPSK."
 
+%feature("docstring") digital_constellation_dvbt_qpsk "Digital constellation for QPSK."
+
+
+
+%feature("docstring") digital_constellation_dvbt_qpsk::decision_maker "Returns the constellation point that matches best."
+
+%feature("docstring") digital_make_constellation_dvbt_qpsk "Digital constellation for QPSK."
+
 %feature("docstring") digital_constellation_psk "digital_constellation_psk
 
 Constellation space is divided into pie slices sectors.

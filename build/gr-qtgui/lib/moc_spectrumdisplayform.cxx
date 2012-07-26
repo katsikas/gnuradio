@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'spectrumdisplayform.h'
 **
-** Created: Tue Jul 10 23:31:17 2012
+** Created: Wed Jul 25 09:05:30 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!

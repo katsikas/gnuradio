@@ -87,6 +87,7 @@
     <innerclass refid="classdigital__constellation__qpsk" prot="public">digital_constellation_qpsk</innerclass>
     <innerclass refid="classdigital__constellation__dqpsk" prot="public">digital_constellation_dqpsk</innerclass>
     <innerclass refid="classdigital__constellation__8psk" prot="public">digital_constellation_8psk</innerclass>
+    <innerclass refid="classdigital__constellation__dvbt__qpsk" prot="public">digital_constellation_dvbt_qpsk</innerclass>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="digital__constellation_8h_1a91522da9012baccbab89a768b6fb6e42" prot="public" static="no">
         <type>boost::shared_ptr&lt; <ref refid="classdigital__constellation" kindref="compound">digital_constellation</ref> &gt;</type>
@@ -191,6 +192,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="427" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classdigital__constellation__dvbt__qpsk" kindref="compound">digital_constellation_dvbt_qpsk</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;digital_constellation_dvbt_qpsk&gt; digital_constellation_dvbt_qpsk_sptr</definition>
+        <argsstring></argsstring>
+        <name>digital_constellation_dvbt_qpsk_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="458" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="457" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -340,6 +354,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="431"/>
+      </memberdef>
+      <memberdef kind="function" id="digital__constellation_8h_1a4398ed89c14f4f06e476d0746dc96c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_constellation_dvbt_qpsk_sptr digital_make_constellation_dvbt_qpsk</definition>
+        <argsstring>()</argsstring>
+        <name>digital_make_constellation_dvbt_qpsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="462"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -705,7 +732,34 @@
 <codeline lineno="446"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="447"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="448"><highlight class="normal"></highlight></codeline>
-<codeline lineno="449"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight><highlight class="comment">/************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>digital_constellation_dvbt_qpsk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Explicit<sp/>Implementation<sp/>for<sp/>DVBT.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight><highlight class="comment">/************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457" refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdigital__constellation__dvbt__qpsk" kindref="compound" tooltip="Digital constellation for QPSK.">digital_constellation_dvbt_qpsk</ref>;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_constellation_dvbt_qpsk&gt;<sp/><ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref>;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref><sp/></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><ref refid="digital__constellation_8h_1a4398ed89c14f4f06e476d0746dc96c83" kindref="member">digital_make_constellation_dvbt_qpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468" refid="classdigital__constellation__dvbt__qpsk" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__constellation__dvbt__qpsk" kindref="compound" tooltip="Digital constellation for QPSK.">digital_constellation_dvbt_qpsk</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation" kindref="compound" tooltip="An abstracted constellation objectThe constellation objects hold the necessary information to pass ar...">digital_constellation</ref></highlight></codeline>
+<codeline lineno="469"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><ref refid="classdigital__constellation__dvbt__qpsk" kindref="compound" tooltip="Digital constellation for QPSK.">digital_constellation_dvbt_qpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a65eb61507bbab278a7fb050e725a28cd" kindref="member" tooltip="Returns the constellation point that matches best.">decision_maker</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gr_complex<sp/>*sample);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a4398ed89c14f4f06e476d0746dc96c83" kindref="member">digital_make_constellation_dvbt_qpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="478"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h"/>
   </compounddef>

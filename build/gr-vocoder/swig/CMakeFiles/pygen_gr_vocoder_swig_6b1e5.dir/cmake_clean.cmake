@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "vocoder_swig.pyo"
   "vocoder_swigPYTHON_wrap.cxx"
   "vocoder_swig.py"
-  "vocoder_swig_doc.i"
   "vocoder_swig.tag"
+  "vocoder_swig_doc.i"
   "vocoder_swig_doc_swig_docs/xml/index.xml"
   "vocoder_swig_doc_swig_docs/xml/combine.xslt"
 )

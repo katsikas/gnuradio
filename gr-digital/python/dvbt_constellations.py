@@ -42,7 +42,8 @@ _def_mod_code = mod_codes.GRAY_CODE
 def dvbt_qpsk_constellation(m=_def_constellation_points, mod_code=_def_mod_code):
     """
     Creates a QPSK constellation object for DVB-T.
-    """
+    
+
     k = log(m) / log(2.0)
     if (k != int(k)):
         raise StandardError('Number of constellation points must be a power of two.')
@@ -56,3 +57,9 @@ def dvbt_qpsk_constellation(m=_def_constellation_points, mod_code=_def_mod_code)
 
     constellation = digital_swig.constellation_psk(points, pre_diff_code, m)
     return constellation
+    """
+
+    if m != _def_constellation_points:
+        raise ValueError("QPSK can only have 4 constellation points.")
+    return digital_swig.constellation_dvbt_qpsk()
+

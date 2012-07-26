@@ -16,13 +16,13 @@ FILE(REMOVE_RECURSE
   "gnuradio_core_general.pyo"
   "gnuradio_core_generalPYTHON_wrap.cxx"
   "gnuradio_core_general.py"
-  "general_swig_doc.i"
   "gnuradio_core_general.tag"
-  "general_swig_doc_swig_docs/xml/index.xml"
-  "general_swig_doc_swig_docs/xml/combine.xslt"
   "runtime_swig_doc.i"
+  "general_swig_doc.i"
   "runtime_swig_doc_swig_docs/xml/index.xml"
   "runtime_swig_doc_swig_docs/xml/combine.xslt"
+  "general_swig_doc_swig_docs/xml/index.xml"
+  "general_swig_doc_swig_docs/xml/combine.xslt"
 )
 
 # Per-language clean rules from dependency scanning.

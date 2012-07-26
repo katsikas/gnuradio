@@ -26,7 +26,7 @@ import digital_swig
 import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
-import psk, qam, dvbt_constellations
+import psk, qam, dvbt_constellations, qpsk
 
 # /////////////////////////////////////////////////////////////////////////////
 #                   mod/demod with packets as i/o
@@ -93,7 +93,9 @@ class dvbt_ofdm_mod(gr.hier_block2):
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):
             constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
-            rotated_const = map(lambda pt: pt * Sqrt_Two, constel.points())
+	    rotated_const = constel.points()
+            #rotated_const = map(lambda pt: pt * Sqrt_Two, constel.points())
+	    #rotated_const = constel.points()
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())
@@ -231,11 +233,12 @@ class dvbt_ofdm_demod(gr.hier_block2):
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):
             constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
-            rotated_const = map(lambda pt: pt * Sqrt_Two, constel.points())
+ 	    rotated_const = constel.points()
+            #rotated_const = map(lambda pt: pt * Sqrt_Two, constel.points())
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())
-        #print rotated_const
+        print rotated_const
 
         phgain = 0.25
         frgain = phgain*phgain / 4.0

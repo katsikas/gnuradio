@@ -6,6 +6,7 @@
     <derivedcompoundref refid="classdigital__constellation__bpsk" prot="public" virt="non-virtual">digital_constellation_bpsk</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__calcdist" prot="public" virt="non-virtual">digital_constellation_calcdist</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__dqpsk" prot="public" virt="non-virtual">digital_constellation_dqpsk</derivedcompoundref>
+    <derivedcompoundref refid="classdigital__constellation__dvbt__qpsk" prot="public" virt="non-virtual">digital_constellation_dvbt_qpsk</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__qpsk" prot="public" virt="non-virtual">digital_constellation_qpsk</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__sector" prot="public" virt="non-virtual">digital_constellation_sector</derivedcompoundref>
     <includes refid="digital__constellation_8h" local="no">digital_constellation.h</includes>
@@ -181,6 +182,7 @@
         <reimplementedby refid="classdigital__constellation__qpsk_1abc72f3b7a6f5f6ab0c9d06dbabde0ad3">decision_maker</reimplementedby>
         <reimplementedby refid="classdigital__constellation__dqpsk_1af18d1533cfeeb6b75dd8f35ba422a3e5">decision_maker</reimplementedby>
         <reimplementedby refid="classdigital__constellation__8psk_1ae327b4987e3ebcbe66b036fe6351a37c">decision_maker</reimplementedby>
+        <reimplementedby refid="classdigital__constellation__dvbt__qpsk_1a1a2ea8aea7173feb17ea221884237390">decision_maker</reimplementedby>
         <param>
           <type>const gr_complex *</type>
           <declname>sample</declname>
@@ -531,20 +533,20 @@
         <childnode refid="296" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="303">
+      <node id="304">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="302" relation="public-inheritance">
+        <childnode refid="303" relation="public-inheritance">
         </childnode>
       </node>
       <node id="296">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="304">
+      <node id="305">
         <label>digital_constellation_rect</label>
         <link refid="classdigital__constellation__rect"/>
-        <childnode refid="302" relation="public-inheritance">
+        <childnode refid="303" relation="public-inheritance">
         </childnode>
       </node>
       <node id="298">
@@ -559,7 +561,7 @@
         <childnode refid="296" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="301">
+      <node id="302">
         <label>digital_constellation_qpsk</label>
         <link refid="classdigital__constellation__qpsk"/>
         <childnode refid="296" relation="public-inheritance">
@@ -571,27 +573,33 @@
         <childnode refid="296" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="302">
+      <node id="303">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
         <childnode refid="296" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="301">
+        <label>digital_constellation_dvbt_qpsk</label>
+        <link refid="classdigital__constellation__dvbt__qpsk"/>
+        <childnode refid="296" relation="public-inheritance">
+        </childnode>
+      </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="307">
+      <node id="308">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="306">
+      <node id="307">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="305">
+      <node id="306">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="306" relation="usage">
+        <childnode refid="307" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="307" relation="usage">
+        <childnode refid="308" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>

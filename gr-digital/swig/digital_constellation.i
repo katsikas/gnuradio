@@ -188,6 +188,26 @@ public:
   digital_constellation_8psk ();
 };
 
+
+/*
+  QPSK Constellation explicitely for DVBT
+*/
+
+class digital_constellation_dvbt_qpsk;
+typedef boost::shared_ptr<digital_constellation_dvbt_qpsk> digital_constellation_dvbt_qpsk_sptr;
+%template(digital_constellation_dvbt_qpsk_sptr) boost::shared_ptr<digital_constellation_dvbt_qpsk>;
+%rename(constellation_dvbt_qpsk) digital_make_constellation_dvbt_qpsk;
+digital_constellation_dvbt_qpsk_sptr digital_make_constellation_dvbt_qpsk();
+%ignore digital_constellation_dvbt_qpsk;
+
+class digital_constellation_dvbt_qpsk : public digital_constellation
+{
+public:
+  	digital_constellation_dvbt_qpsk ();
+};
+
+
+
 #if SWIGPYTHON
 /*
   We want print(constellation) in python to produce nice useful output so

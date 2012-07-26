@@ -35,6 +35,7 @@
 #include <stdlib.h>
 #include <float.h>
 #include <stdexcept>
+#include <stdio.h>
 
 #define M_TWOPI (2*M_PI)
 #define SQRT_TWO 0.707107
@@ -265,7 +266,8 @@ digital_constellation_sector::find_sector_values ()
 {
   unsigned int i;
   sector_values.clear();
-  for (i=0; i<n_sectors; i++) {
+  for (i=0; i<n_sectors; i++) {	
+    printf("sec = %d\n",calc_sector_value(i));
     sector_values.push_back(calc_sector_value(i));
   }
 }
@@ -367,10 +369,10 @@ unsigned int
 digital_constellation_psk::calc_sector_value (unsigned int sector)
 {
   float phase = sector * M_TWOPI / n_sectors;
-  printf("phase = %f \n",phase);
+  //printf("phase = %f \n",phase);
   gr_complex sector_center = gr_complex(cos(phase), sin(phase));
   unsigned int closest_point = get_closest_point(&sector_center);
-  printf("Closest point  = %d \n",closest_point);
+  //printf("Closest point  = %d \n",closest_point);
 
   return closest_point;
 }
@@ -413,7 +415,14 @@ digital_constellation_qpsk::digital_constellation_qpsk ()
   d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
   d_constellation[2] = gr_complex(-SQRT_TWO, SQRT_TWO);
   d_constellation[3] = gr_complex(SQRT_TWO, SQRT_TWO);
-  
+
+
+  /*d_constellation[0] = gr_complex(SQRT_TWO, SQRT_TWO);
+  d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
+  d_constellation[2] = gr_complex(-SQRT_TWO, -SQRT_TWO);
+  d_constellation[3] = gr_complex(-SQRT_TWO, SQRT_TWO);
+
+
   /*
   d_constellation[0] = gr_complex(SQRT_TWO, SQRT_TWO);
   d_constellation[1] = gr_complex(-SQRT_TWO, SQRT_TWO);
@@ -554,3 +563,49 @@ digital_constellation_8psk::decision_maker(const gr_complex *sample)
 
   return ret;
 }
+
+
+/**
+ * DVB-T explicit constellation mappings
+ **/
+digital_constellation_dvbt_qpsk_sptr 
+digital_make_constellation_dvbt_qpsk()
+{
+  return digital_constellation_dvbt_qpsk_sptr(new digital_constellation_dvbt_qpsk ());
+}
+
+digital_constellation_dvbt_qpsk::digital_constellation_dvbt_qpsk ()
+{
+  d_constellation.resize(4);
+  // Gray-coded
+  /*d_constellation[0] = gr_complex(-SQRT_TWO, -SQRT_TWO);
+  d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
+  d_constellation[2] = gr_complex(-SQRT_TWO, SQRT_TWO);
+  d_constellation[3] = gr_complex(SQRT_TWO, SQRT_TWO);*/
+
+
+  d_constellation[0] = gr_complex(SQRT_TWO, SQRT_TWO);
+  d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
+  d_constellation[2] = gr_complex(-SQRT_TWO, -SQRT_TWO);
+  d_constellation[3] = gr_complex(-SQRT_TWO, SQRT_TWO);
+
+  d_pre_diff_code.resize(4);
+  d_pre_diff_code[0] = 0x0;
+  d_pre_diff_code[1] = 0x2;
+  d_pre_diff_code[2] = 0x3;
+  d_pre_diff_code[3] = 0x1;
+
+  d_rotational_symmetry = 4;
+  d_dimensionality = 1;
+  calc_arity();
+}
+
+unsigned int
+digital_constellation_dvbt_qpsk::decision_maker(const gr_complex *sample)
+{
+	printf("Decision maker for dvbt_qpsk \n");
+  // Real component determines small bit.
+  // Imag component determines big bit.
+  return 2*(imag(*sample)>0) + (real(*sample)>0);
+}
+/********************************************************************/

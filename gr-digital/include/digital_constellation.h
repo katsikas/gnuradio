@@ -446,4 +446,35 @@ class DIGITAL_API digital_constellation_8psk : public digital_constellation
   
 };
 
+
+/************************************************************/
+/* digital_constellation_dvbt_qpsk                          */
+/*                                                          */
+/* Explicit Implementation for DVBT.                        */
+/*                                                          */
+/************************************************************/
+
+class digital_constellation_dvbt_qpsk;
+typedef boost::shared_ptr<digital_constellation_dvbt_qpsk> digital_constellation_dvbt_qpsk_sptr;
+
+// public constructor
+DIGITAL_API digital_constellation_dvbt_qpsk_sptr 
+digital_make_constellation_dvbt_qpsk ();
+
+/*! 
+ * \brief Digital constellation for QPSK
+ * \ingroup digital
+ */
+class DIGITAL_API digital_constellation_dvbt_qpsk : public digital_constellation
+{
+ public:
+
+  digital_constellation_dvbt_qpsk ();
+  unsigned int decision_maker (const gr_complex *sample);
+
+  friend DIGITAL_API digital_constellation_dvbt_qpsk_sptr
+  digital_make_constellation_dvbt_qpsk ();
+  
+};
+
 #endif

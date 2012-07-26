@@ -99,14 +99,13 @@ gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnura
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/include/vocoder_cvsd_decode_bs.h
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/include/vocoder_cvsd_encode_sb.h
-gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_g723_40_encode_sb.i
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_complex.h
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/include/vocoder_gsm_fr_decode_ps.h
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_gsm_fr_decode_ps.i
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_g723_24_decode_bs.i
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_cvsd_encode_sb.i
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/include/vocoder_ulaw_encode_sb.h
-gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: gr-vocoder/swig/vocoder_swig_doc.i
+gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_g723_40_encode_sb.i
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/include/vocoder_ulaw_decode_bs.h
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_alaw_encode_sb.i
 gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_ulaw_decode_bs.i
@@ -125,52 +124,52 @@ gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx: ../gr-vocoder/swig/vocoder_swig.i
 
 gr-vocoder/swig/vocoder_swig.py: gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx
 
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_cvsd_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_ulaw_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_cvsd_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_alaw_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_api.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_alaw_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_24_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g721_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_40_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_24_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_ulaw_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_40_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_gsm_fr_encode_sp.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_codec2_encode_sp.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_codec2_decode_ps.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_gsm_fr_decode_ps.h
-gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g721_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc.i: gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating vocoder_swig_doc.i"
-	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig_doc.i
-
 gr-vocoder/swig/vocoder_swig.tag: gr-vocoder/swig/vocoder_swig_doc.i
 gr-vocoder/swig/vocoder_swig.tag: gr-vocoder/swig/_vocoder_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating vocoder_swig.tag"
 	cd /home/katsikas/gnuradio/build/gr-vocoder/swig && ./_vocoder_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-vocoder/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig.tag
 
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_cvsd_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_ulaw_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_cvsd_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_codec2_decode_ps.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_24_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_alaw_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_gsm_fr_encode_sp.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g721_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_ulaw_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_ulaw_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_24_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_gsm_fr_decode_ps.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_40_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_cvsd_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_codec2_encode_sp.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_api.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g721_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_g723_40_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc.i: ../gr-vocoder/swig/../include/vocoder_alaw_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc.i: gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating vocoder_swig_doc.i"
+	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig_doc.i
+
 gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_cvsd_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_alaw_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_api.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_alaw_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_24_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g721_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_40_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_24_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_ulaw_decode_bs.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_40_encode_sb.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_gsm_fr_encode_sp.h
-gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_codec2_encode_sp.h
 gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_codec2_decode_ps.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_24_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_alaw_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_gsm_fr_encode_sp.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g721_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_ulaw_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_ulaw_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_24_encode_sb.h
 gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_gsm_fr_decode_ps.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_40_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_cvsd_decode_bs.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_codec2_encode_sp.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_api.h
 gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g721_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_g723_40_encode_sb.h
+gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: ../gr-vocoder/swig/../include/vocoder_alaw_decode_bs.h
 gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml: gr-vocoder/swig/_vocoder_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for vocoder_swig_doc docs"
@@ -214,8 +213,8 @@ gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/clean:
 
 gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/depend: gr-vocoder/swig/vocoder_swigPYTHON_wrap.cxx
 gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/depend: gr-vocoder/swig/vocoder_swig.py
-gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/depend: gr-vocoder/swig/vocoder_swig_doc.i
 gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/depend: gr-vocoder/swig/vocoder_swig.tag
+gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/depend: gr-vocoder/swig/vocoder_swig_doc.i
 gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/depend: gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/index.xml
 gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/depend: gr-vocoder/swig/vocoder_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-vocoder/swig /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-vocoder/swig /home/katsikas/gnuradio/build/gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/DependInfo.cmake --color=$(COLOR)

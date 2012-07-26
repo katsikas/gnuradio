@@ -2998,6 +2998,131 @@ def constellation_8psk():
     Digital constellation for 8PSK.
     """
   return _digital_swig.constellation_8psk()
+class digital_constellation_dvbt_qpsk_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(digital_constellation_dvbt_qpsk)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(self) -> digital_constellation_dvbt_qpsk_sptr
+        __init__(self,  p) -> digital_constellation_dvbt_qpsk_sptr
+        """
+        this = _digital_swig.new_digital_constellation_dvbt_qpsk_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(self)"""
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr___deref__(self)
+
+    __swig_destroy__ = _digital_swig.delete_digital_constellation_dvbt_qpsk_sptr
+    __del__ = lambda self : None;
+    def points(self):
+        """
+        points(self) -> gr_complex_vector
+
+        Returns the set of points in this constellation.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_points(self)
+
+    def s_points(self):
+        """
+        s_points(self) -> gr_complex_vector
+
+        Returns the vector of points in this constellation. Raise error if dimensionality is not one.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_s_points(self)
+
+    def v_points(self):
+        """
+        v_points(self) -> std::vector<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>,std::allocator<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>)>)>
+
+        Returns a vector of vectors of points.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_v_points(self)
+
+    def decision_maker(self, *args, **kwargs):
+        """
+        decision_maker(self, gr_complex sample) -> unsigned int
+
+        Returns the constellation point that matches best.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_decision_maker(self, *args, **kwargs)
+
+    def decision_maker_v(self, *args, **kwargs):
+        """
+        decision_maker_v(self, gr_complex_vector sample) -> unsigned int
+
+        Takes a vector rather than a pointer. Better for SWIG wrapping.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_decision_maker_v(self, *args, **kwargs)
+
+    def map_to_points_v(self, *args, **kwargs):
+        """map_to_points_v(self, unsigned int value) -> gr_complex_vector"""
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_map_to_points_v(self, *args, **kwargs)
+
+    def bits_per_symbol(self):
+        """bits_per_symbol(self) -> unsigned int"""
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_bits_per_symbol(self)
+
+    def arity(self):
+        """arity(self) -> unsigned int"""
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_arity(self)
+
+    def base(self):
+        """base(self) -> digital_constellation_sptr"""
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_base(self)
+
+    def apply_pre_diff_code(self):
+        """
+        apply_pre_diff_code(self) -> bool
+
+        Whether to apply an encoding before doing differential encoding. (e.g. gray coding)
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_apply_pre_diff_code(self)
+
+    def set_pre_diff_code(self, *args, **kwargs):
+        """
+        set_pre_diff_code(self, bool a)
+
+        Whether to apply an encoding before doing differential encoding. (e.g. gray coding)
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_set_pre_diff_code(self, *args, **kwargs)
+
+    def pre_diff_code(self):
+        """
+        pre_diff_code(self) -> unsigned_int_vector
+
+        Returns the encoding to apply before differential encoding.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_pre_diff_code(self)
+
+    def rotational_symmetry(self):
+        """
+        rotational_symmetry(self) -> unsigned int
+
+        Returns the order of rotational symmetry.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_rotational_symmetry(self)
+
+    def dimensionality(self):
+        """
+        dimensionality(self) -> unsigned int
+
+        Returns the number of complex numbers in a single symbol.
+        """
+        return _digital_swig.digital_constellation_dvbt_qpsk_sptr_dimensionality(self)
+
+digital_constellation_dvbt_qpsk_sptr_swigregister = _digital_swig.digital_constellation_dvbt_qpsk_sptr_swigregister
+digital_constellation_dvbt_qpsk_sptr_swigregister(digital_constellation_dvbt_qpsk_sptr)
+
+
+def constellation_dvbt_qpsk():
+  """
+    constellation_dvbt_qpsk() -> digital_constellation_dvbt_qpsk_sptr
+
+    Digital constellation for QPSK.
+    """
+  return _digital_swig.constellation_dvbt_qpsk()
 digital_constellation_calcdist_sptr.__repr__ = lambda self: '<constellation calcdist (m=%s)>' % str(len(self.points()))
 digital_constellation_rect_sptr.__repr__ = lambda self: '<constellation rect (m=%s)>' % str(len(self.points()))
 digital_constellation_psk_sptr.__repr__ = lambda self: '<constellation psk (m=%s)>' % str(len(self.points()))

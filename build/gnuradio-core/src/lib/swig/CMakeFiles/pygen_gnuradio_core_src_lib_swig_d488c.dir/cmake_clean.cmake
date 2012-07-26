@@ -16,15 +16,13 @@ FILE(REMOVE_RECURSE
   "gnuradio_core_hier.pyo"
   "gnuradio_core_hierPYTHON_wrap.cxx"
   "gnuradio_core_hier.py"
-  "hier_swig_doc.i"
   "gnuradio_core_hier.tag"
-  "hier_swig_doc_swig_docs/xml/index.xml"
-  "hier_swig_doc_swig_docs/xml/combine.xslt"
   "runtime_swig_doc.i"
   "general_swig_doc.i"
   "gengen_swig_doc.i"
   "filter_swig_doc.i"
   "io_swig_doc.i"
+  "hier_swig_doc.i"
   "runtime_swig_doc_swig_docs/xml/index.xml"
   "runtime_swig_doc_swig_docs/xml/combine.xslt"
   "general_swig_doc_swig_docs/xml/index.xml"
@@ -35,6 +33,8 @@ FILE(REMOVE_RECURSE
   "filter_swig_doc_swig_docs/xml/combine.xslt"
   "io_swig_doc_swig_docs/xml/index.xml"
   "io_swig_doc_swig_docs/xml/combine.xslt"
+  "hier_swig_doc_swig_docs/xml/index.xml"
+  "hier_swig_doc_swig_docs/xml/combine.xslt"
 )
 
 # Per-language clean rules from dependency scanning.

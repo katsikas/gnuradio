@@ -26,7 +26,7 @@ import digital_swig
 import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
-import psk, qam
+import psk, qam, qpsk
 
 # /////////////////////////////////////////////////////////////////////////////
 #                   mod/demod with packets as i/o
