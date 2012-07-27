@@ -101,7 +101,7 @@ digital_constellation::get_closest_point(const gr_complex *sample)
   unsigned int min_index = 0;
   float min_euclid_dist;
   float euclid_dist;
-    
+
   min_euclid_dist = get_distance(0, sample);
   min_index = 0;
   for (unsigned int j = 1; j < d_arity; j++){
@@ -266,8 +266,8 @@ digital_constellation_sector::find_sector_values ()
 {
   unsigned int i;
   sector_values.clear();
-  for (i=0; i<n_sectors; i++) {	
-    printf("sec = %d\n",calc_sector_value(i));
+  for (i=0; i<n_sectors; i++) {
+    //printf("sec = %d\n",calc_sector_value(i));
     sector_values.push_back(calc_sector_value(i));
   }
 }

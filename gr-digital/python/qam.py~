@@ -125,13 +125,14 @@ def make_non_differential_constellation(m, gray_coded):
     	print "gray-coded"
         # Number rows and columns using gray codes.
         gcs = gray_code(side)
-
+	print gcs
         # Get inverse gray codes.
         i_gcs = mod_codes.invert_code(gcs)
-	
+	print i_gcs
     else:
         i_gcs = range(0, side)
-	
+	print "else"
+	print i_gcs
     # The distance between points is found.
     step = 2.0/(side-1)
 
@@ -143,7 +144,7 @@ def make_non_differential_constellation(m, gray_coded):
         y = gc_to_x[get_bits(i, 0, k/2)]
         x = gc_to_x[get_bits(i, k/2, k/2)]
         const_map.append(complex(x,y))
-   
+    print const_map
     return const_map
 
 # /////////////////////////////////////////////////////////////////////////////

@@ -38,6 +38,7 @@ from dvbt_constellations import *
 from modulation_utils import *
 from ofdm import *
 from dvbt_ofdm import *
+from dvbt_constellations import *
 from ofdm_receiver import *
 from ofdm_sync_fixed import *
 from ofdm_sync_ml import *
