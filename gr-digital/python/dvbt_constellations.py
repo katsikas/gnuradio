@@ -35,20 +35,18 @@ from generic_mod_demod import generic_mod, generic_demod
 import psk
 
 
-# Default number of points in constellation.
-_def_constellation_points = 16
 # Whether the quadrant bits are coded differentially.
 _def_differential = False
 # The default encoding (e.g. gray-code, set-partition)
 _def_mod_code = mod_codes.GRAY_CODE
 
 
-def dvbt_qpsk_constellation(m=_def_constellation_points, mod_code=_def_mod_code):
+def dvbt_qpsk_constellation(m, mod_code=_def_mod_code):
     """
     Creates a QPSK constellation object for DVB-T.
     """
-    
-    if m != _def_constellation_points:
+    print "QPSK mapping"
+    if m != 4:
         raise ValueError("QPSK can only have 4 constellation points.")
     return digital_swig.constellation_dvbt_qpsk()
 
@@ -58,16 +56,19 @@ def dvbt_qpsk_constellation(m=_def_constellation_points, mod_code=_def_mod_code)
 #                           QAM constellation
 # /////////////////////////////////////////////////////////////////////////////
 
-def dvbt_16qam_constellation(constellation_points=_def_constellation_points,
+def dvbt_16qam_constellation(m,
                       differential=_def_differential,
                       mod_code=_def_mod_code):
     """
     Creates a QAM constellation object.
     """
 
+    print "16QAM mapping"
+    if m != 16:
+        raise ValueError("16QAM can only have 16 constellation points.")
     gray_coded = True
 
-    side = int(sqrt(constellation_points))
+    side = int(sqrt(m))
     width = 2.0/(side-1)
 
     points = [complex(3,3),complex(3,1),complex(1,3), complex(1,1),
@@ -75,6 +76,8 @@ def dvbt_16qam_constellation(constellation_points=_def_constellation_points,
 	      complex(-3,3),complex(-3,1),complex(-1,3), complex(-1,1),
 	      complex(-3,-3),complex(-3,-1),complex(-1,-3),complex(-1,-1)]
 
+
+    print points
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
@@ -82,4 +85,44 @@ def dvbt_16qam_constellation(constellation_points=_def_constellation_points,
                                                     side, side, width, width)
     return constellation
 
+
+
+def dvbt_64qam_constellation(m,
+                      differential=_def_differential,
+                      mod_code=_def_mod_code):
+    """
+    Creates a QAM constellation object.
+    """
+
+    print "64QAM mapping"
+    if m != 64:
+        raise ValueError("64QAM can only have 64 constellation points.")
+    gray_coded = True
+
+    side = int(sqrt(m))
+    width = 2.0/(side-1)
+
+    points = [complex(7,7),complex(7,5),complex(5,7), complex(5,5),
+              complex(7,1),complex(7,3),complex(5,1),complex(5,3),
+	      complex(1,7),complex(1,5),complex(3,7), complex(3,5),
+              complex(1,1),complex(1,3),complex(3,1),complex(3,3),
+              complex(7,-7),complex(7,-5),complex(5,-7), complex(5,-5),
+              complex(7,-1),complex(7,-3),complex(5,-1),complex(5,-3),
+              complex(1,-7),complex(1,-5),complex(3,-7), complex(3,-5),
+              complex(1,-1),complex(1,-3),complex(3,-1),complex(3,-3),
+	      complex(-7,7),complex(-7,5),complex(-5,7), complex(-5,5),
+              complex(-7,1),complex(-7,3),complex(-5,1),complex(-5,3),
+              complex(-1,7),complex(-1,5),complex(-3,7), complex(-3,5),
+              complex(-1,1),complex(-1,3),complex(-3,1),complex(-3,3),
+              complex(-7,-7),complex(-7,-5),complex(-5,-7), complex(-5,-5),
+              complex(-7,-1),complex(-7,-3),complex(-5,-1),complex(-5,-3),
+              complex(-1,-7),complex(-1,-5),complex(-3,-7), complex(-3,-5),
+              complex(-1,-1),complex(-1,-3),complex(-3,-1),complex(-3,-3)]
+
+    # No pre-diff code
+    # Should add one so that we can gray-code the quadrant bits too.
+    pre_diff_code = []
+    constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
+                                                    side, side, width, width)
+    return constellation
 

@@ -97,7 +97,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
             constel = dvbt_constellations.dvbt_16qam_constellation(arity)
             #rotated_const = map(lambda pt: pt * (math.sqrt(10)), constel.points())
 	elif(self._modulation.find("qam64") >= 0):
-            constel = dvbt_constellations.dvbt_16qam_constellation(arity)
+            constel = dvbt_constellations.dvbt_64qam_constellation(arity)
             #rotated_const = map(lambda pt: pt * (math.sqrt(42)), constel.points())
 	rotated_const = constel.points()
 	print rotated_const
@@ -238,7 +238,7 @@ class dvbt_ofdm_demod(gr.hier_block2):
             constel = dvbt_constellations.dvbt_16qam_constellation(arity)
             #rotated_const = map(lambda pt: pt * (math.sqrt(10)), constel.points())
         elif(self._modulation.find("qam64") >= 0):
-            constel = dvbt_constellations.dvbt_16qam_constellation(arity)
+            constel = dvbt_constellations.dvbt_64qam_constellation(arity)
             #rotated_const = map(lambda pt: pt * (math.sqrt(42)), constel.points())
         #print rotated_const
 	rotated_const = constel.points()
