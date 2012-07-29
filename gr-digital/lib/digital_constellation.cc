@@ -15,6 +15,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
+
  * along with GNU Radio; see the file COPYING.  If not, write to
  * the Free Software Foundation, Inc., 51 Franklin Street,
  * Boston, MA 02110-1301, USA.
@@ -577,8 +578,8 @@ digital_constellation_dvbt_qpsk::digital_constellation_dvbt_qpsk ()
 
   d_constellation[0] = gr_complex(SQRT_TWO, SQRT_TWO);
   d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
-  d_constellation[2] = gr_complex(-SQRT_TWO, -SQRT_TWO);
-  d_constellation[3] = gr_complex(-SQRT_TWO, SQRT_TWO);
+  d_constellation[2] = gr_complex(-SQRT_TWO, SQRT_TWO);
+  d_constellation[3] = gr_complex(-SQRT_TWO, -SQRT_TWO);
 
   d_pre_diff_code.resize(4);
   d_pre_diff_code[0] = 0x0;
@@ -630,7 +631,7 @@ digital_constellation_16qam::digital_constellation_16qam (std::vector<gr_complex
 unsigned int
 digital_constellation_16qam::get_sector (const gr_complex *sample)
 {
-   printf("16qam: get sector \n");
+  //printf("16qam: get sector \n");
   int real_sector, imag_sector;
   unsigned int sector;
 
@@ -653,7 +654,7 @@ digital_constellation_16qam::get_sector (const gr_complex *sample)
 unsigned int
 digital_constellation_16qam::calc_sector_value (unsigned int sector)
 {
-  printf("16qam: calc sector value \n");
+  //printf("16qam: calc sector value \n");
   unsigned int real_sector, imag_sector;
   gr_complex sector_center;
   unsigned int closest_point;
@@ -671,13 +672,13 @@ digital_constellation_16qam::find_sector_values ()
   unsigned int i;
   sector_values.clear();
   for (i=0; i<n_sectors; i++) {
-    printf("%d sec = %d\n",i,calc_sector_value(i));
+    //printf("%d sec = %d\n",i,calc_sector_value(i));
     sector_values.push_back(calc_sector_value(i));
   }
 }
 
 
-digital_constellation_64qam_sptr 
+digital_constellation_64qam_sptr
 digital_make_constellation_64qam(std::vector<gr_complex> constellation,
 				std::vector<unsigned int> pre_diff_code,
 				unsigned int rotational_symmetry,
@@ -707,7 +708,7 @@ digital_constellation_64qam::digital_constellation_64qam (std::vector<gr_complex
 unsigned int
 digital_constellation_64qam::get_sector (const gr_complex *sample)
 {
-   printf("64qam: get sector \n");
+  //printf("64qam: get sector \n");
   int real_sector, imag_sector;
   unsigned int sector;
 
@@ -730,7 +731,7 @@ digital_constellation_64qam::get_sector (const gr_complex *sample)
 unsigned int
 digital_constellation_64qam::calc_sector_value (unsigned int sector)
 {
-  printf("64qam: calc sector value \n");
+  //printf("64qam: calc sector value \n");
   unsigned int real_sector, imag_sector;
   gr_complex sector_center;
   unsigned int closest_point;
@@ -748,7 +749,7 @@ digital_constellation_64qam::find_sector_values ()
   unsigned int i;
   sector_values.clear();
   for (i=0; i<n_sectors; i++) {
-    printf("%d sec = %d\n",i,calc_sector_value(i));
+    //printf("%d sec = %d\n",i,calc_sector_value(i));
     sector_values.push_back(calc_sector_value(i));
   }
 }
