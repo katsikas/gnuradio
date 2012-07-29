@@ -51,40 +51,35 @@ def dvbt_qpsk_constellation(m, mod_code=_def_mod_code):
     return digital_swig.constellation_dvbt_qpsk()
 
 
-
 # /////////////////////////////////////////////////////////////////////////////
 #                           QAM constellation
 # /////////////////////////////////////////////////////////////////////////////
 
-def dvbt_16qam_constellation(m,
-                      differential=_def_differential,
-                      mod_code=_def_mod_code):
+def dvbt_16qam_constellation(m, differential=_def_differential, mod_code=_def_mod_code):
     """
     Creates a QAM constellation object.
     """
-
-    print "16QAM mapping"
     if m != 16:
         raise ValueError("16QAM can only have 16 constellation points.")
-    gray_coded = True
-
+        
+    if mod_code != mod_codes.GRAY_CODE:
+        raise ValueError("Gray encoding missing.")
+        
+        
     side = int(sqrt(m))
-    width = 2.0/(side-1)
-
+    width = 2.0
+    
     points = [complex(3,3),complex(3,1),complex(1,3), complex(1,1),
-	      complex(3,-3),complex(3,-1),complex(1,-3),complex(1,-1),
-	      complex(-3,3),complex(-3,1),complex(-1,3), complex(-1,1),
-	      complex(-3,-3),complex(-3,-1),complex(-1,-3),complex(-1,-1)]
+			  complex(3,-3),complex(3,-1),complex(1,-3),complex(1,-1),
+			  complex(-3,3),complex(-3,1),complex(-1,3), complex(-1,1),
+			  complex(-3,-3),complex(-3,-1),complex(-1,-3),complex(-1,-1)]
 
-
-    print points
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
-    constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
+    constellation = digital_swig.constellation_16qam(points, pre_diff_code, 4,
                                                     side, side, width, width)
     return constellation
-
 
 
 def dvbt_64qam_constellation(m,
@@ -94,13 +89,14 @@ def dvbt_64qam_constellation(m,
     Creates a QAM constellation object.
     """
 
-    print "64QAM mapping"
     if m != 64:
         raise ValueError("64QAM can only have 64 constellation points.")
-    gray_coded = True
-
+        
+    if mod_code != mod_codes.GRAY_CODE:
+        raise ValueError("Gray encoding missing.")
+        
     side = int(sqrt(m))
-    width = 2.0/(side-1)
+    width = 2.0
 
     points = [complex(7,7),complex(7,5),complex(5,7), complex(5,5),
               complex(7,1),complex(7,3),complex(5,1),complex(5,3),
@@ -122,7 +118,6 @@ def dvbt_64qam_constellation(m,
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
-    constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
+    constellation = digital_swig.constellation_64qam(points, pre_diff_code, 4,
                                                     side, side, width, width)
     return constellation
-

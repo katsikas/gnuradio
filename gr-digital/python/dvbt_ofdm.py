@@ -27,6 +27,7 @@ import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
 import psk, qam, dvbt_constellations, qpsk
+from utils import mod_codes, gray_code
 
 # /////////////////////////////////////////////////////////////////////////////
 #                   mod/demod with packets as i/o
@@ -57,7 +58,6 @@ class dvbt_ofdm_mod(gr.hier_block2):
 				gr.io_signature(1, 1, gr.sizeof_gr_complex)) # Output signature
 
 	
-	#Sqrt_Two = 0.707        # 0.707107
         self._pad_for_usrp = pad_for_usrp
         self._modulation = options.modulation
         self._fft_length = options.fft_length
@@ -94,13 +94,15 @@ class dvbt_ofdm_mod(gr.hier_block2):
             constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
 	    rotated_const = constel.points()
         elif(self._modulation.find("qam16") >= 0):
-            constel = dvbt_constellations.dvbt_16qam_constellation(arity)
-            #rotated_const = map(lambda pt: pt * (math.sqrt(10)), constel.points())
+            constel = dvbt_constellations.dvbt_16qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt * (math.sqrt(10)), constel.points())
 	elif(self._modulation.find("qam64") >= 0):
-            constel = dvbt_constellations.dvbt_64qam_constellation(arity)
-            #rotated_const = map(lambda pt: pt * (math.sqrt(42)), constel.points())
+            constel = dvbt_constellations.dvbt_64qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt * (math.sqrt(42)), constel.points())
+
 	rotated_const = constel.points()
 	print rotated_const
+
         self._pkt_input = digital_swig.ofdm_mapper_bcv(rotated_const,
                                                        msgq_limit,
                                                        options.occupied_tones,
@@ -201,7 +203,6 @@ class dvbt_ofdm_demod(gr.hier_block2):
 				gr.io_signature(1, 1, gr.sizeof_gr_complex)) # Output signature
 
 
-	#Sqrt_Two = 0.707 	# 0.707107
         self._rcvd_pktq = gr.msg_queue()          # holds packets from the PHY
 
         self._modulation = options.modulation
@@ -235,13 +236,14 @@ class dvbt_ofdm_demod(gr.hier_block2):
             constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
             rotated_const = constel.points()
         elif(self._modulation.find("qam16") >= 0):
-            constel = dvbt_constellations.dvbt_16qam_constellation(arity)
-            #rotated_const = map(lambda pt: pt * (math.sqrt(10)), constel.points())
+            constel = dvbt_constellations.dvbt_16qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt * (math.sqrt(10)), constel.points())
         elif(self._modulation.find("qam64") >= 0):
-            constel = dvbt_constellations.dvbt_64qam_constellation(arity)
-            #rotated_const = map(lambda pt: pt * (math.sqrt(42)), constel.points())
-        #print rotated_const
+            constel = dvbt_constellations.dvbt_64qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt * (math.sqrt(42)), constel.points())
+
 	rotated_const = constel.points()
+        print rotated_const
 
         phgain = 0.25
         frgain = phgain*phgain / 4.0

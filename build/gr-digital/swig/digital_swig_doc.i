@@ -332,6 +332,30 @@ The error value and tap update equations (for p=2) can be found in:
 \"D. Godard, \"Self-Recovering Equalization and Carrier Tracking in Two-Dimensional Data Communication Systems,\" IEEE Transactions on
  Communications, Vol. 28, No. 11, pp. 1867 - 1875, 1980.\""
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 %feature("docstring") digital_constellation_8psk "Digital constellation for 8PSK."
 
 

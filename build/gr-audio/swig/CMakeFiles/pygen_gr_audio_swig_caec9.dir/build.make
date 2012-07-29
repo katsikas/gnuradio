@@ -58,13 +58,14 @@ gr-audio/swig/audio_swig.pyo: gr-audio/swig/audio_swig.py
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gr_shared_ptr.i
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
-gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_block.h
+gr-audio/swig/audio_swigPYTHON_wrap.cxx: gr-audio/swig/audio_swig_doc.i
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_block.h
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gr-audio/include/gr_audio_sink.h
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gr-audio/include/gr_audio_source.h
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_complex.h
+gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_block.h
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gr-audio/swig/audio_swig.i
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
 gr-audio/swig/audio_swigPYTHON_wrap.cxx: /usr/include/stdint.h
@@ -80,20 +81,20 @@ gr-audio/swig/audio_swigPYTHON_wrap.cxx: ../gr-audio/swig/audio_swig.i
 
 gr-audio/swig/audio_swig.py: gr-audio/swig/audio_swigPYTHON_wrap.cxx
 
-gr-audio/swig/audio_swig.tag: gr-audio/swig/audio_swig_doc.i
-gr-audio/swig/audio_swig.tag: gr-audio/swig/_audio_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating audio_swig.tag"
-	cd /home/katsikas/gnuradio/build/gr-audio/swig && ./_audio_swig_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig.tag
-
 gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_api.h
 gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_sink.h
 gr-audio/swig/audio_swig_doc.i: ../gr-audio/swig/../include/gr_audio_source.h
 gr-audio/swig/audio_swig_doc.i: gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating audio_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig_doc.i
+
+gr-audio/swig/audio_swig.tag: gr-audio/swig/audio_swig_doc.i
+gr-audio/swig/audio_swig.tag: gr-audio/swig/_audio_swig_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating audio_swig.tag"
+	cd /home/katsikas/gnuradio/build/gr-audio/swig && ./_audio_swig_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-audio/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-audio/swig/audio_swig.tag
 
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_api.h
 gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml: ../gr-audio/swig/../include/gr_audio_sink.h
@@ -111,8 +112,8 @@ pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig.pyc
 pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig.pyo
 pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swigPYTHON_wrap.cxx
 pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig.py
-pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig.tag
 pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig_doc.i
+pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig.tag
 pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig_doc_swig_docs/xml/index.xml
 pygen_gr_audio_swig_caec9: gr-audio/swig/audio_swig_doc_swig_docs/xml/combine.xslt
 pygen_gr_audio_swig_caec9: gr-audio/swig/CMakeFiles/pygen_gr_audio_swig_caec9.dir/build.make

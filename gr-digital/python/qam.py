@@ -112,7 +112,6 @@ def make_differential_constellation(m, gray_coded):
         quad = get_bits(i, k-2, 2)
         const_map.append(get_c(x, y, quad))
 
-    print const_map
     return const_map
 
 def make_non_differential_constellation(m, gray_coded):
@@ -122,7 +121,6 @@ def make_non_differential_constellation(m, gray_coded):
     # Each symbol holds k bits.
     k = int(log(m) / log(2.0))
     if gray_coded:
-    	print "gray-coded"
         # Number rows and columns using gray codes.
         gcs = gray_code(side)
 
@@ -168,6 +166,7 @@ def qam_constellation(constellation_points=_def_constellation_points,
         points = make_non_differential_constellation(constellation_points, gray_coded)
     side = int(sqrt(constellation_points))
     width = 2.0/(side-1)
+
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []

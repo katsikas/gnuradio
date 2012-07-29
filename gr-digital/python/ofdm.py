@@ -26,7 +26,7 @@ import digital_swig
 import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
-import psk, qam, qpsk
+import psk, qam
 
 # /////////////////////////////////////////////////////////////////////////////
 #                   mod/demod with packets as i/o
@@ -96,7 +96,7 @@ class ofdm_mod(gr.hier_block2):
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())
-        print rotated_const
+        #print rotated_const
         self._pkt_input = digital_swig.ofdm_mapper_bcv(rotated_const,
                                                        msgq_limit,
                                                        options.occupied_tones,

@@ -477,4 +477,122 @@ class DIGITAL_API digital_constellation_dvbt_qpsk : public digital_constellation
   
 };
 
+
+/************************************************************/
+/* digital_constellation_dvbt_16qam                         */
+/*                                                          */
+/* Explicit Implementation for DVBT.                        */
+/*                                                          */
+/************************************************************/
+class digital_constellation_16qam;
+typedef boost::shared_ptr<digital_constellation_16qam> digital_constellation_16qam_sptr;
+
+// public constructor
+DIGITAL_API digital_constellation_16qam_sptr 
+digital_make_constellation_16qam (std::vector<gr_complex> constellation,
+				 std::vector<unsigned int> pre_diff_code,
+				 unsigned int rotational_symmetry,
+				 unsigned int real_sectors,
+				 unsigned int imag_sectors,
+				 float width_real_sectors,
+				 float width_imag_sectors);
+
+class DIGITAL_API digital_constellation_16qam : public digital_constellation_sector
+{
+ public:
+
+  digital_constellation_16qam (std::vector<gr_complex> constellation,
+			      std::vector<unsigned int> pre_diff_code,
+			      unsigned int rotational_symmetry,
+			      unsigned int real_sectors,
+			      unsigned int imag_sectors,
+			      float width_real_sectors,
+			      float width_imag_sectors);
+
+ protected:
+
+  void find_sector_values ();
+
+  unsigned int get_sector (const gr_complex *sample);
+  
+  unsigned int calc_sector_value (unsigned int sector);
+
+ private:
+
+  std::vector<unsigned int> sector_values;
+  unsigned int n_real_sectors;
+  unsigned int n_imag_sectors;
+  float d_width_real_sectors;
+  float d_width_imag_sectors;
+
+  friend DIGITAL_API digital_constellation_16qam_sptr
+  digital_make_constellation_16qam (std::vector<gr_complex> constellation,
+				   std::vector<unsigned int> pre_diff_code,
+				   unsigned int rotational_symmetry,
+				   unsigned int real_sectors,
+				   unsigned int imag_sectors,
+				   float width_real_sectors,
+				   float width_imag_sectors);
+  
+};
+
+/************************************************************/
+/* digital_constellation_dvbt_64qam                         */
+/*                                                          */
+/* Explicit Implementation for DVBT.                        */
+/*                                                          */
+/************************************************************/
+class digital_constellation_64qam;
+typedef boost::shared_ptr<digital_constellation_64qam> digital_constellation_64qam_sptr;
+
+// public constructor
+DIGITAL_API digital_constellation_64qam_sptr 
+digital_make_constellation_64qam (std::vector<gr_complex> constellation,
+				 std::vector<unsigned int> pre_diff_code,
+				 unsigned int rotational_symmetry,
+				 unsigned int real_sectors,
+				 unsigned int imag_sectors,
+				 float width_real_sectors,
+				 float width_imag_sectors);
+
+class DIGITAL_API digital_constellation_64qam : public digital_constellation_sector
+{
+ public:
+
+  digital_constellation_64qam (std::vector<gr_complex> constellation,
+			      std::vector<unsigned int> pre_diff_code,
+			      unsigned int rotational_symmetry,
+			      unsigned int real_sectors,
+			      unsigned int imag_sectors,
+			      float width_real_sectors,
+			      float width_imag_sectors);
+
+ protected:
+
+  void find_sector_values ();
+
+  unsigned int get_sector (const gr_complex *sample);
+  
+  unsigned int calc_sector_value (unsigned int sector);
+
+ private:
+
+  std::vector<unsigned int> sector_values;
+  unsigned int n_real_sectors;
+  unsigned int n_imag_sectors;
+  float d_width_real_sectors;
+  float d_width_imag_sectors;
+
+  friend DIGITAL_API digital_constellation_64qam_sptr
+  digital_make_constellation_64qam (std::vector<gr_complex> constellation,
+				   std::vector<unsigned int> pre_diff_code,
+				   unsigned int rotational_symmetry,
+				   unsigned int real_sectors,
+				   unsigned int imag_sectors,
+				   float width_real_sectors,
+				   float width_imag_sectors);
+  
+};
+
+
 #endif

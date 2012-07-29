@@ -267,12 +267,11 @@ digital_constellation_sector::find_sector_values ()
   unsigned int i;
   sector_values.clear();
   for (i=0; i<n_sectors; i++) {
-    //printf("sec = %d\n",calc_sector_value(i));
     sector_values.push_back(calc_sector_value(i));
   }
 }
 
-digital_constellation_rect_sptr 
+digital_constellation_rect_sptr
 digital_make_constellation_rect(std::vector<gr_complex> constellation,
 				std::vector<unsigned int> pre_diff_code,
 				unsigned int rotational_symmetry,
@@ -285,7 +284,7 @@ digital_make_constellation_rect(std::vector<gr_complex> constellation,
 					  real_sectors, imag_sectors,
 					  width_real_sectors,
 					  width_imag_sectors));
-  }
+}
 
 digital_constellation_rect::digital_constellation_rect (std::vector<gr_complex> constellation,
 							std::vector<unsigned int> pre_diff_code,
@@ -336,8 +335,8 @@ digital_constellation_rect::calc_sector_value (unsigned int sector)
 }
 
 
-digital_constellation_psk_sptr 
-digital_make_constellation_psk(std::vector<gr_complex> constellation, 
+digital_constellation_psk_sptr
+digital_make_constellation_psk(std::vector<gr_complex> constellation,
 			       std::vector<unsigned int> pre_diff_code,
 			       unsigned int n_sectors)
 {
@@ -364,21 +363,19 @@ digital_constellation_psk::get_sector (const gr_complex *sample)
     sector += n_sectors;
   return sector;
 }
-  
+
 unsigned int
 digital_constellation_psk::calc_sector_value (unsigned int sector)
 {
   float phase = sector * M_TWOPI / n_sectors;
-  //printf("phase = %f \n",phase);
   gr_complex sector_center = gr_complex(cos(phase), sin(phase));
   unsigned int closest_point = get_closest_point(&sector_center);
-  //printf("Closest point  = %d \n",closest_point);
 
   return closest_point;
 }
 
 
-digital_constellation_bpsk_sptr 
+digital_constellation_bpsk_sptr
 digital_make_constellation_bpsk()
 {
   return digital_constellation_bpsk_sptr(new digital_constellation_bpsk ());
@@ -401,7 +398,7 @@ digital_constellation_bpsk::decision_maker(const gr_complex *sample)
 }
 
 
-digital_constellation_qpsk_sptr 
+digital_constellation_qpsk_sptr
 digital_make_constellation_qpsk()
 {
   return digital_constellation_qpsk_sptr(new digital_constellation_qpsk ());
@@ -415,12 +412,6 @@ digital_constellation_qpsk::digital_constellation_qpsk ()
   d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
   d_constellation[2] = gr_complex(-SQRT_TWO, SQRT_TWO);
   d_constellation[3] = gr_complex(SQRT_TWO, SQRT_TWO);
-
-
-  /*d_constellation[0] = gr_complex(SQRT_TWO, SQRT_TWO);
-  d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
-  d_constellation[2] = gr_complex(-SQRT_TWO, -SQRT_TWO);
-  d_constellation[3] = gr_complex(-SQRT_TWO, SQRT_TWO);
 
 
   /*
@@ -470,7 +461,7 @@ digital_constellation_qpsk::decision_maker(const gr_complex *sample)
 /********************************************************************/
 
 
-digital_constellation_dqpsk_sptr 
+digital_constellation_dqpsk_sptr
 digital_make_constellation_dqpsk()
 {
   return digital_constellation_dqpsk_sptr(new digital_constellation_dqpsk ());
@@ -522,7 +513,7 @@ digital_constellation_dqpsk::decision_maker(const gr_complex *sample)
   }
 }
 
-digital_constellation_8psk_sptr 
+digital_constellation_8psk_sptr
 digital_make_constellation_8psk()
 {
   return digital_constellation_8psk_sptr(new digital_constellation_8psk ());
@@ -603,9 +594,163 @@ digital_constellation_dvbt_qpsk::digital_constellation_dvbt_qpsk ()
 unsigned int
 digital_constellation_dvbt_qpsk::decision_maker(const gr_complex *sample)
 {
-	printf("Decision maker for dvbt_qpsk \n");
   // Real component determines small bit.
   // Imag component determines big bit.
   return 2*(imag(*sample)>0) + (real(*sample)>0);
 }
+
+
+digital_constellation_16qam_sptr 
+digital_make_constellation_16qam(std::vector<gr_complex> constellation,
+				std::vector<unsigned int> pre_diff_code,
+				unsigned int rotational_symmetry,
+				unsigned int real_sectors, unsigned int imag_sectors,
+				float width_real_sectors, float width_imag_sectors)
+{
+  return digital_constellation_16qam_sptr(new digital_constellation_16qam
+					 (constellation, pre_diff_code,
+					  rotational_symmetry,
+					  real_sectors, imag_sectors,
+					  width_real_sectors,
+					  width_imag_sectors));
+}
+
+digital_constellation_16qam::digital_constellation_16qam (std::vector<gr_complex> constellation,
+							std::vector<unsigned int> pre_diff_code,
+							unsigned int rotational_symmetry,
+							unsigned int real_sectors, unsigned int imag_sectors,
+							float width_real_sectors, float width_imag_sectors) :
+  digital_constellation_sector(constellation, pre_diff_code, rotational_symmetry, 1, real_sectors * imag_sectors),
+  n_real_sectors(real_sectors), n_imag_sectors(imag_sectors),
+  d_width_real_sectors(width_real_sectors), d_width_imag_sectors(width_imag_sectors)
+{
+  find_sector_values();
+}
+
+unsigned int
+digital_constellation_16qam::get_sector (const gr_complex *sample)
+{
+   printf("16qam: get sector \n");
+  int real_sector, imag_sector;
+  unsigned int sector;
+
+  real_sector = int(real(*sample)/d_width_real_sectors + n_real_sectors/2.0);
+  if(real_sector < 0)
+    real_sector = 0;
+  if(real_sector >= (int)n_real_sectors)
+    real_sector = n_real_sectors-1;
+
+  imag_sector = int(imag(*sample)/d_width_imag_sectors + n_imag_sectors/2.0);
+  if(imag_sector < 0)
+    imag_sector = 0;
+  if(imag_sector >= (int)n_imag_sectors)
+    imag_sector = n_imag_sectors-1;
+
+  sector = real_sector * n_imag_sectors + imag_sector;
+  return sector;
+}
+
+unsigned int
+digital_constellation_16qam::calc_sector_value (unsigned int sector)
+{
+  printf("16qam: calc sector value \n");
+  unsigned int real_sector, imag_sector;
+  gr_complex sector_center;
+  unsigned int closest_point;
+  real_sector = float(sector)/n_imag_sectors;
+  imag_sector = sector - real_sector * n_imag_sectors;
+  sector_center = gr_complex((real_sector + 0.5 - n_real_sectors/2.0) * d_width_real_sectors,
+			     (imag_sector + 0.5 - n_imag_sectors/2.0) * d_width_imag_sectors);
+  closest_point = get_closest_point(&sector_center);
+  return closest_point;
+}
+
+void
+digital_constellation_16qam::find_sector_values ()
+{
+  unsigned int i;
+  sector_values.clear();
+  for (i=0; i<n_sectors; i++) {
+    printf("%d sec = %d\n",i,calc_sector_value(i));
+    sector_values.push_back(calc_sector_value(i));
+  }
+}
+
+
+digital_constellation_64qam_sptr 
+digital_make_constellation_64qam(std::vector<gr_complex> constellation,
+				std::vector<unsigned int> pre_diff_code,
+				unsigned int rotational_symmetry,
+				unsigned int real_sectors, unsigned int imag_sectors,
+				float width_real_sectors, float width_imag_sectors)
+{
+  return digital_constellation_64qam_sptr(new digital_constellation_64qam
+					 (constellation, pre_diff_code,
+					  rotational_symmetry,
+					  real_sectors, imag_sectors,
+					  width_real_sectors,
+					  width_imag_sectors));
+}
+
+digital_constellation_64qam::digital_constellation_64qam (std::vector<gr_complex> constellation,
+							std::vector<unsigned int> pre_diff_code,
+							unsigned int rotational_symmetry,
+							unsigned int real_sectors, unsigned int imag_sectors,
+							float width_real_sectors, float width_imag_sectors) :
+  digital_constellation_sector(constellation, pre_diff_code, rotational_symmetry, 1, real_sectors * imag_sectors),
+  n_real_sectors(real_sectors), n_imag_sectors(imag_sectors),
+  d_width_real_sectors(width_real_sectors), d_width_imag_sectors(width_imag_sectors)
+{
+  find_sector_values();
+}
+
+unsigned int
+digital_constellation_64qam::get_sector (const gr_complex *sample)
+{
+   printf("64qam: get sector \n");
+  int real_sector, imag_sector;
+  unsigned int sector;
+
+  real_sector = int(real(*sample)/d_width_real_sectors + n_real_sectors/2.0);
+  if(real_sector < 0)
+    real_sector = 0;
+  if(real_sector >= (int)n_real_sectors)
+    real_sector = n_real_sectors-1;
+
+  imag_sector = int(imag(*sample)/d_width_imag_sectors + n_imag_sectors/2.0);
+  if(imag_sector < 0)
+    imag_sector = 0;
+  if(imag_sector >= (int)n_imag_sectors)
+    imag_sector = n_imag_sectors-1;
+
+  sector = real_sector * n_imag_sectors + imag_sector;
+  return sector;
+}
+
+unsigned int
+digital_constellation_64qam::calc_sector_value (unsigned int sector)
+{
+  printf("64qam: calc sector value \n");
+  unsigned int real_sector, imag_sector;
+  gr_complex sector_center;
+  unsigned int closest_point;
+  real_sector = float(sector)/n_imag_sectors;
+  imag_sector = sector - real_sector * n_imag_sectors;
+  sector_center = gr_complex((real_sector + 0.5 - n_real_sectors/2.0) * d_width_real_sectors,
+			     (imag_sector + 0.5 - n_imag_sectors/2.0) * d_width_imag_sectors);
+  closest_point = get_closest_point(&sector_center);
+  return closest_point;
+}
+
+void
+digital_constellation_64qam::find_sector_values ()
+{
+  unsigned int i;
+  sector_values.clear();
+  for (i=0; i<n_sectors; i++) {
+    printf("%d sec = %d\n",i,calc_sector_value(i));
+    sector_values.push_back(calc_sector_value(i));
+  }
+}
+
 /********************************************************************/
