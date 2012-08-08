@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gr-qtgui/lib/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/rule
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/rule
 
 # Convenience name for target.
@@ -177,15 +180,20 @@ gnuradio-qtgui: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/rule
 
 # fast build rule for target.
 gnuradio-qtgui/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build
 .PHONY : gnuradio-qtgui/fast
+
+# Manual pre-install relink rule for target.
+gnuradio-qtgui/preinstall:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/preinstall
+.PHONY : gnuradio-qtgui/preinstall
 
 ConstellationDisplayPlot.o: ConstellationDisplayPlot.cc.o
 .PHONY : ConstellationDisplayPlot.o
 
 # target to build an object file
 ConstellationDisplayPlot.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o
 .PHONY : ConstellationDisplayPlot.cc.o
 
 ConstellationDisplayPlot.i: ConstellationDisplayPlot.cc.i
@@ -193,7 +201,7 @@ ConstellationDisplayPlot.i: ConstellationDisplayPlot.cc.i
 
 # target to preprocess a source file
 ConstellationDisplayPlot.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.i
 .PHONY : ConstellationDisplayPlot.cc.i
 
 ConstellationDisplayPlot.s: ConstellationDisplayPlot.cc.s
@@ -201,15 +209,39 @@ ConstellationDisplayPlot.s: ConstellationDisplayPlot.cc.s
 
 # target to generate assembly for a file
 ConstellationDisplayPlot.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.s
 .PHONY : ConstellationDisplayPlot.cc.s
+
+ConstellationDisplayPlotEnhanced.o: ConstellationDisplayPlotEnhanced.cc.o
+.PHONY : ConstellationDisplayPlotEnhanced.o
+
+# target to build an object file
+ConstellationDisplayPlotEnhanced.cc.o:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o
+.PHONY : ConstellationDisplayPlotEnhanced.cc.o
+
+ConstellationDisplayPlotEnhanced.i: ConstellationDisplayPlotEnhanced.cc.i
+.PHONY : ConstellationDisplayPlotEnhanced.i
+
+# target to preprocess a source file
+ConstellationDisplayPlotEnhanced.cc.i:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.i
+.PHONY : ConstellationDisplayPlotEnhanced.cc.i
+
+ConstellationDisplayPlotEnhanced.s: ConstellationDisplayPlotEnhanced.cc.s
+.PHONY : ConstellationDisplayPlotEnhanced.s
+
+# target to generate assembly for a file
+ConstellationDisplayPlotEnhanced.cc.s:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.s
+.PHONY : ConstellationDisplayPlotEnhanced.cc.s
 
 FrequencyDisplayPlot.o: FrequencyDisplayPlot.cc.o
 .PHONY : FrequencyDisplayPlot.o
 
 # target to build an object file
 FrequencyDisplayPlot.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o
 .PHONY : FrequencyDisplayPlot.cc.o
 
 FrequencyDisplayPlot.i: FrequencyDisplayPlot.cc.i
@@ -217,7 +249,7 @@ FrequencyDisplayPlot.i: FrequencyDisplayPlot.cc.i
 
 # target to preprocess a source file
 FrequencyDisplayPlot.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.i
 .PHONY : FrequencyDisplayPlot.cc.i
 
 FrequencyDisplayPlot.s: FrequencyDisplayPlot.cc.s
@@ -225,7 +257,7 @@ FrequencyDisplayPlot.s: FrequencyDisplayPlot.cc.s
 
 # target to generate assembly for a file
 FrequencyDisplayPlot.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.s
 .PHONY : FrequencyDisplayPlot.cc.s
 
 SpectrumGUIClass.o: SpectrumGUIClass.cc.o
@@ -233,7 +265,7 @@ SpectrumGUIClass.o: SpectrumGUIClass.cc.o
 
 # target to build an object file
 SpectrumGUIClass.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o
 .PHONY : SpectrumGUIClass.cc.o
 
 SpectrumGUIClass.i: SpectrumGUIClass.cc.i
@@ -241,7 +273,7 @@ SpectrumGUIClass.i: SpectrumGUIClass.cc.i
 
 # target to preprocess a source file
 SpectrumGUIClass.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.i
 .PHONY : SpectrumGUIClass.cc.i
 
 SpectrumGUIClass.s: SpectrumGUIClass.cc.s
@@ -249,7 +281,7 @@ SpectrumGUIClass.s: SpectrumGUIClass.cc.s
 
 # target to generate assembly for a file
 SpectrumGUIClass.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.s
 .PHONY : SpectrumGUIClass.cc.s
 
 TimeDomainDisplayPlot.o: TimeDomainDisplayPlot.cc.o
@@ -257,7 +289,7 @@ TimeDomainDisplayPlot.o: TimeDomainDisplayPlot.cc.o
 
 # target to build an object file
 TimeDomainDisplayPlot.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o
 .PHONY : TimeDomainDisplayPlot.cc.o
 
 TimeDomainDisplayPlot.i: TimeDomainDisplayPlot.cc.i
@@ -265,7 +297,7 @@ TimeDomainDisplayPlot.i: TimeDomainDisplayPlot.cc.i
 
 # target to preprocess a source file
 TimeDomainDisplayPlot.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.i
 .PHONY : TimeDomainDisplayPlot.cc.i
 
 TimeDomainDisplayPlot.s: TimeDomainDisplayPlot.cc.s
@@ -273,15 +305,87 @@ TimeDomainDisplayPlot.s: TimeDomainDisplayPlot.cc.s
 
 # target to generate assembly for a file
 TimeDomainDisplayPlot.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.s
 .PHONY : TimeDomainDisplayPlot.cc.s
+
+VectorAnalyzerDisplayForm.o: VectorAnalyzerDisplayForm.cc.o
+.PHONY : VectorAnalyzerDisplayForm.o
+
+# target to build an object file
+VectorAnalyzerDisplayForm.cc.o:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o
+.PHONY : VectorAnalyzerDisplayForm.cc.o
+
+VectorAnalyzerDisplayForm.i: VectorAnalyzerDisplayForm.cc.i
+.PHONY : VectorAnalyzerDisplayForm.i
+
+# target to preprocess a source file
+VectorAnalyzerDisplayForm.cc.i:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.i
+.PHONY : VectorAnalyzerDisplayForm.cc.i
+
+VectorAnalyzerDisplayForm.s: VectorAnalyzerDisplayForm.cc.s
+.PHONY : VectorAnalyzerDisplayForm.s
+
+# target to generate assembly for a file
+VectorAnalyzerDisplayForm.cc.s:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.s
+.PHONY : VectorAnalyzerDisplayForm.cc.s
+
+VectorAnalyzerEvents.o: VectorAnalyzerEvents.cc.o
+.PHONY : VectorAnalyzerEvents.o
+
+# target to build an object file
+VectorAnalyzerEvents.cc.o:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o
+.PHONY : VectorAnalyzerEvents.cc.o
+
+VectorAnalyzerEvents.i: VectorAnalyzerEvents.cc.i
+.PHONY : VectorAnalyzerEvents.i
+
+# target to preprocess a source file
+VectorAnalyzerEvents.cc.i:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.i
+.PHONY : VectorAnalyzerEvents.cc.i
+
+VectorAnalyzerEvents.s: VectorAnalyzerEvents.cc.s
+.PHONY : VectorAnalyzerEvents.s
+
+# target to generate assembly for a file
+VectorAnalyzerEvents.cc.s:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.s
+.PHONY : VectorAnalyzerEvents.cc.s
+
+VectorAnalyzerGUIClass.o: VectorAnalyzerGUIClass.cc.o
+.PHONY : VectorAnalyzerGUIClass.o
+
+# target to build an object file
+VectorAnalyzerGUIClass.cc.o:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o
+.PHONY : VectorAnalyzerGUIClass.cc.o
+
+VectorAnalyzerGUIClass.i: VectorAnalyzerGUIClass.cc.i
+.PHONY : VectorAnalyzerGUIClass.i
+
+# target to preprocess a source file
+VectorAnalyzerGUIClass.cc.i:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.i
+.PHONY : VectorAnalyzerGUIClass.cc.i
+
+VectorAnalyzerGUIClass.s: VectorAnalyzerGUIClass.cc.s
+.PHONY : VectorAnalyzerGUIClass.s
+
+# target to generate assembly for a file
+VectorAnalyzerGUIClass.cc.s:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.s
+.PHONY : VectorAnalyzerGUIClass.cc.s
 
 WaterfallDisplayPlot.o: WaterfallDisplayPlot.cc.o
 .PHONY : WaterfallDisplayPlot.o
 
 # target to build an object file
 WaterfallDisplayPlot.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o
 .PHONY : WaterfallDisplayPlot.cc.o
 
 WaterfallDisplayPlot.i: WaterfallDisplayPlot.cc.i
@@ -289,7 +393,7 @@ WaterfallDisplayPlot.i: WaterfallDisplayPlot.cc.i
 
 # target to preprocess a source file
 WaterfallDisplayPlot.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.i
 .PHONY : WaterfallDisplayPlot.cc.i
 
 WaterfallDisplayPlot.s: WaterfallDisplayPlot.cc.s
@@ -297,7 +401,7 @@ WaterfallDisplayPlot.s: WaterfallDisplayPlot.cc.s
 
 # target to generate assembly for a file
 WaterfallDisplayPlot.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.s
 .PHONY : WaterfallDisplayPlot.cc.s
 
 moc_ConstellationDisplayPlot.o: moc_ConstellationDisplayPlot.cxx.o
@@ -305,7 +409,7 @@ moc_ConstellationDisplayPlot.o: moc_ConstellationDisplayPlot.cxx.o
 
 # target to build an object file
 moc_ConstellationDisplayPlot.cxx.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o
 .PHONY : moc_ConstellationDisplayPlot.cxx.o
 
 moc_ConstellationDisplayPlot.i: moc_ConstellationDisplayPlot.cxx.i
@@ -313,7 +417,7 @@ moc_ConstellationDisplayPlot.i: moc_ConstellationDisplayPlot.cxx.i
 
 # target to preprocess a source file
 moc_ConstellationDisplayPlot.cxx.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.i
 .PHONY : moc_ConstellationDisplayPlot.cxx.i
 
 moc_ConstellationDisplayPlot.s: moc_ConstellationDisplayPlot.cxx.s
@@ -321,15 +425,39 @@ moc_ConstellationDisplayPlot.s: moc_ConstellationDisplayPlot.cxx.s
 
 # target to generate assembly for a file
 moc_ConstellationDisplayPlot.cxx.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.s
 .PHONY : moc_ConstellationDisplayPlot.cxx.s
+
+moc_ConstellationDisplayPlotEnhanced.o: moc_ConstellationDisplayPlotEnhanced.cxx.o
+.PHONY : moc_ConstellationDisplayPlotEnhanced.o
+
+# target to build an object file
+moc_ConstellationDisplayPlotEnhanced.cxx.o:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o
+.PHONY : moc_ConstellationDisplayPlotEnhanced.cxx.o
+
+moc_ConstellationDisplayPlotEnhanced.i: moc_ConstellationDisplayPlotEnhanced.cxx.i
+.PHONY : moc_ConstellationDisplayPlotEnhanced.i
+
+# target to preprocess a source file
+moc_ConstellationDisplayPlotEnhanced.cxx.i:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.i
+.PHONY : moc_ConstellationDisplayPlotEnhanced.cxx.i
+
+moc_ConstellationDisplayPlotEnhanced.s: moc_ConstellationDisplayPlotEnhanced.cxx.s
+.PHONY : moc_ConstellationDisplayPlotEnhanced.s
+
+# target to generate assembly for a file
+moc_ConstellationDisplayPlotEnhanced.cxx.s:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.s
+.PHONY : moc_ConstellationDisplayPlotEnhanced.cxx.s
 
 moc_FrequencyDisplayPlot.o: moc_FrequencyDisplayPlot.cxx.o
 .PHONY : moc_FrequencyDisplayPlot.o
 
 # target to build an object file
 moc_FrequencyDisplayPlot.cxx.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o
 .PHONY : moc_FrequencyDisplayPlot.cxx.o
 
 moc_FrequencyDisplayPlot.i: moc_FrequencyDisplayPlot.cxx.i
@@ -337,7 +465,7 @@ moc_FrequencyDisplayPlot.i: moc_FrequencyDisplayPlot.cxx.i
 
 # target to preprocess a source file
 moc_FrequencyDisplayPlot.cxx.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.i
 .PHONY : moc_FrequencyDisplayPlot.cxx.i
 
 moc_FrequencyDisplayPlot.s: moc_FrequencyDisplayPlot.cxx.s
@@ -345,7 +473,7 @@ moc_FrequencyDisplayPlot.s: moc_FrequencyDisplayPlot.cxx.s
 
 # target to generate assembly for a file
 moc_FrequencyDisplayPlot.cxx.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.s
 .PHONY : moc_FrequencyDisplayPlot.cxx.s
 
 moc_TimeDomainDisplayPlot.o: moc_TimeDomainDisplayPlot.cxx.o
@@ -353,7 +481,7 @@ moc_TimeDomainDisplayPlot.o: moc_TimeDomainDisplayPlot.cxx.o
 
 # target to build an object file
 moc_TimeDomainDisplayPlot.cxx.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o
 .PHONY : moc_TimeDomainDisplayPlot.cxx.o
 
 moc_TimeDomainDisplayPlot.i: moc_TimeDomainDisplayPlot.cxx.i
@@ -361,7 +489,7 @@ moc_TimeDomainDisplayPlot.i: moc_TimeDomainDisplayPlot.cxx.i
 
 # target to preprocess a source file
 moc_TimeDomainDisplayPlot.cxx.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.i
 .PHONY : moc_TimeDomainDisplayPlot.cxx.i
 
 moc_TimeDomainDisplayPlot.s: moc_TimeDomainDisplayPlot.cxx.s
@@ -369,15 +497,39 @@ moc_TimeDomainDisplayPlot.s: moc_TimeDomainDisplayPlot.cxx.s
 
 # target to generate assembly for a file
 moc_TimeDomainDisplayPlot.cxx.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.s
 .PHONY : moc_TimeDomainDisplayPlot.cxx.s
+
+moc_VectorAnalyzerDisplayForm.o: moc_VectorAnalyzerDisplayForm.cxx.o
+.PHONY : moc_VectorAnalyzerDisplayForm.o
+
+# target to build an object file
+moc_VectorAnalyzerDisplayForm.cxx.o:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o
+.PHONY : moc_VectorAnalyzerDisplayForm.cxx.o
+
+moc_VectorAnalyzerDisplayForm.i: moc_VectorAnalyzerDisplayForm.cxx.i
+.PHONY : moc_VectorAnalyzerDisplayForm.i
+
+# target to preprocess a source file
+moc_VectorAnalyzerDisplayForm.cxx.i:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.i
+.PHONY : moc_VectorAnalyzerDisplayForm.cxx.i
+
+moc_VectorAnalyzerDisplayForm.s: moc_VectorAnalyzerDisplayForm.cxx.s
+.PHONY : moc_VectorAnalyzerDisplayForm.s
+
+# target to generate assembly for a file
+moc_VectorAnalyzerDisplayForm.cxx.s:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.s
+.PHONY : moc_VectorAnalyzerDisplayForm.cxx.s
 
 moc_WaterfallDisplayPlot.o: moc_WaterfallDisplayPlot.cxx.o
 .PHONY : moc_WaterfallDisplayPlot.o
 
 # target to build an object file
 moc_WaterfallDisplayPlot.cxx.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o
 .PHONY : moc_WaterfallDisplayPlot.cxx.o
 
 moc_WaterfallDisplayPlot.i: moc_WaterfallDisplayPlot.cxx.i
@@ -385,7 +537,7 @@ moc_WaterfallDisplayPlot.i: moc_WaterfallDisplayPlot.cxx.i
 
 # target to preprocess a source file
 moc_WaterfallDisplayPlot.cxx.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.i
 .PHONY : moc_WaterfallDisplayPlot.cxx.i
 
 moc_WaterfallDisplayPlot.s: moc_WaterfallDisplayPlot.cxx.s
@@ -393,7 +545,7 @@ moc_WaterfallDisplayPlot.s: moc_WaterfallDisplayPlot.cxx.s
 
 # target to generate assembly for a file
 moc_WaterfallDisplayPlot.cxx.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.s
 .PHONY : moc_WaterfallDisplayPlot.cxx.s
 
 moc_spectrumdisplayform.o: moc_spectrumdisplayform.cxx.o
@@ -401,7 +553,7 @@ moc_spectrumdisplayform.o: moc_spectrumdisplayform.cxx.o
 
 # target to build an object file
 moc_spectrumdisplayform.cxx.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o
 .PHONY : moc_spectrumdisplayform.cxx.o
 
 moc_spectrumdisplayform.i: moc_spectrumdisplayform.cxx.i
@@ -409,7 +561,7 @@ moc_spectrumdisplayform.i: moc_spectrumdisplayform.cxx.i
 
 # target to preprocess a source file
 moc_spectrumdisplayform.cxx.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.i
 .PHONY : moc_spectrumdisplayform.cxx.i
 
 moc_spectrumdisplayform.s: moc_spectrumdisplayform.cxx.s
@@ -417,7 +569,7 @@ moc_spectrumdisplayform.s: moc_spectrumdisplayform.cxx.s
 
 # target to generate assembly for a file
 moc_spectrumdisplayform.cxx.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.s
 .PHONY : moc_spectrumdisplayform.cxx.s
 
 moc_timedisplayform.o: moc_timedisplayform.cxx.o
@@ -425,7 +577,7 @@ moc_timedisplayform.o: moc_timedisplayform.cxx.o
 
 # target to build an object file
 moc_timedisplayform.cxx.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o
 .PHONY : moc_timedisplayform.cxx.o
 
 moc_timedisplayform.i: moc_timedisplayform.cxx.i
@@ -433,7 +585,7 @@ moc_timedisplayform.i: moc_timedisplayform.cxx.i
 
 # target to preprocess a source file
 moc_timedisplayform.cxx.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.i
 .PHONY : moc_timedisplayform.cxx.i
 
 moc_timedisplayform.s: moc_timedisplayform.cxx.s
@@ -441,7 +593,7 @@ moc_timedisplayform.s: moc_timedisplayform.cxx.s
 
 # target to generate assembly for a file
 moc_timedisplayform.cxx.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.s
 .PHONY : moc_timedisplayform.cxx.s
 
 plot_waterfall.o: plot_waterfall.cc.o
@@ -449,7 +601,7 @@ plot_waterfall.o: plot_waterfall.cc.o
 
 # target to build an object file
 plot_waterfall.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o
 .PHONY : plot_waterfall.cc.o
 
 plot_waterfall.i: plot_waterfall.cc.i
@@ -457,7 +609,7 @@ plot_waterfall.i: plot_waterfall.cc.i
 
 # target to preprocess a source file
 plot_waterfall.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.i
 .PHONY : plot_waterfall.cc.i
 
 plot_waterfall.s: plot_waterfall.cc.s
@@ -465,15 +617,39 @@ plot_waterfall.s: plot_waterfall.cc.s
 
 # target to generate assembly for a file
 plot_waterfall.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.s
 .PHONY : plot_waterfall.cc.s
+
+qtgui_ofdm_vector_analyzer_c.o: qtgui_ofdm_vector_analyzer_c.cc.o
+.PHONY : qtgui_ofdm_vector_analyzer_c.o
+
+# target to build an object file
+qtgui_ofdm_vector_analyzer_c.cc.o:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o
+.PHONY : qtgui_ofdm_vector_analyzer_c.cc.o
+
+qtgui_ofdm_vector_analyzer_c.i: qtgui_ofdm_vector_analyzer_c.cc.i
+.PHONY : qtgui_ofdm_vector_analyzer_c.i
+
+# target to preprocess a source file
+qtgui_ofdm_vector_analyzer_c.cc.i:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.i
+.PHONY : qtgui_ofdm_vector_analyzer_c.cc.i
+
+qtgui_ofdm_vector_analyzer_c.s: qtgui_ofdm_vector_analyzer_c.cc.s
+.PHONY : qtgui_ofdm_vector_analyzer_c.s
+
+# target to generate assembly for a file
+qtgui_ofdm_vector_analyzer_c.cc.s:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.s
+.PHONY : qtgui_ofdm_vector_analyzer_c.cc.s
 
 qtgui_sink_c.o: qtgui_sink_c.cc.o
 .PHONY : qtgui_sink_c.o
 
 # target to build an object file
 qtgui_sink_c.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o
 .PHONY : qtgui_sink_c.cc.o
 
 qtgui_sink_c.i: qtgui_sink_c.cc.i
@@ -481,7 +657,7 @@ qtgui_sink_c.i: qtgui_sink_c.cc.i
 
 # target to preprocess a source file
 qtgui_sink_c.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.i
 .PHONY : qtgui_sink_c.cc.i
 
 qtgui_sink_c.s: qtgui_sink_c.cc.s
@@ -489,7 +665,7 @@ qtgui_sink_c.s: qtgui_sink_c.cc.s
 
 # target to generate assembly for a file
 qtgui_sink_c.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.s
 .PHONY : qtgui_sink_c.cc.s
 
 qtgui_sink_f.o: qtgui_sink_f.cc.o
@@ -497,7 +673,7 @@ qtgui_sink_f.o: qtgui_sink_f.cc.o
 
 # target to build an object file
 qtgui_sink_f.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o
 .PHONY : qtgui_sink_f.cc.o
 
 qtgui_sink_f.i: qtgui_sink_f.cc.i
@@ -505,7 +681,7 @@ qtgui_sink_f.i: qtgui_sink_f.cc.i
 
 # target to preprocess a source file
 qtgui_sink_f.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.i
 .PHONY : qtgui_sink_f.cc.i
 
 qtgui_sink_f.s: qtgui_sink_f.cc.s
@@ -513,7 +689,7 @@ qtgui_sink_f.s: qtgui_sink_f.cc.s
 
 # target to generate assembly for a file
 qtgui_sink_f.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.s
 .PHONY : qtgui_sink_f.cc.s
 
 qtgui_time_sink_c.o: qtgui_time_sink_c.cc.o
@@ -521,7 +697,7 @@ qtgui_time_sink_c.o: qtgui_time_sink_c.cc.o
 
 # target to build an object file
 qtgui_time_sink_c.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o
 .PHONY : qtgui_time_sink_c.cc.o
 
 qtgui_time_sink_c.i: qtgui_time_sink_c.cc.i
@@ -529,7 +705,7 @@ qtgui_time_sink_c.i: qtgui_time_sink_c.cc.i
 
 # target to preprocess a source file
 qtgui_time_sink_c.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.i
 .PHONY : qtgui_time_sink_c.cc.i
 
 qtgui_time_sink_c.s: qtgui_time_sink_c.cc.s
@@ -537,7 +713,7 @@ qtgui_time_sink_c.s: qtgui_time_sink_c.cc.s
 
 # target to generate assembly for a file
 qtgui_time_sink_c.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.s
 .PHONY : qtgui_time_sink_c.cc.s
 
 qtgui_time_sink_f.o: qtgui_time_sink_f.cc.o
@@ -545,7 +721,7 @@ qtgui_time_sink_f.o: qtgui_time_sink_f.cc.o
 
 # target to build an object file
 qtgui_time_sink_f.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o
 .PHONY : qtgui_time_sink_f.cc.o
 
 qtgui_time_sink_f.i: qtgui_time_sink_f.cc.i
@@ -553,7 +729,7 @@ qtgui_time_sink_f.i: qtgui_time_sink_f.cc.i
 
 # target to preprocess a source file
 qtgui_time_sink_f.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.i
 .PHONY : qtgui_time_sink_f.cc.i
 
 qtgui_time_sink_f.s: qtgui_time_sink_f.cc.s
@@ -561,7 +737,7 @@ qtgui_time_sink_f.s: qtgui_time_sink_f.cc.s
 
 # target to generate assembly for a file
 qtgui_time_sink_f.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.s
 .PHONY : qtgui_time_sink_f.cc.s
 
 qtgui_util.o: qtgui_util.cc.o
@@ -569,7 +745,7 @@ qtgui_util.o: qtgui_util.cc.o
 
 # target to build an object file
 qtgui_util.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o
 .PHONY : qtgui_util.cc.o
 
 qtgui_util.i: qtgui_util.cc.i
@@ -577,7 +753,7 @@ qtgui_util.i: qtgui_util.cc.i
 
 # target to preprocess a source file
 qtgui_util.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.i
 .PHONY : qtgui_util.cc.i
 
 qtgui_util.s: qtgui_util.cc.s
@@ -585,7 +761,7 @@ qtgui_util.s: qtgui_util.cc.s
 
 # target to generate assembly for a file
 qtgui_util.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.s
 .PHONY : qtgui_util.cc.s
 
 spectrumUpdateEvents.o: spectrumUpdateEvents.cc.o
@@ -593,7 +769,7 @@ spectrumUpdateEvents.o: spectrumUpdateEvents.cc.o
 
 # target to build an object file
 spectrumUpdateEvents.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o
 .PHONY : spectrumUpdateEvents.cc.o
 
 spectrumUpdateEvents.i: spectrumUpdateEvents.cc.i
@@ -601,7 +777,7 @@ spectrumUpdateEvents.i: spectrumUpdateEvents.cc.i
 
 # target to preprocess a source file
 spectrumUpdateEvents.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.i
 .PHONY : spectrumUpdateEvents.cc.i
 
 spectrumUpdateEvents.s: spectrumUpdateEvents.cc.s
@@ -609,7 +785,7 @@ spectrumUpdateEvents.s: spectrumUpdateEvents.cc.s
 
 # target to generate assembly for a file
 spectrumUpdateEvents.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.s
 .PHONY : spectrumUpdateEvents.cc.s
 
 spectrumdisplayform.o: spectrumdisplayform.cc.o
@@ -617,7 +793,7 @@ spectrumdisplayform.o: spectrumdisplayform.cc.o
 
 # target to build an object file
 spectrumdisplayform.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o
 .PHONY : spectrumdisplayform.cc.o
 
 spectrumdisplayform.i: spectrumdisplayform.cc.i
@@ -625,7 +801,7 @@ spectrumdisplayform.i: spectrumdisplayform.cc.i
 
 # target to preprocess a source file
 spectrumdisplayform.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.i
 .PHONY : spectrumdisplayform.cc.i
 
 spectrumdisplayform.s: spectrumdisplayform.cc.s
@@ -633,7 +809,7 @@ spectrumdisplayform.s: spectrumdisplayform.cc.s
 
 # target to generate assembly for a file
 spectrumdisplayform.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.s
 .PHONY : spectrumdisplayform.cc.s
 
 timedisplayform.o: timedisplayform.cc.o
@@ -641,7 +817,7 @@ timedisplayform.o: timedisplayform.cc.o
 
 # target to build an object file
 timedisplayform.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o
 .PHONY : timedisplayform.cc.o
 
 timedisplayform.i: timedisplayform.cc.i
@@ -649,7 +825,7 @@ timedisplayform.i: timedisplayform.cc.i
 
 # target to preprocess a source file
 timedisplayform.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.i
 .PHONY : timedisplayform.cc.i
 
 timedisplayform.s: timedisplayform.cc.s
@@ -657,7 +833,7 @@ timedisplayform.s: timedisplayform.cc.s
 
 # target to generate assembly for a file
 timedisplayform.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.s
 .PHONY : timedisplayform.cc.s
 
 waterfallGlobalData.o: waterfallGlobalData.cc.o
@@ -665,7 +841,7 @@ waterfallGlobalData.o: waterfallGlobalData.cc.o
 
 # target to build an object file
 waterfallGlobalData.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o
 .PHONY : waterfallGlobalData.cc.o
 
 waterfallGlobalData.i: waterfallGlobalData.cc.i
@@ -673,7 +849,7 @@ waterfallGlobalData.i: waterfallGlobalData.cc.i
 
 # target to preprocess a source file
 waterfallGlobalData.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.i
 .PHONY : waterfallGlobalData.cc.i
 
 waterfallGlobalData.s: waterfallGlobalData.cc.s
@@ -681,7 +857,7 @@ waterfallGlobalData.s: waterfallGlobalData.cc.s
 
 # target to generate assembly for a file
 waterfallGlobalData.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.s
 .PHONY : waterfallGlobalData.cc.s
 
 # Help Target
@@ -703,6 +879,9 @@ help:
 	@echo "... ConstellationDisplayPlot.o"
 	@echo "... ConstellationDisplayPlot.i"
 	@echo "... ConstellationDisplayPlot.s"
+	@echo "... ConstellationDisplayPlotEnhanced.o"
+	@echo "... ConstellationDisplayPlotEnhanced.i"
+	@echo "... ConstellationDisplayPlotEnhanced.s"
 	@echo "... FrequencyDisplayPlot.o"
 	@echo "... FrequencyDisplayPlot.i"
 	@echo "... FrequencyDisplayPlot.s"
@@ -712,18 +891,33 @@ help:
 	@echo "... TimeDomainDisplayPlot.o"
 	@echo "... TimeDomainDisplayPlot.i"
 	@echo "... TimeDomainDisplayPlot.s"
+	@echo "... VectorAnalyzerDisplayForm.o"
+	@echo "... VectorAnalyzerDisplayForm.i"
+	@echo "... VectorAnalyzerDisplayForm.s"
+	@echo "... VectorAnalyzerEvents.o"
+	@echo "... VectorAnalyzerEvents.i"
+	@echo "... VectorAnalyzerEvents.s"
+	@echo "... VectorAnalyzerGUIClass.o"
+	@echo "... VectorAnalyzerGUIClass.i"
+	@echo "... VectorAnalyzerGUIClass.s"
 	@echo "... WaterfallDisplayPlot.o"
 	@echo "... WaterfallDisplayPlot.i"
 	@echo "... WaterfallDisplayPlot.s"
 	@echo "... moc_ConstellationDisplayPlot.o"
 	@echo "... moc_ConstellationDisplayPlot.i"
 	@echo "... moc_ConstellationDisplayPlot.s"
+	@echo "... moc_ConstellationDisplayPlotEnhanced.o"
+	@echo "... moc_ConstellationDisplayPlotEnhanced.i"
+	@echo "... moc_ConstellationDisplayPlotEnhanced.s"
 	@echo "... moc_FrequencyDisplayPlot.o"
 	@echo "... moc_FrequencyDisplayPlot.i"
 	@echo "... moc_FrequencyDisplayPlot.s"
 	@echo "... moc_TimeDomainDisplayPlot.o"
 	@echo "... moc_TimeDomainDisplayPlot.i"
 	@echo "... moc_TimeDomainDisplayPlot.s"
+	@echo "... moc_VectorAnalyzerDisplayForm.o"
+	@echo "... moc_VectorAnalyzerDisplayForm.i"
+	@echo "... moc_VectorAnalyzerDisplayForm.s"
 	@echo "... moc_WaterfallDisplayPlot.o"
 	@echo "... moc_WaterfallDisplayPlot.i"
 	@echo "... moc_WaterfallDisplayPlot.s"
@@ -736,6 +930,9 @@ help:
 	@echo "... plot_waterfall.o"
 	@echo "... plot_waterfall.i"
 	@echo "... plot_waterfall.s"
+	@echo "... qtgui_ofdm_vector_analyzer_c.o"
+	@echo "... qtgui_ofdm_vector_analyzer_c.i"
+	@echo "... qtgui_ofdm_vector_analyzer_c.s"
 	@echo "... qtgui_sink_c.o"
 	@echo "... qtgui_sink_c.i"
 	@echo "... qtgui_sink_c.s"
@@ -774,6 +971,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

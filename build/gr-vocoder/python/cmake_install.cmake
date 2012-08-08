@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-vocoder/python
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-vocoder/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,22 +29,22 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-vocoder/python/__init__.py"
-    "/home/katsikas/gnuradio/gr-vocoder/python/cvsd.py"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/python/__init__.py"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/python/cvsd.py"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gr-vocoder/python/__init__.pyc"
-    "/home/katsikas/gnuradio/build/gr-vocoder/python/cvsd.pyc"
-    "/home/katsikas/gnuradio/build/gr-vocoder/python/__init__.pyo"
-    "/home/katsikas/gnuradio/build/gr-vocoder/python/cvsd.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/python/__init__.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/python/cvsd.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/python/__init__.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/python/cvsd.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
 

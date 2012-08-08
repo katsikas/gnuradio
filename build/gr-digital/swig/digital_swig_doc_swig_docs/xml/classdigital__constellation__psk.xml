@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__psk" kind="class" prot="public">
     <compoundname>digital_constellation_psk</compoundname>
     <basecompoundref refid="classdigital__constellation__sector" prot="public" virt="non-virtual">digital_constellation_sector</basecompoundref>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="308"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="308"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="312"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="312"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation__psk_1a2db822a2d239fdcebca485303d2da30b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>unsigned int</type>
@@ -66,13 +66,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="314"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="314"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__constellation__psk_1aa524d1613612247a553d2ec9a88abed2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1aaa2f64eb746fe664d44c10f522017047" kindref="member">digital_constellation_psk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_psk_sptr digital_make_constellation_psk</definition>
+      <memberdef kind="friend" id="classdigital__constellation__psk_1a4fbb16130d249865f8a463dad0181a7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend DIGITAL_API <ref refid="digital__constellation_8h_1aaa2f64eb746fe664d44c10f522017047" kindref="member">digital_constellation_psk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_psk_sptr digital_make_constellation_psk</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int n_sectors)</argsstring>
         <name>digital_make_constellation_psk</name>
         <param>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="321"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="321"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -101,54 +101,54 @@
     <detaileddescription>
 <para>Each slice is associated with the nearest constellation point.</para><para>Works well for PSK but nothing else.</para><para>Assumes that there is a constellation point at 1.x </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="359">
+      <node id="315">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="360" relation="public-inheritance">
+        <childnode refid="316" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="361">
+      <node id="317">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="360">
+      <node id="316">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="361" relation="public-inheritance">
+        <childnode refid="317" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="362">
+      <node id="318">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="363" relation="public-inheritance">
+        <childnode refid="319" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="366">
+      <node id="322">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="365">
+      <node id="321">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="364">
+      <node id="320">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="365" relation="usage">
+        <childnode refid="321" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="366" relation="usage">
+        <childnode refid="322" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="363">
+      <node id="319">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="364" relation="public-inheritance">
+        <childnode refid="320" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="303" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="302" bodyend="323"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="303" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" bodystart="302" bodyend="323"/>
     <listofallmembers>
       <member refid="classdigital__constellation_1a03ec7ff36b47e7a08944dace5492406c" prot="public" virt="non-virtual"><scope>digital_constellation_psk</scope><name>apply_pre_diff_code</name></member>
       <member refid="classdigital__constellation_1add4790d1220a4497549f8490706f0444" prot="public" virt="non-virtual"><scope>digital_constellation_psk</scope><name>arity</name></member>
@@ -173,7 +173,7 @@
       <member refid="classdigital__constellation_1a027d62d551045c2d245fa664f7e9dadd" prot="public" virt="non-virtual"><scope>digital_constellation_psk</scope><name>digital_constellation</name></member>
       <member refid="classdigital__constellation__psk_1a2943f15568cc1f821597ea987f5bc77a" prot="public" virt="non-virtual"><scope>digital_constellation_psk</scope><name>digital_constellation_psk</name></member>
       <member refid="classdigital__constellation__sector_1a359f52d173abc510cb1568dbb03f12e2" prot="public" virt="non-virtual"><scope>digital_constellation_psk</scope><name>digital_constellation_sector</name></member>
-      <member refid="classdigital__constellation__psk_1aa524d1613612247a553d2ec9a88abed2" prot="private" virt="non-virtual"><scope>digital_constellation_psk</scope><name>digital_make_constellation_psk</name></member>
+      <member refid="classdigital__constellation__psk_1a4fbb16130d249865f8a463dad0181a7c" prot="private" virt="non-virtual"><scope>digital_constellation_psk</scope><name>digital_make_constellation_psk</name></member>
       <member refid="classdigital__constellation_1a4291cb1f0d7c90923b69511f5ff1d46d" prot="public" virt="non-virtual"><scope>digital_constellation_psk</scope><name>dimensionality</name></member>
       <member refid="classdigital__constellation__sector_1a94c6d4c79d0ccfcabbffcf460696792e" prot="protected" virt="non-virtual"><scope>digital_constellation_psk</scope><name>find_sector_values</name></member>
       <member refid="classdigital__constellation_1adc727f68b241409cd49a57c30243b012" prot="protected" virt="non-virtual"><scope>digital_constellation_psk</scope><name>get_closest_point</name></member>

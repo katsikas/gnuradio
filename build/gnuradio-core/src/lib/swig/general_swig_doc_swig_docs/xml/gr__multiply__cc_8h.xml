@@ -1,18 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__multiply__cc_8h" kind="file">
     <compoundname>gr_multiply_cc.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes local="no">gr_sync_block.h</includes>
     <incdepgraph>
-      <node id="555">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h</label>
-        <link refid="gr_multiply_cc.h"/>
-        <childnode refid="556" relation="include">
-        </childnode>
-        <childnode refid="558" relation="include">
-        </childnode>
-      </node>
       <node id="557">
         <label>gruel/attributes.h</label>
       </node>
@@ -23,6 +15,14 @@
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
         <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h</label>
+        <link refid="gr_multiply_cc.h"/>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -39,13 +39,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h" line="30" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h" line="30" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__multiply__cc_8h_1a9fe9f7633a856445681413a8e3041b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__multiply__cc_8h_1a95cf2bd57354013cf25a9347fb9146ff" kindref="member">gr_multiply_cc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_multiply_cc_sptr gr_make_multiply_cc</definition>
+      <memberdef kind="function" id="gr__multiply__cc_8h_1a80da755533f00e3613c369ec3d7c58e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__multiply__cc_8h_1a95cf2bd57354013cf25a9347fb9146ff" kindref="member">gr_multiply_cc_sptr</ref></type>
+        <definition>GR_CORE_API gr_multiply_cc_sptr gr_make_multiply_cc</definition>
         <argsstring>(size_t vlen=1)</argsstring>
         <name>gr_make_multiply_cc</name>
         <param>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h" line="33"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h" line="33"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -99,13 +99,13 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_multiply_cc&gt;<sp/><ref refid="gr__multiply__cc_8h_1a95cf2bd57354013cf25a9347fb9146ff" kindref="member">gr_multiply_cc_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__multiply__cc_8h_1a95cf2bd57354013cf25a9347fb9146ff" kindref="member">gr_multiply_cc_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="gr__multiply__cc_8h_1a9fe9f7633a856445681413a8e3041b76" kindref="member">gr_make_multiply_cc</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen=1);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="gr__multiply__cc_8h_1a80da755533f00e3613c369ec3d7c58e7" kindref="member">gr_make_multiply_cc</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen=1);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40" refid="classgr__multiply__cc" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__multiply__cc" kindref="compound" tooltip="Multiply streams of complex values.">gr_multiply_cc</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__multiply__cc_8h_1a95cf2bd57354013cf25a9347fb9146ff" kindref="member">gr_multiply_cc_sptr</ref></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__multiply__cc_8h_1a9fe9f7633a856445681413a8e3041b76" kindref="member">gr_make_multiply_cc</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__multiply__cc_8h_1a80da755533f00e3613c369ec3d7c58e7" kindref="member">gr_make_multiply_cc</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classgr__multiply__cc" kindref="compound" tooltip="Multiply streams of complex values.">gr_multiply_cc</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen);</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>d_vlen;</highlight></codeline>
@@ -119,6 +119,6 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_MULTIPLY_CC_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_multiply_cc.h"/>
   </compounddef>
 </doxygen>

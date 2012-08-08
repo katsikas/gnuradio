@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-qtgui/include
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-qtgui/include
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,17 +29,18 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_devel")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-qtgui/include/gr_qtgui_api.h"
-    "/home/katsikas/gnuradio/gr-qtgui/include/qtgui_time_sink_c.h"
-    "/home/katsikas/gnuradio/gr-qtgui/include/qtgui_time_sink_f.h"
-    "/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_c.h"
-    "/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h"
-    "/home/katsikas/gnuradio/gr-qtgui/include/qtgui_util.h"
+    "/home/katsikas/Desktop/gnuradio/gr-qtgui/include/gr_qtgui_api.h"
+    "/home/katsikas/Desktop/gnuradio/gr-qtgui/include/qtgui_time_sink_c.h"
+    "/home/katsikas/Desktop/gnuradio/gr-qtgui/include/qtgui_time_sink_f.h"
+    "/home/katsikas/Desktop/gnuradio/gr-qtgui/include/qtgui_sink_c.h"
+    "/home/katsikas/Desktop/gnuradio/gr-qtgui/include/qtgui_sink_f.h"
+    "/home/katsikas/Desktop/gnuradio/gr-qtgui/include/qtgui_util.h"
+    "/home/katsikas/Desktop/gnuradio/gr-qtgui/include/qtgui_ofdm_vector_analyzer_c.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_devel")
 

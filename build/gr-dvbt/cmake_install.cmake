@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-dvbt
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-dvbt
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,21 +29,21 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_devel")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-dvbt/gnuradio-dvbt.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/pkgconfig" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/build/gr-dvbt/gnuradio-dvbt.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "dvbt_devel")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/include/dvbt/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/lib/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/swig/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/python/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/grc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/doc/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-dvbt/include/dvbt/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-dvbt/lib/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-dvbt/swig/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-dvbt/python/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-dvbt/grc/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-dvbt/doc/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

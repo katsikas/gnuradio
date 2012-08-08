@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-vocoder/examples
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-vocoder/examples
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,38 +29,38 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "alaw_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/alaw_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "alaw_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/alaw_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "codec2_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/codec2_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "codec2_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/codec2_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "cvsd_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/cvsd_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "cvsd_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/cvsd_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "g721_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/g721_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "g721_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/g721_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "g723_24_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/g723_24_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "g723_24_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/g723_24_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "g723_40_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/g723_40_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "g723_40_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/g723_40_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "gsm_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/gsm_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "gsm_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/gsm_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "ulaw_audio_loopback.py" FILES "/home/katsikas/gnuradio/build/gr-vocoder/examples/ulaw_audio_loopback.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/vocoder" TYPE PROGRAM RENAME "ulaw_audio_loopback.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/examples/ulaw_audio_loopback.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_examples")
 

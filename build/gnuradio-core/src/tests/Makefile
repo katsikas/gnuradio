@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gnuradio-core/src/tests/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/rule
 
 # Convenience name for target.
@@ -177,12 +180,12 @@ benchmark_dotprod_ccc: gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.
 
 # fast build rule for target.
 benchmark_dotprod_ccc/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build
 .PHONY : benchmark_dotprod_ccc/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/rule
 
 # Convenience name for target.
@@ -191,12 +194,12 @@ benchmark_dotprod_ccf: gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.
 
 # fast build rule for target.
 benchmark_dotprod_ccf/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build
 .PHONY : benchmark_dotprod_ccf/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/rule
 
 # Convenience name for target.
@@ -205,12 +208,12 @@ benchmark_dotprod_fcc: gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.
 
 # fast build rule for target.
 benchmark_dotprod_fcc/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build
 .PHONY : benchmark_dotprod_fcc/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/rule
 
 # Convenience name for target.
@@ -219,12 +222,12 @@ benchmark_dotprod_fff: gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.
 
 # fast build rule for target.
 benchmark_dotprod_fff/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build
 .PHONY : benchmark_dotprod_fff/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/rule
 
 # Convenience name for target.
@@ -233,12 +236,12 @@ benchmark_dotprod_fsf: gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.
 
 # fast build rule for target.
 benchmark_dotprod_fsf/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build
 .PHONY : benchmark_dotprod_fsf/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/rule
 
 # Convenience name for target.
@@ -247,12 +250,12 @@ benchmark_dotprod_scc: gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.
 
 # fast build rule for target.
 benchmark_dotprod_scc/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build
 .PHONY : benchmark_dotprod_scc/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/rule
 
 # Convenience name for target.
@@ -261,12 +264,12 @@ benchmark_nco: gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/rule
 
 # fast build rule for target.
 benchmark_nco/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build
 .PHONY : benchmark_nco/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/rule
 
 # Convenience name for target.
@@ -275,12 +278,12 @@ benchmark_vco: gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/rule
 
 # fast build rule for target.
 benchmark_vco/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build
 .PHONY : benchmark_vco/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/rule
 
 # Convenience name for target.
@@ -289,12 +292,12 @@ gr_core_test_all: gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/rule
 
 # fast build rule for target.
 gr_core_test_all/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build
 .PHONY : gr_core_test_all/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/test_filter.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_filter.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_filter.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/test_filter.dir/rule
 
 # Convenience name for target.
@@ -303,12 +306,12 @@ test_filter: gnuradio-core/src/tests/CMakeFiles/test_filter.dir/rule
 
 # fast build rule for target.
 test_filter/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build
 .PHONY : test_filter/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/test_general.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_general.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_general.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/test_general.dir/rule
 
 # Convenience name for target.
@@ -317,12 +320,12 @@ test_general: gnuradio-core/src/tests/CMakeFiles/test_general.dir/rule
 
 # fast build rule for target.
 test_general/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/build
 .PHONY : test_general/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/rule
 
 # Convenience name for target.
@@ -331,12 +334,12 @@ test_runtime: gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/rule
 
 # fast build rule for target.
 test_runtime/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build
 .PHONY : test_runtime/fast
 
 # Convenience name for target.
 gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/rule
 .PHONY : gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/rule
 
 # Convenience name for target.
@@ -345,7 +348,7 @@ test_vmcircbuf: gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/rule
 
 # fast build rule for target.
 test_vmcircbuf/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build
 .PHONY : test_vmcircbuf/fast
 
 benchmark_dotprod_ccc.o: benchmark_dotprod_ccc.cc.o
@@ -353,7 +356,7 @@ benchmark_dotprod_ccc.o: benchmark_dotprod_ccc.cc.o
 
 # target to build an object file
 benchmark_dotprod_ccc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/benchmark_dotprod_ccc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/benchmark_dotprod_ccc.cc.o
 .PHONY : benchmark_dotprod_ccc.cc.o
 
 benchmark_dotprod_ccc.i: benchmark_dotprod_ccc.cc.i
@@ -361,7 +364,7 @@ benchmark_dotprod_ccc.i: benchmark_dotprod_ccc.cc.i
 
 # target to preprocess a source file
 benchmark_dotprod_ccc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/benchmark_dotprod_ccc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/benchmark_dotprod_ccc.cc.i
 .PHONY : benchmark_dotprod_ccc.cc.i
 
 benchmark_dotprod_ccc.s: benchmark_dotprod_ccc.cc.s
@@ -369,7 +372,7 @@ benchmark_dotprod_ccc.s: benchmark_dotprod_ccc.cc.s
 
 # target to generate assembly for a file
 benchmark_dotprod_ccc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/benchmark_dotprod_ccc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccc.dir/benchmark_dotprod_ccc.cc.s
 .PHONY : benchmark_dotprod_ccc.cc.s
 
 benchmark_dotprod_ccf.o: benchmark_dotprod_ccf.cc.o
@@ -377,7 +380,7 @@ benchmark_dotprod_ccf.o: benchmark_dotprod_ccf.cc.o
 
 # target to build an object file
 benchmark_dotprod_ccf.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/benchmark_dotprod_ccf.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/benchmark_dotprod_ccf.cc.o
 .PHONY : benchmark_dotprod_ccf.cc.o
 
 benchmark_dotprod_ccf.i: benchmark_dotprod_ccf.cc.i
@@ -385,7 +388,7 @@ benchmark_dotprod_ccf.i: benchmark_dotprod_ccf.cc.i
 
 # target to preprocess a source file
 benchmark_dotprod_ccf.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/benchmark_dotprod_ccf.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/benchmark_dotprod_ccf.cc.i
 .PHONY : benchmark_dotprod_ccf.cc.i
 
 benchmark_dotprod_ccf.s: benchmark_dotprod_ccf.cc.s
@@ -393,7 +396,7 @@ benchmark_dotprod_ccf.s: benchmark_dotprod_ccf.cc.s
 
 # target to generate assembly for a file
 benchmark_dotprod_ccf.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/benchmark_dotprod_ccf.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_ccf.dir/benchmark_dotprod_ccf.cc.s
 .PHONY : benchmark_dotprod_ccf.cc.s
 
 benchmark_dotprod_fcc.o: benchmark_dotprod_fcc.cc.o
@@ -401,7 +404,7 @@ benchmark_dotprod_fcc.o: benchmark_dotprod_fcc.cc.o
 
 # target to build an object file
 benchmark_dotprod_fcc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/benchmark_dotprod_fcc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/benchmark_dotprod_fcc.cc.o
 .PHONY : benchmark_dotprod_fcc.cc.o
 
 benchmark_dotprod_fcc.i: benchmark_dotprod_fcc.cc.i
@@ -409,7 +412,7 @@ benchmark_dotprod_fcc.i: benchmark_dotprod_fcc.cc.i
 
 # target to preprocess a source file
 benchmark_dotprod_fcc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/benchmark_dotprod_fcc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/benchmark_dotprod_fcc.cc.i
 .PHONY : benchmark_dotprod_fcc.cc.i
 
 benchmark_dotprod_fcc.s: benchmark_dotprod_fcc.cc.s
@@ -417,7 +420,7 @@ benchmark_dotprod_fcc.s: benchmark_dotprod_fcc.cc.s
 
 # target to generate assembly for a file
 benchmark_dotprod_fcc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/benchmark_dotprod_fcc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fcc.dir/benchmark_dotprod_fcc.cc.s
 .PHONY : benchmark_dotprod_fcc.cc.s
 
 benchmark_dotprod_fff.o: benchmark_dotprod_fff.cc.o
@@ -425,7 +428,7 @@ benchmark_dotprod_fff.o: benchmark_dotprod_fff.cc.o
 
 # target to build an object file
 benchmark_dotprod_fff.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/benchmark_dotprod_fff.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/benchmark_dotprod_fff.cc.o
 .PHONY : benchmark_dotprod_fff.cc.o
 
 benchmark_dotprod_fff.i: benchmark_dotprod_fff.cc.i
@@ -433,7 +436,7 @@ benchmark_dotprod_fff.i: benchmark_dotprod_fff.cc.i
 
 # target to preprocess a source file
 benchmark_dotprod_fff.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/benchmark_dotprod_fff.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/benchmark_dotprod_fff.cc.i
 .PHONY : benchmark_dotprod_fff.cc.i
 
 benchmark_dotprod_fff.s: benchmark_dotprod_fff.cc.s
@@ -441,7 +444,7 @@ benchmark_dotprod_fff.s: benchmark_dotprod_fff.cc.s
 
 # target to generate assembly for a file
 benchmark_dotprod_fff.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/benchmark_dotprod_fff.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fff.dir/benchmark_dotprod_fff.cc.s
 .PHONY : benchmark_dotprod_fff.cc.s
 
 benchmark_dotprod_fsf.o: benchmark_dotprod_fsf.cc.o
@@ -449,7 +452,7 @@ benchmark_dotprod_fsf.o: benchmark_dotprod_fsf.cc.o
 
 # target to build an object file
 benchmark_dotprod_fsf.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/benchmark_dotprod_fsf.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/benchmark_dotprod_fsf.cc.o
 .PHONY : benchmark_dotprod_fsf.cc.o
 
 benchmark_dotprod_fsf.i: benchmark_dotprod_fsf.cc.i
@@ -457,7 +460,7 @@ benchmark_dotprod_fsf.i: benchmark_dotprod_fsf.cc.i
 
 # target to preprocess a source file
 benchmark_dotprod_fsf.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/benchmark_dotprod_fsf.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/benchmark_dotprod_fsf.cc.i
 .PHONY : benchmark_dotprod_fsf.cc.i
 
 benchmark_dotprod_fsf.s: benchmark_dotprod_fsf.cc.s
@@ -465,7 +468,7 @@ benchmark_dotprod_fsf.s: benchmark_dotprod_fsf.cc.s
 
 # target to generate assembly for a file
 benchmark_dotprod_fsf.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/benchmark_dotprod_fsf.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_fsf.dir/benchmark_dotprod_fsf.cc.s
 .PHONY : benchmark_dotprod_fsf.cc.s
 
 benchmark_dotprod_scc.o: benchmark_dotprod_scc.cc.o
@@ -473,7 +476,7 @@ benchmark_dotprod_scc.o: benchmark_dotprod_scc.cc.o
 
 # target to build an object file
 benchmark_dotprod_scc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/benchmark_dotprod_scc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/benchmark_dotprod_scc.cc.o
 .PHONY : benchmark_dotprod_scc.cc.o
 
 benchmark_dotprod_scc.i: benchmark_dotprod_scc.cc.i
@@ -481,7 +484,7 @@ benchmark_dotprod_scc.i: benchmark_dotprod_scc.cc.i
 
 # target to preprocess a source file
 benchmark_dotprod_scc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/benchmark_dotprod_scc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/benchmark_dotprod_scc.cc.i
 .PHONY : benchmark_dotprod_scc.cc.i
 
 benchmark_dotprod_scc.s: benchmark_dotprod_scc.cc.s
@@ -489,7 +492,7 @@ benchmark_dotprod_scc.s: benchmark_dotprod_scc.cc.s
 
 # target to generate assembly for a file
 benchmark_dotprod_scc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/benchmark_dotprod_scc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_dotprod_scc.dir/benchmark_dotprod_scc.cc.s
 .PHONY : benchmark_dotprod_scc.cc.s
 
 benchmark_nco.o: benchmark_nco.cc.o
@@ -497,7 +500,7 @@ benchmark_nco.o: benchmark_nco.cc.o
 
 # target to build an object file
 benchmark_nco.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/benchmark_nco.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/benchmark_nco.cc.o
 .PHONY : benchmark_nco.cc.o
 
 benchmark_nco.i: benchmark_nco.cc.i
@@ -505,7 +508,7 @@ benchmark_nco.i: benchmark_nco.cc.i
 
 # target to preprocess a source file
 benchmark_nco.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/benchmark_nco.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/benchmark_nco.cc.i
 .PHONY : benchmark_nco.cc.i
 
 benchmark_nco.s: benchmark_nco.cc.s
@@ -513,7 +516,7 @@ benchmark_nco.s: benchmark_nco.cc.s
 
 # target to generate assembly for a file
 benchmark_nco.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/benchmark_nco.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_nco.dir/benchmark_nco.cc.s
 .PHONY : benchmark_nco.cc.s
 
 benchmark_vco.o: benchmark_vco.cc.o
@@ -521,7 +524,7 @@ benchmark_vco.o: benchmark_vco.cc.o
 
 # target to build an object file
 benchmark_vco.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/benchmark_vco.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/benchmark_vco.cc.o
 .PHONY : benchmark_vco.cc.o
 
 benchmark_vco.i: benchmark_vco.cc.i
@@ -529,7 +532,7 @@ benchmark_vco.i: benchmark_vco.cc.i
 
 # target to preprocess a source file
 benchmark_vco.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/benchmark_vco.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/benchmark_vco.cc.i
 .PHONY : benchmark_vco.cc.i
 
 benchmark_vco.s: benchmark_vco.cc.s
@@ -537,7 +540,7 @@ benchmark_vco.s: benchmark_vco.cc.s
 
 # target to generate assembly for a file
 benchmark_vco.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/benchmark_vco.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/build.make gnuradio-core/src/tests/CMakeFiles/benchmark_vco.dir/benchmark_vco.cc.s
 .PHONY : benchmark_vco.cc.s
 
 test_all.o: test_all.cc.o
@@ -545,7 +548,7 @@ test_all.o: test_all.cc.o
 
 # target to build an object file
 test_all.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.o
 .PHONY : test_all.cc.o
 
 test_all.i: test_all.cc.i
@@ -553,7 +556,7 @@ test_all.i: test_all.cc.i
 
 # target to preprocess a source file
 test_all.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.i
 .PHONY : test_all.cc.i
 
 test_all.s: test_all.cc.s
@@ -561,7 +564,7 @@ test_all.s: test_all.cc.s
 
 # target to generate assembly for a file
 test_all.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.s
 .PHONY : test_all.cc.s
 
 test_filter.o: test_filter.cc.o
@@ -569,7 +572,7 @@ test_filter.o: test_filter.cc.o
 
 # target to build an object file
 test_filter.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/test_filter.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/test_filter.cc.o
 .PHONY : test_filter.cc.o
 
 test_filter.i: test_filter.cc.i
@@ -577,7 +580,7 @@ test_filter.i: test_filter.cc.i
 
 # target to preprocess a source file
 test_filter.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/test_filter.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/test_filter.cc.i
 .PHONY : test_filter.cc.i
 
 test_filter.s: test_filter.cc.s
@@ -585,7 +588,7 @@ test_filter.s: test_filter.cc.s
 
 # target to generate assembly for a file
 test_filter.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/test_filter.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_filter.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_filter.dir/test_filter.cc.s
 .PHONY : test_filter.cc.s
 
 test_general.o: test_general.cc.o
@@ -593,7 +596,7 @@ test_general.o: test_general.cc.o
 
 # target to build an object file
 test_general.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/test_general.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/test_general.cc.o
 .PHONY : test_general.cc.o
 
 test_general.i: test_general.cc.i
@@ -601,7 +604,7 @@ test_general.i: test_general.cc.i
 
 # target to preprocess a source file
 test_general.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/test_general.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/test_general.cc.i
 .PHONY : test_general.cc.i
 
 test_general.s: test_general.cc.s
@@ -609,7 +612,7 @@ test_general.s: test_general.cc.s
 
 # target to generate assembly for a file
 test_general.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/test_general.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_general.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_general.dir/test_general.cc.s
 .PHONY : test_general.cc.s
 
 test_runtime.o: test_runtime.cc.o
@@ -617,7 +620,7 @@ test_runtime.o: test_runtime.cc.o
 
 # target to build an object file
 test_runtime.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/test_runtime.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/test_runtime.cc.o
 .PHONY : test_runtime.cc.o
 
 test_runtime.i: test_runtime.cc.i
@@ -625,7 +628,7 @@ test_runtime.i: test_runtime.cc.i
 
 # target to preprocess a source file
 test_runtime.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/test_runtime.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/test_runtime.cc.i
 .PHONY : test_runtime.cc.i
 
 test_runtime.s: test_runtime.cc.s
@@ -633,7 +636,7 @@ test_runtime.s: test_runtime.cc.s
 
 # target to generate assembly for a file
 test_runtime.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/test_runtime.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/test_runtime.cc.s
 .PHONY : test_runtime.cc.s
 
 test_vmcircbuf.o: test_vmcircbuf.cc.o
@@ -641,7 +644,7 @@ test_vmcircbuf.o: test_vmcircbuf.cc.o
 
 # target to build an object file
 test_vmcircbuf.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/test_vmcircbuf.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/test_vmcircbuf.cc.o
 .PHONY : test_vmcircbuf.cc.o
 
 test_vmcircbuf.i: test_vmcircbuf.cc.i
@@ -649,7 +652,7 @@ test_vmcircbuf.i: test_vmcircbuf.cc.i
 
 # target to preprocess a source file
 test_vmcircbuf.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/test_vmcircbuf.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/test_vmcircbuf.cc.i
 .PHONY : test_vmcircbuf.cc.i
 
 test_vmcircbuf.s: test_vmcircbuf.cc.s
@@ -657,7 +660,7 @@ test_vmcircbuf.s: test_vmcircbuf.cc.s
 
 # target to generate assembly for a file
 test_vmcircbuf.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/test_vmcircbuf.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/build.make gnuradio-core/src/tests/CMakeFiles/test_vmcircbuf.dir/test_vmcircbuf.cc.s
 .PHONY : test_vmcircbuf.cc.s
 
 # Help Target
@@ -738,6 +741,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

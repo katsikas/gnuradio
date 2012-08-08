@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__fft__vcc__fftw" kind="class" prot="public">
     <compoundname>gr_fft_vcc_fftw</compoundname>
     <basecompoundref refid="classgr__fft__vcc" prot="public" virt="non-virtual">gr_fft_vcc</basecompoundref>
@@ -16,12 +16,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="49" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" bodystart="49" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="49" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__fft__vcc__fftw_1a02daf2b065df005960d9397b567d65ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fft_vcc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fft_vcc_sptr</ref></type>
         <definition>GR_CORE_API gr_fft_vcc_sptr gr_make_fft_vcc_fftw</definition>
         <argsstring>(int fft_size, bool forward, const std::vector&lt; float &gt; &amp;window, bool shift, int nthreads)</argsstring>
         <name>gr_make_fft_vcc_fftw</name>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="47"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="47"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="53"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -102,10 +102,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="56"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fft__vcc__fftw_1a558b6e041c8cea4ec82566f35c4d4db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_fft_vcc_fftw::set_nthreads</definition>
         <argsstring>(int n)</argsstring>
         <name>set_nthreads</name>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="58"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="58"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fft__vcc__fftw_1a7d0f7af8467202b7a6cc4397748b51bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="59"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="59"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fft__vcc__fftw_1abbf9454273de1cb1e4a060a43ccd3a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -160,7 +160,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="63"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="63"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -168,122 +168,122 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3593">
+      <node id="9323">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3594" relation="public-inheritance">
+        <childnode refid="9324" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3590">
+      <node id="9320">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3591" relation="public-inheritance">
+        <childnode refid="9321" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3591">
+      <node id="9321">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3592" relation="public-inheritance">
+        <childnode refid="9322" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3589">
+      <node id="9319">
         <label>gr_fft_vcc</label>
         <link refid="classgr__fft__vcc"/>
-        <childnode refid="3590" relation="public-inheritance">
+        <childnode refid="9320" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3588">
+      <node id="9318">
         <label>gr_fft_vcc_fftw</label>
         <link refid="classgr__fft__vcc__fftw"/>
-        <childnode refid="3589" relation="public-inheritance">
+        <childnode refid="9319" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3594">
+      <node id="9324">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3592">
+      <node id="9322">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3593" relation="public-inheritance">
+        <childnode refid="9323" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3600">
+      <node id="9330">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3601" relation="public-inheritance">
+        <childnode refid="9331" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3597">
+      <node id="9327">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3598" relation="public-inheritance">
+        <childnode refid="9328" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3606">
+      <node id="9336">
         <label>std::vector&lt; float &gt;</label>
       </node>
-      <node id="3598">
+      <node id="9328">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3599" relation="public-inheritance">
+        <childnode refid="9329" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3602">
+      <node id="9332">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3603" relation="usage">
+        <childnode refid="9333" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3605">
+      <node id="9335">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3596">
+      <node id="9326">
         <label>gr_fft_vcc</label>
         <link refid="classgr__fft__vcc"/>
-        <childnode refid="3597" relation="public-inheritance">
+        <childnode refid="9327" relation="public-inheritance">
         </childnode>
-        <childnode refid="3606" relation="usage">
+        <childnode refid="9336" relation="usage">
           <edgelabel>d_window</edgelabel>
         </childnode>
       </node>
-      <node id="3595">
+      <node id="9325">
         <label>gr_fft_vcc_fftw</label>
         <link refid="classgr__fft__vcc__fftw"/>
-        <childnode refid="3596" relation="public-inheritance">
+        <childnode refid="9326" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3601">
+      <node id="9331">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3603">
+      <node id="9333">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3599">
+      <node id="9329">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3600" relation="public-inheritance">
+        <childnode refid="9330" relation="public-inheritance">
         </childnode>
-        <childnode refid="3602" relation="usage">
+        <childnode refid="9332" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3604" relation="usage">
+        <childnode refid="9334" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3604">
+      <node id="9334">
         <label>std::string</label>
-        <childnode refid="3605" relation="public-inheritance">
+        <childnode refid="9335" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="43" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" bodystart="42" bodyend="64"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" line="43" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fft_vcc_fftw.h" bodystart="42" bodyend="64"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_fft_vcc_fftw</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_fft_vcc_fftw</scope><name>add_item_tag</name></member>

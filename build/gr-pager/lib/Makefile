@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gr-pager/lib/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gr-pager/lib/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gr-pager/lib/CMakeFiles/gnuradio-pager.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/CMakeFiles/gnuradio-pager.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/CMakeFiles/gnuradio-pager.dir/rule
 .PHONY : gr-pager/lib/CMakeFiles/gnuradio-pager.dir/rule
 
 # Convenience name for target.
@@ -177,15 +180,20 @@ gnuradio-pager: gr-pager/lib/CMakeFiles/gnuradio-pager.dir/rule
 
 # fast build rule for target.
 gnuradio-pager/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build
 .PHONY : gnuradio-pager/fast
+
+# Manual pre-install relink rule for target.
+gnuradio-pager/preinstall:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-pager/lib/CMakeFiles/gnuradio-pager.dir/preinstall
+.PHONY : gnuradio-pager/preinstall
 
 pager_flex_deinterleave.o: pager_flex_deinterleave.cc.o
 .PHONY : pager_flex_deinterleave.o
 
 # target to build an object file
 pager_flex_deinterleave.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_deinterleave.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_deinterleave.cc.o
 .PHONY : pager_flex_deinterleave.cc.o
 
 pager_flex_deinterleave.i: pager_flex_deinterleave.cc.i
@@ -193,7 +201,7 @@ pager_flex_deinterleave.i: pager_flex_deinterleave.cc.i
 
 # target to preprocess a source file
 pager_flex_deinterleave.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_deinterleave.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_deinterleave.cc.i
 .PHONY : pager_flex_deinterleave.cc.i
 
 pager_flex_deinterleave.s: pager_flex_deinterleave.cc.s
@@ -201,7 +209,7 @@ pager_flex_deinterleave.s: pager_flex_deinterleave.cc.s
 
 # target to generate assembly for a file
 pager_flex_deinterleave.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_deinterleave.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_deinterleave.cc.s
 .PHONY : pager_flex_deinterleave.cc.s
 
 pager_flex_frame.o: pager_flex_frame.cc.o
@@ -209,7 +217,7 @@ pager_flex_frame.o: pager_flex_frame.cc.o
 
 # target to build an object file
 pager_flex_frame.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_frame.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_frame.cc.o
 .PHONY : pager_flex_frame.cc.o
 
 pager_flex_frame.i: pager_flex_frame.cc.i
@@ -217,7 +225,7 @@ pager_flex_frame.i: pager_flex_frame.cc.i
 
 # target to preprocess a source file
 pager_flex_frame.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_frame.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_frame.cc.i
 .PHONY : pager_flex_frame.cc.i
 
 pager_flex_frame.s: pager_flex_frame.cc.s
@@ -225,7 +233,7 @@ pager_flex_frame.s: pager_flex_frame.cc.s
 
 # target to generate assembly for a file
 pager_flex_frame.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_frame.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_frame.cc.s
 .PHONY : pager_flex_frame.cc.s
 
 pager_flex_parse.o: pager_flex_parse.cc.o
@@ -233,7 +241,7 @@ pager_flex_parse.o: pager_flex_parse.cc.o
 
 # target to build an object file
 pager_flex_parse.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_parse.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_parse.cc.o
 .PHONY : pager_flex_parse.cc.o
 
 pager_flex_parse.i: pager_flex_parse.cc.i
@@ -241,7 +249,7 @@ pager_flex_parse.i: pager_flex_parse.cc.i
 
 # target to preprocess a source file
 pager_flex_parse.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_parse.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_parse.cc.i
 .PHONY : pager_flex_parse.cc.i
 
 pager_flex_parse.s: pager_flex_parse.cc.s
@@ -249,7 +257,7 @@ pager_flex_parse.s: pager_flex_parse.cc.s
 
 # target to generate assembly for a file
 pager_flex_parse.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_parse.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_parse.cc.s
 .PHONY : pager_flex_parse.cc.s
 
 pager_flex_sync.o: pager_flex_sync.cc.o
@@ -257,7 +265,7 @@ pager_flex_sync.o: pager_flex_sync.cc.o
 
 # target to build an object file
 pager_flex_sync.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_sync.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_sync.cc.o
 .PHONY : pager_flex_sync.cc.o
 
 pager_flex_sync.i: pager_flex_sync.cc.i
@@ -265,7 +273,7 @@ pager_flex_sync.i: pager_flex_sync.cc.i
 
 # target to preprocess a source file
 pager_flex_sync.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_sync.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_sync.cc.i
 .PHONY : pager_flex_sync.cc.i
 
 pager_flex_sync.s: pager_flex_sync.cc.s
@@ -273,7 +281,7 @@ pager_flex_sync.s: pager_flex_sync.cc.s
 
 # target to generate assembly for a file
 pager_flex_sync.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_sync.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_flex_sync.cc.s
 .PHONY : pager_flex_sync.cc.s
 
 pager_slicer_fb.o: pager_slicer_fb.cc.o
@@ -281,7 +289,7 @@ pager_slicer_fb.o: pager_slicer_fb.cc.o
 
 # target to build an object file
 pager_slicer_fb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_slicer_fb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_slicer_fb.cc.o
 .PHONY : pager_slicer_fb.cc.o
 
 pager_slicer_fb.i: pager_slicer_fb.cc.i
@@ -289,7 +297,7 @@ pager_slicer_fb.i: pager_slicer_fb.cc.i
 
 # target to preprocess a source file
 pager_slicer_fb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_slicer_fb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_slicer_fb.cc.i
 .PHONY : pager_slicer_fb.cc.i
 
 pager_slicer_fb.s: pager_slicer_fb.cc.s
@@ -297,7 +305,7 @@ pager_slicer_fb.s: pager_slicer_fb.cc.s
 
 # target to generate assembly for a file
 pager_slicer_fb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_slicer_fb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pager_slicer_fb.cc.s
 .PHONY : pager_slicer_fb.cc.s
 
 pageri_bch3221.o: pageri_bch3221.cc.o
@@ -305,7 +313,7 @@ pageri_bch3221.o: pageri_bch3221.cc.o
 
 # target to build an object file
 pageri_bch3221.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_bch3221.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_bch3221.cc.o
 .PHONY : pageri_bch3221.cc.o
 
 pageri_bch3221.i: pageri_bch3221.cc.i
@@ -313,7 +321,7 @@ pageri_bch3221.i: pageri_bch3221.cc.i
 
 # target to preprocess a source file
 pageri_bch3221.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_bch3221.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_bch3221.cc.i
 .PHONY : pageri_bch3221.cc.i
 
 pageri_bch3221.s: pageri_bch3221.cc.s
@@ -321,7 +329,7 @@ pageri_bch3221.s: pageri_bch3221.cc.s
 
 # target to generate assembly for a file
 pageri_bch3221.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_bch3221.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_bch3221.cc.s
 .PHONY : pageri_bch3221.cc.s
 
 pageri_flex_modes.o: pageri_flex_modes.cc.o
@@ -329,7 +337,7 @@ pageri_flex_modes.o: pageri_flex_modes.cc.o
 
 # target to build an object file
 pageri_flex_modes.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_flex_modes.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_flex_modes.cc.o
 .PHONY : pageri_flex_modes.cc.o
 
 pageri_flex_modes.i: pageri_flex_modes.cc.i
@@ -337,7 +345,7 @@ pageri_flex_modes.i: pageri_flex_modes.cc.i
 
 # target to preprocess a source file
 pageri_flex_modes.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_flex_modes.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_flex_modes.cc.i
 .PHONY : pageri_flex_modes.cc.i
 
 pageri_flex_modes.s: pageri_flex_modes.cc.s
@@ -345,7 +353,7 @@ pageri_flex_modes.s: pageri_flex_modes.cc.s
 
 # target to generate assembly for a file
 pageri_flex_modes.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_flex_modes.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_flex_modes.cc.s
 .PHONY : pageri_flex_modes.cc.s
 
 pageri_util.o: pageri_util.cc.o
@@ -353,7 +361,7 @@ pageri_util.o: pageri_util.cc.o
 
 # target to build an object file
 pageri_util.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_util.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_util.cc.o
 .PHONY : pageri_util.cc.o
 
 pageri_util.i: pageri_util.cc.i
@@ -361,7 +369,7 @@ pageri_util.i: pageri_util.cc.i
 
 # target to preprocess a source file
 pageri_util.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_util.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_util.cc.i
 .PHONY : pageri_util.cc.i
 
 pageri_util.s: pageri_util.cc.s
@@ -369,7 +377,7 @@ pageri_util.s: pageri_util.cc.s
 
 # target to generate assembly for a file
 pageri_util.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_util.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/pageri_util.cc.s
 .PHONY : pageri_util.cc.s
 
 # Help Target
@@ -423,6 +431,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

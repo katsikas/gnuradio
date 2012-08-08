@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gr-digital/swig/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gr-digital/swig/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gr-digital/swig/CMakeFiles/_digital_swig.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/_digital_swig.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/_digital_swig.dir/rule
 .PHONY : gr-digital/swig/CMakeFiles/_digital_swig.dir/rule
 
 # Convenience name for target.
@@ -177,12 +180,17 @@ _digital_swig: gr-digital/swig/CMakeFiles/_digital_swig.dir/rule
 
 # fast build rule for target.
 _digital_swig/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/build
 .PHONY : _digital_swig/fast
+
+# Manual pre-install relink rule for target.
+_digital_swig/preinstall:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/_digital_swig.dir/preinstall
+.PHONY : _digital_swig/preinstall
 
 # Convenience name for target.
 gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/rule
 .PHONY : gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/rule
 
 # Convenience name for target.
@@ -191,12 +199,12 @@ _digital_swig_doc_tag: gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/rule
 
 # fast build rule for target.
 _digital_swig_doc_tag/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build
 .PHONY : _digital_swig_doc_tag/fast
 
 # Convenience name for target.
 gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/rule
 .PHONY : gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/rule
 
 # Convenience name for target.
@@ -205,43 +213,29 @@ _digital_swig_swig_tag: gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/ru
 
 # fast build rule for target.
 _digital_swig_swig_tag/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build
 .PHONY : _digital_swig_swig_tag/fast
 
 # Convenience name for target.
-gr-digital/swig/CMakeFiles/digital_generated_swigs.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/digital_generated_swigs.dir/rule
-.PHONY : gr-digital/swig/CMakeFiles/digital_generated_swigs.dir/rule
+gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_12cd3.dir/rule:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_12cd3.dir/rule
+.PHONY : gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_12cd3.dir/rule
 
 # Convenience name for target.
-digital_generated_swigs: gr-digital/swig/CMakeFiles/digital_generated_swigs.dir/rule
-.PHONY : digital_generated_swigs
+pygen_gr_digital_swig_12cd3: gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_12cd3.dir/rule
+.PHONY : pygen_gr_digital_swig_12cd3
 
 # fast build rule for target.
-digital_generated_swigs/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/digital_generated_swigs.dir/build.make gr-digital/swig/CMakeFiles/digital_generated_swigs.dir/build
-.PHONY : digital_generated_swigs/fast
-
-# Convenience name for target.
-gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_73350.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_73350.dir/rule
-.PHONY : gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_73350.dir/rule
-
-# Convenience name for target.
-pygen_gr_digital_swig_73350: gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_73350.dir/rule
-.PHONY : pygen_gr_digital_swig_73350
-
-# fast build rule for target.
-pygen_gr_digital_swig_73350/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_73350.dir/build.make gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_73350.dir/build
-.PHONY : pygen_gr_digital_swig_73350/fast
+pygen_gr_digital_swig_12cd3/fast:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_12cd3.dir/build.make gr-digital/swig/CMakeFiles/pygen_gr_digital_swig_12cd3.dir/build
+.PHONY : pygen_gr_digital_swig_12cd3/fast
 
 _digital_swig_doc_tag.o: _digital_swig_doc_tag.cpp.o
 .PHONY : _digital_swig_doc_tag.o
 
 # target to build an object file
 _digital_swig_doc_tag.cpp.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/_digital_swig_doc_tag.cpp.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/_digital_swig_doc_tag.cpp.o
 .PHONY : _digital_swig_doc_tag.cpp.o
 
 _digital_swig_doc_tag.i: _digital_swig_doc_tag.cpp.i
@@ -249,7 +243,7 @@ _digital_swig_doc_tag.i: _digital_swig_doc_tag.cpp.i
 
 # target to preprocess a source file
 _digital_swig_doc_tag.cpp.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/_digital_swig_doc_tag.cpp.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/_digital_swig_doc_tag.cpp.i
 .PHONY : _digital_swig_doc_tag.cpp.i
 
 _digital_swig_doc_tag.s: _digital_swig_doc_tag.cpp.s
@@ -257,7 +251,7 @@ _digital_swig_doc_tag.s: _digital_swig_doc_tag.cpp.s
 
 # target to generate assembly for a file
 _digital_swig_doc_tag.cpp.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/_digital_swig_doc_tag.cpp.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_doc_tag.dir/_digital_swig_doc_tag.cpp.s
 .PHONY : _digital_swig_doc_tag.cpp.s
 
 _digital_swig_swig_tag.o: _digital_swig_swig_tag.cpp.o
@@ -265,7 +259,7 @@ _digital_swig_swig_tag.o: _digital_swig_swig_tag.cpp.o
 
 # target to build an object file
 _digital_swig_swig_tag.cpp.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/_digital_swig_swig_tag.cpp.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/_digital_swig_swig_tag.cpp.o
 .PHONY : _digital_swig_swig_tag.cpp.o
 
 _digital_swig_swig_tag.i: _digital_swig_swig_tag.cpp.i
@@ -273,7 +267,7 @@ _digital_swig_swig_tag.i: _digital_swig_swig_tag.cpp.i
 
 # target to preprocess a source file
 _digital_swig_swig_tag.cpp.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/_digital_swig_swig_tag.cpp.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/_digital_swig_swig_tag.cpp.i
 .PHONY : _digital_swig_swig_tag.cpp.i
 
 _digital_swig_swig_tag.s: _digital_swig_swig_tag.cpp.s
@@ -281,7 +275,7 @@ _digital_swig_swig_tag.s: _digital_swig_swig_tag.cpp.s
 
 # target to generate assembly for a file
 _digital_swig_swig_tag.cpp.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/_digital_swig_swig_tag.cpp.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig_swig_tag.dir/_digital_swig_swig_tag.cpp.s
 .PHONY : _digital_swig_swig_tag.cpp.s
 
 digital_swigPYTHON_wrap.o: digital_swigPYTHON_wrap.cxx.o
@@ -289,7 +283,7 @@ digital_swigPYTHON_wrap.o: digital_swigPYTHON_wrap.cxx.o
 
 # target to build an object file
 digital_swigPYTHON_wrap.cxx.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/digital_swigPYTHON_wrap.cxx.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/digital_swigPYTHON_wrap.cxx.o
 .PHONY : digital_swigPYTHON_wrap.cxx.o
 
 digital_swigPYTHON_wrap.i: digital_swigPYTHON_wrap.cxx.i
@@ -297,7 +291,7 @@ digital_swigPYTHON_wrap.i: digital_swigPYTHON_wrap.cxx.i
 
 # target to preprocess a source file
 digital_swigPYTHON_wrap.cxx.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/digital_swigPYTHON_wrap.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/digital_swigPYTHON_wrap.cxx.i
 .PHONY : digital_swigPYTHON_wrap.cxx.i
 
 digital_swigPYTHON_wrap.s: digital_swigPYTHON_wrap.cxx.s
@@ -305,7 +299,7 @@ digital_swigPYTHON_wrap.s: digital_swigPYTHON_wrap.cxx.s
 
 # target to generate assembly for a file
 digital_swigPYTHON_wrap.cxx.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/digital_swigPYTHON_wrap.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/digital_swigPYTHON_wrap.cxx.s
 .PHONY : digital_swigPYTHON_wrap.cxx.s
 
 # Help Target
@@ -317,7 +311,6 @@ help:
 	@echo "... _digital_swig"
 	@echo "... _digital_swig_doc_tag"
 	@echo "... _digital_swig_swig_tag"
-	@echo "... digital_generated_swigs"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -325,7 +318,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... package"
 	@echo "... package_source"
-	@echo "... pygen_gr_digital_swig_73350"
+	@echo "... pygen_gr_digital_swig_12cd3"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... _digital_swig_doc_tag.o"
@@ -348,6 +341,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

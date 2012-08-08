@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-trellis/src/examples/grc
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/grc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,17 +29,17 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis-examples")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/grc/interference_cancellation.grc"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/grc/pccc1.grc"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/grc/pccc.grc"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/grc/sccc1.grc"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/grc/sccc.grc"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/grc/readme.txt"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/grc/interference_cancellation.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/grc/pccc1.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/grc/pccc.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/grc/sccc1.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/grc/sccc.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/grc/readme.txt"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis-examples")
 

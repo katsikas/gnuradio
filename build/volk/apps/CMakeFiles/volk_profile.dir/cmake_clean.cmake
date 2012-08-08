@@ -3,6 +3,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o"
   "volk_profile.pdb"
   "volk_profile"
+  "CMakeFiles/CMakeRelink.dir/volk_profile.pdb"
+  "CMakeFiles/CMakeRelink.dir/volk_profile"
 )
 
 # Per-language clean rules from dependency scanning.

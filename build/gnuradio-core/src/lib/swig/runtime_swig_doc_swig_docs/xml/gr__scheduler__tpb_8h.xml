@@ -1,31 +1,52 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__scheduler__tpb_8h" kind="file">
     <compoundname>gr_scheduler_tpb.h</compoundname>
     <includes local="no">gr_core_api.h</includes>
     <includes refid="gr__scheduler_8h" local="no">gr_scheduler.h</includes>
     <includes local="no">gruel/thread_group.h</includes>
     <incdepgraph>
-      <node id="420">
-        <label>gr_sptr_magic.h</label>
-        <link refid="gr__sptr__magic_8h"/>
+      <node id="415">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="427">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
         <childnode refid="408" relation="include">
         </childnode>
-        <childnode refid="415" relation="include">
+        <childnode refid="425" relation="include">
         </childnode>
       </node>
-      <node id="411">
-        <label>gr_block.h</label>
-        <link refid="gr__block_8h"/>
+      <node id="429">
+        <label>gr_flowgraph.h</label>
+        <link refid="gr__flowgraph_8h"/>
         <childnode refid="408" relation="include">
         </childnode>
         <childnode refid="412" relation="include">
         </childnode>
-        <childnode refid="427" relation="include">
+        <childnode refid="430" relation="include">
         </childnode>
       </node>
-      <node id="415">
-        <label>boost/shared_ptr.hpp</label>
+      <node id="426">
+        <label>string</label>
+      </node>
+      <node id="418">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>gr_scheduler.h</label>
+        <link refid="gr__scheduler_8h"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
       </node>
       <node id="414">
         <label>gr_types.h</label>
@@ -41,18 +62,31 @@
         <childnode refid="418" relation="include">
         </childnode>
       </node>
-      <node id="429">
-        <label>gr_flowgraph.h</label>
-        <link refid="gr__flowgraph_8h"/>
+      <node id="417">
+        <label>stddef.h</label>
+      </node>
+      <node id="407">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_tpb.h</label>
+        <link refid="gr_scheduler_tpb.h"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="411">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
         <childnode refid="408" relation="include">
         </childnode>
         <childnode refid="412" relation="include">
         </childnode>
-        <childnode refid="430" relation="include">
+        <childnode refid="427" relation="include">
         </childnode>
-      </node>
-      <node id="426">
-        <label>string</label>
       </node>
       <node id="412">
         <label>gr_basic_block.h</label>
@@ -72,12 +106,6 @@
         <childnode refid="426" relation="include">
         </childnode>
       </node>
-      <node id="417">
-        <label>stddef.h</label>
-      </node>
-      <node id="422">
-        <label>boost/function.hpp</label>
-      </node>
       <node id="423">
         <label>gr_msg_accepter.h</label>
         <link refid="gr__msg__accepter_8h"/>
@@ -88,47 +116,25 @@
         <childnode refid="425" relation="include">
         </childnode>
       </node>
-      <node id="413">
-        <label>gr_runtime_types.h</label>
-        <link refid="gr__runtime__types_8h"/>
-        <childnode refid="408" relation="include">
-        </childnode>
-        <childnode refid="414" relation="include">
-        </childnode>
-      </node>
       <node id="431">
         <label>gruel/thread_group.h</label>
       </node>
       <node id="408">
         <label>gr_core_api.h</label>
       </node>
+      <node id="420">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
       <node id="416">
         <label>vector</label>
       </node>
-      <node id="409">
-        <label>gr_scheduler.h</label>
-        <link refid="gr__scheduler_8h"/>
-        <childnode refid="408" relation="include">
-        </childnode>
-        <childnode refid="410" relation="include">
-        </childnode>
-        <childnode refid="411" relation="include">
-        </childnode>
-        <childnode refid="428" relation="include">
-        </childnode>
-      </node>
       <node id="425">
         <label>gruel/pmt.h</label>
-      </node>
-      <node id="407">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_tpb.h</label>
-        <link refid="gr_scheduler_tpb.h"/>
-        <childnode refid="408" relation="include">
-        </childnode>
-        <childnode refid="409" relation="include">
-        </childnode>
-        <childnode refid="431" relation="include">
-        </childnode>
       </node>
       <node id="410">
         <label>boost/utility.hpp</label>
@@ -138,14 +144,6 @@
       </node>
       <node id="430">
         <label>iostream</label>
-      </node>
-      <node id="427">
-        <label>gr_tags.h</label>
-        <link refid="gr__tags_8h"/>
-        <childnode refid="408" relation="include">
-        </childnode>
-        <childnode refid="425" relation="include">
-        </childnode>
       </node>
       <node id="428">
         <label>gr_flat_flowgraph.h</label>
@@ -157,17 +155,19 @@
         <childnode refid="411" relation="include">
         </childnode>
       </node>
+      <node id="413">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+      </node>
       <node id="424">
         <label>gruel/msg_accepter.h</label>
       </node>
       <node id="419">
         <label>complex</label>
-      </node>
-      <node id="418">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="419" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classgr__scheduler__tpb" prot="public">gr_scheduler_tpb</innerclass>
@@ -223,6 +223,6 @@
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_SCHEDULER_TPB_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_tpb.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler_tpb.h"/>
   </compounddef>
 </doxygen>

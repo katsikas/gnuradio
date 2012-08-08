@@ -22,14 +22,17 @@
 ########################################################################
 set(qtgui_moc_hdrs
     spectrumdisplayform.h
+    VectorAnalyzerDisplayForm.h
     timedisplayform.h
     FrequencyDisplayPlot.h
     TimeDomainDisplayPlot.h
     WaterfallDisplayPlot.h
     ConstellationDisplayPlot.h
+    ConstellationDisplayPlotEnhanced.h
 )
 QT4_WRAP_CPP(qtgui_moc_srcs ${qtgui_moc_hdrs})
 QT4_WRAP_UI(qtgui_ui_hdrs spectrumdisplayform.ui)
+QT4_WRAP_UI(qtgui_ui_hdrs VectorAnalyzerDisplayForm.ui)
 
 #FIXME the sources expect <foo>.ui.h, but the macros generate ui_foo.h
 #avoid changing the sources by generating the header with the include
@@ -37,6 +40,12 @@ set(spectrum_ui_hdr ${CMAKE_CURRENT_BINARY_DIR}/spectrumdisplayform.ui.h)
 if(NOT EXISTS ${spectrum_ui_hdr})
     file(WRITE ${spectrum_ui_hdr} "#include <ui_spectrumdisplayform.h>\n")
 endif(NOT EXISTS ${spectrum_ui_hdr})
+
+#Do the same for the vector analyzer ui
+set(vector_analyzer_ui_hdr ${CMAKE_CURRENT_BINARY_DIR}/VectorAnalyzerDisplayForm.ui.h)
+if(NOT EXISTS ${vector_analyzer_ui_hdr})
+    file(WRITE ${vector_analyzer_ui_hdr} "#include <ui_VectorAnalyzerDisplayForm.h>\n")
+endif(NOT EXISTS ${vector_analyzer_ui_hdr})
 
 set(qtgui_srcs
     ${qtgui_moc_srcs}
@@ -46,16 +55,21 @@ set(qtgui_srcs
     WaterfallDisplayPlot.cc
     waterfallGlobalData.cc
     ConstellationDisplayPlot.cc
+    ConstellationDisplayPlotEnhanced.cc
     spectrumdisplayform.cc
     timedisplayform.cc
     SpectrumGUIClass.cc
     spectrumUpdateEvents.cc
+    VectorAnalyzerEvents.cc
+    VectorAnalyzerGUIClass.cc 
+    VectorAnalyzerDisplayForm.cc
     plot_waterfall.cc
     qtgui_sink_c.cc
     qtgui_sink_f.cc
     qtgui_time_sink_c.cc
     qtgui_time_sink_f.cc
     qtgui_util.cc
+    qtgui_ofdm_vector_analyzer_c.cc
 )
 
 ########################################################################
@@ -99,11 +113,15 @@ install(FILES
     WaterfallDisplayPlot.h
     waterfallGlobalData.h
     ConstellationDisplayPlot.h
+    ConstellationDisplayPlotEnhanced.h
     plot_waterfall.h
     spectrumdisplayform.h
     timedisplayform.h
     SpectrumGUIClass.h
     spectrumUpdateEvents.h
+    VectorAnalyzerEvents.h
+    VectorAnalyzerGUIClass.h
+    VectorAnalyzerDisplayForm.h
     DESTINATION ${GR_INCLUDE_DIR}/gnuradio
     COMPONENT "qtgui_devel"
 )

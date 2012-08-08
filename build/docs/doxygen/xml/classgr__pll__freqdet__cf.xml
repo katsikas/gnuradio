@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__pll__freqdet__cf" kind="class" prot="public">
     <compoundname>gr_pll_freqdet_cf</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -7,7 +7,7 @@
     <includes refid="gr__pll__freqdet__cf_8h" local="no">gr_pll_freqdet_cf.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pll__freqdet__cf_1ac9ac4d8846650bc97b4a69b202901171" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pll_freqdet_cf_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pll_freqdet_cf_sptr</ref></type>
         <definition>GR_CORE_API gr_pll_freqdet_cf_sptr gr_make_pll_freqdet_cf</definition>
         <argsstring>(float loop_bw, float max_freq, float min_freq)</argsstring>
         <name>gr_make_pll_freqdet_cf</name>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="55"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="55"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="57"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="57"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pll__freqdet__cf_1a9a3288e70a731960d0cf817b6012887f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="58"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="58"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pll__freqdet__cf_1a89a374726491288f4087c560e3235233" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -99,7 +99,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="62"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="62"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pll__freqdet__cf_1ab276cb5b4eb097cd19cb4d6ac929a982" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="64"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="64"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -129,116 +129,116 @@
 <para>This PLL locks onto a [possibly noisy] reference carrier on the input and outputs an estimate of that frequency in radians per sample. All settings max_freq and min_freq are in terms of radians per sample, NOT HERTZ. The loop bandwidth determins the lock range and should be set around pi/200 -- 2pi/100. <simplesect kind="see"><para><ref refid="classgr__pll__refout__cc" kindref="compound">gr_pll_refout_cc</ref>, <ref refid="classgr__pll__carriertracking__cc" kindref="compound">gr_pll_carriertracking_cc</ref> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="5057">
+      <node id="12166">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5058" relation="public-inheritance">
+        <childnode refid="12167" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5054">
+      <node id="12163">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5055" relation="public-inheritance">
+        <childnode refid="12164" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5055">
+      <node id="12164">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5056" relation="public-inheritance">
+        <childnode refid="12165" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5058">
+      <node id="12167">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5059">
+      <node id="12168">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="5056">
+      <node id="12165">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5057" relation="public-inheritance">
+        <childnode refid="12166" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5053">
+      <node id="12162">
         <label>gr_pll_freqdet_cf</label>
         <link refid="classgr__pll__freqdet__cf"/>
-        <childnode refid="5054" relation="public-inheritance">
+        <childnode refid="12163" relation="public-inheritance">
         </childnode>
-        <childnode refid="5059" relation="public-inheritance">
+        <childnode refid="12168" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5064">
+      <node id="12173">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5065" relation="public-inheritance">
+        <childnode refid="12174" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5061">
+      <node id="12170">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5062" relation="public-inheritance">
+        <childnode refid="12171" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5062">
+      <node id="12171">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5063" relation="public-inheritance">
+        <childnode refid="12172" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5066">
+      <node id="12175">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5067" relation="usage">
+        <childnode refid="12176" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5069">
+      <node id="12178">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5065">
+      <node id="12174">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5070">
+      <node id="12179">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="5067">
+      <node id="12176">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5063">
+      <node id="12172">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5064" relation="public-inheritance">
+        <childnode refid="12173" relation="public-inheritance">
         </childnode>
-        <childnode refid="5066" relation="usage">
+        <childnode refid="12175" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5068" relation="usage">
+        <childnode refid="12177" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5060">
+      <node id="12169">
         <label>gr_pll_freqdet_cf</label>
         <link refid="classgr__pll__freqdet__cf"/>
-        <childnode refid="5061" relation="public-inheritance">
+        <childnode refid="12170" relation="public-inheritance">
         </childnode>
-        <childnode refid="5070" relation="public-inheritance">
+        <childnode refid="12179" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5068">
+      <node id="12177">
         <label>std::string</label>
-        <childnode refid="5069" relation="public-inheritance">
+        <childnode refid="12178" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="52" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" bodystart="51" bodyend="65"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" line="52" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pll_freqdet_cf.h" bodystart="51" bodyend="65"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>add_item_tag</name></member>

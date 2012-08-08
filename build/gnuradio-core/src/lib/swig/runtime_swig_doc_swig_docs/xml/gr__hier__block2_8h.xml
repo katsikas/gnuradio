@@ -1,22 +1,23 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__hier__block2_8h" kind="file">
     <compoundname>gr_hier_block2.h</compoundname>
     <includes local="no">gr_core_api.h</includes>
     <includes refid="gr__basic__block_8h" local="no">gr_basic_block.h</includes>
-    <includedby refid="gr__hier__block2__detail_8h" local="no">/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2_detail.h</includedby>
-    <includedby refid="gr__top__block_8h" local="no">/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h</includedby>
+    <includedby refid="gr__hier__block2__detail_8h" local="no">/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2_detail.h</includedby>
+    <includedby refid="gr__top__block_8h" local="no">/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h</includedby>
     <incdepgraph>
-      <node id="209">
-        <label>gr_sptr_magic.h</label>
-        <link refid="gr__sptr__magic_8h"/>
-        <childnode refid="200" relation="include">
-        </childnode>
-        <childnode refid="204" relation="include">
-        </childnode>
-      </node>
       <node id="204">
         <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="215">
+        <label>string</label>
+      </node>
+      <node id="207">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
       </node>
       <node id="203">
         <label>gr_types.h</label>
@@ -32,8 +33,11 @@
         <childnode refid="207" relation="include">
         </childnode>
       </node>
-      <node id="215">
-        <label>string</label>
+      <node id="206">
+        <label>stddef.h</label>
+      </node>
+      <node id="211">
+        <label>boost/function.hpp</label>
       </node>
       <node id="201">
         <label>gr_basic_block.h</label>
@@ -53,20 +57,6 @@
         <childnode refid="215" relation="include">
         </childnode>
       </node>
-      <node id="199">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h</label>
-        <link refid="gr_hier_block2.h"/>
-        <childnode refid="200" relation="include">
-        </childnode>
-        <childnode refid="201" relation="include">
-        </childnode>
-      </node>
-      <node id="206">
-        <label>stddef.h</label>
-      </node>
-      <node id="211">
-        <label>boost/function.hpp</label>
-      </node>
       <node id="212">
         <label>gr_msg_accepter.h</label>
         <link refid="gr__msg__accepter_8h"/>
@@ -77,16 +67,16 @@
         <childnode refid="214" relation="include">
         </childnode>
       </node>
-      <node id="202">
-        <label>gr_runtime_types.h</label>
-        <link refid="gr__runtime__types_8h"/>
-        <childnode refid="200" relation="include">
-        </childnode>
-        <childnode refid="203" relation="include">
-        </childnode>
-      </node>
       <node id="200">
         <label>gr_core_api.h</label>
+      </node>
+      <node id="209">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
       </node>
       <node id="205">
         <label>vector</label>
@@ -97,35 +87,45 @@
       <node id="210">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
+      <node id="202">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
       <node id="213">
         <label>gruel/msg_accepter.h</label>
+      </node>
+      <node id="199">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h</label>
+        <link refid="gr_hier_block2.h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
       </node>
       <node id="208">
         <label>complex</label>
       </node>
-      <node id="207">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="208" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="218">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h</label>
         <link refid="gr__top__block_8h"/>
       </node>
+      <node id="217">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2_detail.h</label>
+        <link refid="gr__hier__block2__detail_8h"/>
+      </node>
       <node id="216">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h</label>
         <link refid="gr_hier_block2.h"/>
         <childnode refid="217" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
-      </node>
-      <node id="217">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2_detail.h</label>
-        <link refid="gr__hier__block2__detail_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classgr__hier__block2" prot="public">gr_hier_block2</innerclass>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="34"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="34"/>
       </memberdef>
       <memberdef kind="function" id="gr__hier__block2_8h_1aa737e452e59ee3142fdd0ade424fbd67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="gr__runtime__types_8h_1a85ffc2b58fc1d568d5c2d514088a3d07" kindref="member">gr_hier_block2_sptr</ref></type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="156" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" bodystart="156" bodyend="158"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" line="156" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h" bodystart="156" bodyend="158"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -263,6 +263,6 @@
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_HIER_BLOCK2_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_hier_block2.h"/>
   </compounddef>
 </doxygen>

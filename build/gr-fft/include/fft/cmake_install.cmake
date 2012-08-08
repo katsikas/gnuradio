@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-fft/include/fft
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-fft/include/fft
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,17 +29,17 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "fft_devel")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio/fft" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-fft/include/fft/api.h"
-    "/home/katsikas/gnuradio/gr-fft/include/fft/fft.h"
-    "/home/katsikas/gnuradio/gr-fft/include/fft/fft_vcc.h"
-    "/home/katsikas/gnuradio/gr-fft/include/fft/fft_vfc.h"
-    "/home/katsikas/gnuradio/gr-fft/include/fft/goertzel.h"
-    "/home/katsikas/gnuradio/gr-fft/include/fft/goertzel_fc.h"
+    "/home/katsikas/Desktop/gnuradio/gr-fft/include/fft/api.h"
+    "/home/katsikas/Desktop/gnuradio/gr-fft/include/fft/fft.h"
+    "/home/katsikas/Desktop/gnuradio/gr-fft/include/fft/fft_vcc.h"
+    "/home/katsikas/Desktop/gnuradio/gr-fft/include/fft/fft_vfc.h"
+    "/home/katsikas/Desktop/gnuradio/gr-fft/include/fft/goertzel.h"
+    "/home/katsikas/Desktop/gnuradio/gr-fft/include/fft/goertzel_fc.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "fft_devel")
 

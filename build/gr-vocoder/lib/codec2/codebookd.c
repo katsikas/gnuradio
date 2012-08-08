@@ -7,7 +7,7 @@
 
 #include "defines.h"
 
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt */
 static const float codes0[] = {
   225,
   250,
@@ -26,7 +26,7 @@ static const float codes0[] = {
   575,
   600
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt */
 static const float codes1[] = {
   25,
   50,
@@ -45,7 +45,7 @@ static const float codes1[] = {
   375,
   400
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt */
 static const float codes2[] = {
   50,
   75,
@@ -56,7 +56,7 @@ static const float codes2[] = {
   350,
   450
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt */
 static const float codes3[] = {
   50,
   100,
@@ -67,7 +67,7 @@ static const float codes3[] = {
   675,
   800
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt */
 static const float codes4[] = {
   50,
   100,
@@ -78,7 +78,7 @@ static const float codes4[] = {
   675,
   800
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp6.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp6.txt */
 static const float codes5[] = {
   50,
   100,
@@ -89,7 +89,7 @@ static const float codes5[] = {
   675,
   800
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp7.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp7.txt */
 static const float codes6[] = {
   50,
   100,
@@ -100,7 +100,7 @@ static const float codes6[] = {
   675,
   800
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp8.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp8.txt */
 static const float codes7[] = {
   50,
   100,
@@ -111,7 +111,7 @@ static const float codes7[] = {
   675,
   800
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp9.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp9.txt */
 static const float codes8[] = {
   50,
   100,
@@ -122,7 +122,7 @@ static const float codes8[] = {
   675,
   800
 };
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp10.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp10.txt */
 static const float codes9[] = {
   50,
   100,
@@ -135,70 +135,70 @@ static const float codes9[] = {
 };
 
 const struct lsp_codebook lsp_cbd[] = {
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt */
   {
     1,
     4,
     16,
     codes0
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt */
   {
     1,
     4,
     16,
     codes1
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt */
   {
     1,
     3,
     8,
     codes2
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt */
   {
     1,
     3,
     8,
     codes3
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt */
   {
     1,
     3,
     8,
     codes4
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp6.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp6.txt */
   {
     1,
     3,
     8,
     codes5
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp7.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp7.txt */
   {
     1,
     3,
     8,
     codes6
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp8.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp8.txt */
   {
     1,
     3,
     8,
     codes7
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp9.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp9.txt */
   {
     1,
     3,
     8,
     codes8
   },
-  /* /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp10.txt */
+  /* /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp10.txt */
   {
     1,
     3,

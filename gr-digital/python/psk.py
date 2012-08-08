@@ -54,7 +54,6 @@ def create_encodings(mod_code, arity):
 #                           PSK constellation
 # /////////////////////////////////////////////////////////////////////////////
 
-
 def psk_constellation(m=_def_constellation_points, mod_code=_def_mod_code):
     """
     Creates a PSK constellation object.
@@ -64,11 +63,9 @@ def psk_constellation(m=_def_constellation_points, mod_code=_def_mod_code):
         raise StandardError('Number of constellation points must be a power of two.')
     points = [exp(2*pi*(0+1j)*i/m) for i in range(0,m)]
     pre_diff_code, post_diff_code = create_encodings(mod_code, m)
-
     if post_diff_code is not None:
         inverse_post_diff_code = mod_codes.invert_code(post_diff_code)
         points = [points[x] for x in inverse_post_diff_code]
-
     constellation = digital_swig.constellation_psk(points, pre_diff_code, m)
     return constellation
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gruel/src/python
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gruel/src/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,28 +29,28 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gruel" TYPE FILE FILES "/home/katsikas/gnuradio/gruel/src/python/__init__.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gruel" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/gruel/src/python/__init__.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gruel" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gruel/src/python/__init__.pyc"
-    "/home/katsikas/gnuradio/build/gruel/src/python/__init__.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gruel" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/python/__init__.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/python/__init__.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gruel/pmt" TYPE FILE FILES "/home/katsikas/gnuradio/gruel/src/python/pmt/__init__.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gruel/pmt" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/gruel/src/python/pmt/__init__.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gruel/pmt" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gruel/src/python/pmt/__init__.pyc"
-    "/home/katsikas/gnuradio/build/gruel/src/python/pmt/__init__.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gruel/pmt" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/python/pmt/__init__.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/python/pmt/__init__.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_python")
 

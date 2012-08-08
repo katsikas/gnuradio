@@ -1,17 +1,26 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="atsci__slicer__agc_8h" kind="file">
     <compoundname>atsci_slicer_agc.h</compoundname>
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
     <includes local="no">math.h</includes>
     <includes local="no">gr_single_pole_iir.h</includes>
-    <includedby refid="GrAtscBitTimingLoop_8h" local="no">/home/katsikas/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h</includedby>
+    <includedby refid="GrAtscBitTimingLoop_8h" local="no">/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h</includedby>
     <incdepgraph>
       <node id="469">
         <label>gruel/attributes.h</label>
       </node>
+      <node id="468">
+        <label>atsc_api.h</label>
+        <link refid="atsc__api_8h"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>math.h</label>
+      </node>
       <node id="467">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_slicer_agc.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_slicer_agc.h</label>
         <link refid="atsci_slicer_agc.h"/>
         <childnode refid="468" relation="include">
         </childnode>
@@ -20,26 +29,17 @@
         <childnode refid="471" relation="include">
         </childnode>
       </node>
-      <node id="470">
-        <label>math.h</label>
-      </node>
-      <node id="468">
-        <label>atsc_api.h</label>
-        <link refid="atsc__api_8h"/>
-        <childnode refid="469" relation="include">
-        </childnode>
-      </node>
       <node id="471">
         <label>gr_single_pole_iir.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="473">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h</label>
         <link refid="GrAtscBitTimingLoop_8h"/>
       </node>
       <node id="472">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_slicer_agc.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_slicer_agc.h</label>
         <link refid="atsci_slicer_agc.h"/>
         <childnode refid="473" relation="include">
         </childnode>
@@ -115,6 +115,6 @@
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_ATSC_SLICER_AGC_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_slicer_agc.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_slicer_agc.h"/>
   </compounddef>
 </doxygen>

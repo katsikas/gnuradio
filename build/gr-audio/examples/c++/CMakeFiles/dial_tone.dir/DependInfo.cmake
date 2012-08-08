@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/katsikas/gnuradio/gr-audio/examples/c++/dial_tone.cc" "/home/katsikas/gnuradio/build/gr-audio/examples/c++/CMakeFiles/dial_tone.dir/dial_tone.cc.o"
+  "/home/katsikas/Desktop/gnuradio/gr-audio/examples/c++/dial_tone.cc" "/home/katsikas/Desktop/gnuradio/build/gr-audio/examples/c++/CMakeFiles/dial_tone.dir/dial_tone.cc.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/katsikas/gnuradio/build/gr-audio/lib/CMakeFiles/gnuradio-audio.dir/DependInfo.cmake"
-  "/home/katsikas/gnuradio/build/gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/DependInfo.cmake"
-  "/home/katsikas/gnuradio/build/gruel/src/lib/CMakeFiles/gruel.dir/DependInfo.cmake"
+  "/home/katsikas/Desktop/gnuradio/build/gr-audio/lib/CMakeFiles/gnuradio-audio.dir/DependInfo.cmake"
+  "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/DependInfo.cmake"
+  "/home/katsikas/Desktop/gnuradio/build/gruel/src/lib/CMakeFiles/gruel.dir/DependInfo.cmake"
   )

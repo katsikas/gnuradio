@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__delay" kind="class" prot="public">
     <compoundname>gr_delay</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="47" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="47" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="47" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__delay_1a2327ee4f25fedd2496fa990ea43eb606" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="48" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="48" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="48" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__delay_1a2fcf0d7f97232d871c6305525554d9af" prot="private" static="no" mutable="no">
         <type><ref refid="namespacegruel_1a16a913898c1d7f7a8ee459eb7ace413d" kindref="member">gruel::mutex</ref></type>
@@ -42,12 +42,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="49" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="49" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="49" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__delay_1a5342a03acb09a95048b8a1a59f3212ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_delay_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_delay_sptr</ref></type>
         <definition>GR_CORE_API gr_delay_sptr gr_make_delay</definition>
         <argsstring>(size_t itemsize, int delay)</argsstring>
         <name>gr_make_delay</name>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="41"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="41"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -88,10 +88,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="43"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="43"/>
       </memberdef>
       <memberdef kind="function" id="classgr__delay_1a8644fb68174be4d03c9a1a75c670870d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_delay::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -125,7 +125,7 @@
 Given a request to product <computeroutput>noutput_items</computeroutput>, estimate the number of data items required on each input stream. The estimate doesn&apos;t have to be exact, but should be close. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="45"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -140,11 +140,11 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="52" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="52" bodyend="52"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="52" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="52" bodyend="52"/>
         <references refid="classgr__block_1ad3b305a663f4b5b5c4e17070d00f05d9" compoundref="gr__block_8h" startline="83" endline="83">gr_block::history</references>
       </memberdef>
       <memberdef kind="function" id="classgr__delay_1a2d4928b0b56e292322abddcbac9992a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_delay::set_delay</definition>
         <argsstring>(int delay)</argsstring>
         <name>set_delay</name>
@@ -158,7 +158,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classgr__delay_1afce2c0a36b859ef44964d6591fbf5978" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -218,7 +218,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
 general_work must call consume or consume_each to indicate how many items were consumed on each input stream. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="58"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -226,92 +226,92 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3356">
+      <node id="9022">
         <label>gr_delay</label>
         <link refid="classgr__delay"/>
-        <childnode refid="3357" relation="public-inheritance">
+        <childnode refid="9023" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3359">
+      <node id="9025">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3360" relation="public-inheritance">
+        <childnode refid="9026" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3357">
+      <node id="9023">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3358" relation="public-inheritance">
+        <childnode refid="9024" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3360">
+      <node id="9026">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3358">
+      <node id="9024">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3359" relation="public-inheritance">
+        <childnode refid="9025" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3361">
+      <node id="9027">
         <label>gr_delay</label>
         <link refid="classgr__delay"/>
-        <childnode refid="3362" relation="public-inheritance">
+        <childnode refid="9028" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3364">
+      <node id="9030">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3365" relation="public-inheritance">
+        <childnode refid="9031" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3362">
+      <node id="9028">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3363" relation="public-inheritance">
+        <childnode refid="9029" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3366">
+      <node id="9032">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3367" relation="usage">
+        <childnode refid="9033" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3369">
+      <node id="9035">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3365">
+      <node id="9031">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3367">
+      <node id="9033">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3363">
+      <node id="9029">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3364" relation="public-inheritance">
+        <childnode refid="9030" relation="public-inheritance">
         </childnode>
-        <childnode refid="3366" relation="usage">
+        <childnode refid="9032" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3368" relation="usage">
+        <childnode refid="9034" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3368">
+      <node id="9034">
         <label>std::string</label>
-        <childnode refid="3369" relation="public-inheritance">
+        <childnode refid="9035" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="40" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="39" bodyend="59"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="40" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" bodystart="39" bodyend="59"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_delay</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_delay</scope><name>add_item_tag</name></member>

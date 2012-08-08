@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classtag__sink__demo" kind="class" prot="public">
     <compoundname>tag_sink_demo</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -11,7 +11,7 @@
         <argsstring>(void)</argsstring>
         <name>tag_sink_demo</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" bodystart="32" bodyend="40"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" line="38" bodyfile="/home/katsikas/Desktop/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" bodystart="32" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classtag__sink__demo_1a9b2bb4d41549144ac8eb7f4de5dfbe3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -45,7 +45,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" line="46" bodyfile="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" bodystart="42" bodyend="65"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" line="46" bodyfile="/home/katsikas/Desktop/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" bodystart="42" bodyend="65"/>
         <references refid="classgr__block_1a54f69c4cd5ef5b05ac58d0128256def1">gr_block::get_tags_in_range</references>
         <references refid="classgr__block_1a6ecd7d572bcde020949502875dfa737e">gr_block::nitems_read</references>
         <references refid="structgr__tag__t_1ab5e07bdef27ed3897075432504885397" compoundref="gr__tags_8h" startline="31">gr_tag_t::offset</references>
@@ -61,104 +61,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7421">
+      <node id="15503">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7422" relation="public-inheritance">
+        <childnode refid="15504" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7418">
+      <node id="15500">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7419" relation="public-inheritance">
+        <childnode refid="15501" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7419">
+      <node id="15501">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7420" relation="public-inheritance">
+        <childnode refid="15502" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7417">
+      <node id="15499">
         <label>tag_sink_demo</label>
         <link refid="classtag__sink__demo"/>
-        <childnode refid="7418" relation="public-inheritance">
+        <childnode refid="15500" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7422">
+      <node id="15504">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7420">
+      <node id="15502">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7421" relation="public-inheritance">
+        <childnode refid="15503" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7427">
+      <node id="15509">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7428" relation="public-inheritance">
+        <childnode refid="15510" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7424">
+      <node id="15506">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7425" relation="public-inheritance">
+        <childnode refid="15507" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7425">
+      <node id="15507">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7426" relation="public-inheritance">
+        <childnode refid="15508" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7429">
+      <node id="15511">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7430" relation="usage">
+        <childnode refid="15512" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7432">
+      <node id="15514">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7423">
+      <node id="15505">
         <label>tag_sink_demo</label>
         <link refid="classtag__sink__demo"/>
-        <childnode refid="7424" relation="public-inheritance">
+        <childnode refid="15506" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7428">
+      <node id="15510">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7430">
+      <node id="15512">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7426">
+      <node id="15508">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7427" relation="public-inheritance">
+        <childnode refid="15509" relation="public-inheritance">
         </childnode>
-        <childnode refid="7429" relation="usage">
+        <childnode refid="15511" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7431" relation="usage">
+        <childnode refid="15513" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7431">
+      <node id="15513">
         <label>std::string</label>
-        <childnode refid="7432" relation="public-inheritance">
+        <childnode refid="15514" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" bodystart="29" bodyend="66"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" line="29" bodyfile="/home/katsikas/Desktop/gnuradio/gr-uhd/examples/c++/tag_sink_demo.h" bodystart="29" bodyend="66"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>tag_sink_demo</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>tag_sink_demo</scope><name>add_item_tag</name></member>

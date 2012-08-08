@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__calcdist" kind="class" prot="public">
     <compoundname>digital_constellation_calcdist</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="158"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="158"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation__calcdist_1a2374be4a2753db634e06ace6a0fbffad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>unsigned int</type>
@@ -50,12 +50,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="159"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="159"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__constellation__calcdist_1aae793cd66ad7aae1984992ac05e746e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_calcdist_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_calcdist_sptr</ref></type>
         <definition>DIGITAL_API digital_constellation_calcdist_sptr digital_make_constellation_calcdist</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation)</argsstring>
         <name>digital_make_constellation_calcdist</name>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="166"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="166"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -77,49 +77,48 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1083">
+      <node id="6327">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="1082">
+      <node id="6326">
         <label>digital_constellation_calcdist</label>
         <link refid="classdigital__constellation__calcdist"/>
-        <childnode refid="1083" relation="public-inheritance">
+        <childnode refid="6327" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1087">
+      <node id="6331">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="1088" relation="usage">
+        <childnode refid="6332" relation="usage">
           <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1086">
+      <node id="6330">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="1085">
+      <node id="6329">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="1086" relation="usage">
+        <childnode refid="6330" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="1087" relation="usage">
+        <childnode refid="6331" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="1088">
+      <node id="6332">
         <label>std::complex</label>
       </node>
-      <node id="1084">
+      <node id="6328">
         <label>digital_constellation_calcdist</label>
         <link refid="classdigital__constellation__calcdist"/>
-        <childnode refid="1085" relation="public-inheritance">
+        <childnode refid="6329" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="153" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="152" bodyend="167"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="153" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" bodystart="152" bodyend="167"/>
     <listofallmembers>
       <member refid="classdigital__constellation_1a03ec7ff36b47e7a08944dace5492406c" prot="public" virt="non-virtual"><scope>digital_constellation_calcdist</scope><name>apply_pre_diff_code</name></member>
       <member refid="classdigital__constellation_1add4790d1220a4497549f8490706f0444" prot="public" virt="non-virtual"><scope>digital_constellation_calcdist</scope><name>arity</name></member>

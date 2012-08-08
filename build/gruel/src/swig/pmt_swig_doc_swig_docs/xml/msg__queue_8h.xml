@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="msg__queue_8h" kind="file">
     <compoundname>msg_queue.h</compoundname>
     <includes refid="api_8h" local="no">gruel/api.h</includes>
     <includes refid="thread_8h" local="no">gruel/thread.h</includes>
     <includes refid="pmt_8h" local="no">gruel/pmt.h</includes>
     <includes local="no">deque</includes>
-    <includedby refid="msg__accepter__msgq_8h" local="no">/home/katsikas/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h</includedby>
+    <includedby refid="msg__accepter__msgq_8h" local="no">/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h</includedby>
     <incdepgraph>
       <node id="100">
         <label>boost/thread/mutex.hpp</label>
@@ -20,12 +20,24 @@
       <node id="104">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
+      <node id="109">
+        <label>stdint.h</label>
+      </node>
+      <node id="111">
+        <label>stdexcept</label>
+      </node>
+      <node id="99">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="108">
+        <label>string</label>
+      </node>
       <node id="97">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
       <node id="95">
-        <label>/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_queue.h</label>
         <link refid="msg_queue.h"/>
         <childnode refid="96" relation="include">
         </childnode>
@@ -36,8 +48,8 @@
         <childnode refid="113" relation="include">
         </childnode>
       </node>
-      <node id="109">
-        <label>stdint.h</label>
+      <node id="106">
+        <label>boost/any.hpp</label>
       </node>
       <node id="98">
         <label>gruel/thread.h</label>
@@ -52,28 +64,6 @@
         </childnode>
         <childnode refid="102" relation="include">
         </childnode>
-      </node>
-      <node id="111">
-        <label>stdexcept</label>
-      </node>
-      <node id="99">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="108">
-        <label>string</label>
-      </node>
-      <node id="112">
-        <label>gruel/pmt_sugar.h</label>
-        <link refid="pmt__sugar_8h"/>
-      </node>
-      <node id="96">
-        <label>gruel/api.h</label>
-        <link refid="api_8h"/>
-        <childnode refid="97" relation="include">
-        </childnode>
-      </node>
-      <node id="106">
-        <label>boost/any.hpp</label>
       </node>
       <node id="103">
         <label>gruel/pmt.h</label>
@@ -105,8 +95,18 @@
       <node id="110">
         <label>iosfwd</label>
       </node>
+      <node id="112">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
       <node id="113">
         <label>deque</label>
+      </node>
+      <node id="96">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
       </node>
       <node id="107">
         <label>complex</label>
@@ -114,13 +114,13 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="114">
-        <label>/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_queue.h</label>
         <link refid="msg_queue.h"/>
         <childnode refid="115" relation="include">
         </childnode>
       </node>
       <node id="115">
-        <label>/home/katsikas/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h</label>
         <link refid="msg__accepter__msgq_8h"/>
       </node>
     </invincdepgraph>
@@ -201,6 +201,6 @@
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_MSG_QUEUE_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_queue.h"/>
   </compounddef>
 </doxygen>

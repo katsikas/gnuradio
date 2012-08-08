@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__pwr__squelch__cc" kind="class" prot="public">
     <compoundname>gr_pwr_squelch_cc</compoundname>
     <basecompoundref refid="classgr__squelch__base__cc" prot="public" virt="non-virtual">gr_squelch_base_cc</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="44" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="44" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="44" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pwr__squelch__cc_1a70f48840a097239961d3d73017976cf4" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="45" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="45" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="45" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pwr__squelch__cc_1a66d9faad4ecbab1d47bfd8ce01ea679a" prot="private" static="no" mutable="no">
         <type><ref refid="classgr__single__pole__iir" kindref="compound">gr_single_pole_iir</ref>&lt; double, double, double &gt;</type>
@@ -42,12 +42,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="46" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="46" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="46" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pwr__squelch__cc_1a878218f72d17057fe299a4bb4c291ef3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pwr_squelch_cc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pwr_squelch_cc_sptr</ref></type>
         <definition>GR_CORE_API gr_pwr_squelch_cc_sptr gr_make_pwr_squelch_cc</definition>
         <argsstring>(double db, double alpha, int ramp, bool gate)</argsstring>
         <name>gr_make_pwr_squelch_cc</name>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="48"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="48"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -104,12 +104,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="49"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="49"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classgr__pwr__squelch__cc_1a79f6fb13cb0d93c2faf35f2b3879c8dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_pwr_squelch_cc::update_state</definition>
         <argsstring>(const gr_complex &amp;in)</argsstring>
         <name>update_state</name>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="52"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pwr__squelch__cc_1a77a8947bcc06fb2051a9cf1d25193b5d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="53" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="53" bodyend="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="53" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="53" bodyend="53"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="56"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pwr__squelch__cc_1a6098303364b0cd8967069c58d1287e56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -167,10 +167,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="58" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="58" bodyend="58"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="58" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="58" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pwr__squelch__cc_1a199a7d1bc0723d2019618b411feb7e1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pwr_squelch_cc::set_threshold</definition>
         <argsstring>(double db)</argsstring>
         <name>set_threshold</name>
@@ -184,10 +184,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="59" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="59" bodyend="59"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="59" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pwr__squelch__cc_1ab71484602f26be8baeba220aaff1c5cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pwr_squelch_cc::set_alpha</definition>
         <argsstring>(double alpha)</argsstring>
         <name>set_alpha</name>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="60" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="60" bodyend="60"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="60" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="60" bodyend="60"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -209,104 +209,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5175">
+      <node id="12444">
         <label>gr_pwr_squelch_cc</label>
         <link refid="classgr__pwr__squelch__cc"/>
-        <childnode refid="5176" relation="public-inheritance">
+        <childnode refid="12445" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5179">
+      <node id="12448">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5180" relation="public-inheritance">
+        <childnode refid="12449" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5177">
+      <node id="12446">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5178" relation="public-inheritance">
+        <childnode refid="12447" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5176">
+      <node id="12445">
         <label>gr_squelch_base_cc</label>
         <link refid="classgr__squelch__base__cc"/>
-        <childnode refid="5177" relation="public-inheritance">
+        <childnode refid="12446" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5180">
+      <node id="12449">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5178">
+      <node id="12447">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5179" relation="public-inheritance">
+        <childnode refid="12448" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5181">
+      <node id="12450">
         <label>gr_pwr_squelch_cc</label>
         <link refid="classgr__pwr__squelch__cc"/>
-        <childnode refid="5182" relation="public-inheritance">
+        <childnode refid="12451" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5185">
+      <node id="12454">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5186" relation="public-inheritance">
+        <childnode refid="12455" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5183">
+      <node id="12452">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5184" relation="public-inheritance">
+        <childnode refid="12453" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5187">
+      <node id="12456">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5188" relation="usage">
+        <childnode refid="12457" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5190">
+      <node id="12459">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5182">
+      <node id="12451">
         <label>gr_squelch_base_cc</label>
         <link refid="classgr__squelch__base__cc"/>
-        <childnode refid="5183" relation="public-inheritance">
+        <childnode refid="12452" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5186">
+      <node id="12455">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5188">
+      <node id="12457">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5184">
+      <node id="12453">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5185" relation="public-inheritance">
+        <childnode refid="12454" relation="public-inheritance">
         </childnode>
-        <childnode refid="5187" relation="usage">
+        <childnode refid="12456" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5189" relation="usage">
+        <childnode refid="12458" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5189">
+      <node id="12458">
         <label>std::string</label>
-        <childnode refid="5190" relation="public-inheritance">
+        <childnode refid="12459" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="42" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="41" bodyend="61"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" line="42" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_cc.h" bodystart="41" bodyend="61"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_pwr_squelch_cc</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_pwr_squelch_cc</scope><name>add_item_tag</name></member>

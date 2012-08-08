@@ -2,9 +2,9 @@
 #!/usr/bin/python
 
 import sys, os, re
-sys.path.append('/home/katsikas/gnuradio/gnuradio-core/src/python')
-os.environ['srcdir'] = '/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen'
-os.chdir('/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen')
+sys.path.append('/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python')
+os.environ['srcdir'] = '/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/gengen'
+os.chdir('/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/gengen')
 
 if __name__ == '__main__':
     import build_utils

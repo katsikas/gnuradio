@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__decoder__cb" kind="class" prot="public">
     <compoundname>digital_constellation_decoder_cb</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="47" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" bodystart="47" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="47" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__constellation__decoder__cb_1a1d071ad75e0702354162bdb57ca1af89" prot="private" static="no" mutable="no">
         <type>unsigned int</type>
@@ -29,12 +29,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="48" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" bodystart="48" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="48" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__constellation__decoder__cb_1a1a5f582bcc11989e885eea73c112f520" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_decoder_cb_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_decoder_cb_sptr</ref></type>
         <definition>DIGITAL_API digital_constellation_decoder_cb_sptr digital_make_constellation_decoder_cb</definition>
         <argsstring>(digital_constellation_sptr constellation)</argsstring>
         <name>digital_make_constellation_decoder_cb</name>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="51"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -67,12 +67,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="53"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classdigital__constellation__decoder__cb_1a4758a9db6586f143e48f80a36c655a3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_constellation_decoder_cb::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -106,7 +106,7 @@
 Given a request to product <computeroutput>noutput_items</computeroutput>, estimate the number of data items required on each input stream. The estimate doesn&apos;t have to be exact, but should be close. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="58"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="58"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation__decoder__cb_1a90f4b2c5b2202ccf22cb884420636335" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -166,7 +166,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
 general_work must call consume or consume_each to indicate how many items were consumed on each input stream. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="63"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="63"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -174,92 +174,92 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1092">
+      <node id="6336">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1093" relation="public-inheritance">
+        <childnode refid="6337" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1090">
+      <node id="6334">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1091" relation="public-inheritance">
+        <childnode refid="6335" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1089">
+      <node id="6333">
         <label>digital_constellation_decoder_cb</label>
         <link refid="classdigital__constellation__decoder__cb"/>
-        <childnode refid="1090" relation="public-inheritance">
+        <childnode refid="6334" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1093">
+      <node id="6337">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1091">
+      <node id="6335">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1092" relation="public-inheritance">
+        <childnode refid="6336" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1097">
+      <node id="6341">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1098" relation="public-inheritance">
+        <childnode refid="6342" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1095">
+      <node id="6339">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1096" relation="public-inheritance">
+        <childnode refid="6340" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1094">
+      <node id="6338">
         <label>digital_constellation_decoder_cb</label>
         <link refid="classdigital__constellation__decoder__cb"/>
-        <childnode refid="1095" relation="public-inheritance">
+        <childnode refid="6339" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1099">
+      <node id="6343">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1100" relation="usage">
+        <childnode refid="6344" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1102">
+      <node id="6346">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1098">
+      <node id="6342">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1100">
+      <node id="6344">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1096">
+      <node id="6340">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1097" relation="public-inheritance">
+        <childnode refid="6341" relation="public-inheritance">
         </childnode>
-        <childnode refid="1099" relation="usage">
+        <childnode refid="6343" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1101" relation="usage">
+        <childnode refid="6345" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1101">
+      <node id="6345">
         <label>std::string</label>
-        <childnode refid="1102" relation="public-inheritance">
+        <childnode refid="6346" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" bodystart="43" bodyend="64"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" line="44" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h" bodystart="43" bodyend="64"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>digital_constellation_decoder_cb</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>digital_constellation_decoder_cb</scope><name>add_item_tag</name></member>

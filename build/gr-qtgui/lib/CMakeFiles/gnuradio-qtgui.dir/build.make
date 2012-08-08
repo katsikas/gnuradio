@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Include any dependencies generated for this target.
 include gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend.make
@@ -48,17 +51,17 @@ include gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o: gr-qtgui/lib/moc_spectrumdisplayform.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o -c /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o.requires
@@ -69,19 +72,42 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o.provide
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o
 
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o: gr-qtgui/lib/moc_VectorAnalyzerDisplayForm.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_VectorAnalyzerDisplayForm.cxx
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.i"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_VectorAnalyzerDisplayForm.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.i
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.s"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_VectorAnalyzerDisplayForm.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.s
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.requires:
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.requires
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.provides: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.requires
+	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.provides.build
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.provides
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o
+
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o: gr-qtgui/lib/moc_timedisplayform.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o -c /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o.requires
@@ -94,17 +120,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o.provides.bu
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o: gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o -c /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o.requires
@@ -117,17 +143,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o.provid
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o: gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o -c /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o.requires
@@ -140,17 +166,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o.provi
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o: gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o -c /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o.requires
@@ -163,17 +189,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o.provid
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o: gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o -c /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o.requires
@@ -184,19 +210,42 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o.pr
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o
 
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o: gr-qtgui/lib/moc_ConstellationDisplayPlotEnhanced.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o -c /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlotEnhanced.cxx
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.i"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlotEnhanced.cxx > CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.i
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.s"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlotEnhanced.cxx -o CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.s
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.requires:
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.requires
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.provides: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.requires
+	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.provides.build
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.provides
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o
+
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o: ../gr-qtgui/lib/FrequencyDisplayPlot.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o.requires
@@ -209,17 +258,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o.provides.bu
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o: ../gr-qtgui/lib/TimeDomainDisplayPlot.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o.requires
@@ -232,17 +281,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o.provides.b
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o: ../gr-qtgui/lib/WaterfallDisplayPlot.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o.requires
@@ -255,17 +304,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o.provides.bu
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o: ../gr-qtgui/lib/waterfallGlobalData.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/waterfallGlobalData.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/waterfallGlobalData.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/waterfallGlobalData.cc > CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/waterfallGlobalData.cc > CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/waterfallGlobalData.cc -o CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/waterfallGlobalData.cc -o CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o.requires
@@ -278,17 +327,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o.provides.bui
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o: ../gr-qtgui/lib/ConstellationDisplayPlot.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.cc > CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.cc -o CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o.requires
@@ -299,19 +348,42 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o.provide
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o
 
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o: ../gr-qtgui/lib/ConstellationDisplayPlotEnhanced.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlotEnhanced.cc
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.i"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlotEnhanced.cc > CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.i
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.s"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlotEnhanced.cc -o CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.s
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.requires:
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.requires
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.provides: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.requires
+	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.provides.build
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.provides
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o
+
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o: ../gr-qtgui/lib/spectrumdisplayform.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/spectrumdisplayform.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumdisplayform.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/spectrumdisplayform.cc > CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumdisplayform.cc > CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/spectrumdisplayform.cc -o CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumdisplayform.cc -o CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o.requires
@@ -324,17 +396,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o.provides.bui
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o: ../gr-qtgui/lib/timedisplayform.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/timedisplayform.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/timedisplayform.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/timedisplayform.cc > CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/timedisplayform.cc > CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/timedisplayform.cc -o CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/timedisplayform.cc -o CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o.requires
@@ -347,17 +419,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o.provides.build: 
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o: ../gr-qtgui/lib/SpectrumGUIClass.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/SpectrumGUIClass.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/SpectrumGUIClass.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/SpectrumGUIClass.cc > CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/SpectrumGUIClass.cc > CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/SpectrumGUIClass.cc -o CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/SpectrumGUIClass.cc -o CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o.requires
@@ -370,17 +442,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o.provides.build:
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o: ../gr-qtgui/lib/spectrumUpdateEvents.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/spectrumUpdateEvents.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumUpdateEvents.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/spectrumUpdateEvents.cc > CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumUpdateEvents.cc > CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/spectrumUpdateEvents.cc -o CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumUpdateEvents.cc -o CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o.requires
@@ -391,19 +463,88 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o.provides: g
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o
 
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o: ../gr-qtgui/lib/VectorAnalyzerEvents.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerEvents.cc
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.i"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerEvents.cc > CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.i
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.s"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerEvents.cc -o CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.s
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.requires:
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.requires
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.provides: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.requires
+	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.provides.build
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.provides
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o: ../gr-qtgui/lib/VectorAnalyzerGUIClass.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerGUIClass.cc
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.i"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerGUIClass.cc > CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.i
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.s"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerGUIClass.cc -o CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.s
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.requires:
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.requires
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.provides: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.requires
+	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.provides.build
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.provides
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o: ../gr-qtgui/lib/VectorAnalyzerDisplayForm.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.cc
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.i"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.cc > CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.i
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.s"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.cc -o CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.s
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.requires:
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.requires
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.provides: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.requires
+	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.provides.build
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.provides
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o
+
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o: ../gr-qtgui/lib/plot_waterfall.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/plot_waterfall.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/plot_waterfall.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/plot_waterfall.cc > CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/plot_waterfall.cc > CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/plot_waterfall.cc -o CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/plot_waterfall.cc -o CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o.requires
@@ -416,17 +557,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o.provides.build: g
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o: ../gr-qtgui/lib/qtgui_sink_c.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_sink_c.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_sink_c.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_sink_c.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_sink_c.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_sink_c.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_sink_c.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o.requires
@@ -439,17 +580,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o.provides.build: gr-
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o: ../gr-qtgui/lib/qtgui_sink_f.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_sink_f.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_sink_f.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_sink_f.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_sink_f.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_sink_f.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_sink_f.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o.requires
@@ -462,17 +603,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o.provides.build: gr-
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o: ../gr-qtgui/lib/qtgui_time_sink_c.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_c.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_time_sink_c.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_c.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_time_sink_c.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_c.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_time_sink_c.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o.requires
@@ -485,17 +626,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o.provides.build
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o: ../gr-qtgui/lib/qtgui_time_sink_f.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_f.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_time_sink_f.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_f.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_time_sink_f.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_time_sink_f.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_time_sink_f.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o.requires
@@ -508,17 +649,17 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o.provides.build
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o: ../gr-qtgui/lib/qtgui_util.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o -c /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_util.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_util.cc
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_util.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_util.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.i
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-qtgui/lib/qtgui_util.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_util.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.s
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o.requires:
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o.requires
@@ -529,108 +670,160 @@ gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o.provides: gr-qtgui/li
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o
 
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/flags.make
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o: ../gr-qtgui/lib/qtgui_ofdm_vector_analyzer_c.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o -c /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_ofdm_vector_analyzer_c.cc
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.i"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_ofdm_vector_analyzer_c.cc > CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.i
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.s"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/qtgui_ofdm_vector_analyzer_c.cc -o CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.s
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.requires:
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.requires
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.provides: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.requires
+	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.provides.build
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.provides
+
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.provides.build: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o
+
 gr-qtgui/lib/moc_spectrumdisplayform.cxx: ../gr-qtgui/lib/spectrumdisplayform.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_spectrumdisplayform.cxx"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/moc-qt4 -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx /home/katsikas/gnuradio/gr-qtgui/lib/spectrumdisplayform.h
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_spectrumdisplayform.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumdisplayform.h
+
+gr-qtgui/lib/moc_VectorAnalyzerDisplayForm.cxx: ../gr-qtgui/lib/VectorAnalyzerDisplayForm.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_VectorAnalyzerDisplayForm.cxx"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_VectorAnalyzerDisplayForm.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.h
 
 gr-qtgui/lib/moc_timedisplayform.cxx: ../gr-qtgui/lib/timedisplayform.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_timedisplayform.cxx"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/moc-qt4 -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx /home/katsikas/gnuradio/gr-qtgui/lib/timedisplayform.h
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_timedisplayform.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/timedisplayform.h
 
 gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx: ../gr-qtgui/lib/FrequencyDisplayPlot.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_FrequencyDisplayPlot.cxx"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/moc-qt4 -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx /home/katsikas/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.h
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/FrequencyDisplayPlot.h
 
 gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx: ../gr-qtgui/lib/TimeDomainDisplayPlot.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_TimeDomainDisplayPlot.cxx"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/moc-qt4 -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx /home/katsikas/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.h
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/TimeDomainDisplayPlot.h
 
 gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx: ../gr-qtgui/lib/WaterfallDisplayPlot.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_WaterfallDisplayPlot.cxx"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/moc-qt4 -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx /home/katsikas/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.h
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/WaterfallDisplayPlot.h
 
 gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx: ../gr-qtgui/lib/ConstellationDisplayPlot.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_ConstellationDisplayPlot.cxx"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/moc-qt4 -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx /home/katsikas/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.h
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlot.h
+
+gr-qtgui/lib/moc_ConstellationDisplayPlotEnhanced.cxx: ../gr-qtgui/lib/ConstellationDisplayPlotEnhanced.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_ConstellationDisplayPlotEnhanced.cxx"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/moc -I/usr/include -I/usr/include/QtGui -I/usr/include/QtCore -DTRY_SHM_VMCIRCBUF -DQT_GUI_LIB -DQT_CORE_LIB -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/moc_ConstellationDisplayPlotEnhanced.cxx /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/ConstellationDisplayPlotEnhanced.h
 
 gr-qtgui/lib/ui_spectrumdisplayform.h: ../gr-qtgui/lib/spectrumdisplayform.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_spectrumdisplayform.h"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/uic-qt4 -o /home/katsikas/gnuradio/build/gr-qtgui/lib/ui_spectrumdisplayform.h /home/katsikas/gnuradio/gr-qtgui/lib/spectrumdisplayform.ui
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/uic -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/ui_spectrumdisplayform.h /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/spectrumdisplayform.ui
+
+gr-qtgui/lib/ui_VectorAnalyzerDisplayForm.h: ../gr-qtgui/lib/VectorAnalyzerDisplayForm.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_VectorAnalyzerDisplayForm.h"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/uic -o /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/ui_VectorAnalyzerDisplayForm.h /home/katsikas/Desktop/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.ui
 
 # Object files for target gnuradio-qtgui
 gnuradio__qtgui_OBJECTS = \
 "CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o" \
 "CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o" \
 "CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o" \
 "CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o" \
 "CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o" \
 "CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o" \
 "CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o" \
 "CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o" \
-"CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o"
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o"
 
 # External object files for target gnuradio-qtgui
 gnuradio__qtgui_EXTERNAL_OBJECTS =
 
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/i386-linux-gnu/libQtGui.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/i386-linux-gnu/libQtCore.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libqwt-qt4.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libpython2.7.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libQtGui.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libQtCore.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libqwt.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libpython2.7.so
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libboost_filesystem-mt.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libboost_system-mt.so
-gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib/libboost_thread-mt.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-qtgui-3.6.1git.so"
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-qtgui.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-qtgui-3.6.1git.so.0.0.0 libgnuradio-qtgui-3.6.1git.so.0.0.0 libgnuradio-qtgui-3.6.1git.so
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/cmake -E create_symlink libgnuradio-qtgui-3.6.1git.so.0.0.0 /home/katsikas/gnuradio/build/gr-qtgui/lib/libgnuradio-qtgui.so
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/cmake -E create_symlink libgnuradio-qtgui-3.6.1git.so.0.0.0 /home/katsikas/gnuradio/build/gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && /usr/bin/cmake -E touch libgnuradio-qtgui-3.6.1git.so.0.0.0
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-qtgui.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-qtgui-3.6.1git.so.0.0.0 libgnuradio-qtgui-3.6.1git.so.0.0.0 libgnuradio-qtgui-3.6.1git.so
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/cmake -E create_symlink libgnuradio-qtgui-3.6.1git.so.0.0.0 /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/libgnuradio-qtgui.so
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/cmake -E create_symlink libgnuradio-qtgui-3.6.1git.so.0.0.0 /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && /usr/bin/cmake -E touch libgnuradio-qtgui-3.6.1git.so.0.0.0
 
 gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so: gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so.0.0.0
 
@@ -638,40 +831,135 @@ gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so: gr-qtgui/lib/libgnuradio-qtgui-3.6.1
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build: gr-qtgui/lib/libgnuradio-qtgui-3.6.1git.so
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build
 
+# Object files for target gnuradio-qtgui
+gnuradio__qtgui_OBJECTS = \
+"CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o" \
+"CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o" \
+"CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o"
+
+# External object files for target gnuradio-qtgui
+gnuradio__qtgui_EXTERNAL_OBJECTS =
+
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libQtGui.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libQtCore.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libqwt.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libpython2.7.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-qtgui.dir/relink.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -E cmake_symlink_library CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0 CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0 CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so
+
+gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so: gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so.0.0.0
+
+# Rule to relink during preinstall.
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/preinstall: gr-qtgui/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-qtgui-3.6.1git.so
+.PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/preinstall
+
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_spectrumdisplayform.cxx.o.requires
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_VectorAnalyzerDisplayForm.cxx.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_timedisplayform.cxx.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_FrequencyDisplayPlot.cxx.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_TimeDomainDisplayPlot.cxx.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_WaterfallDisplayPlot.cxx.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlot.cxx.o.requires
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/moc_ConstellationDisplayPlotEnhanced.cxx.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/FrequencyDisplayPlot.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/TimeDomainDisplayPlot.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/WaterfallDisplayPlot.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/waterfallGlobalData.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlot.cc.o.requires
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/ConstellationDisplayPlotEnhanced.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumdisplayform.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/timedisplayform.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/SpectrumGUIClass.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/spectrumUpdateEvents.cc.o.requires
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerEvents.cc.o.requires
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerGUIClass.cc.o.requires
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/VectorAnalyzerDisplayForm.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/plot_waterfall.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_c.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_sink_f.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_c.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_time_sink_f.cc.o.requires
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_util.cc.o.requires
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires: gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/qtgui_ofdm_vector_analyzer_c.cc.o.requires
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/requires
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/clean:
-	cd /home/katsikas/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-qtgui.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-qtgui.dir/cmake_clean.cmake
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/clean
 
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_spectrumdisplayform.cxx
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_VectorAnalyzerDisplayForm.cxx
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_timedisplayform.cxx
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_FrequencyDisplayPlot.cxx
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_TimeDomainDisplayPlot.cxx
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_WaterfallDisplayPlot.cxx
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_ConstellationDisplayPlot.cxx
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/moc_ConstellationDisplayPlotEnhanced.cxx
 gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/ui_spectrumdisplayform.h
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-qtgui/lib /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-qtgui/lib /home/katsikas/gnuradio/build/gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/DependInfo.cmake --color=$(COLOR)
+gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend: gr-qtgui/lib/ui_VectorAnalyzerDisplayForm.h
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/gr-qtgui/lib /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib /home/katsikas/Desktop/gnuradio/build/gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/depend
 

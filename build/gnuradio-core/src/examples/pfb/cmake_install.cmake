@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gnuradio-core/src/examples/pfb
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gnuradio-core/src/examples/pfb
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,46 +29,46 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "channelize.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/channelize.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "channelize.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/channelize.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "chirp_channelize.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/chirp_channelize.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "chirp_channelize.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/chirp_channelize.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "decimate.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/decimate.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "decimate.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/decimate.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "fmtest.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/fmtest.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "fmtest.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/fmtest.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "interpolate.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/interpolate.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "interpolate.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/interpolate.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "resampler_demo.grc" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/resampler_demo.grc.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "resampler_demo.grc" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/resampler_demo.grc.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "resampler.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/resampler.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "resampler.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/resampler.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "synth_filter.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/synth_filter.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "synth_filter.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/synth_filter.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "synth_to_chan.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/synth_to_chan.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "synth_to_chan.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/synth_to_chan.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "reconstruction.py" FILES "/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/reconstruction.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/pfb" TYPE PROGRAM RENAME "reconstruction.py" FILES "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/reconstruction.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 

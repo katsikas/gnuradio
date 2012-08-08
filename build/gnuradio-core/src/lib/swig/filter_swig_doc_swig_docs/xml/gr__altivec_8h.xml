@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__altivec_8h" kind="file">
     <compoundname>gr_altivec.h</compoundname>
     <includes local="no">gr_core_api.h</includes>
@@ -8,8 +8,11 @@
     <includes local="no">stddef.h</includes>
     <includes local="no">stdio.h</includes>
     <incdepgraph>
+      <node id="335">
+        <label>altivec.h</label>
+      </node>
       <node id="333">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h</label>
         <link refid="gr_altivec.h"/>
         <childnode refid="334" relation="include">
         </childnode>
@@ -22,15 +25,12 @@
         <childnode refid="338" relation="include">
         </childnode>
       </node>
-      <node id="335">
-        <label>altivec.h</label>
+      <node id="337">
+        <label>stddef.h</label>
       </node>
       <node id="336">
         <label>gr_vec_types.h</label>
         <link refid="gr__vec__types_8h"/>
-      </node>
-      <node id="337">
-        <label>stddef.h</label>
       </node>
       <node id="334">
         <label>gr_core_api.h</label>
@@ -43,25 +43,25 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="gr__altivec_8h_1ac896c73a5d99e82b2050d5f3d394e009" prot="public" static="no">
         <name>VS</name>
-        <initializer>sizeof(<ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref>)</initializer>
+        <initializer>sizeof(vec_float4)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="51" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" bodystart="51" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="51" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="gr__altivec_8h_1a3398b7abf987dee5bf61d884c096fe95" prot="public" static="no">
         <name>FLOATS_PER_VEC</name>
-        <initializer>(sizeof(<ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref>)/sizeof(float))</initializer>
+        <initializer>(sizeof(vec_float4)/sizeof(float))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="52" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" bodystart="52" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="52" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -75,7 +75,7 @@
           <declname>fp</declname>
         </param>
         <param>
-          <type><ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref></type>
+          <type>vec_float4</type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="59"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="59"/>
       </memberdef>
       <memberdef kind="function" id="gr__altivec_8h_1a9d65f8c2bb147639f7058f764968e76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GR_CORE_API void</type>
@@ -100,7 +100,7 @@
           <declname>label</declname>
         </param>
         <param>
-          <type><ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref></type>
+          <type>vec_float4</type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="60"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="60"/>
       </memberdef>
       <memberdef kind="function" id="gr__altivec_8h_1abc5c706dd9cba5916e078eada8bb216f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -117,7 +117,7 @@
         <argsstring>(vec_float4 v)</argsstring>
         <name>horizontal_add_f</name>
         <param>
-          <type><ref refid="gr__vec__types_8h_1a83776ddba9085460fa1e663b6c402837" kindref="member">vec_float4</ref></type>
+          <type>vec_float4</type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="64" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" bodystart="63" bodyend="70"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" line="64" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h" bodystart="63" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -211,6 +211,6 @@
 <codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_ALTIVEC_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_altivec.h"/>
   </compounddef>
 </doxygen>

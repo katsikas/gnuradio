@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="GrAtscBitTimingLoop_8h" kind="file">
     <compoundname>GrAtscBitTimingLoop.h</compoundname>
     <includes local="no">gr_nco.h</includes>
@@ -16,16 +16,17 @@
       <node id="578">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="572">
-        <label>interleaver_fifo.h</label>
-        <link refid="interleaver__fifo_8h"/>
-        <childnode refid="572" relation="include">
-        </childnode>
-        <childnode refid="573" relation="include">
-        </childnode>
+      <node id="570">
+        <label>VrHistoryProc.h</label>
+      </node>
+      <node id="568">
+        <label>gr_nco.h</label>
+      </node>
+      <node id="573">
+        <label>string.h</label>
       </node>
       <node id="567">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h</label>
         <link refid="GrAtscBitTimingLoop.h"/>
         <childnode refid="568" relation="include">
         </childnode>
@@ -48,8 +49,21 @@
         <childnode refid="581" relation="include">
         </childnode>
       </node>
-      <node id="570">
-        <label>VrHistoryProc.h</label>
+      <node id="569">
+        <label>VrSigProc.h</label>
+      </node>
+      <node id="577">
+        <label>atsc_api.h</label>
+        <link refid="atsc__api_8h"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>math.h</label>
+      </node>
+      <node id="581">
+        <label>atsci_diag_output.h</label>
+        <link refid="atsci__diag__output_8h"/>
       </node>
       <node id="576">
         <label>atsci_slicer_agc.h</label>
@@ -61,33 +75,19 @@
         <childnode refid="574" relation="include">
         </childnode>
       </node>
-      <node id="568">
-        <label>gr_nco.h</label>
-      </node>
-      <node id="573">
-        <label>string.h</label>
-      </node>
-      <node id="569">
-        <label>VrSigProc.h</label>
-      </node>
-      <node id="581">
-        <label>atsci_diag_output.h</label>
-        <link refid="atsci__diag__output_8h"/>
-      </node>
-      <node id="579">
-        <label>math.h</label>
-      </node>
-      <node id="577">
-        <label>atsc_api.h</label>
-        <link refid="atsc__api_8h"/>
-        <childnode refid="578" relation="include">
-        </childnode>
-      </node>
       <node id="574">
         <label>gr_single_pole_iir.h</label>
       </node>
       <node id="575">
         <label>gr_mmse_fir_interpolator.h</label>
+      </node>
+      <node id="572">
+        <label>interleaver_fifo.h</label>
+        <link refid="interleaver__fifo_8h"/>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
       </node>
       <node id="571">
         <label>VrDecimatingSigProc.h</label>
@@ -180,13 +180,13 @@
 <codeline lineno="82" refid="classGrAtscBitTimingLoop_1a0bfb955d57a3f021d58167e2417d41e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGrAtscBitTimingLoop_1a0bfb955d57a3f021d58167e2417d41e5" kindref="member">d_timing_rate</ref>;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_BT_DIAG_OUTPUT_</highlight></codeline>
-<codeline lineno="85" refid="classGrAtscBitTimingLoop_1afae3d940dde5393dbd910f7ee367eea0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classGrAtscBitTimingLoop_1afae3d940dde5393dbd910f7ee367eea0" kindref="member">fp_loop</ref>;</highlight></codeline>
-<codeline lineno="86" refid="classGrAtscBitTimingLoop_1a64630b985a9d5e56cbf95d6c81e3b4e1" refkind="member"><highlight class="normal"><sp/><sp/>FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classGrAtscBitTimingLoop_1a64630b985a9d5e56cbf95d6c81e3b4e1" kindref="member">fp_ps</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*fp_loop;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*fp_ps;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 <codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="normal">};</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_GRATSCBITTIMINGLOOP_H_</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/GrAtscBitTimingLoop.h"/>
   </compounddef>
 </doxygen>

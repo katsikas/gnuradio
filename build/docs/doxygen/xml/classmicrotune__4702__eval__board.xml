@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classmicrotune__4702__eval__board" kind="class" prot="public">
     <compoundname>microtune_4702_eval_board</compoundname>
     <basecompoundref refid="classmicrotune__xxxx__eval__board" prot="public" virt="non-virtual">microtune_xxxx_eval_board</basecompoundref>
@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="36"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="36"/>
       </memberdef>
       <memberdef kind="function" id="classmicrotune__4702__eval__board_1ace84297d8f82e675864bf1b0017ee38c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -34,10 +34,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="37"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="37"/>
       </memberdef>
       <memberdef kind="function" id="classmicrotune__4702__eval__board_1a5e98afa535aa856d472b9448d77de908" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void microtune_4702_eval_board::set_AGC</definition>
         <argsstring>(float value_0_1000)</argsstring>
         <name>set_AGC</name>
@@ -52,7 +52,7 @@
 <para>This provides a simple linear interface for adjusting both the RF and IF gain in consort. This is the easy to use interface. 0 corresponds to minimum gain. 1000 corresponds to maximum gain. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="46"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="46"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -60,65 +60,65 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6503">
+      <node id="14465">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
       </node>
-      <node id="6502">
+      <node id="14464">
         <label>microtune_4702_eval_board</label>
         <link refid="classmicrotune__4702__eval__board"/>
-        <childnode refid="6503" relation="public-inheritance">
+        <childnode refid="14465" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6506">
+      <node id="14468">
         <label>microtune_xxxx</label>
         <link refid="classmicrotune__xxxx"/>
       </node>
-      <node id="6505">
+      <node id="14467">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
-        <childnode refid="6506" relation="usage">
+        <childnode refid="14468" relation="usage">
           <edgelabel>d_tuner</edgelabel>
         </childnode>
-        <childnode refid="6507" relation="usage">
+        <childnode refid="14469" relation="usage">
           <edgelabel>d_i2c</edgelabel>
         </childnode>
-        <childnode refid="6509" relation="usage">
+        <childnode refid="14471" relation="usage">
           <edgelabel>d_ppio</edgelabel>
         </childnode>
       </node>
-      <node id="6507">
+      <node id="14469">
         <label>boost::shared_ptr&lt; i2c &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6508" relation="usage">
+        <childnode refid="14470" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6504">
+      <node id="14466">
         <label>microtune_4702_eval_board</label>
         <link refid="classmicrotune__4702__eval__board"/>
-        <childnode refid="6505" relation="public-inheritance">
+        <childnode refid="14467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6508">
+      <node id="14470">
         <label>i2c</label>
         <link refid="classi2c"/>
       </node>
-      <node id="6510">
+      <node id="14472">
         <label>ppio</label>
         <link refid="classppio"/>
       </node>
-      <node id="6509">
+      <node id="14471">
         <label>boost::shared_ptr&lt; ppio &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6510" relation="usage">
+        <childnode refid="14472" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="34" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" bodystart="34" bodyend="47"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" line="34" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/microtune_4702_eval_board.h" bodystart="34" bodyend="47"/>
     <listofallmembers>
       <member refid="classmicrotune__xxxx__eval__board_1a7c33c3a304b3a3837aebe0b939795908" prot="public" virt="non-virtual"><scope>microtune_4702_eval_board</scope><name>board_present_p</name></member>
       <member refid="classmicrotune__xxxx__eval__board_1a6fc807ce2050b39fa5bf887a657837ae" prot="protected" virt="non-virtual"><scope>microtune_4702_eval_board</scope><name>d_i2c</name></member>

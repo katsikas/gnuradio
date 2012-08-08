@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="dvbt__rs__decoder_8h" kind="file">
     <compoundname>dvbt_rs_decoder.h</compoundname>
     <includes local="no">gr_sync_block.h</includes>
@@ -12,6 +12,15 @@
       <node id="116">
         <label>gr_sync_block.h</label>
       </node>
+      <node id="123">
+        <label>cassert</label>
+      </node>
+      <node id="117">
+        <label>dvbt/dvbt_api.h</label>
+        <link refid="dvbt__api_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
       <node id="119">
         <label>dvbt/dvbti_reed_solomon.h</label>
         <link refid="dvbti__reed__solomon_8h"/>
@@ -20,12 +29,15 @@
         <childnode refid="120" relation="include">
         </childnode>
       </node>
-      <node id="123">
-        <label>cassert</label>
-      </node>
-      <node id="124">
-        <label>dvbt/dvbt_consts.h</label>
-        <link refid="dvbt__consts_8h"/>
+      <node id="115">
+        <label>/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h</label>
+        <link refid="dvbt_rs_decoder.h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
       </node>
       <node id="120">
         <label>dvbt/dvbt_types.h</label>
@@ -39,24 +51,12 @@
         <childnode refid="124" relation="include">
         </childnode>
       </node>
+      <node id="124">
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
+      </node>
       <node id="121">
         <label>stdio.h</label>
-      </node>
-      <node id="117">
-        <label>dvbt/dvbt_api.h</label>
-        <link refid="dvbt__api_8h"/>
-        <childnode refid="118" relation="include">
-        </childnode>
-      </node>
-      <node id="115">
-        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h</label>
-        <link refid="dvbt_rs_decoder.h"/>
-        <childnode refid="116" relation="include">
-        </childnode>
-        <childnode refid="117" relation="include">
-        </childnode>
-        <childnode refid="119" relation="include">
-        </childnode>
       </node>
       <node id="122">
         <label>cstring</label>
@@ -75,12 +75,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h" line="33" bodyfile="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__rs__decoder_8h_1a6d448109419f7a48b2f950fa078842db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__rs__decoder_8h_1ac9f51a3d1e0500e3dd6e6e5e2d02e5b7" kindref="member">dvbt_rs_decoder_sptr</ref></type>
+        <type>DVBT_API <ref refid="dvbt__rs__decoder_8h_1ac9f51a3d1e0500e3dd6e6e5e2d02e5b7" kindref="member">dvbt_rs_decoder_sptr</ref></type>
         <definition>DVBT_API dvbt_rs_decoder_sptr dvbt_make_rs_decoder</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_rs_decoder</name>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h" line="35"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h" line="35"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -152,6 +152,6 @@
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_DVBT_RS_DECODER_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_decoder.h"/>
   </compounddef>
 </doxygen>

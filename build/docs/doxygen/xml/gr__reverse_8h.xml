@@ -1,44 +1,266 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__reverse_8h" kind="file">
     <compoundname>gr_reverse.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes local="no">vector</includes>
     <includes refid="gr__complex_8h" local="no">gr_complex.h</includes>
+    <includedby refid="gr__fir__ccc_8h" local="no">gr_fir_ccc.h</includedby>
+    <includedby refid="gr__fir__ccf_8h" local="no">gr_fir_ccf.h</includedby>
+    <includedby refid="gr__fir__fcc_8h" local="no">gr_fir_fcc.h</includedby>
+    <includedby refid="gr__fir__fff_8h" local="no">gr_fir_fff.h</includedby>
+    <includedby refid="gr__fir__fsf_8h" local="no">gr_fir_fsf.h</includedby>
+    <includedby refid="gr__fir__scc_8h" local="no">gr_fir_scc.h</includedby>
+    <includedby refid="gri__fir__filter__with__buffer__ccc_8h" local="no">gri_fir_filter_with_buffer_ccc.h</includedby>
+    <includedby refid="gri__fir__filter__with__buffer__ccf_8h" local="no">gri_fir_filter_with_buffer_ccf.h</includedby>
+    <includedby refid="gri__fir__filter__with__buffer__fcc_8h" local="no">gri_fir_filter_with_buffer_fcc.h</includedby>
+    <includedby refid="gri__fir__filter__with__buffer__fff_8h" local="no">gri_fir_filter_with_buffer_fff.h</includedby>
+    <includedby refid="gri__fir__filter__with__buffer__fsf_8h" local="no">gri_fir_filter_with_buffer_fsf.h</includedby>
+    <includedby refid="gri__fir__filter__with__buffer__scc_8h" local="no">gri_fir_filter_with_buffer_scc.h</includedby>
     <incdepgraph>
-      <node id="11124">
+      <node id="40144">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="40145" relation="include">
+        </childnode>
+      </node>
+      <node id="40142">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="11125">
-        <label>vector</label>
-      </node>
-      <node id="11123">
+      <node id="40141">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="11124" relation="include">
+        <childnode refid="40142" relation="include">
         </childnode>
       </node>
-      <node id="11122">
+      <node id="40140">
         <label>gr_reverse.h</label>
         <link refid="gr_reverse.h"/>
-        <childnode refid="11123" relation="include">
+        <childnode refid="40141" relation="include">
         </childnode>
-        <childnode refid="11125" relation="include">
+        <childnode refid="40143" relation="include">
         </childnode>
-        <childnode refid="11126" relation="include">
+        <childnode refid="40144" relation="include">
         </childnode>
       </node>
-      <node id="11127">
+      <node id="40143">
+        <label>vector</label>
+      </node>
+      <node id="40145">
         <label>complex</label>
       </node>
-      <node id="11126">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="11127" relation="include">
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="40159">
+        <label>gr_fir_fcc_x86.h</label>
+        <link refid="gr__fir__fcc__x86_8h"/>
+      </node>
+      <node id="40168">
+        <label>gr_fir_fsf_simd.h</label>
+        <link refid="gr__fir__fsf__simd_8h"/>
+        <childnode refid="40169" relation="include">
         </childnode>
       </node>
-    </incdepgraph>
+      <node id="40178">
+        <label>gri_fir_filter_with_buffer_fff.h</label>
+        <link refid="gri__fir__filter__with__buffer__fff_8h"/>
+      </node>
+      <node id="40153">
+        <label>gr_fir_ccf_armv7_a.h</label>
+        <link refid="gr__fir__ccf__armv7__a_8h"/>
+      </node>
+      <node id="40176">
+        <label>gr_pfb_synthesizer_ccf.h</label>
+        <link refid="gr__pfb__synthesizer__ccf_8h"/>
+      </node>
+      <node id="40162">
+        <label>gr_fir_fff_altivec.h</label>
+        <link refid="gr__fir__fff__altivec_8h"/>
+      </node>
+      <node id="40151">
+        <label>gr_fir_ccf.h</label>
+        <link refid="gr__fir__ccf_8h"/>
+        <childnode refid="40152" relation="include">
+        </childnode>
+      </node>
+      <node id="40170">
+        <label>gr_fir_scc.h</label>
+        <link refid="gr__fir__scc_8h"/>
+        <childnode refid="40171" relation="include">
+        </childnode>
+      </node>
+      <node id="40156">
+        <label>gr_fir_fcc.h</label>
+        <link refid="gr__fir__fcc_8h"/>
+        <childnode refid="40157" relation="include">
+        </childnode>
+      </node>
+      <node id="40163">
+        <label>gr_fir_fff_armv7_a.h</label>
+        <link refid="gr__fir__fff__armv7__a_8h"/>
+      </node>
+      <node id="40164">
+        <label>gr_fir_fff_simd.h</label>
+        <link refid="gr__fir__fff__simd_8h"/>
+        <childnode refid="40165" relation="include">
+        </childnode>
+      </node>
+      <node id="40179">
+        <label>gri_fir_filter_with_buffer_fsf.h</label>
+        <link refid="gri__fir__filter__with__buffer__fsf_8h"/>
+      </node>
+      <node id="40166">
+        <label>gr_fir_fsf.h</label>
+        <link refid="gr__fir__fsf_8h"/>
+        <childnode refid="40167" relation="include">
+        </childnode>
+      </node>
+      <node id="40155">
+        <label>gr_fir_ccf_x86.h</label>
+        <link refid="gr__fir__ccf__x86_8h"/>
+      </node>
+      <node id="40161">
+        <label>gr_fir_fff_generic.h</label>
+        <link refid="gr__fir__fff__generic_8h"/>
+        <childnode refid="40162" relation="include">
+        </childnode>
+        <childnode refid="40163" relation="include">
+        </childnode>
+        <childnode refid="40164" relation="include">
+        </childnode>
+      </node>
+      <node id="40169">
+        <label>gr_fir_fsf_x86.h</label>
+        <link refid="gr__fir__fsf__x86_8h"/>
+      </node>
+      <node id="40146">
+        <label>gr_reverse.h</label>
+        <link refid="gr_reverse.h"/>
+        <childnode refid="40147" relation="include">
+        </childnode>
+        <childnode refid="40151" relation="include">
+        </childnode>
+        <childnode refid="40156" relation="include">
+        </childnode>
+        <childnode refid="40160" relation="include">
+        </childnode>
+        <childnode refid="40166" relation="include">
+        </childnode>
+        <childnode refid="40170" relation="include">
+        </childnode>
+        <childnode refid="40174" relation="include">
+        </childnode>
+        <childnode refid="40175" relation="include">
+        </childnode>
+        <childnode refid="40177" relation="include">
+        </childnode>
+        <childnode refid="40178" relation="include">
+        </childnode>
+        <childnode refid="40179" relation="include">
+        </childnode>
+        <childnode refid="40180" relation="include">
+        </childnode>
+      </node>
+      <node id="40180">
+        <label>gri_fir_filter_with_buffer_scc.h</label>
+        <link refid="gri__fir__filter__with__buffer__scc_8h"/>
+      </node>
+      <node id="40157">
+        <label>gr_fir_fcc_generic.h</label>
+        <link refid="gr__fir__fcc__generic_8h"/>
+        <childnode refid="40158" relation="include">
+        </childnode>
+      </node>
+      <node id="40175">
+        <label>gri_fir_filter_with_buffer_ccf.h</label>
+        <link refid="gri__fir__filter__with__buffer__ccf_8h"/>
+        <childnode refid="40176" relation="include">
+        </childnode>
+      </node>
+      <node id="40160">
+        <label>gr_fir_fff.h</label>
+        <link refid="gr__fir__fff_8h"/>
+        <childnode refid="40161" relation="include">
+        </childnode>
+      </node>
+      <node id="40173">
+        <label>gr_fir_scc_x86.h</label>
+        <link refid="gr__fir__scc__x86_8h"/>
+      </node>
+      <node id="40177">
+        <label>gri_fir_filter_with_buffer_fcc.h</label>
+        <link refid="gri__fir__filter__with__buffer__fcc_8h"/>
+      </node>
+      <node id="40165">
+        <label>gr_fir_fff_x86.h</label>
+        <link refid="gr__fir__fff__x86_8h"/>
+      </node>
+      <node id="40152">
+        <label>gr_fir_ccf_generic.h</label>
+        <link refid="gr__fir__ccf__generic_8h"/>
+        <childnode refid="40153" relation="include">
+        </childnode>
+        <childnode refid="40154" relation="include">
+        </childnode>
+      </node>
+      <node id="40150">
+        <label>gr_fir_ccc_x86.h</label>
+        <link refid="gr__fir__ccc__x86_8h"/>
+      </node>
+      <node id="40174">
+        <label>gri_fir_filter_with_buffer_ccc.h</label>
+        <link refid="gri__fir__filter__with__buffer__ccc_8h"/>
+      </node>
+      <node id="40171">
+        <label>gr_fir_scc_generic.h</label>
+        <link refid="gr__fir__scc__generic_8h"/>
+        <childnode refid="40172" relation="include">
+        </childnode>
+      </node>
+      <node id="40148">
+        <label>gr_fir_ccc_generic.h</label>
+        <link refid="gr__fir__ccc__generic_8h"/>
+        <childnode refid="40149" relation="include">
+        </childnode>
+      </node>
+      <node id="40149">
+        <label>gr_fir_ccc_simd.h</label>
+        <link refid="gr__fir__ccc__simd_8h"/>
+        <childnode refid="40150" relation="include">
+        </childnode>
+      </node>
+      <node id="40154">
+        <label>gr_fir_ccf_simd.h</label>
+        <link refid="gr__fir__ccf__simd_8h"/>
+        <childnode refid="40155" relation="include">
+        </childnode>
+      </node>
+      <node id="40147">
+        <label>gr_fir_ccc.h</label>
+        <link refid="gr__fir__ccc_8h"/>
+        <childnode refid="40148" relation="include">
+        </childnode>
+      </node>
+      <node id="40172">
+        <label>gr_fir_scc_simd.h</label>
+        <link refid="gr__fir__scc__simd_8h"/>
+        <childnode refid="40173" relation="include">
+        </childnode>
+      </node>
+      <node id="40158">
+        <label>gr_fir_fcc_simd.h</label>
+        <link refid="gr__fir__fcc__simd_8h"/>
+        <childnode refid="40159" relation="include">
+        </childnode>
+      </node>
+      <node id="40167">
+        <label>gr_fir_fsf_generic.h</label>
+        <link refid="gr__fir__fsf__generic_8h"/>
+        <childnode refid="40168" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__reverse_8h_1a0e0995ad6539dd54e5e331ccb3681932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; float &gt;</type>
@@ -55,7 +277,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_reverse.h" line="30"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_reverse.h" line="30"/>
+        <referencedby refid="classgr__fir__ccc_1a92ad95669f1c39b932849f002f92e83e" compoundref="gr__fir__ccc_8h" startline="118" endline="121">gr_fir_ccc::get_taps</referencedby>
+        <referencedby refid="classgr__fir__ccf_1ab1ed3d65aaa985e7032fd5e9243537d1" compoundref="gr__fir__ccf_8h" startline="118" endline="121">gr_fir_ccf::get_taps</referencedby>
+        <referencedby refid="classgr__fir__fff_1a4c8fdac7c6d2d3eea81064c7ed5f25e6" compoundref="gr__fir__fff_8h" startline="118" endline="121">gr_fir_fff::get_taps</referencedby>
+        <referencedby refid="classgr__fir__fsf_1ae6dcb8e0d14dd3fe98459f76d1b329c9" compoundref="gr__fir__fsf_8h" startline="118" endline="121">gr_fir_fsf::get_taps</referencedby>
+        <referencedby refid="classgr__fir__fcc_1ab27c9fa920e78e94219575cca834522a" compoundref="gr__fir__fcc_8h" startline="118" endline="121">gr_fir_fcc::get_taps</referencedby>
+        <referencedby refid="classgr__fir__scc_1a292c9d7f99daf321ac0c0900369e0a50" compoundref="gr__fir__scc_8h" startline="118" endline="121">gr_fir_scc::get_taps</referencedby>
+        <referencedby refid="classgri__fir__filter__with__buffer__fff_1a274d66b2c8ffe288dcae45cfbb55600d" compoundref="gri__fir__filter__with__buffer__fff_8h" startline="126" endline="129">gri_fir_filter_with_buffer_fff::get_taps</referencedby>
+        <referencedby refid="classgri__fir__filter__with__buffer__fsf_1a4d5d9f81de83e4eab9279f5ac43c4621" compoundref="gri__fir__filter__with__buffer__fsf_8h" startline="126" endline="129">gri_fir_filter_with_buffer_fsf::get_taps</referencedby>
+        <referencedby refid="classgri__fir__filter__with__buffer__scc_1af09854bcb9eb53ffc7ae66ae4c2c2209" compoundref="gri__fir__filter__with__buffer__scc_8h" startline="126" endline="129">gri_fir_filter_with_buffer_scc::get_taps</referencedby>
+        <referencedby refid="classgri__fir__filter__with__buffer__fcc_1a3e774b41b300fff7db6f6ace146d2b0f" compoundref="gri__fir__filter__with__buffer__fcc_8h" startline="126" endline="129">gri_fir_filter_with_buffer_fcc::get_taps</referencedby>
+        <referencedby refid="classgri__fir__filter__with__buffer__ccc_1a90fd5009481051a95b8a8e270dbe7e5b" compoundref="gri__fir__filter__with__buffer__ccc_8h" startline="126" endline="129">gri_fir_filter_with_buffer_ccc::get_taps</referencedby>
+        <referencedby refid="classgri__fir__filter__with__buffer__ccf_1abf0b3bfc4cb220287fc15800aab3364f" compoundref="gri__fir__filter__with__buffer__ccf_8h" startline="126" endline="129">gri_fir_filter_with_buffer_ccf::get_taps</referencedby>
+        <referencedby refid="classgr__fir__fff_1ad692c67d571c9fdd45a214bac28c38d6" compoundref="gr__fir__fff_8h" startline="103" endline="106">gr_fir_fff::set_taps</referencedby>
+        <referencedby refid="classgr__fir__fcc_1a03a29e78ad8ea447e52f20156b2b2601" compoundref="gr__fir__fcc_8h" startline="103" endline="106">gr_fir_fcc::set_taps</referencedby>
+        <referencedby refid="classgr__fir__fsf_1adc6959598abe050fe195c2202fc6c521" compoundref="gr__fir__fsf_8h" startline="103" endline="106">gr_fir_fsf::set_taps</referencedby>
+        <referencedby refid="classgr__fir__ccf_1afaa800d2c0901730c37101bdfff9386d" compoundref="gr__fir__ccf_8h" startline="103" endline="106">gr_fir_ccf::set_taps</referencedby>
+        <referencedby refid="classgr__fir__ccc_1a37bd25499586825d8f0ea761097e1e8c" compoundref="gr__fir__ccc_8h" startline="103" endline="106">gr_fir_ccc::set_taps</referencedby>
+        <referencedby refid="classgr__fir__scc_1a1404a3100e262622de0ba450a4256462" compoundref="gr__fir__scc_8h" startline="103" endline="106">gr_fir_scc::set_taps</referencedby>
       </memberdef>
       <memberdef kind="function" id="gr__reverse_8h_1aefad412235ad7dccc4306f02710b9602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref> &gt;</type>
@@ -72,13 +312,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_reverse.h" line="31"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_reverse.h" line="31"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_reverse.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_reverse.h"/>
   </compounddef>
 </doxygen>

@@ -1,30 +1,81 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__fir__sysconfig__x86_8h" kind="file">
     <compoundname>gr_fir_sysconfig_x86.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
-    <includes local="no">gr_fir_sysconfig_generic.h</includes>
+    <includes refid="gr__fir__sysconfig__generic_8h" local="no">gr_fir_sysconfig_generic.h</includes>
     <incdepgraph>
-      <node id="8193">
+      <node id="34953">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="34951">
+        <label>gr_fir_sysconfig.h</label>
+        <link refid="gr__fir__sysconfig_8h"/>
+        <childnode refid="34952" relation="include">
+        </childnode>
+        <childnode refid="34958" relation="include">
+        </childnode>
+      </node>
+      <node id="34956">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="34957" relation="include">
+        </childnode>
+      </node>
+      <node id="34949">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="8192">
+      <node id="34948">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="8193" relation="include">
+        <childnode refid="34949" relation="include">
         </childnode>
       </node>
-      <node id="8191">
+      <node id="34952">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="34948" relation="include">
+        </childnode>
+        <childnode refid="34953" relation="include">
+        </childnode>
+        <childnode refid="34954" relation="include">
+        </childnode>
+        <childnode refid="34955" relation="include">
+        </childnode>
+        <childnode refid="34956" relation="include">
+        </childnode>
+      </node>
+      <node id="34955">
+        <label>stddef.h</label>
+      </node>
+      <node id="34950">
+        <label>gr_fir_sysconfig_generic.h</label>
+        <link refid="gr__fir__sysconfig__generic_8h"/>
+        <childnode refid="34951" relation="include">
+        </childnode>
+      </node>
+      <node id="34958">
+        <label>gr_fir_util.h</label>
+        <link refid="gr__fir__util_8h"/>
+        <childnode refid="34948" relation="include">
+        </childnode>
+        <childnode refid="34952" relation="include">
+        </childnode>
+      </node>
+      <node id="34954">
+        <label>vector</label>
+      </node>
+      <node id="34957">
+        <label>complex</label>
+      </node>
+      <node id="34947">
         <label>gr_fir_sysconfig_x86.h</label>
         <link refid="gr_fir_sysconfig_x86.h"/>
-        <childnode refid="8192" relation="include">
+        <childnode refid="34948" relation="include">
         </childnode>
-        <childnode refid="8194" relation="include">
+        <childnode refid="34950" relation="include">
         </childnode>
-      </node>
-      <node id="8194">
-        <label>gr_fir_sysconfig_generic.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classgr__fir__sysconfig__x86" prot="public">gr_fir_sysconfig_x86</innerclass>
@@ -32,6 +83,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_sysconfig_x86.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_fir_sysconfig_x86.h"/>
   </compounddef>
 </doxygen>

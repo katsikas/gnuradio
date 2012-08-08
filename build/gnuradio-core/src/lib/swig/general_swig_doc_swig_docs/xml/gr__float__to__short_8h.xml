@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__float__to__short_8h" kind="file">
     <compoundname>gr_float_to_short.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes local="no">gr_sync_block.h</includes>
     <incdepgraph>
-      <node id="430">
-        <label>gruel/attributes.h</label>
-      </node>
-      <node id="431">
-        <label>gr_sync_block.h</label>
-      </node>
       <node id="428">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h</label>
         <link refid="gr_float_to_short.h"/>
         <childnode refid="429" relation="include">
         </childnode>
         <childnode refid="431" relation="include">
         </childnode>
+      </node>
+      <node id="430">
+        <label>gruel/attributes.h</label>
+      </node>
+      <node id="431">
+        <label>gr_sync_block.h</label>
       </node>
       <node id="429">
         <label>gr_core_api.h</label>
@@ -39,13 +39,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h" line="30" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h" line="30" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__float__to__short_8h_1a301759704861a895b392e0a896be9ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__float__to__short_8h_1a979fdc69ae41755399c150ca702fea0c" kindref="member">gr_float_to_short_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_float_to_short_sptr gr_make_float_to_short</definition>
+      <memberdef kind="function" id="gr__float__to__short_8h_1a67d7829071982393a0e156d54fd9e1c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__float__to__short_8h_1a979fdc69ae41755399c150ca702fea0c" kindref="member">gr_float_to_short_sptr</ref></type>
+        <definition>GR_CORE_API gr_float_to_short_sptr gr_make_float_to_short</definition>
         <argsstring>(size_t vlen=1, float scale=1)</argsstring>
         <name>gr_make_float_to_short</name>
         <param>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h" line="33"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h" line="33"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -104,12 +104,12 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_float_to_short&gt;<sp/><ref refid="gr__float__to__short_8h_1a979fdc69ae41755399c150ca702fea0c" kindref="member">gr_float_to_short_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__float__to__short_8h_1a979fdc69ae41755399c150ca702fea0c" kindref="member">gr_float_to_short_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="gr__float__to__short_8h_1a301759704861a895b392e0a896be9ed0" kindref="member">gr_make_float_to_short</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen=1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgr__float__to__short_1a1bc7806dd1416aea45b1752ffe4d1eb7" kindref="member">scale</ref>=1);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="gr__float__to__short_8h_1a67d7829071982393a0e156d54fd9e1c4" kindref="member">gr_make_float_to_short</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen=1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgr__float__to__short_1a1bc7806dd1416aea45b1752ffe4d1eb7" kindref="member">scale</ref>=1);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43" refid="classgr__float__to__short" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__float__to__short" kindref="compound" tooltip="Convert stream of float to a stream of short.">gr_float_to_short</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__float__to__short_8h_1a979fdc69ae41755399c150ca702fea0c" kindref="member">gr_float_to_short_sptr</ref><sp/><ref refid="gr__float__to__short_8h_1a301759704861a895b392e0a896be9ed0" kindref="member">gr_make_float_to_short</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__float__to__short_8h_1a979fdc69ae41755399c150ca702fea0c" kindref="member">gr_float_to_short_sptr</ref><sp/><ref refid="gr__float__to__short_8h_1a67d7829071982393a0e156d54fd9e1c4" kindref="member">gr_make_float_to_short</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="classgr__float__to__short" kindref="compound" tooltip="Convert stream of float to a stream of short.">gr_float_to_short</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vlen,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>d_vlen;</highlight></codeline>
@@ -128,6 +128,6 @@
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_FLOAT_TO_SHORT_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_float_to_short.h"/>
   </compounddef>
 </doxygen>

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gnuradio-core/src/examples
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gnuradio-core/src/examples
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,16 +29,16 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/examples/mp-sched/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/examples/network/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/examples/pfb/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/examples/tags/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/mp-sched/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/network/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/pfb/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/tags/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/examples/volk_benchmark/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

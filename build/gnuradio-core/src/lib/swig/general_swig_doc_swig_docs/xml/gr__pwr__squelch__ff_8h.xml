@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__pwr__squelch__ff_8h" kind="file">
     <compoundname>gr_pwr_squelch_ff.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -13,6 +13,12 @@
       <node id="710">
         <label>cmath</label>
       </node>
+      <node id="708">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="709" relation="include">
+        </childnode>
+      </node>
       <node id="711">
         <label>gr_squelch_base_ff.h</label>
         <link refid="gr__squelch__base__ff_8h"/>
@@ -21,17 +27,8 @@
         <childnode refid="712" relation="include">
         </childnode>
       </node>
-      <node id="712">
-        <label>gr_block.h</label>
-      </node>
-      <node id="708">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="709" relation="include">
-        </childnode>
-      </node>
       <node id="707">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h</label>
         <link refid="gr_pwr_squelch_ff.h"/>
         <childnode refid="708" relation="include">
         </childnode>
@@ -41,6 +38,9 @@
         </childnode>
         <childnode refid="713" relation="include">
         </childnode>
+      </node>
+      <node id="712">
+        <label>gr_block.h</label>
       </node>
       <node id="713">
         <label>gr_single_pole_iir.h</label>
@@ -59,13 +59,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" line="32" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" line="32" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__pwr__squelch__ff_8h_1ab607a7b70ac89523e1b9b2340088da63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__pwr__squelch__ff_8h_1ae88c18260d2f28273750df75ecb10e42" kindref="member">gr_pwr_squelch_ff_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_pwr_squelch_ff_sptr gr_make_pwr_squelch_ff</definition>
+      <memberdef kind="function" id="gr__pwr__squelch__ff_8h_1a55c7c4636f300362fe5f903466d10a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__pwr__squelch__ff_8h_1ae88c18260d2f28273750df75ecb10e42" kindref="member">gr_pwr_squelch_ff_sptr</ref></type>
+        <definition>GR_CORE_API gr_pwr_squelch_ff_sptr gr_make_pwr_squelch_ff</definition>
         <argsstring>(double db, double alpha=0.0001, int ramp=0, bool gate=false)</argsstring>
         <name>gr_make_pwr_squelch_ff</name>
         <param>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" line="35"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h" line="35"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -135,7 +135,7 @@
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_pwr_squelch_ff&gt;<sp/><ref refid="gr__pwr__squelch__ff_8h_1ae88c18260d2f28273750df75ecb10e42" kindref="member">gr_pwr_squelch_ff_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__pwr__squelch__ff_8h_1ae88c18260d2f28273750df75ecb10e42" kindref="member">gr_pwr_squelch_ff_sptr</ref></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="gr__pwr__squelch__ff_8h_1ab607a7b70ac89523e1b9b2340088da63" kindref="member">gr_make_pwr_squelch_ff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>0.0001,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classgr__squelch__base__ff_1ac2f3750d222001ce567cd0a98aac1f42" kindref="member">ramp</ref>=0,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr__squelch__base__ff_1a3a355b937004b1591ea4cd7e6f350f01" kindref="member">gate</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="gr__pwr__squelch__ff_8h_1a55c7c4636f300362fe5f903466d10a52" kindref="member">gr_make_pwr_squelch_ff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>0.0001,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classgr__squelch__base__ff_1ac2f3750d222001ce567cd0a98aac1f42" kindref="member">ramp</ref>=0,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgr__squelch__base__ff_1a3a355b937004b1591ea4cd7e6f350f01" kindref="member">gate</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41" refid="classgr__pwr__squelch__ff" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__pwr__squelch__ff" kindref="compound" tooltip="gate or zero output when input power below threshold">gr_pwr_squelch_ff</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgr__squelch__base__ff" kindref="compound">gr_squelch_base_ff</ref></highlight></codeline>
 <codeline lineno="42"><highlight class="normal">{</highlight></codeline>
@@ -144,7 +144,7 @@
 <codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d_pwr;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/>gr_single_pole_iir&lt;double,double,double&gt;<sp/>d_iir;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__pwr__squelch__ff_8h_1ae88c18260d2f28273750df75ecb10e42" kindref="member">gr_pwr_squelch_ff_sptr</ref><sp/><ref refid="gr__pwr__squelch__ff_8h_1ab607a7b70ac89523e1b9b2340088da63" kindref="member">gr_make_pwr_squelch_ff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ramp,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>gate);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__pwr__squelch__ff_8h_1ae88c18260d2f28273750df75ecb10e42" kindref="member">gr_pwr_squelch_ff_sptr</ref><sp/><ref refid="gr__pwr__squelch__ff_8h_1a55c7c4636f300362fe5f903466d10a52" kindref="member">gr_make_pwr_squelch_ff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ramp,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>gate);</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="classgr__pwr__squelch__ff" kindref="compound" tooltip="gate or zero output when input power below threshold">gr_pwr_squelch_ff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>db,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ramp,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>gate);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
@@ -161,6 +161,6 @@
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_PWR_SQUELCH_FF_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_pwr_squelch_ff.h"/>
   </compounddef>
 </doxygen>

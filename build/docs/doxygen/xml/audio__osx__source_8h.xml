@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="audio__osx__source_8h" kind="file">
     <compoundname>audio_osx_source.h</compoundname>
     <includes refid="gr__audio__source_8h" local="no">gr_audio_source.h</includes>
@@ -8,268 +8,268 @@
     <includes local="no">AudioUnit/AudioUnit.h</includes>
     <includes refid="circular__buffer_8h" local="no">circular_buffer.h</includes>
     <incdepgraph>
-      <node id="2074">
+      <node id="27439">
         <label>boost/thread/mutex.hpp</label>
       </node>
-      <node id="2071">
-        <label>circular_buffer.h</label>
-        <link refid="circular__buffer_8h"/>
-        <childnode refid="2072" relation="include">
-        </childnode>
-        <childnode refid="2077" relation="include">
-        </childnode>
-        <childnode refid="2066" relation="include">
-        </childnode>
-      </node>
-      <node id="2052">
-        <label>gr_sptr_magic.h</label>
-        <link refid="gr__sptr__magic_8h_source"/>
-        <childnode refid="2042" relation="include">
-        </childnode>
-        <childnode refid="2047" relation="include">
-        </childnode>
-      </node>
-      <node id="2043">
-        <label>gr_block.h</label>
-        <link refid="gr__block_8h"/>
-        <childnode refid="2042" relation="include">
-        </childnode>
-        <childnode refid="2044" relation="include">
-        </childnode>
-        <childnode refid="2068" relation="include">
-        </childnode>
-      </node>
-      <node id="2076">
+      <node id="27441">
         <label>boost/thread/condition_variable.hpp</label>
       </node>
-      <node id="2047">
+      <node id="27412">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="2059">
+      <node id="27427">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="27428" relation="include">
+        </childnode>
+        <childnode refid="27429" relation="include">
+        </childnode>
+      </node>
+      <node id="27424">
         <label>boost/intrusive_ptr.hpp</label>
       </node>
-      <node id="2056">
+      <node id="27431">
+        <label>stdexcept</label>
+      </node>
+      <node id="27438">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="27433">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="27407" relation="include">
+        </childnode>
+        <childnode refid="27423" relation="include">
+        </childnode>
+      </node>
+      <node id="27426">
+        <label>string</label>
+      </node>
+      <node id="27421">
         <label>gruel/msg_accepter.h</label>
         <link refid="msg__accepter_8h"/>
-        <childnode refid="2057" relation="include">
+        <childnode refid="27422" relation="include">
         </childnode>
-        <childnode refid="2058" relation="include">
+        <childnode refid="27423" relation="include">
         </childnode>
-        <childnode refid="2047" relation="include">
-        </childnode>
-      </node>
-      <node id="2037">
-        <label>audio_osx_source.h</label>
-        <link refid="audio_osx_source.h"/>
-        <childnode refid="2038" relation="include">
-        </childnode>
-        <childnode refid="2061" relation="include">
-        </childnode>
-        <childnode refid="2069" relation="include">
-        </childnode>
-        <childnode refid="2070" relation="include">
-        </childnode>
-        <childnode refid="2071" relation="include">
+        <childnode refid="27412" relation="include">
         </childnode>
       </node>
-      <node id="2040">
+      <node id="27415">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="27416" relation="include">
+        </childnode>
+      </node>
+      <node id="27405">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="2046">
+      <node id="27407">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="27405" relation="include">
+        </childnode>
+      </node>
+      <node id="27411">
         <label>gr_types.h</label>
         <link refid="gr__types_8h"/>
-        <childnode refid="2042" relation="include">
+        <childnode refid="27407" relation="include">
         </childnode>
-        <childnode refid="2047" relation="include">
+        <childnode refid="27412" relation="include">
         </childnode>
-        <childnode refid="2048" relation="include">
+        <childnode refid="27413" relation="include">
         </childnode>
-        <childnode refid="2049" relation="include">
+        <childnode refid="27414" relation="include">
         </childnode>
-        <childnode refid="2050" relation="include">
-        </childnode>
-      </node>
-      <node id="2072">
-        <label>gruel/thread.h</label>
-        <link refid="thread_8h"/>
-        <childnode refid="2057" relation="include">
-        </childnode>
-        <childnode refid="2073" relation="include">
-        </childnode>
-        <childnode refid="2074" relation="include">
-        </childnode>
-        <childnode refid="2075" relation="include">
-        </childnode>
-        <childnode refid="2076" relation="include">
+        <childnode refid="27415" relation="include">
         </childnode>
       </node>
-      <node id="2066">
-        <label>stdexcept</label>
-      </node>
-      <node id="2073">
-        <label>boost/thread/thread.hpp</label>
-      </node>
-      <node id="2062">
-        <label>stdint.h</label>
-        <link refid="stdint_8h"/>
-        <childnode refid="2063" relation="include">
+      <node id="27406">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="27407" relation="include">
         </childnode>
-        <childnode refid="2064" relation="include">
+        <childnode refid="27408" relation="include">
         </childnode>
       </node>
-      <node id="2039">
+      <node id="27414">
+        <label>stddef.h</label>
+      </node>
+      <node id="27435">
+        <label>AudioUnit/AudioUnit.h</label>
+      </node>
+      <node id="27403">
+        <label>gr_audio_source.h</label>
+        <link refid="gr__audio__source_8h"/>
+        <childnode refid="27404" relation="include">
+        </childnode>
+        <childnode refid="27406" relation="include">
+        </childnode>
+      </node>
+      <node id="27419">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="27428">
+        <label>limits.h</label>
+      </node>
+      <node id="27425">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="27404">
         <label>gr_audio_api.h</label>
         <link refid="gr__audio__api_8h"/>
-        <childnode refid="2040" relation="include">
+        <childnode refid="27405" relation="include">
         </childnode>
       </node>
-      <node id="2061">
-        <label>string</label>
+      <node id="27408">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="27407" relation="include">
+        </childnode>
+        <childnode refid="27409" relation="include">
+        </childnode>
+        <childnode refid="27433" relation="include">
+        </childnode>
       </node>
-      <node id="2044">
+      <node id="27409">
         <label>gr_basic_block.h</label>
         <link refid="gr__basic__block_8h"/>
-        <childnode refid="2042" relation="include">
+        <childnode refid="27407" relation="include">
         </childnode>
-        <childnode refid="2045" relation="include">
+        <childnode refid="27410" relation="include">
         </childnode>
-        <childnode refid="2052" relation="include">
+        <childnode refid="27417" relation="include">
         </childnode>
-        <childnode refid="2053" relation="include">
+        <childnode refid="27418" relation="include">
         </childnode>
-        <childnode refid="2054" relation="include">
+        <childnode refid="27419" relation="include">
         </childnode>
-        <childnode refid="2055" relation="include">
+        <childnode refid="27420" relation="include">
         </childnode>
-        <childnode refid="2061" relation="include">
+        <childnode refid="27426" relation="include">
         </childnode>
       </node>
-      <node id="2067">
+      <node id="27437">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="27422" relation="include">
+        </childnode>
+        <childnode refid="27438" relation="include">
+        </childnode>
+        <childnode refid="27439" relation="include">
+        </childnode>
+        <childnode refid="27440" relation="include">
+        </childnode>
+        <childnode refid="27441" relation="include">
+        </childnode>
+      </node>
+      <node id="27423">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="27422" relation="include">
+        </childnode>
+        <childnode refid="27424" relation="include">
+        </childnode>
+        <childnode refid="27412" relation="include">
+        </childnode>
+        <childnode refid="27425" relation="include">
+        </childnode>
+        <childnode refid="27416" relation="include">
+        </childnode>
+        <childnode refid="27426" relation="include">
+        </childnode>
+        <childnode refid="27427" relation="include">
+        </childnode>
+        <childnode refid="27430" relation="include">
+        </childnode>
+        <childnode refid="27431" relation="include">
+        </childnode>
+        <childnode refid="27432" relation="include">
+        </childnode>
+      </node>
+      <node id="27429">
+        <label>wchar.h</label>
+      </node>
+      <node id="27420">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="27407" relation="include">
+        </childnode>
+        <childnode refid="27421" relation="include">
+        </childnode>
+        <childnode refid="27423" relation="include">
+        </childnode>
+      </node>
+      <node id="27440">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="27434">
+        <label>AudioToolbox/AudioToolbox.h</label>
+      </node>
+      <node id="27417">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="27407" relation="include">
+        </childnode>
+        <childnode refid="27412" relation="include">
+        </childnode>
+      </node>
+      <node id="27413">
+        <label>vector</label>
+      </node>
+      <node id="27418">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="27430">
+        <label>iosfwd</label>
+      </node>
+      <node id="27432">
         <label>gruel/pmt_sugar.h</label>
         <link refid="pmt__sugar_8h"/>
       </node>
-      <node id="2049">
-        <label>stddef.h</label>
-      </node>
-      <node id="2070">
-        <label>AudioUnit/AudioUnit.h</label>
-      </node>
-      <node id="2057">
-        <label>gruel/api.h</label>
-        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="2040" relation="include">
-        </childnode>
-      </node>
-      <node id="2054">
-        <label>boost/function.hpp</label>
-      </node>
-      <node id="2063">
-        <label>limits.h</label>
-      </node>
-      <node id="2060">
-        <label>boost/any.hpp</label>
-      </node>
-      <node id="2058">
-        <label>gruel/pmt.h</label>
-        <link refid="pmt_8h"/>
-        <childnode refid="2057" relation="include">
-        </childnode>
-        <childnode refid="2059" relation="include">
-        </childnode>
-        <childnode refid="2047" relation="include">
-        </childnode>
-        <childnode refid="2060" relation="include">
-        </childnode>
-        <childnode refid="2051" relation="include">
-        </childnode>
-        <childnode refid="2061" relation="include">
-        </childnode>
-        <childnode refid="2062" relation="include">
-        </childnode>
-        <childnode refid="2065" relation="include">
-        </childnode>
-        <childnode refid="2066" relation="include">
-        </childnode>
-        <childnode refid="2067" relation="include">
-        </childnode>
-      </node>
-      <node id="2064">
-        <label>wchar.h</label>
-      </node>
-      <node id="2055">
-        <label>gr_msg_accepter.h</label>
-        <link refid="gr__msg__accepter_8h"/>
-        <childnode refid="2042" relation="include">
-        </childnode>
-        <childnode refid="2056" relation="include">
-        </childnode>
-        <childnode refid="2058" relation="include">
-        </childnode>
-      </node>
-      <node id="2045">
-        <label>gr_runtime_types.h</label>
-        <link refid="gr__runtime__types_8h"/>
-        <childnode refid="2042" relation="include">
-        </childnode>
-        <childnode refid="2046" relation="include">
-        </childnode>
-      </node>
-      <node id="2075">
-        <label>boost/thread/locks.hpp</label>
-      </node>
-      <node id="2069">
-        <label>AudioToolbox/AudioToolbox.h</label>
-      </node>
-      <node id="2048">
-        <label>vector</label>
-      </node>
-      <node id="2042">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="2040" relation="include">
-        </childnode>
-      </node>
-      <node id="2053">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="2065">
-        <label>iosfwd</label>
-      </node>
-      <node id="2077">
+      <node id="27442">
         <label>iostream</label>
       </node>
-      <node id="2068">
-        <label>gr_tags.h</label>
-        <link refid="gr__tags_8h"/>
-        <childnode refid="2042" relation="include">
+      <node id="27410">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="27407" relation="include">
         </childnode>
-        <childnode refid="2058" relation="include">
-        </childnode>
-      </node>
-      <node id="2038">
-        <label>gr_audio_source.h</label>
-        <link refid="gr__audio__source_8h"/>
-        <childnode refid="2039" relation="include">
-        </childnode>
-        <childnode refid="2041" relation="include">
+        <childnode refid="27411" relation="include">
         </childnode>
       </node>
-      <node id="2041">
-        <label>gr_sync_block.h</label>
-        <link refid="gr__sync__block_8h"/>
-        <childnode refid="2042" relation="include">
+      <node id="27402">
+        <label>audio_osx_source.h</label>
+        <link refid="audio_osx_source.h"/>
+        <childnode refid="27403" relation="include">
         </childnode>
-        <childnode refid="2043" relation="include">
+        <childnode refid="27426" relation="include">
+        </childnode>
+        <childnode refid="27434" relation="include">
+        </childnode>
+        <childnode refid="27435" relation="include">
+        </childnode>
+        <childnode refid="27436" relation="include">
         </childnode>
       </node>
-      <node id="2051">
+      <node id="27422">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="27405" relation="include">
+        </childnode>
+      </node>
+      <node id="27416">
         <label>complex</label>
       </node>
-      <node id="2050">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="2051" relation="include">
+      <node id="27436">
+        <label>circular_buffer.h</label>
+        <link refid="circular__buffer_8h"/>
+        <childnode refid="27437" relation="include">
+        </childnode>
+        <childnode refid="27442" relation="include">
+        </childnode>
+        <childnode refid="27431" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -278,6 +278,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gr-audio/lib/osx/audio_osx_source.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-audio/lib/osx/audio_osx_source.h"/>
   </compounddef>
 </doxygen>

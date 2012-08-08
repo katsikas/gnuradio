@@ -1,49 +1,49 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__feval_8h" kind="file">
     <compoundname>gr_feval.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__complex_8h" local="no">gr_complex.h</includes>
     <includedby refid="gr__bin__statistics__f_8h" local="no">gr_bin_statistics_f.h</includedby>
     <incdepgraph>
-      <node id="7765">
+      <node id="34017">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="34018" relation="include">
+        </childnode>
+      </node>
+      <node id="34016">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7763">
-        <label>gr_feval.h</label>
-        <link refid="gr_feval.h"/>
-        <childnode refid="7764" relation="include">
-        </childnode>
-        <childnode refid="7766" relation="include">
-        </childnode>
-      </node>
-      <node id="7764">
+      <node id="34015">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="7765" relation="include">
+        <childnode refid="34016" relation="include">
         </childnode>
       </node>
-      <node id="7767">
+      <node id="34014">
+        <label>gr_feval.h</label>
+        <link refid="gr_feval.h"/>
+        <childnode refid="34015" relation="include">
+        </childnode>
+        <childnode refid="34017" relation="include">
+        </childnode>
+      </node>
+      <node id="34018">
         <label>complex</label>
-      </node>
-      <node id="7766">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="7767" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7768">
-        <label>gr_feval.h</label>
-        <link refid="gr_feval.h"/>
-        <childnode refid="7769" relation="include">
-        </childnode>
-      </node>
-      <node id="7769">
+      <node id="34020">
         <label>gr_bin_statistics_f.h</label>
         <link refid="gr__bin__statistics__f_8h"/>
+      </node>
+      <node id="34019">
+        <label>gr_feval.h</label>
+        <link refid="gr_feval.h"/>
+        <childnode refid="34020" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classgr__feval__dd" prot="public">gr_feval_dd</innerclass>
@@ -52,7 +52,7 @@
     <innerclass refid="classgr__feval" prot="public">gr_feval</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__feval_8h_1a65d9ff17307ab3d66c83b05ea0e2802e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> double</type>
+        <type>GR_CORE_API double</type>
         <definition>GR_CORE_API double gr_feval_dd_example</definition>
         <argsstring>(gr_feval_dd *f, double x)</argsstring>
         <name>gr_feval_dd_example</name>
@@ -70,10 +70,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="143"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="143"/>
       </memberdef>
       <memberdef kind="function" id="gr__feval_8h_1a2a1638398ab2a9462df61913e14c5ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
+        <type>GR_CORE_API <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
         <definition>GR_CORE_API gr_complex gr_feval_cc_example</definition>
         <argsstring>(gr_feval_cc *f, gr_complex x)</argsstring>
         <name>gr_feval_cc_example</name>
@@ -91,10 +91,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="144"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="144"/>
       </memberdef>
       <memberdef kind="function" id="gr__feval_8h_1a0a94ac837089862d8689ce143b6525cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> long</type>
+        <type>GR_CORE_API long</type>
         <definition>GR_CORE_API long gr_feval_ll_example</definition>
         <argsstring>(gr_feval_ll *f, long x)</argsstring>
         <name>gr_feval_ll_example</name>
@@ -112,10 +112,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="145"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="145"/>
       </memberdef>
       <memberdef kind="function" id="gr__feval_8h_1a9dec6492a3ce66542675381def936ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>GR_CORE_API void</type>
         <definition>GR_CORE_API void gr_feval_example</definition>
         <argsstring>(gr_feval *f)</argsstring>
         <name>gr_feval_example</name>
@@ -129,13 +129,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="146"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="146"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_feval.h"/>
   </compounddef>
 </doxygen>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbt__depad" kind="class" prot="public">
     <compoundname>dvbt_depad</compoundname>
     <basecompoundref refid="classgr__sync__interpolator" prot="public" virt="non-virtual">gr_sync_interpolator</basecompoundref>
     <includes refid="dvbt__depad_8h" local="no">dvbt_depad.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__depad_1a8a8bf60b298c9511755540a362afbb89" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_depad_sptr</ref></type>
+        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_depad_sptr</ref></type>
         <definition>DVBT_API dvbt_depad_sptr dvbt_make_depad</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_depad</name>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="45"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="47"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="47"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -59,10 +59,10 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="52"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__depad_1a8bd524814516810df7e7ba07711eba40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbt_depad::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="54" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" bodystart="54" bodyend="54"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="54" bodyfile="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" bodystart="54" bodyend="54"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -80,116 +80,116 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1742">
+      <node id="6732">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1743" relation="public-inheritance">
+        <childnode refid="6733" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1739">
+      <node id="6729">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1740" relation="public-inheritance">
+        <childnode refid="6730" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1740">
+      <node id="6730">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1741" relation="public-inheritance">
+        <childnode refid="6731" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1738">
+      <node id="6728">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="1739" relation="public-inheritance">
+        <childnode refid="6729" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1737">
+      <node id="6727">
         <label>dvbt_depad</label>
         <link refid="classdvbt__depad"/>
-        <childnode refid="1738" relation="public-inheritance">
+        <childnode refid="6728" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1743">
+      <node id="6733">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1741">
+      <node id="6731">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1742" relation="public-inheritance">
+        <childnode refid="6732" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1749">
+      <node id="6739">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1750" relation="public-inheritance">
+        <childnode refid="6740" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1746">
+      <node id="6736">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1747" relation="public-inheritance">
+        <childnode refid="6737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1747">
+      <node id="6737">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1748" relation="public-inheritance">
+        <childnode refid="6738" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1745">
+      <node id="6735">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="1746" relation="public-inheritance">
+        <childnode refid="6736" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1744">
+      <node id="6734">
         <label>dvbt_depad</label>
         <link refid="classdvbt__depad"/>
-        <childnode refid="1745" relation="public-inheritance">
+        <childnode refid="6735" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1751">
+      <node id="6741">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1752" relation="usage">
+        <childnode refid="6742" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1754">
+      <node id="6744">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1750">
+      <node id="6740">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1752">
+      <node id="6742">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1748">
+      <node id="6738">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1749" relation="public-inheritance">
+        <childnode refid="6739" relation="public-inheritance">
         </childnode>
-        <childnode refid="1751" relation="usage">
+        <childnode refid="6741" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1753" relation="usage">
+        <childnode refid="6743" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1753">
+      <node id="6743">
         <label>std::string</label>
-        <childnode refid="1754" relation="public-inheritance">
+        <childnode refid="6744" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" bodystart="43" bodyend="55"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="44" bodyfile="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" bodystart="43" bodyend="55"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>dvbt_depad</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>dvbt_depad</scope><name>add_item_tag</name></member>

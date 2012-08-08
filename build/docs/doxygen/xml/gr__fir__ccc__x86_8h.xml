@@ -1,38 +1,97 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__fir__ccc__x86_8h" kind="file">
     <compoundname>gr_fir_ccc_x86.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__fir__ccc__simd_8h" local="no">gr_fir_ccc_simd.h</includes>
     <incdepgraph>
-      <node id="8104">
+      <node id="34397">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="34399">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="34400" relation="include">
+        </childnode>
+      </node>
+      <node id="34391">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="8102">
-        <label>gr_fir_ccc_x86.h</label>
-        <link refid="gr_fir_ccc_x86.h"/>
-        <childnode refid="8103" relation="include">
-        </childnode>
-        <childnode refid="8105" relation="include">
-        </childnode>
-      </node>
-      <node id="8106">
-        <label>gr_fir_ccc_generic.h</label>
-      </node>
-      <node id="8103">
+      <node id="34390">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="8104" relation="include">
+        <childnode refid="34391" relation="include">
         </childnode>
       </node>
-      <node id="8105">
+      <node id="34401">
+        <label>gr_reverse.h</label>
+        <link refid="gr__reverse_8h"/>
+        <childnode refid="34390" relation="include">
+        </childnode>
+        <childnode refid="34395" relation="include">
+        </childnode>
+        <childnode refid="34399" relation="include">
+        </childnode>
+      </node>
+      <node id="34396">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="34390" relation="include">
+        </childnode>
+        <childnode refid="34397" relation="include">
+        </childnode>
+        <childnode refid="34395" relation="include">
+        </childnode>
+        <childnode refid="34398" relation="include">
+        </childnode>
+        <childnode refid="34399" relation="include">
+        </childnode>
+      </node>
+      <node id="34398">
+        <label>stddef.h</label>
+      </node>
+      <node id="34395">
+        <label>vector</label>
+      </node>
+      <node id="34389">
+        <label>gr_fir_ccc_x86.h</label>
+        <link refid="gr_fir_ccc_x86.h"/>
+        <childnode refid="34390" relation="include">
+        </childnode>
+        <childnode refid="34392" relation="include">
+        </childnode>
+      </node>
+      <node id="34393">
+        <label>gr_fir_ccc_generic.h</label>
+        <link refid="gr__fir__ccc__generic_8h"/>
+        <childnode refid="34390" relation="include">
+        </childnode>
+        <childnode refid="34394" relation="include">
+        </childnode>
+      </node>
+      <node id="34392">
         <label>gr_fir_ccc_simd.h</label>
         <link refid="gr__fir__ccc__simd_8h"/>
-        <childnode refid="8103" relation="include">
+        <childnode refid="34390" relation="include">
         </childnode>
-        <childnode refid="8106" relation="include">
+        <childnode refid="34393" relation="include">
         </childnode>
+      </node>
+      <node id="34394">
+        <label>gr_fir_ccc.h</label>
+        <link refid="gr__fir__ccc_8h"/>
+        <childnode refid="34390" relation="include">
+        </childnode>
+        <childnode refid="34395" relation="include">
+        </childnode>
+        <childnode refid="34396" relation="include">
+        </childnode>
+        <childnode refid="34401" relation="include">
+        </childnode>
+      </node>
+      <node id="34400">
+        <label>complex</label>
       </node>
     </incdepgraph>
     <innerclass refid="classgr__fir__ccc__3dnow" prot="public">gr_fir_ccc_3dnow</innerclass>
@@ -42,6 +101,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_ccc_x86.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_fir_ccc_x86.h"/>
   </compounddef>
 </doxygen>

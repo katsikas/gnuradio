@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gr-noaa/lib/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gr-noaa/lib/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/rule
 .PHONY : gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/rule
 
 # Convenience name for target.
@@ -177,15 +180,20 @@ gnuradio-noaa: gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/rule
 
 # fast build rule for target.
 gnuradio-noaa/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build
 .PHONY : gnuradio-noaa/fast
+
+# Manual pre-install relink rule for target.
+gnuradio-noaa/preinstall:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/preinstall
+.PHONY : gnuradio-noaa/preinstall
 
 noaa_hrpt_decoder.o: noaa_hrpt_decoder.cc.o
 .PHONY : noaa_hrpt_decoder.o
 
 # target to build an object file
 noaa_hrpt_decoder.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_decoder.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_decoder.cc.o
 .PHONY : noaa_hrpt_decoder.cc.o
 
 noaa_hrpt_decoder.i: noaa_hrpt_decoder.cc.i
@@ -193,7 +201,7 @@ noaa_hrpt_decoder.i: noaa_hrpt_decoder.cc.i
 
 # target to preprocess a source file
 noaa_hrpt_decoder.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_decoder.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_decoder.cc.i
 .PHONY : noaa_hrpt_decoder.cc.i
 
 noaa_hrpt_decoder.s: noaa_hrpt_decoder.cc.s
@@ -201,7 +209,7 @@ noaa_hrpt_decoder.s: noaa_hrpt_decoder.cc.s
 
 # target to generate assembly for a file
 noaa_hrpt_decoder.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_decoder.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_decoder.cc.s
 .PHONY : noaa_hrpt_decoder.cc.s
 
 noaa_hrpt_deframer.o: noaa_hrpt_deframer.cc.o
@@ -209,7 +217,7 @@ noaa_hrpt_deframer.o: noaa_hrpt_deframer.cc.o
 
 # target to build an object file
 noaa_hrpt_deframer.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_deframer.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_deframer.cc.o
 .PHONY : noaa_hrpt_deframer.cc.o
 
 noaa_hrpt_deframer.i: noaa_hrpt_deframer.cc.i
@@ -217,7 +225,7 @@ noaa_hrpt_deframer.i: noaa_hrpt_deframer.cc.i
 
 # target to preprocess a source file
 noaa_hrpt_deframer.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_deframer.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_deframer.cc.i
 .PHONY : noaa_hrpt_deframer.cc.i
 
 noaa_hrpt_deframer.s: noaa_hrpt_deframer.cc.s
@@ -225,7 +233,7 @@ noaa_hrpt_deframer.s: noaa_hrpt_deframer.cc.s
 
 # target to generate assembly for a file
 noaa_hrpt_deframer.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_deframer.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_deframer.cc.s
 .PHONY : noaa_hrpt_deframer.cc.s
 
 noaa_hrpt_pll_cf.o: noaa_hrpt_pll_cf.cc.o
@@ -233,7 +241,7 @@ noaa_hrpt_pll_cf.o: noaa_hrpt_pll_cf.cc.o
 
 # target to build an object file
 noaa_hrpt_pll_cf.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_pll_cf.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_pll_cf.cc.o
 .PHONY : noaa_hrpt_pll_cf.cc.o
 
 noaa_hrpt_pll_cf.i: noaa_hrpt_pll_cf.cc.i
@@ -241,7 +249,7 @@ noaa_hrpt_pll_cf.i: noaa_hrpt_pll_cf.cc.i
 
 # target to preprocess a source file
 noaa_hrpt_pll_cf.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_pll_cf.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_pll_cf.cc.i
 .PHONY : noaa_hrpt_pll_cf.cc.i
 
 noaa_hrpt_pll_cf.s: noaa_hrpt_pll_cf.cc.s
@@ -249,7 +257,7 @@ noaa_hrpt_pll_cf.s: noaa_hrpt_pll_cf.cc.s
 
 # target to generate assembly for a file
 noaa_hrpt_pll_cf.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_pll_cf.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/noaa_hrpt_pll_cf.cc.s
 .PHONY : noaa_hrpt_pll_cf.cc.s
 
 # Help Target
@@ -288,6 +296,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

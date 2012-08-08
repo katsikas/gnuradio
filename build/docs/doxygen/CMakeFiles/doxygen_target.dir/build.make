@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,24 +31,24 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Utility rule file for doxygen_target.
-
-# Include the progress variables for this target.
-include docs/doxygen/CMakeFiles/doxygen_target.dir/progress.make
 
 docs/doxygen/CMakeFiles/doxygen_target: docs/doxygen/xml
 docs/doxygen/CMakeFiles/doxygen_target: docs/doxygen/html
 
 docs/doxygen/xml:
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating documentation with doxygen"
-	cd /home/katsikas/gnuradio/build/docs/doxygen && /usr/bin/doxygen /home/katsikas/gnuradio/build/docs/doxygen/Doxyfile
+	cd /home/katsikas/Desktop/gnuradio/build/docs/doxygen && /usr/bin/doxygen /home/katsikas/Desktop/gnuradio/build/docs/doxygen/Doxyfile
 
 docs/doxygen/html: docs/doxygen/xml
 
@@ -63,10 +63,10 @@ docs/doxygen/CMakeFiles/doxygen_target.dir/build: doxygen_target
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/build
 
 docs/doxygen/CMakeFiles/doxygen_target.dir/clean:
-	cd /home/katsikas/gnuradio/build/docs/doxygen && $(CMAKE_COMMAND) -P CMakeFiles/doxygen_target.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/docs/doxygen && $(CMAKE_COMMAND) -P CMakeFiles/doxygen_target.dir/cmake_clean.cmake
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/clean
 
 docs/doxygen/CMakeFiles/doxygen_target.dir/depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/docs/doxygen /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/docs/doxygen /home/katsikas/gnuradio/build/docs/doxygen/CMakeFiles/doxygen_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/docs/doxygen /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/docs/doxygen /home/katsikas/Desktop/gnuradio/build/docs/doxygen/CMakeFiles/doxygen_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/depend
 

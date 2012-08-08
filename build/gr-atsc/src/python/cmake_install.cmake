@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-atsc/src/python
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-atsc/src/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,30 +29,30 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "btl-fsd.py" FILES "/home/katsikas/gnuradio/build/gr-atsc/src/python/btl-fsd.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "btl-fsd.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-atsc/src/python/btl-fsd.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "fpll.py" FILES "/home/katsikas/gnuradio/build/gr-atsc/src/python/fpll.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "fpll.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-atsc/src/python/fpll.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "interp.py" FILES "/home/katsikas/gnuradio/build/gr-atsc/src/python/interp.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "interp.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-atsc/src/python/interp.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "xlate.py" FILES "/home/katsikas/gnuradio/build/gr-atsc/src/python/xlate.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "xlate.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-atsc/src/python/xlate.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "viterbi-out.py" FILES "/home/katsikas/gnuradio/build/gr-atsc/src/python/viterbi-out.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE PROGRAM RENAME "viterbi-out.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-atsc/src/python/viterbi-out.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE FILE FILES "/home/katsikas/gnuradio/gr-atsc/src/python/README")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/atsc" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/gr-atsc/src/python/README")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "atsc_examples")
 

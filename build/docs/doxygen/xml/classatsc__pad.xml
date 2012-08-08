@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsc__pad" kind="class" prot="public">
     <compoundname>atsc_pad</compoundname>
     <basecompoundref refid="classgr__sync__decimator" prot="public" virt="non-virtual">gr_sync_decimator</basecompoundref>
     <includes refid="atsc__pad_8h" local="no">atsc_pad.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__pad_1aecca50a2af090a48f8488b03ffa5f4c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_pad_sptr</ref></type>
+        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_pad_sptr</ref></type>
         <definition>ATSC_API atsc_pad_sptr atsc_make_pad</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_pad</name>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="42"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="42"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -31,12 +31,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="44"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="44"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classatsc__pad_1a8cc6671ef00eb5e5c6e9dcb72f717695" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_pad::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -70,7 +70,7 @@
 Given a request to product <computeroutput>noutput_items</computeroutput>, estimate the number of data items required on each input stream. The estimate doesn&apos;t have to be exact, but should be close. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="47"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="47"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__pad_1a67a88cee0b11a955f1d996ecd52d914e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -96,10 +96,10 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="50"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="50"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__pad_1a4c0b5a5897024b4898606cab262680dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_pad::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -109,7 +109,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="52" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" bodystart="52" bodyend="52"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="52" bodyfile="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" bodystart="52" bodyend="52"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -117,116 +117,116 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="204">
+      <node id="5484">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="205" relation="public-inheritance">
+        <childnode refid="5485" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="201">
+      <node id="5481">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="202" relation="public-inheritance">
+        <childnode refid="5482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="200">
+      <node id="5480">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="201" relation="public-inheritance">
+        <childnode refid="5481" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="202">
+      <node id="5482">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="203" relation="public-inheritance">
+        <childnode refid="5483" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="199">
+      <node id="5479">
         <label>atsc_pad</label>
         <link refid="classatsc__pad"/>
-        <childnode refid="200" relation="public-inheritance">
+        <childnode refid="5480" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="205">
+      <node id="5485">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="203">
+      <node id="5483">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="204" relation="public-inheritance">
+        <childnode refid="5484" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="211">
+      <node id="5491">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="212" relation="public-inheritance">
+        <childnode refid="5492" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="208">
+      <node id="5488">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="209" relation="public-inheritance">
+        <childnode refid="5489" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="207">
+      <node id="5487">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="208" relation="public-inheritance">
+        <childnode refid="5488" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="209">
+      <node id="5489">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="210" relation="public-inheritance">
+        <childnode refid="5490" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="206">
+      <node id="5486">
         <label>atsc_pad</label>
         <link refid="classatsc__pad"/>
-        <childnode refid="207" relation="public-inheritance">
+        <childnode refid="5487" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="213">
+      <node id="5493">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="214" relation="usage">
+        <childnode refid="5494" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="216">
+      <node id="5496">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="212">
+      <node id="5492">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="214">
+      <node id="5494">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="210">
+      <node id="5490">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="211" relation="public-inheritance">
+        <childnode refid="5491" relation="public-inheritance">
         </childnode>
-        <childnode refid="213" relation="usage">
+        <childnode refid="5493" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="215" relation="usage">
+        <childnode refid="5495" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="215">
+      <node id="5495">
         <label>std::string</label>
-        <childnode refid="216" relation="public-inheritance">
+        <childnode refid="5496" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_pad.h" bodystart="40" bodyend="53"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" line="41" bodyfile="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_pad.h" bodystart="40" bodyend="53"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>atsc_pad</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>atsc_pad</scope><name>add_item_tag</name></member>

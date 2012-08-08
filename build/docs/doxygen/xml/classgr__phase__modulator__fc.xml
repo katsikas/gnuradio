@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__phase__modulator__fc" kind="class" prot="public">
     <compoundname>gr_phase_modulator_fc</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="41" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" bodystart="41" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="41" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__phase__modulator__fc_1abd2e00e29684e67dfd1590324a2726f2" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -29,12 +29,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="42" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" bodystart="42" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="42" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__phase__modulator__fc_1a308c61ab42d145396fd5ef14e715ed19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_phase_modulator_fc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_phase_modulator_fc_sptr</ref></type>
         <definition>GR_CORE_API gr_phase_modulator_fc_sptr gr_make_phase_modulator_fc</definition>
         <argsstring>(double sensitivity)</argsstring>
         <name>gr_make_phase_modulator_fc</name>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="45"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="47"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="47"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -95,7 +95,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="53"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -103,104 +103,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5023">
+      <node id="12132">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5024" relation="public-inheritance">
+        <childnode refid="12133" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5020">
+      <node id="12129">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5021" relation="public-inheritance">
+        <childnode refid="12130" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5021">
+      <node id="12130">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5022" relation="public-inheritance">
+        <childnode refid="12131" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5019">
+      <node id="12128">
         <label>gr_phase_modulator_fc</label>
         <link refid="classgr__phase__modulator__fc"/>
-        <childnode refid="5020" relation="public-inheritance">
+        <childnode refid="12129" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5024">
+      <node id="12133">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5022">
+      <node id="12131">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5023" relation="public-inheritance">
+        <childnode refid="12132" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5029">
+      <node id="12138">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5030" relation="public-inheritance">
+        <childnode refid="12139" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5026">
+      <node id="12135">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5027" relation="public-inheritance">
+        <childnode refid="12136" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5027">
+      <node id="12136">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5028" relation="public-inheritance">
+        <childnode refid="12137" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5031">
+      <node id="12140">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5032" relation="usage">
+        <childnode refid="12141" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5034">
+      <node id="12143">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5025">
+      <node id="12134">
         <label>gr_phase_modulator_fc</label>
         <link refid="classgr__phase__modulator__fc"/>
-        <childnode refid="5026" relation="public-inheritance">
+        <childnode refid="12135" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5030">
+      <node id="12139">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5032">
+      <node id="12141">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5028">
+      <node id="12137">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5029" relation="public-inheritance">
+        <childnode refid="12138" relation="public-inheritance">
         </childnode>
-        <childnode refid="5031" relation="usage">
+        <childnode refid="12140" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5033" relation="usage">
+        <childnode refid="12142" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5033">
+      <node id="12142">
         <label>std::string</label>
-        <childnode refid="5034" relation="public-inheritance">
+        <childnode refid="12143" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="40" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" bodystart="39" bodyend="54"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" line="40" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_phase_modulator_fc.h" bodystart="39" bodyend="54"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_phase_modulator_fc</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_phase_modulator_fc</scope><name>add_item_tag</name></member>

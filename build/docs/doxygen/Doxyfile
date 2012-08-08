@@ -25,7 +25,7 @@ DOXYFILE_ENCODING      = UTF-8
 # The PROJECT_NAME tag is a single word (or a sequence of words surrounded
 # by quotes) that should identify the project.
 
-PROJECT_NAME           = "GNU Radio dedc831d C++ API"
+PROJECT_NAME           = "GNU Radio a1b221bd C++ API"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number.
 # This could be handy for archiving the generated documentation or
@@ -552,7 +552,7 @@ WARN_LOGFILE           =
 # directories like "/usr/src/myproject". Separate the files or directories
 # with spaces.
 
-INPUT                  = /home/katsikas/gnuradio /home/katsikas/gnuradio/build
+INPUT                  = /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/build
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is
@@ -582,64 +582,64 @@ RECURSIVE              = YES
 # excluded from the INPUT source files. This way you can easily exclude a
 # subdirectory from a directory tree whose root is specified with the INPUT tag.
 
-EXCLUDE                = /home/katsikas/gnuradio/build/docs/doxygen/html \
-		         /home/katsikas/gnuradio/build/docs/doxygen/xml \
-                         /home/katsikas/gnuradio/build/docs/doxygen/other/doxypy.py \
-                         /home/katsikas/gnuradio/build/dtools \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/bug_work_around_6.cc \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/assembly.h \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_all.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_XXX.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_filter_XXX.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_sysconfig.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_sysconfig_generic.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_util.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_freq_xlating_fir_filter_XXX.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_interp_fir_filter_XXX.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_rational_resampler_base_XXX.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/generate_utils.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/gr_altivec.h \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter/sse_debug.h \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_all.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen/generate_common.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/missing/bug_work_around_8.cc \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/missing/getopt.h \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/runtime/gr_error_handler.cc \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/python/bin \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/python/build_utils.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/python/build_utils_codes.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.py \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/tests \
-                         /home/katsikas/gnuradio/build/gnuradio-core/src/utils \
-                         /home/katsikas/gnuradio/build/gnuradio-examples/python/apps/hf_radio/output.py \
-                         /home/katsikas/gnuradio/build/gnuradio-examples/python/apps/hf_radio/ui.py \
-                         /home/katsikas/gnuradio/build/gr-atsc/src/lib/atsc.cc \
-                         /home/katsikas/gnuradio/build/gr-atsc/src/lib/atsc.py \
-                         /home/katsikas/gnuradio/build/gr-atsc/src/lib/gen_encoder.py \
-                         /home/katsikas/gnuradio/build/gr-atsc/src/python \
-                         /home/katsikas/gnuradio/build/gr-atsc/src/python \
-                         /home/katsikas/gnuradio/build/gr-audio-alsa/src/audio-alsa.py \
-                         /home/katsikas/gnuradio/build/gr-audio-oss/src/audio_oss.py \
-                         /home/katsikas/gnuradio/build/gr-audio-osx/src/test_audio_loop.py \
-                         /home/katsikas/gnuradio/build/gr-gsm-fr-vocoder/src/lib/gsm \
-                         /home/katsikas/gnuradio/build/gr-gsm-fr-vocoder/src/lib/gsm_full_rate.py \
-                         /home/katsikas/gnuradio/build/gr-gsm-fr-vocoder/src/python/encdec.py \
-                         /home/katsikas/gnuradio/build/gr-howto-write-a-block \
-                         /home/katsikas/gnuradio/build/gr-pager/src/pager_swig.py \
-                         /home/katsikas/gnuradio/build/gr-trellis/doc \
-                         /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_all.py \
-                         /home/katsikas/gnuradio/build/gr-trellis/src/lib/generate_trellis.py \
-                         /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis.py \
-                         /home/katsikas/gnuradio/build/gr-video-sdl/src/video_sdl.py \
-                         /home/katsikas/gnuradio/build/gr-wxgui/src/python \
-                         /home/katsikas/gnuradio/build/grc \
-			 /home/katsikas/gnuradio/build/_CPack_Packages \
-                         /home/katsikas/gnuradio/cmake \
-			 /home/katsikas/gnuradio/gr-qtgui/lib \
-                         /home/katsikas/gnuradio/gr-howto-write-a-block
+EXCLUDE                = /home/katsikas/Desktop/gnuradio/build/docs/doxygen/html \
+		         /home/katsikas/Desktop/gnuradio/build/docs/doxygen/xml \
+                         /home/katsikas/Desktop/gnuradio/build/docs/doxygen/other/doxypy.py \
+                         /home/katsikas/Desktop/gnuradio/build/dtools \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/bug_work_around_6.cc \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/assembly.h \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_all.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_XXX.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_filter_XXX.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_sysconfig.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_sysconfig_generic.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_fir_util.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_freq_xlating_fir_filter_XXX.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_interp_fir_filter_XXX.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_gr_rational_resampler_base_XXX.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/generate_utils.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/gr_altivec.h \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/sse_debug.h \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/gengen/generate_all.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/gengen/generate_common.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/missing/bug_work_around_8.cc \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/missing/getopt.h \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/runtime/gr_error_handler.cc \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/swig \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/bin \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/build_utils.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/build_utils_codes.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_23.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/gr_threading_24.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/utils \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-examples/python/apps/hf_radio/output.py \
+                         /home/katsikas/Desktop/gnuradio/build/gnuradio-examples/python/apps/hf_radio/ui.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-atsc/src/lib/atsc.cc \
+                         /home/katsikas/Desktop/gnuradio/build/gr-atsc/src/lib/atsc.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-atsc/src/lib/gen_encoder.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-atsc/src/python \
+                         /home/katsikas/Desktop/gnuradio/build/gr-atsc/src/python \
+                         /home/katsikas/Desktop/gnuradio/build/gr-audio-alsa/src/audio-alsa.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-audio-oss/src/audio_oss.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-audio-osx/src/test_audio_loop.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-gsm-fr-vocoder/src/lib/gsm \
+                         /home/katsikas/Desktop/gnuradio/build/gr-gsm-fr-vocoder/src/lib/gsm_full_rate.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-gsm-fr-vocoder/src/python/encdec.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-howto-write-a-block \
+                         /home/katsikas/Desktop/gnuradio/build/gr-pager/src/pager_swig.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-trellis/doc \
+                         /home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/generate_all.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/generate_trellis.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-video-sdl/src/video_sdl.py \
+                         /home/katsikas/Desktop/gnuradio/build/gr-wxgui/src/python \
+                         /home/katsikas/Desktop/gnuradio/build/grc \
+			 /home/katsikas/Desktop/gnuradio/build/_CPack_Packages \
+                         /home/katsikas/Desktop/gnuradio/cmake \
+			 /home/katsikas/Desktop/gnuradio/gr-qtgui/lib \
+                         /home/katsikas/Desktop/gnuradio/gr-howto-write-a-block
 
 # The EXCLUDE_SYMLINKS tag can be used select whether or not files or
 # directories that are symbolic links (a Unix filesystem feature) are excluded
@@ -695,7 +695,7 @@ EXCLUDE_SYMBOLS        = ad9862 \
 # directories that contain example code fragments that are included (see
 # the \include command).
 
-EXAMPLE_PATH           = /home/katsikas/gnuradio
+EXAMPLE_PATH           = /home/katsikas/Desktop/gnuradio
 
 # If the value of the EXAMPLE_PATH tag contains directories, you can use the
 # EXAMPLE_PATTERNS tag to specify one or more wildcard pattern (like *.cpp
@@ -715,7 +715,7 @@ EXAMPLE_RECURSIVE      = NO
 # directories that contain image that are included in the documentation (see
 # the \image command).
 
-IMAGE_PATH             = /home/katsikas/gnuradio/docs/doxygen/images/
+IMAGE_PATH             = /home/katsikas/Desktop/gnuradio/docs/doxygen/images/
 
 # The INPUT_FILTER tag can be used to specify a program that doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program
@@ -734,7 +734,7 @@ INPUT_FILTER           =
 # info on how filters are used. If FILTER_PATTERNS is empty, INPUT_FILTER
 # is applied to all files.
 
-FILTER_PATTERNS        = *.py=/home/katsikas/gnuradio/gnuradio-core/doc/other/doxypy.py
+FILTER_PATTERNS        = *.py=/home/katsikas/Desktop/gnuradio/gnuradio-core/doc/other/doxypy.py
 
 # If the FILTER_SOURCE_FILES tag is set to YES, the input filter (if set using
 # INPUT_FILTER) will be used to filter the input files when producing source
@@ -1278,7 +1278,7 @@ SEARCH_INCLUDES        = YES
 # contain include files that are not input files but should be processed by
 # the preprocessor.
 
-INCLUDE_PATH           = /home/katsikas/gnuradio/build/gruel/src/lib/pmt/
+INCLUDE_PATH           = /home/katsikas/Desktop/gnuradio/build/gruel/src/lib/pmt/
 
 # You can use the INCLUDE_FILE_PATTERNS tag to specify one or more wildcard
 # patterns (like *.h and *.hpp) to filter out the header-files in the
@@ -1388,7 +1388,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # toolkit from AT&T and Lucent Bell Labs. The other options in this section
 # have no effect if this option is set to NO (the default)
 
-HAVE_DOT               = NO
+HAVE_DOT               = YES
 
 # By default doxygen will write a font called FreeSans.ttf to the output
 # directory and reference it in all dot files that doxygen generates. This

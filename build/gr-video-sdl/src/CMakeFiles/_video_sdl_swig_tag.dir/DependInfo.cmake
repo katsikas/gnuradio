@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/katsikas/gnuradio/build/gr-video-sdl/src/_video_sdl_swig_tag.cpp" "/home/katsikas/gnuradio/build/gr-video-sdl/src/CMakeFiles/_video_sdl_swig_tag.dir/_video_sdl_swig_tag.cpp.o"
+  "/home/katsikas/Desktop/gnuradio/build/gr-video-sdl/src/_video_sdl_swig_tag.cpp" "/home/katsikas/Desktop/gnuradio/build/gr-video-sdl/src/CMakeFiles/_video_sdl_swig_tag.dir/_video_sdl_swig_tag.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

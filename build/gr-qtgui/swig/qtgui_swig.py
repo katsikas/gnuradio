@@ -97,7 +97,7 @@ class SwigPyIterator(object):
         return _qtgui_swig.SwigPyIterator_decr(self, n)
 
     def distance(self, *args, **kwargs):
-        """distance(self, SwigPyIterator x) -> ptrdiff_t"""
+        """distance(self, SwigPyIterator x) -> std::ptrdiff_t"""
         return _qtgui_swig.SwigPyIterator_distance(self, *args, **kwargs)
 
     def equal(self, *args, **kwargs):
@@ -121,7 +121,7 @@ class SwigPyIterator(object):
         return _qtgui_swig.SwigPyIterator_previous(self)
 
     def advance(self, *args, **kwargs):
-        """advance(self, ptrdiff_t n) -> SwigPyIterator"""
+        """advance(self, std::ptrdiff_t n) -> SwigPyIterator"""
         return _qtgui_swig.SwigPyIterator_advance(self, *args, **kwargs)
 
     def __eq__(self, *args, **kwargs):
@@ -133,21 +133,21 @@ class SwigPyIterator(object):
         return _qtgui_swig.SwigPyIterator___ne__(self, *args, **kwargs)
 
     def __iadd__(self, *args, **kwargs):
-        """__iadd__(self, ptrdiff_t n) -> SwigPyIterator"""
+        """__iadd__(self, std::ptrdiff_t n) -> SwigPyIterator"""
         return _qtgui_swig.SwigPyIterator___iadd__(self, *args, **kwargs)
 
     def __isub__(self, *args, **kwargs):
-        """__isub__(self, ptrdiff_t n) -> SwigPyIterator"""
+        """__isub__(self, std::ptrdiff_t n) -> SwigPyIterator"""
         return _qtgui_swig.SwigPyIterator___isub__(self, *args, **kwargs)
 
     def __add__(self, *args, **kwargs):
-        """__add__(self, ptrdiff_t n) -> SwigPyIterator"""
+        """__add__(self, std::ptrdiff_t n) -> SwigPyIterator"""
         return _qtgui_swig.SwigPyIterator___add__(self, *args, **kwargs)
 
     def __sub__(self, *args):
         """
-        __sub__(self, ptrdiff_t n) -> SwigPyIterator
-        __sub__(self, SwigPyIterator x) -> ptrdiff_t
+        __sub__(self, std::ptrdiff_t n) -> SwigPyIterator
+        __sub__(self, SwigPyIterator x) -> std::ptrdiff_t
         """
         return _qtgui_swig.SwigPyIterator___sub__(self, *args)
 
@@ -647,5 +647,110 @@ def time_sink_f(*args, **kwargs):
     This is a QT-based graphical sink the takes set of a float streams and plots them in the time domain. Each signal is plotted with a different color, and the  and  functions can be used to change the lable and color for a given input number.
     """
   return _qtgui_swig.time_sink_f(*args, **kwargs)
+class qtgui_ofdm_vector_analyzer_c_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(qtgui_ofdm_vector_analyzer_c)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(self) -> qtgui_ofdm_vector_analyzer_c_sptr
+        __init__(self,  p) -> qtgui_ofdm_vector_analyzer_c_sptr
+        """
+        this = _qtgui_swig.new_qtgui_ofdm_vector_analyzer_c_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(self)"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr___deref__(self)
+
+    __swig_destroy__ = _qtgui_swig.delete_qtgui_ofdm_vector_analyzer_c_sptr
+    __del__ = lambda self : None;
+    def qwidget(self):
+        """qwidget(self) -> QWidget"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_qwidget(self)
+
+    def exec_(self):
+        """exec_(self)"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_exec_(self)
+
+    def pyqwidget(self):
+        """pyqwidget(self) -> PyObject"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_pyqwidget(self)
+
+    def history(self):
+        """history(self) -> unsigned int"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_history(self)
+
+    def output_multiple(self):
+        """output_multiple(self) -> int"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(self) -> double"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_relative_rate(self)
+
+    def start(self):
+        """start(self) -> bool"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_start(self)
+
+    def stop(self):
+        """stop(self) -> bool"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(self, unsigned int which_input) -> uint64_t"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(self, unsigned int which_output) -> uint64_t"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_nitems_written(self, *args, **kwargs)
+
+    def detail(self):
+        """detail(self) -> gr_block_detail_sptr"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_detail(self)
+
+    def set_detail(self, *args, **kwargs):
+        """set_detail(self, gr_block_detail_sptr detail)"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_set_detail(self, *args, **kwargs)
+
+    def name(self):
+        """name(self) -> string"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_name(self)
+
+    def input_signature(self):
+        """input_signature(self) -> gr_io_signature_sptr"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(self) -> gr_io_signature_sptr"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(self) -> long"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(self) -> gr_basic_block_sptr"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(self, int ninputs, int noutputs) -> bool"""
+        return _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_check_topology(self, *args, **kwargs)
+
+qtgui_ofdm_vector_analyzer_c_sptr_swigregister = _qtgui_swig.qtgui_ofdm_vector_analyzer_c_sptr_swigregister
+qtgui_ofdm_vector_analyzer_c_sptr_swigregister(qtgui_ofdm_vector_analyzer_c_sptr)
+
+qtgui_ofdm_vector_analyzer_c_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
+
+
+def ofdm_vector_analyzer_c(*args, **kwargs):
+  """
+    ofdm_vector_analyzer_c(int occupied_tones, string modulation = "bpsk", QWidget parent = None) -> qtgui_ofdm_vector_analyzer_c_sptr
+
+    The ofdm vector analyzer
+
+    This is a qt based vector analyzer for the ofdm modulation. It is not a callable from the gnuradio-companion and it is used internaly in the ofdm demodulator.
+    """
+  return _qtgui_swig.ofdm_vector_analyzer_c(*args, **kwargs)
 
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgri__mmse__fir__interpolator__cc" kind="class" prot="public">
     <compoundname>gri_mmse_fir_interpolator_cc</compoundname>
     <includes refid="gri__mmse__fir__interpolator__cc_8h" local="no">gri_mmse_fir_interpolator_cc.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classgri__mmse__fir__interpolator__cc_1a339ff39a576abda306191912ebe7a249" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; gr_fir_ccf * &gt;</type>
+        <type>std::vector&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf *&gt; gri_mmse_fir_interpolator_cc::filters</definition>
         <argsstring></argsstring>
         <name>filters</name>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="70" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" bodystart="70" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="70" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="50"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="50"/>
       </memberdef>
       <memberdef kind="function" id="classgri__mmse__fir__interpolator__cc_1a3ec67acb5153b1ab71306855bcb0ab55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classgri__mmse__fir__interpolator__cc_1aa297b945c52bc8176c731e58f7ee9aa6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned</type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classgri__mmse__fir__interpolator__cc_1a2d7ae1765a3919468ee4445328d33844" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned</type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="54"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="54"/>
       </memberdef>
       <memberdef kind="function" id="classgri__mmse__fir__interpolator__cc_1a1da35404c1cd133a4bbd7347c1e49441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
@@ -100,7 +100,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="67"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="67"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -112,18 +112,31 @@
 </itemizedlist>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="6328">
-        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
+      <node id="14293">
+        <label>std::vector&lt; float &gt;</label>
       </node>
-      <node id="6327">
+      <node id="14292">
+        <label>gr_fir_ccf</label>
+        <link refid="classgr__fir__ccf"/>
+        <childnode refid="14293" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+      </node>
+      <node id="14291">
+        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
+        <childnode refid="14292" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+      <node id="14290">
         <label>gri_mmse_fir_interpolator_cc</label>
         <link refid="classgri__mmse__fir__interpolator__cc"/>
-        <childnode refid="6328" relation="usage">
+        <childnode refid="14291" relation="usage">
           <edgelabel>filters</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="48" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" bodystart="48" bodyend="71"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" line="48" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gri_mmse_fir_interpolator_cc.h" bodystart="48" bodyend="71"/>
     <listofallmembers>
       <member refid="classgri__mmse__fir__interpolator__cc_1a339ff39a576abda306191912ebe7a249" prot="protected" virt="non-virtual"><scope>gri_mmse_fir_interpolator_cc</scope><name>filters</name></member>
       <member refid="classgri__mmse__fir__interpolator__cc_1ab40613fad362ff3891d8be5ed344a978" prot="public" virt="non-virtual"><scope>gri_mmse_fir_interpolator_cc</scope><name>gri_mmse_fir_interpolator_cc</name></member>

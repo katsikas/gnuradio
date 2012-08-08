@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="trellis__encoder__ii_8h" kind="file">
     <compoundname>trellis_encoder_ii.h</compoundname>
     <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
@@ -12,25 +12,6 @@
       <node id="30">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="24">
-        <label>trellis_encoder_ii.h</label>
-        <link refid="trellis_encoder_ii.h"/>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-      </node>
-      <node id="28">
-        <label>vector</label>
-      </node>
-      <node id="25">
-        <label>trellis_api.h</label>
-        <link refid="trellis__api_8h"/>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
       <node id="27">
         <label>fsm.h</label>
         <link refid="fsm_8h"/>
@@ -41,8 +22,27 @@
         <childnode refid="29" relation="include">
         </childnode>
       </node>
+      <node id="28">
+        <label>vector</label>
+      </node>
       <node id="29">
         <label>iosfwd</label>
+      </node>
+      <node id="24">
+        <label>trellis_encoder_ii.h</label>
+        <link refid="trellis_encoder_ii.h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>trellis_api.h</label>
+        <link refid="trellis__api_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classtrellis__encoder__ii" prot="public">trellis_encoder_ii</innerclass>
@@ -58,12 +58,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h" line="33" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h" line="33" bodyfile="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="trellis__encoder__ii_8h_1a7cea8190d75deacc8a8288c9192eaacf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__encoder__ii_8h_1a772fb0ed632ab0e7643936a31304213c" kindref="member">trellis_encoder_ii_sptr</ref></type>
+        <type>TRELLIS_API <ref refid="trellis__encoder__ii_8h_1a772fb0ed632ab0e7643936a31304213c" kindref="member">trellis_encoder_ii_sptr</ref></type>
         <definition>TRELLIS_API trellis_encoder_ii_sptr trellis_make_encoder_ii</definition>
         <argsstring>(const fsm &amp;FSM, int ST)</argsstring>
         <name>trellis_make_encoder_ii</name>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h" line="35"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h" line="35"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -144,6 +144,6 @@
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_encoder_ii.h"/>
   </compounddef>
 </doxygen>

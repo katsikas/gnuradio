@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__message_8h" kind="file">
     <compoundname>gr_message.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -11,182 +11,170 @@
     <includedby refid="gr__msg__handler_8h" local="no">gr_msg_handler.h</includedby>
     <includedby refid="digital__ofdm__mapper__bcv_8h" local="no">digital_ofdm_mapper_bcv.h</includedby>
     <incdepgraph>
-      <node id="9257">
+      <node id="36660">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="9255">
+      <node id="36665">
+        <label>string</label>
+      </node>
+      <node id="36663">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="36664" relation="include">
+        </childnode>
+      </node>
+      <node id="36658">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="9256">
-        <label>gr_types.h</label>
-        <link refid="gr__types_8h"/>
-        <childnode refid="9254" relation="include">
-        </childnode>
-        <childnode refid="9257" relation="include">
-        </childnode>
-        <childnode refid="9258" relation="include">
-        </childnode>
-        <childnode refid="9259" relation="include">
-        </childnode>
-        <childnode refid="9260" relation="include">
-        </childnode>
-      </node>
-      <node id="9262">
-        <label>string</label>
-      </node>
-      <node id="9259">
-        <label>stddef.h</label>
-      </node>
-      <node id="9258">
-        <label>vector</label>
-      </node>
-      <node id="9254">
+      <node id="36657">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="9255" relation="include">
+        <childnode refid="36658" relation="include">
         </childnode>
       </node>
-      <node id="9253">
+      <node id="36659">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="36657" relation="include">
+        </childnode>
+        <childnode refid="36660" relation="include">
+        </childnode>
+        <childnode refid="36661" relation="include">
+        </childnode>
+        <childnode refid="36662" relation="include">
+        </childnode>
+        <childnode refid="36663" relation="include">
+        </childnode>
+      </node>
+      <node id="36662">
+        <label>stddef.h</label>
+      </node>
+      <node id="36656">
         <label>gr_message.h</label>
         <link refid="gr_message.h"/>
-        <childnode refid="9254" relation="include">
+        <childnode refid="36657" relation="include">
         </childnode>
-        <childnode refid="9256" relation="include">
+        <childnode refid="36659" relation="include">
         </childnode>
-        <childnode refid="9262" relation="include">
+        <childnode refid="36665" relation="include">
         </childnode>
       </node>
-      <node id="9261">
+      <node id="36661">
+        <label>vector</label>
+      </node>
+      <node id="36664">
         <label>complex</label>
-      </node>
-      <node id="9260">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="9261" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="9271">
-        <label>gr_packet_sink.h</label>
-        <link refid="gr__packet__sink_8h"/>
-      </node>
-      <node id="9265">
-        <label>gr_message_sink.h</label>
-        <link refid="gr__message__sink_8h"/>
-      </node>
-      <node id="9268">
-        <label>gr_msg_queue.h</label>
-        <link refid="gr__msg__queue_8h"/>
-        <childnode refid="9264" relation="include">
-        </childnode>
-        <childnode refid="9269" relation="include">
-        </childnode>
-        <childnode refid="9270" relation="include">
-        </childnode>
-        <childnode refid="9271" relation="include">
-        </childnode>
-        <childnode refid="9272" relation="include">
-        </childnode>
-        <childnode refid="9265" relation="include">
-        </childnode>
-        <childnode refid="9266" relation="include">
-        </childnode>
-        <childnode refid="9273" relation="include">
-        </childnode>
-        <childnode refid="9274" relation="include">
-        </childnode>
-        <childnode refid="9275" relation="include">
-        </childnode>
-        <childnode refid="9276" relation="include">
-        </childnode>
-        <childnode refid="9277" relation="include">
-        </childnode>
-        <childnode refid="9278" relation="include">
-        </childnode>
-        <childnode refid="9279" relation="include">
-        </childnode>
-        <childnode refid="9280" relation="include">
-        </childnode>
-      </node>
-      <node id="9277">
-        <label>digital_ofdm_mapper_bcv.h</label>
-        <link refid="digital__ofdm__mapper__bcv_8h"/>
-      </node>
-      <node id="9275">
-        <label>digital_framer_sink_1.h</label>
-        <link refid="digital__framer__sink__1_8h"/>
-      </node>
-      <node id="9280">
-        <label>gr_uhd_amsg_source.h</label>
-        <link refid="gr__uhd__amsg__source_8h"/>
-      </node>
-      <node id="9279">
-        <label>pager_flex_parse.h</label>
-        <link refid="pager__flex__parse_8h_source"/>
-      </node>
-      <node id="9272">
-        <label>gr_histo_sink_f.h</label>
-        <link refid="gr__histo__sink__f_8h"/>
-      </node>
-      <node id="9274">
-        <label>gr_oscope_sink_f.h</label>
-        <link refid="gr__oscope__sink__f_8h"/>
-      </node>
-      <node id="9270">
+      <node id="36673">
         <label>gr_ofdm_frame_sink2.h</label>
         <link refid="gr__ofdm__frame__sink2_8h"/>
       </node>
-      <node id="9267">
-        <label>gr_msg_handler.h</label>
-        <link refid="gr__msg__handler_8h"/>
-        <childnode refid="9268" relation="include">
+      <node id="36671">
+        <label>gr_msg_queue.h</label>
+        <link refid="gr__msg__queue_8h"/>
+        <childnode refid="36667" relation="include">
+        </childnode>
+        <childnode refid="36672" relation="include">
+        </childnode>
+        <childnode refid="36673" relation="include">
+        </childnode>
+        <childnode refid="36674" relation="include">
+        </childnode>
+        <childnode refid="36675" relation="include">
+        </childnode>
+        <childnode refid="36668" relation="include">
+        </childnode>
+        <childnode refid="36669" relation="include">
+        </childnode>
+        <childnode refid="36676" relation="include">
+        </childnode>
+        <childnode refid="36677" relation="include">
+        </childnode>
+        <childnode refid="36678" relation="include">
+        </childnode>
+        <childnode refid="36679" relation="include">
+        </childnode>
+        <childnode refid="36680" relation="include">
+        </childnode>
+        <childnode refid="36681" relation="include">
         </childnode>
       </node>
-      <node id="9276">
-        <label>digital_ofdm_frame_sink.h</label>
-        <link refid="digital__ofdm__frame__sink_8h"/>
+      <node id="36681">
+        <label>gr_uhd_amsg_source.h</label>
+        <link refid="gr__uhd__amsg__source_8h"/>
       </node>
-      <node id="9264">
-        <label>gr_bin_statistics_f.h</label>
-        <link refid="gr__bin__statistics__f_8h"/>
-      </node>
-      <node id="9273">
-        <label>gr_oscope_guts.h</label>
-        <link refid="gr__oscope__guts_8h"/>
-      </node>
-      <node id="9263">
-        <label>gr_message.h</label>
-        <link refid="gr_message.h"/>
-        <childnode refid="9264" relation="include">
-        </childnode>
-        <childnode refid="9265" relation="include">
-        </childnode>
-        <childnode refid="9266" relation="include">
-        </childnode>
-        <childnode refid="9267" relation="include">
-        </childnode>
-        <childnode refid="9277" relation="include">
-        </childnode>
-      </node>
-      <node id="9269">
+      <node id="36672">
         <label>gr_framer_sink_1.h</label>
         <link refid="gr__framer__sink__1_8h"/>
       </node>
-      <node id="9278">
-        <label>digital_packet_sink.h</label>
-        <link refid="digital__packet__sink_8h"/>
+      <node id="36667">
+        <label>gr_bin_statistics_f.h</label>
+        <link refid="gr__bin__statistics__f_8h"/>
       </node>
-      <node id="9266">
+      <node id="36678">
+        <label>digital_ofdm_frame_sink.h</label>
+        <link refid="digital__ofdm__frame__sink_8h"/>
+      </node>
+      <node id="36680">
+        <label>pager_flex_parse.h</label>
+        <link refid="pager__flex__parse_8h_source"/>
+      </node>
+      <node id="36679">
+        <label>digital_ofdm_mapper_bcv.h</label>
+        <link refid="digital__ofdm__mapper__bcv_8h"/>
+      </node>
+      <node id="36674">
+        <label>gr_packet_sink.h</label>
+        <link refid="gr__packet__sink_8h"/>
+      </node>
+      <node id="36668">
+        <label>gr_message_sink.h</label>
+        <link refid="gr__message__sink_8h"/>
+      </node>
+      <node id="36666">
+        <label>gr_message.h</label>
+        <link refid="gr_message.h"/>
+        <childnode refid="36667" relation="include">
+        </childnode>
+        <childnode refid="36668" relation="include">
+        </childnode>
+        <childnode refid="36669" relation="include">
+        </childnode>
+        <childnode refid="36670" relation="include">
+        </childnode>
+        <childnode refid="36679" relation="include">
+        </childnode>
+      </node>
+      <node id="36677">
+        <label>gr_oscope_sink_f.h</label>
+        <link refid="gr__oscope__sink__f_8h"/>
+      </node>
+      <node id="36675">
+        <label>gr_histo_sink_f.h</label>
+        <link refid="gr__histo__sink__f_8h"/>
+      </node>
+      <node id="36676">
+        <label>gr_oscope_guts.h</label>
+        <link refid="gr__oscope__guts_8h"/>
+      </node>
+      <node id="36669">
         <label>gr_message_source.h</label>
         <link refid="gr__message__source_8h"/>
+      </node>
+      <node id="36670">
+        <label>gr_msg_handler.h</label>
+        <link refid="gr__msg__handler_8h"/>
+        <childnode refid="36671" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classgr__message" prot="public">gr_message</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__message_8h_1ae4302bde85958bc1d45d28a68d1ef633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
         <definition>GR_CORE_API gr_message_sptr gr_make_message</definition>
         <argsstring>(long type=0, double arg1=0, double arg2=0, size_t length=0)</argsstring>
         <name>gr_make_message</name>
@@ -216,10 +204,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="36"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="36"/>
       </memberdef>
       <memberdef kind="function" id="gr__message_8h_1a13269585cc35d3492d95c481e04db01d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
+        <type>GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_message_sptr</ref></type>
         <definition>GR_CORE_API gr_message_sptr gr_make_message_from_string</definition>
         <argsstring>(const std::string s, long type=0, double arg1=0, double arg2=0)</argsstring>
         <name>gr_make_message_from_string</name>
@@ -248,10 +236,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="39"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="gr__message_8h_1ae38172321e974aa3e2142b57273c95d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> long</type>
+        <type>GR_CORE_API long</type>
         <definition>GR_CORE_API long gr_message_ncurrently_allocated</definition>
         <argsstring>()</argsstring>
         <name>gr_message_ncurrently_allocated</name>
@@ -261,13 +249,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="89"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h" line="89"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_message.h"/>
   </compounddef>
 </doxygen>

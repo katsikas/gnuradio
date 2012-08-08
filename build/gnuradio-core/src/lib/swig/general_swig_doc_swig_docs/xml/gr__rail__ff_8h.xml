@@ -1,18 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__rail__ff_8h" kind="file">
     <compoundname>gr_rail_ff.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes local="no">gr_sync_block.h</includes>
     <incdepgraph>
-      <node id="720">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h</label>
-        <link refid="gr_rail_ff.h"/>
-        <childnode refid="721" relation="include">
-        </childnode>
-        <childnode refid="723" relation="include">
-        </childnode>
-      </node>
       <node id="722">
         <label>gruel/attributes.h</label>
       </node>
@@ -23,6 +15,14 @@
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
         <childnode refid="722" relation="include">
+        </childnode>
+      </node>
+      <node id="720">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h</label>
+        <link refid="gr_rail_ff.h"/>
+        <childnode refid="721" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -39,13 +39,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h" line="35" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h" bodystart="34" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h" line="35" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__rail__ff_8h_1a2141b3bb750776f051972016ba73e5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kindref="member">gr_rail_ff_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_rail_ff_sptr gr_make_rail_ff</definition>
+      <memberdef kind="function" id="gr__rail__ff_8h_1a9b423222e5ee0ea2bb8453edb7d0b225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kindref="member">gr_rail_ff_sptr</ref></type>
+        <definition>GR_CORE_API gr_rail_ff_sptr gr_make_rail_ff</definition>
         <argsstring>(float lo, float hi)</argsstring>
         <name>gr_make_rail_ff</name>
         <param>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h" line="37"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h" line="37"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -101,11 +101,11 @@
 <codeline lineno="34" refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" refkind="member"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgr__rail__ff" kindref="compound">gr_rail_ff</ref>;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_rail_ff&gt;<sp/><ref refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kindref="member">gr_rail_ff_sptr</ref>;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kindref="member">gr_rail_ff_sptr</ref><sp/><ref refid="gr__rail__ff_8h_1a2141b3bb750776f051972016ba73e5b7" kindref="member">gr_make_rail_ff</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgr__rail__ff_1a4194c0c75339b7e9f72902418ee3b226" kindref="member">lo</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgr__rail__ff_1ad531f927822a1c79e6482014dd925910" kindref="member">hi</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kindref="member">gr_rail_ff_sptr</ref><sp/><ref refid="gr__rail__ff_8h_1a9b423222e5ee0ea2bb8453edb7d0b225" kindref="member">gr_make_rail_ff</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgr__rail__ff_1a4194c0c75339b7e9f72902418ee3b226" kindref="member">lo</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgr__rail__ff_1ad531f927822a1c79e6482014dd925910" kindref="member">hi</ref>);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39" refid="classgr__rail__ff" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__rail__ff" kindref="compound">gr_rail_ff</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kindref="member">gr_rail_ff_sptr</ref><sp/><ref refid="gr__rail__ff_8h_1a2141b3bb750776f051972016ba73e5b7" kindref="member">gr_make_rail_ff</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lo,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hi);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kindref="member">gr_rail_ff_sptr</ref><sp/><ref refid="gr__rail__ff_8h_1a9b423222e5ee0ea2bb8453edb7d0b225" kindref="member">gr_make_rail_ff</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lo,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hi);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d_lo,<sp/>d_hi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>constant</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classgr__rail__ff" kindref="compound">gr_rail_ff</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lo,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hi);</highlight></codeline>
@@ -123,6 +123,6 @@
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_rail_ff.h"/>
   </compounddef>
 </doxygen>

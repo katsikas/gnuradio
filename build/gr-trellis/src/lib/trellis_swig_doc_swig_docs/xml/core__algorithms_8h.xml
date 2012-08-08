@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="core__algorithms_8h" kind="file">
     <compoundname>core_algorithms.h</compoundname>
     <includes local="no">cmath</includes>
@@ -7,8 +7,8 @@
     <includes local="yes">digital_metric_type.h</includes>
     <includes refid="fsm_8h" local="yes">fsm.h</includes>
     <includes refid="interleaver_8h" local="yes">interleaver.h</includes>
-    <includedby refid="trellis__siso__combined__f_8h" local="yes">/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</includedby>
-    <includedby refid="trellis__siso__f_8h" local="yes">/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</includedby>
+    <includedby refid="trellis__siso__combined__f_8h" local="yes">/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</includedby>
+    <includedby refid="trellis__siso__f_8h" local="yes">/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</includedby>
     <includedby refid="trellis__viterbi__b_8h" local="yes">trellis_viterbi_b.h</includedby>
     <includedby refid="trellis__viterbi__combined__cb_8h" local="yes">trellis_viterbi_combined_cb.h</includedby>
     <includedby refid="trellis__viterbi__combined__ci_8h" local="yes">trellis_viterbi_combined_ci.h</includedby>
@@ -31,15 +31,6 @@
       <node id="650">
         <label>cmath</label>
       </node>
-      <node id="651">
-        <label>vector</label>
-      </node>
-      <node id="654">
-        <label>trellis_api.h</label>
-        <link refid="trellis__api_8h"/>
-        <childnode refid="655" relation="include">
-        </childnode>
-      </node>
       <node id="653">
         <label>fsm.h</label>
         <link refid="fsm_8h"/>
@@ -49,6 +40,9 @@
         </childnode>
         <childnode refid="656" relation="include">
         </childnode>
+      </node>
+      <node id="651">
+        <label>vector</label>
       </node>
       <node id="656">
         <label>iosfwd</label>
@@ -64,8 +58,14 @@
       <node id="652">
         <label>digital_metric_type.h</label>
       </node>
+      <node id="654">
+        <label>trellis_api.h</label>
+        <link refid="trellis__api_8h"/>
+        <childnode refid="655" relation="include">
+        </childnode>
+      </node>
       <node id="649">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h</label>
         <link refid="core_algorithms.h"/>
         <childnode refid="650" relation="include">
         </childnode>
@@ -80,41 +80,37 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="662">
-        <label>trellis_viterbi_combined_cb.h</label>
-        <link refid="trellis__viterbi__combined__cb_8h"/>
+      <node id="672">
+        <label>trellis_viterbi_combined_si.h</label>
+        <link refid="trellis__viterbi__combined__si_8h"/>
+      </node>
+      <node id="675">
+        <label>trellis_viterbi_s.h</label>
+        <link refid="trellis__viterbi__s_8h"/>
       </node>
       <node id="667">
         <label>trellis_viterbi_combined_fs.h</label>
         <link refid="trellis__viterbi__combined__fs_8h"/>
       </node>
-      <node id="674">
-        <label>trellis_viterbi_i.h</label>
-        <link refid="trellis__viterbi__i_8h"/>
-      </node>
-      <node id="671">
-        <label>trellis_viterbi_combined_sb.h</label>
-        <link refid="trellis__viterbi__combined__sb_8h"/>
-      </node>
       <node id="664">
         <label>trellis_viterbi_combined_cs.h</label>
         <link refid="trellis__viterbi__combined__cs_8h"/>
       </node>
-      <node id="660">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</label>
-        <link refid="trellis__siso__f_8h"/>
+      <node id="668">
+        <label>trellis_viterbi_combined_ib.h</label>
+        <link refid="trellis__viterbi__combined__ib_8h"/>
+      </node>
+      <node id="659">
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</label>
+        <link refid="trellis__siso__combined__f_8h"/>
+      </node>
+      <node id="665">
+        <label>trellis_viterbi_combined_fb.h</label>
+        <link refid="trellis__viterbi__combined__fb_8h"/>
       </node>
       <node id="673">
         <label>trellis_viterbi_combined_ss.h</label>
         <link refid="trellis__viterbi__combined__ss_8h"/>
-      </node>
-      <node id="659">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</label>
-        <link refid="trellis__siso__combined__f_8h"/>
-      </node>
-      <node id="661">
-        <label>trellis_viterbi_b.h</label>
-        <link refid="trellis__viterbi__b_8h"/>
       </node>
       <node id="669">
         <label>trellis_viterbi_combined_ii.h</label>
@@ -124,32 +120,32 @@
         <label>trellis_viterbi_combined_fi.h</label>
         <link refid="trellis__viterbi__combined__fi_8h"/>
       </node>
+      <node id="662">
+        <label>trellis_viterbi_combined_cb.h</label>
+        <link refid="trellis__viterbi__combined__cb_8h"/>
+      </node>
+      <node id="674">
+        <label>trellis_viterbi_i.h</label>
+        <link refid="trellis__viterbi__i_8h"/>
+      </node>
+      <node id="660">
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</label>
+        <link refid="trellis__siso__f_8h"/>
+      </node>
+      <node id="671">
+        <label>trellis_viterbi_combined_sb.h</label>
+        <link refid="trellis__viterbi__combined__sb_8h"/>
+      </node>
       <node id="670">
         <label>trellis_viterbi_combined_is.h</label>
         <link refid="trellis__viterbi__combined__is_8h"/>
-      </node>
-      <node id="668">
-        <label>trellis_viterbi_combined_ib.h</label>
-        <link refid="trellis__viterbi__combined__ib_8h"/>
-      </node>
-      <node id="665">
-        <label>trellis_viterbi_combined_fb.h</label>
-        <link refid="trellis__viterbi__combined__fb_8h"/>
       </node>
       <node id="663">
         <label>trellis_viterbi_combined_ci.h</label>
         <link refid="trellis__viterbi__combined__ci_8h"/>
       </node>
-      <node id="675">
-        <label>trellis_viterbi_s.h</label>
-        <link refid="trellis__viterbi__s_8h"/>
-      </node>
-      <node id="672">
-        <label>trellis_viterbi_combined_si.h</label>
-        <link refid="trellis__viterbi__combined__si_8h"/>
-      </node>
       <node id="658">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h</label>
         <link refid="core_algorithms.h"/>
         <childnode refid="659" relation="include">
         </childnode>
@@ -186,6 +182,10 @@
         <childnode refid="675" relation="include">
         </childnode>
       </node>
+      <node id="661">
+        <label>trellis_viterbi_b.h</label>
+        <link refid="trellis__viterbi__b_8h"/>
+      </node>
     </invincdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="core__algorithms_8h_1a8ee42a5dd83886e7ad61d451d5a32956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -207,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="34"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="34"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1aeaa130a10446a9df57d9a8c3df3609dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="35"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="35"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1ac8fe5f61de2cd52149621ebc9ec6cebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -294,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="46"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="46"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1a5bf2a8e1a8e33329eb3ee83e66549be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="60"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="60"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1a7bf8321f8d0a3ac7234ed55ceab69ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -452,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="74"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="74"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1aabdff6b3dae1bb3ef0cd940c21b33bbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -546,7 +546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="91"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="91"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1aae8a8b5aa50a3c5916c42f3b0bde33ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -612,7 +612,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="101"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="101"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1a0bd16c54c564ca06d6651db616ac3383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -697,7 +697,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="114"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="114"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1ac4d4d6df572a86446e1aa137a0ccf5f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -763,7 +763,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="123"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="123"/>
       </memberdef>
       <memberdef kind="function" id="core__algorithms_8h_1ae98fcc16657be84269a48d14cc71d440" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -848,7 +848,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="135"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h" line="135"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -997,6 +997,6 @@
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h"/>
   </compounddef>
 </doxygen>

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-utils/src/python
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-utils/src/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,91 +29,91 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-utils/src/python/plot_data.py"
-    "/home/katsikas/gnuradio/gr-utils/src/python/plot_fft_base.py"
-    "/home/katsikas/gnuradio/gr-utils/src/python/plot_psd_base.py"
-    "/home/katsikas/gnuradio/gr-utils/src/python/pyqt_plot.py"
-    "/home/katsikas/gnuradio/gr-utils/src/python/pyqt_filter.py"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/gr-utils/src/python/plot_data.py"
+    "/home/katsikas/Desktop/gnuradio/gr-utils/src/python/plot_fft_base.py"
+    "/home/katsikas/Desktop/gnuradio/gr-utils/src/python/plot_psd_base.py"
+    "/home/katsikas/Desktop/gnuradio/gr-utils/src/python/pyqt_plot.py"
+    "/home/katsikas/Desktop/gnuradio/gr-utils/src/python/pyqt_filter.py"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/plot_data.pyc"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/plot_fft_base.pyc"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/plot_psd_base.pyc"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_plot.pyc"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_filter.pyc"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/plot_data.pyo"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/plot_fft_base.pyo"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/plot_psd_base.pyo"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_plot.pyo"
-    "/home/katsikas/gnuradio/build/gr-utils/src/python/pyqt_filter.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/plot_data.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/plot_fft_base.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/plot_psd_base.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/pyqt_plot.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/pyqt_filter.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/plot_data.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/plot_fft_base.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/plot_psd_base.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/pyqt_plot.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/pyqt_filter.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "create-gnuradio-out-of-tree-project" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/create-gnuradio-out-of-tree-project.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "create-gnuradio-out-of-tree-project" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/create-gnuradio-out-of-tree-project.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_char" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_char.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_char" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_char.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_const" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_const.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_const" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_const.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_fft" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_fft" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_fft.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_fft_c" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft_c.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_fft_c" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_fft_c.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_fft_f" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_fft_f.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_fft_f" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_fft_f.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_psd" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_psd" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_psd.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_psd_c" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd_c.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_psd_c" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_psd_c.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_psd_f" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_psd_f.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_psd_f" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_psd_f.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_float" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_float.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_float" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_float.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_int" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_int.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_int" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_int.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_iq" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_iq.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_iq" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_iq.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_short" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_short.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_short" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_short.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_qt" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_plot_qt.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_plot_qt" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_plot_qt.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_filter_design" FILES "/home/katsikas/gnuradio/build/gr-utils/src/python/gr_filter_design.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "gr_filter_design" FILES "/home/katsikas/Desktop/gnuradio/build/gr-utils/src/python/gr_filter_design.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "utils")
 

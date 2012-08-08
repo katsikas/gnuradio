@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Include any dependencies generated for this target.
 include volk/apps/CMakeFiles/volk_profile.dir/depend.make
@@ -48,17 +51,17 @@ include volk/apps/CMakeFiles/volk_profile.dir/flags.make
 
 volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o: volk/apps/CMakeFiles/volk_profile.dir/flags.make
 volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o: ../volk/apps/volk_profile.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o"
-	cd /home/katsikas/gnuradio/build/volk/apps && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/volk_profile.dir/volk_profile.cc.o -c /home/katsikas/gnuradio/volk/apps/volk_profile.cc
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/volk_profile.dir/volk_profile.cc.o -c /home/katsikas/Desktop/gnuradio/volk/apps/volk_profile.cc
 
 volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/volk_profile.dir/volk_profile.cc.i"
-	cd /home/katsikas/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/volk/apps/volk_profile.cc > CMakeFiles/volk_profile.dir/volk_profile.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/volk/apps/volk_profile.cc > CMakeFiles/volk_profile.dir/volk_profile.cc.i
 
 volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/volk_profile.dir/volk_profile.cc.s"
-	cd /home/katsikas/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/volk/apps/volk_profile.cc -o CMakeFiles/volk_profile.dir/volk_profile.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/volk/apps/volk_profile.cc -o CMakeFiles/volk_profile.dir/volk_profile.cc.s
 
 volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o.requires:
 .PHONY : volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o.requires
@@ -71,17 +74,17 @@ volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o.provides.build: volk/app
 
 volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o: volk/apps/CMakeFiles/volk_profile.dir/flags.make
 volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o: ../volk/lib/qa_utils.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o"
-	cd /home/katsikas/gnuradio/build/volk/apps && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o -c /home/katsikas/gnuradio/volk/lib/qa_utils.cc
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o -c /home/katsikas/Desktop/gnuradio/volk/lib/qa_utils.cc
 
 volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.i"
-	cd /home/katsikas/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/volk/lib/qa_utils.cc > CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/volk/lib/qa_utils.cc > CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.i
 
 volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.s"
-	cd /home/katsikas/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/volk/lib/qa_utils.cc -o CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/volk/lib/qa_utils.cc -o CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.s
 
 volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o.requires:
 .PHONY : volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o.requires
@@ -103,25 +106,48 @@ volk_profile_EXTERNAL_OBJECTS =
 volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o
 volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o
 volk/apps/volk_profile: volk/lib/libvolk.so.0.0.0
-volk/apps/volk_profile: /usr/lib/libboost_unit_test_framework-mt.so
+volk/apps/volk_profile: /usr/lib64/libboost_unit_test_framework-mt.so
+volk/apps/volk_profile: /usr/lib64/liborc-0.4.so
 volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/build.make
 volk/apps/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable volk_profile"
-	cd /home/katsikas/gnuradio/build/volk/apps && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/volk_profile.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/volk_profile.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 volk/apps/CMakeFiles/volk_profile.dir/build: volk/apps/volk_profile
 .PHONY : volk/apps/CMakeFiles/volk_profile.dir/build
+
+# Object files for target volk_profile
+volk_profile_OBJECTS = \
+"CMakeFiles/volk_profile.dir/volk_profile.cc.o" \
+"CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o"
+
+# External object files for target volk_profile
+volk_profile_EXTERNAL_OBJECTS =
+
+volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o
+volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o
+volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile: volk/lib/libvolk.so.0.0.0
+volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile: /usr/lib64/libboost_unit_test_framework-mt.so
+volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile: /usr/lib64/liborc-0.4.so
+volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/build.make
+volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile: volk/apps/CMakeFiles/volk_profile.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable CMakeFiles/CMakeRelink.dir/volk_profile"
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/volk_profile.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+volk/apps/CMakeFiles/volk_profile.dir/preinstall: volk/apps/CMakeFiles/CMakeRelink.dir/volk_profile
+.PHONY : volk/apps/CMakeFiles/volk_profile.dir/preinstall
 
 volk/apps/CMakeFiles/volk_profile.dir/requires: volk/apps/CMakeFiles/volk_profile.dir/volk_profile.cc.o.requires
 volk/apps/CMakeFiles/volk_profile.dir/requires: volk/apps/CMakeFiles/volk_profile.dir/__/lib/qa_utils.cc.o.requires
 .PHONY : volk/apps/CMakeFiles/volk_profile.dir/requires
 
 volk/apps/CMakeFiles/volk_profile.dir/clean:
-	cd /home/katsikas/gnuradio/build/volk/apps && $(CMAKE_COMMAND) -P CMakeFiles/volk_profile.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/volk/apps && $(CMAKE_COMMAND) -P CMakeFiles/volk_profile.dir/cmake_clean.cmake
 .PHONY : volk/apps/CMakeFiles/volk_profile.dir/clean
 
 volk/apps/CMakeFiles/volk_profile.dir/depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/volk/apps /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/volk/apps /home/katsikas/gnuradio/build/volk/apps/CMakeFiles/volk_profile.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/volk/apps /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/volk/apps /home/katsikas/Desktop/gnuradio/build/volk/apps/CMakeFiles/volk_profile.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : volk/apps/CMakeFiles/volk_profile.dir/depend
 

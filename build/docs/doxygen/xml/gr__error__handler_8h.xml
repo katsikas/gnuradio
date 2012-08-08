@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__error__handler_8h" kind="file">
     <compoundname>gr_error_handler.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -7,36 +7,36 @@
     <includes local="no">string</includes>
     <includes local="no">cstdio</includes>
     <incdepgraph>
-      <node id="7686">
+      <node id="33937">
         <label>stdarg.h</label>
       </node>
-      <node id="7685">
+      <node id="33934">
+        <label>gr_error_handler.h</label>
+        <link refid="gr_error_handler.h"/>
+        <childnode refid="33935" relation="include">
+        </childnode>
+        <childnode refid="33937" relation="include">
+        </childnode>
+        <childnode refid="33938" relation="include">
+        </childnode>
+        <childnode refid="33939" relation="include">
+        </childnode>
+      </node>
+      <node id="33938">
+        <label>string</label>
+      </node>
+      <node id="33936">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7687">
-        <label>string</label>
-      </node>
-      <node id="7688">
-        <label>cstdio</label>
-      </node>
-      <node id="7684">
+      <node id="33935">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="7685" relation="include">
+        <childnode refid="33936" relation="include">
         </childnode>
       </node>
-      <node id="7683">
-        <label>gr_error_handler.h</label>
-        <link refid="gr_error_handler.h"/>
-        <childnode refid="7684" relation="include">
-        </childnode>
-        <childnode refid="7686" relation="include">
-        </childnode>
-        <childnode refid="7687" relation="include">
-        </childnode>
-        <childnode refid="7688" relation="include">
-        </childnode>
+      <node id="33939">
+        <label>cstdio</label>
       </node>
     </incdepgraph>
     <innerclass refid="classgr__error__handler" prot="public">gr_error_handler</innerclass>
@@ -46,6 +46,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/runtime/gr_error_handler.h"/>
   </compounddef>
 </doxygen>

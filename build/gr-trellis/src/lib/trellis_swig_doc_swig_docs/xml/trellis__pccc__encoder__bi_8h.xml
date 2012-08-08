@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="trellis__pccc__encoder__bi_8h" kind="file">
     <compoundname>trellis_pccc_encoder_bi.h</compoundname>
     <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
@@ -14,15 +14,6 @@
       <node id="208">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="204">
-        <label>vector</label>
-      </node>
-      <node id="202">
-        <label>trellis_api.h</label>
-        <link refid="trellis__api_8h"/>
-        <childnode refid="203" relation="include">
-        </childnode>
-      </node>
       <node id="205">
         <label>fsm.h</label>
         <link refid="fsm_8h"/>
@@ -33,8 +24,19 @@
         <childnode refid="206" relation="include">
         </childnode>
       </node>
+      <node id="204">
+        <label>vector</label>
+      </node>
       <node id="206">
         <label>iosfwd</label>
+      </node>
+      <node id="207">
+        <label>interleaver.h</label>
+        <link refid="interleaver_8h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
       </node>
       <node id="201">
         <label>trellis_pccc_encoder_bi.h</label>
@@ -50,12 +52,10 @@
         <childnode refid="208" relation="include">
         </childnode>
       </node>
-      <node id="207">
-        <label>interleaver.h</label>
-        <link refid="interleaver_8h"/>
-        <childnode refid="202" relation="include">
-        </childnode>
-        <childnode refid="204" relation="include">
+      <node id="202">
+        <label>trellis_api.h</label>
+        <link refid="trellis__api_8h"/>
+        <childnode refid="203" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -72,12 +72,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h" line="35" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h" bodystart="34" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h" line="35" bodyfile="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="trellis__pccc__encoder__bi_8h_1ab9fba17068f39183d5868d9a0f33169e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__pccc__encoder__bi_8h_1a88330aca5b12ff8f58a9fb21e35dacf2" kindref="member">trellis_pccc_encoder_bi_sptr</ref></type>
+        <type>TRELLIS_API <ref refid="trellis__pccc__encoder__bi_8h_1a88330aca5b12ff8f58a9fb21e35dacf2" kindref="member">trellis_pccc_encoder_bi_sptr</ref></type>
         <definition>TRELLIS_API trellis_pccc_encoder_bi_sptr trellis_make_pccc_encoder_bi</definition>
         <argsstring>(const fsm &amp;FSM1, int ST1, const fsm &amp;FSM2, int ST2, const interleaver &amp;INTERLEAVER, int blocklength)</argsstring>
         <name>trellis_make_pccc_encoder_bi</name>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h" line="42"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h" line="42"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -200,6 +200,6 @@
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_encoder_bi.h"/>
   </compounddef>
 </doxygen>

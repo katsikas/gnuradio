@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="digital__ofdm__frame__sink_8h" kind="file">
     <compoundname>digital_ofdm_frame_sink.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
     <includes local="no">gr_sync_block.h</includes>
     <includes local="no">gr_msg_queue.h</includes>
     <incdepgraph>
-      <node id="313">
+      <node id="195">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="314">
+      <node id="196">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="315">
+      <node id="197">
         <label>gr_msg_queue.h</label>
       </node>
-      <node id="311">
-        <label>/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h</label>
+      <node id="193">
+        <label>/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h</label>
         <link refid="digital_ofdm_frame_sink.h"/>
-        <childnode refid="312" relation="include">
+        <childnode refid="194" relation="include">
         </childnode>
-        <childnode refid="314" relation="include">
+        <childnode refid="196" relation="include">
         </childnode>
-        <childnode refid="315" relation="include">
+        <childnode refid="197" relation="include">
         </childnode>
       </node>
-      <node id="312">
+      <node id="194">
         <label>digital_api.h</label>
         <link refid="digital__api_8h"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="195" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -45,13 +45,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h" line="31" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__ofdm__frame__sink_8h_1add86b47d04e7a8820d2fd9c9d49f6211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__ofdm__frame__sink_8h_1a1c0a6bbfd55a15435e4e19508a454739" kindref="member">digital_ofdm_frame_sink_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_ofdm_frame_sink_sptr digital_make_ofdm_frame_sink</definition>
+      <memberdef kind="function" id="digital__ofdm__frame__sink_8h_1ac7bd517a79a2ce4d29e3793fc4709c57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__ofdm__frame__sink_8h_1a1c0a6bbfd55a15435e4e19508a454739" kindref="member">digital_ofdm_frame_sink_sptr</ref></type>
+        <definition>DIGITAL_API digital_ofdm_frame_sink_sptr digital_make_ofdm_frame_sink</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain=0.25, float freq_gain=0.25 *0.25/4.0)</argsstring>
         <name>digital_make_ofdm_frame_sink</name>
         <param>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h" line="37"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h" line="37"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -127,7 +127,7 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_ofdm_frame_sink&gt;<sp/><ref refid="digital__ofdm__frame__sink_8h_1a1c0a6bbfd55a15435e4e19508a454739" kindref="member">digital_ofdm_frame_sink_sptr</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__ofdm__frame__sink_8h_1a1c0a6bbfd55a15435e4e19508a454739" kindref="member">digital_ofdm_frame_sink_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><ref refid="digital__ofdm__frame__sink_8h_1add86b47d04e7a8820d2fd9c9d49f6211" kindref="member">digital_make_ofdm_frame_sink</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;sym_position,<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="digital__ofdm__frame__sink_8h_1ac7bd517a79a2ce4d29e3793fc4709c57" kindref="member">digital_make_ofdm_frame_sink</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;sym_position,<sp/></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;unsigned<sp/>char&gt;<sp/>&amp;sym_value_out,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_msg_queue_sptr<sp/>target_queue,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>occupied_tones,</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>phase_gain=0.25,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_gain=0.25*0.25/4.0);</highlight></codeline>
@@ -135,7 +135,7 @@
 <codeline lineno="49" refid="classdigital__ofdm__frame__sink" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__ofdm__frame__sink" kindref="compound" tooltip="Takes an OFDM symbol in, demaps it into bits of 0&amp;#39;s and 1&amp;#39;s, packs them into packets, and sends to to a message queue sink.NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.">digital_ofdm_frame_sink</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__ofdm__frame__sink_8h_1a1c0a6bbfd55a15435e4e19508a454739" kindref="member">digital_ofdm_frame_sink_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="digital__ofdm__frame__sink_8h_1add86b47d04e7a8820d2fd9c9d49f6211" kindref="member">digital_make_ofdm_frame_sink</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;sym_position,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="digital__ofdm__frame__sink_8h_1ac7bd517a79a2ce4d29e3793fc4709c57" kindref="member">digital_make_ofdm_frame_sink</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;sym_position,<sp/></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;unsigned<sp/>char&gt;<sp/>&amp;sym_value_out,</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_msg_queue_sptr<sp/>target_queue,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>occupied_tones,</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>phase_gain,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_gain);</highlight></codeline>
@@ -212,6 +212,6 @@
 <codeline lineno="126"><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_OFDM_FRAME_SINK_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_ofdm_frame_sink.h"/>
   </compounddef>
 </doxygen>

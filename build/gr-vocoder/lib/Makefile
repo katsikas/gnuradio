@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gr-vocoder/lib/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gr-vocoder/lib/CMakeFiles/generate_codebook.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/CMakeFiles/generate_codebook.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/CMakeFiles/generate_codebook.dir/rule
 .PHONY : gr-vocoder/lib/CMakeFiles/generate_codebook.dir/rule
 
 # Convenience name for target.
@@ -177,12 +180,12 @@ generate_codebook: gr-vocoder/lib/CMakeFiles/generate_codebook.dir/rule
 
 # fast build rule for target.
 generate_codebook/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build
 .PHONY : generate_codebook/fast
 
 # Convenience name for target.
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/rule
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/rule
 
 # Convenience name for target.
@@ -191,15 +194,20 @@ gnuradio-vocoder: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/rule
 
 # fast build rule for target.
 gnuradio-vocoder/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build
 .PHONY : gnuradio-vocoder/fast
+
+# Manual pre-install relink rule for target.
+gnuradio-vocoder/preinstall:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/preinstall
+.PHONY : gnuradio-vocoder/preinstall
 
 codec2/codebook.o: codec2/codebook.c.o
 .PHONY : codec2/codebook.o
 
 # target to build an object file
 codec2/codebook.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o
 .PHONY : codec2/codebook.c.o
 
 codec2/codebook.i: codec2/codebook.c.i
@@ -207,7 +215,7 @@ codec2/codebook.i: codec2/codebook.c.i
 
 # target to preprocess a source file
 codec2/codebook.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.i
 .PHONY : codec2/codebook.c.i
 
 codec2/codebook.s: codec2/codebook.c.s
@@ -215,7 +223,7 @@ codec2/codebook.s: codec2/codebook.c.s
 
 # target to generate assembly for a file
 codec2/codebook.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.s
 .PHONY : codec2/codebook.c.s
 
 codec2/codebookd.o: codec2/codebookd.c.o
@@ -223,7 +231,7 @@ codec2/codebookd.o: codec2/codebookd.c.o
 
 # target to build an object file
 codec2/codebookd.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o
 .PHONY : codec2/codebookd.c.o
 
 codec2/codebookd.i: codec2/codebookd.c.i
@@ -231,7 +239,7 @@ codec2/codebookd.i: codec2/codebookd.c.i
 
 # target to preprocess a source file
 codec2/codebookd.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.i
 .PHONY : codec2/codebookd.c.i
 
 codec2/codebookd.s: codec2/codebookd.c.s
@@ -239,7 +247,7 @@ codec2/codebookd.s: codec2/codebookd.c.s
 
 # target to generate assembly for a file
 codec2/codebookd.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.s
 .PHONY : codec2/codebookd.c.s
 
 codec2/codebookdvq.o: codec2/codebookdvq.c.o
@@ -247,7 +255,7 @@ codec2/codebookdvq.o: codec2/codebookdvq.c.o
 
 # target to build an object file
 codec2/codebookdvq.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o
 .PHONY : codec2/codebookdvq.c.o
 
 codec2/codebookdvq.i: codec2/codebookdvq.c.i
@@ -255,7 +263,7 @@ codec2/codebookdvq.i: codec2/codebookdvq.c.i
 
 # target to preprocess a source file
 codec2/codebookdvq.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.i
 .PHONY : codec2/codebookdvq.c.i
 
 codec2/codebookdvq.s: codec2/codebookdvq.c.s
@@ -263,7 +271,7 @@ codec2/codebookdvq.s: codec2/codebookdvq.c.s
 
 # target to generate assembly for a file
 codec2/codebookdvq.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.s
 .PHONY : codec2/codebookdvq.c.s
 
 codec2/codec2.o: codec2/codec2.c.o
@@ -271,7 +279,7 @@ codec2/codec2.o: codec2/codec2.c.o
 
 # target to build an object file
 codec2/codec2.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o
 .PHONY : codec2/codec2.c.o
 
 codec2/codec2.i: codec2/codec2.c.i
@@ -279,7 +287,7 @@ codec2/codec2.i: codec2/codec2.c.i
 
 # target to preprocess a source file
 codec2/codec2.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.i
 .PHONY : codec2/codec2.c.i
 
 codec2/codec2.s: codec2/codec2.c.s
@@ -287,7 +295,7 @@ codec2/codec2.s: codec2/codec2.c.s
 
 # target to generate assembly for a file
 codec2/codec2.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.s
 .PHONY : codec2/codec2.c.s
 
 codec2/dump.o: codec2/dump.c.o
@@ -295,7 +303,7 @@ codec2/dump.o: codec2/dump.c.o
 
 # target to build an object file
 codec2/dump.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o
 .PHONY : codec2/dump.c.o
 
 codec2/dump.i: codec2/dump.c.i
@@ -303,7 +311,7 @@ codec2/dump.i: codec2/dump.c.i
 
 # target to preprocess a source file
 codec2/dump.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.i
 .PHONY : codec2/dump.c.i
 
 codec2/dump.s: codec2/dump.c.s
@@ -311,7 +319,7 @@ codec2/dump.s: codec2/dump.c.s
 
 # target to generate assembly for a file
 codec2/dump.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.s
 .PHONY : codec2/dump.c.s
 
 codec2/fft.o: codec2/fft.c.o
@@ -319,7 +327,7 @@ codec2/fft.o: codec2/fft.c.o
 
 # target to build an object file
 codec2/fft.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o
 .PHONY : codec2/fft.c.o
 
 codec2/fft.i: codec2/fft.c.i
@@ -327,7 +335,7 @@ codec2/fft.i: codec2/fft.c.i
 
 # target to preprocess a source file
 codec2/fft.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.i
 .PHONY : codec2/fft.c.i
 
 codec2/fft.s: codec2/fft.c.s
@@ -335,7 +343,7 @@ codec2/fft.s: codec2/fft.c.s
 
 # target to generate assembly for a file
 codec2/fft.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.s
 .PHONY : codec2/fft.c.s
 
 codec2/generate_codebook.o: codec2/generate_codebook.c.o
@@ -343,7 +351,7 @@ codec2/generate_codebook.o: codec2/generate_codebook.c.o
 
 # target to build an object file
 codec2/generate_codebook.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.o
 .PHONY : codec2/generate_codebook.c.o
 
 codec2/generate_codebook.i: codec2/generate_codebook.c.i
@@ -351,7 +359,7 @@ codec2/generate_codebook.i: codec2/generate_codebook.c.i
 
 # target to preprocess a source file
 codec2/generate_codebook.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.i
 .PHONY : codec2/generate_codebook.c.i
 
 codec2/generate_codebook.s: codec2/generate_codebook.c.s
@@ -359,7 +367,7 @@ codec2/generate_codebook.s: codec2/generate_codebook.c.s
 
 # target to generate assembly for a file
 codec2/generate_codebook.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/generate_codebook.dir/build.make gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.s
 .PHONY : codec2/generate_codebook.c.s
 
 codec2/interp.o: codec2/interp.c.o
@@ -367,7 +375,7 @@ codec2/interp.o: codec2/interp.c.o
 
 # target to build an object file
 codec2/interp.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o
 .PHONY : codec2/interp.c.o
 
 codec2/interp.i: codec2/interp.c.i
@@ -375,7 +383,7 @@ codec2/interp.i: codec2/interp.c.i
 
 # target to preprocess a source file
 codec2/interp.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.i
 .PHONY : codec2/interp.c.i
 
 codec2/interp.s: codec2/interp.c.s
@@ -383,7 +391,7 @@ codec2/interp.s: codec2/interp.c.s
 
 # target to generate assembly for a file
 codec2/interp.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.s
 .PHONY : codec2/interp.c.s
 
 codec2/kiss_fft.o: codec2/kiss_fft.c.o
@@ -391,7 +399,7 @@ codec2/kiss_fft.o: codec2/kiss_fft.c.o
 
 # target to build an object file
 codec2/kiss_fft.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o
 .PHONY : codec2/kiss_fft.c.o
 
 codec2/kiss_fft.i: codec2/kiss_fft.c.i
@@ -399,7 +407,7 @@ codec2/kiss_fft.i: codec2/kiss_fft.c.i
 
 # target to preprocess a source file
 codec2/kiss_fft.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.i
 .PHONY : codec2/kiss_fft.c.i
 
 codec2/kiss_fft.s: codec2/kiss_fft.c.s
@@ -407,7 +415,7 @@ codec2/kiss_fft.s: codec2/kiss_fft.c.s
 
 # target to generate assembly for a file
 codec2/kiss_fft.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.s
 .PHONY : codec2/kiss_fft.c.s
 
 codec2/lpc.o: codec2/lpc.c.o
@@ -415,7 +423,7 @@ codec2/lpc.o: codec2/lpc.c.o
 
 # target to build an object file
 codec2/lpc.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o
 .PHONY : codec2/lpc.c.o
 
 codec2/lpc.i: codec2/lpc.c.i
@@ -423,7 +431,7 @@ codec2/lpc.i: codec2/lpc.c.i
 
 # target to preprocess a source file
 codec2/lpc.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.i
 .PHONY : codec2/lpc.c.i
 
 codec2/lpc.s: codec2/lpc.c.s
@@ -431,7 +439,7 @@ codec2/lpc.s: codec2/lpc.c.s
 
 # target to generate assembly for a file
 codec2/lpc.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.s
 .PHONY : codec2/lpc.c.s
 
 codec2/lsp.o: codec2/lsp.c.o
@@ -439,7 +447,7 @@ codec2/lsp.o: codec2/lsp.c.o
 
 # target to build an object file
 codec2/lsp.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o
 .PHONY : codec2/lsp.c.o
 
 codec2/lsp.i: codec2/lsp.c.i
@@ -447,7 +455,7 @@ codec2/lsp.i: codec2/lsp.c.i
 
 # target to preprocess a source file
 codec2/lsp.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.i
 .PHONY : codec2/lsp.c.i
 
 codec2/lsp.s: codec2/lsp.c.s
@@ -455,7 +463,7 @@ codec2/lsp.s: codec2/lsp.c.s
 
 # target to generate assembly for a file
 codec2/lsp.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.s
 .PHONY : codec2/lsp.c.s
 
 codec2/nlp.o: codec2/nlp.c.o
@@ -463,7 +471,7 @@ codec2/nlp.o: codec2/nlp.c.o
 
 # target to build an object file
 codec2/nlp.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o
 .PHONY : codec2/nlp.c.o
 
 codec2/nlp.i: codec2/nlp.c.i
@@ -471,7 +479,7 @@ codec2/nlp.i: codec2/nlp.c.i
 
 # target to preprocess a source file
 codec2/nlp.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.i
 .PHONY : codec2/nlp.c.i
 
 codec2/nlp.s: codec2/nlp.c.s
@@ -479,7 +487,7 @@ codec2/nlp.s: codec2/nlp.c.s
 
 # target to generate assembly for a file
 codec2/nlp.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.s
 .PHONY : codec2/nlp.c.s
 
 codec2/pack.o: codec2/pack.c.o
@@ -487,7 +495,7 @@ codec2/pack.o: codec2/pack.c.o
 
 # target to build an object file
 codec2/pack.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o
 .PHONY : codec2/pack.c.o
 
 codec2/pack.i: codec2/pack.c.i
@@ -495,7 +503,7 @@ codec2/pack.i: codec2/pack.c.i
 
 # target to preprocess a source file
 codec2/pack.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.i
 .PHONY : codec2/pack.c.i
 
 codec2/pack.s: codec2/pack.c.s
@@ -503,7 +511,7 @@ codec2/pack.s: codec2/pack.c.s
 
 # target to generate assembly for a file
 codec2/pack.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.s
 .PHONY : codec2/pack.c.s
 
 codec2/phase.o: codec2/phase.c.o
@@ -511,7 +519,7 @@ codec2/phase.o: codec2/phase.c.o
 
 # target to build an object file
 codec2/phase.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o
 .PHONY : codec2/phase.c.o
 
 codec2/phase.i: codec2/phase.c.i
@@ -519,7 +527,7 @@ codec2/phase.i: codec2/phase.c.i
 
 # target to preprocess a source file
 codec2/phase.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.i
 .PHONY : codec2/phase.c.i
 
 codec2/phase.s: codec2/phase.c.s
@@ -527,7 +535,7 @@ codec2/phase.s: codec2/phase.c.s
 
 # target to generate assembly for a file
 codec2/phase.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.s
 .PHONY : codec2/phase.c.s
 
 codec2/postfilter.o: codec2/postfilter.c.o
@@ -535,7 +543,7 @@ codec2/postfilter.o: codec2/postfilter.c.o
 
 # target to build an object file
 codec2/postfilter.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o
 .PHONY : codec2/postfilter.c.o
 
 codec2/postfilter.i: codec2/postfilter.c.i
@@ -543,7 +551,7 @@ codec2/postfilter.i: codec2/postfilter.c.i
 
 # target to preprocess a source file
 codec2/postfilter.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.i
 .PHONY : codec2/postfilter.c.i
 
 codec2/postfilter.s: codec2/postfilter.c.s
@@ -551,7 +559,7 @@ codec2/postfilter.s: codec2/postfilter.c.s
 
 # target to generate assembly for a file
 codec2/postfilter.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.s
 .PHONY : codec2/postfilter.c.s
 
 codec2/quantise.o: codec2/quantise.c.o
@@ -559,7 +567,7 @@ codec2/quantise.o: codec2/quantise.c.o
 
 # target to build an object file
 codec2/quantise.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o
 .PHONY : codec2/quantise.c.o
 
 codec2/quantise.i: codec2/quantise.c.i
@@ -567,7 +575,7 @@ codec2/quantise.i: codec2/quantise.c.i
 
 # target to preprocess a source file
 codec2/quantise.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.i
 .PHONY : codec2/quantise.c.i
 
 codec2/quantise.s: codec2/quantise.c.s
@@ -575,7 +583,7 @@ codec2/quantise.s: codec2/quantise.c.s
 
 # target to generate assembly for a file
 codec2/quantise.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.s
 .PHONY : codec2/quantise.c.s
 
 codec2/sine.o: codec2/sine.c.o
@@ -583,7 +591,7 @@ codec2/sine.o: codec2/sine.c.o
 
 # target to build an object file
 codec2/sine.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o
 .PHONY : codec2/sine.c.o
 
 codec2/sine.i: codec2/sine.c.i
@@ -591,7 +599,7 @@ codec2/sine.i: codec2/sine.c.i
 
 # target to preprocess a source file
 codec2/sine.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.i
 .PHONY : codec2/sine.c.i
 
 codec2/sine.s: codec2/sine.c.s
@@ -599,7 +607,7 @@ codec2/sine.s: codec2/sine.c.s
 
 # target to generate assembly for a file
 codec2/sine.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.s
 .PHONY : codec2/sine.c.s
 
 g7xx/g711.o: g7xx/g711.c.o
@@ -607,7 +615,7 @@ g7xx/g711.o: g7xx/g711.c.o
 
 # target to build an object file
 g7xx/g711.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o
 .PHONY : g7xx/g711.c.o
 
 g7xx/g711.i: g7xx/g711.c.i
@@ -615,7 +623,7 @@ g7xx/g711.i: g7xx/g711.c.i
 
 # target to preprocess a source file
 g7xx/g711.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.i
 .PHONY : g7xx/g711.c.i
 
 g7xx/g711.s: g7xx/g711.c.s
@@ -623,7 +631,7 @@ g7xx/g711.s: g7xx/g711.c.s
 
 # target to generate assembly for a file
 g7xx/g711.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.s
 .PHONY : g7xx/g711.c.s
 
 g7xx/g721.o: g7xx/g721.c.o
@@ -631,7 +639,7 @@ g7xx/g721.o: g7xx/g721.c.o
 
 # target to build an object file
 g7xx/g721.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o
 .PHONY : g7xx/g721.c.o
 
 g7xx/g721.i: g7xx/g721.c.i
@@ -639,7 +647,7 @@ g7xx/g721.i: g7xx/g721.c.i
 
 # target to preprocess a source file
 g7xx/g721.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.i
 .PHONY : g7xx/g721.c.i
 
 g7xx/g721.s: g7xx/g721.c.s
@@ -647,7 +655,7 @@ g7xx/g721.s: g7xx/g721.c.s
 
 # target to generate assembly for a file
 g7xx/g721.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.s
 .PHONY : g7xx/g721.c.s
 
 g7xx/g723_24.o: g7xx/g723_24.c.o
@@ -655,7 +663,7 @@ g7xx/g723_24.o: g7xx/g723_24.c.o
 
 # target to build an object file
 g7xx/g723_24.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o
 .PHONY : g7xx/g723_24.c.o
 
 g7xx/g723_24.i: g7xx/g723_24.c.i
@@ -663,7 +671,7 @@ g7xx/g723_24.i: g7xx/g723_24.c.i
 
 # target to preprocess a source file
 g7xx/g723_24.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.i
 .PHONY : g7xx/g723_24.c.i
 
 g7xx/g723_24.s: g7xx/g723_24.c.s
@@ -671,7 +679,7 @@ g7xx/g723_24.s: g7xx/g723_24.c.s
 
 # target to generate assembly for a file
 g7xx/g723_24.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.s
 .PHONY : g7xx/g723_24.c.s
 
 g7xx/g723_40.o: g7xx/g723_40.c.o
@@ -679,7 +687,7 @@ g7xx/g723_40.o: g7xx/g723_40.c.o
 
 # target to build an object file
 g7xx/g723_40.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o
 .PHONY : g7xx/g723_40.c.o
 
 g7xx/g723_40.i: g7xx/g723_40.c.i
@@ -687,7 +695,7 @@ g7xx/g723_40.i: g7xx/g723_40.c.i
 
 # target to preprocess a source file
 g7xx/g723_40.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.i
 .PHONY : g7xx/g723_40.c.i
 
 g7xx/g723_40.s: g7xx/g723_40.c.s
@@ -695,7 +703,7 @@ g7xx/g723_40.s: g7xx/g723_40.c.s
 
 # target to generate assembly for a file
 g7xx/g723_40.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.s
 .PHONY : g7xx/g723_40.c.s
 
 g7xx/g72x.o: g7xx/g72x.c.o
@@ -703,7 +711,7 @@ g7xx/g72x.o: g7xx/g72x.c.o
 
 # target to build an object file
 g7xx/g72x.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o
 .PHONY : g7xx/g72x.c.o
 
 g7xx/g72x.i: g7xx/g72x.c.i
@@ -711,7 +719,7 @@ g7xx/g72x.i: g7xx/g72x.c.i
 
 # target to preprocess a source file
 g7xx/g72x.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.i
 .PHONY : g7xx/g72x.c.i
 
 g7xx/g72x.s: g7xx/g72x.c.s
@@ -719,7 +727,7 @@ g7xx/g72x.s: g7xx/g72x.c.s
 
 # target to generate assembly for a file
 g7xx/g72x.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.s
 .PHONY : g7xx/g72x.c.s
 
 gsm/add.o: gsm/add.c.o
@@ -727,7 +735,7 @@ gsm/add.o: gsm/add.c.o
 
 # target to build an object file
 gsm/add.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o
 .PHONY : gsm/add.c.o
 
 gsm/add.i: gsm/add.c.i
@@ -735,7 +743,7 @@ gsm/add.i: gsm/add.c.i
 
 # target to preprocess a source file
 gsm/add.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.i
 .PHONY : gsm/add.c.i
 
 gsm/add.s: gsm/add.c.s
@@ -743,7 +751,7 @@ gsm/add.s: gsm/add.c.s
 
 # target to generate assembly for a file
 gsm/add.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.s
 .PHONY : gsm/add.c.s
 
 gsm/code.o: gsm/code.c.o
@@ -751,7 +759,7 @@ gsm/code.o: gsm/code.c.o
 
 # target to build an object file
 gsm/code.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o
 .PHONY : gsm/code.c.o
 
 gsm/code.i: gsm/code.c.i
@@ -759,7 +767,7 @@ gsm/code.i: gsm/code.c.i
 
 # target to preprocess a source file
 gsm/code.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.i
 .PHONY : gsm/code.c.i
 
 gsm/code.s: gsm/code.c.s
@@ -767,7 +775,7 @@ gsm/code.s: gsm/code.c.s
 
 # target to generate assembly for a file
 gsm/code.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.s
 .PHONY : gsm/code.c.s
 
 gsm/debug.o: gsm/debug.c.o
@@ -775,7 +783,7 @@ gsm/debug.o: gsm/debug.c.o
 
 # target to build an object file
 gsm/debug.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o
 .PHONY : gsm/debug.c.o
 
 gsm/debug.i: gsm/debug.c.i
@@ -783,7 +791,7 @@ gsm/debug.i: gsm/debug.c.i
 
 # target to preprocess a source file
 gsm/debug.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.i
 .PHONY : gsm/debug.c.i
 
 gsm/debug.s: gsm/debug.c.s
@@ -791,7 +799,7 @@ gsm/debug.s: gsm/debug.c.s
 
 # target to generate assembly for a file
 gsm/debug.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.s
 .PHONY : gsm/debug.c.s
 
 gsm/decode.o: gsm/decode.c.o
@@ -799,7 +807,7 @@ gsm/decode.o: gsm/decode.c.o
 
 # target to build an object file
 gsm/decode.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o
 .PHONY : gsm/decode.c.o
 
 gsm/decode.i: gsm/decode.c.i
@@ -807,7 +815,7 @@ gsm/decode.i: gsm/decode.c.i
 
 # target to preprocess a source file
 gsm/decode.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.i
 .PHONY : gsm/decode.c.i
 
 gsm/decode.s: gsm/decode.c.s
@@ -815,7 +823,7 @@ gsm/decode.s: gsm/decode.c.s
 
 # target to generate assembly for a file
 gsm/decode.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.s
 .PHONY : gsm/decode.c.s
 
 gsm/gsm_create.o: gsm/gsm_create.c.o
@@ -823,7 +831,7 @@ gsm/gsm_create.o: gsm/gsm_create.c.o
 
 # target to build an object file
 gsm/gsm_create.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o
 .PHONY : gsm/gsm_create.c.o
 
 gsm/gsm_create.i: gsm/gsm_create.c.i
@@ -831,7 +839,7 @@ gsm/gsm_create.i: gsm/gsm_create.c.i
 
 # target to preprocess a source file
 gsm/gsm_create.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.i
 .PHONY : gsm/gsm_create.c.i
 
 gsm/gsm_create.s: gsm/gsm_create.c.s
@@ -839,7 +847,7 @@ gsm/gsm_create.s: gsm/gsm_create.c.s
 
 # target to generate assembly for a file
 gsm/gsm_create.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.s
 .PHONY : gsm/gsm_create.c.s
 
 gsm/gsm_decode.o: gsm/gsm_decode.c.o
@@ -847,7 +855,7 @@ gsm/gsm_decode.o: gsm/gsm_decode.c.o
 
 # target to build an object file
 gsm/gsm_decode.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o
 .PHONY : gsm/gsm_decode.c.o
 
 gsm/gsm_decode.i: gsm/gsm_decode.c.i
@@ -855,7 +863,7 @@ gsm/gsm_decode.i: gsm/gsm_decode.c.i
 
 # target to preprocess a source file
 gsm/gsm_decode.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.i
 .PHONY : gsm/gsm_decode.c.i
 
 gsm/gsm_decode.s: gsm/gsm_decode.c.s
@@ -863,7 +871,7 @@ gsm/gsm_decode.s: gsm/gsm_decode.c.s
 
 # target to generate assembly for a file
 gsm/gsm_decode.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.s
 .PHONY : gsm/gsm_decode.c.s
 
 gsm/gsm_destroy.o: gsm/gsm_destroy.c.o
@@ -871,7 +879,7 @@ gsm/gsm_destroy.o: gsm/gsm_destroy.c.o
 
 # target to build an object file
 gsm/gsm_destroy.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o
 .PHONY : gsm/gsm_destroy.c.o
 
 gsm/gsm_destroy.i: gsm/gsm_destroy.c.i
@@ -879,7 +887,7 @@ gsm/gsm_destroy.i: gsm/gsm_destroy.c.i
 
 # target to preprocess a source file
 gsm/gsm_destroy.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.i
 .PHONY : gsm/gsm_destroy.c.i
 
 gsm/gsm_destroy.s: gsm/gsm_destroy.c.s
@@ -887,7 +895,7 @@ gsm/gsm_destroy.s: gsm/gsm_destroy.c.s
 
 # target to generate assembly for a file
 gsm/gsm_destroy.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.s
 .PHONY : gsm/gsm_destroy.c.s
 
 gsm/gsm_encode.o: gsm/gsm_encode.c.o
@@ -895,7 +903,7 @@ gsm/gsm_encode.o: gsm/gsm_encode.c.o
 
 # target to build an object file
 gsm/gsm_encode.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o
 .PHONY : gsm/gsm_encode.c.o
 
 gsm/gsm_encode.i: gsm/gsm_encode.c.i
@@ -903,7 +911,7 @@ gsm/gsm_encode.i: gsm/gsm_encode.c.i
 
 # target to preprocess a source file
 gsm/gsm_encode.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.i
 .PHONY : gsm/gsm_encode.c.i
 
 gsm/gsm_encode.s: gsm/gsm_encode.c.s
@@ -911,7 +919,7 @@ gsm/gsm_encode.s: gsm/gsm_encode.c.s
 
 # target to generate assembly for a file
 gsm/gsm_encode.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.s
 .PHONY : gsm/gsm_encode.c.s
 
 gsm/gsm_explode.o: gsm/gsm_explode.c.o
@@ -919,7 +927,7 @@ gsm/gsm_explode.o: gsm/gsm_explode.c.o
 
 # target to build an object file
 gsm/gsm_explode.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o
 .PHONY : gsm/gsm_explode.c.o
 
 gsm/gsm_explode.i: gsm/gsm_explode.c.i
@@ -927,7 +935,7 @@ gsm/gsm_explode.i: gsm/gsm_explode.c.i
 
 # target to preprocess a source file
 gsm/gsm_explode.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.i
 .PHONY : gsm/gsm_explode.c.i
 
 gsm/gsm_explode.s: gsm/gsm_explode.c.s
@@ -935,7 +943,7 @@ gsm/gsm_explode.s: gsm/gsm_explode.c.s
 
 # target to generate assembly for a file
 gsm/gsm_explode.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.s
 .PHONY : gsm/gsm_explode.c.s
 
 gsm/gsm_implode.o: gsm/gsm_implode.c.o
@@ -943,7 +951,7 @@ gsm/gsm_implode.o: gsm/gsm_implode.c.o
 
 # target to build an object file
 gsm/gsm_implode.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o
 .PHONY : gsm/gsm_implode.c.o
 
 gsm/gsm_implode.i: gsm/gsm_implode.c.i
@@ -951,7 +959,7 @@ gsm/gsm_implode.i: gsm/gsm_implode.c.i
 
 # target to preprocess a source file
 gsm/gsm_implode.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.i
 .PHONY : gsm/gsm_implode.c.i
 
 gsm/gsm_implode.s: gsm/gsm_implode.c.s
@@ -959,7 +967,7 @@ gsm/gsm_implode.s: gsm/gsm_implode.c.s
 
 # target to generate assembly for a file
 gsm/gsm_implode.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.s
 .PHONY : gsm/gsm_implode.c.s
 
 gsm/gsm_option.o: gsm/gsm_option.c.o
@@ -967,7 +975,7 @@ gsm/gsm_option.o: gsm/gsm_option.c.o
 
 # target to build an object file
 gsm/gsm_option.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o
 .PHONY : gsm/gsm_option.c.o
 
 gsm/gsm_option.i: gsm/gsm_option.c.i
@@ -975,7 +983,7 @@ gsm/gsm_option.i: gsm/gsm_option.c.i
 
 # target to preprocess a source file
 gsm/gsm_option.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.i
 .PHONY : gsm/gsm_option.c.i
 
 gsm/gsm_option.s: gsm/gsm_option.c.s
@@ -983,7 +991,7 @@ gsm/gsm_option.s: gsm/gsm_option.c.s
 
 # target to generate assembly for a file
 gsm/gsm_option.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.s
 .PHONY : gsm/gsm_option.c.s
 
 gsm/gsm_print.o: gsm/gsm_print.c.o
@@ -991,7 +999,7 @@ gsm/gsm_print.o: gsm/gsm_print.c.o
 
 # target to build an object file
 gsm/gsm_print.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o
 .PHONY : gsm/gsm_print.c.o
 
 gsm/gsm_print.i: gsm/gsm_print.c.i
@@ -999,7 +1007,7 @@ gsm/gsm_print.i: gsm/gsm_print.c.i
 
 # target to preprocess a source file
 gsm/gsm_print.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.i
 .PHONY : gsm/gsm_print.c.i
 
 gsm/gsm_print.s: gsm/gsm_print.c.s
@@ -1007,7 +1015,7 @@ gsm/gsm_print.s: gsm/gsm_print.c.s
 
 # target to generate assembly for a file
 gsm/gsm_print.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.s
 .PHONY : gsm/gsm_print.c.s
 
 gsm/long_term.o: gsm/long_term.c.o
@@ -1015,7 +1023,7 @@ gsm/long_term.o: gsm/long_term.c.o
 
 # target to build an object file
 gsm/long_term.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o
 .PHONY : gsm/long_term.c.o
 
 gsm/long_term.i: gsm/long_term.c.i
@@ -1023,7 +1031,7 @@ gsm/long_term.i: gsm/long_term.c.i
 
 # target to preprocess a source file
 gsm/long_term.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.i
 .PHONY : gsm/long_term.c.i
 
 gsm/long_term.s: gsm/long_term.c.s
@@ -1031,7 +1039,7 @@ gsm/long_term.s: gsm/long_term.c.s
 
 # target to generate assembly for a file
 gsm/long_term.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.s
 .PHONY : gsm/long_term.c.s
 
 gsm/lpc.o: gsm/lpc.c.o
@@ -1039,7 +1047,7 @@ gsm/lpc.o: gsm/lpc.c.o
 
 # target to build an object file
 gsm/lpc.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o
 .PHONY : gsm/lpc.c.o
 
 gsm/lpc.i: gsm/lpc.c.i
@@ -1047,7 +1055,7 @@ gsm/lpc.i: gsm/lpc.c.i
 
 # target to preprocess a source file
 gsm/lpc.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.i
 .PHONY : gsm/lpc.c.i
 
 gsm/lpc.s: gsm/lpc.c.s
@@ -1055,7 +1063,7 @@ gsm/lpc.s: gsm/lpc.c.s
 
 # target to generate assembly for a file
 gsm/lpc.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.s
 .PHONY : gsm/lpc.c.s
 
 gsm/preprocess.o: gsm/preprocess.c.o
@@ -1063,7 +1071,7 @@ gsm/preprocess.o: gsm/preprocess.c.o
 
 # target to build an object file
 gsm/preprocess.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o
 .PHONY : gsm/preprocess.c.o
 
 gsm/preprocess.i: gsm/preprocess.c.i
@@ -1071,7 +1079,7 @@ gsm/preprocess.i: gsm/preprocess.c.i
 
 # target to preprocess a source file
 gsm/preprocess.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.i
 .PHONY : gsm/preprocess.c.i
 
 gsm/preprocess.s: gsm/preprocess.c.s
@@ -1079,7 +1087,7 @@ gsm/preprocess.s: gsm/preprocess.c.s
 
 # target to generate assembly for a file
 gsm/preprocess.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.s
 .PHONY : gsm/preprocess.c.s
 
 gsm/rpe.o: gsm/rpe.c.o
@@ -1087,7 +1095,7 @@ gsm/rpe.o: gsm/rpe.c.o
 
 # target to build an object file
 gsm/rpe.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o
 .PHONY : gsm/rpe.c.o
 
 gsm/rpe.i: gsm/rpe.c.i
@@ -1095,7 +1103,7 @@ gsm/rpe.i: gsm/rpe.c.i
 
 # target to preprocess a source file
 gsm/rpe.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.i
 .PHONY : gsm/rpe.c.i
 
 gsm/rpe.s: gsm/rpe.c.s
@@ -1103,7 +1111,7 @@ gsm/rpe.s: gsm/rpe.c.s
 
 # target to generate assembly for a file
 gsm/rpe.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.s
 .PHONY : gsm/rpe.c.s
 
 gsm/short_term.o: gsm/short_term.c.o
@@ -1111,7 +1119,7 @@ gsm/short_term.o: gsm/short_term.c.o
 
 # target to build an object file
 gsm/short_term.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o
 .PHONY : gsm/short_term.c.o
 
 gsm/short_term.i: gsm/short_term.c.i
@@ -1119,7 +1127,7 @@ gsm/short_term.i: gsm/short_term.c.i
 
 # target to preprocess a source file
 gsm/short_term.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.i
 .PHONY : gsm/short_term.c.i
 
 gsm/short_term.s: gsm/short_term.c.s
@@ -1127,7 +1135,7 @@ gsm/short_term.s: gsm/short_term.c.s
 
 # target to generate assembly for a file
 gsm/short_term.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.s
 .PHONY : gsm/short_term.c.s
 
 gsm/table.o: gsm/table.c.o
@@ -1135,7 +1143,7 @@ gsm/table.o: gsm/table.c.o
 
 # target to build an object file
 gsm/table.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o
 .PHONY : gsm/table.c.o
 
 gsm/table.i: gsm/table.c.i
@@ -1143,7 +1151,7 @@ gsm/table.i: gsm/table.c.i
 
 # target to preprocess a source file
 gsm/table.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.i
 .PHONY : gsm/table.c.i
 
 gsm/table.s: gsm/table.c.s
@@ -1151,7 +1159,7 @@ gsm/table.s: gsm/table.c.s
 
 # target to generate assembly for a file
 gsm/table.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.s
 .PHONY : gsm/table.c.s
 
 vocoder_alaw_decode_bs.o: vocoder_alaw_decode_bs.cc.o
@@ -1159,7 +1167,7 @@ vocoder_alaw_decode_bs.o: vocoder_alaw_decode_bs.cc.o
 
 # target to build an object file
 vocoder_alaw_decode_bs.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o
 .PHONY : vocoder_alaw_decode_bs.cc.o
 
 vocoder_alaw_decode_bs.i: vocoder_alaw_decode_bs.cc.i
@@ -1167,7 +1175,7 @@ vocoder_alaw_decode_bs.i: vocoder_alaw_decode_bs.cc.i
 
 # target to preprocess a source file
 vocoder_alaw_decode_bs.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.i
 .PHONY : vocoder_alaw_decode_bs.cc.i
 
 vocoder_alaw_decode_bs.s: vocoder_alaw_decode_bs.cc.s
@@ -1175,7 +1183,7 @@ vocoder_alaw_decode_bs.s: vocoder_alaw_decode_bs.cc.s
 
 # target to generate assembly for a file
 vocoder_alaw_decode_bs.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.s
 .PHONY : vocoder_alaw_decode_bs.cc.s
 
 vocoder_alaw_encode_sb.o: vocoder_alaw_encode_sb.cc.o
@@ -1183,7 +1191,7 @@ vocoder_alaw_encode_sb.o: vocoder_alaw_encode_sb.cc.o
 
 # target to build an object file
 vocoder_alaw_encode_sb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o
 .PHONY : vocoder_alaw_encode_sb.cc.o
 
 vocoder_alaw_encode_sb.i: vocoder_alaw_encode_sb.cc.i
@@ -1191,7 +1199,7 @@ vocoder_alaw_encode_sb.i: vocoder_alaw_encode_sb.cc.i
 
 # target to preprocess a source file
 vocoder_alaw_encode_sb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.i
 .PHONY : vocoder_alaw_encode_sb.cc.i
 
 vocoder_alaw_encode_sb.s: vocoder_alaw_encode_sb.cc.s
@@ -1199,7 +1207,7 @@ vocoder_alaw_encode_sb.s: vocoder_alaw_encode_sb.cc.s
 
 # target to generate assembly for a file
 vocoder_alaw_encode_sb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.s
 .PHONY : vocoder_alaw_encode_sb.cc.s
 
 vocoder_codec2_decode_ps.o: vocoder_codec2_decode_ps.cc.o
@@ -1207,7 +1215,7 @@ vocoder_codec2_decode_ps.o: vocoder_codec2_decode_ps.cc.o
 
 # target to build an object file
 vocoder_codec2_decode_ps.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o
 .PHONY : vocoder_codec2_decode_ps.cc.o
 
 vocoder_codec2_decode_ps.i: vocoder_codec2_decode_ps.cc.i
@@ -1215,7 +1223,7 @@ vocoder_codec2_decode_ps.i: vocoder_codec2_decode_ps.cc.i
 
 # target to preprocess a source file
 vocoder_codec2_decode_ps.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.i
 .PHONY : vocoder_codec2_decode_ps.cc.i
 
 vocoder_codec2_decode_ps.s: vocoder_codec2_decode_ps.cc.s
@@ -1223,7 +1231,7 @@ vocoder_codec2_decode_ps.s: vocoder_codec2_decode_ps.cc.s
 
 # target to generate assembly for a file
 vocoder_codec2_decode_ps.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.s
 .PHONY : vocoder_codec2_decode_ps.cc.s
 
 vocoder_codec2_encode_sp.o: vocoder_codec2_encode_sp.cc.o
@@ -1231,7 +1239,7 @@ vocoder_codec2_encode_sp.o: vocoder_codec2_encode_sp.cc.o
 
 # target to build an object file
 vocoder_codec2_encode_sp.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o
 .PHONY : vocoder_codec2_encode_sp.cc.o
 
 vocoder_codec2_encode_sp.i: vocoder_codec2_encode_sp.cc.i
@@ -1239,7 +1247,7 @@ vocoder_codec2_encode_sp.i: vocoder_codec2_encode_sp.cc.i
 
 # target to preprocess a source file
 vocoder_codec2_encode_sp.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.i
 .PHONY : vocoder_codec2_encode_sp.cc.i
 
 vocoder_codec2_encode_sp.s: vocoder_codec2_encode_sp.cc.s
@@ -1247,7 +1255,7 @@ vocoder_codec2_encode_sp.s: vocoder_codec2_encode_sp.cc.s
 
 # target to generate assembly for a file
 vocoder_codec2_encode_sp.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.s
 .PHONY : vocoder_codec2_encode_sp.cc.s
 
 vocoder_cvsd_decode_bs.o: vocoder_cvsd_decode_bs.cc.o
@@ -1255,7 +1263,7 @@ vocoder_cvsd_decode_bs.o: vocoder_cvsd_decode_bs.cc.o
 
 # target to build an object file
 vocoder_cvsd_decode_bs.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o
 .PHONY : vocoder_cvsd_decode_bs.cc.o
 
 vocoder_cvsd_decode_bs.i: vocoder_cvsd_decode_bs.cc.i
@@ -1263,7 +1271,7 @@ vocoder_cvsd_decode_bs.i: vocoder_cvsd_decode_bs.cc.i
 
 # target to preprocess a source file
 vocoder_cvsd_decode_bs.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.i
 .PHONY : vocoder_cvsd_decode_bs.cc.i
 
 vocoder_cvsd_decode_bs.s: vocoder_cvsd_decode_bs.cc.s
@@ -1271,7 +1279,7 @@ vocoder_cvsd_decode_bs.s: vocoder_cvsd_decode_bs.cc.s
 
 # target to generate assembly for a file
 vocoder_cvsd_decode_bs.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.s
 .PHONY : vocoder_cvsd_decode_bs.cc.s
 
 vocoder_cvsd_encode_sb.o: vocoder_cvsd_encode_sb.cc.o
@@ -1279,7 +1287,7 @@ vocoder_cvsd_encode_sb.o: vocoder_cvsd_encode_sb.cc.o
 
 # target to build an object file
 vocoder_cvsd_encode_sb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o
 .PHONY : vocoder_cvsd_encode_sb.cc.o
 
 vocoder_cvsd_encode_sb.i: vocoder_cvsd_encode_sb.cc.i
@@ -1287,7 +1295,7 @@ vocoder_cvsd_encode_sb.i: vocoder_cvsd_encode_sb.cc.i
 
 # target to preprocess a source file
 vocoder_cvsd_encode_sb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.i
 .PHONY : vocoder_cvsd_encode_sb.cc.i
 
 vocoder_cvsd_encode_sb.s: vocoder_cvsd_encode_sb.cc.s
@@ -1295,7 +1303,7 @@ vocoder_cvsd_encode_sb.s: vocoder_cvsd_encode_sb.cc.s
 
 # target to generate assembly for a file
 vocoder_cvsd_encode_sb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.s
 .PHONY : vocoder_cvsd_encode_sb.cc.s
 
 vocoder_g721_decode_bs.o: vocoder_g721_decode_bs.cc.o
@@ -1303,7 +1311,7 @@ vocoder_g721_decode_bs.o: vocoder_g721_decode_bs.cc.o
 
 # target to build an object file
 vocoder_g721_decode_bs.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o
 .PHONY : vocoder_g721_decode_bs.cc.o
 
 vocoder_g721_decode_bs.i: vocoder_g721_decode_bs.cc.i
@@ -1311,7 +1319,7 @@ vocoder_g721_decode_bs.i: vocoder_g721_decode_bs.cc.i
 
 # target to preprocess a source file
 vocoder_g721_decode_bs.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.i
 .PHONY : vocoder_g721_decode_bs.cc.i
 
 vocoder_g721_decode_bs.s: vocoder_g721_decode_bs.cc.s
@@ -1319,7 +1327,7 @@ vocoder_g721_decode_bs.s: vocoder_g721_decode_bs.cc.s
 
 # target to generate assembly for a file
 vocoder_g721_decode_bs.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.s
 .PHONY : vocoder_g721_decode_bs.cc.s
 
 vocoder_g721_encode_sb.o: vocoder_g721_encode_sb.cc.o
@@ -1327,7 +1335,7 @@ vocoder_g721_encode_sb.o: vocoder_g721_encode_sb.cc.o
 
 # target to build an object file
 vocoder_g721_encode_sb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o
 .PHONY : vocoder_g721_encode_sb.cc.o
 
 vocoder_g721_encode_sb.i: vocoder_g721_encode_sb.cc.i
@@ -1335,7 +1343,7 @@ vocoder_g721_encode_sb.i: vocoder_g721_encode_sb.cc.i
 
 # target to preprocess a source file
 vocoder_g721_encode_sb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.i
 .PHONY : vocoder_g721_encode_sb.cc.i
 
 vocoder_g721_encode_sb.s: vocoder_g721_encode_sb.cc.s
@@ -1343,7 +1351,7 @@ vocoder_g721_encode_sb.s: vocoder_g721_encode_sb.cc.s
 
 # target to generate assembly for a file
 vocoder_g721_encode_sb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.s
 .PHONY : vocoder_g721_encode_sb.cc.s
 
 vocoder_g723_24_decode_bs.o: vocoder_g723_24_decode_bs.cc.o
@@ -1351,7 +1359,7 @@ vocoder_g723_24_decode_bs.o: vocoder_g723_24_decode_bs.cc.o
 
 # target to build an object file
 vocoder_g723_24_decode_bs.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o
 .PHONY : vocoder_g723_24_decode_bs.cc.o
 
 vocoder_g723_24_decode_bs.i: vocoder_g723_24_decode_bs.cc.i
@@ -1359,7 +1367,7 @@ vocoder_g723_24_decode_bs.i: vocoder_g723_24_decode_bs.cc.i
 
 # target to preprocess a source file
 vocoder_g723_24_decode_bs.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.i
 .PHONY : vocoder_g723_24_decode_bs.cc.i
 
 vocoder_g723_24_decode_bs.s: vocoder_g723_24_decode_bs.cc.s
@@ -1367,7 +1375,7 @@ vocoder_g723_24_decode_bs.s: vocoder_g723_24_decode_bs.cc.s
 
 # target to generate assembly for a file
 vocoder_g723_24_decode_bs.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.s
 .PHONY : vocoder_g723_24_decode_bs.cc.s
 
 vocoder_g723_24_encode_sb.o: vocoder_g723_24_encode_sb.cc.o
@@ -1375,7 +1383,7 @@ vocoder_g723_24_encode_sb.o: vocoder_g723_24_encode_sb.cc.o
 
 # target to build an object file
 vocoder_g723_24_encode_sb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o
 .PHONY : vocoder_g723_24_encode_sb.cc.o
 
 vocoder_g723_24_encode_sb.i: vocoder_g723_24_encode_sb.cc.i
@@ -1383,7 +1391,7 @@ vocoder_g723_24_encode_sb.i: vocoder_g723_24_encode_sb.cc.i
 
 # target to preprocess a source file
 vocoder_g723_24_encode_sb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.i
 .PHONY : vocoder_g723_24_encode_sb.cc.i
 
 vocoder_g723_24_encode_sb.s: vocoder_g723_24_encode_sb.cc.s
@@ -1391,7 +1399,7 @@ vocoder_g723_24_encode_sb.s: vocoder_g723_24_encode_sb.cc.s
 
 # target to generate assembly for a file
 vocoder_g723_24_encode_sb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.s
 .PHONY : vocoder_g723_24_encode_sb.cc.s
 
 vocoder_g723_40_decode_bs.o: vocoder_g723_40_decode_bs.cc.o
@@ -1399,7 +1407,7 @@ vocoder_g723_40_decode_bs.o: vocoder_g723_40_decode_bs.cc.o
 
 # target to build an object file
 vocoder_g723_40_decode_bs.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o
 .PHONY : vocoder_g723_40_decode_bs.cc.o
 
 vocoder_g723_40_decode_bs.i: vocoder_g723_40_decode_bs.cc.i
@@ -1407,7 +1415,7 @@ vocoder_g723_40_decode_bs.i: vocoder_g723_40_decode_bs.cc.i
 
 # target to preprocess a source file
 vocoder_g723_40_decode_bs.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.i
 .PHONY : vocoder_g723_40_decode_bs.cc.i
 
 vocoder_g723_40_decode_bs.s: vocoder_g723_40_decode_bs.cc.s
@@ -1415,7 +1423,7 @@ vocoder_g723_40_decode_bs.s: vocoder_g723_40_decode_bs.cc.s
 
 # target to generate assembly for a file
 vocoder_g723_40_decode_bs.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.s
 .PHONY : vocoder_g723_40_decode_bs.cc.s
 
 vocoder_g723_40_encode_sb.o: vocoder_g723_40_encode_sb.cc.o
@@ -1423,7 +1431,7 @@ vocoder_g723_40_encode_sb.o: vocoder_g723_40_encode_sb.cc.o
 
 # target to build an object file
 vocoder_g723_40_encode_sb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o
 .PHONY : vocoder_g723_40_encode_sb.cc.o
 
 vocoder_g723_40_encode_sb.i: vocoder_g723_40_encode_sb.cc.i
@@ -1431,7 +1439,7 @@ vocoder_g723_40_encode_sb.i: vocoder_g723_40_encode_sb.cc.i
 
 # target to preprocess a source file
 vocoder_g723_40_encode_sb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.i
 .PHONY : vocoder_g723_40_encode_sb.cc.i
 
 vocoder_g723_40_encode_sb.s: vocoder_g723_40_encode_sb.cc.s
@@ -1439,7 +1447,7 @@ vocoder_g723_40_encode_sb.s: vocoder_g723_40_encode_sb.cc.s
 
 # target to generate assembly for a file
 vocoder_g723_40_encode_sb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.s
 .PHONY : vocoder_g723_40_encode_sb.cc.s
 
 vocoder_gsm_fr_decode_ps.o: vocoder_gsm_fr_decode_ps.cc.o
@@ -1447,7 +1455,7 @@ vocoder_gsm_fr_decode_ps.o: vocoder_gsm_fr_decode_ps.cc.o
 
 # target to build an object file
 vocoder_gsm_fr_decode_ps.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o
 .PHONY : vocoder_gsm_fr_decode_ps.cc.o
 
 vocoder_gsm_fr_decode_ps.i: vocoder_gsm_fr_decode_ps.cc.i
@@ -1455,7 +1463,7 @@ vocoder_gsm_fr_decode_ps.i: vocoder_gsm_fr_decode_ps.cc.i
 
 # target to preprocess a source file
 vocoder_gsm_fr_decode_ps.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.i
 .PHONY : vocoder_gsm_fr_decode_ps.cc.i
 
 vocoder_gsm_fr_decode_ps.s: vocoder_gsm_fr_decode_ps.cc.s
@@ -1463,7 +1471,7 @@ vocoder_gsm_fr_decode_ps.s: vocoder_gsm_fr_decode_ps.cc.s
 
 # target to generate assembly for a file
 vocoder_gsm_fr_decode_ps.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.s
 .PHONY : vocoder_gsm_fr_decode_ps.cc.s
 
 vocoder_gsm_fr_encode_sp.o: vocoder_gsm_fr_encode_sp.cc.o
@@ -1471,7 +1479,7 @@ vocoder_gsm_fr_encode_sp.o: vocoder_gsm_fr_encode_sp.cc.o
 
 # target to build an object file
 vocoder_gsm_fr_encode_sp.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o
 .PHONY : vocoder_gsm_fr_encode_sp.cc.o
 
 vocoder_gsm_fr_encode_sp.i: vocoder_gsm_fr_encode_sp.cc.i
@@ -1479,7 +1487,7 @@ vocoder_gsm_fr_encode_sp.i: vocoder_gsm_fr_encode_sp.cc.i
 
 # target to preprocess a source file
 vocoder_gsm_fr_encode_sp.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.i
 .PHONY : vocoder_gsm_fr_encode_sp.cc.i
 
 vocoder_gsm_fr_encode_sp.s: vocoder_gsm_fr_encode_sp.cc.s
@@ -1487,7 +1495,7 @@ vocoder_gsm_fr_encode_sp.s: vocoder_gsm_fr_encode_sp.cc.s
 
 # target to generate assembly for a file
 vocoder_gsm_fr_encode_sp.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.s
 .PHONY : vocoder_gsm_fr_encode_sp.cc.s
 
 vocoder_ulaw_decode_bs.o: vocoder_ulaw_decode_bs.cc.o
@@ -1495,7 +1503,7 @@ vocoder_ulaw_decode_bs.o: vocoder_ulaw_decode_bs.cc.o
 
 # target to build an object file
 vocoder_ulaw_decode_bs.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o
 .PHONY : vocoder_ulaw_decode_bs.cc.o
 
 vocoder_ulaw_decode_bs.i: vocoder_ulaw_decode_bs.cc.i
@@ -1503,7 +1511,7 @@ vocoder_ulaw_decode_bs.i: vocoder_ulaw_decode_bs.cc.i
 
 # target to preprocess a source file
 vocoder_ulaw_decode_bs.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.i
 .PHONY : vocoder_ulaw_decode_bs.cc.i
 
 vocoder_ulaw_decode_bs.s: vocoder_ulaw_decode_bs.cc.s
@@ -1511,7 +1519,7 @@ vocoder_ulaw_decode_bs.s: vocoder_ulaw_decode_bs.cc.s
 
 # target to generate assembly for a file
 vocoder_ulaw_decode_bs.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.s
 .PHONY : vocoder_ulaw_decode_bs.cc.s
 
 vocoder_ulaw_encode_sb.o: vocoder_ulaw_encode_sb.cc.o
@@ -1519,7 +1527,7 @@ vocoder_ulaw_encode_sb.o: vocoder_ulaw_encode_sb.cc.o
 
 # target to build an object file
 vocoder_ulaw_encode_sb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o
 .PHONY : vocoder_ulaw_encode_sb.cc.o
 
 vocoder_ulaw_encode_sb.i: vocoder_ulaw_encode_sb.cc.i
@@ -1527,7 +1535,7 @@ vocoder_ulaw_encode_sb.i: vocoder_ulaw_encode_sb.cc.i
 
 # target to preprocess a source file
 vocoder_ulaw_encode_sb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.i
 .PHONY : vocoder_ulaw_encode_sb.cc.i
 
 vocoder_ulaw_encode_sb.s: vocoder_ulaw_encode_sb.cc.s
@@ -1535,7 +1543,7 @@ vocoder_ulaw_encode_sb.s: vocoder_ulaw_encode_sb.cc.s
 
 # target to generate assembly for a file
 vocoder_ulaw_encode_sb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.s
 .PHONY : vocoder_ulaw_encode_sb.cc.s
 
 # Help Target
@@ -1734,6 +1742,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

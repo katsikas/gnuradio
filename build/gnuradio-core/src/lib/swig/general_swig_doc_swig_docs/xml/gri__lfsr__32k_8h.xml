@@ -1,20 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gri__lfsr__32k_8h" kind="file">
     <compoundname>gri_lfsr_32k.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gri__lfsr__15__1__0_8h" local="no">gri_lfsr_15_1_0.h</includes>
-    <includedby refid="gr__check__lfsr__32k__s_8h" local="no">/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_lfsr_32k_s.h</includedby>
-    <includedby refid="gr__lfsr__32k__source__s_8h" local="no">/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_lfsr_32k_source_s.h</includedby>
+    <includedby refid="gr__check__lfsr__32k__s_8h" local="no">/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_check_lfsr_32k_s.h</includedby>
+    <includedby refid="gr__lfsr__32k__source__s_8h" local="no">/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_lfsr_32k_source_s.h</includedby>
     <incdepgraph>
       <node id="1015">
         <label>gruel/attributes.h</label>
-      </node>
-      <node id="1016">
-        <label>gri_lfsr_15_1_0.h</label>
-        <link refid="gri__lfsr__15__1__0_8h"/>
-        <childnode refid="1014" relation="include">
-        </childnode>
       </node>
       <node id="1014">
         <label>gr_core_api.h</label>
@@ -22,8 +16,14 @@
         <childnode refid="1015" relation="include">
         </childnode>
       </node>
+      <node id="1016">
+        <label>gri_lfsr_15_1_0.h</label>
+        <link refid="gri__lfsr__15__1__0_8h"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+      </node>
       <node id="1013">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h</label>
         <link refid="gri_lfsr_32k.h"/>
         <childnode refid="1014" relation="include">
         </childnode>
@@ -33,20 +33,20 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="1018">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_check_lfsr_32k_s.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_check_lfsr_32k_s.h</label>
         <link refid="gr__check__lfsr__32k__s_8h"/>
       </node>
-      <node id="1019">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_lfsr_32k_source_s.h</label>
-        <link refid="gr__lfsr__32k__source__s_8h"/>
-      </node>
       <node id="1017">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h</label>
         <link refid="gri_lfsr_32k.h"/>
         <childnode refid="1018" relation="include">
         </childnode>
         <childnode refid="1019" relation="include">
         </childnode>
+      </node>
+      <node id="1019">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_lfsr_32k_source_s.h</label>
+        <link refid="gr__lfsr__32k__source__s_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classgri__lfsr__32k" prot="public">gri_lfsr_32k</innerclass>
@@ -128,6 +128,6 @@
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GRI_LFSR_32k_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gri_lfsr_32k.h"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__agc2__ff" kind="class" prot="public">
     <compoundname>gr_agc2_ff</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -7,7 +7,7 @@
     <includes refid="gr__agc2__ff_8h" local="no">gr_agc2_ff.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__agc2__ff_1a85921c8281065b1dcc6afef764c45b54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_agc2_ff_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_agc2_ff_sptr</ref></type>
         <definition>GR_CORE_API gr_agc2_ff_sptr gr_make_agc2_ff</definition>
         <argsstring>(float attack_rate, float decay_rate, float reference, float gain, float max_gain)</argsstring>
         <name>gr_make_agc2_ff</name>
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="45"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="46"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="46"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -100,7 +100,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="51"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,116 +108,116 @@
     <detaileddescription>
 <para>Power is approximated by absolute value </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2216">
+      <node id="7398">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2217" relation="public-inheritance">
+        <childnode refid="7399" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2213">
+      <node id="7395">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2214" relation="public-inheritance">
+        <childnode refid="7396" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2214">
+      <node id="7396">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2215" relation="public-inheritance">
+        <childnode refid="7397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2217">
+      <node id="7399">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2218">
+      <node id="7400">
         <label>gri_agc2_ff</label>
         <link refid="classgri__agc2__ff"/>
       </node>
-      <node id="2215">
+      <node id="7397">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2216" relation="public-inheritance">
+        <childnode refid="7398" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2212">
+      <node id="7394">
         <label>gr_agc2_ff</label>
         <link refid="classgr__agc2__ff"/>
-        <childnode refid="2213" relation="public-inheritance">
+        <childnode refid="7395" relation="public-inheritance">
         </childnode>
-        <childnode refid="2218" relation="public-inheritance">
+        <childnode refid="7400" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2223">
+      <node id="7405">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2224" relation="public-inheritance">
+        <childnode refid="7406" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2220">
+      <node id="7402">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2221" relation="public-inheritance">
+        <childnode refid="7403" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2221">
+      <node id="7403">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2222" relation="public-inheritance">
+        <childnode refid="7404" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2225">
+      <node id="7407">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2226" relation="usage">
+        <childnode refid="7408" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2228">
+      <node id="7410">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2224">
+      <node id="7406">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2229">
+      <node id="7411">
         <label>gri_agc2_ff</label>
         <link refid="classgri__agc2__ff"/>
       </node>
-      <node id="2226">
+      <node id="7408">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2222">
+      <node id="7404">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2223" relation="public-inheritance">
+        <childnode refid="7405" relation="public-inheritance">
         </childnode>
-        <childnode refid="2225" relation="usage">
+        <childnode refid="7407" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2227" relation="usage">
+        <childnode refid="7409" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2219">
+      <node id="7401">
         <label>gr_agc2_ff</label>
         <link refid="classgr__agc2__ff"/>
-        <childnode refid="2220" relation="public-inheritance">
+        <childnode refid="7402" relation="public-inheritance">
         </childnode>
-        <childnode refid="2229" relation="public-inheritance">
+        <childnode refid="7411" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2227">
+      <node id="7409">
         <label>std::string</label>
-        <childnode refid="2228" relation="public-inheritance">
+        <childnode refid="7410" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="43" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" bodystart="42" bodyend="52"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" line="43" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_agc2_ff.h" bodystart="42" bodyend="52"/>
     <listofallmembers>
       <member refid="classgri__agc2__ff_1a5392044533465105cd05b1913062e257" prot="protected" virt="non-virtual"><scope>gr_agc2_ff</scope><name>_attack_rate</name></member>
       <member refid="classgri__agc2__ff_1a087b22a47a1c8fc809ce078539ddc381" prot="protected" virt="non-virtual"><scope>gr_agc2_ff</scope><name>_decay_rate</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__remez_8h" kind="file">
     <compoundname>gr_remez.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -7,70 +7,70 @@
     <includes local="no">string</includes>
     <includes local="no">stdexcept</includes>
     <incdepgraph>
-      <node id="11082">
+      <node id="40100">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="11080">
+      <node id="40106">
+        <label>stdexcept</label>
+      </node>
+      <node id="40105">
+        <label>string</label>
+      </node>
+      <node id="40103">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="40104" relation="include">
+        </childnode>
+      </node>
+      <node id="40098">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="11081">
-        <label>gr_types.h</label>
-        <link refid="gr__types_8h"/>
-        <childnode refid="11079" relation="include">
-        </childnode>
-        <childnode refid="11082" relation="include">
-        </childnode>
-        <childnode refid="11083" relation="include">
-        </childnode>
-        <childnode refid="11084" relation="include">
-        </childnode>
-        <childnode refid="11085" relation="include">
-        </childnode>
-      </node>
-      <node id="11088">
-        <label>stdexcept</label>
-      </node>
-      <node id="11087">
-        <label>string</label>
-      </node>
-      <node id="11084">
-        <label>stddef.h</label>
-      </node>
-      <node id="11083">
-        <label>vector</label>
-      </node>
-      <node id="11078">
-        <label>gr_remez.h</label>
-        <link refid="gr_remez.h"/>
-        <childnode refid="11079" relation="include">
-        </childnode>
-        <childnode refid="11081" relation="include">
-        </childnode>
-        <childnode refid="11087" relation="include">
-        </childnode>
-        <childnode refid="11088" relation="include">
-        </childnode>
-      </node>
-      <node id="11079">
+      <node id="40097">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="11080" relation="include">
+        <childnode refid="40098" relation="include">
         </childnode>
       </node>
-      <node id="11086">
+      <node id="40099">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="40097" relation="include">
+        </childnode>
+        <childnode refid="40100" relation="include">
+        </childnode>
+        <childnode refid="40101" relation="include">
+        </childnode>
+        <childnode refid="40102" relation="include">
+        </childnode>
+        <childnode refid="40103" relation="include">
+        </childnode>
+      </node>
+      <node id="40102">
+        <label>stddef.h</label>
+      </node>
+      <node id="40101">
+        <label>vector</label>
+      </node>
+      <node id="40096">
+        <label>gr_remez.h</label>
+        <link refid="gr_remez.h"/>
+        <childnode refid="40097" relation="include">
+        </childnode>
+        <childnode refid="40099" relation="include">
+        </childnode>
+        <childnode refid="40105" relation="include">
+        </childnode>
+        <childnode refid="40106" relation="include">
+        </childnode>
+      </node>
+      <node id="40104">
         <label>complex</label>
-      </node>
-      <node id="11085">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="11086" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__filter__design_1ga72457c511193e9239047a12641c95e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> std::vector&lt; double &gt;</type>
+        <type>GR_CORE_API std::vector&lt; double &gt;</type>
         <definition>GR_CORE_API std::vector&lt;double&gt; gr_remez</definition>
         <argsstring>(int order, const std::vector&lt; double &gt; &amp;bands, const std::vector&lt; double &gt; &amp;ampl, const std::vector&lt; double &gt; &amp;error_weight, const std::string filter_type=&quot;bandpass&quot;, int grid_density=16)</argsstring>
         <name>gr_remez</name>
@@ -159,13 +159,13 @@ Frequency is in the range [0, 1], with 1 being the Nyquist frequency (Fs/2)</par
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_remez.h" line="62"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_remez.h" line="62"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_remez.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_remez.h"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="trellis__pccc__decoder__combined__cb_8h" kind="file">
     <compoundname>trellis_pccc_decoder_combined_cb.h</compoundname>
     <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
@@ -13,9 +13,22 @@
       <node id="96">
         <label>gruel/attributes.h</label>
       </node>
+      <node id="102">
+        <label>calc_metric.h</label>
+        <link refid="calc__metric_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
       <node id="105">
         <label>siso_type.h</label>
         <link refid="siso__type_8h"/>
+      </node>
+      <node id="103">
+        <label>gr_complex.h</label>
       </node>
       <node id="94">
         <label>trellis_pccc_decoder_combined_cb.h</label>
@@ -35,31 +48,6 @@
         <childnode refid="105" relation="include">
         </childnode>
       </node>
-      <node id="102">
-        <label>calc_metric.h</label>
-        <link refid="calc__metric_8h"/>
-        <childnode refid="98" relation="include">
-        </childnode>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
-        </childnode>
-      </node>
-      <node id="103">
-        <label>gr_complex.h</label>
-      </node>
-      <node id="101">
-        <label>gr_block.h</label>
-      </node>
-      <node id="98">
-        <label>vector</label>
-      </node>
-      <node id="95">
-        <label>trellis_api.h</label>
-        <link refid="trellis__api_8h"/>
-        <childnode refid="96" relation="include">
-        </childnode>
-      </node>
       <node id="97">
         <label>fsm.h</label>
         <link refid="fsm_8h"/>
@@ -69,6 +57,12 @@
         </childnode>
         <childnode refid="99" relation="include">
         </childnode>
+      </node>
+      <node id="101">
+        <label>gr_block.h</label>
+      </node>
+      <node id="98">
+        <label>vector</label>
       </node>
       <node id="99">
         <label>iosfwd</label>
@@ -84,6 +78,12 @@
       <node id="104">
         <label>digital_metric_type.h</label>
       </node>
+      <node id="95">
+        <label>trellis_api.h</label>
+        <link refid="trellis__api_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <innerclass refid="classtrellis__pccc__decoder__combined__cb" prot="public">trellis_pccc_decoder_combined_cb</innerclass>
       <sectiondef kind="typedef">
@@ -98,12 +98,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" line="37" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" line="37" bodyfile="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="trellis__pccc__decoder__combined__cb_8h_1a586a5712acc17f01dc7c7b87b1315925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__pccc__decoder__combined__cb_8h_1aeaffa79587926dff818713132f482963" kindref="member">trellis_pccc_decoder_combined_cb_sptr</ref></type>
+        <type>TRELLIS_API <ref refid="trellis__pccc__decoder__combined__cb_8h_1aeaffa79587926dff818713132f482963" kindref="member">trellis_pccc_decoder_combined_cb_sptr</ref></type>
         <definition>TRELLIS_API trellis_pccc_decoder_combined_cb_sptr trellis_make_pccc_decoder_combined_cb</definition>
         <argsstring>(const fsm &amp;FSMo, int STo0, int SToK, const fsm &amp;FSMi, int STi0, int STiK, const interleaver &amp;INTERLEAVER, int blocklength, int repetitions, trellis_siso_type_t SISO_TYPE, int D, const std::vector&lt; gr_complex &gt; &amp;TABLE, trellis_metric_type_t METRIC_TYPE, float scaling)</argsstring>
         <name>trellis_make_pccc_decoder_combined_cb</name>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" line="50"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h" line="50"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -300,6 +300,6 @@
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_pccc_decoder_combined_cb.h"/>
   </compounddef>
 </doxygen>

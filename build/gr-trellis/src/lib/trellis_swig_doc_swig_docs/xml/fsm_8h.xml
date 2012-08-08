@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="fsm_8h" kind="file">
     <compoundname>fsm.h</compoundname>
     <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
     <includes local="no">vector</includes>
     <includes local="no">iosfwd</includes>
-    <includedby refid="core__algorithms_8h" local="yes">/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h</includedby>
-    <includedby refid="trellis__siso__combined__f_8h" local="yes">/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</includedby>
-    <includedby refid="trellis__siso__f_8h" local="yes">/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</includedby>
+    <includedby refid="core__algorithms_8h" local="yes">/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h</includedby>
+    <includedby refid="trellis__siso__combined__f_8h" local="yes">/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</includedby>
+    <includedby refid="trellis__siso__f_8h" local="yes">/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</includedby>
     <includedby refid="trellis__encoder__bb_8h" local="yes">trellis_encoder_bb.h</includedby>
     <includedby refid="trellis__encoder__bi_8h" local="yes">trellis_encoder_bi.h</includedby>
     <includedby refid="trellis__encoder__bs_8h" local="yes">trellis_encoder_bs.h</includedby>
@@ -63,17 +63,8 @@
       <node id="678">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="679">
-        <label>vector</label>
-      </node>
-      <node id="677">
-        <label>trellis_api.h</label>
-        <link refid="trellis__api_8h"/>
-        <childnode refid="678" relation="include">
-        </childnode>
-      </node>
       <node id="676">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/fsm.h</label>
         <link refid="fsm.h"/>
         <childnode refid="677" relation="include">
         </childnode>
@@ -82,14 +73,47 @@
         <childnode refid="680" relation="include">
         </childnode>
       </node>
+      <node id="679">
+        <label>vector</label>
+      </node>
       <node id="680">
         <label>iosfwd</label>
       </node>
+      <node id="677">
+        <label>trellis_api.h</label>
+        <link refid="trellis__api_8h"/>
+        <childnode refid="678" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="686">
-        <label>trellis_viterbi_combined_cb.h</label>
-        <link refid="trellis__viterbi__combined__cb_8h"/>
+      <node id="712">
+        <label>trellis_pccc_decoder_combined_fs.h</label>
+        <link refid="trellis__pccc__decoder__combined__fs_8h"/>
+      </node>
+      <node id="713">
+        <label>trellis_pccc_decoder_i.h</label>
+        <link refid="trellis__pccc__decoder__i_8h"/>
+      </node>
+      <node id="696">
+        <label>trellis_viterbi_combined_si.h</label>
+        <link refid="trellis__viterbi__combined__si_8h"/>
+      </node>
+      <node id="699">
+        <label>trellis_viterbi_s.h</label>
+        <link refid="trellis__viterbi__s_8h"/>
+      </node>
+      <node id="701">
+        <label>trellis_encoder_bi.h</label>
+        <link refid="trellis__encoder__bi_8h"/>
+      </node>
+      <node id="723">
+        <label>trellis_sccc_decoder_combined_ci.h</label>
+        <link refid="trellis__sccc__decoder__combined__ci_8h"/>
+      </node>
+      <node id="728">
+        <label>trellis_sccc_decoder_i.h</label>
+        <link refid="trellis__sccc__decoder__i_8h"/>
       </node>
       <node id="691">
         <label>trellis_viterbi_combined_fs.h</label>
@@ -99,73 +123,25 @@
         <label>trellis_sccc_encoder_bi.h</label>
         <link refid="trellis__sccc__encoder__bi_8h"/>
       </node>
-      <node id="698">
-        <label>trellis_viterbi_i.h</label>
-        <link refid="trellis__viterbi__i_8h"/>
-      </node>
-      <node id="723">
-        <label>trellis_sccc_decoder_combined_ci.h</label>
-        <link refid="trellis__sccc__decoder__combined__ci_8h"/>
-      </node>
-      <node id="695">
-        <label>trellis_viterbi_combined_sb.h</label>
-        <link refid="trellis__viterbi__combined__sb_8h"/>
-      </node>
-      <node id="718">
-        <label>trellis_pccc_encoder_ii.h</label>
-        <link refid="trellis__pccc__encoder__ii_8h"/>
-      </node>
-      <node id="721">
-        <label>trellis_sccc_decoder_b.h</label>
-        <link refid="trellis__sccc__decoder__b_8h"/>
-      </node>
-      <node id="688">
-        <label>trellis_viterbi_combined_cs.h</label>
-        <link refid="trellis__viterbi__combined__cs_8h"/>
-      </node>
-      <node id="714">
-        <label>trellis_pccc_decoder_s.h</label>
-        <link refid="trellis__pccc__decoder__s_8h"/>
-      </node>
-      <node id="684">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</label>
-        <link refid="trellis__siso__f_8h"/>
-      </node>
-      <node id="697">
-        <label>trellis_viterbi_combined_ss.h</label>
-        <link refid="trellis__viterbi__combined__ss_8h"/>
-      </node>
-      <node id="734">
-        <label>trellis_sccc_encoder_si.h</label>
-        <link refid="trellis__sccc__encoder__si_8h"/>
+      <node id="720">
+        <label>trellis_pccc_encoder_ss.h</label>
+        <link refid="trellis__pccc__encoder__ss_8h"/>
       </node>
       <node id="715">
         <label>trellis_pccc_encoder_bb.h</label>
         <link refid="trellis__pccc__encoder__bb_8h"/>
       </node>
-      <node id="733">
-        <label>trellis_sccc_encoder_ii.h</label>
-        <link refid="trellis__sccc__encoder__ii_8h"/>
+      <node id="688">
+        <label>trellis_viterbi_combined_cs.h</label>
+        <link refid="trellis__viterbi__combined__cs_8h"/>
       </node>
-      <node id="683">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</label>
-        <link refid="trellis__siso__combined__f_8h"/>
+      <node id="734">
+        <label>trellis_sccc_encoder_si.h</label>
+        <link refid="trellis__sccc__encoder__si_8h"/>
       </node>
-      <node id="720">
-        <label>trellis_pccc_encoder_ss.h</label>
-        <link refid="trellis__pccc__encoder__ss_8h"/>
-      </node>
-      <node id="707">
-        <label>trellis_pccc_decoder_combined_cb.h</label>
-        <link refid="trellis__pccc__decoder__combined__cb_8h"/>
-      </node>
-      <node id="730">
-        <label>trellis_sccc_encoder_bb.h</label>
-        <link refid="trellis__sccc__encoder__bb_8h"/>
-      </node>
-      <node id="711">
-        <label>trellis_pccc_decoder_combined_fi.h</label>
-        <link refid="trellis__pccc__decoder__combined__fi_8h"/>
+      <node id="726">
+        <label>trellis_sccc_decoder_combined_fi.h</label>
+        <link refid="trellis__sccc__decoder__combined__fi_8h"/>
       </node>
       <node id="722">
         <label>trellis_sccc_decoder_combined_cb.h</label>
@@ -175,80 +151,64 @@
         <label>trellis_encoder_si.h</label>
         <link refid="trellis__encoder__si_8h"/>
       </node>
-      <node id="685">
-        <label>trellis_viterbi_b.h</label>
-        <link refid="trellis__viterbi__b_8h"/>
+      <node id="692">
+        <label>trellis_viterbi_combined_ib.h</label>
+        <link refid="trellis__viterbi__combined__ib_8h"/>
       </node>
-      <node id="726">
-        <label>trellis_sccc_decoder_combined_fi.h</label>
-        <link refid="trellis__sccc__decoder__combined__fi_8h"/>
+      <node id="683">
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h</label>
+        <link refid="trellis__siso__combined__f_8h"/>
       </node>
-      <node id="701">
-        <label>trellis_encoder_bi.h</label>
-        <link refid="trellis__encoder__bi_8h"/>
+      <node id="708">
+        <label>trellis_pccc_decoder_combined_ci.h</label>
+        <link refid="trellis__pccc__decoder__combined__ci_8h"/>
       </node>
-      <node id="729">
-        <label>trellis_sccc_decoder_s.h</label>
-        <link refid="trellis__sccc__decoder__s_8h"/>
+      <node id="689">
+        <label>trellis_viterbi_combined_fb.h</label>
+        <link refid="trellis__viterbi__combined__fb_8h"/>
       </node>
-      <node id="693">
-        <label>trellis_viterbi_combined_ii.h</label>
-        <link refid="trellis__viterbi__combined__ii_8h"/>
+      <node id="697">
+        <label>trellis_viterbi_combined_ss.h</label>
+        <link refid="trellis__viterbi__combined__ss_8h"/>
+      </node>
+      <node id="714">
+        <label>trellis_pccc_decoder_s.h</label>
+        <link refid="trellis__pccc__decoder__s_8h"/>
       </node>
       <node id="717">
         <label>trellis_pccc_encoder_bs.h</label>
         <link refid="trellis__pccc__encoder__bs_8h"/>
       </node>
-      <node id="735">
-        <label>trellis_sccc_encoder_ss.h</label>
-        <link refid="trellis__sccc__encoder__ss_8h"/>
-      </node>
-      <node id="690">
-        <label>trellis_viterbi_combined_fi.h</label>
-        <link refid="trellis__viterbi__combined__fi_8h"/>
-      </node>
-      <node id="710">
-        <label>trellis_pccc_decoder_combined_fb.h</label>
-        <link refid="trellis__pccc__decoder__combined__fb_8h"/>
-      </node>
-      <node id="703">
-        <label>trellis_encoder_ii.h</label>
-        <link refid="trellis__encoder__ii_8h"/>
+      <node id="730">
+        <label>trellis_sccc_encoder_bb.h</label>
+        <link refid="trellis__sccc__encoder__bb_8h"/>
       </node>
       <node id="725">
         <label>trellis_sccc_decoder_combined_fb.h</label>
         <link refid="trellis__sccc__decoder__combined__fb_8h"/>
       </node>
-      <node id="732">
-        <label>trellis_sccc_encoder_bs.h</label>
-        <link refid="trellis__sccc__encoder__bs_8h"/>
+      <node id="718">
+        <label>trellis_pccc_encoder_ii.h</label>
+        <link refid="trellis__pccc__encoder__ii_8h"/>
       </node>
-      <node id="694">
-        <label>trellis_viterbi_combined_is.h</label>
-        <link refid="trellis__viterbi__combined__is_8h"/>
+      <node id="711">
+        <label>trellis_pccc_decoder_combined_fi.h</label>
+        <link refid="trellis__pccc__decoder__combined__fi_8h"/>
       </node>
-      <node id="692">
-        <label>trellis_viterbi_combined_ib.h</label>
-        <link refid="trellis__viterbi__combined__ib_8h"/>
+      <node id="707">
+        <label>trellis_pccc_decoder_combined_cb.h</label>
+        <link refid="trellis__pccc__decoder__combined__cb_8h"/>
       </node>
-      <node id="705">
-        <label>trellis_encoder_ss.h</label>
-        <link refid="trellis__encoder__ss_8h"/>
+      <node id="693">
+        <label>trellis_viterbi_combined_ii.h</label>
+        <link refid="trellis__viterbi__combined__ii_8h"/>
       </node>
-      <node id="713">
-        <label>trellis_pccc_decoder_i.h</label>
-        <link refid="trellis__pccc__decoder__i_8h"/>
-      </node>
-      <node id="700">
-        <label>trellis_encoder_bb.h</label>
-        <link refid="trellis__encoder__bb_8h"/>
-      </node>
-      <node id="709">
-        <label>trellis_pccc_decoder_combined_cs.h</label>
-        <link refid="trellis__pccc__decoder__combined__cs_8h"/>
+      <node id="690">
+        <label>trellis_viterbi_combined_fi.h</label>
+        <link refid="trellis__viterbi__combined__fi_8h"/>
       </node>
       <node id="681">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/fsm.h</label>
         <link refid="fsm.h"/>
         <childnode refid="682" relation="include">
         </childnode>
@@ -359,56 +319,96 @@
         <childnode refid="699" relation="include">
         </childnode>
       </node>
-      <node id="689">
-        <label>trellis_viterbi_combined_fb.h</label>
-        <link refid="trellis__viterbi__combined__fb_8h"/>
-      </node>
       <node id="724">
         <label>trellis_sccc_decoder_combined_cs.h</label>
         <link refid="trellis__sccc__decoder__combined__cs_8h"/>
       </node>
-      <node id="712">
-        <label>trellis_pccc_decoder_combined_fs.h</label>
-        <link refid="trellis__pccc__decoder__combined__fs_8h"/>
+      <node id="705">
+        <label>trellis_encoder_ss.h</label>
+        <link refid="trellis__encoder__ss_8h"/>
       </node>
-      <node id="687">
-        <label>trellis_viterbi_combined_ci.h</label>
-        <link refid="trellis__viterbi__combined__ci_8h"/>
-      </node>
-      <node id="699">
-        <label>trellis_viterbi_s.h</label>
-        <link refid="trellis__viterbi__s_8h"/>
-      </node>
-      <node id="727">
-        <label>trellis_sccc_decoder_combined_fs.h</label>
-        <link refid="trellis__sccc__decoder__combined__fs_8h"/>
-      </node>
-      <node id="696">
-        <label>trellis_viterbi_combined_si.h</label>
-        <link refid="trellis__viterbi__combined__si_8h"/>
-      </node>
-      <node id="728">
-        <label>trellis_sccc_decoder_i.h</label>
-        <link refid="trellis__sccc__decoder__i_8h"/>
-      </node>
-      <node id="716">
-        <label>trellis_pccc_encoder_bi.h</label>
-        <link refid="trellis__pccc__encoder__bi_8h"/>
-      </node>
-      <node id="719">
-        <label>trellis_pccc_encoder_si.h</label>
-        <link refid="trellis__pccc__encoder__si_8h"/>
-      </node>
-      <node id="706">
-        <label>trellis_pccc_decoder_b.h</label>
-        <link refid="trellis__pccc__decoder__b_8h"/>
+      <node id="686">
+        <label>trellis_viterbi_combined_cb.h</label>
+        <link refid="trellis__viterbi__combined__cb_8h"/>
       </node>
       <node id="702">
         <label>trellis_encoder_bs.h</label>
         <link refid="trellis__encoder__bs_8h"/>
       </node>
+      <node id="732">
+        <label>trellis_sccc_encoder_bs.h</label>
+        <link refid="trellis__sccc__encoder__bs_8h"/>
+      </node>
+      <node id="719">
+        <label>trellis_pccc_encoder_si.h</label>
+        <link refid="trellis__pccc__encoder__si_8h"/>
+      </node>
+      <node id="710">
+        <label>trellis_pccc_decoder_combined_fb.h</label>
+        <link refid="trellis__pccc__decoder__combined__fb_8h"/>
+      </node>
+      <node id="698">
+        <label>trellis_viterbi_i.h</label>
+        <link refid="trellis__viterbi__i_8h"/>
+      </node>
+      <node id="735">
+        <label>trellis_sccc_encoder_ss.h</label>
+        <link refid="trellis__sccc__encoder__ss_8h"/>
+      </node>
+      <node id="684">
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_siso_f.h</label>
+        <link refid="trellis__siso__f_8h"/>
+      </node>
+      <node id="733">
+        <label>trellis_sccc_encoder_ii.h</label>
+        <link refid="trellis__sccc__encoder__ii_8h"/>
+      </node>
+      <node id="727">
+        <label>trellis_sccc_decoder_combined_fs.h</label>
+        <link refid="trellis__sccc__decoder__combined__fs_8h"/>
+      </node>
+      <node id="703">
+        <label>trellis_encoder_ii.h</label>
+        <link refid="trellis__encoder__ii_8h"/>
+      </node>
+      <node id="695">
+        <label>trellis_viterbi_combined_sb.h</label>
+        <link refid="trellis__viterbi__combined__sb_8h"/>
+      </node>
+      <node id="706">
+        <label>trellis_pccc_decoder_b.h</label>
+        <link refid="trellis__pccc__decoder__b_8h"/>
+      </node>
+      <node id="694">
+        <label>trellis_viterbi_combined_is.h</label>
+        <link refid="trellis__viterbi__combined__is_8h"/>
+      </node>
+      <node id="729">
+        <label>trellis_sccc_decoder_s.h</label>
+        <link refid="trellis__sccc__decoder__s_8h"/>
+      </node>
+      <node id="709">
+        <label>trellis_pccc_decoder_combined_cs.h</label>
+        <link refid="trellis__pccc__decoder__combined__cs_8h"/>
+      </node>
+      <node id="700">
+        <label>trellis_encoder_bb.h</label>
+        <link refid="trellis__encoder__bb_8h"/>
+      </node>
+      <node id="687">
+        <label>trellis_viterbi_combined_ci.h</label>
+        <link refid="trellis__viterbi__combined__ci_8h"/>
+      </node>
+      <node id="721">
+        <label>trellis_sccc_decoder_b.h</label>
+        <link refid="trellis__sccc__decoder__b_8h"/>
+      </node>
+      <node id="716">
+        <label>trellis_pccc_encoder_bi.h</label>
+        <link refid="trellis__pccc__encoder__bi_8h"/>
+      </node>
       <node id="682">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/core_algorithms.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/core_algorithms.h</label>
         <link refid="core__algorithms_8h"/>
         <childnode refid="683" relation="include">
         </childnode>
@@ -445,9 +445,9 @@
         <childnode refid="699" relation="include">
         </childnode>
       </node>
-      <node id="708">
-        <label>trellis_pccc_decoder_combined_ci.h</label>
-        <link refid="trellis__pccc__decoder__combined__ci_8h"/>
+      <node id="685">
+        <label>trellis_viterbi_b.h</label>
+        <link refid="trellis__viterbi__b_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classfsm" prot="public">fsm</innerclass>
@@ -541,6 +541,6 @@
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/fsm.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/fsm.h"/>
   </compounddef>
 </doxygen>

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Include any dependencies generated for this target.
 include gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/depend.make
@@ -48,17 +51,17 @@ include gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/flags.make
 
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.o: gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/flags.make
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.o: ../gnuradio-core/src/tests/test_all.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.o"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gr_core_test_all.dir/test_all.cc.o -c /home/katsikas/gnuradio/gnuradio-core/src/tests/test_all.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gr_core_test_all.dir/test_all.cc.o -c /home/katsikas/Desktop/gnuradio/gnuradio-core/src/tests/test_all.cc
 
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gr_core_test_all.dir/test_all.cc.i"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gnuradio-core/src/tests/test_all.cc > CMakeFiles/gr_core_test_all.dir/test_all.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gnuradio-core/src/tests/test_all.cc > CMakeFiles/gr_core_test_all.dir/test_all.cc.i
 
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gr_core_test_all.dir/test_all.cc.s"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gnuradio-core/src/tests/test_all.cc -o CMakeFiles/gr_core_test_all.dir/test_all.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gnuradio-core/src/tests/test_all.cc -o CMakeFiles/gr_core_test_all.dir/test_all.cc.s
 
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.o.requires:
 .PHONY : gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/test_all.cc.o.requires
@@ -80,16 +83,16 @@ gnuradio-core/src/tests/gr_core_test_all: gnuradio-core/src/tests/CMakeFiles/gr_
 gnuradio-core/src/tests/gr_core_test_all: gnuradio-core/src/lib/libtest-gnuradio-core.so
 gnuradio-core/src/tests/gr_core_test_all: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
 gnuradio-core/src/tests/gr_core_test_all: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gnuradio-core/src/tests/gr_core_test_all: /usr/lib/libcppunit.so
-gnuradio-core/src/tests/gr_core_test_all: /usr/lib/libboost_date_time-mt.so
-gnuradio-core/src/tests/gr_core_test_all: /usr/lib/libboost_program_options-mt.so
-gnuradio-core/src/tests/gr_core_test_all: /usr/lib/libboost_filesystem-mt.so
-gnuradio-core/src/tests/gr_core_test_all: /usr/lib/libboost_system-mt.so
-gnuradio-core/src/tests/gr_core_test_all: /usr/lib/libboost_thread-mt.so
+gnuradio-core/src/tests/gr_core_test_all: /usr/lib64/libcppunit.so
+gnuradio-core/src/tests/gr_core_test_all: /usr/lib64/libboost_date_time-mt.so
+gnuradio-core/src/tests/gr_core_test_all: /usr/lib64/libboost_program_options-mt.so
+gnuradio-core/src/tests/gr_core_test_all: /usr/lib64/libboost_filesystem-mt.so
+gnuradio-core/src/tests/gr_core_test_all: /usr/lib64/libboost_system-mt.so
+gnuradio-core/src/tests/gr_core_test_all: /usr/lib64/libboost_thread-mt.so
 gnuradio-core/src/tests/gr_core_test_all: gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build.make
 gnuradio-core/src/tests/gr_core_test_all: gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable gr_core_test_all"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gr_core_test_all.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gr_core_test_all.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/build: gnuradio-core/src/tests/gr_core_test_all
@@ -99,10 +102,10 @@ gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/requires: gnuradio-core/
 .PHONY : gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/requires
 
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/clean:
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/tests && $(CMAKE_COMMAND) -P CMakeFiles/gr_core_test_all.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests && $(CMAKE_COMMAND) -P CMakeFiles/gr_core_test_all.dir/cmake_clean.cmake
 .PHONY : gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/clean
 
 gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gnuradio-core/src/tests /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gnuradio-core/src/tests /home/katsikas/gnuradio/build/gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/gnuradio-core/src/tests /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gnuradio-core/src/tests/CMakeFiles/gr_core_test_all.dir/depend
 

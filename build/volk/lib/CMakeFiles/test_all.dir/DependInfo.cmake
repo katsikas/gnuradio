@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/katsikas/gnuradio/volk/lib/qa_utils.cc" "/home/katsikas/gnuradio/build/volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o"
-  "/home/katsikas/gnuradio/volk/lib/testqa.cc" "/home/katsikas/gnuradio/build/volk/lib/CMakeFiles/test_all.dir/testqa.cc.o"
+  "/home/katsikas/Desktop/gnuradio/volk/lib/qa_utils.cc" "/home/katsikas/Desktop/gnuradio/build/volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o"
+  "/home/katsikas/Desktop/gnuradio/volk/lib/testqa.cc" "/home/katsikas/Desktop/gnuradio/build/volk/lib/CMakeFiles/test_all.dir/testqa.cc.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,5 +18,5 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/katsikas/gnuradio/build/volk/lib/CMakeFiles/volk.dir/DependInfo.cmake"
+  "/home/katsikas/Desktop/gnuradio/build/volk/lib/CMakeFiles/volk.dir/DependInfo.cmake"
   )

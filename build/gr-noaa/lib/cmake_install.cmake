@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-noaa/lib
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-noaa/lib
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,33 +29,20 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_runtime")
-  FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-noaa-3.6.1git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-noaa-3.6.1git.so"
-      )
-    IF(EXISTS "${file}" AND
-       NOT IS_SYMLINK "${file}")
-      FILE(RPATH_CHECK
-           FILE "${file}"
-           RPATH "")
-    ENDIF()
-  ENDFOREACH()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/katsikas/gnuradio/build/gr-noaa/lib/libgnuradio-noaa-3.6.1git.so.0.0.0"
-    "/home/katsikas/gnuradio/build/gr-noaa/lib/libgnuradio-noaa-3.6.1git.so"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES
+    "/home/katsikas/Desktop/gnuradio/build/gr-noaa/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-noaa-3.6.1git.so.0.0.0"
+    "/home/katsikas/Desktop/gnuradio/build/gr-noaa/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-noaa-3.6.1git.so"
     )
   FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-noaa-3.6.1git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-noaa-3.6.1git.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libgnuradio-noaa-3.6.1git.so.0.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libgnuradio-noaa-3.6.1git.so"
       )
     IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
-      FILE(RPATH_REMOVE
-           FILE "${file}")
       IF(CMAKE_INSTALL_DO_STRIP)
         EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "${file}")
       ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -64,18 +51,18 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_ru
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_runtime")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_runtime")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gr-noaa/lib/libgnuradio-noaa.so"
-    "/home/katsikas/gnuradio/build/gr-noaa/lib/libgnuradio-noaa-3.6.1git.so.0"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gr-noaa/lib/libgnuradio-noaa.so"
+    "/home/katsikas/Desktop/gnuradio/build/gr-noaa/lib/libgnuradio-noaa-3.6.1git.so.0"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_runtime")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_devel")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-noaa/lib/noaa_api.h"
-    "/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h"
-    "/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_deframer.h"
-    "/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_pll_cf.h"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/lib/noaa_api.h"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/lib/noaa_hrpt_deframer.h"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/lib/noaa_hrpt_pll_cf.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_devel")
 

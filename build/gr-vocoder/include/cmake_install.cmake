@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-vocoder/include
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-vocoder/include
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,28 +29,28 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_devel")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_api.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_alaw_decode_bs.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_alaw_encode_sb.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_codec2_decode_ps.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_codec2_encode_sp.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_cvsd_decode_bs.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_cvsd_encode_sb.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_g721_decode_bs.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_g721_encode_sb.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_g723_24_decode_bs.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_g723_24_encode_sb.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_g723_40_decode_bs.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_g723_40_encode_sb.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_gsm_fr_decode_ps.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_gsm_fr_encode_sp.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_ulaw_decode_bs.h"
-    "/home/katsikas/gnuradio/gr-vocoder/include/vocoder_ulaw_encode_sb.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_api.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_alaw_decode_bs.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_alaw_encode_sb.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_codec2_decode_ps.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_codec2_encode_sp.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_cvsd_decode_bs.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_cvsd_encode_sb.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_g721_decode_bs.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_g721_encode_sb.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_g723_24_decode_bs.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_g723_24_encode_sb.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_g723_40_decode_bs.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_g723_40_encode_sb.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_gsm_fr_decode_ps.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_gsm_fr_encode_sp.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_ulaw_decode_bs.h"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/include/vocoder_ulaw_encode_sb.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_devel")
 

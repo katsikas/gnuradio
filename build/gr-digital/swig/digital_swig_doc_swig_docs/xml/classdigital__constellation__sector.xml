@@ -1,10 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__sector" kind="class" prot="public">
     <compoundname>digital_constellation_sector</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
-    <derivedcompoundref refid="classdigital__constellation__16qam" prot="public" virt="non-virtual">digital_constellation_16qam</derivedcompoundref>
-    <derivedcompoundref refid="classdigital__constellation__64qam" prot="public" virt="non-virtual">digital_constellation_64qam</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__psk" prot="public" virt="non-virtual">digital_constellation_psk</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__rect" prot="public" virt="non-virtual">digital_constellation_rect</derivedcompoundref>
     <includes refid="digital__constellation_8h" local="no">digital_constellation.h</includes>
@@ -20,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="200" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="200" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="200" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" bodystart="200" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -29,15 +27,13 @@
         <definition>std::vector&lt;unsigned int&gt; digital_constellation_sector::sector_values</definition>
         <argsstring></argsstring>
         <name>sector_values</name>
-        <reimplementedby refid="classdigital__constellation__16qam_1a9341326c1ad58a446d1279d92963fd97">sector_values</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1a4f2eb5c5a966dceaa011cdfc3bdf9ed4">sector_values</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="204" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="204" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="204" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" bodystart="204" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -72,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="190"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="190"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation__sector_1a97f516d26eb9790ca2789396d69a2a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>unsigned int</type>
@@ -90,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="192"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="192"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -101,8 +97,6 @@
         <name>get_sector</name>
         <reimplementedby refid="classdigital__constellation__rect_1a2bf57aba26b350f0bcd15f7719cda7b6">get_sector</reimplementedby>
         <reimplementedby refid="classdigital__constellation__psk_1a19bd73f96eeb9cee61f622f609aa5563">get_sector</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__16qam_1a5419edadf25d58dc08dd668ad75ed20d">get_sector</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1a75cc03a995b75facbfa0add106bc9ecd">get_sector</reimplementedby>
         <param>
           <type>const gr_complex *</type>
           <declname>sample</declname>
@@ -113,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="196"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="196"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation__sector_1a969b70c47e5e3935c9aadbbb93033525" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>unsigned int</type>
@@ -122,8 +116,6 @@
         <name>calc_sector_value</name>
         <reimplementedby refid="classdigital__constellation__rect_1a0627a4e936786b36ea360f9a472441d4">calc_sector_value</reimplementedby>
         <reimplementedby refid="classdigital__constellation__psk_1a2db822a2d239fdcebca485303d2da30b">calc_sector_value</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__16qam_1a1d0cb1226f3c2257099b6e302f09b8b6">calc_sector_value</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1ae753b87525a66ee2e02545844308f5f1">calc_sector_value</reimplementedby>
         <param>
           <type>unsigned int</type>
           <declname>sector</declname>
@@ -134,22 +126,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="197"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="197"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation__sector_1a94c6d4c79d0ccfcabbffcf460696792e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void digital_constellation_sector::find_sector_values</definition>
         <argsstring>()</argsstring>
         <name>find_sector_values</name>
-        <reimplementedby refid="classdigital__constellation__16qam_1a377f71d6c72047fc7adaa6671cf33a75">find_sector_values</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1af4c93b49470c1696f7f2ca5d0f23c478">find_sector_values</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="198"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="198"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -157,66 +147,54 @@
     <detaileddescription>
 <para><ref refid="classdigital__constellation__sector" kindref="compound">digital_constellation_sector</ref> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="387">
+      <node id="341">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="339" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="384">
+      <node id="340">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="388">
+      <node id="342">
         <label>digital_constellation_rect</label>
         <link refid="classdigital__constellation__rect"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="339" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="385">
-        <label>digital_constellation_16qam</label>
-        <link refid="classdigital__constellation__16qam"/>
-        <childnode refid="383" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="383">
+      <node id="339">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="384" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="386">
-        <label>digital_constellation_64qam</label>
-        <link refid="classdigital__constellation__64qam"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="340" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="392">
+      <node id="346">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="391">
+      <node id="345">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="390">
+      <node id="344">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="391" relation="usage">
+        <childnode refid="345" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="392" relation="usage">
+        <childnode refid="346" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="389">
+      <node id="343">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="390" relation="public-inheritance">
+        <childnode refid="344" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="183" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" bodystart="182" bodyend="206"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" line="183" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_constellation.h" bodystart="182" bodyend="206"/>
     <listofallmembers>
       <member refid="classdigital__constellation_1a03ec7ff36b47e7a08944dace5492406c" prot="public" virt="non-virtual"><scope>digital_constellation_sector</scope><name>apply_pre_diff_code</name></member>
       <member refid="classdigital__constellation_1add4790d1220a4497549f8490706f0444" prot="public" virt="non-virtual"><scope>digital_constellation_sector</scope><name>arity</name></member>

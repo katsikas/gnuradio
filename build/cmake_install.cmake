@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio
+# Install script for directory: /home/katsikas/Desktop/gnuradio
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,41 +29,41 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "docs")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gnuradio-3.6.1git" TYPE FILE FILES
-    "/home/katsikas/gnuradio/README"
-    "/home/katsikas/gnuradio/README.hacking"
+    "/home/katsikas/Desktop/gnuradio/README"
+    "/home/katsikas/Desktop/gnuradio/README.hacking"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "docs")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/volk/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/docs/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gruel/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/grc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fft/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-atsc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-dvbt/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-audio/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-comedi/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-noaa/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-pager/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-qtgui/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-trellis/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-uhd/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-shd/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-utils/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-video-sdl/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-vocoder/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-fcd/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-wavelet/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-wxgui/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/volk/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/docs/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gruel/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/grc/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-fft/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-atsc/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-dvbt/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-audio/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-comedi/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-noaa/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-pager/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-qtgui/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-trellis/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-uhd/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-shd/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-utils/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-video-sdl/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-vocoder/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-fcd/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-wavelet/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-wxgui/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -73,7 +73,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/katsikas/gnuradio/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/katsikas/Desktop/gnuradio/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/katsikas/gnuradio/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/katsikas/Desktop/gnuradio/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

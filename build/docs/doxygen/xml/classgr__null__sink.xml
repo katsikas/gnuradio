@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__null__sink" kind="class" prot="public">
     <compoundname>gr_null_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="gr__null__sink_8h" local="no">gr_null_sink.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__null__sink_1abe0edd898bbf1f4a661caefad9d56950" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_null_sink_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_null_sink_sptr</ref></type>
         <definition>GR_CORE_API gr_null_sink_sptr gr_make_null_sink</definition>
         <argsstring>(size_t sizeof_stream_item)</argsstring>
         <name>gr_make_null_sink</name>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="42"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="42"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="43"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="43"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -67,7 +67,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="49"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="49"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -75,104 +75,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4734">
+      <node id="11705">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4735" relation="public-inheritance">
+        <childnode refid="11706" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4731">
+      <node id="11702">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4732" relation="public-inheritance">
+        <childnode refid="11703" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4732">
+      <node id="11703">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4733" relation="public-inheritance">
+        <childnode refid="11704" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4730">
+      <node id="11701">
         <label>gr_null_sink</label>
         <link refid="classgr__null__sink"/>
-        <childnode refid="4731" relation="public-inheritance">
+        <childnode refid="11702" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4735">
+      <node id="11706">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4733">
+      <node id="11704">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4734" relation="public-inheritance">
+        <childnode refid="11705" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4740">
+      <node id="11711">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4741" relation="public-inheritance">
+        <childnode refid="11712" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4737">
+      <node id="11708">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4738" relation="public-inheritance">
+        <childnode refid="11709" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4738">
+      <node id="11709">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4739" relation="public-inheritance">
+        <childnode refid="11710" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4742">
+      <node id="11713">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4743" relation="usage">
+        <childnode refid="11714" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4745">
+      <node id="11716">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4736">
+      <node id="11707">
         <label>gr_null_sink</label>
         <link refid="classgr__null__sink"/>
-        <childnode refid="4737" relation="public-inheritance">
+        <childnode refid="11708" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4741">
+      <node id="11712">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4743">
+      <node id="11714">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4739">
+      <node id="11710">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4740" relation="public-inheritance">
+        <childnode refid="11711" relation="public-inheritance">
         </childnode>
-        <childnode refid="4742" relation="usage">
+        <childnode refid="11713" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4744" relation="usage">
+        <childnode refid="11715" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4744">
+      <node id="11715">
         <label>std::string</label>
-        <childnode refid="4745" relation="public-inheritance">
+        <childnode refid="11716" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="41" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" bodystart="40" bodyend="51"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="41" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" bodystart="40" bodyend="51"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_null_sink</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_null_sink</scope><name>add_item_tag</name></member>

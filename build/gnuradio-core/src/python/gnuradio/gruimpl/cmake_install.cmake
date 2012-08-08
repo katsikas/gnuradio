@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,55 +29,55 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/gruimpl" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/__init__.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/freqz.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/gnuplot_freqz.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/hexint.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/listmisc.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/mathmisc.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/lmx2306.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/msgq_runner.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/os_read_exactly.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/sdr_1000.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/seq_with_cursor.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/socket_stuff.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/daemon.py"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/gruimpl" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/__init__.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/freqz.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/gnuplot_freqz.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/hexint.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/listmisc.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/mathmisc.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/lmx2306.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/msgq_runner.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/os_read_exactly.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/sdr_1000.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/seq_with_cursor.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/socket_stuff.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gruimpl/daemon.py"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/gruimpl" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/__init__.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/freqz.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/gnuplot_freqz.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/hexint.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/listmisc.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/mathmisc.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/lmx2306.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/msgq_runner.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/os_read_exactly.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/sdr_1000.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/seq_with_cursor.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/socket_stuff.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/daemon.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/__init__.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/freqz.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/gnuplot_freqz.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/hexint.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/listmisc.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/mathmisc.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/lmx2306.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/msgq_runner.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/os_read_exactly.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/sdr_1000.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/seq_with_cursor.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/socket_stuff.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/daemon.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/gruimpl" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/__init__.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/freqz.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/gnuplot_freqz.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/hexint.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/listmisc.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/mathmisc.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/lmx2306.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/msgq_runner.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/os_read_exactly.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/sdr_1000.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/seq_with_cursor.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/socket_stuff.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/daemon.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/__init__.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/freqz.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/gnuplot_freqz.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/hexint.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/listmisc.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/mathmisc.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/lmx2306.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/msgq_runner.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/os_read_exactly.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/sdr_1000.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/seq_with_cursor.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/socket_stuff.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/daemon.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 

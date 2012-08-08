@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-wxgui/grc
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-wxgui/grc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,43 +29,43 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_text_box.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_scopesink2.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_chooser.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_slider.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_termsink.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_check_box.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_fftsink2.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_numbersink2.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/variable_static_text.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_constellationsink2.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_waterfallsink2.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/notebook.xml"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/wxgui_histosink2.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/wxgui_scopesink2.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/wxgui_fftsink2.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/notebook.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/wxgui_waterfallsink2.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/variable_slider.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/variable_chooser.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/wxgui_constellationsink2.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/variable_text_box.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/variable_static_text.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/variable_check_box.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/wxgui_histosink2.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/wxgui_numbersink2.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/wxgui_termsink.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/grc_gnuradio/wxgui" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-wxgui/grc/__init__.py"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/panel.py"
-    "/home/katsikas/gnuradio/gr-wxgui/grc/top_block_gui.py"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/grc_gnuradio/wxgui" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/__init__.py"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/panel.py"
+    "/home/katsikas/Desktop/gnuradio/gr-wxgui/grc/top_block_gui.py"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/grc_gnuradio/wxgui" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gr-wxgui/grc/__init__.pyc"
-    "/home/katsikas/gnuradio/build/gr-wxgui/grc/panel.pyc"
-    "/home/katsikas/gnuradio/build/gr-wxgui/grc/top_block_gui.pyc"
-    "/home/katsikas/gnuradio/build/gr-wxgui/grc/__init__.pyo"
-    "/home/katsikas/gnuradio/build/gr-wxgui/grc/panel.pyo"
-    "/home/katsikas/gnuradio/build/gr-wxgui/grc/top_block_gui.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/grc_gnuradio/wxgui" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gr-wxgui/grc/__init__.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-wxgui/grc/panel.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-wxgui/grc/top_block_gui.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-wxgui/grc/__init__.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gr-wxgui/grc/panel.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gr-wxgui/grc/top_block_gui.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "wxgui")
 

@@ -1,37 +1,96 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__fir__fcc__x86_8h" kind="file">
     <compoundname>gr_fir_fcc_x86.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes refid="gr__fir__fcc__simd_8h" local="no">gr_fir_fcc_simd.h</includes>
     <incdepgraph>
-      <node id="8131">
+      <node id="34516">
+        <label>gr_fir_fcc_x86.h</label>
+        <link refid="gr_fir_fcc_x86.h"/>
+        <childnode refid="34517" relation="include">
+        </childnode>
+        <childnode refid="34519" relation="include">
+        </childnode>
+      </node>
+      <node id="34524">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="34521">
+        <label>gr_fir_fcc.h</label>
+        <link refid="gr__fir__fcc_8h"/>
+        <childnode refid="34517" relation="include">
+        </childnode>
+        <childnode refid="34522" relation="include">
+        </childnode>
+        <childnode refid="34523" relation="include">
+        </childnode>
+        <childnode refid="34528" relation="include">
+        </childnode>
+      </node>
+      <node id="34526">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="34527" relation="include">
+        </childnode>
+      </node>
+      <node id="34518">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="8130">
+      <node id="34517">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="8131" relation="include">
+        <childnode refid="34518" relation="include">
         </childnode>
       </node>
-      <node id="8132">
+      <node id="34528">
+        <label>gr_reverse.h</label>
+        <link refid="gr__reverse_8h"/>
+        <childnode refid="34517" relation="include">
+        </childnode>
+        <childnode refid="34522" relation="include">
+        </childnode>
+        <childnode refid="34526" relation="include">
+        </childnode>
+      </node>
+      <node id="34523">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="34517" relation="include">
+        </childnode>
+        <childnode refid="34524" relation="include">
+        </childnode>
+        <childnode refid="34522" relation="include">
+        </childnode>
+        <childnode refid="34525" relation="include">
+        </childnode>
+        <childnode refid="34526" relation="include">
+        </childnode>
+      </node>
+      <node id="34525">
+        <label>stddef.h</label>
+      </node>
+      <node id="34520">
+        <label>gr_fir_fcc_generic.h</label>
+        <link refid="gr__fir__fcc__generic_8h"/>
+        <childnode refid="34517" relation="include">
+        </childnode>
+        <childnode refid="34521" relation="include">
+        </childnode>
+      </node>
+      <node id="34522">
+        <label>vector</label>
+      </node>
+      <node id="34527">
+        <label>complex</label>
+      </node>
+      <node id="34519">
         <label>gr_fir_fcc_simd.h</label>
         <link refid="gr__fir__fcc__simd_8h"/>
-        <childnode refid="8130" relation="include">
+        <childnode refid="34517" relation="include">
         </childnode>
-        <childnode refid="8133" relation="include">
-        </childnode>
-      </node>
-      <node id="8133">
-        <label>gr_fir_fcc_generic.h</label>
-      </node>
-      <node id="8129">
-        <label>gr_fir_fcc_x86.h</label>
-        <link refid="gr_fir_fcc_x86.h"/>
-        <childnode refid="8130" relation="include">
-        </childnode>
-        <childnode refid="8132" relation="include">
+        <childnode refid="34520" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -41,6 +100,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_fcc_x86.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/filter/gr_fir_fcc_x86.h"/>
   </compounddef>
 </doxygen>

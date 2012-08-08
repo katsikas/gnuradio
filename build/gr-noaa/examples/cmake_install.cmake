@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-noaa/examples
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-noaa/examples
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,16 +29,16 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/noaa" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-noaa/examples/hrpt_decode.grc"
-    "/home/katsikas/gnuradio/gr-noaa/examples/hrpt_demod.grc"
-    "/home/katsikas/gnuradio/gr-noaa/examples/file_rx_hrpt.grc"
-    "/home/katsikas/gnuradio/gr-noaa/examples/usrp_rx_hrpt.grc"
-    "/home/katsikas/gnuradio/gr-noaa/examples/usrp_rx_hrpt_nogui.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/examples/hrpt_decode.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/examples/hrpt_demod.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/examples/file_rx_hrpt.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/examples/usrp_rx_hrpt.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-noaa/examples/usrp_rx_hrpt_nogui.grc"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "noaa_python")
 

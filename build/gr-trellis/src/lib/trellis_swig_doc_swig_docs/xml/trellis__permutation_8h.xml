@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="trellis__permutation_8h" kind="file">
     <compoundname>trellis_permutation.h</compoundname>
     <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
@@ -13,7 +13,7 @@
         <label>gr_sync_block.h</label>
       </node>
       <node id="886">
-        <label>/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_permutation.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_permutation.h</label>
         <link refid="trellis_permutation.h"/>
         <childnode refid="887" relation="include">
         </childnode>
@@ -45,13 +45,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_permutation.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_permutation.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_permutation.h" line="32" bodyfile="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_permutation.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="trellis__permutation_8h_1aac7ebab7c5106caa60c9f8349a4a04aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" kindref="member">trellis_permutation_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT trellis_permutation_sptr trellis_make_permutation</definition>
+      <memberdef kind="function" id="trellis__permutation_8h_1aba04666dc84acb89e799c76f29c42bce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TRELLIS_API <ref refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" kindref="member">trellis_permutation_sptr</ref></type>
+        <definition>TRELLIS_API trellis_permutation_sptr trellis_make_permutation</definition>
         <argsstring>(int K, const std::vector&lt; int &gt; &amp;TABLE, int SYMS_PER_BLOCK, size_t BYTES_PER_SYMBOL)</argsstring>
         <name>trellis_make_permutation</name>
         <param>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_permutation.h" line="34"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_permutation.h" line="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -117,12 +117,12 @@
 <codeline lineno="31" refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtrellis__permutation" kindref="compound" tooltip="Permutation.">trellis_permutation</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;trellis_permutation&gt;<sp/><ref refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" kindref="member">trellis_permutation_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" kindref="member">trellis_permutation_sptr</ref><sp/><ref refid="trellis__permutation_8h_1aac7ebab7c5106caa60c9f8349a4a04aa" kindref="member">trellis_make_permutation</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtrellis__permutation_1a4aaa1ace95f4690e2516dcd67a1bc0db" kindref="member">K</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classtrellis__permutation_1aecb8cfadf007ac3d092408845d905275" kindref="member">TABLE</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtrellis__permutation_1a18e1f4d1a7be6a1ce54104f38a677d9b" kindref="member">SYMS_PER_BLOCK</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classtrellis__permutation_1afa846c881b2b27a1dc2529de39ce415b" kindref="member">BYTES_PER_SYMBOL</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" kindref="member">trellis_permutation_sptr</ref><sp/><ref refid="trellis__permutation_8h_1aba04666dc84acb89e799c76f29c42bce" kindref="member">trellis_make_permutation</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtrellis__permutation_1a4aaa1ace95f4690e2516dcd67a1bc0db" kindref="member">K</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classtrellis__permutation_1aecb8cfadf007ac3d092408845d905275" kindref="member">TABLE</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtrellis__permutation_1a18e1f4d1a7be6a1ce54104f38a677d9b" kindref="member">SYMS_PER_BLOCK</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classtrellis__permutation_1afa846c881b2b27a1dc2529de39ce415b" kindref="member">BYTES_PER_SYMBOL</ref>);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40" refid="classtrellis__permutation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="classtrellis__permutation" kindref="compound" tooltip="Permutation.">trellis_permutation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" kindref="member">trellis_permutation_sptr</ref><sp/><ref refid="trellis__permutation_8h_1aac7ebab7c5106caa60c9f8349a4a04aa" kindref="member">trellis_make_permutation</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>K,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;TABLE,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYMS_PER_BLOCK,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BYTES_PER_SYMBOL);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref><sp/><ref refid="trellis__permutation_8h_1ad2b44559e51426d25ef7094ecd8f9e21" kindref="member">trellis_permutation_sptr</ref><sp/><ref refid="trellis__permutation_8h_1aba04666dc84acb89e799c76f29c42bce" kindref="member">trellis_make_permutation</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>K,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;TABLE,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYMS_PER_BLOCK,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BYTES_PER_SYMBOL);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_K;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_TABLE;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_SYMS_PER_BLOCK;</highlight></codeline>
@@ -142,6 +142,6 @@
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_permutation.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-trellis/src/lib/trellis_permutation.h"/>
   </compounddef>
 </doxygen>

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-pager/grc
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-pager/grc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,14 +29,14 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "pager_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-pager/grc/pager_slicer_fb.xml"
-    "/home/katsikas/gnuradio/gr-pager/grc/pager_flex_sync.xml"
-    "/home/katsikas/gnuradio/gr-pager/grc/pager_flex_deinterleave.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-pager/grc/pager_slicer_fb.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-pager/grc/pager_flex_sync.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-pager/grc/pager_flex_deinterleave.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "pager_python")
 

@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__null__sink_8h" kind="file">
     <compoundname>gr_null_sink.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes local="no">gr_sync_block.h</includes>
     <includes local="no">stddef.h</includes>
     <incdepgraph>
-      <node id="597">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h</label>
-        <link refid="gr_null_sink.h"/>
-        <childnode refid="598" relation="include">
-        </childnode>
-        <childnode refid="600" relation="include">
-        </childnode>
-        <childnode refid="601" relation="include">
-        </childnode>
-      </node>
       <node id="599">
         <label>gruel/attributes.h</label>
       </node>
       <node id="600">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="601">
-        <label>stddef.h</label>
-      </node>
       <node id="598">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
         <childnode refid="599" relation="include">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>stddef.h</label>
+      </node>
+      <node id="597">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h</label>
+        <link refid="gr_null_sink.h"/>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -45,13 +45,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="31" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="31" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__null__sink_8h_1af2fd53dd99cd9ee800f75c2986786171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__null__sink_8h_1af66b81dbe0edc5ac4adfe2513cc28d8e" kindref="member">gr_null_sink_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_null_sink_sptr gr_make_null_sink</definition>
+      <memberdef kind="function" id="gr__null__sink_8h_1abe0edd898bbf1f4a661caefad9d56950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__null__sink_8h_1af66b81dbe0edc5ac4adfe2513cc28d8e" kindref="member">gr_null_sink_sptr</ref></type>
+        <definition>GR_CORE_API gr_null_sink_sptr gr_make_null_sink</definition>
         <argsstring>(size_t sizeof_stream_item)</argsstring>
         <name>gr_make_null_sink</name>
         <param>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="34"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h" line="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -105,11 +105,11 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_null_sink&gt;<sp/><ref refid="gr__null__sink_8h_1af66b81dbe0edc5ac4adfe2513cc28d8e" kindref="member">gr_null_sink_sptr</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__null__sink_8h_1af66b81dbe0edc5ac4adfe2513cc28d8e" kindref="member">gr_null_sink_sptr</ref></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><ref refid="gr__null__sink_8h_1af2fd53dd99cd9ee800f75c2986786171" kindref="member">gr_make_null_sink</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sizeof_stream_item);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="gr__null__sink_8h_1abe0edd898bbf1f4a661caefad9d56950" kindref="member">gr_make_null_sink</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sizeof_stream_item);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40" refid="classgr__null__sink" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__null__sink" kindref="compound" tooltip="Bit bucket.">gr_null_sink</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__null__sink_8h_1af66b81dbe0edc5ac4adfe2513cc28d8e" kindref="member">gr_null_sink_sptr</ref><sp/><ref refid="gr__null__sink_8h_1af2fd53dd99cd9ee800f75c2986786171" kindref="member">gr_make_null_sink</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sizeof_stream_item);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__null__sink_8h_1af66b81dbe0edc5ac4adfe2513cc28d8e" kindref="member">gr_null_sink_sptr</ref><sp/><ref refid="gr__null__sink_8h_1abe0edd898bbf1f4a661caefad9d56950" kindref="member">gr_make_null_sink</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sizeof_stream_item);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classgr__null__sink" kindref="compound" tooltip="Bit bucket.">gr_null_sink</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sizeof_stream_item);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
@@ -122,6 +122,6 @@
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_NULL_SINK_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_null_sink.h"/>
   </compounddef>
 </doxygen>

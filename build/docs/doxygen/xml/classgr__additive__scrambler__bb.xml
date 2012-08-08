@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__additive__scrambler__bb" kind="class" prot="public">
     <compoundname>gr_additive_scrambler_bb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="56" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="56" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="56" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__additive__scrambler__bb_1af67eca2bd25a3d72f3c5cfd6e0c07ce8" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="57" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="57" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="57" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__additive__scrambler__bb_1abf094226f50b4dd43ac5cc4ea71cb108" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -42,12 +42,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="58" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="58" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__additive__scrambler__bb_1a99cd8176e530a12e96ec21a985536d53" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_additive_scrambler_bb_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_additive_scrambler_bb_sptr</ref></type>
         <definition>GR_CORE_API gr_additive_scrambler_bb_sptr gr_make_additive_scrambler_bb</definition>
         <argsstring>(int mask, int seed, int len, int count)</argsstring>
         <name>gr_make_additive_scrambler_bb</name>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="54"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="54"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="60"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="60"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -132,7 +132,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="65"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="65"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -169,104 +169,104 @@
 </parameterlist>
 The scrambler works by XORing the incoming bit stream by the output of the LFSR. Optionally, after &apos;count&apos; bits have been processed, the shift register is reset to the seed value. This allows processing fixed length vectors of samples. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2182">
+      <node id="7364">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2183" relation="public-inheritance">
+        <childnode refid="7365" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2179">
+      <node id="7361">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2180" relation="public-inheritance">
+        <childnode refid="7362" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2180">
+      <node id="7362">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2181" relation="public-inheritance">
+        <childnode refid="7363" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2183">
+      <node id="7365">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2181">
+      <node id="7363">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2182" relation="public-inheritance">
+        <childnode refid="7364" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2178">
+      <node id="7360">
         <label>gr_additive_scrambler_bb</label>
         <link refid="classgr__additive__scrambler__bb"/>
-        <childnode refid="2179" relation="public-inheritance">
+        <childnode refid="7361" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2188">
+      <node id="7370">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2189" relation="public-inheritance">
+        <childnode refid="7371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2185">
+      <node id="7367">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2186" relation="public-inheritance">
+        <childnode refid="7368" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2186">
+      <node id="7368">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2187" relation="public-inheritance">
+        <childnode refid="7369" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2190">
+      <node id="7372">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2191" relation="usage">
+        <childnode refid="7373" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2193">
+      <node id="7375">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2189">
+      <node id="7371">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2191">
+      <node id="7373">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2187">
+      <node id="7369">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2188" relation="public-inheritance">
+        <childnode refid="7370" relation="public-inheritance">
         </childnode>
-        <childnode refid="2190" relation="usage">
+        <childnode refid="7372" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2192" relation="usage">
+        <childnode refid="7374" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2192">
+      <node id="7374">
         <label>std::string</label>
-        <childnode refid="2193" relation="public-inheritance">
+        <childnode refid="7375" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2184">
+      <node id="7366">
         <label>gr_additive_scrambler_bb</label>
         <link refid="classgr__additive__scrambler__bb"/>
-        <childnode refid="2185" relation="public-inheritance">
+        <childnode refid="7367" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="53" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="52" bodyend="66"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" line="53" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_additive_scrambler_bb.h" bodystart="52" bodyend="66"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_additive_scrambler_bb</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_additive_scrambler_bb</scope><name>add_item_tag</name></member>

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/grc/examples
+# Install script for directory: /home/katsikas/Desktop/gnuradio/grc/examples
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,19 +29,19 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "grc")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/grc/simple" TYPE FILE FILES "/home/katsikas/gnuradio/grc/examples/simple/variable_config.grc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/grc/simple" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/grc/examples/simple/variable_config.grc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "grc")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "grc")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/grc/xmlrpc" TYPE FILE FILES
-    "/home/katsikas/gnuradio/grc/examples/xmlrpc/readme.txt"
-    "/home/katsikas/gnuradio/grc/examples/xmlrpc/xmlrpc_client.grc"
-    "/home/katsikas/gnuradio/grc/examples/xmlrpc/xmlrpc_client_script.py"
-    "/home/katsikas/gnuradio/grc/examples/xmlrpc/xmlrpc_server.grc"
+    "/home/katsikas/Desktop/gnuradio/grc/examples/xmlrpc/readme.txt"
+    "/home/katsikas/Desktop/gnuradio/grc/examples/xmlrpc/xmlrpc_client.grc"
+    "/home/katsikas/Desktop/gnuradio/grc/examples/xmlrpc/xmlrpc_client_script.py"
+    "/home/katsikas/Desktop/gnuradio/grc/examples/xmlrpc/xmlrpc_server.grc"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "grc")
 

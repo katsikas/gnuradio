@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-digital
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-digital
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,22 +29,22 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_devel")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-digital/gnuradio-digital.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/pkgconfig" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/gnuradio-digital.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_devel")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/include/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/lib/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/doc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/swig/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/python/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/grc/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gr-digital/examples/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/include/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/lib/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/doc/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/swig/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/python/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/grc/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

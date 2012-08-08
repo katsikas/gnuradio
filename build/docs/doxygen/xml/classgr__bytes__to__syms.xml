@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__bytes__to__syms" kind="class" prot="public">
     <compoundname>gr_bytes_to_syms</compoundname>
     <basecompoundref refid="classgr__sync__interpolator" prot="public" virt="non-virtual">gr_sync_interpolator</basecompoundref>
     <includes refid="gr__bytes__to__syms_8h" local="no">gr_bytes_to_syms.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__bytes__to__syms_1a42904b924b80f8dcc9f4470a9f722a7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_bytes_to_syms_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_bytes_to_syms_sptr</ref></type>
         <definition>GR_CORE_API gr_bytes_to_syms_sptr gr_make_bytes_to_syms</definition>
         <argsstring>()</argsstring>
         <name>gr_make_bytes_to_syms</name>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="51"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="53"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -59,125 +59,125 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="58"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Convert stream of bytes to stream of +/- 1 symbols</para><para>input: stream of bytes; output: stream of float. </para>    </briefdescription>
     <detaileddescription>
-<para>This block is deprecated.</para><para>The combination of gr_packed_to_unpacked_bb followed by gr_chunks_to_symbols_bf or gr_chunks_to_symbols_bc handles the general case of mapping from a stream of bytes into arbitrary float or complex symbols.</para><para><simplesect kind="see"><para>gr_packed_to_unpacked_bb, gr_unpacked_to_packed_bb, </para><simplesectsep/><para>gr_chunks_to_symbols_bf, gr_chunks_to_symbols_bc. </para></simplesect>
+<para>This block is deprecated.</para><para>The combination of <ref refid="classgr__packed__to__unpacked__bb" kindref="compound">gr_packed_to_unpacked_bb</ref> followed by <ref refid="classgr__chunks__to__symbols__bf" kindref="compound">gr_chunks_to_symbols_bf</ref> or <ref refid="classgr__chunks__to__symbols__bc" kindref="compound">gr_chunks_to_symbols_bc</ref> handles the general case of mapping from a stream of bytes into arbitrary float or complex symbols.</para><para><simplesect kind="see"><para><ref refid="classgr__packed__to__unpacked__bb" kindref="compound">gr_packed_to_unpacked_bb</ref>, <ref refid="classgr__unpacked__to__packed__bb" kindref="compound">gr_unpacked_to_packed_bb</ref>, </para><simplesectsep/><para><ref refid="classgr__chunks__to__symbols__bf" kindref="compound">gr_chunks_to_symbols_bf</ref>, <ref refid="classgr__chunks__to__symbols__bc" kindref="compound">gr_chunks_to_symbols_bc</ref>. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2997">
+      <node id="8555">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2998" relation="public-inheritance">
+        <childnode refid="8556" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2994">
+      <node id="8552">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2995" relation="public-inheritance">
+        <childnode refid="8553" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2995">
+      <node id="8553">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2996" relation="public-inheritance">
+        <childnode refid="8554" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2993">
+      <node id="8551">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="2994" relation="public-inheritance">
+        <childnode refid="8552" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2992">
+      <node id="8550">
         <label>gr_bytes_to_syms</label>
         <link refid="classgr__bytes__to__syms"/>
-        <childnode refid="2993" relation="public-inheritance">
+        <childnode refid="8551" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2998">
+      <node id="8556">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2996">
+      <node id="8554">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2997" relation="public-inheritance">
+        <childnode refid="8555" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3004">
+      <node id="8562">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3005" relation="public-inheritance">
+        <childnode refid="8563" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3001">
+      <node id="8559">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3002" relation="public-inheritance">
+        <childnode refid="8560" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3002">
+      <node id="8560">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3003" relation="public-inheritance">
+        <childnode refid="8561" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3000">
+      <node id="8558">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="3001" relation="public-inheritance">
+        <childnode refid="8559" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3006">
+      <node id="8564">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3007" relation="usage">
+        <childnode refid="8565" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3009">
+      <node id="8567">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2999">
+      <node id="8557">
         <label>gr_bytes_to_syms</label>
         <link refid="classgr__bytes__to__syms"/>
-        <childnode refid="3000" relation="public-inheritance">
+        <childnode refid="8558" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3005">
+      <node id="8563">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3007">
+      <node id="8565">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3003">
+      <node id="8561">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3004" relation="public-inheritance">
+        <childnode refid="8562" relation="public-inheritance">
         </childnode>
-        <childnode refid="3006" relation="usage">
+        <childnode refid="8564" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3008" relation="usage">
+        <childnode refid="8566" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3008">
+      <node id="8566">
         <label>std::string</label>
-        <childnode refid="3009" relation="public-inheritance">
+        <childnode refid="8567" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="50" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" bodystart="49" bodyend="59"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" line="50" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_bytes_to_syms.h" bodystart="49" bodyend="59"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_bytes_to_syms</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_bytes_to_syms</scope><name>add_item_tag</name></member>

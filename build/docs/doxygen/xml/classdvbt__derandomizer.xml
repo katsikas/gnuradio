@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbt__derandomizer" kind="class" prot="public">
     <compoundname>dvbt_derandomizer</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="48" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="48" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="48" bodyfile="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdvbt__derandomizer_1af5f524e0791b9ecdbe89de2b5079eb46" prot="private" static="no" mutable="no">
         <type><ref refid="classdvbti__randomizer" kindref="compound">dvbti_randomizer</ref></type>
@@ -29,12 +29,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="49" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="49" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="49" bodyfile="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__derandomizer_1a8458e520bba80d8dc60b8952a428d5c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_derandomizer_sptr</ref></type>
+        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_derandomizer_sptr</ref></type>
         <definition>DVBT_API dvbt_derandomizer_sptr dvbt_make_derandomizer</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_derandomizer</name>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="46"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="46"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="51"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -87,10 +87,10 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="56"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__derandomizer_1a8255fd7c10a3ebba1fedbc5800f77cdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbt_derandomizer::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="58"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,104 +108,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1755">
+      <node id="6745">
         <label>dvbt_derandomizer</label>
         <link refid="classdvbt__derandomizer"/>
-        <childnode refid="1756" relation="public-inheritance">
+        <childnode refid="6746" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1759">
+      <node id="6749">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1760" relation="public-inheritance">
+        <childnode refid="6750" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1756">
+      <node id="6746">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1757" relation="public-inheritance">
+        <childnode refid="6747" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1757">
+      <node id="6747">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1758" relation="public-inheritance">
+        <childnode refid="6748" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1760">
+      <node id="6750">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1758">
+      <node id="6748">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1759" relation="public-inheritance">
+        <childnode refid="6749" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1761">
+      <node id="6751">
         <label>dvbt_derandomizer</label>
         <link refid="classdvbt__derandomizer"/>
-        <childnode refid="1762" relation="public-inheritance">
+        <childnode refid="6752" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1765">
+      <node id="6755">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1766" relation="public-inheritance">
+        <childnode refid="6756" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1762">
+      <node id="6752">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1763" relation="public-inheritance">
+        <childnode refid="6753" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1763">
+      <node id="6753">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1764" relation="public-inheritance">
+        <childnode refid="6754" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1767">
+      <node id="6757">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1768" relation="usage">
+        <childnode refid="6758" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1770">
+      <node id="6760">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1766">
+      <node id="6756">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1768">
+      <node id="6758">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1764">
+      <node id="6754">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1765" relation="public-inheritance">
+        <childnode refid="6755" relation="public-inheritance">
         </childnode>
-        <childnode refid="1767" relation="usage">
+        <childnode refid="6757" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1769" relation="usage">
+        <childnode refid="6759" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1769">
+      <node id="6759">
         <label>std::string</label>
-        <childnode refid="1770" relation="public-inheritance">
+        <childnode refid="6760" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="45" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="44" bodyend="59"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" line="45" bodyfile="/home/katsikas/Desktop/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h" bodystart="44" bodyend="59"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>dvbt_derandomizer</scope><name>add_item_tag</name></member>

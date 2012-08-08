@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gri__wavfile_8h" kind="file">
     <compoundname>gri_wavfile.h</compoundname>
     <includes local="no">gr_core_api.h</includes>
@@ -12,7 +12,7 @@
         <label>gr_core_api.h</label>
       </node>
       <node id="94">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h</label>
         <link refid="gri_wavfile.h"/>
         <childnode refid="95" relation="include">
         </childnode>
@@ -57,7 +57,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="55"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="55"/>
       </memberdef>
       <memberdef kind="function" id="gri__wavfile_8h_1a4049ce9c5f244b2af799636158c84191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>short int</type>
@@ -78,7 +78,7 @@
 <para>Takes care of endianness. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="64"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="gri__wavfile_8h_1a457a6b5e6e4934144dcc6e580f9addd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -107,7 +107,7 @@
 <para>Note: Some header values are kept blank because they&apos;re usually not known a-priori (file and chunk lengths). Use <ref refid="gri__wavfile_8h_1a61f4b77f1e9185a281ec473f8a078a26" kindref="member">gri_wavheader_complete()</ref> to fill these in. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="78"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="78"/>
       </memberdef>
       <memberdef kind="function" id="gri__wavfile_8h_1a5359e09acd4dd5538da95b74f3824845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -132,7 +132,7 @@
 <para>Takes care of endianness. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="86"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="86"/>
       </memberdef>
       <memberdef kind="function" id="gri__wavfile_8h_1a61f4b77f1e9185a281ec473f8a078a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -153,7 +153,7 @@
 <para>Note: The stream position is changed during this function. If anything needs to be written to the WAV file after calling this function (which shouldn&apos;t happen), you need to fseek() to the end of the file (or whereever).</para><para><computeroutput>fp</computeroutput> File pointer to an open WAV file with a blank header <computeroutput>byte_count</computeroutput> Length of all samples written to the file in bytes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="101"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h" line="101"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -215,6 +215,6 @@
 <codeline lineno="100"><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><ref refid="gri__wavfile_8h_1a61f4b77f1e9185a281ec473f8a078a26" kindref="member" tooltip="Complete a WAV header.">gri_wavheader_complete</ref>(FILE<sp/>*fp,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>byte_count);</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/io/gri_wavfile.h"/>
   </compounddef>
 </doxygen>

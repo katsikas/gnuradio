@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classfcd__source__c" kind="class" prot="public">
     <compoundname>fcd_source_c</compoundname>
     <basecompoundref refid="classgr__hier__block2" prot="public" virt="virtual">gr_hier_block2</basecompoundref>
@@ -7,7 +7,7 @@
     <includes refid="fcd__source__c_8h" local="no">fcd_source_c.h</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classfcd__source__c_1a7f510f30c9b411e01fbdcd0361f2dd5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_freq</definition>
         <argsstring>(int freq)=0</argsstring>
         <name>set_freq</name>
@@ -31,10 +31,10 @@ Set the frequency of the Funcube Dongle with 1 Hz resolution applying the freque
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="61"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="61"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c_1af4ffcd84e89d96fe260bd9ebfc31a929" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_freq</definition>
         <argsstring>(float freq)=0</argsstring>
         <name>set_freq</name>
@@ -58,10 +58,10 @@ This is a convenience function that uses float parameter in order to allow using
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="71"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="71"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c_1aebd898f45a5426d1c1a7cd32290b5296" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_freq_khz</definition>
         <argsstring>(int freq)=0</argsstring>
         <name>set_freq_khz</name>
@@ -85,10 +85,10 @@ Sets the frequency of the Funcube Dongle with 1 kHz resolution applying the freq
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="81"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="81"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c_1ab29ab82ad467cbc71576a0c0d32d4072" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_lna_gain</definition>
         <argsstring>(float gain)=0</argsstring>
         <name>set_lna_gain</name>
@@ -111,10 +111,10 @@ Sets the frequency of the Funcube Dongle with 1 kHz resolution applying the freq
 Set the LNA gain in the FCD. Valid range is -5 to 30. Although the LNA gain in the FCD takes enumerated values corresponding to 2.5 dB steps, you can can call this method with any float value and it will be rounded to the nearest valid value.</para><para>By default the LNA gain is set to 20 dB and this is a good value for most cases. In noisy areas you may try to reduce the gain. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="94"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="94"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c_1a41700a27baf866b228c3fdbbe593d93f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_mixer_gain</definition>
         <argsstring>(float gain)=0</argsstring>
         <name>set_mixer_gain</name>
@@ -137,10 +137,10 @@ Set the LNA gain in the FCD. Valid range is -5 to 30. Although the LNA gain in t
 Set the mixer gain in the FCD. Valid values are +4 and +12 dB.</para><para>By default the mixer gain is set to +12 dB and this is a good value for most cases. In noisy areas you may try to reduce the gain. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="104"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="104"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c_1a47423accab6fc7e1c577fdb899a5db71" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_freq_corr</definition>
         <argsstring>(int ppm)=0</argsstring>
         <name>set_freq_corr</name>
@@ -163,10 +163,10 @@ Set the mixer gain in the FCD. Valid values are +4 and +12 dB.</para><para>By de
 Version 1.1 FCDs (S/N 810 or later) need a correction of -12 ppm. Earlier FCDs need roughly -120 ppm (default for gr-fcd).</para><para>Ref: <ulink url="http://www.funcubedongle.com/?p=617">http://www.funcubedongle.com/?p=617</ulink> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="114"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="114"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c_1a041bde6c56d51ec37169f528e0b65b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_dc_corr</definition>
         <argsstring>(double _dci, double _dcq)=0</argsstring>
         <name>set_dc_corr</name>
@@ -200,10 +200,10 @@ Version 1.1 FCDs (S/N 810 or later) need a correction of -12 ppm. Earlier FCDs n
 Set DC offset correction in the device. Default is 0.0. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="122"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="122"/>
       </memberdef>
       <memberdef kind="function" id="classfcd__source__c_1a86e114a261d7a8ec7955a0795f55513c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void fcd_source_c::set_iq_corr</definition>
         <argsstring>(double _gain, double _phase)=0</argsstring>
         <name>set_iq_corr</name>
@@ -237,7 +237,7 @@ Set DC offset correction in the device. Default is 0.0. </para>        </detaile
 Set IQ phase and gain balance in the device. The default values are 0.0 for phase and 1.0 for gain. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="131"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="131"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -245,98 +245,98 @@ Set IQ phase and gain balance in the device. The default values are 0.0 for phas
     <detaileddescription>
 <para>This class provides a Funcube Dongle soure block by wrapping the USB audio interface and the USB HID control interface of the Funcube Dongle into one convenient source block.</para><para>The Funcube Dongle needs to have firmware 18f or later for the control interface to work properly. As of early 2011, FCDs still come with firmware 18b. You can use qthid 2.2 (not 3) to upgrade the firmware: <ulink url="http://qthid.sf.net">http://qthid.sf.net</ulink> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1956">
+      <node id="6946">
         <label>fcd_source_c_impl</label>
         <link refid="classfcd__source__c__impl"/>
-        <childnode refid="1951" relation="public-inheritance">
+        <childnode refid="6941" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1954">
+      <node id="6944">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1955" relation="public-inheritance">
+        <childnode refid="6945" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1952">
+      <node id="6942">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="1953" relation="public-inheritance">
+        <childnode refid="6943" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1955">
+      <node id="6945">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1951">
+      <node id="6941">
         <label>fcd_source_c</label>
         <link refid="classfcd__source__c"/>
-        <childnode refid="1952" relation="public-inheritance">
+        <childnode refid="6942" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1953">
+      <node id="6943">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1954" relation="public-inheritance">
+        <childnode refid="6944" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1960">
+      <node id="6950">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1961" relation="public-inheritance">
+        <childnode refid="6951" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1958">
+      <node id="6948">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="1959" relation="public-inheritance">
+        <childnode refid="6949" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1962">
+      <node id="6952">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1963" relation="usage">
+        <childnode refid="6953" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1965">
+      <node id="6955">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1961">
+      <node id="6951">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1957">
+      <node id="6947">
         <label>fcd_source_c</label>
         <link refid="classfcd__source__c"/>
-        <childnode refid="1958" relation="public-inheritance">
+        <childnode refid="6948" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1963">
+      <node id="6953">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1959">
+      <node id="6949">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1960" relation="public-inheritance">
+        <childnode refid="6950" relation="public-inheritance">
         </childnode>
-        <childnode refid="1962" relation="usage">
+        <childnode refid="6952" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1964" relation="usage">
+        <childnode refid="6954" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1964">
+      <node id="6954">
         <label>std::string</label>
-        <childnode refid="1965" relation="public-inheritance">
+        <childnode refid="6955" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="51" bodyfile="/home/katsikas/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" bodystart="50" bodyend="132"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" line="51" bodyfile="/home/katsikas/Desktop/gnuradio/gr-fcd/include/fcd/fcd_source_c.h" bodystart="50" bodyend="132"/>
     <listofallmembers>
       <member refid="classgr__basic__block_1a5c90b7c003ddd61f8df6bef2aceeab3da0abd1c82699481ffa502e5bb8d7bdaec" prot="protected" virt="non-virtual"><scope>fcd_source_c</scope><name>BLACK</name></member>
       <member refid="classgr__basic__block_1a50a714df9c3ce8c03854a09ac84e589b" prot="public" virt="virtual"><scope>fcd_source_c</scope><name>check_topology</name></member>

@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gr-fft/lib/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gr-fft/lib/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/rule
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/rule
 
 # Convenience name for target.
@@ -177,15 +180,20 @@ gnuradio-fft: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/rule
 
 # fast build rule for target.
 gnuradio-fft/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build
 .PHONY : gnuradio-fft/fast
+
+# Manual pre-install relink rule for target.
+gnuradio-fft/preinstall:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/preinstall
+.PHONY : gnuradio-fft/preinstall
 
 fft.o: fft.cc.o
 .PHONY : fft.o
 
 # target to build an object file
 fft.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o
 .PHONY : fft.cc.o
 
 fft.i: fft.cc.i
@@ -193,7 +201,7 @@ fft.i: fft.cc.i
 
 # target to preprocess a source file
 fft.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.i
 .PHONY : fft.cc.i
 
 fft.s: fft.cc.s
@@ -201,7 +209,7 @@ fft.s: fft.cc.s
 
 # target to generate assembly for a file
 fft.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.s
 .PHONY : fft.cc.s
 
 fft_vcc_fftw.o: fft_vcc_fftw.cc.o
@@ -209,7 +217,7 @@ fft_vcc_fftw.o: fft_vcc_fftw.cc.o
 
 # target to build an object file
 fft_vcc_fftw.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o
 .PHONY : fft_vcc_fftw.cc.o
 
 fft_vcc_fftw.i: fft_vcc_fftw.cc.i
@@ -217,7 +225,7 @@ fft_vcc_fftw.i: fft_vcc_fftw.cc.i
 
 # target to preprocess a source file
 fft_vcc_fftw.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.i
 .PHONY : fft_vcc_fftw.cc.i
 
 fft_vcc_fftw.s: fft_vcc_fftw.cc.s
@@ -225,7 +233,7 @@ fft_vcc_fftw.s: fft_vcc_fftw.cc.s
 
 # target to generate assembly for a file
 fft_vcc_fftw.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.s
 .PHONY : fft_vcc_fftw.cc.s
 
 fft_vfc_fftw.o: fft_vfc_fftw.cc.o
@@ -233,7 +241,7 @@ fft_vfc_fftw.o: fft_vfc_fftw.cc.o
 
 # target to build an object file
 fft_vfc_fftw.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o
 .PHONY : fft_vfc_fftw.cc.o
 
 fft_vfc_fftw.i: fft_vfc_fftw.cc.i
@@ -241,7 +249,7 @@ fft_vfc_fftw.i: fft_vfc_fftw.cc.i
 
 # target to preprocess a source file
 fft_vfc_fftw.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.i
 .PHONY : fft_vfc_fftw.cc.i
 
 fft_vfc_fftw.s: fft_vfc_fftw.cc.s
@@ -249,7 +257,7 @@ fft_vfc_fftw.s: fft_vfc_fftw.cc.s
 
 # target to generate assembly for a file
 fft_vfc_fftw.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.s
 .PHONY : fft_vfc_fftw.cc.s
 
 goertzel.o: goertzel.cc.o
@@ -257,7 +265,7 @@ goertzel.o: goertzel.cc.o
 
 # target to build an object file
 goertzel.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o
 .PHONY : goertzel.cc.o
 
 goertzel.i: goertzel.cc.i
@@ -265,7 +273,7 @@ goertzel.i: goertzel.cc.i
 
 # target to preprocess a source file
 goertzel.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.i
 .PHONY : goertzel.cc.i
 
 goertzel.s: goertzel.cc.s
@@ -273,7 +281,7 @@ goertzel.s: goertzel.cc.s
 
 # target to generate assembly for a file
 goertzel.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.s
 .PHONY : goertzel.cc.s
 
 goertzel_fc_impl.o: goertzel_fc_impl.cc.o
@@ -281,7 +289,7 @@ goertzel_fc_impl.o: goertzel_fc_impl.cc.o
 
 # target to build an object file
 goertzel_fc_impl.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o
 .PHONY : goertzel_fc_impl.cc.o
 
 goertzel_fc_impl.i: goertzel_fc_impl.cc.i
@@ -289,7 +297,7 @@ goertzel_fc_impl.i: goertzel_fc_impl.cc.i
 
 # target to preprocess a source file
 goertzel_fc_impl.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.i
 .PHONY : goertzel_fc_impl.cc.i
 
 goertzel_fc_impl.s: goertzel_fc_impl.cc.s
@@ -297,7 +305,7 @@ goertzel_fc_impl.s: goertzel_fc_impl.cc.s
 
 # target to generate assembly for a file
 goertzel_fc_impl.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.s
 .PHONY : goertzel_fc_impl.cc.s
 
 # Help Target
@@ -342,6 +350,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,47 +29,47 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/__init__.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/eng_notation.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/eng_option.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr_unittest.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr_xmlrunner.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/optfir.py"
-    "/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/window.py"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/__init__.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/eng_notation.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/eng_option.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gr_unittest.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/gr_xmlrunner.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/optfir.py"
+    "/home/katsikas/Desktop/gnuradio/gnuradio-core/src/python/gnuradio/window.py"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/__init__.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_notation.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_option.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_unittest.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_xmlrunner.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/optfir.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/window.pyc"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/__init__.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_notation.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_option.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_unittest.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_xmlrunner.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/optfir.pyo"
-    "/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/window.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/__init__.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_notation.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_option.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_unittest.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_xmlrunner.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/optfir.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/window.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/__init__.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_notation.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/eng_option.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_unittest.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr_xmlrunner.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/optfir.pyo"
+    "/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/window.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "core_python")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gru/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/blks2/cmake_install.cmake")
-  INCLUDE("/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/blks2impl/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gr/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gru/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/gruimpl/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/blks2/cmake_install.cmake")
+  INCLUDE("/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/python/gnuradio/blks2impl/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

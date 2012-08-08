@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-trellis/grc
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-trellis/grc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,24 +29,24 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_encoder_xx.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_siso_combined_f.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_viterbi_x.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_metrics_x.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_siso_f.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_permutation.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_viterbi_combined_xx.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_sccc_encoder_xx.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_sccc_decoder_x.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_sccc_decoder_combined_xx.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_pccc_encoder_xx.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_pccc_decoder_x.xml"
-    "/home/katsikas/gnuradio/gr-trellis/grc/trellis_pccc_decoder_combined_xx.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_encoder_xx.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_siso_combined_f.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_viterbi_x.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_metrics_x.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_siso_f.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_permutation.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_viterbi_combined_xx.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_sccc_encoder_xx.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_sccc_decoder_x.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_sccc_decoder_combined_xx.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_pccc_encoder_xx.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_pccc_decoder_x.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/grc/trellis_pccc_decoder_combined_xx.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_python")
 

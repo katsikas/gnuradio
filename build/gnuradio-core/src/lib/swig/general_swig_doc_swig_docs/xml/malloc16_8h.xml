@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="malloc16_8h" kind="file">
     <compoundname>malloc16.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -11,25 +11,25 @@
       <node id="1031">
         <label>stdlib.h</label>
       </node>
-      <node id="1029">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="1030" relation="include">
-        </childnode>
-      </node>
       <node id="1028">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/malloc16.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/malloc16.h</label>
         <link refid="malloc16.h"/>
         <childnode refid="1029" relation="include">
         </childnode>
         <childnode refid="1031" relation="include">
         </childnode>
       </node>
+      <node id="1029">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <memberdef kind="function" id="malloc16_8h_1ab20c132eaa4890006cc894d3b729f11a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT void *</type>
-        <definition>__GR_ATTR_IMPORT void* malloc16Align</definition>
+      <memberdef kind="function" id="malloc16_8h_1a9c8c8ca0a2913901e737a20447d1fefc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API void *</type>
+        <definition>GR_CORE_API void* malloc16Align</definition>
         <argsstring>(int size)</argsstring>
         <name>malloc16Align</name>
         <param>
@@ -42,11 +42,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/malloc16.h" line="31"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/malloc16.h" line="31"/>
       </memberdef>
-      <memberdef kind="function" id="malloc16_8h_1a68a50f8d93168c6a36cc83d31e161227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT void *</type>
-        <definition>__GR_ATTR_IMPORT void* calloc16Align</definition>
+      <memberdef kind="function" id="malloc16_8h_1ae431f7f2c5e3b2904bf24221f9c022a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API void *</type>
+        <definition>GR_CORE_API void* calloc16Align</definition>
         <argsstring>(size_t nmemb, size_t size)</argsstring>
         <name>calloc16Align</name>
         <param>
@@ -63,11 +63,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/malloc16.h" line="32"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/malloc16.h" line="32"/>
       </memberdef>
-      <memberdef kind="function" id="malloc16_8h_1a6f8935e6b7f2bde840d4876359d9af8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT void</type>
-        <definition>__GR_ATTR_IMPORT void free16Align</definition>
+      <memberdef kind="function" id="malloc16_8h_1a1e44c3a4043252700faf168254c62cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API void</type>
+        <definition>GR_CORE_API void free16Align</definition>
         <argsstring>(void *p)</argsstring>
         <name>free16Align</name>
         <param>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/malloc16.h" line="33"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/malloc16.h" line="33"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -118,14 +118,14 @@
 <codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="malloc16_8h_1ab20c132eaa4890006cc894d3b729f11a" kindref="member">malloc16Align</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="malloc16_8h_1a68a50f8d93168c6a36cc83d31e161227" kindref="member">calloc16Align</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nmemb,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malloc16_8h_1a6f8935e6b7f2bde840d4876359d9af8b" kindref="member">free16Align</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="malloc16_8h_1a9c8c8ca0a2913901e737a20447d1fefc" kindref="member">malloc16Align</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="malloc16_8h_1ae431f7f2c5e3b2904bf24221f9c022a6" kindref="member">calloc16Align</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nmemb,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malloc16_8h_1a1e44c3a4043252700faf168254c62cdb" kindref="member">free16Align</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
 <codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/malloc16.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/malloc16.h"/>
   </compounddef>
 </doxygen>

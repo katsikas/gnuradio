@@ -1,7 +1,47 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__noise__type_8h" kind="file">
     <compoundname>gr_noise_type.h</compoundname>
+    <includedby refid="gr__noise__source__c_8h" local="no">gr_noise_source_c.h</includedby>
+    <includedby refid="gr__noise__source__f_8h" local="no">gr_noise_source_f.h</includedby>
+    <includedby refid="gr__noise__source__i_8h" local="no">gr_noise_source_i.h</includedby>
+    <includedby refid="gr__noise__source__s_8h" local="no">gr_noise_source_s.h</includedby>
+    <invincdepgraph>
+      <node id="38094">
+        <label>gr_noise_source_c.h</label>
+        <link refid="gr__noise__source__c_8h"/>
+        <childnode refid="38095" relation="include">
+        </childnode>
+      </node>
+      <node id="38098">
+        <label>gr_noise_source_s.h</label>
+        <link refid="gr__noise__source__s_8h"/>
+      </node>
+      <node id="38095">
+        <label>gr_channel_model.h</label>
+        <link refid="gr__channel__model_8h"/>
+      </node>
+      <node id="38097">
+        <label>gr_noise_source_i.h</label>
+        <link refid="gr__noise__source__i_8h"/>
+      </node>
+      <node id="38093">
+        <label>gr_noise_type.h</label>
+        <link refid="gr_noise_type.h"/>
+        <childnode refid="38094" relation="include">
+        </childnode>
+        <childnode refid="38096" relation="include">
+        </childnode>
+        <childnode refid="38097" relation="include">
+        </childnode>
+        <childnode refid="38098" relation="include">
+        </childnode>
+      </node>
+      <node id="38096">
+        <label>gr_noise_source_f.h</label>
+        <link refid="gr__noise__source__f_8h"/>
+      </node>
+    </invincdepgraph>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="gr__noise__type_8h_1a12ee6e1f6ac7ef3b10353cb76c0a8728" prot="public" static="no">
         <name>gr_noise_type_t</name>
@@ -40,13 +80,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen/gr_noise_type.h" line="26" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen/gr_noise_type.h" bodystart="26" bodyend="28"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/gengen/gr_noise_type.h" line="26" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/gengen/gr_noise_type.h" bodystart="26" bodyend="28"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen/gr_noise_type.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/gengen/gr_noise_type.h"/>
   </compounddef>
 </doxygen>

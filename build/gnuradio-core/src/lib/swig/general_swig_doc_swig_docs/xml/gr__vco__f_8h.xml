@@ -1,17 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__vco__f_8h" kind="file">
     <compoundname>gr_vco_f.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includes local="no">gr_sync_block.h</includes>
     <includes refid="gr__fxpt__vco_8h" local="no">gr_fxpt_vco.h</includes>
     <incdepgraph>
-      <node id="896">
-        <label>gruel/attributes.h</label>
-      </node>
-      <node id="897">
-        <label>gr_sync_block.h</label>
-      </node>
       <node id="898">
         <label>gr_fxpt_vco.h</label>
         <link refid="gr__fxpt__vco_8h"/>
@@ -22,12 +16,26 @@
         <childnode refid="901" relation="include">
         </childnode>
       </node>
-      <node id="899">
-        <label>gr_fxpt.h</label>
-        <link refid="gr__fxpt_8h"/>
+      <node id="896">
+        <label>gruel/attributes.h</label>
+      </node>
+      <node id="897">
+        <label>gr_sync_block.h</label>
+      </node>
+      <node id="894">
+        <label>/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h</label>
+        <link refid="gr_vco_f.h"/>
         <childnode refid="895" relation="include">
         </childnode>
-        <childnode refid="900" relation="include">
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+      </node>
+      <node id="895">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="896" relation="include">
         </childnode>
       </node>
       <node id="901">
@@ -36,20 +44,12 @@
       <node id="900">
         <label>gr_types.h</label>
       </node>
-      <node id="895">
-        <label>gr_core_api.h</label>
-        <link refid="gr__core__api_8h"/>
-        <childnode refid="896" relation="include">
-        </childnode>
-      </node>
-      <node id="894">
-        <label>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h</label>
-        <link refid="gr_vco_f.h"/>
+      <node id="899">
+        <label>gr_fxpt.h</label>
+        <link refid="gr__fxpt_8h"/>
         <childnode refid="895" relation="include">
         </childnode>
-        <childnode refid="897" relation="include">
-        </childnode>
-        <childnode refid="898" relation="include">
+        <childnode refid="900" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -66,13 +66,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h" line="38" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h" bodystart="37" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h" line="38" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__vco__f_8h_1a734d28b93c65263d899f27fe856febb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kindref="member">gr_vco_f_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_vco_f_sptr gr_make_vco_f</definition>
+      <memberdef kind="function" id="gr__vco__f_8h_1a2ce97743149b8f3852a634b68fbb382f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kindref="member">gr_vco_f_sptr</ref></type>
+        <definition>GR_CORE_API gr_vco_f_sptr gr_make_vco_f</definition>
         <argsstring>(double sampling_rate, double sensitivity, double amplitude)</argsstring>
         <name>gr_make_vco_f</name>
         <param>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h" line="41"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h" line="41"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -133,11 +133,11 @@
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_vco_f&gt;<sp/><ref refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kindref="member">gr_vco_f_sptr</ref>;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kindref="member">gr_vco_f_sptr</ref><sp/><ref refid="gr__vco__f_8h_1a734d28b93c65263d899f27fe856febb6" kindref="member">gr_make_vco_f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sampling_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sensitivity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amplitude);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kindref="member">gr_vco_f_sptr</ref><sp/><ref refid="gr__vco__f_8h_1a2ce97743149b8f3852a634b68fbb382f" kindref="member">gr_make_vco_f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sampling_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sensitivity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amplitude);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49" refid="classgr__vco__f" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__vco__f" kindref="compound" tooltip="VCO - Voltage controlled oscillatorinput: float stream of control voltages; output: float oscillator ...">gr_vco_f</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kindref="member">gr_vco_f_sptr</ref><sp/><ref refid="gr__vco__f_8h_1a734d28b93c65263d899f27fe856febb6" kindref="member">gr_make_vco_f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sampling_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sensitivity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amplitude);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kindref="member">gr_vco_f_sptr</ref><sp/><ref refid="gr__vco__f_8h_1a2ce97743149b8f3852a634b68fbb382f" kindref="member">gr_make_vco_f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sampling_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sensitivity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amplitude);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="classgr__vco__f" kindref="compound" tooltip="VCO - Voltage controlled oscillatorinput: float stream of control voltages; output: float oscillator ...">gr_vco_f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sampling_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sensitivity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amplitude);</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
@@ -156,6 +156,6 @@
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_VCO_F_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_vco_f.h"/>
   </compounddef>
 </doxygen>

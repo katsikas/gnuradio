@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-vocoder/grc
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-vocoder/grc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,30 +29,30 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_alaw_decode_bs.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_alaw_encode_sb.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_block_tree.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_codec2_decode_ps.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_codec2_encode_sp.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_cvsd_decode_bs.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_cvsd_decode.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_cvsd_encode_sb.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_cvsd_encode.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_g721_decode_bs.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_g721_encode_sb.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_g723_24_decode_bs.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_g723_24_encode_sb.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_g723_40_decode_bs.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_g723_40_encode_sb.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_gsm_fr_decode_ps.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_gsm_fr_encode_sp.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_ulaw_decode_bs.xml"
-    "/home/katsikas/gnuradio/gr-vocoder/grc/vocoder_ulaw_encode_sb.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_alaw_decode_bs.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_alaw_encode_sb.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_block_tree.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_codec2_decode_ps.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_codec2_encode_sp.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_cvsd_decode_bs.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_cvsd_decode.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_cvsd_encode_sb.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_cvsd_encode.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_g721_decode_bs.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_g721_encode_sb.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_g723_24_decode_bs.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_g723_24_encode_sb.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_g723_40_decode_bs.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_g723_40_encode_sb.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_gsm_fr_decode_ps.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_gsm_fr_encode_sp.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_ulaw_decode_bs.xml"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/grc/vocoder_ulaw_encode_sb.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
 

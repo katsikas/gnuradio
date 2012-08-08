@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsc__rs__decoder" kind="class" prot="public">
     <compoundname>atsc_rs_decoder</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -16,12 +16,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" bodystart="44" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="44" bodyfile="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__rs__decoder_1a536f9fa70d909b02ba0ea2b9e76516c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_rs_decoder_sptr</ref></type>
+        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_rs_decoder_sptr</ref></type>
         <definition>ATSC_API atsc_rs_decoder_sptr atsc_make_rs_decoder</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_rs_decoder</name>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="42"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="42"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="46"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="46"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -74,10 +74,10 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__rs__decoder_1a71be6629083d9e66091f51a4e8cac98c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_rs_decoder::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="53" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" bodystart="53" bodyend="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="53" bodyfile="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" bodystart="53" bodyend="53"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -95,104 +95,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="244">
+      <node id="5524">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="245" relation="public-inheritance">
+        <childnode refid="5525" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="241">
+      <node id="5521">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="242" relation="public-inheritance">
+        <childnode refid="5522" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="242">
+      <node id="5522">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="243" relation="public-inheritance">
+        <childnode refid="5523" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="245">
+      <node id="5525">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="240">
+      <node id="5520">
         <label>atsc_rs_decoder</label>
         <link refid="classatsc__rs__decoder"/>
-        <childnode refid="241" relation="public-inheritance">
+        <childnode refid="5521" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="243">
+      <node id="5523">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="244" relation="public-inheritance">
+        <childnode refid="5524" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="250">
+      <node id="5530">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="251" relation="public-inheritance">
+        <childnode refid="5531" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="247">
+      <node id="5527">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="248" relation="public-inheritance">
+        <childnode refid="5528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="248">
+      <node id="5528">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="249" relation="public-inheritance">
+        <childnode refid="5529" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="252">
+      <node id="5532">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="253" relation="usage">
+        <childnode refid="5533" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="255">
+      <node id="5535">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="251">
+      <node id="5531">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="253">
+      <node id="5533">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="246">
+      <node id="5526">
         <label>atsc_rs_decoder</label>
         <link refid="classatsc__rs__decoder"/>
-        <childnode refid="247" relation="public-inheritance">
+        <childnode refid="5527" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="249">
+      <node id="5529">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="250" relation="public-inheritance">
+        <childnode refid="5530" relation="public-inheritance">
         </childnode>
-        <childnode refid="252" relation="usage">
+        <childnode refid="5532" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="254" relation="usage">
+        <childnode refid="5534" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="254">
+      <node id="5534">
         <label>std::string</label>
-        <childnode refid="255" relation="public-inheritance">
+        <childnode refid="5535" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" bodystart="40" bodyend="54"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" line="41" bodyfile="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_rs_decoder.h" bodystart="40" bodyend="54"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>atsc_rs_decoder</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>atsc_rs_decoder</scope><name>add_item_tag</name></member>

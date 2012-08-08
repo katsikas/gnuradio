@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gruel/src/include/gruel
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gruel/src/include/gruel
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,27 +29,27 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_devel")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gruel" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/api.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/attributes.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/high_res_timer.h"
-    "/home/katsikas/gnuradio/build/gruel/src/include/gruel/inet.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/msg_accepter.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/msg_passing.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/pmt.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/pmt_pool.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/pmt_sugar.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/realtime.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/sys_pri.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/thread_body_wrapper.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/thread_group.h"
-    "/home/katsikas/gnuradio/gruel/src/include/gruel/thread.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/api.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/attributes.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/high_res_timer.h"
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/include/gruel/inet.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_accepter.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_accepter_msgq.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_queue.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/msg_passing.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/pmt.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/pmt_pool.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/pmt_sugar.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/realtime.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/sys_pri.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/thread_body_wrapper.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/thread_group.h"
+    "/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/thread.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_devel")
 

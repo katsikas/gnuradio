@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsc__derandomizer" kind="class" prot="public">
     <compoundname>atsc_derandomizer</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -16,12 +16,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" bodystart="44" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="44" bodyfile="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__derandomizer_1a79941327ffe2a11e08cdf882995b10fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_derandomizer_sptr</ref></type>
+        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_derandomizer_sptr</ref></type>
         <definition>ATSC_API atsc_derandomizer_sptr atsc_make_derandomizer</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_derandomizer</name>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="42"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="42"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="46"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="46"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -74,10 +74,10 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__derandomizer_1a4a5c074ef124eecec3e9a5fbf92cff34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_derandomizer::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="53"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="53"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -95,104 +95,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="64">
+      <node id="5344">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="5345" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="61">
+      <node id="5341">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="62" relation="public-inheritance">
+        <childnode refid="5342" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="62">
+      <node id="5342">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="63" relation="public-inheritance">
+        <childnode refid="5343" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="65">
+      <node id="5345">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="63">
+      <node id="5343">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="64" relation="public-inheritance">
+        <childnode refid="5344" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="5340">
         <label>atsc_derandomizer</label>
         <link refid="classatsc__derandomizer"/>
-        <childnode refid="61" relation="public-inheritance">
+        <childnode refid="5341" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="70">
+      <node id="5350">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="71" relation="public-inheritance">
+        <childnode refid="5351" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="67">
+      <node id="5347">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="68" relation="public-inheritance">
+        <childnode refid="5348" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="68">
+      <node id="5348">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="69" relation="public-inheritance">
+        <childnode refid="5349" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="72">
+      <node id="5352">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="73" relation="usage">
+        <childnode refid="5353" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="75">
+      <node id="5355">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="71">
+      <node id="5351">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="73">
+      <node id="5353">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="69">
+      <node id="5349">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="70" relation="public-inheritance">
+        <childnode refid="5350" relation="public-inheritance">
         </childnode>
-        <childnode refid="72" relation="usage">
+        <childnode refid="5352" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="74" relation="usage">
+        <childnode refid="5354" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="66">
+      <node id="5346">
         <label>atsc_derandomizer</label>
         <link refid="classatsc__derandomizer"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="5347" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="74">
+      <node id="5354">
         <label>std::string</label>
-        <childnode refid="75" relation="public-inheritance">
+        <childnode refid="5355" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" bodystart="40" bodyend="54"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" line="41" bodyfile="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_derandomizer.h" bodystart="40" bodyend="54"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>atsc_derandomizer</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>atsc_derandomizer</scope><name>add_item_tag</name></member>

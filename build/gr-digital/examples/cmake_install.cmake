@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-digital/examples
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-digital/examples
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,117 +29,117 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "example_costas.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/example_costas.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "example_costas.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/example_costas.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "example_fll.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/example_fll.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "example_fll.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/example_fll.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "example_timing.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/example_timing.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "example_timing.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/example_timing.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "run_length.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/run_length.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "run_length.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/run_length.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "gen_whitener.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/gen_whitener.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "gen_whitener.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/gen_whitener.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "snr_estimators.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/snr_estimators.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital" TYPE PROGRAM RENAME "snr_estimators.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/snr_estimators.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "transmit_path.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/transmit_path.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "transmit_path.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/transmit_path.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "receive_path.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/receive_path.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "receive_path.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/receive_path.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "uhd_interface.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/uhd_interface.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "uhd_interface.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/uhd_interface.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "benchmark_tx.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/benchmark_tx.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "benchmark_tx.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/benchmark_tx.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "benchmark_rx.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/benchmark_rx.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "benchmark_rx.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/benchmark_rx.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "tx_voice.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/tx_voice.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "tx_voice.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/tx_voice.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "rx_voice.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/rx_voice.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "rx_voice.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/rx_voice.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "digital_bert_rx.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/digital_bert_rx.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "digital_bert_rx.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/digital_bert_rx.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "digital_bert_tx.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/digital_bert_tx.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "digital_bert_tx.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/digital_bert_tx.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "tunnel.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/narrowband/tunnel.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/narrowband" TYPE PROGRAM RENAME "tunnel.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/narrowband/tunnel.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "benchmark_add_channel.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_add_channel.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "benchmark_add_channel.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/benchmark_add_channel.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "benchmark_rx.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_rx.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "benchmark_rx.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/benchmark_rx.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "benchmark_tx.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/benchmark_tx.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "benchmark_tx.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/benchmark_tx.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "gr_plot_ofdm.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/gr_plot_ofdm.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "gr_plot_ofdm.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/gr_plot_ofdm.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "ofdm_mod_demod_test.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/ofdm_mod_demod_test.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "ofdm_mod_demod_test.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/ofdm_mod_demod_test.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "receive_path.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/receive_path.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "receive_path.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/receive_path.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "transmit_path.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/transmit_path.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "transmit_path.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/transmit_path.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "tunnel.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/tunnel.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "tunnel.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/tunnel.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "uhd_interface.py" FILES "/home/katsikas/gnuradio/build/gr-digital/examples/ofdm/uhd_interface.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/ofdm" TYPE PROGRAM RENAME "uhd_interface.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-digital/examples/ofdm/uhd_interface.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/digital/demod" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-digital/examples/demod/digital_freq_lock.grc"
-    "/home/katsikas/gnuradio/gr-digital/examples/demod/mpsk_demod.grc"
-    "/home/katsikas/gnuradio/gr-digital/examples/demod/pam_sync.grc"
-    "/home/katsikas/gnuradio/gr-digital/examples/demod/pam_timing.grc"
-    "/home/katsikas/gnuradio/gr-digital/examples/demod/ber_simulation.grc"
-    "/home/katsikas/gnuradio/gr-digital/examples/demod/dpsk_loopback.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-digital/examples/demod/digital_freq_lock.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-digital/examples/demod/mpsk_demod.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-digital/examples/demod/pam_sync.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-digital/examples/demod/pam_timing.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-digital/examples/demod/ber_simulation.grc"
+    "/home/katsikas/Desktop/gnuradio/gr-digital/examples/demod/dpsk_loopback.grc"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_python")
 

@@ -8,32 +8,6 @@
 
 
 
-%feature("docstring") digital_additive_scrambler_bb "Scramble an input stream using an LFSR. This block works on the LSB only of the input data stream, i.e., on an \"unpacked binary\" stream, and produces the same format on its output.
-
-
-The scrambler works by XORing the incoming bit stream by the output of the LFSR. Optionally, after 'count' bits have been processed, the shift register is reset to the seed value. This allows processing fixed length vectors of samples.
-
-Args:
-    mask : Polynomial mask for LFSR
-    seed : Initial shift register contents
-    len : Shift register length
-    count : Number of bits after which shift register is reset, 0=never"
-
-
-
-
-
-%feature("docstring") digital_make_additive_scrambler_bb "Scramble an input stream using an LFSR. This block works on the LSB only of the input data stream, i.e., on an \"unpacked binary\" stream, and produces the same format on its output.
-
-
-The scrambler works by XORing the incoming bit stream by the output of the LFSR. Optionally, after 'count' bits have been processed, the shift register is reset to the seed value. This allows processing fixed length vectors of samples.
-
-Args:
-    mask : Polynomial mask for LFSR
-    seed : Initial shift register contents
-    len : Shift register length
-    count : Number of bits after which shift register is reset, 0=never"
-
 %feature("docstring") digital_binary_slicer_fb "slice float binary symbol outputting 1 bit output
 
 x < 0 --> 0 x >= 0 --> 1"
@@ -45,182 +19,6 @@ x < 0 --> 0 x >= 0 --> 1"
 %feature("docstring") digital_make_binary_slicer_fb "slice float binary symbol outputting 1 bit output
 
 x < 0 --> 0 x >= 0 --> 1"
-
-%feature("docstring") digital_bytes_to_syms "Convert stream of bytes to stream of +/- 1 symbols
-
-input: stream of bytes; output: stream of float.
-
-This block is deprecated.
-
-The combination of gr_packed_to_unpacked_bb followed by gr_chunks_to_symbols_bf or gr_chunks_to_symbols_bc handles the general case of mapping from a stream of bytes into arbitrary float or complex symbols."
-
-
-
-
-
-%feature("docstring") digital_make_bytes_to_syms "Convert stream of bytes to stream of +/- 1 symbols
-
-input: stream of bytes; output: stream of float.
-
-This block is deprecated.
-
-The combination of gr_packed_to_unpacked_bb followed by gr_chunks_to_symbols_bf or gr_chunks_to_symbols_bc handles the general case of mapping from a stream of bytes into arbitrary float or complex symbols."
-
-%feature("docstring") digital_chunks_to_symbols_bc "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of unsigned char; output: stream of gr_complex.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_chunks_to_symbols_bc "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of unsigned char; output: stream of gr_complex.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-%feature("docstring") digital_chunks_to_symbols_bf "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of unsigned char; output: stream of float.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_chunks_to_symbols_bf "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of unsigned char; output: stream of float.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-%feature("docstring") digital_chunks_to_symbols_ic "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of int; output: stream of gr_complex.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_chunks_to_symbols_ic "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of int; output: stream of gr_complex.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-%feature("docstring") digital_chunks_to_symbols_if "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of int; output: stream of float.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_chunks_to_symbols_if "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of int; output: stream of float.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-%feature("docstring") digital_chunks_to_symbols_sc "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of short; output: stream of gr_complex.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_chunks_to_symbols_sc "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of short; output: stream of gr_complex.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-%feature("docstring") digital_chunks_to_symbols_sf "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of short; output: stream of float.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_chunks_to_symbols_sf "Map a stream of symbol indexes (unpacked bytes or shorts) to stream of float or complex constellation points in D dimensions (D = 1 by default)
-
-input: stream of short; output: stream of float.
-
-out[n D + k] = symbol_table[in[n] D + k], k=0,1,...,D-1
-
-The combination of gr_packed_to_unpacked_XX followed by gr_chunks_to_symbols_XY handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols."
 
 %feature("docstring") digital_clock_recovery_mm_cc "Mueller and M?ller (M&M) based clock recovery block with complex input, complex output.
 
@@ -308,8 +106,8 @@ See \"Digital Communication Receivers: Synchronization, Channel
 
 The error value and tap update equations (for p=2) can be found in:
 
-\"D. Godard, \"Self-Recovering Equalization and Carrier Tracking in Two-Dimensional Data Communication Systems,\" IEEE Transactions on
- Communications, Vol. 28, No. 11, pp. 1867 - 1875, 1980.\""
+D. Godard, \"Self-Recovering Equalization and Carrier Tracking in
+ Two-Dimensional Data Communication Systems,\" IEEE Transactions on Communications, Vol. 28, No. 11, pp. 1867 - 1875, 1980,"
 
 
 
@@ -329,32 +127,8 @@ The error value and tap update equations (for p=2) can be found in:
 
 The error value and tap update equations (for p=2) can be found in:
 
-\"D. Godard, \"Self-Recovering Equalization and Carrier Tracking in Two-Dimensional Data Communication Systems,\" IEEE Transactions on
- Communications, Vol. 28, No. 11, pp. 1867 - 1875, 1980.\""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+D. Godard, \"Self-Recovering Equalization and Carrier Tracking in
+ Two-Dimensional Data Communication Systems,\" IEEE Transactions on Communications, Vol. 28, No. 11, pp. 1867 - 1875, 1980,"
 
 %feature("docstring") digital_constellation_8psk "Digital constellation for 8PSK."
 
@@ -402,14 +176,6 @@ Constellation which calculates the distance to each point in the constellation f
 
 %feature("docstring") digital_make_constellation_dqpsk "Digital constellation for DQPSK."
 
-%feature("docstring") digital_constellation_dvbt_qpsk "Digital constellation for QPSK."
-
-
-
-%feature("docstring") digital_constellation_dvbt_qpsk::decision_maker "Returns the constellation point that matches best."
-
-%feature("docstring") digital_make_constellation_dvbt_qpsk "Digital constellation for QPSK."
-
 %feature("docstring") digital_constellation_psk "digital_constellation_psk
 
 Constellation space is divided into pie slices sectors.
@@ -452,8 +218,8 @@ The phase and frequency synchronization are based on a Costas loop that finds th
 
 The symbol synchronization is done using a modified Mueller and Muller circuit from the paper:
 
-\"G. R. Danesfahani, T.G. Jeans, \"Optimisation of modified Mueller and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22
- June 1995, pp. 1032 - 1033.\"
+G. R. Danesfahani, T.G. Jeans, \"Optimisation of modified Mueller
+    and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22 June 1995, pp. 1032 - 1033.
 
 This circuit interpolates the downconverted sample (using the NCO developed by the Costas loop) every mu samples, then it finds the sampling error based on this and the past symbols and the decision made on the samples. Like the phase error detector, there are optimized decision algorithms for BPSK and QPKS, but 8PSK uses another brute force computation against all possible symbols. The modifications to the M&M used here reduce self-noise."
 
@@ -475,8 +241,8 @@ The phase and frequency synchronization are based on a Costas loop that finds th
 
 The symbol synchronization is done using a modified Mueller and Muller circuit from the paper:
 
-\"G. R. Danesfahani, T.G. Jeans, \"Optimisation of modified Mueller and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22
- June 1995, pp. 1032 - 1033.\"
+G. R. Danesfahani, T.G. Jeans, \"Optimisation of modified Mueller
+    and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22 June 1995, pp. 1032 - 1033.
 
 This circuit interpolates the downconverted sample (using the NCO developed by the Costas loop) every mu samples, then it finds the sampling error based on this and the past symbols and the decision made on the samples. Like the phase error detector, there are optimized decision algorithms for BPSK and QPKS, but 8PSK uses another brute force computation against all possible symbols. The modifications to the M&M used here reduce self-noise."
 
@@ -509,26 +275,6 @@ Each output byte contains two valid bits, the data bit, and the flag bit. The LS
 input: stream of bits, 1 bit per input byte (data in LSB) output: stream of bits, 2 bits per output byte (data in LSB, flag in next higher bit)
 
 Each output byte contains two valid bits, the data bit, and the flag bit. The LSB (bit 0) is the data bit, and is the original input data, delayed 64 bits. Bit 1 is the flag bit and is 1 if the corresponding data bit is the first data bit following the access code. Otherwise the flag bit is 0."
-
-%feature("docstring") digital_correlate_access_code_tag_bb "Examine input for specified access code, one bit at a time.
-
-input: stream of bits, 1 bit per input byte (data in LSB) output: unaltered stream of bits (plus tags)
-
-This block annotates the input stream with tags. The tags have key name [tag_name], specified in the constructor. Used for searching an input data stream for preambles, etc."
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_correlate_access_code_tag_bb "Examine input for specified access code, one bit at a time.
-
-input: stream of bits, 1 bit per input byte (data in LSB) output: unaltered stream of bits (plus tags)
-
-This block annotates the input stream with tags. The tags have key name [tag_name], specified in the constructor. Used for searching an input data stream for preambles, etc."
 
 %feature("docstring") digital_costas_loop_cc "Carrier tracking PLL for QPSK
 
@@ -586,58 +332,6 @@ Args:
     L : The length of the phase duration in symbols. For L=1, this yields full- response CPM symbols, for L > 1, partial-response.
     beta : For LSRC, this is the rolloff factor. For Gaussian pulses, this is the 3 dB time-bandwidth product."
 
-%feature("docstring") digital_descrambler_bb "Descramble an input stream using an LFSR. This block works on the LSB only of the input data stream, i.e., on an \"unpacked binary\" stream, and produces the same format on its output.
-
-Args:
-    mask : Polynomial mask for LFSR
-    seed : Initial shift register contents
-    len : Shift register length"
-
-
-
-
-
-%feature("docstring") digital_make_descrambler_bb "Descramble an input stream using an LFSR. This block works on the LSB only of the input data stream, i.e., on an \"unpacked binary\" stream, and produces the same format on its output.
-
-Args:
-    mask : Polynomial mask for LFSR
-    seed : Initial shift register contents
-    len : Shift register length"
-
-%feature("docstring") digital_diff_decoder_bb "y[0] = (x[0] - x[-1]) % M
-
-Uses current and previous symbols and the alphabet modulus to perform differential decoding."
-
-
-
-
-
-%feature("docstring") digital_make_diff_decoder_bb "y[0] = (x[0] - x[-1]) % M
-
-Uses current and previous symbols and the alphabet modulus to perform differential decoding."
-
-%feature("docstring") digital_diff_encoder_bb "y[0] = (x[0] + y[-1]) % M
-
-Uses current and previous symbols and the alphabet modulus to perform differential encoding."
-
-
-
-
-
-%feature("docstring") digital_make_diff_encoder_bb "y[0] = (x[0] + y[-1]) % M
-
-Uses current and previous symbols and the alphabet modulus to perform differential encoding."
-
-
-
-
-
-
-
-
-
-
-
 %feature("docstring") digital_fll_band_edge_cc "Frequency Lock Loop using band-edge filters.
 
 The frequency lock loop derives a band-edge filter that covers the upper and lower bandwidths of a digitally-modulated signal. The bandwidth range is determined by the excess bandwidth (e.g., rolloff factor) of the modulated signal. The placement in frequency of the band-edges is determined by the oversampling ratio (number of samples per symbol) and the excess bandwidth. The size of the filters should be fairly large so as to average over a number of symbols.
@@ -646,7 +340,7 @@ The FLL works by filtering the upper and lower band edges into x_u(t) and x_l(t)
 
 In practice, the above equation can be simplified by just comparing the absolute value squared of the output of both filters: abs(x_l(t))^2 - abs(x_u(t))^2 = norm(x_l(t)) - norm(x_u(t)).
 
-In theory, the band-edge filter is the derivative of the matched filter in frequency, (H_be(f) = frac{H(f)}{df}). In practice, this comes down to a quarter sine wave at the point of the matched filter's rolloff (if it's a raised-cosine, the derivative of a cosine is a sine). Extend this sine by another quarter wave to make a half wave around the band-edges is equivalent in time to the sum of two sinc functions. The baseband filter fot the band edges is therefore derived from this sum of sincs. The band edge filters are then just the baseband signal modulated to the correct place in frequency. All of these calculations are done in the 'design_filter' function.
+In theory, the band-edge filter is the derivative of the matched filter in frequency, (H_be(f) = \frac{H(f)}{df}. In practice, this comes down to a quarter sine wave at the point of the matched filter's rolloff (if it's a raised-cosine, the derivative of a cosine is a sine). Extend this sine by another quarter wave to make a half wave around the band-edges is equivalent in time to the sum of two sinc functions. The baseband filter fot the band edges is therefore derived from this sum of sincs. The band edge filters are then just the baseband signal modulated to the correct place in frequency. All of these calculations are done in the 'design_filter' function.
 
 Note: We use FIR filters here because the filters have to have a flat phase response over the entire frequency range to allow their comparisons to be valid.
 
@@ -694,97 +388,13 @@ The FLL works by filtering the upper and lower band edges into x_u(t) and x_l(t)
 
 In practice, the above equation can be simplified by just comparing the absolute value squared of the output of both filters: abs(x_l(t))^2 - abs(x_u(t))^2 = norm(x_l(t)) - norm(x_u(t)).
 
-In theory, the band-edge filter is the derivative of the matched filter in frequency, (H_be(f) = frac{H(f)}{df}). In practice, this comes down to a quarter sine wave at the point of the matched filter's rolloff (if it's a raised-cosine, the derivative of a cosine is a sine). Extend this sine by another quarter wave to make a half wave around the band-edges is equivalent in time to the sum of two sinc functions. The baseband filter fot the band edges is therefore derived from this sum of sincs. The band edge filters are then just the baseband signal modulated to the correct place in frequency. All of these calculations are done in the 'design_filter' function.
+In theory, the band-edge filter is the derivative of the matched filter in frequency, (H_be(f) = \frac{H(f)}{df}. In practice, this comes down to a quarter sine wave at the point of the matched filter's rolloff (if it's a raised-cosine, the derivative of a cosine is a sine). Extend this sine by another quarter wave to make a half wave around the band-edges is equivalent in time to the sum of two sinc functions. The baseband filter fot the band edges is therefore derived from this sum of sincs. The band edge filters are then just the baseband signal modulated to the correct place in frequency. All of these calculations are done in the 'design_filter' function.
 
 Note: We use FIR filters here because the filters have to have a flat phase response over the entire frequency range to allow their comparisons to be valid.
 
 It is very important that the band edge filters be the derivatives of the pulse shaping filter, and that they be linear phase. Otherwise, the variance of the error will be very large.
 
 Build the FLL"
-
-%feature("docstring") digital_framer_sink_1 "Given a stream of bits and access_code flags, assemble packets.
-
-input: stream of bytes from gr_correlate_access_code_bb output: none. Pushes assembled packet into target queue.
-
-The framer expects a fixed length header of 2 16-bit shorts containing the payload length, followed by the payload. If the 2 16-bit shorts are not identical, this packet is ignored. Better algs are welcome.
-
-The input data consists of bytes that have two bits used. Bit 0, the LSB, contains the data bit. Bit 1 if set, indicates that the corresponding bit is the the first bit of the packet. That is, this bit is the first one after the access code."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_framer_sink_1 "Given a stream of bits and access_code flags, assemble packets.
-
-input: stream of bytes from gr_correlate_access_code_bb output: none. Pushes assembled packet into target queue.
-
-The framer expects a fixed length header of 2 16-bit shorts containing the payload length, followed by the payload. If the 2 16-bit shorts are not identical, this packet is ignored. Better algs are welcome.
-
-The input data consists of bytes that have two bits used. Bit 0, the LSB, contains the data bit. Bit 1 if set, indicates that the corresponding bit is the the first bit of the packet. That is, this bit is the first one after the access code."
-
-%feature("docstring") digital_glfsr_source_b "Galois LFSR pseudo-random source.
-
-Args:
-    degree : Degree of shift register must be in [1, 32]. If mask is 0, the degree determines a default mask (see digital_impl_glfsr.cc for the mapping).
-    repeat : Set to repeat sequence.
-    mask : Allows a user-defined bit mask for indexes of the shift register to feed back.
-    seed : Initial setting for values in shift register."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_glfsr_source_b "Galois LFSR pseudo-random source.
-
-Args:
-    degree : Degree of shift register must be in [1, 32]. If mask is 0, the degree determines a default mask (see digital_impl_glfsr.cc for the mapping).
-    repeat : Set to repeat sequence.
-    mask : Allows a user-defined bit mask for indexes of the shift register to feed back.
-    seed : Initial setting for values in shift register."
-
-%feature("docstring") digital_glfsr_source_f "Galois LFSR pseudo-random source generating float outputs -1.0 - 1.0.
-
-Args:
-    degree : Degree of shift register must be in [1, 32]. If mask is 0, the degree determines a default mask (see digital_impl_glfsr.cc for the mapping).
-    repeat : Set to repeat sequence.
-    mask : Allows a user-defined bit mask for indexes of the shift register to feed back.
-    seed : Initial setting for values in shift register."
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_make_glfsr_source_f "Galois LFSR pseudo-random source generating float outputs -1.0 - 1.0.
-
-Args:
-    degree : Degree of shift register must be in [1, 32]. If mask is 0, the degree determines a default mask (see digital_impl_glfsr.cc for the mapping).
-    repeat : Set to repeat sequence.
-    mask : Allows a user-defined bit mask for indexes of the shift register to feed back.
-    seed : Initial setting for values in shift register."
 
 %feature("docstring") digital_gmskmod_bc "GMSK modulator.
 
@@ -808,8 +418,8 @@ Args:
 
 %feature("docstring") digital_kurtotic_equalizer_cc "Implements a kurtosis-based adaptive equalizer on complex stream
 
-\"Y. Guo, J. Zhao, Y. Sun, \"Sign kurtosis maximization based blind equalization algorithm,\" IEEE Conf. on Control, Automation,
- Robotics and Vision, Vol. 3, Dec. 2004, pp. 2052 - 2057.\"."
+Y. Guo, J. Zhao, Y. Sun, \"Sign kurtosis maximization based blind
+ equalization algorithm,\" IEEE Conf. on Control, Automation, Robotics and Vision, Vol. 3, Dec. 2004, pp. 2052 - 2057."
 
 
 
@@ -823,8 +433,8 @@ Args:
 
 %feature("docstring") digital_make_kurtotic_equalizer_cc "Implements a kurtosis-based adaptive equalizer on complex stream
 
-\"Y. Guo, J. Zhao, Y. Sun, \"Sign kurtosis maximization based blind equalization algorithm,\" IEEE Conf. on Control, Automation,
- Robotics and Vision, Vol. 3, Dec. 2004, pp. 2052 - 2057.\"."
+Y. Guo, J. Zhao, Y. Sun, \"Sign kurtosis maximization based blind
+ equalization algorithm,\" IEEE Conf. on Control, Automation, Robotics and Vision, Vol. 3, Dec. 2004, pp. 2052 - 2057."
 
 %feature("docstring") digital_lms_dd_equalizer_cc "Least-Mean-Square Decision Directed Equalizer (complex in/out)
 
@@ -860,28 +470,6 @@ This block uses the digital_constellation object for making the decision from y[
 
 The theory for this algorithm can be found in Chapter 9 of: S. Haykin, Adaptive Filter Theory, Upper Saddle River, NJ: Prentice Hall, 1996."
 
-%feature("docstring") digital_map_bb "output[i] = map[input[i]]
-
-This block maps an incoming signal to the value in the map. The block expects that the incoming signal has a maximum value of len(map)-1.
-
--> output[i] = map[input[i]]
-
-Args:
-    map : a vector of integers."
-
-
-
-
-
-%feature("docstring") digital_make_map_bb "output[i] = map[input[i]]
-
-This block maps an incoming signal to the value in the map. The block expects that the incoming signal has a maximum value of len(map)-1.
-
--> output[i] = map[input[i]]
-
-Args:
-    map : a vector of integers."
-
 %feature("docstring") digital_mpsk_receiver_cc "This block takes care of receiving M-PSK modulated signals through phase, frequency, and symbol synchronization.
 
 This block takes care of receiving M-PSK modulated signals through phase, frequency, and symbol synchronization. It performs carrier frequency and phase locking as well as symbol timing recovery. It works with (D)BPSK, (D)QPSK, and (D)8PSK as tested currently. It should also work for OQPSK and PI/4 DQPSK.
@@ -890,8 +478,8 @@ The phase and frequency synchronization are based on a Costas loop that finds th
 
 The symbol synchronization is done using a modified Mueller and Muller circuit from the paper:
 
-\"G. R. Danesfahani, T. G. Jeans, \"Optimisation of modified Mueller and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22
- June 1995, pp. 1032 - 1033.\"
+G. R. Danesfahani, T.G. Jeans, \"Optimisation of modified Mueller
+    and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22 June 1995, pp. 1032 - 1033.
 
 This circuit interpolates the downconverted sample (using the NCO developed by the Costas loop) every mu samples, then it finds the sampling error based on this and the past symbols and the decision made on the samples. Like the phase error detector, there are optimized decision algorithms for BPSK and QPKS, but 8PSK uses another brute force computation against all possible symbols. The modifications to the M&M used here reduce self-noise."
 
@@ -977,8 +565,8 @@ The phase and frequency synchronization are based on a Costas loop that finds th
 
 The symbol synchronization is done using a modified Mueller and Muller circuit from the paper:
 
-\"G. R. Danesfahani, T. G. Jeans, \"Optimisation of modified Mueller and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22
- June 1995, pp. 1032 - 1033.\"
+G. R. Danesfahani, T.G. Jeans, \"Optimisation of modified Mueller
+    and Muller algorithm,\" Electronics Letters, Vol. 31, no. 13, 22 June 1995, pp. 1032 - 1033.
 
 This circuit interpolates the downconverted sample (using the NCO developed by the Costas loop) every mu samples, then it finds the sampling error based on this and the past symbols and the decision made on the samples. Like the phase error detector, there are optimized decision algorithms for BPSK and QPKS, but 8PSK uses another brute force computation against all possible symbols. The modifications to the M&M used here reduce self-noise."
 
@@ -1108,8 +696,6 @@ Args:
 
 
 
-
-
 %feature("docstring") digital_make_ofdm_insert_preamble "insert \"pre-modulated\" preamble symbols before each payload.
 
 Args:
@@ -1139,290 +725,6 @@ Args:
 
 
 %feature("docstring") digital_make_ofdm_sampler "does the rest of the OFDM stuff"
-
-%feature("docstring") digital_packet_sink "process received bits looking for packet sync, header, and process bits into packet
-
-input: stream of symbols to be sliced.
-
-output: none. Pushes assembled packet into target queue
-
-The packet sink takes in a stream of binary symbols that are sliced around 0. The bits are then checked for the  to determine find and decode the packet. It then expects a fixed length header of 2 16-bit shorts containing the payload length, followed by the payload. If the 2 16-bit shorts are not identical, this packet is ignored. Better algs are welcome.
-
-This block is not very useful anymore as it only works with 2-level modulations such as BPSK or GMSK. The block can generally be replaced with a correlate access code and frame sink blocks.
-
-Args:
-    sync_vector : The synchronization vector as a vector of 1's and 0's.
-    target_queue : The message queue that packets are sent to.
-    threshold : Number of bits that can be incorrect in the ."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%feature("docstring") digital_packet_sink::carrier_sensed "return true if we detect carrier"
-
-%feature("docstring") digital_make_packet_sink "process received bits looking for packet sync, header, and process bits into packet
-
-input: stream of symbols to be sliced.
-
-output: none. Pushes assembled packet into target queue
-
-The packet sink takes in a stream of binary symbols that are sliced around 0. The bits are then checked for the  to determine find and decode the packet. It then expects a fixed length header of 2 16-bit shorts containing the payload length, followed by the payload. If the 2 16-bit shorts are not identical, this packet is ignored. Better algs are welcome.
-
-This block is not very useful anymore as it only works with 2-level modulations such as BPSK or GMSK. The block can generally be replaced with a correlate access code and frame sink blocks.
-
-Args:
-    sync_vector : The synchronization vector as a vector of 1's and 0's.
-    target_queue : The message queue that packets are sent to.
-    threshold : Number of bits that can be incorrect in the ."
-
-%feature("docstring") digital_pfb_clock_sync_ccf "Timing synchronizer using polyphase filterbanks.
-
-This block performs timing synchronization for PAM signals by minimizing the derivative of the filtered signal, which in turn maximizes the SNR and minimizes ISI.
-
-This approach works by setting up two filterbanks; one filterbank contains the signal's pulse shaping matched filter (such as a root raised cosine filter), where each branch of the filterbank contains a different phase of the filter. The second filterbank contains the derivatives of the filters in the first filterbank. Thinking of this in the time domain, the first filterbank contains filters that have a sinc shape to them. We want to align the output signal to be sampled at exactly the peak of the sinc shape. The derivative of the sinc contains a zero at the maximum point of the sinc (sinc(0) = 1, sinc(0)' = 0). Furthermore, the region around the zero point is relatively linear. We make use of this fact to generate the error signal.
-
-If the signal out of the derivative filters is d_i[n] for the ith filter, and the output of the matched filter is x_i[n], we calculate the error as: e[n] = (Re{x_i[n]} * Re{d_i[n]} + Im{x_i[n]} * Im{d_i[n]}) / 2.0 This equation averages the error in the real and imaginary parts. There are two reasons we multiply by the signal itself. First, if the symbol could be positive or negative going, but we want the error term to always tell us to go in the same direction depending on which side of the zero point we are on. The sign of x_i[n] adjusts the error term to do this. Second, the magnitude of x_i[n] scales the error term depending on the symbol's amplitude, so larger signals give us a stronger error term because we have more confidence in that symbol's value. Using the magnitude of x_i[n] instead of just the sign is especially good for signals with low SNR.
-
-The error signal, e[n], gives us a value proportional to how far away from the zero point we are in the derivative signal. We want to drive this value to zero, so we set up a second order loop. We have two variables for this loop; d_k is the filter number in the filterbank we are on and d_rate is the rate which we travel through the filters in the steady state. That is, due to the natural clock differences between the transmitter and receiver, d_rate represents that difference and would traverse the filter phase paths to keep the receiver locked. Thinking of this as a second-order PLL, the d_rate is the frequency and d_k is the phase. So we update d_rate and d_k using the standard loop equations based on two error signals, d_alpha and d_beta. We have these two values set based on each other for a critically damped system, so in the block constructor, we just ask for \"gain,\" which is d_alpha while d_beta is equal to (gain^2)/4.
-
-The block's parameters are:
-
-Build the polyphase filterbank timing synchronizer."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::digital_pfb_clock_sync_ccf "Build the polyphase filterbank timing synchronizer."
-
-
-
-
-
-%feature("docstring") digital_pfb_clock_sync_ccf::update_gains "update the system gains from omega and eta
-
-This function updates the system gains based on the loop bandwidth and damping factor of the system. These two factors can be set separately through their own set functions."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::set_taps "Resets the filterbank's filter taps with the new prototype filter"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_taps "Returns all of the taps of the matched filter"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_diff_taps "Returns all of the taps of the derivative filter"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_channel_taps "Returns the taps of the matched filter for a particular channel"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_diff_channel_taps "Returns the taps in the derivative filter for a particular channel"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_taps_as_string "Return the taps as a formatted string for printing"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_diff_taps_as_string "Return the derivative filter taps as a formatted string for printing"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::set_loop_bandwidth "Set the loop bandwidth.
-
-Set the loop filter's bandwidth to . This should be between 2*pi/200 and 2*pi/100 (in rads/samp). It must also be a positive number.
-
-When a new damping factor is set, the gains, alpha and beta, of the loop are recalculated by a call to update_gains()."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::set_damping_factor "Set the loop damping factor.
-
-Set the loop filter's damping factor to . The damping factor should be sqrt(2)/2.0 for critically damped systems. Set it to anything else only if you know what you are doing. It must be a number between 0 and 1.
-
-When a new damping factor is set, the gains, alpha and beta, of the loop are recalculated by a call to update_gains()."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::set_alpha "Set the loop gain alpha.
-
-Set's the loop filter's alpha gain parameter.
-
-This value should really only be set by adjusting the loop bandwidth and damping factor."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::set_beta "Set the loop gain beta.
-
-Set's the loop filter's beta gain parameter.
-
-This value should really only be set by adjusting the loop bandwidth and damping factor."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::set_max_rate_deviation "Set the maximum deviation from 0 d_rate can have"
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_loop_bandwidth "Returns the loop bandwidth."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_damping_factor "Returns the loop damping factor."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_alpha "Returns the loop gain alpha."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_beta "Returns the loop gain beta."
-
-%feature("docstring") digital_pfb_clock_sync_ccf::get_clock_rate "Returns the current clock rate."
-
-
-
-
-
-%feature("docstring") digital_make_pfb_clock_sync_ccf "Timing synchronizer using polyphase filterbanks.
-
-This block performs timing synchronization for PAM signals by minimizing the derivative of the filtered signal, which in turn maximizes the SNR and minimizes ISI.
-
-This approach works by setting up two filterbanks; one filterbank contains the signal's pulse shaping matched filter (such as a root raised cosine filter), where each branch of the filterbank contains a different phase of the filter. The second filterbank contains the derivatives of the filters in the first filterbank. Thinking of this in the time domain, the first filterbank contains filters that have a sinc shape to them. We want to align the output signal to be sampled at exactly the peak of the sinc shape. The derivative of the sinc contains a zero at the maximum point of the sinc (sinc(0) = 1, sinc(0)' = 0). Furthermore, the region around the zero point is relatively linear. We make use of this fact to generate the error signal.
-
-If the signal out of the derivative filters is d_i[n] for the ith filter, and the output of the matched filter is x_i[n], we calculate the error as: e[n] = (Re{x_i[n]} * Re{d_i[n]} + Im{x_i[n]} * Im{d_i[n]}) / 2.0 This equation averages the error in the real and imaginary parts. There are two reasons we multiply by the signal itself. First, if the symbol could be positive or negative going, but we want the error term to always tell us to go in the same direction depending on which side of the zero point we are on. The sign of x_i[n] adjusts the error term to do this. Second, the magnitude of x_i[n] scales the error term depending on the symbol's amplitude, so larger signals give us a stronger error term because we have more confidence in that symbol's value. Using the magnitude of x_i[n] instead of just the sign is especially good for signals with low SNR.
-
-The error signal, e[n], gives us a value proportional to how far away from the zero point we are in the derivative signal. We want to drive this value to zero, so we set up a second order loop. We have two variables for this loop; d_k is the filter number in the filterbank we are on and d_rate is the rate which we travel through the filters in the steady state. That is, due to the natural clock differences between the transmitter and receiver, d_rate represents that difference and would traverse the filter phase paths to keep the receiver locked. Thinking of this as a second-order PLL, the d_rate is the frequency and d_k is the phase. So we update d_rate and d_k using the standard loop equations based on two error signals, d_alpha and d_beta. We have these two values set based on each other for a critically damped system, so in the block constructor, we just ask for \"gain,\" which is d_alpha while d_beta is equal to (gain^2)/4.
-
-The block's parameters are:
-
-Build the polyphase filterbank timing synchronizer."
-
-%feature("docstring") digital_pfb_clock_sync_fff "Timing synchronizer using polyphase filterbanks.
-
-This block performs timing synchronization for PAM signals by minimizing the derivative of the filtered signal, which in turn maximizes the SNR and minimizes ISI.
-
-This approach works by setting up two filterbanks; one filterbank contains the signal's pulse shaping matched filter (such as a root raised cosine filter), where each branch of the filterbank contains a different phase of the filter. The second filterbank contains the derivatives of the filters in the first filterbank. Thinking of this in the time domain, the first filterbank contains filters that have a sinc shape to them. We want to align the output signal to be sampled at exactly the peak of the sinc shape. The derivative of the sinc contains a zero at the maximum point of the sinc (sinc(0) = 1, sinc(0)' = 0). Furthermore, the region around the zero point is relatively linear. We make use of this fact to generate the error signal.
-
-If the signal out of the derivative filters is d_i[n] for the ith filter, and the output of the matched filter is x_i[n], we calculate the error as: e[n] = (Re{x_i[n]} * Re{d_i[n]} + Im{x_i[n]} * Im{d_i[n]}) / 2.0 This equation averages the error in the real and imaginary parts. There are two reasons we multiply by the signal itself. First, if the symbol could be positive or negative going, but we want the error term to always tell us to go in the same direction depending on which side of the zero point we are on. The sign of x_i[n] adjusts the error term to do this. Second, the magnitude of x_i[n] scales the error term depending on the symbol's amplitude, so larger signals give us a stronger error term because we have more confidence in that symbol's value. Using the magnitude of x_i[n] instead of just the sign is especially good for signals with low SNR.
-
-The error signal, e[n], gives us a value proportional to how far away from the zero point we are in the derivative signal. We want to drive this value to zero, so we set up a second order loop. We have two variables for this loop; d_k is the filter number in the filterbank we are on and d_rate is the rate which we travel through the filters in the steady state. That is, due to the natural clock differences between the transmitter and receiver, d_rate represents that difference and would traverse the filter phase paths to keep the receiver locked. Thinking of this as a second-order PLL, the d_rate is the frequency and d_k is the phase. So we update d_rate and d_k using the standard loop equations based on two error signals, d_alpha and d_beta. We have these two values set based on each other for a critically damped system, so in the block constructor, we just ask for \"gain,\" which is d_alpha while d_beta is equal to (gain^2)/4.
-
-The block's parameters are:
-
-Build the polyphase filterbank timing synchronizer."
-
-%feature("docstring") digital_pfb_clock_sync_fff::digital_pfb_clock_sync_fff "Build the polyphase filterbank timing synchronizer."
-
-
-
-
-
-%feature("docstring") digital_pfb_clock_sync_fff::update_gains "update the system gains from omega and eta
-
-This function updates the system gains based on the loop bandwidth and damping factor of the system. These two factors can be set separately through their own set functions."
-
-%feature("docstring") digital_pfb_clock_sync_fff::set_taps "Resets the filterbank's filter taps with the new prototype filter"
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_taps "Returns all of the taps of the matched filter"
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_diff_taps "Returns all of the taps of the derivative filter"
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_channel_taps "Returns the taps of the matched filter for a particular channel"
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_diff_channel_taps "Returns the taps in the derivative filter for a particular channel"
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_taps_as_string "Return the taps as a formatted string for printing"
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_diff_taps_as_string "Return the derivative filter taps as a formatted string for printing"
-
-%feature("docstring") digital_pfb_clock_sync_fff::set_loop_bandwidth "Set the loop bandwidth.
-
-Set the loop filter's bandwidth to . This should be between 2*pi/200 and 2*pi/100 (in rads/samp). It must also be a positive number.
-
-When a new damping factor is set, the gains, alpha and beta, of the loop are recalculated by a call to update_gains()."
-
-%feature("docstring") digital_pfb_clock_sync_fff::set_damping_factor "Set the loop damping factor.
-
-Set the loop filter's damping factor to . The damping factor should be sqrt(2)/2.0 for critically damped systems. Set it to anything else only if you know what you are doing. It must be a number between 0 and 1.
-
-When a new damping factor is set, the gains, alpha and beta, of the loop are recalculated by a call to update_gains()."
-
-%feature("docstring") digital_pfb_clock_sync_fff::set_alpha "Set the loop gain alpha.
-
-Set's the loop filter's alpha gain parameter.
-
-This value should really only be set by adjusting the loop bandwidth and damping factor."
-
-%feature("docstring") digital_pfb_clock_sync_fff::set_beta "Set the loop gain beta.
-
-Set's the loop filter's beta gain parameter.
-
-This value should really only be set by adjusting the loop bandwidth and damping factor."
-
-%feature("docstring") digital_pfb_clock_sync_fff::set_max_rate_deviation "Set the maximum deviation from 0 d_rate can have"
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_loop_bandwidth "Returns the loop bandwidth."
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_damping_factor "Returns the loop damping factor."
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_alpha "Returns the loop gain alpha."
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_beta "Returns the loop gain beta."
-
-%feature("docstring") digital_pfb_clock_sync_fff::get_clock_rate "Returns the current clock rate."
-
-
-
-
-
-%feature("docstring") digital_make_pfb_clock_sync_fff "Timing synchronizer using polyphase filterbanks.
-
-This block performs timing synchronization for PAM signals by minimizing the derivative of the filtered signal, which in turn maximizes the SNR and minimizes ISI.
-
-This approach works by setting up two filterbanks; one filterbank contains the signal's pulse shaping matched filter (such as a root raised cosine filter), where each branch of the filterbank contains a different phase of the filter. The second filterbank contains the derivatives of the filters in the first filterbank. Thinking of this in the time domain, the first filterbank contains filters that have a sinc shape to them. We want to align the output signal to be sampled at exactly the peak of the sinc shape. The derivative of the sinc contains a zero at the maximum point of the sinc (sinc(0) = 1, sinc(0)' = 0). Furthermore, the region around the zero point is relatively linear. We make use of this fact to generate the error signal.
-
-If the signal out of the derivative filters is d_i[n] for the ith filter, and the output of the matched filter is x_i[n], we calculate the error as: e[n] = (Re{x_i[n]} * Re{d_i[n]} + Im{x_i[n]} * Im{d_i[n]}) / 2.0 This equation averages the error in the real and imaginary parts. There are two reasons we multiply by the signal itself. First, if the symbol could be positive or negative going, but we want the error term to always tell us to go in the same direction depending on which side of the zero point we are on. The sign of x_i[n] adjusts the error term to do this. Second, the magnitude of x_i[n] scales the error term depending on the symbol's amplitude, so larger signals give us a stronger error term because we have more confidence in that symbol's value. Using the magnitude of x_i[n] instead of just the sign is especially good for signals with low SNR.
-
-The error signal, e[n], gives us a value proportional to how far away from the zero point we are in the derivative signal. We want to drive this value to zero, so we set up a second order loop. We have two variables for this loop; d_k is the filter number in the filterbank we are on and d_rate is the rate which we travel through the filters in the steady state. That is, due to the natural clock differences between the transmitter and receiver, d_rate represents that difference and would traverse the filter phase paths to keep the receiver locked. Thinking of this as a second-order PLL, the d_rate is the frequency and d_k is the phase. So we update d_rate and d_k using the standard loop equations based on two error signals, d_alpha and d_beta. We have these two values set based on each other for a critically damped system, so in the block constructor, we just ask for \"gain,\" which is d_alpha while d_beta is equal to (gain^2)/4.
-
-The block's parameters are:
-
-Build the polyphase filterbank timing synchronizer."
-
-%feature("docstring") digital_pn_correlator_cc "PN code sequential search correlator.
-
-Receives complex baseband signal, outputs complex correlation against reference PN code, one sample per PN code period. The PN sequence is generated using a GLFSR.
-
-Args:
-    degree : Degree of shift register must be in [1, 32]. If mask is 0, the degree determines a default mask (see digital_impl_glfsr.cc for the mapping).
-    repeat : Set to repeat sequence.
-    mask : Allows a user-defined bit mask for indexes of the shift register to feed back.
-    seed : Initial setting for values in shift register."
-
-
-
-
-
-
-
-%feature("docstring") digital_make_pn_correlator_cc "PN code sequential search correlator.
-
-Receives complex baseband signal, outputs complex correlation against reference PN code, one sample per PN code period. The PN sequence is generated using a GLFSR.
-
-Args:
-    degree : Degree of shift register must be in [1, 32]. If mask is 0, the degree determines a default mask (see digital_impl_glfsr.cc for the mapping).
-    repeat : Set to repeat sequence.
-    mask : Allows a user-defined bit mask for indexes of the shift register to feed back.
-    seed : Initial setting for values in shift register."
-
-%feature("docstring") digital_probe_density_b "This block maintains a running average of the input stream and makes it available as an accessor function. The input stream is type unsigned char.
-
-If you send this block a stream of unpacked bytes, it will tell you what the bit density is.
-
-Args:
-    alpha : Average filter constant"
-
-
-
-
-
-%feature("docstring") digital_probe_density_b::density "Returns the current density value."
-
-%feature("docstring") digital_probe_density_b::set_alpha "Set the average filter constant."
-
-
-
-%feature("docstring") digital_make_probe_density_b "This block maintains a running average of the input stream and makes it available as an accessor function. The input stream is type unsigned char.
-
-If you send this block a stream of unpacked bytes, it will tell you what the bit density is.
-
-Args:
-    alpha : Average filter constant"
 
 %feature("docstring") digital_probe_mpsk_snr_est_c "A probe for computing SNR of a signal.
 
@@ -1459,44 +761,6 @@ This is a probe block (a sink) that can be used to monitor and retrieve estimati
 Factory function returning shared pointer of this class
 
 Parameters:"
-
-%feature("docstring") digital_scrambler_bb "Scramble an input stream using an LFSR. This block works on the LSB only of the input data stream, i.e., on an \"unpacked binary\" stream, and produces the same format on its output.
-
-Args:
-    mask : Polynomial mask for LFSR
-    seed : Initial shift register contents
-    len : Shift register length"
-
-
-
-
-
-%feature("docstring") digital_make_scrambler_bb "Scramble an input stream using an LFSR. This block works on the LSB only of the input data stream, i.e., on an \"unpacked binary\" stream, and produces the same format on its output.
-
-Args:
-    mask : Polynomial mask for LFSR
-    seed : Initial shift register contents
-    len : Shift register length"
-
-%feature("docstring") digital_simple_framer "add sync field, seq number and command field to payload
-
-Takes in enough samples to create a full output frame. The frame is prepended with the GRSF_SYNC (defind in digital_simple_framer_sync.h) and an 8-bit sequence number.
-
-Args:
-    payload_bytesize : The size of the payload in bytes."
-
-
-
-
-
-
-
-%feature("docstring") digital_make_simple_framer "add sync field, seq number and command field to payload
-
-Takes in enough samples to create a full output frame. The frame is prepended with the GRSF_SYNC (defind in digital_simple_framer_sync.h) and an 8-bit sequence number.
-
-Args:
-    payload_bytesize : The size of the payload in bytes."
 
 %feature("docstring") digital_update_crc32 "update running CRC-32
 
@@ -1567,18 +831,6 @@ digital_constellation_sector"
 
 
 %feature("docstring") digital_constellation_sector::decision_maker "Returns the constellation point that matches best."
-
-
-
-
-
-
-
-%feature("docstring") digital_impl_glfsr "Galois Linear Feedback Shift Register using specified polynomial mask
-
-Generates a maximal length pseudo-random sequence of length 2^degree-1."
-
-
 
 
 

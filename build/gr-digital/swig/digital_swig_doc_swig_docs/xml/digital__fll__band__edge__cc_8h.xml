@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="digital__fll__band__edge__cc_8h" kind="file">
     <compoundname>digital_fll_band_edge_cc.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
     <includes local="no">gr_sync_block.h</includes>
     <includes local="no">gri_control_loop.h</includes>
     <incdepgraph>
-      <node id="217">
+      <node id="124">
         <label>gri_control_loop.h</label>
       </node>
-      <node id="215">
+      <node id="122">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="216">
+      <node id="123">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="213">
-        <label>/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h</label>
+      <node id="120">
+        <label>/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h</label>
         <link refid="digital_fll_band_edge_cc.h"/>
-        <childnode refid="214" relation="include">
+        <childnode refid="121" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
-        <childnode refid="217" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
       </node>
-      <node id="214">
+      <node id="121">
         <label>digital_api.h</label>
         <link refid="digital__api_8h"/>
-        <childnode refid="215" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -45,13 +45,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="32" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__fll__band__edge__cc_8h_1a47343f460ab71f33e8bf5574e65ff546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_fll_band_edge_cc_sptr digital_make_fll_band_edge_cc</definition>
+      <memberdef kind="function" id="digital__fll__band__edge__cc_8h_1a0cf093022a5ef839fdb4308261c78594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref></type>
+        <definition>DIGITAL_API digital_fll_band_edge_cc_sptr digital_make_fll_band_edge_cc</definition>
         <argsstring>(float samps_per_sym, float rolloff, int filter_size, float bandwidth)</argsstring>
         <name>digital_make_fll_band_edge_cc</name>
         <param>
@@ -105,7 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="36"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h" line="36"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -145,7 +145,7 @@
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31" refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdigital__fll__band__edge__cc" kindref="compound" tooltip="Frequency Lock Loop using band-edge filters.">digital_fll_band_edge_cc</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_fll_band_edge_cc&gt;<sp/><ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref>;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a47343f460ab71f33e8bf5574e65ff546" kindref="member">digital_make_fll_band_edge_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samps_per_sym,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a0cf093022a5ef839fdb4308261c78594" kindref="member">digital_make_fll_band_edge_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samps_per_sym,</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rolloff,</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filter_size,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bandwidth);</highlight></codeline>
@@ -153,7 +153,7 @@
 <codeline lineno="89" refid="classdigital__fll__band__edge__cc" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__fll__band__edge__cc" kindref="compound" tooltip="Frequency Lock Loop using band-edge filters.">digital_fll_band_edge_cc</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gri_control_loop</highlight></codeline>
 <codeline lineno="90"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a47343f460ab71f33e8bf5574e65ff546" kindref="member">digital_make_fll_band_edge_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samps_per_sym,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kindref="member">digital_fll_band_edge_cc_sptr</ref><sp/><ref refid="digital__fll__band__edge__cc_8h_1a0cf093022a5ef839fdb4308261c78594" kindref="member">digital_make_fll_band_edge_cc</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samps_per_sym,</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rolloff,</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filter_size,</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bandwidth);</highlight></codeline>
@@ -203,6 +203,6 @@
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
 <codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_fll_band_edge_cc.h"/>
   </compounddef>
 </doxygen>

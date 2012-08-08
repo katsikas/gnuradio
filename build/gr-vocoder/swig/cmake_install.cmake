@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-vocoder/swig
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-vocoder/swig
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,58 +29,50 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder/_vocoder_swig.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder/_vocoder_swig.so")
-    FILE(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder/_vocoder_swig.so"
-         RPATH "")
-  ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder" TYPE MODULE FILES "/home/katsikas/gnuradio/build/gr-vocoder/swig/_vocoder_swig.so")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder/_vocoder_swig.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder/_vocoder_swig.so")
-    FILE(RPATH_REMOVE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder/_vocoder_swig.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder" TYPE MODULE FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/swig/CMakeFiles/CMakeRelink.dir/_vocoder_swig.so")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder/_vocoder_swig.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder/_vocoder_swig.so")
     IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder/_vocoder_swig.so")
+      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder/_vocoder_swig.so")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/swig/vocoder_swig.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/vocoder" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig.pyc"
-    "/home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig.pyo"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/vocoder" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/swig/vocoder_swig.pyc"
+    "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/swig/vocoder_swig.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_swig")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio/swig" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_swig.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_alaw_decode_bs.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_alaw_encode_sb.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_codec2_decode_ps.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_codec2_encode_sp.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_cvsd_decode_bs.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_cvsd_encode_sb.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_g721_decode_bs.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_g721_encode_sb.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_g723_24_decode_bs.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_g723_24_encode_sb.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_g723_40_decode_bs.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_g723_40_encode_sb.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_gsm_fr_encode_sp.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_gsm_fr_decode_ps.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_ulaw_decode_bs.i"
-    "/home/katsikas/gnuradio/gr-vocoder/swig/vocoder_ulaw_encode_sb.i"
-    "/home/katsikas/gnuradio/build/gr-vocoder/swig/vocoder_swig_doc.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_swig.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_alaw_decode_bs.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_alaw_encode_sb.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_codec2_decode_ps.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_codec2_encode_sp.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_cvsd_decode_bs.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_cvsd_encode_sb.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_g721_decode_bs.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_g721_encode_sb.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_g723_24_decode_bs.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_g723_24_encode_sb.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_g723_40_decode_bs.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_g723_40_encode_sb.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_gsm_fr_encode_sp.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_gsm_fr_decode_ps.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_ulaw_decode_bs.i"
+    "/home/katsikas/Desktop/gnuradio/gr-vocoder/swig/vocoder_ulaw_encode_sb.i"
+    "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/swig/vocoder_swig_doc.i"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "vocoder_swig")
 

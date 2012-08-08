@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,19 +35,22 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"fft_devel\" \"fft_python\" \"fft_runtime\" \"fft_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -98,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/katsikas/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/gnuradio/build/CPackSourceConfig.cmake
+	cd /home/katsikas/Desktop/gnuradio/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/katsikas/Desktop/gnuradio/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -137,14 +140,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles /home/katsikas/gnuradio/build/gr-digital/lib/CMakeFiles/progress.marks
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/gnuradio/build/CMakeFiles 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles /home/katsikas/Desktop/gnuradio/build/gr-digital/lib/CMakeFiles/progress.marks
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katsikas/Desktop/gnuradio/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/clean
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -153,22 +156,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/preinstall
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/rule
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/rule
 .PHONY : gr-digital/lib/CMakeFiles/gnuradio-digital.dir/rule
 
 # Convenience name for target.
@@ -177,39 +180,20 @@ gnuradio-digital: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/rule
 
 # fast build rule for target.
 gnuradio-digital/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build
 .PHONY : gnuradio-digital/fast
 
-digital_additive_scrambler_bb.o: digital_additive_scrambler_bb.cc.o
-.PHONY : digital_additive_scrambler_bb.o
-
-# target to build an object file
-digital_additive_scrambler_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_additive_scrambler_bb.cc.o
-.PHONY : digital_additive_scrambler_bb.cc.o
-
-digital_additive_scrambler_bb.i: digital_additive_scrambler_bb.cc.i
-.PHONY : digital_additive_scrambler_bb.i
-
-# target to preprocess a source file
-digital_additive_scrambler_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_additive_scrambler_bb.cc.i
-.PHONY : digital_additive_scrambler_bb.cc.i
-
-digital_additive_scrambler_bb.s: digital_additive_scrambler_bb.cc.s
-.PHONY : digital_additive_scrambler_bb.s
-
-# target to generate assembly for a file
-digital_additive_scrambler_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_additive_scrambler_bb.cc.s
-.PHONY : digital_additive_scrambler_bb.cc.s
+# Manual pre-install relink rule for target.
+gnuradio-digital/preinstall:
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/preinstall
+.PHONY : gnuradio-digital/preinstall
 
 digital_binary_slicer_fb.o: digital_binary_slicer_fb.cc.o
 .PHONY : digital_binary_slicer_fb.o
 
 # target to build an object file
 digital_binary_slicer_fb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_binary_slicer_fb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_binary_slicer_fb.cc.o
 .PHONY : digital_binary_slicer_fb.cc.o
 
 digital_binary_slicer_fb.i: digital_binary_slicer_fb.cc.i
@@ -217,7 +201,7 @@ digital_binary_slicer_fb.i: digital_binary_slicer_fb.cc.i
 
 # target to preprocess a source file
 digital_binary_slicer_fb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_binary_slicer_fb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_binary_slicer_fb.cc.i
 .PHONY : digital_binary_slicer_fb.cc.i
 
 digital_binary_slicer_fb.s: digital_binary_slicer_fb.cc.s
@@ -225,183 +209,15 @@ digital_binary_slicer_fb.s: digital_binary_slicer_fb.cc.s
 
 # target to generate assembly for a file
 digital_binary_slicer_fb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_binary_slicer_fb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_binary_slicer_fb.cc.s
 .PHONY : digital_binary_slicer_fb.cc.s
-
-digital_bytes_to_syms.o: digital_bytes_to_syms.cc.o
-.PHONY : digital_bytes_to_syms.o
-
-# target to build an object file
-digital_bytes_to_syms.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_bytes_to_syms.cc.o
-.PHONY : digital_bytes_to_syms.cc.o
-
-digital_bytes_to_syms.i: digital_bytes_to_syms.cc.i
-.PHONY : digital_bytes_to_syms.i
-
-# target to preprocess a source file
-digital_bytes_to_syms.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_bytes_to_syms.cc.i
-.PHONY : digital_bytes_to_syms.cc.i
-
-digital_bytes_to_syms.s: digital_bytes_to_syms.cc.s
-.PHONY : digital_bytes_to_syms.s
-
-# target to generate assembly for a file
-digital_bytes_to_syms.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_bytes_to_syms.cc.s
-.PHONY : digital_bytes_to_syms.cc.s
-
-digital_chunks_to_symbols_bc.o: digital_chunks_to_symbols_bc.cc.o
-.PHONY : digital_chunks_to_symbols_bc.o
-
-# target to build an object file
-digital_chunks_to_symbols_bc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_bc.cc.o
-.PHONY : digital_chunks_to_symbols_bc.cc.o
-
-digital_chunks_to_symbols_bc.i: digital_chunks_to_symbols_bc.cc.i
-.PHONY : digital_chunks_to_symbols_bc.i
-
-# target to preprocess a source file
-digital_chunks_to_symbols_bc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_bc.cc.i
-.PHONY : digital_chunks_to_symbols_bc.cc.i
-
-digital_chunks_to_symbols_bc.s: digital_chunks_to_symbols_bc.cc.s
-.PHONY : digital_chunks_to_symbols_bc.s
-
-# target to generate assembly for a file
-digital_chunks_to_symbols_bc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_bc.cc.s
-.PHONY : digital_chunks_to_symbols_bc.cc.s
-
-digital_chunks_to_symbols_bf.o: digital_chunks_to_symbols_bf.cc.o
-.PHONY : digital_chunks_to_symbols_bf.o
-
-# target to build an object file
-digital_chunks_to_symbols_bf.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_bf.cc.o
-.PHONY : digital_chunks_to_symbols_bf.cc.o
-
-digital_chunks_to_symbols_bf.i: digital_chunks_to_symbols_bf.cc.i
-.PHONY : digital_chunks_to_symbols_bf.i
-
-# target to preprocess a source file
-digital_chunks_to_symbols_bf.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_bf.cc.i
-.PHONY : digital_chunks_to_symbols_bf.cc.i
-
-digital_chunks_to_symbols_bf.s: digital_chunks_to_symbols_bf.cc.s
-.PHONY : digital_chunks_to_symbols_bf.s
-
-# target to generate assembly for a file
-digital_chunks_to_symbols_bf.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_bf.cc.s
-.PHONY : digital_chunks_to_symbols_bf.cc.s
-
-digital_chunks_to_symbols_ic.o: digital_chunks_to_symbols_ic.cc.o
-.PHONY : digital_chunks_to_symbols_ic.o
-
-# target to build an object file
-digital_chunks_to_symbols_ic.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_ic.cc.o
-.PHONY : digital_chunks_to_symbols_ic.cc.o
-
-digital_chunks_to_symbols_ic.i: digital_chunks_to_symbols_ic.cc.i
-.PHONY : digital_chunks_to_symbols_ic.i
-
-# target to preprocess a source file
-digital_chunks_to_symbols_ic.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_ic.cc.i
-.PHONY : digital_chunks_to_symbols_ic.cc.i
-
-digital_chunks_to_symbols_ic.s: digital_chunks_to_symbols_ic.cc.s
-.PHONY : digital_chunks_to_symbols_ic.s
-
-# target to generate assembly for a file
-digital_chunks_to_symbols_ic.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_ic.cc.s
-.PHONY : digital_chunks_to_symbols_ic.cc.s
-
-digital_chunks_to_symbols_if.o: digital_chunks_to_symbols_if.cc.o
-.PHONY : digital_chunks_to_symbols_if.o
-
-# target to build an object file
-digital_chunks_to_symbols_if.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_if.cc.o
-.PHONY : digital_chunks_to_symbols_if.cc.o
-
-digital_chunks_to_symbols_if.i: digital_chunks_to_symbols_if.cc.i
-.PHONY : digital_chunks_to_symbols_if.i
-
-# target to preprocess a source file
-digital_chunks_to_symbols_if.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_if.cc.i
-.PHONY : digital_chunks_to_symbols_if.cc.i
-
-digital_chunks_to_symbols_if.s: digital_chunks_to_symbols_if.cc.s
-.PHONY : digital_chunks_to_symbols_if.s
-
-# target to generate assembly for a file
-digital_chunks_to_symbols_if.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_if.cc.s
-.PHONY : digital_chunks_to_symbols_if.cc.s
-
-digital_chunks_to_symbols_sc.o: digital_chunks_to_symbols_sc.cc.o
-.PHONY : digital_chunks_to_symbols_sc.o
-
-# target to build an object file
-digital_chunks_to_symbols_sc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_sc.cc.o
-.PHONY : digital_chunks_to_symbols_sc.cc.o
-
-digital_chunks_to_symbols_sc.i: digital_chunks_to_symbols_sc.cc.i
-.PHONY : digital_chunks_to_symbols_sc.i
-
-# target to preprocess a source file
-digital_chunks_to_symbols_sc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_sc.cc.i
-.PHONY : digital_chunks_to_symbols_sc.cc.i
-
-digital_chunks_to_symbols_sc.s: digital_chunks_to_symbols_sc.cc.s
-.PHONY : digital_chunks_to_symbols_sc.s
-
-# target to generate assembly for a file
-digital_chunks_to_symbols_sc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_sc.cc.s
-.PHONY : digital_chunks_to_symbols_sc.cc.s
-
-digital_chunks_to_symbols_sf.o: digital_chunks_to_symbols_sf.cc.o
-.PHONY : digital_chunks_to_symbols_sf.o
-
-# target to build an object file
-digital_chunks_to_symbols_sf.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_sf.cc.o
-.PHONY : digital_chunks_to_symbols_sf.cc.o
-
-digital_chunks_to_symbols_sf.i: digital_chunks_to_symbols_sf.cc.i
-.PHONY : digital_chunks_to_symbols_sf.i
-
-# target to preprocess a source file
-digital_chunks_to_symbols_sf.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_sf.cc.i
-.PHONY : digital_chunks_to_symbols_sf.cc.i
-
-digital_chunks_to_symbols_sf.s: digital_chunks_to_symbols_sf.cc.s
-.PHONY : digital_chunks_to_symbols_sf.s
-
-# target to generate assembly for a file
-digital_chunks_to_symbols_sf.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_chunks_to_symbols_sf.cc.s
-.PHONY : digital_chunks_to_symbols_sf.cc.s
 
 digital_clock_recovery_mm_cc.o: digital_clock_recovery_mm_cc.cc.o
 .PHONY : digital_clock_recovery_mm_cc.o
 
 # target to build an object file
 digital_clock_recovery_mm_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_cc.cc.o
 .PHONY : digital_clock_recovery_mm_cc.cc.o
 
 digital_clock_recovery_mm_cc.i: digital_clock_recovery_mm_cc.cc.i
@@ -409,7 +225,7 @@ digital_clock_recovery_mm_cc.i: digital_clock_recovery_mm_cc.cc.i
 
 # target to preprocess a source file
 digital_clock_recovery_mm_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_cc.cc.i
 .PHONY : digital_clock_recovery_mm_cc.cc.i
 
 digital_clock_recovery_mm_cc.s: digital_clock_recovery_mm_cc.cc.s
@@ -417,7 +233,7 @@ digital_clock_recovery_mm_cc.s: digital_clock_recovery_mm_cc.cc.s
 
 # target to generate assembly for a file
 digital_clock_recovery_mm_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_cc.cc.s
 .PHONY : digital_clock_recovery_mm_cc.cc.s
 
 digital_clock_recovery_mm_ff.o: digital_clock_recovery_mm_ff.cc.o
@@ -425,7 +241,7 @@ digital_clock_recovery_mm_ff.o: digital_clock_recovery_mm_ff.cc.o
 
 # target to build an object file
 digital_clock_recovery_mm_ff.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_ff.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_ff.cc.o
 .PHONY : digital_clock_recovery_mm_ff.cc.o
 
 digital_clock_recovery_mm_ff.i: digital_clock_recovery_mm_ff.cc.i
@@ -433,7 +249,7 @@ digital_clock_recovery_mm_ff.i: digital_clock_recovery_mm_ff.cc.i
 
 # target to preprocess a source file
 digital_clock_recovery_mm_ff.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_ff.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_ff.cc.i
 .PHONY : digital_clock_recovery_mm_ff.cc.i
 
 digital_clock_recovery_mm_ff.s: digital_clock_recovery_mm_ff.cc.s
@@ -441,7 +257,7 @@ digital_clock_recovery_mm_ff.s: digital_clock_recovery_mm_ff.cc.s
 
 # target to generate assembly for a file
 digital_clock_recovery_mm_ff.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_ff.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_clock_recovery_mm_ff.cc.s
 .PHONY : digital_clock_recovery_mm_ff.cc.s
 
 digital_cma_equalizer_cc.o: digital_cma_equalizer_cc.cc.o
@@ -449,7 +265,7 @@ digital_cma_equalizer_cc.o: digital_cma_equalizer_cc.cc.o
 
 # target to build an object file
 digital_cma_equalizer_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cma_equalizer_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cma_equalizer_cc.cc.o
 .PHONY : digital_cma_equalizer_cc.cc.o
 
 digital_cma_equalizer_cc.i: digital_cma_equalizer_cc.cc.i
@@ -457,7 +273,7 @@ digital_cma_equalizer_cc.i: digital_cma_equalizer_cc.cc.i
 
 # target to preprocess a source file
 digital_cma_equalizer_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cma_equalizer_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cma_equalizer_cc.cc.i
 .PHONY : digital_cma_equalizer_cc.cc.i
 
 digital_cma_equalizer_cc.s: digital_cma_equalizer_cc.cc.s
@@ -465,7 +281,7 @@ digital_cma_equalizer_cc.s: digital_cma_equalizer_cc.cc.s
 
 # target to generate assembly for a file
 digital_cma_equalizer_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cma_equalizer_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cma_equalizer_cc.cc.s
 .PHONY : digital_cma_equalizer_cc.cc.s
 
 digital_constellation.o: digital_constellation.cc.o
@@ -473,7 +289,7 @@ digital_constellation.o: digital_constellation.cc.o
 
 # target to build an object file
 digital_constellation.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation.cc.o
 .PHONY : digital_constellation.cc.o
 
 digital_constellation.i: digital_constellation.cc.i
@@ -481,7 +297,7 @@ digital_constellation.i: digital_constellation.cc.i
 
 # target to preprocess a source file
 digital_constellation.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation.cc.i
 .PHONY : digital_constellation.cc.i
 
 digital_constellation.s: digital_constellation.cc.s
@@ -489,7 +305,7 @@ digital_constellation.s: digital_constellation.cc.s
 
 # target to generate assembly for a file
 digital_constellation.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation.cc.s
 .PHONY : digital_constellation.cc.s
 
 digital_constellation_decoder_cb.o: digital_constellation_decoder_cb.cc.o
@@ -497,7 +313,7 @@ digital_constellation_decoder_cb.o: digital_constellation_decoder_cb.cc.o
 
 # target to build an object file
 digital_constellation_decoder_cb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_decoder_cb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_decoder_cb.cc.o
 .PHONY : digital_constellation_decoder_cb.cc.o
 
 digital_constellation_decoder_cb.i: digital_constellation_decoder_cb.cc.i
@@ -505,7 +321,7 @@ digital_constellation_decoder_cb.i: digital_constellation_decoder_cb.cc.i
 
 # target to preprocess a source file
 digital_constellation_decoder_cb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_decoder_cb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_decoder_cb.cc.i
 .PHONY : digital_constellation_decoder_cb.cc.i
 
 digital_constellation_decoder_cb.s: digital_constellation_decoder_cb.cc.s
@@ -513,7 +329,7 @@ digital_constellation_decoder_cb.s: digital_constellation_decoder_cb.cc.s
 
 # target to generate assembly for a file
 digital_constellation_decoder_cb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_decoder_cb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_decoder_cb.cc.s
 .PHONY : digital_constellation_decoder_cb.cc.s
 
 digital_constellation_receiver_cb.o: digital_constellation_receiver_cb.cc.o
@@ -521,7 +337,7 @@ digital_constellation_receiver_cb.o: digital_constellation_receiver_cb.cc.o
 
 # target to build an object file
 digital_constellation_receiver_cb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_receiver_cb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_receiver_cb.cc.o
 .PHONY : digital_constellation_receiver_cb.cc.o
 
 digital_constellation_receiver_cb.i: digital_constellation_receiver_cb.cc.i
@@ -529,7 +345,7 @@ digital_constellation_receiver_cb.i: digital_constellation_receiver_cb.cc.i
 
 # target to preprocess a source file
 digital_constellation_receiver_cb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_receiver_cb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_receiver_cb.cc.i
 .PHONY : digital_constellation_receiver_cb.cc.i
 
 digital_constellation_receiver_cb.s: digital_constellation_receiver_cb.cc.s
@@ -537,7 +353,7 @@ digital_constellation_receiver_cb.s: digital_constellation_receiver_cb.cc.s
 
 # target to generate assembly for a file
 digital_constellation_receiver_cb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_receiver_cb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_constellation_receiver_cb.cc.s
 .PHONY : digital_constellation_receiver_cb.cc.s
 
 digital_correlate_access_code_bb.o: digital_correlate_access_code_bb.cc.o
@@ -545,7 +361,7 @@ digital_correlate_access_code_bb.o: digital_correlate_access_code_bb.cc.o
 
 # target to build an object file
 digital_correlate_access_code_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_bb.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_bb.cc.o
 .PHONY : digital_correlate_access_code_bb.cc.o
 
 digital_correlate_access_code_bb.i: digital_correlate_access_code_bb.cc.i
@@ -553,7 +369,7 @@ digital_correlate_access_code_bb.i: digital_correlate_access_code_bb.cc.i
 
 # target to preprocess a source file
 digital_correlate_access_code_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_bb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_bb.cc.i
 .PHONY : digital_correlate_access_code_bb.cc.i
 
 digital_correlate_access_code_bb.s: digital_correlate_access_code_bb.cc.s
@@ -561,39 +377,15 @@ digital_correlate_access_code_bb.s: digital_correlate_access_code_bb.cc.s
 
 # target to generate assembly for a file
 digital_correlate_access_code_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_bb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_bb.cc.s
 .PHONY : digital_correlate_access_code_bb.cc.s
-
-digital_correlate_access_code_tag_bb.o: digital_correlate_access_code_tag_bb.cc.o
-.PHONY : digital_correlate_access_code_tag_bb.o
-
-# target to build an object file
-digital_correlate_access_code_tag_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_tag_bb.cc.o
-.PHONY : digital_correlate_access_code_tag_bb.cc.o
-
-digital_correlate_access_code_tag_bb.i: digital_correlate_access_code_tag_bb.cc.i
-.PHONY : digital_correlate_access_code_tag_bb.i
-
-# target to preprocess a source file
-digital_correlate_access_code_tag_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_tag_bb.cc.i
-.PHONY : digital_correlate_access_code_tag_bb.cc.i
-
-digital_correlate_access_code_tag_bb.s: digital_correlate_access_code_tag_bb.cc.s
-.PHONY : digital_correlate_access_code_tag_bb.s
-
-# target to generate assembly for a file
-digital_correlate_access_code_tag_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_correlate_access_code_tag_bb.cc.s
-.PHONY : digital_correlate_access_code_tag_bb.cc.s
 
 digital_costas_loop_cc.o: digital_costas_loop_cc.cc.o
 .PHONY : digital_costas_loop_cc.o
 
 # target to build an object file
 digital_costas_loop_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_costas_loop_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_costas_loop_cc.cc.o
 .PHONY : digital_costas_loop_cc.cc.o
 
 digital_costas_loop_cc.i: digital_costas_loop_cc.cc.i
@@ -601,7 +393,7 @@ digital_costas_loop_cc.i: digital_costas_loop_cc.cc.i
 
 # target to preprocess a source file
 digital_costas_loop_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_costas_loop_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_costas_loop_cc.cc.i
 .PHONY : digital_costas_loop_cc.cc.i
 
 digital_costas_loop_cc.s: digital_costas_loop_cc.cc.s
@@ -609,7 +401,7 @@ digital_costas_loop_cc.s: digital_costas_loop_cc.cc.s
 
 # target to generate assembly for a file
 digital_costas_loop_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_costas_loop_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_costas_loop_cc.cc.s
 .PHONY : digital_costas_loop_cc.cc.s
 
 digital_cpmmod_bc.o: digital_cpmmod_bc.cc.o
@@ -617,7 +409,7 @@ digital_cpmmod_bc.o: digital_cpmmod_bc.cc.o
 
 # target to build an object file
 digital_cpmmod_bc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o
 .PHONY : digital_cpmmod_bc.cc.o
 
 digital_cpmmod_bc.i: digital_cpmmod_bc.cc.i
@@ -625,7 +417,7 @@ digital_cpmmod_bc.i: digital_cpmmod_bc.cc.i
 
 # target to preprocess a source file
 digital_cpmmod_bc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.i
 .PHONY : digital_cpmmod_bc.cc.i
 
 digital_cpmmod_bc.s: digital_cpmmod_bc.cc.s
@@ -633,7 +425,7 @@ digital_cpmmod_bc.s: digital_cpmmod_bc.cc.s
 
 # target to generate assembly for a file
 digital_cpmmod_bc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.s
 .PHONY : digital_cpmmod_bc.cc.s
 
 digital_crc32.o: digital_crc32.cc.o
@@ -641,7 +433,7 @@ digital_crc32.o: digital_crc32.cc.o
 
 # target to build an object file
 digital_crc32.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_crc32.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_crc32.cc.o
 .PHONY : digital_crc32.cc.o
 
 digital_crc32.i: digital_crc32.cc.i
@@ -649,7 +441,7 @@ digital_crc32.i: digital_crc32.cc.i
 
 # target to preprocess a source file
 digital_crc32.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_crc32.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_crc32.cc.i
 .PHONY : digital_crc32.cc.i
 
 digital_crc32.s: digital_crc32.cc.s
@@ -657,111 +449,15 @@ digital_crc32.s: digital_crc32.cc.s
 
 # target to generate assembly for a file
 digital_crc32.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_crc32.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_crc32.cc.s
 .PHONY : digital_crc32.cc.s
-
-digital_descrambler_bb.o: digital_descrambler_bb.cc.o
-.PHONY : digital_descrambler_bb.o
-
-# target to build an object file
-digital_descrambler_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_descrambler_bb.cc.o
-.PHONY : digital_descrambler_bb.cc.o
-
-digital_descrambler_bb.i: digital_descrambler_bb.cc.i
-.PHONY : digital_descrambler_bb.i
-
-# target to preprocess a source file
-digital_descrambler_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_descrambler_bb.cc.i
-.PHONY : digital_descrambler_bb.cc.i
-
-digital_descrambler_bb.s: digital_descrambler_bb.cc.s
-.PHONY : digital_descrambler_bb.s
-
-# target to generate assembly for a file
-digital_descrambler_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_descrambler_bb.cc.s
-.PHONY : digital_descrambler_bb.cc.s
-
-digital_diff_decoder_bb.o: digital_diff_decoder_bb.cc.o
-.PHONY : digital_diff_decoder_bb.o
-
-# target to build an object file
-digital_diff_decoder_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_decoder_bb.cc.o
-.PHONY : digital_diff_decoder_bb.cc.o
-
-digital_diff_decoder_bb.i: digital_diff_decoder_bb.cc.i
-.PHONY : digital_diff_decoder_bb.i
-
-# target to preprocess a source file
-digital_diff_decoder_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_decoder_bb.cc.i
-.PHONY : digital_diff_decoder_bb.cc.i
-
-digital_diff_decoder_bb.s: digital_diff_decoder_bb.cc.s
-.PHONY : digital_diff_decoder_bb.s
-
-# target to generate assembly for a file
-digital_diff_decoder_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_decoder_bb.cc.s
-.PHONY : digital_diff_decoder_bb.cc.s
-
-digital_diff_encoder_bb.o: digital_diff_encoder_bb.cc.o
-.PHONY : digital_diff_encoder_bb.o
-
-# target to build an object file
-digital_diff_encoder_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_encoder_bb.cc.o
-.PHONY : digital_diff_encoder_bb.cc.o
-
-digital_diff_encoder_bb.i: digital_diff_encoder_bb.cc.i
-.PHONY : digital_diff_encoder_bb.i
-
-# target to preprocess a source file
-digital_diff_encoder_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_encoder_bb.cc.i
-.PHONY : digital_diff_encoder_bb.cc.i
-
-digital_diff_encoder_bb.s: digital_diff_encoder_bb.cc.s
-.PHONY : digital_diff_encoder_bb.s
-
-# target to generate assembly for a file
-digital_diff_encoder_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_encoder_bb.cc.s
-.PHONY : digital_diff_encoder_bb.cc.s
-
-digital_diff_phasor_cc.o: digital_diff_phasor_cc.cc.o
-.PHONY : digital_diff_phasor_cc.o
-
-# target to build an object file
-digital_diff_phasor_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_phasor_cc.cc.o
-.PHONY : digital_diff_phasor_cc.cc.o
-
-digital_diff_phasor_cc.i: digital_diff_phasor_cc.cc.i
-.PHONY : digital_diff_phasor_cc.i
-
-# target to preprocess a source file
-digital_diff_phasor_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_phasor_cc.cc.i
-.PHONY : digital_diff_phasor_cc.cc.i
-
-digital_diff_phasor_cc.s: digital_diff_phasor_cc.cc.s
-.PHONY : digital_diff_phasor_cc.s
-
-# target to generate assembly for a file
-digital_diff_phasor_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_diff_phasor_cc.cc.s
-.PHONY : digital_diff_phasor_cc.cc.s
 
 digital_fll_band_edge_cc.o: digital_fll_band_edge_cc.cc.o
 .PHONY : digital_fll_band_edge_cc.o
 
 # target to build an object file
 digital_fll_band_edge_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_fll_band_edge_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_fll_band_edge_cc.cc.o
 .PHONY : digital_fll_band_edge_cc.cc.o
 
 digital_fll_band_edge_cc.i: digital_fll_band_edge_cc.cc.i
@@ -769,7 +465,7 @@ digital_fll_band_edge_cc.i: digital_fll_band_edge_cc.cc.i
 
 # target to preprocess a source file
 digital_fll_band_edge_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_fll_band_edge_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_fll_band_edge_cc.cc.i
 .PHONY : digital_fll_band_edge_cc.cc.i
 
 digital_fll_band_edge_cc.s: digital_fll_band_edge_cc.cc.s
@@ -777,87 +473,15 @@ digital_fll_band_edge_cc.s: digital_fll_band_edge_cc.cc.s
 
 # target to generate assembly for a file
 digital_fll_band_edge_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_fll_band_edge_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_fll_band_edge_cc.cc.s
 .PHONY : digital_fll_band_edge_cc.cc.s
-
-digital_framer_sink_1.o: digital_framer_sink_1.cc.o
-.PHONY : digital_framer_sink_1.o
-
-# target to build an object file
-digital_framer_sink_1.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_framer_sink_1.cc.o
-.PHONY : digital_framer_sink_1.cc.o
-
-digital_framer_sink_1.i: digital_framer_sink_1.cc.i
-.PHONY : digital_framer_sink_1.i
-
-# target to preprocess a source file
-digital_framer_sink_1.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_framer_sink_1.cc.i
-.PHONY : digital_framer_sink_1.cc.i
-
-digital_framer_sink_1.s: digital_framer_sink_1.cc.s
-.PHONY : digital_framer_sink_1.s
-
-# target to generate assembly for a file
-digital_framer_sink_1.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_framer_sink_1.cc.s
-.PHONY : digital_framer_sink_1.cc.s
-
-digital_glfsr_source_b.o: digital_glfsr_source_b.cc.o
-.PHONY : digital_glfsr_source_b.o
-
-# target to build an object file
-digital_glfsr_source_b.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_glfsr_source_b.cc.o
-.PHONY : digital_glfsr_source_b.cc.o
-
-digital_glfsr_source_b.i: digital_glfsr_source_b.cc.i
-.PHONY : digital_glfsr_source_b.i
-
-# target to preprocess a source file
-digital_glfsr_source_b.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_glfsr_source_b.cc.i
-.PHONY : digital_glfsr_source_b.cc.i
-
-digital_glfsr_source_b.s: digital_glfsr_source_b.cc.s
-.PHONY : digital_glfsr_source_b.s
-
-# target to generate assembly for a file
-digital_glfsr_source_b.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_glfsr_source_b.cc.s
-.PHONY : digital_glfsr_source_b.cc.s
-
-digital_glfsr_source_f.o: digital_glfsr_source_f.cc.o
-.PHONY : digital_glfsr_source_f.o
-
-# target to build an object file
-digital_glfsr_source_f.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_glfsr_source_f.cc.o
-.PHONY : digital_glfsr_source_f.cc.o
-
-digital_glfsr_source_f.i: digital_glfsr_source_f.cc.i
-.PHONY : digital_glfsr_source_f.i
-
-# target to preprocess a source file
-digital_glfsr_source_f.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_glfsr_source_f.cc.i
-.PHONY : digital_glfsr_source_f.cc.i
-
-digital_glfsr_source_f.s: digital_glfsr_source_f.cc.s
-.PHONY : digital_glfsr_source_f.s
-
-# target to generate assembly for a file
-digital_glfsr_source_f.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_glfsr_source_f.cc.s
-.PHONY : digital_glfsr_source_f.cc.s
 
 digital_gmskmod_bc.o: digital_gmskmod_bc.cc.o
 .PHONY : digital_gmskmod_bc.o
 
 # target to build an object file
 digital_gmskmod_bc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.o
 .PHONY : digital_gmskmod_bc.cc.o
 
 digital_gmskmod_bc.i: digital_gmskmod_bc.cc.i
@@ -865,7 +489,7 @@ digital_gmskmod_bc.i: digital_gmskmod_bc.cc.i
 
 # target to preprocess a source file
 digital_gmskmod_bc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.i
 .PHONY : digital_gmskmod_bc.cc.i
 
 digital_gmskmod_bc.s: digital_gmskmod_bc.cc.s
@@ -873,39 +497,15 @@ digital_gmskmod_bc.s: digital_gmskmod_bc.cc.s
 
 # target to generate assembly for a file
 digital_gmskmod_bc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.s
 .PHONY : digital_gmskmod_bc.cc.s
-
-digital_impl_glfsr.o: digital_impl_glfsr.cc.o
-.PHONY : digital_impl_glfsr.o
-
-# target to build an object file
-digital_impl_glfsr.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_glfsr.cc.o
-.PHONY : digital_impl_glfsr.cc.o
-
-digital_impl_glfsr.i: digital_impl_glfsr.cc.i
-.PHONY : digital_impl_glfsr.i
-
-# target to preprocess a source file
-digital_impl_glfsr.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_glfsr.cc.i
-.PHONY : digital_impl_glfsr.cc.i
-
-digital_impl_glfsr.s: digital_impl_glfsr.cc.s
-.PHONY : digital_impl_glfsr.s
-
-# target to generate assembly for a file
-digital_impl_glfsr.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_glfsr.cc.s
-.PHONY : digital_impl_glfsr.cc.s
 
 digital_impl_mpsk_snr_est.o: digital_impl_mpsk_snr_est.cc.o
 .PHONY : digital_impl_mpsk_snr_est.o
 
 # target to build an object file
 digital_impl_mpsk_snr_est.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_mpsk_snr_est.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_mpsk_snr_est.cc.o
 .PHONY : digital_impl_mpsk_snr_est.cc.o
 
 digital_impl_mpsk_snr_est.i: digital_impl_mpsk_snr_est.cc.i
@@ -913,7 +513,7 @@ digital_impl_mpsk_snr_est.i: digital_impl_mpsk_snr_est.cc.i
 
 # target to preprocess a source file
 digital_impl_mpsk_snr_est.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_mpsk_snr_est.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_mpsk_snr_est.cc.i
 .PHONY : digital_impl_mpsk_snr_est.cc.i
 
 digital_impl_mpsk_snr_est.s: digital_impl_mpsk_snr_est.cc.s
@@ -921,7 +521,7 @@ digital_impl_mpsk_snr_est.s: digital_impl_mpsk_snr_est.cc.s
 
 # target to generate assembly for a file
 digital_impl_mpsk_snr_est.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_mpsk_snr_est.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_impl_mpsk_snr_est.cc.s
 .PHONY : digital_impl_mpsk_snr_est.cc.s
 
 digital_kurtotic_equalizer_cc.o: digital_kurtotic_equalizer_cc.cc.o
@@ -929,7 +529,7 @@ digital_kurtotic_equalizer_cc.o: digital_kurtotic_equalizer_cc.cc.o
 
 # target to build an object file
 digital_kurtotic_equalizer_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_kurtotic_equalizer_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_kurtotic_equalizer_cc.cc.o
 .PHONY : digital_kurtotic_equalizer_cc.cc.o
 
 digital_kurtotic_equalizer_cc.i: digital_kurtotic_equalizer_cc.cc.i
@@ -937,7 +537,7 @@ digital_kurtotic_equalizer_cc.i: digital_kurtotic_equalizer_cc.cc.i
 
 # target to preprocess a source file
 digital_kurtotic_equalizer_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_kurtotic_equalizer_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_kurtotic_equalizer_cc.cc.i
 .PHONY : digital_kurtotic_equalizer_cc.cc.i
 
 digital_kurtotic_equalizer_cc.s: digital_kurtotic_equalizer_cc.cc.s
@@ -945,7 +545,7 @@ digital_kurtotic_equalizer_cc.s: digital_kurtotic_equalizer_cc.cc.s
 
 # target to generate assembly for a file
 digital_kurtotic_equalizer_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_kurtotic_equalizer_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_kurtotic_equalizer_cc.cc.s
 .PHONY : digital_kurtotic_equalizer_cc.cc.s
 
 digital_lms_dd_equalizer_cc.o: digital_lms_dd_equalizer_cc.cc.o
@@ -953,7 +553,7 @@ digital_lms_dd_equalizer_cc.o: digital_lms_dd_equalizer_cc.cc.o
 
 # target to build an object file
 digital_lms_dd_equalizer_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_lms_dd_equalizer_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_lms_dd_equalizer_cc.cc.o
 .PHONY : digital_lms_dd_equalizer_cc.cc.o
 
 digital_lms_dd_equalizer_cc.i: digital_lms_dd_equalizer_cc.cc.i
@@ -961,7 +561,7 @@ digital_lms_dd_equalizer_cc.i: digital_lms_dd_equalizer_cc.cc.i
 
 # target to preprocess a source file
 digital_lms_dd_equalizer_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_lms_dd_equalizer_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_lms_dd_equalizer_cc.cc.i
 .PHONY : digital_lms_dd_equalizer_cc.cc.i
 
 digital_lms_dd_equalizer_cc.s: digital_lms_dd_equalizer_cc.cc.s
@@ -969,39 +569,15 @@ digital_lms_dd_equalizer_cc.s: digital_lms_dd_equalizer_cc.cc.s
 
 # target to generate assembly for a file
 digital_lms_dd_equalizer_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_lms_dd_equalizer_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_lms_dd_equalizer_cc.cc.s
 .PHONY : digital_lms_dd_equalizer_cc.cc.s
-
-digital_map_bb.o: digital_map_bb.cc.o
-.PHONY : digital_map_bb.o
-
-# target to build an object file
-digital_map_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_map_bb.cc.o
-.PHONY : digital_map_bb.cc.o
-
-digital_map_bb.i: digital_map_bb.cc.i
-.PHONY : digital_map_bb.i
-
-# target to preprocess a source file
-digital_map_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_map_bb.cc.i
-.PHONY : digital_map_bb.cc.i
-
-digital_map_bb.s: digital_map_bb.cc.s
-.PHONY : digital_map_bb.s
-
-# target to generate assembly for a file
-digital_map_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_map_bb.cc.s
-.PHONY : digital_map_bb.cc.s
 
 digital_mpsk_receiver_cc.o: digital_mpsk_receiver_cc.cc.o
 .PHONY : digital_mpsk_receiver_cc.o
 
 # target to build an object file
 digital_mpsk_receiver_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_receiver_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_receiver_cc.cc.o
 .PHONY : digital_mpsk_receiver_cc.cc.o
 
 digital_mpsk_receiver_cc.i: digital_mpsk_receiver_cc.cc.i
@@ -1009,7 +585,7 @@ digital_mpsk_receiver_cc.i: digital_mpsk_receiver_cc.cc.i
 
 # target to preprocess a source file
 digital_mpsk_receiver_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_receiver_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_receiver_cc.cc.i
 .PHONY : digital_mpsk_receiver_cc.cc.i
 
 digital_mpsk_receiver_cc.s: digital_mpsk_receiver_cc.cc.s
@@ -1017,7 +593,7 @@ digital_mpsk_receiver_cc.s: digital_mpsk_receiver_cc.cc.s
 
 # target to generate assembly for a file
 digital_mpsk_receiver_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_receiver_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_receiver_cc.cc.s
 .PHONY : digital_mpsk_receiver_cc.cc.s
 
 digital_mpsk_snr_est_cc.o: digital_mpsk_snr_est_cc.cc.o
@@ -1025,7 +601,7 @@ digital_mpsk_snr_est_cc.o: digital_mpsk_snr_est_cc.cc.o
 
 # target to build an object file
 digital_mpsk_snr_est_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_snr_est_cc.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_snr_est_cc.cc.o
 .PHONY : digital_mpsk_snr_est_cc.cc.o
 
 digital_mpsk_snr_est_cc.i: digital_mpsk_snr_est_cc.cc.i
@@ -1033,7 +609,7 @@ digital_mpsk_snr_est_cc.i: digital_mpsk_snr_est_cc.cc.i
 
 # target to preprocess a source file
 digital_mpsk_snr_est_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_snr_est_cc.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_snr_est_cc.cc.i
 .PHONY : digital_mpsk_snr_est_cc.cc.i
 
 digital_mpsk_snr_est_cc.s: digital_mpsk_snr_est_cc.cc.s
@@ -1041,7 +617,7 @@ digital_mpsk_snr_est_cc.s: digital_mpsk_snr_est_cc.cc.s
 
 # target to generate assembly for a file
 digital_mpsk_snr_est_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_snr_est_cc.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_mpsk_snr_est_cc.cc.s
 .PHONY : digital_mpsk_snr_est_cc.cc.s
 
 digital_ofdm_cyclic_prefixer.o: digital_ofdm_cyclic_prefixer.cc.o
@@ -1049,7 +625,7 @@ digital_ofdm_cyclic_prefixer.o: digital_ofdm_cyclic_prefixer.cc.o
 
 # target to build an object file
 digital_ofdm_cyclic_prefixer.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_cyclic_prefixer.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_cyclic_prefixer.cc.o
 .PHONY : digital_ofdm_cyclic_prefixer.cc.o
 
 digital_ofdm_cyclic_prefixer.i: digital_ofdm_cyclic_prefixer.cc.i
@@ -1057,7 +633,7 @@ digital_ofdm_cyclic_prefixer.i: digital_ofdm_cyclic_prefixer.cc.i
 
 # target to preprocess a source file
 digital_ofdm_cyclic_prefixer.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_cyclic_prefixer.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_cyclic_prefixer.cc.i
 .PHONY : digital_ofdm_cyclic_prefixer.cc.i
 
 digital_ofdm_cyclic_prefixer.s: digital_ofdm_cyclic_prefixer.cc.s
@@ -1065,7 +641,7 @@ digital_ofdm_cyclic_prefixer.s: digital_ofdm_cyclic_prefixer.cc.s
 
 # target to generate assembly for a file
 digital_ofdm_cyclic_prefixer.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_cyclic_prefixer.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_cyclic_prefixer.cc.s
 .PHONY : digital_ofdm_cyclic_prefixer.cc.s
 
 digital_ofdm_frame_acquisition.o: digital_ofdm_frame_acquisition.cc.o
@@ -1073,7 +649,7 @@ digital_ofdm_frame_acquisition.o: digital_ofdm_frame_acquisition.cc.o
 
 # target to build an object file
 digital_ofdm_frame_acquisition.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_acquisition.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_acquisition.cc.o
 .PHONY : digital_ofdm_frame_acquisition.cc.o
 
 digital_ofdm_frame_acquisition.i: digital_ofdm_frame_acquisition.cc.i
@@ -1081,7 +657,7 @@ digital_ofdm_frame_acquisition.i: digital_ofdm_frame_acquisition.cc.i
 
 # target to preprocess a source file
 digital_ofdm_frame_acquisition.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_acquisition.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_acquisition.cc.i
 .PHONY : digital_ofdm_frame_acquisition.cc.i
 
 digital_ofdm_frame_acquisition.s: digital_ofdm_frame_acquisition.cc.s
@@ -1089,7 +665,7 @@ digital_ofdm_frame_acquisition.s: digital_ofdm_frame_acquisition.cc.s
 
 # target to generate assembly for a file
 digital_ofdm_frame_acquisition.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_acquisition.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_acquisition.cc.s
 .PHONY : digital_ofdm_frame_acquisition.cc.s
 
 digital_ofdm_frame_sink.o: digital_ofdm_frame_sink.cc.o
@@ -1097,7 +673,7 @@ digital_ofdm_frame_sink.o: digital_ofdm_frame_sink.cc.o
 
 # target to build an object file
 digital_ofdm_frame_sink.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_sink.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_sink.cc.o
 .PHONY : digital_ofdm_frame_sink.cc.o
 
 digital_ofdm_frame_sink.i: digital_ofdm_frame_sink.cc.i
@@ -1105,7 +681,7 @@ digital_ofdm_frame_sink.i: digital_ofdm_frame_sink.cc.i
 
 # target to preprocess a source file
 digital_ofdm_frame_sink.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_sink.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_sink.cc.i
 .PHONY : digital_ofdm_frame_sink.cc.i
 
 digital_ofdm_frame_sink.s: digital_ofdm_frame_sink.cc.s
@@ -1113,7 +689,7 @@ digital_ofdm_frame_sink.s: digital_ofdm_frame_sink.cc.s
 
 # target to generate assembly for a file
 digital_ofdm_frame_sink.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_sink.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_frame_sink.cc.s
 .PHONY : digital_ofdm_frame_sink.cc.s
 
 digital_ofdm_insert_preamble.o: digital_ofdm_insert_preamble.cc.o
@@ -1121,7 +697,7 @@ digital_ofdm_insert_preamble.o: digital_ofdm_insert_preamble.cc.o
 
 # target to build an object file
 digital_ofdm_insert_preamble.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_insert_preamble.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_insert_preamble.cc.o
 .PHONY : digital_ofdm_insert_preamble.cc.o
 
 digital_ofdm_insert_preamble.i: digital_ofdm_insert_preamble.cc.i
@@ -1129,7 +705,7 @@ digital_ofdm_insert_preamble.i: digital_ofdm_insert_preamble.cc.i
 
 # target to preprocess a source file
 digital_ofdm_insert_preamble.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_insert_preamble.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_insert_preamble.cc.i
 .PHONY : digital_ofdm_insert_preamble.cc.i
 
 digital_ofdm_insert_preamble.s: digital_ofdm_insert_preamble.cc.s
@@ -1137,7 +713,7 @@ digital_ofdm_insert_preamble.s: digital_ofdm_insert_preamble.cc.s
 
 # target to generate assembly for a file
 digital_ofdm_insert_preamble.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_insert_preamble.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_insert_preamble.cc.s
 .PHONY : digital_ofdm_insert_preamble.cc.s
 
 digital_ofdm_mapper_bcv.o: digital_ofdm_mapper_bcv.cc.o
@@ -1145,7 +721,7 @@ digital_ofdm_mapper_bcv.o: digital_ofdm_mapper_bcv.cc.o
 
 # target to build an object file
 digital_ofdm_mapper_bcv.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_mapper_bcv.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_mapper_bcv.cc.o
 .PHONY : digital_ofdm_mapper_bcv.cc.o
 
 digital_ofdm_mapper_bcv.i: digital_ofdm_mapper_bcv.cc.i
@@ -1153,7 +729,7 @@ digital_ofdm_mapper_bcv.i: digital_ofdm_mapper_bcv.cc.i
 
 # target to preprocess a source file
 digital_ofdm_mapper_bcv.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_mapper_bcv.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_mapper_bcv.cc.i
 .PHONY : digital_ofdm_mapper_bcv.cc.i
 
 digital_ofdm_mapper_bcv.s: digital_ofdm_mapper_bcv.cc.s
@@ -1161,7 +737,7 @@ digital_ofdm_mapper_bcv.s: digital_ofdm_mapper_bcv.cc.s
 
 # target to generate assembly for a file
 digital_ofdm_mapper_bcv.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_mapper_bcv.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_mapper_bcv.cc.s
 .PHONY : digital_ofdm_mapper_bcv.cc.s
 
 digital_ofdm_sampler.o: digital_ofdm_sampler.cc.o
@@ -1169,7 +745,7 @@ digital_ofdm_sampler.o: digital_ofdm_sampler.cc.o
 
 # target to build an object file
 digital_ofdm_sampler.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_sampler.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_sampler.cc.o
 .PHONY : digital_ofdm_sampler.cc.o
 
 digital_ofdm_sampler.i: digital_ofdm_sampler.cc.i
@@ -1177,7 +753,7 @@ digital_ofdm_sampler.i: digital_ofdm_sampler.cc.i
 
 # target to preprocess a source file
 digital_ofdm_sampler.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_sampler.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_sampler.cc.i
 .PHONY : digital_ofdm_sampler.cc.i
 
 digital_ofdm_sampler.s: digital_ofdm_sampler.cc.s
@@ -1185,135 +761,15 @@ digital_ofdm_sampler.s: digital_ofdm_sampler.cc.s
 
 # target to generate assembly for a file
 digital_ofdm_sampler.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_sampler.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_ofdm_sampler.cc.s
 .PHONY : digital_ofdm_sampler.cc.s
-
-digital_packet_sink.o: digital_packet_sink.cc.o
-.PHONY : digital_packet_sink.o
-
-# target to build an object file
-digital_packet_sink.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_packet_sink.cc.o
-.PHONY : digital_packet_sink.cc.o
-
-digital_packet_sink.i: digital_packet_sink.cc.i
-.PHONY : digital_packet_sink.i
-
-# target to preprocess a source file
-digital_packet_sink.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_packet_sink.cc.i
-.PHONY : digital_packet_sink.cc.i
-
-digital_packet_sink.s: digital_packet_sink.cc.s
-.PHONY : digital_packet_sink.s
-
-# target to generate assembly for a file
-digital_packet_sink.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_packet_sink.cc.s
-.PHONY : digital_packet_sink.cc.s
-
-digital_pfb_clock_sync_ccf.o: digital_pfb_clock_sync_ccf.cc.o
-.PHONY : digital_pfb_clock_sync_ccf.o
-
-# target to build an object file
-digital_pfb_clock_sync_ccf.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pfb_clock_sync_ccf.cc.o
-.PHONY : digital_pfb_clock_sync_ccf.cc.o
-
-digital_pfb_clock_sync_ccf.i: digital_pfb_clock_sync_ccf.cc.i
-.PHONY : digital_pfb_clock_sync_ccf.i
-
-# target to preprocess a source file
-digital_pfb_clock_sync_ccf.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pfb_clock_sync_ccf.cc.i
-.PHONY : digital_pfb_clock_sync_ccf.cc.i
-
-digital_pfb_clock_sync_ccf.s: digital_pfb_clock_sync_ccf.cc.s
-.PHONY : digital_pfb_clock_sync_ccf.s
-
-# target to generate assembly for a file
-digital_pfb_clock_sync_ccf.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pfb_clock_sync_ccf.cc.s
-.PHONY : digital_pfb_clock_sync_ccf.cc.s
-
-digital_pfb_clock_sync_fff.o: digital_pfb_clock_sync_fff.cc.o
-.PHONY : digital_pfb_clock_sync_fff.o
-
-# target to build an object file
-digital_pfb_clock_sync_fff.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pfb_clock_sync_fff.cc.o
-.PHONY : digital_pfb_clock_sync_fff.cc.o
-
-digital_pfb_clock_sync_fff.i: digital_pfb_clock_sync_fff.cc.i
-.PHONY : digital_pfb_clock_sync_fff.i
-
-# target to preprocess a source file
-digital_pfb_clock_sync_fff.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pfb_clock_sync_fff.cc.i
-.PHONY : digital_pfb_clock_sync_fff.cc.i
-
-digital_pfb_clock_sync_fff.s: digital_pfb_clock_sync_fff.cc.s
-.PHONY : digital_pfb_clock_sync_fff.s
-
-# target to generate assembly for a file
-digital_pfb_clock_sync_fff.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pfb_clock_sync_fff.cc.s
-.PHONY : digital_pfb_clock_sync_fff.cc.s
-
-digital_pn_correlator_cc.o: digital_pn_correlator_cc.cc.o
-.PHONY : digital_pn_correlator_cc.o
-
-# target to build an object file
-digital_pn_correlator_cc.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pn_correlator_cc.cc.o
-.PHONY : digital_pn_correlator_cc.cc.o
-
-digital_pn_correlator_cc.i: digital_pn_correlator_cc.cc.i
-.PHONY : digital_pn_correlator_cc.i
-
-# target to preprocess a source file
-digital_pn_correlator_cc.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pn_correlator_cc.cc.i
-.PHONY : digital_pn_correlator_cc.cc.i
-
-digital_pn_correlator_cc.s: digital_pn_correlator_cc.cc.s
-.PHONY : digital_pn_correlator_cc.s
-
-# target to generate assembly for a file
-digital_pn_correlator_cc.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_pn_correlator_cc.cc.s
-.PHONY : digital_pn_correlator_cc.cc.s
-
-digital_probe_density_b.o: digital_probe_density_b.cc.o
-.PHONY : digital_probe_density_b.o
-
-# target to build an object file
-digital_probe_density_b.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_density_b.cc.o
-.PHONY : digital_probe_density_b.cc.o
-
-digital_probe_density_b.i: digital_probe_density_b.cc.i
-.PHONY : digital_probe_density_b.i
-
-# target to preprocess a source file
-digital_probe_density_b.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_density_b.cc.i
-.PHONY : digital_probe_density_b.cc.i
-
-digital_probe_density_b.s: digital_probe_density_b.cc.s
-.PHONY : digital_probe_density_b.s
-
-# target to generate assembly for a file
-digital_probe_density_b.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_density_b.cc.s
-.PHONY : digital_probe_density_b.cc.s
 
 digital_probe_mpsk_snr_est_c.o: digital_probe_mpsk_snr_est_c.cc.o
 .PHONY : digital_probe_mpsk_snr_est_c.o
 
 # target to build an object file
 digital_probe_mpsk_snr_est_c.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.o
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.o
 .PHONY : digital_probe_mpsk_snr_est_c.cc.o
 
 digital_probe_mpsk_snr_est_c.i: digital_probe_mpsk_snr_est_c.cc.i
@@ -1321,7 +777,7 @@ digital_probe_mpsk_snr_est_c.i: digital_probe_mpsk_snr_est_c.cc.i
 
 # target to preprocess a source file
 digital_probe_mpsk_snr_est_c.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.i
 .PHONY : digital_probe_mpsk_snr_est_c.cc.i
 
 digital_probe_mpsk_snr_est_c.s: digital_probe_mpsk_snr_est_c.cc.s
@@ -1329,56 +785,8 @@ digital_probe_mpsk_snr_est_c.s: digital_probe_mpsk_snr_est_c.cc.s
 
 # target to generate assembly for a file
 digital_probe_mpsk_snr_est_c.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.s
 .PHONY : digital_probe_mpsk_snr_est_c.cc.s
-
-digital_scrambler_bb.o: digital_scrambler_bb.cc.o
-.PHONY : digital_scrambler_bb.o
-
-# target to build an object file
-digital_scrambler_bb.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_scrambler_bb.cc.o
-.PHONY : digital_scrambler_bb.cc.o
-
-digital_scrambler_bb.i: digital_scrambler_bb.cc.i
-.PHONY : digital_scrambler_bb.i
-
-# target to preprocess a source file
-digital_scrambler_bb.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_scrambler_bb.cc.i
-.PHONY : digital_scrambler_bb.cc.i
-
-digital_scrambler_bb.s: digital_scrambler_bb.cc.s
-.PHONY : digital_scrambler_bb.s
-
-# target to generate assembly for a file
-digital_scrambler_bb.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_scrambler_bb.cc.s
-.PHONY : digital_scrambler_bb.cc.s
-
-digital_simple_framer.o: digital_simple_framer.cc.o
-.PHONY : digital_simple_framer.o
-
-# target to build an object file
-digital_simple_framer.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_simple_framer.cc.o
-.PHONY : digital_simple_framer.cc.o
-
-digital_simple_framer.i: digital_simple_framer.cc.i
-.PHONY : digital_simple_framer.i
-
-# target to preprocess a source file
-digital_simple_framer.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_simple_framer.cc.i
-.PHONY : digital_simple_framer.cc.i
-
-digital_simple_framer.s: digital_simple_framer.cc.s
-.PHONY : digital_simple_framer.s
-
-# target to generate assembly for a file
-digital_simple_framer.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_simple_framer.cc.s
-.PHONY : digital_simple_framer.cc.s
 
 # Help Target
 help:
@@ -1396,33 +804,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... digital_additive_scrambler_bb.o"
-	@echo "... digital_additive_scrambler_bb.i"
-	@echo "... digital_additive_scrambler_bb.s"
 	@echo "... digital_binary_slicer_fb.o"
 	@echo "... digital_binary_slicer_fb.i"
 	@echo "... digital_binary_slicer_fb.s"
-	@echo "... digital_bytes_to_syms.o"
-	@echo "... digital_bytes_to_syms.i"
-	@echo "... digital_bytes_to_syms.s"
-	@echo "... digital_chunks_to_symbols_bc.o"
-	@echo "... digital_chunks_to_symbols_bc.i"
-	@echo "... digital_chunks_to_symbols_bc.s"
-	@echo "... digital_chunks_to_symbols_bf.o"
-	@echo "... digital_chunks_to_symbols_bf.i"
-	@echo "... digital_chunks_to_symbols_bf.s"
-	@echo "... digital_chunks_to_symbols_ic.o"
-	@echo "... digital_chunks_to_symbols_ic.i"
-	@echo "... digital_chunks_to_symbols_ic.s"
-	@echo "... digital_chunks_to_symbols_if.o"
-	@echo "... digital_chunks_to_symbols_if.i"
-	@echo "... digital_chunks_to_symbols_if.s"
-	@echo "... digital_chunks_to_symbols_sc.o"
-	@echo "... digital_chunks_to_symbols_sc.i"
-	@echo "... digital_chunks_to_symbols_sc.s"
-	@echo "... digital_chunks_to_symbols_sf.o"
-	@echo "... digital_chunks_to_symbols_sf.i"
-	@echo "... digital_chunks_to_symbols_sf.s"
 	@echo "... digital_clock_recovery_mm_cc.o"
 	@echo "... digital_clock_recovery_mm_cc.i"
 	@echo "... digital_clock_recovery_mm_cc.s"
@@ -1444,9 +828,6 @@ help:
 	@echo "... digital_correlate_access_code_bb.o"
 	@echo "... digital_correlate_access_code_bb.i"
 	@echo "... digital_correlate_access_code_bb.s"
-	@echo "... digital_correlate_access_code_tag_bb.o"
-	@echo "... digital_correlate_access_code_tag_bb.i"
-	@echo "... digital_correlate_access_code_tag_bb.s"
 	@echo "... digital_costas_loop_cc.o"
 	@echo "... digital_costas_loop_cc.i"
 	@echo "... digital_costas_loop_cc.s"
@@ -1456,36 +837,12 @@ help:
 	@echo "... digital_crc32.o"
 	@echo "... digital_crc32.i"
 	@echo "... digital_crc32.s"
-	@echo "... digital_descrambler_bb.o"
-	@echo "... digital_descrambler_bb.i"
-	@echo "... digital_descrambler_bb.s"
-	@echo "... digital_diff_decoder_bb.o"
-	@echo "... digital_diff_decoder_bb.i"
-	@echo "... digital_diff_decoder_bb.s"
-	@echo "... digital_diff_encoder_bb.o"
-	@echo "... digital_diff_encoder_bb.i"
-	@echo "... digital_diff_encoder_bb.s"
-	@echo "... digital_diff_phasor_cc.o"
-	@echo "... digital_diff_phasor_cc.i"
-	@echo "... digital_diff_phasor_cc.s"
 	@echo "... digital_fll_band_edge_cc.o"
 	@echo "... digital_fll_band_edge_cc.i"
 	@echo "... digital_fll_band_edge_cc.s"
-	@echo "... digital_framer_sink_1.o"
-	@echo "... digital_framer_sink_1.i"
-	@echo "... digital_framer_sink_1.s"
-	@echo "... digital_glfsr_source_b.o"
-	@echo "... digital_glfsr_source_b.i"
-	@echo "... digital_glfsr_source_b.s"
-	@echo "... digital_glfsr_source_f.o"
-	@echo "... digital_glfsr_source_f.i"
-	@echo "... digital_glfsr_source_f.s"
 	@echo "... digital_gmskmod_bc.o"
 	@echo "... digital_gmskmod_bc.i"
 	@echo "... digital_gmskmod_bc.s"
-	@echo "... digital_impl_glfsr.o"
-	@echo "... digital_impl_glfsr.i"
-	@echo "... digital_impl_glfsr.s"
 	@echo "... digital_impl_mpsk_snr_est.o"
 	@echo "... digital_impl_mpsk_snr_est.i"
 	@echo "... digital_impl_mpsk_snr_est.s"
@@ -1495,9 +852,6 @@ help:
 	@echo "... digital_lms_dd_equalizer_cc.o"
 	@echo "... digital_lms_dd_equalizer_cc.i"
 	@echo "... digital_lms_dd_equalizer_cc.s"
-	@echo "... digital_map_bb.o"
-	@echo "... digital_map_bb.i"
-	@echo "... digital_map_bb.s"
 	@echo "... digital_mpsk_receiver_cc.o"
 	@echo "... digital_mpsk_receiver_cc.i"
 	@echo "... digital_mpsk_receiver_cc.s"
@@ -1522,30 +876,9 @@ help:
 	@echo "... digital_ofdm_sampler.o"
 	@echo "... digital_ofdm_sampler.i"
 	@echo "... digital_ofdm_sampler.s"
-	@echo "... digital_packet_sink.o"
-	@echo "... digital_packet_sink.i"
-	@echo "... digital_packet_sink.s"
-	@echo "... digital_pfb_clock_sync_ccf.o"
-	@echo "... digital_pfb_clock_sync_ccf.i"
-	@echo "... digital_pfb_clock_sync_ccf.s"
-	@echo "... digital_pfb_clock_sync_fff.o"
-	@echo "... digital_pfb_clock_sync_fff.i"
-	@echo "... digital_pfb_clock_sync_fff.s"
-	@echo "... digital_pn_correlator_cc.o"
-	@echo "... digital_pn_correlator_cc.i"
-	@echo "... digital_pn_correlator_cc.s"
-	@echo "... digital_probe_density_b.o"
-	@echo "... digital_probe_density_b.i"
-	@echo "... digital_probe_density_b.s"
 	@echo "... digital_probe_mpsk_snr_est_c.o"
 	@echo "... digital_probe_mpsk_snr_est_c.i"
 	@echo "... digital_probe_mpsk_snr_est_c.s"
-	@echo "... digital_scrambler_bb.o"
-	@echo "... digital_scrambler_bb.i"
-	@echo "... digital_scrambler_bb.s"
-	@echo "... digital_simple_framer.o"
-	@echo "... digital_simple_framer.i"
-	@echo "... digital_simple_framer.s"
 .PHONY : help
 
 
@@ -1557,6 +890,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

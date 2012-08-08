@@ -1,63 +1,63 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="digital__lms__dd__equalizer__cc_8h" kind="file">
     <compoundname>digital_lms_dd_equalizer_cc.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
     <includes local="no">gr_adaptive_fir_ccc.h</includes>
     <includes refid="digital__constellation_8h" local="no">digital_constellation.h</includes>
     <incdepgraph>
-      <node id="265">
+      <node id="152">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="272">
+      <node id="154">
+        <label>digital_constellation.h</label>
+        <link refid="digital__constellation_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h</label>
+        <link refid="digital_lms_dd_equalizer_cc.h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>gr_complex.h</label>
+      </node>
+      <node id="159">
         <label>digital_metric_type.h</label>
         <link refid="digital__metric__type_8h"/>
       </node>
-      <node id="263">
-        <label>/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h</label>
-        <link refid="digital_lms_dd_equalizer_cc.h"/>
-        <childnode refid="264" relation="include">
-        </childnode>
-        <childnode refid="266" relation="include">
-        </childnode>
-        <childnode refid="267" relation="include">
-        </childnode>
-      </node>
-      <node id="270">
-        <label>gr_complex.h</label>
-      </node>
-      <node id="268">
+      <node id="155">
         <label>vector</label>
       </node>
-      <node id="266">
+      <node id="153">
         <label>gr_adaptive_fir_ccc.h</label>
       </node>
-      <node id="271">
+      <node id="158">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
-      <node id="269">
+      <node id="156">
         <label>math.h</label>
       </node>
-      <node id="264">
+      <node id="151">
         <label>digital_api.h</label>
         <link refid="digital__api_8h"/>
-        <childnode refid="265" relation="include">
-        </childnode>
-      </node>
-      <node id="267">
-        <label>digital_constellation.h</label>
-        <link refid="digital__constellation_8h"/>
-        <childnode refid="264" relation="include">
-        </childnode>
-        <childnode refid="268" relation="include">
-        </childnode>
-        <childnode refid="269" relation="include">
-        </childnode>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="271" relation="include">
-        </childnode>
-        <childnode refid="272" relation="include">
+        <childnode refid="152" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -74,13 +74,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" line="31" bodyfile="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__lms__dd__equalizer__cc_8h_1acee38d596bb716381ce61732984b248a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" kindref="member">digital_lms_dd_equalizer_cc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_lms_dd_equalizer_cc_sptr digital_make_lms_dd_equalizer_cc</definition>
+      <memberdef kind="function" id="digital__lms__dd__equalizer__cc_8h_1a874b0a76a8fb89614d1ffb8086b9f74e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" kindref="member">digital_lms_dd_equalizer_cc_sptr</ref></type>
+        <definition>DIGITAL_API digital_lms_dd_equalizer_cc_sptr digital_make_lms_dd_equalizer_cc</definition>
         <argsstring>(int num_taps, float mu, int sps, digital_constellation_sptr cnst)</argsstring>
         <name>digital_make_lms_dd_equalizer_cc</name>
         <param>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" line="35"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h" line="35"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -145,14 +145,14 @@
 <codeline lineno="30" refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdigital__lms__dd__equalizer__cc" kindref="compound" tooltip="Least-Mean-Square Decision Directed Equalizer (complex in/out)This block implements an LMS-based deci...">digital_lms_dd_equalizer_cc</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_lms_dd_equalizer_cc&gt;<sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" kindref="member">digital_lms_dd_equalizer_cc_sptr</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" kindref="member">digital_lms_dd_equalizer_cc_sptr</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1acee38d596bb716381ce61732984b248a" kindref="member">digital_make_lms_dd_equalizer_cc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" kindref="member">digital_lms_dd_equalizer_cc_sptr</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1a874b0a76a8fb89614d1ffb8086b9f74e" kindref="member">digital_make_lms_dd_equalizer_cc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mu,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sps,</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="digital__constellation_8h_1a91522da9012baccbab89a768b6fb6e42" kindref="member">digital_constellation_sptr</ref><sp/>cnst);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="70" refid="classdigital__lms__dd__equalizer__cc" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__lms__dd__equalizer__cc" kindref="compound" tooltip="Least-Mean-Square Decision Directed Equalizer (complex in/out)This block implements an LMS-based deci...">digital_lms_dd_equalizer_cc</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_adaptive_fir_ccc</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" kindref="member">digital_lms_dd_equalizer_cc_sptr</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1acee38d596bb716381ce61732984b248a" kindref="member">digital_make_lms_dd_equalizer_cc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1aa1df6895b80d336a1089e3ab8fac08b1" kindref="member">digital_lms_dd_equalizer_cc_sptr</ref><sp/><ref refid="digital__lms__dd__equalizer__cc_8h_1a874b0a76a8fb89614d1ffb8086b9f74e" kindref="member">digital_make_lms_dd_equalizer_cc</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mu,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sps,</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="digital__constellation_8h_1a91522da9012baccbab89a768b6fb6e42" kindref="member">digital_constellation_sptr</ref><sp/>cnst);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight></codeline>
@@ -199,6 +199,6 @@
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-digital/include/digital_lms_dd_equalizer_cc.h"/>
   </compounddef>
 </doxygen>

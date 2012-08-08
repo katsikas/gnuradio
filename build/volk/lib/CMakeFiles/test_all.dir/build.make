@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Include any dependencies generated for this target.
 include volk/lib/CMakeFiles/test_all.dir/depend.make
@@ -48,17 +51,17 @@ include volk/lib/CMakeFiles/test_all.dir/flags.make
 
 volk/lib/CMakeFiles/test_all.dir/testqa.cc.o: volk/lib/CMakeFiles/test_all.dir/flags.make
 volk/lib/CMakeFiles/test_all.dir/testqa.cc.o: ../volk/lib/testqa.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object volk/lib/CMakeFiles/test_all.dir/testqa.cc.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/c++   $(CXX_DEFINES) -DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN $(CXX_FLAGS) -o CMakeFiles/test_all.dir/testqa.cc.o -c /home/katsikas/gnuradio/volk/lib/testqa.cc
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && /usr/bin/c++   $(CXX_DEFINES) -DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN $(CXX_FLAGS) -o CMakeFiles/test_all.dir/testqa.cc.o -c /home/katsikas/Desktop/gnuradio/volk/lib/testqa.cc
 
 volk/lib/CMakeFiles/test_all.dir/testqa.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_all.dir/testqa.cc.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) -DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN $(CXX_FLAGS) -E /home/katsikas/gnuradio/volk/lib/testqa.cc > CMakeFiles/test_all.dir/testqa.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) -DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/volk/lib/testqa.cc > CMakeFiles/test_all.dir/testqa.cc.i
 
 volk/lib/CMakeFiles/test_all.dir/testqa.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_all.dir/testqa.cc.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) -DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN $(CXX_FLAGS) -S /home/katsikas/gnuradio/volk/lib/testqa.cc -o CMakeFiles/test_all.dir/testqa.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) -DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/volk/lib/testqa.cc -o CMakeFiles/test_all.dir/testqa.cc.s
 
 volk/lib/CMakeFiles/test_all.dir/testqa.cc.o.requires:
 .PHONY : volk/lib/CMakeFiles/test_all.dir/testqa.cc.o.requires
@@ -71,17 +74,17 @@ volk/lib/CMakeFiles/test_all.dir/testqa.cc.o.provides.build: volk/lib/CMakeFiles
 
 volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o: volk/lib/CMakeFiles/test_all.dir/flags.make
 volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o: ../volk/lib/qa_utils.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_all.dir/qa_utils.cc.o -c /home/katsikas/gnuradio/volk/lib/qa_utils.cc
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_all.dir/qa_utils.cc.o -c /home/katsikas/Desktop/gnuradio/volk/lib/qa_utils.cc
 
 volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_all.dir/qa_utils.cc.i"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/volk/lib/qa_utils.cc > CMakeFiles/test_all.dir/qa_utils.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/volk/lib/qa_utils.cc > CMakeFiles/test_all.dir/qa_utils.cc.i
 
 volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_all.dir/qa_utils.cc.s"
-	cd /home/katsikas/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/volk/lib/qa_utils.cc -o CMakeFiles/test_all.dir/qa_utils.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/volk/lib/qa_utils.cc -o CMakeFiles/test_all.dir/qa_utils.cc.s
 
 volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o.requires:
 .PHONY : volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o.requires
@@ -103,11 +106,12 @@ test_all_EXTERNAL_OBJECTS =
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/testqa.cc.o
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o
 volk/lib/test_all: volk/lib/libvolk.so.0.0.0
-volk/lib/test_all: /usr/lib/libboost_unit_test_framework-mt.so
+volk/lib/test_all: /usr/lib64/libboost_unit_test_framework-mt.so
+volk/lib/test_all: /usr/lib64/liborc-0.4.so
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/build.make
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test_all"
-	cd /home/katsikas/gnuradio/build/volk/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_all.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_all.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 volk/lib/CMakeFiles/test_all.dir/build: volk/lib/test_all
@@ -118,10 +122,10 @@ volk/lib/CMakeFiles/test_all.dir/requires: volk/lib/CMakeFiles/test_all.dir/qa_u
 .PHONY : volk/lib/CMakeFiles/test_all.dir/requires
 
 volk/lib/CMakeFiles/test_all.dir/clean:
-	cd /home/katsikas/gnuradio/build/volk/lib && $(CMAKE_COMMAND) -P CMakeFiles/test_all.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/volk/lib && $(CMAKE_COMMAND) -P CMakeFiles/test_all.dir/cmake_clean.cmake
 .PHONY : volk/lib/CMakeFiles/test_all.dir/clean
 
 volk/lib/CMakeFiles/test_all.dir/depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/volk/lib /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/volk/lib /home/katsikas/gnuradio/build/volk/lib/CMakeFiles/test_all.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/volk/lib /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/volk/lib /home/katsikas/Desktop/gnuradio/build/volk/lib/CMakeFiles/test_all.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : volk/lib/CMakeFiles/test_all.dir/depend
 

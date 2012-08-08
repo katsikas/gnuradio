@@ -1,28 +1,24 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="atsci__equalizer_8h" kind="file">
     <compoundname>atsci_equalizer.h</compoundname>
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
     <includes refid="atsci__syminfo_8h" local="no">atsci_syminfo.h</includes>
-    <includedby refid="atsc__equalizer_8h" local="no">/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_equalizer.h</includedby>
-    <includedby refid="atsci__equalizer__lms_8h" local="no">/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms.h</includedby>
-    <includedby refid="atsci__equalizer__lms2_8h" local="no">/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms2.h</includedby>
-    <includedby refid="atsci__equalizer__nop_8h" local="no">/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_nop.h</includedby>
+    <includedby refid="atsc__equalizer_8h" local="no">/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_equalizer.h</includedby>
+    <includedby refid="atsci__equalizer__lms_8h" local="no">/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms.h</includedby>
+    <includedby refid="atsci__equalizer__lms2_8h" local="no">/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms2.h</includedby>
+    <includedby refid="atsci__equalizer__nop_8h" local="no">/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer_nop.h</includedby>
     <incdepgraph>
       <node id="352">
         <label>gruel/attributes.h</label>
       </node>
       <node id="350">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer.h</label>
         <link refid="atsci_equalizer.h"/>
         <childnode refid="351" relation="include">
         </childnode>
         <childnode refid="353" relation="include">
         </childnode>
-      </node>
-      <node id="353">
-        <label>atsci_syminfo.h</label>
-        <link refid="atsci__syminfo_8h"/>
       </node>
       <node id="351">
         <label>atsc_api.h</label>
@@ -30,14 +26,14 @@
         <childnode refid="352" relation="include">
         </childnode>
       </node>
+      <node id="353">
+        <label>atsci_syminfo.h</label>
+        <link refid="atsci__syminfo_8h"/>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="357">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms2.h</label>
-        <link refid="atsci__equalizer__lms2_8h"/>
-      </node>
       <node id="354">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer.h</label>
         <link refid="atsci_equalizer.h"/>
         <childnode refid="355" relation="include">
         </childnode>
@@ -48,17 +44,21 @@
         <childnode refid="358" relation="include">
         </childnode>
       </node>
+      <node id="358">
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer_nop.h</label>
+        <link refid="atsci__equalizer__nop_8h"/>
+      </node>
       <node id="356">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms.h</label>
         <link refid="atsci__equalizer__lms_8h"/>
       </node>
       <node id="355">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_equalizer.h</label>
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsc_equalizer.h</label>
         <link refid="atsc__equalizer_8h"/>
       </node>
-      <node id="358">
-        <label>/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer_nop.h</label>
-        <link refid="atsci__equalizer__nop_8h"/>
+      <node id="357">
+        <label>/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer_lms2.h</label>
+        <link refid="atsci__equalizer__lms2_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classatsci__equalizer" prot="public">atsci_equalizer</innerclass>
@@ -157,6 +157,6 @@
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_ATSC_EQUALIZER_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_equalizer.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gr-atsc/src/lib/atsci_equalizer.h"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="thread_8h" kind="file">
     <compoundname>thread.h</compoundname>
     <includes refid="gruel_2src_2include_2gruel_2api_8h" local="no">gruel/api.h</includes>
@@ -25,281 +25,269 @@
     <includedby refid="thread__body__wrapper_8h" local="no">thread_body_wrapper.h</includedby>
     <includedby refid="thread__group_8h" local="no">thread_group.h</includedby>
     <incdepgraph>
-      <node id="17033">
+      <node id="48214">
         <label>boost/thread/mutex.hpp</label>
       </node>
-      <node id="17035">
+      <node id="48216">
         <label>boost/thread/condition_variable.hpp</label>
       </node>
-      <node id="17031">
+      <node id="48213">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="48212">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="17029">
+      <node id="48210">
         <label>thread.h</label>
         <link refid="thread.h"/>
-        <childnode refid="17030" relation="include">
+        <childnode refid="48211" relation="include">
         </childnode>
-        <childnode refid="17032" relation="include">
+        <childnode refid="48213" relation="include">
         </childnode>
-        <childnode refid="17033" relation="include">
+        <childnode refid="48214" relation="include">
         </childnode>
-        <childnode refid="17034" relation="include">
+        <childnode refid="48215" relation="include">
         </childnode>
-        <childnode refid="17035" relation="include">
+        <childnode refid="48216" relation="include">
         </childnode>
       </node>
-      <node id="17032">
-        <label>boost/thread/thread.hpp</label>
+      <node id="48215">
+        <label>boost/thread/locks.hpp</label>
       </node>
-      <node id="17030">
+      <node id="48211">
         <label>gruel/api.h</label>
         <link refid="gruel_2src_2include_2gruel_2api_8h"/>
-        <childnode refid="17031" relation="include">
+        <childnode refid="48212" relation="include">
         </childnode>
-      </node>
-      <node id="17034">
-        <label>boost/thread/locks.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="17046">
-        <label>audio_portaudio_source.h</label>
-        <link refid="audio__portaudio__source_8h"/>
-      </node>
-      <node id="17066">
-        <label>circular_buffer.h</label>
-        <link refid="circular__buffer_8h"/>
-        <childnode refid="17067" relation="include">
-        </childnode>
-        <childnode refid="17068" relation="include">
-        </childnode>
-      </node>
-      <node id="17067">
-        <label>audio_osx_sink.h</label>
-        <link refid="audio__osx__sink_8h"/>
-      </node>
-      <node id="17072">
-        <label>thread_group.h</label>
-        <link refid="thread__group_8h"/>
-        <childnode refid="17073" relation="include">
-        </childnode>
-        <childnode refid="17074" relation="include">
-        </childnode>
-      </node>
-      <node id="17068">
-        <label>audio_osx_source.h</label>
-        <link refid="audio__osx__source_8h"/>
-      </node>
-      <node id="17044">
-        <label>gr_buffer.h</label>
-        <link refid="gr__buffer_8h"/>
-        <childnode refid="17045" relation="include">
-        </childnode>
-        <childnode refid="17046" relation="include">
-        </childnode>
-      </node>
-      <node id="17073">
-        <label>gr_scheduler_sts.h</label>
-        <link refid="gr__scheduler__sts_8h"/>
-      </node>
-      <node id="17062">
-        <label>gr_top_block_impl.h</label>
-        <link refid="gr__top__block__impl_8h"/>
-      </node>
-      <node id="17069">
-        <label>msg_queue.h</label>
-        <link refid="msg__queue_8h"/>
-        <childnode refid="17070" relation="include">
-        </childnode>
-      </node>
-      <node id="17065">
-        <label>gr_tpb_thread_body.h</label>
-        <link refid="gr__tpb__thread__body_8h"/>
-      </node>
-      <node id="17051">
-        <label>gr_packet_sink.h</label>
-        <link refid="gr__packet__sink_8h"/>
-      </node>
-      <node id="17036">
-        <label>thread.h</label>
-        <link refid="thread.h"/>
-        <childnode refid="17037" relation="include">
-        </childnode>
-        <childnode refid="17038" relation="include">
-        </childnode>
-        <childnode refid="17039" relation="include">
-        </childnode>
-        <childnode refid="17040" relation="include">
-        </childnode>
-        <childnode refid="17041" relation="include">
-        </childnode>
-        <childnode refid="17042" relation="include">
-        </childnode>
-        <childnode refid="17043" relation="include">
-        </childnode>
-        <childnode refid="17044" relation="include">
-        </childnode>
-        <childnode refid="17047" relation="include">
-        </childnode>
-        <childnode refid="17062" relation="include">
-        </childnode>
-        <childnode refid="17063" relation="include">
-        </childnode>
-        <childnode refid="17066" relation="include">
-        </childnode>
-        <childnode refid="17045" relation="include">
-        </childnode>
-        <childnode refid="17046" relation="include">
-        </childnode>
-        <childnode refid="17069" relation="include">
-        </childnode>
-        <childnode refid="17071" relation="include">
-        </childnode>
-        <childnode refid="17072" relation="include">
-        </childnode>
-      </node>
-      <node id="17052">
-        <label>gr_message_sink.h</label>
-        <link refid="gr__message__sink_8h"/>
-      </node>
-      <node id="17045">
-        <label>audio_portaudio_sink.h</label>
-        <link refid="audio__portaudio__sink_8h"/>
-      </node>
-      <node id="17064">
-        <label>gr_block_detail.h</label>
-        <link refid="gr__block__detail_8h"/>
-        <childnode refid="17065" relation="include">
-        </childnode>
-      </node>
-      <node id="17047">
-        <label>gr_msg_queue.h</label>
-        <link refid="gr__msg__queue_8h"/>
-        <childnode refid="17048" relation="include">
-        </childnode>
-        <childnode refid="17049" relation="include">
-        </childnode>
-        <childnode refid="17050" relation="include">
-        </childnode>
-        <childnode refid="17051" relation="include">
-        </childnode>
-        <childnode refid="17041" relation="include">
-        </childnode>
-        <childnode refid="17052" relation="include">
-        </childnode>
-        <childnode refid="17053" relation="include">
-        </childnode>
-        <childnode refid="17054" relation="include">
-        </childnode>
-        <childnode refid="17055" relation="include">
-        </childnode>
-        <childnode refid="17056" relation="include">
-        </childnode>
-        <childnode refid="17057" relation="include">
-        </childnode>
-        <childnode refid="17058" relation="include">
-        </childnode>
-        <childnode refid="17059" relation="include">
-        </childnode>
-        <childnode refid="17060" relation="include">
-        </childnode>
-        <childnode refid="17061" relation="include">
-        </childnode>
-      </node>
-      <node id="17058">
-        <label>digital_ofdm_mapper_bcv.h</label>
-        <link refid="digital__ofdm__mapper__bcv_8h"/>
-      </node>
-      <node id="17039">
-        <label>gr_delay.h</label>
-        <link refid="gr__delay_8h"/>
-      </node>
-      <node id="17056">
-        <label>digital_framer_sink_1.h</label>
-        <link refid="digital__framer__sink__1_8h"/>
-      </node>
-      <node id="17061">
-        <label>gr_uhd_amsg_source.h</label>
-        <link refid="gr__uhd__amsg__source_8h"/>
-      </node>
-      <node id="17043">
-        <label>gr_udp_source.h</label>
-        <link refid="gr__udp__source_8h"/>
-      </node>
-      <node id="17070">
-        <label>msg_accepter_msgq.h</label>
-        <link refid="msg__accepter__msgq_8h"/>
-      </node>
-      <node id="17040">
-        <label>gr_vector_map.h</label>
-        <link refid="gr__vector__map_8h"/>
-      </node>
-      <node id="17038">
+      <node id="48219">
         <label>gr_pfb_synthesizer_ccf.h</label>
         <link refid="gr__pfb__synthesizer__ccf_8h"/>
       </node>
-      <node id="17060">
-        <label>pager_flex_parse.h</label>
-        <link refid="pager__flex__parse_8h_source"/>
+      <node id="48244">
+        <label>gr_tpb_thread_body.h</label>
+        <link refid="gr__tpb__thread__body_8h"/>
       </node>
-      <node id="17037">
-        <label>gr_pfb_channelizer_ccf.h</label>
-        <link refid="gr__pfb__channelizer__ccf_8h"/>
+      <node id="48224">
+        <label>gr_udp_source.h</label>
+        <link refid="gr__udp__source_8h"/>
       </node>
-      <node id="17041">
-        <label>gr_histo_sink_f.h</label>
-        <link refid="gr__histo__sink__f_8h"/>
-      </node>
-      <node id="17055">
-        <label>gr_oscope_sink_f.h</label>
-        <link refid="gr__oscope__sink__f_8h"/>
-      </node>
-      <node id="17071">
-        <label>thread_body_wrapper.h</label>
-        <link refid="thread__body__wrapper_8h"/>
-      </node>
-      <node id="17050">
+      <node id="48231">
         <label>gr_ofdm_frame_sink2.h</label>
         <link refid="gr__ofdm__frame__sink2_8h"/>
       </node>
-      <node id="17074">
-        <label>gr_scheduler_tpb.h</label>
-        <link refid="gr__scheduler__tpb_8h"/>
-      </node>
-      <node id="17063">
-        <label>gr_tpb_detail.h</label>
-        <link refid="gr__tpb__detail_8h"/>
-        <childnode refid="17064" relation="include">
+      <node id="48228">
+        <label>gr_msg_queue.h</label>
+        <link refid="gr__msg__queue_8h"/>
+        <childnode refid="48229" relation="include">
+        </childnode>
+        <childnode refid="48230" relation="include">
+        </childnode>
+        <childnode refid="48231" relation="include">
+        </childnode>
+        <childnode refid="48232" relation="include">
+        </childnode>
+        <childnode refid="48222" relation="include">
+        </childnode>
+        <childnode refid="48233" relation="include">
+        </childnode>
+        <childnode refid="48234" relation="include">
+        </childnode>
+        <childnode refid="48235" relation="include">
+        </childnode>
+        <childnode refid="48236" relation="include">
+        </childnode>
+        <childnode refid="48237" relation="include">
+        </childnode>
+        <childnode refid="48238" relation="include">
+        </childnode>
+        <childnode refid="48239" relation="include">
+        </childnode>
+        <childnode refid="48240" relation="include">
         </childnode>
       </node>
-      <node id="17057">
-        <label>digital_ofdm_frame_sink.h</label>
-        <link refid="digital__ofdm__frame__sink_8h"/>
+      <node id="48240">
+        <label>gr_uhd_amsg_source.h</label>
+        <link refid="gr__uhd__amsg__source_8h"/>
       </node>
-      <node id="17048">
-        <label>gr_bin_statistics_f.h</label>
-        <link refid="gr__bin__statistics__f_8h"/>
-      </node>
-      <node id="17054">
-        <label>gr_oscope_guts.h</label>
-        <link refid="gr__oscope__guts_8h"/>
-      </node>
-      <node id="17042">
-        <label>gr_udp_sink.h</label>
-        <link refid="gr__udp__sink_8h"/>
-      </node>
-      <node id="17049">
+      <node id="48230">
         <label>gr_framer_sink_1.h</label>
         <link refid="gr__framer__sink__1_8h"/>
       </node>
-      <node id="17059">
-        <label>digital_packet_sink.h</label>
-        <link refid="digital__packet__sink_8h"/>
+      <node id="48248">
+        <label>msg_queue.h</label>
+        <link refid="msg__queue_8h"/>
+        <childnode refid="48249" relation="include">
+        </childnode>
       </node>
-      <node id="17053">
+      <node id="48229">
+        <label>gr_bin_statistics_f.h</label>
+        <link refid="gr__bin__statistics__f_8h"/>
+      </node>
+      <node id="48246">
+        <label>audio_osx_sink.h</label>
+        <link refid="audio__osx__sink_8h"/>
+      </node>
+      <node id="48241">
+        <label>gr_top_block_impl.h</label>
+        <link refid="gr__top__block__impl_8h"/>
+      </node>
+      <node id="48253">
+        <label>gr_scheduler_tpb.h</label>
+        <link refid="gr__scheduler__tpb_8h"/>
+      </node>
+      <node id="48218">
+        <label>gr_pfb_channelizer_ccf.h</label>
+        <link refid="gr__pfb__channelizer__ccf_8h"/>
+      </node>
+      <node id="48237">
+        <label>digital_ofdm_frame_sink.h</label>
+        <link refid="digital__ofdm__frame__sink_8h"/>
+      </node>
+      <node id="48239">
+        <label>pager_flex_parse.h</label>
+        <link refid="pager__flex__parse_8h_source"/>
+      </node>
+      <node id="48249">
+        <label>msg_accepter_msgq.h</label>
+        <link refid="msg__accepter__msgq_8h"/>
+      </node>
+      <node id="48252">
+        <label>gr_scheduler_sts.h</label>
+        <link refid="gr__scheduler__sts_8h"/>
+      </node>
+      <node id="48217">
+        <label>thread.h</label>
+        <link refid="thread.h"/>
+        <childnode refid="48218" relation="include">
+        </childnode>
+        <childnode refid="48219" relation="include">
+        </childnode>
+        <childnode refid="48220" relation="include">
+        </childnode>
+        <childnode refid="48221" relation="include">
+        </childnode>
+        <childnode refid="48222" relation="include">
+        </childnode>
+        <childnode refid="48223" relation="include">
+        </childnode>
+        <childnode refid="48224" relation="include">
+        </childnode>
+        <childnode refid="48225" relation="include">
+        </childnode>
+        <childnode refid="48228" relation="include">
+        </childnode>
+        <childnode refid="48241" relation="include">
+        </childnode>
+        <childnode refid="48242" relation="include">
+        </childnode>
+        <childnode refid="48245" relation="include">
+        </childnode>
+        <childnode refid="48226" relation="include">
+        </childnode>
+        <childnode refid="48227" relation="include">
+        </childnode>
+        <childnode refid="48248" relation="include">
+        </childnode>
+        <childnode refid="48250" relation="include">
+        </childnode>
+        <childnode refid="48251" relation="include">
+        </childnode>
+      </node>
+      <node id="48250">
+        <label>thread_body_wrapper.h</label>
+        <link refid="thread__body__wrapper_8h"/>
+      </node>
+      <node id="48238">
+        <label>digital_ofdm_mapper_bcv.h</label>
+        <link refid="digital__ofdm__mapper__bcv_8h"/>
+      </node>
+      <node id="48232">
+        <label>gr_packet_sink.h</label>
+        <link refid="gr__packet__sink_8h"/>
+      </node>
+      <node id="48220">
+        <label>gr_delay.h</label>
+        <link refid="gr__delay_8h"/>
+      </node>
+      <node id="48233">
+        <label>gr_message_sink.h</label>
+        <link refid="gr__message__sink_8h"/>
+      </node>
+      <node id="48236">
+        <label>gr_oscope_sink_f.h</label>
+        <link refid="gr__oscope__sink__f_8h"/>
+      </node>
+      <node id="48227">
+        <label>audio_portaudio_source.h</label>
+        <link refid="audio__portaudio__source_8h"/>
+      </node>
+      <node id="48222">
+        <label>gr_histo_sink_f.h</label>
+        <link refid="gr__histo__sink__f_8h"/>
+      </node>
+      <node id="48225">
+        <label>gr_buffer.h</label>
+        <link refid="gr__buffer_8h"/>
+        <childnode refid="48226" relation="include">
+        </childnode>
+        <childnode refid="48227" relation="include">
+        </childnode>
+      </node>
+      <node id="48242">
+        <label>gr_tpb_detail.h</label>
+        <link refid="gr__tpb__detail_8h"/>
+        <childnode refid="48243" relation="include">
+        </childnode>
+      </node>
+      <node id="48243">
+        <label>gr_block_detail.h</label>
+        <link refid="gr__block__detail_8h"/>
+        <childnode refid="48244" relation="include">
+        </childnode>
+      </node>
+      <node id="48235">
+        <label>gr_oscope_guts.h</label>
+        <link refid="gr__oscope__guts_8h"/>
+      </node>
+      <node id="48226">
+        <label>audio_portaudio_sink.h</label>
+        <link refid="audio__portaudio__sink_8h"/>
+      </node>
+      <node id="48234">
         <label>gr_message_source.h</label>
         <link refid="gr__message__source_8h"/>
+      </node>
+      <node id="48251">
+        <label>thread_group.h</label>
+        <link refid="thread__group_8h"/>
+        <childnode refid="48252" relation="include">
+        </childnode>
+        <childnode refid="48253" relation="include">
+        </childnode>
+      </node>
+      <node id="48247">
+        <label>audio_osx_source.h</label>
+        <link refid="audio__osx__source_8h"/>
+      </node>
+      <node id="48245">
+        <label>circular_buffer.h</label>
+        <link refid="circular__buffer_8h"/>
+        <childnode refid="48246" relation="include">
+        </childnode>
+        <childnode refid="48247" relation="include">
+        </childnode>
+      </node>
+      <node id="48221">
+        <label>gr_vector_map.h</label>
+        <link refid="gr__vector__map_8h"/>
+      </node>
+      <node id="48223">
+        <label>gr_udp_sink.h</label>
+        <link refid="gr__udp__sink_8h"/>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespacegruel">gruel</innernamespace>
@@ -307,6 +295,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/thread.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gruel/src/include/gruel/thread.h"/>
   </compounddef>
 </doxygen>

@@ -4,12 +4,14 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/_fft_swig.dir/fft_swigPYTHON_wrap.cxx.o"
   "fft_swigPYTHON_wrap.cxx"
   "fft_swig.py"
-  "fft_swig_doc.i"
   "fft_swig.tag"
+  "fft_swig_doc.i"
   "fft_swig_doc_swig_docs/xml/index.xml"
   "fft_swig_doc_swig_docs/xml/combine.xslt"
   "_fft_swig.pdb"
   "_fft_swig.so"
+  "CMakeFiles/CMakeRelink.dir/_fft_swig.pdb"
+  "CMakeFiles/CMakeRelink.dir/_fft_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

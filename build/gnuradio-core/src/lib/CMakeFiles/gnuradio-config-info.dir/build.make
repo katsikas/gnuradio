@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Include any dependencies generated for this target.
 include gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/depend.make
@@ -48,17 +51,17 @@ include gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/flags.make
 
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/flags.make
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o: ../gnuradio-core/src/lib/gnuradio-config-info.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o -c /home/katsikas/gnuradio/gnuradio-core/src/lib/gnuradio-config-info.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o -c /home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/gnuradio-config-info.cc
 
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.i"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gnuradio-core/src/lib/gnuradio-config-info.cc > CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/gnuradio-config-info.cc > CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.i
 
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.s"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gnuradio-core/src/lib/gnuradio-config-info.cc -o CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/gnuradio-config-info.cc -o CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.s
 
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o.requires:
 .PHONY : gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o.requires
@@ -78,34 +81,63 @@ gnuradio__config__info_EXTERNAL_OBJECTS =
 
 gnuradio-core/src/lib/gnuradio-config-info: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o
 gnuradio-core/src/lib/gnuradio-config-info: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_date_time-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_program_options-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_filesystem-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_system-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_thread-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_date_time-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_program_options-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_filesystem-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_system-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_thread-mt.so
 gnuradio-core/src/lib/gnuradio-config-info: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_date_time-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_program_options-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_filesystem-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_system-mt.so
-gnuradio-core/src/lib/gnuradio-config-info: /usr/lib/libboost_thread-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_date_time-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_program_options-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_filesystem-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_system-mt.so
+gnuradio-core/src/lib/gnuradio-config-info: /usr/lib64/libboost_thread-mt.so
 gnuradio-core/src/lib/gnuradio-config-info: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build.make
 gnuradio-core/src/lib/gnuradio-config-info: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable gnuradio-config-info"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-config-info.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-config-info.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build: gnuradio-core/src/lib/gnuradio-config-info
 .PHONY : gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build
 
+# Object files for target gnuradio-config-info
+gnuradio__config__info_OBJECTS = \
+"CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o"
+
+# External object files for target gnuradio-config-info
+gnuradio__config__info_EXTERNAL_OBJECTS =
+
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_date_time-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_program_options-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_filesystem-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_system-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_thread-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_date_time-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_program_options-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_filesystem-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_system-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: /usr/lib64/libboost_thread-mt.so
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build.make
+gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable CMakeFiles/CMakeRelink.dir/gnuradio-config-info"
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-config-info.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/preinstall: gnuradio-core/src/lib/CMakeFiles/CMakeRelink.dir/gnuradio-config-info
+.PHONY : gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/preinstall
+
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/requires: gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/gnuradio-config-info.cc.o.requires
 .PHONY : gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/requires
 
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/clean:
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-config-info.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-config-info.dir/cmake_clean.cmake
 .PHONY : gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/clean
 
 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gnuradio-core/src/lib /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gnuradio-core/src/lib /home/katsikas/gnuradio/build/gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib /home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/depend
 

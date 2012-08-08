@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-qtgui/examples
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-qtgui/examples
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,22 +29,22 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_example_c.py" FILES "/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_example_c.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_example_c.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-qtgui/examples/pyqt_example_c.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_example_f.py" FILES "/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_example_f.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_example_f.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-qtgui/examples/pyqt_example_f.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_time_c.py" FILES "/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_time_c.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_time_c.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-qtgui/examples/pyqt_time_c.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_time_f.py" FILES "/home/katsikas/gnuradio/build/gr-qtgui/examples/pyqt_time_f.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/qt-gui" TYPE PROGRAM RENAME "pyqt_time_f.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-qtgui/examples/pyqt_time_f.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
 

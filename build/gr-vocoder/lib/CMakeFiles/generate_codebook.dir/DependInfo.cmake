@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/katsikas/gnuradio/gr-vocoder/lib/codec2/generate_codebook.c" "/home/katsikas/gnuradio/build/gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.o"
+  "/home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/generate_codebook.c" "/home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/CMakeFiles/generate_codebook.dir/codec2/generate_codebook.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

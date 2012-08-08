@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gri__fft_8h" kind="file">
     <compoundname>gri_fft.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -10,67 +10,67 @@
     <includedby refid="qtgui__time__sink__c_8h" local="no">qtgui_time_sink_c.h</includedby>
     <includedby refid="qtgui__time__sink__f_8h" local="no">qtgui_time_sink_f.h</includedby>
     <incdepgraph>
-      <node id="14515">
+      <node id="45117">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="45118" relation="include">
+        </childnode>
+      </node>
+      <node id="45116">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="14518">
+      <node id="45119">
         <label>boost/thread.hpp</label>
       </node>
-      <node id="14513">
-        <label>gri_fft.h</label>
-        <link refid="gri_fft.h"/>
-        <childnode refid="14514" relation="include">
-        </childnode>
-        <childnode refid="14516" relation="include">
-        </childnode>
-        <childnode refid="14518" relation="include">
-        </childnode>
-      </node>
-      <node id="14514">
+      <node id="45115">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="14515" relation="include">
+        <childnode refid="45116" relation="include">
         </childnode>
       </node>
-      <node id="14517">
+      <node id="45118">
         <label>complex</label>
       </node>
-      <node id="14516">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="14517" relation="include">
+      <node id="45114">
+        <label>gri_fft.h</label>
+        <link refid="gri_fft.h"/>
+        <childnode refid="45115" relation="include">
+        </childnode>
+        <childnode refid="45117" relation="include">
+        </childnode>
+        <childnode refid="45119" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="14521">
-        <label>qtgui_sink_f.h</label>
-        <link refid="qtgui__sink__f_8h"/>
-      </node>
-      <node id="14523">
+      <node id="45124">
         <label>qtgui_time_sink_f.h</label>
         <link refid="qtgui__time__sink__f_8h"/>
       </node>
-      <node id="14519">
-        <label>gri_fft.h</label>
-        <link refid="gri_fft.h"/>
-        <childnode refid="14520" relation="include">
-        </childnode>
-        <childnode refid="14521" relation="include">
-        </childnode>
-        <childnode refid="14522" relation="include">
-        </childnode>
-        <childnode refid="14523" relation="include">
-        </childnode>
+      <node id="45122">
+        <label>qtgui_sink_f.h</label>
+        <link refid="qtgui__sink__f_8h"/>
       </node>
-      <node id="14520">
-        <label>qtgui_sink_c.h</label>
-        <link refid="qtgui__sink__c_8h"/>
-      </node>
-      <node id="14522">
+      <node id="45123">
         <label>qtgui_time_sink_c.h</label>
         <link refid="qtgui__time__sink__c_8h"/>
+      </node>
+      <node id="45120">
+        <label>gri_fft.h</label>
+        <link refid="gri_fft.h"/>
+        <childnode refid="45121" relation="include">
+        </childnode>
+        <childnode refid="45122" relation="include">
+        </childnode>
+        <childnode refid="45123" relation="include">
+        </childnode>
+        <childnode refid="45124" relation="include">
+        </childnode>
+      </node>
+      <node id="45121">
+        <label>qtgui_sink_c.h</label>
+        <link refid="qtgui__sink__c_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classgri__fft__planner" prot="public">gri_fft_planner</innerclass>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="35"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="35"/>
       </memberdef>
       <memberdef kind="function" id="gri__fft_8h_1a59bfbed9180248d1d99d41ba0cbac7e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float *</type>
@@ -110,15 +110,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="39"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="gri__fft_8h_1add5aa27b2f3fe053012daabbf21177a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gri_fft_free</definition>
         <argsstring>(void *b)</argsstring>
         <name>gri_fft_free</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+          <type>void *</type>
           <declname>b</declname>
         </param>
         <briefdescription>
@@ -127,13 +127,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="43"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gri_fft.h" line="43"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gri_fft.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gri_fft.h"/>
   </compounddef>
 </doxygen>

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-audio/include
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-audio/include
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,14 +29,14 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "audio_devel")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gnuradio" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-audio/include/gr_audio_api.h"
-    "/home/katsikas/gnuradio/gr-audio/include/gr_audio_source.h"
-    "/home/katsikas/gnuradio/gr-audio/include/gr_audio_sink.h"
+    "/home/katsikas/Desktop/gnuradio/gr-audio/include/gr_audio_api.h"
+    "/home/katsikas/Desktop/gnuradio/gr-audio/include/gr_audio_source.h"
+    "/home/katsikas/Desktop/gnuradio/gr-audio/include/gr_audio_sink.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "audio_devel")
 

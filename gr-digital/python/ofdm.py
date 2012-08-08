@@ -26,6 +26,8 @@ import digital_swig
 import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
+import modulation_utils
+from utils import mod_codes, gray_code
 import psk, qam
 
 # /////////////////////////////////////////////////////////////////////////////
@@ -66,7 +68,13 @@ class ofdm_mod(gr.hier_block2):
 
         # Use freq domain to get doubled-up known symbol for correlation in time domain
         zeros_on_left = int(math.ceil((self._fft_length - self._occupied_tones)/2.0))
-        ksfreq = known_symbols_4512_3[0:self._occupied_tones]
+        # ksfreq = known_symbols_4512_3[0:self._occupied_tones]
+        
+	# This fixed the bug, when the occupied tones are greater that the known symbols
+	ksfreq = [0] * self._occupied_tones
+        known_symbols_len = len(known_symbols_4512_3)
+        for i in range(self._occupied_tones):
+	  ksfreq[i] = known_symbols_4512_3[i % known_symbols_len]
         for i in range(len(ksfreq)):
             if((zeros_on_left + i) & 1):
                 ksfreq[i] = 0
@@ -91,12 +99,13 @@ class ofdm_mod(gr.hier_block2):
             
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):
-            constel = psk.psk_constellation(arity)
+            constel = psk.psk_constellation(arity, mod_codes.GRAY_CODE)
             rotated_const = map(lambda pt: pt * rot, constel.points())
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
             rotated_const = map(lambda pt: pt * rot, constel.points())
-        #print rotated_const
+        print rotated_const
+
         self._pkt_input = digital_swig.ofdm_mapper_bcv(rotated_const,
                                                        msgq_limit,
                                                        options.occupied_tones,
@@ -194,7 +203,7 @@ class ofdm_demod(gr.hier_block2):
 	"""
 	gr.hier_block2.__init__(self, "ofdm_demod",
 				gr.io_signature(1, 1, gr.sizeof_gr_complex), # Input signature
-				gr.io_signature(1, 1, gr.sizeof_gr_complex)) # Output signature
+				gr.io_signature(2, 2, gr.sizeof_gr_complex)) # Output signature
 
 
         self._rcvd_pktq = gr.msg_queue()          # holds packets from the PHY
@@ -204,10 +213,18 @@ class ofdm_demod(gr.hier_block2):
         self._occupied_tones = options.occupied_tones
         self._cp_length = options.cp_length
         self._snr = options.snr
+        self._show_vector_analyzer = options.show_vector_analyzer
 
         # Use freq domain to get doubled-up known symbol for correlation in time domain
         zeros_on_left = int(math.ceil((self._fft_length - self._occupied_tones)/2.0))
-        ksfreq = known_symbols_4512_3[0:self._occupied_tones]
+        
+        # ksfreq = known_symbols_4512_3[0:self._occupied_tones]
+        # This fixed the bug, when the occupied tones are greater that the known symbols
+        ksfreq = [0] * self._occupied_tones
+        known_symbols_len = len(known_symbols_4512_3)
+        for i in range(self._occupied_tones):
+	  ksfreq[i] = known_symbols_4512_3[i % known_symbols_len]
+        
         for i in range(len(ksfreq)):
             if((zeros_on_left + i) & 1):
                 ksfreq[i] = 0
@@ -231,7 +248,7 @@ class ofdm_demod(gr.hier_block2):
 
         # FIXME: pass the constellation objects instead of just the points
         if(self._modulation.find("psk") >= 0):
-            constel = psk.psk_constellation(arity)
+            constel = psk.psk_constellation(arity,mod_codes.GRAY_CODE)
             rotated_const = map(lambda pt: pt * rot, constel.points())
         elif(self._modulation.find("qam") >= 0):
             constel = qam.qam_constellation(arity)
@@ -240,6 +257,7 @@ class ofdm_demod(gr.hier_block2):
 
         phgain = 0.25
         frgain = phgain*phgain / 4.0
+ 
         self.ofdm_demod = digital_swig.ofdm_frame_sink(rotated_const, range(arity),
                                                        self._rcvd_pktq,
                                                        self._occupied_tones,
@@ -248,9 +266,14 @@ class ofdm_demod(gr.hier_block2):
         self.connect(self, self.ofdm_recv)
         self.connect((self.ofdm_recv, 0), (self.ofdm_demod, 0))
         self.connect((self.ofdm_recv, 1), (self.ofdm_demod, 1))
-
-        # added output signature to work around bug, though it might not be a bad
-        # thing to export, anyway
+        # Vector analyzer output
+        self.connect((self.ofdm_recv, 0), (self, 1))
+        
+        
+        #if(self._show_vector_analyzer == "yes"):
+	  
+          # For qt
+          # self.connect((self.ofdm_recv, 0), (self.ofdm_vector_analyzer_c, 0))
         self.connect(self.ofdm_recv.chan_filt, self)
 
         if options.log:
@@ -280,6 +303,8 @@ class ofdm_demod(gr.hier_block2):
                           help="set the number of bits in the cyclic prefix [default=%default]")
         expert.add_option("", "--snr", type="float", default=30.0,
                           help="SNR estimate [default=%default]")
+        expert.add_option("", "--show-vector-analyzer", type="string", default="no",
+                          help="enable or disable the vector analyzer. Consumes many resourses, show in real systems should be set to no")
     # Make a static method to call before instantiation
     add_options = staticmethod(add_options)
 

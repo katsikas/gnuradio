@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__fxpt_8h" kind="file">
     <compoundname>gr_fxpt.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -7,79 +7,109 @@
     <includedby refid="gr__fxpt__nco_8h" local="no">gr_fxpt_nco.h</includedby>
     <includedby refid="gr__fxpt__vco_8h" local="no">gr_fxpt_vco.h</includedby>
     <incdepgraph>
-      <node id="8603">
+      <node id="35581">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="8601">
+      <node id="35584">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="35585" relation="include">
+        </childnode>
+      </node>
+      <node id="35579">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="8599">
-        <label>gr_fxpt.h</label>
-        <link refid="gr_fxpt.h"/>
-        <childnode refid="8600" relation="include">
-        </childnode>
-        <childnode refid="8602" relation="include">
-        </childnode>
-      </node>
-      <node id="8602">
-        <label>gr_types.h</label>
-        <link refid="gr__types_8h"/>
-        <childnode refid="8600" relation="include">
-        </childnode>
-        <childnode refid="8603" relation="include">
-        </childnode>
-        <childnode refid="8604" relation="include">
-        </childnode>
-        <childnode refid="8605" relation="include">
-        </childnode>
-        <childnode refid="8606" relation="include">
-        </childnode>
-      </node>
-      <node id="8605">
-        <label>stddef.h</label>
-      </node>
-      <node id="8604">
-        <label>vector</label>
-      </node>
-      <node id="8600">
+      <node id="35578">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="8601" relation="include">
+        <childnode refid="35579" relation="include">
         </childnode>
       </node>
-      <node id="8607">
+      <node id="35580">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="35578" relation="include">
+        </childnode>
+        <childnode refid="35581" relation="include">
+        </childnode>
+        <childnode refid="35582" relation="include">
+        </childnode>
+        <childnode refid="35583" relation="include">
+        </childnode>
+        <childnode refid="35584" relation="include">
+        </childnode>
+      </node>
+      <node id="35583">
+        <label>stddef.h</label>
+      </node>
+      <node id="35577">
+        <label>gr_fxpt.h</label>
+        <link refid="gr_fxpt.h"/>
+        <childnode refid="35578" relation="include">
+        </childnode>
+        <childnode refid="35580" relation="include">
+        </childnode>
+      </node>
+      <node id="35582">
+        <label>vector</label>
+      </node>
+      <node id="35585">
         <label>complex</label>
-      </node>
-      <node id="8606">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="8607" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="8610">
+      <node id="35593">
         <label>gr_fxpt_vco.h</label>
         <link refid="gr__fxpt__vco_8h"/>
-        <childnode refid="8611" relation="include">
+        <childnode refid="35594" relation="include">
         </childnode>
       </node>
-      <node id="8608">
-        <label>gr_fxpt.h</label>
-        <link refid="gr_fxpt.h"/>
-        <childnode refid="8609" relation="include">
-        </childnode>
-        <childnode refid="8610" relation="include">
-        </childnode>
-      </node>
-      <node id="8609">
-        <label>gr_fxpt_nco.h</label>
-        <link refid="gr__fxpt__nco_8h"/>
-      </node>
-      <node id="8611">
+      <node id="35594">
         <label>gr_vco_f.h</label>
         <link refid="gr__vco__f_8h"/>
+      </node>
+      <node id="35591">
+        <label>gr_sig_source_i.h</label>
+        <link refid="gr__sig__source__i_8h"/>
+      </node>
+      <node id="35587">
+        <label>gr_fxpt_nco.h</label>
+        <link refid="gr__fxpt__nco_8h"/>
+        <childnode refid="35588" relation="include">
+        </childnode>
+        <childnode refid="35590" relation="include">
+        </childnode>
+        <childnode refid="35591" relation="include">
+        </childnode>
+        <childnode refid="35592" relation="include">
+        </childnode>
+      </node>
+      <node id="35590">
+        <label>gr_sig_source_f.h</label>
+        <link refid="gr__sig__source__f_8h"/>
+      </node>
+      <node id="35589">
+        <label>gr_channel_model.h</label>
+        <link refid="gr__channel__model_8h"/>
+      </node>
+      <node id="35586">
+        <label>gr_fxpt.h</label>
+        <link refid="gr_fxpt.h"/>
+        <childnode refid="35587" relation="include">
+        </childnode>
+        <childnode refid="35593" relation="include">
+        </childnode>
+      </node>
+      <node id="35588">
+        <label>gr_sig_source_c.h</label>
+        <link refid="gr__sig__source__c_8h"/>
+        <childnode refid="35589" relation="include">
+        </childnode>
+      </node>
+      <node id="35592">
+        <label>gr_sig_source_s.h</label>
+        <link refid="gr__sig__source__s_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classgr__fxpt" prot="public">gr_fxpt</innerclass>
@@ -87,6 +117,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_fxpt.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_fxpt.h"/>
   </compounddef>
 </doxygen>

@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gr-trellis/src/examples/python
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,77 +29,77 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "fsm_utils.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/fsm_utils.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "fsm_utils.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/fsm_utils.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_tcm.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_tcm.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_tcm.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_tcm_parallel.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm_parallel.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_tcm_parallel.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_tcm_parallel.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_tcm_combined.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_tcm_combined.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_tcm_combined.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_tcm_combined.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_sccc_hard.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_hard.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_sccc_hard.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_sccc_hard.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_sccc_soft.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_soft.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_sccc_soft.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_sccc_soft.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_sccc_turbo.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_sccc_turbo.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_sccc_turbo.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_sccc_turbo.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_viterbi_equalization1.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization1.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_viterbi_equalization1.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization1.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_viterbi_equalization.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_viterbi_equalization.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_viterbi_equalization.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_turbo_equalization.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_turbo_equalization.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_turbo_equalization1.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization1.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_turbo_equalization1.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization1.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_turbo_equalization2.py" FILES "/home/katsikas/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization2.py.exe")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE PROGRAM RENAME "test_turbo_equalization2.py" FILES "/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/examples/python/test_turbo_equalization2.py.exe")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE FILE FILES "/home/katsikas/gnuradio/gr-trellis/src/examples/python/README")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/README")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/examples/trellis/fsm_files" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_128.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_16.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_4.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_8.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_16.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_4.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_4_msb.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_4_msbG.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_8.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o4_4.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/disconnected.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/rep3.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/rep5.fsm"
-    "/home/katsikas/gnuradio/gr-trellis/src/examples/python/fsm_files/simple.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_128.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_16.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_4.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn1o2_8.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_16.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_4.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_4_msb.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_4_msbG.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o3_8.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/awgn2o4_4.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/disconnected.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/rep3.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/rep5.fsm"
+    "/home/katsikas/Desktop/gnuradio/gr-trellis/src/examples/python/fsm_files/simple.fsm"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_examples")
 

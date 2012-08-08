@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+  <compounddef id="gr__fir__ccc__generic_8h" kind="file">
+    <compoundname>gr_fir_ccc_generic.h</compoundname>
+    <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
+    <includes refid="gr__fir__ccc_8h" local="no">gr_fir_ccc.h</includes>
+    <includedby refid="gr__fir__ccc__simd_8h" local="no">gr_fir_ccc_simd.h</includedby>
+    <incdepgraph>
+      <node id="34367">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="34369">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="34370" relation="include">
+        </childnode>
+      </node>
+      <node id="34363">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="34362">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="34363" relation="include">
+        </childnode>
+      </node>
+      <node id="34371">
+        <label>gr_reverse.h</label>
+        <link refid="gr__reverse_8h"/>
+        <childnode refid="34362" relation="include">
+        </childnode>
+        <childnode refid="34365" relation="include">
+        </childnode>
+        <childnode refid="34369" relation="include">
+        </childnode>
+      </node>
+      <node id="34366">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="34362" relation="include">
+        </childnode>
+        <childnode refid="34367" relation="include">
+        </childnode>
+        <childnode refid="34365" relation="include">
+        </childnode>
+        <childnode refid="34368" relation="include">
+        </childnode>
+        <childnode refid="34369" relation="include">
+        </childnode>
+      </node>
+      <node id="34368">
+        <label>stddef.h</label>
+      </node>
+      <node id="34365">
+        <label>vector</label>
+      </node>
+      <node id="34361">
+        <label>gr_fir_ccc_generic.h</label>
+        <link refid="gr_fir_ccc_generic.h"/>
+        <childnode refid="34362" relation="include">
+        </childnode>
+        <childnode refid="34364" relation="include">
+        </childnode>
+      </node>
+      <node id="34364">
+        <label>gr_fir_ccc.h</label>
+        <link refid="gr__fir__ccc_8h"/>
+        <childnode refid="34362" relation="include">
+        </childnode>
+        <childnode refid="34365" relation="include">
+        </childnode>
+        <childnode refid="34366" relation="include">
+        </childnode>
+        <childnode refid="34371" relation="include">
+        </childnode>
+      </node>
+      <node id="34370">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="34374">
+        <label>gr_fir_ccc_x86.h</label>
+        <link refid="gr__fir__ccc__x86_8h"/>
+      </node>
+      <node id="34372">
+        <label>gr_fir_ccc_generic.h</label>
+        <link refid="gr_fir_ccc_generic.h"/>
+        <childnode refid="34373" relation="include">
+        </childnode>
+      </node>
+      <node id="34373">
+        <label>gr_fir_ccc_simd.h</label>
+        <link refid="gr__fir__ccc__simd_8h"/>
+        <childnode refid="34374" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr__fir__ccc__generic" prot="public">gr_fir_ccc_generic</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/Desktop/gnuradio/build/gnuradio-core/src/lib/filter/gr_fir_ccc_generic.h"/>
+  </compounddef>
+</doxygen>

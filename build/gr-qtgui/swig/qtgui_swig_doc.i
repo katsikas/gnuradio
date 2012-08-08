@@ -8,6 +8,36 @@
 
 
 
+%feature("docstring") qtgui_ofdm_vector_analyzer_c "The ofdm vector analyzer
+
+This is a qt based vector analyzer for the ofdm modulation. It is not a callable from the gnuradio-companion and it is used internaly in the ofdm demodulator."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%feature("docstring") qtgui_make_ofdm_vector_analyzer_c "The ofdm vector analyzer
+
+This is a qt based vector analyzer for the ofdm modulation. It is not a callable from the gnuradio-companion and it is used internaly in the ofdm demodulator."
+
 %feature("docstring") qtgui_sink_c "A graphical sink to display freq, spec, time, and const plots.
 
 This is a QT-based graphical sink the takes a complex stream and plots it. The default action is to plot the signal as a PSD (FFT), spectrogram (waterfall), time domain I&Q, and constellation (I vs. Q) plots. The plots may be turned off by setting the appropriate boolean value in the constructor to False."

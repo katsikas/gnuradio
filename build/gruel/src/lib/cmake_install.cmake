@@ -1,8 +1,8 @@
-# Install script for directory: /home/katsikas/gnuradio/gruel/src/lib
+# Install script for directory: /home/katsikas/Desktop/gnuradio/gruel/src/lib
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,32 +29,21 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_devel")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gruel" TYPE FILE FILES "/home/katsikas/gnuradio/build/gruel/src/include/gruel/pmt_serial_tags.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gruel" TYPE FILE FILES "/home/katsikas/Desktop/gnuradio/build/gruel/src/include/gruel/pmt_serial_tags.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_devel")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_runtime")
-  FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgruel-3.6.1git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgruel-3.6.1git.so"
-      )
-    IF(EXISTS "${file}" AND
-       NOT IS_SYMLINK "${file}")
-      FILE(RPATH_CHECK
-           FILE "${file}"
-           RPATH "")
-    ENDIF()
-  ENDFOREACH()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/katsikas/gnuradio/build/gruel/src/lib/libgruel-3.6.1git.so.0.0.0"
-    "/home/katsikas/gnuradio/build/gruel/src/lib/libgruel-3.6.1git.so"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/lib/CMakeFiles/CMakeRelink.dir/libgruel-3.6.1git.so.0.0.0"
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/lib/CMakeFiles/CMakeRelink.dir/libgruel-3.6.1git.so"
     )
   FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgruel-3.6.1git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgruel-3.6.1git.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libgruel-3.6.1git.so.0.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libgruel-3.6.1git.so"
       )
     IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -66,9 +55,9 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_r
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_runtime")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_runtime")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
-    "/home/katsikas/gnuradio/build/gruel/src/lib/libgruel.so"
-    "/home/katsikas/gnuradio/build/gruel/src/lib/libgruel-3.6.1git.so.0"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE FILE FILES
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/lib/libgruel.so"
+    "/home/katsikas/Desktop/gnuradio/build/gruel/src/lib/libgruel-3.6.1git.so.0"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "gruel_runtime")
 

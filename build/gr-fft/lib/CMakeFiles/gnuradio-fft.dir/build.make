@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Include any dependencies generated for this target.
 include gr-fft/lib/CMakeFiles/gnuradio-fft.dir/depend.make
@@ -48,17 +51,17 @@ include gr-fft/lib/CMakeFiles/gnuradio-fft.dir/flags.make
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/flags.make
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o: ../gr-fft/lib/fft.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/fft.cc.o -c /home/katsikas/gnuradio/gr-fft/lib/fft.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/fft.cc.o -c /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft.cc
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-fft.dir/fft.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-fft/lib/fft.cc > CMakeFiles/gnuradio-fft.dir/fft.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft.cc > CMakeFiles/gnuradio-fft.dir/fft.cc.i
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-fft.dir/fft.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-fft/lib/fft.cc -o CMakeFiles/gnuradio-fft.dir/fft.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft.cc -o CMakeFiles/gnuradio-fft.dir/fft.cc.s
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o.requires:
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o.requires
@@ -71,17 +74,17 @@ gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o.provides.build: gr-fft/lib/CMake
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/flags.make
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o: ../gr-fft/lib/fft_vcc_fftw.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o -c /home/katsikas/gnuradio/gr-fft/lib/fft_vcc_fftw.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o -c /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft_vcc_fftw.cc
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-fft/lib/fft_vcc_fftw.cc > CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft_vcc_fftw.cc > CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.i
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-fft/lib/fft_vcc_fftw.cc -o CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft_vcc_fftw.cc -o CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.s
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o.requires:
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o.requires
@@ -94,17 +97,17 @@ gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o.provides.build: gr-fft/
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/flags.make
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o: ../gr-fft/lib/fft_vfc_fftw.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o -c /home/katsikas/gnuradio/gr-fft/lib/fft_vfc_fftw.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o -c /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft_vfc_fftw.cc
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-fft/lib/fft_vfc_fftw.cc > CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft_vfc_fftw.cc > CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.i
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-fft/lib/fft_vfc_fftw.cc -o CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-fft/lib/fft_vfc_fftw.cc -o CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.s
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o.requires:
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o.requires
@@ -117,17 +120,17 @@ gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o.provides.build: gr-fft/
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/flags.make
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o: ../gr-fft/lib/goertzel_fc_impl.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o -c /home/katsikas/gnuradio/gr-fft/lib/goertzel_fc_impl.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o -c /home/katsikas/Desktop/gnuradio/gr-fft/lib/goertzel_fc_impl.cc
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-fft/lib/goertzel_fc_impl.cc > CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-fft/lib/goertzel_fc_impl.cc > CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.i
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-fft/lib/goertzel_fc_impl.cc -o CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-fft/lib/goertzel_fc_impl.cc -o CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.s
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o.requires:
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o.requires
@@ -140,17 +143,17 @@ gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o.provides.build: gr-
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/flags.make
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o: ../gr-fft/lib/goertzel.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/goertzel.cc.o -c /home/katsikas/gnuradio/gr-fft/lib/goertzel.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-fft.dir/goertzel.cc.o -c /home/katsikas/Desktop/gnuradio/gr-fft/lib/goertzel.cc
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-fft.dir/goertzel.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-fft/lib/goertzel.cc > CMakeFiles/gnuradio-fft.dir/goertzel.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-fft/lib/goertzel.cc > CMakeFiles/gnuradio-fft.dir/goertzel.cc.i
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-fft.dir/goertzel.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-fft/lib/goertzel.cc -o CMakeFiles/gnuradio-fft.dir/goertzel.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-fft/lib/goertzel.cc -o CMakeFiles/gnuradio-fft.dir/goertzel.cc.s
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o.requires:
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o.requires
@@ -178,32 +181,73 @@ gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft
 gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o
 gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o
 gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_filesystem-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_system-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_thread-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libfftw3f.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libfftw3f.so
 gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_filesystem-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_system-mt.so
-gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib/libboost_thread-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
 gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make
 gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-fft-3.6.1git.so"
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-fft.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-fft-3.6.1git.so.0.0.0 libgnuradio-fft-3.6.1git.so.0.0.0 libgnuradio-fft-3.6.1git.so
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/cmake -E create_symlink libgnuradio-fft-3.6.1git.so.0.0.0 /home/katsikas/gnuradio/build/gr-fft/lib/libgnuradio-fft.so
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/cmake -E create_symlink libgnuradio-fft-3.6.1git.so.0.0.0 /home/katsikas/gnuradio/build/gr-fft/lib/libgnuradio-fft-3.6.1git.so.0
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && /usr/bin/cmake -E touch libgnuradio-fft-3.6.1git.so.0.0.0
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-fft.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-fft-3.6.1git.so.0.0.0 libgnuradio-fft-3.6.1git.so.0.0.0 libgnuradio-fft-3.6.1git.so
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/cmake -E create_symlink libgnuradio-fft-3.6.1git.so.0.0.0 /home/katsikas/Desktop/gnuradio/build/gr-fft/lib/libgnuradio-fft.so
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/cmake -E create_symlink libgnuradio-fft-3.6.1git.so.0.0.0 /home/katsikas/Desktop/gnuradio/build/gr-fft/lib/libgnuradio-fft-3.6.1git.so.0
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && /usr/bin/cmake -E touch libgnuradio-fft-3.6.1git.so.0.0.0
 
 gr-fft/lib/libgnuradio-fft-3.6.1git.so: gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0
 
 # Rule to build all files generated by this target.
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build: gr-fft/lib/libgnuradio-fft-3.6.1git.so
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build
+
+# Object files for target gnuradio-fft
+gnuradio__fft_OBJECTS = \
+"CMakeFiles/gnuradio-fft.dir/fft.cc.o" \
+"CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o" \
+"CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o" \
+"CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o" \
+"CMakeFiles/gnuradio-fft.dir/goertzel.cc.o"
+
+# External object files for target gnuradio-fft
+gnuradio__fft_EXTERNAL_OBJECTS =
+
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vfc_fftw.cc.o
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel_fc_impl.cc.o
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/goertzel.cc.o
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libfftw3f.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/build.make
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-fft.dir/relink.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -E cmake_symlink_library CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0 CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0 CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so
+
+gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so: gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so.0.0.0
+
+# Rule to relink during preinstall.
+gr-fft/lib/CMakeFiles/gnuradio-fft.dir/preinstall: gr-fft/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-fft-3.6.1git.so
+.PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/preinstall
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/requires: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft.cc.o.requires
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/requires: gr-fft/lib/CMakeFiles/gnuradio-fft.dir/fft_vcc_fftw.cc.o.requires
@@ -213,10 +257,10 @@ gr-fft/lib/CMakeFiles/gnuradio-fft.dir/requires: gr-fft/lib/CMakeFiles/gnuradio-
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/requires
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/clean:
-	cd /home/katsikas/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-fft.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/gr-fft/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-fft.dir/cmake_clean.cmake
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/clean
 
 gr-fft/lib/CMakeFiles/gnuradio-fft.dir/depend:
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-fft/lib /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-fft/lib /home/katsikas/gnuradio/build/gr-fft/lib/CMakeFiles/gnuradio-fft.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/gr-fft/lib /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/gr-fft/lib /home/katsikas/Desktop/gnuradio/build/gr-fft/lib/CMakeFiles/gnuradio-fft.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gr-fft/lib/CMakeFiles/gnuradio-fft.dir/depend
 

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__stream__to__vector" kind="class" prot="public">
     <compoundname>gr_stream_to_vector</compoundname>
     <basecompoundref refid="classgr__sync__decimator" prot="public" virt="non-virtual">gr_sync_decimator</basecompoundref>
     <includes refid="gr__stream__to__vector_8h" local="no">gr_stream_to_vector.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__stream__to__vector_1a39d1465f888889a1f62d7e581afccd7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_stream_to_vector_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_stream_to_vector_sptr</ref></type>
         <definition>GR_CORE_API gr_stream_to_vector_sptr gr_make_stream_to_vector</definition>
         <argsstring>(size_t item_size, size_t nitems_per_block)</argsstring>
         <name>gr_make_stream_to_vector</name>
@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="43"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="43"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="46"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="46"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -75,7 +75,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="51"/>
+        <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="51"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -83,116 +83,116 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5540">
+      <node id="13021">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5541" relation="public-inheritance">
+        <childnode refid="13022" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5537">
+      <node id="13018">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5538" relation="public-inheritance">
+        <childnode refid="13019" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5536">
+      <node id="13017">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="5537" relation="public-inheritance">
+        <childnode refid="13018" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5538">
+      <node id="13019">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5539" relation="public-inheritance">
+        <childnode refid="13020" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5541">
+      <node id="13022">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5535">
+      <node id="13016">
         <label>gr_stream_to_vector</label>
         <link refid="classgr__stream__to__vector"/>
-        <childnode refid="5536" relation="public-inheritance">
+        <childnode refid="13017" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5539">
+      <node id="13020">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5540" relation="public-inheritance">
+        <childnode refid="13021" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5547">
+      <node id="13028">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5548" relation="public-inheritance">
+        <childnode refid="13029" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5544">
+      <node id="13025">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5545" relation="public-inheritance">
+        <childnode refid="13026" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5543">
+      <node id="13024">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="5544" relation="public-inheritance">
+        <childnode refid="13025" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5545">
+      <node id="13026">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5546" relation="public-inheritance">
+        <childnode refid="13027" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5549">
+      <node id="13030">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5550" relation="usage">
+        <childnode refid="13031" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5552">
+      <node id="13033">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5548">
+      <node id="13029">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5550">
+      <node id="13031">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5542">
+      <node id="13023">
         <label>gr_stream_to_vector</label>
         <link refid="classgr__stream__to__vector"/>
-        <childnode refid="5543" relation="public-inheritance">
+        <childnode refid="13024" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5546">
+      <node id="13027">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5547" relation="public-inheritance">
+        <childnode refid="13028" relation="public-inheritance">
         </childnode>
-        <childnode refid="5549" relation="usage">
+        <childnode refid="13030" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5551" relation="usage">
+        <childnode refid="13032" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5551">
+      <node id="13032">
         <label>std::string</label>
-        <childnode refid="5552" relation="public-inheritance">
+        <childnode refid="13033" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="41" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" bodystart="40" bodyend="52"/>
+    <location file="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" line="41" bodyfile="/home/katsikas/Desktop/gnuradio/gnuradio-core/src/lib/general/gr_stream_to_vector.h" bodystart="40" bodyend="52"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>gr_stream_to_vector</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>gr_stream_to_vector</scope><name>add_item_tag</name></member>

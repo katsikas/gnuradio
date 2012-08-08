@@ -32,8 +32,6 @@ GR_PYTHON_INSTALL(
     gmsk.py
     modulation_utils.py
     ofdm.py
-    dvbt_ofdm.py
-    dvbt_constellations.py
     ofdm_packet_utils.py
     ofdm_receiver.py
     ofdm_sync_fixed.py

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="trellis__viterbi__s_8h" kind="file">
     <compoundname>trellis_viterbi_s.h</compoundname>
     <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
@@ -7,37 +7,6 @@
     <includes local="no">gr_block.h</includes>
     <includes refid="core__algorithms_8h" local="yes">core_algorithms.h</includes>
     <incdepgraph>
-      <node id="602">
-        <label>gruel/attributes.h</label>
-      </node>
-      <node id="608">
-        <label>cmath</label>
-      </node>
-      <node id="606">
-        <label>gr_block.h</label>
-      </node>
-      <node id="604">
-        <label>vector</label>
-      </node>
-      <node id="601">
-        <label>trellis_api.h</label>
-        <link refid="trellis__api_8h"/>
-        <childnode refid="602" relation="include">
-        </childnode>
-      </node>
-      <node id="603">
-        <label>fsm.h</label>
-        <link refid="fsm_8h"/>
-        <childnode refid="601" relation="include">
-        </childnode>
-        <childnode refid="604" relation="include">
-        </childnode>
-        <childnode refid="605" relation="include">
-        </childnode>
-      </node>
-      <node id="605">
-        <label>iosfwd</label>
-      </node>
       <node id="600">
         <label>trellis_viterbi_s.h</label>
         <link refid="trellis_viterbi_s.h"/>
@@ -49,6 +18,31 @@
         </childnode>
         <childnode refid="607" relation="include">
         </childnode>
+      </node>
+      <node id="602">
+        <label>gruel/attributes.h</label>
+      </node>
+      <node id="608">
+        <label>cmath</label>
+      </node>
+      <node id="603">
+        <label>fsm.h</label>
+        <link refid="fsm_8h"/>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="604" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+      <node id="606">
+        <label>gr_block.h</label>
+      </node>
+      <node id="604">
+        <label>vector</label>
+      </node>
+      <node id="605">
+        <label>iosfwd</label>
       </node>
       <node id="610">
         <label>interleaver.h</label>
@@ -75,6 +69,12 @@
         <childnode refid="610" relation="include">
         </childnode>
       </node>
+      <node id="601">
+        <label>trellis_api.h</label>
+        <link refid="trellis__api_8h"/>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <innerclass refid="classtrellis__viterbi__s" prot="public">trellis_viterbi_s</innerclass>
       <sectiondef kind="typedef">
@@ -89,12 +89,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h" line="34" bodyfile="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h" line="34" bodyfile="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="trellis__viterbi__s_8h_1a3108ea14d92237b90f5f836e95e2e7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="trellis__viterbi__s_8h_1a596a302eb7cd830f391afc875570f909" kindref="member">trellis_viterbi_s_sptr</ref></type>
+        <type>TRELLIS_API <ref refid="trellis__viterbi__s_8h_1a596a302eb7cd830f391afc875570f909" kindref="member">trellis_viterbi_s_sptr</ref></type>
         <definition>TRELLIS_API trellis_viterbi_s_sptr trellis_make_viterbi_s</definition>
         <argsstring>(const fsm &amp;FSM, int K, int S0, int SK)</argsstring>
         <name>trellis_make_viterbi_s</name>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h" line="40"/>
+        <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h" line="40"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -217,6 +217,6 @@
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h"/>
+    <location file="/home/katsikas/Desktop/gnuradio/build/gr-trellis/src/lib/trellis_viterbi_s.h"/>
   </compounddef>
 </doxygen>

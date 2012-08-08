@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
+CMAKE_SOURCE_DIR = /home/katsikas/Desktop/gnuradio
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
+CMAKE_BINARY_DIR = /home/katsikas/Desktop/gnuradio/build
 
 # Include any dependencies generated for this target.
 include gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/depend.make
@@ -48,17 +51,17 @@ include gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o: ../gr-vocoder/lib/vocoder_alaw_decode_bs.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_alaw_decode_bs.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_alaw_decode_bs.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_alaw_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_alaw_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_alaw_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_alaw_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o.requires
@@ -71,17 +74,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o: ../gr-vocoder/lib/vocoder_alaw_encode_sb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_alaw_encode_sb.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_alaw_encode_sb.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_alaw_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_alaw_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_alaw_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_alaw_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o.requires
@@ -94,17 +97,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o: ../gr-vocoder/lib/vocoder_codec2_decode_ps.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_codec2_decode_ps.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_codec2_decode_ps.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_codec2_decode_ps.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_codec2_decode_ps.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_codec2_decode_ps.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_codec2_decode_ps.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o.requires
@@ -117,17 +120,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o.pro
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o: ../gr-vocoder/lib/vocoder_codec2_encode_sp.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_codec2_encode_sp.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_codec2_encode_sp.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_codec2_encode_sp.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_codec2_encode_sp.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_codec2_encode_sp.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_codec2_encode_sp.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o.requires
@@ -140,17 +143,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o.pro
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o: ../gr-vocoder/lib/vocoder_cvsd_decode_bs.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_cvsd_decode_bs.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_cvsd_decode_bs.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_cvsd_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_cvsd_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_cvsd_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_cvsd_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o.requires
@@ -163,17 +166,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o: ../gr-vocoder/lib/vocoder_cvsd_encode_sb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_cvsd_encode_sb.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_cvsd_encode_sb.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_cvsd_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_cvsd_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_cvsd_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_cvsd_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o.requires
@@ -186,17 +189,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o: ../gr-vocoder/lib/vocoder_g721_decode_bs.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g721_decode_bs.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g721_decode_bs.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g721_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g721_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g721_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g721_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o.requires
@@ -209,17 +212,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o: ../gr-vocoder/lib/vocoder_g721_encode_sb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g721_encode_sb.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g721_encode_sb.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g721_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g721_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g721_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g721_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o.requires
@@ -232,17 +235,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o: ../gr-vocoder/lib/vocoder_g723_24_decode_bs.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_24_decode_bs.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_24_decode_bs.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_24_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_24_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_24_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_24_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o.requires
@@ -255,17 +258,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o.pr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o: ../gr-vocoder/lib/vocoder_g723_24_encode_sb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_24_encode_sb.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_24_encode_sb.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_24_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_24_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_24_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_24_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o.requires
@@ -278,17 +281,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o.pr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o: ../gr-vocoder/lib/vocoder_g723_40_decode_bs.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_40_decode_bs.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_40_decode_bs.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_40_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_40_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_40_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_40_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o.requires
@@ -301,17 +304,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o.pr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o: ../gr-vocoder/lib/vocoder_g723_40_encode_sb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_40_encode_sb.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_40_encode_sb.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_40_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_40_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_g723_40_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_g723_40_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o.requires
@@ -324,17 +327,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o.pr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o: ../gr-vocoder/lib/vocoder_gsm_fr_decode_ps.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_decode_ps.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_decode_ps.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_decode_ps.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_decode_ps.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_decode_ps.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_decode_ps.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o.requires
@@ -347,17 +350,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o.pro
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o: ../gr-vocoder/lib/vocoder_gsm_fr_encode_sp.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_encode_sp.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_encode_sp.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_encode_sp.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_encode_sp.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_encode_sp.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_gsm_fr_encode_sp.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o.requires
@@ -370,17 +373,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o.pro
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o: ../gr-vocoder/lib/vocoder_ulaw_decode_bs.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_ulaw_decode_bs.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_ulaw_decode_bs.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_ulaw_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_ulaw_decode_bs.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_ulaw_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_ulaw_decode_bs.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o.requires
@@ -393,17 +396,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o: ../gr-vocoder/lib/vocoder_ulaw_encode_sb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o -c /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_ulaw_encode_sb.cc
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_ulaw_encode_sb.cc
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_ulaw_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_ulaw_encode_sb.cc > CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/vocoder_ulaw_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/vocoder_ulaw_encode_sb.cc -o CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o.requires
@@ -416,17 +419,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o.provi
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o: gr-vocoder/lib/codec2/codebook.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o   -c /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebook.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o   -c /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebook.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebook.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebook.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebook.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebook.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o.requires
@@ -439,17 +442,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o.provides.buil
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o: gr-vocoder/lib/codec2/codebookd.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o   -c /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o   -c /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o.requires
@@ -462,17 +465,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o.provides.bui
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o: gr-vocoder/lib/codec2/codebookdvq.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o   -c /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o   -c /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o.requires
@@ -485,17 +488,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o.provides.b
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o: ../gr-vocoder/lib/codec2/dump.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/dump.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/dump.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/dump.c > CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/dump.c > CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/dump.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/dump.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o.requires
@@ -508,17 +511,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o.provides.build: g
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o: ../gr-vocoder/lib/codec2/lpc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/lpc.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/lpc.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/lpc.c > CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/lpc.c > CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/lpc.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/lpc.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o.requires
@@ -531,17 +534,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o.provides.build: gr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o: ../gr-vocoder/lib/codec2/nlp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/nlp.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/nlp.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/nlp.c > CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/nlp.c > CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/nlp.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/nlp.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o.requires
@@ -554,17 +557,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o.provides.build: gr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o: ../gr-vocoder/lib/codec2/postfilter.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/postfilter.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/postfilter.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/postfilter.c > CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/postfilter.c > CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/postfilter.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/postfilter.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o.requires
@@ -577,17 +580,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o.provides.bu
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o: ../gr-vocoder/lib/codec2/sine.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/sine.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.c > CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/sine.c > CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/sine.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o.requires
@@ -600,17 +603,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o.provides.build: g
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o: ../gr-vocoder/lib/codec2/codec2.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codec2.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codec2.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codec2.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codec2.c > CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codec2.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codec2.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o.requires
@@ -623,17 +626,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o.provides.build:
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o: ../gr-vocoder/lib/codec2/fft.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/fft.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/fft.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/fft.c > CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/fft.c > CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/fft.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/fft.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o.requires
@@ -646,17 +649,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o.provides.build: gr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o: ../gr-vocoder/lib/codec2/kiss_fft.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/kiss_fft.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/kiss_fft.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/kiss_fft.c > CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/kiss_fft.c > CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/kiss_fft.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/kiss_fft.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o.requires
@@ -669,17 +672,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o.provides.buil
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o: ../gr-vocoder/lib/codec2/interp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/interp.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/interp.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/interp.c > CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/interp.c > CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/interp.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/interp.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o.requires
@@ -692,17 +695,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o.provides.build:
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o: ../gr-vocoder/lib/codec2/lsp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/lsp.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/lsp.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/lsp.c > CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/lsp.c > CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/lsp.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/lsp.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o.requires
@@ -715,17 +718,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o.provides.build: gr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o: ../gr-vocoder/lib/codec2/phase.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/phase.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/phase.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/phase.c > CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/phase.c > CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/phase.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/phase.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o.requires
@@ -738,17 +741,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o.provides.build: 
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o: ../gr-vocoder/lib/codec2/quantise.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/quantise.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.c > CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/quantise.c > CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/quantise.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/quantise.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o.requires
@@ -761,17 +764,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o.provides.buil
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o: ../gr-vocoder/lib/codec2/pack.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/codec2/pack.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/pack.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/codec2/pack.c > CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/pack.c > CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/codec2/pack.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/pack.c -o CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o.requires
@@ -784,17 +787,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o.provides.build: g
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o: ../gr-vocoder/lib/g7xx/g711.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g711.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g711.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g711.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g711.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g711.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g711.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o.requires
@@ -807,17 +810,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o.provides.build: gr-
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o: ../gr-vocoder/lib/g7xx/g72x.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g72x.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g72x.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g72x.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g72x.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g72x.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g72x.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o.requires
@@ -830,17 +833,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o.provides.build: gr-
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o: ../gr-vocoder/lib/g7xx/g721.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g721.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g721.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g721.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g721.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g721.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g721.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o.requires
@@ -853,17 +856,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o.provides.build: gr-
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o: ../gr-vocoder/lib/g7xx/g723_24.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g723_24.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g723_24.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g723_24.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g723_24.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g723_24.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g723_24.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o.requires
@@ -876,17 +879,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o.provides.build: 
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o: ../gr-vocoder/lib/g7xx/g723_40.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g723_40.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g723_40.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g723_40.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g723_40.c > CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/g7xx/g723_40.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/g7xx/g723_40.c -o CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o.requires
@@ -899,17 +902,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o.provides.build: 
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o: ../gr-vocoder/lib/gsm/add.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/add.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/add.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/add.c > CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/add.c > CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/add.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/add.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o.requires
@@ -922,17 +925,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o.provides.build: gr-vo
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o: ../gr-vocoder/lib/gsm/code.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/code.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/code.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/code.c > CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/code.c > CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/code.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/code.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o.requires
@@ -945,17 +948,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o.provides.build: gr-v
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o: ../gr-vocoder/lib/gsm/debug.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/debug.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/debug.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/debug.c > CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/debug.c > CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/debug.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/debug.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o.requires
@@ -968,17 +971,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o.provides.build: gr-
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o: ../gr-vocoder/lib/gsm/decode.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/decode.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/decode.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/decode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/decode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/decode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/decode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o.requires
@@ -991,17 +994,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o.provides.build: gr
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o: ../gr-vocoder/lib/gsm/gsm_create.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_create.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_create.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_create.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_create.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_create.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_create.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o.requires
@@ -1014,17 +1017,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o.provides.build
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o: ../gr-vocoder/lib/gsm/gsm_decode.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_decode.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_decode.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_decode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_decode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_decode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_decode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o.requires
@@ -1037,17 +1040,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o.provides.build
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o: ../gr-vocoder/lib/gsm/gsm_destroy.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_destroy.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_destroy.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_destroy.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_destroy.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_destroy.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_destroy.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o.requires
@@ -1060,17 +1063,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o.provides.buil
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o: ../gr-vocoder/lib/gsm/gsm_encode.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_encode.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_encode.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_encode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_encode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_encode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_encode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o.requires
@@ -1083,17 +1086,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o.provides.build
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o: ../gr-vocoder/lib/gsm/gsm_explode.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_explode.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_explode.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_explode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_explode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_explode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_explode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o.requires
@@ -1106,17 +1109,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o.provides.buil
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o: ../gr-vocoder/lib/gsm/gsm_implode.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_implode.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_implode.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_implode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_implode.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_implode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_implode.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o.requires
@@ -1129,17 +1132,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o.provides.buil
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o: ../gr-vocoder/lib/gsm/gsm_option.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_option.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_option.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_option.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_option.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_option.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_option.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o.requires
@@ -1152,17 +1155,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o.provides.build
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o: ../gr-vocoder/lib/gsm/gsm_print.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_print.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_print.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_print.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_print.c > CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/gsm_print.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/gsm_print.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o.requires
@@ -1175,17 +1178,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o.provides.build:
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o: ../gr-vocoder/lib/gsm/long_term.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/long_term.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/long_term.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/long_term.c > CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/long_term.c > CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/long_term.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/long_term.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o.requires
@@ -1198,17 +1201,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o.provides.build:
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o: ../gr-vocoder/lib/gsm/lpc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/lpc.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/lpc.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/lpc.c > CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/lpc.c > CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/lpc.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/lpc.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o.requires
@@ -1221,17 +1224,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o.provides.build: gr-vo
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o: ../gr-vocoder/lib/gsm/preprocess.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/preprocess.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/preprocess.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/preprocess.c > CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/preprocess.c > CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/preprocess.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/preprocess.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o.requires
@@ -1244,17 +1247,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o.provides.build
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o: ../gr-vocoder/lib/gsm/rpe.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/rpe.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/rpe.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/rpe.c > CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/rpe.c > CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/rpe.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/rpe.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o.requires
@@ -1267,17 +1270,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o.provides.build: gr-vo
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o: ../gr-vocoder/lib/gsm/short_term.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/short_term.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/short_term.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/short_term.c > CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/short_term.c > CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/short_term.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/short_term.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o.requires
@@ -1290,17 +1293,17 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o.provides.build
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/flags.make
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o: ../gr-vocoder/lib/gsm/table.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o   -c /home/katsikas/gnuradio/gr-vocoder/lib/gsm/table.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o   -c /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/table.c
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.i"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/gnuradio/gr-vocoder/lib/gsm/table.c > CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.i
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/table.c > CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.i
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.s"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/gnuradio/gr-vocoder/lib/gsm/table.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.s
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/gsm/table.c -o CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.s
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o.requires:
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o.requires
@@ -1322,9 +1325,9 @@ gr-vocoder/lib/codec2/codebook.c: ../gr-vocoder/lib/codec2/codebook/lsp7.txt
 gr-vocoder/lib/codec2/codebook.c: ../gr-vocoder/lib/codec2/codebook/lsp8.txt
 gr-vocoder/lib/codec2/codebook.c: ../gr-vocoder/lib/codec2/codebook/lsp9.txt
 gr-vocoder/lib/codec2/codebook.c: ../gr-vocoder/lib/codec2/codebook/lsp10.txt
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating codec2/codebook.c"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && ./generate_codebook lsp_cb /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp1.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp2.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp3.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp4.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp5.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp6.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp7.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp8.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp9.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/lsp10.txt > /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebook.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && ./generate_codebook lsp_cb /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp1.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp2.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp3.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp4.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp5.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp6.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp7.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp8.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp9.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/lsp10.txt > /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebook.c
 
 gr-vocoder/lib/codec2/codebookd.c: gr-vocoder/lib/generate_codebook
 gr-vocoder/lib/codec2/codebookd.c: ../gr-vocoder/lib/codec2/codebook/dlsp1.txt
@@ -1337,9 +1340,9 @@ gr-vocoder/lib/codec2/codebookd.c: ../gr-vocoder/lib/codec2/codebook/dlsp7.txt
 gr-vocoder/lib/codec2/codebookd.c: ../gr-vocoder/lib/codec2/codebook/dlsp8.txt
 gr-vocoder/lib/codec2/codebookd.c: ../gr-vocoder/lib/codec2/codebook/dlsp9.txt
 gr-vocoder/lib/codec2/codebookd.c: ../gr-vocoder/lib/codec2/codebook/dlsp10.txt
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating codec2/codebookd.c"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && ./generate_codebook lsp_cbd /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp6.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp7.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp8.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp9.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp10.txt > /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && ./generate_codebook lsp_cbd /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp6.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp7.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp8.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp9.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp10.txt > /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookd.c
 
 gr-vocoder/lib/codec2/codebookdvq.c: gr-vocoder/lib/generate_codebook
 gr-vocoder/lib/codec2/codebookdvq.c: ../gr-vocoder/lib/codec2/codebook/dlsp1.txt
@@ -1347,9 +1350,9 @@ gr-vocoder/lib/codec2/codebookdvq.c: ../gr-vocoder/lib/codec2/codebook/dlsp2.txt
 gr-vocoder/lib/codec2/codebookdvq.c: ../gr-vocoder/lib/codec2/codebook/dlsp3.txt
 gr-vocoder/lib/codec2/codebookdvq.c: ../gr-vocoder/lib/codec2/codebook/dlsp4.txt
 gr-vocoder/lib/codec2/codebookdvq.c: ../gr-vocoder/lib/codec2/codebook/dlsp5.txt
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/Desktop/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating codec2/codebookdvq.c"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && ./generate_codebook lsp_cbdvq /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt /home/katsikas/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt > /home/katsikas/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && ./generate_codebook lsp_cbdvq /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp1.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp2.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp3.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp4.txt /home/katsikas/Desktop/gnuradio/gr-vocoder/lib/codec2/codebook/dlsp5.txt > /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/codec2/codebookdvq.c
 
 # Object files for target gnuradio-vocoder
 gnuradio__vocoder_OBJECTS = \
@@ -1468,31 +1471,171 @@ gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/
 gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o
 gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o
 gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_filesystem-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_system-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_thread-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
 gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_filesystem-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_system-mt.so
-gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib/libboost_thread-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
 gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make
 gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-vocoder-3.6.1git.so"
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-vocoder.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-vocoder-3.6.1git.so.0.0.0 libgnuradio-vocoder-3.6.1git.so.0.0.0 libgnuradio-vocoder-3.6.1git.so
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/cmake -E create_symlink libgnuradio-vocoder-3.6.1git.so.0.0.0 /home/katsikas/gnuradio/build/gr-vocoder/lib/libgnuradio-vocoder.so
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/cmake -E create_symlink libgnuradio-vocoder-3.6.1git.so.0.0.0 /home/katsikas/gnuradio/build/gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && /usr/bin/cmake -E touch libgnuradio-vocoder-3.6.1git.so.0.0.0
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-vocoder.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-vocoder-3.6.1git.so.0.0.0 libgnuradio-vocoder-3.6.1git.so.0.0.0 libgnuradio-vocoder-3.6.1git.so
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/cmake -E create_symlink libgnuradio-vocoder-3.6.1git.so.0.0.0 /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/libgnuradio-vocoder.so
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/cmake -E create_symlink libgnuradio-vocoder-3.6.1git.so.0.0.0 /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && /usr/bin/cmake -E touch libgnuradio-vocoder-3.6.1git.so.0.0.0
 
 gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so: gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so.0.0.0
 
 # Rule to build all files generated by this target.
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build: gr-vocoder/lib/libgnuradio-vocoder-3.6.1git.so
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build
+
+# Object files for target gnuradio-vocoder
+gnuradio__vocoder_OBJECTS = \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o" \
+"CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o"
+
+# External object files for target gnuradio-vocoder
+gnuradio__vocoder_EXTERNAL_OBJECTS =
+
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_decode_ps.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_codec2_encode_sp.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_decode_bs.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_cvsd_encode_sb.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_decode_bs.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g721_encode_sb.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_decode_bs.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_24_encode_sb.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_decode_bs.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_g723_40_encode_sb.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_decode_ps.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_gsm_fr_encode_sp.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_decode_bs.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_ulaw_encode_sb.cc.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebook.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookd.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codebookdvq.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/dump.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lpc.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/nlp.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/postfilter.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/sine.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/codec2.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/fft.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/kiss_fft.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/interp.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/lsp.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/phase.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/quantise.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/codec2/pack.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g711.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g72x.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g721.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_24.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/g7xx/g723_40.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/add.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/code.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/debug.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/decode.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_create.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_decode.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_destroy.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_encode.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_explode.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_implode.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_option.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/gsm_print.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/long_term.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/lpc.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/preprocess.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/rpe.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/short_term.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/gsm/table.c.o
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_date_time-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_program_options-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_filesystem-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_system-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: /usr/lib64/libboost_thread-mt.so
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so"
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-vocoder.dir/relink.txt --verbose=$(VERBOSE)
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -E cmake_symlink_library CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0 CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0 CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so
+
+gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so: gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so.0.0.0
+
+# Rule to relink during preinstall.
+gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/preinstall: gr-vocoder/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-vocoder-3.6.1git.so
+.PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/preinstall
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/requires: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_decode_bs.cc.o.requires
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/requires: gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/vocoder_alaw_encode_sb.cc.o.requires
@@ -1552,12 +1695,12 @@ gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/requires: gr-vocoder/lib/CMakeFil
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/requires
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/clean:
-	cd /home/katsikas/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-vocoder.dir/cmake_clean.cmake
+	cd /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-vocoder.dir/cmake_clean.cmake
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/clean
 
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/depend: gr-vocoder/lib/codec2/codebook.c
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/depend: gr-vocoder/lib/codec2/codebookd.c
 gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/depend: gr-vocoder/lib/codec2/codebookdvq.c
-	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-vocoder/lib /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-vocoder/lib /home/katsikas/gnuradio/build/gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/katsikas/Desktop/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/Desktop/gnuradio /home/katsikas/Desktop/gnuradio/gr-vocoder/lib /home/katsikas/Desktop/gnuradio/build /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib /home/katsikas/Desktop/gnuradio/build/gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/depend
 
