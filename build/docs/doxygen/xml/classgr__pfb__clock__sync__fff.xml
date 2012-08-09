@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__pfb__clock__sync__fff" kind="class" prot="public">
     <compoundname>gr_pfb_clock_sync_fff</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -84,7 +84,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="179" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__clock__sync__fff_1ad3368978c975c176ae6c6439e8b9c761" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; gr_fir_fff * &gt;</type>
+        <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff*&gt; gr_pfb_clock_sync_fff::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -97,7 +97,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="180" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__clock__sync__fff_1aae8b9a565b8417e60048c39d4b80f5bd" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; gr_fir_fff * &gt;</type>
+        <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff*&gt; gr_pfb_clock_sync_fff::d_diff_filters</definition>
         <argsstring></argsstring>
         <name>d_diff_filters</name>
@@ -229,7 +229,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pfb__clock__sync__fff_1a7fb30c0e916e9006d1a337257030c8b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_clock_sync_fff_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_clock_sync_fff_sptr</ref></type>
         <definition>GR_CORE_API gr_pfb_clock_sync_fff_sptr gr_make_pfb_clock_sync_fff</definition>
         <argsstring>(double sps, float gain, const std::vector&lt; float &gt; &amp;taps, unsigned int filter_size, float init_phase, float max_rate_deviation)</argsstring>
         <name>gr_make_pfb_clock_sync_fff</name>
@@ -348,7 +348,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="199"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__clock__sync__fff_1a6eee5e5f5d6bbc502cdb431a78703eea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_clock_sync_fff::create_diff_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;newtaps, std::vector&lt; float &gt; &amp;difftaps)</argsstring>
         <name>create_diff_taps</name>
@@ -384,7 +384,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="205"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__clock__sync__fff_1a40c6bac043105cb654f7631c5707e632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_clock_sync_fff::set_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;taps, std::vector&lt; std::vector&lt; float &gt; &gt; &amp;ourtaps, std::vector&lt; gr_fir_fff * &gt; &amp;ourfilter)</argsstring>
         <name>set_taps</name>
@@ -397,7 +397,7 @@
           <declname>ourtaps</declname>
         </param>
         <param>
-          <type>std::vector&lt; gr_fir_fff * &gt; &amp;</type>
+          <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt; &amp;</type>
           <declname>ourfilter</declname>
         </param>
         <briefdescription>
@@ -443,7 +443,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="222"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__clock__sync__fff_1a294683479b8b5b1cd0a99b4b3ba42979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_clock_sync_fff::print_taps</definition>
         <argsstring>()</argsstring>
         <name>print_taps</name>
@@ -456,7 +456,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="227"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__clock__sync__fff_1acabea76b62122a2ba4a8b5019c63b643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_clock_sync_fff::print_diff_taps</definition>
         <argsstring>()</argsstring>
         <name>print_diff_taps</name>
@@ -469,7 +469,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="232"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__clock__sync__fff_1a8484ba244bb2d33a654373206a7aa66f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_clock_sync_fff::set_alpha</definition>
         <argsstring>(float alpha)</argsstring>
         <name>set_alpha</name>
@@ -486,7 +486,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="238" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" bodystart="237" bodyend="240"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__clock__sync__fff_1ab08281a8d5b9377fe35d397d5224d739" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_clock_sync_fff::set_beta</definition>
         <argsstring>(float beta)</argsstring>
         <name>set_beta</name>
@@ -503,7 +503,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="246" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" bodystart="245" bodyend="248"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__clock__sync__fff_1a74db507b4f2fc12fa22f941882b7d300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_clock_sync_fff::set_max_rate_deviation</definition>
         <argsstring>(float m)</argsstring>
         <name>set_max_rate_deviation</name>
@@ -644,88 +644,88 @@ general_work must call consume or consume_each to indicate how many items were c
 </itemizedlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="4956">
+      <node id="10051">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4957" relation="public-inheritance">
+        <childnode refid="10052" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4954">
+      <node id="10049">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4955" relation="public-inheritance">
+        <childnode refid="10050" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4957">
+      <node id="10052">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4953">
+      <node id="10048">
         <label>gr_pfb_clock_sync_fff</label>
         <link refid="classgr__pfb__clock__sync__fff"/>
-        <childnode refid="4954" relation="public-inheritance">
+        <childnode refid="10049" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4955">
+      <node id="10050">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4956" relation="public-inheritance">
+        <childnode refid="10051" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4961">
+      <node id="10056">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4962" relation="public-inheritance">
+        <childnode refid="10057" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4959">
+      <node id="10054">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4960" relation="public-inheritance">
+        <childnode refid="10055" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4963">
+      <node id="10058">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4964" relation="usage">
+        <childnode refid="10059" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4966">
+      <node id="10061">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4962">
+      <node id="10057">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4958">
+      <node id="10053">
         <label>gr_pfb_clock_sync_fff</label>
         <link refid="classgr__pfb__clock__sync__fff"/>
-        <childnode refid="4959" relation="public-inheritance">
+        <childnode refid="10054" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4964">
+      <node id="10059">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4960">
+      <node id="10055">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4961" relation="public-inheritance">
+        <childnode refid="10056" relation="public-inheritance">
         </childnode>
-        <childnode refid="4963" relation="usage">
+        <childnode refid="10058" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4965" relation="usage">
+        <childnode refid="10060" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4965">
+      <node id="10060">
         <label>std::string</label>
-        <childnode refid="4966" relation="public-inheritance">
+        <childnode refid="10061" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classpmt_1_1pmt__u16vector" kind="class" prot="public">
     <compoundname>pmt::pmt_u16vector</compoundname>
     <basecompoundref refid="classpmt_1_1pmt__uniform__vector" prot="public" virt="non-virtual">pmt::pmt_uniform_vector</basecompoundref>
@@ -108,7 +108,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="88"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__u16vector_1a11d3639b44b66be7d6953d3c8a97d2ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pmt::pmt_u16vector::set</definition>
         <argsstring>(size_t k, uint16_t x)</argsstring>
         <name>set</name>
@@ -163,7 +163,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="91"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__u16vector_1a84031b4face0f33ca1de46fab6b6e847" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>const void *</type>
         <definition>const void* pmt::pmt_u16vector::uniform_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_elements</name>
@@ -181,7 +181,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="92"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__u16vector_1a35caccf1733ed3bb1ae52875c95a8af8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* pmt::pmt_u16vector::uniform_writable_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_writable_elements</name>
@@ -204,38 +204,38 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7159">
+      <node id="12524">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="7160" relation="public-inheritance">
+        <childnode refid="12525" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7160">
+      <node id="12525">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="7158">
+      <node id="12523">
         <label>pmt::pmt_u16vector</label>
         <link refid="classpmt_1_1pmt__u16vector"/>
-        <childnode refid="7159" relation="public-inheritance">
+        <childnode refid="12524" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7162">
+      <node id="12527">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="7163" relation="public-inheritance">
+        <childnode refid="12528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7163">
+      <node id="12528">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="7161">
+      <node id="12526">
         <label>pmt::pmt_u16vector</label>
         <link refid="classpmt_1_1pmt__u16vector"/>
-        <childnode refid="7162" relation="public-inheritance">
+        <childnode refid="12527" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

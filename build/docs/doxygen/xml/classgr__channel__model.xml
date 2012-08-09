@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__channel__model" kind="class" prot="public">
     <compoundname>gr_channel_model</compoundname>
     <basecompoundref refid="classgr__hier__block2" prot="public" virt="non-virtual">gr_hier_block2</basecompoundref>
@@ -32,7 +32,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" line="61" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__channel__model_1ae7da9bb94aeebd8694aab8f83d35b6a2" prot="private" static="no" mutable="no">
-        <type>gr_fir_filter_ccc_sptr</type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fir_filter_ccc_sptr</ref></type>
         <definition>gr_fir_filter_ccc_sptr gr_channel_model::d_multipath</definition>
         <argsstring></argsstring>
         <name>d_multipath</name>
@@ -134,7 +134,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__channel__model_1ab89252f815fb8c4d74fff124bbdc4d24" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_channel_model_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_channel_model_sptr</ref></type>
         <definition>GR_CORE_API gr_channel_model_sptr gr_make_channel_model</definition>
         <argsstring>(double noise_voltage, double frequency_offset, double epsilon, const std::vector&lt; gr_complex &gt; &amp;taps, double noise_seed)</argsstring>
         <name>gr_make_channel_model</name>
@@ -169,7 +169,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classgr__channel__model_1a812731f146be0dd7da21273c67a635ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_channel_model::set_noise_voltage</definition>
         <argsstring>(double noise_voltage)</argsstring>
         <name>set_noise_voltage</name>
@@ -186,7 +186,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" line="70"/>
       </memberdef>
       <memberdef kind="function" id="classgr__channel__model_1a57a66ba76d99b506dc95d282784021fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_channel_model::set_frequency_offset</definition>
         <argsstring>(double frequency_offset)</argsstring>
         <name>set_frequency_offset</name>
@@ -203,7 +203,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" line="71"/>
       </memberdef>
       <memberdef kind="function" id="classgr__channel__model_1a8a2408065e18e1251ece9b23f4dec33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_channel_model::set_taps</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;taps)</argsstring>
         <name>set_taps</name>
@@ -220,7 +220,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/hier/gr_channel_model.h" line="72"/>
       </memberdef>
       <memberdef kind="function" id="classgr__channel__model_1a8383e4f44b9bcf4d567d89303e2cb0ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_channel_model::set_timing_offset</definition>
         <argsstring>(double epsilon)</argsstring>
         <name>set_timing_offset</name>
@@ -294,88 +294,88 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3010">
+      <node id="7438">
         <label>gr_channel_model</label>
         <link refid="classgr__channel__model"/>
-        <childnode refid="3011" relation="public-inheritance">
+        <childnode refid="7439" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3013">
+      <node id="7441">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3014" relation="public-inheritance">
+        <childnode refid="7442" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3011">
+      <node id="7439">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="3012" relation="public-inheritance">
+        <childnode refid="7440" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3014">
+      <node id="7442">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3012">
+      <node id="7440">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3013" relation="public-inheritance">
+        <childnode refid="7441" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3015">
+      <node id="7443">
         <label>gr_channel_model</label>
         <link refid="classgr__channel__model"/>
-        <childnode refid="3016" relation="public-inheritance">
+        <childnode refid="7444" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3018">
+      <node id="7446">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3019" relation="public-inheritance">
+        <childnode refid="7447" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3016">
+      <node id="7444">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="3017" relation="public-inheritance">
+        <childnode refid="7445" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3020">
+      <node id="7448">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3021" relation="usage">
+        <childnode refid="7449" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3023">
+      <node id="7451">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3019">
+      <node id="7447">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3021">
+      <node id="7449">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3017">
+      <node id="7445">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3018" relation="public-inheritance">
+        <childnode refid="7446" relation="public-inheritance">
         </childnode>
-        <childnode refid="3020" relation="usage">
+        <childnode refid="7448" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3022" relation="usage">
+        <childnode refid="7450" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3022">
+      <node id="7450">
         <label>std::string</label>
-        <childnode refid="3023" relation="public-inheritance">
+        <childnode refid="7451" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

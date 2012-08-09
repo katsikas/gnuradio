@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__pll__refout__cc" kind="class" prot="public">
     <compoundname>gr_pll_refout_cc</compoundname>
     <basecompoundref refid="classgri__control__loop" prot="public" virt="non-virtual">gri_control_loop</basecompoundref>
     <includes refid="gr__pll__refout__cc_8h" local="no">gr_pll_refout_cc.h</includes>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classgr__pll__refout__cc_1ae34d1b3f3fe903def5c2a33329d1b2c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="gr__pll__refout__cc_8h_1a677227a4742a5cddf187da852d0fdbc9" kindref="member">gr_pll_refout_cc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_pll_refout_cc_sptr gr_make_pll_refout_cc</definition>
+      <memberdef kind="friend" id="classgr__pll__refout__cc_1a6d5109b221a6aab1df9002f167b090bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend GR_CORE_API <ref refid="gr__pll__refout__cc_8h_1a677227a4742a5cddf187da852d0fdbc9" kindref="member">gr_pll_refout_cc_sptr</ref></type>
+        <definition>GR_CORE_API gr_pll_refout_cc_sptr gr_make_pll_refout_cc</definition>
         <argsstring>(float loop_bw, float max_freq, float min_freq)</argsstring>
         <name>gr_make_pll_refout_cc</name>
         <param>
@@ -127,25 +127,25 @@
 <para>This PLL locks onto a [possibly noisy] reference carrier on the input and outputs a clean version which is phase and frequency aligned to it.</para><para>All settings max_freq and min_freq are in terms of radians per sample, NOT HERTZ. The loop bandwidth determins the lock range and should be set around pi/200 -- 2pi/100. <simplesect kind="see"><para><ref refid="classgr__pll__freqdet__cf" kindref="compound">gr_pll_freqdet_cf</ref>, <ref refid="classgr__pll__carriertracking__cc" kindref="compound">gr_pll_carriertracking_cc</ref> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="518">
+      <node id="515">
         <label>gr_pll_refout_cc</label>
         <link refid="classgr__pll__refout__cc"/>
-        <childnode refid="519" relation="public-inheritance">
+        <childnode refid="516" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="519">
+      <node id="516">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="520">
+      <node id="517">
         <label>gr_pll_refout_cc</label>
         <link refid="classgr__pll__refout__cc"/>
-        <childnode refid="521" relation="public-inheritance">
+        <childnode refid="518" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="521">
+      <node id="518">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
@@ -168,7 +168,7 @@
       <member refid="classgri__control__loop_1abacc2448c0c6e54e7c3f7c2c89fc7326" prot="public" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>get_frequency</name></member>
       <member refid="classgri__control__loop_1a700ac8b13c088f67ebd3e40157d1e48e" prot="public" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>get_loop_bandwidth</name></member>
       <member refid="classgri__control__loop_1a965443d91327875e4a2936cd5d519a7d" prot="public" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>get_phase</name></member>
-      <member refid="classgr__pll__refout__cc_1ae34d1b3f3fe903def5c2a33329d1b2c3" prot="private" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>gr_make_pll_refout_cc</name></member>
+      <member refid="classgr__pll__refout__cc_1a6d5109b221a6aab1df9002f167b090bb" prot="private" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>gr_make_pll_refout_cc</name></member>
       <member refid="classgr__pll__refout__cc_1ad170f1d367746ce6927ddc0b8e9cc7a6" prot="private" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>gr_pll_refout_cc</name></member>
       <member refid="classgri__control__loop_1a312bd7c64f1d0dbad92bf61935bda1e3" prot="public" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>gri_control_loop</name></member>
       <member refid="classgr__pll__refout__cc_1a7a25e7c4122bc19c4d6dc2f6e53441b6" prot="private" virt="non-virtual"><scope>gr_pll_refout_cc</scope><name>mod_2pi</name></member>

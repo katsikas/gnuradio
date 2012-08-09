@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__cpmmod__bc" kind="class" prot="public">
     <compoundname>digital_cpmmod_bc</compoundname>
     <basecompoundref refid="classgr__hier__block2" prot="public" virt="non-virtual">gr_hier_block2</basecompoundref>
@@ -33,7 +33,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_cpmmod_bc.h" line="83" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_cpmmod_bc.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdigital__cpmmod__bc_1ab78ac3767ffc9cd491bd1b8eac12d41c" prot="private" static="no" mutable="no">
-        <type>gr_interp_fir_filter_fff_sptr</type>
+        <type><ref refid="classboost_1_1shared__ptr" kindref="compound">gr_interp_fir_filter_fff_sptr</ref></type>
         <definition>gr_interp_fir_filter_fff_sptr digital_cpmmod_bc::d_pulse_shaper</definition>
         <argsstring></argsstring>
         <name>d_pulse_shaper</name>
@@ -61,7 +61,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__cpmmod__bc_1a83c2996315f65d54c583d61a02ed6761" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_cpmmod_bc_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_cpmmod_bc_sptr</ref></type>
         <definition>DIGITAL_API digital_cpmmod_bc_sptr digital_make_cpmmod_bc</definition>
         <argsstring>(int type, float h, unsigned samples_per_sym, unsigned L, double beta)</argsstring>
         <name>digital_make_cpmmod_bc</name>
@@ -187,94 +187,94 @@ Examples:<itemizedlist>
 <listitem><para>Setting h = 0.5, L = 1, type = LREC yields MSK.</para></listitem><listitem><para>Setting h = 0.5, type = GAUSSIAN and beta = 0.3 yields GMSK as used in GSM.</para></listitem></itemizedlist>
 </para><para>The input of this block are symbols from an M-ary alphabet +/-1, +/-3, ..., +/-(M-1). Usually, M = 2 and therefore, the valid inputs are +/-1. The modulator will silently accept any other inputs, though. The output is the phase-modulated signal. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1215">
+      <node id="5583">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1216" relation="public-inheritance">
+        <childnode refid="5584" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1213">
+      <node id="5581">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="1214" relation="public-inheritance">
+        <childnode refid="5582" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1217">
+      <node id="5585">
         <label>digital_gmskmod_bc</label>
         <link refid="classdigital__gmskmod__bc"/>
-        <childnode refid="1212" relation="public-inheritance">
+        <childnode refid="5580" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1212">
+      <node id="5580">
         <label>digital_cpmmod_bc</label>
         <link refid="classdigital__cpmmod__bc"/>
-        <childnode refid="1213" relation="public-inheritance">
+        <childnode refid="5581" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1216">
+      <node id="5584">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1214">
+      <node id="5582">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1215" relation="public-inheritance">
+        <childnode refid="5583" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1221">
+      <node id="5589">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1222" relation="public-inheritance">
+        <childnode refid="5590" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1219">
+      <node id="5587">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="1220" relation="public-inheritance">
+        <childnode refid="5588" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1218">
+      <node id="5586">
         <label>digital_cpmmod_bc</label>
         <link refid="classdigital__cpmmod__bc"/>
-        <childnode refid="1219" relation="public-inheritance">
+        <childnode refid="5587" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1223">
+      <node id="5591">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1224" relation="usage">
+        <childnode refid="5592" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1226">
+      <node id="5594">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1222">
+      <node id="5590">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1224">
+      <node id="5592">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1220">
+      <node id="5588">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1221" relation="public-inheritance">
+        <childnode refid="5589" relation="public-inheritance">
         </childnode>
-        <childnode refid="1223" relation="usage">
+        <childnode refid="5591" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1225" relation="usage">
+        <childnode refid="5593" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1225">
+      <node id="5593">
         <label>std::string</label>
-        <childnode refid="1226" relation="public-inheritance">
+        <childnode refid="5594" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

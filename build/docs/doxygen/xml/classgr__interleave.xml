@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__interleave" kind="class" prot="public">
     <compoundname>gr_interleave</compoundname>
     <basecompoundref refid="classgr__sync__interpolator" prot="public" virt="non-virtual">gr_sync_interpolator</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__interleave_1acf7153a343a7bfbf2687bcc4c98d410e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_interleave_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_interleave_sptr</ref></type>
         <definition>GR_CORE_API gr_interleave_sptr gr_make_interleave</definition>
         <argsstring>(size_t itemsize)</argsstring>
         <name>gr_make_interleave</name>
@@ -141,112 +141,112 @@ This function is called by the runtime system whenever the topology changes. Mos
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4139">
+      <node id="9096">
         <label>gr_interleave</label>
         <link refid="classgr__interleave"/>
-        <childnode refid="4140" relation="public-inheritance">
+        <childnode refid="9097" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4144">
+      <node id="9101">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4145" relation="public-inheritance">
+        <childnode refid="9102" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4141">
+      <node id="9098">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4142" relation="public-inheritance">
+        <childnode refid="9099" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4142">
+      <node id="9099">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4143" relation="public-inheritance">
+        <childnode refid="9100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4140">
+      <node id="9097">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="4141" relation="public-inheritance">
+        <childnode refid="9098" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4145">
+      <node id="9102">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4143">
+      <node id="9100">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4144" relation="public-inheritance">
+        <childnode refid="9101" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4146">
+      <node id="9103">
         <label>gr_interleave</label>
         <link refid="classgr__interleave"/>
-        <childnode refid="4147" relation="public-inheritance">
+        <childnode refid="9104" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4151">
+      <node id="9108">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4152" relation="public-inheritance">
+        <childnode refid="9109" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4148">
+      <node id="9105">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4149" relation="public-inheritance">
+        <childnode refid="9106" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4149">
+      <node id="9106">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4150" relation="public-inheritance">
+        <childnode refid="9107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4147">
+      <node id="9104">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="4148" relation="public-inheritance">
+        <childnode refid="9105" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4153">
+      <node id="9110">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4154" relation="usage">
+        <childnode refid="9111" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4156">
+      <node id="9113">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4152">
+      <node id="9109">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4154">
+      <node id="9111">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4150">
+      <node id="9107">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4151" relation="public-inheritance">
+        <childnode refid="9108" relation="public-inheritance">
         </childnode>
-        <childnode refid="4153" relation="usage">
+        <childnode refid="9110" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4155" relation="usage">
+        <childnode refid="9112" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4155">
+      <node id="9112">
         <label>std::string</label>
-        <childnode refid="4156" relation="public-inheritance">
+        <childnode refid="9113" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

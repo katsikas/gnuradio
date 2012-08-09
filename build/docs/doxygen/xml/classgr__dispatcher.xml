@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__dispatcher" kind="class" prot="public">
     <compoundname>gr_dispatcher</compoundname>
     <includes refid="gr__dispatcher_8h" local="no">gr_dispatcher.h</includes>
@@ -48,7 +48,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__dispatcher_1adc59ca2913cbff8f258843e2c411a690" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_dispatcher_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_dispatcher_sptr</ref></type>
         <definition>GR_CORE_API gr_dispatcher_sptr gr_make_dispatcher</definition>
         <argsstring>()</argsstring>
         <name>gr_make_dispatcher</name>
@@ -127,7 +127,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_dispatcher.h" line="55"/>
       </memberdef>
       <memberdef kind="function" id="classgr__dispatcher_1a04d629d6169a9e8a2005863e70eae083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_dispatcher::loop</definition>
         <argsstring>(double timeout=10)</argsstring>
         <name>loop</name>

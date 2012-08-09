@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__correlate__access__code__bb" kind="class" prot="public">
     <compoundname>digital_correlate_access_code_bb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -86,7 +86,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__correlate__access__code__bb_1a8956869dcb85eefbb6dfdbb764e9138b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_correlate_access_code_bb_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_correlate_access_code_bb_sptr</ref></type>
         <definition>DIGITAL_API digital_correlate_access_code_bb_sptr digital_make_correlate_access_code_bb</definition>
         <argsstring>(const std::string &amp;access_code, int threshold)</argsstring>
         <name>digital_make_correlate_access_code_bb</name>
@@ -216,100 +216,100 @@
     <detaileddescription>
 <para>Each output byte contains two valid bits, the data bit, and the flag bit. The LSB (bit 0) is the data bit, and is the original input data, delayed 64 bits. Bit 1 is the flag bit and is 1 if the corresponding data bit is the first data bit following the access code. Otherwise the flag bit is 0. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1164">
+      <node id="5532">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1165" relation="public-inheritance">
+        <childnode refid="5533" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1161">
+      <node id="5529">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1162" relation="public-inheritance">
+        <childnode refid="5530" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1162">
+      <node id="5530">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1163" relation="public-inheritance">
+        <childnode refid="5531" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1160">
+      <node id="5528">
         <label>digital_correlate_access_code_bb</label>
         <link refid="classdigital__correlate__access__code__bb"/>
-        <childnode refid="1161" relation="public-inheritance">
+        <childnode refid="5529" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1165">
+      <node id="5533">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1163">
+      <node id="5531">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1164" relation="public-inheritance">
+        <childnode refid="5532" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1170">
+      <node id="5538">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1171" relation="public-inheritance">
+        <childnode refid="5539" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1167">
+      <node id="5535">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1168" relation="public-inheritance">
+        <childnode refid="5536" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1168">
+      <node id="5536">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1169" relation="public-inheritance">
+        <childnode refid="5537" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1166">
+      <node id="5534">
         <label>digital_correlate_access_code_bb</label>
         <link refid="classdigital__correlate__access__code__bb"/>
-        <childnode refid="1167" relation="public-inheritance">
+        <childnode refid="5535" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1172">
+      <node id="5540">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1173" relation="usage">
+        <childnode refid="5541" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1175">
+      <node id="5543">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1171">
+      <node id="5539">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1173">
+      <node id="5541">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1169">
+      <node id="5537">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1170" relation="public-inheritance">
+        <childnode refid="5538" relation="public-inheritance">
         </childnode>
-        <childnode refid="1172" relation="usage">
+        <childnode refid="5540" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1174" relation="usage">
+        <childnode refid="5542" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1174">
+      <node id="5542">
         <label>std::string</label>
-        <childnode refid="1175" relation="public-inheritance">
+        <childnode refid="5543" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

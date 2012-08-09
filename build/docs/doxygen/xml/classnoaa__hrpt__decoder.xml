@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classnoaa__hrpt__decoder" kind="class" prot="public">
     <compoundname>noaa_hrpt_decoder</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -164,7 +164,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classnoaa__hrpt__decoder_1a2126bc2c4cf01401af092e125af3b837" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="noaa__api_8h_1a799d47153d76874e09e71b816d4f4a87" kindref="member">NOAA_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">noaa_hrpt_decoder_sptr</ref></type>
+        <type>friend NOAA_API <ref refid="classboost_1_1shared__ptr" kindref="compound">noaa_hrpt_decoder_sptr</ref></type>
         <definition>NOAA_API noaa_hrpt_decoder_sptr noaa_make_hrpt_decoder</definition>
         <argsstring>(bool verbose, bool output_files)</argsstring>
         <name>noaa_make_hrpt_decoder</name>
@@ -208,7 +208,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="38"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a7271314996e2d2222b464241be7dfa30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void noaa_hrpt_decoder::process_mfnum</definition>
         <argsstring>()</argsstring>
         <name>process_mfnum</name>
@@ -221,7 +221,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="62"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1af44cf80b54b5b0dcbd950154d238944c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void noaa_hrpt_decoder::process_address</definition>
         <argsstring>()</argsstring>
         <name>process_address</name>
@@ -234,7 +234,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="63"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a4f6b64017c19c70364d00f0c429b8e7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void noaa_hrpt_decoder::process_day_of_year</definition>
         <argsstring>()</argsstring>
         <name>process_day_of_year</name>
@@ -247,7 +247,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1afdda2a57b4445784edaa4012b2808b9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void noaa_hrpt_decoder::process_milli1</definition>
         <argsstring>()</argsstring>
         <name>process_milli1</name>
@@ -260,7 +260,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="65"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a78f16378ead3d2c2100edb4e0134739b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void noaa_hrpt_decoder::process_milli2</definition>
         <argsstring>()</argsstring>
         <name>process_milli2</name>
@@ -273,7 +273,7 @@
         <location file="/home/katsikas/gnuradio/gr-noaa/lib/noaa_hrpt_decoder.h" line="66"/>
       </memberdef>
       <memberdef kind="function" id="classnoaa__hrpt__decoder_1a7588b5c3e1baa99c931152187a60d147" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void noaa_hrpt_decoder::process_milli3</definition>
         <argsstring>()</argsstring>
         <name>process_milli3</name>
@@ -332,100 +332,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6866">
+      <node id="12229">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6867" relation="public-inheritance">
+        <childnode refid="12230" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6863">
+      <node id="12226">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6864" relation="public-inheritance">
+        <childnode refid="12227" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6864">
+      <node id="12227">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6865" relation="public-inheritance">
+        <childnode refid="12228" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6867">
+      <node id="12230">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6862">
+      <node id="12225">
         <label>noaa_hrpt_decoder</label>
         <link refid="classnoaa__hrpt__decoder"/>
-        <childnode refid="6863" relation="public-inheritance">
+        <childnode refid="12226" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6865">
+      <node id="12228">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6866" relation="public-inheritance">
+        <childnode refid="12229" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6872">
+      <node id="12235">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6873" relation="public-inheritance">
+        <childnode refid="12236" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6869">
+      <node id="12232">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6870" relation="public-inheritance">
+        <childnode refid="12233" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6870">
+      <node id="12233">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6871" relation="public-inheritance">
+        <childnode refid="12234" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6874">
+      <node id="12237">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6875" relation="usage">
+        <childnode refid="12238" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6877">
+      <node id="12240">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6873">
+      <node id="12236">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6875">
+      <node id="12238">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6868">
+      <node id="12231">
         <label>noaa_hrpt_decoder</label>
         <link refid="classnoaa__hrpt__decoder"/>
-        <childnode refid="6869" relation="public-inheritance">
+        <childnode refid="12232" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6871">
+      <node id="12234">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6872" relation="public-inheritance">
+        <childnode refid="12235" relation="public-inheritance">
         </childnode>
-        <childnode refid="6874" relation="usage">
+        <childnode refid="12237" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6876" relation="usage">
+        <childnode refid="12239" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6876">
+      <node id="12239">
         <label>std::string</label>
-        <childnode refid="6877" relation="public-inheritance">
+        <childnode refid="12240" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

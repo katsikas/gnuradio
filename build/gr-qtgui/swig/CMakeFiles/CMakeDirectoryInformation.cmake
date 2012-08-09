@@ -10,9 +10,8 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 
 # The C and CXX include file search paths:
 SET(CMAKE_C_INCLUDE_PATH
-  "/usr/include/qt4"
-  "/usr/include/qt4/QtGui"
-  "/usr/include/qt4/QtCore"
+  "/usr/include/QtGui"
+  "/usr/include/QtCore"
   "../gruel/src/swig"
   "../gnuradio-core/src/lib/swig"
   "../gruel/src/include"
@@ -33,14 +32,13 @@ SET(CMAKE_C_INCLUDE_PATH
   "../gr-qtgui/include"
   "../gr-qtgui/lib"
   "gr-qtgui/lib"
-  "/usr/include/qwt-qt4"
+  "/usr/include/qwt6"
   "/usr/include/python2.7"
   "../gr-qtgui/swig"
   "gr-qtgui/swig"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
-SET(CMAKE_ASM_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 
 # The C and CXX include file regular expressions for this directory.
 SET(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")

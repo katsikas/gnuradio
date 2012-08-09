@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'spectrumdisplayform.ui'
 **
-** Created: Wed Jul 25 09:05:30 2012
-**      by: Qt User Interface Compiler version 4.8.1
+** Created
+**      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/

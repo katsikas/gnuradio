@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__ofdm__bpsk__demapper" kind="class" prot="public">
     <compoundname>gr_ofdm_bpsk_demapper</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__ofdm__bpsk__demapper_1a4726af807e8951f1c9e4645ed3c629aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ofdm_bpsk_demapper_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ofdm_bpsk_demapper_sptr</ref></type>
         <definition>GR_CORE_API gr_ofdm_bpsk_demapper_sptr gr_make_ofdm_bpsk_demapper</definition>
         <argsstring>(unsigned int occupied_carriers)</argsstring>
         <name>gr_make_ofdm_bpsk_demapper</name>
@@ -102,7 +102,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_ofdm_bpsk_demapper.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classgr__ofdm__bpsk__demapper_1a58efb6bc018a061abc96283b1826ab54" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_ofdm_bpsk_demapper::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -146,7 +146,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <argsstring>(void)</argsstring>
         <name>~gr_ofdm_bpsk_demapper</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -222,88 +222,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4765">
+      <node id="9860">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4766" relation="public-inheritance">
+        <childnode refid="9861" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4763">
+      <node id="9858">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4764" relation="public-inheritance">
+        <childnode refid="9859" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4766">
+      <node id="9861">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4762">
+      <node id="9857">
         <label>gr_ofdm_bpsk_demapper</label>
         <link refid="classgr__ofdm__bpsk__demapper"/>
-        <childnode refid="4763" relation="public-inheritance">
+        <childnode refid="9858" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4764">
+      <node id="9859">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4765" relation="public-inheritance">
+        <childnode refid="9860" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4770">
+      <node id="9865">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4771" relation="public-inheritance">
+        <childnode refid="9866" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4768">
+      <node id="9863">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4769" relation="public-inheritance">
+        <childnode refid="9864" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4772">
+      <node id="9867">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4773" relation="usage">
+        <childnode refid="9868" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4775">
+      <node id="9870">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4771">
+      <node id="9866">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4767">
+      <node id="9862">
         <label>gr_ofdm_bpsk_demapper</label>
         <link refid="classgr__ofdm__bpsk__demapper"/>
-        <childnode refid="4768" relation="public-inheritance">
+        <childnode refid="9863" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4773">
+      <node id="9868">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4769">
+      <node id="9864">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4770" relation="public-inheritance">
+        <childnode refid="9865" relation="public-inheritance">
         </childnode>
-        <childnode refid="4772" relation="usage">
+        <childnode refid="9867" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4774" relation="usage">
+        <childnode refid="9869" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4774">
+      <node id="9869">
         <label>std::string</label>
-        <childnode refid="4775" relation="public-inheritance">
+        <childnode refid="9870" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

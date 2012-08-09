@@ -560,45 +560,55 @@ digital_constellation_8psk::decision_maker(const gr_complex *sample)
 /**
  * DVB-T explicit constellation mappings
  **/
-digital_constellation_dvbt_qpsk_sptr 
+digital_constellation_dvbt_qpsk_sptr   
 digital_make_constellation_dvbt_qpsk()
 {
   return digital_constellation_dvbt_qpsk_sptr(new digital_constellation_dvbt_qpsk ());
 }
-
+  
 digital_constellation_dvbt_qpsk::digital_constellation_dvbt_qpsk ()
 {
   d_constellation.resize(4);
   // Gray-coded
-  /*d_constellation[0] = gr_complex(-SQRT_TWO, -SQRT_TWO);
-  d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
-  d_constellation[2] = gr_complex(-SQRT_TWO, SQRT_TWO);
-  d_constellation[3] = gr_complex(SQRT_TWO, SQRT_TWO);*/
-
-
-  d_constellation[0] = gr_complex(SQRT_TWO, SQRT_TWO);
-  d_constellation[1] = gr_complex(SQRT_TWO, -SQRT_TWO);
-  d_constellation[2] = gr_complex(-SQRT_TWO, SQRT_TWO);
+  d_constellation[0] = gr_complex( SQRT_TWO,  SQRT_TWO);
+  d_constellation[1] = gr_complex(-SQRT_TWO,  SQRT_TWO);
+  d_constellation[2] = gr_complex( SQRT_TWO, -SQRT_TWO);
   d_constellation[3] = gr_complex(-SQRT_TWO, -SQRT_TWO);
-
+        
   d_pre_diff_code.resize(4);
   d_pre_diff_code[0] = 0x0;
-  d_pre_diff_code[1] = 0x2;
+  d_pre_diff_code[1] = 0x1;
   d_pre_diff_code[2] = 0x3;
-  d_pre_diff_code[3] = 0x1;
-
+  d_pre_diff_code[3] = 0x2;
+                                
   d_rotational_symmetry = 4;
   d_dimensionality = 1;
   calc_arity();
 }
-
+                                          
 unsigned int
 digital_constellation_dvbt_qpsk::decision_maker(const gr_complex *sample)
 {
   // Real component determines small bit.
   // Imag component determines big bit.
-  return 2*(imag(*sample)>0) + (real(*sample)>0);
-}
+
+  //printf("complex = %f, %f \n",real(*sample), imag(*sample));
+  bool a = real(*sample) > 0;
+  bool b = imag(*sample) > 0;
+  if(a) {
+    if(b){
+      return 0x0;
+    }
+    else
+      return 0x2;
+  }
+  else {
+    if(b)   
+      return 0x1;
+    else
+      return 0x3;
+  }
+} 
 
 
 digital_constellation_16qam_sptr 

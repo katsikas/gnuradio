@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__qpsk" kind="class" prot="public">
     <compoundname>digital_constellation_qpsk</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
@@ -38,9 +38,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__constellation__qpsk_1aa3ca2d87fb45f0f84425b0c5b21a5353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1ac3bf8292e770057fac063a6e3b3ff7b3" kindref="member">digital_constellation_qpsk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_qpsk_sptr digital_make_constellation_qpsk</definition>
+      <memberdef kind="friend" id="classdigital__constellation__qpsk_1a53154e9a1a284cf24be90887fedb1121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend DIGITAL_API <ref refid="digital__constellation_8h_1ac3bf8292e770057fac063a6e3b3ff7b3" kindref="member">digital_constellation_qpsk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_qpsk_sptr digital_make_constellation_qpsk</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_qpsk</name>
         <briefdescription>
@@ -57,38 +57,38 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="368">
+      <node id="365">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="367">
+      <node id="364">
         <label>digital_constellation_qpsk</label>
         <link refid="classdigital__constellation__qpsk"/>
-        <childnode refid="368" relation="public-inheritance">
+        <childnode refid="365" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="372">
+      <node id="369">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="371">
+      <node id="368">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="370">
+      <node id="367">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="371" relation="usage">
+        <childnode refid="368" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="372" relation="usage">
+        <childnode refid="369" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="369">
+      <node id="366">
         <label>digital_constellation_qpsk</label>
         <link refid="classdigital__constellation__qpsk"/>
-        <childnode refid="370" relation="public-inheritance">
+        <childnode refid="367" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -115,7 +115,7 @@
       <member refid="classdigital__constellation_1aa3759431916f7cf0caae46a9100944e2" prot="public" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>digital_constellation</name></member>
       <member refid="classdigital__constellation_1a027d62d551045c2d245fa664f7e9dadd" prot="public" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>digital_constellation</name></member>
       <member refid="classdigital__constellation__qpsk_1a4ca9e3ca412e9e555d1a00af832916c1" prot="public" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>digital_constellation_qpsk</name></member>
-      <member refid="classdigital__constellation__qpsk_1aa3ca2d87fb45f0f84425b0c5b21a5353" prot="public" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>digital_make_constellation_qpsk</name></member>
+      <member refid="classdigital__constellation__qpsk_1a53154e9a1a284cf24be90887fedb1121" prot="public" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>digital_make_constellation_qpsk</name></member>
       <member refid="classdigital__constellation_1a4291cb1f0d7c90923b69511f5ff1d46d" prot="public" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>dimensionality</name></member>
       <member refid="classdigital__constellation_1adc727f68b241409cd49a57c30243b012" prot="protected" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>get_closest_point</name></member>
       <member refid="classdigital__constellation_1a9118a1f56bf117bfa8ed10fba10a6156" prot="protected" virt="non-virtual"><scope>digital_constellation_qpsk</scope><name>get_distance</name></member>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classuhd__usrp__sink" kind="class" prot="public">
     <compoundname>uhd_usrp_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="virtual">gr_sync_block</basecompoundref>
     <includes refid="gr__uhd__usrp__sink_8h" local="no">gr_uhd_usrp_sink.h</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classuhd__usrp__sink_1a1e0cbfa31b4fd31df49fadd9d6f12972" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_start_time</definition>
         <argsstring>(const uhd::time_spec_t &amp;time)=0</argsstring>
         <name>set_start_time</name>
@@ -60,7 +60,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="140"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1ad56e39eeb231d9f7fa77d1fcb5cd08d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_subdev_spec</definition>
         <argsstring>(const std::string &amp;spec, size_t mboard=0)=0</argsstring>
         <name>set_subdev_spec</name>
@@ -124,7 +124,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="155"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1acd5d40ac56616c542112a05038061bd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_samp_rate</definition>
         <argsstring>(double rate)=0</argsstring>
         <name>set_samp_rate</name>
@@ -154,7 +154,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_samp_rate</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -171,7 +171,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_samp_rates</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -313,7 +313,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="210"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a6611e1cfc44a895ac0b5824709d6508d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_gain</definition>
         <argsstring>(double gain, size_t chan=0)=0</argsstring>
         <name>set_gain</name>
@@ -350,7 +350,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="217"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1aa97d3da0f684a84d2e706ad3af43c8a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_gain</definition>
         <argsstring>(double gain, const std::string &amp;name, size_t chan=0)=0</argsstring>
         <name>set_gain</name>
@@ -555,7 +555,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="262"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1ac208e78a425ffe4291d98605eea2e881" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_antenna</definition>
         <argsstring>(const std::string &amp;ant, size_t chan=0)=0</argsstring>
         <name>set_antenna</name>
@@ -646,7 +646,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="283"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1ac1445763525b010448ce74a95b1fdc78" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_bandwidth</definition>
         <argsstring>(double bandwidth, size_t chan=0)=0</argsstring>
         <name>set_bandwidth</name>
@@ -683,7 +683,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="290"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a81755e0fa0c475325a1fb5bbde832ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_dc_offset</definition>
         <argsstring>(const std::complex&lt; double &gt; &amp;offset, size_t chan=0)=0</argsstring>
         <name>set_dc_offset</name>
@@ -720,7 +720,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="298"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a0d4895bb75ce3ca07ddcacfcc6a0bd4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_iq_balance</definition>
         <argsstring>(const std::complex&lt; double &gt; &amp;correction, size_t chan=0)=0</argsstring>
         <name>set_iq_balance</name>
@@ -927,7 +927,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="347"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a86089935c4458e23ebada185616aaf44" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_clock_config</definition>
         <argsstring>(const uhd::clock_config_t &amp;clock_config, size_t mboard=0)=0</argsstring>
         <name>set_clock_config</name>
@@ -964,7 +964,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="355"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a558318ddfa5a2f2e6764e2620a0cfdf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_time_source</definition>
         <argsstring>(const std::string &amp;source, const size_t mboard=0)=0</argsstring>
         <name>set_time_source</name>
@@ -1053,7 +1053,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="379"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a8966b2f53afecb1ecba31ce50d28e764" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_clock_source</definition>
         <argsstring>(const std::string &amp;source, const size_t mboard=0)=0</argsstring>
         <name>set_clock_source</name>
@@ -1169,7 +1169,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="409"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1af8a45af16131d200c407178ef3fdd71f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_clock_rate</definition>
         <argsstring>(double rate, size_t mboard=0)=0</argsstring>
         <name>set_clock_rate</name>
@@ -1260,7 +1260,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="430"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a3ea42eecf9a035f315e03fe51c633cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_time_now</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec, size_t mboard=0)=0</argsstring>
         <name>set_time_now</name>
@@ -1297,7 +1297,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="437"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a517bf350c98a433420d671369a203c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_time_next_pps</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec)=0</argsstring>
         <name>set_time_next_pps</name>
@@ -1322,7 +1322,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="443"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a8129898e21979915fef3ee09e32a584c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_time_unknown_pps</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec)=0</argsstring>
         <name>set_time_unknown_pps</name>
@@ -1347,7 +1347,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="449"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1ae4f0b7e397aabd038630e4aa0cf31e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_command_time</definition>
         <argsstring>(const uhd::time_spec_t &amp;time_spec, size_t mboard=0)=0</argsstring>
         <name>set_command_time</name>
@@ -1384,7 +1384,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="461"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1aa061b5eddeb79223094e43db9eba7d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::clear_command_time</definition>
         <argsstring>(size_t mboard=0)=0</argsstring>
         <name>clear_command_time</name>
@@ -1434,7 +1434,7 @@
         <argsstring>(void)=0</argsstring>
         <name>get_device</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1446,7 +1446,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="480"/>
       </memberdef>
       <memberdef kind="function" id="classuhd__usrp__sink_1a0f9f70e4112c3a57962e66bea17aafe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void uhd_usrp_sink::set_user_register</definition>
         <argsstring>(const uint8_t addr, const uint32_t data, size_t mboard=0)=0</argsstring>
         <name>set_user_register</name>
@@ -1499,100 +1499,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7517">
+      <node id="12873">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7518" relation="public-inheritance">
+        <childnode refid="12874" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7514">
+      <node id="12870">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7515" relation="public-inheritance">
+        <childnode refid="12871" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7515">
+      <node id="12871">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7516" relation="public-inheritance">
+        <childnode refid="12872" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7513">
+      <node id="12869">
         <label>uhd_usrp_sink</label>
         <link refid="classuhd__usrp__sink"/>
-        <childnode refid="7514" relation="public-inheritance">
+        <childnode refid="12870" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7518">
+      <node id="12874">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7516">
+      <node id="12872">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7517" relation="public-inheritance">
+        <childnode refid="12873" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7523">
+      <node id="12879">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7524" relation="public-inheritance">
+        <childnode refid="12880" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7520">
+      <node id="12876">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7521" relation="public-inheritance">
+        <childnode refid="12877" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7521">
+      <node id="12877">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7522" relation="public-inheritance">
+        <childnode refid="12878" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7519">
+      <node id="12875">
         <label>uhd_usrp_sink</label>
         <link refid="classuhd__usrp__sink"/>
-        <childnode refid="7520" relation="public-inheritance">
+        <childnode refid="12876" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7525">
+      <node id="12881">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7526" relation="usage">
+        <childnode refid="12882" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7528">
+      <node id="12884">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7524">
+      <node id="12880">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7526">
+      <node id="12882">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7522">
+      <node id="12878">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7523" relation="public-inheritance">
+        <childnode refid="12879" relation="public-inheritance">
         </childnode>
-        <childnode refid="7525" relation="usage">
+        <childnode refid="12881" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7527" relation="usage">
+        <childnode refid="12883" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7527">
+      <node id="12883">
         <label>std::string</label>
-        <childnode refid="7528" relation="public-inheritance">
+        <childnode refid="12884" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

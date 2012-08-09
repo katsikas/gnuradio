@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classvideo__sdl__sink__s" kind="class" prot="public">
     <compoundname>video_sdl_sink_s</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -192,7 +192,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classvideo__sdl__sink__s_1a0d1a5262271259032fc672f3dd89ada4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="video__sdl__api_8h_1af8670bf958d8bdc377323c404da83a58" kindref="member">VIDEO_SDL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">video_sdl_sink_s_sptr</ref></type>
+        <type>friend VIDEO_SDL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">video_sdl_sink_s_sptr</ref></type>
         <definition>VIDEO_SDL_API video_sdl_sink_s_sptr video_sdl_make_sink_s</definition>
         <argsstring>(double framerate, int width, int height, unsigned int format, int dst_width, int dst_height)</argsstring>
         <name>video_sdl_make_sink_s</name>
@@ -268,7 +268,7 @@
         <location file="/home/katsikas/gnuradio/gr-video-sdl/src/video_sdl_sink_s.h" line="59"/>
       </memberdef>
       <memberdef kind="function" id="classvideo__sdl__sink__s_1a3a0f4aeacc1234a9ca10e58c5ed78912" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void video_sdl_sink_s::copy_line_pixel_interleaved</definition>
         <argsstring>(unsigned char *dst_pixels_u, unsigned char *dst_pixels_v, const short *src_pixels, int src_width)</argsstring>
         <name>copy_line_pixel_interleaved</name>
@@ -297,7 +297,7 @@
         <location file="/home/katsikas/gnuradio/gr-video-sdl/src/video_sdl_sink_s.h" line="61"/>
       </memberdef>
       <memberdef kind="function" id="classvideo__sdl__sink__s_1af5f63ab16463f8a56a36b3561c67d1ea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void video_sdl_sink_s::copy_line_line_interleaved</definition>
         <argsstring>(unsigned char *dst_pixels_u, unsigned char *dst_pixels_v, const short *src_pixels, int src_width)</argsstring>
         <name>copy_line_line_interleaved</name>
@@ -326,7 +326,7 @@
         <location file="/home/katsikas/gnuradio/gr-video-sdl/src/video_sdl_sink_s.h" line="63"/>
       </memberdef>
       <memberdef kind="function" id="classvideo__sdl__sink__s_1ae446be40c92474b1fed03118cc64ad74" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void video_sdl_sink_s::copy_line_single_plane</definition>
         <argsstring>(unsigned char *dst_pixels, const short *src_pixels, int src_width)</argsstring>
         <name>copy_line_single_plane</name>
@@ -351,7 +351,7 @@
         <location file="/home/katsikas/gnuradio/gr-video-sdl/src/video_sdl_sink_s.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classvideo__sdl__sink__s_1a2e39d1cdb50365da8a8992a27c772aa0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void video_sdl_sink_s::copy_line_single_plane_dec2</definition>
         <argsstring>(unsigned char *dst_pixels, const short *src_pixels, int src_width)</argsstring>
         <name>copy_line_single_plane_dec2</name>
@@ -447,100 +447,100 @@
     <detaileddescription>
 <para>input signature is one, two or three streams of signed short. One stream: stream is grey (Y) two streems: first is grey (Y), second is alternating U and V Three streams: first is grey (Y), second is U, third is V Input samples must be in the range [0,255]. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="7566">
+      <node id="12918">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7567" relation="public-inheritance">
+        <childnode refid="12919" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7563">
+      <node id="12915">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7564" relation="public-inheritance">
+        <childnode refid="12916" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7564">
+      <node id="12916">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7565" relation="public-inheritance">
+        <childnode refid="12917" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7567">
+      <node id="12919">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7562">
+      <node id="12914">
         <label>video_sdl_sink_s</label>
         <link refid="classvideo__sdl__sink__s"/>
-        <childnode refid="7563" relation="public-inheritance">
+        <childnode refid="12915" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7565">
+      <node id="12917">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7566" relation="public-inheritance">
+        <childnode refid="12918" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7572">
+      <node id="12924">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7573" relation="public-inheritance">
+        <childnode refid="12925" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7569">
+      <node id="12921">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7570" relation="public-inheritance">
+        <childnode refid="12922" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7570">
+      <node id="12922">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7571" relation="public-inheritance">
+        <childnode refid="12923" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7574">
+      <node id="12926">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7575" relation="usage">
+        <childnode refid="12927" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7577">
+      <node id="12929">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7573">
+      <node id="12925">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7568">
+      <node id="12920">
         <label>video_sdl_sink_s</label>
         <link refid="classvideo__sdl__sink__s"/>
-        <childnode refid="7569" relation="public-inheritance">
+        <childnode refid="12921" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7575">
+      <node id="12927">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7571">
+      <node id="12923">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7572" relation="public-inheritance">
+        <childnode refid="12924" relation="public-inheritance">
         </childnode>
-        <childnode refid="7574" relation="usage">
+        <childnode refid="12926" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7576" relation="usage">
+        <childnode refid="12928" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7576">
+      <node id="12928">
         <label>std::string</label>
-        <childnode refid="7577" relation="public-inheritance">
+        <childnode refid="12929" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

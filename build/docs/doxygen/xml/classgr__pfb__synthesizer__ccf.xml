@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__pfb__synthesizer__ccf" kind="class" prot="public">
     <compoundname>gr_pfb_synthesizer_ccf</compoundname>
     <basecompoundref refid="classgr__sync__interpolator" prot="public" virt="non-virtual">gr_sync_interpolator</basecompoundref>
@@ -58,7 +58,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" line="67" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__synthesizer__ccf_1a8c31aa192fb72d8ac7ac6b9358620920" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; gri_fir_filter_with_buffer_ccf * &gt;</type>
+        <type>std::vector&lt; <ref refid="classgri__fir__filter__with__buffer__ccf" kindref="compound">gri_fir_filter_with_buffer_ccf</ref> * &gt;</type>
         <definition>std::vector&lt; gri_fir_filter_with_buffer_ccf*&gt; gr_pfb_synthesizer_ccf::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -138,7 +138,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pfb__synthesizer__ccf_1aa15bf2664dbb46f059fcab05b982c61a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_synthesizer_ccf_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_synthesizer_ccf_sptr</ref></type>
         <definition>GR_CORE_API gr_pfb_synthesizer_ccf_sptr gr_make_pfb_synthesizer_ccf</definition>
         <argsstring>(unsigned int numchans, const std::vector&lt; float &gt; &amp;taps, bool twox)</argsstring>
         <name>gr_make_pfb_synthesizer_ccf</name>
@@ -187,7 +187,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classgr__pfb__synthesizer__ccf_1a113dd97a096d20d30a85ec1a87fe8f27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_synthesizer_ccf::set_taps1</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>set_taps1</name>
@@ -204,7 +204,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" line="78"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__synthesizer__ccf_1a73fb33c788c87995880ee509bc64cb39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_synthesizer_ccf::set_taps2</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>set_taps2</name>
@@ -283,7 +283,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" line="98"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__synthesizer__ccf_1ac3dd84987ed00a12e7644668c9828694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_synthesizer_ccf::set_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>set_taps</name>
@@ -308,7 +308,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" line="105"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__synthesizer__ccf_1a14c0b46362bbcd8ff42f9a89c6ae6f41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_synthesizer_ccf::print_taps</definition>
         <argsstring>()</argsstring>
         <name>print_taps</name>
@@ -334,7 +334,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" line="115"/>
       </memberdef>
       <memberdef kind="function" id="classgr__pfb__synthesizer__ccf_1ade6885b852753a4af1b0cd7e2ea69442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_pfb_synthesizer_ccf::set_channel_map</definition>
         <argsstring>(const std::vector&lt; int &gt; &amp;map)</argsstring>
         <name>set_channel_map</name>
@@ -395,112 +395,112 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5006">
+      <node id="10101">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5007" relation="public-inheritance">
+        <childnode refid="10102" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5003">
+      <node id="10098">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5004" relation="public-inheritance">
+        <childnode refid="10099" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5004">
+      <node id="10099">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5005" relation="public-inheritance">
+        <childnode refid="10100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5002">
+      <node id="10097">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="5003" relation="public-inheritance">
+        <childnode refid="10098" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5007">
+      <node id="10102">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5001">
+      <node id="10096">
         <label>gr_pfb_synthesizer_ccf</label>
         <link refid="classgr__pfb__synthesizer__ccf"/>
-        <childnode refid="5002" relation="public-inheritance">
+        <childnode refid="10097" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5005">
+      <node id="10100">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5006" relation="public-inheritance">
+        <childnode refid="10101" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5013">
+      <node id="10108">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5014" relation="public-inheritance">
+        <childnode refid="10109" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5010">
+      <node id="10105">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5011" relation="public-inheritance">
+        <childnode refid="10106" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5011">
+      <node id="10106">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5012" relation="public-inheritance">
+        <childnode refid="10107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5009">
+      <node id="10104">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="5010" relation="public-inheritance">
+        <childnode refid="10105" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5015">
+      <node id="10110">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5016" relation="usage">
+        <childnode refid="10111" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5018">
+      <node id="10113">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5014">
+      <node id="10109">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5008">
+      <node id="10103">
         <label>gr_pfb_synthesizer_ccf</label>
         <link refid="classgr__pfb__synthesizer__ccf"/>
-        <childnode refid="5009" relation="public-inheritance">
+        <childnode refid="10104" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5016">
+      <node id="10111">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5012">
+      <node id="10107">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5013" relation="public-inheritance">
+        <childnode refid="10108" relation="public-inheritance">
         </childnode>
-        <childnode refid="5015" relation="usage">
+        <childnode refid="10110" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5017" relation="usage">
+        <childnode refid="10112" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5017">
+      <node id="10112">
         <label>std::string</label>
-        <childnode refid="5018" relation="public-inheritance">
+        <childnode refid="10113" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

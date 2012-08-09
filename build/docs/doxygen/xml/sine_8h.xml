@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="sine_8h" kind="file">
     <compoundname>sine.h</compoundname>
     <includes refid="defines_8h" local="yes">defines.h</includes>
     <includes refid="comp_8h" local="yes">comp.h</includes>
     <incdepgraph>
-      <node id="16504">
+      <node id="39530">
         <label>comp.h</label>
         <link refid="comp_8h"/>
       </node>
-      <node id="16502">
+      <node id="39528">
         <label>sine.h</label>
         <link refid="sine.h"/>
-        <childnode refid="16503" relation="include">
+        <childnode refid="39529" relation="include">
         </childnode>
-        <childnode refid="16504" relation="include">
+        <childnode refid="39530" relation="include">
         </childnode>
       </node>
-      <node id="16503">
+      <node id="39529">
         <label>defines.h</label>
         <link refid="defines_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="sine_8h_1a27b03648aa230ba88f990266a10395ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void make_analysis_window</definition>
         <argsstring>(float w[], COMP W[])</argsstring>
         <name>make_analysis_window</name>
@@ -69,7 +69,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.h" line="35"/>
       </memberdef>
       <memberdef kind="function" id="sine_8h_1a17e5689dce63ecfa5e57657976ae57e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dft_speech</definition>
         <argsstring>(COMP Sw[], float Sn[], float w[])</argsstring>
         <name>dft_speech</name>
@@ -97,7 +97,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.h" line="36"/>
       </memberdef>
       <memberdef kind="function" id="sine_8h_1af4e6db03abb54b1af21e2a69a2e97bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void two_stage_pitch_refinement</definition>
         <argsstring>(MODEL *model, COMP Sw[])</argsstring>
         <name>two_stage_pitch_refinement</name>
@@ -119,7 +119,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.h" line="37"/>
       </memberdef>
       <memberdef kind="function" id="sine_8h_1acfd25bb9f3968a184271227ab7d8c361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void estimate_amplitudes</definition>
         <argsstring>(MODEL *model, COMP Sw[], COMP W[])</argsstring>
         <name>estimate_amplitudes</name>
@@ -187,7 +187,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.h" line="40"/>
       </memberdef>
       <memberdef kind="function" id="sine_8h_1a575701996e8c48484e47e1aec38c8418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void make_synthesis_window</definition>
         <argsstring>(float Pn[])</argsstring>
         <name>make_synthesis_window</name>
@@ -205,7 +205,7 @@
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/sine.h" line="41"/>
       </memberdef>
       <memberdef kind="function" id="sine_8h_1afb7620b8983c3bf9f88f22b517c33ef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void synthesise</definition>
         <argsstring>(float Sn_[], MODEL *model, float Pn[], int shift)</argsstring>
         <name>synthesise</name>

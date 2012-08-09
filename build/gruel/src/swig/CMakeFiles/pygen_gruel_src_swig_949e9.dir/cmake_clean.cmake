@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "pmt_swig.pyo"
   "pmt_swigPYTHON_wrap.cxx"
   "pmt_swig.py"
-  "pmt_swig_doc.i"
   "pmt_swig.tag"
+  "pmt_swig_doc.i"
   "pmt_swig_doc_swig_docs/xml/index.xml"
   "pmt_swig_doc_swig_docs/xml/combine.xslt"
 )

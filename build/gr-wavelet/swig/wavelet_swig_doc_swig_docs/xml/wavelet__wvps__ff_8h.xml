@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="wavelet__wvps__ff_8h" kind="file">
     <compoundname>wavelet_wvps_ff.h</compoundname>
     <includes refid="wavelet__api_8h" local="no">wavelet_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="wavelet__wvps__ff_8h_1afe55eabe906bc180414aa1f65a4d03e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="wavelet__wvps__ff_8h_1a0a6a89a34bf7ed058ae1ec38ae57eb6a" kindref="member">wavelet_wvps_ff_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT wavelet_wvps_ff_sptr wavelet_make_wvps_ff</definition>
+      <memberdef kind="function" id="wavelet__wvps__ff_8h_1a7d024ebffc5c6a2d40ec1f0bfe9cf067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>WAVELET_API <ref refid="wavelet__wvps__ff_8h_1a0a6a89a34bf7ed058ae1ec38ae57eb6a" kindref="member">wavelet_wvps_ff_sptr</ref></type>
+        <definition>WAVELET_API wavelet_wvps_ff_sptr wavelet_make_wvps_ff</definition>
         <argsstring>(int ilen)</argsstring>
         <name>wavelet_make_wvps_ff</name>
         <param>
@@ -98,7 +98,7 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;wavelet_wvps_ff&gt;<sp/><ref refid="wavelet__wvps__ff_8h_1a0a6a89a34bf7ed058ae1ec38ae57eb6a" kindref="member">wavelet_wvps_ff_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="wavelet__api_8h_1a9c8352ab43d3afa0c97ee932687f7a1e" kindref="member">WAVELET_API</ref><sp/><ref refid="wavelet__wvps__ff_8h_1a0a6a89a34bf7ed058ae1ec38ae57eb6a" kindref="member">wavelet_wvps_ff_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="wavelet__wvps__ff_8h_1afe55eabe906bc180414aa1f65a4d03e6" kindref="member">wavelet_make_wvps_ff</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ilen);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="wavelet__wvps__ff_8h_1a7d024ebffc5c6a2d40ec1f0bfe9cf067" kindref="member">wavelet_make_wvps_ff</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ilen);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39" refid="classwavelet__wvps__ff" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="wavelet__api_8h_1a9c8352ab43d3afa0c97ee932687f7a1e" kindref="member">WAVELET_API</ref><sp/><ref refid="classwavelet__wvps__ff" kindref="compound" tooltip="computes the Wavelet Power Spectrum from a set of wavelet coefficients">wavelet_wvps_ff</ref><sp/>:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">{</highlight></codeline>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsc__field__sync__demux" kind="class" prot="public">
     <compoundname>atsc_field_sync_demux</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -112,7 +112,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__field__sync__demux_1acd3386d8b8c9b9cd6eff25d0c592fdec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_field_sync_demux_sptr</ref></type>
+        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_field_sync_demux_sptr</ref></type>
         <definition>ATSC_API atsc_field_sync_demux_sptr atsc_make_field_sync_demux</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_field_sync_demux</name>
@@ -142,7 +142,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classatsc__field__sync__demux_1a41ffe7b7aeb261498556e4c582966af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_field_sync_demux::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -264,7 +264,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_field_sync_demux.h" line="58"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__field__sync__demux_1a4a20abcc8ee472b2ab5b714a10fa29f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_field_sync_demux::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -282,88 +282,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
 <para>This class accepts 1 stream of floats (data), and 1 stream of tags (syminfo). * It outputs one stream of <ref refid="classatsc__soft__data__segment" kindref="compound">atsc_soft_data_segment</ref> packets </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="112">
+      <node id="4452">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="113" relation="public-inheritance">
+        <childnode refid="4453" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="110">
+      <node id="4450">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="111" relation="public-inheritance">
+        <childnode refid="4451" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="113">
+      <node id="4453">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="111">
+      <node id="4451">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="112" relation="public-inheritance">
+        <childnode refid="4452" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="109">
+      <node id="4449">
         <label>atsc_field_sync_demux</label>
         <link refid="classatsc__field__sync__demux"/>
-        <childnode refid="110" relation="public-inheritance">
+        <childnode refid="4450" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="117">
+      <node id="4457">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="118" relation="public-inheritance">
+        <childnode refid="4458" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="115">
+      <node id="4455">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="116" relation="public-inheritance">
+        <childnode refid="4456" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="119">
+      <node id="4459">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="120" relation="usage">
+        <childnode refid="4460" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="122">
+      <node id="4462">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="118">
+      <node id="4458">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="120">
+      <node id="4460">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="116">
+      <node id="4456">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="117" relation="public-inheritance">
+        <childnode refid="4457" relation="public-inheritance">
         </childnode>
-        <childnode refid="119" relation="usage">
+        <childnode refid="4459" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="121" relation="usage">
+        <childnode refid="4461" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="114">
+      <node id="4454">
         <label>atsc_field_sync_demux</label>
         <link refid="classatsc__field__sync__demux"/>
-        <childnode refid="115" relation="public-inheritance">
+        <childnode refid="4455" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="121">
+      <node id="4461">
         <label>std::string</label>
-        <childnode refid="122" relation="public-inheritance">
+        <childnode refid="4462" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

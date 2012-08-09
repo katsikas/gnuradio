@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__local__sighandler" kind="class" prot="public">
     <compoundname>gr_local_sighandler</compoundname>
     <includes refid="gr__local__sighandler_8h" local="no">gr_local_sighandler.h</includes>
@@ -29,7 +29,7 @@
           <declname>signum</declname>
         </param>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref>(*)(int)</type>
+          <type>void(*)(int)</type>
           <declname>new_handler</declname>
         </param>
         <briefdescription>
@@ -56,7 +56,7 @@
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classgr__local__sighandler_1ad470deddaed86e6d2288c8cbb2a0e02f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>static void gr_local_sighandler::throw_signal</definition>
         <argsstring>(int signum)</argsstring>
         <name>throw_signal</name>

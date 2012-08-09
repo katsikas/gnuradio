@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__block__executor" kind="class" prot="public">
     <compoundname>gr_block_executor</compoundname>
     <includes refid="gr__block__executor_8h" local="no">gr_block_executor.h</includes>
@@ -237,137 +237,136 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2960">
+      <node id="7388">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2961" relation="public-inheritance">
+        <childnode refid="7389" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2950">
+      <node id="7378">
         <label>gr_block_executor</label>
         <link refid="classgr__block__executor"/>
-        <childnode refid="2951" relation="usage">
+        <childnode refid="7379" relation="usage">
           <edgelabel>d_output_items</edgelabel>
         </childnode>
-        <childnode refid="2952" relation="usage">
+        <childnode refid="7380" relation="usage">
           <edgelabel>d_returned_tags</edgelabel>
         </childnode>
-        <childnode refid="2954" relation="usage">
+        <childnode refid="7382" relation="usage">
           <edgelabel>d_start_nitems_read</edgelabel>
         </childnode>
-        <childnode refid="2955" relation="usage">
+        <childnode refid="7383" relation="usage">
           <edgelabel>d_ninput_items</edgelabel>
           <edgelabel>d_ninput_items_required</edgelabel>
         </childnode>
-        <childnode refid="2956" relation="usage">
+        <childnode refid="7384" relation="usage">
           <edgelabel>d_input_done</edgelabel>
         </childnode>
-        <childnode refid="2957" relation="usage">
+        <childnode refid="7385" relation="usage">
           <edgelabel>d_block</edgelabel>
         </childnode>
-        <childnode refid="2966" relation="usage">
+        <childnode refid="7394" relation="usage">
           <edgelabel>d_log</edgelabel>
         </childnode>
-        <childnode refid="2971" relation="usage">
+        <childnode refid="7399" relation="usage">
           <edgelabel>d_input_items</edgelabel>
         </childnode>
       </node>
-      <node id="2967">
+      <node id="7395">
         <label>std::basic_ofstream&lt; char &gt;</label>
-        <childnode refid="2968" relation="public-inheritance">
+        <childnode refid="7396" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2958">
+      <node id="7386">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2959" relation="public-inheritance">
+        <childnode refid="7387" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2971">
+      <node id="7399">
         <label>std::vector&lt; const void * &gt;</label>
       </node>
-      <node id="2966">
+      <node id="7394">
         <label>std::ofstream</label>
-        <childnode refid="2967" relation="public-inheritance">
+        <childnode refid="7395" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2957">
+      <node id="7385">
         <label>boost::shared_ptr&lt; gr_block &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2958" relation="usage">
+        <childnode refid="7386" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2962">
+      <node id="7390">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2963" relation="usage">
+        <childnode refid="7391" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2965">
+      <node id="7393">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2952">
+      <node id="7380">
         <label>std::vector&lt; gr_tag_t &gt;</label>
-        <childnode refid="2953" relation="usage">
+        <childnode refid="7381" relation="usage">
           <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="2961">
+      <node id="7389">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2954">
+      <node id="7382">
         <label>std::vector&lt; uint64_t &gt;</label>
       </node>
-      <node id="2968">
+      <node id="7396">
         <label>std::basic_ostream&lt; Char &gt;</label>
-        <childnode refid="2969" relation="public-inheritance">
+        <childnode refid="7397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2969">
+      <node id="7397">
         <label>std::basic_ios&lt; Char &gt;</label>
-        <childnode refid="2970" relation="public-inheritance">
+        <childnode refid="7398" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2953">
+      <node id="7381">
         <label>gr_tag_t</label>
         <link refid="structgr__tag__t"/>
       </node>
-      <node id="2963">
+      <node id="7391">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2970">
+      <node id="7398">
         <label>std::ios_base</label>
       </node>
-      <node id="2956">
+      <node id="7384">
         <label>std::vector&lt; bool &gt;</label>
       </node>
-      <node id="2959">
+      <node id="7387">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2960" relation="public-inheritance">
+        <childnode refid="7388" relation="public-inheritance">
         </childnode>
-        <childnode refid="2962" relation="usage">
+        <childnode refid="7390" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2964" relation="usage">
+        <childnode refid="7392" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2951">
+      <node id="7379">
         <label>std::vector&lt; void * &gt;</label>
       </node>
-      <node id="2955">
+      <node id="7383">
         <label>std::vector&lt; int &gt;</label>
       </node>
-      <node id="2964">
+      <node id="7392">
         <label>std::string</label>
-        <childnode refid="2965" relation="public-inheritance">
+        <childnode refid="7393" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

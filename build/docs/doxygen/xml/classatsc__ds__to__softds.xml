@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsc__ds__to__softds" kind="class" prot="public">
     <compoundname>atsc_ds_to_softds</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="atsc__ds__to__softds_8h" local="no">atsc_ds_to_softds.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__ds__to__softds_1a14a33ddd2b89d9bc215203e74707b443" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_ds_to_softds_sptr</ref></type>
+        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_ds_to_softds_sptr</ref></type>
         <definition>ATSC_API atsc_ds_to_softds_sptr atsc_make_ds_to_softds</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_ds_to_softds</name>
@@ -62,7 +62,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_ds_to_softds.h" line="49"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__ds__to__softds_1a9feb4197d1e723986b67df4c4b165768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_ds_to_softds::map_to_soft_symbols</definition>
         <argsstring>(atsc_soft_data_segment &amp;out, const atsc_data_segment &amp;in)</argsstring>
         <name>map_to_soft_symbols</name>
@@ -83,7 +83,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_ds_to_softds.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__ds__to__softds_1acbd83bcab6debe58c0d28558a2db15fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_ds_to_softds::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -101,100 +101,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="80">
+      <node id="4420">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="81" relation="public-inheritance">
+        <childnode refid="4421" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="77">
+      <node id="4417">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="78" relation="public-inheritance">
+        <childnode refid="4418" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="76">
+      <node id="4416">
         <label>atsc_ds_to_softds</label>
         <link refid="classatsc__ds__to__softds"/>
-        <childnode refid="77" relation="public-inheritance">
+        <childnode refid="4417" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="78">
+      <node id="4418">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="79" relation="public-inheritance">
+        <childnode refid="4419" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="81">
+      <node id="4421">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="79">
+      <node id="4419">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="80" relation="public-inheritance">
+        <childnode refid="4420" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="86">
+      <node id="4426">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="87" relation="public-inheritance">
+        <childnode refid="4427" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="83">
+      <node id="4423">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="84" relation="public-inheritance">
+        <childnode refid="4424" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="82">
+      <node id="4422">
         <label>atsc_ds_to_softds</label>
         <link refid="classatsc__ds__to__softds"/>
-        <childnode refid="83" relation="public-inheritance">
+        <childnode refid="4423" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="84">
+      <node id="4424">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="85" relation="public-inheritance">
+        <childnode refid="4425" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="88">
+      <node id="4428">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="89" relation="usage">
+        <childnode refid="4429" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="91">
+      <node id="4431">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="87">
+      <node id="4427">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="89">
+      <node id="4429">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="85">
+      <node id="4425">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="86" relation="public-inheritance">
+        <childnode refid="4426" relation="public-inheritance">
         </childnode>
-        <childnode refid="88" relation="usage">
+        <childnode refid="4428" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="90" relation="usage">
+        <childnode refid="4430" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="90">
+      <node id="4430">
         <label>std::string</label>
-        <childnode refid="91" relation="public-inheritance">
+        <childnode refid="4431" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

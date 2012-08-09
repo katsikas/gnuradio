@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsci__trellis__encoder" kind="class" prot="public">
     <compoundname>atsci_trellis_encoder</compoundname>
     <includes refid="atsci__trellis__encoder_8h" local="no">atsci_trellis_encoder.h</includes>
@@ -106,7 +106,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_trellis_encoder.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__trellis__encoder_1a9e5b98f4cbc2cbcfaa831cdaa7927555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsci_trellis_encoder::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -119,7 +119,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_trellis_encoder.h" line="42"/>
       </memberdef>
       <memberdef kind="function" id="classatsci__trellis__encoder_1a6084798d2aded2665174691e1de99157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsci_trellis_encoder::encode</definition>
         <argsstring>(atsc_data_segment out[NCODERS], const atsc_mpeg_packet_rs_encoded in[NCODERS])</argsstring>
         <name>encode</name>
@@ -144,7 +144,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classatsci__trellis__encoder_1aedc38cba59a229549cdc274f13241d11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsci_trellis_encoder::encode_helper</definition>
         <argsstring>(unsigned char out[OUTPUT_SIZE], const unsigned char in[INPUT_SIZE])</argsstring>
         <name>encode_helper</name>
@@ -172,14 +172,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="375">
+      <node id="4715">
         <label>atsci_basic_trellis_encoder</label>
         <link refid="classatsci__basic__trellis__encoder"/>
       </node>
-      <node id="374">
+      <node id="4714">
         <label>atsci_trellis_encoder</label>
         <link refid="classatsci__trellis__encoder"/>
-        <childnode refid="375" relation="usage">
+        <childnode refid="4715" relation="usage">
           <edgelabel>enc</edgelabel>
         </childnode>
       </node>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__sector" kind="class" prot="public">
     <compoundname>digital_constellation_sector</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
@@ -157,62 +157,62 @@
     <detaileddescription>
 <para><ref refid="classdigital__constellation__sector" kindref="compound">digital_constellation_sector</ref> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="387">
+      <node id="384">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="380" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="384">
+      <node id="381">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="388">
+      <node id="385">
         <label>digital_constellation_rect</label>
         <link refid="classdigital__constellation__rect"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="380" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="385">
+      <node id="382">
         <label>digital_constellation_16qam</label>
         <link refid="classdigital__constellation__16qam"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="380" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>digital_constellation_sector</label>
+        <link refid="classdigital__constellation__sector"/>
+        <childnode refid="381" relation="public-inheritance">
         </childnode>
       </node>
       <node id="383">
-        <label>digital_constellation_sector</label>
-        <link refid="classdigital__constellation__sector"/>
-        <childnode refid="384" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="386">
         <label>digital_constellation_64qam</label>
         <link refid="classdigital__constellation__64qam"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="380" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="392">
+      <node id="389">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="391">
+      <node id="388">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="390">
+      <node id="387">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="391" relation="usage">
+        <childnode refid="388" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="392" relation="usage">
+        <childnode refid="389" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="389">
+      <node id="386">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="390" relation="public-inheritance">
+        <childnode refid="387" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

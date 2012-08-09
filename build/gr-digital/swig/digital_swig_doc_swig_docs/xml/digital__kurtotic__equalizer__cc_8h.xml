@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="digital__kurtotic__equalizer__cc_8h" kind="file">
     <compoundname>digital_kurtotic_equalizer_cc.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -55,9 +55,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__kurtotic__equalizer__cc_8h_1a3894e93c8fbff3d8d9a14c3bd803b02e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__kurtotic__equalizer__cc_8h_1afed8db95c024747c041c84d5b6a28ef9" kindref="member">digital_kurtotic_equalizer_cc_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_kurtotic_equalizer_cc_sptr digital_make_kurtotic_equalizer_cc</definition>
+      <memberdef kind="function" id="digital__kurtotic__equalizer__cc_8h_1a706ba9cd6f659c48f26f894fdf383baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__kurtotic__equalizer__cc_8h_1afed8db95c024747c041c84d5b6a28ef9" kindref="member">digital_kurtotic_equalizer_cc_sptr</ref></type>
+        <definition>DIGITAL_API digital_kurtotic_equalizer_cc_sptr digital_make_kurtotic_equalizer_cc</definition>
         <argsstring>(int num_taps, float mu)</argsstring>
         <name>digital_make_kurtotic_equalizer_cc</name>
         <param>
@@ -116,7 +116,7 @@
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_kurtotic_equalizer_cc&gt;<sp/><ref refid="digital__kurtotic__equalizer__cc_8h_1afed8db95c024747c041c84d5b6a28ef9" kindref="member">digital_kurtotic_equalizer_cc_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__kurtotic__equalizer__cc_8h_1afed8db95c024747c041c84d5b6a28ef9" kindref="member">digital_kurtotic_equalizer_cc_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="digital__kurtotic__equalizer__cc_8h_1a3894e93c8fbff3d8d9a14c3bd803b02e" kindref="member">digital_make_kurtotic_equalizer_cc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mu);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="digital__kurtotic__equalizer__cc_8h_1a706ba9cd6f659c48f26f894fdf383baf" kindref="member">digital_make_kurtotic_equalizer_cc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mu);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46" refid="classdigital__kurtotic__equalizer__cc" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__kurtotic__equalizer__cc" kindref="compound" tooltip="Implements a kurtosis-based adaptive equalizer on complex stream&amp;quot;Y. Guo, J. Zhao, Y...">digital_kurtotic_equalizer_cc</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_adaptive_fir_ccc</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">{</highlight></codeline>
@@ -126,7 +126,7 @@
 <codeline lineno="51"><highlight class="normal"><sp/><sp/>gr_complex<sp/>d_q,<sp/>d_u;</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d_alpha_p,<sp/>d_alpha_q,<sp/>d_alpha_m;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__kurtotic__equalizer__cc_8h_1afed8db95c024747c041c84d5b6a28ef9" kindref="member">digital_kurtotic_equalizer_cc_sptr</ref><sp/><ref refid="digital__kurtotic__equalizer__cc_8h_1a3894e93c8fbff3d8d9a14c3bd803b02e" kindref="member">digital_make_kurtotic_equalizer_cc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__kurtotic__equalizer__cc_8h_1afed8db95c024747c041c84d5b6a28ef9" kindref="member">digital_kurtotic_equalizer_cc_sptr</ref><sp/><ref refid="digital__kurtotic__equalizer__cc_8h_1a706ba9cd6f659c48f26f894fdf383baf" kindref="member">digital_make_kurtotic_equalizer_cc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mu);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="classdigital__kurtotic__equalizer__cc" kindref="compound" tooltip="Implements a kurtosis-based adaptive equalizer on complex stream&amp;quot;Y. Guo, J. Zhao, Y...">digital_kurtotic_equalizer_cc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_taps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mu);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>

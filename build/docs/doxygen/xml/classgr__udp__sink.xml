@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__udp__sink" kind="class" prot="public">
     <compoundname>gr_udp_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -86,7 +86,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__udp__sink_1a32ce1fcf4c783952927291926ca7c830" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_udp_sink_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_udp_sink_sptr</ref></type>
         <definition>GR_CORE_API gr_udp_sink_sptr gr_make_udp_sink</definition>
         <argsstring>(size_t itemsize, const char *host, unsigned short port, int payload_size, bool eof)</argsstring>
         <name>gr_make_udp_sink</name>
@@ -218,7 +218,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_udp_sink.h" line="86" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_udp_sink.h" bodystart="86" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classgr__udp__sink_1ab93f39c0613a88896cdc0f23fc02f339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_udp_sink::connect</definition>
         <argsstring>(const char *host, unsigned short port)</argsstring>
         <name>connect</name>
@@ -254,7 +254,7 @@ Calls <ref refid="classgr__udp__sink_1a5fac74580b0dc7cf3e7fac7b87d3c7cb" kindref
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_udp_sink.h" line="96"/>
       </memberdef>
       <memberdef kind="function" id="classgr__udp__sink_1a5fac74580b0dc7cf3e7fac7b87d3c7cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_udp_sink::disconnect</definition>
         <argsstring>()</argsstring>
         <name>disconnect</name>
@@ -334,100 +334,100 @@ Calls <ref refid="classgr__udp__sink_1a5fac74580b0dc7cf3e7fac7b87d3c7cb" kindref
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="6079">
+      <node id="11299">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6080" relation="public-inheritance">
+        <childnode refid="11300" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6076">
+      <node id="11296">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6077" relation="public-inheritance">
+        <childnode refid="11297" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6077">
+      <node id="11297">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6078" relation="public-inheritance">
+        <childnode refid="11298" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6075">
+      <node id="11295">
         <label>gr_udp_sink</label>
         <link refid="classgr__udp__sink"/>
-        <childnode refid="6076" relation="public-inheritance">
+        <childnode refid="11296" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6080">
+      <node id="11300">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6078">
+      <node id="11298">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6079" relation="public-inheritance">
+        <childnode refid="11299" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6085">
+      <node id="11305">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6086" relation="public-inheritance">
+        <childnode refid="11306" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6082">
+      <node id="11302">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6083" relation="public-inheritance">
+        <childnode refid="11303" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6083">
+      <node id="11303">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6084" relation="public-inheritance">
+        <childnode refid="11304" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6087">
+      <node id="11307">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6088" relation="usage">
+        <childnode refid="11308" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6090">
+      <node id="11310">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6081">
+      <node id="11301">
         <label>gr_udp_sink</label>
         <link refid="classgr__udp__sink"/>
-        <childnode refid="6082" relation="public-inheritance">
+        <childnode refid="11302" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6086">
+      <node id="11306">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6088">
+      <node id="11308">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6084">
+      <node id="11304">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6085" relation="public-inheritance">
+        <childnode refid="11305" relation="public-inheritance">
         </childnode>
-        <childnode refid="6087" relation="usage">
+        <childnode refid="11307" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6089" relation="usage">
+        <childnode refid="11309" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6089">
+      <node id="11309">
         <label>std::string</label>
-        <childnode refid="6090" relation="public-inheritance">
+        <childnode refid="11310" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__costas__loop__cc" kind="class" prot="public">
     <compoundname>digital_costas_loop_cc</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -35,7 +35,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__costas__loop__cc_1afb0294b50dc1d221951a785c6b0e1be4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_costas_loop_cc_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_costas_loop_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_costas_loop_cc_sptr digital_make_costas_loop_cc</definition>
         <argsstring>(float loop_bw, int order)</argsstring>
         <name>digital_make_costas_loop_cc</name>
@@ -193,112 +193,112 @@ The Costas loop can have two output streams: stream 1 is the baseband I and Q; s
     <detaileddescription>
 <para><computeroutput>order</computeroutput> must be 2, 4, or 8. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1198">
+      <node id="5566">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1199" relation="public-inheritance">
+        <childnode refid="5567" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1195">
+      <node id="5563">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1196" relation="public-inheritance">
+        <childnode refid="5564" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1194">
+      <node id="5562">
         <label>digital_costas_loop_cc</label>
         <link refid="classdigital__costas__loop__cc"/>
-        <childnode refid="1195" relation="public-inheritance">
+        <childnode refid="5563" relation="public-inheritance">
         </childnode>
-        <childnode refid="1200" relation="public-inheritance">
+        <childnode refid="5568" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1196">
+      <node id="5564">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1197" relation="public-inheritance">
+        <childnode refid="5565" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1199">
+      <node id="5567">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1200">
+      <node id="5568">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1197">
+      <node id="5565">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1198" relation="public-inheritance">
+        <childnode refid="5566" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1205">
+      <node id="5573">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1206" relation="public-inheritance">
+        <childnode refid="5574" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1202">
+      <node id="5570">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1203" relation="public-inheritance">
+        <childnode refid="5571" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1201">
+      <node id="5569">
         <label>digital_costas_loop_cc</label>
         <link refid="classdigital__costas__loop__cc"/>
-        <childnode refid="1202" relation="public-inheritance">
+        <childnode refid="5570" relation="public-inheritance">
         </childnode>
-        <childnode refid="1211" relation="public-inheritance">
+        <childnode refid="5579" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1203">
+      <node id="5571">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1204" relation="public-inheritance">
+        <childnode refid="5572" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1207">
+      <node id="5575">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1208" relation="usage">
+        <childnode refid="5576" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1210">
+      <node id="5578">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1206">
+      <node id="5574">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1211">
+      <node id="5579">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1208">
+      <node id="5576">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1204">
+      <node id="5572">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1205" relation="public-inheritance">
+        <childnode refid="5573" relation="public-inheritance">
         </childnode>
-        <childnode refid="1207" relation="usage">
+        <childnode refid="5575" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1209" relation="usage">
+        <childnode refid="5577" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1209">
+      <node id="5577">
         <label>std::string</label>
-        <childnode refid="1210" relation="public-inheritance">
+        <childnode refid="5578" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

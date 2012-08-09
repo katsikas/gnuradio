@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classGrAtscInterleaver" kind="class" prot="public">
     <compoundname>GrAtscInterleaver</compoundname>
     <includes refid="GrAtscInterleaver_8h" local="no">GrAtscInterleaver.h</includes>
@@ -96,34 +96,27 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="487">
+      <node id="481">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="488" relation="usage">
+        <childnode refid="482" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="489">
-        <label>interleaver_fifo&lt; unsigned char &gt;</label>
-        <link refid="classinterleaver__fifo"/>
-      </node>
-      <node id="485">
+      <node id="479">
         <label>GrAtscInterleaver</label>
         <link refid="classGrAtscInterleaver"/>
-        <childnode refid="486" relation="usage">
+        <childnode refid="480" relation="usage">
           <edgelabel>interleaver</edgelabel>
         </childnode>
       </node>
-      <node id="488">
+      <node id="482">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <childnode refid="489" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
       </node>
-      <node id="486">
+      <node id="480">
         <label>atsci_data_interleaver</label>
         <link refid="classatsci__data__interleaver"/>
-        <childnode refid="487" relation="public-inheritance">
+        <childnode refid="481" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

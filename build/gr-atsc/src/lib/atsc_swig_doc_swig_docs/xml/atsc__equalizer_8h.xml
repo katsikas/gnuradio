@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="atsc__equalizer_8h" kind="file">
     <compoundname>atsc_equalizer.h</compoundname>
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
@@ -58,9 +58,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="atsc__equalizer_8h_1a6709f9e961c91badb1e237f9dfca4e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" kindref="member">atsc_equalizer_sptr</ref> __GR_ATTR_IMPORT</type>
-        <definition>atsc_equalizer_sptr __GR_ATTR_IMPORT atsc_make_equalizer</definition>
+      <memberdef kind="function" id="atsc__equalizer_8h_1a96e7dad599762551050d0d07b51cc47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" kindref="member">atsc_equalizer_sptr</ref> ATSC_API</type>
+        <definition>atsc_equalizer_sptr ATSC_API atsc_make_equalizer</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_equalizer</name>
         <briefdescription>
@@ -108,11 +108,11 @@
 <codeline lineno="29" refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classatsc__equalizer" kindref="compound" tooltip="ATSC equalizer (float,syminfo --&amp;gt; float,syminfo)first inputs are data samples, second inputs are tags...">atsc_equalizer</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;atsc_equalizer&gt;<sp/><ref refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" kindref="member">atsc_equalizer_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" kindref="member">atsc_equalizer_sptr</ref><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__equalizer_8h_1a6709f9e961c91badb1e237f9dfca4e4a" kindref="member">atsc_make_equalizer</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" kindref="member">atsc_equalizer_sptr</ref><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__equalizer_8h_1a96e7dad599762551050d0d07b51cc47b" kindref="member">atsc_make_equalizer</ref>();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41" refid="classatsc__equalizer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="classatsc__equalizer" kindref="compound" tooltip="ATSC equalizer (float,syminfo --&amp;gt; float,syminfo)first inputs are data samples, second inputs are tags...">atsc_equalizer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" kindref="member">atsc_equalizer_sptr</ref><sp/><ref refid="atsc__equalizer_8h_1a6709f9e961c91badb1e237f9dfca4e4a" kindref="member">atsc_make_equalizer</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__equalizer_8h_1a8a5041357d97abf5813dc6c6230c20d1" kindref="member">atsc_equalizer_sptr</ref><sp/><ref refid="atsc__equalizer_8h_1a96e7dad599762551050d0d07b51cc47b" kindref="member">atsc_make_equalizer</ref>();</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classatsc__equalizer" kindref="compound" tooltip="ATSC equalizer (float,syminfo --&amp;gt; float,syminfo)first inputs are data samples, second inputs are tags...">atsc_equalizer</ref>();</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>

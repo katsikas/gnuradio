@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classqtgui__sink__f" kind="class" prot="public">
     <compoundname>qtgui_sink_f</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -245,7 +245,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classqtgui__sink__f_1af3ae39fd1230ebc651a3e853765fabfd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_sink_f_sptr</ref></type>
+        <type>friend GR_QTGUI_API <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_sink_f_sptr</ref></type>
         <definition>GR_QTGUI_API qtgui_sink_f_sptr qtgui_make_sink_f</definition>
         <argsstring>(int fftsize, int wintype, double fc, double bw, const std::string &amp;name, bool plotfreq, bool plotwaterfall, bool plottime, bool plotconst, QWidget *parent)</argsstring>
         <name>qtgui_make_sink_f</name>
@@ -353,7 +353,7 @@
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="69"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a21bc5dc531c6710b44a5cffc0e56ecc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -390,7 +390,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="71"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ab9fd82b54db5532f3921afae6f5b3b4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::initialize</definition>
         <argsstring>()</argsstring>
         <name>initialize</name>
@@ -403,7 +403,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="73"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1aaf58e319f79779526fd898192369497d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::windowreset</definition>
         <argsstring>()</argsstring>
         <name>windowreset</name>
@@ -416,7 +416,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="95"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ad733e1818f82def97b509672657824f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::buildwindow</definition>
         <argsstring>()</argsstring>
         <name>buildwindow</name>
@@ -429,7 +429,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="96"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a5c57e203560ead733e7ad06db3141970" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::fftresize</definition>
         <argsstring>()</argsstring>
         <name>fftresize</name>
@@ -442,7 +442,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="97"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ab8a164c1d2f5e16d4a76797f9d45f04e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::fft</definition>
         <argsstring>(const float *data_in, int size)</argsstring>
         <name>fft</name>
@@ -478,7 +478,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="101"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a1dd0ef494fdb3f436ae0e965a2906cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::exec_</definition>
         <argsstring>()</argsstring>
         <name>exec_</name>
@@ -517,7 +517,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="104"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a51726c4f164e36583dd0b21055960175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_frequency_range</definition>
         <argsstring>(const double centerfreq, const double bandwidth)</argsstring>
         <name>set_frequency_range</name>
@@ -538,7 +538,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="107"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1ad3247dc9ab0f0e257506f80fd0fb3bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_time_domain_axis</definition>
         <argsstring>(double min, double max)</argsstring>
         <name>set_time_domain_axis</name>
@@ -559,7 +559,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="109"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1aec34b1d983719c5d31549b2383b91fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_constellation_axis</definition>
         <argsstring>(double xmin, double xmax, double ymin, double ymax)</argsstring>
         <name>set_constellation_axis</name>
@@ -588,7 +588,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="111"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1a9a3f81327303ab0d7824648e812ea15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_constellation_pen_size</definition>
         <argsstring>(int size)</argsstring>
         <name>set_constellation_pen_size</name>
@@ -605,7 +605,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="112"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1af5a2d4ed7c3a53690c86a8aca1e7fa7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_frequency_axis</definition>
         <argsstring>(double min, double max)</argsstring>
         <name>set_frequency_axis</name>
@@ -626,7 +626,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_sink_f.h" line="113"/>
       </memberdef>
       <memberdef kind="function" id="classqtgui__sink__f_1adfab096988fd615c70fac08dec0d919d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void qtgui_sink_f::set_update_time</definition>
         <argsstring>(double t)</argsstring>
         <name>set_update_time</name>
@@ -708,88 +708,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7249">
+      <node id="12611">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7250" relation="public-inheritance">
+        <childnode refid="12612" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7247">
+      <node id="12609">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7248" relation="public-inheritance">
+        <childnode refid="12610" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7246">
+      <node id="12608">
         <label>qtgui_sink_f</label>
         <link refid="classqtgui__sink__f"/>
-        <childnode refid="7247" relation="public-inheritance">
+        <childnode refid="12609" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7250">
+      <node id="12612">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7248">
+      <node id="12610">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7249" relation="public-inheritance">
+        <childnode refid="12611" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7254">
+      <node id="12616">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7255" relation="public-inheritance">
+        <childnode refid="12617" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7252">
+      <node id="12614">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7253" relation="public-inheritance">
+        <childnode refid="12615" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7251">
+      <node id="12613">
         <label>qtgui_sink_f</label>
         <link refid="classqtgui__sink__f"/>
-        <childnode refid="7252" relation="public-inheritance">
+        <childnode refid="12614" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7256">
+      <node id="12618">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7257" relation="usage">
+        <childnode refid="12619" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7259">
+      <node id="12621">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7255">
+      <node id="12617">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7257">
+      <node id="12619">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7253">
+      <node id="12615">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7254" relation="public-inheritance">
+        <childnode refid="12616" relation="public-inheritance">
         </childnode>
-        <childnode refid="7256" relation="usage">
+        <childnode refid="12618" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7258" relation="usage">
+        <childnode refid="12620" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7258">
+      <node id="12620">
         <label>std::string</label>
-        <childnode refid="7259" relation="public-inheritance">
+        <childnode refid="12621" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

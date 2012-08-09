@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__flowgraph" kind="class" prot="public">
     <compoundname>gr_flowgraph</compoundname>
     <derivedcompoundref refid="classgr__flat__flowgraph" prot="public" virt="non-virtual">gr_flat_flowgraph</derivedcompoundref>
@@ -34,7 +34,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__flowgraph_1ac2f2e6abafe2036169b0b627c9326bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_flowgraph_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_flowgraph_sptr</ref></type>
         <definition>GR_CORE_API gr_flowgraph_sptr gr_make_flowgraph</definition>
         <argsstring>()</argsstring>
         <name>gr_make_flowgraph</name>
@@ -62,7 +62,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="97"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1a2a58b539977bb51ceea6af598499089d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::connect</definition>
         <argsstring>(const gr_endpoint &amp;src, const gr_endpoint &amp;dst)</argsstring>
         <name>connect</name>
@@ -84,7 +84,7 @@
         <referencedby refid="classgr__flowgraph_1afef8c6206921cdb502159b1cfc57f7fe" compoundref="gr__flowgraph_8h" startline="162" endline="167">connect</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1abcc73eaef7cb9175536d6935941867c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::disconnect</definition>
         <argsstring>(const gr_endpoint &amp;src, const gr_endpoint &amp;dst)</argsstring>
         <name>disconnect</name>
@@ -106,7 +106,7 @@
         <referencedby refid="classgr__flowgraph_1aeec7ca27ceab439babb7addebb6921b5" compoundref="gr__flowgraph_8h" startline="170" endline="175">disconnect</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1afef8c6206921cdb502159b1cfc57f7fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::connect</definition>
         <argsstring>(gr_basic_block_sptr src_block, int src_port, gr_basic_block_sptr dst_block, int dst_port)</argsstring>
         <name>connect</name>
@@ -136,7 +136,7 @@
         <references refid="classgr__flowgraph_1a2a58b539977bb51ceea6af598499089d">connect</references>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1aeec7ca27ceab439babb7addebb6921b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::disconnect</definition>
         <argsstring>(gr_basic_block_sptr src_block, int src_port, gr_basic_block_sptr dst_block, int dst_port)</argsstring>
         <name>disconnect</name>
@@ -166,7 +166,7 @@
         <references refid="classgr__flowgraph_1abcc73eaef7cb9175536d6935941867c5">disconnect</references>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1ac04a1dbcbeae9ad6fa0d155a8904d4b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::validate</definition>
         <argsstring>()</argsstring>
         <name>validate</name>
@@ -179,7 +179,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="114"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1af431ea386d78baac02b5693a004ffa5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::clear</definition>
         <argsstring>()</argsstring>
         <name>clear</name>
@@ -362,7 +362,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classgr__flowgraph_1a6bbb3da90788e3217ef7102d3c79e83a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::check_valid_port</definition>
         <argsstring>(gr_io_signature_sptr sig, int port)</argsstring>
         <name>check_valid_port</name>
@@ -383,7 +383,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="145"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1a8df1c26389e30b492ddd78784ef1a658" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::check_dst_not_used</definition>
         <argsstring>(const gr_endpoint &amp;dst)</argsstring>
         <name>check_dst_not_used</name>
@@ -400,7 +400,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="146"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1a5629829667ebad62718874d57f394a2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::check_type_match</definition>
         <argsstring>(const gr_endpoint &amp;src, const gr_endpoint &amp;dst)</argsstring>
         <name>check_type_match</name>
@@ -442,7 +442,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="148"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1a39a4b175415ae254e34856160e96956d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::check_contiguity</definition>
         <argsstring>(gr_basic_block_sptr block, const std::vector&lt; int &gt; &amp;used_ports, bool check_inputs)</argsstring>
         <name>check_contiguity</name>
@@ -505,7 +505,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="152"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1ad721b6cea97b3afca25cdf71765c3a45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::reachable_dfs_visit</definition>
         <argsstring>(gr_basic_block_sptr block, gr_basic_block_vector_t &amp;blocks)</argsstring>
         <name>reachable_dfs_visit</name>
@@ -581,7 +581,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_flowgraph.h" line="156"/>
       </memberdef>
       <memberdef kind="function" id="classgr__flowgraph_1a5a890c75853a75d0d3eb0406b130cea7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_flowgraph::topological_dfs_visit</definition>
         <argsstring>(gr_basic_block_sptr block, gr_basic_block_vector_t &amp;output)</argsstring>
         <name>topological_dfs_visit</name>
@@ -607,53 +607,51 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3899">
+      <node id="8721">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
       </node>
-      <node id="3900">
+      <node id="8722">
         <label>gr_flat_flowgraph</label>
         <link refid="classgr__flat__flowgraph"/>
-        <childnode refid="3899" relation="public-inheritance">
+        <childnode refid="8721" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3902">
+      <node id="8724">
         <label>std::vector&lt; gr_edge &gt;</label>
-        <childnode refid="3903" relation="usage">
+        <childnode refid="8725" relation="usage">
           <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3906">
+      <node id="8728">
         <label>T</label>
       </node>
-      <node id="3905">
+      <node id="8727">
         <label>boost::shared_ptr&lt; T &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3906" relation="usage">
+        <childnode refid="8728" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3901">
+      <node id="8723">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
-        <childnode refid="3902" relation="usage">
+        <childnode refid="8724" relation="usage">
           <edgelabel>d_edges</edgelabel>
         </childnode>
-        <childnode refid="3904" relation="usage">
+        <childnode refid="8726" relation="usage">
           <edgelabel>d_blocks</edgelabel>
         </childnode>
       </node>
-      <node id="3904">
+      <node id="8726">
         <label>std::vector&lt; gr_basic_block_sptr &gt;</label>
-        <childnode refid="3905" relation="usage">
+        <childnode refid="8727" relation="usage">
           <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="3903">
+      <node id="8725">
         <label>gr_edge</label>
         <link refid="classgr__edge"/>
       </node>

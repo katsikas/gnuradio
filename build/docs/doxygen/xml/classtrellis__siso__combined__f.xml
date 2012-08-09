@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classtrellis__siso__combined__f" kind="class" prot="public">
     <compoundname>trellis_siso_combined_f</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -138,7 +138,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classtrellis__siso__combined__f_1a02057bf0b2af9fca7c6cf8b88d1dbb64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="trellis__api_8h_1a127b54fd15c5829a93039ece2d5467b0" kindref="member">TRELLIS_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">trellis_siso_combined_f_sptr</ref></type>
+        <type>friend TRELLIS_API <ref refid="classboost_1_1shared__ptr" kindref="compound">trellis_siso_combined_f_sptr</ref></type>
         <definition>TRELLIS_API trellis_siso_combined_f_sptr trellis_make_siso_combined_f</definition>
         <argsstring>(const fsm &amp;FSM, int K, int S0, int SK, bool POSTI, bool POSTO, trellis_siso_type_t d_SISO_TYPE, int D, const std::vector&lt; float &gt; &amp;TABLE, trellis_metric_type_t TYPE)</argsstring>
         <name>trellis_make_siso_combined_f</name>
@@ -378,7 +378,7 @@
         <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h" line="103" bodyfile="/home/katsikas/gnuradio/gr-trellis/src/lib/trellis_siso_combined_f.h" bodystart="103" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classtrellis__siso__combined__f_1a08dbcd3d99978cfbc30b892b65031d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void trellis_siso_combined_f::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -480,88 +480,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7486">
+      <node id="12842">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7487" relation="public-inheritance">
+        <childnode refid="12843" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7484">
+      <node id="12840">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7485" relation="public-inheritance">
+        <childnode refid="12841" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7487">
+      <node id="12843">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7485">
+      <node id="12841">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7486" relation="public-inheritance">
+        <childnode refid="12842" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7483">
+      <node id="12839">
         <label>trellis_siso_combined_f</label>
         <link refid="classtrellis__siso__combined__f"/>
-        <childnode refid="7484" relation="public-inheritance">
+        <childnode refid="12840" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7491">
+      <node id="12847">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7492" relation="public-inheritance">
+        <childnode refid="12848" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7489">
+      <node id="12845">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7490" relation="public-inheritance">
+        <childnode refid="12846" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7493">
+      <node id="12849">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7494" relation="usage">
+        <childnode refid="12850" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7496">
+      <node id="12852">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7492">
+      <node id="12848">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7494">
+      <node id="12850">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7490">
+      <node id="12846">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7491" relation="public-inheritance">
+        <childnode refid="12847" relation="public-inheritance">
         </childnode>
-        <childnode refid="7493" relation="usage">
+        <childnode refid="12849" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7495" relation="usage">
+        <childnode refid="12851" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7488">
+      <node id="12844">
         <label>trellis_siso_combined_f</label>
         <link refid="classtrellis__siso__combined__f"/>
-        <childnode refid="7489" relation="public-inheritance">
+        <childnode refid="12845" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7495">
+      <node id="12851">
         <label>std::string</label>
-        <childnode refid="7496" relation="public-inheritance">
+        <childnode refid="12852" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__file__source" kind="class" prot="public">
     <compoundname>gr_file_source</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -19,7 +19,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_file_source.h" line="46" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_file_source.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__file__source_1a61aee6b99d16715f575c65daf1f16f26" prot="private" static="no" mutable="no">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* gr_file_source::d_fp</definition>
         <argsstring></argsstring>
         <name>d_fp</name>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__file__source_1a36b4dde5a3a25390d460c7e6b4cdd1df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_file_source_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_file_source_sptr</ref></type>
         <definition>GR_CORE_API gr_file_source_sptr gr_make_file_source</definition>
         <argsstring>(size_t itemsize, const char *filename, bool repeat)</argsstring>
         <name>gr_make_file_source</name>
@@ -181,100 +181,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3686">
+      <node id="8114">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3687" relation="public-inheritance">
+        <childnode refid="8115" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3683">
+      <node id="8111">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3684" relation="public-inheritance">
+        <childnode refid="8112" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3682">
+      <node id="8110">
         <label>gr_file_source</label>
         <link refid="classgr__file__source"/>
-        <childnode refid="3683" relation="public-inheritance">
+        <childnode refid="8111" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3684">
+      <node id="8112">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3685" relation="public-inheritance">
+        <childnode refid="8113" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3687">
+      <node id="8115">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3685">
+      <node id="8113">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3686" relation="public-inheritance">
+        <childnode refid="8114" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3692">
+      <node id="8120">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3693" relation="public-inheritance">
+        <childnode refid="8121" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3689">
+      <node id="8117">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3690" relation="public-inheritance">
+        <childnode refid="8118" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3688">
+      <node id="8116">
         <label>gr_file_source</label>
         <link refid="classgr__file__source"/>
-        <childnode refid="3689" relation="public-inheritance">
+        <childnode refid="8117" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3690">
+      <node id="8118">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3691" relation="public-inheritance">
+        <childnode refid="8119" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3694">
+      <node id="8122">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3695" relation="usage">
+        <childnode refid="8123" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3697">
+      <node id="8125">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3693">
+      <node id="8121">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3695">
+      <node id="8123">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3691">
+      <node id="8119">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3692" relation="public-inheritance">
+        <childnode refid="8120" relation="public-inheritance">
         </childnode>
-        <childnode refid="3694" relation="usage">
+        <childnode refid="8122" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3696" relation="usage">
+        <childnode refid="8124" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3696">
+      <node id="8124">
         <label>std::string</label>
-        <childnode refid="3697" relation="public-inheritance">
+        <childnode refid="8125" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

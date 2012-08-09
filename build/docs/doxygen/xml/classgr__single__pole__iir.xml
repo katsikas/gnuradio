@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__single__pole__iir" kind="class" prot="public">
     <compoundname>gr_single_pole_iir</compoundname>
     <includes refid="gr__single__pole__iir_8h" local="no">gr_single_pole_iir.h</includes>
@@ -113,7 +113,7 @@
         <referencedby refid="classgr__single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a8e96513599ab00798aac14f76b451ca2" compoundref="gr__single__pole__iir_8h" startline="183" endline="189">gr_single_pole_iir&lt; gr_complex, i_type, double &gt;::filterN</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__single__pole__iir_1aabd52c15f1973d6e75d8aad3a2c6381c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_single_pole_iir&lt; o_type, i_type, tap_type &gt;::filterN</definition>
         <argsstring>(o_type output[], const i_type input[], unsigned long n)</argsstring>
         <name>filterN</name>
@@ -140,7 +140,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_single_pole_iir.h" line="55" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_single_pole_iir.h" bodystart="102" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="classgr__single__pole__iir_1af8f1dfca2e1492caf5ef10a6d01f7851" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_single_pole_iir&lt; o_type, i_type, tap_type &gt;::set_taps</definition>
         <argsstring>(tap_type alpha)</argsstring>
         <name>set_taps</name>
@@ -159,7 +159,7 @@
         <referencedby refid="classgr__single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4_1a60f697c8924bd2d2ca6a370d606d2483" compoundref="gr__single__pole__iir_8h" startline="123" endline="127">gr_single_pole_iir&lt; gr_complex, i_type, double &gt;::gr_single_pole_iir</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__single__pole__iir_1aec64a97520727ae05377c782b44b6062" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_single_pole_iir&lt; o_type, i_type, tap_type &gt;::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -190,21 +190,21 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="5420">
+      <node id="10599">
         <label>tap_type</label>
       </node>
-      <node id="5418">
+      <node id="10597">
         <label>gr_single_pole_iir&lt; o_type, i_type, tap_type &gt;</label>
         <link refid="classgr__single__pole__iir"/>
-        <childnode refid="5419" relation="usage">
+        <childnode refid="10598" relation="usage">
           <edgelabel>d_prev_output</edgelabel>
         </childnode>
-        <childnode refid="5420" relation="usage">
+        <childnode refid="10599" relation="usage">
           <edgelabel>d_one_minus_alpha</edgelabel>
           <edgelabel>d_alpha</edgelabel>
         </childnode>
       </node>
-      <node id="5419">
+      <node id="10598">
         <label>o_type</label>
       </node>
     </collaborationgraph>

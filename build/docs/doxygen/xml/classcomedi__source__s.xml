@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classcomedi__source__s" kind="class" prot="public">
     <compoundname>comedi_source_s</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -86,7 +86,7 @@
         <location file="/home/katsikas/gnuradio/gr-comedi/src/comedi_source_s.h" line="64" bodyfile="/home/katsikas/gnuradio/gr-comedi/src/comedi_source_s.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcomedi__source__s_1a544a3c31aa8143603d9759ce4bf39d82" prot="private" static="no" mutable="no">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* comedi_source_s::d_map</definition>
         <argsstring></argsstring>
         <name>d_map</name>
@@ -191,7 +191,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classcomedi__source__s_1a1168affafdf16a6065f595aa7efe3630" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void comedi_source_s::output_error_msg</definition>
         <argsstring>(const char *msg, int err)</argsstring>
         <name>output_error_msg</name>
@@ -212,7 +212,7 @@
         <location file="/home/katsikas/gnuradio/gr-comedi/src/comedi_source_s.h" line="73"/>
       </memberdef>
       <memberdef kind="function" id="classcomedi__source__s_1a7f294afad890692c4823bce6da69ea73" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void comedi_source_s::bail</definition>
         <argsstring>(const char *msg, int err)</argsstring>
         <name>bail</name>
@@ -341,100 +341,100 @@ This function is called by the runtime system whenever the topology changes. Mos
     <detaileddescription>
 <para>The source has one to many input stream of signed short integers.</para><para>Output samples will be in the range [-32768,32767]. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="892">
+      <node id="5231">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="893" relation="public-inheritance">
+        <childnode refid="5232" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="889">
+      <node id="5228">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="890" relation="public-inheritance">
+        <childnode refid="5229" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="890">
+      <node id="5229">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="891" relation="public-inheritance">
+        <childnode refid="5230" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="888">
+      <node id="5227">
         <label>comedi_source_s</label>
         <link refid="classcomedi__source__s"/>
-        <childnode refid="889" relation="public-inheritance">
+        <childnode refid="5228" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="893">
+      <node id="5232">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="891">
+      <node id="5230">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="892" relation="public-inheritance">
+        <childnode refid="5231" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="898">
+      <node id="5237">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="899" relation="public-inheritance">
+        <childnode refid="5238" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="895">
+      <node id="5234">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="896" relation="public-inheritance">
+        <childnode refid="5235" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="896">
+      <node id="5235">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="897" relation="public-inheritance">
+        <childnode refid="5236" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="894">
+      <node id="5233">
         <label>comedi_source_s</label>
         <link refid="classcomedi__source__s"/>
-        <childnode refid="895" relation="public-inheritance">
+        <childnode refid="5234" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="900">
+      <node id="5239">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="901" relation="usage">
+        <childnode refid="5240" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="903">
+      <node id="5242">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="899">
+      <node id="5238">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="901">
+      <node id="5240">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="897">
+      <node id="5236">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="898" relation="public-inheritance">
+        <childnode refid="5237" relation="public-inheritance">
         </childnode>
-        <childnode refid="900" relation="usage">
+        <childnode refid="5239" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="902" relation="usage">
+        <childnode refid="5241" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="902">
+      <node id="5241">
         <label>std::string</label>
-        <childnode refid="903" relation="public-inheritance">
+        <childnode refid="5242" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__basic__block" kind="class" prot="public">
     <compoundname>gr_basic_block</compoundname>
     <basecompoundref refid="classgr__msg__accepter" prot="public" virt="non-virtual">gr_msg_accepter</basecompoundref>
@@ -449,73 +449,73 @@ This function is called by the runtime system whenever the topology changes. Mos
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="318">
+      <node id="315">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="320">
+      <node id="317">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="319" relation="public-inheritance">
+        <childnode refid="316" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="321">
+      <node id="318">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="320" relation="public-inheritance">
+        <childnode refid="317" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="314" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>gr_hier_block2</label>
+        <link refid="classgr__hier__block2"/>
+        <childnode refid="314" relation="public-inheritance">
         </childnode>
       </node>
       <node id="319">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="317" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="323">
-        <label>gr_hier_block2</label>
-        <link refid="classgr__hier__block2"/>
-        <childnode refid="317" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="322">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
+        <childnode refid="317" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>gr_top_block</label>
+        <link refid="classgr__top__block"/>
         <childnode refid="320" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="324">
-        <label>gr_top_block</label>
-        <link refid="classgr__top__block"/>
-        <childnode refid="323" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="317">
+      <node id="314">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="315" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="326">
+      <node id="323">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="328">
+      <node id="325">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="325">
+      <node id="322">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="326" relation="public-inheritance">
+        <childnode refid="323" relation="public-inheritance">
         </childnode>
-        <childnode refid="327" relation="usage">
+        <childnode refid="324" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="327">
+      <node id="324">
         <label>std::string</label>
-        <childnode refid="328" relation="public-inheritance">
+        <childnode refid="325" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

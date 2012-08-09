@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__simple__correlator_8h" kind="file">
     <compoundname>gr_simple_correlator.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -49,9 +49,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__simple__correlator_8h_1ad131519104058e8dea494aa10aeefbd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kindref="member">gr_simple_correlator_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_simple_correlator_sptr gr_make_simple_correlator</definition>
+      <memberdef kind="function" id="gr__simple__correlator_8h_1a7cf6acde8da2f7e3f378686e31deed58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GR_CORE_API <ref refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kindref="member">gr_simple_correlator_sptr</ref></type>
+        <definition>GR_CORE_API gr_simple_correlator_sptr gr_make_simple_correlator</definition>
         <argsstring>(int payload_bytesize)</argsstring>
         <name>gr_make_simple_correlator</name>
         <param>
@@ -106,7 +106,7 @@
 <codeline lineno="32" refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgr__simple__correlator" kindref="compound" tooltip="inverse of gr_simple_framer (more or less)">gr_simple_correlator</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_simple_correlator&gt;<sp/><ref refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kindref="member">gr_simple_correlator_sptr</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kindref="member">gr_simple_correlator_sptr</ref><sp/><ref refid="gr__simple__correlator_8h_1ad131519104058e8dea494aa10aeefbd9" kindref="member">gr_make_simple_correlator</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kindref="member">gr_simple_correlator_sptr</ref><sp/><ref refid="gr__simple__correlator_8h_1a7cf6acde8da2f7e3f378686e31deed58" kindref="member">gr_make_simple_correlator</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41" refid="classgr__simple__correlator" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__simple__correlator" kindref="compound" tooltip="inverse of gr_simple_framer (more or less)">gr_simple_correlator</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_block</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">{</highlight></codeline>
@@ -134,7 +134,7 @@
 <codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*d_debug_fp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>binary<sp/>log<sp/>file</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 <codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kindref="member">gr_simple_correlator_sptr</ref><sp/><ref refid="gr__simple__correlator_8h_1ad131519104058e8dea494aa10aeefbd9" kindref="member">gr_make_simple_correlator</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kindref="member">gr_simple_correlator_sptr</ref><sp/><ref refid="gr__simple__correlator_8h_1a7cf6acde8da2f7e3f378686e31deed58" kindref="member">gr_make_simple_correlator</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="classgr__simple__correlator" kindref="compound" tooltip="inverse of gr_simple_framer (more or less)">gr_simple_correlator</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>payload_bytesize);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>

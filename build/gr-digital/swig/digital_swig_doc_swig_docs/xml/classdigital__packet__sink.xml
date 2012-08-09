@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__packet__sink" kind="class" prot="public">
     <compoundname>digital_packet_sink</compoundname>
     <includes refid="digital__packet__sink_8h" local="no">digital_packet_sink.h</includes>
@@ -225,9 +225,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__packet__sink_1adc329c2e1751b5a35a6e3f1b830748da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="digital__packet__sink_8h_1a71a5f2f802ded6ec7d9701de28fd5b67" kindref="member">digital_packet_sink_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_packet_sink_sptr digital_make_packet_sink</definition>
+      <memberdef kind="friend" id="classdigital__packet__sink_1a629303d0843d0ce6a44ffadd1cd85b5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend DIGITAL_API <ref refid="digital__packet__sink_8h_1a71a5f2f802ded6ec7d9701de28fd5b67" kindref="member">digital_packet_sink_sptr</ref></type>
+        <definition>DIGITAL_API digital_packet_sink_sptr digital_make_packet_sink</definition>
         <argsstring>(const std::vector&lt; unsigned char &gt; &amp;sync_vector, gr_msg_queue_sptr target_queue, int threshold)</argsstring>
         <name>digital_make_packet_sink</name>
         <param>
@@ -458,7 +458,7 @@
       <member refid="classdigital__packet__sink_1ae3ba7a77e49072a94debf47cd5eb25d2" prot="private" virt="non-virtual"><scope>digital_packet_sink</scope><name>d_sync_vector</name></member>
       <member refid="classdigital__packet__sink_1a0c90b85d8cd367b3d39dcfed88de5594" prot="private" virt="non-virtual"><scope>digital_packet_sink</scope><name>d_target_queue</name></member>
       <member refid="classdigital__packet__sink_1a9dfe5093a5ea4018660ce6db946926a3" prot="private" virt="non-virtual"><scope>digital_packet_sink</scope><name>d_threshold</name></member>
-      <member refid="classdigital__packet__sink_1adc329c2e1751b5a35a6e3f1b830748da" prot="private" virt="non-virtual"><scope>digital_packet_sink</scope><name>digital_make_packet_sink</name></member>
+      <member refid="classdigital__packet__sink_1a629303d0843d0ce6a44ffadd1cd85b5a" prot="private" virt="non-virtual"><scope>digital_packet_sink</scope><name>digital_make_packet_sink</name></member>
       <member refid="classdigital__packet__sink_1ad2a3e2217c5b7e32c367aeb698dbc087" prot="protected" virt="non-virtual"><scope>digital_packet_sink</scope><name>digital_packet_sink</name></member>
       <member refid="classdigital__packet__sink_1ad80bd30646af6a8a20ac76864b190c57" prot="protected" virt="non-virtual"><scope>digital_packet_sink</scope><name>enter_have_header</name></member>
       <member refid="classdigital__packet__sink_1a9c296570e79b8b0332d22bfbe8372c07" prot="protected" virt="non-virtual"><scope>digital_packet_sink</scope><name>enter_have_sync</name></member>

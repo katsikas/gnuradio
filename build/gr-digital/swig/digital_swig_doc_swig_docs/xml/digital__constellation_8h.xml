@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="digital__constellation_8h" kind="file">
     <compoundname>digital_constellation.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -236,9 +236,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__constellation_8h_1a209b93041573f0df5ede18990be96644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1a03bfad66a552c2538cea97c762e6bf09" kindref="member">digital_constellation_calcdist_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_calcdist_sptr digital_make_constellation_calcdist</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1abf3c859675e5255869fae0ad8e34a2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1a03bfad66a552c2538cea97c762e6bf09" kindref="member">digital_constellation_calcdist_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_calcdist_sptr digital_make_constellation_calcdist</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int dimensionality)</argsstring>
         <name>digital_make_constellation_calcdist</name>
         <param>
@@ -265,9 +265,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="142"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1a3162938b8e8cf3f3c3d3d1384dbad4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1a5d80470eb70375781268719085f2984f" kindref="member">digital_constellation_rect_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_rect_sptr digital_make_constellation_rect</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1ae267ac6d2bb63850f548616be108a7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1a5d80470eb70375781268719085f2984f" kindref="member">digital_constellation_rect_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_rect_sptr digital_make_constellation_rect</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int real_sectors, unsigned int imag_sectors, float width_real_sectors, float width_imag_sectors)</argsstring>
         <name>digital_make_constellation_rect</name>
         <param>
@@ -306,9 +306,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="238"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1aa524d1613612247a553d2ec9a88abed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1aaa2f64eb746fe664d44c10f522017047" kindref="member">digital_constellation_psk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_psk_sptr digital_make_constellation_psk</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1a4fbb16130d249865f8a463dad0181a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1aaa2f64eb746fe664d44c10f522017047" kindref="member">digital_constellation_psk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_psk_sptr digital_make_constellation_psk</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int n_sectors)</argsstring>
         <name>digital_make_constellation_psk</name>
         <param>
@@ -331,9 +331,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="288"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1ac039cd474defc354e2915133dd4139e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1a1a797b17d6f3ad5bec1110f36493dd03" kindref="member">digital_constellation_bpsk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_bpsk_sptr digital_make_constellation_bpsk</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1a4f79cded8a760b6f9a20b8eabd1531d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1a1a797b17d6f3ad5bec1110f36493dd03" kindref="member">digital_constellation_bpsk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_bpsk_sptr digital_make_constellation_bpsk</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_bpsk</name>
         <briefdescription>
@@ -344,9 +344,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="338"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1aa3ca2d87fb45f0f84425b0c5b21a5353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1ac3bf8292e770057fac063a6e3b3ff7b3" kindref="member">digital_constellation_qpsk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_qpsk_sptr digital_make_constellation_qpsk</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1a53154e9a1a284cf24be90887fedb1121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1ac3bf8292e770057fac063a6e3b3ff7b3" kindref="member">digital_constellation_qpsk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_qpsk_sptr digital_make_constellation_qpsk</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_qpsk</name>
         <briefdescription>
@@ -357,9 +357,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="369"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1aa80e3ecf34f7778a1ae1fe18c51694ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1a92c8eb3cfd35082efb008a22dc85bdbc" kindref="member">digital_constellation_dqpsk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_dqpsk_sptr digital_make_constellation_dqpsk</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1ae6e2d07e4940cc4854eec7288bc936aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1a92c8eb3cfd35082efb008a22dc85bdbc" kindref="member">digital_constellation_dqpsk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_dqpsk_sptr digital_make_constellation_dqpsk</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_dqpsk</name>
         <briefdescription>
@@ -370,9 +370,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="400"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1a5cc7de266e267e89492e112bcdd000f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1a2bcf913829aee3c1e46671ffb61bbc47" kindref="member">digital_constellation_8psk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_8psk_sptr digital_make_constellation_8psk</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1a7cefc9e57ed7cab06beadbf0c2ceed39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1a2bcf913829aee3c1e46671ffb61bbc47" kindref="member">digital_constellation_8psk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_8psk_sptr digital_make_constellation_8psk</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_8psk</name>
         <briefdescription>
@@ -383,9 +383,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="431"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1a4398ed89c14f4f06e476d0746dc96c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_dvbt_qpsk_sptr digital_make_constellation_dvbt_qpsk</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1a0323dbe6821f066353823fa3b13a3c4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_dvbt_qpsk_sptr digital_make_constellation_dvbt_qpsk</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_dvbt_qpsk</name>
         <briefdescription>
@@ -396,9 +396,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="462"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1aa8a64d7cdea17a2aa856434fa83b4a65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1af6f691257844489b53384372871d85fa" kindref="member">digital_constellation_16qam_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_16qam_sptr digital_make_constellation_16qam</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1a411961664165c8cee20103a854da328d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1af6f691257844489b53384372871d85fa" kindref="member">digital_constellation_16qam_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_16qam_sptr digital_make_constellation_16qam</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int real_sectors, unsigned int imag_sectors, float width_real_sectors, float width_imag_sectors)</argsstring>
         <name>digital_make_constellation_16qam</name>
         <param>
@@ -437,9 +437,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation.h" line="498"/>
       </memberdef>
-      <memberdef kind="function" id="digital__constellation_8h_1aa33ef0682cfc5675f13c1cbfeb737bfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1a6c261d9f15051f2bffde7fed42a3bfb5" kindref="member">digital_constellation_64qam_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_64qam_sptr digital_make_constellation_64qam</definition>
+      <memberdef kind="function" id="digital__constellation_8h_1abb226a2d3e7c9af0cc303c723ced946a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__constellation_8h_1a6c261d9f15051f2bffde7fed42a3bfb5" kindref="member">digital_constellation_64qam_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_64qam_sptr digital_make_constellation_64qam</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int real_sectors, unsigned int imag_sectors, float width_real_sectors, float width_imag_sectors)</argsstring>
         <name>digital_make_constellation_64qam</name>
         <param>
@@ -591,7 +591,7 @@
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a03bfad66a552c2538cea97c762e6bf09" kindref="member">digital_constellation_calcdist_sptr</ref></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><ref refid="digital__constellation_8h_1a209b93041573f0df5ede18990be96644" kindref="member">digital_make_constellation_calcdist</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="digital__constellation_8h_1abf3c859675e5255869fae0ad8e34a2db" kindref="member">digital_make_constellation_calcdist</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/><ref refid="classdigital__constellation_1a75727d03f76f9db555fde2097622dfde" kindref="member" tooltip="Returns the encoding to apply before differential encoding.">pre_diff_code</ref>,</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a0aeee8d95f70809b6c43791af32bc180" kindref="member" tooltip="Returns the order of rotational symmetry.">rotational_symmetry</ref>,</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a4291cb1f0d7c90923b69511f5ff1d46d" kindref="member" tooltip="Returns the number of complex numbers in a single symbol.">dimensionality</ref>);</highlight></codeline>
@@ -611,7 +611,7 @@
 <codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a03bfad66a552c2538cea97c762e6bf09" kindref="member">digital_constellation_calcdist_sptr</ref></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a209b93041573f0df5ede18990be96644" kindref="member">digital_make_constellation_calcdist</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1abf3c859675e5255869fae0ad8e34a2db" kindref="member">digital_make_constellation_calcdist</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation);</highlight></codeline>
 <codeline lineno="167"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight></codeline>
@@ -653,7 +653,7 @@
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a5d80470eb70375781268719085f2984f" kindref="member">digital_constellation_rect_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="232"><highlight class="normal"><ref refid="digital__constellation_8h_1a3162938b8e8cf3f3c3d3d1384dbad4b1" kindref="member">digital_make_constellation_rect</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><ref refid="digital__constellation_8h_1ae267ac6d2bb63850f548616be108a7c6" kindref="member">digital_make_constellation_rect</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/><ref refid="classdigital__constellation_1a75727d03f76f9db555fde2097622dfde" kindref="member" tooltip="Returns the encoding to apply before differential encoding.">pre_diff_code</ref>,</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a0aeee8d95f70809b6c43791af32bc180" kindref="member" tooltip="Returns the order of rotational symmetry.">rotational_symmetry</ref>,</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>real_sectors,</highlight></codeline>
@@ -687,7 +687,7 @@
 <codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d_width_imag_sectors;</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a5d80470eb70375781268719085f2984f" kindref="member">digital_constellation_rect_sptr</ref></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a3162938b8e8cf3f3c3d3d1384dbad4b1" kindref="member">digital_make_constellation_rect</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1ae267ac6d2bb63850f548616be108a7c6" kindref="member">digital_make_constellation_rect</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/>pre_diff_code,</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rotational_symmetry,</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>real_sectors,</highlight></codeline>
@@ -707,7 +707,7 @@
 <codeline lineno="283"><highlight class="normal"></highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1aaa2f64eb746fe664d44c10f522017047" kindref="member">digital_constellation_psk_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="286"><highlight class="normal"><ref refid="digital__constellation_8h_1aa524d1613612247a553d2ec9a88abed2" kindref="member">digital_make_constellation_psk</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><ref refid="digital__constellation_8h_1a4fbb16130d249865f8a463dad0181a7c" kindref="member">digital_make_constellation_psk</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/><ref refid="classdigital__constellation_1a75727d03f76f9db555fde2097622dfde" kindref="member" tooltip="Returns the encoding to apply before differential encoding.">pre_diff_code</ref>,</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation__sector_1a3b49aeffb819ef51d4da9412d7e36505" kindref="member">n_sectors</ref>);</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight></codeline>
@@ -728,7 +728,7 @@
 <codeline lineno="316"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"></highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1aaa2f64eb746fe664d44c10f522017047" kindref="member">digital_constellation_psk_sptr</ref></highlight></codeline>
-<codeline lineno="319"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1aa524d1613612247a553d2ec9a88abed2" kindref="member">digital_make_constellation_psk</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a4fbb16130d249865f8a463dad0181a7c" kindref="member">digital_make_constellation_psk</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/>pre_diff_code,</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_sectors);</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight></codeline>
@@ -747,7 +747,7 @@
 <codeline lineno="335"><highlight class="normal"></highlight></codeline>
 <codeline lineno="336"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="337"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a1a797b17d6f3ad5bec1110f36493dd03" kindref="member">digital_constellation_bpsk_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="338"><highlight class="normal"><ref refid="digital__constellation_8h_1ac039cd474defc354e2915133dd4139e0" kindref="member">digital_make_constellation_bpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><ref refid="digital__constellation_8h_1a4f79cded8a760b6f9a20b8eabd1531d9" kindref="member">digital_make_constellation_bpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"></highlight></codeline>
 <codeline lineno="344" refid="classdigital__constellation__bpsk" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__constellation__bpsk" kindref="compound" tooltip="Digital constellation for BPSK.">digital_constellation_bpsk</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation" kindref="compound" tooltip="An abstracted constellation objectThe constellation objects hold the necessary information to pass ar...">digital_constellation</ref></highlight></codeline>
 <codeline lineno="345"><highlight class="normal">{</highlight></codeline>
@@ -757,7 +757,7 @@
 <codeline lineno="349"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a65eb61507bbab278a7fb050e725a28cd" kindref="member" tooltip="Returns the constellation point that matches best.">decision_maker</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gr_complex<sp/>*sample);</highlight></codeline>
 <codeline lineno="350"><highlight class="normal"></highlight></codeline>
 <codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a1a797b17d6f3ad5bec1110f36493dd03" kindref="member">digital_constellation_bpsk_sptr</ref></highlight></codeline>
-<codeline lineno="352"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1ac039cd474defc354e2915133dd4139e0" kindref="member">digital_make_constellation_bpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a4f79cded8a760b6f9a20b8eabd1531d9" kindref="member">digital_make_constellation_bpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="354"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="355"><highlight class="normal"></highlight></codeline>
@@ -774,7 +774,7 @@
 <codeline lineno="366"><highlight class="normal"></highlight></codeline>
 <codeline lineno="367"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="368"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1ac3bf8292e770057fac063a6e3b3ff7b3" kindref="member">digital_constellation_qpsk_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="369"><highlight class="normal"><ref refid="digital__constellation_8h_1aa3ca2d87fb45f0f84425b0c5b21a5353" kindref="member">digital_make_constellation_qpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><ref refid="digital__constellation_8h_1a53154e9a1a284cf24be90887fedb1121" kindref="member">digital_make_constellation_qpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="370"><highlight class="normal"></highlight></codeline>
 <codeline lineno="375" refid="classdigital__constellation__qpsk" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__constellation__qpsk" kindref="compound" tooltip="Digital constellation for QPSK.">digital_constellation_qpsk</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation" kindref="compound" tooltip="An abstracted constellation objectThe constellation objects hold the necessary information to pass ar...">digital_constellation</ref></highlight></codeline>
 <codeline lineno="376"><highlight class="normal">{</highlight></codeline>
@@ -784,7 +784,7 @@
 <codeline lineno="380"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a65eb61507bbab278a7fb050e725a28cd" kindref="member" tooltip="Returns the constellation point that matches best.">decision_maker</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gr_complex<sp/>*sample);</highlight></codeline>
 <codeline lineno="381"><highlight class="normal"></highlight></codeline>
 <codeline lineno="382"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1ac3bf8292e770057fac063a6e3b3ff7b3" kindref="member">digital_constellation_qpsk_sptr</ref></highlight></codeline>
-<codeline lineno="383"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1aa3ca2d87fb45f0f84425b0c5b21a5353" kindref="member">digital_make_constellation_qpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a53154e9a1a284cf24be90887fedb1121" kindref="member">digital_make_constellation_qpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="384"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="385"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="386"><highlight class="normal"></highlight></codeline>
@@ -801,7 +801,7 @@
 <codeline lineno="397"><highlight class="normal"></highlight></codeline>
 <codeline lineno="398"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="399"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a92c8eb3cfd35082efb008a22dc85bdbc" kindref="member">digital_constellation_dqpsk_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="400"><highlight class="normal"><ref refid="digital__constellation_8h_1aa80e3ecf34f7778a1ae1fe18c51694ea" kindref="member">digital_make_constellation_dqpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><ref refid="digital__constellation_8h_1ae6e2d07e4940cc4854eec7288bc936aa" kindref="member">digital_make_constellation_dqpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="401"><highlight class="normal"></highlight></codeline>
 <codeline lineno="406" refid="classdigital__constellation__dqpsk" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__constellation__dqpsk" kindref="compound" tooltip="Digital constellation for DQPSK.">digital_constellation_dqpsk</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation" kindref="compound" tooltip="An abstracted constellation objectThe constellation objects hold the necessary information to pass ar...">digital_constellation</ref></highlight></codeline>
 <codeline lineno="407"><highlight class="normal">{</highlight></codeline>
@@ -811,7 +811,7 @@
 <codeline lineno="411"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a65eb61507bbab278a7fb050e725a28cd" kindref="member" tooltip="Returns the constellation point that matches best.">decision_maker</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gr_complex<sp/>*sample);</highlight></codeline>
 <codeline lineno="412"><highlight class="normal"></highlight></codeline>
 <codeline lineno="413"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a92c8eb3cfd35082efb008a22dc85bdbc" kindref="member">digital_constellation_dqpsk_sptr</ref></highlight></codeline>
-<codeline lineno="414"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1aa80e3ecf34f7778a1ae1fe18c51694ea" kindref="member">digital_make_constellation_dqpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1ae6e2d07e4940cc4854eec7288bc936aa" kindref="member">digital_make_constellation_dqpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="415"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="416"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="417"><highlight class="normal"></highlight></codeline>
@@ -828,7 +828,7 @@
 <codeline lineno="428"><highlight class="normal"></highlight></codeline>
 <codeline lineno="429"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="430"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a2bcf913829aee3c1e46671ffb61bbc47" kindref="member">digital_constellation_8psk_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="431"><highlight class="normal"><ref refid="digital__constellation_8h_1a5cc7de266e267e89492e112bcdd000f5" kindref="member">digital_make_constellation_8psk</ref><sp/>();</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><ref refid="digital__constellation_8h_1a7cefc9e57ed7cab06beadbf0c2ceed39" kindref="member">digital_make_constellation_8psk</ref><sp/>();</highlight></codeline>
 <codeline lineno="432"><highlight class="normal"></highlight></codeline>
 <codeline lineno="437" refid="classdigital__constellation__8psk" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__constellation__8psk" kindref="compound" tooltip="Digital constellation for 8PSK.">digital_constellation_8psk</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation" kindref="compound" tooltip="An abstracted constellation objectThe constellation objects hold the necessary information to pass ar...">digital_constellation</ref></highlight></codeline>
 <codeline lineno="438"><highlight class="normal">{</highlight></codeline>
@@ -838,7 +838,7 @@
 <codeline lineno="442"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a65eb61507bbab278a7fb050e725a28cd" kindref="member" tooltip="Returns the constellation point that matches best.">decision_maker</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gr_complex<sp/>*sample);</highlight></codeline>
 <codeline lineno="443"><highlight class="normal"></highlight></codeline>
 <codeline lineno="444"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a2bcf913829aee3c1e46671ffb61bbc47" kindref="member">digital_constellation_8psk_sptr</ref></highlight></codeline>
-<codeline lineno="445"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a5cc7de266e267e89492e112bcdd000f5" kindref="member">digital_make_constellation_8psk</ref><sp/>();</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a7cefc9e57ed7cab06beadbf0c2ceed39" kindref="member">digital_make_constellation_8psk</ref><sp/>();</highlight></codeline>
 <codeline lineno="446"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="447"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="448"><highlight class="normal"></highlight></codeline>
@@ -855,7 +855,7 @@
 <codeline lineno="459"><highlight class="normal"></highlight></codeline>
 <codeline lineno="460"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="461"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="462"><highlight class="normal"><ref refid="digital__constellation_8h_1a4398ed89c14f4f06e476d0746dc96c83" kindref="member">digital_make_constellation_dvbt_qpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><ref refid="digital__constellation_8h_1a0323dbe6821f066353823fa3b13a3c4c" kindref="member">digital_make_constellation_dvbt_qpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="463"><highlight class="normal"></highlight></codeline>
 <codeline lineno="468" refid="classdigital__constellation__dvbt__qpsk" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__constellation__dvbt__qpsk" kindref="compound" tooltip="Digital constellation for QPSK.">digital_constellation_dvbt_qpsk</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation" kindref="compound" tooltip="An abstracted constellation objectThe constellation objects hold the necessary information to pass ar...">digital_constellation</ref></highlight></codeline>
 <codeline lineno="469"><highlight class="normal">{</highlight></codeline>
@@ -865,7 +865,7 @@
 <codeline lineno="473"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a65eb61507bbab278a7fb050e725a28cd" kindref="member" tooltip="Returns the constellation point that matches best.">decision_maker</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gr_complex<sp/>*sample);</highlight></codeline>
 <codeline lineno="474"><highlight class="normal"></highlight></codeline>
 <codeline lineno="475"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1abcc21761a34944d7e21b35e14b86b853" kindref="member">digital_constellation_dvbt_qpsk_sptr</ref></highlight></codeline>
-<codeline lineno="476"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a4398ed89c14f4f06e476d0746dc96c83" kindref="member">digital_make_constellation_dvbt_qpsk</ref><sp/>();</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a0323dbe6821f066353823fa3b13a3c4c" kindref="member">digital_make_constellation_dvbt_qpsk</ref><sp/>();</highlight></codeline>
 <codeline lineno="477"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="478"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="479"><highlight class="normal"></highlight></codeline>
@@ -881,7 +881,7 @@
 <codeline lineno="489"><highlight class="normal"></highlight></codeline>
 <codeline lineno="490"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="491"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1af6f691257844489b53384372871d85fa" kindref="member">digital_constellation_16qam_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="492"><highlight class="normal"><ref refid="digital__constellation_8h_1aa8a64d7cdea17a2aa856434fa83b4a65" kindref="member">digital_make_constellation_16qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><ref refid="digital__constellation_8h_1a411961664165c8cee20103a854da328d" kindref="member">digital_make_constellation_16qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/><ref refid="classdigital__constellation_1a75727d03f76f9db555fde2097622dfde" kindref="member" tooltip="Returns the encoding to apply before differential encoding.">pre_diff_code</ref>,</highlight></codeline>
 <codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a0aeee8d95f70809b6c43791af32bc180" kindref="member" tooltip="Returns the order of rotational symmetry.">rotational_symmetry</ref>,</highlight></codeline>
 <codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>real_sectors,</highlight></codeline>
@@ -918,7 +918,7 @@
 <codeline lineno="526"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d_width_imag_sectors;</highlight></codeline>
 <codeline lineno="527"><highlight class="normal"></highlight></codeline>
 <codeline lineno="528"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1af6f691257844489b53384372871d85fa" kindref="member">digital_constellation_16qam_sptr</ref></highlight></codeline>
-<codeline lineno="529"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1aa8a64d7cdea17a2aa856434fa83b4a65" kindref="member">digital_make_constellation_16qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1a411961664165c8cee20103a854da328d" kindref="member">digital_make_constellation_16qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/>pre_diff_code,</highlight></codeline>
 <codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rotational_symmetry,</highlight></codeline>
 <codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>real_sectors,</highlight></codeline>
@@ -939,7 +939,7 @@
 <codeline lineno="547"><highlight class="normal"></highlight></codeline>
 <codeline lineno="548"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="549"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a6c261d9f15051f2bffde7fed42a3bfb5" kindref="member">digital_constellation_64qam_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="550"><highlight class="normal"><ref refid="digital__constellation_8h_1aa33ef0682cfc5675f13c1cbfeb737bfb" kindref="member">digital_make_constellation_64qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><ref refid="digital__constellation_8h_1abb226a2d3e7c9af0cc303c723ced946a" kindref="member">digital_make_constellation_64qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/><ref refid="classdigital__constellation_1a75727d03f76f9db555fde2097622dfde" kindref="member" tooltip="Returns the encoding to apply before differential encoding.">pre_diff_code</ref>,</highlight></codeline>
 <codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__constellation_1a0aeee8d95f70809b6c43791af32bc180" kindref="member" tooltip="Returns the order of rotational symmetry.">rotational_symmetry</ref>,</highlight></codeline>
 <codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>real_sectors,</highlight></codeline>
@@ -976,7 +976,7 @@
 <codeline lineno="584"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d_width_imag_sectors;</highlight></codeline>
 <codeline lineno="585"><highlight class="normal"></highlight></codeline>
 <codeline lineno="586"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__constellation_8h_1a6c261d9f15051f2bffde7fed42a3bfb5" kindref="member">digital_constellation_64qam_sptr</ref></highlight></codeline>
-<codeline lineno="587"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1aa33ef0682cfc5675f13c1cbfeb737bfb" kindref="member">digital_make_constellation_64qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><ref refid="digital__constellation_8h_1abb226a2d3e7c9af0cc303c723ced946a" kindref="member">digital_make_constellation_64qam</ref><sp/>(std::vector&lt;gr_complex&gt;<sp/>constellation,</highlight></codeline>
 <codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/>pre_diff_code,</highlight></codeline>
 <codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rotational_symmetry,</highlight></codeline>
 <codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>real_sectors,</highlight></codeline>

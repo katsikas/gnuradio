@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__goertzel__fc" kind="class" prot="public">
     <compoundname>gr_goertzel_fc</compoundname>
     <basecompoundref refid="classgr__sync__decimator" prot="public" virt="non-virtual">gr_sync_decimator</basecompoundref>
@@ -60,7 +60,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__goertzel__fc_1abbe77cbe5fc5123f75ebfba5d969e2c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_goertzel_fc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_goertzel_fc_sptr</ref></type>
         <definition>GR_CORE_API gr_goertzel_fc_sptr gr_make_goertzel_fc</definition>
         <argsstring>(int rate, int len, float freq)</argsstring>
         <name>gr_make_goertzel_fc</name>
@@ -140,7 +140,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_goertzel_fc.h" line="54"/>
       </memberdef>
       <memberdef kind="function" id="classgr__goertzel__fc_1a1ec345c1b2966377ae5d7cf466b30b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_goertzel_fc::set_freq</definition>
         <argsstring>(float freq)</argsstring>
         <name>set_freq</name>
@@ -157,7 +157,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_goertzel_fc.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classgr__goertzel__fc_1a16f19ba100f3ac8515d5499a49f66975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_goertzel_fc::set_rate</definition>
         <argsstring>(int rate)</argsstring>
         <name>set_rate</name>
@@ -179,112 +179,112 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4026">
+      <node id="8983">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4027" relation="public-inheritance">
+        <childnode refid="8984" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4023">
+      <node id="8980">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4024" relation="public-inheritance">
+        <childnode refid="8981" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4022">
+      <node id="8979">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="4023" relation="public-inheritance">
+        <childnode refid="8980" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4024">
+      <node id="8981">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4025" relation="public-inheritance">
+        <childnode refid="8982" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4021">
+      <node id="8978">
         <label>gr_goertzel_fc</label>
         <link refid="classgr__goertzel__fc"/>
-        <childnode refid="4022" relation="public-inheritance">
+        <childnode refid="8979" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4027">
+      <node id="8984">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4025">
+      <node id="8982">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4026" relation="public-inheritance">
+        <childnode refid="8983" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4033">
+      <node id="8990">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4034" relation="public-inheritance">
+        <childnode refid="8991" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4030">
+      <node id="8987">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4031" relation="public-inheritance">
+        <childnode refid="8988" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4029">
+      <node id="8986">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="4030" relation="public-inheritance">
+        <childnode refid="8987" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4031">
+      <node id="8988">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4032" relation="public-inheritance">
+        <childnode refid="8989" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4028">
+      <node id="8985">
         <label>gr_goertzel_fc</label>
         <link refid="classgr__goertzel__fc"/>
-        <childnode refid="4029" relation="public-inheritance">
+        <childnode refid="8986" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4035">
+      <node id="8992">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4036" relation="usage">
+        <childnode refid="8993" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4038">
+      <node id="8995">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4034">
+      <node id="8991">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4036">
+      <node id="8993">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4032">
+      <node id="8989">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4033" relation="public-inheritance">
+        <childnode refid="8990" relation="public-inheritance">
         </childnode>
-        <childnode refid="4035" relation="usage">
+        <childnode refid="8992" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4037" relation="usage">
+        <childnode refid="8994" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4037">
+      <node id="8994">
         <label>std::string</label>
-        <childnode refid="4038" relation="public-inheritance">
+        <childnode refid="8995" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

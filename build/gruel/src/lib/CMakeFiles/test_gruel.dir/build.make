@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,6 +30,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -167,12 +170,12 @@ gruel/src/lib/test_gruel: gruel/src/lib/CMakeFiles/test_gruel.dir/pmt/qa_pmt_pri
 gruel/src/lib/test_gruel: gruel/src/lib/CMakeFiles/test_gruel.dir/pmt/qa_pmt.cc.o
 gruel/src/lib/test_gruel: gruel/src/lib/CMakeFiles/test_gruel.dir/test_gruel.cc.o
 gruel/src/lib/test_gruel: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gruel/src/lib/test_gruel: /usr/lib/libcppunit.so
-gruel/src/lib/test_gruel: /usr/lib/libboost_date_time-mt.so
-gruel/src/lib/test_gruel: /usr/lib/libboost_program_options-mt.so
-gruel/src/lib/test_gruel: /usr/lib/libboost_filesystem-mt.so
-gruel/src/lib/test_gruel: /usr/lib/libboost_system-mt.so
-gruel/src/lib/test_gruel: /usr/lib/libboost_thread-mt.so
+gruel/src/lib/test_gruel: /usr/lib64/libcppunit.so
+gruel/src/lib/test_gruel: /usr/lib64/libboost_date_time-mt.so
+gruel/src/lib/test_gruel: /usr/lib64/libboost_program_options-mt.so
+gruel/src/lib/test_gruel: /usr/lib64/libboost_filesystem-mt.so
+gruel/src/lib/test_gruel: /usr/lib64/libboost_system-mt.so
+gruel/src/lib/test_gruel: /usr/lib64/libboost_thread-mt.so
 gruel/src/lib/test_gruel: gruel/src/lib/CMakeFiles/test_gruel.dir/build.make
 gruel/src/lib/test_gruel: gruel/src/lib/CMakeFiles/test_gruel.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test_gruel"

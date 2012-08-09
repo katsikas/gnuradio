@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__top__block" kind="class" prot="public">
     <compoundname>gr_top_block</compoundname>
     <basecompoundref refid="classgr__hier__block2" prot="public" virt="non-virtual">gr_hier_block2</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__top__block_1a692327d9e0d7d84ff82fbff3b52d0a88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_top_block_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_top_block_sptr</ref></type>
         <definition>GR_CORE_API gr_top_block_sptr gr_make_top_block</definition>
         <argsstring>(const std::string &amp;name)</argsstring>
         <name>gr_make_top_block</name>
@@ -72,7 +72,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="49"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1ad5d3d87d373116a181b6e8fb504d71c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_top_block::run</definition>
         <argsstring>(int max_noutput_items=100000)</argsstring>
         <name>run</name>
@@ -98,7 +98,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="61"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1aca6ccd03de6aa2b3faa607a789c99c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_top_block::start</definition>
         <argsstring>(int max_noutput_items=100000)</argsstring>
         <name>start</name>
@@ -124,7 +124,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="74"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1a852891aedd9729fc8d3da1044656f196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_top_block::stop</definition>
         <argsstring>()</argsstring>
         <name>stop</name>
@@ -137,7 +137,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="81"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1a1f969afd71e0c04afb44e78dc80b0bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_top_block::wait</definition>
         <argsstring>()</argsstring>
         <name>wait</name>
@@ -150,7 +150,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="90"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1a9f3a470e46e83e4863d3713d1939a965" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_top_block::lock</definition>
         <argsstring>()</argsstring>
         <name>lock</name>
@@ -164,7 +164,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="101"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1a96784ae9c45d0933b9af53eba881eebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_top_block::unlock</definition>
         <argsstring>()</argsstring>
         <name>unlock</name>
@@ -178,7 +178,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="112"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1ab6bd46945c9117fb343f4c293cf23990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_top_block::dump</definition>
         <argsstring>()</argsstring>
         <name>dump</name>
@@ -204,7 +204,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_top_block.h" line="120"/>
       </memberdef>
       <memberdef kind="function" id="classgr__top__block_1a8740634cd4065400167e074f8b63786a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_top_block::set_max_noutput_items</definition>
         <argsstring>(int nmax)</argsstring>
         <name>set_max_noutput_items</name>
@@ -239,88 +239,88 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6007">
+      <node id="11227">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6008" relation="public-inheritance">
+        <childnode refid="11228" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6005">
+      <node id="11225">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="6006" relation="public-inheritance">
+        <childnode refid="11226" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6008">
+      <node id="11228">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6004">
+      <node id="11224">
         <label>gr_top_block</label>
         <link refid="classgr__top__block"/>
-        <childnode refid="6005" relation="public-inheritance">
+        <childnode refid="11225" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6006">
+      <node id="11226">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6007" relation="public-inheritance">
+        <childnode refid="11227" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6012">
+      <node id="11232">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6013" relation="public-inheritance">
+        <childnode refid="11233" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6010">
+      <node id="11230">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="6011" relation="public-inheritance">
+        <childnode refid="11231" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6014">
+      <node id="11234">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6015" relation="usage">
+        <childnode refid="11235" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6017">
+      <node id="11237">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6013">
+      <node id="11233">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6015">
+      <node id="11235">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6009">
+      <node id="11229">
         <label>gr_top_block</label>
         <link refid="classgr__top__block"/>
-        <childnode refid="6010" relation="public-inheritance">
+        <childnode refid="11230" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6011">
+      <node id="11231">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6012" relation="public-inheritance">
+        <childnode refid="11232" relation="public-inheritance">
         </childnode>
-        <childnode refid="6014" relation="usage">
+        <childnode refid="11234" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6016" relation="usage">
+        <childnode refid="11236" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6016">
+      <node id="11236">
         <label>std::string</label>
-        <childnode refid="6017" relation="public-inheritance">
+        <childnode refid="11237" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

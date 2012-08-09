@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbt__pad" kind="class" prot="public">
     <compoundname>dvbt_pad</compoundname>
     <basecompoundref refid="classgr__sync__decimator" prot="public" virt="non-virtual">gr_sync_decimator</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__pad_1a3a657c8db9ea6f1ca4b5d69f87861ca4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_pad_sptr</ref></type>
+        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_pad_sptr</ref></type>
         <definition>DVBT_API dvbt_pad_sptr dvbt_make_pad</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_pad</name>
@@ -36,7 +36,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classdvbt__pad_1a40b68e3ebedce9c16f81dc94b2d33f67" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbt_pad::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -99,7 +99,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h" line="54"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbt_pad::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -117,112 +117,112 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1800">
+      <node id="6168">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1801" relation="public-inheritance">
+        <childnode refid="6169" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1797">
+      <node id="6165">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1798" relation="public-inheritance">
+        <childnode refid="6166" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1796">
+      <node id="6164">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="1797" relation="public-inheritance">
+        <childnode refid="6165" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1798">
+      <node id="6166">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1799" relation="public-inheritance">
+        <childnode refid="6167" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1801">
+      <node id="6169">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1799">
+      <node id="6167">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1800" relation="public-inheritance">
+        <childnode refid="6168" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1795">
+      <node id="6163">
         <label>dvbt_pad</label>
         <link refid="classdvbt__pad"/>
-        <childnode refid="1796" relation="public-inheritance">
+        <childnode refid="6164" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1807">
+      <node id="6175">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1808" relation="public-inheritance">
+        <childnode refid="6176" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1804">
+      <node id="6172">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1805" relation="public-inheritance">
+        <childnode refid="6173" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1803">
+      <node id="6171">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="1804" relation="public-inheritance">
+        <childnode refid="6172" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1805">
+      <node id="6173">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1806" relation="public-inheritance">
+        <childnode refid="6174" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1809">
+      <node id="6177">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1810" relation="usage">
+        <childnode refid="6178" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1812">
+      <node id="6180">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1808">
+      <node id="6176">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1810">
+      <node id="6178">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1806">
+      <node id="6174">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1807" relation="public-inheritance">
+        <childnode refid="6175" relation="public-inheritance">
         </childnode>
-        <childnode refid="1809" relation="usage">
+        <childnode refid="6177" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1811" relation="usage">
+        <childnode refid="6179" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1802">
+      <node id="6170">
         <label>dvbt_pad</label>
         <link refid="classdvbt__pad"/>
-        <childnode refid="1803" relation="public-inheritance">
+        <childnode refid="6171" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1811">
+      <node id="6179">
         <label>std::string</label>
-        <childnode refid="1812" relation="public-inheritance">
+        <childnode refid="6180" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

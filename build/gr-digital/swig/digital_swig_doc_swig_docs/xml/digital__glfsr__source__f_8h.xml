@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="digital__glfsr__source__f_8h" kind="file">
     <compoundname>digital_glfsr_source_f.h</compoundname>
     <includes refid="digital__api_8h" local="no">digital_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__glfsr__source__f_8h_1ad5757d1a5ac25a00f3391feb95348cde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__glfsr__source__f_8h_1a27c3fec6b70bf5480678e202413dea6f" kindref="member">digital_glfsr_source_f_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_glfsr_source_f_sptr digital_make_glfsr_source_f</definition>
+      <memberdef kind="function" id="digital__glfsr__source__f_8h_1a54db339c2695d44f5d4e2bb55100437f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__glfsr__source__f_8h_1a27c3fec6b70bf5480678e202413dea6f" kindref="member">digital_glfsr_source_f_sptr</ref></type>
+        <definition>DIGITAL_API digital_glfsr_source_f_sptr digital_make_glfsr_source_f</definition>
         <argsstring>(int degree, bool repeat=true, int mask=0, int seed=1)</argsstring>
         <name>digital_make_glfsr_source_f</name>
         <param>
@@ -115,14 +115,14 @@
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_glfsr_source_f&gt;<sp/><ref refid="digital__glfsr__source__f_8h_1a27c3fec6b70bf5480678e202413dea6f" kindref="member">digital_glfsr_source_f_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__glfsr__source__f_8h_1a27c3fec6b70bf5480678e202413dea6f" kindref="member">digital_glfsr_source_f_sptr</ref></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="digital__glfsr__source__f_8h_1ad5757d1a5ac25a00f3391feb95348cde" kindref="member">digital_make_glfsr_source_f</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>degree,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>repeat=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="digital__glfsr__source__f_8h_1a54db339c2695d44f5d4e2bb55100437f" kindref="member">digital_make_glfsr_source_f</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>degree,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>repeat=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdigital__glfsr__source__f_1a39b8f8871e7f28cae742fe5b1d6d7738" kindref="member">mask</ref>=0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed=1);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50" refid="classdigital__glfsr__source__f" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__glfsr__source__f" kindref="compound" tooltip="Galois LFSR pseudo-random source generating float outputs -1.0 - 1.0.">digital_glfsr_source_f</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__glfsr__source__f_8h_1a27c3fec6b70bf5480678e202413dea6f" kindref="member">digital_glfsr_source_f_sptr</ref></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__glfsr__source__f_8h_1ad5757d1a5ac25a00f3391feb95348cde" kindref="member">digital_make_glfsr_source_f</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>degree,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>repeat,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="digital__glfsr__source__f_8h_1a54db339c2695d44f5d4e2bb55100437f" kindref="member">digital_make_glfsr_source_f</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>degree,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>repeat,</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/>gri_glfsr<sp/>*d_glfsr;</highlight></codeline>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsc__bit__timing__loop" kind="class" prot="public">
     <compoundname>atsc_bit_timing_loop</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -73,7 +73,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__bit__timing__loop_1abf4c176537c5c9472ec57e06f6bbcd77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_bit_timing_loop_sptr</ref></type>
+        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_bit_timing_loop_sptr</ref></type>
         <definition>ATSC_API atsc_bit_timing_loop_sptr atsc_make_bit_timing_loop</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_bit_timing_loop</name>
@@ -128,7 +128,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1ab498a7e74189eae2c749d4bd67d28d7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_bit_timing_loop::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -154,7 +154,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="57" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a49cf7f38cd3b63f255f43d300bf4cfe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_bit_timing_loop::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -251,7 +251,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="64"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a6609142ff4a9c86541eb03b488660b02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_bit_timing_loop::set_mu</definition>
         <argsstring>(double a_mu)</argsstring>
         <name>set_mu</name>
@@ -268,7 +268,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="68" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a7b1125e67697ddde8ff91fe51bbc442e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_bit_timing_loop::set_no_update</definition>
         <argsstring>(bool a_no_update)</argsstring>
         <name>set_no_update</name>
@@ -285,7 +285,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="69" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="69" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1ad9f08a571fadeacdd9c752f0bd0c151a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_bit_timing_loop::set_loop_filter_tap</definition>
         <argsstring>(double tap)</argsstring>
         <name>set_loop_filter_tap</name>
@@ -302,7 +302,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" line="70" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_bit_timing_loop.h" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__bit__timing__loop_1a4c9f26080ab7342049b234bdb32d0f6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_bit_timing_loop::set_timing_rate</definition>
         <argsstring>(double rate)</argsstring>
         <name>set_timing_rate</name>
@@ -324,102 +324,102 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="10">
+      <node id="4350">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11" relation="public-inheritance">
+        <childnode refid="4351" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="4348">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="9" relation="public-inheritance">
+        <childnode refid="4349" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="4351">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="9">
+      <node id="4349">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="4350" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="4347">
         <label>atsc_bit_timing_loop</label>
         <link refid="classatsc__bit__timing__loop"/>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="4348" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="15">
+      <node id="4355">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="16" relation="public-inheritance">
+        <childnode refid="4356" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="4353">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="4354" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="17">
+      <node id="4357">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="18" relation="usage">
+        <childnode refid="4358" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="20">
+      <node id="4360">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="16">
+      <node id="4356">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="22">
+      <node id="4362">
         <label>atsci_interpolator</label>
         <link refid="classatsci__interpolator"/>
       </node>
-      <node id="18">
+      <node id="4358">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="14">
+      <node id="4354">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="4355" relation="public-inheritance">
         </childnode>
-        <childnode refid="17" relation="usage">
+        <childnode refid="4357" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="4359" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="21">
+      <node id="4361">
         <label>atsci_sssr</label>
         <link refid="classatsci__sssr"/>
       </node>
-      <node id="12">
+      <node id="4352">
         <label>atsc_bit_timing_loop</label>
         <link refid="classatsc__bit__timing__loop"/>
-        <childnode refid="13" relation="public-inheritance">
+        <childnode refid="4353" relation="public-inheritance">
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="4361" relation="usage">
           <edgelabel>d_sssr</edgelabel>
         </childnode>
-        <childnode refid="22" relation="usage">
+        <childnode refid="4362" relation="usage">
           <edgelabel>d_interp</edgelabel>
         </childnode>
       </node>
-      <node id="19">
+      <node id="4359">
         <label>std::string</label>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="4360" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

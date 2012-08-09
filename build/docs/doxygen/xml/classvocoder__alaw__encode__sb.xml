@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classvocoder__alaw__encode__sb" kind="class" prot="public">
     <compoundname>vocoder_alaw_encode_sb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="vocoder__alaw__encode__sb_8h" local="no">vocoder_alaw_encode_sb.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classvocoder__alaw__encode__sb_1ad385fea3c18ca01a9dcfec74902b8d85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="vocoder__api_8h_1a8a56d8b0d26cf75df04dcad9064a0aeb" kindref="member">VOCODER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_alaw_encode_sb_sptr</ref></type>
+        <type>friend VOCODER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_alaw_encode_sb_sptr</ref></type>
         <definition>VOCODER_API vocoder_alaw_encode_sb_sptr vocoder_make_alaw_encode_sb</definition>
         <argsstring>()</argsstring>
         <name>vocoder_make_alaw_encode_sb</name>
@@ -80,100 +80,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7616">
+      <node id="12968">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7617" relation="public-inheritance">
+        <childnode refid="12969" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7613">
+      <node id="12965">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7614" relation="public-inheritance">
+        <childnode refid="12966" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7614">
+      <node id="12966">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7615" relation="public-inheritance">
+        <childnode refid="12967" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7617">
+      <node id="12969">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7615">
+      <node id="12967">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7616" relation="public-inheritance">
+        <childnode refid="12968" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7612">
+      <node id="12964">
         <label>vocoder_alaw_encode_sb</label>
         <link refid="classvocoder__alaw__encode__sb"/>
-        <childnode refid="7613" relation="public-inheritance">
+        <childnode refid="12965" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7622">
+      <node id="12974">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7623" relation="public-inheritance">
+        <childnode refid="12975" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7619">
+      <node id="12971">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7620" relation="public-inheritance">
+        <childnode refid="12972" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7620">
+      <node id="12972">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7621" relation="public-inheritance">
+        <childnode refid="12973" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7624">
+      <node id="12976">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7625" relation="usage">
+        <childnode refid="12977" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7627">
+      <node id="12979">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7623">
+      <node id="12975">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7625">
+      <node id="12977">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7621">
+      <node id="12973">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7622" relation="public-inheritance">
+        <childnode refid="12974" relation="public-inheritance">
         </childnode>
-        <childnode refid="7624" relation="usage">
+        <childnode refid="12976" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7626" relation="usage">
+        <childnode refid="12978" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7618">
+      <node id="12970">
         <label>vocoder_alaw_encode_sb</label>
         <link refid="classvocoder__alaw__encode__sb"/>
-        <childnode refid="7619" relation="public-inheritance">
+        <childnode refid="12971" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7626">
+      <node id="12978">
         <label>std::string</label>
-        <childnode refid="7627" relation="public-inheritance">
+        <childnode refid="12979" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

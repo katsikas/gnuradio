@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,6 +30,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -80,12 +83,12 @@ gnuradio-core/src/tests/test_runtime: gnuradio-core/src/tests/CMakeFiles/test_ru
 gnuradio-core/src/tests/test_runtime: gnuradio-core/src/lib/libtest-gnuradio-core.so
 gnuradio-core/src/tests/test_runtime: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
 gnuradio-core/src/tests/test_runtime: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gnuradio-core/src/tests/test_runtime: /usr/lib/libcppunit.so
-gnuradio-core/src/tests/test_runtime: /usr/lib/libboost_date_time-mt.so
-gnuradio-core/src/tests/test_runtime: /usr/lib/libboost_program_options-mt.so
-gnuradio-core/src/tests/test_runtime: /usr/lib/libboost_filesystem-mt.so
-gnuradio-core/src/tests/test_runtime: /usr/lib/libboost_system-mt.so
-gnuradio-core/src/tests/test_runtime: /usr/lib/libboost_thread-mt.so
+gnuradio-core/src/tests/test_runtime: /usr/lib64/libcppunit.so
+gnuradio-core/src/tests/test_runtime: /usr/lib64/libboost_date_time-mt.so
+gnuradio-core/src/tests/test_runtime: /usr/lib64/libboost_program_options-mt.so
+gnuradio-core/src/tests/test_runtime: /usr/lib64/libboost_filesystem-mt.so
+gnuradio-core/src/tests/test_runtime: /usr/lib64/libboost_system-mt.so
+gnuradio-core/src/tests/test_runtime: /usr/lib64/libboost_thread-mt.so
 gnuradio-core/src/tests/test_runtime: gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/build.make
 gnuradio-core/src/tests/test_runtime: gnuradio-core/src/tests/CMakeFiles/test_runtime.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test_runtime"

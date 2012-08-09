@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,6 +30,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -83,43 +86,43 @@ gr-fft/swig/fft_swigPYTHON_wrap.cxx: /usr/include/stdint.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/include/fft/fft_vfc.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_core_api.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/include/fft/api.h
-gr-fft/swig/fft_swigPYTHON_wrap.cxx: gr-fft/swig/fft_swig_doc.i
+gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gruel/src/include/gruel/attributes.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
+gr-fft/swig/fft_swigPYTHON_wrap.cxx: /usr/include/gruel/attributes.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/include/fft/fft_vcc.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio.i
-gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gruel/src/include/gruel/attributes.h
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: gr-fft/swig/fft_swig.tag
 gr-fft/swig/fft_swigPYTHON_wrap.cxx: ../gr-fft/swig/fft_swig.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/katsikas/gnuradio/build/gr-fft/swig && /usr/bin/cmake -E make_directory /home/katsikas/gnuradio/build/gr-fft/swig
-	cd /home/katsikas/gnuradio/build/gr-fft/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module fft_swig -I/home/katsikas/gnuradio/gr-fft/lib -I/home/katsikas/gnuradio/gr-fft/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-fft/swig -I/home/katsikas/gnuradio/build/gr-fft/swig -outdir /home/katsikas/gnuradio/build/gr-fft/swig -c++ -I/home/katsikas/gnuradio/gr-fft/lib -I/home/katsikas/gnuradio/gr-fft/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-fft/swig -I/home/katsikas/gnuradio/build/gr-fft/swig -o /home/katsikas/gnuradio/build/gr-fft/swig/fft_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-fft/swig/fft_swig.i
+	cd /home/katsikas/gnuradio/build/gr-fft/swig && /usr/bin/swig -python -fvirtual -modern -keyword -w511 -module fft_swig -I/home/katsikas/gnuradio/gr-fft/lib -I/home/katsikas/gnuradio/gr-fft/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-fft/swig -I/home/katsikas/gnuradio/build/gr-fft/swig -outdir /home/katsikas/gnuradio/build/gr-fft/swig -c++ -I/home/katsikas/gnuradio/gr-fft/lib -I/home/katsikas/gnuradio/gr-fft/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-fft/swig -I/home/katsikas/gnuradio/build/gr-fft/swig -o /home/katsikas/gnuradio/build/gr-fft/swig/fft_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-fft/swig/fft_swig.i
 
 gr-fft/swig/fft_swig.py: gr-fft/swig/fft_swigPYTHON_wrap.cxx
 
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vfc.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel_fc.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/api.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vcc.h
-gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel.h
-gr-fft/swig/fft_swig_doc.i: gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fft_swig_doc.i"
-	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig_doc.i
-
 gr-fft/swig/fft_swig.tag: gr-fft/swig/fft_swig_doc.i
 gr-fft/swig/fft_swig.tag: gr-fft/swig/_fft_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fft_swig.tag"
 	cd /home/katsikas/gnuradio/build/gr-fft/swig && ./_fft_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-fft/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig.tag
 
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vfc.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel_fc.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/api.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft_vcc.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/fft.h
+gr-fft/swig/fft_swig_doc.i: ../gr-fft/swig/../include/fft/goertzel.h
+gr-fft/swig/fft_swig_doc.i: gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating fft_swig_doc.i"
+	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-fft/swig/fft_swig_doc.i
+
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft_vfc.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/goertzel_fc.h
-gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/api.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft_vcc.h
+gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/fft.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: ../gr-fft/swig/../include/fft/goertzel.h
 gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml: gr-fft/swig/_fft_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
@@ -137,16 +140,16 @@ _fft_swig_OBJECTS = \
 _fft_swig_EXTERNAL_OBJECTS =
 
 gr-fft/swig/_fft_swig.so: gr-fft/swig/CMakeFiles/_fft_swig.dir/fft_swigPYTHON_wrap.cxx.o
-gr-fft/swig/_fft_swig.so: /usr/lib/libpython2.7.so
+gr-fft/swig/_fft_swig.so: /usr/lib64/libpython2.7.so
 gr-fft/swig/_fft_swig.so: gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0
 gr-fft/swig/_fft_swig.so: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
 gr-fft/swig/_fft_swig.so: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gr-fft/swig/_fft_swig.so: /usr/lib/libboost_date_time-mt.so
-gr-fft/swig/_fft_swig.so: /usr/lib/libboost_program_options-mt.so
-gr-fft/swig/_fft_swig.so: /usr/lib/libboost_filesystem-mt.so
-gr-fft/swig/_fft_swig.so: /usr/lib/libboost_system-mt.so
-gr-fft/swig/_fft_swig.so: /usr/lib/libboost_thread-mt.so
-gr-fft/swig/_fft_swig.so: /usr/lib/libfftw3f.so
+gr-fft/swig/_fft_swig.so: /usr/lib64/libboost_date_time-mt.so
+gr-fft/swig/_fft_swig.so: /usr/lib64/libboost_program_options-mt.so
+gr-fft/swig/_fft_swig.so: /usr/lib64/libboost_filesystem-mt.so
+gr-fft/swig/_fft_swig.so: /usr/lib64/libboost_system-mt.so
+gr-fft/swig/_fft_swig.so: /usr/lib64/libboost_thread-mt.so
+gr-fft/swig/_fft_swig.so: /usr/lib64/libfftw3f.so
 gr-fft/swig/_fft_swig.so: gr-fft/swig/CMakeFiles/_fft_swig.dir/build.make
 gr-fft/swig/_fft_swig.so: gr-fft/swig/CMakeFiles/_fft_swig.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module _fft_swig.so"
@@ -155,6 +158,33 @@ gr-fft/swig/_fft_swig.so: gr-fft/swig/CMakeFiles/_fft_swig.dir/link.txt
 # Rule to build all files generated by this target.
 gr-fft/swig/CMakeFiles/_fft_swig.dir/build: gr-fft/swig/_fft_swig.so
 .PHONY : gr-fft/swig/CMakeFiles/_fft_swig.dir/build
+
+# Object files for target _fft_swig
+_fft_swig_OBJECTS = \
+"CMakeFiles/_fft_swig.dir/fft_swigPYTHON_wrap.cxx.o"
+
+# External object files for target _fft_swig
+_fft_swig_EXTERNAL_OBJECTS =
+
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: gr-fft/swig/CMakeFiles/_fft_swig.dir/fft_swigPYTHON_wrap.cxx.o
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: /usr/lib64/libpython2.7.so
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: gr-fft/lib/libgnuradio-fft-3.6.1git.so.0.0.0
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: /usr/lib64/libboost_date_time-mt.so
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: /usr/lib64/libboost_program_options-mt.so
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: /usr/lib64/libboost_filesystem-mt.so
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: /usr/lib64/libboost_system-mt.so
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: /usr/lib64/libboost_thread-mt.so
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: /usr/lib64/libfftw3f.so
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: gr-fft/swig/CMakeFiles/_fft_swig.dir/build.make
+gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so: gr-fft/swig/CMakeFiles/_fft_swig.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module CMakeFiles/CMakeRelink.dir/_fft_swig.so"
+	cd /home/katsikas/gnuradio/build/gr-fft/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_fft_swig.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+gr-fft/swig/CMakeFiles/_fft_swig.dir/preinstall: gr-fft/swig/CMakeFiles/CMakeRelink.dir/_fft_swig.so
+.PHONY : gr-fft/swig/CMakeFiles/_fft_swig.dir/preinstall
 
 gr-fft/swig/CMakeFiles/_fft_swig.dir/requires: gr-fft/swig/CMakeFiles/_fft_swig.dir/fft_swigPYTHON_wrap.cxx.o.requires
 .PHONY : gr-fft/swig/CMakeFiles/_fft_swig.dir/requires
@@ -165,8 +195,8 @@ gr-fft/swig/CMakeFiles/_fft_swig.dir/clean:
 
 gr-fft/swig/CMakeFiles/_fft_swig.dir/depend: gr-fft/swig/fft_swigPYTHON_wrap.cxx
 gr-fft/swig/CMakeFiles/_fft_swig.dir/depend: gr-fft/swig/fft_swig.py
-gr-fft/swig/CMakeFiles/_fft_swig.dir/depend: gr-fft/swig/fft_swig_doc.i
 gr-fft/swig/CMakeFiles/_fft_swig.dir/depend: gr-fft/swig/fft_swig.tag
+gr-fft/swig/CMakeFiles/_fft_swig.dir/depend: gr-fft/swig/fft_swig_doc.i
 gr-fft/swig/CMakeFiles/_fft_swig.dir/depend: gr-fft/swig/fft_swig_doc_swig_docs/xml/index.xml
 gr-fft/swig/CMakeFiles/_fft_swig.dir/depend: gr-fft/swig/fft_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-fft/swig /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-fft/swig /home/katsikas/gnuradio/build/gr-fft/swig/CMakeFiles/_fft_swig.dir/DependInfo.cmake --color=$(COLOR)

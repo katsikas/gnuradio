@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__block" kind="class" prot="public">
     <compoundname>gr_block</compoundname>
     <basecompoundref refid="classgr__basic__block" prot="public" virt="non-virtual">gr_basic_block</basecompoundref>
@@ -29,6 +29,12 @@
     <derivedcompoundref refid="classgr__pfb__channelizer__ccf" prot="public" virt="non-virtual">gr_pfb_channelizer_ccf</derivedcompoundref>
     <derivedcompoundref refid="classgr__pfb__clock__sync__ccf" prot="public" virt="non-virtual">gr_pfb_clock_sync_ccf</derivedcompoundref>
     <derivedcompoundref refid="classgr__pfb__clock__sync__fff" prot="public" virt="non-virtual">gr_pfb_clock_sync_fff</derivedcompoundref>
+    <derivedcompoundref refid="classgr__rational__resampler__base__ccc" prot="public" virt="non-virtual">gr_rational_resampler_base_ccc</derivedcompoundref>
+    <derivedcompoundref refid="classgr__rational__resampler__base__ccf" prot="public" virt="non-virtual">gr_rational_resampler_base_ccf</derivedcompoundref>
+    <derivedcompoundref refid="classgr__rational__resampler__base__fcc" prot="public" virt="non-virtual">gr_rational_resampler_base_fcc</derivedcompoundref>
+    <derivedcompoundref refid="classgr__rational__resampler__base__fff" prot="public" virt="non-virtual">gr_rational_resampler_base_fff</derivedcompoundref>
+    <derivedcompoundref refid="classgr__rational__resampler__base__fsf" prot="public" virt="non-virtual">gr_rational_resampler_base_fsf</derivedcompoundref>
+    <derivedcompoundref refid="classgr__rational__resampler__base__scc" prot="public" virt="non-virtual">gr_rational_resampler_base_scc</derivedcompoundref>
     <derivedcompoundref refid="classgr__simple__correlator" prot="public" virt="non-virtual">gr_simple_correlator</derivedcompoundref>
     <derivedcompoundref refid="classgr__simple__framer" prot="public" virt="non-virtual">gr_simple_framer</derivedcompoundref>
     <derivedcompoundref refid="classgr__skiphead" prot="public" virt="non-virtual">gr_skiphead</derivedcompoundref>
@@ -37,6 +43,7 @@
     <derivedcompoundref refid="classgr__stream__mux" prot="public" virt="non-virtual">gr_stream_mux</derivedcompoundref>
     <derivedcompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</derivedcompoundref>
     <derivedcompoundref refid="classgr__test" prot="public" virt="non-virtual">gr_test</derivedcompoundref>
+    <derivedcompoundref refid="classgr__vector__insert__b" prot="public" virt="non-virtual">gr_vector_insert_b</derivedcompoundref>
     <derivedcompoundref refid="classnoaa__hrpt__deframer" prot="public" virt="non-virtual">noaa_hrpt_deframer</derivedcompoundref>
     <derivedcompoundref refid="classpager__flex__sync" prot="public" virt="non-virtual">pager_flex_sync</derivedcompoundref>
     <derivedcompoundref refid="classqtgui__sink__c" prot="public" virt="non-virtual">qtgui_sink_c</derivedcompoundref>
@@ -193,6 +200,12 @@
         <argsstring></argsstring>
         <name>d_history</name>
         <reimplementedby refid="classgr__check__counting__s_1aef5526ded5ae0be67797fb611538103e">d_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__scc_1a4dfb8f8449d437bbf3b3a8729a969653">d_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fsf_1abd6a5d7ae4909232890122998f20a16e">d_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fff_1a6a229a8441d027a4872890c228d599d5">d_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fcc_1a6954715317bb55417dd9c1e77e77d0b3">d_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccf_1a845c91e51f3d6cbdef8de690e286f080">d_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccc_1aca2513248e47ee322df5179d9df1b089">d_history</reimplementedby>
         <reimplementedby refid="classgr__check__lfsr__32k__s_1afdd9470d6fd4cab381b488e0c2e1effc">d_history</reimplementedby>
         <briefdescription>
         </briefdescription>
@@ -248,6 +261,12 @@
         <definition>unsigned gr_block::history</definition>
         <argsstring>() const </argsstring>
         <name>history</name>
+        <reimplementedby refid="classgr__rational__resampler__base__scc_1ac6cb6e87c68f83d04864d9de62629993">history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fsf_1a93eeb305ceabd3044bd3209f674cbeca">history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fff_1a6c6978e86e41cf36ec46f1fd8da58f00">history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fcc_1a093a9ebd07a175ce954bc789509f3485">history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccf_1a39bb26cbf671056d51daa2fa931cfc2d">history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccc_1a64547bf9d35091e7a6974d1992f6c878">history</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -257,12 +276,24 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="83" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" bodystart="83" bodyend="83"/>
         <referencedby refid="classgr__delay_1a1b480a7ef7039a053d573bf5cb6d91cd" compoundref="gr__delay_8h" startline="52" endline="52">gr_delay::delay</referencedby>
         <referencedby refid="classgr__test_1a066f8bfd35652cf2f9394bee8e61dc50" compoundref="gr__test_8h" startline="78" endline="84">gr_test::forecast</referencedby>
+        <referencedby refid="classgr__rational__resampler__base__scc_1a353a5fe5a3295f1a83349a69a5a52ac8" compoundref="gr__rational__resampler__base__scc_8h" startline="73" endline="73">gr_rational_resampler_base_scc::set_history</referencedby>
+        <referencedby refid="classgr__rational__resampler__base__fsf_1a67feadbd12c215ae25a185fe8cfcbae7" compoundref="gr__rational__resampler__base__fsf_8h" startline="73" endline="73">gr_rational_resampler_base_fsf::set_history</referencedby>
+        <referencedby refid="classgr__rational__resampler__base__fff_1a105db50c0961705e18244f5e865b957b" compoundref="gr__rational__resampler__base__fff_8h" startline="73" endline="73">gr_rational_resampler_base_fff::set_history</referencedby>
+        <referencedby refid="classgr__rational__resampler__base__ccc_1a9ebb9ae70178b5f5e824d762a1e7e433" compoundref="gr__rational__resampler__base__ccc_8h" startline="73" endline="73">gr_rational_resampler_base_ccc::set_history</referencedby>
+        <referencedby refid="classgr__rational__resampler__base__ccf_1a0d0e569a85bcb299c43880ce8dd4b75b" compoundref="gr__rational__resampler__base__ccf_8h" startline="73" endline="73">gr_rational_resampler_base_ccf::set_history</referencedby>
+        <referencedby refid="classgr__rational__resampler__base__fcc_1a72dea2e8ad318b3526586a19f94805f2" compoundref="gr__rational__resampler__base__fcc_8h" startline="73" endline="73">gr_rational_resampler_base_fcc::set_history</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a7c1c85a2d47f72255efd821a6f98f7ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_history</definition>
         <argsstring>(unsigned history)</argsstring>
         <name>set_history</name>
+        <reimplementedby refid="classgr__rational__resampler__base__scc_1a353a5fe5a3295f1a83349a69a5a52ac8">set_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fsf_1a67feadbd12c215ae25a185fe8cfcbae7">set_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fff_1a105db50c0961705e18244f5e865b957b">set_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fcc_1a72dea2e8ad318b3526586a19f94805f2">set_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccf_1a0d0e569a85bcb299c43880ce8dd4b75b">set_history</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccc_1a9ebb9ae70178b5f5e824d762a1e7e433">set_history</reimplementedby>
         <param>
           <type>unsigned</type>
           <declname>history</declname>
@@ -289,7 +320,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="91" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" bodystart="91" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1aa1f2518b5c97126bb015adb9e2027f4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_block::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -315,6 +346,12 @@
         <reimplementedby refid="classdigital__clock__recovery__mm__cc_1a5a40e536eee2a64823feb0bf6c215492">forecast</reimplementedby>
         <reimplementedby refid="classqtgui__sink__f_1a21bc5dc531c6710b44a5cffc0e56ecc3">forecast</reimplementedby>
         <reimplementedby refid="classqtgui__sink__c_1afc42c5066fb21391e11e3b8d474d63b8">forecast</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__scc_1a74b90a1785e0e1bca29b761e03b765f0">forecast</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fsf_1adad86f397296040fac2c95ed24aba96b">forecast</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fff_1af847541f01c596484aae869742c368c6">forecast</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fcc_1a4fb60c5aba43f319edcc084a1cbdf946">forecast</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccf_1ad89e5365b4621d883e869f0ca8cea8bb">forecast</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccc_1af2fea7c396f5bdfe500dc89dc040ed91">forecast</reimplementedby>
         <reimplementedby refid="classgr__test_1a066f8bfd35652cf2f9394bee8e61dc50">forecast</reimplementedby>
         <reimplementedby refid="classgr__stream__mux_1aae4b1c50e42e75a5c5a9d6f9e185ff84">forecast</reimplementedby>
         <reimplementedby refid="classgr__align__on__samplenumbers__ss_1a0ae31942c98cd81ab111d9f1c6d6f194">forecast</reimplementedby>
@@ -364,6 +401,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <reimplementedby refid="classgr__fractional__interpolator__ff_1a54f3ca4e66e39196420affa96d12dbe3">general_work</reimplementedby>
         <reimplementedby refid="classgr__fractional__interpolator__cc_1a66b23b58a645dd89409d69c6d47bfab8">general_work</reimplementedby>
         <reimplementedby refid="classatsc__field__sync__demux_1a74ff628ec577bc4343db4f59732f5d29">general_work</reimplementedby>
+        <reimplementedby refid="classgr__vector__insert__b_1a775cd9c0a0042f4e77d3c48970548bf0">general_work</reimplementedby>
         <reimplementedby refid="classnoaa__hrpt__deframer_1a41fa299e876342421f9b95bcf09e5871">general_work</reimplementedby>
         <reimplementedby refid="classgr__simple__framer_1a5cb527b4eb4089610094bc73f07f6907">general_work</reimplementedby>
         <reimplementedby refid="classgr__nop_1a9003d23b0e7a7ec1ab9f83a2a6f63ba1">general_work</reimplementedby>
@@ -385,6 +423,12 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <reimplementedby refid="classdigital__clock__recovery__mm__cc_1aa4a465b7bc3da001a6dfe8292c6fe890">general_work</reimplementedby>
         <reimplementedby refid="classgr__ofdm__bpsk__demapper_1af28eba9918dd660914bd1af7c14cfd7b">general_work</reimplementedby>
         <reimplementedby refid="classdigital__constellation__receiver__cb_1a8243ab960b918764374270ef798173f0">general_work</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__scc_1a8617ee9e139fb990c05a1fafb5346172">general_work</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fsf_1a8f9c3bf7971a49c08bd8956671ba90f5">general_work</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fff_1a93f8b04731192e9b869119d3bc4335cf">general_work</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__fcc_1a0fb2370891c87d44038084dfb74b2283">general_work</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccf_1a8e935e9f3a46bdf93da28c66b0a46bc9">general_work</reimplementedby>
+        <reimplementedby refid="classgr__rational__resampler__base__ccc_1aedcb25f74e6c511615537ce0a924dd3a">general_work</reimplementedby>
         <reimplementedby refid="classgr__stream__mux_1a9505b30dc6957ad60dc27711573e6835">general_work</reimplementedby>
         <reimplementedby refid="classgr__align__on__samplenumbers__ss_1abb17a646f937035331c48072b7ca5ee3">general_work</reimplementedby>
         <reimplementedby refid="classdigital__mpsk__receiver__cc_1a8ba9e9a543b75b6fe38f7d42d791076a">general_work</reimplementedby>
@@ -488,7 +532,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="142"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a14e8b799f920e52afb93fac413b1a729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_output_multiple</definition>
         <argsstring>(int multiple)</argsstring>
         <name>set_output_multiple</name>
@@ -540,7 +584,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="155" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" bodystart="155" bodyend="155"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a6863065f43aac33e6167f3b622de7cd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_alignment</definition>
         <argsstring>(int multiple)</argsstring>
         <name>set_alignment</name>
@@ -578,7 +622,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="174" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" bodystart="174" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a1f7f6b204a5d383f5903b222aa838eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_unaligned</definition>
         <argsstring>(int na)</argsstring>
         <name>set_unaligned</name>
@@ -608,7 +652,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="177" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" bodystart="177" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1adafb375e8453f129062bb5924907a61f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_is_unaligned</definition>
         <argsstring>(bool u)</argsstring>
         <name>set_is_unaligned</name>
@@ -638,7 +682,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="179" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" bodystart="179" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1ac76b4c53af762a819bca003d5b5cb4d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::consume</definition>
         <argsstring>(int which_input, int how_many_items)</argsstring>
         <name>consume</name>
@@ -659,7 +703,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="184"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a64e9a2096975841b72ff3c1662d27df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::consume_each</definition>
         <argsstring>(int how_many_items)</argsstring>
         <name>consume_each</name>
@@ -676,7 +720,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="189"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a7617c4eac84059b96d1a4da40c6d542c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::produce</definition>
         <argsstring>(int which_output, int how_many_items)</argsstring>
         <name>produce</name>
@@ -697,7 +741,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="196"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_relative_rate</definition>
         <argsstring>(double relative_rate)</argsstring>
         <name>set_relative_rate</name>
@@ -825,7 +869,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="247"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1af9bce945f28950c1800d8deb6bb997a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_tag_propagation_policy</definition>
         <argsstring>(tag_propagation_policy_t p)</argsstring>
         <name>set_tag_propagation_policy</name>
@@ -855,7 +899,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="352" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" bodystart="352" bodyend="352"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a26b61f2c2ca308c3bde82f01d3e9650b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_detail</definition>
         <argsstring>(gr_block_detail_sptr detail)</argsstring>
         <name>set_detail</name>
@@ -879,7 +923,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <argsstring>(void)</argsstring>
         <name>gr_block</name>
         <param>
-          <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+          <type>void</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -915,7 +959,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="272"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a176a95343488a9a760c8edf8bb08db20" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::set_fixed_rate</definition>
         <argsstring>(bool fixed_rate)</argsstring>
         <name>set_fixed_rate</name>
@@ -933,7 +977,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <referencedby refid="classgr__test_1a7aa4753ba5e757786726f7dd29118199" compoundref="gr__test_8h" startline="135" endline="135">gr_test::set_fixed_rate_public</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::add_item_tag</definition>
         <argsstring>(unsigned int which_output, uint64_t abs_offset, const pmt::pmt_t &amp;key, const pmt::pmt_t &amp;value, const pmt::pmt_t &amp;srcid=pmt::PMT_F)</argsstring>
         <name>add_item_tag</name>
@@ -1010,7 +1054,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <referencedby refid="classtag__source__demo_1afc52d4e66cec13534d92abde34cadffc" compoundref="tag__source__demo_8h" startline="55" endline="63">tag_source_demo::make_time_tag</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::add_item_tag</definition>
         <argsstring>(unsigned int which_output, const gr_tag_t &amp;tag)</argsstring>
         <name>add_item_tag</name>
@@ -1046,7 +1090,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_block.h" line="307"/>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1a54f69c4cd5ef5b05ac58d0128256def1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::get_tags_in_range</definition>
         <argsstring>(std::vector&lt; gr_tag_t &gt; &amp;v, unsigned int which_input, uint64_t abs_start, uint64_t abs_end)</argsstring>
         <name>get_tags_in_range</name>
@@ -1105,7 +1149,7 @@ This control is similar to the output_multiple setting, except that if the numbe
         <referencedby refid="classtag__sink__demo_1a9b2bb4d41549144ac8eb7f4de5dfbe3a" compoundref="tag__sink__demo_8h" startline="42" endline="65">tag_sink_demo::work</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgr__block_1ab2650baa0c05713fc04664e69dde565d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_block::get_tags_in_range</definition>
         <argsstring>(std::vector&lt; gr_tag_t &gt; &amp;v, unsigned int which_input, uint64_t abs_start, uint64_t abs_end, const pmt::pmt_t &amp;key)</argsstring>
         <name>get_tags_in_range</name>
@@ -1179,1821 +1223,2001 @@ This control is similar to the output_multiple setting, except that if the numbe
     <detaileddescription>
 <para>Blocks have a set of input streams and output streams. The input_signature and output_signature define the number of input streams and output streams respectively, and the type of the data items in each stream.</para><para>Although blocks may consume data on each input stream at a different rate, all outputs streams must produce data at the same rate. That rate may be different from any of the input rates.</para><para>User derived blocks override two methods, forecast and general_work, to implement their signal processing behavior. forecast is called by the system scheduler to determine how many items are required on each input stream in order to produce a given number of output items.</para><para>general_work is called to perform the signal processing in the block. It reads the input items and writes the output items. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2775">
+      <node id="7179">
         <label>gr_fake_channel_encoder_pp</label>
         <link refid="classgr__fake__channel__encoder__pp"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2662">
+      <node id="7060">
         <label>gr_delay</label>
         <link refid="classgr__delay"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2712">
+      <node id="7116">
         <label>digital_additive_scrambler_bb</label>
         <link refid="classdigital__additive__scrambler__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2773">
+      <node id="7177">
         <label>gr_dpll_bb</label>
         <link refid="classgr__dpll__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2831">
+      <node id="7235">
         <label>gr_rail_ff</label>
         <link refid="classgr__rail__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2913">
+      <node id="7340">
         <label>video_sdl_sink_uc</label>
         <link refid="classvideo__sdl__sink__uc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2668">
+      <node id="7066">
         <label>gr_pfb_arb_resampler_ccf</label>
         <link refid="classgr__pfb__arb__resampler__ccf"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2875">
+      <node id="7291">
         <label>gr_cpfsk_bc</label>
         <link refid="classgr__cpfsk__bc"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2803">
+      <node id="7265">
+        <label>gr_fir_filter_fff</label>
+        <link refid="classgr__fir__filter__fff"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7207">
         <label>gr_lfsr_32k_source_s</label>
         <link refid="classgr__lfsr__32k__source__s"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2917">
+      <node id="7344">
         <label>vocoder_g721_encode_sb</label>
         <link refid="classvocoder__g721__encode__sb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2786">
+      <node id="7190">
         <label>gr_float_to_complex</label>
         <link refid="classgr__float__to__complex"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2903">
+      <node id="7330">
         <label>qtgui_time_sink_c</label>
         <link refid="classqtgui__time__sink__c"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2762">
+      <node id="7166">
         <label>gr_complex_to_mag</label>
         <link refid="classgr__complex__to__mag"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2904">
+      <node id="7331">
         <label>qtgui_time_sink_f</label>
         <link refid="classqtgui__time__sink__f"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2850">
+      <node id="7254">
         <label>digital_cma_equalizer_cc</label>
         <link refid="classdigital__cma__equalizer__cc"/>
-        <childnode refid="2849" relation="public-inheritance">
+        <childnode refid="7253" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2705">
+      <node id="7109">
         <label>audio_jack_source</label>
         <link refid="classaudio__jack__source"/>
-        <childnode refid="2703" relation="public-inheritance">
+        <childnode refid="7107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2814">
+      <node id="7218">
         <label>gr_null_source</label>
         <link refid="classgr__null__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2905">
+      <node id="7332">
         <label>shd_smini_sink</label>
         <link refid="classshd__smini__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2866">
+      <node id="7297">
+        <label>gr_interp_fir_filter_fff</label>
+        <link refid="classgr__interp__fir__filter__fff"/>
+        <childnode refid="7284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7282">
         <label>vocoder_cvsd_encode_sb</label>
         <link refid="classvocoder__cvsd__encode__sb"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2889">
+      <node id="7311">
         <label>gr_throttle</label>
         <link refid="classgr__throttle"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2767">
+      <node id="7171">
         <label>gr_dc_blocker_cc</label>
         <link refid="classgr__dc__blocker__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2740">
+      <node id="7144">
         <label>dvbt_viterbi_decoder</label>
         <link refid="classdvbt__viterbi__decoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2743">
+      <node id="7147">
         <label>gr::fft::fft_vfc</label>
         <link refid="classgr_1_1fft_1_1fft__vfc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2673">
+      <node id="7077">
         <label>gr_simple_correlator</label>
         <link refid="classgr__simple__correlator"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2689">
+      <node id="7093">
         <label>atsc_fs_checker</label>
         <link refid="classatsc__fs__checker"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2699">
+      <node id="7103">
         <label>audio_oss_sink</label>
         <link refid="classaudio__oss__sink"/>
-        <childnode refid="2696" relation="public-inheritance">
+        <childnode refid="7100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2932">
+      <node id="7360">
         <label>pager_flex_sync</label>
         <link refid="classpager__flex__sync"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2694">
+      <node id="7098">
         <label>atsc_trellis_encoder</label>
         <link refid="classatsc__trellis__encoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2680">
+      <node id="7084">
         <label>gr_pwr_squelch_ff</label>
         <link refid="classgr__pwr__squelch__ff"/>
-        <childnode refid="2678" relation="public-inheritance">
+        <childnode refid="7082" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2787">
+      <node id="7191">
         <label>gr_float_to_int</label>
         <link refid="classgr__float__to__int"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2815">
+      <node id="7219">
         <label>gr_ofdm_frame_sink2</label>
         <link refid="classgr__ofdm__frame__sink2"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2877">
+      <node id="7264">
+        <label>gr_fir_filter_fcc</label>
+        <link refid="classgr__fir__filter__fcc"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7293">
         <label>gr_interleave</label>
         <link refid="classgr__interleave"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2756">
+      <node id="7160">
         <label>gr_char_to_short</label>
         <link refid="classgr__char__to__short"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2674">
+      <node id="7078">
         <label>gr_simple_framer</label>
         <link refid="classgr__simple__framer"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2720">
+      <node id="7124">
         <label>digital_diff_phasor_cc</label>
         <link refid="classdigital__diff__phasor__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2835">
+      <node id="7239">
         <label>gr_scrambler_bb</label>
         <link refid="classgr__scrambler__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2795">
+      <node id="7199">
         <label>gr_head</label>
         <link refid="classgr__head"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2768">
+      <node id="7172">
         <label>gr_dc_blocker_ff</label>
         <link refid="classgr__dc__blocker__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2717">
+      <node id="7121">
         <label>digital_descrambler_bb</label>
         <link refid="classdigital__descrambler__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2734">
+      <node id="7138">
         <label>dvbt_derandomizer</label>
         <link refid="classdvbt__derandomizer"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2819">
+      <node id="7223">
         <label>gr_packet_sink</label>
         <link refid="classgr__packet__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2882">
+      <node id="7304">
         <label>gr_unpack_k_bits_bb</label>
         <link refid="classgr__unpack__k__bits__bb"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2916">
+      <node id="7343">
         <label>vocoder_g721_decode_bs</label>
         <link refid="classvocoder__g721__decode__bs"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2785">
+      <node id="7189">
         <label>gr_float_to_char</label>
         <link refid="classgr__float__to__char"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2906">
+      <node id="7333">
         <label>shd_smini_source</label>
         <link refid="classshd__smini__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2810">
+      <node id="7214">
         <label>gr_multiply_const_ff</label>
         <link refid="classgr__multiply__const__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2890">
+      <node id="7312">
         <label>gr_transcendental</label>
         <link refid="classgr__transcendental"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2709">
+      <node id="7113">
         <label>audio_windows_source</label>
         <link refid="classaudio__windows__source"/>
-        <childnode refid="2703" relation="public-inheritance">
+        <childnode refid="7107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2886">
+      <node id="7308">
         <label>vocoder_gsm_fr_decode_ps</label>
         <link refid="classvocoder__gsm__fr__decode__ps"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2741">
+      <node id="7145">
         <label>gr::fft::fft_vcc</label>
         <link refid="classgr_1_1fft_1_1fft__vcc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2885">
+      <node id="7307">
         <label>vocoder_cvsd_decode_bs</label>
         <link refid="classvocoder__cvsd__decode__bs"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2823">
+      <node id="7227">
         <label>gr_pll_carriertracking_cc</label>
         <link refid="classgr__pll__carriertracking__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2721">
+      <node id="7125">
         <label>digital_fll_band_edge_cc</label>
         <link refid="classdigital__fll__band__edge__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2677">
+      <node id="7081">
         <label>gr_pwr_squelch_cc</label>
         <link refid="classgr__pwr__squelch__cc"/>
-        <childnode refid="2676" relation="public-inheritance">
+        <childnode refid="7080" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2839">
+      <node id="7243">
         <label>gr_single_pole_iir_filter_cc</label>
         <link refid="classgr__single__pole__iir__filter__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2715">
+      <node id="7119">
         <label>digital_correlate_access_code_tag_bb</label>
         <link refid="classdigital__correlate__access__code__tag__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2825">
+      <node id="7229">
         <label>gr_pll_refout_cc</label>
         <link refid="classgr__pll__refout__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2732">
+      <node id="7136">
         <label>digital_scrambler_bb</label>
         <link refid="classdigital__scrambler__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2645">
+      <node id="7043">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2646" relation="public-inheritance">
+        <childnode refid="7044" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2867">
+      <node id="7283">
         <label>vocoder_gsm_fr_encode_sp</label>
         <link refid="classvocoder__gsm__fr__encode__sp"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2772">
+      <node id="7176">
         <label>gr_diff_phasor_cc</label>
         <link refid="classgr__diff__phasor__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2682">
+      <node id="7086">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2809">
+      <node id="7213">
         <label>gr_multiply_const_cc</label>
         <link refid="classgr__multiply__const__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2827">
+      <node id="7231">
         <label>gr_probe_avg_mag_sqrd_cf</label>
         <link refid="classgr__probe__avg__mag__sqrd__cf"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2857">
+      <node id="7261">
         <label>gr_fft_filter_fff</label>
         <link refid="classgr__fft__filter__fff"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2843">
+      <node id="7247">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2701">
+      <node id="7105">
         <label>audio_portaudio_sink</label>
         <link refid="classaudio__portaudio__sink"/>
-        <childnode refid="2696" relation="public-inheritance">
+        <childnode refid="7100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2852">
+      <node id="7256">
         <label>digital_lms_dd_equalizer_cc</label>
         <link refid="classdigital__lms__dd__equalizer__cc"/>
-        <childnode refid="2849" relation="public-inheritance">
+        <childnode refid="7253" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2871">
+      <node id="7287">
         <label>digital_ofdm_cyclic_prefixer</label>
         <link refid="classdigital__ofdm__cyclic__prefixer"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2726">
+      <node id="7130">
         <label>digital_mpsk_snr_est_cc</label>
         <link refid="classdigital__mpsk__snr__est__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2840">
+      <node id="7244">
         <label>gr_single_pole_iir_filter_ff</label>
         <link refid="classgr__single__pole__iir__filter__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2693">
+      <node id="7097">
         <label>atsc_rs_encoder</label>
         <link refid="classatsc__rs__encoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2792">
+      <node id="7196">
         <label>gr_frequency_modulator_fc</label>
         <link refid="classgr__frequency__modulator__fc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2925">
+      <node id="7352">
         <label>wavelet_squash_ff_impl</label>
         <link refid="classwavelet__squash__ff__impl"/>
-        <childnode refid="2924" relation="public-inheritance">
+        <childnode refid="7351" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2716">
+      <node id="7120">
         <label>digital_costas_loop_cc</label>
         <link refid="classdigital__costas__loop__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2735">
+      <node id="7139">
         <label>dvbt_interleaver</label>
         <link refid="classdvbt__interleaver"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2782">
+      <node id="7186">
         <label>gr_file_sink</label>
         <link refid="classgr__file__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2685">
+      <node id="7089">
         <label>atsc_ds_to_softds</label>
         <link refid="classatsc__ds__to__softds"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2657">
+      <node id="7055">
         <label>digital_pfb_clock_sync_ccf</label>
         <link refid="classdigital__pfb__clock__sync__ccf"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2851">
+      <node id="7255">
         <label>digital_kurtotic_equalizer_cc</label>
         <link refid="classdigital__kurtotic__equalizer__cc"/>
-        <childnode refid="2849" relation="public-inheritance">
+        <childnode refid="7253" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2854">
+      <node id="7270">
+        <label>gr_freq_xlating_fir_filter_fcc</label>
+        <link refid="classgr__freq__xlating__fir__filter__fcc"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7258">
         <label>gr_decode_ccsds_27_fb</label>
         <link refid="classgr__decode__ccsds__27__fb"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2783">
+      <node id="7187">
         <label>gr_file_source</label>
         <link refid="classgr__file__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2887">
+      <node id="7271">
+        <label>gr_freq_xlating_fir_filter_fcf</label>
+        <link refid="classgr__freq__xlating__fir__filter__fcf"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7309">
         <label>gr_tagged_file_sink</label>
         <link refid="classgr__tagged__file__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2930">
+      <node id="7357">
         <label>gr_test</label>
         <link refid="classgr__test"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2738">
+      <node id="7142">
         <label>dvbt_rs_encoder</label>
         <link refid="classdvbt__rs__encoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2914">
+      <node id="7341">
         <label>vocoder_alaw_decode_bs</label>
         <link refid="classvocoder__alaw__decode__bs"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2931">
+      <node id="7359">
         <label>noaa_hrpt_deframer</label>
         <link refid="classnoaa__hrpt__deframer"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2643">
+      <node id="7041">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2644" relation="public-inheritance">
+        <childnode refid="7042" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2655">
+      <node id="7053">
         <label>digital_ofdm_insert_preamble</label>
         <link refid="classdigital__ofdm__insert__preamble"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2714">
+      <node id="7118">
         <label>digital_correlate_access_code_bb</label>
         <link refid="classdigital__correlate__access__code__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2910">
+      <node id="7337">
         <label>uhd_usrp_sink</label>
         <link refid="classuhd__usrp__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2730">
+      <node id="7134">
         <label>digital_probe_density_b</label>
         <link refid="classdigital__probe__density__b"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2713">
+      <node id="7117">
         <label>digital_binary_slicer_fb</label>
         <link refid="classdigital__binary__slicer__fb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2687">
+      <node id="7091">
         <label>atsc_field_sync_mux</label>
         <link refid="classatsc__field__sync__mux"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2830">
+      <node id="7234">
         <label>gr_quadrature_demod_cf</label>
         <link refid="classgr__quadrature__demod__cf"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2897">
+      <node id="7324">
         <label>gr_wavfile_sink</label>
         <link refid="classgr__wavfile__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2868">
+      <node id="7284">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2884">
+      <node id="7306">
         <label>vocoder_codec2_decode_ps</label>
         <link refid="classvocoder__codec2__decode__ps"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2876">
+      <node id="7292">
         <label>gr_encode_ccsds_27_bb</label>
         <link refid="classgr__encode__ccsds__27__bb"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2923">
+      <node id="7350">
         <label>vocoder_ulaw_encode_sb</label>
         <link refid="classvocoder__ulaw__encode__sb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2719">
+      <node id="7123">
         <label>digital_diff_encoder_bb</label>
         <link refid="classdigital__diff__encoder__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2922">
+      <node id="7349">
         <label>vocoder_ulaw_decode_bs</label>
         <link refid="classvocoder__ulaw__decode__bs"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2763">
+      <node id="7167">
         <label>gr_complex_to_mag_squared</label>
         <link refid="classgr__complex__to__mag__squared"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2651">
+      <node id="7049">
         <label>digital_constellation_decoder_cb</label>
         <link refid="classdigital__constellation__decoder__cb"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2924">
+      <node id="7351">
         <label>wavelet_squash_ff</label>
         <link refid="classwavelet__squash__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2818">
+      <node id="7222">
         <label>gr_pa_2x2_phase_combiner</label>
         <link refid="classgr__pa__2x2__phase__combiner"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2933">
+      <node id="7361">
         <label>qtgui_sink_c</label>
         <link refid="classqtgui__sink__c"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2934">
+      <node id="7362">
         <label>qtgui_sink_f</label>
         <link refid="classqtgui__sink__f"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2769">
+      <node id="7173">
         <label>gr_descrambler_bb</label>
         <link refid="classgr__descrambler__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2664">
+      <node id="7062">
         <label>gr_fractional_interpolator_ff</label>
         <link refid="classgr__fractional__interpolator__ff"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2858">
+      <node id="7274">
         <label>gr_goertzel_fc</label>
         <link refid="classgr__goertzel__fc"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2665">
+      <node id="7063">
         <label>gr_keep_one_in_n</label>
         <link refid="classgr__keep__one__in__n"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2893">
+      <node id="7315">
         <label>gr_udp_source</label>
         <link refid="classgr__udp__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2737">
+      <node id="7141">
         <label>dvbt_rs_decoder</label>
         <link refid="classdvbt__rs__decoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2821">
+      <node id="7225">
         <label>gr_pfb_decimator_ccf</label>
         <link refid="classgr__pfb__decimator__ccf"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2690">
+      <node id="7322">
+        <label>gr_vector_source_s</label>
+        <link refid="classgr__vector__source__s"/>
+        <childnode refid="7086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7094">
         <label>atsc_interleaver</label>
         <link refid="classatsc__interleaver"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2872">
+      <node id="7288">
         <label>dvbt_depad</label>
         <link refid="classdvbt__depad"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2855">
+      <node id="7259">
         <label>gr_deinterleave</label>
         <link refid="classgr__deinterleave"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2739">
+      <node id="7143">
         <label>dvbt_trellis_encoder</label>
         <link refid="classdvbt__trellis__encoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2928">
+      <node id="7355">
         <label>wavelet_wvps_ff</label>
         <link refid="classwavelet__wvps__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2921">
+      <node id="7348">
         <label>vocoder_g723_40_encode_sb</label>
         <link refid="classvocoder__g723__40__encode__sb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2752">
+      <node id="7156">
         <label>gr_annotator_alltoall</label>
         <link refid="classgr__annotator__alltoall"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2869">
+      <node id="7318">
+        <label>gr_vector_source_b</label>
+        <link refid="classgr__vector__source__b"/>
+        <childnode refid="7086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7319">
+        <label>gr_vector_source_c</label>
+        <link refid="classgr__vector__source__c"/>
+        <childnode refid="7086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7320">
+        <label>gr_vector_source_f</label>
+        <link refid="classgr__vector__source__f"/>
+        <childnode refid="7086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7285">
         <label>atsc_depad</label>
         <link refid="classatsc__depad"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2935">
+      <node id="7321">
+        <label>gr_vector_source_i</label>
+        <link refid="classgr__vector__source__i"/>
+        <childnode refid="7086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7363">
         <label>trellis_constellation_metrics_cf</label>
         <link refid="classtrellis__constellation__metrics__cf"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2727">
+      <node id="7131">
         <label>digital_ofdm_frame_sink</label>
         <link refid="classdigital__ofdm__frame__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2653">
+      <node id="7051">
         <label>digital_mpsk_receiver_cc</label>
         <link refid="classdigital__mpsk__receiver__cc"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2844">
+      <node id="7248">
         <label>atsc_pad</label>
         <link refid="classatsc__pad"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2829">
+      <node id="7233">
         <label>gr_probe_density_b</label>
         <link refid="classgr__probe__density__b"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2901">
+      <node id="7328">
         <label>pager_flex_parse</label>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2711">
+      <node id="7115">
         <label>comedi_source_s</label>
         <link refid="classcomedi__source__s"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2663">
+      <node id="7061">
         <label>gr_fractional_interpolator_cc</label>
         <link refid="classgr__fractional__interpolator__cc"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2658">
+      <node id="7056">
         <label>digital_pfb_clock_sync_fff</label>
         <link refid="classdigital__pfb__clock__sync__fff"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2797">
+      <node id="7201">
         <label>gr_histo_sink_f</label>
         <link refid="classgr__histo__sink__f"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2703">
+      <node id="7107">
         <label>audio_source</label>
         <link refid="classaudio__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2755">
+      <node id="7159">
         <label>gr_char_to_float</label>
         <link refid="classgr__char__to__float"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2754">
+      <node id="7158">
         <label>gr_burst_tagger</label>
         <link refid="classgr__burst__tagger"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2660">
+      <node id="7058">
         <label>gr_align_on_samplenumbers_ss</label>
         <link refid="classgr__align__on__samplenumbers__ss"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2790">
+      <node id="7194">
         <label>gr_fmdet_cf</label>
         <link refid="classgr__fmdet__cf"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2749">
+      <node id="7153">
         <label>gr_agc_cc</label>
         <link refid="classgr__agc__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2671">
+      <node id="7069">
         <label>gr_pfb_clock_sync_ccf</label>
         <link refid="classgr__pfb__clock__sync__ccf"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2860">
+      <node id="7276">
         <label>gr_pack_k_bits_bb</label>
         <link refid="classgr__pack__k__bits__bb"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2759">
+      <node id="7163">
         <label>gr_complex_to_arg</label>
         <link refid="classgr__complex__to__arg"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2793">
+      <node id="7197">
         <label>gr_glfsr_source_b</label>
         <link refid="classgr__glfsr__source__b"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2794">
+      <node id="7198">
         <label>gr_glfsr_source_f</label>
         <link refid="classgr__glfsr__source__f"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2688">
+      <node id="7092">
         <label>atsc_fpll</label>
         <link refid="classatsc__fpll"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2678">
+      <node id="7082">
         <label>gr_squelch_base_ff</label>
         <link refid="classgr__squelch__base__ff"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2812">
+      <node id="7216">
         <label>gr_nlog10_ff</label>
         <link refid="classgr__nlog10__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2822">
+      <node id="7226">
         <label>gr_phase_modulator_fc</label>
         <link refid="classgr__phase__modulator__fc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2776">
+      <node id="7180">
         <label>gr_feedforward_agc_cc</label>
         <link refid="classgr__feedforward__agc__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2784">
+      <node id="7188">
         <label>gr_filter_delay_fc</label>
         <link refid="classgr__filter__delay__fc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2862">
+      <node id="7278">
         <label>gr_stream_to_streams</label>
         <link refid="classgr__stream__to__streams"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2683">
+      <node id="7087">
         <label>atsc_deinterleaver</label>
         <link refid="classatsc__deinterleaver"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2888">
+      <node id="7310">
         <label>gr_threshold_ff</label>
         <link refid="classgr__threshold__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2710">
+      <node id="7114">
         <label>comedi_sink_s</label>
         <link refid="classcomedi__sink__s"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2750">
+      <node id="7154">
         <label>gr_agc_ff</label>
         <link refid="classgr__agc__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2742">
+      <node id="7146">
         <label>gr::fft::fft_vcc_fftw</label>
         <link refid="classgr_1_1fft_1_1fft__vcc__fftw"/>
-        <childnode refid="2741" relation="public-inheritance">
+        <childnode refid="7145" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2796">
+      <node id="7200">
         <label>gr_hilbert_fc</label>
         <link refid="classgr__hilbert__fc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2919">
+      <node id="7346">
         <label>vocoder_g723_24_encode_sb</label>
         <link refid="classvocoder__g723__24__encode__sb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2704">
+      <node id="7268">
+        <label>gr_freq_xlating_fir_filter_ccc</label>
+        <link refid="classgr__freq__xlating__fir__filter__ccc"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7108">
         <label>audio_alsa_source</label>
         <link refid="classaudio__alsa__source"/>
-        <childnode refid="2703" relation="public-inheritance">
+        <childnode refid="7107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2676">
+      <node id="7080">
         <label>gr_squelch_base_cc</label>
         <link refid="classgr__squelch__base__cc"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2729">
+      <node id="7269">
+        <label>gr_freq_xlating_fir_filter_ccf</label>
+        <link refid="classgr__freq__xlating__fir__filter__ccf"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7133">
         <label>digital_packet_sink</label>
         <link refid="classdigital__packet__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2813">
+      <node id="7217">
         <label>gr_null_sink</label>
         <link refid="classgr__null__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2725">
+      <node id="7129">
         <label>digital_map_bb</label>
         <link refid="classdigital__map__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2895">
+      <node id="7076">
+        <label>gr_rational_resampler_base_scc</label>
+        <link refid="classgr__rational__resampler__base__scc"/>
+        <childnode refid="7041" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7317">
         <label>gr_vector_map</label>
         <link refid="classgr__vector__map"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2878">
+      <node id="7300">
         <label>gr_pfb_interpolator_ccf</label>
         <link refid="classgr__pfb__interpolator__ccf"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2874">
+      <node id="7290">
         <label>gr_complex_to_interleaved_short</label>
         <link refid="classgr__complex__to__interleaved__short"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2907">
+      <node id="7334">
         <label>tag_sink_demo</label>
         <link refid="classtag__sink__demo"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2779">
+      <node id="7183">
         <label>gr_fft_vfc</label>
         <link refid="classgr__fft__vfc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2911">
+      <node id="7338">
         <label>uhd_usrp_source</label>
         <link refid="classuhd__usrp__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2654">
+      <node id="7052">
         <label>digital_ofdm_frame_acquisition</label>
         <link refid="classdigital__ofdm__frame__acquisition"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2697">
+      <node id="7101">
         <label>audio_alsa_sink</label>
         <link refid="classaudio__alsa__sink"/>
-        <childnode refid="2696" relation="public-inheritance">
+        <childnode refid="7100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2920">
+      <node id="7347">
         <label>vocoder_g723_40_decode_bs</label>
         <link refid="classvocoder__g723__40__decode__bs"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2758">
+      <node id="7162">
         <label>gr_check_lfsr_32k_s</label>
         <link refid="classgr__check__lfsr__32k__s"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2873">
+      <node id="7289">
         <label>gr_bytes_to_syms</label>
         <link refid="classgr__bytes__to__syms"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2764">
+      <node id="7168">
         <label>gr_complex_to_real</label>
         <link refid="classgr__complex__to__real"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2892">
+      <node id="7314">
         <label>gr_udp_sink</label>
         <link refid="classgr__udp__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2659">
+      <node id="7057">
         <label>digital_simple_framer</label>
         <link refid="classdigital__simple__framer"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2817">
+      <node id="7358">
+        <label>gr_vector_insert_b</label>
+        <link refid="classgr__vector__insert__b"/>
+        <childnode refid="7041" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7221">
         <label>gr_oscope_sink_f</label>
         <link refid="classgr__oscope__sink__f"/>
-        <childnode refid="2816" relation="public-inheritance">
+        <childnode refid="7220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2800">
+      <node id="7204">
         <label>gr_iqcomp_cc</label>
         <link refid="classgr__iqcomp__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2777">
+      <node id="7181">
         <label>gr_fft_vcc</label>
         <link refid="classgr__fft__vcc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2778">
+      <node id="7182">
         <label>gr_fft_vcc_fftw</label>
         <link refid="classgr__fft__vcc__fftw"/>
-        <childnode refid="2777" relation="public-inheritance">
+        <childnode refid="7181" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2646">
+      <node id="7044">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2661">
+      <node id="7059">
         <label>gr_copy</label>
         <link refid="classgr__copy"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2900">
+      <node id="7327">
         <label>noaa_hrpt_pll_cf</label>
         <link refid="classnoaa__hrpt__pll__cf"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2896">
+      <node id="7323">
         <label>gr_vector_to_streams</label>
         <link refid="classgr__vector__to__streams"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2753">
+      <node id="7157">
         <label>gr_bin_statistics_f</label>
         <link refid="classgr__bin__statistics__f"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2667">
+      <node id="7065">
         <label>gr_ofdm_bpsk_demapper</label>
         <link refid="classgr__ofdm__bpsk__demapper"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2695">
+      <node id="7099">
         <label>atsc_viterbi_decoder</label>
         <link refid="classatsc__viterbi__decoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2820">
+      <node id="7224">
         <label>gr_peak_detector2_fb</label>
         <link refid="classgr__peak__detector2__fb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2816">
+      <node id="7220">
         <label>gr_oscope_sink_x</label>
         <link refid="classgr__oscope__sink__x"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2649">
+      <node id="7047">
         <label>digital_clock_recovery_mm_cc</label>
         <link refid="classdigital__clock__recovery__mm__cc"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2791">
+      <node id="7195">
         <label>gr_framer_sink_1</label>
         <link refid="classgr__framer__sink__1"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2702">
+      <node id="7106">
         <label>audio_windows_sink</label>
         <link refid="classaudio__windows__sink"/>
-        <childnode refid="2696" relation="public-inheritance">
+        <childnode refid="7100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2912">
+      <node id="7339">
         <label>video_sdl_sink_s</label>
         <link refid="classvideo__sdl__sink__s"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2744">
+      <node id="7148">
         <label>gr::fft::fft_vfc_fftw</label>
         <link refid="classgr_1_1fft_1_1fft__vfc__fftw"/>
-        <childnode refid="2743" relation="public-inheritance">
+        <childnode refid="7147" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2870">
+      <node id="7286">
         <label>digital_bytes_to_syms</label>
         <link refid="classdigital__bytes__to__syms"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2696">
+      <node id="7100">
         <label>audio_sink</label>
         <link refid="classaudio__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2826">
+      <node id="7230">
         <label>gr_probe_avg_mag_sqrd_c</label>
         <link refid="classgr__probe__avg__mag__sqrd__c"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2670">
+      <node id="7068">
         <label>gr_pfb_channelizer_ccf</label>
         <link refid="classgr__pfb__channelizer__ccf"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2838">
+      <node id="7242">
         <label>gr_simple_squelch_cc</label>
         <link refid="classgr__simple__squelch__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2828">
+      <node id="7232">
         <label>gr_probe_avg_mag_sqrd_f</label>
         <link refid="classgr__probe__avg__mag__sqrd__f"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2841">
+      <node id="7245">
         <label>gr_streams_to_vector</label>
         <link refid="classgr__streams__to__vector"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2765">
+      <node id="7169">
         <label>gr_conjugate_cc</label>
         <link refid="classgr__conjugate__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2652">
+      <node id="7050">
         <label>digital_constellation_receiver_cb</label>
         <link refid="classdigital__constellation__receiver__cb"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2836">
+      <node id="7240">
         <label>gr_short_to_char</label>
         <link refid="classgr__short__to__char"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2832">
+      <node id="7236">
         <label>gr_regenerate_bb</label>
         <link refid="classgr__regenerate__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2771">
+      <node id="7175">
         <label>gr_diff_encoder_bb</label>
         <link refid="classgr__diff__encoder__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2718">
+      <node id="7122">
         <label>digital_diff_decoder_bb</label>
         <link refid="classdigital__diff__decoder__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2879">
+      <node id="7272">
+        <label>gr_freq_xlating_fir_filter_scc</label>
+        <link refid="classgr__freq__xlating__fir__filter__scc"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7301">
         <label>gr_pfb_synthesizer_ccf</label>
         <link refid="classgr__pfb__synthesizer__ccf"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2804">
+      <node id="7273">
+        <label>gr_freq_xlating_fir_filter_scf</label>
+        <link refid="classgr__freq__xlating__fir__filter__scf"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7075">
+        <label>gr_rational_resampler_base_fsf</label>
+        <link refid="classgr__rational__resampler__base__fsf"/>
+        <childnode refid="7041" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7208">
         <label>gr_map_bb</label>
         <link refid="classgr__map__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2669">
+      <node id="7067">
         <label>gr_pfb_arb_resampler_fff</label>
         <link refid="classgr__pfb__arb__resampler__fff"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2698">
+      <node id="7102">
         <label>audio_jack_sink</label>
         <link refid="classaudio__jack__sink"/>
-        <childnode refid="2696" relation="public-inheritance">
+        <childnode refid="7100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2918">
+      <node id="7345">
         <label>vocoder_g723_24_decode_bs</label>
         <link refid="classvocoder__g723__24__decode__bs"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2745">
+      <node id="7294">
+        <label>gr_interp_fir_filter_ccc</label>
+        <link refid="classgr__interp__fir__filter__ccc"/>
+        <childnode refid="7284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7149">
         <label>gr_add_ff</label>
         <link refid="classgr__add__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2881">
+      <node id="7303">
         <label>gr_streams_to_stream</label>
         <link refid="classgr__streams__to__stream"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2927">
+      <node id="7295">
+        <label>gr_interp_fir_filter_ccf</label>
+        <link refid="classgr__interp__fir__filter__ccf"/>
+        <childnode refid="7284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7071">
+        <label>gr_rational_resampler_base_ccc</label>
+        <link refid="classgr__rational__resampler__base__ccc"/>
+        <childnode refid="7041" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7072">
+        <label>gr_rational_resampler_base_ccf</label>
+        <link refid="classgr__rational__resampler__base__ccf"/>
+        <childnode refid="7041" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7298">
+        <label>gr_interp_fir_filter_fsf</label>
+        <link refid="classgr__interp__fir__filter__fsf"/>
+        <childnode refid="7284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7354">
         <label>wavelet_wavelet_ff_impl</label>
         <link refid="classwavelet__wavelet__ff__impl"/>
-        <childnode refid="2926" relation="public-inheritance">
+        <childnode refid="7353" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2650">
+      <node id="7048">
         <label>digital_clock_recovery_mm_ff</label>
         <link refid="classdigital__clock__recovery__mm__ff"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2859">
+      <node id="7275">
         <label>gr_interleaved_short_to_complex</label>
         <link refid="classgr__interleaved__short__to__complex"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2811">
+      <node id="7215">
         <label>gr_multiply_ff</label>
         <link refid="classgr__multiply__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2805">
+      <node id="7209">
         <label>gr_message_sink</label>
         <link refid="classgr__message__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2909">
+      <node id="7336">
         <label>trellis_permutation</label>
         <link refid="classtrellis__permutation"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2672">
+      <node id="7070">
         <label>gr_pfb_clock_sync_fff</label>
         <link refid="classgr__pfb__clock__sync__fff"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2780">
+      <node id="7184">
         <label>gr_file_descriptor_sink</label>
         <link refid="classgr__file__descriptor__sink"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2700">
+      <node id="7104">
         <label>audio_osx_sink</label>
         <link refid="classaudio__osx__sink"/>
-        <childnode refid="2696" relation="public-inheritance">
+        <childnode refid="7100" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2722">
+      <node id="7126">
         <label>digital_framer_sink_1</label>
         <link refid="classdigital__framer__sink__1"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2847">
+      <node id="7251">
         <label>gr::fft::goertzel_fc</label>
         <link refid="classgr_1_1fft_1_1goertzel__fc"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2728">
+      <node id="7132">
         <label>digital_ofdm_mapper_bcv</label>
         <link refid="classdigital__ofdm__mapper__bcv"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2692">
+      <node id="7299">
+        <label>gr_interp_fir_filter_scc</label>
+        <link refid="classgr__interp__fir__filter__scc"/>
+        <childnode refid="7284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7096">
         <label>atsc_rs_decoder</label>
         <link refid="classatsc__rs__decoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2883">
+      <node id="7305">
         <label>gr_vector_to_stream</label>
         <link refid="classgr__vector__to__stream"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2807">
+      <node id="7211">
         <label>gr_multiply_cc</label>
         <link refid="classgr__multiply__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2736">
+      <node id="7140">
         <label>dvbt_randomizer</label>
         <link refid="classdvbt__randomizer"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2899">
+      <node id="7326">
         <label>noaa_hrpt_decoder</label>
         <link refid="classnoaa__hrpt__decoder"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2864">
+      <node id="7280">
         <label>pager_flex_deinterleave</label>
         <link refid="classpager__flex__deinterleave"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2781">
+      <node id="7185">
         <label>gr_file_descriptor_source</label>
         <link refid="classgr__file__descriptor__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2706">
+      <node id="7110">
         <label>audio_oss_source</label>
         <link refid="classaudio__oss__source"/>
-        <childnode refid="2703" relation="public-inheritance">
+        <childnode refid="7107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2902">
+      <node id="7329">
         <label>pager_slicer_fb</label>
         <link refid="classpager__slicer__fb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2849">
+      <node id="7253">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2761">
+      <node id="7165">
         <label>gr_complex_to_imag</label>
         <link refid="classgr__complex__to__imag"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2853">
+      <node id="7257">
         <label>gr_adaptive_fir_ccf</label>
         <link refid="classgr__adaptive__fir__ccf"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2937">
+      <node id="7365">
         <label>trellis_siso_f</label>
         <link refid="classtrellis__siso__f"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2894">
+      <node id="7316">
         <label>gr_vco_f</label>
         <link refid="classgr__vco__f"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2865">
+      <node id="7281">
         <label>vocoder_codec2_encode_sp</label>
         <link refid="classvocoder__codec2__encode__sp"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2707">
+      <node id="7111">
         <label>audio_osx_source</label>
         <link refid="classaudio__osx__source"/>
-        <childnode refid="2703" relation="public-inheritance">
+        <childnode refid="7107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2863">
+      <node id="7279">
         <label>gr_stream_to_vector</label>
         <link refid="classgr__stream__to__vector"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2686">
+      <node id="7090">
         <label>atsc_equalizer</label>
         <link refid="classatsc__equalizer"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2644">
+      <node id="7042">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2645" relation="public-inheritance">
+        <childnode refid="7043" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2766">
+      <node id="7262">
+        <label>gr_fir_filter_ccc</label>
+        <link refid="classgr__fir__filter__ccc"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7170">
         <label>gr_correlate_access_code_tag_bb</label>
         <link refid="classgr__correlate__access__code__tag__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2708">
+      <node id="7112">
         <label>audio_portaudio_source</label>
         <link refid="classaudio__portaudio__source"/>
-        <childnode refid="2703" relation="public-inheritance">
+        <childnode refid="7107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2908">
+      <node id="7335">
         <label>tag_source_demo</label>
         <link refid="classtag__source__demo"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2808">
+      <node id="7263">
+        <label>gr_fir_filter_ccf</label>
+        <link refid="classgr__fir__filter__ccf"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7212">
         <label>gr_multiply_conjugate_cc</label>
         <link refid="classgr__multiply__conjugate__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2926">
+      <node id="7353">
         <label>wavelet_wavelet_ff</label>
         <link refid="classwavelet__wavelet__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2757">
+      <node id="7161">
         <label>gr_check_counting_s</label>
         <link refid="classgr__check__counting__s"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2679">
+      <node id="7083">
         <label>gr_ctcss_squelch_ff</label>
         <link refid="classgr__ctcss__squelch__ff"/>
-        <childnode refid="2678" relation="public-inheritance">
+        <childnode refid="7082" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2666">
+      <node id="7064">
         <label>gr_nop</label>
         <link refid="classgr__nop"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2801">
+      <node id="7205">
         <label>gr_keep_m_in_n</label>
         <link refid="classgr__keep__m__in__n"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2915">
+      <node id="7342">
         <label>vocoder_alaw_encode_sb</label>
         <link refid="classvocoder__alaw__encode__sb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2837">
+      <node id="7266">
+        <label>gr_fir_filter_fsf</label>
+        <link refid="classgr__fir__filter__fsf"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7241">
         <label>gr_short_to_float</label>
         <link refid="classgr__short__to__float"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2891">
+      <node id="7313">
         <label>gr_uchar_to_float</label>
         <link refid="classgr__uchar__to__float"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2774">
+      <node id="7178">
         <label>gr_fake_channel_decoder_pp</label>
         <link refid="classgr__fake__channel__decoder__pp"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2691">
+      <node id="7095">
         <label>atsc_randomizer</label>
         <link refid="classatsc__randomizer"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2880">
+      <node id="7302">
         <label>gr_repeat</label>
         <link refid="classgr__repeat"/>
-        <childnode refid="2868" relation="public-inheritance">
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2647">
+      <node id="7045">
         <label>atsc_bit_timing_loop</label>
         <link refid="classatsc__bit__timing__loop"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2846">
+      <node id="7250">
         <label>dvbt_pad</label>
         <link refid="classdvbt__pad"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2648">
+      <node id="7046">
         <label>atsc_field_sync_demux</label>
         <link refid="classatsc__field__sync__demux"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2845">
+      <node id="7074">
+        <label>gr_rational_resampler_base_fff</label>
+        <link refid="classgr__rational__resampler__base__fff"/>
+        <childnode refid="7041" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7249">
         <label>digital_pn_correlator_cc</label>
         <link refid="classdigital__pn__correlator__cc"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2802">
+      <node id="7206">
         <label>gr_kludge_copy</label>
         <link refid="classgr__kludge__copy"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2748">
+      <node id="7267">
+        <label>gr_fir_filter_scc</label>
+        <link refid="classgr__fir__filter__scc"/>
+        <childnode refid="7247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7152">
         <label>gr_agc2_ff</label>
         <link refid="classgr__agc2__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2842">
+      <node id="7246">
         <label>gr_stretch_ff</label>
         <link refid="classgr__stretch__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2684">
+      <node id="7088">
         <label>atsc_derandomizer</label>
         <link refid="classatsc__derandomizer"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2861">
+      <node id="7277">
         <label>gr_pn_correlator_cc</label>
         <link refid="classgr__pn__correlator__cc"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2733">
+      <node id="7137">
         <label>dvbt_deinterleaver</label>
         <link refid="classdvbt__deinterleaver"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2848">
+      <node id="7252">
         <label>gr::fft::goertzel_fc_impl</label>
         <link refid="classgr_1_1fft_1_1goertzel__fc__impl"/>
-        <childnode refid="2847" relation="public-inheritance">
+        <childnode refid="7251" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2833">
+      <node id="7237">
         <label>gr_rms_cf</label>
         <link refid="classgr__rms__cf"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2929">
+      <node id="7356">
         <label>wavelet_wvps_ff_impl</label>
         <link refid="classwavelet__wvps__ff__impl"/>
-        <childnode refid="2928" relation="public-inheritance">
+        <childnode refid="7355" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2770">
+      <node id="7174">
         <label>gr_diff_decoder_bb</label>
         <link refid="classgr__diff__decoder__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2799">
+      <node id="7203">
         <label>gr_int_to_float</label>
         <link refid="classgr__int__to__float"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2760">
+      <node id="7164">
         <label>gr_complex_to_float</label>
         <link refid="classgr__complex__to__float"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2731">
+      <node id="7135">
         <label>digital_probe_mpsk_snr_est_c</label>
         <link refid="classdigital__probe__mpsk__snr__est__c"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2675">
+      <node id="7079">
         <label>gr_skiphead</label>
         <link refid="classgr__skiphead"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2898">
+      <node id="7325">
         <label>gr_wavfile_source</label>
         <link refid="classgr__wavfile__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2936">
+      <node id="7364">
         <label>trellis_siso_combined_f</label>
         <link refid="classtrellis__siso__combined__f"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2806">
+      <node id="7210">
         <label>gr_message_source</label>
         <link refid="classgr__message__source"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2747">
+      <node id="7151">
         <label>gr_agc2_cc</label>
         <link refid="classgr__agc2__cc"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2681">
+      <node id="7085">
         <label>gr_stream_mux</label>
         <link refid="classgr__stream__mux"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2834">
+      <node id="7073">
+        <label>gr_rational_resampler_base_fcc</label>
+        <link refid="classgr__rational__resampler__base__fcc"/>
+        <childnode refid="7041" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7238">
         <label>gr_rms_ff</label>
         <link refid="classgr__rms__ff"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2751">
+      <node id="7155">
         <label>gr_annotator_1to1</label>
         <link refid="classgr__annotator__1to1"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2723">
+      <node id="7127">
         <label>digital_glfsr_source_b</label>
         <link refid="classdigital__glfsr__source__b"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2724">
+      <node id="7128">
         <label>digital_glfsr_source_f</label>
         <link refid="classdigital__glfsr__source__f"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2824">
+      <node id="7228">
         <label>gr_pll_freqdet_cf</label>
         <link refid="classgr__pll__freqdet__cf"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2656">
+      <node id="7054">
         <label>digital_ofdm_sampler</label>
         <link refid="classdigital__ofdm__sampler"/>
-        <childnode refid="2643" relation="public-inheritance">
+        <childnode refid="7041" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2856">
+      <node id="7260">
         <label>gr_fft_filter_ccc</label>
         <link refid="classgr__fft__filter__ccc"/>
-        <childnode refid="2843" relation="public-inheritance">
+        <childnode refid="7247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2789">
+      <node id="7193">
         <label>gr_float_to_uchar</label>
         <link refid="classgr__float__to__uchar"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2746">
+      <node id="7150">
         <label>gr_additive_scrambler_bb</label>
         <link refid="classgr__additive__scrambler__bb"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2788">
+      <node id="7192">
         <label>gr_float_to_short</label>
         <link refid="classgr__float__to__short"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2798">
+      <node id="7202">
         <label>gr_iir_filter_ffd</label>
         <link refid="classgr__iir__filter__ffd"/>
-        <childnode refid="2682" relation="public-inheritance">
+        <childnode refid="7086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7296">
+        <label>gr_interp_fir_filter_fcc</label>
+        <link refid="classgr__interp__fir__filter__fcc"/>
+        <childnode refid="7284" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2940">
+      <node id="7368">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2941" relation="public-inheritance">
+        <childnode refid="7369" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2938">
+      <node id="7366">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2939" relation="public-inheritance">
+        <childnode refid="7367" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2942">
+      <node id="7370">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2943" relation="usage">
+        <childnode refid="7371" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2945">
+      <node id="7373">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2941">
+      <node id="7369">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2943">
+      <node id="7371">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2939">
+      <node id="7367">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2940" relation="public-inheritance">
+        <childnode refid="7368" relation="public-inheritance">
         </childnode>
-        <childnode refid="2942" relation="usage">
+        <childnode refid="7370" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2944" relation="usage">
+        <childnode refid="7372" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2944">
+      <node id="7372">
         <label>std::string</label>
-        <childnode refid="2945" relation="public-inheritance">
+        <childnode refid="7373" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

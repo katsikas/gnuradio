@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__bin__statistics__f" kind="class" prot="public">
     <compoundname>gr_bin_statistics_f</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -160,7 +160,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__bin__statistics__f_1ae3d58c481ce13652578cd75e758cec31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_bin_statistics_f_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_bin_statistics_f_sptr</ref></type>
         <definition>GR_CORE_API gr_bin_statistics_f_sptr gr_make_bin_statistics_f</definition>
         <argsstring>(unsigned int vlen, gr_msg_queue_sptr msgq, gr_feval_dd *tune, size_t tune_delay, size_t dwell_delay)</argsstring>
         <name>gr_make_bin_statistics_f</name>
@@ -228,7 +228,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" line="73"/>
       </memberdef>
       <memberdef kind="function" id="classgr__bin__statistics__f_1acf642474da38e471c804b577abaaab8f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_bin_statistics_f::enter_init</definition>
         <argsstring>()</argsstring>
         <name>enter_init</name>
@@ -241,7 +241,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" line="75"/>
       </memberdef>
       <memberdef kind="function" id="classgr__bin__statistics__f_1af082b15cb3b1df2583ec37668d955c3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_bin_statistics_f::enter_tune_delay</definition>
         <argsstring>()</argsstring>
         <name>enter_tune_delay</name>
@@ -254,7 +254,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" line="76"/>
       </memberdef>
       <memberdef kind="function" id="classgr__bin__statistics__f_1a5e528107e9766db148098de5a169339d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_bin_statistics_f::enter_dwell_delay</definition>
         <argsstring>()</argsstring>
         <name>enter_dwell_delay</name>
@@ -267,7 +267,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" line="77"/>
       </memberdef>
       <memberdef kind="function" id="classgr__bin__statistics__f_1aa4910a6b92ce371d16df2599c67e11f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_bin_statistics_f::leave_dwell_delay</definition>
         <argsstring>()</argsstring>
         <name>leave_dwell_delay</name>
@@ -321,7 +321,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" line="85" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="classgr__bin__statistics__f_1a294cbbaaf4124460574fc087dfcae4a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_bin_statistics_f::reset_stats</definition>
         <argsstring>()</argsstring>
         <name>reset_stats</name>
@@ -334,7 +334,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" line="87"/>
       </memberdef>
       <memberdef kind="function" id="classgr__bin__statistics__f_1a13ed697688288f0f00511e4a81554941" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_bin_statistics_f::accrue_stats</definition>
         <argsstring>(const float *input)</argsstring>
         <name>accrue_stats</name>
@@ -351,7 +351,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_bin_statistics_f.h" line="88"/>
       </memberdef>
       <memberdef kind="function" id="classgr__bin__statistics__f_1ad758b1f11291409547f16e0e156aba06" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_bin_statistics_f::send_stats</definition>
         <argsstring>()</argsstring>
         <name>send_stats</name>
@@ -410,106 +410,106 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2630">
+      <node id="7028">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2631" relation="public-inheritance">
+        <childnode refid="7029" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2627">
+      <node id="7025">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2628" relation="public-inheritance">
+        <childnode refid="7026" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2628">
+      <node id="7026">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2629" relation="public-inheritance">
+        <childnode refid="7027" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2631">
+      <node id="7029">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2626">
+      <node id="7024">
         <label>gr_bin_statistics_f</label>
         <link refid="classgr__bin__statistics__f"/>
-        <childnode refid="2627" relation="public-inheritance">
+        <childnode refid="7025" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2629">
+      <node id="7027">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2630" relation="public-inheritance">
+        <childnode refid="7028" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2636">
+      <node id="7034">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2637" relation="public-inheritance">
+        <childnode refid="7035" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2633">
+      <node id="7031">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2634" relation="public-inheritance">
+        <childnode refid="7032" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2642">
+      <node id="7040">
         <label>std::vector&lt; float &gt;</label>
       </node>
-      <node id="2634">
+      <node id="7032">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2635" relation="public-inheritance">
+        <childnode refid="7033" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2638">
+      <node id="7036">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2639" relation="usage">
+        <childnode refid="7037" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2641">
+      <node id="7039">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2637">
+      <node id="7035">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2632">
+      <node id="7030">
         <label>gr_bin_statistics_f</label>
         <link refid="classgr__bin__statistics__f"/>
-        <childnode refid="2633" relation="public-inheritance">
+        <childnode refid="7031" relation="public-inheritance">
         </childnode>
-        <childnode refid="2642" relation="usage">
+        <childnode refid="7040" relation="usage">
           <edgelabel>d_max</edgelabel>
         </childnode>
       </node>
-      <node id="2639">
+      <node id="7037">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2635">
+      <node id="7033">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2636" relation="public-inheritance">
+        <childnode refid="7034" relation="public-inheritance">
         </childnode>
-        <childnode refid="2638" relation="usage">
+        <childnode refid="7036" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2640" relation="usage">
+        <childnode refid="7038" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2640">
+      <node id="7038">
         <label>std::string</label>
-        <childnode refid="2641" relation="public-inheritance">
+        <childnode refid="7039" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

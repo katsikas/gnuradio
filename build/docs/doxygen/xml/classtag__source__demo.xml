@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classtag__source__demo" kind="class" prot="public">
     <compoundname>tag_source_demo</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -132,7 +132,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_source_demo.h" line="51" bodyfile="/home/katsikas/gnuradio/gr-uhd/examples/c++/tag_source_demo.h" bodystart="32" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classtag__source__demo_1afc52d4e66cec13534d92abde34cadffc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void tag_source_demo::make_time_tag</definition>
         <argsstring>(const uint64_t tag_count)</argsstring>
         <name>make_time_tag</name>
@@ -156,7 +156,7 @@
         <referencedby refid="classtag__source__demo_1ab52a13afff158b6d53c6ea1d56512d28" compoundref="tag__source__demo_8h" startline="79" endline="117">work</referencedby>
       </memberdef>
       <memberdef kind="function" id="classtag__source__demo_1a816102a6804493b5fded33363aae4e0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void tag_source_demo::make_sob_tag</definition>
         <argsstring>(const uint64_t tag_count)</argsstring>
         <name>make_sob_tag</name>
@@ -178,7 +178,7 @@
         <referencedby refid="classtag__source__demo_1ab52a13afff158b6d53c6ea1d56512d28" compoundref="tag__source__demo_8h" startline="79" endline="117">work</referencedby>
       </memberdef>
       <memberdef kind="function" id="classtag__source__demo_1a1f7cf2c665c9fb575ca9b8241a9bbaa2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void tag_source_demo::make_eob_tag</definition>
         <argsstring>(const uint64_t tag_count)</argsstring>
         <name>make_eob_tag</name>
@@ -235,100 +235,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7437">
+      <node id="12793">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7438" relation="public-inheritance">
+        <childnode refid="12794" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7434">
+      <node id="12790">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7435" relation="public-inheritance">
+        <childnode refid="12791" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7435">
+      <node id="12791">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7436" relation="public-inheritance">
+        <childnode refid="12792" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7438">
+      <node id="12794">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7436">
+      <node id="12792">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7437" relation="public-inheritance">
+        <childnode refid="12793" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7433">
+      <node id="12789">
         <label>tag_source_demo</label>
         <link refid="classtag__source__demo"/>
-        <childnode refid="7434" relation="public-inheritance">
+        <childnode refid="12790" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7443">
+      <node id="12799">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7444" relation="public-inheritance">
+        <childnode refid="12800" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7440">
+      <node id="12796">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7441" relation="public-inheritance">
+        <childnode refid="12797" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7441">
+      <node id="12797">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7442" relation="public-inheritance">
+        <childnode refid="12798" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7445">
+      <node id="12801">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7446" relation="usage">
+        <childnode refid="12802" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7448">
+      <node id="12804">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7444">
+      <node id="12800">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7446">
+      <node id="12802">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7442">
+      <node id="12798">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7443" relation="public-inheritance">
+        <childnode refid="12799" relation="public-inheritance">
         </childnode>
-        <childnode refid="7445" relation="usage">
+        <childnode refid="12801" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7447" relation="usage">
+        <childnode refid="12803" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7439">
+      <node id="12795">
         <label>tag_source_demo</label>
         <link refid="classtag__source__demo"/>
-        <childnode refid="7440" relation="public-inheritance">
+        <childnode refid="12796" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7447">
+      <node id="12803">
         <label>std::string</label>
-        <childnode refid="7448" relation="public-inheritance">
+        <childnode refid="12804" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__delay" kind="class" prot="public">
     <compoundname>gr_delay</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__delay_1a5342a03acb09a95048b8a1a59f3212ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_delay_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_delay_sptr</ref></type>
         <definition>GR_CORE_API gr_delay_sptr gr_make_delay</definition>
         <argsstring>(size_t itemsize, int delay)</argsstring>
         <name>gr_make_delay</name>
@@ -91,7 +91,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_delay.h" line="43"/>
       </memberdef>
       <memberdef kind="function" id="classgr__delay_1a8644fb68174be4d03c9a1a75c670870d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_delay::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -144,7 +144,7 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
         <references refid="classgr__block_1ad3b305a663f4b5b5c4e17070d00f05d9" compoundref="gr__block_8h" startline="83" endline="83">gr_block::history</references>
       </memberdef>
       <memberdef kind="function" id="classgr__delay_1a2d4928b0b56e292322abddcbac9992a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_delay::set_delay</definition>
         <argsstring>(int delay)</argsstring>
         <name>set_delay</name>
@@ -226,88 +226,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3356">
+      <node id="7784">
         <label>gr_delay</label>
         <link refid="classgr__delay"/>
-        <childnode refid="3357" relation="public-inheritance">
+        <childnode refid="7785" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3359">
+      <node id="7787">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3360" relation="public-inheritance">
+        <childnode refid="7788" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3357">
+      <node id="7785">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3358" relation="public-inheritance">
+        <childnode refid="7786" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3360">
+      <node id="7788">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3358">
+      <node id="7786">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3359" relation="public-inheritance">
+        <childnode refid="7787" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3361">
+      <node id="7789">
         <label>gr_delay</label>
         <link refid="classgr__delay"/>
-        <childnode refid="3362" relation="public-inheritance">
+        <childnode refid="7790" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3364">
+      <node id="7792">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3365" relation="public-inheritance">
+        <childnode refid="7793" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3362">
+      <node id="7790">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3363" relation="public-inheritance">
+        <childnode refid="7791" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3366">
+      <node id="7794">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3367" relation="usage">
+        <childnode refid="7795" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3369">
+      <node id="7797">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3365">
+      <node id="7793">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3367">
+      <node id="7795">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3363">
+      <node id="7791">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3364" relation="public-inheritance">
+        <childnode refid="7792" relation="public-inheritance">
         </childnode>
-        <childnode refid="3366" relation="usage">
+        <childnode refid="7794" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3368" relation="usage">
+        <childnode refid="7796" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3368">
+      <node id="7796">
         <label>std::string</label>
-        <childnode refid="3369" relation="public-inheritance">
+        <childnode refid="7797" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="group__digital" kind="group">
     <compoundname>digital</compoundname>
     <title>Digital Modulation Blocks</title>
@@ -15,6 +15,7 @@
     <innerclass refid="classdigital__constellation__qpsk" prot="public">digital_constellation_qpsk</innerclass>
     <innerclass refid="classdigital__constellation__dqpsk" prot="public">digital_constellation_dqpsk</innerclass>
     <innerclass refid="classdigital__constellation__8psk" prot="public">digital_constellation_8psk</innerclass>
+    <innerclass refid="classdigital__constellation__dvbt__qpsk" prot="public">digital_constellation_dvbt_qpsk</innerclass>
     <innerclass refid="classdigital__constellation__decoder__cb" prot="public">digital_constellation_decoder_cb</innerclass>
     <innerclass refid="classdigital__constellation__receiver__cb" prot="public">digital_constellation_receiver_cb</innerclass>
     <innerclass refid="classdigital__correlate__access__code__bb" prot="public">digital_correlate_access_code_bb</innerclass>
@@ -26,7 +27,7 @@
     <innerclass refid="classdigital__fll__band__edge__cc" prot="public">digital_fll_band_edge_cc</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__digital_1gae63384dcd8da7016cc4a9024cbca580d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> unsigned int</type>
+        <type>DIGITAL_API unsigned int</type>
         <definition>DIGITAL_API unsigned int digital_update_crc32</definition>
         <argsstring>(unsigned int crc, const unsigned char *buf, size_t len)</argsstring>
         <name>digital_update_crc32</name>

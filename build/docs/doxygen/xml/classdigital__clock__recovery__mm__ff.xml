@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__clock__recovery__mm__ff" kind="class" prot="public">
     <compoundname>digital_clock_recovery_mm_ff</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -164,7 +164,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__clock__recovery__mm__ff_1a72e11669ec5f43bd97681537f93e1333" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_clock_recovery_mm_ff::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -313,7 +313,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" line="65" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" bodystart="65" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__clock__recovery__mm__ff_1ab104e02855ea8b36575446de41bdd35c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_clock_recovery_mm_ff::set_gain_mu</definition>
         <argsstring>(float gain_mu)</argsstring>
         <name>set_gain_mu</name>
@@ -330,7 +330,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" line="67" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" bodystart="67" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__clock__recovery__mm__ff_1a6ae34beec7fa4ff16826da14656cb477" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_clock_recovery_mm_ff::set_gain_omega</definition>
         <argsstring>(float gain_omega)</argsstring>
         <name>set_gain_omega</name>
@@ -347,7 +347,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" line="68" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__clock__recovery__mm__ff_1acec088a61bffe9fd996acfca00c81d52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_clock_recovery_mm_ff::set_mu</definition>
         <argsstring>(float mu)</argsstring>
         <name>set_mu</name>
@@ -364,7 +364,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" line="69" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_clock_recovery_mm_ff.h" bodystart="69" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__clock__recovery__mm__ff_1aae816260ad9c7d8dd6479be3f134e816" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_clock_recovery_mm_ff::set_omega</definition>
         <argsstring>(float omega)</argsstring>
         <name>set_omega</name>
@@ -418,7 +418,7 @@ general_work must call consume or consume_each to indicate how many items were c
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__clock__recovery__mm__ff_1a1d5289f77a78f24836fafbbdea3b6802" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_clock_recovery_mm_ff_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_clock_recovery_mm_ff_sptr</ref></type>
         <definition>DIGITAL_API digital_clock_recovery_mm_ff_sptr digital_make_clock_recovery_mm_ff</definition>
         <argsstring>(float omega, float gain_omega, float mu, float gain_mu, float omega_relative_limit)</argsstring>
         <name>digital_make_clock_recovery_mm_ff</name>
@@ -457,88 +457,88 @@ general_work must call consume or consume_each to indicate how many items were c
 <para>See &quot;Digital Communication Receivers: Synchronization, Channel
  Estimation and Signal Processing&quot; by Heinrich Meyr, Marc Moeneclaey, &amp; Stefan Fechtel. ISBN 0-471-50275-8. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1021">
+      <node id="5359">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1022" relation="public-inheritance">
+        <childnode refid="5360" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1019">
+      <node id="5357">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1020" relation="public-inheritance">
+        <childnode refid="5358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1022">
+      <node id="5360">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1018">
+      <node id="5356">
         <label>digital_clock_recovery_mm_ff</label>
         <link refid="classdigital__clock__recovery__mm__ff"/>
-        <childnode refid="1019" relation="public-inheritance">
+        <childnode refid="5357" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1020">
+      <node id="5358">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1021" relation="public-inheritance">
+        <childnode refid="5359" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1026">
+      <node id="5364">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1027" relation="public-inheritance">
+        <childnode refid="5365" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1024">
+      <node id="5362">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1025" relation="public-inheritance">
+        <childnode refid="5363" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1028">
+      <node id="5366">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1029" relation="usage">
+        <childnode refid="5367" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1031">
+      <node id="5369">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1027">
+      <node id="5365">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1023">
+      <node id="5361">
         <label>digital_clock_recovery_mm_ff</label>
         <link refid="classdigital__clock__recovery__mm__ff"/>
-        <childnode refid="1024" relation="public-inheritance">
+        <childnode refid="5362" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1029">
+      <node id="5367">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1025">
+      <node id="5363">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1026" relation="public-inheritance">
+        <childnode refid="5364" relation="public-inheritance">
         </childnode>
-        <childnode refid="1028" relation="usage">
+        <childnode refid="5366" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1030" relation="usage">
+        <childnode refid="5368" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1030">
+      <node id="5368">
         <label>std::string</label>
-        <childnode refid="1031" relation="public-inheritance">
+        <childnode refid="5369" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

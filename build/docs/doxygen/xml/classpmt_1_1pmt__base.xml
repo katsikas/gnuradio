@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classpmt_1_1pmt__base" kind="class" prot="public">
     <compoundname>pmt::pmt_base</compoundname>
     <derivedcompoundref refid="classpmt_1_1pmt__any" prot="public" virt="non-virtual">pmt::pmt_any</derivedcompoundref>
@@ -428,7 +428,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classpmt_1_1pmt__base_1ad14131bcf9939d78fd055307b22b34a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>friend void</type>
         <definition>void intrusive_ptr_add_ref</definition>
         <argsstring>(pmt_base *p)</argsstring>
         <name>intrusive_ptr_add_ref</name>
@@ -445,7 +445,7 @@
         <location file="/home/katsikas/gnuradio/gruel/src/lib/pmt/pmt_int.h" line="74"/>
       </memberdef>
       <memberdef kind="friend" id="classpmt_1_1pmt__base_1ae5f9ec3f2c0186fd836bd1051c7e948b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>friend void</type>
         <definition>void intrusive_ptr_release</definition>
         <argsstring>(pmt_base *p)</argsstring>
         <name>intrusive_ptr_release</name>
@@ -467,152 +467,152 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7016">
+      <node id="12379">
         <label>pmt::pmt_symbol</label>
         <link refid="classpmt_1_1pmt__symbol"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7019">
+      <node id="12382">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7014">
+      <node id="12377">
         <label>pmt::pmt_pair</label>
         <link refid="classpmt_1_1pmt__pair"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7024">
+      <node id="12387">
         <label>pmt::pmt_s16vector</label>
         <link refid="classpmt_1_1pmt__s16vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7012">
+      <node id="12375">
         <label>pmt::pmt_integer</label>
         <link refid="classpmt_1_1pmt__integer"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7013">
+      <node id="12376">
         <label>pmt::pmt_null</label>
         <link refid="classpmt_1_1pmt__null"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7027">
+      <node id="12390">
         <label>pmt::pmt_s8vector</label>
         <link refid="classpmt_1_1pmt__s8vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7029">
+      <node id="12392">
         <label>pmt::pmt_u32vector</label>
         <link refid="classpmt_1_1pmt__u32vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7030">
+      <node id="12393">
         <label>pmt::pmt_u64vector</label>
         <link refid="classpmt_1_1pmt__u64vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7022">
+      <node id="12385">
         <label>pmt::pmt_f32vector</label>
         <link refid="classpmt_1_1pmt__f32vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7023">
+      <node id="12386">
         <label>pmt::pmt_f64vector</label>
         <link refid="classpmt_1_1pmt__f64vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7018">
+      <node id="12381">
         <label>pmt::pmt_uint64</label>
         <link refid="classpmt_1_1pmt__uint64"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7010">
+      <node id="12373">
         <label>pmt::pmt_bool</label>
         <link refid="classpmt_1_1pmt__bool"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7008">
+      <node id="12371">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
-      <node id="7020">
+      <node id="12383">
         <label>pmt::pmt_c32vector</label>
         <link refid="classpmt_1_1pmt__c32vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7028">
+      <node id="12391">
         <label>pmt::pmt_u16vector</label>
         <link refid="classpmt_1_1pmt__u16vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7032">
+      <node id="12395">
         <label>pmt::pmt_vector</label>
         <link refid="classpmt_1_1pmt__vector"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7021">
+      <node id="12384">
         <label>pmt::pmt_c64vector</label>
         <link refid="classpmt_1_1pmt__c64vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7015">
+      <node id="12378">
         <label>pmt::pmt_real</label>
         <link refid="classpmt_1_1pmt__real"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7025">
+      <node id="12388">
         <label>pmt::pmt_s32vector</label>
         <link refid="classpmt_1_1pmt__s32vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7026">
+      <node id="12389">
         <label>pmt::pmt_s64vector</label>
         <link refid="classpmt_1_1pmt__s64vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7009">
+      <node id="12372">
         <label>pmt::pmt_any</label>
         <link refid="classpmt_1_1pmt__any"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7031">
+      <node id="12394">
         <label>pmt::pmt_u8vector</label>
         <link refid="classpmt_1_1pmt__u8vector"/>
-        <childnode refid="7019" relation="public-inheritance">
+        <childnode refid="12382" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7017">
+      <node id="12380">
         <label>pmt::pmt_tuple</label>
         <link refid="classpmt_1_1pmt__tuple"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7011">
+      <node id="12374">
         <label>pmt::pmt_complex</label>
         <link refid="classpmt_1_1pmt__complex"/>
-        <childnode refid="7008" relation="public-inheritance">
+        <childnode refid="12371" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__scheduler" kind="class" prot="public">
     <compoundname>gr_scheduler</compoundname>
     <derivedcompoundref refid="classgr__scheduler__sts" prot="public" virt="non-virtual">gr_scheduler_sts</derivedcompoundref>
@@ -41,7 +41,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler.h" line="52"/>
       </memberdef>
       <memberdef kind="function" id="classgr__scheduler_1a9aa911eac6894694dfb67a59cc4a4e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_scheduler::stop</definition>
         <argsstring>()=0</argsstring>
         <name>stop</name>
@@ -56,7 +56,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_scheduler.h" line="57"/>
       </memberdef>
       <memberdef kind="function" id="classgr__scheduler_1a27993c1e1a34a5d29a3ede97b731506e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>virtual void gr_scheduler::wait</definition>
         <argsstring>()=0</argsstring>
         <name>wait</name>
@@ -76,20 +76,20 @@
     <detaileddescription>
 <para>Preconditions: details, buffers and buffer readers have been assigned. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="5310">
+      <node id="10489">
         <label>gr_scheduler_sts</label>
         <link refid="classgr__scheduler__sts"/>
-        <childnode refid="5309" relation="public-inheritance">
+        <childnode refid="10488" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5309">
+      <node id="10488">
         <label>gr_scheduler</label>
         <link refid="classgr__scheduler"/>
       </node>
-      <node id="5311">
+      <node id="10490">
         <label>gr_scheduler_tpb</label>
         <link refid="classgr__scheduler__tpb"/>
-        <childnode refid="5309" relation="public-inheritance">
+        <childnode refid="10488" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

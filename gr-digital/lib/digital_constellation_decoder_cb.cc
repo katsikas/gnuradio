@@ -28,6 +28,7 @@
 #include <digital_constellation.h>
 #include <gr_io_signature.h>
 #include <iostream>
+#include <stdio.h>
 
 digital_constellation_decoder_cb_sptr
 digital_make_constellation_decoder_cb (digital_constellation_sptr constellation)
@@ -70,6 +71,7 @@ digital_constellation_decoder_cb::general_work (int noutput_items,
 
   for(int i = 0; i < noutput_items; i++){
     out[i] = d_constellation->decision_maker(&(in[i*d_dim]));
+    //printf("out[i] = %d \n",out[i]);
   }
 
   consume_each (noutput_items * d_dim);

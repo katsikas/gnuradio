@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__fractional__interpolator__cc" kind="class" prot="public">
     <compoundname>gr_fractional_interpolator_cc</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -60,7 +60,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" line="44"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fractional__interpolator__cc_1a570e5166c62a42c1731275ca202c14af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_fractional_interpolator_cc::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -183,7 +183,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" line="52" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fractional__interpolator__cc_1a595b87d7eab91b7180623bea2bba4755" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_fractional_interpolator_cc::set_mu</definition>
         <argsstring>(float mu)</argsstring>
         <name>set_mu</name>
@@ -200,7 +200,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" line="53" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fractional_interpolator_cc.h" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classgr__fractional__interpolator__cc_1accd16b85f3b80df0b62329d005742582" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_fractional_interpolator_cc::set_interp_ratio</definition>
         <argsstring>(float interp_ratio)</argsstring>
         <name>set_interp_ratio</name>
@@ -242,7 +242,7 @@ general_work must call consume or consume_each to indicate how many items were c
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__fractional__interpolator__cc_1ad407c222a242098d200cd26389732735" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fractional_interpolator_cc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fractional_interpolator_cc_sptr</ref></type>
         <definition>GR_CORE_API gr_fractional_interpolator_cc_sptr gr_make_fractional_interpolator_cc</definition>
         <argsstring>(float phase_shift, float interp_ratio)</argsstring>
         <name>gr_make_fractional_interpolator_cc</name>
@@ -268,88 +268,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3926">
+      <node id="8748">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3927" relation="public-inheritance">
+        <childnode refid="8749" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3924">
+      <node id="8746">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3925" relation="public-inheritance">
+        <childnode refid="8747" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3923">
+      <node id="8745">
         <label>gr_fractional_interpolator_cc</label>
         <link refid="classgr__fractional__interpolator__cc"/>
-        <childnode refid="3924" relation="public-inheritance">
+        <childnode refid="8746" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3927">
+      <node id="8749">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3925">
+      <node id="8747">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3926" relation="public-inheritance">
+        <childnode refid="8748" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3931">
+      <node id="8753">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3932" relation="public-inheritance">
+        <childnode refid="8754" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3929">
+      <node id="8751">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3930" relation="public-inheritance">
+        <childnode refid="8752" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3928">
+      <node id="8750">
         <label>gr_fractional_interpolator_cc</label>
         <link refid="classgr__fractional__interpolator__cc"/>
-        <childnode refid="3929" relation="public-inheritance">
+        <childnode refid="8751" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3933">
+      <node id="8755">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3934" relation="usage">
+        <childnode refid="8756" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3936">
+      <node id="8758">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3932">
+      <node id="8754">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3934">
+      <node id="8756">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3930">
+      <node id="8752">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3931" relation="public-inheritance">
+        <childnode refid="8753" relation="public-inheritance">
         </childnode>
-        <childnode refid="3933" relation="usage">
+        <childnode refid="8755" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3935" relation="usage">
+        <childnode refid="8757" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3935">
+      <node id="8757">
         <label>std::string</label>
-        <childnode refid="3936" relation="public-inheritance">
+        <childnode refid="8758" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

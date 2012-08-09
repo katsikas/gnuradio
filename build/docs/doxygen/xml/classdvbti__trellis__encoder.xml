@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbti__trellis__encoder" kind="class" prot="public">
     <compoundname>dvbti_trellis_encoder</compoundname>
     <includes refid="dvbti__trellis__encoder_8h" local="no">dvbti_trellis_encoder.h</includes>
@@ -106,7 +106,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="41"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__trellis__encoder_1acb07924c904a790a9b6d5493f656e1cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbti_trellis_encoder::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -119,7 +119,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="44"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__trellis__encoder_1a13e376dd3f257039444f0ed569bb8629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbti_trellis_encoder::encode</definition>
         <argsstring>(dvbt_data_segment out[NCODERS], const dvbt_mpeg_packet_rs_encoded in[NCODERS])</argsstring>
         <name>encode</name>
@@ -144,7 +144,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classdvbti__trellis__encoder_1a1f29c036e6edda3e6eec4c1212d9d4dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbti_trellis_encoder::encode_helper</definition>
         <argsstring>(unsigned char out[OUTPUT_SIZE], const unsigned char in[INPUT_SIZE])</argsstring>
         <name>encode_helper</name>
@@ -172,14 +172,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="1919">
+      <node id="6287">
         <label>dvbti_trellis_encoder</label>
         <link refid="classdvbti__trellis__encoder"/>
-        <childnode refid="1920" relation="usage">
+        <childnode refid="6288" relation="usage">
           <edgelabel>enc</edgelabel>
         </childnode>
       </node>
-      <node id="1920">
+      <node id="6288">
         <label>dvbti_basic_trellis_encoder</label>
         <link refid="classdvbti__basic__trellis__encoder"/>
       </node>

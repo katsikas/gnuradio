@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__ofdm__insert__preamble" kind="class" prot="public">
     <compoundname>digital_ofdm_insert_preamble</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -113,7 +113,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__ofdm__insert__preamble_1a4c1f0c361c5edf7018bc4f1b43b26fdb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_ofdm_insert_preamble_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_ofdm_insert_preamble_sptr</ref></type>
         <definition>DIGITAL_API digital_ofdm_insert_preamble_sptr digital_make_ofdm_insert_preamble</definition>
         <argsstring>(int fft_length, const std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;preamble)</argsstring>
         <name>digital_make_ofdm_insert_preamble</name>
@@ -159,7 +159,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classdigital__ofdm__insert__preamble_1ae874181a68c4f00760ec6841e1be6fb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_ofdm_insert_preamble::enter_idle</definition>
         <argsstring>()</argsstring>
         <name>enter_idle</name>
@@ -172,7 +172,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_insert_preamble.h" line="90"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__ofdm__insert__preamble_1a3769cdcd4b0b5cbd98910ecfda85ae77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_ofdm_insert_preamble::enter_first_payload</definition>
         <argsstring>()</argsstring>
         <name>enter_first_payload</name>
@@ -185,7 +185,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_insert_preamble.h" line="91"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__ofdm__insert__preamble_1a0dffeaf555045fc014a37e90a3735813" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_ofdm_insert_preamble::enter_payload</definition>
         <argsstring>()</argsstring>
         <name>enter_payload</name>
@@ -213,7 +213,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_insert_preamble.h" line="96"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__ofdm__insert__preamble_1aac5c73449566a2ea4df150d1b858353e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_ofdm_insert_preamble::enter_preamble</definition>
         <argsstring>()</argsstring>
         <name>enter_preamble</name>
@@ -286,7 +286,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_ofdm_insert_preamble.h" line="102"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__ofdm__insert__preamble_1ad1d6eda83a2acaaddc608cd159863ed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_ofdm_insert_preamble::forecast</definition>
         <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
         <name>forecast</name>
@@ -353,88 +353,88 @@ Given a request to product <computeroutput>noutput_items</computeroutput>, estim
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1547">
+      <node id="5915">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1548" relation="public-inheritance">
+        <childnode refid="5916" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1545">
+      <node id="5913">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1546" relation="public-inheritance">
+        <childnode refid="5914" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1544">
+      <node id="5912">
         <label>digital_ofdm_insert_preamble</label>
         <link refid="classdigital__ofdm__insert__preamble"/>
-        <childnode refid="1545" relation="public-inheritance">
+        <childnode refid="5913" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1548">
+      <node id="5916">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1546">
+      <node id="5914">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1547" relation="public-inheritance">
+        <childnode refid="5915" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1552">
+      <node id="5920">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1553" relation="public-inheritance">
+        <childnode refid="5921" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1550">
+      <node id="5918">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1551" relation="public-inheritance">
+        <childnode refid="5919" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1549">
+      <node id="5917">
         <label>digital_ofdm_insert_preamble</label>
         <link refid="classdigital__ofdm__insert__preamble"/>
-        <childnode refid="1550" relation="public-inheritance">
+        <childnode refid="5918" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1554">
+      <node id="5922">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1555" relation="usage">
+        <childnode refid="5923" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1557">
+      <node id="5925">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1553">
+      <node id="5921">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1555">
+      <node id="5923">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1551">
+      <node id="5919">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1552" relation="public-inheritance">
+        <childnode refid="5920" relation="public-inheritance">
         </childnode>
-        <childnode refid="1554" relation="usage">
+        <childnode refid="5922" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1556" relation="usage">
+        <childnode refid="5924" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1556">
+      <node id="5924">
         <label>std::string</label>
-        <childnode refid="1557" relation="public-inheritance">
+        <childnode refid="5925" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

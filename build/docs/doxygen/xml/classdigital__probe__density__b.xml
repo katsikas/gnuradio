@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__probe__density__b" kind="class" prot="public">
     <compoundname>digital_probe_density_b</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__probe__density__b_1abfd9e67152ec64c3db0d259b9189d898" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_probe_density_b_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_probe_density_b_sptr</ref></type>
         <definition>DIGITAL_API digital_probe_density_b_sptr digital_make_probe_density_b</definition>
         <argsstring>(double alpha)</argsstring>
         <name>digital_make_probe_density_b</name>
@@ -111,7 +111,7 @@
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_probe_density_b.h" line="63" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_probe_density_b.h" bodystart="63" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__probe__density__b_1a10abf63323cc8f01763722a08d0dbb9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_probe_density_b::set_alpha</definition>
         <argsstring>(double alpha)</argsstring>
         <name>set_alpha</name>
@@ -167,100 +167,100 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1654">
+      <node id="6022">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1655" relation="public-inheritance">
+        <childnode refid="6023" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1651">
+      <node id="6019">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1652" relation="public-inheritance">
+        <childnode refid="6020" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1652">
+      <node id="6020">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1653" relation="public-inheritance">
+        <childnode refid="6021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1650">
+      <node id="6018">
         <label>digital_probe_density_b</label>
         <link refid="classdigital__probe__density__b"/>
-        <childnode refid="1651" relation="public-inheritance">
+        <childnode refid="6019" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1655">
+      <node id="6023">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1653">
+      <node id="6021">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1654" relation="public-inheritance">
+        <childnode refid="6022" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1660">
+      <node id="6028">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1661" relation="public-inheritance">
+        <childnode refid="6029" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1657">
+      <node id="6025">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1658" relation="public-inheritance">
+        <childnode refid="6026" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1658">
+      <node id="6026">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1659" relation="public-inheritance">
+        <childnode refid="6027" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1656">
+      <node id="6024">
         <label>digital_probe_density_b</label>
         <link refid="classdigital__probe__density__b"/>
-        <childnode refid="1657" relation="public-inheritance">
+        <childnode refid="6025" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1662">
+      <node id="6030">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1663" relation="usage">
+        <childnode refid="6031" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1665">
+      <node id="6033">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1661">
+      <node id="6029">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1663">
+      <node id="6031">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1659">
+      <node id="6027">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1660" relation="public-inheritance">
+        <childnode refid="6028" relation="public-inheritance">
         </childnode>
-        <childnode refid="1662" relation="usage">
+        <childnode refid="6030" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1664" relation="usage">
+        <childnode refid="6032" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1664">
+      <node id="6032">
         <label>std::string</label>
-        <childnode refid="1665" relation="public-inheritance">
+        <childnode refid="6033" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classpmt_1_1pmt__f32vector" kind="class" prot="public">
     <compoundname>pmt::pmt_f32vector</compoundname>
     <basecompoundref refid="classpmt_1_1pmt__uniform__vector" prot="public" virt="non-virtual">pmt::pmt_uniform_vector</basecompoundref>
@@ -108,7 +108,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="226"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__f32vector_1ac3d40731a55630ec760507ff5b29a14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void pmt::pmt_f32vector::set</definition>
         <argsstring>(size_t k, float x)</argsstring>
         <name>set</name>
@@ -163,7 +163,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="229"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__f32vector_1aa4dc843186929bf1eda861471eb59711" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>const <ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>const void *</type>
         <definition>const void* pmt::pmt_f32vector::uniform_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_elements</name>
@@ -181,7 +181,7 @@
         <location file="/home/katsikas/gnuradio/build/gruel/src/lib/pmt/pmt_unv_int.h" line="230"/>
       </memberdef>
       <memberdef kind="function" id="classpmt_1_1pmt__f32vector_1a83cac3eca4420b878dd5203ef43ecd69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref> *</type>
+        <type>void *</type>
         <definition>void* pmt::pmt_f32vector::uniform_writable_elements</definition>
         <argsstring>(size_t &amp;len)</argsstring>
         <name>uniform_writable_elements</name>
@@ -204,37 +204,37 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7069">
+      <node id="12432">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="7070" relation="public-inheritance">
+        <childnode refid="12433" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7068">
+      <node id="12431">
         <label>pmt::pmt_f32vector</label>
         <link refid="classpmt_1_1pmt__f32vector"/>
-        <childnode refid="7069" relation="public-inheritance">
+        <childnode refid="12432" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7070">
+      <node id="12433">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7072">
+      <node id="12435">
         <label>pmt::pmt_uniform_vector</label>
         <link refid="classpmt_1_1pmt__uniform__vector"/>
-        <childnode refid="7073" relation="public-inheritance">
+        <childnode refid="12436" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7071">
+      <node id="12434">
         <label>pmt::pmt_f32vector</label>
         <link refid="classpmt_1_1pmt__f32vector"/>
-        <childnode refid="7072" relation="public-inheritance">
+        <childnode refid="12435" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7073">
+      <node id="12436">
         <label>pmt::pmt_base</label>
         <link refid="classpmt_1_1pmt__base"/>
       </node>

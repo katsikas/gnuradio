@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__64qam" kind="class" prot="public">
     <compoundname>digital_constellation_64qam</compoundname>
     <basecompoundref refid="classdigital__constellation__sector" prot="public" virt="non-virtual">digital_constellation_sector</basecompoundref>
@@ -168,9 +168,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__constellation__64qam_1aa33ef0682cfc5675f13c1cbfeb737bfb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="digital__constellation_8h_1a6c261d9f15051f2bffde7fed42a3bfb5" kindref="member">digital_constellation_64qam_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_constellation_64qam_sptr digital_make_constellation_64qam</definition>
+      <memberdef kind="friend" id="classdigital__constellation__64qam_1abb226a2d3e7c9af0cc303c723ced946a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend DIGITAL_API <ref refid="digital__constellation_8h_1a6c261d9f15051f2bffde7fed42a3bfb5" kindref="member">digital_constellation_64qam_sptr</ref></type>
+        <definition>DIGITAL_API digital_constellation_64qam_sptr digital_make_constellation_64qam</definition>
         <argsstring>(std::vector&lt; gr_complex &gt; constellation, std::vector&lt; unsigned int &gt; pre_diff_code, unsigned int rotational_symmetry, unsigned int real_sectors, unsigned int imag_sectors, float width_real_sectors, float width_imag_sectors)</argsstring>
         <name>digital_make_constellation_64qam</name>
         <param>
@@ -215,9 +215,39 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="318">
+        <label>digital_constellation</label>
+        <link refid="classdigital__constellation"/>
+      </node>
+      <node id="317">
+        <label>digital_constellation_sector</label>
+        <link refid="classdigital__constellation__sector"/>
+        <childnode refid="318" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>digital_constellation_64qam</label>
+        <link refid="classdigital__constellation__64qam"/>
+        <childnode refid="317" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="323">
+        <label>std::vector&lt; gr_complex &gt;</label>
+      </node>
+      <node id="322">
+        <label>std::vector&lt; unsigned int &gt;</label>
+      </node>
       <node id="321">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
+        <childnode refid="322" relation="usage">
+          <edgelabel>d_pre_diff_code</edgelabel>
+        </childnode>
+        <childnode refid="323" relation="usage">
+          <edgelabel>d_constellation</edgelabel>
+        </childnode>
       </node>
       <node id="320">
         <label>digital_constellation_sector</label>
@@ -229,36 +259,6 @@
         <label>digital_constellation_64qam</label>
         <link refid="classdigital__constellation__64qam"/>
         <childnode refid="320" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="326">
-        <label>std::vector&lt; gr_complex &gt;</label>
-      </node>
-      <node id="325">
-        <label>std::vector&lt; unsigned int &gt;</label>
-      </node>
-      <node id="324">
-        <label>digital_constellation</label>
-        <link refid="classdigital__constellation"/>
-        <childnode refid="325" relation="usage">
-          <edgelabel>d_pre_diff_code</edgelabel>
-        </childnode>
-        <childnode refid="326" relation="usage">
-          <edgelabel>d_constellation</edgelabel>
-        </childnode>
-      </node>
-      <node id="323">
-        <label>digital_constellation_sector</label>
-        <link refid="classdigital__constellation__sector"/>
-        <childnode refid="324" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="322">
-        <label>digital_constellation_64qam</label>
-        <link refid="classdigital__constellation__64qam"/>
-        <childnode refid="323" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -289,7 +289,7 @@
       <member refid="classdigital__constellation_1a027d62d551045c2d245fa664f7e9dadd" prot="public" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>digital_constellation</name></member>
       <member refid="classdigital__constellation__64qam_1a5ee03f3fbda6dea023217c510c9d6466" prot="public" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>digital_constellation_64qam</name></member>
       <member refid="classdigital__constellation__sector_1a359f52d173abc510cb1568dbb03f12e2" prot="public" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>digital_constellation_sector</name></member>
-      <member refid="classdigital__constellation__64qam_1aa33ef0682cfc5675f13c1cbfeb737bfb" prot="private" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>digital_make_constellation_64qam</name></member>
+      <member refid="classdigital__constellation__64qam_1abb226a2d3e7c9af0cc303c723ced946a" prot="private" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>digital_make_constellation_64qam</name></member>
       <member refid="classdigital__constellation_1a4291cb1f0d7c90923b69511f5ff1d46d" prot="public" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>dimensionality</name></member>
       <member refid="classdigital__constellation__64qam_1af4c93b49470c1696f7f2ca5d0f23c478" prot="protected" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>find_sector_values</name></member>
       <member refid="classdigital__constellation_1adc727f68b241409cd49a57c30243b012" prot="protected" virt="non-virtual"><scope>digital_constellation_64qam</scope><name>get_closest_point</name></member>

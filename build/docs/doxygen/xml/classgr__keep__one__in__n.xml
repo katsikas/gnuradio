@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__keep__one__in__n" kind="class" prot="public">
     <compoundname>gr_keep_one_in_n</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__keep__one__in__n_1a9c464c3d672a9c3437964294a2fb21a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_keep_one_in_n_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_keep_one_in_n_sptr</ref></type>
         <definition>GR_CORE_API gr_keep_one_in_n_sptr gr_make_keep_one_in_n</definition>
         <argsstring>(size_t item_size, int n)</argsstring>
         <name>gr_make_keep_one_in_n</name>
@@ -153,7 +153,7 @@ general_work must call consume or consume_each to indicate how many items were c
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_keep_one_in_n.h" line="56"/>
       </memberdef>
       <memberdef kind="function" id="classgr__keep__one__in__n_1a18e80e05b8866661ac5e18f022b2347a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_keep_one_in_n::set_n</definition>
         <argsstring>(int n)</argsstring>
         <name>set_n</name>
@@ -175,88 +175,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4212">
+      <node id="9277">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4213" relation="public-inheritance">
+        <childnode refid="9278" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4210">
+      <node id="9275">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4211" relation="public-inheritance">
+        <childnode refid="9276" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4209">
+      <node id="9274">
         <label>gr_keep_one_in_n</label>
         <link refid="classgr__keep__one__in__n"/>
-        <childnode refid="4210" relation="public-inheritance">
+        <childnode refid="9275" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4213">
+      <node id="9278">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4211">
+      <node id="9276">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4212" relation="public-inheritance">
+        <childnode refid="9277" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4217">
+      <node id="9282">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4218" relation="public-inheritance">
+        <childnode refid="9283" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4215">
+      <node id="9280">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4216" relation="public-inheritance">
+        <childnode refid="9281" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4214">
+      <node id="9279">
         <label>gr_keep_one_in_n</label>
         <link refid="classgr__keep__one__in__n"/>
-        <childnode refid="4215" relation="public-inheritance">
+        <childnode refid="9280" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4219">
+      <node id="9284">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4220" relation="usage">
+        <childnode refid="9285" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4222">
+      <node id="9287">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4218">
+      <node id="9283">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4220">
+      <node id="9285">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4216">
+      <node id="9281">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4217" relation="public-inheritance">
+        <childnode refid="9282" relation="public-inheritance">
         </childnode>
-        <childnode refid="4219" relation="usage">
+        <childnode refid="9284" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4221" relation="usage">
+        <childnode refid="9286" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4221">
+      <node id="9286">
         <label>std::string</label>
-        <childnode refid="4222" relation="public-inheritance">
+        <childnode refid="9287" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

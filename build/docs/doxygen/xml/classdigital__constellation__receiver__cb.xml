@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation__receiver__cb" kind="class" prot="public">
     <compoundname>digital_constellation_receiver_cb</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -197,7 +197,7 @@ The constructor also chooses which phase detector and decision maker to use in t
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_constellation_receiver_cb.h" line="99"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__constellation__receiver__cb_1a6209a7fcfe993273b9cd1eea28e84929" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void digital_constellation_receiver_cb::phase_error_tracking</definition>
         <argsstring>(float phase_error)</argsstring>
         <name>phase_error_tracking</name>
@@ -234,7 +234,7 @@ The constructor also chooses which phase detector and decision maker to use in t
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__constellation__receiver__cb_1a1e95698688ce7d95f489834e14f570fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_receiver_cb_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_receiver_cb_sptr</ref></type>
         <definition>DIGITAL_API digital_constellation_receiver_cb_sptr digital_make_constellation_receiver_cb</definition>
         <argsstring>(digital_constellation_sptr constell, float loop_bw, float fmin, float fmax)</argsstring>
         <name>digital_make_constellation_receiver_cb</name>
@@ -269,100 +269,100 @@ The constructor also chooses which phase detector and decision maker to use in t
 <para>The phase and frequency synchronization are based on a Costas loop that finds the error of the incoming signal point compared to its nearest constellation point. The frequency and phase of the NCO are updated according to this error.</para><para>The symbol synchronization is done using a modified Mueller and Muller circuit from the paper:</para><para>&quot;G. R. Danesfahani, T.G. Jeans, &quot;Optimisation of modified Mueller and Muller algorithm,&quot; Electronics Letters, Vol. 31, no. 13, 22
  June 1995, pp. 1032 - 1033.&quot;</para><para>This circuit interpolates the downconverted sample (using the NCO developed by the Costas loop) every mu samples, then it finds the sampling error based on this and the past symbols and the decision made on the samples. Like the phase error detector, there are optimized decision algorithms for BPSK and QPKS, but 8PSK uses another brute force computation against all possible symbols. The modifications to the M&amp;M used here reduce self-noise. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1129">
+      <node id="5495">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1130" relation="public-inheritance">
+        <childnode refid="5496" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1127">
+      <node id="5493">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1128" relation="public-inheritance">
+        <childnode refid="5494" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1130">
+      <node id="5496">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1126">
+      <node id="5492">
         <label>digital_constellation_receiver_cb</label>
         <link refid="classdigital__constellation__receiver__cb"/>
-        <childnode refid="1127" relation="public-inheritance">
+        <childnode refid="5493" relation="public-inheritance">
         </childnode>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="5497" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1131">
+      <node id="5497">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1128">
+      <node id="5494">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1129" relation="public-inheritance">
+        <childnode refid="5495" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1135">
+      <node id="5501">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1136" relation="public-inheritance">
+        <childnode refid="5502" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1133">
+      <node id="5499">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1134" relation="public-inheritance">
+        <childnode refid="5500" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1137">
+      <node id="5503">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1138" relation="usage">
+        <childnode refid="5504" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1140">
+      <node id="5506">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1136">
+      <node id="5502">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1132">
+      <node id="5498">
         <label>digital_constellation_receiver_cb</label>
         <link refid="classdigital__constellation__receiver__cb"/>
-        <childnode refid="1133" relation="public-inheritance">
+        <childnode refid="5499" relation="public-inheritance">
         </childnode>
-        <childnode refid="1141" relation="public-inheritance">
+        <childnode refid="5507" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1141">
+      <node id="5507">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1138">
+      <node id="5504">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1134">
+      <node id="5500">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1135" relation="public-inheritance">
+        <childnode refid="5501" relation="public-inheritance">
         </childnode>
-        <childnode refid="1137" relation="usage">
+        <childnode refid="5503" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1139" relation="usage">
+        <childnode refid="5505" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1139">
+      <node id="5505">
         <label>std::string</label>
-        <childnode refid="1140" relation="public-inheritance">
+        <childnode refid="5506" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

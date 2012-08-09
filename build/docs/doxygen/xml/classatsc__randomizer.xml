@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classatsc__randomizer" kind="class" prot="public">
     <compoundname>atsc_randomizer</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__randomizer_1a70fbf20c0ddc76b31d7f8b261862a39e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_randomizer_sptr</ref></type>
+        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_randomizer_sptr</ref></type>
         <definition>ATSC_API atsc_randomizer_sptr atsc_make_randomizer</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_randomizer</name>
@@ -103,7 +103,7 @@
         <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsc_randomizer.h" line="53"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__randomizer_1a857d01839efd86fbe66e6d6d09ea846e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void atsc_randomizer::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -121,100 +121,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="221">
+      <node id="4561">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="222" relation="public-inheritance">
+        <childnode refid="4562" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="218">
+      <node id="4558">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="219" relation="public-inheritance">
+        <childnode refid="4559" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="219">
+      <node id="4559">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="220" relation="public-inheritance">
+        <childnode refid="4560" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="222">
+      <node id="4562">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="220">
+      <node id="4560">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="221" relation="public-inheritance">
+        <childnode refid="4561" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="217">
+      <node id="4557">
         <label>atsc_randomizer</label>
         <link refid="classatsc__randomizer"/>
-        <childnode refid="218" relation="public-inheritance">
+        <childnode refid="4558" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="227">
+      <node id="4567">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="228" relation="public-inheritance">
+        <childnode refid="4568" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="224">
+      <node id="4564">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="225" relation="public-inheritance">
+        <childnode refid="4565" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="225">
+      <node id="4565">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="226" relation="public-inheritance">
+        <childnode refid="4566" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="229">
+      <node id="4569">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="230" relation="usage">
+        <childnode refid="4570" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="232">
+      <node id="4572">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="228">
+      <node id="4568">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="230">
+      <node id="4570">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="226">
+      <node id="4566">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="227" relation="public-inheritance">
+        <childnode refid="4567" relation="public-inheritance">
         </childnode>
-        <childnode refid="229" relation="usage">
+        <childnode refid="4569" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="231" relation="usage">
+        <childnode refid="4571" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="223">
+      <node id="4563">
         <label>atsc_randomizer</label>
         <link refid="classatsc__randomizer"/>
-        <childnode refid="224" relation="public-inheritance">
+        <childnode refid="4564" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="231">
+      <node id="4571">
         <label>std::string</label>
-        <childnode refid="232" relation="public-inheritance">
+        <childnode refid="4572" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

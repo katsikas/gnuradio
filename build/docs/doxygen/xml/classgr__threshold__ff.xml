@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__threshold__ff" kind="class" prot="public">
     <compoundname>gr_threshold_ff</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__threshold__ff_1aa67cff92d587a9415a6e8e9d5752603e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_threshold_ff_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_threshold_ff_sptr</ref></type>
         <definition>GR_CORE_API gr_threshold_ff_sptr gr_make_threshold_ff</definition>
         <argsstring>(float lo, float hi, float initial_state)</argsstring>
         <name>gr_make_threshold_ff</name>
@@ -114,7 +114,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" line="47" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="classgr__threshold__ff_1a9cee87fd72eff2597ecce2e92b3517dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_threshold_ff::set_lo</definition>
         <argsstring>(float lo)</argsstring>
         <name>set_lo</name>
@@ -144,7 +144,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" line="49" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" bodystart="49" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classgr__threshold__ff_1ac63ad3e1b905be86d52038ff6d4b9f4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_threshold_ff::set_hi</definition>
         <argsstring>(float hi)</argsstring>
         <name>set_hi</name>
@@ -174,7 +174,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" line="51" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_threshold_ff.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classgr__threshold__ff_1af5f0d309f329902fd15027b3ccc12122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_threshold_ff::set_last_state</definition>
         <argsstring>(float last_state)</argsstring>
         <name>set_last_state</name>
@@ -222,100 +222,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5974">
+      <node id="11194">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5975" relation="public-inheritance">
+        <childnode refid="11195" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5971">
+      <node id="11191">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5972" relation="public-inheritance">
+        <childnode refid="11192" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5972">
+      <node id="11192">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5973" relation="public-inheritance">
+        <childnode refid="11193" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5970">
+      <node id="11190">
         <label>gr_threshold_ff</label>
         <link refid="classgr__threshold__ff"/>
-        <childnode refid="5971" relation="public-inheritance">
+        <childnode refid="11191" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5975">
+      <node id="11195">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5973">
+      <node id="11193">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5974" relation="public-inheritance">
+        <childnode refid="11194" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5980">
+      <node id="11200">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5981" relation="public-inheritance">
+        <childnode refid="11201" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5977">
+      <node id="11197">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5978" relation="public-inheritance">
+        <childnode refid="11198" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5978">
+      <node id="11198">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5979" relation="public-inheritance">
+        <childnode refid="11199" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5982">
+      <node id="11202">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5983" relation="usage">
+        <childnode refid="11203" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5985">
+      <node id="11205">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5976">
+      <node id="11196">
         <label>gr_threshold_ff</label>
         <link refid="classgr__threshold__ff"/>
-        <childnode refid="5977" relation="public-inheritance">
+        <childnode refid="11197" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5981">
+      <node id="11201">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5983">
+      <node id="11203">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5979">
+      <node id="11199">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5980" relation="public-inheritance">
+        <childnode refid="11200" relation="public-inheritance">
         </childnode>
-        <childnode refid="5982" relation="usage">
+        <childnode refid="11202" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5984" relation="usage">
+        <childnode refid="11204" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5984">
+      <node id="11204">
         <label>std::string</label>
-        <childnode refid="5985" relation="public-inheritance">
+        <childnode refid="11205" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

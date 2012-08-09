@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__oscope__sink__f" kind="class" prot="public">
     <compoundname>gr_oscope_sink_f</compoundname>
     <basecompoundref refid="classgr__oscope__sink__x" prot="public" virt="non-virtual">gr_oscope_sink_x</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__oscope__sink__f_1abbf973abbc9e41263c005204e62fd3e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_oscope_sink_f_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_oscope_sink_f_sptr</ref></type>
         <definition>GR_CORE_API gr_oscope_sink_f_sptr gr_make_oscope_sink_f</definition>
         <argsstring>(double sampling_rate, gr_msg_queue_sptr msgq)</argsstring>
         <name>gr_make_oscope_sink_f</name>
@@ -149,119 +149,119 @@ This function is called by the runtime system whenever the topology changes. Mos
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4799">
+      <node id="9894">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4800" relation="public-inheritance">
+        <childnode refid="9895" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4796">
+      <node id="9891">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4797" relation="public-inheritance">
+        <childnode refid="9892" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4797">
+      <node id="9892">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4798" relation="public-inheritance">
+        <childnode refid="9893" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4794">
+      <node id="9889">
         <label>gr_oscope_sink_f</label>
         <link refid="classgr__oscope__sink__f"/>
-        <childnode refid="4795" relation="public-inheritance">
+        <childnode refid="9890" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4800">
+      <node id="9895">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4795">
+      <node id="9890">
         <label>gr_oscope_sink_x</label>
         <link refid="classgr__oscope__sink__x"/>
-        <childnode refid="4796" relation="public-inheritance">
+        <childnode refid="9891" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4798">
+      <node id="9893">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4799" relation="public-inheritance">
+        <childnode refid="9894" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4812">
+      <node id="9907">
         <label>gr_oscope_guts</label>
         <link refid="classgr__oscope__guts"/>
       </node>
-      <node id="4806">
+      <node id="9901">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4807" relation="public-inheritance">
+        <childnode refid="9902" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4803">
+      <node id="9898">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4804" relation="public-inheritance">
+        <childnode refid="9899" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4804">
+      <node id="9899">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4805" relation="public-inheritance">
+        <childnode refid="9900" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4808">
+      <node id="9903">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4809" relation="usage">
+        <childnode refid="9904" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4811">
+      <node id="9906">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4801">
+      <node id="9896">
         <label>gr_oscope_sink_f</label>
         <link refid="classgr__oscope__sink__f"/>
-        <childnode refid="4802" relation="public-inheritance">
+        <childnode refid="9897" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4807">
+      <node id="9902">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4802">
+      <node id="9897">
         <label>gr_oscope_sink_x</label>
         <link refid="classgr__oscope__sink__x"/>
-        <childnode refid="4803" relation="public-inheritance">
+        <childnode refid="9898" relation="public-inheritance">
         </childnode>
-        <childnode refid="4812" relation="usage">
+        <childnode refid="9907" relation="usage">
           <edgelabel>d_guts</edgelabel>
         </childnode>
       </node>
-      <node id="4809">
+      <node id="9904">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4805">
+      <node id="9900">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4806" relation="public-inheritance">
+        <childnode refid="9901" relation="public-inheritance">
         </childnode>
-        <childnode refid="4808" relation="usage">
+        <childnode refid="9903" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4810" relation="usage">
+        <childnode refid="9905" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4810">
+      <node id="9905">
         <label>std::string</label>
-        <childnode refid="4811" relation="public-inheritance">
+        <childnode refid="9906" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

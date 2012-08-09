@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__simple__squelch__cc" kind="class" prot="public">
     <compoundname>gr_simple_squelch_cc</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__simple__squelch__cc_1aa9c2321f9a7be5af26ec28d35efa019d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_simple_squelch_cc_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_simple_squelch_cc_sptr</ref></type>
         <definition>GR_CORE_API gr_simple_squelch_cc_sptr gr_make_simple_squelch_cc</definition>
         <argsstring>(double threshold_db, double alpha)</argsstring>
         <name>gr_make_simple_squelch_cc</name>
@@ -145,7 +145,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_simple_squelch_cc.h" line="57" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_simple_squelch_cc.h" bodystart="57" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classgr__simple__squelch__cc_1ac472c3eccf828826a008b0ca585ac81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_simple_squelch_cc::set_alpha</definition>
         <argsstring>(double alpha)</argsstring>
         <name>set_alpha</name>
@@ -162,7 +162,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_simple_squelch_cc.h" line="59"/>
       </memberdef>
       <memberdef kind="function" id="classgr__simple__squelch__cc_1a2b40f3c617069a3596dcf01f4d0a2148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_simple_squelch_cc::set_threshold</definition>
         <argsstring>(double decibels)</argsstring>
         <name>set_threshold</name>
@@ -210,100 +210,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5405">
+      <node id="10584">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5406" relation="public-inheritance">
+        <childnode refid="10585" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5402">
+      <node id="10581">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5403" relation="public-inheritance">
+        <childnode refid="10582" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5403">
+      <node id="10582">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5404" relation="public-inheritance">
+        <childnode refid="10583" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5406">
+      <node id="10585">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5401">
+      <node id="10580">
         <label>gr_simple_squelch_cc</label>
         <link refid="classgr__simple__squelch__cc"/>
-        <childnode refid="5402" relation="public-inheritance">
+        <childnode refid="10581" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5404">
+      <node id="10583">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5405" relation="public-inheritance">
+        <childnode refid="10584" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5411">
+      <node id="10590">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5412" relation="public-inheritance">
+        <childnode refid="10591" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5408">
+      <node id="10587">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5409" relation="public-inheritance">
+        <childnode refid="10588" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5409">
+      <node id="10588">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5410" relation="public-inheritance">
+        <childnode refid="10589" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5413">
+      <node id="10592">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5414" relation="usage">
+        <childnode refid="10593" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5416">
+      <node id="10595">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5412">
+      <node id="10591">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5407">
+      <node id="10586">
         <label>gr_simple_squelch_cc</label>
         <link refid="classgr__simple__squelch__cc"/>
-        <childnode refid="5408" relation="public-inheritance">
+        <childnode refid="10587" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5414">
+      <node id="10593">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5410">
+      <node id="10589">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5411" relation="public-inheritance">
+        <childnode refid="10590" relation="public-inheritance">
         </childnode>
-        <childnode refid="5413" relation="usage">
+        <childnode refid="10592" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5415" relation="usage">
+        <childnode refid="10594" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5415">
+      <node id="10594">
         <label>std::string</label>
-        <childnode refid="5416" relation="public-inheritance">
+        <childnode refid="10595" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

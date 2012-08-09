@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbti__viterbi__decoder" kind="class" prot="public">
     <compoundname>dvbti_viterbi_decoder</compoundname>
     <includes refid="dvbti__viterbi__decoder_8h" local="no">dvbti_viterbi_decoder.h</includes>
@@ -134,7 +134,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__viterbi__decoder_1a9ae0b72c5f3c1079318ed633abf9b5fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbti_viterbi_decoder::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -147,7 +147,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" line="54"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__viterbi__decoder_1a59bdf22a2e0d4ee194a3a790cbb1ae5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbti_viterbi_decoder::decode</definition>
         <argsstring>(dvbt_mpeg_packet_rs_encoded out[NCODERS], const dvbt_soft_data_segment in[NCODERS])</argsstring>
         <name>decode</name>
@@ -172,7 +172,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classdvbti__viterbi__decoder_1ade9552a76d49f7aed618d10813463b4d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbti_viterbi_decoder::decode_helper</definition>
         <argsstring>(unsigned char out[OUTPUT_SIZE], const float in[INPUT_SIZE])</argsstring>
         <name>decode_helper</name>
@@ -200,21 +200,21 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="1923">
+      <node id="6291">
         <label>interleaver_fifo&lt; unsigned char &gt;</label>
         <link refid="classinterleaver__fifo"/>
       </node>
-      <node id="1922">
+      <node id="6290">
         <label>dvbti_viterbi_decoder</label>
         <link refid="classdvbti__viterbi__decoder"/>
-        <childnode refid="1923" relation="usage">
+        <childnode refid="6291" relation="usage">
           <edgelabel>fifo</edgelabel>
         </childnode>
-        <childnode refid="1924" relation="usage">
+        <childnode refid="6292" relation="usage">
           <edgelabel>viterbi</edgelabel>
         </childnode>
       </node>
-      <node id="1924">
+      <node id="6292">
         <label>atsci_single_viterbi</label>
         <link refid="classatsci__single__viterbi"/>
       </node>

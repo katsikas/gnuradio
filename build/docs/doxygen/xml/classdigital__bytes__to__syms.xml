@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__bytes__to__syms" kind="class" prot="public">
     <compoundname>digital_bytes_to_syms</compoundname>
     <basecompoundref refid="classgr__sync__interpolator" prot="public" virt="non-virtual">gr_sync_interpolator</basecompoundref>
     <includes refid="digital__bytes__to__syms_8h" local="no">digital_bytes_to_syms.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__bytes__to__syms_1a2edec887fadc577e530fb4c40363fcd3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_bytes_to_syms_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_bytes_to_syms_sptr</ref></type>
         <definition>DIGITAL_API digital_bytes_to_syms_sptr digital_make_bytes_to_syms</definition>
         <argsstring>()</argsstring>
         <name>digital_make_bytes_to_syms</name>
@@ -68,112 +68,112 @@
 <para>This block is deprecated.</para><para>The combination of gr_packed_to_unpacked_bb followed by gr_chunks_to_symbols_bf or gr_chunks_to_symbols_bc handles the general case of mapping from a stream of bytes into arbitrary float or complex symbols.</para><para><simplesect kind="see"><para>gr_packed_to_unpacked_bb, gr_unpacked_to_packed_bb, </para><simplesectsep/><para>gr_chunks_to_symbols_bf, gr_chunks_to_symbols_bc. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="991">
+      <node id="5329">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="992" relation="public-inheritance">
+        <childnode refid="5330" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="988">
+      <node id="5326">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="989" relation="public-inheritance">
+        <childnode refid="5327" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="989">
+      <node id="5327">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="990" relation="public-inheritance">
+        <childnode refid="5328" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="987">
+      <node id="5325">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="988" relation="public-inheritance">
+        <childnode refid="5326" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="992">
+      <node id="5330">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="986">
+      <node id="5324">
         <label>digital_bytes_to_syms</label>
         <link refid="classdigital__bytes__to__syms"/>
-        <childnode refid="987" relation="public-inheritance">
+        <childnode refid="5325" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="990">
+      <node id="5328">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="991" relation="public-inheritance">
+        <childnode refid="5329" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="998">
+      <node id="5336">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="999" relation="public-inheritance">
+        <childnode refid="5337" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="995">
+      <node id="5333">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="996" relation="public-inheritance">
+        <childnode refid="5334" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="996">
+      <node id="5334">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="997" relation="public-inheritance">
+        <childnode refid="5335" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="994">
+      <node id="5332">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="995" relation="public-inheritance">
+        <childnode refid="5333" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1000">
+      <node id="5338">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1001" relation="usage">
+        <childnode refid="5339" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1003">
+      <node id="5341">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="999">
+      <node id="5337">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="993">
+      <node id="5331">
         <label>digital_bytes_to_syms</label>
         <link refid="classdigital__bytes__to__syms"/>
-        <childnode refid="994" relation="public-inheritance">
+        <childnode refid="5332" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1001">
+      <node id="5339">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="997">
+      <node id="5335">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="998" relation="public-inheritance">
+        <childnode refid="5336" relation="public-inheritance">
         </childnode>
-        <childnode refid="1000" relation="usage">
+        <childnode refid="5338" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1002" relation="usage">
+        <childnode refid="5340" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1002">
+      <node id="5340">
         <label>std::string</label>
-        <childnode refid="1003" relation="public-inheritance">
+        <childnode refid="5341" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

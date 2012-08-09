@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbt__trellis__encoder" kind="class" prot="public">
     <compoundname>dvbt_trellis_encoder</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__trellis__encoder_1afdfa6572f96573f4f69fb672f88cd77f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_trellis_encoder_sptr</ref></type>
+        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_trellis_encoder_sptr</ref></type>
         <definition>DVBT_API dvbt_trellis_encoder_sptr dvbt_make_trellis_encoder</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_trellis_encoder</name>
@@ -77,7 +77,7 @@
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_trellis_encoder.h" line="54"/>
       </memberdef>
       <memberdef kind="function" id="classdvbt__trellis__encoder_1a1ff913525ffd6fdc23a5b8ade19a331d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void dvbt_trellis_encoder::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
@@ -95,100 +95,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1868">
+      <node id="6236">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1869" relation="public-inheritance">
+        <childnode refid="6237" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1865">
+      <node id="6233">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1866" relation="public-inheritance">
+        <childnode refid="6234" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1866">
+      <node id="6234">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1867" relation="public-inheritance">
+        <childnode refid="6235" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1864">
+      <node id="6232">
         <label>dvbt_trellis_encoder</label>
         <link refid="classdvbt__trellis__encoder"/>
-        <childnode refid="1865" relation="public-inheritance">
+        <childnode refid="6233" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1869">
+      <node id="6237">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1867">
+      <node id="6235">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1868" relation="public-inheritance">
+        <childnode refid="6236" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1874">
+      <node id="6242">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1875" relation="public-inheritance">
+        <childnode refid="6243" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1871">
+      <node id="6239">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1872" relation="public-inheritance">
+        <childnode refid="6240" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1872">
+      <node id="6240">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1873" relation="public-inheritance">
+        <childnode refid="6241" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1870">
+      <node id="6238">
         <label>dvbt_trellis_encoder</label>
         <link refid="classdvbt__trellis__encoder"/>
-        <childnode refid="1871" relation="public-inheritance">
+        <childnode refid="6239" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1876">
+      <node id="6244">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1877" relation="usage">
+        <childnode refid="6245" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1879">
+      <node id="6247">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1875">
+      <node id="6243">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1877">
+      <node id="6245">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1873">
+      <node id="6241">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1874" relation="public-inheritance">
+        <childnode refid="6242" relation="public-inheritance">
         </childnode>
-        <childnode refid="1876" relation="usage">
+        <childnode refid="6244" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1878" relation="usage">
+        <childnode refid="6246" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1878">
+      <node id="6246">
         <label>std::string</label>
-        <childnode refid="1879" relation="public-inheritance">
+        <childnode refid="6247" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

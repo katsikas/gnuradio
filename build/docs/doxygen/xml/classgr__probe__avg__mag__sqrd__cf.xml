@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__probe__avg__mag__sqrd__cf" kind="class" prot="public">
     <compoundname>gr_probe_avg_mag_sqrd_cf</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -60,7 +60,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__probe__avg__mag__sqrd__cf_1a90c7d2ba9cbb1d8ec943fc9fff282f65" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_probe_avg_mag_sqrd_cf_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_probe_avg_mag_sqrd_cf_sptr</ref></type>
         <definition>GR_CORE_API gr_probe_avg_mag_sqrd_cf_sptr gr_make_probe_avg_mag_sqrd_cf</definition>
         <argsstring>(double threshold_db, double alpha)</argsstring>
         <name>gr_make_probe_avg_mag_sqrd_cf</name>
@@ -184,7 +184,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_probe_avg_mag_sqrd_cf.h" line="70"/>
       </memberdef>
       <memberdef kind="function" id="classgr__probe__avg__mag__sqrd__cf_1a44965bec0c94c7397495453482c188a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_probe_avg_mag_sqrd_cf::set_alpha</definition>
         <argsstring>(double alpha)</argsstring>
         <name>set_alpha</name>
@@ -201,7 +201,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_probe_avg_mag_sqrd_cf.h" line="73"/>
       </memberdef>
       <memberdef kind="function" id="classgr__probe__avg__mag__sqrd__cf_1a373de466f29510c65d7a8d5ed9a0d0f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="volk_8tmpl_8h_1a8dc2b7da310a28e667530ba0e8ca4cc4" kindref="member">void</ref></type>
+        <type>void</type>
         <definition>void gr_probe_avg_mag_sqrd_cf::set_threshold</definition>
         <argsstring>(double decibels)</argsstring>
         <name>set_threshold</name>
@@ -223,100 +223,100 @@
     <detaileddescription>
 <para>Compute a running average of the magnitude squared of the the input. The level and indication as to whether the level exceeds threshold can be retrieved with the level and unmuted accessors. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="5131">
+      <node id="10226">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5132" relation="public-inheritance">
+        <childnode refid="10227" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5128">
+      <node id="10223">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5129" relation="public-inheritance">
+        <childnode refid="10224" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5127">
+      <node id="10222">
         <label>gr_probe_avg_mag_sqrd_cf</label>
         <link refid="classgr__probe__avg__mag__sqrd__cf"/>
-        <childnode refid="5128" relation="public-inheritance">
+        <childnode refid="10223" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5129">
+      <node id="10224">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5130" relation="public-inheritance">
+        <childnode refid="10225" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5132">
+      <node id="10227">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5130">
+      <node id="10225">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5131" relation="public-inheritance">
+        <childnode refid="10226" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5137">
+      <node id="10232">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5138" relation="public-inheritance">
+        <childnode refid="10233" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5134">
+      <node id="10229">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5135" relation="public-inheritance">
+        <childnode refid="10230" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5133">
+      <node id="10228">
         <label>gr_probe_avg_mag_sqrd_cf</label>
         <link refid="classgr__probe__avg__mag__sqrd__cf"/>
-        <childnode refid="5134" relation="public-inheritance">
+        <childnode refid="10229" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5135">
+      <node id="10230">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5136" relation="public-inheritance">
+        <childnode refid="10231" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5139">
+      <node id="10234">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5140" relation="usage">
+        <childnode refid="10235" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5142">
+      <node id="10237">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5138">
+      <node id="10233">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5140">
+      <node id="10235">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5136">
+      <node id="10231">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5137" relation="public-inheritance">
+        <childnode refid="10232" relation="public-inheritance">
         </childnode>
-        <childnode refid="5139" relation="usage">
+        <childnode refid="10234" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5141" relation="usage">
+        <childnode refid="10236" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5141">
+      <node id="10236">
         <label>std::string</label>
-        <childnode refid="5142" relation="public-inheritance">
+        <childnode refid="10237" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
