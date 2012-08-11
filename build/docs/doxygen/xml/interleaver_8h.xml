@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="interleaver_8h" kind="file">
+    <compoundname>interleaver.h</compoundname>
+    <includes refid="trellis__api_8h" local="no">trellis_api.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="core__algorithms_8h" local="yes">core_algorithms.h</includedby>
+    <incdepgraph>
+      <node id="13451">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="13452">
+        <label>vector</label>
+      </node>
+      <node id="13450">
+        <label>trellis_api.h</label>
+        <link refid="trellis__api_8h"/>
+        <childnode refid="13451" relation="include">
+        </childnode>
+      </node>
+      <node id="13449">
+        <label>interleaver.h</label>
+        <link refid="interleaver.h"/>
+        <childnode refid="13450" relation="include">
+        </childnode>
+        <childnode refid="13452" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13456">
+        <label>trellis_siso_f.h</label>
+        <link refid="trellis__siso__f_8h"/>
+      </node>
+      <node id="13455">
+        <label>trellis_siso_combined_f.h</label>
+        <link refid="trellis__siso__combined__f_8h"/>
+      </node>
+      <node id="13453">
+        <label>interleaver.h</label>
+        <link refid="interleaver.h"/>
+        <childnode refid="13454" relation="include">
+        </childnode>
+      </node>
+      <node id="13454">
+        <label>core_algorithms.h</label>
+        <link refid="core__algorithms_8h"/>
+        <childnode refid="13455" relation="include">
+        </childnode>
+        <childnode refid="13456" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classinterleaver" prot="public">interleaver</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-trellis/src/lib/interleaver.h"/>
+  </compounddef>
+</doxygen>

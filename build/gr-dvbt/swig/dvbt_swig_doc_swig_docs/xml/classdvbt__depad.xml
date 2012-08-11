@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbt__depad" kind="class" prot="public">
+    <compoundname>dvbt_depad</compoundname>
+    <includes refid="dvbt__depad_8h" local="no">dvbt_depad.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdvbt__depad_1a8a8bf60b298c9511755540a362afbb89" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__depad_8h_1a626bfd393c886e0d822d1d8281440004" kindref="member">dvbt_depad_sptr</ref></type>
+        <definition>DVBT_API dvbt_depad_sptr dvbt_make_depad</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_make_depad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdvbt__depad_1a56acb222f0e355b71719f0b76e3217a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbt_depad::dvbt_depad</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_depad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbt__depad_1a4b62dcaa72af514e61380f3840a1df34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dvbt_depad::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__depad_1a8bd524814516810df7e7ba07711eba40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbt_depad::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="54" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>remove 4 header bytes and depad mpeg ts packets from 256 byte <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref> to 184 byte char</para><para>input: <ref refid="classdvbt__mpeg__packet" kindref="compound">dvbt_mpeg_packet</ref>; output: unsigned char </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_depad.h" bodystart="43" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classdvbt__depad_1a56acb222f0e355b71719f0b76e3217a3" prot="private" virt="non-virtual"><scope>dvbt_depad</scope><name>dvbt_depad</name></member>
+      <member refid="classdvbt__depad_1a8a8bf60b298c9511755540a362afbb89" prot="private" virt="non-virtual"><scope>dvbt_depad</scope><name>dvbt_make_depad</name></member>
+      <member refid="classdvbt__depad_1a8bd524814516810df7e7ba07711eba40" prot="public" virt="non-virtual"><scope>dvbt_depad</scope><name>reset</name></member>
+      <member refid="classdvbt__depad_1a4b62dcaa72af514e61380f3840a1df34" prot="public" virt="non-virtual"><scope>dvbt_depad</scope><name>work</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

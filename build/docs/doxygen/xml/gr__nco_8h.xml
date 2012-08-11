@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gr__nco_8h" kind="file">
+    <compoundname>gr_nco.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="gr__sincos_8h" local="no">gr_sincos.h</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="gr__complex_8h" local="no">gr_complex.h</includes>
+    <includedby refid="atsc__fpll_8h" local="no">atsc_fpll.h</includedby>
+    <incdepgraph>
+      <node id="8761">
+        <label>gr_sincos.h</label>
+        <link refid="gr__sincos_8h"/>
+        <childnode refid="8762" relation="include">
+        </childnode>
+      </node>
+      <node id="8763">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="8764">
+        <label>cmath</label>
+      </node>
+      <node id="8760">
+        <label>vector</label>
+      </node>
+      <node id="8762">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="8763" relation="include">
+        </childnode>
+      </node>
+      <node id="8759">
+        <label>gr_nco.h</label>
+        <link refid="gr_nco.h"/>
+        <childnode refid="8760" relation="include">
+        </childnode>
+        <childnode refid="8761" relation="include">
+        </childnode>
+        <childnode refid="8764" relation="include">
+        </childnode>
+        <childnode refid="8765" relation="include">
+        </childnode>
+      </node>
+      <node id="8766">
+        <label>complex</label>
+      </node>
+      <node id="8765">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="8766" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8768">
+        <label>atsc_fpll.h</label>
+        <link refid="atsc__fpll_8h"/>
+      </node>
+      <node id="8767">
+        <label>gr_nco.h</label>
+        <link refid="gr_nco.h"/>
+        <childnode refid="8768" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr__nco" prot="public">gr_nco</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_nco.h"/>
+  </compounddef>
+</doxygen>

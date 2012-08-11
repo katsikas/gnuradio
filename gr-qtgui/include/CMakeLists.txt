@@ -27,6 +27,7 @@ install(FILES
     qtgui_sink_c.h
     qtgui_sink_f.h
     qtgui_util.h
+    qtgui_ofdm_vector_analyzer_c.h
     DESTINATION ${GR_INCLUDE_DIR}/gnuradio
     COMPONENT "qtgui_devel"
 )

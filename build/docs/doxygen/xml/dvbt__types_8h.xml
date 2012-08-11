@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dvbt__types_8h" kind="file">
+    <compoundname>dvbt_types.h</compoundname>
+    <includes local="no">cstring</includes>
+    <includes local="no">cassert</includes>
+    <includes refid="dvbt__consts_8h" local="no">dvbt/dvbt_consts.h</includes>
+    <includedby refid="dvbti__randomizer_8h" local="no">dvbti_randomizer.h</includedby>
+    <incdepgraph>
+      <node id="3379">
+        <label>cassert</label>
+      </node>
+      <node id="3380">
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
+      </node>
+      <node id="3377">
+        <label>dvbt_types.h</label>
+        <link refid="dvbt_types.h"/>
+        <childnode refid="3378" relation="include">
+        </childnode>
+        <childnode refid="3379" relation="include">
+        </childnode>
+        <childnode refid="3380" relation="include">
+        </childnode>
+      </node>
+      <node id="3378">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3383">
+        <label>dvbt_derandomizer.h</label>
+        <link refid="dvbt__derandomizer_8h"/>
+      </node>
+      <node id="3384">
+        <label>dvbt_randomizer.h</label>
+        <link refid="dvbt__randomizer_8h"/>
+      </node>
+      <node id="3382">
+        <label>dvbti_randomizer.h</label>
+        <link refid="dvbti__randomizer_8h"/>
+        <childnode refid="3383" relation="include">
+        </childnode>
+        <childnode refid="3384" relation="include">
+        </childnode>
+      </node>
+      <node id="3381">
+        <label>dvbt_types.h</label>
+        <link refid="dvbt_types.h"/>
+        <childnode refid="3382" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdvbt__mpeg__packet" prot="public">dvbt_mpeg_packet</innerclass>
+    <innerclass refid="classdvbt__mpeg__packet__no__sync" prot="public">dvbt_mpeg_packet_no_sync</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h"/>
+  </compounddef>
+</doxygen>

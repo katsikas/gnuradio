@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gr__cpm_8h" kind="file">
+    <compoundname>gr_cpm.h</compoundname>
+    <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="digital__cpmmod__bc_8h" local="no">digital_cpmmod_bc.h</includedby>
+    <incdepgraph>
+      <node id="6159">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="6157">
+        <label>gr_cpm.h</label>
+        <link refid="gr_cpm.h"/>
+        <childnode refid="6158" relation="include">
+        </childnode>
+        <childnode refid="6160" relation="include">
+        </childnode>
+      </node>
+      <node id="6160">
+        <label>vector</label>
+      </node>
+      <node id="6158">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="6159" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6161">
+        <label>gr_cpm.h</label>
+        <link refid="gr_cpm.h"/>
+        <childnode refid="6162" relation="include">
+        </childnode>
+      </node>
+      <node id="6163">
+        <label>digital_gmskmod_bc.h</label>
+        <link refid="digital__gmskmod__bc_8h"/>
+      </node>
+      <node id="6162">
+        <label>digital_cpmmod_bc.h</label>
+        <link refid="digital__cpmmod__bc_8h"/>
+        <childnode refid="6163" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr__cpm" prot="public">gr_cpm</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_cpm.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##QT OFDM Vector analyzer Sink
+###################################################
+ -->
+<block>
+	<name>QT OFDM Vector Analyzer Sink</name>
+	<key>qtgui_ofdm_vector_analyzer_x</key>
+	<category>QT GUI Widgets</category>
+	<import>from PyQt4 import Qt</import>
+	<import>from gnuradio.qtgui import qtgui</import>
+	<import>from gnuradio.gr import firdes</import>
+	<import>import sip</import>
+	<make>#set $win = 'self._%s_win'%$id
+qtgui.ofdm_vector_analyzer_c(
+	  $occupied_tones, \#occupied_tones
+	  "$modulation" \#modulation
+	  )
+self._$(id)_win = sip.wrapinstance(self.$(id).pyqwidget(), Qt.QWidget)
+$(gui_hint()($win))</make>
+
+	
+	
+ <param>
+   <name>Occupied Tones</name>
+   <key>occupied_tones</key>
+   <value>200</value>
+   <type>int</type>
+ </param>
+ 
+ <param>
+   <name>Modulation</name>
+   <key>modulation</key>
+   <type>enum</type>
+   <option>
+     <name>BPSK</name>
+     <key>bpsk</key>
+   </option>
+   <option>
+     <name>QPSK</name>
+     <key>qpsk</key>
+   </option>
+   <option>
+     <name>8PSK</name>
+     <key>8psk</key>
+   </option>
+   <option>
+     <name>QAM8</name>
+     <key>qam8</key>
+   </option>
+   <option>
+     <name>QAM16</name>
+     <key>qam16</key>
+   </option>
+   <option>
+     <name>QAM64</name>
+     <key>qam64</key>
+   </option>
+   <option>
+     <name>QAM256</name>
+     <key>qam256</key>
+   </option>
+ </param>
+ 
+ <param>
+   <name>GUI Hint</name>
+   <key>gui_hint</key>
+   <value>
+   </value>
+   <type>gui_hint</type>
+   <hide>part</hide>
+  </param>
+ 
+ <sink>
+   <name>in</name>
+   <type>complex</type>
+ </sink>
+ 
+ </block>
+ 
+ 

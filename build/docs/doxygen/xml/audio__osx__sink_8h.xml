@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="audio__osx__sink_8h" kind="file">
+    <compoundname>audio_osx_sink.h</compoundname>
+    <includes refid="gr__audio__sink_8h" local="no">gr_audio_sink.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">list</includes>
+    <includes local="no">AudioUnit/AudioUnit.h</includes>
+    <includes refid="circular__buffer_8h" local="no">circular_buffer.h</includes>
+    <incdepgraph>
+      <node id="1973">
+        <label>list</label>
+      </node>
+      <node id="1978">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="1975">
+        <label>circular_buffer.h</label>
+        <link refid="circular__buffer_8h"/>
+        <childnode refid="1976" relation="include">
+        </childnode>
+        <childnode refid="1981" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+      </node>
+      <node id="1956">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1951" relation="include">
+        </childnode>
+      </node>
+      <node id="1947">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1948" relation="include">
+        </childnode>
+        <childnode refid="1972" relation="include">
+        </childnode>
+      </node>
+      <node id="1980">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="1951">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="1963">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="1941">
+        <label>audio_osx_sink.h</label>
+        <link refid="audio_osx_sink.h"/>
+        <childnode refid="1942" relation="include">
+        </childnode>
+        <childnode refid="1965" relation="include">
+        </childnode>
+        <childnode refid="1973" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1975" relation="include">
+        </childnode>
+      </node>
+      <node id="1960">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="1961" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+        <childnode refid="1951" relation="include">
+        </childnode>
+      </node>
+      <node id="1944">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1950">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1951" relation="include">
+        </childnode>
+        <childnode refid="1952" relation="include">
+        </childnode>
+        <childnode refid="1953" relation="include">
+        </childnode>
+        <childnode refid="1954" relation="include">
+        </childnode>
+      </node>
+      <node id="1976">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="1961" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+        <childnode refid="1978" relation="include">
+        </childnode>
+        <childnode refid="1979" relation="include">
+        </childnode>
+        <childnode refid="1980" relation="include">
+        </childnode>
+      </node>
+      <node id="1970">
+        <label>stdexcept</label>
+      </node>
+      <node id="1977">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="1966">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="1967" relation="include">
+        </childnode>
+        <childnode refid="1968" relation="include">
+        </childnode>
+      </node>
+      <node id="1943">
+        <label>gr_audio_api.h</label>
+        <link refid="gr__audio__api_8h"/>
+        <childnode refid="1944" relation="include">
+        </childnode>
+      </node>
+      <node id="1965">
+        <label>string</label>
+      </node>
+      <node id="1948">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1949" relation="include">
+        </childnode>
+        <childnode refid="1956" relation="include">
+        </childnode>
+        <childnode refid="1957" relation="include">
+        </childnode>
+        <childnode refid="1958" relation="include">
+        </childnode>
+        <childnode refid="1959" relation="include">
+        </childnode>
+        <childnode refid="1965" relation="include">
+        </childnode>
+      </node>
+      <node id="1971">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="1953">
+        <label>stddef.h</label>
+      </node>
+      <node id="1974">
+        <label>AudioUnit/AudioUnit.h</label>
+      </node>
+      <node id="1961">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="1944" relation="include">
+        </childnode>
+      </node>
+      <node id="1958">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="1967">
+        <label>limits.h</label>
+      </node>
+      <node id="1964">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="1962">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="1961" relation="include">
+        </childnode>
+        <childnode refid="1963" relation="include">
+        </childnode>
+        <childnode refid="1951" relation="include">
+        </childnode>
+        <childnode refid="1964" relation="include">
+        </childnode>
+        <childnode refid="1955" relation="include">
+        </childnode>
+        <childnode refid="1965" relation="include">
+        </childnode>
+        <childnode refid="1966" relation="include">
+        </childnode>
+        <childnode refid="1969" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+        <childnode refid="1971" relation="include">
+        </childnode>
+      </node>
+      <node id="1968">
+        <label>wchar.h</label>
+      </node>
+      <node id="1959">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1960" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+      </node>
+      <node id="1949">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1950" relation="include">
+        </childnode>
+      </node>
+      <node id="1979">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="1942">
+        <label>gr_audio_sink.h</label>
+        <link refid="gr__audio__sink_8h"/>
+        <childnode refid="1943" relation="include">
+        </childnode>
+        <childnode refid="1945" relation="include">
+        </childnode>
+      </node>
+      <node id="1952">
+        <label>vector</label>
+      </node>
+      <node id="1946">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="1944" relation="include">
+        </childnode>
+      </node>
+      <node id="1957">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="1969">
+        <label>iosfwd</label>
+      </node>
+      <node id="1981">
+        <label>iostream</label>
+      </node>
+      <node id="1972">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1962" relation="include">
+        </childnode>
+      </node>
+      <node id="1945">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="1946" relation="include">
+        </childnode>
+        <childnode refid="1947" relation="include">
+        </childnode>
+      </node>
+      <node id="1955">
+        <label>complex</label>
+      </node>
+      <node id="1954">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="1955" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classaudio__osx__sink" prot="public">audio_osx_sink</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-audio/lib/osx/audio_osx_sink.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gr__msg__queue_8h" kind="file">
+    <compoundname>gr_msg_queue.h</compoundname>
+    <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
+    <includes refid="gr__msg__handler_8h" local="no">gr_msg_handler.h</includes>
+    <includes refid="thread_8h" local="no">gruel/thread.h</includes>
+    <includedby refid="gr__bin__statistics__f_8h" local="no">gr_bin_statistics_f.h</includedby>
+    <includedby refid="gr__framer__sink__1_8h" local="no">gr_framer_sink_1.h</includedby>
+    <includedby refid="gr__ofdm__frame__sink2_8h" local="no">gr_ofdm_frame_sink2.h</includedby>
+    <includedby refid="gr__packet__sink_8h" local="no">gr_packet_sink.h</includedby>
+    <includedby refid="gr__histo__sink__f_8h" local="no">gr_histo_sink_f.h</includedby>
+    <includedby refid="gr__message__sink_8h" local="no">gr_message_sink.h</includedby>
+    <includedby refid="gr__message__source_8h" local="no">gr_message_source.h</includedby>
+    <includedby refid="gr__oscope__guts_8h" local="no">gr_oscope_guts.h</includedby>
+    <includedby refid="gr__oscope__sink__f_8h" local="no">gr_oscope_sink_f.h</includedby>
+    <includedby refid="digital__ofdm__frame__sink_8h" local="no">digital_ofdm_frame_sink.h</includedby>
+    <includedby refid="digital__ofdm__mapper__bcv_8h" local="no">digital_ofdm_mapper_bcv.h</includedby>
+    <includedby refid="pager__flex__parse_8h" local="no">pager_flex_parse.h</includedby>
+    <includedby refid="gr__uhd__amsg__source_8h" local="no">gr_uhd_amsg_source.h</includedby>
+    <incdepgraph>
+      <node id="8586">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="8588">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="8577">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="8573">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="8576">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="8572" relation="include">
+        </childnode>
+        <childnode refid="8577" relation="include">
+        </childnode>
+        <childnode refid="8578" relation="include">
+        </childnode>
+        <childnode refid="8579" relation="include">
+        </childnode>
+        <childnode refid="8580" relation="include">
+        </childnode>
+      </node>
+      <node id="8583">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="8584" relation="include">
+        </childnode>
+        <childnode refid="8585" relation="include">
+        </childnode>
+        <childnode refid="8586" relation="include">
+        </childnode>
+        <childnode refid="8587" relation="include">
+        </childnode>
+        <childnode refid="8588" relation="include">
+        </childnode>
+      </node>
+      <node id="8585">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="8582">
+        <label>string</label>
+      </node>
+      <node id="8571">
+        <label>gr_msg_queue.h</label>
+        <link refid="gr_msg_queue.h"/>
+        <childnode refid="8572" relation="include">
+        </childnode>
+        <childnode refid="8574" relation="include">
+        </childnode>
+        <childnode refid="8583" relation="include">
+        </childnode>
+      </node>
+      <node id="8579">
+        <label>stddef.h</label>
+      </node>
+      <node id="8584">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="8573" relation="include">
+        </childnode>
+      </node>
+      <node id="8587">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="8578">
+        <label>vector</label>
+      </node>
+      <node id="8572">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="8573" relation="include">
+        </childnode>
+      </node>
+      <node id="8574">
+        <label>gr_msg_handler.h</label>
+        <link refid="gr__msg__handler_8h"/>
+        <childnode refid="8572" relation="include">
+        </childnode>
+        <childnode refid="8575" relation="include">
+        </childnode>
+      </node>
+      <node id="8575">
+        <label>gr_message.h</label>
+        <link refid="gr__message_8h"/>
+        <childnode refid="8572" relation="include">
+        </childnode>
+        <childnode refid="8576" relation="include">
+        </childnode>
+        <childnode refid="8582" relation="include">
+        </childnode>
+      </node>
+      <node id="8581">
+        <label>complex</label>
+      </node>
+      <node id="8580">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="8581" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8593">
+        <label>gr_packet_sink.h</label>
+        <link refid="gr__packet__sink_8h"/>
+      </node>
+      <node id="8595">
+        <label>gr_message_sink.h</label>
+        <link refid="gr__message__sink_8h"/>
+      </node>
+      <node id="8589">
+        <label>gr_msg_queue.h</label>
+        <link refid="gr_msg_queue.h"/>
+        <childnode refid="8590" relation="include">
+        </childnode>
+        <childnode refid="8591" relation="include">
+        </childnode>
+        <childnode refid="8592" relation="include">
+        </childnode>
+        <childnode refid="8593" relation="include">
+        </childnode>
+        <childnode refid="8594" relation="include">
+        </childnode>
+        <childnode refid="8595" relation="include">
+        </childnode>
+        <childnode refid="8596" relation="include">
+        </childnode>
+        <childnode refid="8597" relation="include">
+        </childnode>
+        <childnode refid="8598" relation="include">
+        </childnode>
+        <childnode refid="8599" relation="include">
+        </childnode>
+        <childnode refid="8600" relation="include">
+        </childnode>
+        <childnode refid="8601" relation="include">
+        </childnode>
+        <childnode refid="8602" relation="include">
+        </childnode>
+      </node>
+      <node id="8600">
+        <label>digital_ofdm_mapper_bcv.h</label>
+        <link refid="digital__ofdm__mapper__bcv_8h"/>
+      </node>
+      <node id="8602">
+        <label>gr_uhd_amsg_source.h</label>
+        <link refid="gr__uhd__amsg__source_8h"/>
+      </node>
+      <node id="8601">
+        <label>pager_flex_parse.h</label>
+        <link refid="pager__flex__parse_8h_source"/>
+      </node>
+      <node id="8594">
+        <label>gr_histo_sink_f.h</label>
+        <link refid="gr__histo__sink__f_8h"/>
+      </node>
+      <node id="8598">
+        <label>gr_oscope_sink_f.h</label>
+        <link refid="gr__oscope__sink__f_8h"/>
+      </node>
+      <node id="8592">
+        <label>gr_ofdm_frame_sink2.h</label>
+        <link refid="gr__ofdm__frame__sink2_8h"/>
+      </node>
+      <node id="8599">
+        <label>digital_ofdm_frame_sink.h</label>
+        <link refid="digital__ofdm__frame__sink_8h"/>
+      </node>
+      <node id="8590">
+        <label>gr_bin_statistics_f.h</label>
+        <link refid="gr__bin__statistics__f_8h"/>
+      </node>
+      <node id="8597">
+        <label>gr_oscope_guts.h</label>
+        <link refid="gr__oscope__guts_8h"/>
+      </node>
+      <node id="8591">
+        <label>gr_framer_sink_1.h</label>
+        <link refid="gr__framer__sink__1_8h"/>
+      </node>
+      <node id="8596">
+        <label>gr_message_source.h</label>
+        <link refid="gr__message__source_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr__msg__queue" prot="public">gr_msg_queue</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gr__msg__queue_8h_1a15be30609f3167d6eaf1f1a72e66e0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_msg_queue_sptr</ref></type>
+        <definition>GR_CORE_API gr_msg_queue_sptr gr_make_msg_queue</definition>
+        <argsstring>(unsigned int limit=0)</argsstring>
+        <name>gr_make_msg_queue</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>limit</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_msg_queue.h" line="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_msg_queue.h"/>
+  </compounddef>
+</doxygen>

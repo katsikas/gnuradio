@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="audio__portaudio__sink_8h" kind="file">
+    <compoundname>audio_portaudio_sink.h</compoundname>
+    <includes refid="gr__audio__sink_8h" local="no">gr_audio_sink.h</includes>
+    <includes refid="gr__buffer_8h" local="no">gr_buffer.h</includes>
+    <includes refid="thread_8h" local="no">gruel/thread.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">portaudio.h</includes>
+    <includes local="no">stdexcept</includes>
+    <incdepgraph>
+      <node id="2061">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="2040">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+      </node>
+      <node id="2031">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2056" relation="include">
+        </childnode>
+      </node>
+      <node id="2063">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="2035">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="2047">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="2044">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="2045" relation="include">
+        </childnode>
+        <childnode refid="2046" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+      </node>
+      <node id="2028">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="2057">
+        <label>gr_buffer.h</label>
+        <link refid="gr__buffer_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2058" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2056" relation="include">
+        </childnode>
+        <childnode refid="2064" relation="include">
+        </childnode>
+      </node>
+      <node id="2034">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+        <childnode refid="2036" relation="include">
+        </childnode>
+        <childnode refid="2037" relation="include">
+        </childnode>
+        <childnode refid="2038" relation="include">
+        </childnode>
+      </node>
+      <node id="2059">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="2045" relation="include">
+        </childnode>
+        <childnode refid="2060" relation="include">
+        </childnode>
+        <childnode refid="2061" relation="include">
+        </childnode>
+        <childnode refid="2062" relation="include">
+        </childnode>
+        <childnode refid="2063" relation="include">
+        </childnode>
+      </node>
+      <node id="2054">
+        <label>stdexcept</label>
+      </node>
+      <node id="2060">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="2025">
+        <label>audio_portaudio_sink.h</label>
+        <link refid="audio_portaudio_sink.h"/>
+        <childnode refid="2026" relation="include">
+        </childnode>
+        <childnode refid="2057" relation="include">
+        </childnode>
+        <childnode refid="2059" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2065" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+      </node>
+      <node id="2050">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="2051" relation="include">
+        </childnode>
+        <childnode refid="2052" relation="include">
+        </childnode>
+      </node>
+      <node id="2027">
+        <label>gr_audio_api.h</label>
+        <link refid="gr__audio__api_8h"/>
+        <childnode refid="2028" relation="include">
+        </childnode>
+      </node>
+      <node id="2049">
+        <label>string</label>
+      </node>
+      <node id="2032">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2040" relation="include">
+        </childnode>
+        <childnode refid="2041" relation="include">
+        </childnode>
+        <childnode refid="2042" relation="include">
+        </childnode>
+        <childnode refid="2043" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+      </node>
+      <node id="2058">
+        <label>boost/weak_ptr.hpp</label>
+      </node>
+      <node id="2055">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="2037">
+        <label>stddef.h</label>
+      </node>
+      <node id="2045">
+        <label>gruel/api.h</label>
+        <link refid="gruel_2src_2include_2gruel_2api_8h"/>
+        <childnode refid="2028" relation="include">
+        </childnode>
+      </node>
+      <node id="2042">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="2051">
+        <label>limits.h</label>
+      </node>
+      <node id="2048">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="2046">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="2045" relation="include">
+        </childnode>
+        <childnode refid="2047" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+        <childnode refid="2048" relation="include">
+        </childnode>
+        <childnode refid="2039" relation="include">
+        </childnode>
+        <childnode refid="2049" relation="include">
+        </childnode>
+        <childnode refid="2050" relation="include">
+        </childnode>
+        <childnode refid="2053" relation="include">
+        </childnode>
+        <childnode refid="2054" relation="include">
+        </childnode>
+        <childnode refid="2055" relation="include">
+        </childnode>
+      </node>
+      <node id="2052">
+        <label>wchar.h</label>
+      </node>
+      <node id="2043">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2044" relation="include">
+        </childnode>
+        <childnode refid="2046" relation="include">
+        </childnode>
+      </node>
+      <node id="2033">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2034" relation="include">
+        </childnode>
+      </node>
+      <node id="2062">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="2026">
+        <label>gr_audio_sink.h</label>
+        <link refid="gr__audio__sink_8h"/>
+        <childnode refid="2027" relation="include">
+        </childnode>
+        <childnode refid="2029" relation="include">
+        </childnode>
+      </node>
+      <node id="2036">
+        <label>vector</label>
+      </node>
+      <node id="2030">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="2028" relation="include">
+        </childnode>
+      </node>
+      <node id="2065">
+        <label>portaudio.h</label>
+      </node>
+      <node id="2041">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="2053">
+        <label>iosfwd</label>
+      </node>
+      <node id="2064">
+        <label>deque</label>
+      </node>
+      <node id="2056">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2046" relation="include">
+        </childnode>
+      </node>
+      <node id="2029">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+      </node>
+      <node id="2039">
+        <label>complex</label>
+      </node>
+      <node id="2038">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="2039" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classaudio__portaudio__sink" prot="public">audio_portaudio_sink</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="audio__portaudio__sink_8h_1aad0142eba2a2ee8a0e20c16ee8337130" prot="public" static="no" mutable="no">
+        <type>PaStreamCallback</type>
+        <definition>PaStreamCallback portaudio_sink_callback</definition>
+        <argsstring></argsstring>
+        <name>portaudio_sink_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-audio/lib/portaudio/audio_portaudio_sink.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-audio/lib/portaudio/audio_portaudio_sink.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-audio/lib/portaudio/audio_portaudio_sink.h"/>
+  </compounddef>
+</doxygen>
