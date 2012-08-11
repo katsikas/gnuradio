@@ -127,9 +127,6 @@ class _fft_sink_base(gr.hier_block2, common.wxgui_hb):
 		setattr(self.win, 'set_peak_hold', getattr(self, 'set_peak_hold')) #BACKWARDS
 		#connect
 		self.wxgui_connect(self, fft, sink)
-		
-	def set_callback(self,callb):
-		self.win.set_callback(callb)
 
 class fft_sink_f(_fft_sink_base):
 	_fft_chain = blks2.logpwrfft_f

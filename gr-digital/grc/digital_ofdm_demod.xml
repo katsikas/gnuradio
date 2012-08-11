@@ -37,12 +37,15 @@
 			occupied_tones=$occupied_tones,
 			cp_length=$cp_length,
 			snr=$snr,
+			show_vector_analyzer="$vector_analyzer_on",
 			log=None,
 			verbose=None,
 		),
 		callback=lambda ok, payload: self.$(id).recv_pkt(ok, payload),
 	),
-)</make>
+)
+
+</make>
 	<param>
 		<name>Output Type</name>
 		<key>type</key>
@@ -131,6 +134,20 @@
 		<value>10</value>
 		<type>real</type>
 	</param>
+        <param>
+                <name>Show vector analyzer</name>
+                <key>vector_analyzer_on</key>
+                <type>enum</type>
+                <option>
+                        <name>Yes</name>
+                        <key>yes</key>
+                </option>
+                <option>
+                        <name>No</name>
+                        <key>no</key>
+                </option>
+        </param>
+                  
 	<sink>
 		<name>in</name>
 		<type>complex</type>
@@ -139,5 +156,14 @@
 		<name>out</name>
 		<type>$type</type>
 	</source>
+	
+	<source>
+	  <name>vector_analyzer_out</name>
+	  <type>complex</type>
+	  <vlen>$occupied_tones</vlen>
+	  <optional>1</optional>
+	</source>
+	
+
 	<doc>Payload Length: 0 for automatic.</doc>
 </block>

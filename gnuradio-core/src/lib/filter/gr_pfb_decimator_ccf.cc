@@ -69,7 +69,6 @@ gr_pfb_decimator_ccf::gr_pfb_decimator_ccf (unsigned int decim,
 
 gr_pfb_decimator_ccf::~gr_pfb_decimator_ccf ()
 {
-  delete d_fft;
   for(unsigned int i = 0; i < d_rate; i++) {
     delete d_filters[i];
   }

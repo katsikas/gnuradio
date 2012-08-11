@@ -96,7 +96,6 @@ gr_pfb_channelizer_ccf::gr_pfb_channelizer_ccf (unsigned int numchans,
 
 gr_pfb_channelizer_ccf::~gr_pfb_channelizer_ccf ()
 {
-  delete d_fft;
   delete [] d_idxlut;
 
   for(unsigned int i = 0; i < d_numchans; i++) {

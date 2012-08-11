@@ -215,12 +215,17 @@ class packet_demod_base(gr.hier_block2):
 	"""
 
 	def __init__(self, packet_sink=None):
+	  
+		#we want outputs of different types
+		# NOTE: The output signature depends on the number of the subcarriers
+		signature_sizes = [self._item_size_out, gr.sizeof_gr_complex * packet_sink._occupied_tones]
+		
 		#initialize hier2
 		gr.hier_block2.__init__(
 			self,
-			"ofdm_mod",
+			"ofdm_demod",
 			gr.io_signature(1, 1, packet_sink._hb.input_signature().sizeof_stream_item(0)), # Input signature
-			gr.io_signature(1, 1, self._item_size_out) # Output signature
+			gr.io_signaturev(2, 2, signature_sizes) # Output signature
 		)
 		#create blocks
 		msg_source = gr.message_source(self._item_size_out, DEFAULT_MSGQ_LIMIT)
@@ -228,6 +233,10 @@ class packet_demod_base(gr.hier_block2):
 		#connect
 		self.connect(self, packet_sink)
 		self.connect(msg_source, self)
+		
+		# For the vector analyzer connection
+		self.connect((packet_sink, 1), (self, 1))
+		
 		if packet_sink._hb.output_signature().sizeof_stream_item(0):
 			self.connect(packet_sink, gr.null_sink(packet_sink._hb.output_signature().sizeof_stream_item(0)))
 
