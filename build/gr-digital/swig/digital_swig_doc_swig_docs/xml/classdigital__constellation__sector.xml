@@ -3,8 +3,6 @@
   <compounddef id="classdigital__constellation__sector" kind="class" prot="public">
     <compoundname>digital_constellation_sector</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
-    <derivedcompoundref refid="classdigital__constellation__16qam" prot="public" virt="non-virtual">digital_constellation_16qam</derivedcompoundref>
-    <derivedcompoundref refid="classdigital__constellation__64qam" prot="public" virt="non-virtual">digital_constellation_64qam</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__psk" prot="public" virt="non-virtual">digital_constellation_psk</derivedcompoundref>
     <derivedcompoundref refid="classdigital__constellation__rect" prot="public" virt="non-virtual">digital_constellation_rect</derivedcompoundref>
     <includes refid="digital__constellation_8h" local="no">digital_constellation.h</includes>
@@ -29,8 +27,6 @@
         <definition>std::vector&lt;unsigned int&gt; digital_constellation_sector::sector_values</definition>
         <argsstring></argsstring>
         <name>sector_values</name>
-        <reimplementedby refid="classdigital__constellation__16qam_1a9341326c1ad58a446d1279d92963fd97">sector_values</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1a4f2eb5c5a966dceaa011cdfc3bdf9ed4">sector_values</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -101,8 +97,6 @@
         <name>get_sector</name>
         <reimplementedby refid="classdigital__constellation__rect_1a2bf57aba26b350f0bcd15f7719cda7b6">get_sector</reimplementedby>
         <reimplementedby refid="classdigital__constellation__psk_1a19bd73f96eeb9cee61f622f609aa5563">get_sector</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__16qam_1a5419edadf25d58dc08dd668ad75ed20d">get_sector</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1a75cc03a995b75facbfa0add106bc9ecd">get_sector</reimplementedby>
         <param>
           <type>const gr_complex *</type>
           <declname>sample</declname>
@@ -122,8 +116,6 @@
         <name>calc_sector_value</name>
         <reimplementedby refid="classdigital__constellation__rect_1a0627a4e936786b36ea360f9a472441d4">calc_sector_value</reimplementedby>
         <reimplementedby refid="classdigital__constellation__psk_1a2db822a2d239fdcebca485303d2da30b">calc_sector_value</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__16qam_1a1d0cb1226f3c2257099b6e302f09b8b6">calc_sector_value</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1ae753b87525a66ee2e02545844308f5f1">calc_sector_value</reimplementedby>
         <param>
           <type>unsigned int</type>
           <declname>sector</declname>
@@ -141,8 +133,6 @@
         <definition>void digital_constellation_sector::find_sector_values</definition>
         <argsstring>()</argsstring>
         <name>find_sector_values</name>
-        <reimplementedby refid="classdigital__constellation__16qam_1a377f71d6c72047fc7adaa6671cf33a75">find_sector_values</reimplementedby>
-        <reimplementedby refid="classdigital__constellation__64qam_1af4c93b49470c1696f7f2ca5d0f23c478">find_sector_values</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -157,62 +147,50 @@
     <detaileddescription>
 <para><ref refid="classdigital__constellation__sector" kindref="compound">digital_constellation_sector</ref> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="371">
+      <node id="351">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="367" relation="public-inheritance">
+        <childnode refid="349" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="368">
+      <node id="350">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="372">
+      <node id="352">
         <label>digital_constellation_rect</label>
         <link refid="classdigital__constellation__rect"/>
-        <childnode refid="367" relation="public-inheritance">
+        <childnode refid="349" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="369">
-        <label>digital_constellation_16qam</label>
-        <link refid="classdigital__constellation__16qam"/>
-        <childnode refid="367" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="367">
+      <node id="349">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="368" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="370">
-        <label>digital_constellation_64qam</label>
-        <link refid="classdigital__constellation__64qam"/>
-        <childnode refid="367" relation="public-inheritance">
+        <childnode refid="350" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="376">
+      <node id="356">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="375">
+      <node id="355">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="374">
+      <node id="354">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="375" relation="usage">
+        <childnode refid="355" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="376" relation="usage">
+        <childnode refid="356" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="373">
+      <node id="353">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="374" relation="public-inheritance">
+        <childnode refid="354" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

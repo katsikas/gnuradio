@@ -198,6 +198,7 @@ digital_ofdm_frame_acquisition::general_work(int noutput_items,
   for(unsigned int i = 0; i < d_occupied_carriers; i++) {
     out[i] = d_hestimate[i]*coarse_freq_comp(d_coarse_freq,d_phase_count)
       *symbol[i+zeros_on_left+d_coarse_freq];
+	//printf("out[i] = %f %fj\n",out[i].real(),out[i].imag());
   }
   
   d_phase_count++;

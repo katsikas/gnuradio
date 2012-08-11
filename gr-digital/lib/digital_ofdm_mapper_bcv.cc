@@ -29,6 +29,7 @@
 #include <gr_io_signature.h>
 #include <stdexcept>
 #include <string.h>
+#include <stdio.h>
 
 digital_ofdm_mapper_bcv_sptr
 digital_make_ofdm_mapper_bcv (const std::vector<gr_complex> &constellation, unsigned int msgq_limit, 
@@ -183,8 +184,8 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
       d_bit_offset += d_nresid;
       d_nresid = 0;
       d_resid = 0;
-      //printf("mod bit(r): %x   resid: %x   nresid: %d    bit_offset: %d\n", 
-      //     bits, d_resid, d_nresid, d_bit_offset);
+     // printf("mod bit(r): %x   resid: %x   nresid: %d    bit_offset: %d\n", 
+        //   bits, d_resid, d_nresid, d_bit_offset);
     }
     else {
       if((8 - d_bit_offset) >= d_nbits) {  // test to make sure we can fit nbits
@@ -209,6 +210,10 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
       d_bit_offset = 0;
       d_msg_offset++;
     }
+
+	//printf("mod bit(r): %x   resid: %x   nresid: %d    bit_offset: %d\n", 
+         //  bits, d_resid, d_nresid, d_bit_offset);
+
   }
 
   // Ran out of data to put in symbol
@@ -222,6 +227,7 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
 
     //while(i < d_occupied_carriers) {   // finish filling out the symbol
     while(i < d_subcarrier_map.size()) {   // finish filling out the symbol
+	//printf("edw??? %d ",i);
       out[d_subcarrier_map[i]] = d_constellation[randsym()];
 
       i++;

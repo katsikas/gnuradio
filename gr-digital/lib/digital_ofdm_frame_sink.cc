@@ -91,14 +91,21 @@ unsigned char digital_ofdm_frame_sink::slicer(const gr_complex x)
   unsigned int min_index = 0;
   float min_euclid_dist = norm(x - d_sym_position[0]);
   float euclid_dist = 0;
-  
+
+  //printf("got = %.4f %.4fj\n",x.real(),x.imag());
+  //printf("d_sym[%i] = %.4f %.4fj ",0,d_sym_position[0].real(),d_sym_position[0].imag());
+  //printf("min_euclid = %f\n",min_euclid_dist);
   for (unsigned int j = 1; j < table_size; j++){
+	//printf("d_sym[%i] = %.4f %.4fj ",j,d_sym_position[j].real(),d_sym_position[j].imag());
     euclid_dist = norm(x - d_sym_position[j]);
+	//printf("euclid = %f\n", euclid_dist);
     if (euclid_dist < min_euclid_dist){
       min_euclid_dist = euclid_dist;
       min_index = j;
     }
   }
+
+  //printf("returned item = %d \n",d_sym_value_out[min_index]);
   return d_sym_value_out[min_index];
 }
 
@@ -152,7 +159,7 @@ unsigned int digital_ofdm_frame_sink::demapper(const gr_complex *in,
 	d_byte_offset += (d_nbits - d_nresid);
       }
       //printf("demod symbol: %.4f + j%.4f   bits: %x   partial_byte: %x   byte_offset: %d   resid: %x   nresid: %d\n", 
-      //     in[i-1].real(), in[i-1].imag(), bits, d_partial_byte, d_byte_offset, d_resid, d_nresid);
+      //    in[i-1].real(), in[i-1].imag(), bits, d_partial_byte, d_byte_offset, d_resid, d_nresid);
     }
 
     if(d_byte_offset == 8) {

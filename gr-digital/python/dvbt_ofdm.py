@@ -26,7 +26,8 @@ import digital_swig
 import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
-import psk, qam
+import psk, qam, dvbt_constellations, qpsk
+from utils import mod_codes, gray_code
 
 # /////////////////////////////////////////////////////////////////////////////
 #                   mod/demod with packets as i/o
@@ -88,21 +89,22 @@ class dvbt_ofdm_mod(gr.hier_block2):
             
         symbol_length = options.fft_length + options.cp_length
         
-        mods = {"bpsk": 2, "qpsk": 4, "8psk": 8, "qam8": 8, "qam16": 16, "qam64": 64, "qam256": 256}
+        mods = {"qpsk": 4, "qam16": 16, "qam64": 64}
         arity = mods[self._modulation]
         
         rot = 1
-        if self._modulation == "qpsk":
-            rot = (0.707+0.707j)
-            
         # FIXME: pass the constellation objects instead of just the points
-        if(self._modulation.find("psk") >= 0):
-            constel = psk.psk_constellation(arity)
-            rotated_const = map(lambda pt: pt * rot, constel.points())
-        elif(self._modulation.find("qam") >= 0):
-            constel = qam.qam_constellation(arity)
-            rotated_const = map(lambda pt: pt * rot, constel.points())
-        #print rotated_const
+        if(self._modulation.find("qpsk") >= 0):
+            constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
+            rotated_const = constel.points()
+        elif(self._modulation.find("qam16") >= 0):
+	    constel = dvbt_constellations.dvbt_16qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt / (math.sqrt(10)), constel.points())
+	elif(self._modulation.find("qam64") >= 0):
+            constel = dvbt_constellations.dvbt_64qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt / (math.sqrt(42)), constel.points())
+        
+	print rotated_const
         self._pkt_input = digital_swig.ofdm_mapper_bcv(rotated_const,
                                                        msgq_limit,
                                                        options.occupied_tones,
@@ -236,21 +238,21 @@ class dvbt_ofdm_demod(gr.hier_block2):
                                        self._snr, preambles,
                                        options.log)
 
-        mods = {"bpsk": 2, "qpsk": 4, "8psk": 8, "qam8": 8, "qam16": 16, "qam64": 64, "qam256": 256}
+        mods = {"qpsk": 4, "qam16": 16, "qam64": 64}
         arity = mods[self._modulation]
         
-        rot = 1
-        if self._modulation == "qpsk":
-            rot = (0.707+0.707j)
-
+	rot = 1
         # FIXME: pass the constellation objects instead of just the points
-        if(self._modulation.find("psk") >= 0):
-            constel = psk.psk_constellation(arity)
-            rotated_const = map(lambda pt: pt * rot, constel.points())
-        elif(self._modulation.find("qam") >= 0):
-            constel = qam.qam_constellation(arity)
-            rotated_const = map(lambda pt: pt * rot, constel.points())
-        #print rotated_const
+	if(self._modulation.find("qpsk") >= 0):
+            constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
+            rotated_const = constel.points()
+        elif(self._modulation.find("qam16") >= 0):
+            constel = dvbt_constellations.dvbt_16qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt / (math.sqrt(10)), constel.points())
+        elif(self._modulation.find("qam64") >= 0):
+            constel = dvbt_constellations.dvbt_64qam_constellation(arity,False,mod_codes.GRAY_CODE)
+            rotated_const = map(lambda pt: pt / (math.sqrt(42)), constel.points())
+        print rotated_const
 
         phgain = 0.25
         frgain = phgain*phgain / 4.0

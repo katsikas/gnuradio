@@ -47,11 +47,11 @@ gr_prefsdir()
 const std::string
 gr_build_date()
 {
-  return "Sat, 11 Aug 2012 07:30:19";
+  return "Sat, 11 Aug 2012 08:18:05";
 }
 
 const std::string
 gr_version()
 {
-  return "54f598e3";
+  return "27b7cfc4";
 }

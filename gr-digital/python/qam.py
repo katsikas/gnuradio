@@ -165,6 +165,7 @@ def qam_constellation(constellation_points=_def_constellation_points,
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
+    print points
     constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
                                                     side, side, width, width)
     return constellation

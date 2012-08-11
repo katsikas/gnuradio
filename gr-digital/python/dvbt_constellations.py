@@ -45,11 +45,9 @@ def dvbt_qpsk_constellation(m, mod_code=_def_mod_code):
     """
     Creates a QPSK constellation object for DVB-T.
     """
-    print "QPSK mapping"
     if m != 4:
         raise ValueError("QPSK can only have 4 constellation points.")
     return digital_swig.constellation_dvbt_qpsk().base()
-
 
 
 # /////////////////////////////////////////////////////////////////////////////
@@ -69,16 +67,17 @@ def dvbt_16qam_constellation(m, differential=_def_differential, mod_code=_def_mo
         
     side = int(sqrt(m))
     width = 2.0
+    #width = 2.0/(side-1)
     
     points = [complex(3,3),complex(3,1),complex(1,3), complex(1,1),
-			  complex(3,-3),complex(3,-1),complex(1,-3),complex(1,-1),
-			  complex(-3,3),complex(-3,1),complex(-1,3), complex(-1,1),
-			  complex(-3,-3),complex(-3,-1),complex(-1,-3),complex(-1,-1)]
+	      complex(3,-3),complex(3,-1),complex(1,-3),complex(1,-1),
+	      complex(-3,3),complex(-3,1),complex(-1,3), complex(-1,1),
+              complex(-3,-3),complex(-3,-1),complex(-1,-3),complex(-1,-1)]
 
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
-    constellation = digital_swig.constellation_16qam(points, pre_diff_code, 4,
+    constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
                                                     side, side, width, width)
     return constellation
 
@@ -98,6 +97,7 @@ def dvbt_64qam_constellation(m,
         
     side = int(sqrt(m))
     width = 2.0
+    #width = 2.0/(side-1)
 
     points = [complex(7,7),complex(7,5),complex(5,7), complex(5,5),
               complex(7,1),complex(7,3),complex(5,1),complex(5,3),
@@ -119,6 +119,6 @@ def dvbt_64qam_constellation(m,
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
-    constellation = digital_swig.constellation_64qam(points, pre_diff_code, 4,
+    constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
                                                     side, side, width, width)
     return constellation

@@ -207,57 +207,6 @@ public:
 };
 
 
-/*
-  16QAM Constellation explicitely for DVBT
-*/
-class digital_constellation_16qam;
-typedef boost::shared_ptr<digital_constellation_16qam> digital_constellation_16qam_sptr;
-%template(digital_constellation_16qam_sptr) boost::shared_ptr<digital_constellation_16qam>;
-%rename(constellation_16qam) digital_make_constellation_16qam;
-digital_constellation_16qam_sptr digital_make_constellation_16qam(std::vector<gr_complex> constellation,
-								std::vector<unsigned int> pre_diff_code,
-								unsigned int rotational_symmetry,
-								unsigned int real_sectors, unsigned int imag_sectors,
-								float width_real_sectors, float width_imag_sectors);
-%ignore digital_constellation_16qam;
-
-class digital_constellation_16qam : public digital_constellation_sector
-{
-public:
-  digital_constellation_16qam (std::vector<gr_complex> constellation,
-			      std::vector<unsigned int> pre_diff_code,
-			      unsigned int rotational_symmetry,
-			      unsigned int real_sectors, unsigned int imag_sectors,
-			      float width_real_sectors, float width_imag_sectors);
-};
-
-
-/*
-  64QAM Constellation explicitely for DVBT
-*/
-class digital_constellation_64qam;
-typedef boost::shared_ptr<digital_constellation_64qam> digital_constellation_64qam_sptr;
-%template(digital_constellation_64qam_sptr) boost::shared_ptr<digital_constellation_64qam>;
-%rename(constellation_64qam) digital_make_constellation_64qam;
-digital_constellation_64qam_sptr digital_make_constellation_64qam(std::vector<gr_complex> constellation,
-								std::vector<unsigned int> pre_diff_code,
-								unsigned int rotational_symmetry,
-								unsigned int real_sectors, unsigned int imag_sectors,
-								float width_real_sectors, float width_imag_sectors);
-%ignore digital_constellation_64qam;
-
-class digital_constellation_64qam : public digital_constellation_sector
-{
-public:
-  digital_constellation_64qam (std::vector<gr_complex> constellation,
-			      std::vector<unsigned int> pre_diff_code,
-			      unsigned int rotational_symmetry,
-			      unsigned int real_sectors, unsigned int imag_sectors,
-			      float width_real_sectors, float width_imag_sectors);
-};
-
-
-
 #if SWIGPYTHON
 /*
   We want print(constellation) in python to produce nice useful output so
