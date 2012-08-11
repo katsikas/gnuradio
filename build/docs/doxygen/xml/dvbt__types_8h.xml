@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dvbt__types_8h" kind="file">
+    <compoundname>dvbt_types.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">cassert</includes>
+    <includes refid="dvbt__consts_8h" local="no">dvbt/dvbt_consts.h</includes>
+    <includedby refid="dvbti__data__interleaver_8h" local="no">dvbti_data_interleaver.h</includedby>
+    <includedby refid="dvbti__randomizer_8h" local="no">dvbti_randomizer.h</includedby>
+    <includedby refid="dvbti__reed__solomon_8h" local="no">dvbti_reed_solomon.h</includedby>
+    <includedby refid="dvbti__trellis__encoder_8h" local="no">dvbti_trellis_encoder.h</includedby>
+    <includedby refid="dvbti__viterbi__decoder_8h" local="no">dvbti_viterbi_decoder.h</includedby>
+    <incdepgraph>
+      <node id="3604">
+        <label>cassert</label>
+      </node>
+      <node id="3605">
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
+      </node>
+      <node id="3601">
+        <label>dvbt_types.h</label>
+        <link refid="dvbt_types.h"/>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3603" relation="include">
+        </childnode>
+        <childnode refid="3604" relation="include">
+        </childnode>
+        <childnode refid="3605" relation="include">
+        </childnode>
+      </node>
+      <node id="3602">
+        <label>stdio.h</label>
+      </node>
+      <node id="3603">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3611">
+        <label>dvbt_derandomizer.h</label>
+        <link refid="dvbt__derandomizer_8h"/>
+      </node>
+      <node id="3613">
+        <label>dvbti_reed_solomon.h</label>
+        <link refid="dvbti__reed__solomon_8h"/>
+        <childnode refid="3614" relation="include">
+        </childnode>
+        <childnode refid="3615" relation="include">
+        </childnode>
+      </node>
+      <node id="3619">
+        <label>dvbt_viterbi_decoder.h</label>
+        <link refid="dvbt__viterbi__decoder_8h"/>
+      </node>
+      <node id="3607">
+        <label>dvbti_data_interleaver.h</label>
+        <link refid="dvbti__data__interleaver_8h"/>
+        <childnode refid="3608" relation="include">
+        </childnode>
+        <childnode refid="3609" relation="include">
+        </childnode>
+      </node>
+      <node id="3612">
+        <label>dvbt_randomizer.h</label>
+        <link refid="dvbt__randomizer_8h"/>
+      </node>
+      <node id="3616">
+        <label>dvbti_trellis_encoder.h</label>
+        <link refid="dvbti__trellis__encoder_8h"/>
+        <childnode refid="3617" relation="include">
+        </childnode>
+      </node>
+      <node id="3615">
+        <label>dvbt_rs_encoder.h</label>
+        <link refid="dvbt__rs__encoder_8h"/>
+      </node>
+      <node id="3617">
+        <label>dvbt_trellis_encoder.h</label>
+        <link refid="dvbt__trellis__encoder_8h"/>
+      </node>
+      <node id="3609">
+        <label>dvbt_interleaver.h</label>
+        <link refid="dvbt__interleaver_8h"/>
+      </node>
+      <node id="3610">
+        <label>dvbti_randomizer.h</label>
+        <link refid="dvbti__randomizer_8h"/>
+        <childnode refid="3611" relation="include">
+        </childnode>
+        <childnode refid="3612" relation="include">
+        </childnode>
+      </node>
+      <node id="3608">
+        <label>dvbt_deinterleaver.h</label>
+        <link refid="dvbt__deinterleaver_8h"/>
+      </node>
+      <node id="3606">
+        <label>dvbt_types.h</label>
+        <link refid="dvbt_types.h"/>
+        <childnode refid="3607" relation="include">
+        </childnode>
+        <childnode refid="3610" relation="include">
+        </childnode>
+        <childnode refid="3613" relation="include">
+        </childnode>
+        <childnode refid="3616" relation="include">
+        </childnode>
+        <childnode refid="3618" relation="include">
+        </childnode>
+      </node>
+      <node id="3618">
+        <label>dvbti_viterbi_decoder.h</label>
+        <link refid="dvbti__viterbi__decoder_8h"/>
+        <childnode refid="3619" relation="include">
+        </childnode>
+      </node>
+      <node id="3614">
+        <label>dvbt_rs_decoder.h</label>
+        <link refid="dvbt__rs__decoder_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classplinfo" prot="public">plinfo</innerclass>
+    <innerclass refid="classdvbt__mpeg__packet" prot="public">dvbt_mpeg_packet</innerclass>
+    <innerclass refid="classdvbt__mpeg__packet__no__sync" prot="public">dvbt_mpeg_packet_no_sync</innerclass>
+    <innerclass refid="classdvbt__mpeg__packet__rs__encoded" prot="public">dvbt_mpeg_packet_rs_encoded</innerclass>
+    <innerclass refid="classdvbt__data__segment" prot="public">dvbt_data_segment</innerclass>
+    <innerclass refid="classdvbt__soft__data__segment" prot="public">dvbt_soft_data_segment</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h"/>
+  </compounddef>
+</doxygen>

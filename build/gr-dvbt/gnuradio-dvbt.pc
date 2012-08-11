@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-dvbt
+Description: GNU Radio's DVBT signal processing blocks
+Requires: gnuradio-core
+Version: 3.6.1git
+Libs: -L${libdir} -lgnuradio-dvbt
+Cflags: -I${includedir}

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classwavelet__squash__ff__impl" kind="class" prot="public">
+    <compoundname>wavelet_squash_ff_impl</compoundname>
+    <includes refid="wavelet__squash__ff__impl_8h" local="no">wavelet_squash_ff_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classwavelet__squash__ff__impl_1ac8d0474af9411962debdd77b0dc1dbdb" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t wavelet_squash_ff_impl::d_inum</definition>
+        <argsstring></argsstring>
+        <name>d_inum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__squash__ff__impl_1a05d6716f8dd0e0940647fc4f57d4db30" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t wavelet_squash_ff_impl::d_onum</definition>
+        <argsstring></argsstring>
+        <name>d_onum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__squash__ff__impl_1a637ac39865a4d392a45d6f609c907f7e" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* wavelet_squash_ff_impl::d_igrid</definition>
+        <argsstring></argsstring>
+        <name>d_igrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__squash__ff__impl_1ab5a6647b956eeabaede00837bdcb00b3" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* wavelet_squash_ff_impl::d_iwork</definition>
+        <argsstring></argsstring>
+        <name>d_iwork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="37" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__squash__ff__impl_1a0f1eb69f3ef17db30d5a98cfe742fb48" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* wavelet_squash_ff_impl::d_ogrid</definition>
+        <argsstring></argsstring>
+        <name>d_ogrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__squash__ff__impl_1a4645dd7f6bcf9bc7e189bf064abcaac9" prot="private" static="no" mutable="no">
+        <type>gsl_interp_accel *</type>
+        <definition>gsl_interp_accel* wavelet_squash_ff_impl::d_accel</definition>
+        <argsstring></argsstring>
+        <name>d_accel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="40" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__squash__ff__impl_1aebdb95c03977881fbdd7c804a6f7f30d" prot="private" static="no" mutable="no">
+        <type>gsl_spline *</type>
+        <definition>gsl_spline* wavelet_squash_ff_impl::d_spline</definition>
+        <argsstring></argsstring>
+        <name>d_spline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classwavelet__squash__ff__impl_1ae1c82981c6aecc9f1062cf769fa7fe59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wavelet_squash_ff_impl::wavelet_squash_ff_impl</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;igrid, const std::vector&lt; float &gt; &amp;ogrid)</argsstring>
+        <name>wavelet_squash_ff_impl</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>igrid</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>ogrid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classwavelet__squash__ff__impl_1ae43a28147189a5e47f8f344842bca3c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend WAVELET_API wavelet_squash_ff_sptr</type>
+        <definition>WAVELET_API wavelet_squash_ff_sptr wavelet_make_squash_ff</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;igrid, const std::vector&lt; float &gt; &amp;ogrid)</argsstring>
+        <name>wavelet_make_squash_ff</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>igrid</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>ogrid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classwavelet__squash__ff__impl_1a772d9e20f65d90c370216f11405ec07b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wavelet_squash_ff_impl::~wavelet_squash_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~wavelet_squash_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classwavelet__squash__ff__impl_1a5135be3e2ee129457a395d360a791002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wavelet_squash_ff_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_squash_ff_impl.h" bodystart="32" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classwavelet__squash__ff__impl_1a4645dd7f6bcf9bc7e189bf064abcaac9" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>d_accel</name></member>
+      <member refid="classwavelet__squash__ff__impl_1a637ac39865a4d392a45d6f609c907f7e" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>d_igrid</name></member>
+      <member refid="classwavelet__squash__ff__impl_1ac8d0474af9411962debdd77b0dc1dbdb" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>d_inum</name></member>
+      <member refid="classwavelet__squash__ff__impl_1ab5a6647b956eeabaede00837bdcb00b3" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>d_iwork</name></member>
+      <member refid="classwavelet__squash__ff__impl_1a0f1eb69f3ef17db30d5a98cfe742fb48" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>d_ogrid</name></member>
+      <member refid="classwavelet__squash__ff__impl_1a05d6716f8dd0e0940647fc4f57d4db30" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>d_onum</name></member>
+      <member refid="classwavelet__squash__ff__impl_1aebdb95c03977881fbdd7c804a6f7f30d" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>d_spline</name></member>
+      <member refid="classwavelet__squash__ff__impl_1ae43a28147189a5e47f8f344842bca3c0" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>wavelet_make_squash_ff</name></member>
+      <member refid="classwavelet__squash__ff__impl_1ae1c82981c6aecc9f1062cf769fa7fe59" prot="private" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>wavelet_squash_ff_impl</name></member>
+      <member refid="classwavelet__squash__ff__impl_1a5135be3e2ee129457a395d360a791002" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>work</name></member>
+      <member refid="classwavelet__squash__ff__impl_1a772d9e20f65d90c370216f11405ec07b" prot="public" virt="non-virtual"><scope>wavelet_squash_ff_impl</scope><name>~wavelet_squash_ff_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

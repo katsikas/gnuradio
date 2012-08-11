@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbt__soft__data__segment" kind="class" prot="public">
+    <compoundname>dvbt_soft_data_segment</compoundname>
+    <includes refid="dvbt__types_8h" local="no">dvbt_types.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdvbt__soft__data__segment_1a72270ad57ad9183fe94d4ccb8b76c8ed" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbt_soft_data_segment::NPAD</definition>
+        <argsstring></argsstring>
+        <name>NPAD</name>
+        <initializer> 764</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="188" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdvbt__soft__data__segment_1aa12596cad0347b41e8783e7c54853e80" prot="public" static="no" mutable="no">
+        <type><ref refid="classplinfo" kindref="compound">plinfo</ref></type>
+        <definition>plinfo dvbt_soft_data_segment::pli</definition>
+        <argsstring></argsstring>
+        <name>pli</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="189" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbt__soft__data__segment_1a0712b924d3379589233c6c24dde9f353" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char dvbt_soft_data_segment::_pad_[NPAD]</definition>
+        <argsstring>[NPAD]</argsstring>
+        <name>_pad_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="190" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dvbt_soft_data_segment::data[DVBT_DATA_SEGMENT_LENGTH]</definition>
+        <argsstring>[DVBT_DATA_SEGMENT_LENGTH]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="191" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="191" bodyend="-1"/>
+        <referencedby refid="classdvbt__soft__data__segment_1a1039e970bedf228bf1b42843213214ea" compoundref="dvbt__types_8h" startline="198" endline="200">operator!=</referencedby>
+        <referencedby refid="classdvbt__soft__data__segment_1a8c793c7fcfb9d83b55ae75dfc07d279a" compoundref="dvbt__types_8h" startline="194" endline="196">operator==</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbt__soft__data__segment_1a8c793c7fcfb9d83b55ae75dfc07d279a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dvbt_soft_data_segment::operator==</definition>
+        <argsstring>(const dvbt_data_segment &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdvbt__data__segment" kindref="compound">dvbt_data_segment</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="194" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="194" bodyend="196"/>
+        <references refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" compoundref="dvbt__types_8h" startline="166">dvbt_data_segment::data</references>
+        <references refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" compoundref="dvbt__types_8h" startline="191">data</references>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__soft__data__segment_1a1039e970bedf228bf1b42843213214ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dvbt_soft_data_segment::operator!=</definition>
+        <argsstring>(const dvbt_data_segment &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdvbt__data__segment" kindref="compound">dvbt_data_segment</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="198" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="198" bodyend="200"/>
+        <references refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" compoundref="dvbt__types_8h" startline="166">dvbt_data_segment::data</references>
+        <references refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" compoundref="dvbt__types_8h" startline="191">data</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains 832 bipolar floating point symbols. Nominal values are +/- {1, 3, 5, 7}. This data type represents the input to the viterbi decoder. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1605">
+        <label>plinfo</label>
+        <link refid="classplinfo"/>
+      </node>
+      <node id="1604">
+        <label>dvbt_soft_data_segment</label>
+        <link refid="classdvbt__soft__data__segment"/>
+        <childnode refid="1605" relation="usage">
+          <edgelabel>pli</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" line="186" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h" bodystart="186" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classdvbt__soft__data__segment_1a0712b924d3379589233c6c24dde9f353" prot="public" virt="non-virtual"><scope>dvbt_soft_data_segment</scope><name>_pad_</name></member>
+      <member refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" prot="public" virt="non-virtual"><scope>dvbt_soft_data_segment</scope><name>data</name></member>
+      <member refid="classdvbt__soft__data__segment_1a72270ad57ad9183fe94d4ccb8b76c8ed" prot="public" virt="non-virtual"><scope>dvbt_soft_data_segment</scope><name>NPAD</name></member>
+      <member refid="classdvbt__soft__data__segment_1a1039e970bedf228bf1b42843213214ea" prot="public" virt="non-virtual"><scope>dvbt_soft_data_segment</scope><name>operator!=</name></member>
+      <member refid="classdvbt__soft__data__segment_1a8c793c7fcfb9d83b55ae75dfc07d279a" prot="public" virt="non-virtual"><scope>dvbt_soft_data_segment</scope><name>operator==</name></member>
+      <member refid="classdvbt__soft__data__segment_1aa12596cad0347b41e8783e7c54853e80" prot="public" virt="non-virtual"><scope>dvbt_soft_data_segment</scope><name>pli</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

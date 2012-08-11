@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gr__file__sink__base_8h" kind="file">
+    <compoundname>gr_file_sink_base.h</compoundname>
+    <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
+    <includes local="no">boost/thread.hpp</includes>
+    <includes local="no">cstdio</includes>
+    <includedby refid="gr__file__sink_8h" local="no">gr_file_sink.h</includedby>
+    <includedby refid="gr__wavfile__sink_8h" local="no">gr_wavfile_sink.h</includedby>
+    <incdepgraph>
+      <node id="7016">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="7017">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="7018">
+        <label>cstdio</label>
+      </node>
+      <node id="7015">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="7016" relation="include">
+        </childnode>
+      </node>
+      <node id="7014">
+        <label>gr_file_sink_base.h</label>
+        <link refid="gr_file_sink_base.h"/>
+        <childnode refid="7015" relation="include">
+        </childnode>
+        <childnode refid="7017" relation="include">
+        </childnode>
+        <childnode refid="7018" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7021">
+        <label>gr_wavfile_sink.h</label>
+        <link refid="gr__wavfile__sink_8h"/>
+      </node>
+      <node id="7020">
+        <label>gr_file_sink.h</label>
+        <link refid="gr__file__sink_8h"/>
+      </node>
+      <node id="7019">
+        <label>gr_file_sink_base.h</label>
+        <link refid="gr_file_sink_base.h"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7021" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr__file__sink__base" prot="public">gr_file_sink_base</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/io/gr_file_sink_base.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="realtime_8h" kind="file">
+    <compoundname>realtime.h</compoundname>
+    <includes refid="api_8h" local="no">gruel/api.h</includes>
+    <includes local="no">stdexcept</includes>
+    <includedby refid="gr__realtime_8h" local="no">gr_realtime.h</includedby>
+    <includedby refid="sys__pri_8h" local="no">sys_pri.h</includedby>
+    <incdepgraph>
+      <node id="15253">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="15254">
+        <label>stdexcept</label>
+      </node>
+      <node id="15251">
+        <label>realtime.h</label>
+        <link refid="realtime.h"/>
+        <childnode refid="15252" relation="include">
+        </childnode>
+        <childnode refid="15254" relation="include">
+        </childnode>
+      </node>
+      <node id="15252">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="15253" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15257">
+        <label>sys_pri.h</label>
+        <link refid="sys__pri_8h"/>
+      </node>
+      <node id="15256">
+        <label>gr_realtime.h</label>
+        <link refid="gr__realtime_8h"/>
+      </node>
+      <node id="15255">
+        <label>realtime.h</label>
+        <link refid="realtime.h"/>
+        <childnode refid="15256" relation="include">
+        </childnode>
+        <childnode refid="15257" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgruel_1_1rt__sched__param" prot="public">gruel::rt_sched_param</innerclass>
+    <innernamespace refid="namespacegruel">gruel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/realtime.h"/>
+  </compounddef>
+</doxygen>

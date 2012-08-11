@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gr__ofdm__frame__sink2_8h" kind="file">
+    <compoundname>gr_ofdm_frame_sink2.h</compoundname>
+    <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
+    <includes refid="gr__sync__block_8h" local="no">gr_sync_block.h</includes>
+    <includes refid="gr__msg__queue_8h" local="no">gr_msg_queue.h</includes>
+    <includes local="no">gr_constellation.h</includes>
+    <incdepgraph>
+      <node id="9038">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="9016">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9011" relation="include">
+        </childnode>
+      </node>
+      <node id="9007">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9008" relation="include">
+        </childnode>
+        <childnode refid="9032" relation="include">
+        </childnode>
+      </node>
+      <node id="9040">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="9011">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="9023">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="9020">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="9021" relation="include">
+        </childnode>
+        <childnode refid="9022" relation="include">
+        </childnode>
+        <childnode refid="9011" relation="include">
+        </childnode>
+      </node>
+      <node id="9005">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="9026">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="9027" relation="include">
+        </childnode>
+        <childnode refid="9028" relation="include">
+        </childnode>
+      </node>
+      <node id="9010">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9011" relation="include">
+        </childnode>
+        <childnode refid="9012" relation="include">
+        </childnode>
+        <childnode refid="9013" relation="include">
+        </childnode>
+        <childnode refid="9014" relation="include">
+        </childnode>
+      </node>
+      <node id="9036">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="9021" relation="include">
+        </childnode>
+        <childnode refid="9037" relation="include">
+        </childnode>
+        <childnode refid="9038" relation="include">
+        </childnode>
+        <childnode refid="9039" relation="include">
+        </childnode>
+        <childnode refid="9040" relation="include">
+        </childnode>
+      </node>
+      <node id="9030">
+        <label>stdexcept</label>
+      </node>
+      <node id="9037">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="9025">
+        <label>string</label>
+      </node>
+      <node id="9008">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9009" relation="include">
+        </childnode>
+        <childnode refid="9016" relation="include">
+        </childnode>
+        <childnode refid="9017" relation="include">
+        </childnode>
+        <childnode refid="9018" relation="include">
+        </childnode>
+        <childnode refid="9019" relation="include">
+        </childnode>
+        <childnode refid="9025" relation="include">
+        </childnode>
+      </node>
+      <node id="9033">
+        <label>gr_msg_queue.h</label>
+        <link refid="gr__msg__queue_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9034" relation="include">
+        </childnode>
+        <childnode refid="9036" relation="include">
+        </childnode>
+      </node>
+      <node id="9031">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="9013">
+        <label>stddef.h</label>
+      </node>
+      <node id="9021">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="9005" relation="include">
+        </childnode>
+      </node>
+      <node id="9018">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="9027">
+        <label>limits.h</label>
+      </node>
+      <node id="9024">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="9022">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="9021" relation="include">
+        </childnode>
+        <childnode refid="9023" relation="include">
+        </childnode>
+        <childnode refid="9011" relation="include">
+        </childnode>
+        <childnode refid="9024" relation="include">
+        </childnode>
+        <childnode refid="9015" relation="include">
+        </childnode>
+        <childnode refid="9025" relation="include">
+        </childnode>
+        <childnode refid="9026" relation="include">
+        </childnode>
+        <childnode refid="9029" relation="include">
+        </childnode>
+        <childnode refid="9030" relation="include">
+        </childnode>
+        <childnode refid="9031" relation="include">
+        </childnode>
+      </node>
+      <node id="9028">
+        <label>wchar.h</label>
+      </node>
+      <node id="9019">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9020" relation="include">
+        </childnode>
+        <childnode refid="9022" relation="include">
+        </childnode>
+      </node>
+      <node id="9009">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9010" relation="include">
+        </childnode>
+      </node>
+      <node id="9039">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="9012">
+        <label>vector</label>
+      </node>
+      <node id="9003">
+        <label>gr_ofdm_frame_sink2.h</label>
+        <link refid="gr_ofdm_frame_sink2.h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9006" relation="include">
+        </childnode>
+        <childnode refid="9033" relation="include">
+        </childnode>
+        <childnode refid="9041" relation="include">
+        </childnode>
+      </node>
+      <node id="9004">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="9005" relation="include">
+        </childnode>
+      </node>
+      <node id="9034">
+        <label>gr_msg_handler.h</label>
+        <link refid="gr__msg__handler_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9035" relation="include">
+        </childnode>
+      </node>
+      <node id="9017">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="9029">
+        <label>iosfwd</label>
+      </node>
+      <node id="9032">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9022" relation="include">
+        </childnode>
+      </node>
+      <node id="9035">
+        <label>gr_message.h</label>
+        <link refid="gr__message_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9010" relation="include">
+        </childnode>
+        <childnode refid="9025" relation="include">
+        </childnode>
+      </node>
+      <node id="9041">
+        <label>gr_constellation.h</label>
+      </node>
+      <node id="9006">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="9004" relation="include">
+        </childnode>
+        <childnode refid="9007" relation="include">
+        </childnode>
+      </node>
+      <node id="9015">
+        <label>complex</label>
+      </node>
+      <node id="9014">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="9015" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr__ofdm__frame__sink2" prot="public">gr_ofdm_frame_sink2</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gr__ofdm__frame__sink2_8h_1a896c0a0dab277b4cdcf742418f922f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ofdm_frame_sink2_sptr</ref></type>
+        <definition>GR_CORE_API gr_ofdm_frame_sink2_sptr gr_make_ofdm_frame_sink2</definition>
+        <argsstring>(gr_constellation_sptr constell, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain=0.25, float freq_gain=0.25 *0.25/4.0)</argsstring>
+        <name>gr_make_ofdm_frame_sink2</name>
+        <param>
+          <type>gr_constellation_sptr</type>
+          <declname>constell</declname>
+        </param>
+        <param>
+          <type><ref refid="classboost_1_1shared__ptr" kindref="compound">gr_msg_queue_sptr</ref></type>
+          <declname>target_queue</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>occupied_tones</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>phase_gain</declname>
+          <defval>0.25</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>freq_gain</declname>
+          <defval>0.25 *0.25/4.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_ofdm_frame_sink2.h" line="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_ofdm_frame_sink2.h"/>
+  </compounddef>
+</doxygen>

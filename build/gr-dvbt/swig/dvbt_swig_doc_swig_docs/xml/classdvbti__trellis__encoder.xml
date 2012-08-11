@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbti__trellis__encoder" kind="class" prot="public">
+    <compoundname>dvbti_trellis_encoder</compoundname>
+    <includes refid="dvbti__trellis__encoder_8h" local="no">dvbti_trellis_encoder.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdvbti__trellis__encoder_1a3d0ceb8f5874e23eb8a467fc2357ec84" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbti_trellis_encoder::NCODERS</definition>
+        <argsstring></argsstring>
+        <name>NCODERS</name>
+        <initializer> 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdvbti__trellis__encoder_1a4606801f53d8833d1812fa68d7343ddb" prot="protected" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbti_trellis_encoder::SEGMENT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>SEGMENT_SIZE</name>
+        <initializer> DVBT_MPEG_RS_ENCODED_LENGTH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="56" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbti__trellis__encoder_1aeb8641be3e939d191a23751961fc687b" prot="protected" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbti_trellis_encoder::INPUT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>INPUT_SIZE</name>
+        <initializer> (<ref refid="classdvbti__trellis__encoder_1a4606801f53d8833d1812fa68d7343ddb" kindref="member">SEGMENT_SIZE</ref> * 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="57" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbti__trellis__encoder_1a917c4bf968b97eb98e581e22be6cbd13" prot="protected" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int dvbti_trellis_encoder::OUTPUT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>OUTPUT_SIZE</name>
+        <initializer> (DVBT_DATA_SEGMENT_LENGTH * 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdvbti__trellis__encoder_1a1f409549524efaa8de9bc6b60efc9cdc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdvbti__basic__trellis__encoder" kindref="compound">dvbti_basic_trellis_encoder</ref></type>
+        <definition>dvbti_basic_trellis_encoder dvbti_trellis_encoder::enc[NCODERS]</definition>
+        <argsstring>[NCODERS]</argsstring>
+        <name>enc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="62" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdvbti__trellis__encoder_1acffa57cf950e2ecc421af6708a3e27d9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dvbti_trellis_encoder::debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="63" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbti__trellis__encoder_1a1ca74c4ced4b6724cb374575492c2312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbti_trellis_encoder::dvbti_trellis_encoder</definition>
+        <argsstring>()</argsstring>
+        <name>dvbti_trellis_encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__trellis__encoder_1aef8a2a1eb87006a7cecbdfed86487c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbti_trellis_encoder::~dvbti_trellis_encoder</definition>
+        <argsstring>()</argsstring>
+        <name>~dvbti_trellis_encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__trellis__encoder_1acb07924c904a790a9b6d5493f656e1cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbti_trellis_encoder::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>reset all encoder states </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__trellis__encoder_1a13e376dd3f257039444f0ed569bb8629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbti_trellis_encoder::encode</definition>
+        <argsstring>(dvbt_data_segment out[NCODERS], const dvbt_mpeg_packet_rs_encoded in[NCODERS])</argsstring>
+        <name>encode</name>
+        <param>
+          <type><ref refid="classdvbt__data__segment" kindref="compound">dvbt_data_segment</ref></type>
+          <declname>out</declname>
+          <array>[NCODERS]</array>
+        </param>
+        <param>
+          <type>const <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref></type>
+          <declname>in</declname>
+          <array>[NCODERS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Take 12 RS encoded, convolutionally interleaved segments and produce 12 trellis coded data segments. We work in groups of 12 because that&apos;s the smallest number of segments that composes a single full cycle of the encoder mux. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdvbti__trellis__encoder_1a1f29c036e6edda3e6eec4c1212d9d4dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbti_trellis_encoder::encode_helper</definition>
+        <argsstring>(unsigned char out[OUTPUT_SIZE], const unsigned char in[INPUT_SIZE])</argsstring>
+        <name>encode_helper</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>out</declname>
+          <array>[OUTPUT_SIZE]</array>
+        </param>
+        <param>
+          <type>const unsigned char</type>
+          <declname>in</declname>
+          <array>[INPUT_SIZE]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>fancy, schmancy 12-way interleaved trellis encoder for DVBT </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="338">
+        <label>dvbti_trellis_encoder</label>
+        <link refid="classdvbti__trellis__encoder"/>
+        <childnode refid="339" relation="usage">
+          <edgelabel>enc</edgelabel>
+        </childnode>
+      </node>
+      <node id="339">
+        <label>dvbti_basic_trellis_encoder</label>
+        <link refid="classdvbti__basic__trellis__encoder"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_trellis_encoder.h" bodystart="36" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classdvbti__trellis__encoder_1acffa57cf950e2ecc421af6708a3e27d9" prot="protected" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>debug</name></member>
+      <member refid="classdvbti__trellis__encoder_1a1ca74c4ced4b6724cb374575492c2312" prot="public" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>dvbti_trellis_encoder</name></member>
+      <member refid="classdvbti__trellis__encoder_1a1f409549524efaa8de9bc6b60efc9cdc" prot="protected" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>enc</name></member>
+      <member refid="classdvbti__trellis__encoder_1a13e376dd3f257039444f0ed569bb8629" prot="public" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>encode</name></member>
+      <member refid="classdvbti__trellis__encoder_1a1f29c036e6edda3e6eec4c1212d9d4dc" prot="protected" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>encode_helper</name></member>
+      <member refid="classdvbti__trellis__encoder_1aeb8641be3e939d191a23751961fc687b" prot="protected" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>INPUT_SIZE</name></member>
+      <member refid="classdvbti__trellis__encoder_1a3d0ceb8f5874e23eb8a467fc2357ec84" prot="public" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>NCODERS</name></member>
+      <member refid="classdvbti__trellis__encoder_1a917c4bf968b97eb98e581e22be6cbd13" prot="protected" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>OUTPUT_SIZE</name></member>
+      <member refid="classdvbti__trellis__encoder_1acb07924c904a790a9b6d5493f656e1cb" prot="public" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>reset</name></member>
+      <member refid="classdvbti__trellis__encoder_1a4606801f53d8833d1812fa68d7343ddb" prot="protected" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>SEGMENT_SIZE</name></member>
+      <member refid="classdvbti__trellis__encoder_1aef8a2a1eb87006a7cecbdfed86487c40" prot="public" virt="non-virtual"><scope>dvbti_trellis_encoder</scope><name>~dvbti_trellis_encoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

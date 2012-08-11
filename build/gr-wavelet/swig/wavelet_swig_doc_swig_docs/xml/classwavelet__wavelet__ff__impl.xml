@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classwavelet__wavelet__ff__impl" kind="class" prot="public">
+    <compoundname>wavelet_wavelet_ff_impl</compoundname>
+    <includes refid="wavelet__wavelet__ff__impl_8h" local="no">wavelet_wavelet_ff_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classwavelet__wavelet__ff__impl_1ac87aa12da9143cc9aecaf692a511b347" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wavelet_wavelet_ff_impl::d_size</definition>
+        <argsstring></argsstring>
+        <name>d_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__wavelet__ff__impl_1a54453879fa491f239108adec9d38905d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wavelet_wavelet_ff_impl::d_order</definition>
+        <argsstring></argsstring>
+        <name>d_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__wavelet__ff__impl_1ad251314c8f97e028e256027d92f58f43" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool wavelet_wavelet_ff_impl::d_forward</definition>
+        <argsstring></argsstring>
+        <name>d_forward</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__wavelet__ff__impl_1aa800d808905ab24a9722187c99c97de7" prot="private" static="no" mutable="no">
+        <type>gsl_wavelet *</type>
+        <definition>gsl_wavelet* wavelet_wavelet_ff_impl::d_wavelet</definition>
+        <argsstring></argsstring>
+        <name>d_wavelet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__wavelet__ff__impl_1a6ec32377c2abf4cf1e771151377e54f7" prot="private" static="no" mutable="no">
+        <type>gsl_wavelet_workspace *</type>
+        <definition>gsl_wavelet_workspace* wavelet_wavelet_ff_impl::d_workspace</definition>
+        <argsstring></argsstring>
+        <name>d_workspace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classwavelet__wavelet__ff__impl_1aaebf9a2a05b50a87bd1e9fd6eff1eb88" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* wavelet_wavelet_ff_impl::d_temp</definition>
+        <argsstring></argsstring>
+        <name>d_temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classwavelet__wavelet__ff__impl_1a5373e9d005ef58f0f1f006e0c887474a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend WAVELET_API wavelet_wavelet_ff_sptr</type>
+        <definition>WAVELET_API wavelet_wavelet_ff_sptr wavelet_make_wavelet_ff</definition>
+        <argsstring>(int size, int order, bool forward)</argsstring>
+        <name>wavelet_make_wavelet_ff</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forward</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classwavelet__wavelet__ff__impl_1a4792213964745f24981a5ba947545628" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wavelet_wavelet_ff_impl::wavelet_wavelet_ff_impl</definition>
+        <argsstring>(int size, int order, bool forward)</argsstring>
+        <name>wavelet_wavelet_ff_impl</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forward</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classwavelet__wavelet__ff__impl_1a7f7ec4f7596506f234606233b63375cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>wavelet_wavelet_ff_impl::~wavelet_wavelet_ff_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~wavelet_wavelet_ff_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classwavelet__wavelet__ff__impl_1a9f9286e1252d66756680ec5596c7f7d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wavelet_wavelet_ff_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" line="30" bodyfile="/home/katsikas/gnuradio/gr-wavelet/lib/wavelet_wavelet_ff_impl.h" bodystart="29" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classwavelet__wavelet__ff__impl_1ad251314c8f97e028e256027d92f58f43" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>d_forward</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1a54453879fa491f239108adec9d38905d" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>d_order</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1ac87aa12da9143cc9aecaf692a511b347" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>d_size</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1aaebf9a2a05b50a87bd1e9fd6eff1eb88" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>d_temp</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1aa800d808905ab24a9722187c99c97de7" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>d_wavelet</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1a6ec32377c2abf4cf1e771151377e54f7" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>d_workspace</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1a5373e9d005ef58f0f1f006e0c887474a" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>wavelet_make_wavelet_ff</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1a4792213964745f24981a5ba947545628" prot="private" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>wavelet_wavelet_ff_impl</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1a9f9286e1252d66756680ec5596c7f7d7" prot="public" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>work</name></member>
+      <member refid="classwavelet__wavelet__ff__impl_1a7f7ec4f7596506f234606233b63375cd" prot="public" virt="non-virtual"><scope>wavelet_wavelet_ff_impl</scope><name>~wavelet_wavelet_ff_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

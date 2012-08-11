@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dvbti__viterbi__decoder_8h" kind="file">
+    <compoundname>dvbti_viterbi_decoder.h</compoundname>
+    <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
+    <includes refid="dvbt__types_8h" local="no">dvbt/dvbt_types.h</includes>
+    <includes refid="interleaver__fifo_8h" local="no">dvbt/interleaver_fifo.h</includes>
+    <includes refid="dvbti__single__viterbi_8h" local="no">dvbt/dvbti_single_viterbi.h</includes>
+    <includedby refid="dvbt__viterbi__decoder_8h" local="no">/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h</includedby>
+    <incdepgraph>
+      <node id="254">
+        <label>gruel/attributes.h</label>
+      </node>
+      <node id="258">
+        <label>cassert</label>
+      </node>
+      <node id="260">
+        <label>dvbt/interleaver_fifo.h</label>
+        <link refid="interleaver__fifo_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>string.h</label>
+      </node>
+      <node id="259">
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
+      </node>
+      <node id="262">
+        <label>dvbt/dvbti_single_viterbi.h</label>
+        <link refid="dvbti__single__viterbi_8h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>dvbt/dvbt_types.h</label>
+        <link refid="dvbt__types_8h"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h</label>
+        <link refid="dvbti_viterbi_decoder.h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>stdio.h</label>
+      </node>
+      <node id="253">
+        <label>dvbt/dvbt_api.h</label>
+        <link refid="dvbt__api_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="264">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h</label>
+        <link refid="dvbt__viterbi__decoder_8h"/>
+      </node>
+      <node id="263">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h</label>
+        <link refid="dvbti_viterbi_decoder.h"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdvbti__viterbi__decoder" prot="public">dvbti_viterbi_decoder</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dvbti__viterbi__decoder_8h_1a946ecb7d9c6de0cab7f98aa467c5ba5f" prot="public" static="no">
+        <name>USE_SIMPLE_SLICER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" line="27" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dvbti__viterbi__decoder_8h_1a5a7bdf1f5e06cdc2f6153bc6f9db4926" prot="public" static="no">
+        <type><ref refid="classdvbti__single__viterbi" kindref="compound">dvbti_single_viterbi</ref></type>
+        <definition>typedef dvbti_single_viterbi single_viterbi_t</definition>
+        <argsstring></argsstring>
+        <name>single_viterbi_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2012<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>GNU<sp/>Radio</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>Radio<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>GNU<sp/>Radio;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_DVBT_VITERBI_DECODER_H_</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_DVBT_VITERBI_DECODER_H_</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="dvbti__viterbi__decoder_8h_1a946ecb7d9c6de0cab7f98aa467c5ba5f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USE_SIMPLE_SLICER<sp/><sp/>0</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbt__api_8h" kindref="compound">dvbt/dvbt_api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbt__types_8h" kindref="compound">dvbt/dvbt_types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="interleaver__fifo_8h" kindref="compound">dvbt/interleaver_fifo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_SIMPLE_SLICER)</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbti__fake__single__viterbi_8h" kindref="compound">dvbt/dvbti_fake_single_viterbi.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classdvbti__fake__single__viterbi" kindref="compound" tooltip="single channel viterbi decoder">dvbti_fake_single_viterbi</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dvbti__viterbi__decoder_8h_1a5a7bdf1f5e06cdc2f6153bc6f9db4926" kindref="member">single_viterbi_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbti__single__viterbi_8h" kindref="compound">dvbt/dvbti_single_viterbi.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="dvbti__viterbi__decoder_8h_1a5a7bdf1f5e06cdc2f6153bc6f9db4926" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classdvbti__single__viterbi" kindref="compound" tooltip="single channel viterbi decoder">dvbti_single_viterbi</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dvbti__viterbi__decoder_8h_1a5a7bdf1f5e06cdc2f6153bc6f9db4926" kindref="member">single_viterbi_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classdvbti__viterbi__decoder" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbti__viterbi__decoder" kindref="compound" tooltip="fancy, schmancy 12-way interleaved viterbi decoder for DVBT">dvbti_viterbi_decoder</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classdvbti__viterbi__decoder_1a4bd51321dc855831b8bad7e163c6a787" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NCODERS<sp/>=<sp/>12;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbti__viterbi__decoder" kindref="compound" tooltip="fancy, schmancy 12-way interleaved viterbi decoder for DVBT">dvbti_viterbi_decoder</ref><sp/>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classdvbti__viterbi__decoder" kindref="compound" tooltip="fancy, schmancy 12-way interleaved viterbi decoder for DVBT">dvbti_viterbi_decoder</ref><sp/>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset<sp/>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>decode<sp/>(<ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref><sp/>out[NCODERS],</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdvbt__soft__data__segment" kindref="compound">dvbt_soft_data_segment</ref><sp/>in[NCODERS]);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68" refid="classdvbti__viterbi__decoder_1a23f43f624528cecd6a7f8ceffde0ec11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classinterleaver__fifo" kindref="compound">interleaver_fifo&lt;unsigned char&gt;</ref><sp/><ref refid="classdvbti__viterbi__decoder_1a23f43f624528cecd6a7f8ceffde0ec11" kindref="member">fifo_t</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classdvbti__viterbi__decoder_1a997eb3665add1d7e6f7619e94e9ced4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SEGMENT_SIZE<sp/>=<sp/>DVBT_MPEG_RS_ENCODED_LENGTH;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>207</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classdvbti__viterbi__decoder_1a6b938a0ed5bfdfab02a8b936f29a8a7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OUTPUT_SIZE<sp/>=<sp/>(SEGMENT_SIZE<sp/>*<sp/>12);</highlight></codeline>
+<codeline lineno="72" refid="classdvbti__viterbi__decoder_1a627554040b579ad38670e37f15a803ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INPUT_SIZE<sp/>=<sp/>(DVBT_DATA_SEGMENT_LENGTH<sp/>*<sp/>12);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>decode_helper<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>out[OUTPUT_SIZE],</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>in[INPUT_SIZE]);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classdvbti__viterbi__decoder_1acf989d5ad697c750eb67234a9eede917" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbti__viterbi__decoder_1acf989d5ad697c750eb67234a9eede917" kindref="member">debug</ref>;</highlight></codeline>
+<codeline lineno="78" refid="classdvbti__viterbi__decoder_1a74b86c5124fb962a2d30200724d455e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinterleaver__fifo" kindref="compound">fifo_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*fifo[NCODERS];</highlight></codeline>
+<codeline lineno="79" refid="classdvbti__viterbi__decoder_1a46383ab89951dcc14df488bccc63290d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbti__single__viterbi" kindref="compound" tooltip="single channel viterbi decoder">single_viterbi_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>viterbi[NCODERS];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_DVBT_VITERBI_DECODER_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h"/>
+  </compounddef>
+</doxygen>

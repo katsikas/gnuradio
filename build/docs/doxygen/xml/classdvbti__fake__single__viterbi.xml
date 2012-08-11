@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbti__fake__single__viterbi" kind="class" prot="public">
+    <compoundname>dvbti_fake_single_viterbi</compoundname>
+    <includes refid="dvbti__fake__single__viterbi_8h" local="no">dvbti_fake_single_viterbi.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdvbti__fake__single__viterbi_1ac3988af90b8a0ba96870f716cf408c4f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dvbti_fake_single_viterbi::post_coder_state</definition>
+        <argsstring></argsstring>
+        <name>post_coder_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" line="50" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbti__fake__single__viterbi_1a8a3166c97faff9f25ce887328c32460b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbti_fake_single_viterbi::dvbti_fake_single_viterbi</definition>
+        <argsstring>()</argsstring>
+        <name>dvbti_fake_single_viterbi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__fake__single__viterbi_1a7b7b5006b1e2b9cd2f02f3813eadeee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char dvbti_fake_single_viterbi::decode</definition>
+        <argsstring>(float input)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>float</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>INPUT</computeroutput> ideally takes on the values +/- 1,3,5,7 return is decoded dibit in the range [0, 3] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__fake__single__viterbi_1a3de94d7a6f8647ab124f31904778b771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbti_fake_single_viterbi::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbti__fake__single__viterbi_1a272f86a2decbb711033bec14365cc28c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int dvbti_fake_single_viterbi::delay</definition>
+        <argsstring>()</argsstring>
+        <name>delay</name>
+        <briefdescription>
+<para>internal delay of decoder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" line="47" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>single channel viterbi decoder </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_fake_single_viterbi.h" bodystart="32" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classdvbti__fake__single__viterbi_1a7b7b5006b1e2b9cd2f02f3813eadeee1" prot="public" virt="non-virtual"><scope>dvbti_fake_single_viterbi</scope><name>decode</name></member>
+      <member refid="classdvbti__fake__single__viterbi_1a272f86a2decbb711033bec14365cc28c" prot="public" virt="non-virtual"><scope>dvbti_fake_single_viterbi</scope><name>delay</name></member>
+      <member refid="classdvbti__fake__single__viterbi_1a8a3166c97faff9f25ce887328c32460b" prot="public" virt="non-virtual"><scope>dvbti_fake_single_viterbi</scope><name>dvbti_fake_single_viterbi</name></member>
+      <member refid="classdvbti__fake__single__viterbi_1ac3988af90b8a0ba96870f716cf408c4f" prot="protected" virt="non-virtual"><scope>dvbti_fake_single_viterbi</scope><name>post_coder_state</name></member>
+      <member refid="classdvbti__fake__single__viterbi_1a3de94d7a6f8647ab124f31904778b771" prot="public" virt="non-virtual"><scope>dvbti_fake_single_viterbi</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="qtgui__ofdm__vector__analyzer__c_8h" kind="file">
+    <compoundname>qtgui_ofdm_vector_analyzer_c.h</compoundname>
+    <includes local="no">Python.h</includes>
+    <includes refid="gr__qtgui__api_8h" local="no">gr_qtgui_api.h</includes>
+    <includes refid="gr__block_8h" local="no">gr_block.h</includes>
+    <includes refid="gr__firdes_8h" local="no">gr_firdes.h</includes>
+    <includes local="no">qapplication.h</includes>
+    <includes refid="high__res__timer_8h" local="no">gruel/high_res_timer.h</includes>
+    <includes local="yes">../lib/VectorAnalyzerGUIClass.h</includes>
+    <includes local="no">gruel/thread.h</includes>
+    <includes local="no">gruel/high_res_timer.h</includes>
+    <includes local="no">qwidget.h</includes>
+    <includes local="no">qlabel.h</includes>
+    <includes local="no">qslider.h</includes>
+    <includes local="no">/home/katsikas/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.h</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">gr_complex.h</includes>
+    <incdepgraph>
+      <node id="15049">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15044" relation="include">
+        </childnode>
+      </node>
+      <node id="15039">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15041" relation="include">
+        </childnode>
+        <childnode refid="15065" relation="include">
+        </childnode>
+      </node>
+      <node id="15035">
+        <label>qtgui_ofdm_vector_analyzer_c.h</label>
+        <link refid="qtgui_ofdm_vector_analyzer_c.h"/>
+        <childnode refid="15036" relation="include">
+        </childnode>
+        <childnode refid="15037" relation="include">
+        </childnode>
+        <childnode refid="15039" relation="include">
+        </childnode>
+        <childnode refid="15066" relation="include">
+        </childnode>
+        <childnode refid="15068" relation="include">
+        </childnode>
+        <childnode refid="15069" relation="include">
+        </childnode>
+        <childnode refid="15071" relation="include">
+        </childnode>
+        <childnode refid="15072" relation="include">
+        </childnode>
+        <childnode refid="15073" relation="include">
+        </childnode>
+        <childnode refid="15074" relation="include">
+        </childnode>
+        <childnode refid="15075" relation="include">
+        </childnode>
+        <childnode refid="15076" relation="include">
+        </childnode>
+        <childnode refid="15077" relation="include">
+        </childnode>
+        <childnode refid="15067" relation="include">
+        </childnode>
+        <childnode refid="15048" relation="include">
+        </childnode>
+        <childnode refid="15045" relation="include">
+        </childnode>
+        <childnode refid="15058" relation="include">
+        </childnode>
+        <childnode refid="15078" relation="include">
+        </childnode>
+      </node>
+      <node id="15044">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="15056">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="15077">
+        <label>/home/katsikas/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.h</label>
+      </node>
+      <node id="15053">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="15054" relation="include">
+        </childnode>
+        <childnode refid="15055" relation="include">
+        </childnode>
+        <childnode refid="15044" relation="include">
+        </childnode>
+      </node>
+      <node id="15038">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="15059">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="15060" relation="include">
+        </childnode>
+        <childnode refid="15061" relation="include">
+        </childnode>
+      </node>
+      <node id="15043">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15044" relation="include">
+        </childnode>
+        <childnode refid="15045" relation="include">
+        </childnode>
+        <childnode refid="15046" relation="include">
+        </childnode>
+        <childnode refid="15047" relation="include">
+        </childnode>
+      </node>
+      <node id="15076">
+        <label>qslider.h</label>
+      </node>
+      <node id="15067">
+        <label>cmath</label>
+      </node>
+      <node id="15063">
+        <label>stdexcept</label>
+      </node>
+      <node id="15058">
+        <label>string</label>
+      </node>
+      <node id="15041">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15042" relation="include">
+        </childnode>
+        <childnode refid="15049" relation="include">
+        </childnode>
+        <childnode refid="15050" relation="include">
+        </childnode>
+        <childnode refid="15051" relation="include">
+        </childnode>
+        <childnode refid="15052" relation="include">
+        </childnode>
+        <childnode refid="15058" relation="include">
+        </childnode>
+      </node>
+      <node id="15064">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="15072">
+        <label>gruel/thread.h</label>
+      </node>
+      <node id="15046">
+        <label>stddef.h</label>
+      </node>
+      <node id="15054">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="15038" relation="include">
+        </childnode>
+      </node>
+      <node id="15068">
+        <label>qapplication.h</label>
+      </node>
+      <node id="15071">
+        <label>../lib/VectorAnalyzerGUIClass.h</label>
+      </node>
+      <node id="15051">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="15060">
+        <label>limits.h</label>
+      </node>
+      <node id="15057">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="15055">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="15054" relation="include">
+        </childnode>
+        <childnode refid="15056" relation="include">
+        </childnode>
+        <childnode refid="15044" relation="include">
+        </childnode>
+        <childnode refid="15057" relation="include">
+        </childnode>
+        <childnode refid="15048" relation="include">
+        </childnode>
+        <childnode refid="15058" relation="include">
+        </childnode>
+        <childnode refid="15059" relation="include">
+        </childnode>
+        <childnode refid="15062" relation="include">
+        </childnode>
+        <childnode refid="15063" relation="include">
+        </childnode>
+        <childnode refid="15064" relation="include">
+        </childnode>
+      </node>
+      <node id="15078">
+        <label>gr_complex.h</label>
+      </node>
+      <node id="15037">
+        <label>gr_qtgui_api.h</label>
+        <link refid="gr__qtgui__api_8h"/>
+        <childnode refid="15038" relation="include">
+        </childnode>
+      </node>
+      <node id="15070">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="15061">
+        <label>wchar.h</label>
+      </node>
+      <node id="15052">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15053" relation="include">
+        </childnode>
+        <childnode refid="15055" relation="include">
+        </childnode>
+      </node>
+      <node id="15042">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15043" relation="include">
+        </childnode>
+      </node>
+      <node id="15036">
+        <label>Python.h</label>
+      </node>
+      <node id="15045">
+        <label>vector</label>
+      </node>
+      <node id="15040">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="15038" relation="include">
+        </childnode>
+      </node>
+      <node id="15073">
+        <label>gruel/high_res_timer.h</label>
+      </node>
+      <node id="15075">
+        <label>qlabel.h</label>
+      </node>
+      <node id="15050">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="15066">
+        <label>gr_firdes.h</label>
+        <link refid="gr__firdes_8h"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15045" relation="include">
+        </childnode>
+        <childnode refid="15067" relation="include">
+        </childnode>
+        <childnode refid="15047" relation="include">
+        </childnode>
+      </node>
+      <node id="15074">
+        <label>qwidget.h</label>
+      </node>
+      <node id="15062">
+        <label>iosfwd</label>
+      </node>
+      <node id="15065">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="15040" relation="include">
+        </childnode>
+        <childnode refid="15055" relation="include">
+        </childnode>
+      </node>
+      <node id="15048">
+        <label>complex</label>
+      </node>
+      <node id="15069">
+        <label>gruel/high_res_timer.h</label>
+        <link refid="high__res__timer_8h"/>
+        <childnode refid="15070" relation="include">
+        </childnode>
+      </node>
+      <node id="15047">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="15048" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classqtgui__ofdm__vector__analyzer__c" prot="public">qtgui_ofdm_vector_analyzer_c</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="qtgui__ofdm__vector__analyzer__c_8h_1ab21f02c510e311a62f6fe20993c4e43b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_ofdm_vector_analyzer_c_sptr</ref></type>
+        <definition>GR_QTGUI_API qtgui_ofdm_vector_analyzer_c_sptr qtgui_make_ofdm_vector_analyzer_c</definition>
+        <argsstring>(int occupied_tones, const std::string &amp;modulation=&quot;bpsk&quot;, QWidget *parent=NULL)</argsstring>
+        <name>qtgui_make_ofdm_vector_analyzer_c</name>
+        <param>
+          <type>int</type>
+          <declname>occupied_tones</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modulation</declname>
+          <defval>&quot;bpsk&quot;</defval>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_ofdm_vector_analyzer_c.h" line="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-qtgui/include/qtgui_ofdm_vector_analyzer_c.h"/>
+  </compounddef>
+</doxygen>

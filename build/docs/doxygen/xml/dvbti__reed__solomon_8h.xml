@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dvbti__reed__solomon_8h" kind="file">
+    <compoundname>dvbti_reed_solomon.h</compoundname>
+    <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
+    <includes refid="dvbt__types_8h" local="no">dvbt/dvbt_types.h</includes>
+    <includedby refid="dvbt__rs__decoder_8h" local="no">dvbt_rs_decoder.h</includedby>
+    <includedby refid="dvbt__rs__encoder_8h" local="no">dvbt_rs_encoder.h</includedby>
+    <incdepgraph>
+      <node id="3703">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="3701">
+        <label>dvbti_reed_solomon.h</label>
+        <link refid="dvbti_reed_solomon.h"/>
+        <childnode refid="3702" relation="include">
+        </childnode>
+        <childnode refid="3704" relation="include">
+        </childnode>
+      </node>
+      <node id="3707">
+        <label>cassert</label>
+      </node>
+      <node id="3708">
+        <label>dvbt/dvbt_consts.h</label>
+        <link refid="dvbt__consts_8h"/>
+      </node>
+      <node id="3704">
+        <label>dvbt/dvbt_types.h</label>
+        <link refid="dvbt__types_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3706" relation="include">
+        </childnode>
+        <childnode refid="3707" relation="include">
+        </childnode>
+        <childnode refid="3708" relation="include">
+        </childnode>
+      </node>
+      <node id="3705">
+        <label>stdio.h</label>
+      </node>
+      <node id="3702">
+        <label>dvbt/dvbt_api.h</label>
+        <link refid="dvbt__api_8h"/>
+        <childnode refid="3703" relation="include">
+        </childnode>
+      </node>
+      <node id="3706">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3709">
+        <label>dvbti_reed_solomon.h</label>
+        <link refid="dvbti_reed_solomon.h"/>
+        <childnode refid="3710" relation="include">
+        </childnode>
+        <childnode refid="3711" relation="include">
+        </childnode>
+      </node>
+      <node id="3711">
+        <label>dvbt_rs_encoder.h</label>
+        <link refid="dvbt__rs__encoder_8h"/>
+      </node>
+      <node id="3710">
+        <label>dvbt_rs_decoder.h</label>
+        <link refid="dvbt__rs__decoder_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdvbti__reed__solomon" prot="public">dvbti_reed_solomon</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_reed_solomon.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbt__viterbi__decoder" kind="class" prot="public">
+    <compoundname>dvbt_viterbi_decoder</compoundname>
+    <includes refid="dvbt__viterbi__decoder_8h" local="no">dvbt_viterbi_decoder.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdvbt__viterbi__decoder_1aab7986f352b83f767173ef989773c790" prot="private" static="no" mutable="no">
+        <type><ref refid="classdvbti__viterbi__decoder" kindref="compound">dvbti_viterbi_decoder</ref></type>
+        <definition>dvbti_viterbi_decoder dvbt_viterbi_decoder::d_viterbi_decoder</definition>
+        <argsstring></argsstring>
+        <name>d_viterbi_decoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" line="47" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdvbt__viterbi__decoder_1a81c637b55bdfea1f7475bdd16c38d5ee" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dvbt_viterbi_decoder::last_start</definition>
+        <argsstring></argsstring>
+        <name>last_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" line="59" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdvbt__viterbi__decoder_1ae12dd6be21f5202661c2590287051e4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__viterbi__decoder_8h_1adf12d19f816cbc84c420e712fa7bd06c" kindref="member">dvbt_viterbi_decoder_sptr</ref></type>
+        <definition>DVBT_API dvbt_viterbi_decoder_sptr dvbt_make_viterbi_decoder</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_make_viterbi_decoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" line="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdvbt__viterbi__decoder_1af37fd086fa4b7def73e689a011d2f3fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbt_viterbi_decoder::dvbt_viterbi_decoder</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_viterbi_decoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" line="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbt__viterbi__decoder_1a268dc2053fd9bfc72ffcec6e13ff00e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dvbt_viterbi_decoder::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__viterbi__decoder_1af40e296c789d5b3793f1079404ac63c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbt_viterbi_decoder::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" line="56" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DVBT 12-way interleaved viterbi decoder (<ref refid="classdvbt__soft__data__segment" kindref="compound">dvbt_soft_data_segment</ref> --&gt; <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>)</para><para>input: <ref refid="classdvbt__soft__data__segment" kindref="compound">dvbt_soft_data_segment</ref>; output: <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h" bodystart="43" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classdvbt__viterbi__decoder_1aab7986f352b83f767173ef989773c790" prot="private" virt="non-virtual"><scope>dvbt_viterbi_decoder</scope><name>d_viterbi_decoder</name></member>
+      <member refid="classdvbt__viterbi__decoder_1ae12dd6be21f5202661c2590287051e4f" prot="private" virt="non-virtual"><scope>dvbt_viterbi_decoder</scope><name>dvbt_make_viterbi_decoder</name></member>
+      <member refid="classdvbt__viterbi__decoder_1af37fd086fa4b7def73e689a011d2f3fb" prot="private" virt="non-virtual"><scope>dvbt_viterbi_decoder</scope><name>dvbt_viterbi_decoder</name></member>
+      <member refid="classdvbt__viterbi__decoder_1a81c637b55bdfea1f7475bdd16c38d5ee" prot="protected" virt="non-virtual"><scope>dvbt_viterbi_decoder</scope><name>last_start</name></member>
+      <member refid="classdvbt__viterbi__decoder_1af40e296c789d5b3793f1079404ac63c1" prot="public" virt="non-virtual"><scope>dvbt_viterbi_decoder</scope><name>reset</name></member>
+      <member refid="classdvbt__viterbi__decoder_1a268dc2053fd9bfc72ffcec6e13ff00e7" prot="public" virt="non-virtual"><scope>dvbt_viterbi_decoder</scope><name>work</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

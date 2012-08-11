@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gr__uhd__usrp__source_8h" kind="file">
+    <compoundname>gr_uhd_usrp_source.h</compoundname>
+    <includes refid="gr__uhd__api_8h" local="no">gr_uhd_api.h</includes>
+    <includes refid="gr__sync__block_8h" local="no">gr_sync_block.h</includes>
+    <includes local="no">uhd/usrp/multi_usrp.hpp</includes>
+    <incdepgraph>
+      <node id="12923">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12918" relation="include">
+        </childnode>
+      </node>
+      <node id="12914">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12915" relation="include">
+        </childnode>
+        <childnode refid="12939" relation="include">
+        </childnode>
+      </node>
+      <node id="12918">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="12930">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="12927">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="12928" relation="include">
+        </childnode>
+        <childnode refid="12929" relation="include">
+        </childnode>
+        <childnode refid="12918" relation="include">
+        </childnode>
+      </node>
+      <node id="12913">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="12933">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="12934" relation="include">
+        </childnode>
+        <childnode refid="12935" relation="include">
+        </childnode>
+      </node>
+      <node id="12909">
+        <label>gr_uhd_api.h</label>
+        <link refid="gr__uhd__api_8h"/>
+        <childnode refid="12910" relation="include">
+        </childnode>
+      </node>
+      <node id="12917">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12918" relation="include">
+        </childnode>
+        <childnode refid="12919" relation="include">
+        </childnode>
+        <childnode refid="12920" relation="include">
+        </childnode>
+        <childnode refid="12921" relation="include">
+        </childnode>
+      </node>
+      <node id="12937">
+        <label>stdexcept</label>
+      </node>
+      <node id="12932">
+        <label>string</label>
+      </node>
+      <node id="12908">
+        <label>gr_uhd_usrp_source.h</label>
+        <link refid="gr_uhd_usrp_source.h"/>
+        <childnode refid="12909" relation="include">
+        </childnode>
+        <childnode refid="12911" relation="include">
+        </childnode>
+        <childnode refid="12940" relation="include">
+        </childnode>
+      </node>
+      <node id="12910">
+        <label>uhd/config.hpp</label>
+      </node>
+      <node id="12915">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12916" relation="include">
+        </childnode>
+        <childnode refid="12923" relation="include">
+        </childnode>
+        <childnode refid="12924" relation="include">
+        </childnode>
+        <childnode refid="12925" relation="include">
+        </childnode>
+        <childnode refid="12926" relation="include">
+        </childnode>
+        <childnode refid="12932" relation="include">
+        </childnode>
+      </node>
+      <node id="12938">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="12920">
+        <label>stddef.h</label>
+      </node>
+      <node id="12928">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="12913" relation="include">
+        </childnode>
+      </node>
+      <node id="12925">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="12934">
+        <label>limits.h</label>
+      </node>
+      <node id="12931">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="12929">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="12928" relation="include">
+        </childnode>
+        <childnode refid="12930" relation="include">
+        </childnode>
+        <childnode refid="12918" relation="include">
+        </childnode>
+        <childnode refid="12931" relation="include">
+        </childnode>
+        <childnode refid="12922" relation="include">
+        </childnode>
+        <childnode refid="12932" relation="include">
+        </childnode>
+        <childnode refid="12933" relation="include">
+        </childnode>
+        <childnode refid="12936" relation="include">
+        </childnode>
+        <childnode refid="12937" relation="include">
+        </childnode>
+        <childnode refid="12938" relation="include">
+        </childnode>
+      </node>
+      <node id="12935">
+        <label>wchar.h</label>
+      </node>
+      <node id="12926">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12927" relation="include">
+        </childnode>
+        <childnode refid="12929" relation="include">
+        </childnode>
+      </node>
+      <node id="12916">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12917" relation="include">
+        </childnode>
+      </node>
+      <node id="12919">
+        <label>vector</label>
+      </node>
+      <node id="12912">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="12913" relation="include">
+        </childnode>
+      </node>
+      <node id="12924">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="12936">
+        <label>iosfwd</label>
+      </node>
+      <node id="12939">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12929" relation="include">
+        </childnode>
+      </node>
+      <node id="12940">
+        <label>uhd/usrp/multi_usrp.hpp</label>
+      </node>
+      <node id="12911">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="12912" relation="include">
+        </childnode>
+        <childnode refid="12914" relation="include">
+        </childnode>
+      </node>
+      <node id="12922">
+        <label>complex</label>
+      </node>
+      <node id="12921">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="12922" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structuhd_1_1stream__args__t" prot="public">uhd::stream_args_t</innerclass>
+    <innerclass refid="classuhd__usrp__source" prot="public">uhd_usrp_source</innerclass>
+    <innernamespace refid="namespaceuhd">uhd</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gr__uhd__usrp__source_8h_1a7f8bfc83ec7e75ae71bfc3f95aec6dda" prot="public" static="no">
+        <name>INCLUDED_UHD_STREAM_HPP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="45" bodyfile="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__uhd__blk_1ga21d8f9c05e6a24d118628e2ed98c2e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
+        <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_source&gt; uhd_make_usrp_source</definition>
+        <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::io_type_t &amp;io_type, size_t num_channels)</argsstring>
+        <name>uhd_make_usrp_source</name>
+        <param>
+          <type>const uhd::device_addr_t &amp;</type>
+          <declname>device_addr</declname>
+        </param>
+        <param>
+          <type>const uhd::io_type_t &amp;</type>
+          <declname>io_type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_channels</declname>
+        </param>
+        <briefdescription>
+<para>Make a new USRP source block.</para><para>The USRP source block receives samples and writes to a stream. The source block also provides API calls for receiver settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>RX Stream tagging:</para><para>The following tag keys will be produced by the work function:<itemizedlist>
+<listitem><para><ref refid="namespacepmt_1a9175b04fc88cb7be663ee7b7925dfda6" kindref="member">pmt::pmt_string_to_symbol</ref>(&quot;rx_time&quot;)</para></listitem></itemizedlist>
+</para><para>The timstamp tag value is a pmt tuple of the following: (uint64 seconds, and double fractional seconds). A timestamp tag is produced at start() and after overflows.</para><para>See the UHD manual for more detailed documentation: <ulink url="http://code.ettus.com/redmine/ettus/projects/uhd/wiki">http://code.ettus.com/redmine/ettus/projects/uhd/wiki</ulink></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address to identify the hardware </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>io_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the desired output data type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of stream from the device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a new USRP source block object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="gr__uhd__usrp__source_8h_1ae3f472f2fb42c9cee8380c26b99d4b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
+        <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_source&gt; uhd_make_usrp_source</definition>
+        <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::stream_args_t &amp;stream_args)</argsstring>
+        <name>uhd_make_usrp_source</name>
+        <param>
+          <type>const uhd::device_addr_t &amp;</type>
+          <declname>device_addr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structuhd_1_1stream__args__t" kindref="compound">uhd::stream_args_t</ref> &amp;</type>
+          <declname>stream_args</declname>
+        </param>
+        <briefdescription>
+<para>Make a new USRP source block. </para>        </briefdescription>
+        <detaileddescription>
+<para>The USRP source block receives samples and writes to a stream. The source block also provides API calls for receiver settings.</para><para>RX Stream tagging:</para><para>The following tag keys will be produced by the work function:<itemizedlist>
+<listitem><para><ref refid="namespacepmt_1a9175b04fc88cb7be663ee7b7925dfda6" kindref="member">pmt::pmt_string_to_symbol</ref>(&quot;rx_time&quot;)</para></listitem></itemizedlist>
+</para><para>The timstamp tag value is a pmt tuple of the following: (uint64 seconds, and double fractional seconds). A timestamp tag is produced at start() and after overflows.</para><para>See the UHD manual for more detailed documentation: <ulink url="http://code.ettus.com/redmine/ettus/projects/uhd/wiki">http://code.ettus.com/redmine/ettus/projects/uhd/wiki</ulink></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address to identify the hardware </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the IO format and channel specification </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a new USRP source block object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h" line="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_source.h"/>
+  </compounddef>
+</doxygen>

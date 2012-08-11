@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="thread__group_8h" kind="file">
+    <compoundname>thread_group.h</compoundname>
+    <includes refid="api_8h" local="no">gruel/api.h</includes>
+    <includes refid="thread_8h" local="no">gruel/thread.h</includes>
+    <includes local="no">boost/utility.hpp</includes>
+    <includes local="no">boost/thread/shared_mutex.hpp</includes>
+    <includes local="no">boost/function.hpp</includes>
+    <includedby refid="gr__scheduler__sts_8h" local="no">gr_scheduler_sts.h</includedby>
+    <includedby refid="gr__scheduler__tpb_8h" local="no">gr_scheduler_tpb.h</includedby>
+    <incdepgraph>
+      <node id="15833">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="15835">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="15828">
+        <label>thread_group.h</label>
+        <link refid="thread_group.h"/>
+        <childnode refid="15829" relation="include">
+        </childnode>
+        <childnode refid="15831" relation="include">
+        </childnode>
+        <childnode refid="15836" relation="include">
+        </childnode>
+        <childnode refid="15837" relation="include">
+        </childnode>
+        <childnode refid="15838" relation="include">
+        </childnode>
+      </node>
+      <node id="15830">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="15831">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="15829" relation="include">
+        </childnode>
+        <childnode refid="15832" relation="include">
+        </childnode>
+        <childnode refid="15833" relation="include">
+        </childnode>
+        <childnode refid="15834" relation="include">
+        </childnode>
+        <childnode refid="15835" relation="include">
+        </childnode>
+      </node>
+      <node id="15832">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="15829">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="15830" relation="include">
+        </childnode>
+      </node>
+      <node id="15838">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="15834">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="15836">
+        <label>boost/utility.hpp</label>
+      </node>
+      <node id="15837">
+        <label>boost/thread/shared_mutex.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15839">
+        <label>thread_group.h</label>
+        <link refid="thread_group.h"/>
+        <childnode refid="15840" relation="include">
+        </childnode>
+        <childnode refid="15841" relation="include">
+        </childnode>
+      </node>
+      <node id="15840">
+        <label>gr_scheduler_sts.h</label>
+        <link refid="gr__scheduler__sts_8h"/>
+      </node>
+      <node id="15841">
+        <label>gr_scheduler_tpb.h</label>
+        <link refid="gr__scheduler__tpb_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgruel_1_1thread__group" prot="public">gruel::thread_group</innerclass>
+    <innernamespace refid="namespacegruel">gruel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/thread_group.h"/>
+  </compounddef>
+</doxygen>
