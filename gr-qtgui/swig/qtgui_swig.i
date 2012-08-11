@@ -30,9 +30,11 @@
 #include "qtgui_sink_f.h"
 #include "qtgui_time_sink_c.h"
 #include "qtgui_time_sink_f.h"
+#include "qtgui_ofdm_vector_analyzer_c.h"
 %}
 
 %include "qtgui_sink_c.i"
 %include "qtgui_sink_f.i"
 %include "qtgui_time_sink_c.i"
 %include "qtgui_time_sink_f.i"
+%include "qtgui_ofdm_vector_analyzer_c.i"

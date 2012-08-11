@@ -1,0 +1,199 @@
+#ifndef VECTOR_ANALYZER_DISPLAY_FORM_H
+#define VECTOR_ANALYZER_DISPLAY_FORM_H
+
+#include "VectorAnalyzerDisplayForm.ui.h"
+
+class VectorAnalyzerGUIClass;
+class CustomDisplayPolicyItems;
+#include <VectorAnalyzerGUIClass.h>
+
+#include <ConstellationDisplayPlotEnhanced.h>
+#include <QValidator>
+#include <QTimer>
+#include <vector>
+#include <string>
+#include <QSignalMapper>
+#include <QToolButton>
+#include <QGraphicsView>
+
+class VectorAnalyzerDisplayForm : public QWidget, public Ui::VectorAnalyzerDisplayForm
+{
+  Q_OBJECT
+public:
+  VectorAnalyzerDisplayForm(QWidget *parent = NULL);
+  ~VectorAnalyzerDisplayForm();
+  
+  
+public slots:
+  void resizeEvent( QResizeEvent * e );
+  void customEvent( QEvent * e );
+  
+  /**
+   * Registers the objects of the %custom_policy that producing signals, to
+   * the appropriate signalMappers.
+   * 
+   * @param[in] custom_policy The CustomDisplayPolicyItems object containing objects
+   * that producing signals.
+   * @param[in] index The index of the custom policy.
+   */
+  void addSignalsToMappers(CustomDisplayPolicyItems *custom_policy, int index);
+  /**
+   * Function that unregister the signals, that are generated from
+   * ech custom display policy buttons, from all the SignalMappers.
+   * 
+   * @param[in] custom_policy The custom display policy object.
+   */
+  void removeSignalFromMappers(CustomDisplayPolicyItems *custom_policy);
+  
+  /* Dummy functions from user info at the plot */
+  void setConstellationPlotAxis(double x1, double y1,
+				double x2, double y2,
+				QString *title = NULL);
+  void setConstellationPlotXAxisLabel(QString label);
+  void setConstellationPlotYAxisLabel(QString label);
+  void SetConstellationPlotTitle(QString title);
+  
+  /** Sets the update time of the window
+   * @param[in] t time in milisecons
+   */ 
+  void				setUpdateTime(double t);
+  
+  /**
+   * Checks if the hold on button is pressed.
+   * @return true if the button is pressed false otherwise.
+   */
+  bool isHoldOnEnabled();
+  
+  
+private:
+  void showCustomDisplayPolicy(CustomDisplayPolicyItems *custom_policy);
+  void reShowAllCustomDisplayPolicies();
+private slots:
+  /** Activated when the drop down for changing display
+   * policy menu is pressed
+   * 
+   * @param[in] disp_policy The index of the value at the drop down menu
+   */
+  void onDisplayPolicyChanged(int disp_policy);
+  
+  
+  /**
+   * This is the generic slot that is activated when an OK 
+   * button is pressed. With the help of the SignalMapper
+   * then the slot with the id of the button is activated.
+   */  
+  void addNewSpecificDisplayPolicy(int index);
+  
+  /**
+   * Called when the cancel button is pressed next to
+   * an activated display policy. The effects of this policy
+   * are removed.
+   * @param[in] index The index of the display policy at the vector
+   * with all the activated display policies.
+   */
+  void deleteSpecificDisplayPolicy(int index);
+  
+  void onColorFieldClick(int index);
+  
+  /**
+   * Called when the reset button is clicked. Then the view of
+   * the vector analyzer is cleaned up.
+   */
+  void onResetViewButtonClick();
+  
+  /**
+   * Called when the hold on check box is clicked.
+   * @param[in] checked true if the check box is checked, false otherwise
+   */
+  void onHoldOnCkeckBoxClick(bool checked);
+  
+  /**
+   * Called when the user increases or decreases
+   * the value of the spinbox indicating for how many
+   * seconds will the points be held, on the canvas.
+   * 
+   * @param[in] seconds for how many seconds will the 
+   * constellation points will be held on the canvas.
+   */
+  void onHoldOnDelayChanged(int seconds);
+  
+  void holdOnTimerExpired();
+  
+  void updateGuiTimer();
+
+  
+private:
+  QWidget 					*d_parent;
+  QSignalMapper 				*d_okButton_signalMapper;
+  QSignalMapper					*d_cancelButton_signalMapper;
+  QSignalMapper					*d_color_signalMapper;
+  QTimer					*d_timer;
+  QTimer					*d_hold_on_timer;
+  
+  std::vector<CustomDisplayPolicyItems *> 	d_custom_policies;
+  
+  ConstellationDisplayPlotEnhanced 		*d_constellationDisplayPlot;
+  
+  bool						d_holdOn_points;
+  
+  int 						d_axis_count;
+  int 						d_hold_on_delay;
+  
+  double					d_update_interval_sec;
+  
+  
+  
+};
+
+class CustomDisplayPolicyItems
+{
+public:
+  CustomDisplayPolicyItems(QHBoxLayout *layout,
+			   QLabel *index,
+			   QLabel *subcarriers_label,
+			   QLabel *color_label,
+			   QLineEdit *subcarriers,
+			   QToolButton *color,
+			   QDialogButtonBox *button);
+  ~CustomDisplayPolicyItems();
+  
+  std::string 			getDisplayPolicyColorString();
+  QColor 			getDisplayPolicyColor();
+  std::vector<int> 		getDisplayPolicySubcarriers();
+  QLineEdit			*getSubcarrieresField();
+  QToolButton			*getColorButtonObject();
+  QDialogButtonBox		*getOkCancelButtonObject();
+  QList<QPoint>			getSubcarrierRanges();
+  
+  void 				addLegendItem(QVBoxLayout *layout);
+  void				updateLegendItem();
+  
+  bool 				isDisplayPolicyColorValid();
+  bool 				isUserInputValid(int filterIndex);
+  
+  void 				setDisplayPolicyColor(QColor color);
+  void				setDisplayPolicyHLayout(QHBoxLayout *layout);
+  void 				setDisplayPolicyIndexLabelText(int indexTosShow);
+  
+  void				removeLegendItem();
+  void				removeCustomDisplayPolicy();
+  
+private:
+  QColor 			d_color;
+  QLabel			*d_index_label;
+  QLabel			*d_subcarriers_label;
+  QLabel			*d_color_label;
+  QDialogButtonBox 		*d_button;
+  QLineEdit			*d_subcarriers_field;
+  QToolButton			*d_color_button;
+  QList<QPoint>			d_subcarriers_ranges;
+  std::vector<int> 		d_subcarriers_to_show;
+  std::string 			d_color_string;
+  QLabel 			*d_legend_label;
+  QGraphicsView			*d_legend_color;
+  QHBoxLayout			*d_legend_hor_layout;
+  QHBoxLayout			*d_custom_policies_hor_layout;
+};
+
+
+#endif

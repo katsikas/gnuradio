@@ -76,11 +76,12 @@ macro(GR_PYTHON_CHECK_MODULE desc mod cmd have)
     execute_process(
         COMMAND ${PYTHON_EXECUTABLE} -c "
 #########################################
-try:
-    import ${mod}
-    assert ${cmd}
-except ImportError, AssertionError: exit(-1)
-except: pass
+try: import ${mod}
+except:
+    try: ${mod}
+    except: exit(-1)
+try: assert ${cmd}
+except: exit(-1)
 #########################################"
         RESULT_VARIABLE ${have}
     )

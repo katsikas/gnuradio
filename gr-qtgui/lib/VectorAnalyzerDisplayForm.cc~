@@ -1,0 +1,581 @@
+#include <cmath>
+#include <QColorDialog>
+#include <QMessageBox>
+#include <VectorAnalyzerDisplayForm.h>
+#include <boost/tokenizer.hpp>
+#include <qlayout.h>
+#include <QRegExp>
+#include "VectorAnalyzerEvents.h"
+
+VectorAnalyzerDisplayForm::VectorAnalyzerDisplayForm(QWidget* parent): QWidget(parent)
+{
+  setupUi(this);
+  d_parent = parent;
+  d_holdOn_points = false;
+  d_hold_on_delay = spinBox->value();
+  /*The standard axis are two */
+  d_axis_count = 2;
+  d_custom_policies.push_back(new CustomDisplayPolicyItems(filter0_layout,
+							   filter0_indexLabel,
+							   filter0_subcarriersLabel,
+							   filter0_colorLabel,
+							   filter0_subcarriersField,
+							   filter0_toolButton,
+							   filter0_buttonBox));
+  
+  /* Set up the signal mappers */
+  d_okButton_signalMapper = new QSignalMapper(this);
+  d_cancelButton_signalMapper = new QSignalMapper(this);
+  d_color_signalMapper = new QSignalMapper(this);
+  
+  connect(d_okButton_signalMapper, SIGNAL(mapped(int)), this, SLOT(addNewSpecificDisplayPolicy(int)));
+  d_okButton_signalMapper->setMapping(filter0_buttonBox, 0);
+  connect(filter0_buttonBox, SIGNAL(accepted()), d_okButton_signalMapper, SLOT(map()));
+  
+  connect(d_cancelButton_signalMapper, SIGNAL(mapped(int)), this, SLOT(deleteSpecificDisplayPolicy(int)));
+  d_cancelButton_signalMapper->setMapping(filter0_buttonBox, 0);
+  connect(filter0_buttonBox, SIGNAL(rejected()), d_cancelButton_signalMapper, SLOT(map()));
+  
+  connect(d_color_signalMapper, SIGNAL(mapped(int)), this, SLOT(onColorFieldClick(int)));
+  d_color_signalMapper->setMapping(filter0_toolButton, 0);
+  connect(filter0_toolButton, SIGNAL(clicked(bool)), d_color_signalMapper, SLOT(map()));
+  
+  /*Set up the constellation display*/
+  d_constellationDisplayPlot = new ConstellationDisplayPlotEnhanced(constellationDisplayFrame);
+  
+  /* Set up the update timer */
+  d_timer = new QTimer(this);
+  connect(d_timer, SIGNAL(timeout()), this, SLOT(updateGuiTimer()));
+  
+  /*Set up the hold on timer */
+  d_hold_on_timer = new QTimer(this);
+  connect(d_hold_on_timer, SIGNAL(timeout()), this, SLOT(holdOnTimerExpired()));
+}	
+
+VectorAnalyzerDisplayForm::~VectorAnalyzerDisplayForm()
+{
+  d_timer->stop();
+  delete d_timer;
+  d_hold_on_timer->stop();
+  delete d_hold_on_timer;
+}
+
+void
+VectorAnalyzerDisplayForm::onHoldOnCkeckBoxClick(bool checked)
+{
+  d_holdOn_points = checked;
+  d_constellationDisplayPlot->holdOn(checked);
+  d_constellationDisplayPlot->setHoldOnTimerExpired(!checked);
+  /*Start or stop the timer */
+  if(checked){
+    d_hold_on_timer->start(d_hold_on_delay * 1000);
+  }
+  else{
+    d_hold_on_timer->stop();
+    d_constellationDisplayPlot->clearAppendedData();
+  }
+}
+
+void
+VectorAnalyzerDisplayForm::holdOnTimerExpired()
+{
+  d_constellationDisplayPlot->setHoldOnTimerExpired(true);
+  d_hold_on_timer->stop();
+}
+
+void
+VectorAnalyzerDisplayForm::onHoldOnDelayChanged(int seconds)
+{
+  d_hold_on_delay = seconds;
+  /* restart timer if it is enabled and clear 
+   * the current appended data 
+   */
+  if(d_holdOn_points){
+    d_constellationDisplayPlot->clearAppendedData();
+    /* Perharps the timer already expired. Just 
+     * inform the plotter that it has been enabled again.
+     */
+    d_constellationDisplayPlot->setHoldOnTimerExpired(false);
+    d_hold_on_timer->start(d_hold_on_delay * 1000);
+  }
+}
+
+
+
+void
+VectorAnalyzerDisplayForm::onResetViewButtonClick()
+{
+  if(d_holdOn_points){
+    d_constellationDisplayPlot->clearAppendedData();
+    /* Perharps the timer already expired. Just 
+     * inform the plotter that it has been enabled again.
+     */
+    d_constellationDisplayPlot->setHoldOnTimerExpired(false);
+    d_hold_on_timer->start(d_hold_on_delay * 1000);
+  }
+}
+
+void
+VectorAnalyzerDisplayForm::addNewSpecificDisplayPolicy(int index)
+{
+  /* Check if the Ok button was pressed for an update or 
+   * for a new display filter creation
+   */
+  try{
+    /*This will raise an exception if it is NOT an update */
+    CustomDisplayPolicyItems *filter = d_custom_policies.at(index + 1);
+    filter = d_custom_policies.at(index);
+    if(filter->isUserInputValid(index, d_constellationDisplayPlot->getLastKnownOccupiedTonesNum())){
+      filter->updateLegendItem();
+      
+      /* When an update occur we can not just update the info of the curve.
+       * Should all be recreated
+       */
+      d_constellationDisplayPlot->clean_custom_curves();
+      reShowAllCustomDisplayPolicies();
+    }
+    else{
+      std::cout << "NOT ok " << index << "\n";
+    }
+  }
+  catch(std::out_of_range e){
+    /* If the user inputs are not valid dont create anything at all */
+    CustomDisplayPolicyItems *filter = d_custom_policies.at(index);
+    if(!filter->isUserInputValid(index, d_constellationDisplayPlot->getLastKnownOccupiedTonesNum())){
+      return;
+    }
+    
+    QString *label = new QString();
+    
+    /* Create the next form to be shown below */
+    QHBoxLayout *layout = new QHBoxLayout();
+    layout->setContentsMargins(0, 0, 0, 0);
+    QLabel *index_label = new QLabel(label->sprintf("%d.", index + 2), customDisplayScrollAreaWidgetContents, 0);
+    QLabel *subcarriers_label = new QLabel(QString::fromUtf8("Subcarriers"), customDisplayScrollAreaWidgetContents, 0);
+    QLabel *color_label = new QLabel(QString::fromUtf8("Color"), customDisplayScrollAreaWidgetContents, 0);
+    QDialogButtonBox *button_box = new QDialogButtonBox(customDisplayScrollAreaWidgetContents);
+    button_box->setStandardButtons(QDialogButtonBox::Ok|QDialogButtonBox::Cancel);
+    QLineEdit *subcarriers = new QLineEdit(customDisplayScrollAreaWidgetContents);
+    QToolButton *color = new QToolButton(customDisplayScrollAreaWidgetContents);
+    color->setText("Choose color...");
+    
+    /* Set up the signals at the mappers */
+    d_okButton_signalMapper->setMapping(button_box, index + 1);
+    connect(button_box, SIGNAL(accepted()), d_okButton_signalMapper, SLOT(map()));
+    d_cancelButton_signalMapper->setMapping(button_box, index + 1);
+    connect(button_box, SIGNAL(rejected()), d_cancelButton_signalMapper, SLOT(map()));
+    d_color_signalMapper->setMapping(color, index + 1);
+    connect(color, SIGNAL(clicked(bool)), d_color_signalMapper, SLOT(map()));
+    
+    layout->addWidget(index_label);
+    layout->addWidget(subcarriers_label);
+    layout->addWidget(subcarriers);
+    layout->addWidget(color_label);
+    layout->addWidget(color);
+    layout->addWidget(button_box);
+    
+    customDisplayPoliciesScrollVerticalLayout->addLayout(layout);
+    
+    /*Insert it at the display policies vector */
+    d_custom_policies.push_back(new CustomDisplayPolicyItems(layout,
+							     index_label,
+							     subcarriers_label,
+							     color_label,
+							     subcarriers,
+							     color,
+							     button_box));
+    /* Filter was ok add, its legend at the legend area */
+    filter->addLegendItem(legendScrollAreaVerticalLayout);
+    
+    /*At a new display policy nothing is affected so just add
+     * the appropriate curves
+     */
+    showCustomDisplayPolicy(filter);
+  }
+}
+
+void
+VectorAnalyzerDisplayForm::deleteSpecificDisplayPolicy(int index)
+{
+  /* If the form is not filled (means that is the last one)
+   * dont delete it.
+   */
+  int size = d_custom_policies.size();
+  CustomDisplayPolicyItems *filter = d_custom_policies.at(index);
+  if(index != size-1 && size > 1){
+    removeSignalFromMappers(filter);
+    filter->removeLegendItem();
+    filter->removeCustomDisplayPolicy();
+    std::vector<CustomDisplayPolicyItems*>::iterator iterator = d_custom_policies.begin();
+    d_custom_policies.erase(iterator + index);
+    
+    d_constellationDisplayPlot->clean_custom_curves();
+    
+    /* Fix the label names to the affected display policies */
+    size = d_custom_policies.size();
+    for(int i = index; i < size; i++){
+      filter = d_custom_policies.at(i);
+      filter->setDisplayPolicyIndexLabelText(i+1);
+      
+      /* Unregister the signals from the mappers and register the new ones */
+      removeSignalFromMappers(filter);
+      addSignalsToMappers(filter, i);
+    }
+    /* Re-enable the curve at the plot */
+    reShowAllCustomDisplayPolicies();
+  }
+}
+
+
+void 
+VectorAnalyzerDisplayForm::onColorFieldClick(int index)
+{
+  CustomDisplayPolicyItems *filter = d_custom_policies.at(index);
+  QColor color;
+  QColorDialog *dialog = new QColorDialog(d_parent);
+  if(filter->isDisplayPolicyColorValid()){
+    color = dialog->getColor(filter->getDisplayPolicyColor(),
+				    d_parent,
+				    "Choose a color for the specified sub-carriers",
+				    NULL);
+  }
+  else{
+    color = dialog->getColor(Qt::white, d_parent,
+				    "Choose a color for the specified sub-carriers",
+				    NULL);
+  }
+  if(color.isValid()){
+    filter->setDisplayPolicyColor(color);
+  }
+}
+
+void 
+VectorAnalyzerDisplayForm::customEvent(QEvent* e)
+{
+  /* An update trigered */
+  if(e->type() == 10011){
+    VectorAnalyzerEvents* event = (VectorAnalyzerEvents *)e; 
+    d_constellationDisplayPlot->PlotNewData(event->getRealPart(), event->getImagPart(), event->getNumOfComplexNumbers(), 0);
+  }
+}
+
+void 
+VectorAnalyzerDisplayForm::resizeEvent(QResizeEvent* e)
+{
+    QWidget::resizeEvent(e);
+}
+
+void VectorAnalyzerDisplayForm::onDisplayPolicyChanged(int disp_policy)
+{
+  if(disp_policy != 0){
+    legendScrollArea->setEnabled(true);
+    customRulesLabel->setEnabled(true);
+    customDisplayPoliciesScrollArea->setEnabled(true);
+    customDisplayScrollAreaWidgetContents->setEnabled(true);
+    
+    /* Chnage the policy at the plot too*/
+    d_constellationDisplayPlot->setDefaultPlotStyle(false);
+    
+  }
+  else{
+    legendScrollArea->setEnabled(false);
+    customRulesLabel->setEnabled(false);
+    customDisplayPoliciesScrollArea->setEnabled(false);
+    customDisplayScrollAreaWidgetContents->setEnabled(false);
+    
+    /* Chnage the policy at the plot too*/
+    d_constellationDisplayPlot->setDefaultPlotStyle(true);
+  }
+}
+
+void
+VectorAnalyzerDisplayForm::addSignalsToMappers(CustomDisplayPolicyItems* custom_policy, int index)
+{
+  d_color_signalMapper->setMapping(custom_policy->getColorButtonObject(), index);
+  d_okButton_signalMapper->setMapping(custom_policy->getOkCancelButtonObject(), index);
+  d_cancelButton_signalMapper->setMapping(custom_policy->getOkCancelButtonObject(), index);
+}
+
+
+void
+VectorAnalyzerDisplayForm::removeSignalFromMappers(CustomDisplayPolicyItems* custom_policy)
+{
+  d_cancelButton_signalMapper->removeMappings(custom_policy->getOkCancelButtonObject());
+  d_color_signalMapper->removeMappings(custom_policy->getColorButtonObject());
+  d_okButton_signalMapper->removeMappings(custom_policy->getOkCancelButtonObject());
+}
+
+
+void
+VectorAnalyzerDisplayForm::setConstellationPlotAxis(double x1, double y1,
+						    double x2, double y2,
+						    QString *title)
+{
+  d_constellationDisplayPlot->set_axis(x1, x2, y1, y2);
+  if(title != NULL){
+    d_constellationDisplayPlot->setAxisTitle(d_axis_count, *title);
+  }
+  d_axis_count++;
+}
+
+void
+VectorAnalyzerDisplayForm::SetConstellationPlotTitle(QString title)
+{
+  d_constellationDisplayPlot->setTitle(title);
+}
+
+void
+VectorAnalyzerDisplayForm::setConstellationPlotXAxisLabel(QString label)
+{
+  d_constellationDisplayPlot->setAxisTitle(0, label);
+}
+
+void
+VectorAnalyzerDisplayForm::setConstellationPlotYAxisLabel(QString label)
+{
+  d_constellationDisplayPlot->setAxisTitle(1, label);
+}
+
+
+void
+VectorAnalyzerDisplayForm::setUpdateTime(double t)
+{
+  d_update_interval_sec = t;
+  d_timer->start(d_update_interval_sec * 1000);
+}
+
+void
+VectorAnalyzerDisplayForm::updateGuiTimer()
+{
+  d_constellationDisplayPlot->canvas()->update();
+}
+
+void
+VectorAnalyzerDisplayForm::showCustomDisplayPolicy ( CustomDisplayPolicyItems* custom_policy )
+{
+  QList<QPoint> ranges = custom_policy->getSubcarrierRanges();
+  QPoint p;
+  while(!ranges.isEmpty()){
+    p = ranges.takeFirst();
+    d_constellationDisplayPlot->add_new_curve(p.x(), p.y(), custom_policy->getDisplayPolicyColor());
+  }
+}
+
+void
+VectorAnalyzerDisplayForm::reShowAllCustomDisplayPolicies()
+{
+  int size = d_custom_policies.size();
+  for(int i = 0; i < size; i++){
+    showCustomDisplayPolicy(d_custom_policies.at(i));
+  }
+}
+
+bool VectorAnalyzerDisplayForm::isHoldOnEnabled()
+{
+  return d_holdOn_points;
+}
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************
+ * 		  CustomDisplayPolicyItems class                   *
+ * *****************************************************************/
+
+
+CustomDisplayPolicyItems::CustomDisplayPolicyItems(QHBoxLayout* layout,
+						   QLabel* index,
+						   QLabel* subcarriers_label,
+						   QLabel* color_label,
+						   QLineEdit* subcarriers,
+						   QToolButton* color,
+						   QDialogButtonBox* button)
+{
+  d_custom_policies_hor_layout = layout;
+  d_index_label = index;
+  d_subcarriers_label = subcarriers_label;
+  d_color_label = color_label;
+  d_subcarriers_field = subcarriers;
+  d_color_button = color;
+  d_button = button;
+  d_legend_label =  new QLabel();
+  d_legend_label->setMaximumHeight(25);
+  QGraphicsScene *scene = new QGraphicsScene();
+  d_legend_color = new QGraphicsView();
+  d_legend_color->setScene(scene);
+  d_legend_color->setMaximumWidth(25);
+  d_legend_color->setMaximumHeight(25);
+}
+
+CustomDisplayPolicyItems::~CustomDisplayPolicyItems()
+{
+
+}
+
+QColor
+CustomDisplayPolicyItems::getDisplayPolicyColor()
+{
+  return d_color;
+}
+
+std::string
+CustomDisplayPolicyItems::getDisplayPolicyColorString()
+{
+  return d_color.name().toStdString();
+}
+
+std::vector< int > CustomDisplayPolicyItems::getDisplayPolicySubcarriers()
+{
+  return d_subcarriers_to_show;
+}
+
+bool
+CustomDisplayPolicyItems::isDisplayPolicyColorValid()
+{
+  return d_color.isValid();
+}
+
+void
+CustomDisplayPolicyItems::setDisplayPolicyColor(QColor color)
+{
+  d_color = color;
+}
+
+QLineEdit*
+CustomDisplayPolicyItems::getSubcarrieresField()
+{
+  return d_subcarriers_field;
+}
+
+bool 
+CustomDisplayPolicyItems::isUserInputValid(int filterIndex, int occupied_tones)
+{
+  QMessageBox popUp;
+  if(d_color.isValid()){
+    /* Create the reqular expression that will check if the typed filter is valid.
+     * Only numbers, "," and "-" operator is allowed.
+     */
+    QRegExp expr("^[0-9]+((-){1}[0-9]+)?((,){1}[0-9]+((,|-){1}[0-9]+)?)*$");
+    QString str = d_subcarriers_field->text();
+    str.simplified();
+    str.replace(" ", "");
+    
+    /* Take the different subcarriers or subcarriers group */
+    QStringList comma_seperated = str.split(',');
+    d_subcarriers_ranges.clear();
+    while(!comma_seperated.isEmpty()){
+      QString groups = comma_seperated.takeFirst();
+      QStringList indexes = groups.split('-');
+      
+      /*
+       * TODO: Find a way to use remove and not at to save memory
+       */
+      if(indexes.length() == 1){
+	if(indexes.at(0).toInt() > occupied_tones || indexes.at(0).toInt() < 0){
+	  popUp.setText(QString("Invalid subcarrier number. Must be 0 - %1").arg(occupied_tones));
+	  popUp.exec();
+	  return false;
+	}
+	d_subcarriers_ranges.push_back(QPoint(indexes.at(0).toInt(), indexes.at(0).toInt()));
+      }
+      else{
+	int x = indexes.at(0).toInt();
+	int y = indexes.at(1).toInt();
+	
+	/* Check if the range is valid */
+	if(x > y || y > occupied_tones || x < 0){
+	  popUp.setText(QString("Invalid range %1 - %2").arg(x).arg(y));
+	  popUp.exec();
+	  return false;
+	}
+	d_subcarriers_ranges.push_back(QPoint(x, y));
+      }
+    }
+    
+    if(!str.contains(expr)){
+      popUp.setText(QString("Invalid subcarrier expression at custom policy %1").arg(filterIndex + 1));
+      popUp.exec();
+      return false;
+    }
+    d_subcarriers_field->setText(str);
+    return true;
+  }
+  else{
+    popUp.setText(QString("Invalid or uknown color at custom policy %1").arg(filterIndex + 1));
+    popUp.exec();
+    return false;
+  }
+}
+
+void
+CustomDisplayPolicyItems::addLegendItem(QVBoxLayout* layout)
+{
+  d_legend_hor_layout = new QHBoxLayout();
+  d_legend_hor_layout->setSizeConstraint(QLayout::SetMaximumSize);
+  d_legend_label->setText(QString("Subcarriers: %1").arg(d_subcarriers_field->text()));
+  d_legend_color->setBackgroundBrush(d_color);
+  d_legend_hor_layout->addWidget(d_legend_label);
+  d_legend_hor_layout->addWidget(d_legend_color);
+  layout->addLayout(d_legend_hor_layout);
+}
+
+void
+CustomDisplayPolicyItems::updateLegendItem(){
+  d_legend_label->setText(QString("Subcarriers: %1").arg(d_subcarriers_field->text()));
+  d_legend_color->setBackgroundBrush(d_color);
+  d_legend_color->setForegroundBrush(d_color);
+}
+
+void
+CustomDisplayPolicyItems::setDisplayPolicyHLayout(QHBoxLayout* layout)
+{
+  d_custom_policies_hor_layout = layout;
+}
+
+void 
+CustomDisplayPolicyItems::removeLegendItem()
+{
+  delete d_legend_label;
+  delete d_legend_color;
+  delete d_legend_hor_layout;
+}
+
+void CustomDisplayPolicyItems::removeCustomDisplayPolicy()
+{
+  delete d_index_label;
+  delete d_subcarriers_label;
+  delete d_color_label;
+  delete d_subcarriers_field;
+  delete d_color_button;
+  delete d_button;
+  delete d_custom_policies_hor_layout;
+}
+
+QToolButton*
+CustomDisplayPolicyItems::getColorButtonObject()
+{
+  return d_color_button;
+}
+
+QDialogButtonBox*
+CustomDisplayPolicyItems::getOkCancelButtonObject()
+{
+  return d_button;
+}
+
+void
+CustomDisplayPolicyItems::setDisplayPolicyIndexLabelText(int indexTosShow)
+{
+  d_index_label->setText(QString("%1.").arg(indexTosShow));
+}
+
+QList< QPoint > CustomDisplayPolicyItems::getSubcarrierRanges()
+{
+  return d_subcarriers_ranges;
+}

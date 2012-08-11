@@ -1,0 +1,40 @@
+
+#include <qpainter.h>
+#include "HideTheZerosRect.h"
+#include <QRect>
+#include <qwt_plot.h>
+#include <qwt_plot_canvas.h>
+
+HideTheZerosRect::HideTheZerosRect()
+{
+  setZ(1000);
+  setRenderHint(QwtPlotItem::RenderAntialiased, true);
+  setItemAttribute(QwtPlotItem::AutoScale, true);
+  d_margin = 10;
+}
+
+int HideTheZerosRect::rtti() const
+{
+    return QwtPlotItem::Rtti_PlotUserItem;
+}
+
+void HideTheZerosRect::draw(QPainter* painter,
+			    const QwtScaleMap& xMap,
+			    const QwtScaleMap& yMap,
+			    const QRectF& canvasRect) const
+{
+  QRect hideRect = QRect();
+  QPointF zero_point = QwtScaleMap::transform(xMap, yMap, QPointF(0, 0));
+  QwtScaleMap plotYMap = plot()->canvasMap(QwtPlot::yLeft);
+  QwtScaleMap plotXMap = plot()->canvasMap(QwtPlot::xTop);
+  hideRect.setX(zero_point.x() - d_margin);
+  hideRect.setY(zero_point.y() - d_margin);
+  hideRect.setHeight( 2 * d_margin );
+  hideRect.setWidth( 2 * d_margin );
+  painter->save();
+  painter->setBrush(QBrush(Qt::black, Qt::SolidPattern));
+  painter->drawRect(hideRect);
+  painter->restore();
+}
+
+

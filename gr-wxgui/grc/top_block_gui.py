@@ -48,7 +48,7 @@ class top_block_gui(gr.top_block):
 
 	def SetIcon(self, *args, **kwargs): self._frame.SetIcon(*args, **kwargs)
 
-	def Run(self, start=True, max_nouts=0):
+	def Run(self, start=True):
 		"""
 		Setup the wx gui elements.
 		Start the gr top block.
@@ -69,10 +69,6 @@ class top_block_gui(gr.top_block):
 		self._frame.Show(True)
 		self._app.SetTopWindow(self._frame)
 		#start flow graph
-		if start:
-			if max_nouts != 0:
-				self.start(max_nouts)
-			else:
-				self.start()
+		if start: self.start()
 		#blocking main loop
 		self._app.MainLoop()

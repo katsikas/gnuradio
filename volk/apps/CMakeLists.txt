@@ -1,5 +1,5 @@
 #
-# Copyright 2011-2012 Free Software Foundation, Inc.
+# Copyright 2011 Free Software Foundation, Inc.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -43,8 +43,9 @@ add_executable(volk_profile
 target_link_libraries(volk_profile volk ${Boost_LIBRARIES})
 
 install(
-    TARGETS volk_profile
-    DESTINATION bin
+    PROGRAMS
+    ${CMAKE_BINARY_DIR}/apps/volk_profile
+    DESTINATION ${GR_RUNTIME_DIR}
     COMPONENT "volk"
 )
 

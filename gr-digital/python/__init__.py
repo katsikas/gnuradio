@@ -36,7 +36,6 @@ from pkt import *
 from crc import *
 from modulation_utils import *
 from ofdm import *
-from DVBT_ofdm import *
 from ofdm_receiver import *
 from ofdm_sync_fixed import *
 from ofdm_sync_ml import *

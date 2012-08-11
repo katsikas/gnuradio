@@ -1,0 +1,22 @@
+#ifndef HIDE_THE_ZEROS_RECT_HPP
+#define HIDE_THE_ZEROS_RECT_HPP
+
+#include <qwt_plot_item.h>
+
+class HideTheZerosRect: public QwtPlotItem
+{
+public:
+  HideTheZerosRect();
+  
+  virtual int rtti() const;
+  
+  virtual void draw(QPainter* painter,
+		    const QwtScaleMap& xMap,
+		    const QwtScaleMap& yMap,
+		    const QRectF& canvasRect) const;
+private:
+  double d_margin;
+  double x_center;
+  double y_center;
+};
+#endif
