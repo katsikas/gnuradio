@@ -47,7 +47,7 @@ def dvbt_qpsk_constellation(m, mod_code=_def_mod_code):
     """
     if m != 4:
         raise ValueError("QPSK can only have 4 constellation points.")
-    return digital_swig.constellation_dvbt_qpsk().base()
+    return digital_swig.constellation_dvbt_qpsk()
 
 
 # /////////////////////////////////////////////////////////////////////////////
@@ -66,8 +66,8 @@ def dvbt_16qam_constellation(m, differential=_def_differential, mod_code=_def_mo
         
         
     side = int(sqrt(m))
-    width = 2.0
-    #width = 2.0/(side-1)
+    #width = 2.0
+    width = 2.0/(side-1)
     
     points = [complex(3,3),complex(3,1),complex(1,3), complex(1,1),
 	      complex(3,-3),complex(3,-1),complex(1,-3),complex(1,-1),
@@ -96,8 +96,8 @@ def dvbt_64qam_constellation(m,
         raise ValueError("Gray encoding missing.")
         
     side = int(sqrt(m))
-    width = 2.0
-    #width = 2.0/(side-1)
+    #width = 2.0
+    width = 2.0/(side-1)
 
     points = [complex(7,7),complex(7,5),complex(5,7), complex(5,5),
               complex(7,1),complex(7,3),complex(5,1),complex(5,3),

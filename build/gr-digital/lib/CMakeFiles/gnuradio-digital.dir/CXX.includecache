@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../gnuradio-core/src/lib/filter/gr_adaptive_fir_ccc.h
-gr_core_api.h
--
-gr_sync_decimator.h
--
-
 ../gnuradio-core/src/lib/filter/gr_sincos.h
 gr_core_api.h
 -
@@ -32,12 +26,6 @@ gr_types.h
 gr_core_api.h
 -
 gr_complex.h
--
-
-../gnuradio-core/src/lib/general/gr_misc.h
-gr_core_api.h
--
-gr_types.h
 -
 
 ../gnuradio-core/src/lib/general/gr_prefs.h
@@ -104,18 +92,6 @@ gr_core_api.h
 boost/shared_ptr.hpp
 -
 
-../gnuradio-core/src/lib/runtime/gr_sync_block.h
-gr_core_api.h
--
-gr_block.h
--
-
-../gnuradio-core/src/lib/runtime/gr_sync_decimator.h
-gr_core_api.h
--
-gr_sync_block.h
--
-
 ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr_core_api.h
 -
@@ -154,16 +130,6 @@ boost/enable_shared_from_this.hpp
 digital_metric_type.h
 -
 
-../gr-digital/include/digital_constellation_decoder_cb.h
-digital_api.h
--
-gr_block.h
--
-digital_constellation.h
--
-vector
--
-
 ../gr-digital/include/digital_constellation_receiver_cb.h
 digital_api.h
 -
@@ -180,14 +146,6 @@ gr_complex.h
 math.h
 -
 fstream
--
-
-../gr-digital/include/digital_lms_dd_equalizer_cc.h
-digital_api.h
--
-gr_adaptive_fir_ccc.h
--
-digital_constellation.h
 -
 
 ../gr-digital/include/digital_metric_type.h
@@ -230,46 +188,6 @@ gruel/pmt_sugar.h
 
 ../gruel/src/include/gruel/pmt_sugar.h
 
-/home/katsikas/gnuradio/gr-digital/lib/digital_constellation.cc
-config.h
-/home/katsikas/gnuradio/gr-digital/lib/config.h
-stdio.h
--
-gr_io_signature.h
--
-digital_constellation.h
--
-digital_metric_type.h
--
-gr_math.h
--
-gr_complex.h
--
-math.h
--
-iostream
--
-stdlib.h
--
-float.h
--
-stdexcept
--
-stdio.h
--
-
-/home/katsikas/gnuradio/gr-digital/lib/digital_constellation_decoder_cb.cc
-config.h
-/home/katsikas/gnuradio/gr-digital/lib/config.h
-digital_constellation_decoder_cb.h
--
-digital_constellation.h
--
-gr_io_signature.h
--
-iostream
--
-
 /home/katsikas/gnuradio/gr-digital/lib/digital_constellation_receiver_cb.cc
 config.h
 /home/katsikas/gnuradio/gr-digital/lib/config.h
@@ -285,16 +203,6 @@ gr_math.h
 -
 gr_expj.h
 -
-
-/home/katsikas/gnuradio/gr-digital/lib/digital_lms_dd_equalizer_cc.cc
-config.h
-/home/katsikas/gnuradio/gr-digital/lib/config.h
-digital_lms_dd_equalizer_cc.h
--
-gr_io_signature.h
--
-gr_misc.h
--
-iostream
+stdio.h
 -
 
