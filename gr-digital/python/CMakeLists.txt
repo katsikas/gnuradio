@@ -43,6 +43,7 @@ GR_PYTHON_INSTALL(
     psk.py
     qam.py
     qpsk.py
+    dvbt_constellations.py
     DESTINATION ${GR_PYTHON_DIR}/gnuradio/digital
     COMPONENT "digital_python"
 )
