@@ -302,6 +302,72 @@
     <member refid="classdigital__cpmmod__bc_1aadb14cbaeadc17071047caddda0c17c3" kind="function"><name>digital_cpmmod_bc</name></member>
     <member refid="classdigital__cpmmod__bc_1a7ee3ed441b2e08fedd0bee7362d3b952" kind="function"><name>get_taps</name></member>
   </compound>
+  <compound refid="classdigital__dvbt__ofdm__frame__sink" kind="class"><name>digital_dvbt_ofdm_frame_sink</name>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813" kind="enum"><name>state_t</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a8f2fb99e37feaa66a459d1a4d7d7b90d" kind="enumvalue"><name>STATE_SYNC_SEARCH</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a5b8bc64459e98e70a30b8075e5c199c0" kind="enumvalue"><name>STATE_HAVE_SYNC</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a32a8981fc8afa14e9d7ca4fb944737c9" kind="enumvalue"><name>STATE_HAVE_HEADER</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a087341291886f50d061aaee79161f020" kind="variable"><name>MAX_PKT_LEN</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae67faef31313a772e2d082a749cd9b4e" kind="variable"><name>HEADERBYTELEN</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a67dcb2da0478f43fc6bf7a60be581af1" kind="variable"><name>d_target_queue</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1acb237d12c49fa5a5f27064cc03957e80" kind="variable"><name>d_state</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ad80e4c27146fa1f84b964bf8a1118bf9" kind="variable"><name>d_header</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1aa47157e77a7aa9db5e0cff63947d7ac4" kind="variable"><name>d_headerbytelen_cnt</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a1046218e9391933952af1dbd4504683d" kind="variable"><name>d_bytes_out</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a7bdafde7c6e239fc944e1e1d99185834" kind="variable"><name>d_occupied_carriers</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ac8f8a1a9c786f8e4b4a39669c81bdfa8" kind="variable"><name>d_byte_offset</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ad13480eaf924681ca9782426105e37d8" kind="variable"><name>d_partial_byte</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a5ac8d08a127fa821abfa24c489a21f59" kind="variable"><name>d_packet</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a87d903b85f92b9f5dd409fb750ffceb4" kind="variable"><name>d_packetlen</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1adb7d1ea919836c02fd5ab51714e08c82" kind="variable"><name>d_packet_whitener_offset</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ab6ac502b8e250bd9ff07152fb33ed6d9" kind="variable"><name>d_packetlen_cnt</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1afd323c94f7097421e9c7d8475d235dc2" kind="variable"><name>d_derotated_output</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae16fc06996e61eef661056b8b1c9f7e6" kind="variable"><name>d_sym_position</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a801977c50a99b9896b1ecda6e836861a" kind="variable"><name>d_sym_value_out</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a465f79a35deb2ca6afdef5dcce55c6ca" kind="variable"><name>d_dfe</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a7d18ee72805e28d16debbe2440745c5a" kind="variable"><name>d_nbits</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1aafe2e54da592a80402cc832073a4c73b" kind="variable"><name>d_resid</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a975f1715bfc68dbaf2ec35d85a1d990a" kind="variable"><name>d_nresid</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a8709ae3d02e124361ee43c90bb0e3feb" kind="variable"><name>d_phase</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a2e03df8b1ef752108003100e197121b1" kind="variable"><name>d_freq</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1acfeffdcd09945e2ca567a553d4fb266e" kind="variable"><name>d_phase_gain</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a6fbfe4fa14c7b89423bc630bd52263ef" kind="variable"><name>d_freq_gain</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1aa3fa4a7767c806eebe05259a12eb4f7a" kind="variable"><name>d_eq_gain</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a76285852433477122feff3612ae7ea28" kind="variable"><name>d_subcarrier_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a5ef7e239c5863b59ae3b2f9534c3c6bd" kind="friend"><name>digital_make_dvbt_ofdm_frame_sink</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a9ebaea78e8a6fa40e97501390dd47c50" kind="function"><name>digital_dvbt_ofdm_frame_sink</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a4657733ffabe1b6ae7f9a67861ebfe50" kind="function"><name>enter_search</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1acf464edac6df344c95a1ff19eed9e89b" kind="function"><name>enter_have_sync</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ad5dabb1846e1b7a6a615d0de70276aac" kind="function"><name>enter_have_header</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a3438724fc69c68110c3814898f15d600" kind="function"><name>header_ok</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae3142bd1ed65df6a2605f7fbb7c1cca6" kind="function"><name>slicer</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a23a92a98bc61f83cf195b76e9357af8e" kind="function"><name>demapper</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a994d9fc504861b8f4a1bb5e4d141e005" kind="function"><name>set_sym_value_out</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a55c7b5008f7761ae1bbfc238349bfd65" kind="function"><name>~digital_dvbt_ofdm_frame_sink</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1aa44bec172776f698897588e589e53942" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classdigital__dvbt__ofdm__mapper__bcv" kind="class"><name>digital_dvbt_ofdm_mapper_bcv</name>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ab91145854a512f6e28f1440916bccdfe" kind="variable"><name>d_constellation</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a55a5441b468bdb37b3e72726a830d9ef" kind="variable"><name>d_msgq</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afb660af0f073f089577c4b88a1dce97c" kind="variable"><name>d_msg</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a296aa159ea6900afa0efacd5551dbb4b" kind="variable"><name>d_msg_offset</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a5e062064bdfb0db20d047301e22e41ef" kind="variable"><name>d_eof</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a06edbb6b1f30035ee4ebed7004ba9e03" kind="variable"><name>d_occupied_carriers</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1acc8582ef374ecb495aedfaf5b55168af" kind="variable"><name>d_fft_length</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aad312ce6cd6ccf7a472c911bae364067" kind="variable"><name>d_bit_offset</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a44754a9f5be47629730c5b8d57a1f804" kind="variable"><name>d_pending_flag</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a01c22a1a8cac8baf8bc823aed231ef90" kind="variable"><name>d_nbits</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a26b523998c68da51fe44920667d83b4e" kind="variable"><name>d_msgbytes</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a5ebf61d477bb592148781657ceb7bd1b" kind="variable"><name>d_resid</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a611d5c0484d006d4f20135624f0c69ae" kind="variable"><name>d_nresid</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3593b7fac3a1966bdbc143d34745b9e0" kind="variable"><name>d_subcarrier_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a4551ae0e7290a914fa9dd5bf2f7ecd6e" kind="friend"><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a841808027433963face3b82283fa2f23" kind="function"><name>digital_dvbt_ofdm_mapper_bcv</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad0f663e117c340c20de7a7a47b50da" kind="function"><name>randsym</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a27508ae14328d2f271c115333c46279b" kind="function"><name>~digital_dvbt_ofdm_mapper_bcv</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" kind="function"><name>msgq</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1abb3b0ec09c9a3f64923643a1256b3d10" kind="function"><name>work</name></member>
+  </compound>
   <compound refid="classdigital__fll__band__edge__cc" kind="class"><name>digital_fll_band_edge_cc</name>
     <member refid="classdigital__fll__band__edge__cc_1aa257a1712886ca42599ad89e2a45a782" kind="variable"><name>d_sps</name></member>
     <member refid="classdigital__fll__band__edge__cc_1a4d8fcde3cb381546c6c9d5d63bab5098" kind="variable"><name>d_rolloff</name></member>
@@ -652,25 +718,25 @@
   </compound>
   <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
   </compound>
+  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
+  </compound>
   <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
-  <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
-  </compound>
-  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
-  </compound>
   <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
   </compound>
-  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
+  <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
   </compound>
+  <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
+  </compound>
   <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
   </compound>
-  <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
+  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
   </compound>
   <compound refid="classstd_1_1length__error" kind="class"><name>std::length_error</name>
   </compound>
@@ -708,25 +774,25 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
+  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  </compound>
   <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
@@ -845,6 +911,14 @@
     <member refid="digital__crc32_8h_1acf66679f4042ac8ff582fc3e87b36750" kind="function"><name>digital_update_crc32</name></member>
     <member refid="digital__crc32_8h_1ab40046e96066ec6384055a8d364d8a5e" kind="function"><name>digital_crc32</name></member>
     <member refid="digital__crc32_8h_1a2c7f9d46f1a8f00c20f137c9758c14d1" kind="function"><name>digital_crc32</name></member>
+  </compound>
+  <compound refid="digital__dvbt__ofdm__frame__sink_8h" kind="file"><name>digital_dvbt_ofdm_frame_sink.h</name>
+    <member refid="digital__dvbt__ofdm__frame__sink_8h_1a66e9ad1dfa168a4576e3fa7a543275ce" kind="typedef"><name>digital_dvbt_ofdm_frame_sink_sptr</name></member>
+    <member refid="digital__dvbt__ofdm__frame__sink_8h_1a1b8f02dc8f83842ec021f07c9aa5d4fe" kind="function"><name>digital_make_dvbt_ofdm_frame_sink</name></member>
+  </compound>
+  <compound refid="digital__dvbt__ofdm__mapper__bcv_8h" kind="file"><name>digital_dvbt_ofdm_mapper_bcv.h</name>
+    <member refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kind="typedef"><name>digital_dvbt_ofdm_mapper_bcv_sptr</name></member>
+    <member refid="digital__dvbt__ofdm__mapper__bcv_8h_1a4551ae0e7290a914fa9dd5bf2f7ecd6e" kind="function"><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
   </compound>
   <compound refid="digital__fll__band__edge__cc_8h" kind="file"><name>digital_fll_band_edge_cc.h</name>
     <member refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kind="typedef"><name>digital_fll_band_edge_cc_sptr</name></member>

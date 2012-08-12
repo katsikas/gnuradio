@@ -69,6 +69,9 @@ install(
     digital_probe_mpsk_snr_est_c.i
     digital_gmskmod_bc.i
     digital_cpmmod_bc.i
+    digital_dvbt_ofdm_mapper_bcv.i
+    digital_dvbt_ofdm_frame_sink.i
+
     DESTINATION ${GR_INCLUDE_DIR}/gnuradio/swig
     COMPONENT "digital_swig"
 )

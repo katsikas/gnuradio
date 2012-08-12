@@ -2961,94 +2961,98 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_boost__shared_ptrT_digital_correlate_access_code_bb_t swig_types[16]
 #define SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t swig_types[17]
 #define SWIGTYPE_p_boost__shared_ptrT_digital_cpmmod_bc_t swig_types[18]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_fll_band_edge_cc_t swig_types[19]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_gmskmod_bc_t swig_types[20]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t swig_types[21]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_lms_dd_equalizer_cc_t swig_types[22]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_receiver_cc_t swig_types[23]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_snr_est_cc_t swig_types[24]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_cyclic_prefixer_t swig_types[25]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_acquisition_t swig_types[26]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_sink_t swig_types[27]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_insert_preamble_t swig_types[28]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_mapper_bcv_t swig_types[29]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_sampler_t swig_types[30]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_probe_mpsk_snr_est_c_t swig_types[31]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[32]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[33]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[34]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[35]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[36]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[37]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[38]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[39]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[40]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[41]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[42]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[43]
-#define SWIGTYPE_p_char swig_types[44]
-#define SWIGTYPE_p_difference_type swig_types[45]
-#define SWIGTYPE_p_digital_binary_slicer_fb swig_types[46]
-#define SWIGTYPE_p_digital_clock_recovery_mm_cc swig_types[47]
-#define SWIGTYPE_p_digital_clock_recovery_mm_ff swig_types[48]
-#define SWIGTYPE_p_digital_cma_equalizer_cc swig_types[49]
-#define SWIGTYPE_p_digital_constellation swig_types[50]
-#define SWIGTYPE_p_digital_constellation_8psk swig_types[51]
-#define SWIGTYPE_p_digital_constellation_bpsk swig_types[52]
-#define SWIGTYPE_p_digital_constellation_calcdist swig_types[53]
-#define SWIGTYPE_p_digital_constellation_decoder_cb swig_types[54]
-#define SWIGTYPE_p_digital_constellation_dqpsk swig_types[55]
-#define SWIGTYPE_p_digital_constellation_dvbt_qpsk swig_types[56]
-#define SWIGTYPE_p_digital_constellation_psk swig_types[57]
-#define SWIGTYPE_p_digital_constellation_qpsk swig_types[58]
-#define SWIGTYPE_p_digital_constellation_receiver_cb swig_types[59]
-#define SWIGTYPE_p_digital_constellation_rect swig_types[60]
-#define SWIGTYPE_p_digital_constellation_sector swig_types[61]
-#define SWIGTYPE_p_digital_correlate_access_code_bb swig_types[62]
-#define SWIGTYPE_p_digital_costas_loop_cc swig_types[63]
-#define SWIGTYPE_p_digital_cpmmod_bc swig_types[64]
-#define SWIGTYPE_p_digital_fll_band_edge_cc swig_types[65]
-#define SWIGTYPE_p_digital_gmskmod_bc swig_types[66]
-#define SWIGTYPE_p_digital_kurtotic_equalizer_cc swig_types[67]
-#define SWIGTYPE_p_digital_lms_dd_equalizer_cc swig_types[68]
-#define SWIGTYPE_p_digital_mpsk_receiver_cc swig_types[69]
-#define SWIGTYPE_p_digital_mpsk_snr_est_cc swig_types[70]
-#define SWIGTYPE_p_digital_ofdm_cyclic_prefixer swig_types[71]
-#define SWIGTYPE_p_digital_ofdm_frame_acquisition swig_types[72]
-#define SWIGTYPE_p_digital_ofdm_frame_sink swig_types[73]
-#define SWIGTYPE_p_digital_ofdm_insert_preamble swig_types[74]
-#define SWIGTYPE_p_digital_ofdm_mapper_bcv swig_types[75]
-#define SWIGTYPE_p_digital_ofdm_sampler swig_types[76]
-#define SWIGTYPE_p_digital_probe_mpsk_snr_est_c swig_types[77]
-#define SWIGTYPE_p_gr_adaptive_fir_ccc swig_types[78]
-#define SWIGTYPE_p_gr_basic_block swig_types[79]
-#define SWIGTYPE_p_gr_block swig_types[80]
-#define SWIGTYPE_p_gr_hier_block2 swig_types[81]
-#define SWIGTYPE_p_gr_sync_block swig_types[82]
-#define SWIGTYPE_p_gr_sync_decimator swig_types[83]
-#define SWIGTYPE_p_gr_sync_interpolator swig_types[84]
-#define SWIGTYPE_p_gr_top_block swig_types[85]
-#define SWIGTYPE_p_gr_vector_const_void_star swig_types[86]
-#define SWIGTYPE_p_gr_vector_int swig_types[87]
-#define SWIGTYPE_p_gr_vector_void_star swig_types[88]
-#define SWIGTYPE_p_gri_control_loop swig_types[89]
-#define SWIGTYPE_p_gruel__rt_status_t swig_types[90]
-#define SWIGTYPE_p_long_long swig_types[91]
-#define SWIGTYPE_p_p_PyObject swig_types[92]
-#define SWIGTYPE_p_size_type swig_types[93]
-#define SWIGTYPE_p_std__allocatorT_std__complexT_float_t_t swig_types[94]
-#define SWIGTYPE_p_std__allocatorT_unsigned_int_t swig_types[95]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[96]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[97]
-#define SWIGTYPE_p_std__invalid_argument swig_types[98]
-#define SWIGTYPE_p_std__vectorT_std__complexT_float_t_std__allocatorT_std__complexT_float_t_t_t swig_types[99]
-#define SWIGTYPE_p_std__vectorT_unsigned_int_std__allocatorT_unsigned_int_t_t swig_types[100]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[101]
-#define SWIGTYPE_p_trellis_metric_type_t swig_types[102]
-#define SWIGTYPE_p_unsigned_long_long swig_types[103]
-#define SWIGTYPE_p_value_type swig_types[104]
-static swig_type_info *swig_types[106];
-static swig_module_info swig_module = {swig_types, 105, 0, 0, 0, 0};
+#define SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t swig_types[19]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t swig_types[20]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_fll_band_edge_cc_t swig_types[21]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_gmskmod_bc_t swig_types[22]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t swig_types[23]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_lms_dd_equalizer_cc_t swig_types[24]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_receiver_cc_t swig_types[25]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_snr_est_cc_t swig_types[26]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_cyclic_prefixer_t swig_types[27]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_acquisition_t swig_types[28]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_sink_t swig_types[29]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_insert_preamble_t swig_types[30]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_mapper_bcv_t swig_types[31]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_sampler_t swig_types[32]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_probe_mpsk_snr_est_c_t swig_types[33]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[34]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[35]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[36]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[37]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[38]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[39]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[40]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[41]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[42]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[43]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[44]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[45]
+#define SWIGTYPE_p_char swig_types[46]
+#define SWIGTYPE_p_difference_type swig_types[47]
+#define SWIGTYPE_p_digital_binary_slicer_fb swig_types[48]
+#define SWIGTYPE_p_digital_clock_recovery_mm_cc swig_types[49]
+#define SWIGTYPE_p_digital_clock_recovery_mm_ff swig_types[50]
+#define SWIGTYPE_p_digital_cma_equalizer_cc swig_types[51]
+#define SWIGTYPE_p_digital_constellation swig_types[52]
+#define SWIGTYPE_p_digital_constellation_8psk swig_types[53]
+#define SWIGTYPE_p_digital_constellation_bpsk swig_types[54]
+#define SWIGTYPE_p_digital_constellation_calcdist swig_types[55]
+#define SWIGTYPE_p_digital_constellation_decoder_cb swig_types[56]
+#define SWIGTYPE_p_digital_constellation_dqpsk swig_types[57]
+#define SWIGTYPE_p_digital_constellation_dvbt_qpsk swig_types[58]
+#define SWIGTYPE_p_digital_constellation_psk swig_types[59]
+#define SWIGTYPE_p_digital_constellation_qpsk swig_types[60]
+#define SWIGTYPE_p_digital_constellation_receiver_cb swig_types[61]
+#define SWIGTYPE_p_digital_constellation_rect swig_types[62]
+#define SWIGTYPE_p_digital_constellation_sector swig_types[63]
+#define SWIGTYPE_p_digital_correlate_access_code_bb swig_types[64]
+#define SWIGTYPE_p_digital_costas_loop_cc swig_types[65]
+#define SWIGTYPE_p_digital_cpmmod_bc swig_types[66]
+#define SWIGTYPE_p_digital_dvbt_ofdm_frame_sink swig_types[67]
+#define SWIGTYPE_p_digital_dvbt_ofdm_mapper_bcv swig_types[68]
+#define SWIGTYPE_p_digital_fll_band_edge_cc swig_types[69]
+#define SWIGTYPE_p_digital_gmskmod_bc swig_types[70]
+#define SWIGTYPE_p_digital_kurtotic_equalizer_cc swig_types[71]
+#define SWIGTYPE_p_digital_lms_dd_equalizer_cc swig_types[72]
+#define SWIGTYPE_p_digital_mpsk_receiver_cc swig_types[73]
+#define SWIGTYPE_p_digital_mpsk_snr_est_cc swig_types[74]
+#define SWIGTYPE_p_digital_ofdm_cyclic_prefixer swig_types[75]
+#define SWIGTYPE_p_digital_ofdm_frame_acquisition swig_types[76]
+#define SWIGTYPE_p_digital_ofdm_frame_sink swig_types[77]
+#define SWIGTYPE_p_digital_ofdm_insert_preamble swig_types[78]
+#define SWIGTYPE_p_digital_ofdm_mapper_bcv swig_types[79]
+#define SWIGTYPE_p_digital_ofdm_sampler swig_types[80]
+#define SWIGTYPE_p_digital_probe_mpsk_snr_est_c swig_types[81]
+#define SWIGTYPE_p_gr_adaptive_fir_ccc swig_types[82]
+#define SWIGTYPE_p_gr_basic_block swig_types[83]
+#define SWIGTYPE_p_gr_block swig_types[84]
+#define SWIGTYPE_p_gr_hier_block2 swig_types[85]
+#define SWIGTYPE_p_gr_sync_block swig_types[86]
+#define SWIGTYPE_p_gr_sync_decimator swig_types[87]
+#define SWIGTYPE_p_gr_sync_interpolator swig_types[88]
+#define SWIGTYPE_p_gr_top_block swig_types[89]
+#define SWIGTYPE_p_gr_vector_const_void_star swig_types[90]
+#define SWIGTYPE_p_gr_vector_int swig_types[91]
+#define SWIGTYPE_p_gr_vector_void_star swig_types[92]
+#define SWIGTYPE_p_gri_control_loop swig_types[93]
+#define SWIGTYPE_p_gruel__rt_status_t swig_types[94]
+#define SWIGTYPE_p_long_long swig_types[95]
+#define SWIGTYPE_p_p_PyObject swig_types[96]
+#define SWIGTYPE_p_size_type swig_types[97]
+#define SWIGTYPE_p_std__allocatorT_std__complexT_float_t_t swig_types[98]
+#define SWIGTYPE_p_std__allocatorT_unsigned_int_t swig_types[99]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[100]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[101]
+#define SWIGTYPE_p_std__invalid_argument swig_types[102]
+#define SWIGTYPE_p_std__vectorT_std__complexT_float_t_std__allocatorT_std__complexT_float_t_t_t swig_types[103]
+#define SWIGTYPE_p_std__vectorT_unsigned_int_std__allocatorT_unsigned_int_t_t swig_types[104]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[105]
+#define SWIGTYPE_p_trellis_metric_type_t swig_types[106]
+#define SWIGTYPE_p_unsigned_long_long swig_types[107]
+#define SWIGTYPE_p_value_type swig_types[108]
+static swig_type_info *swig_types[110];
+static swig_module_info swig_module = {swig_types, 109, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4491,6 +4495,9 @@ SWIG_From_float  (float value)
 #include "digital_probe_mpsk_snr_est_c.h"
 #include "digital_cpmmod_bc.h"
 #include "digital_gmskmod_bc.h"
+#include "digital_dvbt_ofdm_mapper_bcv.h"
+#include "digital_dvbt_ofdm_frame_sink.h"
+
 
 
 SWIGINTERNINLINE PyObject* 
@@ -41114,6 +41121,1729 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_new_digital_dvbt_ofdm_mapper_bcv_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *result = 0 ;
+  
+  {
+    try {
+      result = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *)new boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv >();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_dvbt_ofdm_mapper_bcv_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  digital_dvbt_ofdm_mapper_bcv *arg1 = (digital_dvbt_ofdm_mapper_bcv *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"new_digital_dvbt_ofdm_mapper_bcv_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_digital_dvbt_ofdm_mapper_bcv, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_digital_dvbt_ofdm_mapper_bcv_sptr" "', argument " "1"" of type '" "digital_dvbt_ofdm_mapper_bcv *""'"); 
+  }
+  arg1 = reinterpret_cast< digital_dvbt_ofdm_mapper_bcv * >(argp1);
+  {
+    try {
+      result = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *)new boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv >(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_dvbt_ofdm_mapper_bcv_sptr(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_digital_dvbt_ofdm_mapper_bcv_sptr__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_digital_dvbt_ofdm_mapper_bcv, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_digital_dvbt_ofdm_mapper_bcv_sptr__SWIG_1(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_digital_dvbt_ofdm_mapper_bcv_sptr'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv >::shared_ptr()\n"
+    "    boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv >::shared_ptr(digital_dvbt_ofdm_mapper_bcv *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  digital_dvbt_ofdm_mapper_bcv *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (digital_dvbt_ofdm_mapper_bcv *)(arg1)->operator ->();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_digital_dvbt_ofdm_mapper_bcv, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_digital_dvbt_ofdm_mapper_bcv_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_digital_dvbt_ofdm_mapper_bcv_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_digital_dvbt_ofdm_mapper_bcv_sptr" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_msgq(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_msg_queue_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_msgq",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_msgq" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (*arg1)->msgq();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_msg_queue_sptr(static_cast< const gr_msg_queue_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  int arg2 ;
+  gr_vector_const_void_star *arg3 = 0 ;
+  gr_vector_void_star *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "noutput_items",(char *) "input_items",(char *) "output_items", NULL 
+  };
+  int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:digital_dvbt_ofdm_mapper_bcv_sptr_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_work" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_work" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
+  }
+  arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  if (!argp4) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
+  }
+  arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
+  {
+    try {
+      result = (int)(*arg1)->work(arg2,*arg3,*arg4);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_history",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->history();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->output_multiple();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  double result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (double)(*arg1)->relative_rate();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_start",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->start();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_stop",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->stop();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_input", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_read(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_output", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_written(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_block_detail_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_detail",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_detail" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (*arg1)->detail();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_block_detail_sptr(static_cast< const gr_block_detail_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_set_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  gr_block_detail_sptr arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "detail", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_dvbt_ofdm_mapper_bcv_sptr_set_detail",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_set_detail" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'");
+    } else {
+      gr_block_detail_sptr * temp = reinterpret_cast< gr_block_detail_sptr * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    try {
+      (*arg1)->set_detail(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_name",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (*arg1)->name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_input_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (*arg1)->input_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_output_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (*arg1)->output_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  long result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_unique_id",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (long)(*arg1)->unique_id();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_basic_block_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_mapper_bcv_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  {
+    try {
+      result = (*arg1)->to_basic_block();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_basic_block_sptr(static_cast< const gr_basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_mapper_bcv_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "ninputs",(char *) "noutputs", NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:digital_dvbt_ofdm_mapper_bcv_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "digital_dvbt_ofdm_mapper_bcv_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      result = (bool)(*arg1)->check_topology(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *digital_dvbt_ofdm_mapper_bcv_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_dvbt_ofdm_mapper_bcv(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  std::vector< gr_complex,std::allocator< gr_complex > > *arg1 = 0 ;
+  unsigned int arg2 ;
+  unsigned int arg3 ;
+  unsigned int arg4 ;
+  int res1 = SWIG_OLDOBJ ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  unsigned int val3 ;
+  int ecode3 = 0 ;
+  unsigned int val4 ;
+  int ecode4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "constellation",(char *) "msgq_limit",(char *) "bits_per_symbol",(char *) "fft_length", NULL 
+  };
+  digital_dvbt_ofdm_mapper_bcv_sptr result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:dvbt_ofdm_mapper_bcv",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  {
+    std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
+    res1 = swig::asptr(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "1"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "1"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  ecode3 = SWIG_AsVal_unsigned_SS_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "3"" of type '" "unsigned int""'");
+  } 
+  arg3 = static_cast< unsigned int >(val3);
+  ecode4 = SWIG_AsVal_unsigned_SS_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "4"" of type '" "unsigned int""'");
+  } 
+  arg4 = static_cast< unsigned int >(val4);
+  {
+    try {
+      try {
+        result = digital_make_dvbt_ofdm_mapper_bcv((std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg1,arg2,arg3,arg4);
+      }
+      catch(std::exception &_e) {
+        SWIG_exception_fail(SWIG_SystemError, (&_e)->what());
+      }
+      
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new digital_dvbt_ofdm_mapper_bcv_sptr(static_cast< const digital_dvbt_ofdm_mapper_bcv_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, SWIG_POINTER_OWN |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_dvbt_ofdm_frame_sink_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *result = 0 ;
+  
+  {
+    try {
+      result = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *)new boost::shared_ptr< digital_dvbt_ofdm_frame_sink >();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_dvbt_ofdm_frame_sink_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  digital_dvbt_ofdm_frame_sink *arg1 = (digital_dvbt_ofdm_frame_sink *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"new_digital_dvbt_ofdm_frame_sink_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_digital_dvbt_ofdm_frame_sink, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_digital_dvbt_ofdm_frame_sink_sptr" "', argument " "1"" of type '" "digital_dvbt_ofdm_frame_sink *""'"); 
+  }
+  arg1 = reinterpret_cast< digital_dvbt_ofdm_frame_sink * >(argp1);
+  {
+    try {
+      result = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *)new boost::shared_ptr< digital_dvbt_ofdm_frame_sink >(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_dvbt_ofdm_frame_sink_sptr(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_digital_dvbt_ofdm_frame_sink_sptr__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_digital_dvbt_ofdm_frame_sink, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_digital_dvbt_ofdm_frame_sink_sptr__SWIG_1(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_digital_dvbt_ofdm_frame_sink_sptr'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    boost::shared_ptr< digital_dvbt_ofdm_frame_sink >::shared_ptr()\n"
+    "    boost::shared_ptr< digital_dvbt_ofdm_frame_sink >::shared_ptr(digital_dvbt_ofdm_frame_sink *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  digital_dvbt_ofdm_frame_sink *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (digital_dvbt_ofdm_frame_sink *)(arg1)->operator ->();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_digital_dvbt_ofdm_frame_sink, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_digital_dvbt_ofdm_frame_sink_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_digital_dvbt_ofdm_frame_sink_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_digital_dvbt_ofdm_frame_sink_sptr" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_history",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->history();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->output_multiple();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  double result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (double)(*arg1)->relative_rate();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_start",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->start();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_stop",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->stop();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_input", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_dvbt_ofdm_frame_sink_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_read(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "which_output", NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_dvbt_ofdm_frame_sink_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_written(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_block_detail_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_detail",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_detail" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (*arg1)->detail();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_block_detail_sptr(static_cast< const gr_block_detail_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_set_detail(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  gr_block_detail_sptr arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "detail", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_dvbt_ofdm_frame_sink_sptr_set_detail",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_set_detail" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "digital_dvbt_ofdm_frame_sink_sptr_set_detail" "', argument " "2"" of type '" "gr_block_detail_sptr""'");
+    } else {
+      gr_block_detail_sptr * temp = reinterpret_cast< gr_block_detail_sptr * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    try {
+      (*arg1)->set_detail(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_name",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (*arg1)->name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_input_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (*arg1)->input_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_io_signature_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_output_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (*arg1)->output_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_io_signature_sptr(static_cast< const gr_io_signature_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  long result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_unique_id",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (long)(*arg1)->unique_id();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  gr_basic_block_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_dvbt_ofdm_frame_sink_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  {
+    try {
+      result = (*arg1)->to_basic_block();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr_basic_block_sptr(static_cast< const gr_basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_dvbt_ofdm_frame_sink_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *arg1 = (boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "ninputs",(char *) "noutputs", NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:digital_dvbt_ofdm_frame_sink_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_dvbt_ofdm_frame_sink > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "digital_dvbt_ofdm_frame_sink_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      result = (bool)(*arg1)->check_topology(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *digital_dvbt_ofdm_frame_sink_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_dvbt_ofdm_frame_sink(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  std::vector< gr_complex,std::allocator< gr_complex > > *arg1 = 0 ;
+  std::vector< unsigned char,std::allocator< unsigned char > > *arg2 = 0 ;
+  gr_msg_queue_sptr arg3 ;
+  unsigned int arg4 ;
+  float arg5 = (float) 0.25 ;
+  float arg6 = (float) 0.25*0.25/4 ;
+  int res1 = SWIG_OLDOBJ ;
+  int res2 = SWIG_OLDOBJ ;
+  void *argp3 ;
+  int res3 = 0 ;
+  unsigned int val4 ;
+  int ecode4 = 0 ;
+  float val5 ;
+  int ecode5 = 0 ;
+  float val6 ;
+  int ecode6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  char *  kwnames[] = {
+    (char *) "sym_position",(char *) "sym_value_out",(char *) "target_queue",(char *) "occupied_tones",(char *) "phase_gain",(char *) "freq_gain", NULL 
+  };
+  digital_dvbt_ofdm_frame_sink_sptr result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO|OO:dvbt_ofdm_frame_sink",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  {
+    std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
+    res1 = swig::asptr(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "dvbt_ofdm_frame_sink" "', argument " "1"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "1"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  {
+    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_ofdm_frame_sink" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_ofdm_frame_sink" "', argument " "3"" of type '" "gr_msg_queue_sptr""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "3"" of type '" "gr_msg_queue_sptr""'");
+    } else {
+      gr_msg_queue_sptr * temp = reinterpret_cast< gr_msg_queue_sptr * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  ecode4 = SWIG_AsVal_unsigned_SS_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "dvbt_ofdm_frame_sink" "', argument " "4"" of type '" "unsigned int""'");
+  } 
+  arg4 = static_cast< unsigned int >(val4);
+  if (obj4) {
+    ecode5 = SWIG_AsVal_float(obj4, &val5);
+    if (!SWIG_IsOK(ecode5)) {
+      SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "dvbt_ofdm_frame_sink" "', argument " "5"" of type '" "float""'");
+    } 
+    arg5 = static_cast< float >(val5);
+  }
+  if (obj5) {
+    ecode6 = SWIG_AsVal_float(obj5, &val6);
+    if (!SWIG_IsOK(ecode6)) {
+      SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "dvbt_ofdm_frame_sink" "', argument " "6"" of type '" "float""'");
+    } 
+    arg6 = static_cast< float >(val6);
+  }
+  {
+    try {
+      result = digital_make_dvbt_ofdm_frame_sink((std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg1,(std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg2,arg3,arg4,arg5,arg6);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new digital_dvbt_ofdm_frame_sink_sptr(static_cast< const digital_dvbt_ofdm_frame_sink_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, SWIG_POINTER_OWN |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_VARARGS, (char *)"delete_SwigPyIterator(SwigPyIterator self)"},
@@ -43617,6 +45347,88 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"Params: (samples_per_sym, bt, L)\n"
 		""},
+	 { (char *)"new_digital_dvbt_ofdm_mapper_bcv_sptr", _wrap_new_digital_dvbt_ofdm_mapper_bcv_sptr, METH_VARARGS, (char *)"\n"
+		"digital_dvbt_ofdm_mapper_bcv_sptr()\n"
+		"new_digital_dvbt_ofdm_mapper_bcv_sptr( p) -> digital_dvbt_ofdm_mapper_bcv_sptr\n"
+		""},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr___deref__", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr___deref__, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr___deref__(digital_dvbt_ofdm_mapper_bcv_sptr self)"},
+	 { (char *)"delete_digital_dvbt_ofdm_mapper_bcv_sptr", _wrap_delete_digital_dvbt_ofdm_mapper_bcv_sptr, METH_VARARGS, (char *)"delete_digital_dvbt_ofdm_mapper_bcv_sptr(digital_dvbt_ofdm_mapper_bcv_sptr self)"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_msgq", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_msgq, METH_VARARGS, (char *)"\n"
+		"digital_dvbt_ofdm_mapper_bcv_sptr_msgq(digital_dvbt_ofdm_mapper_bcv_sptr self) -> gr_msg_queue_sptr\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_work", (PyCFunction) _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_dvbt_ofdm_mapper_bcv_sptr_work(digital_dvbt_ofdm_mapper_bcv_sptr self, int noutput_items, \n"
+		"    gr_vector_const_void_star input_items, \n"
+		"    gr_vector_void_star output_items) -> int\n"
+		"\n"
+		"Params: (noutput_items, input_items, output_items)\n"
+		""},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_history", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_history, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_history(digital_dvbt_ofdm_mapper_bcv_sptr self) -> unsigned int"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_output_multiple", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_output_multiple, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_output_multiple(digital_dvbt_ofdm_mapper_bcv_sptr self) -> int"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_relative_rate", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_relative_rate, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_relative_rate(digital_dvbt_ofdm_mapper_bcv_sptr self) -> double"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_start", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_start, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_start(digital_dvbt_ofdm_mapper_bcv_sptr self) -> bool"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_stop", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_stop, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_stop(digital_dvbt_ofdm_mapper_bcv_sptr self) -> bool"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read", (PyCFunction) _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read(digital_dvbt_ofdm_mapper_bcv_sptr self, unsigned int which_input) -> uint64_t"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written", (PyCFunction) _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written(digital_dvbt_ofdm_mapper_bcv_sptr self, unsigned int which_output) -> uint64_t"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_detail", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_detail, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_detail(digital_dvbt_ofdm_mapper_bcv_sptr self) -> gr_block_detail_sptr"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_set_detail", (PyCFunction) _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_set_detail, METH_VARARGS | METH_KEYWORDS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_set_detail(digital_dvbt_ofdm_mapper_bcv_sptr self, gr_block_detail_sptr detail)"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_name", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_name, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_name(digital_dvbt_ofdm_mapper_bcv_sptr self) -> string"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_input_signature", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_input_signature, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_input_signature(digital_dvbt_ofdm_mapper_bcv_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_output_signature", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_output_signature, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_output_signature(digital_dvbt_ofdm_mapper_bcv_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_unique_id", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_unique_id, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_unique_id(digital_dvbt_ofdm_mapper_bcv_sptr self) -> long"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_to_basic_block", _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_to_basic_block, METH_VARARGS, (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_to_basic_block(digital_dvbt_ofdm_mapper_bcv_sptr self) -> gr_basic_block_sptr"},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_check_topology", (PyCFunction) _wrap_digital_dvbt_ofdm_mapper_bcv_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_dvbt_ofdm_mapper_bcv_sptr_check_topology(digital_dvbt_ofdm_mapper_bcv_sptr self, int ninputs, \n"
+		"    int noutputs) -> bool\n"
+		""},
+	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_swigregister", digital_dvbt_ofdm_mapper_bcv_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"dvbt_ofdm_mapper_bcv", (PyCFunction) _wrap_dvbt_ofdm_mapper_bcv, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"dvbt_ofdm_mapper_bcv(gr_complex_vector constellation, unsigned int msgq_limit, \n"
+		"    unsigned int bits_per_symbol, unsigned int fft_length) -> digital_dvbt_ofdm_mapper_bcv_sptr\n"
+		"\n"
+		"Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping.\n"
+		"\n"
+		"Params: (constellation, msgq_limit, occupied_carriers, fft_length)\n"
+		""},
+	 { (char *)"new_digital_dvbt_ofdm_frame_sink_sptr", _wrap_new_digital_dvbt_ofdm_frame_sink_sptr, METH_VARARGS, (char *)"\n"
+		"digital_dvbt_ofdm_frame_sink_sptr()\n"
+		"new_digital_dvbt_ofdm_frame_sink_sptr( p) -> digital_dvbt_ofdm_frame_sink_sptr\n"
+		""},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr___deref__", _wrap_digital_dvbt_ofdm_frame_sink_sptr___deref__, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr___deref__(digital_dvbt_ofdm_frame_sink_sptr self)"},
+	 { (char *)"delete_digital_dvbt_ofdm_frame_sink_sptr", _wrap_delete_digital_dvbt_ofdm_frame_sink_sptr, METH_VARARGS, (char *)"delete_digital_dvbt_ofdm_frame_sink_sptr(digital_dvbt_ofdm_frame_sink_sptr self)"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_history", _wrap_digital_dvbt_ofdm_frame_sink_sptr_history, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_history(digital_dvbt_ofdm_frame_sink_sptr self) -> unsigned int"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_output_multiple", _wrap_digital_dvbt_ofdm_frame_sink_sptr_output_multiple, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_output_multiple(digital_dvbt_ofdm_frame_sink_sptr self) -> int"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_relative_rate", _wrap_digital_dvbt_ofdm_frame_sink_sptr_relative_rate, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_relative_rate(digital_dvbt_ofdm_frame_sink_sptr self) -> double"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_start", _wrap_digital_dvbt_ofdm_frame_sink_sptr_start, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_start(digital_dvbt_ofdm_frame_sink_sptr self) -> bool"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_stop", _wrap_digital_dvbt_ofdm_frame_sink_sptr_stop, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_stop(digital_dvbt_ofdm_frame_sink_sptr self) -> bool"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_nitems_read", (PyCFunction) _wrap_digital_dvbt_ofdm_frame_sink_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_nitems_read(digital_dvbt_ofdm_frame_sink_sptr self, unsigned int which_input) -> uint64_t"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_nitems_written", (PyCFunction) _wrap_digital_dvbt_ofdm_frame_sink_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_nitems_written(digital_dvbt_ofdm_frame_sink_sptr self, unsigned int which_output) -> uint64_t"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_detail", _wrap_digital_dvbt_ofdm_frame_sink_sptr_detail, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_detail(digital_dvbt_ofdm_frame_sink_sptr self) -> gr_block_detail_sptr"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_set_detail", (PyCFunction) _wrap_digital_dvbt_ofdm_frame_sink_sptr_set_detail, METH_VARARGS | METH_KEYWORDS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_set_detail(digital_dvbt_ofdm_frame_sink_sptr self, gr_block_detail_sptr detail)"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_name", _wrap_digital_dvbt_ofdm_frame_sink_sptr_name, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_name(digital_dvbt_ofdm_frame_sink_sptr self) -> string"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_input_signature", _wrap_digital_dvbt_ofdm_frame_sink_sptr_input_signature, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_input_signature(digital_dvbt_ofdm_frame_sink_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_output_signature", _wrap_digital_dvbt_ofdm_frame_sink_sptr_output_signature, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_output_signature(digital_dvbt_ofdm_frame_sink_sptr self) -> gr_io_signature_sptr"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_unique_id", _wrap_digital_dvbt_ofdm_frame_sink_sptr_unique_id, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_unique_id(digital_dvbt_ofdm_frame_sink_sptr self) -> long"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_to_basic_block", _wrap_digital_dvbt_ofdm_frame_sink_sptr_to_basic_block, METH_VARARGS, (char *)"digital_dvbt_ofdm_frame_sink_sptr_to_basic_block(digital_dvbt_ofdm_frame_sink_sptr self) -> gr_basic_block_sptr"},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_check_topology", (PyCFunction) _wrap_digital_dvbt_ofdm_frame_sink_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_dvbt_ofdm_frame_sink_sptr_check_topology(digital_dvbt_ofdm_frame_sink_sptr self, int ninputs, \n"
+		"    int noutputs) -> bool\n"
+		""},
+	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_swigregister", digital_dvbt_ofdm_frame_sink_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"dvbt_ofdm_frame_sink", (PyCFunction) _wrap_dvbt_ofdm_frame_sink, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"dvbt_ofdm_frame_sink(gr_complex_vector sym_position, __dummy_0__ sym_value_out, \n"
+		"    gr_msg_queue_sptr target_queue, unsigned int occupied_tones, \n"
+		"    float phase_gain = 0.25, \n"
+		"    float freq_gain = 0.25*0.25/4) -> digital_dvbt_ofdm_frame_sink_sptr\n"
+		"\n"
+		"Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0's and 1's, packs them into packets, and sends to to a message queue sink.\n"
+		"\n"
+		"NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.\n"
+		"\n"
+		"Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)\n"
+		""},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -43643,6 +45455,9 @@ static void *_p_digital_ofdm_samplerTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(n
 }
 static void *_p_digital_ofdm_mapper_bcvTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *) ((digital_ofdm_mapper_bcv *) x));
+}
+static void *_p_digital_dvbt_ofdm_mapper_bcvTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_block *) (gr_sync_block *) ((digital_dvbt_ofdm_mapper_bcv *) x));
 }
 static void *_p_digital_constellation_decoder_cbTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *) ((digital_constellation_decoder_cb *) x));
@@ -43694,6 +45509,9 @@ static void *_p_digital_correlate_access_code_bbTo_p_gr_block(void *x, int *SWIG
 }
 static void *_p_digital_ofdm_frame_sinkTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_block *) (gr_sync_block *) ((digital_ofdm_frame_sink *) x));
+}
+static void *_p_digital_dvbt_ofdm_frame_sinkTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_block *) (gr_sync_block *) ((digital_dvbt_ofdm_frame_sink *) x));
 }
 static void *_p_digital_ofdm_frame_acquisitionTo_p_gr_sync_decimator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_decimator *)  ((digital_ofdm_frame_acquisition *) x));
@@ -43748,6 +45566,9 @@ static void *_p_gr_hier_block2To_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(n
 }
 static void *_p_digital_ofdm_mapper_bcvTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((digital_ofdm_mapper_bcv *) x));
+}
+static void *_p_digital_dvbt_ofdm_mapper_bcvTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((digital_dvbt_ofdm_mapper_bcv *) x));
 }
 static void *_p_digital_constellation_decoder_cbTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((digital_constellation_decoder_cb *) x));
@@ -43812,6 +45633,9 @@ static void *_p_digital_correlate_access_code_bbTo_p_gr_basic_block(void *x, int
 static void *_p_digital_ofdm_frame_sinkTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((digital_ofdm_frame_sink *) x));
 }
+static void *_p_digital_dvbt_ofdm_frame_sinkTo_p_gr_basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_basic_block *) (gr_block *)(gr_sync_block *) ((digital_dvbt_ofdm_frame_sink *) x));
+}
 static void *_p_digital_lms_dd_equalizer_ccTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((digital_lms_dd_equalizer_cc *) x));
 }
@@ -43829,6 +45653,9 @@ static void *_p_digital_ofdm_samplerTo_p_gr_sync_block(void *x, int *SWIGUNUSEDP
 }
 static void *_p_digital_ofdm_mapper_bcvTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((digital_ofdm_mapper_bcv *) x));
+}
+static void *_p_digital_dvbt_ofdm_mapper_bcvTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *)  ((digital_dvbt_ofdm_mapper_bcv *) x));
 }
 static void *_p_digital_constellation_decoder_cbTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((digital_constellation_decoder_cb *) x));
@@ -43871,6 +45698,9 @@ static void *_p_digital_correlate_access_code_bbTo_p_gr_sync_block(void *x, int 
 }
 static void *_p_digital_ofdm_frame_sinkTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_sync_block *)  ((digital_ofdm_frame_sink *) x));
+}
+static void *_p_digital_dvbt_ofdm_frame_sinkTo_p_gr_sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr_sync_block *)  ((digital_dvbt_ofdm_frame_sink *) x));
 }
 static void *_p_digital_cma_equalizer_ccTo_p_gr_adaptive_fir_ccc(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr_adaptive_fir_ccc *)  ((digital_cma_equalizer_cc *) x));
@@ -43936,6 +45766,8 @@ static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_t = {"_
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_correlate_access_code_bb_t = {"_p_boost__shared_ptrT_digital_correlate_access_code_bb_t", "boost::shared_ptr< digital_correlate_access_code_bb > *|digital_correlate_access_code_bb_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_costas_loop_cc_t = {"_p_boost__shared_ptrT_digital_costas_loop_cc_t", "boost::shared_ptr< digital_costas_loop_cc > *|digital_costas_loop_cc_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_cpmmod_bc_t = {"_p_boost__shared_ptrT_digital_cpmmod_bc_t", "boost::shared_ptr< digital_cpmmod_bc > *|digital_cpmmod_bc_sptr *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t = {"_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t", "boost::shared_ptr< digital_dvbt_ofdm_frame_sink > *|digital_dvbt_ofdm_frame_sink_sptr *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t = {"_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t", "boost::shared_ptr< digital_dvbt_ofdm_mapper_bcv > *|digital_dvbt_ofdm_mapper_bcv_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_fll_band_edge_cc_t = {"_p_boost__shared_ptrT_digital_fll_band_edge_cc_t", "boost::shared_ptr< digital_fll_band_edge_cc > *|digital_fll_band_edge_cc_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_gmskmod_bc_t = {"_p_boost__shared_ptrT_digital_gmskmod_bc_t", "boost::shared_ptr< digital_gmskmod_bc > *|digital_gmskmod_bc_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t = {"_p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t", "boost::shared_ptr< digital_kurtotic_equalizer_cc > *|digital_kurtotic_equalizer_cc_sptr *", 0, 0, (void*)0, 0};
@@ -43982,6 +45814,8 @@ static swig_type_info _swigt__p_digital_constellation_sector = {"_p_digital_cons
 static swig_type_info _swigt__p_digital_correlate_access_code_bb = {"_p_digital_correlate_access_code_bb", "digital_correlate_access_code_bb *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_costas_loop_cc = {"_p_digital_costas_loop_cc", "digital_costas_loop_cc *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_cpmmod_bc = {"_p_digital_cpmmod_bc", "digital_cpmmod_bc *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_digital_dvbt_ofdm_frame_sink = {"_p_digital_dvbt_ofdm_frame_sink", "digital_dvbt_ofdm_frame_sink *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_digital_dvbt_ofdm_mapper_bcv = {"_p_digital_dvbt_ofdm_mapper_bcv", "digital_dvbt_ofdm_mapper_bcv *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_fll_band_edge_cc = {"_p_digital_fll_band_edge_cc", "digital_fll_band_edge_cc *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_gmskmod_bc = {"_p_digital_gmskmod_bc", "digital_gmskmod_bc *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_kurtotic_equalizer_cc = {"_p_digital_kurtotic_equalizer_cc", "digital_kurtotic_equalizer_cc *", 0, 0, (void*)0, 0};
@@ -44043,6 +45877,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_digital_correlate_access_code_bb_t,
   &_swigt__p_boost__shared_ptrT_digital_costas_loop_cc_t,
   &_swigt__p_boost__shared_ptrT_digital_cpmmod_bc_t,
+  &_swigt__p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t,
+  &_swigt__p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t,
   &_swigt__p_boost__shared_ptrT_digital_fll_band_edge_cc_t,
   &_swigt__p_boost__shared_ptrT_digital_gmskmod_bc_t,
   &_swigt__p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t,
@@ -44089,6 +45925,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_digital_correlate_access_code_bb,
   &_swigt__p_digital_costas_loop_cc,
   &_swigt__p_digital_cpmmod_bc,
+  &_swigt__p_digital_dvbt_ofdm_frame_sink,
+  &_swigt__p_digital_dvbt_ofdm_mapper_bcv,
   &_swigt__p_digital_fll_band_edge_cc,
   &_swigt__p_digital_gmskmod_bc,
   &_swigt__p_digital_kurtotic_equalizer_cc,
@@ -44150,6 +45988,8 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_t[] = {
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_correlate_access_code_bb_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_correlate_access_code_bb_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_costas_loop_cc_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_costas_loop_cc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_cpmmod_bc_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_cpmmod_bc_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_fll_band_edge_cc_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_fll_band_edge_cc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_gmskmod_bc_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_gmskmod_bc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -44196,6 +46036,8 @@ static swig_cast_info _swigc__p_digital_constellation_sector[] = {  {&_swigt__p_
 static swig_cast_info _swigc__p_digital_correlate_access_code_bb[] = {  {&_swigt__p_digital_correlate_access_code_bb, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_costas_loop_cc[] = {  {&_swigt__p_digital_costas_loop_cc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_cpmmod_bc[] = {  {&_swigt__p_digital_cpmmod_bc, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_digital_dvbt_ofdm_frame_sink[] = {  {&_swigt__p_digital_dvbt_ofdm_frame_sink, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_digital_dvbt_ofdm_mapper_bcv[] = {  {&_swigt__p_digital_dvbt_ofdm_mapper_bcv, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_fll_band_edge_cc[] = {  {&_swigt__p_digital_fll_band_edge_cc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_gmskmod_bc[] = {  {&_swigt__p_digital_gmskmod_bc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_kurtotic_equalizer_cc[] = {  {&_swigt__p_digital_kurtotic_equalizer_cc, 0, 0, 0},{0, 0, 0, 0}};
@@ -44211,10 +46053,10 @@ static swig_cast_info _swigc__p_digital_ofdm_sampler[] = {  {&_swigt__p_digital_
 static swig_cast_info _swigc__p_digital_probe_mpsk_snr_est_c[] = {  {&_swigt__p_digital_probe_mpsk_snr_est_c, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_adaptive_fir_ccc[] = {  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_adaptive_fir_ccc, 0, 0},  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_adaptive_fir_ccc, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_top_block[] = {{&_swigt__p_gr_top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_lms_dd_equalizer_cc, _p_digital_lms_dd_equalizer_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_cyclic_prefixer, _p_digital_ofdm_cyclic_prefixerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_digital_ofdm_sampler, _p_digital_ofdm_samplerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_mapper_bcv, _p_digital_ofdm_mapper_bcvTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_constellation_decoder_cb, _p_digital_constellation_decoder_cbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_fll_band_edge_cc, _p_digital_fll_band_edge_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_constellation_receiver_cb, _p_digital_constellation_receiver_cbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_ff, _p_digital_clock_recovery_mm_ffTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_probe_mpsk_snr_est_c, _p_digital_probe_mpsk_snr_est_cTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_mpsk_receiver_cc, _p_digital_mpsk_receiver_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_acquisition, _p_digital_ofdm_frame_acquisitionTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_cpmmod_bc, _p_digital_cpmmod_bcTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_gmskmod_bc, _p_digital_gmskmod_bcTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_insert_preamble, _p_digital_ofdm_insert_preambleTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_cc, _p_digital_clock_recovery_mm_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_mpsk_snr_est_cc, _p_digital_mpsk_snr_est_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, _p_gr_adaptive_fir_cccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_binary_slicer_fb, _p_digital_binary_slicer_fbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_correlate_access_code_bb, _p_digital_correlate_access_code_bbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_sink, _p_digital_ofdm_frame_sinkTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_lms_dd_equalizer_cc, _p_digital_lms_dd_equalizer_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_cyclic_prefixer, _p_digital_ofdm_cyclic_prefixerTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_sampler, _p_digital_ofdm_samplerTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_mapper_bcv, _p_digital_ofdm_mapper_bcvTo_p_gr_block, 0, 0},  {&_swigt__p_digital_constellation_decoder_cb, _p_digital_constellation_decoder_cbTo_p_gr_block, 0, 0},  {&_swigt__p_digital_fll_band_edge_cc, _p_digital_fll_band_edge_ccTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},  {&_swigt__p_digital_constellation_receiver_cb, _p_digital_constellation_receiver_cbTo_p_gr_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_ff, _p_digital_clock_recovery_mm_ffTo_p_gr_block, 0, 0},  {&_swigt__p_digital_probe_mpsk_snr_est_c, _p_digital_probe_mpsk_snr_est_cTo_p_gr_block, 0, 0},  {&_swigt__p_digital_mpsk_receiver_cc, _p_digital_mpsk_receiver_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_acquisition, _p_digital_ofdm_frame_acquisitionTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_insert_preamble, _p_digital_ofdm_insert_preambleTo_p_gr_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_cc, _p_digital_clock_recovery_mm_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_mpsk_snr_est_cc, _p_digital_mpsk_snr_est_ccTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_block, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, _p_gr_adaptive_fir_cccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_binary_slicer_fb, _p_digital_binary_slicer_fbTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_digital_correlate_access_code_bb, _p_digital_correlate_access_code_bbTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_sink, _p_digital_ofdm_frame_sinkTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_lms_dd_equalizer_cc, _p_digital_lms_dd_equalizer_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_cyclic_prefixer, _p_digital_ofdm_cyclic_prefixerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_digital_ofdm_sampler, _p_digital_ofdm_samplerTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_mapper_bcv, _p_digital_ofdm_mapper_bcvTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_dvbt_ofdm_mapper_bcv, _p_digital_dvbt_ofdm_mapper_bcvTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_constellation_decoder_cb, _p_digital_constellation_decoder_cbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_fll_band_edge_cc, _p_digital_fll_band_edge_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_constellation_receiver_cb, _p_digital_constellation_receiver_cbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_ff, _p_digital_clock_recovery_mm_ffTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_probe_mpsk_snr_est_c, _p_digital_probe_mpsk_snr_est_cTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_mpsk_receiver_cc, _p_digital_mpsk_receiver_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_acquisition, _p_digital_ofdm_frame_acquisitionTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_cpmmod_bc, _p_digital_cpmmod_bcTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_gmskmod_bc, _p_digital_gmskmod_bcTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_insert_preamble, _p_digital_ofdm_insert_preambleTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_cc, _p_digital_clock_recovery_mm_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_mpsk_snr_est_cc, _p_digital_mpsk_snr_est_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, _p_gr_adaptive_fir_cccTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_binary_slicer_fb, _p_digital_binary_slicer_fbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_correlate_access_code_bb, _p_digital_correlate_access_code_bbTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_sink, _p_digital_ofdm_frame_sinkTo_p_gr_basic_block, 0, 0},  {&_swigt__p_digital_dvbt_ofdm_frame_sink, _p_digital_dvbt_ofdm_frame_sinkTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_lms_dd_equalizer_cc, _p_digital_lms_dd_equalizer_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_cyclic_prefixer, _p_digital_ofdm_cyclic_prefixerTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_sampler, _p_digital_ofdm_samplerTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_mapper_bcv, _p_digital_ofdm_mapper_bcvTo_p_gr_block, 0, 0},  {&_swigt__p_digital_dvbt_ofdm_mapper_bcv, _p_digital_dvbt_ofdm_mapper_bcvTo_p_gr_block, 0, 0},  {&_swigt__p_digital_constellation_decoder_cb, _p_digital_constellation_decoder_cbTo_p_gr_block, 0, 0},  {&_swigt__p_digital_fll_band_edge_cc, _p_digital_fll_band_edge_ccTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},  {&_swigt__p_digital_constellation_receiver_cb, _p_digital_constellation_receiver_cbTo_p_gr_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_ff, _p_digital_clock_recovery_mm_ffTo_p_gr_block, 0, 0},  {&_swigt__p_digital_probe_mpsk_snr_est_c, _p_digital_probe_mpsk_snr_est_cTo_p_gr_block, 0, 0},  {&_swigt__p_digital_mpsk_receiver_cc, _p_digital_mpsk_receiver_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_acquisition, _p_digital_ofdm_frame_acquisitionTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_insert_preamble, _p_digital_ofdm_insert_preambleTo_p_gr_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_cc, _p_digital_clock_recovery_mm_ccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_mpsk_snr_est_cc, _p_digital_mpsk_snr_est_ccTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_block, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, _p_gr_adaptive_fir_cccTo_p_gr_block, 0, 0},  {&_swigt__p_digital_binary_slicer_fb, _p_digital_binary_slicer_fbTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_digital_correlate_access_code_bb, _p_digital_correlate_access_code_bbTo_p_gr_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_sink, _p_digital_ofdm_frame_sinkTo_p_gr_block, 0, 0},  {&_swigt__p_digital_dvbt_ofdm_frame_sink, _p_digital_dvbt_ofdm_frame_sinkTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_hier_block2[] = {  {&_swigt__p_gr_hier_block2, 0, 0, 0},  {&_swigt__p_digital_cpmmod_bc, _p_digital_cpmmod_bcTo_p_gr_hier_block2, 0, 0},  {&_swigt__p_digital_gmskmod_bc, _p_digital_gmskmod_bcTo_p_gr_hier_block2, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_hier_block2, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_digital_lms_dd_equalizer_cc, _p_digital_lms_dd_equalizer_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_cyclic_prefixer, _p_digital_ofdm_cyclic_prefixerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_digital_ofdm_sampler, _p_digital_ofdm_samplerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_mapper_bcv, _p_digital_ofdm_mapper_bcvTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_constellation_decoder_cb, _p_digital_constellation_decoder_cbTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_fll_band_edge_cc, _p_digital_fll_band_edge_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_ff, _p_digital_clock_recovery_mm_ffTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_probe_mpsk_snr_est_c, _p_digital_probe_mpsk_snr_est_cTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_acquisition, _p_digital_ofdm_frame_acquisitionTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_cc, _p_digital_clock_recovery_mm_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_mpsk_snr_est_cc, _p_digital_mpsk_snr_est_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, _p_gr_adaptive_fir_cccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_binary_slicer_fb, _p_digital_binary_slicer_fbTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_correlate_access_code_bb, _p_digital_correlate_access_code_bbTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_sink, _p_digital_ofdm_frame_sinkTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_digital_lms_dd_equalizer_cc, _p_digital_lms_dd_equalizer_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_cyclic_prefixer, _p_digital_ofdm_cyclic_prefixerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_digital_ofdm_sampler, _p_digital_ofdm_samplerTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_mapper_bcv, _p_digital_ofdm_mapper_bcvTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_dvbt_ofdm_mapper_bcv, _p_digital_dvbt_ofdm_mapper_bcvTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_constellation_decoder_cb, _p_digital_constellation_decoder_cbTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_fll_band_edge_cc, _p_digital_fll_band_edge_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_ff, _p_digital_clock_recovery_mm_ffTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_probe_mpsk_snr_est_c, _p_digital_probe_mpsk_snr_est_cTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_acquisition, _p_digital_ofdm_frame_acquisitionTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_clock_recovery_mm_cc, _p_digital_clock_recovery_mm_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_mpsk_snr_est_cc, _p_digital_mpsk_snr_est_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_costas_loop_cc, _p_digital_costas_loop_ccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, _p_gr_adaptive_fir_cccTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_binary_slicer_fb, _p_digital_binary_slicer_fbTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_correlate_access_code_bb, _p_digital_correlate_access_code_bbTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_ofdm_frame_sink, _p_digital_ofdm_frame_sinkTo_p_gr_sync_block, 0, 0},  {&_swigt__p_digital_dvbt_ofdm_frame_sink, _p_digital_dvbt_ofdm_frame_sinkTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_decimator[] = {  {&_swigt__p_digital_ofdm_frame_acquisition, _p_digital_ofdm_frame_acquisitionTo_p_gr_sync_decimator, 0, 0},  {&_swigt__p_digital_cma_equalizer_cc, _p_digital_cma_equalizer_ccTo_p_gr_sync_decimator, 0, 0},  {&_swigt__p_digital_kurtotic_equalizer_cc, _p_digital_kurtotic_equalizer_ccTo_p_gr_sync_decimator, 0, 0},  {&_swigt__p_gr_adaptive_fir_ccc, _p_gr_adaptive_fir_cccTo_p_gr_sync_decimator, 0, 0},  {&_swigt__p_gr_sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_interpolator[] = {  {&_swigt__p_digital_ofdm_cyclic_prefixer, _p_digital_ofdm_cyclic_prefixerTo_p_gr_sync_interpolator, 0, 0},  {&_swigt__p_gr_sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_vector_const_void_star[] = {  {&_swigt__p_gr_vector_const_void_star, 0, 0, 0},{0, 0, 0, 0}};
@@ -44257,6 +46099,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_digital_correlate_access_code_bb_t,
   _swigc__p_boost__shared_ptrT_digital_costas_loop_cc_t,
   _swigc__p_boost__shared_ptrT_digital_cpmmod_bc_t,
+  _swigc__p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t,
+  _swigc__p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t,
   _swigc__p_boost__shared_ptrT_digital_fll_band_edge_cc_t,
   _swigc__p_boost__shared_ptrT_digital_gmskmod_bc_t,
   _swigc__p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t,
@@ -44303,6 +46147,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_digital_correlate_access_code_bb,
   _swigc__p_digital_costas_loop_cc,
   _swigc__p_digital_cpmmod_bc,
+  _swigc__p_digital_dvbt_ofdm_frame_sink,
+  _swigc__p_digital_dvbt_ofdm_mapper_bcv,
   _swigc__p_digital_fll_band_edge_cc,
   _swigc__p_digital_gmskmod_bc,
   _swigc__p_digital_kurtotic_equalizer_cc,

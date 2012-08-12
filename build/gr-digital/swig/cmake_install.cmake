@@ -89,6 +89,8 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/gr-digital/swig/digital_probe_mpsk_snr_est_c.i"
     "/home/katsikas/gnuradio/gr-digital/swig/digital_gmskmod_bc.i"
     "/home/katsikas/gnuradio/gr-digital/swig/digital_cpmmod_bc.i"
+    "/home/katsikas/gnuradio/gr-digital/swig/digital_dvbt_ofdm_mapper_bcv.i"
+    "/home/katsikas/gnuradio/gr-digital/swig/digital_dvbt_ofdm_frame_sink.i"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_swig")
 

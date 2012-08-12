@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdigital__dvbt__ofdm__frame__sink" kind="class" prot="public">
+    <compoundname>digital_dvbt_ofdm_frame_sink</compoundname>
+    <includes refid="digital__dvbt__ofdm__frame__sink_8h" local="no">digital_dvbt_ofdm_frame_sink.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813" prot="private" static="no">
+        <name>state_t</name>
+        <enumvalue id="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a8f2fb99e37feaa66a459d1a4d7d7b90d" prot="private">
+          <name>STATE_SYNC_SEARCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a5b8bc64459e98e70a30b8075e5c199c0" prot="private">
+          <name>STATE_HAVE_SYNC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a32a8981fc8afa14e9d7ca4fb944737c9" prot="private">
+          <name>STATE_HAVE_HEADER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="59" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a087341291886f50d061aaee79161f020" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int digital_dvbt_ofdm_frame_sink::MAX_PKT_LEN</definition>
+        <argsstring></argsstring>
+        <name>MAX_PKT_LEN</name>
+        <initializer> 4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="61" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1ae67faef31313a772e2d082a749cd9b4e" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int digital_dvbt_ofdm_frame_sink::HEADERBYTELEN</definition>
+        <argsstring></argsstring>
+        <name>HEADERBYTELEN</name>
+        <initializer> 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="62" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a67dcb2da0478f43fc6bf7a60be581af1" prot="private" static="no" mutable="no">
+        <type>gr_msg_queue_sptr</type>
+        <definition>gr_msg_queue_sptr digital_dvbt_ofdm_frame_sink::d_target_queue</definition>
+        <argsstring></argsstring>
+        <name>d_target_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="64" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1acb237d12c49fa5a5f27064cc03957e80" prot="private" static="no" mutable="no">
+        <type>state_t</type>
+        <definition>state_t digital_dvbt_ofdm_frame_sink::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="65" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1ad80e4c27146fa1f84b964bf8a1118bf9" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::d_header</definition>
+        <argsstring></argsstring>
+        <name>d_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="66" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1aa47157e77a7aa9db5e0cff63947d7ac4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int digital_dvbt_ofdm_frame_sink::d_headerbytelen_cnt</definition>
+        <argsstring></argsstring>
+        <name>d_headerbytelen_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="67" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a1046218e9391933952af1dbd4504683d" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* digital_dvbt_ofdm_frame_sink::d_bytes_out</definition>
+        <argsstring></argsstring>
+        <name>d_bytes_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="69" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a7bdafde7c6e239fc944e1e1d99185834" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::d_occupied_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_occupied_carriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="71" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1ac8f8a1a9c786f8e4b4a39669c81bdfa8" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::d_byte_offset</definition>
+        <argsstring></argsstring>
+        <name>d_byte_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="72" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1ad13480eaf924681ca9782426105e37d8" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::d_partial_byte</definition>
+        <argsstring></argsstring>
+        <name>d_partial_byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="73" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a5ac8d08a127fa821abfa24c489a21f59" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char digital_dvbt_ofdm_frame_sink::d_packet[MAX_PKT_LEN]</definition>
+        <argsstring>[MAX_PKT_LEN]</argsstring>
+        <name>d_packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="75" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a87d903b85f92b9f5dd409fb750ffceb4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int digital_dvbt_ofdm_frame_sink::d_packetlen</definition>
+        <argsstring></argsstring>
+        <name>d_packetlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="76" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1adb7d1ea919836c02fd5ab51714e08c82" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int digital_dvbt_ofdm_frame_sink::d_packet_whitener_offset</definition>
+        <argsstring></argsstring>
+        <name>d_packet_whitener_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="77" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1ab6ac502b8e250bd9ff07152fb33ed6d9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int digital_dvbt_ofdm_frame_sink::d_packetlen_cnt</definition>
+        <argsstring></argsstring>
+        <name>d_packetlen_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="78" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1afd323c94f7097421e9c7d8475d235dc2" prot="private" static="no" mutable="no">
+        <type>gr_complex *</type>
+        <definition>gr_complex* digital_dvbt_ofdm_frame_sink::d_derotated_output</definition>
+        <argsstring></argsstring>
+        <name>d_derotated_output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="80" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1ae16fc06996e61eef661056b8b1c9f7e6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; digital_dvbt_ofdm_frame_sink::d_sym_position</definition>
+        <argsstring></argsstring>
+        <name>d_sym_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="82" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a801977c50a99b9896b1ecda6e836861a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; digital_dvbt_ofdm_frame_sink::d_sym_value_out</definition>
+        <argsstring></argsstring>
+        <name>d_sym_value_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="83" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a465f79a35deb2ca6afdef5dcce55c6ca" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; digital_dvbt_ofdm_frame_sink::d_dfe</definition>
+        <argsstring></argsstring>
+        <name>d_dfe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="84" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a7d18ee72805e28d16debbe2440745c5a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::d_nbits</definition>
+        <argsstring></argsstring>
+        <name>d_nbits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="85" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1aafe2e54da592a80402cc832073a4c73b" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char digital_dvbt_ofdm_frame_sink::d_resid</definition>
+        <argsstring></argsstring>
+        <name>d_resid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="87" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a975f1715bfc68dbaf2ec35d85a1d990a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::d_nresid</definition>
+        <argsstring></argsstring>
+        <name>d_nresid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="88" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a8709ae3d02e124361ee43c90bb0e3feb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float digital_dvbt_ofdm_frame_sink::d_phase</definition>
+        <argsstring></argsstring>
+        <name>d_phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="89" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a2e03df8b1ef752108003100e197121b1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float digital_dvbt_ofdm_frame_sink::d_freq</definition>
+        <argsstring></argsstring>
+        <name>d_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="90" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1acfeffdcd09945e2ca567a553d4fb266e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float digital_dvbt_ofdm_frame_sink::d_phase_gain</definition>
+        <argsstring></argsstring>
+        <name>d_phase_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="91" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a6fbfe4fa14c7b89423bc630bd52263ef" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float digital_dvbt_ofdm_frame_sink::d_freq_gain</definition>
+        <argsstring></argsstring>
+        <name>d_freq_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="92" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1aa3fa4a7767c806eebe05259a12eb4f7a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float digital_dvbt_ofdm_frame_sink::d_eq_gain</definition>
+        <argsstring></argsstring>
+        <name>d_eq_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="93" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdigital__dvbt__ofdm__frame__sink_1a76285852433477122feff3612ae7ea28" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; digital_dvbt_ofdm_frame_sink::d_subcarrier_map</definition>
+        <argsstring></argsstring>
+        <name>d_subcarrier_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="95" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdigital__dvbt__ofdm__frame__sink_1a5ef7e239c5863b59ae3b2f9534c3c6bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="digital__dvbt__ofdm__frame__sink_8h_1a66e9ad1dfa168a4576e3fa7a543275ce" kindref="member">digital_dvbt_ofdm_frame_sink_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_dvbt_ofdm_frame_sink_sptr digital_make_dvbt_ofdm_frame_sink</definition>
+        <argsstring>(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</argsstring>
+        <name>digital_make_dvbt_ofdm_frame_sink</name>
+        <param>
+          <type>const std::vector&lt; gr_complex &gt; &amp;</type>
+          <declname>sym_position</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>sym_value_out</declname>
+        </param>
+        <param>
+          <type>gr_msg_queue_sptr</type>
+          <declname>target_queue</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>occupied_tones</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>phase_gain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>freq_gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a9ebaea78e8a6fa40e97501390dd47c50" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink</definition>
+        <argsstring>(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</argsstring>
+        <name>digital_dvbt_ofdm_frame_sink</name>
+        <param>
+          <type>const std::vector&lt; gr_complex &gt; &amp;</type>
+          <declname>sym_position</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>sym_value_out</declname>
+        </param>
+        <param>
+          <type>gr_msg_queue_sptr</type>
+          <declname>target_queue</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>occupied_tones</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>phase_gain</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>freq_gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a4657733ffabe1b6ae7f9a67861ebfe50" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void digital_dvbt_ofdm_frame_sink::enter_search</definition>
+        <argsstring>()</argsstring>
+        <name>enter_search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1acf464edac6df344c95a1ff19eed9e89b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void digital_dvbt_ofdm_frame_sink::enter_have_sync</definition>
+        <argsstring>()</argsstring>
+        <name>enter_have_sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1ad5dabb1846e1b7a6a615d0de70276aac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void digital_dvbt_ofdm_frame_sink::enter_have_header</definition>
+        <argsstring>()</argsstring>
+        <name>enter_have_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a3438724fc69c68110c3814898f15d600" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool digital_dvbt_ofdm_frame_sink::header_ok</definition>
+        <argsstring>()</argsstring>
+        <name>header_ok</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="108" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1ae3142bd1ed65df6a2605f7fbb7c1cca6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char digital_dvbt_ofdm_frame_sink::slicer</definition>
+        <argsstring>(const gr_complex x)</argsstring>
+        <name>slicer</name>
+        <param>
+          <type>const gr_complex</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a23a92a98bc61f83cf195b76e9357af8e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::demapper</definition>
+        <argsstring>(const gr_complex *in, unsigned char *out)</argsstring>
+        <name>demapper</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a994d9fc504861b8f4a1bb5e4d141e005" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool digital_dvbt_ofdm_frame_sink::set_sym_value_out</definition>
+        <argsstring>(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out)</argsstring>
+        <name>set_sym_value_out</name>
+        <param>
+          <type>const std::vector&lt; gr_complex &gt; &amp;</type>
+          <declname>sym_position</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>sym_value_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a55c7b5008f7761ae1bbfc238349bfd65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>digital_dvbt_ofdm_frame_sink::~digital_dvbt_ofdm_frame_sink</definition>
+        <argsstring>()</argsstring>
+        <name>~digital_dvbt_ofdm_frame_sink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1aa44bec172776f698897588e589e53942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int digital_dvbt_ofdm_frame_sink::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0&apos;s and 1&apos;s, packs them into packets, and sends to to a message queue sink.</para><para>NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="51" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="50" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ac8f8a1a9c786f8e4b4a39669c81bdfa8" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_byte_offset</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a1046218e9391933952af1dbd4504683d" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_bytes_out</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1afd323c94f7097421e9c7d8475d235dc2" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_derotated_output</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a465f79a35deb2ca6afdef5dcce55c6ca" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_dfe</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1aa3fa4a7767c806eebe05259a12eb4f7a" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_eq_gain</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a2e03df8b1ef752108003100e197121b1" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_freq</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a6fbfe4fa14c7b89423bc630bd52263ef" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_freq_gain</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ad80e4c27146fa1f84b964bf8a1118bf9" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_header</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1aa47157e77a7aa9db5e0cff63947d7ac4" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_headerbytelen_cnt</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a7d18ee72805e28d16debbe2440745c5a" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_nbits</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a975f1715bfc68dbaf2ec35d85a1d990a" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_nresid</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a7bdafde7c6e239fc944e1e1d99185834" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_occupied_carriers</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a5ac8d08a127fa821abfa24c489a21f59" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_packet</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1adb7d1ea919836c02fd5ab51714e08c82" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_packet_whitener_offset</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a87d903b85f92b9f5dd409fb750ffceb4" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_packetlen</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ab6ac502b8e250bd9ff07152fb33ed6d9" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_packetlen_cnt</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ad13480eaf924681ca9782426105e37d8" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_partial_byte</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a8709ae3d02e124361ee43c90bb0e3feb" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_phase</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1acfeffdcd09945e2ca567a553d4fb266e" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_phase_gain</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1aafe2e54da592a80402cc832073a4c73b" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_resid</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1acb237d12c49fa5a5f27064cc03957e80" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_state</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a76285852433477122feff3612ae7ea28" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_subcarrier_map</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ae16fc06996e61eef661056b8b1c9f7e6" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_sym_position</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a801977c50a99b9896b1ecda6e836861a" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_sym_value_out</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a67dcb2da0478f43fc6bf7a60be581af1" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>d_target_queue</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a23a92a98bc61f83cf195b76e9357af8e" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>demapper</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a9ebaea78e8a6fa40e97501390dd47c50" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>digital_dvbt_ofdm_frame_sink</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a5ef7e239c5863b59ae3b2f9534c3c6bd" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>digital_make_dvbt_ofdm_frame_sink</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ad5dabb1846e1b7a6a615d0de70276aac" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>enter_have_header</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1acf464edac6df344c95a1ff19eed9e89b" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>enter_have_sync</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a4657733ffabe1b6ae7f9a67861ebfe50" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>enter_search</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a3438724fc69c68110c3814898f15d600" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>header_ok</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ae67faef31313a772e2d082a749cd9b4e" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>HEADERBYTELEN</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a087341291886f50d061aaee79161f020" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>MAX_PKT_LEN</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a994d9fc504861b8f4a1bb5e4d141e005" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>set_sym_value_out</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1ae3142bd1ed65df6a2605f7fbb7c1cca6" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>slicer</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a32a8981fc8afa14e9d7ca4fb944737c9" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>STATE_HAVE_HEADER</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a5b8bc64459e98e70a30b8075e5c199c0" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>STATE_HAVE_SYNC</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a8f2fb99e37feaa66a459d1a4d7d7b90d" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>STATE_SYNC_SEARCH</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>state_t</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1aa44bec172776f698897588e589e53942" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>work</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1a55c7b5008f7761ae1bbfc238349bfd65" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>~digital_dvbt_ofdm_frame_sink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

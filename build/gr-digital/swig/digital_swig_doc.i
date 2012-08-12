@@ -504,6 +504,82 @@ The input of this block are symbols from an M-ary alphabet +/-1, +/-3, ..., +/-(
 
 Params: (type, h, samples_per_sym, L, beta)"
 
+%feature("docstring") digital_dvbt_ofdm_frame_sink "Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0's and 1's, packs them into packets, and sends to to a message queue sink.
+
+NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type."
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink "
+
+Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::enter_search "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::enter_have_sync "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::enter_have_header "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::header_ok "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::slicer "
+
+Params: (x)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::demapper "
+
+Params: (in, out)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::set_sym_value_out "
+
+Params: (sym_position, sym_value_out)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::~digital_dvbt_ofdm_frame_sink "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::work "
+
+Params: (noutput_items, input_items, output_items)"
+
+%feature("docstring") digital_make_dvbt_ofdm_frame_sink "Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0's and 1's, packs them into packets, and sends to to a message queue sink.
+
+NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.
+
+Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv "Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping."
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv "
+
+Params: (constellation, msgq_limit, occupied_carriers, fft_length)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::randsym "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::~digital_dvbt_ofdm_mapper_bcv "
+
+Params: ()"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::msgq "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::work "
+
+Params: (noutput_items, input_items, output_items)"
+
+%feature("docstring") digital_make_dvbt_ofdm_mapper_bcv "Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping.
+
+Params: (constellation, msgq_limit, occupied_carriers, fft_length)"
+
 %feature("docstring") digital_fll_band_edge_cc "Frequency Lock Loop using band-edge filters.
 
 The frequency lock loop derives a band-edge filter that covers the upper and lower bandwidths of a digitally-modulated signal. The bandwidth range is determined by the excess bandwidth (e.g., rolloff factor) of the modulated signal. The placement in frequency of the band-edges is determined by the oversampling ratio (number of samples per symbol) and the excess bandwidth. The size of the filters should be fairly large so as to average over a number of symbols.
@@ -1554,25 +1630,25 @@ Params: (NONE)"
 
 %feature("docstring") std::istringstream "STL class."
 
+%feature("docstring") std::map::iterator "STL iterator class."
+
 %feature("docstring") std::basic_string::iterator "STL iterator class."
 
 %feature("docstring") std::set::iterator "STL iterator class."
 
 %feature("docstring") std::multiset::iterator "STL iterator class."
 
-%feature("docstring") std::vector::iterator "STL iterator class."
-
-%feature("docstring") std::map::iterator "STL iterator class."
-
 %feature("docstring") std::string::iterator "STL iterator class."
 
-%feature("docstring") std::list::iterator "STL iterator class."
+%feature("docstring") std::multimap::iterator "STL iterator class."
 
 %feature("docstring") std::wstring::iterator "STL iterator class."
 
+%feature("docstring") std::vector::iterator "STL iterator class."
+
 %feature("docstring") std::deque::iterator "STL iterator class."
 
-%feature("docstring") std::multimap::iterator "STL iterator class."
+%feature("docstring") std::list::iterator "STL iterator class."
 
 %feature("docstring") std::length_error "STL class."
 
@@ -1602,25 +1678,25 @@ Params: (NONE)"
 
 %feature("docstring") std::range_error "STL class."
 
-%feature("docstring") std::vector::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::string::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::map::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
+%feature("docstring") std::string::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::list::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::vector::reverse_iterator "STL iterator class."
+
 %feature("docstring") std::set::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::list::reverse_iterator "STL iterator class."
+%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 

@@ -61,6 +61,8 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital
     "/home/katsikas/gnuradio/gr-digital/include/digital_probe_mpsk_snr_est_c.h"
     "/home/katsikas/gnuradio/gr-digital/include/digital_gmskmod_bc.h"
     "/home/katsikas/gnuradio/gr-digital/include/digital_cpmmod_bc.h"
+    "/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h"
+    "/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "digital_devel")
 

@@ -7,50 +7,20 @@
     <includes refid="digital__constellation_8h" local="no">digital_constellation.h</includes>
     <includes local="no">vector</includes>
     <incdepgraph>
-      <node id="68">
+      <node id="70">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="75">
+      <node id="77">
         <label>digital_metric_type.h</label>
         <link refid="digital__metric__type_8h"/>
       </node>
-      <node id="73">
+      <node id="75">
         <label>gr_complex.h</label>
       </node>
-      <node id="66">
+      <node id="68">
         <label>/home/katsikas/gnuradio/gr-digital/include/digital_constellation_decoder_cb.h</label>
         <link refid="digital_constellation_decoder_cb.h"/>
-        <childnode refid="67" relation="include">
-        </childnode>
         <childnode refid="69" relation="include">
-        </childnode>
-        <childnode refid="70" relation="include">
-        </childnode>
-        <childnode refid="71" relation="include">
-        </childnode>
-      </node>
-      <node id="69">
-        <label>gr_block.h</label>
-      </node>
-      <node id="71">
-        <label>vector</label>
-      </node>
-      <node id="74">
-        <label>boost/enable_shared_from_this.hpp</label>
-      </node>
-      <node id="72">
-        <label>math.h</label>
-      </node>
-      <node id="67">
-        <label>digital_api.h</label>
-        <link refid="digital__api_8h"/>
-        <childnode refid="68" relation="include">
-        </childnode>
-      </node>
-      <node id="70">
-        <label>digital_constellation.h</label>
-        <link refid="digital__constellation_8h"/>
-        <childnode refid="67" relation="include">
         </childnode>
         <childnode refid="71" relation="include">
         </childnode>
@@ -58,9 +28,39 @@
         </childnode>
         <childnode refid="73" relation="include">
         </childnode>
+      </node>
+      <node id="71">
+        <label>gr_block.h</label>
+      </node>
+      <node id="73">
+        <label>vector</label>
+      </node>
+      <node id="76">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="74">
+        <label>math.h</label>
+      </node>
+      <node id="69">
+        <label>digital_api.h</label>
+        <link refid="digital__api_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>digital_constellation.h</label>
+        <link refid="digital__constellation_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
         <childnode refid="74" relation="include">
         </childnode>
         <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
         </childnode>
       </node>
     </incdepgraph>

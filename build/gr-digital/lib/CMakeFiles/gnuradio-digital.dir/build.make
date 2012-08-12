@@ -621,6 +621,52 @@ gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o.provides: 
 
 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o.provides.build: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o
 
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/flags.make
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o: ../gr-digital/lib/digital_dvbt_ofdm_mapper_bcv.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o"
+	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o -c /home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_mapper_bcv.cc
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.i"
+	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_mapper_bcv.cc > CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.i
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.s"
+	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_mapper_bcv.cc -o CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.s
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.requires:
+.PHONY : gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.requires
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.provides: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.requires
+	$(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.provides.build
+.PHONY : gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.provides
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.provides.build: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/flags.make
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o: ../gr-digital/lib/digital_dvbt_ofdm_frame_sink.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o"
+	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o -c /home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_frame_sink.cc
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.i"
+	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_frame_sink.cc > CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.i
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.s"
+	cd /home/katsikas/gnuradio/build/gr-digital/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_frame_sink.cc -o CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.s
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.requires:
+.PHONY : gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.requires
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.provides: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.requires
+	$(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.provides.build
+.PHONY : gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.provides
+
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.provides.build: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o
+
 # Object files for target gnuradio-digital
 gnuradio__digital_OBJECTS = \
 "CMakeFiles/gnuradio-digital.dir/digital_impl_mpsk_snr_est.cc.o" \
@@ -647,7 +693,9 @@ gnuradio__digital_OBJECTS = \
 "CMakeFiles/gnuradio-digital.dir/digital_ofdm_sampler.cc.o" \
 "CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.o" \
 "CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.o" \
-"CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o"
+"CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o" \
+"CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o" \
+"CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o"
 
 # External object files for target gnuradio-digital
 gnuradio__digital_EXTERNAL_OBJECTS =
@@ -677,6 +725,8 @@ gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: gr-digital/lib/CMakeFiles/
 gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.o
 gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.o
 gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o
+gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o
+gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o
 gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
 gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: /usr/lib/libboost_date_time-mt.so
 gr-digital/lib/libgnuradio-digital-3.6.1git.so.0.0.0: /usr/lib/libboost_program_options-mt.so
@@ -729,6 +779,8 @@ gr-digital/lib/CMakeFiles/gnuradio-digital.dir/requires: gr-digital/lib/CMakeFil
 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/requires: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.o.requires
 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/requires: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.o.requires
 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/requires: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o.requires
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/requires: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o.requires
+gr-digital/lib/CMakeFiles/gnuradio-digital.dir/requires: gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o.requires
 .PHONY : gr-digital/lib/CMakeFiles/gnuradio-digital.dir/requires
 
 gr-digital/lib/CMakeFiles/gnuradio-digital.dir/clean:

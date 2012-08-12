@@ -60,6 +60,9 @@ enum snr_est_type_t {
 #include "digital_probe_mpsk_snr_est_c.h"
 #include "digital_cpmmod_bc.h"
 #include "digital_gmskmod_bc.h"
+#include "digital_dvbt_ofdm_mapper_bcv.h"
+#include "digital_dvbt_ofdm_frame_sink.h"
+
 %}
 
 %include "digital_binary_slicer_fb.i"
@@ -86,3 +89,6 @@ enum snr_est_type_t {
 %include "digital_probe_mpsk_snr_est_c.i"
 %include "digital_cpmmod_bc.i"
 %include "digital_gmskmod_bc.i"
+%include "digital_dvbt_ofdm_mapper_bcv.i"
+%include "digital_dvbt_ofdm_frame_sink.i"
+

@@ -24,6 +24,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/gnuradio-digital.dir/digital_probe_mpsk_snr_est_c.cc.o"
   "CMakeFiles/gnuradio-digital.dir/digital_gmskmod_bc.cc.o"
   "CMakeFiles/gnuradio-digital.dir/digital_cpmmod_bc.cc.o"
+  "CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o"
+  "CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o"
   "libgnuradio-digital-3.6.1git.pdb"
   "libgnuradio-digital-3.6.1git.so"
   "libgnuradio-digital-3.6.1git.so.0.0.0"

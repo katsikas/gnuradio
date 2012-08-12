@@ -109,11 +109,15 @@ digital_ofdm_mapper_bcv::digital_ofdm_mapper_bcv (const std::vector<gr_complex> 
     }
   }
 
+  for(i=0;i<d_subcarrier_map.size();i++){
+        printf("s[%d] = %d ",i,d_subcarrier_map[i]);
+  }
+
   // make sure we stay in the limit currently imposed by the occupied_carriers
   if(d_subcarrier_map.size() > d_occupied_carriers) {
     throw std::invalid_argument("digital_ofdm_mapper_bcv: subcarriers allocated exceeds size of occupied carriers");
   }
-  
+
   d_nbits = (unsigned long)ceil(log10(float(d_constellation.size())) / log10(2.0));
 }
 
@@ -179,6 +183,8 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
       bits = d_resid;
 
       out[d_subcarrier_map[i]] = d_constellation[bits];
+      //printf("if constel = %.4f %.4fj on carrier %d \n",
+ 	//	d_constellation[bits].real(),d_constellation[bits].imag(),d_subcarrier_map[i]);
       i++;
 
       d_bit_offset += d_nresid;
@@ -192,8 +198,10 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
 	// take the nbits number of bits at a time from the byte to add to the symbol
 	bits = ((1 << d_nbits)-1) & (d_msgbytes >> d_bit_offset);
 	d_bit_offset += d_nbits;
-	
+
 	out[d_subcarrier_map[i]] = d_constellation[bits];
+	//printf("else constel = %.4f %.4fj on carrier %d \n",
+         //       d_constellation[bits].real(),d_constellation[bits].imag(),d_subcarrier_map[i]);
 	i++;
       }
       else {  // if we can't fit nbits, store them for the next 
@@ -213,8 +221,13 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
 
 	//printf("mod bit(r): %x   resid: %x   nresid: %d    bit_offset: %d\n", 
          //  bits, d_resid, d_nresid, d_bit_offset);
-
+	if(i > 300)
+    {
+		//exit(-1);
+	}
   }
+  
+  
 
   // Ran out of data to put in symbol
   if (d_msg_offset == d_msg->length()) {
@@ -229,6 +242,8 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
     while(i < d_subcarrier_map.size()) {   // finish filling out the symbol
 	//printf("edw??? %d ",i);
       out[d_subcarrier_map[i]] = d_constellation[randsym()];
+      //printf("rand constel = %.4f %.4fj on carrier %d \n",
+        //       out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag(),d_subcarrier_map[i]);
 
       i++;
     }
@@ -237,6 +252,7 @@ digital_ofdm_mapper_bcv::work(int noutput_items,
       d_eof = true;
     d_msg.reset();   			// finished packet, free message
     assert(d_bit_offset == 0);
+    
   }
 
   if (out_flag)

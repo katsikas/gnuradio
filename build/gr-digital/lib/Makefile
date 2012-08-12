@@ -444,6 +444,54 @@ digital_crc32.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_crc32.cc.s
 .PHONY : digital_crc32.cc.s
 
+digital_dvbt_ofdm_frame_sink.o: digital_dvbt_ofdm_frame_sink.cc.o
+.PHONY : digital_dvbt_ofdm_frame_sink.o
+
+# target to build an object file
+digital_dvbt_ofdm_frame_sink.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.o
+.PHONY : digital_dvbt_ofdm_frame_sink.cc.o
+
+digital_dvbt_ofdm_frame_sink.i: digital_dvbt_ofdm_frame_sink.cc.i
+.PHONY : digital_dvbt_ofdm_frame_sink.i
+
+# target to preprocess a source file
+digital_dvbt_ofdm_frame_sink.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.i
+.PHONY : digital_dvbt_ofdm_frame_sink.cc.i
+
+digital_dvbt_ofdm_frame_sink.s: digital_dvbt_ofdm_frame_sink.cc.s
+.PHONY : digital_dvbt_ofdm_frame_sink.s
+
+# target to generate assembly for a file
+digital_dvbt_ofdm_frame_sink.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_frame_sink.cc.s
+.PHONY : digital_dvbt_ofdm_frame_sink.cc.s
+
+digital_dvbt_ofdm_mapper_bcv.o: digital_dvbt_ofdm_mapper_bcv.cc.o
+.PHONY : digital_dvbt_ofdm_mapper_bcv.o
+
+# target to build an object file
+digital_dvbt_ofdm_mapper_bcv.cc.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.o
+.PHONY : digital_dvbt_ofdm_mapper_bcv.cc.o
+
+digital_dvbt_ofdm_mapper_bcv.i: digital_dvbt_ofdm_mapper_bcv.cc.i
+.PHONY : digital_dvbt_ofdm_mapper_bcv.i
+
+# target to preprocess a source file
+digital_dvbt_ofdm_mapper_bcv.cc.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.i
+.PHONY : digital_dvbt_ofdm_mapper_bcv.cc.i
+
+digital_dvbt_ofdm_mapper_bcv.s: digital_dvbt_ofdm_mapper_bcv.cc.s
+.PHONY : digital_dvbt_ofdm_mapper_bcv.s
+
+# target to generate assembly for a file
+digital_dvbt_ofdm_mapper_bcv.cc.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/digital_dvbt_ofdm_mapper_bcv.cc.s
+.PHONY : digital_dvbt_ofdm_mapper_bcv.cc.s
+
 digital_fll_band_edge_cc.o: digital_fll_band_edge_cc.cc.o
 .PHONY : digital_fll_band_edge_cc.o
 
@@ -829,6 +877,12 @@ help:
 	@echo "... digital_crc32.o"
 	@echo "... digital_crc32.i"
 	@echo "... digital_crc32.s"
+	@echo "... digital_dvbt_ofdm_frame_sink.o"
+	@echo "... digital_dvbt_ofdm_frame_sink.i"
+	@echo "... digital_dvbt_ofdm_frame_sink.s"
+	@echo "... digital_dvbt_ofdm_mapper_bcv.o"
+	@echo "... digital_dvbt_ofdm_mapper_bcv.i"
+	@echo "... digital_dvbt_ofdm_mapper_bcv.s"
 	@echo "... digital_fll_band_edge_cc.o"
 	@echo "... digital_fll_band_edge_cc.i"
 	@echo "... digital_fll_band_edge_cc.s"

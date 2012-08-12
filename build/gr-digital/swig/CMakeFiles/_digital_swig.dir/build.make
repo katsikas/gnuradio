@@ -83,6 +83,7 @@ gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnura
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_fll_band_edge_cc.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_correlate_access_code_bb.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_mpsk_receiver_cc.i
+gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_dvbt_ofdm_frame_sink.i
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_binary_slicer_fb.i
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_lms_dd_equalizer_cc.i
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_cma_equalizer_cc.h
@@ -110,6 +111,7 @@ gr-digital/swig/digital_swigPYTHON_wrap.cxx: /usr/include/boost/smart_ptr/enable
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_ofdm_mapper_bcv.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_cpmmod_bc.i
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_costas_loop_cc.h
+gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_dvbt_ofdm_mapper_bcv.i
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/filter/gr_adaptive_fir_ccc.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_crc32.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/general/gr_frequency_modulator_fc.h
@@ -141,9 +143,11 @@ gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_binar
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_crc32.i
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_mpsk_receiver_cc.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: gnuradio-core/src/lib/filter/gr_interp_fir_filter_fff.h
+gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_dvbt_ofdm_frame_sink.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_msg_handler.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_mpsk_snr_est_cc.i
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: /usr/include/math.h
+gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/include/digital_kurtotic_equalizer_cc.h
 gr-digital/swig/digital_swigPYTHON_wrap.cxx: ../gr-digital/swig/digital_ofdm_cyclic_prefixer.i
@@ -190,9 +194,11 @@ gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_cpmmod
 gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_constellation_receiver_cb.h
 gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_costas_loop_cc.h
 gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_impl_mpsk_snr_est.h
+gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_dvbt_ofdm_frame_sink.h
 gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_constellation_decoder_cb.h
 gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_clock_recovery_mm_cc.h
 gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_constellation.h
+gr-digital/swig/digital_swig_doc.i: ../gr-digital/swig/../include/digital_dvbt_ofdm_mapper_bcv.h
 gr-digital/swig/digital_swig_doc.i: gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating digital_swig_doc.i"
@@ -229,9 +235,11 @@ gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../
 gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_constellation_receiver_cb.h
 gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_costas_loop_cc.h
 gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_impl_mpsk_snr_est.h
+gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_dvbt_ofdm_frame_sink.h
 gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_constellation_decoder_cb.h
 gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_clock_recovery_mm_cc.h
 gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_constellation.h
+gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: ../gr-digital/swig/../include/digital_dvbt_ofdm_mapper_bcv.h
 gr-digital/swig/digital_swig_doc_swig_docs/xml/index.xml: gr-digital/swig/_digital_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for digital_swig_doc docs"

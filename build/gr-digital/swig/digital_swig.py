@@ -5257,5 +5257,214 @@ def gmskmod_bc(samples_per_sym = 2, bt = 0.3, L = 4):
     Params: (samples_per_sym, bt, L)
     """
   return _digital_swig.gmskmod_bc(samples_per_sym, bt, L)
+class digital_dvbt_ofdm_mapper_bcv_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(digital_dvbt_ofdm_mapper_bcv)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(self) -> digital_dvbt_ofdm_mapper_bcv_sptr
+        __init__(self,  p) -> digital_dvbt_ofdm_mapper_bcv_sptr
+        """
+        this = _digital_swig.new_digital_dvbt_ofdm_mapper_bcv_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(self)"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr___deref__(self)
+
+    __swig_destroy__ = _digital_swig.delete_digital_dvbt_ofdm_mapper_bcv_sptr
+    __del__ = lambda self : None;
+    def msgq(self):
+        """
+        msgq(self) -> gr_msg_queue_sptr
+
+        Params: (NONE)
+        """
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_msgq(self)
+
+    def work(self, *args, **kwargs):
+        """
+        work(self, int noutput_items, gr_vector_const_void_star input_items, 
+            gr_vector_void_star output_items) -> int
+
+        Params: (noutput_items, input_items, output_items)
+        """
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_work(self, *args, **kwargs)
+
+    def history(self):
+        """history(self) -> unsigned int"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_history(self)
+
+    def output_multiple(self):
+        """output_multiple(self) -> int"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(self) -> double"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_relative_rate(self)
+
+    def start(self):
+        """start(self) -> bool"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_start(self)
+
+    def stop(self):
+        """stop(self) -> bool"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(self, unsigned int which_input) -> uint64_t"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(self, unsigned int which_output) -> uint64_t"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_nitems_written(self, *args, **kwargs)
+
+    def detail(self):
+        """detail(self) -> gr_block_detail_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_detail(self)
+
+    def set_detail(self, *args, **kwargs):
+        """set_detail(self, gr_block_detail_sptr detail)"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_set_detail(self, *args, **kwargs)
+
+    def name(self):
+        """name(self) -> string"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_name(self)
+
+    def input_signature(self):
+        """input_signature(self) -> gr_io_signature_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(self) -> gr_io_signature_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(self) -> long"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(self) -> gr_basic_block_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(self, int ninputs, int noutputs) -> bool"""
+        return _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_check_topology(self, *args, **kwargs)
+
+digital_dvbt_ofdm_mapper_bcv_sptr_swigregister = _digital_swig.digital_dvbt_ofdm_mapper_bcv_sptr_swigregister
+digital_dvbt_ofdm_mapper_bcv_sptr_swigregister(digital_dvbt_ofdm_mapper_bcv_sptr)
+
+digital_dvbt_ofdm_mapper_bcv_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
+
+
+def dvbt_ofdm_mapper_bcv(*args, **kwargs):
+  """
+    dvbt_ofdm_mapper_bcv(gr_complex_vector constellation, unsigned int msgq_limit, 
+        unsigned int bits_per_symbol, unsigned int fft_length) -> digital_dvbt_ofdm_mapper_bcv_sptr
+
+    Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping.
+
+    Params: (constellation, msgq_limit, occupied_carriers, fft_length)
+    """
+  return _digital_swig.dvbt_ofdm_mapper_bcv(*args, **kwargs)
+class digital_dvbt_ofdm_frame_sink_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(digital_dvbt_ofdm_frame_sink)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(self) -> digital_dvbt_ofdm_frame_sink_sptr
+        __init__(self,  p) -> digital_dvbt_ofdm_frame_sink_sptr
+        """
+        this = _digital_swig.new_digital_dvbt_ofdm_frame_sink_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(self)"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr___deref__(self)
+
+    __swig_destroy__ = _digital_swig.delete_digital_dvbt_ofdm_frame_sink_sptr
+    __del__ = lambda self : None;
+    def history(self):
+        """history(self) -> unsigned int"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_history(self)
+
+    def output_multiple(self):
+        """output_multiple(self) -> int"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(self) -> double"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_relative_rate(self)
+
+    def start(self):
+        """start(self) -> bool"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_start(self)
+
+    def stop(self):
+        """stop(self) -> bool"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(self, unsigned int which_input) -> uint64_t"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(self, unsigned int which_output) -> uint64_t"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_nitems_written(self, *args, **kwargs)
+
+    def detail(self):
+        """detail(self) -> gr_block_detail_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_detail(self)
+
+    def set_detail(self, *args, **kwargs):
+        """set_detail(self, gr_block_detail_sptr detail)"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_set_detail(self, *args, **kwargs)
+
+    def name(self):
+        """name(self) -> string"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_name(self)
+
+    def input_signature(self):
+        """input_signature(self) -> gr_io_signature_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(self) -> gr_io_signature_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(self) -> long"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(self) -> gr_basic_block_sptr"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(self, int ninputs, int noutputs) -> bool"""
+        return _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_check_topology(self, *args, **kwargs)
+
+digital_dvbt_ofdm_frame_sink_sptr_swigregister = _digital_swig.digital_dvbt_ofdm_frame_sink_sptr_swigregister
+digital_dvbt_ofdm_frame_sink_sptr_swigregister(digital_dvbt_ofdm_frame_sink_sptr)
+
+digital_dvbt_ofdm_frame_sink_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
+
+
+def dvbt_ofdm_frame_sink(*args, **kwargs):
+  """
+    dvbt_ofdm_frame_sink(gr_complex_vector sym_position, __dummy_0__ sym_value_out, 
+        gr_msg_queue_sptr target_queue, unsigned int occupied_tones, 
+        float phase_gain = 0.25, 
+        float freq_gain = 0.25*0.25/4) -> digital_dvbt_ofdm_frame_sink_sptr
+
+    Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0's and 1's, packs them into packets, and sends to to a message queue sink.
+
+    NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.
+
+    Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)
+    """
+  return _digital_swig.dvbt_ofdm_frame_sink(*args, **kwargs)
 
 

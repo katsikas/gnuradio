@@ -57,6 +57,8 @@ list(APPEND gr_digital_sources
     digital_probe_mpsk_snr_est_c.cc
     digital_gmskmod_bc.cc
     digital_cpmmod_bc.cc
+    digital_dvbt_ofdm_mapper_bcv.cc
+    digital_dvbt_ofdm_frame_sink.cc
 )
 
 list(APPEND digital_libs

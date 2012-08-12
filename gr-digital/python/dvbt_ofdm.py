@@ -105,7 +105,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
             rotated_const = map(lambda pt: pt / (math.sqrt(42)), constel.points())
         
 	print rotated_const
-        self._pkt_input = digital_swig.ofdm_mapper_bcv(rotated_const,
+        self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,
                                                        msgq_limit,
                                                        options.occupied_tones,
                                                        options.fft_length)
@@ -257,7 +257,7 @@ class dvbt_ofdm_demod(gr.hier_block2):
         phgain = 0.25
         frgain = phgain*phgain / 4.0
  
-        self.ofdm_demod = digital_swig.ofdm_frame_sink(rotated_const, range(arity),
+        self.ofdm_demod = digital_swig.dvbt_ofdm_frame_sink(rotated_const, range(arity),
                                                        self._rcvd_pktq,
                                                        self._occupied_tones,
                                                        phgain, frgain)

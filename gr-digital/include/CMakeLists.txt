@@ -48,6 +48,9 @@ install(FILES
     digital_probe_mpsk_snr_est_c.h
     digital_gmskmod_bc.h
     digital_cpmmod_bc.h
+    digital_dvbt_ofdm_mapper_bcv.h
+    digital_dvbt_ofdm_frame_sink.h
+
     DESTINATION ${GR_INCLUDE_DIR}/gnuradio
     COMPONENT "digital_devel"
 )
