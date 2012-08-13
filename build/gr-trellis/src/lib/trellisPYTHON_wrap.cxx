@@ -2943,171 +2943,169 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_allocator_type swig_types[0]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_16qam_t swig_types[1]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_64qam_t swig_types[2]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_8psk_t swig_types[3]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_bpsk_t swig_types[4]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_calcdist_t swig_types[5]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dqpsk_t swig_types[6]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t swig_types[7]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_psk_t swig_types[8]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_qpsk_t swig_types[9]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_rect_t swig_types[10]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_t swig_types[11]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[12]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[13]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[14]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[15]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[16]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[17]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[18]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[19]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[20]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[21]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[22]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[23]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_constellation_metrics_cf_t swig_types[24]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_bb_t swig_types[25]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_bi_t swig_types[26]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_bs_t swig_types[27]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_ii_t swig_types[28]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_si_t swig_types[29]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_ss_t swig_types[30]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_c_t swig_types[31]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_f_t swig_types[32]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_i_t swig_types[33]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_s_t swig_types[34]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_b_t swig_types[35]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_cb_t swig_types[36]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_ci_t swig_types[37]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_cs_t swig_types[38]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_fb_t swig_types[39]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_fi_t swig_types[40]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_fs_t swig_types[41]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_i_t swig_types[42]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_s_t swig_types[43]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_bb_t swig_types[44]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_bi_t swig_types[45]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_bs_t swig_types[46]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_ii_t swig_types[47]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_si_t swig_types[48]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_ss_t swig_types[49]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_permutation_t swig_types[50]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_b_t swig_types[51]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_cb_t swig_types[52]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_ci_t swig_types[53]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_cs_t swig_types[54]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_fb_t swig_types[55]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_fi_t swig_types[56]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_fs_t swig_types[57]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_i_t swig_types[58]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_s_t swig_types[59]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_bb_t swig_types[60]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_bi_t swig_types[61]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_bs_t swig_types[62]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_ii_t swig_types[63]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_si_t swig_types[64]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_ss_t swig_types[65]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_siso_combined_f_t swig_types[66]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_siso_f_t swig_types[67]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_b_t swig_types[68]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_cb_t swig_types[69]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ci_t swig_types[70]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_cs_t swig_types[71]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_fb_t swig_types[72]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_fi_t swig_types[73]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_fs_t swig_types[74]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ib_t swig_types[75]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ii_t swig_types[76]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_is_t swig_types[77]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_sb_t swig_types[78]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_si_t swig_types[79]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ss_t swig_types[80]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_i_t swig_types[81]
-#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_s_t swig_types[82]
-#define SWIGTYPE_p_char swig_types[83]
-#define SWIGTYPE_p_difference_type swig_types[84]
-#define SWIGTYPE_p_fsm swig_types[85]
-#define SWIGTYPE_p_gr_basic_block swig_types[86]
-#define SWIGTYPE_p_gr_block swig_types[87]
-#define SWIGTYPE_p_gr_hier_block2 swig_types[88]
-#define SWIGTYPE_p_gr_sync_block swig_types[89]
-#define SWIGTYPE_p_gr_sync_decimator swig_types[90]
-#define SWIGTYPE_p_gr_sync_interpolator swig_types[91]
-#define SWIGTYPE_p_gr_top_block swig_types[92]
-#define SWIGTYPE_p_gruel__rt_status_t swig_types[93]
-#define SWIGTYPE_p_interleaver swig_types[94]
-#define SWIGTYPE_p_long_long swig_types[95]
-#define SWIGTYPE_p_size_type swig_types[96]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[97]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[98]
-#define SWIGTYPE_p_std__invalid_argument swig_types[99]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[100]
-#define SWIGTYPE_p_trellis_constellation_metrics_cf swig_types[101]
-#define SWIGTYPE_p_trellis_encoder_bb swig_types[102]
-#define SWIGTYPE_p_trellis_encoder_bi swig_types[103]
-#define SWIGTYPE_p_trellis_encoder_bs swig_types[104]
-#define SWIGTYPE_p_trellis_encoder_ii swig_types[105]
-#define SWIGTYPE_p_trellis_encoder_si swig_types[106]
-#define SWIGTYPE_p_trellis_encoder_ss swig_types[107]
-#define SWIGTYPE_p_trellis_metric_type_t swig_types[108]
-#define SWIGTYPE_p_trellis_metrics_c swig_types[109]
-#define SWIGTYPE_p_trellis_metrics_f swig_types[110]
-#define SWIGTYPE_p_trellis_metrics_i swig_types[111]
-#define SWIGTYPE_p_trellis_metrics_s swig_types[112]
-#define SWIGTYPE_p_trellis_pccc_decoder_b swig_types[113]
-#define SWIGTYPE_p_trellis_pccc_decoder_combined_cb swig_types[114]
-#define SWIGTYPE_p_trellis_pccc_decoder_combined_ci swig_types[115]
-#define SWIGTYPE_p_trellis_pccc_decoder_combined_cs swig_types[116]
-#define SWIGTYPE_p_trellis_pccc_decoder_combined_fb swig_types[117]
-#define SWIGTYPE_p_trellis_pccc_decoder_combined_fi swig_types[118]
-#define SWIGTYPE_p_trellis_pccc_decoder_combined_fs swig_types[119]
-#define SWIGTYPE_p_trellis_pccc_decoder_i swig_types[120]
-#define SWIGTYPE_p_trellis_pccc_decoder_s swig_types[121]
-#define SWIGTYPE_p_trellis_pccc_encoder_bb swig_types[122]
-#define SWIGTYPE_p_trellis_pccc_encoder_bi swig_types[123]
-#define SWIGTYPE_p_trellis_pccc_encoder_bs swig_types[124]
-#define SWIGTYPE_p_trellis_pccc_encoder_ii swig_types[125]
-#define SWIGTYPE_p_trellis_pccc_encoder_si swig_types[126]
-#define SWIGTYPE_p_trellis_pccc_encoder_ss swig_types[127]
-#define SWIGTYPE_p_trellis_permutation swig_types[128]
-#define SWIGTYPE_p_trellis_sccc_decoder_b swig_types[129]
-#define SWIGTYPE_p_trellis_sccc_decoder_combined_cb swig_types[130]
-#define SWIGTYPE_p_trellis_sccc_decoder_combined_ci swig_types[131]
-#define SWIGTYPE_p_trellis_sccc_decoder_combined_cs swig_types[132]
-#define SWIGTYPE_p_trellis_sccc_decoder_combined_fb swig_types[133]
-#define SWIGTYPE_p_trellis_sccc_decoder_combined_fi swig_types[134]
-#define SWIGTYPE_p_trellis_sccc_decoder_combined_fs swig_types[135]
-#define SWIGTYPE_p_trellis_sccc_decoder_i swig_types[136]
-#define SWIGTYPE_p_trellis_sccc_decoder_s swig_types[137]
-#define SWIGTYPE_p_trellis_sccc_encoder_bb swig_types[138]
-#define SWIGTYPE_p_trellis_sccc_encoder_bi swig_types[139]
-#define SWIGTYPE_p_trellis_sccc_encoder_bs swig_types[140]
-#define SWIGTYPE_p_trellis_sccc_encoder_ii swig_types[141]
-#define SWIGTYPE_p_trellis_sccc_encoder_si swig_types[142]
-#define SWIGTYPE_p_trellis_sccc_encoder_ss swig_types[143]
-#define SWIGTYPE_p_trellis_siso_combined_f swig_types[144]
-#define SWIGTYPE_p_trellis_siso_f swig_types[145]
-#define SWIGTYPE_p_trellis_siso_type_t swig_types[146]
-#define SWIGTYPE_p_trellis_viterbi_b swig_types[147]
-#define SWIGTYPE_p_trellis_viterbi_combined_cb swig_types[148]
-#define SWIGTYPE_p_trellis_viterbi_combined_ci swig_types[149]
-#define SWIGTYPE_p_trellis_viterbi_combined_cs swig_types[150]
-#define SWIGTYPE_p_trellis_viterbi_combined_fb swig_types[151]
-#define SWIGTYPE_p_trellis_viterbi_combined_fi swig_types[152]
-#define SWIGTYPE_p_trellis_viterbi_combined_fs swig_types[153]
-#define SWIGTYPE_p_trellis_viterbi_combined_ib swig_types[154]
-#define SWIGTYPE_p_trellis_viterbi_combined_ii swig_types[155]
-#define SWIGTYPE_p_trellis_viterbi_combined_is swig_types[156]
-#define SWIGTYPE_p_trellis_viterbi_combined_sb swig_types[157]
-#define SWIGTYPE_p_trellis_viterbi_combined_si swig_types[158]
-#define SWIGTYPE_p_trellis_viterbi_combined_ss swig_types[159]
-#define SWIGTYPE_p_trellis_viterbi_i swig_types[160]
-#define SWIGTYPE_p_trellis_viterbi_s swig_types[161]
-#define SWIGTYPE_p_unsigned_long_long swig_types[162]
-#define SWIGTYPE_p_value_type swig_types[163]
-static swig_type_info *swig_types[165];
-static swig_module_info swig_module = {swig_types, 164, 0, 0, 0, 0};
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_8psk_t swig_types[1]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_bpsk_t swig_types[2]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_calcdist_t swig_types[3]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dqpsk_t swig_types[4]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t swig_types[5]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_psk_t swig_types[6]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_qpsk_t swig_types[7]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_rect_t swig_types[8]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_t swig_types[9]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[10]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[11]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[12]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[13]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[14]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[15]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[16]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[17]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[18]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[19]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[20]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[21]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_constellation_metrics_cf_t swig_types[22]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_bb_t swig_types[23]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_bi_t swig_types[24]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_bs_t swig_types[25]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_ii_t swig_types[26]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_si_t swig_types[27]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_encoder_ss_t swig_types[28]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_c_t swig_types[29]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_f_t swig_types[30]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_i_t swig_types[31]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_metrics_s_t swig_types[32]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_b_t swig_types[33]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_cb_t swig_types[34]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_ci_t swig_types[35]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_cs_t swig_types[36]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_fb_t swig_types[37]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_fi_t swig_types[38]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_combined_fs_t swig_types[39]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_i_t swig_types[40]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_decoder_s_t swig_types[41]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_bb_t swig_types[42]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_bi_t swig_types[43]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_bs_t swig_types[44]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_ii_t swig_types[45]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_si_t swig_types[46]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_pccc_encoder_ss_t swig_types[47]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_permutation_t swig_types[48]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_b_t swig_types[49]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_cb_t swig_types[50]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_ci_t swig_types[51]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_cs_t swig_types[52]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_fb_t swig_types[53]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_fi_t swig_types[54]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_combined_fs_t swig_types[55]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_i_t swig_types[56]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_decoder_s_t swig_types[57]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_bb_t swig_types[58]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_bi_t swig_types[59]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_bs_t swig_types[60]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_ii_t swig_types[61]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_si_t swig_types[62]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_sccc_encoder_ss_t swig_types[63]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_siso_combined_f_t swig_types[64]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_siso_f_t swig_types[65]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_b_t swig_types[66]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_cb_t swig_types[67]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ci_t swig_types[68]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_cs_t swig_types[69]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_fb_t swig_types[70]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_fi_t swig_types[71]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_fs_t swig_types[72]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ib_t swig_types[73]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ii_t swig_types[74]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_is_t swig_types[75]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_sb_t swig_types[76]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_si_t swig_types[77]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_combined_ss_t swig_types[78]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_i_t swig_types[79]
+#define SWIGTYPE_p_boost__shared_ptrT_trellis_viterbi_s_t swig_types[80]
+#define SWIGTYPE_p_char swig_types[81]
+#define SWIGTYPE_p_difference_type swig_types[82]
+#define SWIGTYPE_p_fsm swig_types[83]
+#define SWIGTYPE_p_gr_basic_block swig_types[84]
+#define SWIGTYPE_p_gr_block swig_types[85]
+#define SWIGTYPE_p_gr_hier_block2 swig_types[86]
+#define SWIGTYPE_p_gr_sync_block swig_types[87]
+#define SWIGTYPE_p_gr_sync_decimator swig_types[88]
+#define SWIGTYPE_p_gr_sync_interpolator swig_types[89]
+#define SWIGTYPE_p_gr_top_block swig_types[90]
+#define SWIGTYPE_p_gruel__rt_status_t swig_types[91]
+#define SWIGTYPE_p_interleaver swig_types[92]
+#define SWIGTYPE_p_long_long swig_types[93]
+#define SWIGTYPE_p_size_type swig_types[94]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[95]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[96]
+#define SWIGTYPE_p_std__invalid_argument swig_types[97]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[98]
+#define SWIGTYPE_p_trellis_constellation_metrics_cf swig_types[99]
+#define SWIGTYPE_p_trellis_encoder_bb swig_types[100]
+#define SWIGTYPE_p_trellis_encoder_bi swig_types[101]
+#define SWIGTYPE_p_trellis_encoder_bs swig_types[102]
+#define SWIGTYPE_p_trellis_encoder_ii swig_types[103]
+#define SWIGTYPE_p_trellis_encoder_si swig_types[104]
+#define SWIGTYPE_p_trellis_encoder_ss swig_types[105]
+#define SWIGTYPE_p_trellis_metric_type_t swig_types[106]
+#define SWIGTYPE_p_trellis_metrics_c swig_types[107]
+#define SWIGTYPE_p_trellis_metrics_f swig_types[108]
+#define SWIGTYPE_p_trellis_metrics_i swig_types[109]
+#define SWIGTYPE_p_trellis_metrics_s swig_types[110]
+#define SWIGTYPE_p_trellis_pccc_decoder_b swig_types[111]
+#define SWIGTYPE_p_trellis_pccc_decoder_combined_cb swig_types[112]
+#define SWIGTYPE_p_trellis_pccc_decoder_combined_ci swig_types[113]
+#define SWIGTYPE_p_trellis_pccc_decoder_combined_cs swig_types[114]
+#define SWIGTYPE_p_trellis_pccc_decoder_combined_fb swig_types[115]
+#define SWIGTYPE_p_trellis_pccc_decoder_combined_fi swig_types[116]
+#define SWIGTYPE_p_trellis_pccc_decoder_combined_fs swig_types[117]
+#define SWIGTYPE_p_trellis_pccc_decoder_i swig_types[118]
+#define SWIGTYPE_p_trellis_pccc_decoder_s swig_types[119]
+#define SWIGTYPE_p_trellis_pccc_encoder_bb swig_types[120]
+#define SWIGTYPE_p_trellis_pccc_encoder_bi swig_types[121]
+#define SWIGTYPE_p_trellis_pccc_encoder_bs swig_types[122]
+#define SWIGTYPE_p_trellis_pccc_encoder_ii swig_types[123]
+#define SWIGTYPE_p_trellis_pccc_encoder_si swig_types[124]
+#define SWIGTYPE_p_trellis_pccc_encoder_ss swig_types[125]
+#define SWIGTYPE_p_trellis_permutation swig_types[126]
+#define SWIGTYPE_p_trellis_sccc_decoder_b swig_types[127]
+#define SWIGTYPE_p_trellis_sccc_decoder_combined_cb swig_types[128]
+#define SWIGTYPE_p_trellis_sccc_decoder_combined_ci swig_types[129]
+#define SWIGTYPE_p_trellis_sccc_decoder_combined_cs swig_types[130]
+#define SWIGTYPE_p_trellis_sccc_decoder_combined_fb swig_types[131]
+#define SWIGTYPE_p_trellis_sccc_decoder_combined_fi swig_types[132]
+#define SWIGTYPE_p_trellis_sccc_decoder_combined_fs swig_types[133]
+#define SWIGTYPE_p_trellis_sccc_decoder_i swig_types[134]
+#define SWIGTYPE_p_trellis_sccc_decoder_s swig_types[135]
+#define SWIGTYPE_p_trellis_sccc_encoder_bb swig_types[136]
+#define SWIGTYPE_p_trellis_sccc_encoder_bi swig_types[137]
+#define SWIGTYPE_p_trellis_sccc_encoder_bs swig_types[138]
+#define SWIGTYPE_p_trellis_sccc_encoder_ii swig_types[139]
+#define SWIGTYPE_p_trellis_sccc_encoder_si swig_types[140]
+#define SWIGTYPE_p_trellis_sccc_encoder_ss swig_types[141]
+#define SWIGTYPE_p_trellis_siso_combined_f swig_types[142]
+#define SWIGTYPE_p_trellis_siso_f swig_types[143]
+#define SWIGTYPE_p_trellis_siso_type_t swig_types[144]
+#define SWIGTYPE_p_trellis_viterbi_b swig_types[145]
+#define SWIGTYPE_p_trellis_viterbi_combined_cb swig_types[146]
+#define SWIGTYPE_p_trellis_viterbi_combined_ci swig_types[147]
+#define SWIGTYPE_p_trellis_viterbi_combined_cs swig_types[148]
+#define SWIGTYPE_p_trellis_viterbi_combined_fb swig_types[149]
+#define SWIGTYPE_p_trellis_viterbi_combined_fi swig_types[150]
+#define SWIGTYPE_p_trellis_viterbi_combined_fs swig_types[151]
+#define SWIGTYPE_p_trellis_viterbi_combined_ib swig_types[152]
+#define SWIGTYPE_p_trellis_viterbi_combined_ii swig_types[153]
+#define SWIGTYPE_p_trellis_viterbi_combined_is swig_types[154]
+#define SWIGTYPE_p_trellis_viterbi_combined_sb swig_types[155]
+#define SWIGTYPE_p_trellis_viterbi_combined_si swig_types[156]
+#define SWIGTYPE_p_trellis_viterbi_combined_ss swig_types[157]
+#define SWIGTYPE_p_trellis_viterbi_i swig_types[158]
+#define SWIGTYPE_p_trellis_viterbi_s swig_types[159]
+#define SWIGTYPE_p_unsigned_long_long swig_types[160]
+#define SWIGTYPE_p_value_type swig_types[161]
+static swig_type_info *swig_types[163];
+static swig_module_info swig_module = {swig_types, 162, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3283,7 +3281,7 @@ namespace swig {
     }
 
     // Random access iterator methods, but not required in Python
-    virtual ptrdiff_t distance(const SwigPyIterator &/*x*/) const
+    virtual std::ptrdiff_t distance(const SwigPyIterator &/*x*/) const
     {
       throw std::invalid_argument("operation not supported");
     }
@@ -3320,7 +3318,7 @@ namespace swig {
       return obj;
     }
 
-    SwigPyIterator *advance(ptrdiff_t n)
+    SwigPyIterator *advance(std::ptrdiff_t n)
     {
       return  (n > 0) ?  incr(n) : decr(-n);
     }
@@ -3335,27 +3333,27 @@ namespace swig {
       return ! operator==(x);
     }
       
-    SwigPyIterator& operator += (ptrdiff_t n)
+    SwigPyIterator& operator += (std::ptrdiff_t n)
     {
       return *advance(n);
     }
 
-    SwigPyIterator& operator -= (ptrdiff_t n)
+    SwigPyIterator& operator -= (std::ptrdiff_t n)
     {
       return *advance(-n);
     }
       
-    SwigPyIterator* operator + (ptrdiff_t n) const
+    SwigPyIterator* operator + (std::ptrdiff_t n) const
     {
       return copy()->advance(n);
     }
 
-    SwigPyIterator* operator - (ptrdiff_t n) const
+    SwigPyIterator* operator - (std::ptrdiff_t n) const
     {
       return copy()->advance(-n);
     }
       
-    ptrdiff_t operator - (const SwigPyIterator& x) const
+    std::ptrdiff_t operator - (const SwigPyIterator& x) const
     {
       return x.distance(*this);
     }
@@ -3943,7 +3941,7 @@ namespace swig {
 
 namespace swig {
   inline size_t
-  check_index(ptrdiff_t i, size_t size, bool insert = false) {
+  check_index(std::ptrdiff_t i, size_t size, bool insert = false) {
     if ( i < 0 ) {
       if ((size_t) (-i) <= size)
 	return (size_t) (i + size);
@@ -3957,7 +3955,7 @@ namespace swig {
   }
 
   inline size_t
-  slice_index(ptrdiff_t i, size_t size) {
+  slice_index(std::ptrdiff_t i, size_t size) {
     if ( i < 0 ) {
       if ((size_t) (-i) <= size) {
 	return (size_t) (i + size);
@@ -4116,7 +4114,7 @@ namespace swig {
       }
     }
     
-    ptrdiff_t distance(const SwigPyIterator &iter) const
+    std::ptrdiff_t distance(const SwigPyIterator &iter) const
     {
       const self_type *iters = dynamic_cast<const self_type *>(&iter);
       if (iters) {
@@ -5071,7 +5069,7 @@ SWIG_AsVal_std_complex_Sl_float_Sg_ (PyObject *o, std::complex<float> *val)
 
 
 SWIGINTERNINLINE PyObject*
-SWIG_From_std_complex_Sl_float_Sg_  (/*@SWIG:/usr/share/swig2.0/typemaps/swigmacros.swg,104,%ifcplusplus@*/
+SWIG_From_std_complex_Sl_float_Sg_  (/*@SWIG:/usr/share/swig/2.0.4/typemaps/swigmacros.swg,104,%ifcplusplus@*/
 
 const std::complex<float>&
 
@@ -5317,7 +5315,7 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator_distance(PyObject *SWIGUNUSEDPARM(self
   char *  kwnames[] = {
     (char *) "self",(char *) "x", NULL 
   };
-  ptrdiff_t result;
+  std::ptrdiff_t result;
   
   if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:SwigPyIterator_distance",kwnames,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_swig__SwigPyIterator, 0 |  0 );
@@ -5577,7 +5575,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator_advance(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -5597,9 +5595,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator_advance(PyObject *SWIGUNUSEDPARM(self)
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator_advance" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator_advance" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -5728,7 +5726,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___iadd__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -5748,9 +5746,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___iadd__(PyObject *SWIGUNUSEDPARM(self
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___iadd__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___iadd__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -5783,7 +5781,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___isub__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -5803,9 +5801,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___isub__(PyObject *SWIGUNUSEDPARM(self
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___isub__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___isub__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -5838,7 +5836,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___add__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -5858,9 +5856,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___add__(PyObject *SWIGUNUSEDPARM(self)
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___add__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___add__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -5893,7 +5891,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___sub____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -5910,9 +5908,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___sub____SWIG_0(PyObject *SWIGUNUSEDPA
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___sub__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___sub__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -5952,7 +5950,7 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___sub____SWIG_1(PyObject *SWIGUNUSEDPA
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  ptrdiff_t result;
+  std::ptrdiff_t result;
   
   if(!PyArg_UnpackTuple(args,(char *)"SwigPyIterator___sub__",2,2,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_swig__SwigPyIterator, 0 |  0 );
@@ -72063,21 +72061,21 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SwigPyIterator_value", _wrap_SwigPyIterator_value, METH_VARARGS, (char *)"SwigPyIterator_value(SwigPyIterator self) -> PyObject"},
 	 { (char *)"SwigPyIterator_incr", (PyCFunction) _wrap_SwigPyIterator_incr, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_incr(SwigPyIterator self, size_t n = 1) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator_decr", (PyCFunction) _wrap_SwigPyIterator_decr, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_decr(SwigPyIterator self, size_t n = 1) -> SwigPyIterator"},
-	 { (char *)"SwigPyIterator_distance", (PyCFunction) _wrap_SwigPyIterator_distance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_distance(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t"},
+	 { (char *)"SwigPyIterator_distance", (PyCFunction) _wrap_SwigPyIterator_distance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_distance(SwigPyIterator self, SwigPyIterator x) -> std::ptrdiff_t"},
 	 { (char *)"SwigPyIterator_equal", (PyCFunction) _wrap_SwigPyIterator_equal, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_equal(SwigPyIterator self, SwigPyIterator x) -> bool"},
 	 { (char *)"SwigPyIterator_copy", _wrap_SwigPyIterator_copy, METH_VARARGS, (char *)"SwigPyIterator_copy(SwigPyIterator self) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator_next", _wrap_SwigPyIterator_next, METH_VARARGS, (char *)"SwigPyIterator_next(SwigPyIterator self) -> PyObject"},
 	 { (char *)"SwigPyIterator___next__", _wrap_SwigPyIterator___next__, METH_VARARGS, (char *)"SwigPyIterator___next__(SwigPyIterator self) -> PyObject"},
 	 { (char *)"SwigPyIterator_previous", _wrap_SwigPyIterator_previous, METH_VARARGS, (char *)"SwigPyIterator_previous(SwigPyIterator self) -> PyObject"},
-	 { (char *)"SwigPyIterator_advance", (PyCFunction) _wrap_SwigPyIterator_advance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_advance(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator_advance", (PyCFunction) _wrap_SwigPyIterator_advance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_advance(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator___eq__", (PyCFunction) _wrap_SwigPyIterator___eq__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___eq__(SwigPyIterator self, SwigPyIterator x) -> bool"},
 	 { (char *)"SwigPyIterator___ne__", (PyCFunction) _wrap_SwigPyIterator___ne__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___ne__(SwigPyIterator self, SwigPyIterator x) -> bool"},
-	 { (char *)"SwigPyIterator___iadd__", (PyCFunction) _wrap_SwigPyIterator___iadd__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___iadd__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
-	 { (char *)"SwigPyIterator___isub__", (PyCFunction) _wrap_SwigPyIterator___isub__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___isub__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
-	 { (char *)"SwigPyIterator___add__", (PyCFunction) _wrap_SwigPyIterator___add__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___add__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator___iadd__", (PyCFunction) _wrap_SwigPyIterator___iadd__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___iadd__(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator___isub__", (PyCFunction) _wrap_SwigPyIterator___isub__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___isub__(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator___add__", (PyCFunction) _wrap_SwigPyIterator___add__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___add__(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator___sub__", _wrap_SwigPyIterator___sub__, METH_VARARGS, (char *)"\n"
-		"__sub__(ptrdiff_t n) -> SwigPyIterator\n"
-		"SwigPyIterator___sub__(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
+		"__sub__(std::ptrdiff_t n) -> SwigPyIterator\n"
+		"SwigPyIterator___sub__(SwigPyIterator self, SwigPyIterator x) -> std::ptrdiff_t\n"
 		""},
 	 { (char *)"SwigPyIterator_swigregister", SwigPyIterator_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_fsm", _wrap_new_fsm, METH_VARARGS, (char *)"\n"
@@ -76796,8 +76794,6 @@ static void *_p_trellis_encoder_iiTo_p_gr_block(void *x, int *SWIGUNUSEDPARM(new
     return (void *)((gr_block *) (gr_sync_block *) ((trellis_encoder_ii *) x));
 }
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_16qam_t = {"_p_boost__shared_ptrT_digital_constellation_16qam_t", "boost::shared_ptr< digital_constellation_16qam > *|digital_constellation_16qam_sptr *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_64qam_t = {"_p_boost__shared_ptrT_digital_constellation_64qam_t", "boost::shared_ptr< digital_constellation_64qam > *|digital_constellation_64qam_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_8psk_t = {"_p_boost__shared_ptrT_digital_constellation_8psk_t", "boost::shared_ptr< digital_constellation_8psk > *|digital_constellation_8psk_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_bpsk_t = {"_p_boost__shared_ptrT_digital_constellation_bpsk_t", "boost::shared_ptr< digital_constellation_bpsk > *|digital_constellation_bpsk_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_calcdist_t = {"_p_boost__shared_ptrT_digital_constellation_calcdist_t", "boost::shared_ptr< digital_constellation_calcdist > *|digital_constellation_calcdist_sptr *", 0, 0, (void*)0, 0};
@@ -76962,8 +76958,6 @@ static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_allocator_type,
-  &_swigt__p_boost__shared_ptrT_digital_constellation_16qam_t,
-  &_swigt__p_boost__shared_ptrT_digital_constellation_64qam_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_8psk_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_bpsk_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_calcdist_t,
@@ -77128,8 +77122,6 @@ static swig_type_info *swig_type_initial[] = {
 };
 
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_16qam_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_16qam_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_64qam_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_64qam_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_8psk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_8psk_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_bpsk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_bpsk_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_calcdist_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_calcdist_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -77294,8 +77286,6 @@ static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_allocator_type,
-  _swigc__p_boost__shared_ptrT_digital_constellation_16qam_t,
-  _swigc__p_boost__shared_ptrT_digital_constellation_64qam_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_8psk_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_bpsk_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_calcdist_t,

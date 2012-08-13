@@ -30,10 +30,11 @@ SET(CMAKE_C_INCLUDE_PATH
   "../gr-audio/lib"
   "../gr-audio/lib/alsa"
   "../gr-audio/lib/oss"
+  "../gr-audio/lib/jack"
+  "../gr-audio/lib/portaudio"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
-SET(CMAKE_ASM_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 
 # The C and CXX include file regular expressions for this directory.
 SET(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")

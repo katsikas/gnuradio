@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="digital__dvbt__ofdm__mapper__bcv_8h" kind="file">
     <compoundname>digital_dvbt_ofdm_mapper_bcv.h</compoundname>
     <includes local="no">gr_message.h</includes>
@@ -55,9 +55,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="digital__dvbt__ofdm__mapper__bcv_8h_1a4551ae0e7290a914fa9dd5bf2f7ecd6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kindref="member">digital_dvbt_ofdm_mapper_bcv_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT digital_dvbt_ofdm_mapper_bcv_sptr digital_make_dvbt_ofdm_mapper_bcv</definition>
+      <memberdef kind="function" id="digital__dvbt__ofdm__mapper__bcv_8h_1abfd704205fc42ba05f3ebad380821a1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIGITAL_API <ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kindref="member">digital_dvbt_ofdm_mapper_bcv_sptr</ref></type>
+        <definition>DIGITAL_API digital_dvbt_ofdm_mapper_bcv_sptr digital_make_dvbt_ofdm_mapper_bcv</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;constellation, unsigned msgq_limit, unsigned occupied_carriers, unsigned int fft_length)</argsstring>
         <name>digital_make_dvbt_ofdm_mapper_bcv</name>
         <param>
@@ -125,13 +125,13 @@
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;digital_dvbt_ofdm_mapper_bcv&gt;<sp/><ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kindref="member">digital_dvbt_ofdm_mapper_bcv_sptr</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kindref="member">digital_dvbt_ofdm_mapper_bcv_sptr</ref><sp/></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1a4551ae0e7290a914fa9dd5bf2f7ecd6e" kindref="member">digital_make_dvbt_ofdm_mapper_bcv</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;constellation,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>msgq_limit,<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1abfd704205fc42ba05f3ebad380821a1a" kindref="member">digital_make_dvbt_ofdm_mapper_bcv</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;constellation,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>msgq_limit,<sp/></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>occupied_carriers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fft_length);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48" refid="classdigital__dvbt__ofdm__mapper__bcv" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="classdigital__dvbt__ofdm__mapper__bcv" kindref="compound" tooltip="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="49"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref><sp/><ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kindref="member">digital_dvbt_ofdm_mapper_bcv_sptr</ref></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1a4551ae0e7290a914fa9dd5bf2f7ecd6e" kindref="member">digital_make_dvbt_ofdm_mapper_bcv</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;constellation,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>msgq_limit,<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="digital__dvbt__ofdm__mapper__bcv_8h_1abfd704205fc42ba05f3ebad380821a1a" kindref="member">digital_make_dvbt_ofdm_mapper_bcv</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;constellation,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>msgq_limit,<sp/></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>occupied_carriers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fft_length);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="classdigital__dvbt__ofdm__mapper__bcv" kindref="compound" tooltip="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;gr_complex&gt;<sp/>&amp;constellation,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>msgq_limit,<sp/></highlight></codeline>
@@ -155,34 +155,31 @@
 <codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_nresid;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_tps_pilots;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_continual_pilots;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_payload_carriers;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_payload_map;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_subcarrier_map;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_tps_map;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_continuals_map;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/></highlight><highlight class="comment">/*static<sp/>const<sp/>int<sp/>d_continuals_map[]<sp/>=<sp/>{0,<sp/>48,<sp/>54,<sp/>87,<sp/>141,<sp/>156,<sp/>192,<sp/>201,<sp/>255,<sp/>279,</highlight></codeline>
-<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>282,<sp/>333,<sp/>432,<sp/>450,<sp/>483,<sp/>525,<sp/>531,<sp/>618,<sp/>636,</highlight></codeline>
-<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>714,<sp/>759,<sp/>765,<sp/>780,<sp/>804,<sp/>873,<sp/>888,<sp/>918,<sp/>939,</highlight></codeline>
-<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>942,<sp/>969,<sp/>984,<sp/>1050,<sp/>1101,<sp/>1107,<sp/>1110,<sp/>1137,</highlight></codeline>
-<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1140,<sp/>1146,<sp/>1206,<sp/>1269,<sp/>1323,<sp/>1377,<sp/>1491,<sp/>1683,<sp/>1704};*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>randsym();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_symbol_number;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_continual_pilots;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_payload_carriers;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_payload_map;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_subcarrier_map;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_tps_map;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_scattered_map;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_continuals_map;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>randsym();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>~<ref refid="classdigital__dvbt__ofdm__mapper__bcv" kindref="compound" tooltip="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/>~<ref refid="classdigital__dvbt__ofdm__mapper__bcv" kindref="compound" tooltip="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94" refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" refkind="member"><highlight class="normal"><sp/><sp/>gr_msg_queue_sptr<sp/><sp/><sp/><sp/><sp/><ref refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" kindref="member">msgq</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_msgq;<sp/>}</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="91" refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" refkind="member"><highlight class="normal"><sp/><sp/>gr_msg_queue_sptr<sp/><sp/><sp/><sp/><sp/><ref refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" kindref="member">msgq</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_msgq;<sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h"/>
   </compounddef>

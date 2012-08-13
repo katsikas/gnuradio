@@ -97,9 +97,9 @@ unsigned char digital_dvbt_ofdm_frame_sink::slicer(const gr_complex x)
   //printf("d_sym[%i] = %.4f %.4fj ",0,d_sym_position[0].real(),d_sym_position[0].imag());
   //printf("min_euclid = %f\n",min_euclid_dist);
   for (unsigned int j = 1; j < table_size; j++){
-	//printf("d_sym[%i] = %.4f %.4fj ",j,d_sym_position[j].real(),d_sym_position[j].imag());
+        //printf("d_sym[%i] = %.4f %.4fj ",j,d_sym_position[j].real(),d_sym_position[j].imag());
     euclid_dist = norm(x - d_sym_position[j]);
-	//printf("euclid = %f\n", euclid_dist);
+        //printf("euclid = %f\n", euclid_dist);
     if (euclid_dist < min_euclid_dist){
       min_euclid_dist = euclid_dist;
       min_index = j;
@@ -119,7 +119,6 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
   carrier=gr_expj(d_phase);
 
   gr_complex accum_error = 0.0;
-  //while(i < d_occupied_carriers) {
   while(i < d_subcarrier_map.size()) {
     if(d_nresid > 0) {
       d_partial_byte |= d_resid;
@@ -128,9 +127,7 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
       d_resid = 0;
     }
 
-    //while((d_byte_offset < 8) && (i < d_occupied_carriers)) {
     while((d_byte_offset < 8) && (i < d_subcarrier_map.size())) {
-      //gr_complex sigrot = in[i]*carrier*d_dfe[i];
       gr_complex sigrot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];
 
       if(d_derotated_output != NULL){
@@ -138,7 +135,6 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
       }
 
       unsigned char bits = slicer(sigrot);
-
       gr_complex closest_sym = d_sym_position[bits];
 
       accum_error += sigrot * conj(closest_sym);
@@ -146,6 +142,7 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
       // FIX THE FOLLOWING STATEMENT
       if (norm(sigrot)> 0.001) d_dfe[i] +=  d_eq_gain*(closest_sym/sigrot-d_dfe[i]);
 
+      //printf("carrier number %d \n",i);
       i++;
 
       if((8 - d_byte_offset) >= d_nbits) {
@@ -159,9 +156,7 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
 	d_resid = bits >> (8-d_byte_offset);
 	d_byte_offset += (d_nbits - d_nresid);
       }
-      //printf("demod symbol: %.4f + j%.4f   bits: %x   partial_byte: %x
-	//		byte_offset: %d   resid: %x   nresid: %d\n", in[i-1].real(),
-	//		in[i-1].imag(), bits, d_partial_byte, d_byte_offset, d_resid, d_nresid);
+      //printf("demod symbol: %.4f + j%.4f   bits: %x   partial_byte: %x byte_offset: %d   resid: %x   nresid: %d\n", in[i-1].real(), in[i-1].imag(), bits, d_partial_byte, d_byte_offset, d_resid, d_nresid);
     }
 
     if(d_byte_offset == 8) {
@@ -338,6 +333,7 @@ digital_dvbt_ofdm_frame_sink::work (int noutput_items,
 	  }
 	}
 	else {
+            printf("bad header \n");
 	  enter_search();				// bad header
 	}
       }

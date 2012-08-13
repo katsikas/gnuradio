@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__sync__interpolator" kind="class" prot="public">
     <compoundname>gr_sync_interpolator</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -236,73 +236,73 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="471">
+      <node id="465">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="468">
+      <node id="462">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="469" relation="public-inheritance">
+        <childnode refid="463" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="469">
+      <node id="463">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="470" relation="public-inheritance">
+        <childnode refid="464" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="467">
+      <node id="461">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="468" relation="public-inheritance">
+        <childnode refid="462" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="470">
+      <node id="464">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="471" relation="public-inheritance">
+        <childnode refid="465" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="476">
+      <node id="470">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="473">
+      <node id="467">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="474" relation="public-inheritance">
+        <childnode refid="468" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="474">
+      <node id="468">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="475" relation="public-inheritance">
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>gr_sync_interpolator</label>
+        <link refid="classgr__sync__interpolator"/>
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
       <node id="472">
-        <label>gr_sync_interpolator</label>
-        <link refid="classgr__sync__interpolator"/>
-        <childnode refid="473" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="478">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="475">
+      <node id="469">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="476" relation="public-inheritance">
+        <childnode refid="470" relation="public-inheritance">
         </childnode>
-        <childnode refid="477" relation="usage">
+        <childnode refid="471" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="477">
+      <node id="471">
         <label>std::string</label>
-        <childnode refid="478" relation="public-inheritance">
+        <childnode refid="472" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

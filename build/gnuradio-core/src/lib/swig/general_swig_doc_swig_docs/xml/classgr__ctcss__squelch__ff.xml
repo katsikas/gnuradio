@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__ctcss__squelch__ff" kind="class" prot="public">
     <compoundname>gr_ctcss_squelch_ff</compoundname>
     <basecompoundref refid="classgr__squelch__base__ff" prot="public" virt="non-virtual">gr_squelch_base_ff</basecompoundref>
@@ -98,9 +98,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classgr__ctcss__squelch__ff_1a20b909c0900bec95213f4f739a3b9f68" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="gr__ctcss__squelch__ff_8h_1a9724a53c5aca5dd274fcefc65d07303e" kindref="member">gr_ctcss_squelch_ff_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_ctcss_squelch_ff_sptr gr_make_ctcss_squelch_ff</definition>
+      <memberdef kind="friend" id="classgr__ctcss__squelch__ff_1a5ffdc00770218eb902dadc285dc3ea22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend GR_CORE_API <ref refid="gr__ctcss__squelch__ff_8h_1a9724a53c5aca5dd274fcefc65d07303e" kindref="member">gr_ctcss_squelch_ff_sptr</ref></type>
+        <definition>GR_CORE_API gr_ctcss_squelch_ff_sptr gr_make_ctcss_squelch_ff</definition>
         <argsstring>(int rate, float freq, float level, int len, int ramp, bool gate)</argsstring>
         <name>gr_make_ctcss_squelch_ff</name>
         <param>
@@ -290,26 +290,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="382">
+      <node id="379">
         <label>gr_squelch_base_ff</label>
         <link refid="classgr__squelch__base__ff"/>
       </node>
-      <node id="381">
+      <node id="378">
         <label>gr_ctcss_squelch_ff</label>
         <link refid="classgr__ctcss__squelch__ff"/>
-        <childnode refid="382" relation="public-inheritance">
+        <childnode refid="379" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="384">
+      <node id="381">
         <label>gr_squelch_base_ff</label>
         <link refid="classgr__squelch__base__ff"/>
       </node>
-      <node id="383">
+      <node id="380">
         <label>gr_ctcss_squelch_ff</label>
         <link refid="classgr__ctcss__squelch__ff"/>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="381" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -326,7 +326,7 @@
       <member refid="classgr__squelch__base__ff_1a3a355b937004b1591ea4cd7e6f350f01" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>gate</name></member>
       <member refid="classgr__squelch__base__ff_1a578e533e62aa8293ae9944d33e1e16f4" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>general_work</name></member>
       <member refid="classgr__ctcss__squelch__ff_1ad327366f4759740664a587eebef8b8a8" prot="private" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>gr_ctcss_squelch_ff</name></member>
-      <member refid="classgr__ctcss__squelch__ff_1a20b909c0900bec95213f4f739a3b9f68" prot="private" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>gr_make_ctcss_squelch_ff</name></member>
+      <member refid="classgr__ctcss__squelch__ff_1a5ffdc00770218eb902dadc285dc3ea22" prot="private" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>gr_make_ctcss_squelch_ff</name></member>
       <member refid="classgr__squelch__base__ff_1ac34fcf7e0e58556662f3d723a54fc07c" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>gr_squelch_base_ff</name></member>
       <member refid="classgr__ctcss__squelch__ff_1a852ffb98f9ece7b1a2ae88ac4a069708" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>len</name></member>
       <member refid="classgr__ctcss__squelch__ff_1ab8172ea481da8ee9924c2fc8b81b816e" prot="public" virt="non-virtual"><scope>gr_ctcss_squelch_ff</scope><name>level</name></member>

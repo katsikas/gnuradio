@@ -72,19 +72,16 @@ protected:
   unsigned int d_nresid;
 
   unsigned int d_tps_pilots;
+  static unsigned int d_symbol_number;
   unsigned int d_continual_pilots;
   unsigned int d_payload_carriers;
+
 
   std::vector<int> d_payload_map;
   std::vector<int> d_subcarrier_map;
   std::vector<int> d_tps_map;
+  std::vector<int> d_scattered_map;
   std::vector<int> d_continuals_map;
-
- /*static const int d_continuals_map[] = {0, 48, 54, 87, 141, 156, 192, 201, 255, 279,
-					282, 333, 432, 450, 483, 525, 531, 618, 636,
-					714, 759, 765, 780, 804, 873, 888, 918, 939,
-					942, 969, 984, 1050, 1101, 1107, 1110, 1137,
-					1140, 1146, 1206, 1269, 1323, 1377, 1491, 1683, 1704};*/
 
   int randsym();
 

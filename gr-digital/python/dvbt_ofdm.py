@@ -106,7 +106,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
         
 	print rotated_const
         self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,
-                                                       msgq_limit,
+						       msgq_limit,
                                                        options.occupied_tones,
                                                        options.fft_length)
         
