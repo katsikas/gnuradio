@@ -212,15 +212,15 @@ digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink(const std::vector<gr_
     d_eq_gain(0.05)
 {
 
-  unsigned int i = 0;
   // Pad zeros left and right of the occupied carriers.
+  unsigned int i = 0;
   for(i = 0; i < d_occupied_carriers; i++) {
         d_subcarrier_map.push_back(i);
   }
 
-  for(i=0;i<d_subcarrier_map.size();i++){
+  /*for(i=0;i<d_subcarrier_map.size();i++){
         printf("s[%d] = %d ",i,d_subcarrier_map[i]);
-  }
+  }*/
 
 
   // make sure we stay in the limit currently imposed by the occupied_carriers

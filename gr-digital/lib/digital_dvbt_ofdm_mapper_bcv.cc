@@ -54,18 +54,22 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
     d_bit_offset(0),
     d_pending_flag(0),
     d_resid(0),
-    d_nresid(0)
+    d_nresid(0),
+    d_tps_pilots(17),
+    d_continual_pilots(45),
+    d_payload_carriers(1512)
 {
   if (!(d_occupied_carriers <= d_fft_length))
     throw std::invalid_argument("digital_ofdm_mapper_bcv: occupied carriers must be <= fft_length");
 
-  /*if ( !((d_occupied_carriers == 1705) || (d_occupied_carriers == 6817)) )
-    throw std::invalid_argument("DVBT supports only 1705 carriers(2k Mode) or 6817(8k Mode)");*/
+  if ( !((d_occupied_carriers == 1705) || (d_occupied_carriers == 6817)) )
+    throw std::invalid_argument("DVBT supports only 1705 carriers(2k Mode) or 6817(8k Mode)");
 
   unsigned int i = 0;
   unsigned int j = 0;
+
   // Pad zeros left and right of the occupied carriers.
-  unsigned int zeros_from_left = (d_fft_length - d_occupied_carriers)/2+1;
+  unsigned int zeros_from_left = (unsigned int)ceil(((d_fft_length - d_occupied_carriers)/2.0));
   for(i = 0; i < zeros_from_left+d_occupied_carriers; i++) {
 	if(i>= zeros_from_left){
 		d_subcarrier_map.push_back(zeros_from_left+j);
@@ -73,9 +77,9 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
   	}
   }
 
-  for(i=0;i<d_subcarrier_map.size();i++){
+  /*for(i=0;i<d_subcarrier_map.size();i++){
         printf("s[%d] = %d ",i,d_subcarrier_map[i]);
-  }
+  }*/
 
   // make sure we stay in the limit currently imposed by the occupied_carriers
   if(d_subcarrier_map.size() > d_occupied_carriers) {
@@ -84,6 +88,23 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
   }
 
   d_nbits = (unsigned long)ceil(log10(float(d_constellation.size())) / log10(2.0));
+
+
+  // Set the pilot signals...
+ int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073, 1219, 1262, 1286, 1469, 1594, 1687};
+
+  d_tps_map.push_back(34);
+  d_tps_map((int*)tps, tps + sizeof(tps) / sizeof(int) );
+
+  /*int myints[] = {16,2,77,29};
+  vector<int> fifth (myints, myints + sizeof(myints) / sizeof(int) );*/
+
+ /* const int d_continuals_map = {0, 48, 54, 87, 141, 156, 192, 201, 255, 279,
+       	             	282, 333, 432, 450, 483, 525, 531, 618, 636,
+                  	714, 759, 765, 780, 804, 873, 888, 918, 939,
+                      	942, 969, 984, 1050, 1101, 1107, 1110, 1137,
+                    	1140, 1146, 1206, 1269, 1323, 1377, 1491, 1683, 1704};*/
+
 }
 
 digital_dvbt_ofdm_mapper_bcv::~digital_dvbt_ofdm_mapper_bcv(void)
@@ -100,25 +121,22 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 			      gr_vector_const_void_star &input_items,
 			      gr_vector_void_star &output_items)
 {
-  gr_complex *out = (gr_complex *)output_items[0];
-
   unsigned int i=0;
-
-  //printf("OFDM BPSK Mapper:  ninput_items: %d   noutput_items: %d\n", ninput_items[0], noutput_items);
+  gr_complex *out = (gr_complex *)output_items[0];
 
   if(d_eof) {
     return -1;
   }
 
   if(!d_msg) {
-    d_msg = d_msgq->delete_head();	   	// block, waiting for a message
+    d_msg = d_msgq->delete_head();	   		// block, waiting for a message
     d_msg_offset = 0;
     d_bit_offset = 0;
-    d_pending_flag = 1;			   	// new packet, write start of packet flag
+    d_pending_flag = 1;			   			// new packet, write start of packet flag
 
     if((d_msg->length() == 0) && (d_msg->type() == 1)) {
       d_msg.reset();
-      return -1;				// We're done; no more messages coming.
+      return -1;							// We're done; no more messages coming.
     }
   }
 
@@ -133,7 +151,6 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
   i = 0;
   unsigned char bits = 0;
-  //while((d_msg_offset < d_msg->length()) && (i < d_occupied_carriers)) {
   while((d_msg_offset < d_msg->length()) && (i < d_subcarrier_map.size())) {
 
     // need new data to process
@@ -147,8 +164,8 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
       d_resid |= (((1 << d_nresid)-1) & d_msgbytes) << (d_nbits - d_nresid);
       bits = d_resid;
 
-     // printf("if constel = %.4f %.4fj on carrier %d \n",
- 	//	d_constellation[bits].real(),d_constellation[bits].imag(),d_subcarrier_map[i]);
+      printf("if constel = %.4f %.4fj on carrier %d \n",
+ 		d_constellation[bits].real(),d_constellation[bits].imag(),d_subcarrier_map[i]);
       out[d_subcarrier_map[i]] = d_constellation[bits];
       i++;
 
@@ -166,7 +183,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
 	out[d_subcarrier_map[i]] = d_constellation[bits];
 	//printf("else constel = %.4f %.4fj on carrier %d \n",
-         //       d_constellation[bits].real(),d_constellation[bits].imag(),d_subcarrier_map[i]);
+           //     d_constellation[bits].real(),d_constellation[bits].imag(),d_subcarrier_map[i]);
 	i++;
       }
       else {  // if we can't fit nbits, store them for the next
@@ -187,10 +204,6 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 	//printf("mod bit(r): %x   resid: %x   nresid: %d    bit_offset: %d\n",
          //  bits, d_resid, d_nresid, d_bit_offset);
 
-	if(i > 300)
-    {
-		//exit(-1);
-	}
   }
   
 
@@ -203,9 +216,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
       d_resid = 0;
     }
 
-    //while(i < d_occupied_carriers) {   // finish filling out the symbol
     while(i < d_subcarrier_map.size()) {   // finish filling out the symbol
-	//printf("edw??? %d ",i);
       out[d_subcarrier_map[i]] = d_constellation[randsym()];
         //printf("rand constel = %.4f %.4fj on carrier %d \n",
           //     out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag(),d_subcarrier_map[i]);
@@ -213,16 +224,15 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
       i++;
     }
 
-    if (d_msg->type() == 1)	        // type == 1 sets EOF
+    if (d_msg->type() == 1)	        	// type == 1 sets EOF
       d_eof = true;
-    d_msg.reset();   			// finished packet, free message
+    d_msg.reset();   					// finished packet, free message
     assert(d_bit_offset == 0);
-    
   }
 
   if (out_flag)
     out_flag[0] = d_pending_flag;
   d_pending_flag = 0;
 
-  return 1;  // produced symbol
+  return 1;  							// produced symbol
 }
