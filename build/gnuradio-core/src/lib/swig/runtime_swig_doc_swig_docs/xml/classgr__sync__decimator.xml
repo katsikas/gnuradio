@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__sync__decimator" kind="class" prot="public">
     <compoundname>gr_sync_decimator</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -236,73 +236,73 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="453">
+      <node id="459">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="450">
+      <node id="456">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="451" relation="public-inheritance">
+        <childnode refid="457" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="449">
+      <node id="455">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="450" relation="public-inheritance">
+        <childnode refid="456" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="451">
+      <node id="457">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="452" relation="public-inheritance">
+        <childnode refid="458" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="452">
+      <node id="458">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="453" relation="public-inheritance">
+        <childnode refid="459" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="458">
+      <node id="464">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="455">
+      <node id="461">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="456" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="454">
-        <label>gr_sync_decimator</label>
-        <link refid="classgr__sync__decimator"/>
-        <childnode refid="455" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="456">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="457" relation="public-inheritance">
+        <childnode refid="462" relation="public-inheritance">
         </childnode>
       </node>
       <node id="460">
+        <label>gr_sync_decimator</label>
+        <link refid="classgr__sync__decimator"/>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="466">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="457">
+      <node id="463">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="458" relation="public-inheritance">
+        <childnode refid="464" relation="public-inheritance">
         </childnode>
-        <childnode refid="459" relation="usage">
+        <childnode refid="465" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="459">
+      <node id="465">
         <label>std::string</label>
-        <childnode refid="460" relation="public-inheritance">
+        <childnode refid="466" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

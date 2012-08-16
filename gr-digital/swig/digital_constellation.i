@@ -119,10 +119,10 @@ public:
 			     unsigned int n_sectors);
 };
 
+
 /*
   BPSK Constellation
 */
-
 class digital_constellation_bpsk;
 typedef boost::shared_ptr<digital_constellation_bpsk> digital_constellation_bpsk_sptr;
 %template(digital_constellation_bpsk_sptr) boost::shared_ptr<digital_constellation_bpsk>;
@@ -136,10 +136,10 @@ public:
   digital_constellation_bpsk ();
 };
 
+
 /*
   QPSK Constellation
 */
-
 class digital_constellation_qpsk;
 typedef boost::shared_ptr<digital_constellation_qpsk> digital_constellation_qpsk_sptr;
 %template(digital_constellation_qpsk_sptr) boost::shared_ptr<digital_constellation_qpsk>;
@@ -153,10 +153,10 @@ public:
   digital_constellation_qpsk ();
 };
 
+
 /*
   DQPSK Constellation
 */
-
 class digital_constellation_dqpsk;
 typedef boost::shared_ptr<digital_constellation_dqpsk> digital_constellation_dqpsk_sptr;
 %template(digital_constellation_dqpsk_sptr) boost::shared_ptr<digital_constellation_dqpsk>;
@@ -174,7 +174,6 @@ public:
 /*
   8PSK Constellation
 */
-
 class digital_constellation_8psk;
 typedef boost::shared_ptr<digital_constellation_8psk> digital_constellation_8psk_sptr;
 %template(digital_constellation_8psk_sptr) boost::shared_ptr<digital_constellation_8psk>;
@@ -192,7 +191,6 @@ public:
 /*
   QPSK Constellation explicitely for DVBT
 */
-
 class digital_constellation_dvbt_qpsk;
 typedef boost::shared_ptr<digital_constellation_dvbt_qpsk> digital_constellation_dvbt_qpsk_sptr;
 %template(digital_constellation_dvbt_qpsk_sptr) boost::shared_ptr<digital_constellation_dvbt_qpsk>;
@@ -204,6 +202,23 @@ class digital_constellation_dvbt_qpsk : public digital_constellation
 {
 public:
   	digital_constellation_dvbt_qpsk ();
+};
+
+
+/*
+  Digital constellation for scattered and continual pilot signals(BPSK).
+*/
+class digital_constellation_cs_pilots;
+typedef boost::shared_ptr<digital_constellation_cs_pilots> digital_constellation_cs_pilots_sptr;
+%template(digital_constellation_cs_pilots_sptr) boost::shared_ptr<digital_constellation_cs_pilots>;
+%rename(constellation_cs_pilots) digital_make_constellation_cs_pilots;
+digital_constellation_cs_pilots_sptr digital_make_constellation_cs_pilots();
+%ignore digital_constellation_cs_pilots;
+
+class digital_constellation_cs_pilots : public digital_constellation
+{
+public:
+  digital_constellation_cs_pilots ();
 };
 
 
@@ -222,6 +237,9 @@ digital_constellation_bpsk_sptr.__repr__ = lambda self: '<constellation bpsk>'
 digital_constellation_qpsk_sptr.__repr__ = lambda self: '<constellation qpsk>'
 digital_constellation_dqpsk_sptr.__repr__ = lambda self: '<constellation dqpsk>'
 digital_constellation_8psk_sptr.__repr__ = lambda self: '<constellation 8psk>'
+
+digital_constellation_dvbt_qpsk_sptr.__repr__ = lambda self: '<constellation dvbt_qpsk>'
+digital_constellation_cs_pilots_sptr.__repr__ = lambda self: '<constellation cs_pilots>'
   
 %}
 #endif

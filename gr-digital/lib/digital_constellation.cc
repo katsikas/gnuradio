@@ -616,4 +616,31 @@ digital_constellation_dvbt_qpsk::decision_maker(const gr_complex *sample)
   }
 }
 
+
+/**
+ * DVB-T explicit constellation mapping for scattered and continual pilot signals(BPSK).
+ **/
+digital_constellation_cs_pilots_sptr
+digital_make_constellation_cs_pilots()
+{
+  return digital_constellation_cs_pilots_sptr(new digital_constellation_cs_pilots());
+}
+
+digital_constellation_cs_pilots::digital_constellation_cs_pilots()
+{
+  d_constellation.resize(2);
+  d_constellation[0] = gr_complex(( (4/3.0)*2*((1/2.0)-0) ), 0);
+  d_constellation[1] = gr_complex(( (4/3.0)*2*((1/2.0)-1) ), 0);
+  
+  d_rotational_symmetry = 2;
+  d_dimensionality = 1;
+  calc_arity();
+}
+
+unsigned int
+digital_constellation_cs_pilots::decision_maker(const gr_complex *sample)
+{
+  return !(real(*sample) > 0);
+}
+
 /********************************************************************/

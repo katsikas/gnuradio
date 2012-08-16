@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__vector__to__stream_8h" kind="file">
     <compoundname>gr_vector_to_stream.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__vector__to__stream_8h_1ab7eaded7e9292cdcc0e03fceaa21dcd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API <ref refid="gr__vector__to__stream_8h_1af6b53065f4b6aef8508c1f665621fb7a" kindref="member">gr_vector_to_stream_sptr</ref></type>
-        <definition>GR_CORE_API gr_vector_to_stream_sptr gr_make_vector_to_stream</definition>
+      <memberdef kind="function" id="gr__vector__to__stream_8h_1af2cd1811b4ec7b2e635c27b6e662d5c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="gr__vector__to__stream_8h_1af6b53065f4b6aef8508c1f665621fb7a" kindref="member">gr_vector_to_stream_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT gr_vector_to_stream_sptr gr_make_vector_to_stream</definition>
         <argsstring>(size_t item_size, size_t nitems_per_block)</argsstring>
         <name>gr_make_vector_to_stream</name>
         <param>
@@ -102,13 +102,13 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_vector_to_stream&gt;<sp/><ref refid="gr__vector__to__stream_8h_1af6b53065f4b6aef8508c1f665621fb7a" kindref="member">gr_vector_to_stream_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vector__to__stream_8h_1af6b53065f4b6aef8508c1f665621fb7a" kindref="member">gr_vector_to_stream_sptr</ref></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="gr__vector__to__stream_8h_1ab7eaded7e9292cdcc0e03fceaa21dcd8" kindref="member">gr_make_vector_to_stream</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nitems_per_block);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="gr__vector__to__stream_8h_1af2cd1811b4ec7b2e635c27b6e662d5c6" kindref="member">gr_make_vector_to_stream</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nitems_per_block);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40" refid="classgr__vector__to__stream" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__vector__to__stream" kindref="compound" tooltip="convert a stream of blocks of nitems_per_block items into a stream of items">gr_vector_to_stream</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_interpolator</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__vector__to__stream_8h_1af6b53065f4b6aef8508c1f665621fb7a" kindref="member">gr_vector_to_stream_sptr</ref></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__vector__to__stream_8h_1ab7eaded7e9292cdcc0e03fceaa21dcd8" kindref="member">gr_make_vector_to_stream</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nitems_per_block);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gr__vector__to__stream_8h_1af2cd1811b4ec7b2e635c27b6e662d5c6" kindref="member">gr_make_vector_to_stream</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nitems_per_block);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classgr__vector__to__stream" kindref="compound" tooltip="convert a stream of blocks of nitems_per_block items into a stream of items">gr_vector_to_stream</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>item_size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nitems_per_block);</highlight></codeline>

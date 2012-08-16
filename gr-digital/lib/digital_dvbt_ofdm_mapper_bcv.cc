@@ -25,6 +25,7 @@
 #include "config.h"
 #endif
 
+#include <iostream>
 #include <bitset>
 #include <stdio.h>
 #include <string.h>
@@ -81,7 +82,6 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
     d_continuals_map(continuals, continuals + sizeof continuals/sizeof(int))
 {
 
-    prbs_sequence = std::bitset<11> (init_sequence);
   if (!(d_occupied_carriers <= d_fft_length))
     throw std::invalid_argument("digital_ofdm_mapper_bcv: occupied carriers must be <= fft_length");
 
@@ -126,10 +126,15 @@ int digital_dvbt_ofdm_mapper_bcv::randsym()
 void
 digital_dvbt_ofdm_mapper_bcv::next_state(){
 
-    prbs_sequence[0] = prbs_sequence[8] ^ prbs_sequence[10];
+    unsigned char temp = 0;
+	//std::cout << "PRBS prin " << int(prbs_sequence.to_ulong()) << " ";
+    temp = prbs_sequence[8] ^ prbs_sequence[10];
     for(int j=10;j>0;j--){
             prbs_sequence[j] = prbs_sequence[j-1];
     }
+    prbs_sequence[0] = temp;
+    //std::cout << "PRBS meta " << int(prbs_sequence.to_ulong()) << "\n";
+
 }
 
 
@@ -141,16 +146,11 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   unsigned int i = 0;
   size_t carriers = d_subcarrier_map.size();
   gr_complex *out = (gr_complex *)output_items[0];
-  gr_complex tps_pilot;
-  gr_complex continual_pilot;
-
-
-
-
   /******************************************/
   /* Should be reset??                      */
   /******************************************/
   prbs_sequence = std::bitset<11> (init_sequence);
+
 
   if(d_eof) {
     return -1;
@@ -184,16 +184,15 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
         i++;
   }
 
-
   // Build a single symbol:
   // Initialize all bins to 0 to set unused carriers
   memset(out, 0, d_fft_length*sizeof(gr_complex));
 
   i = 0;
   unsigned char bits = 0;
-  //unsigned char pilots = 0;
   while((d_msg_offset < d_msg->length()) && (i < carriers)) {
 
+      //printf("CARRIER = %d - ",i);
       next_state();
       if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
           //printf("This is a TPS carrier %d \n",i);
@@ -201,15 +200,13 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
           i++;
       }
       else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
-          //printf("This is a Continual pilot carrier %d \n",i);
-          printf("EEE IS = %f \n",((4/3.0)*2*((1/2.0)-prbs_sequence[0])));
-          out[d_subcarrier_map[i]] = ((4/3.0)*2*((1/2.0)-prbs_sequence[0]));
+          //printf("This is a continual pilot carrier %d , prbs_sequence[0] = %d and complex.real = %.4f\n",i,prbs_sequence.test(0),d_cs_constellation[prbs_sequence.test(0)].real());
+          out[d_subcarrier_map[i]] = d_cs_constellation[prbs_sequence.test(0)];
           i++;
       }
       else if(std::find(d_scattered_map.begin(), d_scattered_map.end(), i) != d_scattered_map.end()){
-          //printf("This is a scattered pilot carrier %d \n",i);
-          printf("EEE IS = %f \n",((4/3.0)*2*((1/2.0)-prbs_sequence[0])));
-          out[d_subcarrier_map[i]] = ((4/3.0)*2*((1/2.0)-prbs_sequence[0]));
+          //printf("This is a scattered pilot carrier %d , prbs_sequence[0] = %d and complex.real = %.4f\n",i,prbs_sequence.test(0),d_cs_constellation[prbs_sequence.test(0)].real());
+          out[d_subcarrier_map[i]] = d_cs_constellation[prbs_sequence.test(0)];
           i++;
       }
       else{

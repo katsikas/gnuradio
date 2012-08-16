@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__fmdet__cf_8h" kind="file">
     <compoundname>gr_fmdet_cf.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -43,9 +43,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__fmdet__cf_8h_1a8ffc707cbcd8f85a09db429ac9674428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API <ref refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kindref="member">gr_fmdet_cf_sptr</ref></type>
-        <definition>GR_CORE_API gr_fmdet_cf_sptr gr_make_fmdet_cf</definition>
+      <memberdef kind="function" id="gr__fmdet__cf_8h_1a4813fc8c590aaad89d13886e04971450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kindref="member">gr_fmdet_cf_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT gr_fmdet_cf_sptr gr_make_fmdet_cf</definition>
         <argsstring>(float samplerate, float freq_low, float freq_high, float scl)</argsstring>
         <name>gr_make_fmdet_cf</name>
         <param>
@@ -109,14 +109,14 @@
 <codeline lineno="29" refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgr__fmdet__cf" kindref="compound" tooltip="Implements an IQ slope detector.">gr_fmdet_cf</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;gr_fmdet_cf&gt;<sp/><ref refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kindref="member">gr_fmdet_cf_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kindref="member">gr_fmdet_cf_sptr</ref><sp/><ref refid="gr__fmdet__cf_8h_1a8ffc707cbcd8f85a09db429ac9674428" kindref="member">gr_make_fmdet_cf</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samplerate,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_low,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_high,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scl);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kindref="member">gr_fmdet_cf_sptr</ref><sp/><ref refid="gr__fmdet__cf_8h_1a4813fc8c590aaad89d13886e04971450" kindref="member">gr_make_fmdet_cf</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samplerate,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_low,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_high,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scl);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">gr_fir_ccf;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47" refid="classgr__fmdet__cf" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="classgr__fmdet__cf" kindref="compound" tooltip="Implements an IQ slope detector.">gr_fmdet_cf</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="48"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kindref="member">gr_fmdet_cf_sptr</ref><sp/><ref refid="gr__fmdet__cf_8h_1a8ffc707cbcd8f85a09db429ac9674428" kindref="member">gr_make_fmdet_cf</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samplerate,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_low,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/><ref refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kindref="member">gr_fmdet_cf_sptr</ref><sp/><ref refid="gr__fmdet__cf_8h_1a4813fc8c590aaad89d13886e04971450" kindref="member">gr_make_fmdet_cf</ref><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samplerate,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_low,</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>freq_high,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scl);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/>gr_complex<sp/>d_S1,d_S2,d_S3,d_S4;</highlight></codeline>

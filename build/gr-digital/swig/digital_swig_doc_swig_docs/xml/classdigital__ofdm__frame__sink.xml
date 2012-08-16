@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__ofdm__frame__sink" kind="class" prot="public">
     <compoundname>digital_ofdm_frame_sink</compoundname>
     <includes refid="digital__ofdm__frame__sink_8h" local="no">digital_ofdm_frame_sink.h</includes>
@@ -394,9 +394,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classdigital__ofdm__frame__sink_1a36ae1a0ef6a701e0eaf00153ac1a18b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="digital__ofdm__frame__sink_8h_1a1c0a6bbfd55a15435e4e19508a454739" kindref="member">digital_ofdm_frame_sink_sptr</ref></type>
-        <definition>DIGITAL_API digital_ofdm_frame_sink_sptr digital_make_ofdm_frame_sink</definition>
+      <memberdef kind="friend" id="classdigital__ofdm__frame__sink_1ac93939703243fa9adae2b286d10f5850" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="digital__ofdm__frame__sink_8h_1a1c0a6bbfd55a15435e4e19508a454739" kindref="member">digital_ofdm_frame_sink_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT digital_ofdm_frame_sink_sptr digital_make_ofdm_frame_sink</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</argsstring>
         <name>digital_make_ofdm_frame_sink</name>
         <param>
@@ -654,7 +654,7 @@
       <member refid="classdigital__ofdm__frame__sink_1a1621ed869cc75bbf11e0d8a31c9dccc8" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>d_sym_value_out</name></member>
       <member refid="classdigital__ofdm__frame__sink_1a8cfbb78301dab9f444df183e52affd73" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>d_target_queue</name></member>
       <member refid="classdigital__ofdm__frame__sink_1a89f219f2e5116fde05b930b08f2b4248" prot="protected" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>demapper</name></member>
-      <member refid="classdigital__ofdm__frame__sink_1a36ae1a0ef6a701e0eaf00153ac1a18b4" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>digital_make_ofdm_frame_sink</name></member>
+      <member refid="classdigital__ofdm__frame__sink_1ac93939703243fa9adae2b286d10f5850" prot="private" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>digital_make_ofdm_frame_sink</name></member>
       <member refid="classdigital__ofdm__frame__sink_1a3ee181c922ff3ece69629b1f93aab248" prot="protected" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>digital_ofdm_frame_sink</name></member>
       <member refid="classdigital__ofdm__frame__sink_1ada6fde3551194a02841279ebcf37be8f" prot="protected" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>enter_have_header</name></member>
       <member refid="classdigital__ofdm__frame__sink_1a7a61e3ea71b10bd9edbcd3a0fcd40772" prot="protected" virt="non-virtual"><scope>digital_ofdm_frame_sink</scope><name>enter_have_sync</name></member>

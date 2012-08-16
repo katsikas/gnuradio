@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdvbti__data__deinterleaver" kind="class" prot="public">
     <compoundname>dvbti_data_deinterleaver</compoundname>
     <basecompoundref refid="classconvolutional__interleaver" prot="public" virt="non-virtual">convolutional_interleaver&lt; unsigned char &gt;</basecompoundref>
@@ -83,33 +83,40 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="315">
+      <node id="318">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
       </node>
-      <node id="314">
+      <node id="317">
         <label>dvbti_data_deinterleaver</label>
         <link refid="classdvbti__data__deinterleaver"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="318" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="317">
+      <node id="320">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="318" relation="usage">
+        <childnode refid="321" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="316">
+      <node id="322">
+        <label>interleaver_fifo&lt; unsigned char &gt;</label>
+        <link refid="classinterleaver__fifo"/>
+      </node>
+      <node id="319">
         <label>dvbti_data_deinterleaver</label>
         <link refid="classdvbti__data__deinterleaver"/>
-        <childnode refid="317" relation="public-inheritance">
+        <childnode refid="320" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="318">
+      <node id="321">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
+        <childnode refid="322" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h" line="49" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h" bodystart="49" bodyend="68"/>

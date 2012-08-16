@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 export GR_DONT_LOAD_PREFS=1
 export srcdir=/home/katsikas/gnuradio/gr-video-sdl/src
 export PATH=/home/katsikas/gnuradio/build/gr-video-sdl/src:$PATH

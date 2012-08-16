@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__fir__scc" kind="class" prot="public">
     <compoundname>gr_fir_scc</compoundname>
     <derivedcompoundref refid="classgr__fir__scc__generic" prot="public" virt="non-virtual">gr_fir_scc_generic</derivedcompoundref>
@@ -196,50 +196,50 @@
     <detaileddescription>
 <para>The trailing suffix has the form _IOT where I codes the input type, O codes the output type, and T codes the tap type. I,O,T are elements of the set &apos;s&apos; (short), &apos;f&apos; (float), &apos;c&apos; (gr_complex), &apos;i&apos; (int) </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="611">
+      <node id="614">
         <label>gr_fir_scc_3dnow</label>
         <link refid="classgr__fir__scc__3dnow"/>
-        <childnode refid="610" relation="public-inheritance">
+        <childnode refid="613" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="608">
+      <node id="611">
         <label>gr_fir_scc</label>
         <link refid="classgr__fir__scc"/>
       </node>
-      <node id="613">
+      <node id="616">
         <label>gr_fir_scc_sse</label>
         <link refid="classgr__fir__scc__sse"/>
-        <childnode refid="610" relation="public-inheritance">
+        <childnode refid="613" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="610">
+      <node id="613">
         <label>gr_fir_scc_simd</label>
         <link refid="classgr__fir__scc__simd"/>
-        <childnode refid="609" relation="public-inheritance">
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>gr_fir_scc_3dnowext</label>
+        <link refid="classgr__fir__scc__3dnowext"/>
+        <childnode refid="613" relation="public-inheritance">
         </childnode>
       </node>
       <node id="612">
-        <label>gr_fir_scc_3dnowext</label>
-        <link refid="classgr__fir__scc__3dnowext"/>
-        <childnode refid="610" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="609">
         <label>gr_fir_scc_generic</label>
         <link refid="classgr__fir__scc__generic"/>
-        <childnode refid="608" relation="public-inheritance">
+        <childnode refid="611" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="614">
+      <node id="617">
         <label>gr_fir_scc</label>
         <link refid="classgr__fir__scc"/>
-        <childnode refid="615" relation="usage">
+        <childnode refid="618" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="615">
+      <node id="618">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
     </collaborationgraph>

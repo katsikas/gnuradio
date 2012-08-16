@@ -10,8 +10,6 @@ FILE(REMOVE_RECURSE
   "audio_swig_doc_swig_docs/xml/combine.xslt"
   "_audio_swig.pdb"
   "_audio_swig.so"
-  "CMakeFiles/CMakeRelink.dir/_audio_swig.pdb"
-  "CMakeFiles/CMakeRelink.dir/_audio_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

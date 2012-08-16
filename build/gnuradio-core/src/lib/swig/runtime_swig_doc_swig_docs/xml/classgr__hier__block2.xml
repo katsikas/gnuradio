@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__hier__block2" kind="class" prot="public">
     <compoundname>gr_hier_block2</compoundname>
     <basecompoundref refid="classgr__basic__block" prot="public" virt="non-virtual">gr_basic_block</basecompoundref>
@@ -306,59 +306,59 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Hierarchical container class for gr_block&apos;s and gr_hier_block2&apos;s. </para>    </briefdescription>
+<para>Hierarchical container class for <ref refid="classgr__block" kindref="compound">gr_block</ref>&apos;s and <ref refid="classgr__hier__block2" kindref="compound">gr_hier_block2</ref>&apos;s. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="386">
+      <node id="392">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="384">
+      <node id="390">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="385" relation="public-inheritance">
+        <childnode refid="391" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="387">
+      <node id="393">
         <label>gr_top_block</label>
         <link refid="classgr__top__block"/>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="385">
+      <node id="391">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="386" relation="public-inheritance">
+        <childnode refid="392" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="390">
+      <node id="396">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
-      <node id="388">
+      <node id="394">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="389" relation="public-inheritance">
+        <childnode refid="395" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="392">
+      <node id="398">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="389">
+      <node id="395">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="390" relation="public-inheritance">
+        <childnode refid="396" relation="public-inheritance">
         </childnode>
-        <childnode refid="391" relation="usage">
+        <childnode refid="397" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="391">
+      <node id="397">
         <label>std::string</label>
-        <childnode refid="392" relation="public-inheritance">
+        <childnode refid="398" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.5.1">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
   <compound refid="classgr__align__on__samplenumbers__ss_1_1align__state" kind="class"><name>gr_align_on_samplenumbers_ss::align_state</name>
     <member refid="classgr__align__on__samplenumbers__ss_1_1align__state_1a91458fa79e41e7ddffb1aae25a0bd9b0" kind="variable"><name>ucounter_end</name></member>
     <member refid="classgr__align__on__samplenumbers__ss_1_1align__state_1a642de27ef47bf202642009578c057e7b" kind="variable"><name>ucounter_begin</name></member>
@@ -17,6 +17,7 @@
   </compound>
   <compound refid="classstd_1_1auto__ptr" kind="class"><name>std::auto_ptr</name>
     <member refid="classstd_1_1auto__ptr_1a076c936287003dc557981f9ccec1d841" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1auto__ptr_1aa16b96ffd607af4bb6ba4738d77124f8" kind="function"><name>operator-&gt;</name></member>
   </compound>
   <compound refid="classstd_1_1bad__alloc" kind="class"><name>std::bad_alloc</name>
   </compound>
@@ -52,15 +53,17 @@
   </compound>
   <compound refid="classstd_1_1complex" kind="class"><name>std::complex</name>
   </compound>
+  <compound refid="classstd_1_1map_1_1const__iterator" kind="class"><name>std::map::const_iterator</name>
+  </compound>
   <compound refid="classstd_1_1multimap_1_1const__iterator" kind="class"><name>std::multimap::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1basic__string_1_1const__iterator" kind="class"><name>std::basic_string::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1const__iterator" kind="class"><name>std::string::const_iterator</name>
-  </compound>
   <compound refid="classstd_1_1multiset_1_1const__iterator" kind="class"><name>std::multiset::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__iterator" kind="class"><name>std::string::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1const__iterator" kind="class"><name>std::vector::const_iterator</name>
   </compound>
@@ -70,27 +73,25 @@
   </compound>
   <compound refid="classstd_1_1list_1_1const__iterator" kind="class"><name>std::list::const_iterator</name>
   </compound>
-  <compound refid="classstd_1_1map_1_1const__iterator" kind="class"><name>std::map::const_iterator</name>
+  <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multimap_1_1const__reverse__iterator" kind="class"><name>std::multimap::const_reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1const__reverse__iterator" kind="class"><name>std::multiset::const_reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1vector_1_1const__reverse__iterator" kind="class"><name>std::vector::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1const__reverse__iterator" kind="class"><name>std::wstring::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1const__reverse__iterator" kind="class"><name>std::deque::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1list_1_1const__reverse__iterator" kind="class"><name>std::list::const_reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque" kind="class"><name>std::deque</name>
     <member refid="classstd_1_1deque_1a090b92581de438d2e14bedc190f0b0f9" kind="variable"><name>elements</name></member>
@@ -370,7 +371,7 @@
     <member refid="classgr__correlate__access__code__tag__bb_1a60ea6913027c2e5c75190431fd89be15" kind="variable"><name>d_len</name></member>
     <member refid="classgr__correlate__access__code__tag__bb_1aa9751cd934659fd36f4a3032678bc8e2" kind="variable"><name>d_key</name></member>
     <member refid="classgr__correlate__access__code__tag__bb_1afd6eb14545de1297f67aa3da1e927699" kind="variable"><name>d_me</name></member>
-    <member refid="classgr__correlate__access__code__tag__bb_1a3a43075586d0e98412abbd944b051eb1" kind="friend"><name>gr_make_correlate_access_code_tag_bb</name></member>
+    <member refid="classgr__correlate__access__code__tag__bb_1a0617cb8852bd032b4e3b68f046521e91" kind="friend"><name>gr_make_correlate_access_code_tag_bb</name></member>
     <member refid="classgr__correlate__access__code__tag__bb_1a0e29626dd46cbe734056df86b89f8a7f" kind="function"><name>gr_correlate_access_code_tag_bb</name></member>
     <member refid="classgr__correlate__access__code__tag__bb_1a67942d4a2ea030d9395891fd21496a0e" kind="function"><name>~gr_correlate_access_code_tag_bb</name></member>
     <member refid="classgr__correlate__access__code__tag__bb_1a3ffbec4ede3d6a17764fe28255d2a193" kind="function"><name>work</name></member>
@@ -381,7 +382,7 @@
     <member refid="classgr__cpfsk__bc_1a8a35b5a57568759b2348b45ae36dd25f" kind="variable"><name>d_freq</name></member>
     <member refid="classgr__cpfsk__bc_1a722124374b88e7c79a9273bb95af3b76" kind="variable"><name>d_ampl</name></member>
     <member refid="classgr__cpfsk__bc_1a20ebcb74c989fe6833b77990d4db10c4" kind="variable"><name>d_phase</name></member>
-    <member refid="classgr__cpfsk__bc_1a932b890b108f630f8d6102d75b75cf57" kind="friend"><name>gr_make_cpfsk_bc</name></member>
+    <member refid="classgr__cpfsk__bc_1a54138bec6522303096b64f648305bef5" kind="friend"><name>gr_make_cpfsk_bc</name></member>
     <member refid="classgr__cpfsk__bc_1ad9e7b146fb2cdac7775777d8c4e74020" kind="function"><name>gr_cpfsk_bc</name></member>
     <member refid="classgr__cpfsk__bc_1a445e65dc97026a329be60f0395f93cbe" kind="function"><name>~gr_cpfsk_bc</name></member>
     <member refid="classgr__cpfsk__bc_1a1ec1538fb26708df5320997576144591" kind="function"><name>set_amplitude</name></member>
@@ -405,7 +406,7 @@
     <member refid="classgr__ctcss__squelch__ff_1ab40098dc2fb71d4c6f15ec4dc03bf3f2" kind="variable"><name>d_goertzel_l</name></member>
     <member refid="classgr__ctcss__squelch__ff_1ab153c8b2ee4ad3e951df4bf3dfc00482" kind="variable"><name>d_goertzel_c</name></member>
     <member refid="classgr__ctcss__squelch__ff_1aedc166ca884c94f02bd6c6f0f9d5ac11" kind="variable"><name>d_goertzel_r</name></member>
-    <member refid="classgr__ctcss__squelch__ff_1a5ffdc00770218eb902dadc285dc3ea22" kind="friend"><name>gr_make_ctcss_squelch_ff</name></member>
+    <member refid="classgr__ctcss__squelch__ff_1a20b909c0900bec95213f4f739a3b9f68" kind="friend"><name>gr_make_ctcss_squelch_ff</name></member>
     <member refid="classgr__ctcss__squelch__ff_1ad327366f4759740664a587eebef8b8a8" kind="function"><name>gr_ctcss_squelch_ff</name></member>
     <member refid="classgr__ctcss__squelch__ff_1a7b754143c10da6bb1522f8e6d84f31b4" kind="function"><name>find_tone</name></member>
     <member refid="classgr__ctcss__squelch__ff_1a5437e033ee9e42874cf16e751a73ff78" kind="function"><name>update_state</name></member>
@@ -421,14 +422,14 @@
     <member refid="classgr__decode__ccsds__27__fb_1a57d61abeee8d1867f36dc9c262e8a812" kind="variable"><name>d_state1</name></member>
     <member refid="classgr__decode__ccsds__27__fb_1a27c11783037a6f7f70793ab151ffaf61" kind="variable"><name>d_viterbi_in</name></member>
     <member refid="classgr__decode__ccsds__27__fb_1ac50e92431d1c3066c79fbd62eb84ce46" kind="variable"><name>d_count</name></member>
-    <member refid="classgr__decode__ccsds__27__fb_1adb005005785b622c72cb4ccf0727ff2c" kind="friend"><name>gr_make_decode_ccsds_27_fb</name></member>
+    <member refid="classgr__decode__ccsds__27__fb_1acd5b4ca54737adf578776854a4df4e95" kind="friend"><name>gr_make_decode_ccsds_27_fb</name></member>
     <member refid="classgr__decode__ccsds__27__fb_1a8d3c3b11825d9518662b493517cfa098" kind="function"><name>gr_decode_ccsds_27_fb</name></member>
     <member refid="classgr__decode__ccsds__27__fb_1ae325913365d75520e8b9ccddb1832522" kind="function"><name>~gr_decode_ccsds_27_fb</name></member>
     <member refid="classgr__decode__ccsds__27__fb_1a913481b6b9bfbf8a97ba5f02deddd31d" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__deinterleave" kind="class"><name>gr_deinterleave</name>
     <member refid="classgr__deinterleave_1a9ebcc3171b7f2f66fb5981654679d1e1" kind="variable"><name>d_itemsize</name></member>
-    <member refid="classgr__deinterleave_1a8c5d4438ee02d7b5addda94e263694ac" kind="friend"><name>gr_make_deinterleave</name></member>
+    <member refid="classgr__deinterleave_1a46d401ab4ac3749d2295eb1d780e71b1" kind="friend"><name>gr_make_deinterleave</name></member>
     <member refid="classgr__deinterleave_1a16d235cb09a3c92ab1ea8be6d6f4da10" kind="function"><name>gr_deinterleave</name></member>
     <member refid="classgr__deinterleave_1a90fd734f7c14cff36f5518fb785d455d" kind="function"><name>~gr_deinterleave</name></member>
     <member refid="classgr__deinterleave_1aad7ee9c2aa5c10bebb41df3486520734" kind="function"><name>work</name></member>
@@ -438,7 +439,7 @@
     <member refid="classgr__delay_1aa5ada0762d5dc4faa2c59b4f12fe8547" kind="variable"><name>d_itemsize</name></member>
     <member refid="classgr__delay_1a2327ee4f25fedd2496fa990ea43eb606" kind="variable"><name>d_delta</name></member>
     <member refid="classgr__delay_1a2fcf0d7f97232d871c6305525554d9af" kind="variable"><name>d_mutex_delay</name></member>
-    <member refid="classgr__delay_1a5342a03acb09a95048b8a1a59f3212ed" kind="friend"><name>gr_make_delay</name></member>
+    <member refid="classgr__delay_1a750ddfd4ce1739abf8e9d2be5ba85161" kind="friend"><name>gr_make_delay</name></member>
     <member refid="classgr__delay_1aecb3d44bcaed49f2c9b4dd1716160d07" kind="function"><name>gr_delay</name></member>
     <member refid="classgr__delay_1a8644fb68174be4d03c9a1a75c670870d" kind="function"><name>forecast</name></member>
     <member refid="classgr__delay_1a1b480a7ef7039a053d573bf5cb6d91cd" kind="function"><name>delay</name></member>
@@ -447,25 +448,25 @@
   </compound>
   <compound refid="classgr__descrambler__bb" kind="class"><name>gr_descrambler_bb</name>
     <member refid="classgr__descrambler__bb_1ad2d9c5daaff6e4a4c0165af7f9296f22" kind="variable"><name>d_lfsr</name></member>
-    <member refid="classgr__descrambler__bb_1a16e95cce753f802542ebd11669f85425" kind="friend"><name>gr_make_descrambler_bb</name></member>
+    <member refid="classgr__descrambler__bb_1a5c72a2f04921fd2fa980f19412f0539d" kind="friend"><name>gr_make_descrambler_bb</name></member>
     <member refid="classgr__descrambler__bb_1af61353224c7ef2adf4ffc1069978377d" kind="function"><name>gr_descrambler_bb</name></member>
     <member refid="classgr__descrambler__bb_1ac64b7d32099c1616decec364ba6dc15d" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__diff__decoder__bb" kind="class"><name>gr_diff_decoder_bb</name>
     <member refid="classgr__diff__decoder__bb_1a7ca0d513b02c103dcf77c4e7b825822b" kind="variable"><name>d_modulus</name></member>
-    <member refid="classgr__diff__decoder__bb_1addb87bc1cdb45b76ff99b58885b9f0a5" kind="friend"><name>gr_make_diff_decoder_bb</name></member>
+    <member refid="classgr__diff__decoder__bb_1ab4fb0457139d55f36c1648f431a111c6" kind="friend"><name>gr_make_diff_decoder_bb</name></member>
     <member refid="classgr__diff__decoder__bb_1a8e84b14f4acbc739c73a451a5b9136a4" kind="function"><name>gr_diff_decoder_bb</name></member>
     <member refid="classgr__diff__decoder__bb_1a0813f2d6b040ddd422c2fb60a723a23a" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__diff__encoder__bb" kind="class"><name>gr_diff_encoder_bb</name>
     <member refid="classgr__diff__encoder__bb_1a339847f124faa08ca26f8c4ab7622c7c" kind="variable"><name>d_last_out</name></member>
     <member refid="classgr__diff__encoder__bb_1ade83c5c77c09376254c5d3fa9fd3e4b5" kind="variable"><name>d_modulus</name></member>
-    <member refid="classgr__diff__encoder__bb_1a92e6b0b399e2eb6ca7df34d35fe78842" kind="friend"><name>gr_make_diff_encoder_bb</name></member>
+    <member refid="classgr__diff__encoder__bb_1ac36bccbf82974ac43c39faa4d5acb4cb" kind="friend"><name>gr_make_diff_encoder_bb</name></member>
     <member refid="classgr__diff__encoder__bb_1a0daa8ac29a85dc83e8c712ae5cb70d8b" kind="function"><name>gr_diff_encoder_bb</name></member>
     <member refid="classgr__diff__encoder__bb_1a54762abf05d669b9620172f545ef3a2c" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__diff__phasor__cc" kind="class"><name>gr_diff_phasor_cc</name>
-    <member refid="classgr__diff__phasor__cc_1ac06c92c889789bcbd74188ca57464f1f" kind="friend"><name>gr_make_diff_phasor_cc</name></member>
+    <member refid="classgr__diff__phasor__cc_1adc9614ecbe0f459c44ec2fa1439d10a5" kind="friend"><name>gr_make_diff_phasor_cc</name></member>
     <member refid="classgr__diff__phasor__cc_1acd8f05b4af027174198541c168feeee5" kind="function"><name>gr_diff_phasor_cc</name></member>
     <member refid="classgr__diff__phasor__cc_1a5fce74b83263926b18488401c91ca9fe" kind="function"><name>~gr_diff_phasor_cc</name></member>
     <member refid="classgr__diff__phasor__cc_1a733c9c9021b9ded458f95c097e3b5f36" kind="function"><name>work</name></member>
@@ -476,13 +477,13 @@
     <member refid="classgr__dpll__bb_1a9505947a72ef2d6f3588c213f9ecdfdc" kind="variable"><name>d_pulse_frequency</name></member>
     <member refid="classgr__dpll__bb_1a24926decb42ded33abdea5bd63db63c3" kind="variable"><name>d_gain</name></member>
     <member refid="classgr__dpll__bb_1ab7f6f9c38da39494b4b40ff5367dff43" kind="variable"><name>d_decision_threshold</name></member>
-    <member refid="classgr__dpll__bb_1a167d06bb92ddb3c2a9fcbd73386f661a" kind="friend"><name>gr_make_dpll_bb</name></member>
+    <member refid="classgr__dpll__bb_1ac03b2f9db3a64d7fd0925e293cb99bbc" kind="friend"><name>gr_make_dpll_bb</name></member>
     <member refid="classgr__dpll__bb_1ab2d94dd8beb2f56aaa75f2981df121b9" kind="function"><name>gr_dpll_bb</name></member>
     <member refid="classgr__dpll__bb_1ae71727e6a83512b65927e2b9ea367c35" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__encode__ccsds__27__bb" kind="class"><name>gr_encode_ccsds_27_bb</name>
     <member refid="classgr__encode__ccsds__27__bb_1aa5629392d465c83ae1bab7e7b324b12f" kind="variable"><name>d_encstate</name></member>
-    <member refid="classgr__encode__ccsds__27__bb_1a8206242661fba66aaee9e73d147d4881" kind="friend"><name>gr_make_encode_ccsds_27_bb</name></member>
+    <member refid="classgr__encode__ccsds__27__bb_1a0dea6cba890ab452bccc1ead60a78c5d" kind="friend"><name>gr_make_encode_ccsds_27_bb</name></member>
     <member refid="classgr__encode__ccsds__27__bb_1ade52c78aa92d242766064245cb956f39" kind="function"><name>gr_encode_ccsds_27_bb</name></member>
     <member refid="classgr__encode__ccsds__27__bb_1acba2121dc418fe6dc8e989ff7bb69a4d" kind="function"><name>~gr_encode_ccsds_27_bb</name></member>
     <member refid="classgr__encode__ccsds__27__bb_1a608f8b9d75254566155d0ea244f2eea6" kind="function"><name>work</name></member>
@@ -491,7 +492,7 @@
     <member refid="classgr__fake__channel__decoder__pp_1a0d6f412f2aa58cd73f54cc92296dc0af" kind="variable"><name>d_input_vlen</name></member>
     <member refid="classgr__fake__channel__decoder__pp_1af4127567b9f04b2ff602728b6661cb03" kind="variable"><name>d_output_vlen</name></member>
     <member refid="classgr__fake__channel__decoder__pp_1aa0abbe726fa6f71c7435dfc86ed9baaa" kind="function"><name>gr_fake_channel_decoder_pp</name></member>
-    <member refid="classgr__fake__channel__decoder__pp_1af6d0acc4010fc06d9f69aee5ccaa05ad" kind="friend"><name>gr_make_fake_channel_decoder_pp</name></member>
+    <member refid="classgr__fake__channel__decoder__pp_1a065f8e4a8debac0aed93506f2d10039f" kind="friend"><name>gr_make_fake_channel_decoder_pp</name></member>
     <member refid="classgr__fake__channel__decoder__pp_1a4c2a8eabb20252b77b1f47adf648f57c" kind="function"><name>~gr_fake_channel_decoder_pp</name></member>
     <member refid="classgr__fake__channel__decoder__pp_1ab44af8238e807878ff6a6bd0108eb37c" kind="function"><name>work</name></member>
   </compound>
@@ -499,14 +500,14 @@
     <member refid="classgr__fake__channel__encoder__pp_1afcc05d4076aeddbc0e43c6787b815ff5" kind="variable"><name>d_input_vlen</name></member>
     <member refid="classgr__fake__channel__encoder__pp_1a83c6c326b12caece492df961a43c7ead" kind="variable"><name>d_output_vlen</name></member>
     <member refid="classgr__fake__channel__encoder__pp_1ad00107d3eac3dc63b1ead92e41475850" kind="function"><name>gr_fake_channel_encoder_pp</name></member>
-    <member refid="classgr__fake__channel__encoder__pp_1a227e933a8f5db288a2c199e15adaa66c" kind="friend"><name>gr_make_fake_channel_encoder_pp</name></member>
+    <member refid="classgr__fake__channel__encoder__pp_1afc86a527a66c4b1a4ddccc40f406c38a" kind="friend"><name>gr_make_fake_channel_encoder_pp</name></member>
     <member refid="classgr__fake__channel__encoder__pp_1a51abedbeb899c43f7bf52c1ad2d7fc37" kind="function"><name>~gr_fake_channel_encoder_pp</name></member>
     <member refid="classgr__fake__channel__encoder__pp_1a730e390c1365a6aa09b357213e05ebf4" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__feedforward__agc__cc" kind="class"><name>gr_feedforward_agc_cc</name>
     <member refid="classgr__feedforward__agc__cc_1a6c5983f61ca8190c88d71870f6b24781" kind="variable"><name>d_nsamples</name></member>
     <member refid="classgr__feedforward__agc__cc_1a11885343bb50bb4bdd908bb94d5271dd" kind="variable"><name>d_reference</name></member>
-    <member refid="classgr__feedforward__agc__cc_1a9f954320e4fa024b500b10d526677633" kind="friend"><name>gr_make_feedforward_agc_cc</name></member>
+    <member refid="classgr__feedforward__agc__cc_1a3e1fc8a0e4b67e11cacbbcfd1ccc6e20" kind="friend"><name>gr_make_feedforward_agc_cc</name></member>
     <member refid="classgr__feedforward__agc__cc_1ab51a40786620d753f5f23a7ddb6693d4" kind="function"><name>gr_feedforward_agc_cc</name></member>
     <member refid="classgr__feedforward__agc__cc_1a6fed540018613be281d35261e3e8ef5a" kind="function"><name>~gr_feedforward_agc_cc</name></member>
     <member refid="classgr__feedforward__agc__cc_1aac26eb0526335807be3a97b2e058a39c" kind="function"><name>work</name></member>
@@ -540,7 +541,7 @@
     <member refid="classgr__fft__vcc_1a09d6d9d2d2367eda98c8adf72c5aa67c" kind="variable"><name>d_window</name></member>
     <member refid="classgr__fft__vcc_1a89f1cabb1037169443b4b056951bdf5e" kind="variable"><name>d_forward</name></member>
     <member refid="classgr__fft__vcc_1a94932df035ecc7858f85b6937b65f770" kind="variable"><name>d_shift</name></member>
-    <member refid="classgr__fft__vcc_1a279b608335d7f41ffe1ef70197456271" kind="friend"><name>gr_make_fft_vcc</name></member>
+    <member refid="classgr__fft__vcc_1ae7e4b52338beeff3b258ae1164e3fd83" kind="friend"><name>gr_make_fft_vcc</name></member>
     <member refid="classgr__fft__vcc_1abef385ab43c232edaa2c740f36794d40" kind="function"><name>gr_fft_vcc</name></member>
     <member refid="classgr__fft__vcc_1afcbc4274969fc5f840ed7a129e8f7d80" kind="function"><name>~gr_fft_vcc</name></member>
     <member refid="classgr__fft__vcc_1aa3a5176d59db45016c6834d2b888f59a" kind="function"><name>set_nthreads</name></member>
@@ -549,7 +550,7 @@
   </compound>
   <compound refid="classgr__fft__vcc__fftw" kind="class"><name>gr_fft_vcc_fftw</name>
     <member refid="classgr__fft__vcc__fftw_1a583b11e4607eec8874a267eeeb7fe1ce" kind="variable"><name>d_fft</name></member>
-    <member refid="classgr__fft__vcc__fftw_1a02daf2b065df005960d9397b567d65ed" kind="friend"><name>gr_make_fft_vcc_fftw</name></member>
+    <member refid="classgr__fft__vcc__fftw_1a1269a9daa90d8c3427c794ebce4f0067" kind="friend"><name>gr_make_fft_vcc_fftw</name></member>
     <member refid="classgr__fft__vcc__fftw_1afad93d48467d1ffac29bf13294b04b27" kind="function"><name>gr_fft_vcc_fftw</name></member>
     <member refid="classgr__fft__vcc__fftw_1a4cf3d4425c48018758d323f070891364" kind="function"><name>~gr_fft_vcc_fftw</name></member>
     <member refid="classgr__fft__vcc__fftw_1a558b6e041c8cea4ec82566f35c4d4db8" kind="function"><name>set_nthreads</name></member>
@@ -560,7 +561,7 @@
     <member refid="classgr__fft__vfc_1aa6e35255cb7926091d299d6f919a1924" kind="variable"><name>d_fft_size</name></member>
     <member refid="classgr__fft__vfc_1ac3e73f1fd266ca8a2765321bbb424233" kind="variable"><name>d_window</name></member>
     <member refid="classgr__fft__vfc_1a92e7d1a475f4d438a2bd75f0d3d484fb" kind="variable"><name>d_fft</name></member>
-    <member refid="classgr__fft__vfc_1a26a180696693044ee777c65a31dc139f" kind="friend"><name>gr_make_fft_vfc</name></member>
+    <member refid="classgr__fft__vfc_1a87f8e681cb8be417e3d58e5322953af7" kind="friend"><name>gr_make_fft_vfc</name></member>
     <member refid="classgr__fft__vfc_1a3e3574a89bab878b4a50ed66abe23fd2" kind="function"><name>gr_fft_vfc</name></member>
     <member refid="classgr__fft__vfc_1a8fb322aa32add0e6ecf44df9c38342e5" kind="function"><name>~gr_fft_vfc</name></member>
     <member refid="classgr__fft__vfc_1a42f328c34795097e9311f853f85f52ac" kind="function"><name>set_nthreads</name></member>
@@ -601,7 +602,7 @@
   <compound refid="classgr__float__to__char" kind="class"><name>gr_float_to_char</name>
     <member refid="classgr__float__to__char_1a99d68bdf410d478952a5691a80184da2" kind="variable"><name>d_vlen</name></member>
     <member refid="classgr__float__to__char_1a23b3fba880ad2a4377edc55a88a31e19" kind="variable"><name>d_scale</name></member>
-    <member refid="classgr__float__to__char_1ae731a06580047a10cf0ad2fdae1caa72" kind="friend"><name>gr_make_float_to_char</name></member>
+    <member refid="classgr__float__to__char_1a55b240e692a3bcb1d836e54a8de12138" kind="friend"><name>gr_make_float_to_char</name></member>
     <member refid="classgr__float__to__char_1a11b0c37e9a375dff9101124f52dc84a6" kind="function"><name>gr_float_to_char</name></member>
     <member refid="classgr__float__to__char_1a2af6647c28efe761f966dca057ac0deb" kind="function"><name>scale</name></member>
     <member refid="classgr__float__to__char_1ae5fd10288c875f2d185955260d3e51df" kind="function"><name>set_scale</name></member>
@@ -609,14 +610,14 @@
   </compound>
   <compound refid="classgr__float__to__complex" kind="class"><name>gr_float_to_complex</name>
     <member refid="classgr__float__to__complex_1a553c37f3daac51d4c97740554f0c14f7" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__float__to__complex_1a329ce4149e70de2d8c57d46d069ed5dd" kind="friend"><name>gr_make_float_to_complex</name></member>
+    <member refid="classgr__float__to__complex_1ad86667535878f80eba27ffc01f37dd4f" kind="friend"><name>gr_make_float_to_complex</name></member>
     <member refid="classgr__float__to__complex_1aa7a1d227247906605c4a8dcb3f81017d" kind="function"><name>gr_float_to_complex</name></member>
     <member refid="classgr__float__to__complex_1a85dab7df32ceda0094977dead85b0e48" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__float__to__int" kind="class"><name>gr_float_to_int</name>
     <member refid="classgr__float__to__int_1ad80de11fcdc5131211dbb440a5a85840" kind="variable"><name>d_vlen</name></member>
     <member refid="classgr__float__to__int_1a679a83799cd1cf046de751fd2e6695a1" kind="variable"><name>d_scale</name></member>
-    <member refid="classgr__float__to__int_1a89335a2d803840ed6b2e653c170f5334" kind="friend"><name>gr_make_float_to_int</name></member>
+    <member refid="classgr__float__to__int_1aef9b64cc825ad8c1e55739d47441ab4e" kind="friend"><name>gr_make_float_to_int</name></member>
     <member refid="classgr__float__to__int_1aefdf8d89fb221515d6bfea918d300755" kind="function"><name>gr_float_to_int</name></member>
     <member refid="classgr__float__to__int_1a9b3e1928f4b87e328f138dd4fa7f5d08" kind="function"><name>scale</name></member>
     <member refid="classgr__float__to__int_1a30aabc9ebe9b0a906a335fe9bde5111c" kind="function"><name>set_scale</name></member>
@@ -625,14 +626,14 @@
   <compound refid="classgr__float__to__short" kind="class"><name>gr_float_to_short</name>
     <member refid="classgr__float__to__short_1a3b527ffc12de3773fa0c2bc1a2b9ddd5" kind="variable"><name>d_vlen</name></member>
     <member refid="classgr__float__to__short_1a81dec048e7fb1d86daac76eb7941d941" kind="variable"><name>d_scale</name></member>
-    <member refid="classgr__float__to__short_1a3b141503477ccd22a14547aea5f80f5d" kind="friend"><name>gr_make_float_to_short</name></member>
+    <member refid="classgr__float__to__short_1a7513a34dbe4cf90aa0c87d734710c384" kind="friend"><name>gr_make_float_to_short</name></member>
     <member refid="classgr__float__to__short_1afbb7c7dabfcef49afdc48103403cda5b" kind="function"><name>gr_float_to_short</name></member>
     <member refid="classgr__float__to__short_1a1bc7806dd1416aea45b1752ffe4d1eb7" kind="function"><name>scale</name></member>
     <member refid="classgr__float__to__short_1ac376343532b2f6d005d8dee81f64fbee" kind="function"><name>set_scale</name></member>
     <member refid="classgr__float__to__short_1a655c9d0dfac89872f9adcafb6e6ee0ee" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__float__to__uchar" kind="class"><name>gr_float_to_uchar</name>
-    <member refid="classgr__float__to__uchar_1aa969e23671617d0c3608ebeca3acd5b6" kind="friend"><name>gr_make_float_to_uchar</name></member>
+    <member refid="classgr__float__to__uchar_1a9d27495f843a48f12335fc4297d936f4" kind="friend"><name>gr_make_float_to_uchar</name></member>
     <member refid="classgr__float__to__uchar_1a0401f4fb8dca25ee8582abef70cac37e" kind="function"><name>gr_float_to_uchar</name></member>
     <member refid="classgr__float__to__uchar_1a36d30b84b0899e41b8489434a18dabf0" kind="function"><name>work</name></member>
   </compound>
@@ -647,7 +648,7 @@
     <member refid="classgr__fmdet__cf_1a56f9aea326ad72aa2f06205e12e2dd6e" kind="variable"><name>d_scl</name></member>
     <member refid="classgr__fmdet__cf_1a3614c27b81a4e5335893d2d0c43d6761" kind="variable"><name>d_bias</name></member>
     <member refid="classgr__fmdet__cf_1ac1770aeff11c118774c77ff0e1128fa8" kind="variable"><name>d_filter</name></member>
-    <member refid="classgr__fmdet__cf_1a8ffc707cbcd8f85a09db429ac9674428" kind="friend"><name>gr_make_fmdet_cf</name></member>
+    <member refid="classgr__fmdet__cf_1a4813fc8c590aaad89d13886e04971450" kind="friend"><name>gr_make_fmdet_cf</name></member>
     <member refid="classgr__fmdet__cf_1aab9592fdcc93829aa88b61fbaf21a548" kind="function"><name>gr_fmdet_cf</name></member>
     <member refid="classgr__fmdet__cf_1a4f83e94b6bf79fd659c215fccf6fe91b" kind="function"><name>work</name></member>
   </compound>
@@ -668,7 +669,7 @@
     <member refid="classgr__framer__sink__1_1aaa99c8a5424ed11ca3a0e64a854adcb6" kind="variable"><name>d_packetlen</name></member>
     <member refid="classgr__framer__sink__1_1a369923ed54f4c0f66a86d462143518ba" kind="variable"><name>d_packet_whitener_offset</name></member>
     <member refid="classgr__framer__sink__1_1aed78672f5f2935d7cb279c34d8280b60" kind="variable"><name>d_packetlen_cnt</name></member>
-    <member refid="classgr__framer__sink__1_1a1948cbe8acc96fd1007b841e1a6c4531" kind="friend"><name>gr_make_framer_sink_1</name></member>
+    <member refid="classgr__framer__sink__1_1a8ba58366362770dc6583ad4878bf4991" kind="friend"><name>gr_make_framer_sink_1</name></member>
     <member refid="classgr__framer__sink__1_1a8462ea2bad2d49086220c2b5eb894805" kind="function"><name>gr_framer_sink_1</name></member>
     <member refid="classgr__framer__sink__1_1ae6506c6d757bfee229e2caf7eeaef1dc" kind="function"><name>enter_search</name></member>
     <member refid="classgr__framer__sink__1_1ae4c482a3ab679642356620f0c216465b" kind="function"><name>enter_have_sync</name></member>
@@ -681,7 +682,7 @@
   <compound refid="classgr__frequency__modulator__fc" kind="class"><name>gr_frequency_modulator_fc</name>
     <member refid="classgr__frequency__modulator__fc_1a00d992897e6eada4f89eca79eb75c2b3" kind="variable"><name>d_sensitivity</name></member>
     <member refid="classgr__frequency__modulator__fc_1a51a2217a8a741e9145da6e7193601594" kind="variable"><name>d_phase</name></member>
-    <member refid="classgr__frequency__modulator__fc_1afae4188f706f48e42481b610aa9e1b5c" kind="friend"><name>gr_make_frequency_modulator_fc</name></member>
+    <member refid="classgr__frequency__modulator__fc_1ab72b5fb53eba1c7032ba49350c14eb1f" kind="friend"><name>gr_make_frequency_modulator_fc</name></member>
     <member refid="classgr__frequency__modulator__fc_1a76399e58fda7b9af29f77e49cff01861" kind="function"><name>gr_frequency_modulator_fc</name></member>
     <member refid="classgr__frequency__modulator__fc_1af3010c9253caf2d9bcaaae383428f286" kind="function"><name>set_sensitivity</name></member>
     <member refid="classgr__frequency__modulator__fc_1af662dddfced75a489ab0d764d8f751a7" kind="function"><name>sensitivity</name></member>
@@ -740,7 +741,7 @@
     <member refid="classgr__glfsr__source__b_1a468b5ca9ba9ddbfa06dbe7ea30b6a24e" kind="variable"><name>d_repeat</name></member>
     <member refid="classgr__glfsr__source__b_1ae830f29df6d94c69ac2032a2d2b1d722" kind="variable"><name>d_index</name></member>
     <member refid="classgr__glfsr__source__b_1a263083361688433127feda244d450b2d" kind="variable"><name>d_length</name></member>
-    <member refid="classgr__glfsr__source__b_1a906c4fee9f70cb32cc4951be619af276" kind="friend"><name>gr_make_glfsr_source_b</name></member>
+    <member refid="classgr__glfsr__source__b_1abd29646e922b93657323d6fc808414db" kind="friend"><name>gr_make_glfsr_source_b</name></member>
     <member refid="classgr__glfsr__source__b_1a7051e4a17798c18986a88df811a1ae72" kind="function"><name>gr_glfsr_source_b</name></member>
     <member refid="classgr__glfsr__source__b_1a3709119c1b274ef07ae6ac705e6cfaca" kind="function"><name>~gr_glfsr_source_b</name></member>
     <member refid="classgr__glfsr__source__b_1ad84a664a94961f3a1512b39603c1c05f" kind="function"><name>work</name></member>
@@ -752,7 +753,7 @@
     <member refid="classgr__glfsr__source__f_1a1740ba414b10b0d8b0a2a03627733e5c" kind="variable"><name>d_repeat</name></member>
     <member refid="classgr__glfsr__source__f_1a008f1d721e460c93e345317fb84a8e31" kind="variable"><name>d_index</name></member>
     <member refid="classgr__glfsr__source__f_1a3ab3417b7b3e75c5282fd19224493e94" kind="variable"><name>d_length</name></member>
-    <member refid="classgr__glfsr__source__f_1a0048032ce06a5ac40e9fbb1c100ae946" kind="friend"><name>gr_make_glfsr_source_f</name></member>
+    <member refid="classgr__glfsr__source__f_1ad5f39764a8538c552c2116d7fe428324" kind="friend"><name>gr_make_glfsr_source_f</name></member>
     <member refid="classgr__glfsr__source__f_1a6a736417dcca9a6f8ef04340d73ff092" kind="function"><name>gr_glfsr_source_f</name></member>
     <member refid="classgr__glfsr__source__f_1a6b06dfc0fd71c46c64763fd0b140e094" kind="function"><name>~gr_glfsr_source_f</name></member>
     <member refid="classgr__glfsr__source__f_1a7038108e788466dbb6f1131ec784527a" kind="function"><name>work</name></member>
@@ -762,7 +763,7 @@
   <compound refid="classgr__head" kind="class"><name>gr_head</name>
     <member refid="classgr__head_1a8e99166edf49b4f39687e766857ef774" kind="variable"><name>d_nitems</name></member>
     <member refid="classgr__head_1a7fb5400f2a23e8d397b3c27ae030f5b4" kind="variable"><name>d_ncopied_items</name></member>
-    <member refid="classgr__head_1ac7f13f81f61269aaa0e0ef5184d607b8" kind="friend"><name>gr_make_head</name></member>
+    <member refid="classgr__head_1a33eb756de50ce488e62c6e588b60eb78" kind="friend"><name>gr_make_head</name></member>
     <member refid="classgr__head_1aab1259cfcd9318205aae6989b7ec9107" kind="function"><name>gr_head</name></member>
     <member refid="classgr__head_1ad65f2f3ec6ebebf03248450235d8e74d" kind="function"><name>work</name></member>
     <member refid="classgr__head_1aad358bebb4764e8c62264f1f5b8014c0" kind="function"><name>reset</name></member>
@@ -770,7 +771,7 @@
   <compound refid="classgr__int__to__float" kind="class"><name>gr_int_to_float</name>
     <member refid="classgr__int__to__float_1ac87a1d664734197dc900d7ece19ce174" kind="variable"><name>d_vlen</name></member>
     <member refid="classgr__int__to__float_1aa947e714a94ef8a80ed396a106199672" kind="variable"><name>d_scale</name></member>
-    <member refid="classgr__int__to__float_1a2538fc71d9585a68b6976298b2857c73" kind="friend"><name>gr_make_int_to_float</name></member>
+    <member refid="classgr__int__to__float_1ad700a8d281d29e42b6acaddda58905a1" kind="friend"><name>gr_make_int_to_float</name></member>
     <member refid="classgr__int__to__float_1a1435405d30cda4fcc0983851ac1ae553" kind="function"><name>gr_int_to_float</name></member>
     <member refid="classgr__int__to__float_1a46fc73b45f6811471eaf3d3979e4d86c" kind="function"><name>scale</name></member>
     <member refid="classgr__int__to__float_1a442e3376ad32e8683ec2e0c8f665422a" kind="function"><name>set_scale</name></member>
@@ -778,14 +779,14 @@
   </compound>
   <compound refid="classgr__interleave" kind="class"><name>gr_interleave</name>
     <member refid="classgr__interleave_1ae3dc040e93b6dda3733632d5e64d4799" kind="variable"><name>d_itemsize</name></member>
-    <member refid="classgr__interleave_1acf7153a343a7bfbf2687bcc4c98d410e" kind="friend"><name>gr_make_interleave</name></member>
+    <member refid="classgr__interleave_1a4ab316bf2558038060544a9dd3d56f2f" kind="friend"><name>gr_make_interleave</name></member>
     <member refid="classgr__interleave_1af052fa2b2f5c40ba68a80d957d782375" kind="function"><name>gr_interleave</name></member>
     <member refid="classgr__interleave_1ae342ba63322b78359ee71de113e41fc1" kind="function"><name>~gr_interleave</name></member>
     <member refid="classgr__interleave_1a44664518c86559da58b3feccb9e45d7f" kind="function"><name>work</name></member>
     <member refid="classgr__interleave_1ade74f196c0fc8a91ca4f853a2d1202e1" kind="function"><name>check_topology</name></member>
   </compound>
   <compound refid="classgr__interleaved__short__to__complex" kind="class"><name>gr_interleaved_short_to_complex</name>
-    <member refid="classgr__interleaved__short__to__complex_1ae7e5a873a2d76a5b47796a977a7884cd" kind="friend"><name>gr_make_interleaved_short_to_complex</name></member>
+    <member refid="classgr__interleaved__short__to__complex_1a39505540c8b4a46dfc2e9b3626420823" kind="friend"><name>gr_make_interleaved_short_to_complex</name></member>
     <member refid="classgr__interleaved__short__to__complex_1a27ac2faaf36dd489e17765e69e844e88" kind="function"><name>gr_interleaved_short_to_complex</name></member>
     <member refid="classgr__interleaved__short__to__complex_1a74a6a5e0ad08bdca785ea65f9dbdc627" kind="function"><name>work</name></member>
   </compound>
@@ -793,7 +794,7 @@
     <member refid="classgr__iqcomp__cc_1a26b22c91bbb1203929b46b36b599b1bc" kind="variable"><name>d_mu</name></member>
     <member refid="classgr__iqcomp__cc_1ab57a630840c8478fc03feea67f2875f7" kind="variable"><name>d_wi</name></member>
     <member refid="classgr__iqcomp__cc_1a38c172d23a8b0f80dc50fa304bb6ceb2" kind="variable"><name>d_wq</name></member>
-    <member refid="classgr__iqcomp__cc_1a60b3ad7e53f388481e660a478ad79153" kind="friend"><name>gr_make_iqcomp_cc</name></member>
+    <member refid="classgr__iqcomp__cc_1a18b1b9a01bbb3b36efa290b2654f1a87" kind="friend"><name>gr_make_iqcomp_cc</name></member>
     <member refid="classgr__iqcomp__cc_1abf9c9b0651c5745a1f0722e8dba8e9a9" kind="function"><name>gr_iqcomp_cc</name></member>
     <member refid="classgr__iqcomp__cc_1a20fb0a127ebc007c4c917ecc768991d6" kind="function"><name>mu</name></member>
     <member refid="classgr__iqcomp__cc_1acae8e09bd8269a51553045c56260abc7" kind="function"><name>set_mu</name></member>
@@ -803,14 +804,14 @@
     <member refid="classgr__keep__one__in__n_1a864e5f4e683596d485cc390c92103d07" kind="variable"><name>d_n</name></member>
     <member refid="classgr__keep__one__in__n_1aa9950d70cc3a9cac59f6f70d33ddc91e" kind="variable"><name>d_count</name></member>
     <member refid="classgr__keep__one__in__n_1ae7dbbdffbe74fc3808c22112ca0012f6" kind="variable"><name>d_decim_rate</name></member>
-    <member refid="classgr__keep__one__in__n_1a9c464c3d672a9c3437964294a2fb21a0" kind="friend"><name>gr_make_keep_one_in_n</name></member>
+    <member refid="classgr__keep__one__in__n_1ac0e80d32182928a2f893adcf759d3cbe" kind="friend"><name>gr_make_keep_one_in_n</name></member>
     <member refid="classgr__keep__one__in__n_1a5e7b40f9af7ea668d7df71146c0160c2" kind="function"><name>gr_keep_one_in_n</name></member>
     <member refid="classgr__keep__one__in__n_1ab57aecd5051ea7dfbba9d15a91441acd" kind="function"><name>general_work</name></member>
     <member refid="classgr__keep__one__in__n_1a18e80e05b8866661ac5e18f022b2347a" kind="function"><name>set_n</name></member>
   </compound>
   <compound refid="classgr__kludge__copy" kind="class"><name>gr_kludge_copy</name>
     <member refid="classgr__kludge__copy_1a90301c599998fd9d1727a1d63d903b7b" kind="variable"><name>d_itemsize</name></member>
-    <member refid="classgr__kludge__copy_1a9aba6312a14622c4c18368ea2960be92" kind="friend"><name>gr_make_kludge_copy</name></member>
+    <member refid="classgr__kludge__copy_1a0f8048038abd6f515546472885b97474" kind="friend"><name>gr_make_kludge_copy</name></member>
     <member refid="classgr__kludge__copy_1a1deda450e56348b55777347aba33c3d7" kind="function"><name>gr_kludge_copy</name></member>
     <member refid="classgr__kludge__copy_1a3ab38e224cdaf20a93762268c447486e" kind="function"><name>check_topology</name></member>
     <member refid="classgr__kludge__copy_1ae60ff8aa3563655cee221959c15fcc9e" kind="function"><name>work</name></member>
@@ -819,32 +820,32 @@
     <member refid="classgr__lfsr__32k__source__s_1a8768099fea510e3378970ef082de5d00" kind="variable"><name>BUFSIZE</name></member>
     <member refid="classgr__lfsr__32k__source__s_1a4febf82c6d4202b9e192e8be7a323f8a" kind="variable"><name>d_index</name></member>
     <member refid="classgr__lfsr__32k__source__s_1a7f616047180f7e97722049bf4e132e24" kind="variable"><name>d_buffer</name></member>
-    <member refid="classgr__lfsr__32k__source__s_1a0610a224f38bb34200f7c5f0664e4da0" kind="friend"><name>gr_make_lfsr_32k_source_s</name></member>
+    <member refid="classgr__lfsr__32k__source__s_1a41b01faca14e277bd5311dda30b4a444" kind="friend"><name>gr_make_lfsr_32k_source_s</name></member>
     <member refid="classgr__lfsr__32k__source__s_1a566bddfc5daae609653b40d9e9020e6b" kind="function"><name>gr_lfsr_32k_source_s</name></member>
     <member refid="classgr__lfsr__32k__source__s_1a74194e46fb391298494021968446bfb0" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__map__bb" kind="class"><name>gr_map_bb</name>
     <member refid="classgr__map__bb_1aeb8963ebb7c0f045a80eb8b3ea74ca25" kind="variable"><name>d_map</name></member>
-    <member refid="classgr__map__bb_1a993ae506569654cde54bf14e18f6b46a" kind="friend"><name>gr_make_map_bb</name></member>
+    <member refid="classgr__map__bb_1a8ba0981298326ab219880978601d8b32" kind="friend"><name>gr_make_map_bb</name></member>
     <member refid="classgr__map__bb_1a04d0b2a360420ac79f028f184fd43c97" kind="function"><name>gr_map_bb</name></member>
     <member refid="classgr__map__bb_1a07381252b45a28617332292dae11e13e" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__multiply__cc" kind="class"><name>gr_multiply_cc</name>
     <member refid="classgr__multiply__cc_1a0e369649daa4656af279d61250ce2f20" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__multiply__cc_1a7092ca9f73636aa119e96bae35c8f713" kind="friend"><name>gr_make_multiply_cc</name></member>
+    <member refid="classgr__multiply__cc_1af0ea92c6de638d2162945b5ad5e16c3b" kind="friend"><name>gr_make_multiply_cc</name></member>
     <member refid="classgr__multiply__cc_1a80ee6ee71a6a885957550c357ac15de0" kind="function"><name>gr_multiply_cc</name></member>
     <member refid="classgr__multiply__cc_1ae0cb4a35d85a211b1a3e3aceee7436c0" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__multiply__conjugate__cc" kind="class"><name>gr_multiply_conjugate_cc</name>
     <member refid="classgr__multiply__conjugate__cc_1a75e1cdb10acedf3ff388be865af6a7b4" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__multiply__conjugate__cc_1ac01dac0eeb79b6dfc3b95abb0d5ecc48" kind="friend"><name>gr_make_multiply_conjugate_cc</name></member>
+    <member refid="classgr__multiply__conjugate__cc_1a168be3242f748e31471e314ea231ef63" kind="friend"><name>gr_make_multiply_conjugate_cc</name></member>
     <member refid="classgr__multiply__conjugate__cc_1a5ebcab1df4a77c40a4ede06e925ce780" kind="function"><name>gr_multiply_conjugate_cc</name></member>
     <member refid="classgr__multiply__conjugate__cc_1a32888ff6d12b2a3759abe04f6f5065d2" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__multiply__const__cc" kind="class"><name>gr_multiply_const_cc</name>
     <member refid="classgr__multiply__const__cc_1af959fbae184092708c0b7ac159c177a0" kind="variable"><name>d_k</name></member>
     <member refid="classgr__multiply__const__cc_1ace7621e6b14515f2e01a19d6f429b2a1" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__multiply__const__cc_1a8412c25759d86b5b81e95a06ecec74f6" kind="friend"><name>gr_make_multiply_const_cc</name></member>
+    <member refid="classgr__multiply__const__cc_1aa5905bca4e82da37394c734d8a885413" kind="friend"><name>gr_make_multiply_const_cc</name></member>
     <member refid="classgr__multiply__const__cc_1a8e73a0b763e8b4453b2df9066a9192db" kind="function"><name>gr_multiply_const_cc</name></member>
     <member refid="classgr__multiply__const__cc_1a6f7017985c0bcfe4e92855daad61347a" kind="function"><name>k</name></member>
     <member refid="classgr__multiply__const__cc_1a3db6f2e0d16772ce5480dbf275f744c9" kind="function"><name>set_k</name></member>
@@ -853,7 +854,7 @@
   <compound refid="classgr__multiply__const__ff" kind="class"><name>gr_multiply_const_ff</name>
     <member refid="classgr__multiply__const__ff_1a4f439f8e04089a56e7b255a5982bd72c" kind="variable"><name>d_k</name></member>
     <member refid="classgr__multiply__const__ff_1a0fef303466d76bd3284a607f19d40fb4" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__multiply__const__ff_1a8dc17a889ecf5eb4372a9875701a4578" kind="friend"><name>gr_make_multiply_const_ff</name></member>
+    <member refid="classgr__multiply__const__ff_1a70d035e0860ee3e48218c1666207fbdc" kind="friend"><name>gr_make_multiply_const_ff</name></member>
     <member refid="classgr__multiply__const__ff_1a1d836a218e0d3cf3cb5335e0e7bd7426" kind="function"><name>gr_multiply_const_ff</name></member>
     <member refid="classgr__multiply__const__ff_1aa5a9cdc54ffe998cfd95607f47e28d82" kind="function"><name>k</name></member>
     <member refid="classgr__multiply__const__ff_1a323f88a697c49269d63844b82db284ba" kind="function"><name>set_k</name></member>
@@ -861,7 +862,7 @@
   </compound>
   <compound refid="classgr__multiply__ff" kind="class"><name>gr_multiply_ff</name>
     <member refid="classgr__multiply__ff_1a5ef8a3a79230d92b3b71847fe17677cb" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__multiply__ff_1a3d4d1c611d306f57412c32eb3532f8f8" kind="friend"><name>gr_make_multiply_ff</name></member>
+    <member refid="classgr__multiply__ff_1a253285304cd499d5d978ca2e4cc2559b" kind="friend"><name>gr_make_multiply_ff</name></member>
     <member refid="classgr__multiply__ff_1ab209b045fded85501446d74dcf25e081" kind="function"><name>gr_multiply_ff</name></member>
     <member refid="classgr__multiply__ff_1a7dc9eade256d38898653c0127eae50bb" kind="function"><name>work</name></member>
   </compound>
@@ -893,26 +894,26 @@
     <member refid="classgr__nlog10__ff_1a3e8057d243617302b423e0cee6d277b1" kind="variable"><name>d_vlen</name></member>
     <member refid="classgr__nlog10__ff_1a805f576ef6416ecda6ace230cdaa7583" kind="variable"><name>d_n</name></member>
     <member refid="classgr__nlog10__ff_1aa510670b253454644d9012d435c7a00d" kind="variable"><name>d_k</name></member>
-    <member refid="classgr__nlog10__ff_1ae437104131e22f51f3cbde38cef6a0bb" kind="friend"><name>gr_make_nlog10_ff</name></member>
+    <member refid="classgr__nlog10__ff_1a9a1fb0b9c66b815e3edb2bb29ef81f09" kind="friend"><name>gr_make_nlog10_ff</name></member>
     <member refid="classgr__nlog10__ff_1a11f32e125a0c03a78aed83066e5a1388" kind="function"><name>gr_nlog10_ff</name></member>
     <member refid="classgr__nlog10__ff_1a01e5c37ef689a22414fe1dfcf60e061e" kind="function"><name>~gr_nlog10_ff</name></member>
     <member refid="classgr__nlog10__ff_1a5759704ab6a7c54d379ab79ae976c81a" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__nop" kind="class"><name>gr_nop</name>
     <member refid="classgr__nop_1aa198205617862de3b381ab4ad8059fd1" kind="variable"><name>d_nmsgs_recvd</name></member>
-    <member refid="classgr__nop_1a3db28467e79ab7f8728c74f8bcbc1a4c" kind="friend"><name>gr_make_nop</name></member>
+    <member refid="classgr__nop_1a407dd91bb0d5a366c05361a6e2d7051e" kind="friend"><name>gr_make_nop</name></member>
     <member refid="classgr__nop_1ab8199fbad72ccf032a1816ebd64454a5" kind="function"><name>gr_nop</name></member>
     <member refid="classgr__nop_1aa29a55ce3ae223e39d989174e74b46f7" kind="function"><name>count_received_msgs</name></member>
     <member refid="classgr__nop_1a9003d23b0e7a7ec1ab9f83a2a6f63ba1" kind="function"><name>general_work</name></member>
     <member refid="classgr__nop_1af5a4eee4367f46c82d77b8a2382957ea" kind="function"><name>nmsgs_received</name></member>
   </compound>
   <compound refid="classgr__null__sink" kind="class"><name>gr_null_sink</name>
-    <member refid="classgr__null__sink_1abe0edd898bbf1f4a661caefad9d56950" kind="friend"><name>gr_make_null_sink</name></member>
+    <member refid="classgr__null__sink_1af2fd53dd99cd9ee800f75c2986786171" kind="friend"><name>gr_make_null_sink</name></member>
     <member refid="classgr__null__sink_1a9d92190262a5f9ea5fe6cc616ff351de" kind="function"><name>gr_null_sink</name></member>
     <member refid="classgr__null__sink_1ae381fb1b347b592328abb6aef1599b00" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__null__source" kind="class"><name>gr_null_source</name>
-    <member refid="classgr__null__source_1a956d69cdba14218b55c045628c959060" kind="friend"><name>gr_make_null_source</name></member>
+    <member refid="classgr__null__source_1a076e7093b16192fe58ae8c9707843da9" kind="friend"><name>gr_make_null_source</name></member>
     <member refid="classgr__null__source_1ac8a1e01a0eda1d80276b9ce6b49fd073" kind="function"><name>gr_null_source</name></member>
     <member refid="classgr__null__source_1a36ca59f2abb40dc425232059b28d7c5c" kind="function"><name>work</name></member>
   </compound>
@@ -920,7 +921,7 @@
     <member refid="classgr__ofdm__bpsk__demapper_1a359915eb66d4b29d9d4a376a98202f8a" kind="variable"><name>d_occupied_carriers</name></member>
     <member refid="classgr__ofdm__bpsk__demapper_1a0ef89fe4069f164189c339852d41c54b" kind="variable"><name>d_byte_offset</name></member>
     <member refid="classgr__ofdm__bpsk__demapper_1a2fddf06f70d080d3425840e9467909d1" kind="variable"><name>d_partial_byte</name></member>
-    <member refid="classgr__ofdm__bpsk__demapper_1a4726af807e8951f1c9e4645ed3c629aa" kind="friend"><name>gr_make_ofdm_bpsk_demapper</name></member>
+    <member refid="classgr__ofdm__bpsk__demapper_1abcb6626e1cd073df870e2c1ea51ca686" kind="friend"><name>gr_make_ofdm_bpsk_demapper</name></member>
     <member refid="classgr__ofdm__bpsk__demapper_1abfc475a9539e72111077f7a39eab8a44" kind="function"><name>gr_ofdm_bpsk_demapper</name></member>
     <member refid="classgr__ofdm__bpsk__demapper_1a5a20e2ebaa88f25738e90ae195dfaf7f" kind="function"><name>slicer</name></member>
     <member refid="classgr__ofdm__bpsk__demapper_1a58efb6bc018a061abc96283b1826ab54" kind="function"><name>forecast</name></member>
@@ -958,7 +959,7 @@
     <member refid="classgr__ofdm__frame__sink2_1a2aacb33dd9425d1d4e121e50804147a8" kind="variable"><name>d_freq_gain</name></member>
     <member refid="classgr__ofdm__frame__sink2_1ab394b89dbe946379bdc35381a06f85e9" kind="variable"><name>d_eq_gain</name></member>
     <member refid="classgr__ofdm__frame__sink2_1a1e318b9c14a19c2dc581097f83a20ccf" kind="variable"><name>d_subcarrier_map</name></member>
-    <member refid="classgr__ofdm__frame__sink2_1a5dc58c079623b99f22a2d58960e8cd2a" kind="friend"><name>gr_make_ofdm_frame_sink2</name></member>
+    <member refid="classgr__ofdm__frame__sink2_1aa958151fddd3a46b2b241ff41d729e1b" kind="friend"><name>gr_make_ofdm_frame_sink2</name></member>
     <member refid="classgr__ofdm__frame__sink2_1a46e9b1a4ad16c78b7b9b63991f9387a1" kind="function"><name>gr_ofdm_frame_sink2</name></member>
     <member refid="classgr__ofdm__frame__sink2_1a171603ce734a15cc3a4f536d2f30e8ed" kind="function"><name>enter_search</name></member>
     <member refid="classgr__ofdm__frame__sink2_1ae908e3493a51f6b2015d4697898c6a01" kind="function"><name>enter_have_sync</name></member>
@@ -974,7 +975,7 @@
     <member refid="classgr__pa__2x2__phase__combiner_1a7b3713c85289b81288d73d651c12a03e" kind="variable"><name>d_theta</name></member>
     <member refid="classgr__pa__2x2__phase__combiner_1a0f0596a9f73a99b9edd2bcd80b1185aa" kind="variable"><name>d_phase</name></member>
     <member refid="classgr__pa__2x2__phase__combiner_1a877f173167844e5de6761235666616fa" kind="function"><name>gr_pa_2x2_phase_combiner</name></member>
-    <member refid="classgr__pa__2x2__phase__combiner_1a9f8100f1ae7f6eb0b91d259ad2d0a3fd" kind="friend"><name>gr_make_pa_2x2_phase_combiner</name></member>
+    <member refid="classgr__pa__2x2__phase__combiner_1a612ca6faa9709addc2e124e57765e214" kind="friend"><name>gr_make_pa_2x2_phase_combiner</name></member>
     <member refid="classgr__pa__2x2__phase__combiner_1a35bc1acabc162b63651d0fdf0dc26841" kind="function"><name>theta</name></member>
     <member refid="classgr__pa__2x2__phase__combiner_1a5ab200164a26998dc7e242beffd2c400" kind="function"><name>set_theta</name></member>
     <member refid="classgr__pa__2x2__phase__combiner_1a6b4b27b79091d36f83c0a26988f597f7" kind="function"><name>work</name></member>
@@ -998,7 +999,7 @@
     <member refid="classgr__packet__sink_1ad0f7c57e1c85b0cee68e7e9d9f1ee193" kind="variable"><name>d_packet_byte_index</name></member>
     <member refid="classgr__packet__sink_1a6e42f6c56382b0a8854fa3d9b695221f" kind="variable"><name>d_packetlen</name></member>
     <member refid="classgr__packet__sink_1aa9b0fa9bf2b85eac698cbdfc62306a5b" kind="variable"><name>d_packetlen_cnt</name></member>
-    <member refid="classgr__packet__sink_1a781a718905dea1dab2d31ed186e3e7c8" kind="friend"><name>gr_make_packet_sink</name></member>
+    <member refid="classgr__packet__sink_1ae722676b183006377b676ff9692df1cc" kind="friend"><name>gr_make_packet_sink</name></member>
     <member refid="classgr__packet__sink_1aca3162215b64abe275567f55fd7533d0" kind="function"><name>gr_packet_sink</name></member>
     <member refid="classgr__packet__sink_1a51919fbafd2e9e6d57e08e37c79852cb" kind="function"><name>enter_search</name></member>
     <member refid="classgr__packet__sink_1a7479c5de3faa20374784d735b100120f" kind="function"><name>enter_have_sync</name></member>
@@ -1019,7 +1020,7 @@
     <member refid="classgr__peak__detector2__fb_1a5185beb42aad1bc3c3137919705ddf55" kind="variable"><name>d_alpha</name></member>
     <member refid="classgr__peak__detector2__fb_1a0c4567c2533d3e08e6b820d3ce9c5000" kind="variable"><name>d_avg</name></member>
     <member refid="classgr__peak__detector2__fb_1ac01770fa5d69673140ce0c73fd8771ea" kind="variable"><name>d_found</name></member>
-    <member refid="classgr__peak__detector2__fb_1a6c4c2fbb55c04393e049ac8d15dd63e7" kind="friend"><name>gr_make_peak_detector2_fb</name></member>
+    <member refid="classgr__peak__detector2__fb_1ac619c347cd14865a34b9e0fa0ded30f1" kind="friend"><name>gr_make_peak_detector2_fb</name></member>
     <member refid="classgr__peak__detector2__fb_1a86c392aaed09c2ef3e8cf20fe01be216" kind="function"><name>gr_peak_detector2_fb</name></member>
     <member refid="classgr__peak__detector2__fb_1ae0ef9660f6a6ca4a689298df284e9d2c" kind="function"><name>set_threshold_factor_rise</name></member>
     <member refid="classgr__peak__detector2__fb_1a5d5c149b7d93137e3e1b981e82f9291b" kind="function"><name>set_look_ahead</name></member>
@@ -1032,7 +1033,7 @@
   <compound refid="classgr__phase__modulator__fc" kind="class"><name>gr_phase_modulator_fc</name>
     <member refid="classgr__phase__modulator__fc_1a312c4aba254f725d6d5919e627cf74b6" kind="variable"><name>d_sensitivity</name></member>
     <member refid="classgr__phase__modulator__fc_1abd2e00e29684e67dfd1590324a2726f2" kind="variable"><name>d_phase</name></member>
-    <member refid="classgr__phase__modulator__fc_1a308c61ab42d145396fd5ef14e715ed19" kind="friend"><name>gr_make_phase_modulator_fc</name></member>
+    <member refid="classgr__phase__modulator__fc_1a1a3285972069e1bc2bbd6c1a9004a266" kind="friend"><name>gr_make_phase_modulator_fc</name></member>
     <member refid="classgr__phase__modulator__fc_1afa86f8e6dc21469b3e59f39ed071cf5d" kind="function"><name>gr_phase_modulator_fc</name></member>
     <member refid="classgr__phase__modulator__fc_1a5d616ce12afae6d48d3df4d40dc08993" kind="function"><name>work</name></member>
   </compound>
@@ -1040,7 +1041,7 @@
     <member refid="classgr__pll__carriertracking__cc_1a1166d6a1fc1bd645a8baf2693798fd2c" kind="variable"><name>d_locksig</name></member>
     <member refid="classgr__pll__carriertracking__cc_1ac7a09fd1471f5623800baed0ea8b77ed" kind="variable"><name>d_lock_threshold</name></member>
     <member refid="classgr__pll__carriertracking__cc_1a63ce7833a0a077baa5d20363cea9903b" kind="variable"><name>d_squelch_enable</name></member>
-    <member refid="classgr__pll__carriertracking__cc_1a60b2c2ed6ce4b76ccebe00ba67bc3fe0" kind="friend"><name>gr_make_pll_carriertracking_cc</name></member>
+    <member refid="classgr__pll__carriertracking__cc_1a469b56c398bbcdfdec53cda361fc15f2" kind="friend"><name>gr_make_pll_carriertracking_cc</name></member>
     <member refid="classgr__pll__carriertracking__cc_1a73ed29db00d02006834d1ecf8efa4eb4" kind="function"><name>gr_pll_carriertracking_cc</name></member>
     <member refid="classgr__pll__carriertracking__cc_1a7186b2736732526cf0999661ccc4d603" kind="function"><name>work</name></member>
     <member refid="classgr__pll__carriertracking__cc_1a8f9b37c1c8b25a27493509432f5ba562" kind="function"><name>mod_2pi</name></member>
@@ -1050,14 +1051,14 @@
     <member refid="classgr__pll__carriertracking__cc_1a0771dfdbe560d07ec8011781f389a6fe" kind="function"><name>set_lock_threshold</name></member>
   </compound>
   <compound refid="classgr__pll__freqdet__cf" kind="class"><name>gr_pll_freqdet_cf</name>
-    <member refid="classgr__pll__freqdet__cf_1ac9ac4d8846650bc97b4a69b202901171" kind="friend"><name>gr_make_pll_freqdet_cf</name></member>
+    <member refid="classgr__pll__freqdet__cf_1a1b25dae13d91ca839b620e4bdbadcb85" kind="friend"><name>gr_make_pll_freqdet_cf</name></member>
     <member refid="classgr__pll__freqdet__cf_1a8faeef63772224889ff2bcd8e2906a27" kind="function"><name>mod_2pi</name></member>
     <member refid="classgr__pll__freqdet__cf_1a9a3288e70a731960d0cf817b6012887f" kind="function"><name>gr_pll_freqdet_cf</name></member>
     <member refid="classgr__pll__freqdet__cf_1a89a374726491288f4087c560e3235233" kind="function"><name>work</name></member>
     <member refid="classgr__pll__freqdet__cf_1ab276cb5b4eb097cd19cb4d6ac929a982" kind="function"><name>phase_detector</name></member>
   </compound>
   <compound refid="classgr__pll__refout__cc" kind="class"><name>gr_pll_refout_cc</name>
-    <member refid="classgr__pll__refout__cc_1a6d5109b221a6aab1df9002f167b090bb" kind="friend"><name>gr_make_pll_refout_cc</name></member>
+    <member refid="classgr__pll__refout__cc_1ae34d1b3f3fe903def5c2a33329d1b2c3" kind="friend"><name>gr_make_pll_refout_cc</name></member>
     <member refid="classgr__pll__refout__cc_1ad170f1d367746ce6927ddc0b8e9cc7a6" kind="function"><name>gr_pll_refout_cc</name></member>
     <member refid="classgr__pll__refout__cc_1ab9215a0a56e916a96bc0e1ddcb42f176" kind="function"><name>work</name></member>
     <member refid="classgr__pll__refout__cc_1a7a25e7c4122bc19c4d6dc2f6e53441b6" kind="function"><name>mod_2pi</name></member>
@@ -1067,7 +1068,7 @@
     <member refid="classgr__pn__correlator__cc_1a7e5081a6a8ebfdd825222f5c42b979ea" kind="variable"><name>d_len</name></member>
     <member refid="classgr__pn__correlator__cc_1a239cb56d349a3fda22a7cd8738f8a9a0" kind="variable"><name>d_pn</name></member>
     <member refid="classgr__pn__correlator__cc_1a3e0d1aca7d80b9c05d1f6e8783619e25" kind="variable"><name>d_reference</name></member>
-    <member refid="classgr__pn__correlator__cc_1a4625765597f95b0a8205995dcdad6d40" kind="friend"><name>gr_make_pn_correlator_cc</name></member>
+    <member refid="classgr__pn__correlator__cc_1aea1ae65b58378046abcb9334afa5948f" kind="friend"><name>gr_make_pn_correlator_cc</name></member>
     <member refid="classgr__pn__correlator__cc_1a75a949fcb7db89d914badc618b282615" kind="function"><name>gr_pn_correlator_cc</name></member>
     <member refid="classgr__pn__correlator__cc_1a27f4a2a6353c363482ae9dba1eac5cda" kind="function"><name>work</name></member>
     <member refid="classgr__pn__correlator__cc_1a2c7e3f34bc9e5895220c4ea874950f96" kind="function"><name>~gr_pn_correlator_cc</name></member>
@@ -1088,7 +1089,7 @@
     <member refid="classgr__probe__avg__mag__sqrd__c_1a778fa5c3d83f565429f337f319ae73e3" kind="variable"><name>d_iir</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__c_1a678cac05bea028888d4b6d6583e235d3" kind="variable"><name>d_unmuted</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__c_1a4b877d242eb496c58ece58193f613ac4" kind="variable"><name>d_level</name></member>
-    <member refid="classgr__probe__avg__mag__sqrd__c_1a44013093016d42135f8cc075b1a5ef55" kind="friend"><name>gr_make_probe_avg_mag_sqrd_c</name></member>
+    <member refid="classgr__probe__avg__mag__sqrd__c_1ad2d0316e61c12a5effbfc6f51a1e22c7" kind="friend"><name>gr_make_probe_avg_mag_sqrd_c</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__c_1a3c0d7f6f05c9ce00169560c1dab05354" kind="function"><name>gr_probe_avg_mag_sqrd_c</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__c_1a3aec500e886836c945ea05036d7a2eba" kind="function"><name>~gr_probe_avg_mag_sqrd_c</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__c_1aa0bd72f95fb5af1039894b9fb894ba16" kind="function"><name>work</name></member>
@@ -1103,7 +1104,7 @@
     <member refid="classgr__probe__avg__mag__sqrd__cf_1a78f1e547ac59483cc63a5b2b30d39664" kind="variable"><name>d_iir</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__cf_1a213cd163b960e679263789150cec285a" kind="variable"><name>d_unmuted</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__cf_1aeef7b529fbfb5a329526d53e6626a70f" kind="variable"><name>d_level</name></member>
-    <member refid="classgr__probe__avg__mag__sqrd__cf_1a90c7d2ba9cbb1d8ec943fc9fff282f65" kind="friend"><name>gr_make_probe_avg_mag_sqrd_cf</name></member>
+    <member refid="classgr__probe__avg__mag__sqrd__cf_1ad275a4b554afbd066c7373032692a718" kind="friend"><name>gr_make_probe_avg_mag_sqrd_cf</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__cf_1a0edf02c718256b0a59c38fc9de5f2225" kind="function"><name>gr_probe_avg_mag_sqrd_cf</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__cf_1af550354cc81b47a1225d83761b472edd" kind="function"><name>~gr_probe_avg_mag_sqrd_cf</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__cf_1ae64e63b6c5132a8904cf10688c9e29f8" kind="function"><name>work</name></member>
@@ -1118,7 +1119,7 @@
     <member refid="classgr__probe__avg__mag__sqrd__f_1ae73e835e56d57d9b387789c11369f1ed" kind="variable"><name>d_iir</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__f_1a1b6c8ced7e60e4bbad7109cb185c32e0" kind="variable"><name>d_unmuted</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__f_1a250ac631d5e3783c65c7ec3de619fac2" kind="variable"><name>d_level</name></member>
-    <member refid="classgr__probe__avg__mag__sqrd__f_1ae1f383f637453b0a6406059ec420fdfc" kind="friend"><name>gr_make_probe_avg_mag_sqrd_f</name></member>
+    <member refid="classgr__probe__avg__mag__sqrd__f_1a19765017ca2460794e93533740c126c6" kind="friend"><name>gr_make_probe_avg_mag_sqrd_f</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__f_1a3e21a83e38d71d71c2e1e2120f52fc63" kind="function"><name>gr_probe_avg_mag_sqrd_f</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__f_1a927972526942558cdef6c142831445f6" kind="function"><name>~gr_probe_avg_mag_sqrd_f</name></member>
     <member refid="classgr__probe__avg__mag__sqrd__f_1a47364e30b51035a2ae034b7ff6b87ece" kind="function"><name>work</name></member>
@@ -1132,7 +1133,7 @@
     <member refid="classgr__probe__density__b_1a11d57af3e6903587c1e66c7b31bdec7b" kind="variable"><name>d_alpha</name></member>
     <member refid="classgr__probe__density__b_1aaa9c2571276f630ef8de964c61d33db5" kind="variable"><name>d_beta</name></member>
     <member refid="classgr__probe__density__b_1aa1c6efe455b125cd6db2b354c277947e" kind="variable"><name>d_density</name></member>
-    <member refid="classgr__probe__density__b_1aaf4341e7af42c3f8491414e581b745e9" kind="friend"><name>gr_make_probe_density_b</name></member>
+    <member refid="classgr__probe__density__b_1a8fc965516d1d3bccd91abca8c0c6e480" kind="friend"><name>gr_make_probe_density_b</name></member>
     <member refid="classgr__probe__density__b_1a9dff93822a31e147e183750b056c21f8" kind="function"><name>gr_probe_density_b</name></member>
     <member refid="classgr__probe__density__b_1a2998776feee26b0595317f73b9eced9b" kind="function"><name>~gr_probe_density_b</name></member>
     <member refid="classgr__probe__density__b_1a7beb60257666347f6e2b84823f793dc6" kind="function"><name>density</name></member>
@@ -1143,7 +1144,7 @@
     <member refid="classgr__pwr__squelch__cc_1af5c36bb1d59add9144a9c690179a9e64" kind="variable"><name>d_threshold</name></member>
     <member refid="classgr__pwr__squelch__cc_1a70f48840a097239961d3d73017976cf4" kind="variable"><name>d_pwr</name></member>
     <member refid="classgr__pwr__squelch__cc_1a66d9faad4ecbab1d47bfd8ce01ea679a" kind="variable"><name>d_iir</name></member>
-    <member refid="classgr__pwr__squelch__cc_1a878218f72d17057fe299a4bb4c291ef3" kind="friend"><name>gr_make_pwr_squelch_cc</name></member>
+    <member refid="classgr__pwr__squelch__cc_1adbec7f9325eb159b4d4c79cf4e5f8599" kind="friend"><name>gr_make_pwr_squelch_cc</name></member>
     <member refid="classgr__pwr__squelch__cc_1a3cec817286f9235ae8cbe1da531ade27" kind="function"><name>gr_pwr_squelch_cc</name></member>
     <member refid="classgr__pwr__squelch__cc_1a79f6fb13cb0d93c2faf35f2b3879c8dd" kind="function"><name>update_state</name></member>
     <member refid="classgr__pwr__squelch__cc_1a77a8947bcc06fb2051a9cf1d25193b5d" kind="function"><name>mute</name></member>
@@ -1156,7 +1157,7 @@
     <member refid="classgr__pwr__squelch__ff_1aa2588bc28e4df0f0be0b40d7f15a67c2" kind="variable"><name>d_threshold</name></member>
     <member refid="classgr__pwr__squelch__ff_1a00842e6b1f6b1abe144bbed895005100" kind="variable"><name>d_pwr</name></member>
     <member refid="classgr__pwr__squelch__ff_1a6fcfc1054105e5a6240e9c67c539dcd8" kind="variable"><name>d_iir</name></member>
-    <member refid="classgr__pwr__squelch__ff_1adc040edea98121c3deea37dc215acdb5" kind="friend"><name>gr_make_pwr_squelch_ff</name></member>
+    <member refid="classgr__pwr__squelch__ff_1a89544e1b60253f884a85ab1c882e2b84" kind="friend"><name>gr_make_pwr_squelch_ff</name></member>
     <member refid="classgr__pwr__squelch__ff_1ab23c514d57822ccd01fa550b81a3a5ee" kind="function"><name>gr_pwr_squelch_ff</name></member>
     <member refid="classgr__pwr__squelch__ff_1a30c140dc3446051aa19defcf0994a1f6" kind="function"><name>update_state</name></member>
     <member refid="classgr__pwr__squelch__ff_1aa624cf99e3b6c45b894524b0e3f00530" kind="function"><name>mute</name></member>
@@ -1167,7 +1168,7 @@
   </compound>
   <compound refid="classgr__quadrature__demod__cf" kind="class"><name>gr_quadrature_demod_cf</name>
     <member refid="classgr__quadrature__demod__cf_1ada47769946b33a6fea70ccdf71065014" kind="variable"><name>d_gain</name></member>
-    <member refid="classgr__quadrature__demod__cf_1ab0ac1e2767d568315de5515bd910b804" kind="friend"><name>gr_make_quadrature_demod_cf</name></member>
+    <member refid="classgr__quadrature__demod__cf_1a5d7856f1814c1f862844044f51f57288" kind="friend"><name>gr_make_quadrature_demod_cf</name></member>
     <member refid="classgr__quadrature__demod__cf_1ad35fe6a445fcf7b9e28cf79e975b3f7d" kind="function"><name>gr_quadrature_demod_cf</name></member>
     <member refid="classgr__quadrature__demod__cf_1afe3c5b16463b640cd9dfb109c2996fd5" kind="function"><name>set_gain</name></member>
     <member refid="classgr__quadrature__demod__cf_1a15b385f703f584b097a876272d0b61ec" kind="function"><name>gain</name></member>
@@ -1176,7 +1177,7 @@
   <compound refid="classgr__rail__ff" kind="class"><name>gr_rail_ff</name>
     <member refid="classgr__rail__ff_1a2ec769cc012708fb209d8bf151c12e57" kind="variable"><name>d_lo</name></member>
     <member refid="classgr__rail__ff_1af5be8a67550c9c0bc815e574279e9a62" kind="variable"><name>d_hi</name></member>
-    <member refid="classgr__rail__ff_1a9b423222e5ee0ea2bb8453edb7d0b225" kind="friend"><name>gr_make_rail_ff</name></member>
+    <member refid="classgr__rail__ff_1a2141b3bb750776f051972016ba73e5b7" kind="friend"><name>gr_make_rail_ff</name></member>
     <member refid="classgr__rail__ff_1a646f431b9d29dc5f0ca6c8af9c6e8b74" kind="function"><name>gr_rail_ff</name></member>
     <member refid="classgr__rail__ff_1a4194c0c75339b7e9f72902418ee3b226" kind="function"><name>lo</name></member>
     <member refid="classgr__rail__ff_1a63fa4c5bbcb382b59ac91066961a3fec" kind="function"><name>set_lo</name></member>
@@ -1205,7 +1206,7 @@
     <member refid="classgr__regenerate__bb_1a137833e0726dfe6b9c1e54e3b56ad8e3" kind="variable"><name>d_countdown</name></member>
     <member refid="classgr__regenerate__bb_1aa7939871838abafb53e3fdabf2649fda" kind="variable"><name>d_max_regen</name></member>
     <member refid="classgr__regenerate__bb_1af5a87bb6cec323c9d655327d4faee673" kind="variable"><name>d_regen_count</name></member>
-    <member refid="classgr__regenerate__bb_1a8794d2e934002d951f1734e813a9a40d" kind="friend"><name>gr_make_regenerate_bb</name></member>
+    <member refid="classgr__regenerate__bb_1a7ea353bb6eff21c4f040924b1ba21858" kind="friend"><name>gr_make_regenerate_bb</name></member>
     <member refid="classgr__regenerate__bb_1a8c3bfda18361b8bbf396d8e82c09f2f0" kind="function"><name>gr_regenerate_bb</name></member>
     <member refid="classgr__regenerate__bb_1aa11391ce52810d29dea508e2c6871144" kind="function"><name>set_max_regen</name></member>
     <member refid="classgr__regenerate__bb_1a2d793badad5835d93cec00753590340c" kind="function"><name>set_period</name></member>
@@ -1214,7 +1215,7 @@
   <compound refid="classgr__repeat" kind="class"><name>gr_repeat</name>
     <member refid="classgr__repeat_1afad418cb80aba5a3003a1d1d996db29b" kind="variable"><name>d_interp</name></member>
     <member refid="classgr__repeat_1a184264344bcfd34b17778b2224aa9b20" kind="variable"><name>d_itemsize</name></member>
-    <member refid="classgr__repeat_1ab8e55a62daa7e08d85f4f180f6c986c6" kind="friend"><name>gr_make_repeat</name></member>
+    <member refid="classgr__repeat_1a7f0e71988e3007c2b9ffec41749d6cfd" kind="friend"><name>gr_make_repeat</name></member>
     <member refid="classgr__repeat_1aa1bf9ba942edb25c6f08ed2c7d56dba7" kind="function"><name>gr_repeat</name></member>
     <member refid="classgr__repeat_1a59b611c643c645954e52703763655c9d" kind="function"><name>~gr_repeat</name></member>
     <member refid="classgr__repeat_1accbbd754a0608a424d84a40f2dd4b772" kind="function"><name>work</name></member>
@@ -1222,7 +1223,7 @@
   <compound refid="classgr__rms__cf" kind="class"><name>gr_rms_cf</name>
     <member refid="classgr__rms__cf_1a8cd25a29ba9bbf675e378e42a8aa3b94" kind="variable"><name>d_iir</name></member>
     <member refid="classgr__rms__cf_1ae7a5462431d43ff640cd876f624017e2" kind="variable"><name>d_unmuted</name></member>
-    <member refid="classgr__rms__cf_1a14895c092add89a83e5651d0fbb6c279" kind="friend"><name>gr_make_rms_cf</name></member>
+    <member refid="classgr__rms__cf_1aa844a8cd0ace265b4eba2df97fa3c72e" kind="friend"><name>gr_make_rms_cf</name></member>
     <member refid="classgr__rms__cf_1ae533197c22f269233fc147b660f8dcfd" kind="function"><name>gr_rms_cf</name></member>
     <member refid="classgr__rms__cf_1a36dace466f2b20f66bf93fe8a7b8c7b2" kind="function"><name>~gr_rms_cf</name></member>
     <member refid="classgr__rms__cf_1a64bdfef607bd940806f73d53027ffe1b" kind="function"><name>work</name></member>
@@ -1232,7 +1233,7 @@
   <compound refid="classgr__rms__ff" kind="class"><name>gr_rms_ff</name>
     <member refid="classgr__rms__ff_1a82977472e1993dcef2aa29f36e9482c6" kind="variable"><name>d_iir</name></member>
     <member refid="classgr__rms__ff_1ab645ae01acce68c58646078b6d9f1628" kind="variable"><name>d_unmuted</name></member>
-    <member refid="classgr__rms__ff_1ae927f39a3c3e431a74d66b4d756eeaf5" kind="friend"><name>gr_make_rms_ff</name></member>
+    <member refid="classgr__rms__ff_1af759d81ed7e017a49d565257b88fcaaa" kind="friend"><name>gr_make_rms_ff</name></member>
     <member refid="classgr__rms__ff_1a0193aabbfa7ae1fc2a34755e999c0067" kind="function"><name>gr_rms_ff</name></member>
     <member refid="classgr__rms__ff_1aa384430bbe79d63a87e2006eebca0e92" kind="function"><name>~gr_rms_ff</name></member>
     <member refid="classgr__rms__ff_1a1ffe00256303c4e1e967c146404a561b" kind="function"><name>work</name></member>
@@ -1241,20 +1242,20 @@
   </compound>
   <compound refid="classgr__scrambler__bb" kind="class"><name>gr_scrambler_bb</name>
     <member refid="classgr__scrambler__bb_1a24bb1a874dcf4d7f2a8cd11648d75c9f" kind="variable"><name>d_lfsr</name></member>
-    <member refid="classgr__scrambler__bb_1a894aa775a7d4424e204c11074ce5ec62" kind="friend"><name>gr_make_scrambler_bb</name></member>
+    <member refid="classgr__scrambler__bb_1a94f7fb218d2189f6bb84b8fc4ea9c5f3" kind="friend"><name>gr_make_scrambler_bb</name></member>
     <member refid="classgr__scrambler__bb_1aed06a7231cd338eeab888fe692c8083e" kind="function"><name>gr_scrambler_bb</name></member>
     <member refid="classgr__scrambler__bb_1a65b4880150d53aba200725bda7a79295" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__short__to__char" kind="class"><name>gr_short_to_char</name>
     <member refid="classgr__short__to__char_1ada30ec8573f144825bf00d7e2ca7ebca" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__short__to__char_1a30154a90de2fe6341175aca3708dee7a" kind="friend"><name>gr_make_short_to_char</name></member>
+    <member refid="classgr__short__to__char_1a21dd9c4ae623fc4dca649389949cc60b" kind="friend"><name>gr_make_short_to_char</name></member>
     <member refid="classgr__short__to__char_1a3f2713a4c169e220bdeedb45d2bb663e" kind="function"><name>gr_short_to_char</name></member>
     <member refid="classgr__short__to__char_1abb18a57ad62eb8d3b3e164fa85170e07" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__short__to__float" kind="class"><name>gr_short_to_float</name>
     <member refid="classgr__short__to__float_1a4c9beef4cb49a14b14749762094dee5f" kind="variable"><name>d_vlen</name></member>
     <member refid="classgr__short__to__float_1a0da12435c4191d9a7e644619442c3211" kind="variable"><name>d_scale</name></member>
-    <member refid="classgr__short__to__float_1a651bbfb2abbafe35f0c13506cd186b0e" kind="friend"><name>gr_make_short_to_float</name></member>
+    <member refid="classgr__short__to__float_1a49183dfcdfa58376a15eea12b96f04f5" kind="friend"><name>gr_make_short_to_float</name></member>
     <member refid="classgr__short__to__float_1a3dedab59a9b57c1c7c66b0571b520276" kind="function"><name>gr_short_to_float</name></member>
     <member refid="classgr__short__to__float_1a396665bfb067ba406a44a97e2afabe10" kind="function"><name>scale</name></member>
     <member refid="classgr__short__to__float_1ad71c2768799560b0716ede9084011069" kind="function"><name>set_scale</name></member>
@@ -1281,7 +1282,7 @@
     <member refid="classgr__simple__correlator_1a4a69f41c8adf93d4f1c59bf7584c1854" kind="variable"><name>d_avgbuf</name></member>
     <member refid="classgr__simple__correlator_1afec0144dc48daecb85f7fc6252eed4b6" kind="variable"><name>d_avg</name></member>
     <member refid="classgr__simple__correlator_1a8b755460a7b1c684cb376e16c7eaf0e7" kind="variable"><name>d_accum</name></member>
-    <member refid="classgr__simple__correlator_1a7cf6acde8da2f7e3f378686e31deed58" kind="friend"><name>gr_make_simple_correlator</name></member>
+    <member refid="classgr__simple__correlator_1ad131519104058e8dea494aa10aeefbd9" kind="friend"><name>gr_make_simple_correlator</name></member>
     <member refid="classgr__simple__correlator_1a6aaf9567f79d64de009a9027d3932d3f" kind="function"><name>gr_simple_correlator</name></member>
     <member refid="classgr__simple__correlator_1add7d77626ad6acc262e094d572f94177" kind="function"><name>slice</name></member>
     <member refid="classgr__simple__correlator_1a69197afe53dccd43112e14c20ebaa209" kind="function"><name>update_avg</name></member>
@@ -1298,7 +1299,7 @@
     <member refid="classgr__simple__framer_1ac24ad37fed30a17dc707d3cc4b56ddc1" kind="variable"><name>d_payload_bytesize</name></member>
     <member refid="classgr__simple__framer_1ae2c2c448ba63484df8c51a0dcced0675" kind="variable"><name>d_input_block_size</name></member>
     <member refid="classgr__simple__framer_1acc3f1ea0ec4c76be221bae37ff33ae94" kind="variable"><name>d_output_block_size</name></member>
-    <member refid="classgr__simple__framer_1af472698629e4fe6bd03bbaf36b25ab77" kind="friend"><name>gr_make_simple_framer</name></member>
+    <member refid="classgr__simple__framer_1a7b2c10581c9fdbddf6fa3de75b71dd6e" kind="friend"><name>gr_make_simple_framer</name></member>
     <member refid="classgr__simple__framer_1a0417efe001bb9f593fd825308c5fc7ea" kind="function"><name>gr_simple_framer</name></member>
     <member refid="classgr__simple__framer_1a0748fa00c41654ec1f3b6b2a7647555a" kind="function"><name>forecast</name></member>
     <member refid="classgr__simple__framer_1a5cb527b4eb4089610094bc73f07f6907" kind="function"><name>general_work</name></member>
@@ -1307,7 +1308,7 @@
     <member refid="classgr__simple__squelch__cc_1acd32d7446b5ccaf958bd7bb39ee46e20" kind="variable"><name>d_threshold</name></member>
     <member refid="classgr__simple__squelch__cc_1a96516533d0e87f6c23dde243d62295e5" kind="variable"><name>d_iir</name></member>
     <member refid="classgr__simple__squelch__cc_1a3df8806d618333f048911a8ac1886a9a" kind="variable"><name>d_unmuted</name></member>
-    <member refid="classgr__simple__squelch__cc_1aa9c2321f9a7be5af26ec28d35efa019d" kind="friend"><name>gr_make_simple_squelch_cc</name></member>
+    <member refid="classgr__simple__squelch__cc_1afa4f133d0c3381b9af0b36a947e0e04a" kind="friend"><name>gr_make_simple_squelch_cc</name></member>
     <member refid="classgr__simple__squelch__cc_1add433101ec9d710d462ee90fe68d91e5" kind="function"><name>gr_simple_squelch_cc</name></member>
     <member refid="classgr__simple__squelch__cc_1a85f168e2bf713110f74c25acf9e6cbeb" kind="function"><name>~gr_simple_squelch_cc</name></member>
     <member refid="classgr__simple__squelch__cc_1a180efe7ab809e8d681bd9c80b6c178f5" kind="function"><name>work</name></member>
@@ -1320,7 +1321,7 @@
   <compound refid="classgr__skiphead" kind="class"><name>gr_skiphead</name>
     <member refid="classgr__skiphead_1abf91323a36d51225855424c738339743" kind="variable"><name>d_nitems_to_skip</name></member>
     <member refid="classgr__skiphead_1ab96a02eb44017afec8067ec15d08cd5b" kind="variable"><name>d_nitems</name></member>
-    <member refid="classgr__skiphead_1aa003d0cd01695c642d48ec5f6b260921" kind="friend"><name>gr_make_skiphead</name></member>
+    <member refid="classgr__skiphead_1af5d69ea496976e89e74a1615e2ce2351" kind="friend"><name>gr_make_skiphead</name></member>
     <member refid="classgr__skiphead_1a90a253fa0d35e4403c5d5ca6071c8500" kind="function"><name>gr_skiphead</name></member>
     <member refid="classgr__skiphead_1a91b916781b405d2982db9aab2e16f868" kind="function"><name>general_work</name></member>
   </compound>
@@ -1373,7 +1374,7 @@
     <member refid="classgr__stream__mux_1a4dcc4fe8862f43108f875a0983316d25" kind="variable"><name>d_stream</name></member>
     <member refid="classgr__stream__mux_1ab0ec0ec536bc503a06af0c22072adccf" kind="variable"><name>d_residual</name></member>
     <member refid="classgr__stream__mux_1ae9828c0187aae13c7172fae1a8c189c5" kind="variable"><name>d_lengths</name></member>
-    <member refid="classgr__stream__mux_1a08c268afa01b8efef29a149131330974" kind="friend"><name>gr_make_stream_mux</name></member>
+    <member refid="classgr__stream__mux_1a79d011823d176f247f671e470e168918" kind="friend"><name>gr_make_stream_mux</name></member>
     <member refid="classgr__stream__mux_1aa7c183af68557c9fcadd42a4fc0fac9f" kind="function"><name>gr_stream_mux</name></member>
     <member refid="classgr__stream__mux_1a99557fa0da9a461db47d8b907183f7d5" kind="function"><name>increment_stream</name></member>
     <member refid="classgr__stream__mux_1aba16e9bd3c58f75ec0e0ac3954ad6adc" kind="function"><name>~gr_stream_mux</name></member>
@@ -1381,29 +1382,29 @@
     <member refid="classgr__stream__mux_1a9505b30dc6957ad60dc27711573e6835" kind="function"><name>general_work</name></member>
   </compound>
   <compound refid="classgr__stream__to__streams" kind="class"><name>gr_stream_to_streams</name>
-    <member refid="classgr__stream__to__streams_1ae7a5bb4c4e497e69db66b86d8ad9b635" kind="friend"><name>gr_make_stream_to_streams</name></member>
+    <member refid="classgr__stream__to__streams_1ae186a0bdecb06755f5298395c9f35683" kind="friend"><name>gr_make_stream_to_streams</name></member>
     <member refid="classgr__stream__to__streams_1a8a9d05398001539a5334ef909612edc2" kind="function"><name>gr_stream_to_streams</name></member>
     <member refid="classgr__stream__to__streams_1a8ca73e5652c9c5b0b9bddcd5e4b9010e" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__stream__to__vector" kind="class"><name>gr_stream_to_vector</name>
-    <member refid="classgr__stream__to__vector_1a39d1465f888889a1f62d7e581afccd7c" kind="friend"><name>gr_make_stream_to_vector</name></member>
+    <member refid="classgr__stream__to__vector_1ab2376982031fadfc69803d83c3b8585a" kind="friend"><name>gr_make_stream_to_vector</name></member>
     <member refid="classgr__stream__to__vector_1a006f810db11ee44e87986a9464534b64" kind="function"><name>gr_stream_to_vector</name></member>
     <member refid="classgr__stream__to__vector_1aba4f4cdc155d687907a47df6d8e314ba" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__streams__to__stream" kind="class"><name>gr_streams_to_stream</name>
-    <member refid="classgr__streams__to__stream_1ac3a468924f9959e8b84312f0fd72fb98" kind="friend"><name>gr_make_streams_to_stream</name></member>
+    <member refid="classgr__streams__to__stream_1a49ce654f5384def653cfb57fea7a8e09" kind="friend"><name>gr_make_streams_to_stream</name></member>
     <member refid="classgr__streams__to__stream_1a85a03312338fe875599e12d913a24a1d" kind="function"><name>gr_streams_to_stream</name></member>
     <member refid="classgr__streams__to__stream_1ac9203120ce8781ffb60b75f077071257" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__streams__to__vector" kind="class"><name>gr_streams_to_vector</name>
-    <member refid="classgr__streams__to__vector_1ad906397d21052894c7447db15bbbc223" kind="friend"><name>gr_make_streams_to_vector</name></member>
+    <member refid="classgr__streams__to__vector_1af144bb2d41a98df275944fad83aa2213" kind="friend"><name>gr_make_streams_to_vector</name></member>
     <member refid="classgr__streams__to__vector_1a93ccb93d305109143564635615fe77ec" kind="function"><name>gr_streams_to_vector</name></member>
     <member refid="classgr__streams__to__vector_1af5ab53e94119009feaec48ac4600b50e" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__stretch__ff" kind="class"><name>gr_stretch_ff</name>
     <member refid="classgr__stretch__ff_1a2d7aa85095cd235cc6cf3455febbdcf3" kind="variable"><name>d_lo</name></member>
     <member refid="classgr__stretch__ff_1a247f98e2273eecae8087305c44bdfd53" kind="variable"><name>d_vlen</name></member>
-    <member refid="classgr__stretch__ff_1a8b886efcae9c22728d2613ee83805ce5" kind="friend"><name>gr_make_stretch_ff</name></member>
+    <member refid="classgr__stretch__ff_1a81b4a3a994804bac1014ea8dad9110bd" kind="friend"><name>gr_make_stretch_ff</name></member>
     <member refid="classgr__stretch__ff_1a17b59acb7f39792fea3da9a1f9e04032" kind="function"><name>gr_stretch_ff</name></member>
     <member refid="classgr__stretch__ff_1a385d21ffd672af362f21ee5af36661a9" kind="function"><name>lo</name></member>
     <member refid="classgr__stretch__ff_1aed4f985f816e4d709dabfb3771bc2746" kind="function"><name>set_lo</name></member>
@@ -1434,13 +1435,13 @@
     <member refid="classgr__test_1a607096450cf5b6e967f35b5e82d918e0" kind="function"><name>set_produce_type</name></member>
     <member refid="classgr__test_1ae47866bc4ef06e4cca54d7a015b4532e" kind="function"><name>set_produce_limit</name></member>
     <member refid="classgr__test_1a0de0cde25f060628652711db1fa75909" kind="function"><name>gr_test</name></member>
-    <member refid="classgr__test_1a897f390181a82cb289d1bc1f1ab602f5" kind="friend"><name>gr_make_test</name></member>
+    <member refid="classgr__test_1a834c4c9a1df0365810fea217a8869c6d" kind="friend"><name>gr_make_test</name></member>
   </compound>
   <compound refid="classgr__threshold__ff" kind="class"><name>gr_threshold_ff</name>
     <member refid="classgr__threshold__ff_1af0fe6b62881582632733d06f3ef3a1e3" kind="variable"><name>d_lo</name></member>
     <member refid="classgr__threshold__ff_1a7a2e8cf233148683d886f0ac92d7a82c" kind="variable"><name>d_hi</name></member>
     <member refid="classgr__threshold__ff_1a42b4372acf5bb7e0cf354832908c1f85" kind="variable"><name>d_last_state</name></member>
-    <member refid="classgr__threshold__ff_1aa67cff92d587a9415a6e8e9d5752603e" kind="friend"><name>gr_make_threshold_ff</name></member>
+    <member refid="classgr__threshold__ff_1a91cafee380bcd8d30b18aef7b129ea48" kind="friend"><name>gr_make_threshold_ff</name></member>
     <member refid="classgr__threshold__ff_1a0dce73bb5bfb77c1d1a0c50e77d9499c" kind="function"><name>gr_threshold_ff</name></member>
     <member refid="classgr__threshold__ff_1a77c3a5a49f23d5a8b87a8ca4aa9d41f9" kind="function"><name>lo</name></member>
     <member refid="classgr__threshold__ff_1a9cee87fd72eff2597ecce2e92b3517dc" kind="function"><name>set_lo</name></member>
@@ -1458,13 +1459,13 @@
     <member refid="classgr__transcendental_1a486429148dcf7a6de11551d6eaabc7a1" kind="typedef"><name>sptr</name></member>
   </compound>
   <compound refid="classgr__uchar__to__float" kind="class"><name>gr_uchar_to_float</name>
-    <member refid="classgr__uchar__to__float_1ae9afed4b76cbb3da800b50622750f9f3" kind="friend"><name>gr_make_uchar_to_float</name></member>
+    <member refid="classgr__uchar__to__float_1ab05bdcf25d429772c815b1cf6073af44" kind="friend"><name>gr_make_uchar_to_float</name></member>
     <member refid="classgr__uchar__to__float_1acb256f451bd95f5a906013e2573c4f66" kind="function"><name>gr_uchar_to_float</name></member>
     <member refid="classgr__uchar__to__float_1a56efde963877473d3f7f3baeeb4ed0a4" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__unpack__k__bits__bb" kind="class"><name>gr_unpack_k_bits_bb</name>
     <member refid="classgr__unpack__k__bits__bb_1a3b59a7cb8e91e4e381aeae16b2e82a26" kind="variable"><name>d_k</name></member>
-    <member refid="classgr__unpack__k__bits__bb_1a611880b58a24164319fdb9825b16ab7e" kind="friend"><name>gr_make_unpack_k_bits_bb</name></member>
+    <member refid="classgr__unpack__k__bits__bb_1af4fd8fe3be38f69a6347ef68cae00ff0" kind="friend"><name>gr_make_unpack_k_bits_bb</name></member>
     <member refid="classgr__unpack__k__bits__bb_1accbb86240b7b4bdb251f9265f8893268" kind="function"><name>gr_unpack_k_bits_bb</name></member>
     <member refid="classgr__unpack__k__bits__bb_1ac5a275cb177cf83443469bc6f1cb3c9b" kind="function"><name>~gr_unpack_k_bits_bb</name></member>
     <member refid="classgr__unpack__k__bits__bb_1a3045ad3ef7b48453ce2ec17e19a9fd2b" kind="function"><name>work</name></member>
@@ -1487,17 +1488,17 @@
     <member refid="classgr__vco__f_1aed314dff51b49453d839a54df6654978" kind="variable"><name>d_amplitude</name></member>
     <member refid="classgr__vco__f_1ac72a0f86a185544c066d8c0d751d022c" kind="variable"><name>d_k</name></member>
     <member refid="classgr__vco__f_1a7fbef02f58f478262a291a8dcb32fb84" kind="variable"><name>d_vco</name></member>
-    <member refid="classgr__vco__f_1a2ce97743149b8f3852a634b68fbb382f" kind="friend"><name>gr_make_vco_f</name></member>
+    <member refid="classgr__vco__f_1a734d28b93c65263d899f27fe856febb6" kind="friend"><name>gr_make_vco_f</name></member>
     <member refid="classgr__vco__f_1ad2572814f3847dfa9dbf19fff557c5cb" kind="function"><name>gr_vco_f</name></member>
     <member refid="classgr__vco__f_1a638acd7f483c0bf401c1f413072a5a38" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__vector__to__stream" kind="class"><name>gr_vector_to_stream</name>
-    <member refid="classgr__vector__to__stream_1ab7eaded7e9292cdcc0e03fceaa21dcd8" kind="friend"><name>gr_make_vector_to_stream</name></member>
+    <member refid="classgr__vector__to__stream_1af2cd1811b4ec7b2e635c27b6e662d5c6" kind="friend"><name>gr_make_vector_to_stream</name></member>
     <member refid="classgr__vector__to__stream_1af9f4a8db6d670f5548cc508d50663cea" kind="function"><name>gr_vector_to_stream</name></member>
     <member refid="classgr__vector__to__stream_1a6d846506138e151bc7f82e02c1b14c56" kind="function"><name>work</name></member>
   </compound>
   <compound refid="classgr__vector__to__streams" kind="class"><name>gr_vector_to_streams</name>
-    <member refid="classgr__vector__to__streams_1ac753fd9e10558c8482393184d71889cf" kind="friend"><name>gr_make_vector_to_streams</name></member>
+    <member refid="classgr__vector__to__streams_1aad8ed37966496eaaf699440226b0f646" kind="friend"><name>gr_make_vector_to_streams</name></member>
     <member refid="classgr__vector__to__streams_1acf5ec7e258d5b9926595b436769d69b0" kind="function"><name>gr_vector_to_streams</name></member>
     <member refid="classgr__vector__to__streams_1a7e7eb4fee66cbd3ffc9b478a05b46d86" kind="function"><name>work</name></member>
   </compound>
@@ -1705,23 +1706,23 @@
   </compound>
   <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
   </compound>
   <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
+  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
   </compound>
-  <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
+  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
   </compound>
-  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
-  </compound>
-  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
   <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
   </compound>
@@ -1858,30 +1859,34 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
+  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
+  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
   <compound refid="classstd_1_1set" kind="class"><name>std::set</name>
     <member refid="classstd_1_1set_1a7f92ca6d6e5216b9c4be631bd87f1df4" kind="variable"><name>keys</name></member>
+  </compound>
+  <compound refid="classstd_1_1smart__ptr" kind="class"><name>std::smart_ptr</name>
+    <member refid="classstd_1_1smart__ptr_1a28b08019309e26ad374ef88cd2641ea3" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1smart__ptr_1a34adc9f82172f037139e4b916c275e90" kind="function"><name>operator-&gt;</name></member>
   </compound>
   <compound refid="classstd_1_1stack" kind="class"><name>std::stack</name>
     <member refid="classstd_1_1stack_1a020dde37186e898d2aacda2c136aef0f" kind="variable"><name>elements</name></member>
@@ -1892,11 +1897,19 @@
   </compound>
   <compound refid="classstd_1_1underflow__error" kind="class"><name>std::underflow_error</name>
   </compound>
+  <compound refid="classstd_1_1unique__ptr" kind="class"><name>std::unique_ptr</name>
+    <member refid="classstd_1_1unique__ptr_1adae741234450c126c1260d389e1720b9" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1unique__ptr_1a94e5fed358ff2ef440499ac836dd68f2" kind="function"><name>operator-&gt;</name></member>
+  </compound>
   <compound refid="classstd_1_1valarray" kind="class"><name>std::valarray</name>
     <member refid="classstd_1_1valarray_1adce3a23af4e9d36342f49f58300d8568" kind="variable"><name>elements</name></member>
   </compound>
   <compound refid="classstd_1_1vector" kind="class"><name>std::vector</name>
     <member refid="classstd_1_1vector_1a2396209900e8f592db1f0b2467f7d899" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1weak__ptr" kind="class"><name>std::weak_ptr</name>
+    <member refid="classstd_1_1weak__ptr_1a2346c22e2352ad88a4973f2c8aab91a5" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1weak__ptr_1a3385d327d4804d675b2a052265651a7b" kind="function"><name>operator-&gt;</name></member>
   </compound>
   <compound refid="classstd_1_1wfstream" kind="class"><name>std::wfstream</name>
   </compound>
@@ -2034,59 +2047,59 @@
   </compound>
   <compound refid="gr__correlate__access__code__tag__bb_8h" kind="file"><name>gr_correlate_access_code_tag_bb.h</name>
     <member refid="gr__correlate__access__code__tag__bb_8h_1af6604eaa45ec44568cb6597b74fadf9f" kind="typedef"><name>gr_correlate_access_code_tag_bb_sptr</name></member>
-    <member refid="gr__correlate__access__code__tag__bb_8h_1a3a43075586d0e98412abbd944b051eb1" kind="function"><name>gr_make_correlate_access_code_tag_bb</name></member>
+    <member refid="gr__correlate__access__code__tag__bb_8h_1a0617cb8852bd032b4e3b68f046521e91" kind="function"><name>gr_make_correlate_access_code_tag_bb</name></member>
   </compound>
   <compound refid="gr__count__bits_8h" kind="file"><name>gr_count_bits.h</name>
-    <member refid="gr__count__bits_8h_1aea16bf109400e99aeba349ef8102beca" kind="function"><name>gr_count_bits8</name></member>
-    <member refid="gr__count__bits_8h_1acb1a8d3a2e4372f52948237c0f0f76d9" kind="function"><name>gr_count_bits16</name></member>
-    <member refid="gr__count__bits_8h_1a420c8c9eb7251cd51bfce5792713b2e2" kind="function"><name>gr_count_bits32</name></member>
-    <member refid="gr__count__bits_8h_1a4ed7648da83228509dc4ce848dd345e2" kind="function"><name>gr_count_bits64</name></member>
+    <member refid="gr__count__bits_8h_1a87de4b980097d6b6c11a2d1cc171d8ad" kind="function"><name>gr_count_bits8</name></member>
+    <member refid="gr__count__bits_8h_1afbfbdc8f2c3098823ca1e4980b9fff3d" kind="function"><name>gr_count_bits16</name></member>
+    <member refid="gr__count__bits_8h_1a9d7f9101b955dafe258b4318902bc939" kind="function"><name>gr_count_bits32</name></member>
+    <member refid="gr__count__bits_8h_1a9912b9c20c2eeb5c8a965cb835743ebc" kind="function"><name>gr_count_bits64</name></member>
   </compound>
   <compound refid="gr__cpfsk__bc_8h" kind="file"><name>gr_cpfsk_bc.h</name>
     <member refid="gr__cpfsk__bc_8h_1a9bf81da880254601f8b3514bf50aaa91" kind="typedef"><name>gr_cpfsk_bc_sptr</name></member>
-    <member refid="gr__cpfsk__bc_8h_1a932b890b108f630f8d6102d75b75cf57" kind="function"><name>gr_make_cpfsk_bc</name></member>
+    <member refid="gr__cpfsk__bc_8h_1a54138bec6522303096b64f648305bef5" kind="function"><name>gr_make_cpfsk_bc</name></member>
   </compound>
   <compound refid="gr__cpm_8h" kind="file"><name>gr_cpm.h</name>
   </compound>
   <compound refid="gr__ctcss__squelch__ff_8h" kind="file"><name>gr_ctcss_squelch_ff.h</name>
     <member refid="gr__ctcss__squelch__ff_8h_1a9724a53c5aca5dd274fcefc65d07303e" kind="typedef"><name>gr_ctcss_squelch_ff_sptr</name></member>
-    <member refid="gr__ctcss__squelch__ff_8h_1a320e483ce8d9ecab3aa7603b66aedf8e" kind="function"><name>gr_make_ctcss_squelch_ff</name></member>
+    <member refid="gr__ctcss__squelch__ff_8h_1ae59ed17d5ba45e9f9aa6116fbb5c60fd" kind="function"><name>gr_make_ctcss_squelch_ff</name></member>
   </compound>
   <compound refid="gr__decode__ccsds__27__fb_8h" kind="file"><name>gr_decode_ccsds_27_fb.h</name>
     <member refid="gr__decode__ccsds__27__fb_8h_1a59afb5f00ba92fbfb5b9027f6e82de8c" kind="typedef"><name>gr_decode_ccsds_27_fb_sptr</name></member>
-    <member refid="gr__decode__ccsds__27__fb_8h_1adb005005785b622c72cb4ccf0727ff2c" kind="function"><name>gr_make_decode_ccsds_27_fb</name></member>
+    <member refid="gr__decode__ccsds__27__fb_8h_1acd5b4ca54737adf578776854a4df4e95" kind="function"><name>gr_make_decode_ccsds_27_fb</name></member>
   </compound>
   <compound refid="gr__deinterleave_8h" kind="file"><name>gr_deinterleave.h</name>
     <member refid="gr__deinterleave_8h_1a912012c5a7e63e02a33b00548322c70d" kind="typedef"><name>gr_deinterleave_sptr</name></member>
-    <member refid="gr__deinterleave_8h_1a8c5d4438ee02d7b5addda94e263694ac" kind="function"><name>gr_make_deinterleave</name></member>
+    <member refid="gr__deinterleave_8h_1a46d401ab4ac3749d2295eb1d780e71b1" kind="function"><name>gr_make_deinterleave</name></member>
   </compound>
   <compound refid="gr__delay_8h" kind="file"><name>gr_delay.h</name>
     <member refid="gr__delay_8h_1a3a856fb6a43e48867ebcd9df5d43486d" kind="typedef"><name>gr_delay_sptr</name></member>
-    <member refid="gr__delay_8h_1a5342a03acb09a95048b8a1a59f3212ed" kind="function"><name>gr_make_delay</name></member>
+    <member refid="gr__delay_8h_1a750ddfd4ce1739abf8e9d2be5ba85161" kind="function"><name>gr_make_delay</name></member>
   </compound>
   <compound refid="gr__descrambler__bb_8h" kind="file"><name>gr_descrambler_bb.h</name>
     <member refid="gr__descrambler__bb_8h_1a89e575188ce2c8811f66eedb5187d3a4" kind="typedef"><name>gr_descrambler_bb_sptr</name></member>
-    <member refid="gr__descrambler__bb_8h_1a16e95cce753f802542ebd11669f85425" kind="function"><name>gr_make_descrambler_bb</name></member>
+    <member refid="gr__descrambler__bb_8h_1a5c72a2f04921fd2fa980f19412f0539d" kind="function"><name>gr_make_descrambler_bb</name></member>
   </compound>
   <compound refid="gr__diff__decoder__bb_8h" kind="file"><name>gr_diff_decoder_bb.h</name>
     <member refid="gr__diff__decoder__bb_8h_1ae7d65a543fffaf3cc9391a6b55971636" kind="typedef"><name>gr_diff_decoder_bb_sptr</name></member>
-    <member refid="gr__diff__decoder__bb_8h_1addb87bc1cdb45b76ff99b58885b9f0a5" kind="function"><name>gr_make_diff_decoder_bb</name></member>
+    <member refid="gr__diff__decoder__bb_8h_1ab4fb0457139d55f36c1648f431a111c6" kind="function"><name>gr_make_diff_decoder_bb</name></member>
   </compound>
   <compound refid="gr__diff__encoder__bb_8h" kind="file"><name>gr_diff_encoder_bb.h</name>
     <member refid="gr__diff__encoder__bb_8h_1aa1752cb709359d7e97262a5f76c95739" kind="typedef"><name>gr_diff_encoder_bb_sptr</name></member>
-    <member refid="gr__diff__encoder__bb_8h_1a92e6b0b399e2eb6ca7df34d35fe78842" kind="function"><name>gr_make_diff_encoder_bb</name></member>
+    <member refid="gr__diff__encoder__bb_8h_1ac36bccbf82974ac43c39faa4d5acb4cb" kind="function"><name>gr_make_diff_encoder_bb</name></member>
   </compound>
   <compound refid="gr__diff__phasor__cc_8h" kind="file"><name>gr_diff_phasor_cc.h</name>
     <member refid="gr__diff__phasor__cc_8h_1afb68750c462b0db2f9081d27a4c163cb" kind="typedef"><name>gr_diff_phasor_cc_sptr</name></member>
-    <member refid="gr__diff__phasor__cc_8h_1ac06c92c889789bcbd74188ca57464f1f" kind="function"><name>gr_make_diff_phasor_cc</name></member>
+    <member refid="gr__diff__phasor__cc_8h_1adc9614ecbe0f459c44ec2fa1439d10a5" kind="function"><name>gr_make_diff_phasor_cc</name></member>
   </compound>
   <compound refid="gr__dpll__bb_8h" kind="file"><name>gr_dpll_bb.h</name>
     <member refid="gr__dpll__bb_8h_1abaa0acee060f8208106adac2b216ef1b" kind="typedef"><name>gr_dpll_bb_sptr</name></member>
-    <member refid="gr__dpll__bb_8h_1a167d06bb92ddb3c2a9fcbd73386f661a" kind="function"><name>gr_make_dpll_bb</name></member>
+    <member refid="gr__dpll__bb_8h_1ac03b2f9db3a64d7fd0925e293cb99bbc" kind="function"><name>gr_make_dpll_bb</name></member>
   </compound>
   <compound refid="gr__encode__ccsds__27__bb_8h" kind="file"><name>gr_encode_ccsds_27_bb.h</name>
     <member refid="gr__encode__ccsds__27__bb_8h_1a8dbcfcb2104209032af98ca672f40850" kind="typedef"><name>gr_encode_ccsds_27_bb_sptr</name></member>
-    <member refid="gr__encode__ccsds__27__bb_8h_1a8206242661fba66aaee9e73d147d4881" kind="function"><name>gr_make_encode_ccsds_27_bb</name></member>
+    <member refid="gr__encode__ccsds__27__bb_8h_1a0dea6cba890ab452bccc1ead60a78c5d" kind="function"><name>gr_make_encode_ccsds_27_bb</name></member>
   </compound>
   <compound refid="gr__expj_8h" kind="file"><name>gr_expj.h</name>
     <member refid="gr__expj_8h_1a7d0144e5774158b746199c1da4d5b5ac" kind="function"><name>gr_expj</name></member>
@@ -2094,63 +2107,63 @@
   <compound refid="gr__fake__channel__coder__pp_8h" kind="file"><name>gr_fake_channel_coder_pp.h</name>
     <member refid="gr__fake__channel__coder__pp_8h_1a9aef349795a47eecad880062b4dc7b0c" kind="typedef"><name>gr_fake_channel_encoder_pp_sptr</name></member>
     <member refid="gr__fake__channel__coder__pp_8h_1a5f741edb9da62146093da3fd879ad24d" kind="typedef"><name>gr_fake_channel_decoder_pp_sptr</name></member>
-    <member refid="gr__fake__channel__coder__pp_8h_1a227e933a8f5db288a2c199e15adaa66c" kind="function"><name>gr_make_fake_channel_encoder_pp</name></member>
-    <member refid="gr__fake__channel__coder__pp_8h_1af6d0acc4010fc06d9f69aee5ccaa05ad" kind="function"><name>gr_make_fake_channel_decoder_pp</name></member>
+    <member refid="gr__fake__channel__coder__pp_8h_1afc86a527a66c4b1a4ddccc40f406c38a" kind="function"><name>gr_make_fake_channel_encoder_pp</name></member>
+    <member refid="gr__fake__channel__coder__pp_8h_1a065f8e4a8debac0aed93506f2d10039f" kind="function"><name>gr_make_fake_channel_decoder_pp</name></member>
   </compound>
   <compound refid="gr__feedforward__agc__cc_8h" kind="file"><name>gr_feedforward_agc_cc.h</name>
     <member refid="gr__feedforward__agc__cc_8h_1ab830973bf3a50e4eba287e8a6b3f73bf" kind="typedef"><name>gr_feedforward_agc_cc_sptr</name></member>
-    <member refid="gr__feedforward__agc__cc_8h_1a5accfaab4070670a3cf747c2c549b349" kind="function"><name>gr_make_feedforward_agc_cc</name></member>
+    <member refid="gr__feedforward__agc__cc_8h_1a2513ffe366c5fa53634d5fc31c613e09" kind="function"><name>gr_make_feedforward_agc_cc</name></member>
   </compound>
   <compound refid="gr__feval_8h" kind="file"><name>gr_feval.h</name>
-    <member refid="gr__feval_8h_1a65d9ff17307ab3d66c83b05ea0e2802e" kind="function"><name>gr_feval_dd_example</name></member>
-    <member refid="gr__feval_8h_1a2a1638398ab2a9462df61913e14c5ffa" kind="function"><name>gr_feval_cc_example</name></member>
-    <member refid="gr__feval_8h_1a0a94ac837089862d8689ce143b6525cd" kind="function"><name>gr_feval_ll_example</name></member>
-    <member refid="gr__feval_8h_1a9dec6492a3ce66542675381def936ce3" kind="function"><name>gr_feval_example</name></member>
+    <member refid="gr__feval_8h_1ac251b6dddd4fb34a8cb7934b90ad4690" kind="function"><name>gr_feval_dd_example</name></member>
+    <member refid="gr__feval_8h_1a35e6158e249c015ee5971fa71eea42c3" kind="function"><name>gr_feval_cc_example</name></member>
+    <member refid="gr__feval_8h_1a5b548db4d8d94c059d03e3ad26abfd78" kind="function"><name>gr_feval_ll_example</name></member>
+    <member refid="gr__feval_8h_1aaa629646234580e91ac786c2b3d39783" kind="function"><name>gr_feval_example</name></member>
   </compound>
   <compound refid="gr__fft__vcc_8h" kind="file"><name>gr_fft_vcc.h</name>
     <member refid="gr__fft__vcc_8h_1a5d50f934830e4e4d83abecda9e8d8680" kind="typedef"><name>gr_fft_vcc_sptr</name></member>
-    <member refid="gr__fft__vcc_8h_1aafbf702e70e89ebb1f4f11fe33f18acd" kind="function"><name>gr_make_fft_vcc</name></member>
+    <member refid="gr__fft__vcc_8h_1a96dcef71962f3ffb6291d7709e4d2ed2" kind="function"><name>gr_make_fft_vcc</name></member>
   </compound>
   <compound refid="gr__fft__vcc__fftw_8h" kind="file"><name>gr_fft_vcc_fftw.h</name>
-    <member refid="gr__fft__vcc__fftw_8h_1abcee8e3a26806835da5bee98825617e8" kind="function"><name>gr_make_fft_vcc_fftw</name></member>
+    <member refid="gr__fft__vcc__fftw_8h_1ae173beee6e0cf388125ab112cb802de3" kind="function"><name>gr_make_fft_vcc_fftw</name></member>
   </compound>
   <compound refid="gr__fft__vfc_8h" kind="file"><name>gr_fft_vfc.h</name>
     <member refid="gr__fft__vfc_8h_1a57887c3a8d2d8159502b498765f1f738" kind="typedef"><name>gr_fft_vfc_sptr</name></member>
-    <member refid="gr__fft__vfc_8h_1ab6469c7da1ee09b55c69ea3e93e8e180" kind="function"><name>gr_make_fft_vfc</name></member>
+    <member refid="gr__fft__vfc_8h_1a457586af64b4bc0f2ac0a22b51330d37" kind="function"><name>gr_make_fft_vfc</name></member>
   </compound>
   <compound refid="gr__firdes_8h" kind="file"><name>gr_firdes.h</name>
   </compound>
   <compound refid="gr__float__to__char_8h" kind="file"><name>gr_float_to_char.h</name>
     <member refid="gr__float__to__char_8h_1a44e7ecca9d679027b25913d325f360bf" kind="typedef"><name>gr_float_to_char_sptr</name></member>
-    <member refid="gr__float__to__char_8h_1a5f1884727b7afe5bad84122fbb14605b" kind="function"><name>gr_make_float_to_char</name></member>
+    <member refid="gr__float__to__char_8h_1a599367f640f77c039244fdaea5d5ac55" kind="function"><name>gr_make_float_to_char</name></member>
   </compound>
   <compound refid="gr__float__to__complex_8h" kind="file"><name>gr_float_to_complex.h</name>
     <member refid="gr__float__to__complex_8h_1a064b9941b31d7eaed97f24224c7986b1" kind="typedef"><name>gr_float_to_complex_sptr</name></member>
-    <member refid="gr__float__to__complex_8h_1a7a88e45d056c9b5fc3f9886aa160ab14" kind="function"><name>gr_make_float_to_complex</name></member>
+    <member refid="gr__float__to__complex_8h_1a346dbba894df25d4e8159d20e57589b3" kind="function"><name>gr_make_float_to_complex</name></member>
   </compound>
   <compound refid="gr__float__to__int_8h" kind="file"><name>gr_float_to_int.h</name>
     <member refid="gr__float__to__int_8h_1a19b4ac3134dbf79233b5844e64e51777" kind="typedef"><name>gr_float_to_int_sptr</name></member>
-    <member refid="gr__float__to__int_8h_1a7c41c1b217a4461563763d921851860e" kind="function"><name>gr_make_float_to_int</name></member>
+    <member refid="gr__float__to__int_8h_1a525728d8cccdcacdf4084f6d6ec736c8" kind="function"><name>gr_make_float_to_int</name></member>
   </compound>
   <compound refid="gr__float__to__short_8h" kind="file"><name>gr_float_to_short.h</name>
     <member refid="gr__float__to__short_8h_1a979fdc69ae41755399c150ca702fea0c" kind="typedef"><name>gr_float_to_short_sptr</name></member>
-    <member refid="gr__float__to__short_8h_1a67d7829071982393a0e156d54fd9e1c4" kind="function"><name>gr_make_float_to_short</name></member>
+    <member refid="gr__float__to__short_8h_1a301759704861a895b392e0a896be9ed0" kind="function"><name>gr_make_float_to_short</name></member>
   </compound>
   <compound refid="gr__float__to__uchar_8h" kind="file"><name>gr_float_to_uchar.h</name>
     <member refid="gr__float__to__uchar_8h_1a6e7dc0a05a5d0d2166823b9f467e73d8" kind="typedef"><name>gr_float_to_uchar_sptr</name></member>
-    <member refid="gr__float__to__uchar_8h_1aa969e23671617d0c3608ebeca3acd5b6" kind="function"><name>gr_make_float_to_uchar</name></member>
+    <member refid="gr__float__to__uchar_8h_1a9d27495f843a48f12335fc4297d936f4" kind="function"><name>gr_make_float_to_uchar</name></member>
   </compound>
   <compound refid="gr__fmdet__cf_8h" kind="file"><name>gr_fmdet_cf.h</name>
     <member refid="gr__fmdet__cf_8h_1a824fb24237d8af8db58ffad8160dee94" kind="typedef"><name>gr_fmdet_cf_sptr</name></member>
-    <member refid="gr__fmdet__cf_8h_1a8ffc707cbcd8f85a09db429ac9674428" kind="function"><name>gr_make_fmdet_cf</name></member>
+    <member refid="gr__fmdet__cf_8h_1a4813fc8c590aaad89d13886e04971450" kind="function"><name>gr_make_fmdet_cf</name></member>
   </compound>
   <compound refid="gr__framer__sink__1_8h" kind="file"><name>gr_framer_sink_1.h</name>
     <member refid="gr__framer__sink__1_8h_1af11ff898bf072b3ebd4b5ea03005a4c6" kind="typedef"><name>gr_framer_sink_1_sptr</name></member>
-    <member refid="gr__framer__sink__1_8h_1a1948cbe8acc96fd1007b841e1a6c4531" kind="function"><name>gr_make_framer_sink_1</name></member>
+    <member refid="gr__framer__sink__1_8h_1a8ba58366362770dc6583ad4878bf4991" kind="function"><name>gr_make_framer_sink_1</name></member>
   </compound>
   <compound refid="gr__frequency__modulator__fc_8h" kind="file"><name>gr_frequency_modulator_fc.h</name>
     <member refid="gr__frequency__modulator__fc_8h_1a2d1526d4460fb879673cbce430225c86" kind="typedef"><name>gr_frequency_modulator_fc_sptr</name></member>
-    <member refid="gr__frequency__modulator__fc_8h_1afae4188f706f48e42481b610aa9e1b5c" kind="function"><name>gr_make_frequency_modulator_fc</name></member>
+    <member refid="gr__frequency__modulator__fc_8h_1ab72b5fb53eba1c7032ba49350c14eb1f" kind="function"><name>gr_make_frequency_modulator_fc</name></member>
   </compound>
   <compound refid="gr__fxpt_8h" kind="file"><name>gr_fxpt.h</name>
   </compound>
@@ -2160,43 +2173,43 @@
   </compound>
   <compound refid="gr__glfsr__source__b_8h" kind="file"><name>gr_glfsr_source_b.h</name>
     <member refid="gr__glfsr__source__b_8h_1a24f3327434f27a5e6b8abc997513769e" kind="typedef"><name>gr_glfsr_source_b_sptr</name></member>
-    <member refid="gr__glfsr__source__b_8h_1aeb26754465991fb9246719849a81667c" kind="function"><name>gr_make_glfsr_source_b</name></member>
+    <member refid="gr__glfsr__source__b_8h_1a1e0ffe2aecefdb57c1ac0f1ee9828260" kind="function"><name>gr_make_glfsr_source_b</name></member>
   </compound>
   <compound refid="gr__glfsr__source__f_8h" kind="file"><name>gr_glfsr_source_f.h</name>
     <member refid="gr__glfsr__source__f_8h_1a6505b04fc9198cd3cf52825eefbcca0a" kind="typedef"><name>gr_glfsr_source_f_sptr</name></member>
-    <member refid="gr__glfsr__source__f_8h_1acaea0013f3bb3e0569f20e942d6d84ca" kind="function"><name>gr_make_glfsr_source_f</name></member>
+    <member refid="gr__glfsr__source__f_8h_1a6fe2fabd125d5345d5a6b4221e7257a6" kind="function"><name>gr_make_glfsr_source_f</name></member>
   </compound>
   <compound refid="gr__head_8h" kind="file"><name>gr_head.h</name>
     <member refid="gr__head_8h_1a71a848b2c17d1926d2ef9e54b489bae1" kind="typedef"><name>gr_head_sptr</name></member>
-    <member refid="gr__head_8h_1ac7f13f81f61269aaa0e0ef5184d607b8" kind="function"><name>gr_make_head</name></member>
+    <member refid="gr__head_8h_1a33eb756de50ce488e62c6e588b60eb78" kind="function"><name>gr_make_head</name></member>
   </compound>
   <compound refid="gr__int__to__float_8h" kind="file"><name>gr_int_to_float.h</name>
     <member refid="gr__int__to__float_8h_1aab16562531cc569cb4bc54d20450a7c2" kind="typedef"><name>gr_int_to_float_sptr</name></member>
-    <member refid="gr__int__to__float_8h_1a2336d51a0a69d07969e000d46b312021" kind="function"><name>gr_make_int_to_float</name></member>
+    <member refid="gr__int__to__float_8h_1a3be491c535b3e200dcce0c2b9531e1ea" kind="function"><name>gr_make_int_to_float</name></member>
   </compound>
   <compound refid="gr__interleave_8h" kind="file"><name>gr_interleave.h</name>
     <member refid="gr__interleave_8h_1af103d0675a1670a47352bf6a2329749a" kind="typedef"><name>gr_interleave_sptr</name></member>
-    <member refid="gr__interleave_8h_1acf7153a343a7bfbf2687bcc4c98d410e" kind="function"><name>gr_make_interleave</name></member>
+    <member refid="gr__interleave_8h_1a4ab316bf2558038060544a9dd3d56f2f" kind="function"><name>gr_make_interleave</name></member>
   </compound>
   <compound refid="gr__interleaved__short__to__complex_8h" kind="file"><name>gr_interleaved_short_to_complex.h</name>
     <member refid="gr__interleaved__short__to__complex_8h_1a2bc3457c5c9cfdf73687925822882beb" kind="typedef"><name>gr_interleaved_short_to_complex_sptr</name></member>
-    <member refid="gr__interleaved__short__to__complex_8h_1ae7e5a873a2d76a5b47796a977a7884cd" kind="function"><name>gr_make_interleaved_short_to_complex</name></member>
+    <member refid="gr__interleaved__short__to__complex_8h_1a39505540c8b4a46dfc2e9b3626420823" kind="function"><name>gr_make_interleaved_short_to_complex</name></member>
   </compound>
   <compound refid="gr__iqcomp__cc_8h" kind="file"><name>gr_iqcomp_cc.h</name>
     <member refid="gr__iqcomp__cc_8h_1a24a85030703a69ba811054588c1b58e3" kind="typedef"><name>gr_iqcomp_cc_sptr</name></member>
-    <member refid="gr__iqcomp__cc_8h_1a60b3ad7e53f388481e660a478ad79153" kind="function"><name>gr_make_iqcomp_cc</name></member>
+    <member refid="gr__iqcomp__cc_8h_1a18b1b9a01bbb3b36efa290b2654f1a87" kind="function"><name>gr_make_iqcomp_cc</name></member>
   </compound>
   <compound refid="gr__keep__one__in__n_8h" kind="file"><name>gr_keep_one_in_n.h</name>
     <member refid="gr__keep__one__in__n_8h_1ab487a84240131430297570dd29c5dbea" kind="typedef"><name>gr_keep_one_in_n_sptr</name></member>
-    <member refid="gr__keep__one__in__n_8h_1a9c464c3d672a9c3437964294a2fb21a0" kind="function"><name>gr_make_keep_one_in_n</name></member>
+    <member refid="gr__keep__one__in__n_8h_1ac0e80d32182928a2f893adcf759d3cbe" kind="function"><name>gr_make_keep_one_in_n</name></member>
   </compound>
   <compound refid="gr__kludge__copy_8h" kind="file"><name>gr_kludge_copy.h</name>
     <member refid="gr__kludge__copy_8h_1ad4677a01a73d53adf51eb478d081f35a" kind="typedef"><name>gr_kludge_copy_sptr</name></member>
-    <member refid="gr__kludge__copy_8h_1a9aba6312a14622c4c18368ea2960be92" kind="function"><name>gr_make_kludge_copy</name></member>
+    <member refid="gr__kludge__copy_8h_1a0f8048038abd6f515546472885b97474" kind="function"><name>gr_make_kludge_copy</name></member>
   </compound>
   <compound refid="gr__lfsr__32k__source__s_8h" kind="file"><name>gr_lfsr_32k_source_s.h</name>
     <member refid="gr__lfsr__32k__source__s_8h_1ab0855137b2ea2001c86f057745342abc" kind="typedef"><name>gr_lfsr_32k_source_s_sptr</name></member>
-    <member refid="gr__lfsr__32k__source__s_8h_1a0610a224f38bb34200f7c5f0664e4da0" kind="function"><name>gr_make_lfsr_32k_source_s</name></member>
+    <member refid="gr__lfsr__32k__source__s_8h_1a41b01faca14e277bd5311dda30b4a444" kind="function"><name>gr_make_lfsr_32k_source_s</name></member>
   </compound>
   <compound refid="gr__log2__const_8h" kind="file"><name>gr_log2_const.h</name>
     <member refid="gr__log2__const_8h_1a8279bc6447c86a78aa83c3f0abce93b0" kind="function"><name>gr_log2_const</name></member>
@@ -2214,11 +2227,11 @@
   </compound>
   <compound refid="gr__map__bb_8h" kind="file"><name>gr_map_bb.h</name>
     <member refid="gr__map__bb_8h_1a99be57426e5e9610bbaa69fa97db820e" kind="typedef"><name>gr_map_bb_sptr</name></member>
-    <member refid="gr__map__bb_8h_1a993ae506569654cde54bf14e18f6b46a" kind="function"><name>gr_make_map_bb</name></member>
+    <member refid="gr__map__bb_8h_1a8ba0981298326ab219880978601d8b32" kind="function"><name>gr_make_map_bb</name></member>
   </compound>
   <compound refid="gr__math_8h" kind="file"><name>gr_math.h</name>
     <member refid="gr__math_8h_1ace69f572707e22fad277c8fe774de2bb" kind="function"><name>gr_is_power_of_2</name></member>
-    <member refid="gr__math_8h_1ae8b14a00eda900ecce92981cce752734" kind="function"><name>gr_fast_atan2f</name></member>
+    <member refid="gr__math_8h_1a0b274096639485abb50e47035ed6d924" kind="function"><name>gr_fast_atan2f</name></member>
     <member refid="gr__math_8h_1ae51b150b5480dc16864d7a9c128d4e2b" kind="function"><name>gr_fast_atan2f</name></member>
     <member refid="gr__math_8h_1ae41ea9e5b184df9e439a21d31350ab14" kind="function"><name>gr_branchless_clip</name></member>
     <member refid="gr__math_8h_1a752a37cb09d7d71aebb5b05e4de828fd" kind="function"><name>gr_clip</name></member>
@@ -2238,136 +2251,136 @@
     <member refid="gr__math_8h_1a0a25383360574c5f3e287063dacc8023" kind="function"><name>gr_p2_modulo_neg</name></member>
   </compound>
   <compound refid="gr__misc_8h" kind="file"><name>gr_misc.h</name>
-    <member refid="gr__misc_8h_1a28799b6e53b0cbd3e73cec248866ecca" kind="function"><name>gr_rounduppow2</name></member>
-    <member refid="gr__misc_8h_1a5a28673315841003f842c40aa472d594" kind="function"><name>gr_zero_vector</name></member>
-    <member refid="gr__misc_8h_1ae9c9543c2c1d461c835b444ce1432ac5" kind="function"><name>gr_zero_vector</name></member>
-    <member refid="gr__misc_8h_1a919c0c38bc010707df907f95123bc080" kind="function"><name>gr_zero_vector</name></member>
-    <member refid="gr__misc_8h_1aa25951f6dce6b466ccf6094aaa95201f" kind="function"><name>gr_zero_vector</name></member>
+    <member refid="gr__misc_8h_1a6ec67e6e53063307e029bb3627022bf3" kind="function"><name>gr_rounduppow2</name></member>
+    <member refid="gr__misc_8h_1a0a2e3a2fc513351eb5dff62b6502a167" kind="function"><name>gr_zero_vector</name></member>
+    <member refid="gr__misc_8h_1a74a6d8829143f24b5db8c6549e66c36c" kind="function"><name>gr_zero_vector</name></member>
+    <member refid="gr__misc_8h_1a46afb83f36a9892d50462fa1bf5dc5b2" kind="function"><name>gr_zero_vector</name></member>
+    <member refid="gr__misc_8h_1a9802abcf3b9de8bb6862a10632ac3246" kind="function"><name>gr_zero_vector</name></member>
   </compound>
   <compound refid="gr__multiply__cc_8h" kind="file"><name>gr_multiply_cc.h</name>
     <member refid="gr__multiply__cc_8h_1a95cf2bd57354013cf25a9347fb9146ff" kind="typedef"><name>gr_multiply_cc_sptr</name></member>
-    <member refid="gr__multiply__cc_8h_1a80da755533f00e3613c369ec3d7c58e7" kind="function"><name>gr_make_multiply_cc</name></member>
+    <member refid="gr__multiply__cc_8h_1a9fe9f7633a856445681413a8e3041b76" kind="function"><name>gr_make_multiply_cc</name></member>
   </compound>
   <compound refid="gr__multiply__conjugate__cc_8h" kind="file"><name>gr_multiply_conjugate_cc.h</name>
     <member refid="gr__multiply__conjugate__cc_8h_1add751ab386d3c7b2df8dc892decf5057" kind="typedef"><name>gr_multiply_conjugate_cc_sptr</name></member>
-    <member refid="gr__multiply__conjugate__cc_8h_1a58f5d0b458e85fb135e8bf46bbf51101" kind="function"><name>gr_make_multiply_conjugate_cc</name></member>
+    <member refid="gr__multiply__conjugate__cc_8h_1ac57218e0ecf5487bb0331df75b3b42f3" kind="function"><name>gr_make_multiply_conjugate_cc</name></member>
   </compound>
   <compound refid="gr__multiply__const__cc_8h" kind="file"><name>gr_multiply_const_cc.h</name>
     <member refid="gr__multiply__const__cc_8h_1a276b27b8373208e80e318f0eb4563a2c" kind="typedef"><name>gr_multiply_const_cc_sptr</name></member>
-    <member refid="gr__multiply__const__cc_8h_1a77df4fe70b45fa7e1468cd3c33381e21" kind="function"><name>gr_make_multiply_const_cc</name></member>
+    <member refid="gr__multiply__const__cc_8h_1a074c0669aec40235e82c29b15b14def8" kind="function"><name>gr_make_multiply_const_cc</name></member>
   </compound>
   <compound refid="gr__multiply__const__ff_8h" kind="file"><name>gr_multiply_const_ff.h</name>
     <member refid="gr__multiply__const__ff_8h_1ab7c488ed95272d669f20b5e9fce073d9" kind="typedef"><name>gr_multiply_const_ff_sptr</name></member>
-    <member refid="gr__multiply__const__ff_8h_1a55558497492c9874bb4fc1f2af77281c" kind="function"><name>gr_make_multiply_const_ff</name></member>
+    <member refid="gr__multiply__const__ff_8h_1ab03fa4ca0f768216bc4f41ad8248ffcc" kind="function"><name>gr_make_multiply_const_ff</name></member>
   </compound>
   <compound refid="gr__multiply__ff_8h" kind="file"><name>gr_multiply_ff.h</name>
     <member refid="gr__multiply__ff_8h_1a7a8dce4980fee7a6b56f459818ad23b7" kind="typedef"><name>gr_multiply_ff_sptr</name></member>
-    <member refid="gr__multiply__ff_8h_1a9ee6012b1c292dda4fd573377041f059" kind="function"><name>gr_make_multiply_ff</name></member>
+    <member refid="gr__multiply__ff_8h_1a1a5268e1d69eba44d38bcbcbd9a61f4c" kind="function"><name>gr_make_multiply_ff</name></member>
   </compound>
   <compound refid="gr__nco_8h" kind="file"><name>gr_nco.h</name>
   </compound>
   <compound refid="gr__nlog10__ff_8h" kind="file"><name>gr_nlog10_ff.h</name>
     <member refid="gr__nlog10__ff_8h_1a36c78092f0a829e9829a623e5f29ebb2" kind="typedef"><name>gr_nlog10_ff_sptr</name></member>
-    <member refid="gr__nlog10__ff_8h_1a185ba6c641a8fb2fa6da9660650d0781" kind="function"><name>gr_make_nlog10_ff</name></member>
+    <member refid="gr__nlog10__ff_8h_1aa173c404d8f43c2730c9f23ab88db8b5" kind="function"><name>gr_make_nlog10_ff</name></member>
   </compound>
   <compound refid="gr__nop_8h" kind="file"><name>gr_nop.h</name>
     <member refid="gr__nop_8h_1a3b0170ba77c841c02c4e5b8a730e8e86" kind="typedef"><name>gr_nop_sptr</name></member>
-    <member refid="gr__nop_8h_1a3db28467e79ab7f8728c74f8bcbc1a4c" kind="function"><name>gr_make_nop</name></member>
+    <member refid="gr__nop_8h_1a407dd91bb0d5a366c05361a6e2d7051e" kind="function"><name>gr_make_nop</name></member>
   </compound>
   <compound refid="gr__null__sink_8h" kind="file"><name>gr_null_sink.h</name>
     <member refid="gr__null__sink_8h_1af66b81dbe0edc5ac4adfe2513cc28d8e" kind="typedef"><name>gr_null_sink_sptr</name></member>
-    <member refid="gr__null__sink_8h_1abe0edd898bbf1f4a661caefad9d56950" kind="function"><name>gr_make_null_sink</name></member>
+    <member refid="gr__null__sink_8h_1af2fd53dd99cd9ee800f75c2986786171" kind="function"><name>gr_make_null_sink</name></member>
   </compound>
   <compound refid="gr__null__source_8h" kind="file"><name>gr_null_source.h</name>
     <member refid="gr__null__source_8h_1a2e19fd3e9aa7427d74ae83996d73686e" kind="typedef"><name>gr_null_source_sptr</name></member>
-    <member refid="gr__null__source_8h_1a956d69cdba14218b55c045628c959060" kind="function"><name>gr_make_null_source</name></member>
+    <member refid="gr__null__source_8h_1a076e7093b16192fe58ae8c9707843da9" kind="function"><name>gr_make_null_source</name></member>
   </compound>
   <compound refid="gr__ofdm__bpsk__demapper_8h" kind="file"><name>gr_ofdm_bpsk_demapper.h</name>
     <member refid="gr__ofdm__bpsk__demapper_8h_1ac8b84174f85f508aa3623dbbe2a33c48" kind="typedef"><name>gr_ofdm_bpsk_demapper_sptr</name></member>
-    <member refid="gr__ofdm__bpsk__demapper_8h_1a4726af807e8951f1c9e4645ed3c629aa" kind="function"><name>gr_make_ofdm_bpsk_demapper</name></member>
+    <member refid="gr__ofdm__bpsk__demapper_8h_1abcb6626e1cd073df870e2c1ea51ca686" kind="function"><name>gr_make_ofdm_bpsk_demapper</name></member>
   </compound>
   <compound refid="gr__ofdm__frame__sink2_8h" kind="file"><name>gr_ofdm_frame_sink2.h</name>
     <member refid="gr__ofdm__frame__sink2_8h_1a522b1af8d0b718212d1ae1604d2df24a" kind="typedef"><name>gr_ofdm_frame_sink2_sptr</name></member>
-    <member refid="gr__ofdm__frame__sink2_8h_1a896c0a0dab277b4cdcf742418f922f47" kind="function"><name>gr_make_ofdm_frame_sink2</name></member>
+    <member refid="gr__ofdm__frame__sink2_8h_1a1b22311f9a79d849ad2ef48e1c4b7ad7" kind="function"><name>gr_make_ofdm_frame_sink2</name></member>
   </compound>
   <compound refid="gr__pa__2x2__phase__combiner_8h" kind="file"><name>gr_pa_2x2_phase_combiner.h</name>
     <member refid="gr__pa__2x2__phase__combiner_8h_1a904ea79471922bfa2a78e8e32624db83" kind="typedef"><name>gr_pa_2x2_phase_combiner_sptr</name></member>
-    <member refid="gr__pa__2x2__phase__combiner_8h_1a9f8100f1ae7f6eb0b91d259ad2d0a3fd" kind="function"><name>gr_make_pa_2x2_phase_combiner</name></member>
+    <member refid="gr__pa__2x2__phase__combiner_8h_1a612ca6faa9709addc2e124e57765e214" kind="function"><name>gr_make_pa_2x2_phase_combiner</name></member>
   </compound>
   <compound refid="gr__packet__sink_8h" kind="file"><name>gr_packet_sink.h</name>
     <member refid="gr__packet__sink_8h_1a02e7c8d9d56cfa5b01fb0727ba297e43" kind="typedef"><name>gr_packet_sink_sptr</name></member>
-    <member refid="gr__packet__sink_8h_1a4b262a2aa5a094ea82ea157e2832b6b6" kind="function"><name>gr_make_packet_sink</name></member>
+    <member refid="gr__packet__sink_8h_1abea534a3a7c2948921acf91c68347464" kind="function"><name>gr_make_packet_sink</name></member>
   </compound>
   <compound refid="gr__peak__detector2__fb_8h" kind="file"><name>gr_peak_detector2_fb.h</name>
     <member refid="gr__peak__detector2__fb_8h_1a050e91313218c4063c079cbec217e1d8" kind="typedef"><name>gr_peak_detector2_fb_sptr</name></member>
-    <member refid="gr__peak__detector2__fb_8h_1a3a8786aed52ee33158859a8a8bb29f98" kind="function"><name>gr_make_peak_detector2_fb</name></member>
+    <member refid="gr__peak__detector2__fb_8h_1a645a6d0dc17bc61a1aad5adc5834ce68" kind="function"><name>gr_make_peak_detector2_fb</name></member>
   </compound>
   <compound refid="gr__phase__modulator__fc_8h" kind="file"><name>gr_phase_modulator_fc.h</name>
     <member refid="gr__phase__modulator__fc_8h_1a74618c5c6790bea9bbeb1afc4514b5df" kind="typedef"><name>gr_phase_modulator_fc_sptr</name></member>
-    <member refid="gr__phase__modulator__fc_8h_1a308c61ab42d145396fd5ef14e715ed19" kind="function"><name>gr_make_phase_modulator_fc</name></member>
+    <member refid="gr__phase__modulator__fc_8h_1a1a3285972069e1bc2bbd6c1a9004a266" kind="function"><name>gr_make_phase_modulator_fc</name></member>
   </compound>
   <compound refid="gr__pll__carriertracking__cc_8h" kind="file"><name>gr_pll_carriertracking_cc.h</name>
     <member refid="gr__pll__carriertracking__cc_8h_1a902ed075e8f824c395053d4ae2a718c6" kind="typedef"><name>gr_pll_carriertracking_cc_sptr</name></member>
-    <member refid="gr__pll__carriertracking__cc_8h_1a60b2c2ed6ce4b76ccebe00ba67bc3fe0" kind="function"><name>gr_make_pll_carriertracking_cc</name></member>
+    <member refid="gr__pll__carriertracking__cc_8h_1a469b56c398bbcdfdec53cda361fc15f2" kind="function"><name>gr_make_pll_carriertracking_cc</name></member>
   </compound>
   <compound refid="gr__pll__freqdet__cf_8h" kind="file"><name>gr_pll_freqdet_cf.h</name>
     <member refid="gr__pll__freqdet__cf_8h_1a5e50cee86d80b5d306c3d542f520dfbd" kind="typedef"><name>gr_pll_freqdet_cf_sptr</name></member>
-    <member refid="gr__pll__freqdet__cf_8h_1ac9ac4d8846650bc97b4a69b202901171" kind="function"><name>gr_make_pll_freqdet_cf</name></member>
+    <member refid="gr__pll__freqdet__cf_8h_1a1b25dae13d91ca839b620e4bdbadcb85" kind="function"><name>gr_make_pll_freqdet_cf</name></member>
   </compound>
   <compound refid="gr__pll__refout__cc_8h" kind="file"><name>gr_pll_refout_cc.h</name>
     <member refid="gr__pll__refout__cc_8h_1a677227a4742a5cddf187da852d0fdbc9" kind="typedef"><name>gr_pll_refout_cc_sptr</name></member>
-    <member refid="gr__pll__refout__cc_8h_1a6d5109b221a6aab1df9002f167b090bb" kind="function"><name>gr_make_pll_refout_cc</name></member>
+    <member refid="gr__pll__refout__cc_8h_1ae34d1b3f3fe903def5c2a33329d1b2c3" kind="function"><name>gr_make_pll_refout_cc</name></member>
   </compound>
   <compound refid="gr__pn__correlator__cc_8h" kind="file"><name>gr_pn_correlator_cc.h</name>
     <member refid="gr__pn__correlator__cc_8h_1add03ad507c54d2eddc6cf28d023456a4" kind="typedef"><name>gr_pn_correlator_cc_sptr</name></member>
-    <member refid="gr__pn__correlator__cc_8h_1a80644fb667b15782e482f57dca9fb51d" kind="function"><name>gr_make_pn_correlator_cc</name></member>
+    <member refid="gr__pn__correlator__cc_8h_1a9f560a38322498f18aa2353af5e8716a" kind="function"><name>gr_make_pn_correlator_cc</name></member>
   </compound>
   <compound refid="gr__prefs_8h" kind="file"><name>gr_prefs.h</name>
   </compound>
   <compound refid="gr__probe__avg__mag__sqrd__c_8h" kind="file"><name>gr_probe_avg_mag_sqrd_c.h</name>
     <member refid="gr__probe__avg__mag__sqrd__c_8h_1ad25c2d83390f1ec8664a596d091511fa" kind="typedef"><name>gr_probe_avg_mag_sqrd_c_sptr</name></member>
-    <member refid="gr__probe__avg__mag__sqrd__c_8h_1aaab5b9d4723dd6d505483f9f74ae35f4" kind="function"><name>gr_make_probe_avg_mag_sqrd_c</name></member>
+    <member refid="gr__probe__avg__mag__sqrd__c_8h_1abfa4ec631f5e0a25ff96cbe3d425b0ec" kind="function"><name>gr_make_probe_avg_mag_sqrd_c</name></member>
   </compound>
   <compound refid="gr__probe__avg__mag__sqrd__cf_8h" kind="file"><name>gr_probe_avg_mag_sqrd_cf.h</name>
     <member refid="gr__probe__avg__mag__sqrd__cf_8h_1a7e9ff8f58c799bc9f6c8cac566380aa4" kind="typedef"><name>gr_probe_avg_mag_sqrd_cf_sptr</name></member>
-    <member refid="gr__probe__avg__mag__sqrd__cf_8h_1ae81eade01e99cc29e4dee5c2913ab727" kind="function"><name>gr_make_probe_avg_mag_sqrd_cf</name></member>
+    <member refid="gr__probe__avg__mag__sqrd__cf_8h_1a97b33f015d3f2d4301a7193354a4922a" kind="function"><name>gr_make_probe_avg_mag_sqrd_cf</name></member>
   </compound>
   <compound refid="gr__probe__avg__mag__sqrd__f_8h" kind="file"><name>gr_probe_avg_mag_sqrd_f.h</name>
     <member refid="gr__probe__avg__mag__sqrd__f_8h_1af47fc211267aed72a883ec669d36a791" kind="typedef"><name>gr_probe_avg_mag_sqrd_f_sptr</name></member>
-    <member refid="gr__probe__avg__mag__sqrd__f_8h_1a987ea462b4f2985c23f07e04f9c1d7e0" kind="function"><name>gr_make_probe_avg_mag_sqrd_f</name></member>
+    <member refid="gr__probe__avg__mag__sqrd__f_8h_1a95096df01ae45366f051a28917143e63" kind="function"><name>gr_make_probe_avg_mag_sqrd_f</name></member>
   </compound>
   <compound refid="gr__probe__density__b_8h" kind="file"><name>gr_probe_density_b.h</name>
     <member refid="gr__probe__density__b_8h_1a31e5a7585802e2c6553bca7701a95f75" kind="typedef"><name>gr_probe_density_b_sptr</name></member>
-    <member refid="gr__probe__density__b_8h_1aaf4341e7af42c3f8491414e581b745e9" kind="function"><name>gr_make_probe_density_b</name></member>
+    <member refid="gr__probe__density__b_8h_1a8fc965516d1d3bccd91abca8c0c6e480" kind="function"><name>gr_make_probe_density_b</name></member>
   </compound>
   <compound refid="gr__pwr__squelch__cc_8h" kind="file"><name>gr_pwr_squelch_cc.h</name>
     <member refid="gr__pwr__squelch__cc_8h_1a6f9cdb2facf7dac5269edb70033e666c" kind="typedef"><name>gr_pwr_squelch_cc_sptr</name></member>
-    <member refid="gr__pwr__squelch__cc_8h_1a7dea4e225f21825acc6d759e2dec5ddd" kind="function"><name>gr_make_pwr_squelch_cc</name></member>
+    <member refid="gr__pwr__squelch__cc_8h_1af916c8c575e98eeba817133cc852e25d" kind="function"><name>gr_make_pwr_squelch_cc</name></member>
   </compound>
   <compound refid="gr__pwr__squelch__ff_8h" kind="file"><name>gr_pwr_squelch_ff.h</name>
     <member refid="gr__pwr__squelch__ff_8h_1ae88c18260d2f28273750df75ecb10e42" kind="typedef"><name>gr_pwr_squelch_ff_sptr</name></member>
-    <member refid="gr__pwr__squelch__ff_8h_1a55c7c4636f300362fe5f903466d10a52" kind="function"><name>gr_make_pwr_squelch_ff</name></member>
+    <member refid="gr__pwr__squelch__ff_8h_1ab607a7b70ac89523e1b9b2340088da63" kind="function"><name>gr_make_pwr_squelch_ff</name></member>
   </compound>
   <compound refid="gr__quadrature__demod__cf_8h" kind="file"><name>gr_quadrature_demod_cf.h</name>
     <member refid="gr__quadrature__demod__cf_8h_1ab4f452edab79dca221075166a175867a" kind="typedef"><name>gr_quadrature_demod_cf_sptr</name></member>
-    <member refid="gr__quadrature__demod__cf_8h_1ab0ac1e2767d568315de5515bd910b804" kind="function"><name>gr_make_quadrature_demod_cf</name></member>
+    <member refid="gr__quadrature__demod__cf_8h_1a5d7856f1814c1f862844044f51f57288" kind="function"><name>gr_make_quadrature_demod_cf</name></member>
   </compound>
   <compound refid="gr__rail__ff_8h" kind="file"><name>gr_rail_ff.h</name>
     <member refid="gr__rail__ff_8h_1af4ba1ff2d9c8f7206554cfedf548b7a3" kind="typedef"><name>gr_rail_ff_sptr</name></member>
-    <member refid="gr__rail__ff_8h_1a9b423222e5ee0ea2bb8453edb7d0b225" kind="function"><name>gr_make_rail_ff</name></member>
+    <member refid="gr__rail__ff_8h_1a2141b3bb750776f051972016ba73e5b7" kind="function"><name>gr_make_rail_ff</name></member>
   </compound>
   <compound refid="gr__random_8h" kind="file"><name>gr_random.h</name>
   </compound>
   <compound refid="gr__regenerate__bb_8h" kind="file"><name>gr_regenerate_bb.h</name>
     <member refid="gr__regenerate__bb_8h_1af8e506b67764d8052c45341fd651a9af" kind="typedef"><name>gr_regenerate_bb_sptr</name></member>
-    <member refid="gr__regenerate__bb_8h_1a3dfb5452c4d5c74d1478778cb212b252" kind="function"><name>gr_make_regenerate_bb</name></member>
+    <member refid="gr__regenerate__bb_8h_1a1850db9cbeb77689d65447218b4271c9" kind="function"><name>gr_make_regenerate_bb</name></member>
   </compound>
   <compound refid="gr__remez_8h" kind="file"><name>gr_remez.h</name>
-    <member refid="gr__remez_8h_1a72457c511193e9239047a12641c95e90" kind="function"><name>gr_remez</name></member>
+    <member refid="gr__remez_8h_1a85d28297abfd9156dfc0e368d737fc71" kind="function"><name>gr_remez</name></member>
   </compound>
   <compound refid="gr__repeat_8h" kind="file"><name>gr_repeat.h</name>
     <member refid="gr__repeat_8h_1ab19e3dc75da2fa267bab3bd15a25375c" kind="typedef"><name>gr_repeat_sptr</name></member>
-    <member refid="gr__repeat_8h_1ab8e55a62daa7e08d85f4f180f6c986c6" kind="function"><name>gr_make_repeat</name></member>
+    <member refid="gr__repeat_8h_1a7f0e71988e3007c2b9ffec41749d6cfd" kind="function"><name>gr_make_repeat</name></member>
   </compound>
   <compound refid="gr__reverse_8h" kind="file"><name>gr_reverse.h</name>
     <member refid="gr__reverse_8h_1a0e0995ad6539dd54e5e331ccb3681932" kind="function"><name>gr_reverse</name></member>
@@ -2375,31 +2388,31 @@
   </compound>
   <compound refid="gr__rms__cf_8h" kind="file"><name>gr_rms_cf.h</name>
     <member refid="gr__rms__cf_8h_1a09c0e1e5c51d2b70e4970e6ef4a323c1" kind="typedef"><name>gr_rms_cf_sptr</name></member>
-    <member refid="gr__rms__cf_8h_1a5b7d2152b67969ecf9499cfcb71b462d" kind="function"><name>gr_make_rms_cf</name></member>
+    <member refid="gr__rms__cf_8h_1a7800b3eb4e8b2ce197baa9a08828c75e" kind="function"><name>gr_make_rms_cf</name></member>
   </compound>
   <compound refid="gr__rms__ff_8h" kind="file"><name>gr_rms_ff.h</name>
     <member refid="gr__rms__ff_8h_1a1aecfb5682b51a362b2e71e0fae514d7" kind="typedef"><name>gr_rms_ff_sptr</name></member>
-    <member refid="gr__rms__ff_8h_1aa3a37925afc08f1e22bf0262aa5d51ad" kind="function"><name>gr_make_rms_ff</name></member>
+    <member refid="gr__rms__ff_8h_1a309cb5ab77a2ed9977aca0e09342b791" kind="function"><name>gr_make_rms_ff</name></member>
   </compound>
   <compound refid="gr__scrambler__bb_8h" kind="file"><name>gr_scrambler_bb.h</name>
     <member refid="gr__scrambler__bb_8h_1ac865494b790212d49d43678bfab72356" kind="typedef"><name>gr_scrambler_bb_sptr</name></member>
-    <member refid="gr__scrambler__bb_8h_1a894aa775a7d4424e204c11074ce5ec62" kind="function"><name>gr_make_scrambler_bb</name></member>
+    <member refid="gr__scrambler__bb_8h_1a94f7fb218d2189f6bb84b8fc4ea9c5f3" kind="function"><name>gr_make_scrambler_bb</name></member>
   </compound>
   <compound refid="gr__short__to__char_8h" kind="file"><name>gr_short_to_char.h</name>
     <member refid="gr__short__to__char_8h_1a9efe17140134d6024c0dccde6ec5f2bb" kind="typedef"><name>gr_short_to_char_sptr</name></member>
-    <member refid="gr__short__to__char_8h_1aa8979aca0a562023a50e1d7dad3cde69" kind="function"><name>gr_make_short_to_char</name></member>
+    <member refid="gr__short__to__char_8h_1a7199f7f0394379ac7f971cedfc1fbb52" kind="function"><name>gr_make_short_to_char</name></member>
   </compound>
   <compound refid="gr__short__to__float_8h" kind="file"><name>gr_short_to_float.h</name>
     <member refid="gr__short__to__float_8h_1ab48fd6d108b86578043d352279e2a249" kind="typedef"><name>gr_short_to_float_sptr</name></member>
-    <member refid="gr__short__to__float_8h_1a53e3576db9c8c434766a47986d395976" kind="function"><name>gr_make_short_to_float</name></member>
+    <member refid="gr__short__to__float_8h_1a9eea6edcd34b81a1670cc9a35acce17b" kind="function"><name>gr_make_short_to_float</name></member>
   </compound>
   <compound refid="gr__simple__correlator_8h" kind="file"><name>gr_simple_correlator.h</name>
     <member refid="gr__simple__correlator_8h_1aca0750db2322b7babd9e1c75bfd296db" kind="typedef"><name>gr_simple_correlator_sptr</name></member>
-    <member refid="gr__simple__correlator_8h_1a7cf6acde8da2f7e3f378686e31deed58" kind="function"><name>gr_make_simple_correlator</name></member>
+    <member refid="gr__simple__correlator_8h_1ad131519104058e8dea494aa10aeefbd9" kind="function"><name>gr_make_simple_correlator</name></member>
   </compound>
   <compound refid="gr__simple__framer_8h" kind="file"><name>gr_simple_framer.h</name>
     <member refid="gr__simple__framer_8h_1a2ac58d40f3b73979a53069ae73e2db28" kind="typedef"><name>gr_simple_framer_sptr</name></member>
-    <member refid="gr__simple__framer_8h_1af472698629e4fe6bd03bbaf36b25ab77" kind="function"><name>gr_make_simple_framer</name></member>
+    <member refid="gr__simple__framer_8h_1a7b2c10581c9fdbddf6fa3de75b71dd6e" kind="function"><name>gr_make_simple_framer</name></member>
   </compound>
   <compound refid="gr__simple__framer__sync_8h" kind="file"><name>gr_simple_framer_sync.h</name>
     <member refid="gr__simple__framer__sync_8h_1a15ccdb717970580d9f0068fce8085028" kind="variable"><name>GRSF_SYNC</name></member>
@@ -2411,11 +2424,11 @@
   </compound>
   <compound refid="gr__simple__squelch__cc_8h" kind="file"><name>gr_simple_squelch_cc.h</name>
     <member refid="gr__simple__squelch__cc_8h_1a87c642ee8718643a347a9dcd2d7e67a9" kind="typedef"><name>gr_simple_squelch_cc_sptr</name></member>
-    <member refid="gr__simple__squelch__cc_8h_1a11ccd0c21e71538879ca4a554379fda4" kind="function"><name>gr_make_simple_squelch_cc</name></member>
+    <member refid="gr__simple__squelch__cc_8h_1aaa3fd27c3a7691b03845b3ff5a9d1d1c" kind="function"><name>gr_make_simple_squelch_cc</name></member>
   </compound>
   <compound refid="gr__skiphead_8h" kind="file"><name>gr_skiphead.h</name>
     <member refid="gr__skiphead_8h_1a1df191cb7e3fd15ce5f9a0c32578cfe3" kind="typedef"><name>gr_skiphead_sptr</name></member>
-    <member refid="gr__skiphead_8h_1aa003d0cd01695c642d48ec5f6b260921" kind="function"><name>gr_make_skiphead</name></member>
+    <member refid="gr__skiphead_8h_1af5d69ea496976e89e74a1615e2ce2351" kind="function"><name>gr_make_skiphead</name></member>
   </compound>
   <compound refid="gr__squelch__base__cc_8h" kind="file"><name>gr_squelch_base_cc.h</name>
   </compound>
@@ -2423,31 +2436,31 @@
   </compound>
   <compound refid="gr__stream__mux_8h" kind="file"><name>gr_stream_mux.h</name>
     <member refid="gr__stream__mux_8h_1acd973eea42598afb94eca9ceccd85003" kind="typedef"><name>gr_stream_mux_sptr</name></member>
-    <member refid="gr__stream__mux_8h_1a08c268afa01b8efef29a149131330974" kind="function"><name>gr_make_stream_mux</name></member>
+    <member refid="gr__stream__mux_8h_1a79d011823d176f247f671e470e168918" kind="function"><name>gr_make_stream_mux</name></member>
   </compound>
   <compound refid="gr__stream__to__streams_8h" kind="file"><name>gr_stream_to_streams.h</name>
     <member refid="gr__stream__to__streams_8h_1a9a77676b0aed11be95c47256b7e282a4" kind="typedef"><name>gr_stream_to_streams_sptr</name></member>
-    <member refid="gr__stream__to__streams_8h_1ae7a5bb4c4e497e69db66b86d8ad9b635" kind="function"><name>gr_make_stream_to_streams</name></member>
+    <member refid="gr__stream__to__streams_8h_1ae186a0bdecb06755f5298395c9f35683" kind="function"><name>gr_make_stream_to_streams</name></member>
   </compound>
   <compound refid="gr__stream__to__vector_8h" kind="file"><name>gr_stream_to_vector.h</name>
     <member refid="gr__stream__to__vector_8h_1a3af5b608b1a813e66aa7e26667543bbe" kind="typedef"><name>gr_stream_to_vector_sptr</name></member>
-    <member refid="gr__stream__to__vector_8h_1a39d1465f888889a1f62d7e581afccd7c" kind="function"><name>gr_make_stream_to_vector</name></member>
+    <member refid="gr__stream__to__vector_8h_1ab2376982031fadfc69803d83c3b8585a" kind="function"><name>gr_make_stream_to_vector</name></member>
   </compound>
   <compound refid="gr__streams__to__stream_8h" kind="file"><name>gr_streams_to_stream.h</name>
     <member refid="gr__streams__to__stream_8h_1af69ed9a3ace99526d4184a0b9676a32c" kind="typedef"><name>gr_streams_to_stream_sptr</name></member>
-    <member refid="gr__streams__to__stream_8h_1ac3a468924f9959e8b84312f0fd72fb98" kind="function"><name>gr_make_streams_to_stream</name></member>
+    <member refid="gr__streams__to__stream_8h_1a49ce654f5384def653cfb57fea7a8e09" kind="function"><name>gr_make_streams_to_stream</name></member>
   </compound>
   <compound refid="gr__streams__to__vector_8h" kind="file"><name>gr_streams_to_vector.h</name>
     <member refid="gr__streams__to__vector_8h_1a8b8ce8f55a6782eda302cf9f9cf49060" kind="typedef"><name>gr_streams_to_vector_sptr</name></member>
-    <member refid="gr__streams__to__vector_8h_1ad906397d21052894c7447db15bbbc223" kind="function"><name>gr_make_streams_to_vector</name></member>
+    <member refid="gr__streams__to__vector_8h_1af144bb2d41a98df275944fad83aa2213" kind="function"><name>gr_make_streams_to_vector</name></member>
   </compound>
   <compound refid="gr__stretch__ff_8h" kind="file"><name>gr_stretch_ff.h</name>
     <member refid="gr__stretch__ff_8h_1a7e4e0dde890080dbda7d31d93adbda03" kind="typedef"><name>gr_stretch_ff_sptr</name></member>
-    <member refid="gr__stretch__ff_8h_1a8b886efcae9c22728d2613ee83805ce5" kind="function"><name>gr_make_stretch_ff</name></member>
+    <member refid="gr__stretch__ff_8h_1a81b4a3a994804bac1014ea8dad9110bd" kind="function"><name>gr_make_stretch_ff</name></member>
   </compound>
   <compound refid="gr__test_8h" kind="file"><name>gr_test.h</name>
     <member refid="gr__test_8h_1a81b0e95fb4d89e2f6e11e685980030c3" kind="typedef"><name>gr_test_sptr</name></member>
-    <member refid="gr__test_8h_1a037b4307bd9b60f43d7275933b8c1314" kind="function"><name>gr_make_test</name></member>
+    <member refid="gr__test_8h_1ad79008b3728760d1802a6b465df9adfb" kind="function"><name>gr_make_test</name></member>
   </compound>
   <compound refid="gr__test__types_8h" kind="file"><name>gr_test_types.h</name>
     <member refid="gr__test__types_8h_1a7e11c1089ad4d0f3c0d4c0cea0281fa6" kind="enum"><name>gr_consume_type_t</name></member>
@@ -2468,35 +2481,35 @@
   </compound>
   <compound refid="gr__threshold__ff_8h" kind="file"><name>gr_threshold_ff.h</name>
     <member refid="gr__threshold__ff_8h_1a76b68fec9e7cf4f7fec830e7151cf148" kind="typedef"><name>gr_threshold_ff_sptr</name></member>
-    <member refid="gr__threshold__ff_8h_1a386a17afd92dbaeaf4a5d9f29dfc0341" kind="function"><name>gr_make_threshold_ff</name></member>
+    <member refid="gr__threshold__ff_8h_1aa4525f923e0e22a4050c94199db704e0" kind="function"><name>gr_make_threshold_ff</name></member>
   </compound>
   <compound refid="gr__throttle_8h" kind="file"><name>gr_throttle.h</name>
-    <member refid="gr__throttle_8h_1ad460f506c81a02c5df8f0e34450b8d02" kind="function"><name>gr_make_throttle</name></member>
+    <member refid="gr__throttle_8h_1af88a962ed70b7d9db0184ac0489ee3d7" kind="function"><name>gr_make_throttle</name></member>
   </compound>
   <compound refid="gr__transcendental_8h" kind="file"><name>gr_transcendental.h</name>
-    <member refid="gr__transcendental_8h_1a80f1f008af59e809b682a9ad5553541b" kind="function"><name>gr_make_transcendental</name></member>
+    <member refid="gr__transcendental_8h_1af7d123b1b414d703174eef36707fc633" kind="function"><name>gr_make_transcendental</name></member>
   </compound>
   <compound refid="gr__uchar__to__float_8h" kind="file"><name>gr_uchar_to_float.h</name>
     <member refid="gr__uchar__to__float_8h_1ad2327f1aaa4139b0198c4830cd422234" kind="typedef"><name>gr_uchar_to_float_sptr</name></member>
-    <member refid="gr__uchar__to__float_8h_1ae9afed4b76cbb3da800b50622750f9f3" kind="function"><name>gr_make_uchar_to_float</name></member>
+    <member refid="gr__uchar__to__float_8h_1ab05bdcf25d429772c815b1cf6073af44" kind="function"><name>gr_make_uchar_to_float</name></member>
   </compound>
   <compound refid="gr__unpack__k__bits__bb_8h" kind="file"><name>gr_unpack_k_bits_bb.h</name>
     <member refid="gr__unpack__k__bits__bb_8h_1ac766f19f4aeba873bd9029e5279a0ab4" kind="typedef"><name>gr_unpack_k_bits_bb_sptr</name></member>
-    <member refid="gr__unpack__k__bits__bb_8h_1a611880b58a24164319fdb9825b16ab7e" kind="function"><name>gr_make_unpack_k_bits_bb</name></member>
+    <member refid="gr__unpack__k__bits__bb_8h_1af4fd8fe3be38f69a6347ef68cae00ff0" kind="function"><name>gr_make_unpack_k_bits_bb</name></member>
   </compound>
   <compound refid="gr__vco_8h" kind="file"><name>gr_vco.h</name>
   </compound>
   <compound refid="gr__vco__f_8h" kind="file"><name>gr_vco_f.h</name>
     <member refid="gr__vco__f_8h_1a0060de89654ff5e9b0480a9ceed183b7" kind="typedef"><name>gr_vco_f_sptr</name></member>
-    <member refid="gr__vco__f_8h_1a2ce97743149b8f3852a634b68fbb382f" kind="function"><name>gr_make_vco_f</name></member>
+    <member refid="gr__vco__f_8h_1a734d28b93c65263d899f27fe856febb6" kind="function"><name>gr_make_vco_f</name></member>
   </compound>
   <compound refid="gr__vector__to__stream_8h" kind="file"><name>gr_vector_to_stream.h</name>
     <member refid="gr__vector__to__stream_8h_1af6b53065f4b6aef8508c1f665621fb7a" kind="typedef"><name>gr_vector_to_stream_sptr</name></member>
-    <member refid="gr__vector__to__stream_8h_1ab7eaded7e9292cdcc0e03fceaa21dcd8" kind="function"><name>gr_make_vector_to_stream</name></member>
+    <member refid="gr__vector__to__stream_8h_1af2cd1811b4ec7b2e635c27b6e662d5c6" kind="function"><name>gr_make_vector_to_stream</name></member>
   </compound>
   <compound refid="gr__vector__to__streams_8h" kind="file"><name>gr_vector_to_streams.h</name>
     <member refid="gr__vector__to__streams_8h_1a563fd21115ea9c194fe1c20d8b02ede8" kind="typedef"><name>gr_vector_to_streams_sptr</name></member>
-    <member refid="gr__vector__to__streams_8h_1ac753fd9e10558c8482393184d71889cf" kind="function"><name>gr_make_vector_to_streams</name></member>
+    <member refid="gr__vector__to__streams_8h_1aad8ed37966496eaaf699440226b0f646" kind="function"><name>gr_make_vector_to_streams</name></member>
   </compound>
   <compound refid="gri__add__const__ss_8h" kind="file"><name>gri_add_const_ss.h</name>
     <member refid="gri__add__const__ss_8h_1aab7f23daeab6640390932a5eb94d9575" kind="function"><name>gri_add_const_ss</name></member>
@@ -2510,12 +2523,12 @@
   <compound refid="gri__agc__ff_8h" kind="file"><name>gri_agc_ff.h</name>
   </compound>
   <compound refid="gri__char__to__float_8h" kind="file"><name>gri_char_to_float.h</name>
-    <member refid="gri__char__to__float_8h_1ab08261c6ca61a7d3c13e7fb0e5de6107" kind="function"><name>gri_char_to_float</name></member>
+    <member refid="gri__char__to__float_8h_1ac24ce3a8b12c4513bc911298582c6e70" kind="function"><name>gri_char_to_float</name></member>
   </compound>
   <compound refid="gri__control__loop_8h" kind="file"><name>gri_control_loop.h</name>
   </compound>
   <compound refid="gri__debugger__hook_8h" kind="file"><name>gri_debugger_hook.h</name>
-    <member refid="gri__debugger__hook_8h_1a9de6a81af662cb5aeb42944a259d69c2" kind="function"><name>gri_debugger_hook</name></member>
+    <member refid="gri__debugger__hook_8h_1a84bfab790f25c194365517a03c8e8cb6" kind="function"><name>gri_debugger_hook</name></member>
   </compound>
   <compound refid="gri__fft_8h" kind="file"><name>gri_fft.h</name>
     <member refid="gri__fft_8h_1a9da15d54ff87afa746acf010efb7ea64" kind="function"><name>gri_fft_malloc_complex</name></member>
@@ -2523,24 +2536,24 @@
     <member refid="gri__fft_8h_1add5aa27b2f3fe053012daabbf21177a6" kind="function"><name>gri_fft_free</name></member>
   </compound>
   <compound refid="gri__float__to__char_8h" kind="file"><name>gri_float_to_char.h</name>
-    <member refid="gri__float__to__char_8h_1aa83344bf801679dc11c67801e61aec11" kind="function"><name>gri_float_to_char</name></member>
+    <member refid="gri__float__to__char_8h_1aaf0a64242c4d490d1a764876a0e51340" kind="function"><name>gri_float_to_char</name></member>
   </compound>
   <compound refid="gri__float__to__int_8h" kind="file"><name>gri_float_to_int.h</name>
-    <member refid="gri__float__to__int_8h_1a69b4fc609cd5c14dbb26853bad0e9c33" kind="function"><name>gri_float_to_int</name></member>
+    <member refid="gri__float__to__int_8h_1ad79784b2b91f46bcc379799e7fb079c2" kind="function"><name>gri_float_to_int</name></member>
   </compound>
   <compound refid="gri__float__to__short_8h" kind="file"><name>gri_float_to_short.h</name>
-    <member refid="gri__float__to__short_8h_1a698df7b63b9c0606717371274550e610" kind="function"><name>gri_float_to_short</name></member>
+    <member refid="gri__float__to__short_8h_1abd328bb1f9b4cf6cb74a75326f9c4bb0" kind="function"><name>gri_float_to_short</name></member>
   </compound>
   <compound refid="gri__float__to__uchar_8h" kind="file"><name>gri_float_to_uchar.h</name>
-    <member refid="gri__float__to__uchar_8h_1a834b8b099a491f65a7a7e1d778321438" kind="function"><name>gri_float_to_uchar</name></member>
+    <member refid="gri__float__to__uchar_8h_1a6bed979430871f4217cc43f3dc2fad20" kind="function"><name>gri_float_to_uchar</name></member>
   </compound>
   <compound refid="gri__glfsr_8h" kind="file"><name>gri_glfsr.h</name>
   </compound>
   <compound refid="gri__int__to__float_8h" kind="file"><name>gri_int_to_float.h</name>
-    <member refid="gri__int__to__float_8h_1a894ed461b62ded500e6b006937d8b56f" kind="function"><name>gri_int_to_float</name></member>
+    <member refid="gri__int__to__float_8h_1ac0ff3a3c284cdb2366498f19e4c3bdab" kind="function"><name>gri_int_to_float</name></member>
   </compound>
   <compound refid="gri__interleaved__short__to__complex_8h" kind="file"><name>gri_interleaved_short_to_complex.h</name>
-    <member refid="gri__interleaved__short__to__complex_8h_1af1c7c784fed964841bd252bb8575fb61" kind="function"><name>gri_interleaved_short_to_complex</name></member>
+    <member refid="gri__interleaved__short__to__complex_8h_1a60639833473655bd4d1d801f32fb24a9" kind="function"><name>gri_interleaved_short_to_complex</name></member>
   </compound>
   <compound refid="gri__lfsr_8h" kind="file"><name>gri_lfsr.h</name>
   </compound>
@@ -2549,15 +2562,15 @@
   <compound refid="gri__lfsr__32k_8h" kind="file"><name>gri_lfsr_32k.h</name>
   </compound>
   <compound refid="gri__short__to__float_8h" kind="file"><name>gri_short_to_float.h</name>
-    <member refid="gri__short__to__float_8h_1a5bbb4b3b748577eb6d87d1c93bfbafee" kind="function"><name>gri_short_to_float</name></member>
+    <member refid="gri__short__to__float_8h_1aa39290d43ea860ab7a503b0022819892" kind="function"><name>gri_short_to_float</name></member>
   </compound>
   <compound refid="gri__uchar__to__float_8h" kind="file"><name>gri_uchar_to_float.h</name>
-    <member refid="gri__uchar__to__float_8h_1ac213fa1b3d55ca1599c23bb90901e612" kind="function"><name>gri_uchar_to_float</name></member>
+    <member refid="gri__uchar__to__float_8h_1aea8f33a298c0d03cce169476c5a16630" kind="function"><name>gri_uchar_to_float</name></member>
   </compound>
   <compound refid="malloc16_8h" kind="file"><name>malloc16.h</name>
-    <member refid="malloc16_8h_1a9c8c8ca0a2913901e737a20447d1fefc" kind="function"><name>malloc16Align</name></member>
-    <member refid="malloc16_8h_1ae431f7f2c5e3b2904bf24221f9c022a6" kind="function"><name>calloc16Align</name></member>
-    <member refid="malloc16_8h_1a1e44c3a4043252700faf168254c62cdb" kind="function"><name>free16Align</name></member>
+    <member refid="malloc16_8h_1ab20c132eaa4890006cc894d3b729f11a" kind="function"><name>malloc16Align</name></member>
+    <member refid="malloc16_8h_1a68a50f8d93168c6a36cc83d31e161227" kind="function"><name>calloc16Align</name></member>
+    <member refid="malloc16_8h_1a6f8935e6b7f2bde840d4876359d9af8b" kind="function"><name>free16Align</name></member>
   </compound>
   <compound refid="qa__general_8h" kind="file"><name>qa_general.h</name>
   </compound>
@@ -2580,11 +2593,7 @@
   <compound refid="random_8h" kind="file"><name>random.h</name>
     <member refid="random_8h_1aef87ca5759d09d1cb1d3e44b9eb058da" kind="variable"><name>RANDOM_MAX</name></member>
   </compound>
-  <compound refid="gnuradio-core_2src_2lib_2general_2sine__table_8h" kind="file"><name>sine_table.h</name>
-  </compound>
-  <compound refid="build_2gnuradio-core_2src_2lib_2general_2sine__table_8h" kind="file"><name>sine_table.h</name>
-  </compound>
-  <compound refid="dir_989bd211b6ae1351ddebc9616553d3d6" kind="dir"><name>/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general/</name>
+  <compound refid="sine__table_8h" kind="file"><name>sine_table.h</name>
   </compound>
   <compound refid="dir_193ad0c8b0aba785d757fa11726696e2" kind="dir"><name>/home/katsikas/gnuradio/gnuradio-core/src/lib/general/</name>
   </compound>

@@ -10,8 +10,6 @@ FILE(REMOVE_RECURSE
   "atsc_swig_doc_swig_docs/xml/combine.xslt"
   "_atsc.pdb"
   "_atsc.so"
-  "CMakeFiles/CMakeRelink.dir/_atsc.pdb"
-  "CMakeFiles/CMakeRelink.dir/_atsc.so"
 )
 
 # Per-language clean rules from dependency scanning.

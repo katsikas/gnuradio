@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,9 +35,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,8 +46,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -170,20 +167,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/rule
-.PHONY : gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/rule
-
-# Convenience name for target.
-gr_trellis_html: gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/rule
-.PHONY : gr_trellis_html
-
-# fast build rule for target.
-gr_trellis_html/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/build.make gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/build
-.PHONY : gr_trellis_html/fast
-
-# Convenience name for target.
 gr-trellis/doc/CMakeFiles/gr_trellis_xml.dir/rule:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-trellis/doc/CMakeFiles/gr_trellis_xml.dir/rule
 .PHONY : gr-trellis/doc/CMakeFiles/gr_trellis_xml.dir/rule
@@ -204,7 +187,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... gr_trellis_html"
 	@echo "... gr_trellis_xml"
 	@echo "... install"
 	@echo "... install/local"

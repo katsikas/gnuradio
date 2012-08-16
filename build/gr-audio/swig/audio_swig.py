@@ -97,7 +97,7 @@ class SwigPyIterator(object):
         return _audio_swig.SwigPyIterator_decr(self, n)
 
     def distance(self, *args, **kwargs):
-        """distance(self, SwigPyIterator x) -> std::ptrdiff_t"""
+        """distance(self, SwigPyIterator x) -> ptrdiff_t"""
         return _audio_swig.SwigPyIterator_distance(self, *args, **kwargs)
 
     def equal(self, *args, **kwargs):
@@ -121,7 +121,7 @@ class SwigPyIterator(object):
         return _audio_swig.SwigPyIterator_previous(self)
 
     def advance(self, *args, **kwargs):
-        """advance(self, std::ptrdiff_t n) -> SwigPyIterator"""
+        """advance(self, ptrdiff_t n) -> SwigPyIterator"""
         return _audio_swig.SwigPyIterator_advance(self, *args, **kwargs)
 
     def __eq__(self, *args, **kwargs):
@@ -133,21 +133,21 @@ class SwigPyIterator(object):
         return _audio_swig.SwigPyIterator___ne__(self, *args, **kwargs)
 
     def __iadd__(self, *args, **kwargs):
-        """__iadd__(self, std::ptrdiff_t n) -> SwigPyIterator"""
+        """__iadd__(self, ptrdiff_t n) -> SwigPyIterator"""
         return _audio_swig.SwigPyIterator___iadd__(self, *args, **kwargs)
 
     def __isub__(self, *args, **kwargs):
-        """__isub__(self, std::ptrdiff_t n) -> SwigPyIterator"""
+        """__isub__(self, ptrdiff_t n) -> SwigPyIterator"""
         return _audio_swig.SwigPyIterator___isub__(self, *args, **kwargs)
 
     def __add__(self, *args, **kwargs):
-        """__add__(self, std::ptrdiff_t n) -> SwigPyIterator"""
+        """__add__(self, ptrdiff_t n) -> SwigPyIterator"""
         return _audio_swig.SwigPyIterator___add__(self, *args, **kwargs)
 
     def __sub__(self, *args):
         """
-        __sub__(self, std::ptrdiff_t n) -> SwigPyIterator
-        __sub__(self, SwigPyIterator x) -> std::ptrdiff_t
+        __sub__(self, ptrdiff_t n) -> SwigPyIterator
+        __sub__(self, SwigPyIterator x) -> ptrdiff_t
         """
         return _audio_swig.SwigPyIterator___sub__(self, *args)
 

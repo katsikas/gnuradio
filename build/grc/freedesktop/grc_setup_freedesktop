@@ -24,14 +24,14 @@
 # $1 should be install or uninstall
 # $2 is the optional path to the files
 # when $2 is unspecified, the path is:
-# /usr/share/gnuradio/grc/freedesktop
+# /usr/local/share/gnuradio/grc/freedesktop
 ##################################################
 
 ICON_SIZES="32 48 64 128 256"
 if [ -n "$2" ]; then
 	SRCDIR="$2"
 else
-	SRCDIR="/usr/share/gnuradio/grc/freedesktop"
+	SRCDIR="/usr/local/share/gnuradio/grc/freedesktop"
 fi
 
 case "$1" in

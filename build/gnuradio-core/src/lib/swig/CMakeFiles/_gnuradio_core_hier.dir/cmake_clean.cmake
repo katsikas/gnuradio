@@ -35,8 +35,6 @@ FILE(REMOVE_RECURSE
   "hier_swig_doc_swig_docs/xml/combine.xslt"
   "_gnuradio_core_hier.pdb"
   "_gnuradio_core_hier.so"
-  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_hier.pdb"
-  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_hier.so"
 )
 
 # Per-language clean rules from dependency scanning.

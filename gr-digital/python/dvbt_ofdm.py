@@ -108,7 +108,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
 
 	#Create constellation objects for pilot signals
 	t_constel = dvbt_constellations.dvbt_qpsk_constellation(arity)	
-	cs_constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
+	cs_constel = dvbt_constellations.dvbt_cs_pilots(2)
 
 
 

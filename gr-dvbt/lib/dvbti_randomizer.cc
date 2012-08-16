@@ -58,14 +58,15 @@ dvbti_randomizer::next_state(int byte_length){
 
 	//cout << "bit seq = " << prbs_sequence.to_string() << '\n';
 
+	unsigned char temp = 0;
 	bit_sequence = bitset<187*8> ();
 	for(int i = 0;i<8*byte_length;i++){
-		prbs_sequence[15] = prbs_sequence[13] ^ prbs_sequence[14];
-        	for(int j=14;j>0;j--){
+		temp = prbs_sequence[13] ^ prbs_sequence[14];
+        for(int j=14;j>0;j--){
         	        prbs_sequence[j] = prbs_sequence[j-1];
-        	}
-		bit_sequence[i] = prbs_sequence[15];
-        	prbs_sequence[0] = prbs_sequence[15];
+        }
+		bit_sequence[i] = temp;
+        prbs_sequence[0] = temp;
 	}
 
 	//cout << "bit seq AFTER = " << prbs_sequence.to_string() << '\n';

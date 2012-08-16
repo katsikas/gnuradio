@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="vocoder__cvsd__decode__bs_8h" kind="file">
+    <compoundname>vocoder_cvsd_decode_bs.h</compoundname>
+    <includes refid="vocoder__api_8h" local="no">vocoder_api.h</includes>
+    <includes refid="gr__sync__interpolator_8h" local="no">gr_sync_interpolator.h</includes>
+    <incdepgraph>
+      <node id="22502">
+        <label>gr_sptr_magic.h</label>
+        <link refid="gr__sptr__magic_8h_source"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22497" relation="include">
+        </childnode>
+      </node>
+      <node id="22493">
+        <label>gr_block.h</label>
+        <link refid="gr__block_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22494" relation="include">
+        </childnode>
+        <childnode refid="22518" relation="include">
+        </childnode>
+      </node>
+      <node id="22497">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="22509">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="22506">
+        <label>gruel/msg_accepter.h</label>
+        <link refid="msg__accepter_8h"/>
+        <childnode refid="22507" relation="include">
+        </childnode>
+        <childnode refid="22508" relation="include">
+        </childnode>
+        <childnode refid="22497" relation="include">
+        </childnode>
+      </node>
+      <node id="22489">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="22512">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="22513" relation="include">
+        </childnode>
+        <childnode refid="22514" relation="include">
+        </childnode>
+      </node>
+      <node id="22496">
+        <label>gr_types.h</label>
+        <link refid="gr__types_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22497" relation="include">
+        </childnode>
+        <childnode refid="22498" relation="include">
+        </childnode>
+        <childnode refid="22499" relation="include">
+        </childnode>
+        <childnode refid="22500" relation="include">
+        </childnode>
+      </node>
+      <node id="22516">
+        <label>stdexcept</label>
+      </node>
+      <node id="22488">
+        <label>vocoder_api.h</label>
+        <link refid="vocoder__api_8h"/>
+        <childnode refid="22489" relation="include">
+        </childnode>
+      </node>
+      <node id="22511">
+        <label>string</label>
+      </node>
+      <node id="22494">
+        <label>gr_basic_block.h</label>
+        <link refid="gr__basic__block_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22495" relation="include">
+        </childnode>
+        <childnode refid="22502" relation="include">
+        </childnode>
+        <childnode refid="22503" relation="include">
+        </childnode>
+        <childnode refid="22504" relation="include">
+        </childnode>
+        <childnode refid="22505" relation="include">
+        </childnode>
+        <childnode refid="22511" relation="include">
+        </childnode>
+      </node>
+      <node id="22517">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="22499">
+        <label>stddef.h</label>
+      </node>
+      <node id="22507">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="22489" relation="include">
+        </childnode>
+      </node>
+      <node id="22487">
+        <label>vocoder_cvsd_decode_bs.h</label>
+        <link refid="vocoder_cvsd_decode_bs.h"/>
+        <childnode refid="22488" relation="include">
+        </childnode>
+        <childnode refid="22490" relation="include">
+        </childnode>
+      </node>
+      <node id="22504">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="22513">
+        <label>limits.h</label>
+      </node>
+      <node id="22510">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="22508">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="22507" relation="include">
+        </childnode>
+        <childnode refid="22509" relation="include">
+        </childnode>
+        <childnode refid="22497" relation="include">
+        </childnode>
+        <childnode refid="22510" relation="include">
+        </childnode>
+        <childnode refid="22501" relation="include">
+        </childnode>
+        <childnode refid="22511" relation="include">
+        </childnode>
+        <childnode refid="22512" relation="include">
+        </childnode>
+        <childnode refid="22515" relation="include">
+        </childnode>
+        <childnode refid="22516" relation="include">
+        </childnode>
+        <childnode refid="22517" relation="include">
+        </childnode>
+      </node>
+      <node id="22514">
+        <label>wchar.h</label>
+      </node>
+      <node id="22505">
+        <label>gr_msg_accepter.h</label>
+        <link refid="gr__msg__accepter_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22506" relation="include">
+        </childnode>
+        <childnode refid="22508" relation="include">
+        </childnode>
+      </node>
+      <node id="22495">
+        <label>gr_runtime_types.h</label>
+        <link refid="gr__runtime__types_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22496" relation="include">
+        </childnode>
+      </node>
+      <node id="22498">
+        <label>vector</label>
+      </node>
+      <node id="22491">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="22489" relation="include">
+        </childnode>
+      </node>
+      <node id="22503">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="22515">
+        <label>iosfwd</label>
+      </node>
+      <node id="22518">
+        <label>gr_tags.h</label>
+        <link refid="gr__tags_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22508" relation="include">
+        </childnode>
+      </node>
+      <node id="22490">
+        <label>gr_sync_interpolator.h</label>
+        <link refid="gr__sync__interpolator_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22492" relation="include">
+        </childnode>
+      </node>
+      <node id="22492">
+        <label>gr_sync_block.h</label>
+        <link refid="gr__sync__block_8h"/>
+        <childnode refid="22491" relation="include">
+        </childnode>
+        <childnode refid="22493" relation="include">
+        </childnode>
+      </node>
+      <node id="22501">
+        <label>complex</label>
+      </node>
+      <node id="22500">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="22501" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classvocoder__cvsd__decode__bs" prot="public">vocoder_cvsd_decode_bs</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__vocoder__blk_1ga40312ddfd1a1633dfcf5ceb5d2965ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vocoder__api_8h_1a8a56d8b0d26cf75df04dcad9064a0aeb" kindref="member">VOCODER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_cvsd_decode_bs_sptr</ref></type>
+        <definition>VOCODER_API vocoder_cvsd_decode_bs_sptr vocoder_make_cvsd_decode_bs</definition>
+        <argsstring>(short min_step=10, short max_step=1280, double step_decay=0.9990234375, double accum_decay=0.96875, int K=32, int J=4, short pos_accum_max=32767, short neg_accum_max=-32767)</argsstring>
+        <name>vocoder_make_cvsd_decode_bs</name>
+        <param>
+          <type>short</type>
+          <declname>min_step</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>max_step</declname>
+          <defval>1280</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step_decay</declname>
+          <defval>0.9990234375</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>accum_decay</declname>
+          <defval>0.96875</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>K</declname>
+          <defval>32</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>J</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>pos_accum_max</declname>
+          <defval>32767</defval>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>neg_accum_max</declname>
+          <defval>-32767</defval>
+        </param>
+        <briefdescription>
+<para>Constructor parameters to initialize the CVSD decoder. The default values are modeled after the Bluetooth standard and should not be changed, except by an advanced user. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum step size used to update the internal reference. Default: &quot;10&quot; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum step size used to update the internal reference. Default: &quot;1280&quot; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_decay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decay factor applied to step size when there is not a run of J output 1s or 0s. Default: &quot;0.9990234375&quot; (i.e. 1-1/1024) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accum_decay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decay factor applied to the internal reference during every interation of the codec. Default: &quot;0.96875&quot; (i.e. 1-1/32) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>K;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of shift register; the number of output bits remembered by codec (must be less or equal to 32). Default: &quot;32&quot; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>J;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits in the shift register that are equal; i.e. the size of a run of 1s, 0s. Default: &quot;4&quot; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos_accum_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum integer value allowed for the internal reference. Default: &quot;32767&quot; (2^15 - 1 or MAXSHORT) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>neg_accum_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum integer value allowed for the internal reference. Default: &quot;-32767&quot; (-2^15 + 1 or MINSHORT+1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-vocoder/include/vocoder_cvsd_decode_bs.h" line="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-vocoder/include/vocoder_cvsd_decode_bs.h"/>
+  </compounddef>
+</doxygen>

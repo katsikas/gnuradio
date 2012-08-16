@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="msg__queue_8h" kind="file">
+    <compoundname>msg_queue.h</compoundname>
+    <includes refid="api_8h" local="no">gruel/api.h</includes>
+    <includes refid="thread_8h" local="no">gruel/thread.h</includes>
+    <includes refid="pmt_8h" local="no">gruel/pmt.h</includes>
+    <includes local="no">deque</includes>
+    <includedby refid="msg__accepter__msgq_8h" local="no">msg_accepter_msgq.h</includedby>
+    <incdepgraph>
+      <node id="19967">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="19969">
+        <label>boost/thread/condition_variable.hpp</label>
+      </node>
+      <node id="19972">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="19971">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="19964">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="19976">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="19977" relation="include">
+        </childnode>
+        <childnode refid="19978" relation="include">
+        </childnode>
+      </node>
+      <node id="19962">
+        <label>msg_queue.h</label>
+        <link refid="msg_queue.h"/>
+        <childnode refid="19963" relation="include">
+        </childnode>
+        <childnode refid="19965" relation="include">
+        </childnode>
+        <childnode refid="19970" relation="include">
+        </childnode>
+        <childnode refid="19982" relation="include">
+        </childnode>
+      </node>
+      <node id="19965">
+        <label>gruel/thread.h</label>
+        <link refid="thread_8h"/>
+        <childnode refid="19963" relation="include">
+        </childnode>
+        <childnode refid="19966" relation="include">
+        </childnode>
+        <childnode refid="19967" relation="include">
+        </childnode>
+        <childnode refid="19968" relation="include">
+        </childnode>
+        <childnode refid="19969" relation="include">
+        </childnode>
+      </node>
+      <node id="19980">
+        <label>stdexcept</label>
+      </node>
+      <node id="19966">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="19975">
+        <label>string</label>
+      </node>
+      <node id="19981">
+        <label>gruel/pmt_sugar.h</label>
+        <link refid="pmt__sugar_8h"/>
+      </node>
+      <node id="19963">
+        <label>gruel/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="19964" relation="include">
+        </childnode>
+      </node>
+      <node id="19977">
+        <label>limits.h</label>
+      </node>
+      <node id="19973">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="19970">
+        <label>gruel/pmt.h</label>
+        <link refid="pmt_8h"/>
+        <childnode refid="19963" relation="include">
+        </childnode>
+        <childnode refid="19971" relation="include">
+        </childnode>
+        <childnode refid="19972" relation="include">
+        </childnode>
+        <childnode refid="19973" relation="include">
+        </childnode>
+        <childnode refid="19974" relation="include">
+        </childnode>
+        <childnode refid="19975" relation="include">
+        </childnode>
+        <childnode refid="19976" relation="include">
+        </childnode>
+        <childnode refid="19979" relation="include">
+        </childnode>
+        <childnode refid="19980" relation="include">
+        </childnode>
+        <childnode refid="19981" relation="include">
+        </childnode>
+      </node>
+      <node id="19978">
+        <label>wchar.h</label>
+      </node>
+      <node id="19968">
+        <label>boost/thread/locks.hpp</label>
+      </node>
+      <node id="19979">
+        <label>iosfwd</label>
+      </node>
+      <node id="19982">
+        <label>deque</label>
+      </node>
+      <node id="19974">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19983">
+        <label>msg_queue.h</label>
+        <link refid="msg_queue.h"/>
+        <childnode refid="19984" relation="include">
+        </childnode>
+      </node>
+      <node id="19984">
+        <label>msg_accepter_msgq.h</label>
+        <link refid="msg__accepter__msgq_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgruel_1_1msg__queue" prot="public">gruel::msg_queue</innerclass>
+    <innernamespace refid="namespacegruel">gruel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gruel/src/include/gruel/msg_queue.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="atsci__randomizer_8h" kind="file">
+    <compoundname>atsci_randomizer.h</compoundname>
+    <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
+    <includes refid="atsc__types_8h" local="no">atsc_types.h</includes>
+    <includedby refid="atsc__derandomizer_8h" local="no">atsc_derandomizer.h</includedby>
+    <includedby refid="atsc__randomizer_8h" local="no">atsc_randomizer.h</includedby>
+    <incdepgraph>
+      <node id="1254">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="1258">
+        <label>cassert</label>
+      </node>
+      <node id="1256">
+        <label>atsc_consts.h</label>
+        <link refid="atsc__consts_8h"/>
+      </node>
+      <node id="1255">
+        <label>atsc_types.h</label>
+        <link refid="atsc__types_8h"/>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+      </node>
+      <node id="1253">
+        <label>atsc_api.h</label>
+        <link refid="atsc__api_8h"/>
+        <childnode refid="1254" relation="include">
+        </childnode>
+      </node>
+      <node id="1252">
+        <label>atsci_randomizer.h</label>
+        <link refid="atsci_randomizer.h"/>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+      </node>
+      <node id="1257">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1261">
+        <label>atsc_randomizer.h</label>
+        <link refid="atsc__randomizer_8h"/>
+      </node>
+      <node id="1260">
+        <label>atsc_derandomizer.h</label>
+        <link refid="atsc__derandomizer_8h"/>
+      </node>
+      <node id="1259">
+        <label>atsci_randomizer.h</label>
+        <link refid="atsci_randomizer.h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classatsci__randomizer" prot="public">atsci_randomizer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_randomizer.h"/>
+  </compounddef>
+</doxygen>

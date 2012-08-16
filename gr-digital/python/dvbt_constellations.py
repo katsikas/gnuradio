@@ -41,6 +41,15 @@ _def_differential = False
 _def_mod_code = mod_codes.GRAY_CODE
 
 
+def dvbt_cs_pilots(m, mod_code=_def_mod_code):
+    """
+    Creates a BPSK constellation object for DVB-T scattered and continual pilots.
+    """
+    if m != 2:
+        raise ValueError("BPSK can only have 2 constellation points.")
+    return digital_swig.constellation_cs_pilots()
+    
+
 def dvbt_qpsk_constellation(m, mod_code=_def_mod_code):
     """
     Creates a QPSK constellation object for DVB-T.

@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,9 +35,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,8 +46,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -208,11 +205,6 @@ volk/fast:
 	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/build
 .PHONY : volk/fast
 
-# Manual pre-install relink rule for target.
-volk/preinstall:
-	$(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/preinstall
-.PHONY : volk/preinstall
-
 #=============================================================================
 # Target rules for targets named volk_profile
 
@@ -252,11 +244,6 @@ gruel/fast:
 	$(MAKE) -f gruel/src/lib/CMakeFiles/gruel.dir/build.make gruel/src/lib/CMakeFiles/gruel.dir/build
 .PHONY : gruel/fast
 
-# Manual pre-install relink rule for target.
-gruel/preinstall:
-	$(MAKE) -f gruel/src/lib/CMakeFiles/gruel.dir/build.make gruel/src/lib/CMakeFiles/gruel.dir/preinstall
-.PHONY : gruel/preinstall
-
 #=============================================================================
 # Target rules for targets named test_gruel
 
@@ -282,11 +269,6 @@ _pmt_swig: cmake_check_build_system
 _pmt_swig/fast:
 	$(MAKE) -f gruel/src/swig/CMakeFiles/_pmt_swig.dir/build.make gruel/src/swig/CMakeFiles/_pmt_swig.dir/build
 .PHONY : _pmt_swig/fast
-
-# Manual pre-install relink rule for target.
-_pmt_swig/preinstall:
-	$(MAKE) -f gruel/src/swig/CMakeFiles/_pmt_swig.dir/build.make gruel/src/swig/CMakeFiles/_pmt_swig.dir/preinstall
-.PHONY : _pmt_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _pmt_swig_doc_tag
@@ -392,11 +374,6 @@ gnuradio-config-info/fast:
 	$(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build
 .PHONY : gnuradio-config-info/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-config-info/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/preinstall
-.PHONY : gnuradio-config-info/preinstall
-
 #=============================================================================
 # Target rules for targets named gnuradio-core
 
@@ -409,11 +386,6 @@ gnuradio-core: cmake_check_build_system
 gnuradio-core/fast:
 	$(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build
 .PHONY : gnuradio-core/fast
-
-# Manual pre-install relink rule for target.
-gnuradio-core/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/preinstall
-.PHONY : gnuradio-core/preinstall
 
 #=============================================================================
 # Target rules for targets named gr_core_rstest
@@ -662,11 +634,6 @@ _gnuradio_core_filter/fast:
 	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_filter.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_filter.dir/build
 .PHONY : _gnuradio_core_filter/fast
 
-# Manual pre-install relink rule for target.
-_gnuradio_core_filter/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_filter.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_filter.dir/preinstall
-.PHONY : _gnuradio_core_filter/preinstall
-
 #=============================================================================
 # Target rules for targets named _gnuradio_core_filter_swig_tag
 
@@ -692,11 +659,6 @@ _gnuradio_core_general: cmake_check_build_system
 _gnuradio_core_general/fast:
 	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_general.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_general.dir/build
 .PHONY : _gnuradio_core_general/fast
-
-# Manual pre-install relink rule for target.
-_gnuradio_core_general/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_general.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_general.dir/preinstall
-.PHONY : _gnuradio_core_general/preinstall
 
 #=============================================================================
 # Target rules for targets named _gnuradio_core_general_swig_tag
@@ -724,11 +686,6 @@ _gnuradio_core_gengen/fast:
 	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_gengen.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_gengen.dir/build
 .PHONY : _gnuradio_core_gengen/fast
 
-# Manual pre-install relink rule for target.
-_gnuradio_core_gengen/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_gengen.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_gengen.dir/preinstall
-.PHONY : _gnuradio_core_gengen/preinstall
-
 #=============================================================================
 # Target rules for targets named _gnuradio_core_gengen_swig_tag
 
@@ -754,11 +711,6 @@ _gnuradio_core_hier: cmake_check_build_system
 _gnuradio_core_hier/fast:
 	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_hier.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_hier.dir/build
 .PHONY : _gnuradio_core_hier/fast
-
-# Manual pre-install relink rule for target.
-_gnuradio_core_hier/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_hier.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_hier.dir/preinstall
-.PHONY : _gnuradio_core_hier/preinstall
 
 #=============================================================================
 # Target rules for targets named _gnuradio_core_hier_swig_tag
@@ -786,11 +738,6 @@ _gnuradio_core_io/fast:
 	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_io.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_io.dir/build
 .PHONY : _gnuradio_core_io/fast
 
-# Manual pre-install relink rule for target.
-_gnuradio_core_io/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_io.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_io.dir/preinstall
-.PHONY : _gnuradio_core_io/preinstall
-
 #=============================================================================
 # Target rules for targets named _gnuradio_core_io_swig_tag
 
@@ -816,11 +763,6 @@ _gnuradio_core_runtime: cmake_check_build_system
 _gnuradio_core_runtime/fast:
 	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/build
 .PHONY : _gnuradio_core_runtime/fast
-
-# Manual pre-install relink rule for target.
-_gnuradio_core_runtime/preinstall:
-	$(MAKE) -f gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/build.make gnuradio-core/src/lib/swig/CMakeFiles/_gnuradio_core_runtime.dir/preinstall
-.PHONY : _gnuradio_core_runtime/preinstall
 
 #=============================================================================
 # Target rules for targets named _gnuradio_core_runtime_swig_tag
@@ -1212,11 +1154,6 @@ _atsc/fast:
 	$(MAKE) -f gr-atsc/src/lib/CMakeFiles/_atsc.dir/build.make gr-atsc/src/lib/CMakeFiles/_atsc.dir/build
 .PHONY : _atsc/fast
 
-# Manual pre-install relink rule for target.
-_atsc/preinstall:
-	$(MAKE) -f gr-atsc/src/lib/CMakeFiles/_atsc.dir/build.make gr-atsc/src/lib/CMakeFiles/_atsc.dir/preinstall
-.PHONY : _atsc/preinstall
-
 #=============================================================================
 # Target rules for targets named _atsc_swig_doc_tag
 
@@ -1268,11 +1205,6 @@ gnuradio-atsc: cmake_check_build_system
 gnuradio-atsc/fast:
 	$(MAKE) -f gr-atsc/src/lib/CMakeFiles/gnuradio-atsc.dir/build.make gr-atsc/src/lib/CMakeFiles/gnuradio-atsc.dir/build
 .PHONY : gnuradio-atsc/fast
-
-# Manual pre-install relink rule for target.
-gnuradio-atsc/preinstall:
-	$(MAKE) -f gr-atsc/src/lib/CMakeFiles/gnuradio-atsc.dir/build.make gr-atsc/src/lib/CMakeFiles/gnuradio-atsc.dir/preinstall
-.PHONY : gnuradio-atsc/preinstall
 
 #=============================================================================
 # Target rules for targets named pygen_gr_atsc_src_lib_f9f9a
@@ -1326,11 +1258,6 @@ gnuradio-audio/fast:
 	$(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build
 .PHONY : gnuradio-audio/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-audio/preinstall:
-	$(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/preinstall
-.PHONY : gnuradio-audio/preinstall
-
 #=============================================================================
 # Target rules for targets named dial_tone
 
@@ -1344,11 +1271,6 @@ dial_tone/fast:
 	$(MAKE) -f gr-audio/examples/c++/CMakeFiles/dial_tone.dir/build.make gr-audio/examples/c++/CMakeFiles/dial_tone.dir/build
 .PHONY : dial_tone/fast
 
-# Manual pre-install relink rule for target.
-dial_tone/preinstall:
-	$(MAKE) -f gr-audio/examples/c++/CMakeFiles/dial_tone.dir/build.make gr-audio/examples/c++/CMakeFiles/dial_tone.dir/preinstall
-.PHONY : dial_tone/preinstall
-
 #=============================================================================
 # Target rules for targets named _audio_swig
 
@@ -1361,11 +1283,6 @@ _audio_swig: cmake_check_build_system
 _audio_swig/fast:
 	$(MAKE) -f gr-audio/swig/CMakeFiles/_audio_swig.dir/build.make gr-audio/swig/CMakeFiles/_audio_swig.dir/build
 .PHONY : _audio_swig/fast
-
-# Manual pre-install relink rule for target.
-_audio_swig/preinstall:
-	$(MAKE) -f gr-audio/swig/CMakeFiles/_audio_swig.dir/build.make gr-audio/swig/CMakeFiles/_audio_swig.dir/preinstall
-.PHONY : _audio_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _audio_swig_doc_tag
@@ -1445,11 +1362,6 @@ gnuradio-digital/fast:
 	$(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build
 .PHONY : gnuradio-digital/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-digital/preinstall:
-	$(MAKE) -f gr-digital/lib/CMakeFiles/gnuradio-digital.dir/build.make gr-digital/lib/CMakeFiles/gnuradio-digital.dir/preinstall
-.PHONY : gnuradio-digital/preinstall
-
 #=============================================================================
 # Target rules for targets named _digital_swig
 
@@ -1462,11 +1374,6 @@ _digital_swig: cmake_check_build_system
 _digital_swig/fast:
 	$(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/build
 .PHONY : _digital_swig/fast
-
-# Manual pre-install relink rule for target.
-_digital_swig/preinstall:
-	$(MAKE) -f gr-digital/swig/CMakeFiles/_digital_swig.dir/build.make gr-digital/swig/CMakeFiles/_digital_swig.dir/preinstall
-.PHONY : _digital_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _digital_swig_doc_tag
@@ -1598,11 +1505,6 @@ gnuradio-dvbt/fast:
 	$(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build
 .PHONY : gnuradio-dvbt/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-dvbt/preinstall:
-	$(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/preinstall
-.PHONY : gnuradio-dvbt/preinstall
-
 #=============================================================================
 # Target rules for targets named _dvbt_swig
 
@@ -1615,11 +1517,6 @@ _dvbt_swig: cmake_check_build_system
 _dvbt_swig/fast:
 	$(MAKE) -f gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/build.make gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/build
 .PHONY : _dvbt_swig/fast
-
-# Manual pre-install relink rule for target.
-_dvbt_swig/preinstall:
-	$(MAKE) -f gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/build.make gr-dvbt/swig/CMakeFiles/_dvbt_swig.dir/preinstall
-.PHONY : _dvbt_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _dvbt_swig_doc_tag
@@ -1686,11 +1583,6 @@ gnuradio-noaa/fast:
 	$(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build
 .PHONY : gnuradio-noaa/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-noaa/preinstall:
-	$(MAKE) -f gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/build.make gr-noaa/lib/CMakeFiles/gnuradio-noaa.dir/preinstall
-.PHONY : gnuradio-noaa/preinstall
-
 #=============================================================================
 # Target rules for targets named _noaa_swig
 
@@ -1703,11 +1595,6 @@ _noaa_swig: cmake_check_build_system
 _noaa_swig/fast:
 	$(MAKE) -f gr-noaa/swig/CMakeFiles/_noaa_swig.dir/build.make gr-noaa/swig/CMakeFiles/_noaa_swig.dir/build
 .PHONY : _noaa_swig/fast
-
-# Manual pre-install relink rule for target.
-_noaa_swig/preinstall:
-	$(MAKE) -f gr-noaa/swig/CMakeFiles/_noaa_swig.dir/build.make gr-noaa/swig/CMakeFiles/_noaa_swig.dir/preinstall
-.PHONY : _noaa_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _noaa_swig_doc_tag
@@ -1774,11 +1661,6 @@ gnuradio-pager/fast:
 	$(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build
 .PHONY : gnuradio-pager/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-pager/preinstall:
-	$(MAKE) -f gr-pager/lib/CMakeFiles/gnuradio-pager.dir/build.make gr-pager/lib/CMakeFiles/gnuradio-pager.dir/preinstall
-.PHONY : gnuradio-pager/preinstall
-
 #=============================================================================
 # Target rules for targets named pygen_gr_pager_python_abd6d
 
@@ -1804,11 +1686,6 @@ _pager_swig: cmake_check_build_system
 _pager_swig/fast:
 	$(MAKE) -f gr-pager/swig/CMakeFiles/_pager_swig.dir/build.make gr-pager/swig/CMakeFiles/_pager_swig.dir/build
 .PHONY : _pager_swig/fast
-
-# Manual pre-install relink rule for target.
-_pager_swig/preinstall:
-	$(MAKE) -f gr-pager/swig/CMakeFiles/_pager_swig.dir/build.make gr-pager/swig/CMakeFiles/_pager_swig.dir/preinstall
-.PHONY : _pager_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _pager_swig_doc_tag
@@ -1875,11 +1752,6 @@ gnuradio-qtgui/fast:
 	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build
 .PHONY : gnuradio-qtgui/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-qtgui/preinstall:
-	$(MAKE) -f gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/build.make gr-qtgui/lib/CMakeFiles/gnuradio-qtgui.dir/preinstall
-.PHONY : gnuradio-qtgui/preinstall
-
 #=============================================================================
 # Target rules for targets named _qtgui_swig
 
@@ -1892,11 +1764,6 @@ _qtgui_swig: cmake_check_build_system
 _qtgui_swig/fast:
 	$(MAKE) -f gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/build.make gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/build
 .PHONY : _qtgui_swig/fast
-
-# Manual pre-install relink rule for target.
-_qtgui_swig/preinstall:
-	$(MAKE) -f gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/build.make gr-qtgui/swig/CMakeFiles/_qtgui_swig.dir/preinstall
-.PHONY : _qtgui_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _qtgui_swig_doc_tag
@@ -1976,11 +1843,6 @@ _trellis/fast:
 	$(MAKE) -f gr-trellis/src/lib/CMakeFiles/_trellis.dir/build.make gr-trellis/src/lib/CMakeFiles/_trellis.dir/build
 .PHONY : _trellis/fast
 
-# Manual pre-install relink rule for target.
-_trellis/preinstall:
-	$(MAKE) -f gr-trellis/src/lib/CMakeFiles/_trellis.dir/build.make gr-trellis/src/lib/CMakeFiles/_trellis.dir/preinstall
-.PHONY : _trellis/preinstall
-
 #=============================================================================
 # Target rules for targets named _trellis_swig_doc_tag
 
@@ -2020,11 +1882,6 @@ gnuradio-trellis/fast:
 	$(MAKE) -f gr-trellis/src/lib/CMakeFiles/gnuradio-trellis.dir/build.make gr-trellis/src/lib/CMakeFiles/gnuradio-trellis.dir/build
 .PHONY : gnuradio-trellis/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-trellis/preinstall:
-	$(MAKE) -f gr-trellis/src/lib/CMakeFiles/gnuradio-trellis.dir/build.make gr-trellis/src/lib/CMakeFiles/gnuradio-trellis.dir/preinstall
-.PHONY : gnuradio-trellis/preinstall
-
 #=============================================================================
 # Target rules for targets named pygen_gr_trellis_src_lib_7ffd1
 
@@ -2037,19 +1894,6 @@ pygen_gr_trellis_src_lib_7ffd1: cmake_check_build_system
 pygen_gr_trellis_src_lib_7ffd1/fast:
 	$(MAKE) -f gr-trellis/src/lib/CMakeFiles/pygen_gr_trellis_src_lib_7ffd1.dir/build.make gr-trellis/src/lib/CMakeFiles/pygen_gr_trellis_src_lib_7ffd1.dir/build
 .PHONY : pygen_gr_trellis_src_lib_7ffd1/fast
-
-#=============================================================================
-# Target rules for targets named gr_trellis_html
-
-# Build rule for target.
-gr_trellis_html: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gr_trellis_html
-.PHONY : gr_trellis_html
-
-# fast build rule for target.
-gr_trellis_html/fast:
-	$(MAKE) -f gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/build.make gr-trellis/doc/CMakeFiles/gr_trellis_html.dir/build
-.PHONY : gr_trellis_html/fast
 
 #=============================================================================
 # Target rules for targets named gr_trellis_xml
@@ -2090,11 +1934,6 @@ gnuradio-uhd/fast:
 	$(MAKE) -f gr-uhd/lib/CMakeFiles/gnuradio-uhd.dir/build.make gr-uhd/lib/CMakeFiles/gnuradio-uhd.dir/build
 .PHONY : gnuradio-uhd/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-uhd/preinstall:
-	$(MAKE) -f gr-uhd/lib/CMakeFiles/gnuradio-uhd.dir/build.make gr-uhd/lib/CMakeFiles/gnuradio-uhd.dir/preinstall
-.PHONY : gnuradio-uhd/preinstall
-
 #=============================================================================
 # Target rules for targets named tags_demo
 
@@ -2108,11 +1947,6 @@ tags_demo/fast:
 	$(MAKE) -f gr-uhd/examples/c++/CMakeFiles/tags_demo.dir/build.make gr-uhd/examples/c++/CMakeFiles/tags_demo.dir/build
 .PHONY : tags_demo/fast
 
-# Manual pre-install relink rule for target.
-tags_demo/preinstall:
-	$(MAKE) -f gr-uhd/examples/c++/CMakeFiles/tags_demo.dir/build.make gr-uhd/examples/c++/CMakeFiles/tags_demo.dir/preinstall
-.PHONY : tags_demo/preinstall
-
 #=============================================================================
 # Target rules for targets named _uhd_swig
 
@@ -2125,11 +1959,6 @@ _uhd_swig: cmake_check_build_system
 _uhd_swig/fast:
 	$(MAKE) -f gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build.make gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build
 .PHONY : _uhd_swig/fast
-
-# Manual pre-install relink rule for target.
-_uhd_swig/preinstall:
-	$(MAKE) -f gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build.make gr-uhd/swig/CMakeFiles/_uhd_swig.dir/preinstall
-.PHONY : _uhd_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _uhd_swig_doc_tag
@@ -2313,11 +2142,6 @@ _video_sdl/fast:
 	$(MAKE) -f gr-video-sdl/src/CMakeFiles/_video_sdl.dir/build.make gr-video-sdl/src/CMakeFiles/_video_sdl.dir/build
 .PHONY : _video_sdl/fast
 
-# Manual pre-install relink rule for target.
-_video_sdl/preinstall:
-	$(MAKE) -f gr-video-sdl/src/CMakeFiles/_video_sdl.dir/build.make gr-video-sdl/src/CMakeFiles/_video_sdl.dir/preinstall
-.PHONY : _video_sdl/preinstall
-
 #=============================================================================
 # Target rules for targets named _video_sdl_swig_doc_tag
 
@@ -2356,11 +2180,6 @@ gnuradio-video-sdl: cmake_check_build_system
 gnuradio-video-sdl/fast:
 	$(MAKE) -f gr-video-sdl/src/CMakeFiles/gnuradio-video-sdl.dir/build.make gr-video-sdl/src/CMakeFiles/gnuradio-video-sdl.dir/build
 .PHONY : gnuradio-video-sdl/fast
-
-# Manual pre-install relink rule for target.
-gnuradio-video-sdl/preinstall:
-	$(MAKE) -f gr-video-sdl/src/CMakeFiles/gnuradio-video-sdl.dir/build.make gr-video-sdl/src/CMakeFiles/gnuradio-video-sdl.dir/preinstall
-.PHONY : gnuradio-video-sdl/preinstall
 
 #=============================================================================
 # Target rules for targets named pygen_gr_video_sdl_src_98fac
@@ -2401,11 +2220,6 @@ gnuradio-vocoder/fast:
 	$(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build
 .PHONY : gnuradio-vocoder/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-vocoder/preinstall:
-	$(MAKE) -f gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/build.make gr-vocoder/lib/CMakeFiles/gnuradio-vocoder.dir/preinstall
-.PHONY : gnuradio-vocoder/preinstall
-
 #=============================================================================
 # Target rules for targets named _vocoder_swig
 
@@ -2418,11 +2232,6 @@ _vocoder_swig: cmake_check_build_system
 _vocoder_swig/fast:
 	$(MAKE) -f gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/build.make gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/build
 .PHONY : _vocoder_swig/fast
-
-# Manual pre-install relink rule for target.
-_vocoder_swig/preinstall:
-	$(MAKE) -f gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/build.make gr-vocoder/swig/CMakeFiles/_vocoder_swig.dir/preinstall
-.PHONY : _vocoder_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _vocoder_swig_doc_tag
@@ -2490,112 +2299,6 @@ pygen_gr_vocoder_examples_864cb/fast:
 .PHONY : pygen_gr_vocoder_examples_864cb/fast
 
 #=============================================================================
-# Target rules for targets named gnuradio-fcd
-
-# Build rule for target.
-gnuradio-fcd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-fcd
-.PHONY : gnuradio-fcd
-
-# fast build rule for target.
-gnuradio-fcd/fast:
-	$(MAKE) -f gr-fcd/lib/CMakeFiles/gnuradio-fcd.dir/build.make gr-fcd/lib/CMakeFiles/gnuradio-fcd.dir/build
-.PHONY : gnuradio-fcd/fast
-
-# Manual pre-install relink rule for target.
-gnuradio-fcd/preinstall:
-	$(MAKE) -f gr-fcd/lib/CMakeFiles/gnuradio-fcd.dir/build.make gr-fcd/lib/CMakeFiles/gnuradio-fcd.dir/preinstall
-.PHONY : gnuradio-fcd/preinstall
-
-#=============================================================================
-# Target rules for targets named _fcd_swig
-
-# Build rule for target.
-_fcd_swig: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _fcd_swig
-.PHONY : _fcd_swig
-
-# fast build rule for target.
-_fcd_swig/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/_fcd_swig.dir/build.make gr-fcd/swig/CMakeFiles/_fcd_swig.dir/build
-.PHONY : _fcd_swig/fast
-
-# Manual pre-install relink rule for target.
-_fcd_swig/preinstall:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/_fcd_swig.dir/build.make gr-fcd/swig/CMakeFiles/_fcd_swig.dir/preinstall
-.PHONY : _fcd_swig/preinstall
-
-#=============================================================================
-# Target rules for targets named _fcd_swig_doc_tag
-
-# Build rule for target.
-_fcd_swig_doc_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _fcd_swig_doc_tag
-.PHONY : _fcd_swig_doc_tag
-
-# fast build rule for target.
-_fcd_swig_doc_tag/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/_fcd_swig_doc_tag.dir/build.make gr-fcd/swig/CMakeFiles/_fcd_swig_doc_tag.dir/build
-.PHONY : _fcd_swig_doc_tag/fast
-
-#=============================================================================
-# Target rules for targets named _fcd_swig_swig_tag
-
-# Build rule for target.
-_fcd_swig_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _fcd_swig_swig_tag
-.PHONY : _fcd_swig_swig_tag
-
-# fast build rule for target.
-_fcd_swig_swig_tag/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/_fcd_swig_swig_tag.dir/build.make gr-fcd/swig/CMakeFiles/_fcd_swig_swig_tag.dir/build
-.PHONY : _fcd_swig_swig_tag/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_fcd_swig_f28d3
-
-# Build rule for target.
-pygen_gr_fcd_swig_f28d3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_fcd_swig_f28d3
-.PHONY : pygen_gr_fcd_swig_f28d3
-
-# fast build rule for target.
-pygen_gr_fcd_swig_f28d3/fast:
-	$(MAKE) -f gr-fcd/swig/CMakeFiles/pygen_gr_fcd_swig_f28d3.dir/build.make gr-fcd/swig/CMakeFiles/pygen_gr_fcd_swig_f28d3.dir/build
-.PHONY : pygen_gr_fcd_swig_f28d3/fast
-
-#=============================================================================
-# Target rules for targets named pygen_gr_fcd_python_ebc65
-
-# Build rule for target.
-pygen_gr_fcd_python_ebc65: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_gr_fcd_python_ebc65
-.PHONY : pygen_gr_fcd_python_ebc65
-
-# fast build rule for target.
-pygen_gr_fcd_python_ebc65/fast:
-	$(MAKE) -f gr-fcd/python/CMakeFiles/pygen_gr_fcd_python_ebc65.dir/build.make gr-fcd/python/CMakeFiles/pygen_gr_fcd_python_ebc65.dir/build
-.PHONY : pygen_gr_fcd_python_ebc65/fast
-
-#=============================================================================
-# Target rules for targets named fcd_nfm_rx
-
-# Build rule for target.
-fcd_nfm_rx: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fcd_nfm_rx
-.PHONY : fcd_nfm_rx
-
-# fast build rule for target.
-fcd_nfm_rx/fast:
-	$(MAKE) -f gr-fcd/examples/c++/CMakeFiles/fcd_nfm_rx.dir/build.make gr-fcd/examples/c++/CMakeFiles/fcd_nfm_rx.dir/build
-.PHONY : fcd_nfm_rx/fast
-
-# Manual pre-install relink rule for target.
-fcd_nfm_rx/preinstall:
-	$(MAKE) -f gr-fcd/examples/c++/CMakeFiles/fcd_nfm_rx.dir/build.make gr-fcd/examples/c++/CMakeFiles/fcd_nfm_rx.dir/preinstall
-.PHONY : fcd_nfm_rx/preinstall
-
-#=============================================================================
 # Target rules for targets named gnuradio-wavelet
 
 # Build rule for target.
@@ -2607,11 +2310,6 @@ gnuradio-wavelet: cmake_check_build_system
 gnuradio-wavelet/fast:
 	$(MAKE) -f gr-wavelet/lib/CMakeFiles/gnuradio-wavelet.dir/build.make gr-wavelet/lib/CMakeFiles/gnuradio-wavelet.dir/build
 .PHONY : gnuradio-wavelet/fast
-
-# Manual pre-install relink rule for target.
-gnuradio-wavelet/preinstall:
-	$(MAKE) -f gr-wavelet/lib/CMakeFiles/gnuradio-wavelet.dir/build.make gr-wavelet/lib/CMakeFiles/gnuradio-wavelet.dir/preinstall
-.PHONY : gnuradio-wavelet/preinstall
 
 #=============================================================================
 # Target rules for targets named _wavelet_swig
@@ -2625,11 +2323,6 @@ _wavelet_swig: cmake_check_build_system
 _wavelet_swig/fast:
 	$(MAKE) -f gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/build.make gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/build
 .PHONY : _wavelet_swig/fast
-
-# Manual pre-install relink rule for target.
-_wavelet_swig/preinstall:
-	$(MAKE) -f gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/build.make gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/preinstall
-.PHONY : _wavelet_swig/preinstall
 
 #=============================================================================
 # Target rules for targets named _wavelet_swig_doc_tag
@@ -2883,7 +2576,6 @@ help:
 	@echo "... _trellis_swig_tag"
 	@echo "... gnuradio-trellis"
 	@echo "... pygen_gr_trellis_src_lib_7ffd1"
-	@echo "... gr_trellis_html"
 	@echo "... gr_trellis_xml"
 	@echo "... pygen_gr_trellis_src_examples_python_f76b0"
 	@echo "... gnuradio-uhd"
@@ -2915,13 +2607,6 @@ help:
 	@echo "... pygen_gr_vocoder_swig_6b1e5"
 	@echo "... pygen_gr_vocoder_python_8a6c2"
 	@echo "... pygen_gr_vocoder_examples_864cb"
-	@echo "... gnuradio-fcd"
-	@echo "... _fcd_swig"
-	@echo "... _fcd_swig_doc_tag"
-	@echo "... _fcd_swig_swig_tag"
-	@echo "... pygen_gr_fcd_swig_f28d3"
-	@echo "... pygen_gr_fcd_python_ebc65"
-	@echo "... fcd_nfm_rx"
 	@echo "... gnuradio-wavelet"
 	@echo "... _wavelet_swig"
 	@echo "... _wavelet_swig_doc_tag"

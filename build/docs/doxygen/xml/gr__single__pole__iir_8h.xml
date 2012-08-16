@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gr__single__pole__iir_8h" kind="file">
+    <compoundname>gr_single_pole_iir.h</compoundname>
+    <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
+    <includes local="no">stdexcept</includes>
+    <includes refid="gr__complex_8h" local="no">gr_complex.h</includes>
+    <includedby refid="gr__single__pole__iir__filter__cc_8h" local="no">gr_single_pole_iir_filter_cc.h</includedby>
+    <includedby refid="gr__single__pole__iir__filter__ff_8h" local="no">gr_single_pole_iir_filter_ff.h</includedby>
+    <includedby refid="gr__probe__avg__mag__sqrd__c_8h" local="no">gr_probe_avg_mag_sqrd_c.h</includedby>
+    <includedby refid="gr__probe__avg__mag__sqrd__cf_8h" local="no">gr_probe_avg_mag_sqrd_cf.h</includedby>
+    <includedby refid="gr__probe__avg__mag__sqrd__f_8h" local="no">gr_probe_avg_mag_sqrd_f.h</includedby>
+    <includedby refid="gr__pwr__squelch__cc_8h" local="no">gr_pwr_squelch_cc.h</includedby>
+    <includedby refid="gr__pwr__squelch__ff_8h" local="no">gr_pwr_squelch_ff.h</includedby>
+    <includedby refid="gr__rms__cf_8h" local="no">gr_rms_cf.h</includedby>
+    <includedby refid="gr__rms__ff_8h" local="no">gr_rms_ff.h</includedby>
+    <includedby refid="gr__simple__squelch__cc_8h" local="no">gr_simple_squelch_cc.h</includedby>
+    <includedby refid="atsc__fpll_8h" local="no">atsc_fpll.h</includedby>
+    <includedby refid="atsci__slicer__agc_8h" local="no">atsci_slicer_agc.h</includedby>
+    <includedby refid="atsci__sssr_8h" local="no">atsci_sssr.h</includedby>
+    <incdepgraph>
+      <node id="15356">
+        <label>gruel/attributes.h</label>
+        <link refid="attributes_8h"/>
+      </node>
+      <node id="15357">
+        <label>stdexcept</label>
+      </node>
+      <node id="15354">
+        <label>gr_single_pole_iir.h</label>
+        <link refid="gr_single_pole_iir.h"/>
+        <childnode refid="15355" relation="include">
+        </childnode>
+        <childnode refid="15357" relation="include">
+        </childnode>
+        <childnode refid="15358" relation="include">
+        </childnode>
+      </node>
+      <node id="15355">
+        <label>gr_core_api.h</label>
+        <link refid="gr__core__api_8h"/>
+        <childnode refid="15356" relation="include">
+        </childnode>
+      </node>
+      <node id="15359">
+        <label>complex</label>
+      </node>
+      <node id="15358">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="15359" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15369">
+        <label>gr_rms_ff.h</label>
+        <link refid="gr__rms__ff_8h"/>
+      </node>
+      <node id="15364">
+        <label>gr_probe_avg_mag_sqrd_cf.h</label>
+        <link refid="gr__probe__avg__mag__sqrd__cf_8h"/>
+      </node>
+      <node id="15361">
+        <label>gr_single_pole_iir_filter_cc.h</label>
+        <link refid="gr__single__pole__iir__filter__cc_8h"/>
+      </node>
+      <node id="15370">
+        <label>gr_simple_squelch_cc.h</label>
+        <link refid="gr__simple__squelch__cc_8h"/>
+      </node>
+      <node id="15366">
+        <label>gr_pwr_squelch_cc.h</label>
+        <link refid="gr__pwr__squelch__cc_8h"/>
+      </node>
+      <node id="15368">
+        <label>gr_rms_cf.h</label>
+        <link refid="gr__rms__cf_8h"/>
+      </node>
+      <node id="15372">
+        <label>atsci_slicer_agc.h</label>
+        <link refid="atsci__slicer__agc_8h"/>
+      </node>
+      <node id="15360">
+        <label>gr_single_pole_iir.h</label>
+        <link refid="gr_single_pole_iir.h"/>
+        <childnode refid="15361" relation="include">
+        </childnode>
+        <childnode refid="15362" relation="include">
+        </childnode>
+        <childnode refid="15363" relation="include">
+        </childnode>
+        <childnode refid="15364" relation="include">
+        </childnode>
+        <childnode refid="15365" relation="include">
+        </childnode>
+        <childnode refid="15366" relation="include">
+        </childnode>
+        <childnode refid="15367" relation="include">
+        </childnode>
+        <childnode refid="15368" relation="include">
+        </childnode>
+        <childnode refid="15369" relation="include">
+        </childnode>
+        <childnode refid="15370" relation="include">
+        </childnode>
+        <childnode refid="15371" relation="include">
+        </childnode>
+        <childnode refid="15372" relation="include">
+        </childnode>
+        <childnode refid="15373" relation="include">
+        </childnode>
+      </node>
+      <node id="15371">
+        <label>atsc_fpll.h</label>
+        <link refid="atsc__fpll_8h"/>
+      </node>
+      <node id="15362">
+        <label>gr_single_pole_iir_filter_ff.h</label>
+        <link refid="gr__single__pole__iir__filter__ff_8h"/>
+      </node>
+      <node id="15374">
+        <label>atsc_bit_timing_loop.h</label>
+        <link refid="atsc__bit__timing__loop_8h"/>
+      </node>
+      <node id="15365">
+        <label>gr_probe_avg_mag_sqrd_f.h</label>
+        <link refid="gr__probe__avg__mag__sqrd__f_8h"/>
+      </node>
+      <node id="15367">
+        <label>gr_pwr_squelch_ff.h</label>
+        <link refid="gr__pwr__squelch__ff_8h"/>
+      </node>
+      <node id="15363">
+        <label>gr_probe_avg_mag_sqrd_c.h</label>
+        <link refid="gr__probe__avg__mag__sqrd__c_8h"/>
+      </node>
+      <node id="15373">
+        <label>atsci_sssr.h</label>
+        <link refid="atsci__sssr_8h"/>
+        <childnode refid="15374" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr__single__pole__iir" prot="public">gr_single_pole_iir</innerclass>
+    <innerclass refid="classgr__single__pole__iir_3_01gr__complex_00_01i__type_00_01double_01_4" prot="public">gr_single_pole_iir&lt; gr_complex, i_type, double &gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_single_pole_iir.h"/>
+  </compounddef>
+</doxygen>
