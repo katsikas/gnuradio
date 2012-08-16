@@ -25,6 +25,7 @@
 #include <string>
 #include <stdio.h>
 #include <assert.h>
+#include <iostream>
 #include <dvbt/dvbti_randomizer.h>
 
 using namespace std;
@@ -47,12 +48,15 @@ dvbti_randomizer::dvbti_randomizer (){
  */
 void
 dvbti_randomizer::reset (){
+	//printf("RESET\n");
 	prbs_sequence = bitset<15> (init_sequence);
 }
 
 
 void
 dvbti_randomizer::next_state(int byte_length){
+
+	//cout << "bit seq = " << prbs_sequence.to_string() << '\n';
 
 	bit_sequence = bitset<187*8> ();
 	for(int i = 0;i<8*byte_length;i++){
@@ -63,6 +67,9 @@ dvbti_randomizer::next_state(int byte_length){
 		bit_sequence[i] = prbs_sequence[15];
         	prbs_sequence[0] = prbs_sequence[15];
 	}
+
+	//cout << "bit seq AFTER = " << prbs_sequence.to_string() << '\n';
+
 }
 
 

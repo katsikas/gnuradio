@@ -93,11 +93,12 @@ protected:
   std::vector<int> d_scattered_map;
   std::vector<int> d_continuals_map;
   
-  std::bitset<11> prbs_sequence;
-  static const std::string init_sequence;
+  static const string init_sequence;
+  bitset<PRBS_SEQUENCE> prbs_sequence;
+  bitset<BITS_SEQUENCE> bit_sequence;
 
   int randsym(); 
-  void next_state();
+  void next_state(int );
 
  public:
   ~digital_dvbt_ofdm_mapper_bcv(void);

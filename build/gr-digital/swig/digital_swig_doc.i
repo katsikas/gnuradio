@@ -558,9 +558,13 @@ Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, 
 
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv "
 
-Params: (constellation, msgq_limit, occupied_carriers, fft_length)"
+Params: (constellation, t_constellation, cs_constellation, msgq_limit, occupied_carriers, fft_length)"
 
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::randsym "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::next_state "
 
 Params: (NONE)"
 
@@ -578,7 +582,7 @@ Params: (noutput_items, input_items, output_items)"
 
 %feature("docstring") digital_make_dvbt_ofdm_mapper_bcv "Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping.
 
-Params: (constellation, msgq_limit, occupied_carriers, fft_length)"
+Params: (constellation, t_constellation, cs_constellation, msgq_limit, occupied_carriers, fft_length)"
 
 %feature("docstring") digital_fll_band_edge_cc "Frequency Lock Loop using band-edge filters.
 
@@ -1286,9 +1290,9 @@ Params: (buf, len)"
 
 %feature("docstring") std::set::const_iterator "STL iterator class."
 
-%feature("docstring") std::string::const_iterator "STL iterator class."
-
 %feature("docstring") std::multiset::const_iterator "STL iterator class."
+
+%feature("docstring") std::string::const_iterator "STL iterator class."
 
 %feature("docstring") std::vector::const_iterator "STL iterator class."
 
@@ -1302,11 +1306,11 @@ Params: (buf, len)"
 
 %feature("docstring") std::multimap::const_reverse_iterator "STL iterator class."
 
-%feature("docstring") std::string::const_reverse_iterator "STL iterator class."
-
 %feature("docstring") std::basic_string::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::set::const_reverse_iterator "STL iterator class."
+
+%feature("docstring") std::string::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::multiset::const_reverse_iterator "STL iterator class."
 
@@ -1628,19 +1632,19 @@ Params: (NONE)"
 
 %feature("docstring") std::multimap::iterator "STL iterator class."
 
-%feature("docstring") std::multiset::iterator "STL iterator class."
-
 %feature("docstring") std::string::iterator "STL iterator class."
 
-%feature("docstring") std::set::iterator "STL iterator class."
+%feature("docstring") std::multiset::iterator "STL iterator class."
 
 %feature("docstring") std::vector::iterator "STL iterator class."
+
+%feature("docstring") std::basic_string::iterator "STL iterator class."
 
 %feature("docstring") std::wstring::iterator "STL iterator class."
 
 %feature("docstring") std::map::iterator "STL iterator class."
 
-%feature("docstring") std::basic_string::iterator "STL iterator class."
+%feature("docstring") std::set::iterator "STL iterator class."
 
 %feature("docstring") std::list::iterator "STL iterator class."
 
@@ -1674,25 +1678,25 @@ Params: (NONE)"
 
 %feature("docstring") std::range_error "STL class."
 
-%feature("docstring") std::string::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::vector::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::list::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::map::reverse_iterator "STL iterator class."
+%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::wstring::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
+%feature("docstring") std::map::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::set::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::vector::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 

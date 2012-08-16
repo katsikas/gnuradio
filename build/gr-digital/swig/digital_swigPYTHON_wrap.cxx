@@ -41947,26 +41947,32 @@ SWIGINTERN PyObject *digital_dvbt_ofdm_mapper_bcv_sptr_swigregister(PyObject *SW
 SWIGINTERN PyObject *_wrap_dvbt_ofdm_mapper_bcv(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   std::vector< gr_complex,std::allocator< gr_complex > > *arg1 = 0 ;
-  unsigned int arg2 ;
-  unsigned int arg3 ;
+  std::vector< gr_complex,std::allocator< gr_complex > > *arg2 = 0 ;
+  std::vector< gr_complex,std::allocator< gr_complex > > *arg3 = 0 ;
   unsigned int arg4 ;
+  unsigned int arg5 ;
+  unsigned int arg6 ;
   int res1 = SWIG_OLDOBJ ;
-  unsigned int val2 ;
-  int ecode2 = 0 ;
-  unsigned int val3 ;
-  int ecode3 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  int res3 = SWIG_OLDOBJ ;
   unsigned int val4 ;
   int ecode4 = 0 ;
+  unsigned int val5 ;
+  int ecode5 = 0 ;
+  unsigned int val6 ;
+  int ecode6 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
   char *  kwnames[] = {
-    (char *) "constellation",(char *) "msgq_limit",(char *) "bits_per_symbol",(char *) "fft_length", NULL 
+    (char *) "constellation",(char *) "t_constellation",(char *) "cs_constellation",(char *) "msgq_limit",(char *) "occupied_carriers",(char *) "fft_length", NULL 
   };
   digital_dvbt_ofdm_mapper_bcv_sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:dvbt_ofdm_mapper_bcv",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOO:dvbt_ofdm_mapper_bcv",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
   {
     std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
     res1 = swig::asptr(obj0, &ptr);
@@ -41978,25 +41984,47 @@ SWIGINTERN PyObject *_wrap_dvbt_ofdm_mapper_bcv(PyObject *SWIGUNUSEDPARM(self), 
     }
     arg1 = ptr;
   }
-  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "2"" of type '" "unsigned int""'");
-  } 
-  arg2 = static_cast< unsigned int >(val2);
-  ecode3 = SWIG_AsVal_unsigned_SS_int(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "3"" of type '" "unsigned int""'");
-  } 
-  arg3 = static_cast< unsigned int >(val3);
+  {
+    std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "2"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "2"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  {
+    std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "3"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "3"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    arg3 = ptr;
+  }
   ecode4 = SWIG_AsVal_unsigned_SS_int(obj3, &val4);
   if (!SWIG_IsOK(ecode4)) {
     SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "4"" of type '" "unsigned int""'");
   } 
   arg4 = static_cast< unsigned int >(val4);
+  ecode5 = SWIG_AsVal_unsigned_SS_int(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "5"" of type '" "unsigned int""'");
+  } 
+  arg5 = static_cast< unsigned int >(val5);
+  ecode6 = SWIG_AsVal_unsigned_SS_int(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "dvbt_ofdm_mapper_bcv" "', argument " "6"" of type '" "unsigned int""'");
+  } 
+  arg6 = static_cast< unsigned int >(val6);
   {
     try {
       try {
-        result = digital_make_dvbt_ofdm_mapper_bcv((std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg1,arg2,arg3,arg4);
+        result = digital_make_dvbt_ofdm_mapper_bcv((std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg1,(std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg2,(std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg3,arg4,arg5,arg6);
       }
       catch(std::exception &_e) {
         SWIG_exception_fail(SWIG_SystemError, (&_e)->what());
@@ -42013,9 +42041,13 @@ SWIGINTERN PyObject *_wrap_dvbt_ofdm_mapper_bcv(PyObject *SWIGUNUSEDPARM(self), 
   }
   resultobj = SWIG_NewPointerObj((new digital_dvbt_ofdm_mapper_bcv_sptr(static_cast< const digital_dvbt_ofdm_mapper_bcv_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t, SWIG_POINTER_OWN |  0 );
   if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  if (SWIG_IsNewObj(res3)) delete arg3;
   return resultobj;
 fail:
   if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  if (SWIG_IsNewObj(res3)) delete arg3;
   return NULL;
 }
 
@@ -45387,12 +45419,14 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"digital_dvbt_ofdm_mapper_bcv_sptr_swigregister", digital_dvbt_ofdm_mapper_bcv_sptr_swigregister, METH_VARARGS, NULL},
 	 { (char *)"dvbt_ofdm_mapper_bcv", (PyCFunction) _wrap_dvbt_ofdm_mapper_bcv, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"dvbt_ofdm_mapper_bcv(gr_complex_vector constellation, unsigned int msgq_limit, \n"
-		"    unsigned int bits_per_symbol, unsigned int fft_length) -> digital_dvbt_ofdm_mapper_bcv_sptr\n"
+		"dvbt_ofdm_mapper_bcv(gr_complex_vector constellation, gr_complex_vector t_constellation, \n"
+		"    gr_complex_vector cs_constellation, \n"
+		"    unsigned int msgq_limit, unsigned int occupied_carriers, \n"
+		"    unsigned int fft_length) -> digital_dvbt_ofdm_mapper_bcv_sptr\n"
 		"\n"
 		"Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping.\n"
 		"\n"
-		"Params: (constellation, msgq_limit, occupied_carriers, fft_length)\n"
+		"Params: (constellation, t_constellation, cs_constellation, msgq_limit, occupied_carriers, fft_length)\n"
 		""},
 	 { (char *)"new_digital_dvbt_ofdm_frame_sink_sptr", _wrap_new_digital_dvbt_ofdm_frame_sink_sptr, METH_VARARGS, (char *)"\n"
 		"digital_dvbt_ofdm_frame_sink_sptr()\n"

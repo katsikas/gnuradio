@@ -5360,12 +5360,14 @@ digital_dvbt_ofdm_mapper_bcv_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" %
 
 def dvbt_ofdm_mapper_bcv(*args, **kwargs):
   """
-    dvbt_ofdm_mapper_bcv(gr_complex_vector constellation, unsigned int msgq_limit, 
-        unsigned int bits_per_symbol, unsigned int fft_length) -> digital_dvbt_ofdm_mapper_bcv_sptr
+    dvbt_ofdm_mapper_bcv(gr_complex_vector constellation, gr_complex_vector t_constellation, 
+        gr_complex_vector cs_constellation, 
+        unsigned int msgq_limit, unsigned int occupied_carriers, 
+        unsigned int fft_length) -> digital_dvbt_ofdm_mapper_bcv_sptr
 
     Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping.
 
-    Params: (constellation, msgq_limit, occupied_carriers, fft_length)
+    Params: (constellation, t_constellation, cs_constellation, msgq_limit, occupied_carriers, fft_length)
     """
   return _digital_swig.dvbt_ofdm_mapper_bcv(*args, **kwargs)
 class digital_dvbt_ofdm_frame_sink_sptr(object):

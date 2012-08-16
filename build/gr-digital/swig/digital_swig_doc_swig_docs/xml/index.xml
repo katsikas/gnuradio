@@ -46,9 +46,9 @@
   </compound>
   <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1const__iterator" kind="class"><name>std::string::const_iterator</name>
-  </compound>
   <compound refid="classstd_1_1multiset_1_1const__iterator" kind="class"><name>std::multiset::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__iterator" kind="class"><name>std::string::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1const__iterator" kind="class"><name>std::vector::const_iterator</name>
   </compound>
@@ -62,11 +62,11 @@
   </compound>
   <compound refid="classstd_1_1multimap_1_1const__reverse__iterator" kind="class"><name>std::multimap::const_reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1const__reverse__iterator" kind="class"><name>std::multiset::const_reverse_iterator</name>
   </compound>
@@ -347,6 +347,8 @@
   </compound>
   <compound refid="classdigital__dvbt__ofdm__mapper__bcv" kind="class"><name>digital_dvbt_ofdm_mapper_bcv</name>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ab91145854a512f6e28f1440916bccdfe" kind="variable"><name>d_constellation</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a42148454ddc4c622ead018abc010e58f" kind="variable"><name>d_t_constellation</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a02ed0bffa34c183135ddd8152b1632b2" kind="variable"><name>d_cs_constellation</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a55a5441b468bdb37b3e72726a830d9ef" kind="variable"><name>d_msgq</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afb660af0f073f089577c4b88a1dce97c" kind="variable"><name>d_msg</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a296aa159ea6900afa0efacd5551dbb4b" kind="variable"><name>d_msg_offset</name></member>
@@ -367,10 +369,13 @@
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ac396c22701218a36294d60fb37c8bc54" kind="variable"><name>d_tps_map</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1af22c640e412135aaf4620d11476c302b" kind="variable"><name>d_scattered_map</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a8905d272fe453e9ff97e29211e302817" kind="variable"><name>d_continuals_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aee5228d45b9477527c860dd26cce7ae7" kind="variable"><name>prbs_sequence</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3be728ab51dba31394900f2d77a7694d" kind="variable"><name>d_symbol_number</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1abfd704205fc42ba05f3ebad380821a1a" kind="friend"><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a841808027433963face3b82283fa2f23" kind="function"><name>digital_dvbt_ofdm_mapper_bcv</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1a4a4851e7bff4ab0b5bc34fe7d57d6e" kind="variable"><name>init_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ae36d5582c305088147ec8fe22d1aee4c" kind="friend"><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a001bde6303d57e7e7084781dc740b930" kind="function"><name>digital_dvbt_ofdm_mapper_bcv</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad0f663e117c340c20de7a7a47b50da" kind="function"><name>randsym</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a215230a06a877d351ad3150a366f6dd8" kind="function"><name>next_state</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a27508ae14328d2f271c115333c46279b" kind="function"><name>~digital_dvbt_ofdm_mapper_bcv</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" kind="function"><name>msgq</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1abb3b0ec09c9a3f64923643a1256b3d10" kind="function"><name>work</name></member>
@@ -727,19 +732,19 @@
   </compound>
   <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
-  </compound>
   <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
   <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
   </compound>
@@ -781,25 +786,25 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
@@ -913,7 +918,7 @@
   </compound>
   <compound refid="digital__dvbt__ofdm__mapper__bcv_8h" kind="file"><name>digital_dvbt_ofdm_mapper_bcv.h</name>
     <member refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kind="typedef"><name>digital_dvbt_ofdm_mapper_bcv_sptr</name></member>
-    <member refid="digital__dvbt__ofdm__mapper__bcv_8h_1abfd704205fc42ba05f3ebad380821a1a" kind="function"><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
+    <member refid="digital__dvbt__ofdm__mapper__bcv_8h_1ae36d5582c305088147ec8fe22d1aee4c" kind="function"><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
   </compound>
   <compound refid="digital__fll__band__edge__cc_8h" kind="file"><name>digital_fll_band_edge_cc.h</name>
     <member refid="digital__fll__band__edge__cc_8h_1a0d55f0e4504ac73586a70ea61e89393b" kind="typedef"><name>digital_fll_band_edge_cc_sptr</name></member>

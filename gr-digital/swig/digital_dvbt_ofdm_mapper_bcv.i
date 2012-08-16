@@ -24,19 +24,19 @@ GR_SWIG_BLOCK_MAGIC(digital,dvbt_ofdm_mapper_bcv);
 
 digital_dvbt_ofdm_mapper_bcv_sptr 
 digital_make_dvbt_ofdm_mapper_bcv (const std::vector<gr_complex> &constellation,
-			      unsigned int msgq_limit,
-			      unsigned int bits_per_symbol, 
-			      unsigned int fft_length) throw(std::exception);
+                                   const std::vector<gr_complex> &t_constellation,
+                                   const std::vector<gr_complex> &cs_constellation,
+                                   unsigned int msgq_limit, unsigned int occupied_carriers, unsigned int fft_length) throw(std::exception);
 
 
 class digital_dvbt_ofdm_mapper_bcv : public gr_sync_block
 {
  protected:
   digital_dvbt_ofdm_mapper_bcv (const std::vector<gr_complex> &constellation,
-			   unsigned int msgq_limit,
-			   unsigned int bits_per_symbol,
-			   unsigned int fft_length);
-  
+                                   const std::vector<gr_complex> &t_constellation,
+                                   const std::vector<gr_complex> &cs_constellation,
+                                   unsigned int msgq_limit, unsigned int occupied_carriers, unsigned int fft_length);
+
  public:
   gr_msg_queue_sptr msgq();
   

@@ -93,7 +93,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
         arity = mods[self._modulation]
         
         rot = 1
-        # FIXME: pass the constellation objects instead of just the points
+        #Create constellation objects for payload data.
         if(self._modulation.find("qpsk") >= 0):
             constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
             rotated_const = constel.points()
@@ -103,9 +103,16 @@ class dvbt_ofdm_mod(gr.hier_block2):
 	elif(self._modulation.find("qam64") >= 0):
             constel = dvbt_constellations.dvbt_64qam_constellation(arity,False,mod_codes.GRAY_CODE)
             rotated_const = map(lambda pt: pt / (math.sqrt(42)), constel.points())
-        
 	print rotated_const
-        self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,
+
+
+	#Create constellation objects for pilot signals
+	t_constel = dvbt_constellations.dvbt_qpsk_constellation(arity)	
+	cs_constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
+
+
+
+        self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,t_constel.points(),cs_constel.points(),
 						       msgq_limit,
                                                        options.occupied_tones,
                                                        options.fft_length)
