@@ -33,8 +33,16 @@
 #include <gr_io_signature.h>
 #include <digital_dvbt_ofdm_mapper_bcv.h>
 
+#define CELL_IDENTIFICATION 0
+
+unsigned int digital_dvbt_ofdm_mapper_bcv::d_frame_number;
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_symbol_number;
 const std::string digital_dvbt_ofdm_mapper_bcv::init_sequence = "11111111111";
+const std::string digital_dvbt_ofdm_mapper_bcv::odd_sequence = "0011010111101110";
+const std::string digital_dvbt_ofdm_mapper_bcv::even_sequence = "1100101000010001";
+const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_on =  "011111";
+const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_off = "010111";
+
 
 const int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073,
                         1219, 1262, 1286, 1469, 1594, 1687};
@@ -66,8 +74,8 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
                    gr_make_io_signature (0, 0, 0),
                    gr_make_io_signature2 (1, 2, sizeof(gr_complex)*fft_length, sizeof(char))),
     d_constellation(constellation),
-    d_t_constellation(t_constellation),
     d_cs_constellation(cs_constellation),
+    d_tps_constellation(t_constellation),
     d_msgq(gr_make_msg_queue(msgq_limit)), d_msg_offset(0), d_eof(false),
     d_occupied_carriers(occupied_carriers),
     d_fft_length(fft_length),
@@ -81,7 +89,9 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
     d_tps_map(tps, tps + sizeof tps/sizeof(int)),
     d_continuals_map(continuals, continuals + sizeof continuals/sizeof(int))
 {
-
+  d_frame_number = 1;
+  set_modulation_type();
+	  
   if (!(d_occupied_carriers <= d_fft_length))
     throw std::invalid_argument("digital_ofdm_mapper_bcv: occupied carriers must be <= fft_length");
 
@@ -122,19 +132,39 @@ int digital_dvbt_ofdm_mapper_bcv::randsym()
     return (rand() % d_constellation.size());
 }
 
+void digital_dvbt_ofdm_mapper_bcv::set_modulation_type(){
+
+	if(d_constellation.size() == 4){
+		d_modulation_type = std::bitset<2> (std::string("0,0"));
+	}
+	else if(d_constellation.size() == 16){
+		d_modulation_type = std::bitset<2> (std::string("0,1"));
+	}
+	else if(d_constellation.size() == 64){
+		d_modulation_type = std::bitset<2> (std::string("1,0"));
+	}
+	else{
+		d_modulation_type = std::bitset<2> (std::string("1,1"));
+	}
+}
+
+unsigned int digital_dvbt_ofdm_mapper_bcv::differential_modulation(int bit){
+	d_last_out = (bit + d_last_out) % 2;		// modulus is 2 for DBPSK
+	return d_last_out;
+}
+
 // Private function for the pilot PRBS sequence.
 void
 digital_dvbt_ofdm_mapper_bcv::next_state(){
 
     unsigned char temp = 0;
 	//std::cout << "PRBS prin " << int(prbs_sequence.to_ulong()) << " ";
-    temp = prbs_sequence[8] ^ prbs_sequence[10];
+    temp = d_prbs_sequence[8] ^ d_prbs_sequence[10];
     for(int j=10;j>0;j--){
-            prbs_sequence[j] = prbs_sequence[j-1];
+            d_prbs_sequence[j] = d_prbs_sequence[j-1];
     }
-    prbs_sequence[0] = temp;
+    d_prbs_sequence[0] = temp;
     //std::cout << "PRBS meta " << int(prbs_sequence.to_ulong()) << "\n";
-
 }
 
 
@@ -149,7 +179,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   /******************************************/
   /* Should be reset??                      */
   /******************************************/
-  prbs_sequence = std::bitset<11> (init_sequence);
+  d_prbs_sequence = std::bitset<11> (init_sequence);
 
 
   if(d_eof) {
@@ -170,9 +200,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
   char *out_flag = 0;
   if(output_items.size() == 2)
-
     out_flag = (char *) output_items[1];
-
 
 
   // Create the scattered pilots positions in the current symbol...
@@ -189,31 +217,84 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   memset(out, 0, d_fft_length*sizeof(gr_complex));
 
   i = 0;
+  unsigned char diff = 0;
   unsigned char bits = 0;
   while((d_msg_offset < d_msg->length()) && (i < carriers)) {
 
-      //printf("CARRIER = %d - ",i);
       next_state();
+      // TPS pilot signals...
       if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
-          //printf("This is a TPS carrier %d \n",i);
-          out[d_subcarrier_map[i]] = d_constellation[bits];
+		  if(d_symbol_number == 0){										// PRBS sequence
+			diff = differential_modulation(d_prbs_sequence.test(0));
+			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 			
+		  }
+		  if( (d_symbol_number > 0) && (d_symbol_number < 17) ){		// Synchronization
+			if((d_frame_number % 2) == 0){
+				diff = differential_modulation(even_sequence.at(d_symbol_number-1));	
+			}
+			else{
+				diff = differential_modulation(odd_sequence.at(d_symbol_number-1));	
+			}		
+			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
+		  }
+		  if( (d_symbol_number > 16) && (d_symbol_number < 23) ){		// TPS length
+			if(CELL_IDENTIFICATION){
+				diff = differential_modulation(cell_identification_on.at(d_symbol_number-17));		
+			}
+			else{
+				diff = differential_modulation(cell_identification_off.at(d_symbol_number-17));
+			}
+			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
+		  }
+		  if(d_symbol_number == 23){ 									// Frame number MSB
+			if(d_frame_number < 3){
+				diff = differential_modulation(0);
+			}
+			else{
+				diff = differential_modulation(1);
+			}	
+			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
+		  }
+		  if(d_symbol_number == 24){ 									// Frame number LSB
+			if((d_frame_number % 2) != 0){
+				diff = differential_modulation(0);
+			}
+			else{
+				diff = differential_modulation(1);
+			}	
+			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
+		  }
+		  
+		  // under construction 								
+		  if(d_symbol_number == 24){ 									// Constellation
+			if((d_frame_number % 2) != 0){
+				diff = differential_modulation(0);
+			}
+			else{
+				diff = differential_modulation(1);
+			}	
+			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
+		  }
+		  
           i++;
       }
+      // Continual pilot signas
       else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
           //printf("This is a continual pilot carrier %d , prbs_sequence[0] = %d and complex.real = %.4f\n",i,prbs_sequence.test(0),d_cs_constellation[prbs_sequence.test(0)].real());
-          out[d_subcarrier_map[i]] = d_cs_constellation[prbs_sequence.test(0)];
+          out[d_subcarrier_map[i]] = d_cs_constellation[d_prbs_sequence.test(0)];
           i++;
       }
+      // Scattered pilot signals
       else if(std::find(d_scattered_map.begin(), d_scattered_map.end(), i) != d_scattered_map.end()){
           //printf("This is a scattered pilot carrier %d , prbs_sequence[0] = %d and complex.real = %.4f\n",i,prbs_sequence.test(0),d_cs_constellation[prbs_sequence.test(0)].real());
-          out[d_subcarrier_map[i]] = d_cs_constellation[prbs_sequence.test(0)];
+          out[d_subcarrier_map[i]] = d_cs_constellation[d_prbs_sequence.test(0)];
           i++;
       }
+      // Payload carrier signals
       else{
             // need new data to process
             if(d_bit_offset == 0) {
               d_msgbytes = d_msg->msg()[d_msg_offset];
-              //printf("mod message byte: %x\n", d_msgbytes);
             }
 
             if(d_nresid > 0) {
@@ -295,10 +376,14 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   d_pending_flag = 0;
 
   //printf("symbol %d produced \n",d_symbol_number);
-  d_symbol_number = d_symbol_number + 1;
+  d_symbol_number ++;
   if(d_symbol_number == 68){
         d_symbol_number = 0;
+        d_frame_number ++;
+        if(d_frame_number == 5){
+			d_frame_number = 1;						// 4 frames consist a super-frame.
+		}
   }
-
+ 
   return 1;  							// produced symbol
 }

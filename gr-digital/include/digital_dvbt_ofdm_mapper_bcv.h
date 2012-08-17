@@ -64,8 +64,8 @@ protected:
 
  private:
   std::vector<gr_complex> d_constellation;
-  std::vector<gr_complex> d_t_constellation;
   std::vector<gr_complex> d_cs_constellation;
+  std::vector<gr_complex> d_tps_constellation;
   gr_msg_queue_sptr	d_msgq;
   gr_message_sptr	d_msg;
   unsigned		d_msg_offset;
@@ -80,12 +80,14 @@ protected:
   unsigned char  d_msgbytes;
   unsigned char d_resid;
   unsigned int d_nresid;
+  unsigned int d_last_out;
 
   unsigned int d_tps_pilots;
-  static unsigned int d_symbol_number;
   unsigned int d_continual_pilots;
   unsigned int d_payload_carriers;
 
+  static unsigned int d_frame_number;
+  static unsigned int d_symbol_number;
 
   std::vector<int> d_payload_map;
   std::vector<int> d_subcarrier_map;
@@ -93,11 +95,19 @@ protected:
   std::vector<int> d_scattered_map;
   std::vector<int> d_continuals_map;
   
-  std::bitset<11> prbs_sequence;
+  std::bitset<2> d_modulation_type;
+  std::bitset<11> d_prbs_sequence;
   static const std::string init_sequence;
+  static const std::string odd_sequence;
+  static const std::string even_sequence;
+  static const std::string cell_identification_on;
+  static const std::string cell_identification_off;
+
 
   int randsym(); 
   void next_state();
+  void set_modulation_type();
+  unsigned int differential_modulation(int );
 
  public:
   ~digital_dvbt_ofdm_mapper_bcv(void);

@@ -105,7 +105,9 @@ class bpsk_demod(generic_demod):
 def dbpsk_constellation(m=_def_constellation_points):
     if m != _def_constellation_points:
         raise ValueError("DBPSK can only have 2 constellation points.")
-    return digital_swig.constellation_dbpsk()
+  
+    print "eftaseeeeeee \n"
+    return digital_swig.constellation_dqpsk()
 
 # /////////////////////////////////////////////////////////////////////////////
 #                           DBPSK modulator

@@ -167,8 +167,8 @@
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/>std::vector&lt;gr_complex&gt;<sp/>d_constellation;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/>std::vector&lt;gr_complex&gt;<sp/>d_t_constellation;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/>std::vector&lt;gr_complex&gt;<sp/>d_cs_constellation;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>std::vector&lt;gr_complex&gt;<sp/>d_cs_constellation;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>std::vector&lt;gr_complex&gt;<sp/>d_tps_constellation;</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/>gr_msg_queue_sptr<sp/><sp/><sp/><sp/><sp/>d_msgq;</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/>gr_message_sptr<sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_msg;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_msg_offset;</highlight></codeline>
@@ -183,37 +183,47 @@
 <codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>d_msgbytes;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>d_resid;</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_nresid;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_tps_pilots;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_symbol_number;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_last_out;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_tps_pilots;</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_continual_pilots;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_payload_carriers;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_payload_map;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_subcarrier_map;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_tps_map;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_scattered_map;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_continuals_map;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/>std::bitset&lt;11&gt;<sp/>prbs_sequence;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>init_sequence;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>randsym();<sp/></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>next_state();</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/>~<ref refid="classdigital__dvbt__ofdm__mapper__bcv" kindref="compound" tooltip="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105" refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" refkind="member"><highlight class="normal"><sp/><sp/>gr_msg_queue_sptr<sp/><sp/><sp/><sp/><sp/><ref refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" kindref="member">msgq</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_msgq;<sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_frame_number;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_symbol_number;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_payload_map;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_subcarrier_map;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_tps_map;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_scattered_map;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>d_continuals_map;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>std::bitset&lt;2&gt;<sp/>d_modulation_type;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>std::bitset&lt;11&gt;<sp/>d_prbs_sequence;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>init_sequence;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>odd_sequence;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>even_sequence;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>cell_identification_on;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>cell_identification_off;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>randsym();<sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>next_state();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_modulation_type();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>differential_modulation(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>~<ref refid="classdigital__dvbt__ofdm__mapper__bcv" kindref="compound" tooltip="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" refkind="member"><highlight class="normal"><sp/><sp/>gr_msg_queue_sptr<sp/><sp/><sp/><sp/><sp/><ref refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" kindref="member">msgq</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_msgq;<sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h"/>
   </compounddef>

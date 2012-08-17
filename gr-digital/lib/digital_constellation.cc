@@ -620,13 +620,13 @@ digital_constellation_dvbt_qpsk::decision_maker(const gr_complex *sample)
 /**
  * DVB-T explicit constellation mapping for scattered and continual pilot signals(BPSK).
  **/
-digital_constellation_cs_pilots_sptr
-digital_make_constellation_cs_pilots()
+digital_constellation_dvbt_cs_pilots_sptr
+digital_make_constellation_dvbt_cs_pilots()
 {
-  return digital_constellation_cs_pilots_sptr(new digital_constellation_cs_pilots());
+  return digital_constellation_dvbt_cs_pilots_sptr(new digital_constellation_dvbt_cs_pilots());
 }
 
-digital_constellation_cs_pilots::digital_constellation_cs_pilots()
+digital_constellation_dvbt_cs_pilots::digital_constellation_dvbt_cs_pilots()
 {
   d_constellation.resize(2);
   d_constellation[0] = gr_complex(( (4/3.0)*2*((1/2.0)-0) ), 0);
@@ -638,8 +638,48 @@ digital_constellation_cs_pilots::digital_constellation_cs_pilots()
 }
 
 unsigned int
-digital_constellation_cs_pilots::decision_maker(const gr_complex *sample)
+digital_constellation_dvbt_cs_pilots::decision_maker(const gr_complex *sample)
 {
+  return !(real(*sample) > 0);
+}
+
+
+
+/**
+ * DVB-T explicit constellation mapping for TPS signals(DBPSK).
+ **/
+digital_constellation_dvbt_tps_pilots_sptr
+digital_make_constellation_dvbt_tps_pilots()
+{
+  return digital_constellation_dvbt_tps_pilots_sptr(new digital_constellation_dvbt_tps_pilots());
+}
+
+digital_constellation_dvbt_tps_pilots::digital_constellation_dvbt_tps_pilots()
+{
+  // This constellation is not gray coded, which allows
+  // us to use differential encodings (through gr_diff_encode and
+  // gr_diff_decode) on the symbols.
+  d_constellation.resize(2);
+  d_constellation[0] = gr_complex( 1, 0);
+  d_constellation[1] = gr_complex(-1, 0);
+
+  // Use this mapping to convert to gray code before diff enc.
+  d_pre_diff_code.resize(2);
+  d_pre_diff_code[0] = 0x0;
+  d_pre_diff_code[1] = 0x1;
+  d_apply_pre_diff_code = true;
+
+  d_rotational_symmetry = 2;
+  d_dimensionality = 1;
+  calc_arity();
+}
+
+unsigned int
+digital_constellation_dvbt_tps_pilots::decision_maker(const gr_complex *sample)
+{
+  // Slower deicison maker as we can't slice along one axis.
+  // Maybe there's a better way to do this, still.
+
   return !(real(*sample) > 0);
 }
 

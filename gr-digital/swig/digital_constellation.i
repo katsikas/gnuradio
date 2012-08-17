@@ -206,21 +206,37 @@ public:
 
 
 /*
-  Digital constellation for scattered and continual pilot signals(BPSK).
+  Digital constellation for scattered and continual pilot signals.
 */
-class digital_constellation_cs_pilots;
-typedef boost::shared_ptr<digital_constellation_cs_pilots> digital_constellation_cs_pilots_sptr;
-%template(digital_constellation_cs_pilots_sptr) boost::shared_ptr<digital_constellation_cs_pilots>;
-%rename(constellation_cs_pilots) digital_make_constellation_cs_pilots;
-digital_constellation_cs_pilots_sptr digital_make_constellation_cs_pilots();
-%ignore digital_constellation_cs_pilots;
+class digital_constellation_dvbt_cs_pilots;
+typedef boost::shared_ptr<digital_constellation_dvbt_cs_pilots> digital_constellation_dvbt_cs_pilots_sptr;
+%template(digital_constellation_dvbt_cs_pilots_sptr) boost::shared_ptr<digital_constellation_dvbt_cs_pilots>;
+%rename(constellation_dvbt_cs_pilots) digital_make_constellation_dvbt_cs_pilots;
+digital_constellation_dvbt_cs_pilots_sptr digital_make_constellation_dvbt_cs_pilots();
+%ignore digital_constellation_dvbt_cs_pilots;
 
-class digital_constellation_cs_pilots : public digital_constellation
+class digital_constellation_dvbt_cs_pilots : public digital_constellation
 {
 public:
-  digital_constellation_cs_pilots ();
+  digital_constellation_dvbt_cs_pilots ();
 };
 
+
+/*
+  Digital constellation for TPS pilot signals(DBPSK).
+*/
+class digital_constellation_dvbt_tps_pilots;
+typedef boost::shared_ptr<digital_constellation_dvbt_tps_pilots> digital_constellation_dvbt_tps_pilots_sptr;
+%template(digital_constellation_dvbt_tps_pilots_sptr) boost::shared_ptr<digital_constellation_dvbt_tps_pilots>;
+%rename(constellation_dvbt_tps_pilots) digital_make_constellation_dvbt_tps_pilots;
+digital_constellation_dvbt_tps_pilots_sptr digital_make_constellation_dvbt_tps_pilots();
+%ignore digital_constellation_dvbt_tps_pilots;
+
+class digital_constellation_dvbt_tps_pilots : public digital_constellation
+{
+public:
+  digital_constellation_dvbt_tps_pilots();
+};
 
 #if SWIGPYTHON
 /*
@@ -239,7 +255,8 @@ digital_constellation_dqpsk_sptr.__repr__ = lambda self: '<constellation dqpsk>'
 digital_constellation_8psk_sptr.__repr__ = lambda self: '<constellation 8psk>'
 
 digital_constellation_dvbt_qpsk_sptr.__repr__ = lambda self: '<constellation dvbt_qpsk>'
-digital_constellation_cs_pilots_sptr.__repr__ = lambda self: '<constellation cs_pilots>'
-  
+digital_constellation_dvbt_cs_pilots_sptr.__repr__ = lambda self: '<constellation dvbt_cs_pilots>'
+digital_constellation_dvbt_tps_pilots_sptr.__repr__ = lambda self: '<constellation dvbt_tps_pilots>'
+
 %}
 #endif

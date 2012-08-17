@@ -24,6 +24,7 @@
 #include "config.h"
 #endif
 
+#include <stdio.h>
 #include <gr_diff_encoder_bb.h>
 #include <gr_io_signature.h>
 

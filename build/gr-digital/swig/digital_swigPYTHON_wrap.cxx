@@ -2950,111 +2950,113 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_8psk_t swig_types[5]
 #define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_bpsk_t swig_types[6]
 #define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_calcdist_t swig_types[7]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t swig_types[8]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_decoder_cb_t swig_types[9]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dqpsk_t swig_types[10]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_decoder_cb_t swig_types[8]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dqpsk_t swig_types[9]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t swig_types[10]
 #define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t swig_types[11]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_psk_t swig_types[12]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_qpsk_t swig_types[13]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_receiver_cb_t swig_types[14]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_rect_t swig_types[15]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_t swig_types[16]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_correlate_access_code_bb_t swig_types[17]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t swig_types[18]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_cpmmod_bc_t swig_types[19]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t swig_types[20]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t swig_types[21]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_fll_band_edge_cc_t swig_types[22]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_gmskmod_bc_t swig_types[23]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t swig_types[24]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_lms_dd_equalizer_cc_t swig_types[25]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_receiver_cc_t swig_types[26]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_snr_est_cc_t swig_types[27]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_cyclic_prefixer_t swig_types[28]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_acquisition_t swig_types[29]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_sink_t swig_types[30]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_insert_preamble_t swig_types[31]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_mapper_bcv_t swig_types[32]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_sampler_t swig_types[33]
-#define SWIGTYPE_p_boost__shared_ptrT_digital_probe_mpsk_snr_est_c_t swig_types[34]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[35]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[36]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[37]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[38]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[39]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[40]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[41]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[42]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[43]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[44]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[45]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[46]
-#define SWIGTYPE_p_char swig_types[47]
-#define SWIGTYPE_p_difference_type swig_types[48]
-#define SWIGTYPE_p_digital_binary_slicer_fb swig_types[49]
-#define SWIGTYPE_p_digital_clock_recovery_mm_cc swig_types[50]
-#define SWIGTYPE_p_digital_clock_recovery_mm_ff swig_types[51]
-#define SWIGTYPE_p_digital_cma_equalizer_cc swig_types[52]
-#define SWIGTYPE_p_digital_constellation swig_types[53]
-#define SWIGTYPE_p_digital_constellation_8psk swig_types[54]
-#define SWIGTYPE_p_digital_constellation_bpsk swig_types[55]
-#define SWIGTYPE_p_digital_constellation_calcdist swig_types[56]
-#define SWIGTYPE_p_digital_constellation_cs_pilots swig_types[57]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t swig_types[12]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_psk_t swig_types[13]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_qpsk_t swig_types[14]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_receiver_cb_t swig_types[15]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_rect_t swig_types[16]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_constellation_t swig_types[17]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_correlate_access_code_bb_t swig_types[18]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_costas_loop_cc_t swig_types[19]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_cpmmod_bc_t swig_types[20]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t swig_types[21]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_mapper_bcv_t swig_types[22]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_fll_band_edge_cc_t swig_types[23]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_gmskmod_bc_t swig_types[24]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_kurtotic_equalizer_cc_t swig_types[25]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_lms_dd_equalizer_cc_t swig_types[26]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_receiver_cc_t swig_types[27]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_mpsk_snr_est_cc_t swig_types[28]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_cyclic_prefixer_t swig_types[29]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_acquisition_t swig_types[30]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_frame_sink_t swig_types[31]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_insert_preamble_t swig_types[32]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_mapper_bcv_t swig_types[33]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_ofdm_sampler_t swig_types[34]
+#define SWIGTYPE_p_boost__shared_ptrT_digital_probe_mpsk_snr_est_c_t swig_types[35]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[36]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[37]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[38]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[39]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[40]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[41]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[42]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[43]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[44]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[45]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[46]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[47]
+#define SWIGTYPE_p_char swig_types[48]
+#define SWIGTYPE_p_difference_type swig_types[49]
+#define SWIGTYPE_p_digital_binary_slicer_fb swig_types[50]
+#define SWIGTYPE_p_digital_clock_recovery_mm_cc swig_types[51]
+#define SWIGTYPE_p_digital_clock_recovery_mm_ff swig_types[52]
+#define SWIGTYPE_p_digital_cma_equalizer_cc swig_types[53]
+#define SWIGTYPE_p_digital_constellation swig_types[54]
+#define SWIGTYPE_p_digital_constellation_8psk swig_types[55]
+#define SWIGTYPE_p_digital_constellation_bpsk swig_types[56]
+#define SWIGTYPE_p_digital_constellation_calcdist swig_types[57]
 #define SWIGTYPE_p_digital_constellation_decoder_cb swig_types[58]
 #define SWIGTYPE_p_digital_constellation_dqpsk swig_types[59]
-#define SWIGTYPE_p_digital_constellation_dvbt_qpsk swig_types[60]
-#define SWIGTYPE_p_digital_constellation_psk swig_types[61]
-#define SWIGTYPE_p_digital_constellation_qpsk swig_types[62]
-#define SWIGTYPE_p_digital_constellation_receiver_cb swig_types[63]
-#define SWIGTYPE_p_digital_constellation_rect swig_types[64]
-#define SWIGTYPE_p_digital_constellation_sector swig_types[65]
-#define SWIGTYPE_p_digital_correlate_access_code_bb swig_types[66]
-#define SWIGTYPE_p_digital_costas_loop_cc swig_types[67]
-#define SWIGTYPE_p_digital_cpmmod_bc swig_types[68]
-#define SWIGTYPE_p_digital_dvbt_ofdm_frame_sink swig_types[69]
-#define SWIGTYPE_p_digital_dvbt_ofdm_mapper_bcv swig_types[70]
-#define SWIGTYPE_p_digital_fll_band_edge_cc swig_types[71]
-#define SWIGTYPE_p_digital_gmskmod_bc swig_types[72]
-#define SWIGTYPE_p_digital_kurtotic_equalizer_cc swig_types[73]
-#define SWIGTYPE_p_digital_lms_dd_equalizer_cc swig_types[74]
-#define SWIGTYPE_p_digital_mpsk_receiver_cc swig_types[75]
-#define SWIGTYPE_p_digital_mpsk_snr_est_cc swig_types[76]
-#define SWIGTYPE_p_digital_ofdm_cyclic_prefixer swig_types[77]
-#define SWIGTYPE_p_digital_ofdm_frame_acquisition swig_types[78]
-#define SWIGTYPE_p_digital_ofdm_frame_sink swig_types[79]
-#define SWIGTYPE_p_digital_ofdm_insert_preamble swig_types[80]
-#define SWIGTYPE_p_digital_ofdm_mapper_bcv swig_types[81]
-#define SWIGTYPE_p_digital_ofdm_sampler swig_types[82]
-#define SWIGTYPE_p_digital_probe_mpsk_snr_est_c swig_types[83]
-#define SWIGTYPE_p_gr_adaptive_fir_ccc swig_types[84]
-#define SWIGTYPE_p_gr_basic_block swig_types[85]
-#define SWIGTYPE_p_gr_block swig_types[86]
-#define SWIGTYPE_p_gr_hier_block2 swig_types[87]
-#define SWIGTYPE_p_gr_sync_block swig_types[88]
-#define SWIGTYPE_p_gr_sync_decimator swig_types[89]
-#define SWIGTYPE_p_gr_sync_interpolator swig_types[90]
-#define SWIGTYPE_p_gr_top_block swig_types[91]
-#define SWIGTYPE_p_gr_vector_const_void_star swig_types[92]
-#define SWIGTYPE_p_gr_vector_int swig_types[93]
-#define SWIGTYPE_p_gr_vector_void_star swig_types[94]
-#define SWIGTYPE_p_gri_control_loop swig_types[95]
-#define SWIGTYPE_p_gruel__rt_status_t swig_types[96]
-#define SWIGTYPE_p_long_long swig_types[97]
-#define SWIGTYPE_p_p_PyObject swig_types[98]
-#define SWIGTYPE_p_size_type swig_types[99]
-#define SWIGTYPE_p_std__allocatorT_std__complexT_float_t_t swig_types[100]
-#define SWIGTYPE_p_std__allocatorT_unsigned_int_t swig_types[101]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[102]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[103]
-#define SWIGTYPE_p_std__invalid_argument swig_types[104]
-#define SWIGTYPE_p_std__vectorT_std__complexT_float_t_std__allocatorT_std__complexT_float_t_t_t swig_types[105]
-#define SWIGTYPE_p_std__vectorT_unsigned_int_std__allocatorT_unsigned_int_t_t swig_types[106]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[107]
-#define SWIGTYPE_p_trellis_metric_type_t swig_types[108]
-#define SWIGTYPE_p_unsigned_long_long swig_types[109]
-#define SWIGTYPE_p_value_type swig_types[110]
-static swig_type_info *swig_types[112];
-static swig_module_info swig_module = {swig_types, 111, 0, 0, 0, 0};
+#define SWIGTYPE_p_digital_constellation_dvbt_cs_pilots swig_types[60]
+#define SWIGTYPE_p_digital_constellation_dvbt_qpsk swig_types[61]
+#define SWIGTYPE_p_digital_constellation_dvbt_tps_pilots swig_types[62]
+#define SWIGTYPE_p_digital_constellation_psk swig_types[63]
+#define SWIGTYPE_p_digital_constellation_qpsk swig_types[64]
+#define SWIGTYPE_p_digital_constellation_receiver_cb swig_types[65]
+#define SWIGTYPE_p_digital_constellation_rect swig_types[66]
+#define SWIGTYPE_p_digital_constellation_sector swig_types[67]
+#define SWIGTYPE_p_digital_correlate_access_code_bb swig_types[68]
+#define SWIGTYPE_p_digital_costas_loop_cc swig_types[69]
+#define SWIGTYPE_p_digital_cpmmod_bc swig_types[70]
+#define SWIGTYPE_p_digital_dvbt_ofdm_frame_sink swig_types[71]
+#define SWIGTYPE_p_digital_dvbt_ofdm_mapper_bcv swig_types[72]
+#define SWIGTYPE_p_digital_fll_band_edge_cc swig_types[73]
+#define SWIGTYPE_p_digital_gmskmod_bc swig_types[74]
+#define SWIGTYPE_p_digital_kurtotic_equalizer_cc swig_types[75]
+#define SWIGTYPE_p_digital_lms_dd_equalizer_cc swig_types[76]
+#define SWIGTYPE_p_digital_mpsk_receiver_cc swig_types[77]
+#define SWIGTYPE_p_digital_mpsk_snr_est_cc swig_types[78]
+#define SWIGTYPE_p_digital_ofdm_cyclic_prefixer swig_types[79]
+#define SWIGTYPE_p_digital_ofdm_frame_acquisition swig_types[80]
+#define SWIGTYPE_p_digital_ofdm_frame_sink swig_types[81]
+#define SWIGTYPE_p_digital_ofdm_insert_preamble swig_types[82]
+#define SWIGTYPE_p_digital_ofdm_mapper_bcv swig_types[83]
+#define SWIGTYPE_p_digital_ofdm_sampler swig_types[84]
+#define SWIGTYPE_p_digital_probe_mpsk_snr_est_c swig_types[85]
+#define SWIGTYPE_p_gr_adaptive_fir_ccc swig_types[86]
+#define SWIGTYPE_p_gr_basic_block swig_types[87]
+#define SWIGTYPE_p_gr_block swig_types[88]
+#define SWIGTYPE_p_gr_hier_block2 swig_types[89]
+#define SWIGTYPE_p_gr_sync_block swig_types[90]
+#define SWIGTYPE_p_gr_sync_decimator swig_types[91]
+#define SWIGTYPE_p_gr_sync_interpolator swig_types[92]
+#define SWIGTYPE_p_gr_top_block swig_types[93]
+#define SWIGTYPE_p_gr_vector_const_void_star swig_types[94]
+#define SWIGTYPE_p_gr_vector_int swig_types[95]
+#define SWIGTYPE_p_gr_vector_void_star swig_types[96]
+#define SWIGTYPE_p_gri_control_loop swig_types[97]
+#define SWIGTYPE_p_gruel__rt_status_t swig_types[98]
+#define SWIGTYPE_p_long_long swig_types[99]
+#define SWIGTYPE_p_p_PyObject swig_types[100]
+#define SWIGTYPE_p_size_type swig_types[101]
+#define SWIGTYPE_p_std__allocatorT_std__complexT_float_t_t swig_types[102]
+#define SWIGTYPE_p_std__allocatorT_unsigned_int_t swig_types[103]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[104]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[105]
+#define SWIGTYPE_p_std__invalid_argument swig_types[106]
+#define SWIGTYPE_p_std__vectorT_std__complexT_float_t_std__allocatorT_std__complexT_float_t_t_t swig_types[107]
+#define SWIGTYPE_p_std__vectorT_unsigned_int_std__allocatorT_unsigned_int_t_t swig_types[108]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[109]
+#define SWIGTYPE_p_trellis_metric_type_t swig_types[110]
+#define SWIGTYPE_p_unsigned_long_long swig_types[111]
+#define SWIGTYPE_p_value_type swig_types[112]
+static swig_type_info *swig_types[114];
+static swig_module_info swig_module = {swig_types, 113, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -22292,13 +22294,13 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_digital_constellation_cs_pilots_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_digital_constellation_dvbt_cs_pilots_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *result = 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *result = 0 ;
   
   {
     try {
-      result = (boost::shared_ptr< digital_constellation_cs_pilots > *)new boost::shared_ptr< digital_constellation_cs_pilots >();
+      result = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *)new boost::shared_ptr< digital_constellation_dvbt_cs_pilots >();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -22308,30 +22310,30 @@ SWIGINTERN PyObject *_wrap_new_digital_constellation_cs_pilots_sptr__SWIG_0(PyOb
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_digital_constellation_cs_pilots_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_digital_constellation_dvbt_cs_pilots_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  digital_constellation_cs_pilots *arg1 = (digital_constellation_cs_pilots *) 0 ;
+  digital_constellation_dvbt_cs_pilots *arg1 = (digital_constellation_dvbt_cs_pilots *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  boost::shared_ptr< digital_constellation_cs_pilots > *result = 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"new_digital_constellation_cs_pilots_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_digital_constellation_cs_pilots, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"new_digital_constellation_dvbt_cs_pilots_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_digital_constellation_dvbt_cs_pilots, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_digital_constellation_cs_pilots_sptr" "', argument " "1"" of type '" "digital_constellation_cs_pilots *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_digital_constellation_dvbt_cs_pilots_sptr" "', argument " "1"" of type '" "digital_constellation_dvbt_cs_pilots *""'"); 
   }
-  arg1 = reinterpret_cast< digital_constellation_cs_pilots * >(argp1);
+  arg1 = reinterpret_cast< digital_constellation_dvbt_cs_pilots * >(argp1);
   {
     try {
-      result = (boost::shared_ptr< digital_constellation_cs_pilots > *)new boost::shared_ptr< digital_constellation_cs_pilots >(arg1);
+      result = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *)new boost::shared_ptr< digital_constellation_dvbt_cs_pilots >(arg1);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -22341,14 +22343,14 @@ SWIGINTERN PyObject *_wrap_new_digital_constellation_cs_pilots_sptr__SWIG_1(PyOb
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_digital_constellation_cs_pilots_sptr(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_digital_constellation_dvbt_cs_pilots_sptr(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[2];
   int ii;
@@ -22359,44 +22361,44 @@ SWIGINTERN PyObject *_wrap_new_digital_constellation_cs_pilots_sptr(PyObject *se
     argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
   if (argc == 0) {
-    return _wrap_new_digital_constellation_cs_pilots_sptr__SWIG_0(self, args);
+    return _wrap_new_digital_constellation_dvbt_cs_pilots_sptr__SWIG_0(self, args);
   }
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_digital_constellation_cs_pilots, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_digital_constellation_dvbt_cs_pilots, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_new_digital_constellation_cs_pilots_sptr__SWIG_1(self, args);
+      return _wrap_new_digital_constellation_dvbt_cs_pilots_sptr__SWIG_1(self, args);
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_digital_constellation_cs_pilots_sptr'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_digital_constellation_dvbt_cs_pilots_sptr'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    boost::shared_ptr< digital_constellation_cs_pilots >::shared_ptr()\n"
-    "    boost::shared_ptr< digital_constellation_cs_pilots >::shared_ptr(digital_constellation_cs_pilots *)\n");
+    "    boost::shared_ptr< digital_constellation_dvbt_cs_pilots >::shared_ptr()\n"
+    "    boost::shared_ptr< digital_constellation_dvbt_cs_pilots >::shared_ptr(digital_constellation_dvbt_cs_pilots *)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  digital_constellation_cs_pilots *result = 0 ;
+  digital_constellation_dvbt_cs_pilots *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr___deref__",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
-      result = (digital_constellation_cs_pilots *)(arg1)->operator ->();
+      result = (digital_constellation_dvbt_cs_pilots *)(arg1)->operator ->();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -22406,26 +22408,26 @@ SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr___deref__(PyObje
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_digital_constellation_cs_pilots, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_digital_constellation_dvbt_cs_pilots, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_digital_constellation_cs_pilots_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_delete_digital_constellation_dvbt_cs_pilots_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"delete_digital_constellation_cs_pilots_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, SWIG_POINTER_DISOWN |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"delete_digital_constellation_dvbt_cs_pilots_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_digital_constellation_cs_pilots_sptr" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_digital_constellation_dvbt_cs_pilots_sptr" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       delete arg1;
@@ -22445,20 +22447,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< gr_complex,std::allocator< gr_complex > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_points",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_points",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (*arg1)->points();
@@ -22478,20 +22480,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_s_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_s_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< gr_complex,std::allocator< gr_complex > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_s_points",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_s_points",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_s_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_s_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (*arg1)->s_points();
@@ -22511,20 +22513,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_v_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_v_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< std::vector< gr_complex,std::allocator< gr_complex > >,std::allocator< std::vector< gr_complex,std::allocator< gr_complex > > > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_v_points",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_v_points",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_v_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_v_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (*arg1)->v_points();
@@ -22544,9 +22546,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_decision_maker(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_decision_maker(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   gr_complex *arg2 = (gr_complex *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -22559,15 +22561,15 @@ SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_decision_maker(P
   };
   unsigned int result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_cs_pilots_sptr_decision_maker",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_cs_pilots_sptr_decision_maker",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_decision_maker" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_decision_maker" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__complexT_float_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "digital_constellation_cs_pilots_sptr_decision_maker" "', argument " "2"" of type '" "gr_complex *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_decision_maker" "', argument " "2"" of type '" "gr_complex *""'"); 
   }
   arg2 = reinterpret_cast< gr_complex * >(argp2);
   {
@@ -22589,9 +22591,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_decision_maker_v(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_decision_maker_v(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   std::vector< gr_complex,std::allocator< gr_complex > > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -22602,17 +22604,17 @@ SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_decision_maker_v
   };
   unsigned int result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_cs_pilots_sptr_decision_maker_v",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_cs_pilots_sptr_decision_maker_v",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_decision_maker_v" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_decision_maker_v" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
     int res = swig::asptr(obj1, &ptr);
     if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "digital_constellation_cs_pilots_sptr_decision_maker_v" "', argument " "2"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > >""'"); 
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_decision_maker_v" "', argument " "2"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > >""'"); 
     }
     arg2 = *ptr;
     if (SWIG_IsNewObj(res)) delete ptr;
@@ -22636,9 +22638,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_map_to_points_v(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_map_to_points_v(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   unsigned int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -22651,15 +22653,15 @@ SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_map_to_points_v(
   };
   std::vector< gr_complex,std::allocator< gr_complex > > result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_cs_pilots_sptr_map_to_points_v",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_cs_pilots_sptr_map_to_points_v",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_map_to_points_v" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_map_to_points_v" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_constellation_cs_pilots_sptr_map_to_points_v" "', argument " "2"" of type '" "unsigned int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_map_to_points_v" "', argument " "2"" of type '" "unsigned int""'");
   } 
   arg2 = static_cast< unsigned int >(val2);
   {
@@ -22681,20 +22683,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_bits_per_symbol(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_bits_per_symbol(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_bits_per_symbol",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_bits_per_symbol",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_bits_per_symbol" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_bits_per_symbol" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (unsigned int)(*arg1)->bits_per_symbol();
@@ -22714,20 +22716,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_arity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_arity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_arity",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_arity",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_arity" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_arity" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (unsigned int)(*arg1)->arity();
@@ -22747,20 +22749,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_base(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_base(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   digital_constellation_sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_base",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_base",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_base" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_base" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (*arg1)->base();
@@ -22780,20 +22782,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_apply_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_apply_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   bool result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_apply_pre_diff_code",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_apply_pre_diff_code",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_apply_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_apply_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (bool)(*arg1)->apply_pre_diff_code();
@@ -22813,9 +22815,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_set_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_set_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   bool arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -22827,15 +22829,15 @@ SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_set_pre_diff_cod
     (char *) "self",(char *) "a", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_cs_pilots_sptr_set_pre_diff_code",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_cs_pilots_sptr_set_pre_diff_code",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_set_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_set_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   ecode2 = SWIG_AsVal_bool(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_constellation_cs_pilots_sptr_set_pre_diff_code" "', argument " "2"" of type '" "bool""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_set_pre_diff_code" "', argument " "2"" of type '" "bool""'");
   } 
   arg2 = static_cast< bool >(val2);
   {
@@ -22857,20 +22859,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< unsigned int,std::allocator< unsigned int > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_pre_diff_code",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_pre_diff_code",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (*arg1)->pre_diff_code();
@@ -22890,20 +22892,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_rotational_symmetry(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_rotational_symmetry(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_rotational_symmetry",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_rotational_symmetry",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_rotational_symmetry" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_rotational_symmetry" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (unsigned int)(*arg1)->rotational_symmetry();
@@ -22923,20 +22925,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_digital_constellation_cs_pilots_sptr_dimensionality(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_cs_pilots_sptr_dimensionality(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< digital_constellation_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_cs_pilots > *) 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_cs_pilots_sptr_dimensionality",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_cs_pilots_sptr_dimensionality",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_cs_pilots_sptr_dimensionality" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_cs_pilots > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_cs_pilots_sptr_dimensionality" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_cs_pilots > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_cs_pilots > * >(argp1);
   {
     try {
       result = (unsigned int)(*arg1)->dimensionality();
@@ -22956,20 +22958,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *digital_constellation_cs_pilots_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *digital_constellation_dvbt_cs_pilots_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_constellation_cs_pilots(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_constellation_dvbt_cs_pilots(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  digital_constellation_cs_pilots_sptr result;
+  digital_constellation_dvbt_cs_pilots_sptr result;
   
   {
     try {
-      result = digital_make_constellation_cs_pilots();
+      result = digital_make_constellation_dvbt_cs_pilots();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -22979,7 +22981,701 @@ SWIGINTERN PyObject *_wrap_constellation_cs_pilots(PyObject *SWIGUNUSEDPARM(self
     }
     
   }
-  resultobj = SWIG_NewPointerObj((new digital_constellation_cs_pilots_sptr(static_cast< const digital_constellation_cs_pilots_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_cs_pilots_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_NewPointerObj((new digital_constellation_dvbt_cs_pilots_sptr(static_cast< const digital_constellation_dvbt_cs_pilots_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_constellation_dvbt_tps_pilots_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *result = 0 ;
+  
+  {
+    try {
+      result = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *)new boost::shared_ptr< digital_constellation_dvbt_tps_pilots >();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_constellation_dvbt_tps_pilots_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  digital_constellation_dvbt_tps_pilots *arg1 = (digital_constellation_dvbt_tps_pilots *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"new_digital_constellation_dvbt_tps_pilots_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_digital_constellation_dvbt_tps_pilots, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_digital_constellation_dvbt_tps_pilots_sptr" "', argument " "1"" of type '" "digital_constellation_dvbt_tps_pilots *""'"); 
+  }
+  arg1 = reinterpret_cast< digital_constellation_dvbt_tps_pilots * >(argp1);
+  {
+    try {
+      result = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *)new boost::shared_ptr< digital_constellation_dvbt_tps_pilots >(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_digital_constellation_dvbt_tps_pilots_sptr(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_digital_constellation_dvbt_tps_pilots_sptr__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_digital_constellation_dvbt_tps_pilots, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_digital_constellation_dvbt_tps_pilots_sptr__SWIG_1(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_digital_constellation_dvbt_tps_pilots_sptr'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    boost::shared_ptr< digital_constellation_dvbt_tps_pilots >::shared_ptr()\n"
+    "    boost::shared_ptr< digital_constellation_dvbt_tps_pilots >::shared_ptr(digital_constellation_dvbt_tps_pilots *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  digital_constellation_dvbt_tps_pilots *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (digital_constellation_dvbt_tps_pilots *)(arg1)->operator ->();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_digital_constellation_dvbt_tps_pilots, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_digital_constellation_dvbt_tps_pilots_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_digital_constellation_dvbt_tps_pilots_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_digital_constellation_dvbt_tps_pilots_sptr" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< gr_complex,std::allocator< gr_complex > > result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_points",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (*arg1)->points();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector<std::complex< float >,std::allocator< std::complex< float > > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_s_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< gr_complex,std::allocator< gr_complex > > result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_s_points",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_s_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (*arg1)->s_points();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector<std::complex< float >,std::allocator< std::complex< float > > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_v_points(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< std::vector< gr_complex,std::allocator< gr_complex > >,std::allocator< std::vector< gr_complex,std::allocator< gr_complex > > > > result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_v_points",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_v_points" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (*arg1)->v_points();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector<std::vector< std::complex< float >,std::allocator< std::complex< float > > >,std::allocator< std::vector< std::complex< float >,std::allocator< std::complex< float > > > > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_decision_maker(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  gr_complex *arg2 = (gr_complex *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "sample", NULL 
+  };
+  unsigned int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_tps_pilots_sptr_decision_maker",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_decision_maker" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__complexT_float_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_decision_maker" "', argument " "2"" of type '" "gr_complex *""'"); 
+  }
+  arg2 = reinterpret_cast< gr_complex * >(argp2);
+  {
+    try {
+      result = (unsigned int)(*arg1)->decision_maker(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_decision_maker_v(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  std::vector< gr_complex,std::allocator< gr_complex > > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "sample", NULL 
+  };
+  unsigned int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_tps_pilots_sptr_decision_maker_v",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_decision_maker_v" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
+    int res = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_decision_maker_v" "', argument " "2"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > >""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  {
+    try {
+      result = (unsigned int)(*arg1)->decision_maker_v(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_map_to_points_v(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "value", NULL 
+  };
+  std::vector< gr_complex,std::allocator< gr_complex > > result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_tps_pilots_sptr_map_to_points_v",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_map_to_points_v" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_map_to_points_v" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (*arg1)->map_to_points_v(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector<std::complex< float >,std::allocator< std::complex< float > > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_bits_per_symbol(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_bits_per_symbol",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_bits_per_symbol" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->bits_per_symbol();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_arity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_arity",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_arity" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->arity();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_base(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  digital_constellation_sptr result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_base",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_base" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (*arg1)->base();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new digital_constellation_sptr(static_cast< const digital_constellation_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_apply_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_apply_pre_diff_code",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_apply_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->apply_pre_diff_code();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_set_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  bool arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  bool val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "a", NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:digital_constellation_dvbt_tps_pilots_sptr_set_pre_diff_code",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_set_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_set_pre_diff_code" "', argument " "2"" of type '" "bool""'");
+  } 
+  arg2 = static_cast< bool >(val2);
+  {
+    try {
+      (*arg1)->set_pre_diff_code(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_pre_diff_code(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< unsigned int,std::allocator< unsigned int > > result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_pre_diff_code",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_pre_diff_code" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pre_diff_code();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector<unsigned int,std::allocator< unsigned int > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_rotational_symmetry(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_rotational_symmetry",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_rotational_symmetry" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->rotational_symmetry();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_digital_constellation_dvbt_tps_pilots_sptr_dimensionality(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *arg1 = (boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"digital_constellation_dvbt_tps_pilots_sptr_dimensionality",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "digital_constellation_dvbt_tps_pilots_sptr_dimensionality" "', argument " "1"" of type '" "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< digital_constellation_dvbt_tps_pilots > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->dimensionality();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *digital_constellation_dvbt_tps_pilots_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_constellation_dvbt_tps_pilots(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  digital_constellation_dvbt_tps_pilots_sptr result;
+  
+  {
+    try {
+      result = digital_make_constellation_dvbt_tps_pilots();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new digital_constellation_dvbt_tps_pilots_sptr(static_cast< const digital_constellation_dvbt_tps_pilots_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -45038,107 +45734,211 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"new_digital_constellation_cs_pilots_sptr", _wrap_new_digital_constellation_cs_pilots_sptr, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr()\n"
-		"new_digital_constellation_cs_pilots_sptr( p) -> digital_constellation_cs_pilots_sptr\n"
+	 { (char *)"new_digital_constellation_dvbt_cs_pilots_sptr", _wrap_new_digital_constellation_dvbt_cs_pilots_sptr, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr()\n"
+		"new_digital_constellation_dvbt_cs_pilots_sptr( p) -> digital_constellation_dvbt_cs_pilots_sptr\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr___deref__", _wrap_digital_constellation_cs_pilots_sptr___deref__, METH_VARARGS, (char *)"digital_constellation_cs_pilots_sptr___deref__(digital_constellation_cs_pilots_sptr self)"},
-	 { (char *)"delete_digital_constellation_cs_pilots_sptr", _wrap_delete_digital_constellation_cs_pilots_sptr, METH_VARARGS, (char *)"delete_digital_constellation_cs_pilots_sptr(digital_constellation_cs_pilots_sptr self)"},
-	 { (char *)"digital_constellation_cs_pilots_sptr_points", _wrap_digital_constellation_cs_pilots_sptr_points, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_points(digital_constellation_cs_pilots_sptr self) -> gr_complex_vector\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr___deref__", _wrap_digital_constellation_dvbt_cs_pilots_sptr___deref__, METH_VARARGS, (char *)"digital_constellation_dvbt_cs_pilots_sptr___deref__(digital_constellation_dvbt_cs_pilots_sptr self)"},
+	 { (char *)"delete_digital_constellation_dvbt_cs_pilots_sptr", _wrap_delete_digital_constellation_dvbt_cs_pilots_sptr, METH_VARARGS, (char *)"delete_digital_constellation_dvbt_cs_pilots_sptr(digital_constellation_dvbt_cs_pilots_sptr self)"},
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_points", _wrap_digital_constellation_dvbt_cs_pilots_sptr_points, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_points(digital_constellation_dvbt_cs_pilots_sptr self) -> gr_complex_vector\n"
 		"\n"
 		"Returns the set of points in this constellation.\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_s_points", _wrap_digital_constellation_cs_pilots_sptr_s_points, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_s_points(digital_constellation_cs_pilots_sptr self) -> gr_complex_vector\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_s_points", _wrap_digital_constellation_dvbt_cs_pilots_sptr_s_points, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_s_points(digital_constellation_dvbt_cs_pilots_sptr self) -> gr_complex_vector\n"
 		"\n"
 		"Returns the vector of points in this constellation. Raise error if dimensionality is not one.\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_v_points", _wrap_digital_constellation_cs_pilots_sptr_v_points, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_v_points(digital_constellation_cs_pilots_sptr self) -> std::vector<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>,std::allocator<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>)>)>\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_v_points", _wrap_digital_constellation_dvbt_cs_pilots_sptr_v_points, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_v_points(digital_constellation_dvbt_cs_pilots_sptr self) -> std::vector<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>,std::allocator<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>)>)>\n"
 		"\n"
 		"Returns a vector of vectors of points.\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_decision_maker", (PyCFunction) _wrap_digital_constellation_cs_pilots_sptr_decision_maker, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_decision_maker(digital_constellation_cs_pilots_sptr self, gr_complex sample) -> unsigned int\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_decision_maker", (PyCFunction) _wrap_digital_constellation_dvbt_cs_pilots_sptr_decision_maker, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_decision_maker(digital_constellation_dvbt_cs_pilots_sptr self, gr_complex sample) -> unsigned int\n"
 		"\n"
 		"Returns the constellation point that matches best.\n"
 		"\n"
 		"Params: (sample)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_decision_maker_v", (PyCFunction) _wrap_digital_constellation_cs_pilots_sptr_decision_maker_v, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_decision_maker_v(digital_constellation_cs_pilots_sptr self, gr_complex_vector sample) -> unsigned int\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_decision_maker_v", (PyCFunction) _wrap_digital_constellation_dvbt_cs_pilots_sptr_decision_maker_v, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_decision_maker_v(digital_constellation_dvbt_cs_pilots_sptr self, gr_complex_vector sample) -> unsigned int\n"
 		"\n"
 		"Takes a vector rather than a pointer. Better for SWIG wrapping.\n"
 		"\n"
 		"Params: (sample)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_map_to_points_v", (PyCFunction) _wrap_digital_constellation_cs_pilots_sptr_map_to_points_v, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_map_to_points_v(digital_constellation_cs_pilots_sptr self, unsigned int value) -> gr_complex_vector\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_map_to_points_v", (PyCFunction) _wrap_digital_constellation_dvbt_cs_pilots_sptr_map_to_points_v, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_map_to_points_v(digital_constellation_dvbt_cs_pilots_sptr self, unsigned int value) -> gr_complex_vector\n"
 		"\n"
 		"Params: (value)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_bits_per_symbol", _wrap_digital_constellation_cs_pilots_sptr_bits_per_symbol, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_bits_per_symbol(digital_constellation_cs_pilots_sptr self) -> unsigned int\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_bits_per_symbol", _wrap_digital_constellation_dvbt_cs_pilots_sptr_bits_per_symbol, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_bits_per_symbol(digital_constellation_dvbt_cs_pilots_sptr self) -> unsigned int\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_arity", _wrap_digital_constellation_cs_pilots_sptr_arity, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_arity(digital_constellation_cs_pilots_sptr self) -> unsigned int\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_arity", _wrap_digital_constellation_dvbt_cs_pilots_sptr_arity, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_arity(digital_constellation_dvbt_cs_pilots_sptr self) -> unsigned int\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_base", _wrap_digital_constellation_cs_pilots_sptr_base, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_base(digital_constellation_cs_pilots_sptr self) -> digital_constellation_sptr\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_base", _wrap_digital_constellation_dvbt_cs_pilots_sptr_base, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_base(digital_constellation_dvbt_cs_pilots_sptr self) -> digital_constellation_sptr\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_apply_pre_diff_code", _wrap_digital_constellation_cs_pilots_sptr_apply_pre_diff_code, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_apply_pre_diff_code(digital_constellation_cs_pilots_sptr self) -> bool\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_apply_pre_diff_code", _wrap_digital_constellation_dvbt_cs_pilots_sptr_apply_pre_diff_code, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_apply_pre_diff_code(digital_constellation_dvbt_cs_pilots_sptr self) -> bool\n"
 		"\n"
 		"Whether to apply an encoding before doing differential encoding. (e.g. gray coding)\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_set_pre_diff_code", (PyCFunction) _wrap_digital_constellation_cs_pilots_sptr_set_pre_diff_code, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_set_pre_diff_code(digital_constellation_cs_pilots_sptr self, bool a)\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_set_pre_diff_code", (PyCFunction) _wrap_digital_constellation_dvbt_cs_pilots_sptr_set_pre_diff_code, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_set_pre_diff_code(digital_constellation_dvbt_cs_pilots_sptr self, bool a)\n"
 		"\n"
 		"Whether to apply an encoding before doing differential encoding. (e.g. gray coding)\n"
 		"\n"
 		"Params: (a)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_pre_diff_code", _wrap_digital_constellation_cs_pilots_sptr_pre_diff_code, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_pre_diff_code(digital_constellation_cs_pilots_sptr self) -> unsigned_int_vector\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_pre_diff_code", _wrap_digital_constellation_dvbt_cs_pilots_sptr_pre_diff_code, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_pre_diff_code(digital_constellation_dvbt_cs_pilots_sptr self) -> unsigned_int_vector\n"
 		"\n"
 		"Returns the encoding to apply before differential encoding.\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_rotational_symmetry", _wrap_digital_constellation_cs_pilots_sptr_rotational_symmetry, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_rotational_symmetry(digital_constellation_cs_pilots_sptr self) -> unsigned int\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_rotational_symmetry", _wrap_digital_constellation_dvbt_cs_pilots_sptr_rotational_symmetry, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_rotational_symmetry(digital_constellation_dvbt_cs_pilots_sptr self) -> unsigned int\n"
 		"\n"
 		"Returns the order of rotational symmetry.\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_dimensionality", _wrap_digital_constellation_cs_pilots_sptr_dimensionality, METH_VARARGS, (char *)"\n"
-		"digital_constellation_cs_pilots_sptr_dimensionality(digital_constellation_cs_pilots_sptr self) -> unsigned int\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_dimensionality", _wrap_digital_constellation_dvbt_cs_pilots_sptr_dimensionality, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_cs_pilots_sptr_dimensionality(digital_constellation_dvbt_cs_pilots_sptr self) -> unsigned int\n"
 		"\n"
 		"Returns the number of complex numbers in a single symbol.\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
-	 { (char *)"digital_constellation_cs_pilots_sptr_swigregister", digital_constellation_cs_pilots_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"constellation_cs_pilots", _wrap_constellation_cs_pilots, METH_VARARGS, (char *)"\n"
-		"constellation_cs_pilots() -> digital_constellation_cs_pilots_sptr\n"
+	 { (char *)"digital_constellation_dvbt_cs_pilots_sptr_swigregister", digital_constellation_dvbt_cs_pilots_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"constellation_dvbt_cs_pilots", _wrap_constellation_dvbt_cs_pilots, METH_VARARGS, (char *)"\n"
+		"constellation_dvbt_cs_pilots() -> digital_constellation_dvbt_cs_pilots_sptr\n"
 		"\n"
 		"Digital constellation for scattered and continual pilot signals(BPSK).\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"new_digital_constellation_dvbt_tps_pilots_sptr", _wrap_new_digital_constellation_dvbt_tps_pilots_sptr, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr()\n"
+		"new_digital_constellation_dvbt_tps_pilots_sptr( p) -> digital_constellation_dvbt_tps_pilots_sptr\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr___deref__", _wrap_digital_constellation_dvbt_tps_pilots_sptr___deref__, METH_VARARGS, (char *)"digital_constellation_dvbt_tps_pilots_sptr___deref__(digital_constellation_dvbt_tps_pilots_sptr self)"},
+	 { (char *)"delete_digital_constellation_dvbt_tps_pilots_sptr", _wrap_delete_digital_constellation_dvbt_tps_pilots_sptr, METH_VARARGS, (char *)"delete_digital_constellation_dvbt_tps_pilots_sptr(digital_constellation_dvbt_tps_pilots_sptr self)"},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_points", _wrap_digital_constellation_dvbt_tps_pilots_sptr_points, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_points(digital_constellation_dvbt_tps_pilots_sptr self) -> gr_complex_vector\n"
+		"\n"
+		"Returns the set of points in this constellation.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_s_points", _wrap_digital_constellation_dvbt_tps_pilots_sptr_s_points, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_s_points(digital_constellation_dvbt_tps_pilots_sptr self) -> gr_complex_vector\n"
+		"\n"
+		"Returns the vector of points in this constellation. Raise error if dimensionality is not one.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_v_points", _wrap_digital_constellation_dvbt_tps_pilots_sptr_v_points, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_v_points(digital_constellation_dvbt_tps_pilots_sptr self) -> std::vector<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>,std::allocator<(std::vector<(gr_complex,std::allocator<(gr_complex)>)>)>)>\n"
+		"\n"
+		"Returns a vector of vectors of points.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_decision_maker", (PyCFunction) _wrap_digital_constellation_dvbt_tps_pilots_sptr_decision_maker, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_decision_maker(digital_constellation_dvbt_tps_pilots_sptr self, gr_complex sample) -> unsigned int\n"
+		"\n"
+		"Returns the constellation point that matches best.\n"
+		"\n"
+		"Params: (sample)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_decision_maker_v", (PyCFunction) _wrap_digital_constellation_dvbt_tps_pilots_sptr_decision_maker_v, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_decision_maker_v(digital_constellation_dvbt_tps_pilots_sptr self, gr_complex_vector sample) -> unsigned int\n"
+		"\n"
+		"Takes a vector rather than a pointer. Better for SWIG wrapping.\n"
+		"\n"
+		"Params: (sample)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_map_to_points_v", (PyCFunction) _wrap_digital_constellation_dvbt_tps_pilots_sptr_map_to_points_v, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_map_to_points_v(digital_constellation_dvbt_tps_pilots_sptr self, unsigned int value) -> gr_complex_vector\n"
+		"\n"
+		"Params: (value)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_bits_per_symbol", _wrap_digital_constellation_dvbt_tps_pilots_sptr_bits_per_symbol, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_bits_per_symbol(digital_constellation_dvbt_tps_pilots_sptr self) -> unsigned int\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_arity", _wrap_digital_constellation_dvbt_tps_pilots_sptr_arity, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_arity(digital_constellation_dvbt_tps_pilots_sptr self) -> unsigned int\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_base", _wrap_digital_constellation_dvbt_tps_pilots_sptr_base, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_base(digital_constellation_dvbt_tps_pilots_sptr self) -> digital_constellation_sptr\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_apply_pre_diff_code", _wrap_digital_constellation_dvbt_tps_pilots_sptr_apply_pre_diff_code, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_apply_pre_diff_code(digital_constellation_dvbt_tps_pilots_sptr self) -> bool\n"
+		"\n"
+		"Whether to apply an encoding before doing differential encoding. (e.g. gray coding)\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_set_pre_diff_code", (PyCFunction) _wrap_digital_constellation_dvbt_tps_pilots_sptr_set_pre_diff_code, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_set_pre_diff_code(digital_constellation_dvbt_tps_pilots_sptr self, bool a)\n"
+		"\n"
+		"Whether to apply an encoding before doing differential encoding. (e.g. gray coding)\n"
+		"\n"
+		"Params: (a)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_pre_diff_code", _wrap_digital_constellation_dvbt_tps_pilots_sptr_pre_diff_code, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_pre_diff_code(digital_constellation_dvbt_tps_pilots_sptr self) -> unsigned_int_vector\n"
+		"\n"
+		"Returns the encoding to apply before differential encoding.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_rotational_symmetry", _wrap_digital_constellation_dvbt_tps_pilots_sptr_rotational_symmetry, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_rotational_symmetry(digital_constellation_dvbt_tps_pilots_sptr self) -> unsigned int\n"
+		"\n"
+		"Returns the order of rotational symmetry.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_dimensionality", _wrap_digital_constellation_dvbt_tps_pilots_sptr_dimensionality, METH_VARARGS, (char *)"\n"
+		"digital_constellation_dvbt_tps_pilots_sptr_dimensionality(digital_constellation_dvbt_tps_pilots_sptr self) -> unsigned int\n"
+		"\n"
+		"Returns the number of complex numbers in a single symbol.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
+	 { (char *)"digital_constellation_dvbt_tps_pilots_sptr_swigregister", digital_constellation_dvbt_tps_pilots_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"constellation_dvbt_tps_pilots", _wrap_constellation_dvbt_tps_pilots, METH_VARARGS, (char *)"\n"
+		"constellation_dvbt_tps_pilots() -> digital_constellation_dvbt_tps_pilots_sptr\n"
+		"\n"
+		"Digital constellation for DVBT's TPS pilot signals(DBPSK)\n"
 		"\n"
 		"Params: (NONE)\n"
 		""},
@@ -46563,8 +47363,11 @@ static void *_p_digital_constellation_dvbt_qpskTo_p_digital_constellation(void *
 static void *_p_digital_constellation_qpskTo_p_digital_constellation(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((digital_constellation *)  ((digital_constellation_qpsk *) x));
 }
-static void *_p_digital_constellation_cs_pilotsTo_p_digital_constellation(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((digital_constellation *)  ((digital_constellation_cs_pilots *) x));
+static void *_p_digital_constellation_dvbt_cs_pilotsTo_p_digital_constellation(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((digital_constellation *)  ((digital_constellation_dvbt_cs_pilots *) x));
+}
+static void *_p_digital_constellation_dvbt_tps_pilotsTo_p_digital_constellation(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((digital_constellation *)  ((digital_constellation_dvbt_tps_pilots *) x));
 }
 static void *_p_digital_constellation_calcdistTo_p_digital_constellation(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((digital_constellation *)  ((digital_constellation_calcdist *) x));
@@ -46592,10 +47395,11 @@ static swig_type_info _swigt__p_boost__shared_ptrT_digital_cma_equalizer_cc_t = 
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_8psk_t = {"_p_boost__shared_ptrT_digital_constellation_8psk_t", "boost::shared_ptr< digital_constellation_8psk > *|digital_constellation_8psk_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_bpsk_t = {"_p_boost__shared_ptrT_digital_constellation_bpsk_t", "boost::shared_ptr< digital_constellation_bpsk > *|digital_constellation_bpsk_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_calcdist_t = {"_p_boost__shared_ptrT_digital_constellation_calcdist_t", "boost::shared_ptr< digital_constellation_calcdist > *|digital_constellation_calcdist_sptr *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_cs_pilots_t = {"_p_boost__shared_ptrT_digital_constellation_cs_pilots_t", "boost::shared_ptr< digital_constellation_cs_pilots > *|digital_constellation_cs_pilots_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_decoder_cb_t = {"_p_boost__shared_ptrT_digital_constellation_decoder_cb_t", "boost::shared_ptr< digital_constellation_decoder_cb > *|digital_constellation_decoder_cb_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_dqpsk_t = {"_p_boost__shared_ptrT_digital_constellation_dqpsk_t", "boost::shared_ptr< digital_constellation_dqpsk > *|digital_constellation_dqpsk_sptr *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t = {"_p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t", "boost::shared_ptr< digital_constellation_dvbt_cs_pilots > *|digital_constellation_dvbt_cs_pilots_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t = {"_p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t", "boost::shared_ptr< digital_constellation_dvbt_qpsk > *|digital_constellation_dvbt_qpsk_sptr *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t = {"_p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t", "boost::shared_ptr< digital_constellation_dvbt_tps_pilots > *|digital_constellation_dvbt_tps_pilots_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_psk_t = {"_p_boost__shared_ptrT_digital_constellation_psk_t", "boost::shared_ptr< digital_constellation_psk > *|digital_constellation_psk_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_qpsk_t = {"_p_boost__shared_ptrT_digital_constellation_qpsk_t", "boost::shared_ptr< digital_constellation_qpsk > *|digital_constellation_qpsk_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_digital_constellation_receiver_cb_t = {"_p_boost__shared_ptrT_digital_constellation_receiver_cb_t", "boost::shared_ptr< digital_constellation_receiver_cb > *|digital_constellation_receiver_cb_sptr *", 0, 0, (void*)0, 0};
@@ -46641,10 +47445,11 @@ static swig_type_info _swigt__p_digital_constellation = {"_p_digital_constellati
 static swig_type_info _swigt__p_digital_constellation_8psk = {"_p_digital_constellation_8psk", "digital_constellation_8psk *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_bpsk = {"_p_digital_constellation_bpsk", "digital_constellation_bpsk *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_calcdist = {"_p_digital_constellation_calcdist", "digital_constellation_calcdist *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_digital_constellation_cs_pilots = {"_p_digital_constellation_cs_pilots", "digital_constellation_cs_pilots *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_decoder_cb = {"_p_digital_constellation_decoder_cb", "digital_constellation_decoder_cb *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_dqpsk = {"_p_digital_constellation_dqpsk", "digital_constellation_dqpsk *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_digital_constellation_dvbt_cs_pilots = {"_p_digital_constellation_dvbt_cs_pilots", "digital_constellation_dvbt_cs_pilots *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_dvbt_qpsk = {"_p_digital_constellation_dvbt_qpsk", "digital_constellation_dvbt_qpsk *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_digital_constellation_dvbt_tps_pilots = {"_p_digital_constellation_dvbt_tps_pilots", "digital_constellation_dvbt_tps_pilots *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_psk = {"_p_digital_constellation_psk", "digital_constellation_psk *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_qpsk = {"_p_digital_constellation_qpsk", "digital_constellation_qpsk *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_digital_constellation_receiver_cb = {"_p_digital_constellation_receiver_cb", "digital_constellation_receiver_cb *", 0, 0, (void*)0, 0};
@@ -46705,10 +47510,11 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_digital_constellation_8psk_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_bpsk_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_calcdist_t,
-  &_swigt__p_boost__shared_ptrT_digital_constellation_cs_pilots_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_decoder_cb_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_dqpsk_t,
+  &_swigt__p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t,
+  &_swigt__p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_psk_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_qpsk_t,
   &_swigt__p_boost__shared_ptrT_digital_constellation_receiver_cb_t,
@@ -46754,10 +47560,11 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_digital_constellation_8psk,
   &_swigt__p_digital_constellation_bpsk,
   &_swigt__p_digital_constellation_calcdist,
-  &_swigt__p_digital_constellation_cs_pilots,
   &_swigt__p_digital_constellation_decoder_cb,
   &_swigt__p_digital_constellation_dqpsk,
+  &_swigt__p_digital_constellation_dvbt_cs_pilots,
   &_swigt__p_digital_constellation_dvbt_qpsk,
+  &_swigt__p_digital_constellation_dvbt_tps_pilots,
   &_swigt__p_digital_constellation_psk,
   &_swigt__p_digital_constellation_qpsk,
   &_swigt__p_digital_constellation_receiver_cb,
@@ -46818,10 +47625,11 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_digital_cma_equalizer_cc_t[] 
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_8psk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_8psk_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_bpsk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_bpsk_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_calcdist_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_calcdist_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_cs_pilots_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_cs_pilots_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_decoder_cb_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_decoder_cb_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_dqpsk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_dqpsk_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_psk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_psk_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_qpsk_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_qpsk_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_digital_constellation_receiver_cb_t[] = {  {&_swigt__p_boost__shared_ptrT_digital_constellation_receiver_cb_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -46863,14 +47671,15 @@ static swig_cast_info _swigc__p_digital_binary_slicer_fb[] = {  {&_swigt__p_digi
 static swig_cast_info _swigc__p_digital_clock_recovery_mm_cc[] = {  {&_swigt__p_digital_clock_recovery_mm_cc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_clock_recovery_mm_ff[] = {  {&_swigt__p_digital_clock_recovery_mm_ff, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_cma_equalizer_cc[] = {  {&_swigt__p_digital_cma_equalizer_cc, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_digital_constellation[] = {  {&_swigt__p_digital_constellation_sector, _p_digital_constellation_sectorTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_dqpsk, _p_digital_constellation_dqpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_bpsk, _p_digital_constellation_bpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_8psk, _p_digital_constellation_8pskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_dvbt_qpsk, _p_digital_constellation_dvbt_qpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_qpsk, _p_digital_constellation_qpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_cs_pilots, _p_digital_constellation_cs_pilotsTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_rect, _p_digital_constellation_rectTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_calcdist, _p_digital_constellation_calcdistTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation, 0, 0, 0},  {&_swigt__p_digital_constellation_psk, _p_digital_constellation_pskTo_p_digital_constellation, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_digital_constellation[] = {  {&_swigt__p_digital_constellation_sector, _p_digital_constellation_sectorTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_dqpsk, _p_digital_constellation_dqpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_bpsk, _p_digital_constellation_bpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_8psk, _p_digital_constellation_8pskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_dvbt_qpsk, _p_digital_constellation_dvbt_qpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_qpsk, _p_digital_constellation_qpskTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_dvbt_cs_pilots, _p_digital_constellation_dvbt_cs_pilotsTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_dvbt_tps_pilots, _p_digital_constellation_dvbt_tps_pilotsTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_rect, _p_digital_constellation_rectTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation_calcdist, _p_digital_constellation_calcdistTo_p_digital_constellation, 0, 0},  {&_swigt__p_digital_constellation, 0, 0, 0},  {&_swigt__p_digital_constellation_psk, _p_digital_constellation_pskTo_p_digital_constellation, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_8psk[] = {  {&_swigt__p_digital_constellation_8psk, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_bpsk[] = {  {&_swigt__p_digital_constellation_bpsk, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_calcdist[] = {  {&_swigt__p_digital_constellation_calcdist, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_digital_constellation_cs_pilots[] = {  {&_swigt__p_digital_constellation_cs_pilots, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_decoder_cb[] = {  {&_swigt__p_digital_constellation_decoder_cb, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_dqpsk[] = {  {&_swigt__p_digital_constellation_dqpsk, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_digital_constellation_dvbt_cs_pilots[] = {  {&_swigt__p_digital_constellation_dvbt_cs_pilots, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_dvbt_qpsk[] = {  {&_swigt__p_digital_constellation_dvbt_qpsk, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_digital_constellation_dvbt_tps_pilots[] = {  {&_swigt__p_digital_constellation_dvbt_tps_pilots, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_psk[] = {  {&_swigt__p_digital_constellation_psk, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_qpsk[] = {  {&_swigt__p_digital_constellation_qpsk, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_digital_constellation_receiver_cb[] = {  {&_swigt__p_digital_constellation_receiver_cb, 0, 0, 0},{0, 0, 0, 0}};
@@ -46931,10 +47740,11 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_digital_constellation_8psk_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_bpsk_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_calcdist_t,
-  _swigc__p_boost__shared_ptrT_digital_constellation_cs_pilots_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_decoder_cb_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_dqpsk_t,
+  _swigc__p_boost__shared_ptrT_digital_constellation_dvbt_cs_pilots_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_dvbt_qpsk_t,
+  _swigc__p_boost__shared_ptrT_digital_constellation_dvbt_tps_pilots_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_psk_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_qpsk_t,
   _swigc__p_boost__shared_ptrT_digital_constellation_receiver_cb_t,
@@ -46980,10 +47790,11 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_digital_constellation_8psk,
   _swigc__p_digital_constellation_bpsk,
   _swigc__p_digital_constellation_calcdist,
-  _swigc__p_digital_constellation_cs_pilots,
   _swigc__p_digital_constellation_decoder_cb,
   _swigc__p_digital_constellation_dqpsk,
+  _swigc__p_digital_constellation_dvbt_cs_pilots,
   _swigc__p_digital_constellation_dvbt_qpsk,
+  _swigc__p_digital_constellation_dvbt_tps_pilots,
   _swigc__p_digital_constellation_psk,
   _swigc__p_digital_constellation_qpsk,
   _swigc__p_digital_constellation_receiver_cb,

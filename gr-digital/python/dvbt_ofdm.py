@@ -26,7 +26,7 @@ import digital_swig
 import ofdm_packet_utils
 from ofdm_receiver import ofdm_receiver
 import gnuradio.gr.gr_threading as _threading
-import psk, qam, dvbt_constellations, qpsk
+import psk, qam, dvbt_constellations, qpsk, bpsk
 from utils import mod_codes, gray_code
 
 # /////////////////////////////////////////////////////////////////////////////
@@ -106,16 +106,19 @@ class dvbt_ofdm_mod(gr.hier_block2):
 	print rotated_const
 
 
-	#Create constellation objects for pilot signals
-	t_constel = dvbt_constellations.dvbt_qpsk_constellation(arity)	
+	#Create constellation objects for pilot signals	
 	cs_constel = dvbt_constellations.dvbt_cs_pilots(2)
+	tps_constel = dvbt_constellations.dvbt_tps_pilots(2)
 
+	#print cs_constel.points()
+	#print "\n"
+	#print tps_constel.points()
 
-
-        self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,t_constel.points(),cs_constel.points(),
-						       msgq_limit,
-                                                       options.occupied_tones,
-                                                       options.fft_length)
+        self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,tps_constel.points(),
+						        	cs_constel.points(),
+						       		msgq_limit,
+                                                       		options.occupied_tones,
+                                                       		options.fft_length)
         
         self.preambles = digital_swig.ofdm_insert_preamble(self._fft_length,
                                                            padded_preambles)

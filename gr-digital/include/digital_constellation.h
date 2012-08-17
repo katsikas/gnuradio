@@ -35,7 +35,6 @@
 /*                                                          */
 /* Base class defining interface.                           */
 /************************************************************/
-
 class digital_constellation;
 typedef boost::shared_ptr<digital_constellation> digital_constellation_sptr;
 
@@ -130,7 +129,6 @@ public:
 /* digital_constellation_calcdist                           */
 /*                                                          */
 /************************************************************/
-
 class digital_constellation_calcdist;
 typedef boost::shared_ptr<digital_constellation_calcdist> digital_constellation_calcdist_sptr;
 
@@ -170,7 +168,6 @@ class DIGITAL_API digital_constellation_calcdist : public digital_constellation
 /************************************************************/
 /*! digital_constellation_sector                             */
 /************************************************************/
-
 /*!
  * \brief Sectorized digital constellation
  * \ingroup digital
@@ -208,7 +205,6 @@ class DIGITAL_API digital_constellation_sector : public digital_constellation
 /************************************************************/
 /* digital_constellation_rect                               */
 /************************************************************/
-
 /*!
  * \brief Rectangular digital constellation
  * \ingroup digital
@@ -277,7 +273,6 @@ class DIGITAL_API digital_constellation_rect : public digital_constellation_sect
 /************************************************************/
 /* digital_constellation_psk                                */
 /************************************************************/
-
 class digital_constellation_psk;
 typedef boost::shared_ptr<digital_constellation_psk> digital_constellation_psk_sptr;
 
@@ -329,7 +324,6 @@ class DIGITAL_API digital_constellation_psk : public digital_constellation_secto
 /* Only works for BPSK.                                     */
 /*                                                          */
 /************************************************************/
-
 class digital_constellation_bpsk;
 typedef boost::shared_ptr<digital_constellation_bpsk> digital_constellation_bpsk_sptr;
 
@@ -391,7 +385,6 @@ class DIGITAL_API digital_constellation_qpsk : public digital_constellation
 /* Works with differential encoding; slower decisions.      */
 /*                                                          */
 /************************************************************/
-
 class digital_constellation_dqpsk;
 typedef boost::shared_ptr<digital_constellation_dqpsk> digital_constellation_dqpsk_sptr;
 
@@ -422,7 +415,6 @@ class DIGITAL_API digital_constellation_dqpsk : public digital_constellation
 /* Only works for 8PSK.                                     */
 /*                                                          */
 /************************************************************/
-
 class digital_constellation_8psk;
 typedef boost::shared_ptr<digital_constellation_8psk> digital_constellation_8psk_sptr;
 
@@ -477,33 +469,62 @@ class DIGITAL_API digital_constellation_dvbt_qpsk : public digital_constellation
 };
 
 
-
 /************************************************************/
-/* digital_constellation_cs_pilots                          */
+/* digital_constellation_dvbt_cs_pilots                     */
 /*                                                          */
-/* Explicit Implementation for DVBT.                        */
-/*                                                          */
+/* Explicit Implementation for DVBT's                       */
+/* scattered and continual pilots.                          */
 /************************************************************/
-class digital_constellation_cs_pilots;
-typedef boost::shared_ptr<digital_constellation_cs_pilots> digital_constellation_cs_pilots_sptr;
+class digital_constellation_dvbt_cs_pilots;
+typedef boost::shared_ptr<digital_constellation_dvbt_cs_pilots> digital_constellation_dvbt_cs_pilots_sptr;
 
 // public constructor
-DIGITAL_API digital_constellation_cs_pilots_sptr 
-digital_make_constellation_cs_pilots();
+DIGITAL_API digital_constellation_dvbt_cs_pilots_sptr 
+digital_make_constellation_dvbt_cs_pilots();
 
 /*! 
  * \brief Digital constellation for scattered and continual pilot signals(BPSK). 
  * \ingroup digital
  */
-class DIGITAL_API digital_constellation_cs_pilots : public digital_constellation
+class DIGITAL_API digital_constellation_dvbt_cs_pilots : public digital_constellation
 {
  public:
 
-  digital_constellation_cs_pilots();
+  digital_constellation_dvbt_cs_pilots();
   unsigned int decision_maker (const gr_complex *sample);
 
-  friend DIGITAL_API digital_constellation_cs_pilots_sptr
-  digital_make_constellation_cs_pilots();
+  friend DIGITAL_API digital_constellation_dvbt_cs_pilots_sptr
+  digital_make_constellation_dvbt_cs_pilots();
+  
+};
+
+
+/************************************************************/
+/* digital_constellation_dvbt_tps_pilots                    */
+/*                                                          */
+/* Explicit Implementation for DVBT's                       */
+/* TPS signal pilots.    			                        */
+/************************************************************/
+class digital_constellation_dvbt_tps_pilots;
+typedef boost::shared_ptr<digital_constellation_dvbt_tps_pilots> digital_constellation_dvbt_tps_pilots_sptr;
+
+// public constructor
+DIGITAL_API digital_constellation_dvbt_tps_pilots_sptr 
+digital_make_constellation_dvbt_tps_pilots();
+
+/*!
+ * \brief Digital constellation for DVBT's TPS pilot signals(DBPSK)
+ * \ingroup digital
+ */
+class DIGITAL_API digital_constellation_dvbt_tps_pilots : public digital_constellation
+{
+ public:
+
+  digital_constellation_dvbt_tps_pilots();
+  unsigned int decision_maker (const gr_complex *sample);
+
+  friend DIGITAL_API digital_constellation_dvbt_tps_pilots_sptr
+  digital_make_constellation_dvbt_tps_pilots();
   
 };
 

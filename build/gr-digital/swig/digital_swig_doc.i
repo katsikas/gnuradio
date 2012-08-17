@@ -256,20 +256,6 @@ Constellation which calculates the distance to each point in the constellation f
 
 Params: (constellation, pre_diff_code, rotational_symmetry, dimensionality)"
 
-%feature("docstring") digital_constellation_cs_pilots "Digital constellation for scattered and continual pilot signals(BPSK)."
-
-%feature("docstring") digital_constellation_cs_pilots::digital_constellation_cs_pilots "
-
-Params: (NONE)"
-
-%feature("docstring") digital_constellation_cs_pilots::decision_maker "Returns the constellation point that matches best.
-
-Params: (sample)"
-
-%feature("docstring") digital_make_constellation_cs_pilots "Digital constellation for scattered and continual pilot signals(BPSK).
-
-Params: (NONE)"
-
 %feature("docstring") digital_constellation_decoder_cb "Constellation Decoder."
 
 %feature("docstring") digital_constellation_decoder_cb::digital_constellation_decoder_cb "
@@ -302,6 +288,20 @@ Params: (sample)"
 
 Params: (NONE)"
 
+%feature("docstring") digital_constellation_dvbt_cs_pilots "Digital constellation for scattered and continual pilot signals(BPSK)."
+
+%feature("docstring") digital_constellation_dvbt_cs_pilots::digital_constellation_dvbt_cs_pilots "
+
+Params: (NONE)"
+
+%feature("docstring") digital_constellation_dvbt_cs_pilots::decision_maker "Returns the constellation point that matches best.
+
+Params: (sample)"
+
+%feature("docstring") digital_make_constellation_dvbt_cs_pilots "Digital constellation for scattered and continual pilot signals(BPSK).
+
+Params: (NONE)"
+
 %feature("docstring") digital_constellation_dvbt_qpsk "Digital constellation for QPSK."
 
 %feature("docstring") digital_constellation_dvbt_qpsk::digital_constellation_dvbt_qpsk "
@@ -313,6 +313,20 @@ Params: (NONE)"
 Params: (sample)"
 
 %feature("docstring") digital_make_constellation_dvbt_qpsk "Digital constellation for QPSK.
+
+Params: (NONE)"
+
+%feature("docstring") digital_constellation_dvbt_tps_pilots "Digital constellation for DVBT's TPS pilot signals(DBPSK)"
+
+%feature("docstring") digital_constellation_dvbt_tps_pilots::digital_constellation_dvbt_tps_pilots "
+
+Params: (NONE)"
+
+%feature("docstring") digital_constellation_dvbt_tps_pilots::decision_maker "Returns the constellation point that matches best.
+
+Params: (sample)"
+
+%feature("docstring") digital_make_constellation_dvbt_tps_pilots "Digital constellation for DVBT's TPS pilot signals(DBPSK)
 
 Params: (NONE)"
 
@@ -581,6 +595,14 @@ Params: (NONE)"
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::next_state "
 
 Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::set_modulation_type "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::differential_modulation "
+
+Params: ()"
 
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::~digital_dvbt_ofdm_mapper_bcv "
 
@@ -1652,6 +1674,10 @@ Params: (NONE)"
 
 %feature("docstring") std::multiset::iterator "STL iterator class."
 
+%feature("docstring") std::map::iterator "STL iterator class."
+
+%feature("docstring") std::set::iterator "STL iterator class."
+
 %feature("docstring") std::vector::iterator "STL iterator class."
 
 %feature("docstring") std::string::iterator "STL iterator class."
@@ -1660,11 +1686,7 @@ Params: (NONE)"
 
 %feature("docstring") std::wstring::iterator "STL iterator class."
 
-%feature("docstring") std::set::iterator "STL iterator class."
-
 %feature("docstring") std::list::iterator "STL iterator class."
-
-%feature("docstring") std::map::iterator "STL iterator class."
 
 %feature("docstring") std::deque::iterator "STL iterator class."
 
@@ -1696,25 +1718,25 @@ Params: (NONE)"
 
 %feature("docstring") std::range_error "STL class."
 
-%feature("docstring") std::map::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
+%feature("docstring") std::string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::vector::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::list::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::set::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
+%feature("docstring") std::map::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::string::reverse_iterator "STL iterator class."
+%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 
