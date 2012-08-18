@@ -600,6 +600,10 @@ Params: (NONE)"
 
 Params: (NONE)"
 
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::set_tps_pilots "
+
+Params: (NONE)"
+
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::differential_modulation "
 
 Params: ()"
@@ -1670,13 +1674,13 @@ Params: (NONE)"
 
 %feature("docstring") std::istringstream "STL class."
 
-%feature("docstring") std::basic_string::iterator "STL iterator class."
+%feature("docstring") std::set::iterator "STL iterator class."
 
-%feature("docstring") std::multiset::iterator "STL iterator class."
+%feature("docstring") std::basic_string::iterator "STL iterator class."
 
 %feature("docstring") std::map::iterator "STL iterator class."
 
-%feature("docstring") std::set::iterator "STL iterator class."
+%feature("docstring") std::multiset::iterator "STL iterator class."
 
 %feature("docstring") std::vector::iterator "STL iterator class."
 
@@ -1718,25 +1722,25 @@ Params: (NONE)"
 
 %feature("docstring") std::range_error "STL class."
 
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
+
 %feature("docstring") std::string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::vector::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::list::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::map::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::wstring::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
+%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 

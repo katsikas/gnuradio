@@ -37,6 +37,10 @@
 
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_frame_number;
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_symbol_number;
+const std::string digital_dvbt_ofdm_mapper_bcv::hierarchy = "000"; 
+const std::string digital_dvbt_ofdm_mapper_bcv::code_rate = "010000";	// Inner code rate = 3/4
+const std::string digital_dvbt_ofdm_mapper_bcv::guard_interval = "11";
+const std::string digital_dvbt_ofdm_mapper_bcv::transmission_mode = "00";
 const std::string digital_dvbt_ofdm_mapper_bcv::init_sequence = "11111111111";
 const std::string digital_dvbt_ofdm_mapper_bcv::odd_sequence = "0011010111101110";
 const std::string digital_dvbt_ofdm_mapper_bcv::even_sequence = "1100101000010001";
@@ -91,6 +95,11 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
 {
   d_frame_number = 1;
   set_modulation_type();
+  d_code_rate = std::bitset<6> (code_rate);
+  d_hierarchy = std::bitset<3> (hierarchy);
+  d_guard_interval = std::bitset<2> (guard_interval);
+  d_transmission_mode = std::bitset<2> (transmission_mode);
+  
 	  
   if (!(d_occupied_carriers <= d_fft_length))
     throw std::invalid_argument("digital_ofdm_mapper_bcv: occupied carriers must be <= fft_length");
@@ -135,16 +144,20 @@ int digital_dvbt_ofdm_mapper_bcv::randsym()
 void digital_dvbt_ofdm_mapper_bcv::set_modulation_type(){
 
 	if(d_constellation.size() == 4){
-		d_modulation_type = std::bitset<2> (std::string("0,0"));
+		const std::string temp = "00";
+		d_modulation_type = std::bitset<2> (temp);
 	}
 	else if(d_constellation.size() == 16){
-		d_modulation_type = std::bitset<2> (std::string("0,1"));
+		const std::string temp = "01";
+		d_modulation_type = std::bitset<2> (temp);
 	}
 	else if(d_constellation.size() == 64){
-		d_modulation_type = std::bitset<2> (std::string("1,0"));
+		const std::string temp = "10";
+		d_modulation_type = std::bitset<2> (temp);
 	}
 	else{
-		d_modulation_type = std::bitset<2> (std::string("1,1"));
+		const std::string temp = "11";
+		d_modulation_type = std::bitset<2> (temp);
 	}
 }
 
@@ -180,6 +193,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   /* Should be reset??                      */
   /******************************************/
   d_prbs_sequence = std::bitset<11> (init_sequence);
+  
 
 
   if(d_eof) {
@@ -217,65 +231,16 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   memset(out, 0, d_fft_length*sizeof(gr_complex));
 
   i = 0;
-  unsigned char diff = 0;
   unsigned char bits = 0;
+  unsigned char diff = 0;
   while((d_msg_offset < d_msg->length()) && (i < carriers)) {
 
       next_state();
       // TPS pilot signals...
       if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
-		  if(d_symbol_number == 0){										// PRBS sequence
-			diff = differential_modulation(d_prbs_sequence.test(0));
-			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 			
-		  }
-		  if( (d_symbol_number > 0) && (d_symbol_number < 17) ){		// Synchronization
-			if((d_frame_number % 2) == 0){
-				diff = differential_modulation(even_sequence.at(d_symbol_number-1));	
-			}
-			else{
-				diff = differential_modulation(odd_sequence.at(d_symbol_number-1));	
-			}		
-			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
-		  }
-		  if( (d_symbol_number > 16) && (d_symbol_number < 23) ){		// TPS length
-			if(CELL_IDENTIFICATION){
-				diff = differential_modulation(cell_identification_on.at(d_symbol_number-17));		
-			}
-			else{
-				diff = differential_modulation(cell_identification_off.at(d_symbol_number-17));
-			}
-			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
-		  }
-		  if(d_symbol_number == 23){ 									// Frame number MSB
-			if(d_frame_number < 3){
-				diff = differential_modulation(0);
-			}
-			else{
-				diff = differential_modulation(1);
-			}	
-			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
-		  }
-		  if(d_symbol_number == 24){ 									// Frame number LSB
-			if((d_frame_number % 2) != 0){
-				diff = differential_modulation(0);
-			}
-			else{
-				diff = differential_modulation(1);
-			}	
-			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
-		  }
-		  
-		  // under construction 								
-		  if(d_symbol_number == 24){ 									// Constellation
-			if((d_frame_number % 2) != 0){
-				diff = differential_modulation(0);
-			}
-			else{
-				diff = differential_modulation(1);
-			}	
-			out[d_subcarrier_map[i]] = d_tps_constellation[diff]; 
-		  }
-		  
+		  //printf("carrier = %d \n",i);
+		  diff = set_tps_pilots();
+		  out[d_subcarrier_map[i]] = d_tps_constellation[diff];
           i++;
       }
       // Continual pilot signas
@@ -331,7 +296,6 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
                 d_bit_offset += extra;
                 d_nresid = d_nbits - extra;
               }
-
             }
 
             if(d_bit_offset == 8) {
@@ -345,7 +309,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
   // Ran out of data to put in symbol
   if ( (d_msg_offset == d_msg->length()) && (i < carriers) ) {
-    //printf("Ran out of bits!!! %d\n",i);
+      printf("Ran out of bits!!! %d\n",i);
     //printf("d_bit_offset = %d, d_msg_offset = %d, d_nresid = %d \n",d_bit_offset,d_msg_offset,d_nresid);
     if(d_nresid > 0) {
       d_resid |= 0x00;
@@ -354,20 +318,19 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
       d_resid = 0;
     }
 
-    while(i < carriers) {   // finish filling out the symbol
+    while(i < carriers) {   											// finish filling out the symbol
       out[d_subcarrier_map[i]] = d_constellation[randsym()];
          // printf("rand constel = %.4f %.4fj on carrier %d \n",
            //    out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag(),d_subcarrier_map[i]);
-
       i++;
     }
 
-    if (d_msg->type() == 1)	        			// type == 1 sets EOF
+    if (d_msg->type() == 1)	        									// type == 1 sets EOF
     {
         printf("EOF \n");
       d_eof = true;
     }
-    d_msg.reset();   						// finished packet, free message
+    d_msg.reset();   													// finished packet, free message
     assert(d_bit_offset == 0);
   }
 
@@ -381,9 +344,120 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
         d_symbol_number = 0;
         d_frame_number ++;
         if(d_frame_number == 5){
-			d_frame_number = 1;						// 4 frames consist a super-frame.
+			d_frame_number = 1;											// 4 frames consist a super-frame.
 		}
   }
  
-  return 1;  							// produced symbol
+  return 1;  															// produced symbol
+}
+
+unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(){
+	
+	  unsigned char diff = 0;
+	  if(d_symbol_number == 0){											// PRBS sequence
+		diff = differential_modulation(d_prbs_sequence.test(0));
+		return diff; 			
+	  }
+	  if( (d_symbol_number > 0) && (d_symbol_number < 17) ){			// Synchronization
+		if((d_frame_number % 2) == 0){
+			diff = differential_modulation(even_sequence.at(d_symbol_number-1));	
+		}
+		else{
+			diff = differential_modulation(odd_sequence.at(d_symbol_number-1));	
+		}		
+		return diff;
+	  }
+	  if( (d_symbol_number > 16) && (d_symbol_number < 23) ){			// TPS length
+		if(CELL_IDENTIFICATION){
+			diff = differential_modulation(cell_identification_on.at(d_symbol_number-17));		
+		}
+		else{
+			diff = differential_modulation(cell_identification_off.at(d_symbol_number-17));
+		}
+		return diff;
+	  }
+	  if(d_symbol_number == 23){ 										// Frame number MSB
+		if(d_frame_number < 3){
+			diff = differential_modulation(0);
+		}
+		else{
+			diff = differential_modulation(1);
+		}	
+		return diff;
+	  }
+	  if(d_symbol_number == 24){ 										// Frame number LSB
+		if((d_frame_number % 2) != 0){
+			diff = differential_modulation(0);
+		}
+		else{
+			diff = differential_modulation(1);
+		}	
+		return diff;
+	  }					
+	  if(d_symbol_number == 25){ 										// Constellation
+		diff = differential_modulation(d_modulation_type.test(0));	
+		return diff;
+	  }
+	  if(d_symbol_number == 26){ 										// Constellation
+		diff = differential_modulation(d_modulation_type.test(1));	
+		return diff;
+	  }
+	  if(d_symbol_number == 27){
+		diff = differential_modulation(d_hierarchy.test(0));			// Hierarchy
+		return diff; 
+	  }
+	  if(d_symbol_number == 28){
+		diff = differential_modulation(d_hierarchy.test(1));			// Hierarchy
+		return diff;
+	  }
+	  if(d_symbol_number == 29){
+		diff = differential_modulation(d_hierarchy.test(2));			// Hierarchy
+		return diff; 
+	  }
+	  if(d_symbol_number == 30){
+		diff = differential_modulation(d_code_rate.test(0));			// Inner code rates
+		return diff; 
+	  }
+	  if(d_symbol_number == 31){
+		diff = differential_modulation(d_code_rate.test(1));			// Inner code rates
+		return diff; 
+	  }
+	  if(d_symbol_number == 32){
+		diff = differential_modulation(d_code_rate.test(2));			// Inner code rates
+		return diff;
+	  }
+	  if(d_symbol_number == 33){
+		diff = differential_modulation(d_code_rate.test(3));			// Inner code rates
+		return diff;
+	  }
+	  if(d_symbol_number == 34){
+		diff = differential_modulation(d_code_rate.test(4));			// Inner code rates
+		return diff; 
+	  }
+	  if(d_symbol_number == 35){
+		diff = differential_modulation(d_code_rate.test(5));			// Inner code rates
+		return diff; 
+	  }
+	  if(d_symbol_number == 36){
+		diff = differential_modulation(d_guard_interval.test(0));		// Guard Interval
+		return diff;
+	  }
+	  if(d_symbol_number == 37){
+		diff = differential_modulation(d_guard_interval.test(1));		// Guard Interval
+		return diff; 
+	  }
+	  if(d_symbol_number == 38){
+		diff = differential_modulation(d_transmission_mode.test(0));	// Transmission Mode
+		return diff;
+	  }
+	  if(d_symbol_number == 39){
+		diff = differential_modulation(d_transmission_mode.test(1));	// Transmission Mode
+		return diff; 
+	  }
+	  /*if(d_symbol_number == 40){
+		diff = differential_modulation(d_transmission_mode.test(1));	// Cell Identifier
+		return diff;
+	  }*/
+	  
+	  return diff;
 }

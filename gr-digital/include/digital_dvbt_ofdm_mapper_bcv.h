@@ -95,11 +95,20 @@ protected:
   std::vector<int> d_scattered_map;
   std::vector<int> d_continuals_map;
   
-  std::bitset<2> d_modulation_type;
+  std::bitset<6> d_code_rate;
+  std::bitset<3> d_hierarchy;
+  std::bitset<2> d_guard_interval;
   std::bitset<11> d_prbs_sequence;
-  static const std::string init_sequence;
+  std::bitset<2> d_modulation_type;
+  std::bitset<2> d_transmission_mode;
+  
+  static const std::string code_rate; 
+  static const std::string hierarchy;
   static const std::string odd_sequence;
   static const std::string even_sequence;
+  static const std::string init_sequence;
+  static const std::string guard_interval;
+  static const std::string transmission_mode; 
   static const std::string cell_identification_on;
   static const std::string cell_identification_off;
 
@@ -107,6 +116,7 @@ protected:
   int randsym(); 
   void next_state();
   void set_modulation_type();
+  unsigned int set_tps_pilots();
   unsigned int differential_modulation(int );
 
  public:

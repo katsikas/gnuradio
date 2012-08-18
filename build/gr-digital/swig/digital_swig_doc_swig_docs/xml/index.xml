@@ -381,13 +381,21 @@
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ac396c22701218a36294d60fb37c8bc54" kind="variable"><name>d_tps_map</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1af22c640e412135aaf4620d11476c302b" kind="variable"><name>d_scattered_map</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a8905d272fe453e9ff97e29211e302817" kind="variable"><name>d_continuals_map</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afbffe66be2cd159586a89e15b0b2e491" kind="variable"><name>d_modulation_type</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1af09789fc5f9109857e4265c1a07e1e63" kind="variable"><name>d_code_rate</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a518040119784897ca4cf074205333628" kind="variable"><name>d_hierarchy</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a918a3a127b99a9e6f3d000c36c11bb67" kind="variable"><name>d_guard_interval</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1693c76cb1049dc37f9efc89b5578da0" kind="variable"><name>d_prbs_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afbffe66be2cd159586a89e15b0b2e491" kind="variable"><name>d_modulation_type</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aba2c446938c0aaf05786926a6b63b221" kind="variable"><name>d_transmission_mode</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1cdf5f0d65d211e1ffe9c6aab92c481f" kind="variable"><name>d_frame_number</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3be728ab51dba31394900f2d77a7694d" kind="variable"><name>d_symbol_number</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1a4a4851e7bff4ab0b5bc34fe7d57d6e" kind="variable"><name>init_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a91595be2adbde37e9175d37c6d22ecbd" kind="variable"><name>code_rate</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1fceb4fa7ec0ef9529019ae2f2c246f4" kind="variable"><name>hierarchy</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a27efb35eae624557d5e2bc89795af1ae" kind="variable"><name>odd_sequence</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a15a8f52ae97f2b8d4ab3e8c1ba40a8c9" kind="variable"><name>even_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1a4a4851e7bff4ab0b5bc34fe7d57d6e" kind="variable"><name>init_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1add0f8b9faa5e88ee8a614e9a628a99ec" kind="variable"><name>guard_interval</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afb6aa3135c686f3f17fb1c33cf20f8f3" kind="variable"><name>transmission_mode</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ae4d290eb4558c306ec5f56081d2180e0" kind="variable"><name>cell_identification_on</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ac4c9f67eb2a843c243cd31a4cdb4b6fd" kind="variable"><name>cell_identification_off</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1fafd4233edf1efedf26873593611a8b" kind="friend"><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
@@ -395,6 +403,7 @@
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad0f663e117c340c20de7a7a47b50da" kind="function"><name>randsym</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a215230a06a877d351ad3150a366f6dd8" kind="function"><name>next_state</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a0d4ec00ea9538fc0c1109310304abcba" kind="function"><name>set_modulation_type</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a891154947bc081460d9e3480b315a7d8" kind="function"><name>set_tps_pilots</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3d267d746d41b8aae0af404505fe39d2" kind="function"><name>differential_modulation</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a27508ae14328d2f271c115333c46279b" kind="function"><name>~digital_dvbt_ofdm_mapper_bcv</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" kind="function"><name>msgq</name></member>
@@ -750,13 +759,13 @@
   </compound>
   <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
+  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
   </compound>
@@ -806,25 +815,25 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  </compound>
   <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
