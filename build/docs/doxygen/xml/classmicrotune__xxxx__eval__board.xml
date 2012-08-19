@@ -261,60 +261,60 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="8760">
+      <node id="6069">
         <label>microtune_4937_eval_board</label>
         <link refid="classmicrotune__4937__eval__board"/>
-        <childnode refid="8758" relation="public-inheritance">
+        <childnode refid="6067" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8758">
+      <node id="6067">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
       </node>
-      <node id="8759">
+      <node id="6068">
         <label>microtune_4702_eval_board</label>
         <link refid="classmicrotune__4702__eval__board"/>
-        <childnode refid="8758" relation="public-inheritance">
+        <childnode refid="6067" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="8762">
+      <node id="6071">
         <label>microtune_xxxx</label>
         <link refid="classmicrotune__xxxx"/>
       </node>
-      <node id="8761">
+      <node id="6070">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
-        <childnode refid="8762" relation="usage">
+        <childnode refid="6071" relation="usage">
           <edgelabel>d_tuner</edgelabel>
         </childnode>
-        <childnode refid="8763" relation="usage">
+        <childnode refid="6072" relation="usage">
           <edgelabel>d_i2c</edgelabel>
         </childnode>
-        <childnode refid="8765" relation="usage">
+        <childnode refid="6074" relation="usage">
           <edgelabel>d_ppio</edgelabel>
         </childnode>
       </node>
-      <node id="8763">
+      <node id="6072">
         <label>boost::shared_ptr&lt; i2c &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="8764" relation="usage">
+        <childnode refid="6073" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="8764">
+      <node id="6073">
         <label>i2c</label>
         <link refid="classi2c"/>
       </node>
-      <node id="8766">
+      <node id="6075">
         <label>ppio</label>
         <link refid="classppio"/>
       </node>
-      <node id="8765">
+      <node id="6074">
         <label>boost::shared_ptr&lt; ppio &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="8766" relation="usage">
+        <childnode refid="6075" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>

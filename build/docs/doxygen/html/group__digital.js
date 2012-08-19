@@ -15,6 +15,8 @@ var group__digital =
       [ "digital_constellation_dqpsk", "classdigital__constellation__dqpsk.html", null ],
       [ "digital_constellation_8psk", "classdigital__constellation__8psk.html", null ],
       [ "digital_constellation_dvbt_qpsk", "classdigital__constellation__dvbt__qpsk.html", null ],
+      [ "digital_constellation_dvbt_cs_pilots", "classdigital__constellation__dvbt__cs__pilots.html", null ],
+      [ "digital_constellation_dvbt_tps_pilots", "classdigital__constellation__dvbt__tps__pilots.html", null ],
       [ "digital_constellation_decoder_cb", "classdigital__constellation__decoder__cb.html", null ],
       [ "digital_constellation_receiver_cb", "classdigital__constellation__receiver__cb.html", null ],
       [ "digital_correlate_access_code_bb", "classdigital__correlate__access__code__bb.html", null ],

@@ -44164,33 +44164,39 @@ SWIGINTERN PyObject *digital_dvbt_ofdm_frame_sink_sptr_swigregister(PyObject *SW
 SWIGINTERN PyObject *_wrap_dvbt_ofdm_frame_sink(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   std::vector< gr_complex,std::allocator< gr_complex > > *arg1 = 0 ;
-  std::vector< unsigned char,std::allocator< unsigned char > > *arg2 = 0 ;
-  gr_msg_queue_sptr arg3 ;
-  unsigned int arg4 ;
-  float arg5 = (float) 0.25 ;
-  float arg6 = (float) 0.25*0.25/4 ;
+  std::vector< gr_complex,std::allocator< gr_complex > > *arg2 = 0 ;
+  std::vector< gr_complex,std::allocator< gr_complex > > *arg3 = 0 ;
+  std::vector< unsigned char,std::allocator< unsigned char > > *arg4 = 0 ;
+  gr_msg_queue_sptr arg5 ;
+  unsigned int arg6 ;
+  float arg7 = (float) 0.25 ;
+  float arg8 = (float) 0.25*0.25/4 ;
   int res1 = SWIG_OLDOBJ ;
   int res2 = SWIG_OLDOBJ ;
-  void *argp3 ;
-  int res3 = 0 ;
-  unsigned int val4 ;
-  int ecode4 = 0 ;
-  float val5 ;
-  int ecode5 = 0 ;
-  float val6 ;
+  int res3 = SWIG_OLDOBJ ;
+  int res4 = SWIG_OLDOBJ ;
+  void *argp5 ;
+  int res5 = 0 ;
+  unsigned int val6 ;
   int ecode6 = 0 ;
+  float val7 ;
+  int ecode7 = 0 ;
+  float val8 ;
+  int ecode8 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
   PyObject * obj4 = 0 ;
   PyObject * obj5 = 0 ;
+  PyObject * obj6 = 0 ;
+  PyObject * obj7 = 0 ;
   char *  kwnames[] = {
-    (char *) "sym_position",(char *) "sym_value_out",(char *) "target_queue",(char *) "occupied_tones",(char *) "phase_gain",(char *) "freq_gain", NULL 
+    (char *) "sym_position",(char *) "t_constellation",(char *) "cs_constellation",(char *) "sym_value_out",(char *) "target_queue",(char *) "occupied_tones",(char *) "phase_gain",(char *) "freq_gain", NULL 
   };
   digital_dvbt_ofdm_frame_sink_sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO|OO:dvbt_ofdm_frame_sink",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOO|OO:dvbt_ofdm_frame_sink",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7)) SWIG_fail;
   {
     std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
     res1 = swig::asptr(obj0, &ptr);
@@ -44203,51 +44209,73 @@ SWIGINTERN PyObject *_wrap_dvbt_ofdm_frame_sink(PyObject *SWIGUNUSEDPARM(self), 
     arg1 = ptr;
   }
   {
-    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
     res2 = swig::asptr(obj1, &ptr);
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_ofdm_frame_sink" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "dvbt_ofdm_frame_sink" "', argument " "2"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
     }
     if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "2"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "2"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
     }
     arg2 = ptr;
   }
   {
-    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t,  0  | 0);
+    std::vector<std::complex< float >,std::allocator< std::complex< float > > > *ptr = (std::vector<std::complex< float >,std::allocator< std::complex< float > > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
     if (!SWIG_IsOK(res3)) {
-      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_ofdm_frame_sink" "', argument " "3"" of type '" "gr_msg_queue_sptr""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "dvbt_ofdm_frame_sink" "', argument " "3"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "3"" of type '" "std::vector< gr_complex,std::allocator< gr_complex > > const &""'"); 
+    }
+    arg3 = ptr;
+  }
+  {
+    std::vector<unsigned char,std::allocator< unsigned char > > *ptr = (std::vector<unsigned char,std::allocator< unsigned char > > *)0;
+    res4 = swig::asptr(obj3, &ptr);
+    if (!SWIG_IsOK(res4)) {
+      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "dvbt_ofdm_frame_sink" "', argument " "4"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "4"" of type '" "std::vector< unsigned char,std::allocator< unsigned char > > const &""'"); 
+    }
+    arg4 = ptr;
+  }
+  {
+    res5 = SWIG_ConvertPtr(obj4, &argp5, SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t,  0  | 0);
+    if (!SWIG_IsOK(res5)) {
+      SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "dvbt_ofdm_frame_sink" "', argument " "5"" of type '" "gr_msg_queue_sptr""'"); 
     }  
-    if (!argp3) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "3"" of type '" "gr_msg_queue_sptr""'");
+    if (!argp5) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "dvbt_ofdm_frame_sink" "', argument " "5"" of type '" "gr_msg_queue_sptr""'");
     } else {
-      gr_msg_queue_sptr * temp = reinterpret_cast< gr_msg_queue_sptr * >(argp3);
-      arg3 = *temp;
-      if (SWIG_IsNewObj(res3)) delete temp;
+      gr_msg_queue_sptr * temp = reinterpret_cast< gr_msg_queue_sptr * >(argp5);
+      arg5 = *temp;
+      if (SWIG_IsNewObj(res5)) delete temp;
     }
   }
-  ecode4 = SWIG_AsVal_unsigned_SS_int(obj3, &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "dvbt_ofdm_frame_sink" "', argument " "4"" of type '" "unsigned int""'");
+  ecode6 = SWIG_AsVal_unsigned_SS_int(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "dvbt_ofdm_frame_sink" "', argument " "6"" of type '" "unsigned int""'");
   } 
-  arg4 = static_cast< unsigned int >(val4);
-  if (obj4) {
-    ecode5 = SWIG_AsVal_float(obj4, &val5);
-    if (!SWIG_IsOK(ecode5)) {
-      SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "dvbt_ofdm_frame_sink" "', argument " "5"" of type '" "float""'");
+  arg6 = static_cast< unsigned int >(val6);
+  if (obj6) {
+    ecode7 = SWIG_AsVal_float(obj6, &val7);
+    if (!SWIG_IsOK(ecode7)) {
+      SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "dvbt_ofdm_frame_sink" "', argument " "7"" of type '" "float""'");
     } 
-    arg5 = static_cast< float >(val5);
+    arg7 = static_cast< float >(val7);
   }
-  if (obj5) {
-    ecode6 = SWIG_AsVal_float(obj5, &val6);
-    if (!SWIG_IsOK(ecode6)) {
-      SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "dvbt_ofdm_frame_sink" "', argument " "6"" of type '" "float""'");
+  if (obj7) {
+    ecode8 = SWIG_AsVal_float(obj7, &val8);
+    if (!SWIG_IsOK(ecode8)) {
+      SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "dvbt_ofdm_frame_sink" "', argument " "8"" of type '" "float""'");
     } 
-    arg6 = static_cast< float >(val6);
+    arg8 = static_cast< float >(val8);
   }
   {
     try {
-      result = digital_make_dvbt_ofdm_frame_sink((std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg1,(std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg2,arg3,arg4,arg5,arg6);
+      result = digital_make_dvbt_ofdm_frame_sink((std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg1,(std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg2,(std::vector< std::complex< float >,std::allocator< std::complex< float > > > const &)*arg3,(std::vector< unsigned char,std::allocator< unsigned char > > const &)*arg4,arg5,arg6,arg7,arg8);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -44260,10 +44288,14 @@ SWIGINTERN PyObject *_wrap_dvbt_ofdm_frame_sink(PyObject *SWIGUNUSEDPARM(self), 
   resultobj = SWIG_NewPointerObj((new digital_dvbt_ofdm_frame_sink_sptr(static_cast< const digital_dvbt_ofdm_frame_sink_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_digital_dvbt_ofdm_frame_sink_t, SWIG_POINTER_OWN |  0 );
   if (SWIG_IsNewObj(res1)) delete arg1;
   if (SWIG_IsNewObj(res2)) delete arg2;
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  if (SWIG_IsNewObj(res4)) delete arg4;
   return resultobj;
 fail:
   if (SWIG_IsNewObj(res1)) delete arg1;
   if (SWIG_IsNewObj(res2)) delete arg2;
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  if (SWIG_IsNewObj(res4)) delete arg4;
   return NULL;
 }
 
@@ -47052,16 +47084,17 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"digital_dvbt_ofdm_frame_sink_sptr_swigregister", digital_dvbt_ofdm_frame_sink_sptr_swigregister, METH_VARARGS, NULL},
 	 { (char *)"dvbt_ofdm_frame_sink", (PyCFunction) _wrap_dvbt_ofdm_frame_sink, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"dvbt_ofdm_frame_sink(gr_complex_vector sym_position, __dummy_0__ sym_value_out, \n"
-		"    gr_msg_queue_sptr target_queue, unsigned int occupied_tones, \n"
-		"    float phase_gain = 0.25, \n"
-		"    float freq_gain = 0.25*0.25/4) -> digital_dvbt_ofdm_frame_sink_sptr\n"
+		"dvbt_ofdm_frame_sink(gr_complex_vector sym_position, gr_complex_vector t_constellation, \n"
+		"    gr_complex_vector cs_constellation, \n"
+		"    __dummy_0__ sym_value_out, gr_msg_queue_sptr target_queue, \n"
+		"    unsigned int occupied_tones, \n"
+		"    float phase_gain = 0.25, float freq_gain = 0.25*0.25/4) -> digital_dvbt_ofdm_frame_sink_sptr\n"
 		"\n"
 		"Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0's and 1's, packs them into packets, and sends to to a message queue sink.\n"
 		"\n"
 		"NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.\n"
 		"\n"
-		"Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)\n"
+		"Params: (sym_position, t_constellation, cs_constellation, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)\n"
 		""},
 	 { NULL, NULL, 0, NULL }
 };

@@ -5,7 +5,7 @@
     <includes refid="gri__mmse__fir__interpolator_8h" local="no">gri_mmse_fir_interpolator.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classgri__mmse__fir__interpolator_1a032cd8df0c724463c192da99a85b29d7" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt;</type>
+        <type>std::vector&lt; gr_fir_fff * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff *&gt; gri_mmse_fir_interpolator::filters</definition>
         <argsstring></argsstring>
         <name>filters</name>
@@ -104,27 +104,13 @@
 </itemizedlist>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="8522">
-        <label>gr_fir_fff</label>
-        <link refid="classgr__fir__fff"/>
-        <childnode refid="8523" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-        </childnode>
-      </node>
-      <node id="8523">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-      <node id="8521">
+      <node id="5834">
         <label>std::vector&lt; gr_fir_fff * &gt;</label>
-        <childnode refid="8522" relation="usage">
-          <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
-        </childnode>
       </node>
-      <node id="8520">
+      <node id="5833">
         <label>gri_mmse_fir_interpolator</label>
         <link refid="classgri__mmse__fir__interpolator"/>
-        <childnode refid="8521" relation="usage">
+        <childnode refid="5834" relation="usage">
           <edgelabel>filters</edgelabel>
         </childnode>
       </node>

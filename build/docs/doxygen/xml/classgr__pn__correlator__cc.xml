@@ -145,112 +145,112 @@
     <detaileddescription>
 <para>Receives complex baseband signal, outputs complex correlation against reference PN code, one sample per PN code period </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="6556">
+      <node id="4645">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6557" relation="public-inheritance">
+        <childnode refid="4646" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6553">
+      <node id="4642">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6554" relation="public-inheritance">
+        <childnode refid="4643" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6552">
+      <node id="4641">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="6553" relation="public-inheritance">
+        <childnode refid="4642" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6554">
+      <node id="4643">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6555" relation="public-inheritance">
+        <childnode refid="4644" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6557">
+      <node id="4646">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6555">
+      <node id="4644">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6556" relation="public-inheritance">
+        <childnode refid="4645" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6551">
+      <node id="4640">
         <label>gr_pn_correlator_cc</label>
         <link refid="classgr__pn__correlator__cc"/>
-        <childnode refid="6552" relation="public-inheritance">
+        <childnode refid="4641" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6563">
+      <node id="4652">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6564" relation="public-inheritance">
+        <childnode refid="4653" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6560">
+      <node id="4649">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6561" relation="public-inheritance">
+        <childnode refid="4650" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6559">
+      <node id="4648">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="6560" relation="public-inheritance">
+        <childnode refid="4649" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6561">
+      <node id="4650">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6562" relation="public-inheritance">
+        <childnode refid="4651" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6565">
+      <node id="4654">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6566" relation="usage">
+        <childnode refid="4655" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6568">
+      <node id="4657">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6564">
+      <node id="4653">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6566">
+      <node id="4655">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6562">
+      <node id="4651">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6563" relation="public-inheritance">
+        <childnode refid="4652" relation="public-inheritance">
         </childnode>
-        <childnode refid="6565" relation="usage">
+        <childnode refid="4654" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6567" relation="usage">
+        <childnode refid="4656" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6558">
+      <node id="4647">
         <label>gr_pn_correlator_cc</label>
         <link refid="classgr__pn__correlator__cc"/>
-        <childnode refid="6559" relation="public-inheritance">
+        <childnode refid="4648" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6567">
+      <node id="4656">
         <label>std::string</label>
-        <childnode refid="6568" relation="public-inheritance">
+        <childnode refid="4657" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

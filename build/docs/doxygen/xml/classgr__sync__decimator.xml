@@ -11,23 +11,7 @@
     <derivedcompoundref refid="classgr__deinterleave" prot="public" virt="non-virtual">gr_deinterleave</derivedcompoundref>
     <derivedcompoundref refid="classgr__fft__filter__ccc" prot="public" virt="non-virtual">gr_fft_filter_ccc</derivedcompoundref>
     <derivedcompoundref refid="classgr__fft__filter__fff" prot="public" virt="non-virtual">gr_fft_filter_fff</derivedcompoundref>
-    <derivedcompoundref refid="classgr__fir__filter__ccc" prot="public" virt="non-virtual">gr_fir_filter_ccc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__fir__filter__ccf" prot="public" virt="non-virtual">gr_fir_filter_ccf</derivedcompoundref>
-    <derivedcompoundref refid="classgr__fir__filter__fcc" prot="public" virt="non-virtual">gr_fir_filter_fcc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__fir__filter__fff" prot="public" virt="non-virtual">gr_fir_filter_fff</derivedcompoundref>
-    <derivedcompoundref refid="classgr__fir__filter__fsf" prot="public" virt="non-virtual">gr_fir_filter_fsf</derivedcompoundref>
-    <derivedcompoundref refid="classgr__fir__filter__scc" prot="public" virt="non-virtual">gr_fir_filter_scc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__freq__xlating__fir__filter__ccc" prot="public" virt="non-virtual">gr_freq_xlating_fir_filter_ccc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__freq__xlating__fir__filter__ccf" prot="public" virt="non-virtual">gr_freq_xlating_fir_filter_ccf</derivedcompoundref>
-    <derivedcompoundref refid="classgr__freq__xlating__fir__filter__fcc" prot="public" virt="non-virtual">gr_freq_xlating_fir_filter_fcc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__freq__xlating__fir__filter__fcf" prot="public" virt="non-virtual">gr_freq_xlating_fir_filter_fcf</derivedcompoundref>
-    <derivedcompoundref refid="classgr__freq__xlating__fir__filter__scc" prot="public" virt="non-virtual">gr_freq_xlating_fir_filter_scc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__freq__xlating__fir__filter__scf" prot="public" virt="non-virtual">gr_freq_xlating_fir_filter_scf</derivedcompoundref>
     <derivedcompoundref refid="classgr__goertzel__fc" prot="public" virt="non-virtual">gr_goertzel_fc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__integrate__cc" prot="public" virt="non-virtual">gr_integrate_cc</derivedcompoundref>
-    <derivedcompoundref refid="classgr__integrate__ff" prot="public" virt="non-virtual">gr_integrate_ff</derivedcompoundref>
-    <derivedcompoundref refid="classgr__integrate__ii" prot="public" virt="non-virtual">gr_integrate_ii</derivedcompoundref>
-    <derivedcompoundref refid="classgr__integrate__ss" prot="public" virt="non-virtual">gr_integrate_ss</derivedcompoundref>
     <derivedcompoundref refid="classgr__interleaved__short__to__complex" prot="public" virt="non-virtual">gr_interleaved_short_to_complex</derivedcompoundref>
     <derivedcompoundref refid="classgr__pn__correlator__cc" prot="public" virt="non-virtual">gr_pn_correlator_cc</derivedcompoundref>
     <derivedcompoundref refid="classgr__stream__to__streams" prot="public" virt="non-virtual">gr_stream_to_streams</derivedcompoundref>
@@ -272,316 +256,220 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="7801">
-        <label>gr_fir_filter_fff</label>
-        <link refid="classgr__fir__filter__fff"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7790">
+      <node id="5403">
         <label>digital_cma_equalizer_cc</label>
         <link refid="classdigital__cma__equalizer__cc"/>
-        <childnode refid="7789" relation="public-inheritance">
+        <childnode refid="5402" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7821">
+      <node id="5418">
         <label>vocoder_cvsd_encode_sb</label>
         <link refid="classvocoder__cvsd__encode__sb"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7800">
-        <label>gr_fir_filter_fcc</label>
-        <link refid="classgr__fir__filter__fcc"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7785">
+      <node id="5398">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7786" relation="public-inheritance">
+        <childnode refid="5399" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7822">
+      <node id="5419">
         <label>vocoder_gsm_fr_encode_sp</label>
         <link refid="classvocoder__gsm__fr__encode__sp"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7782">
+      <node id="5395">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7783" relation="public-inheritance">
+        <childnode refid="5396" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7797">
+      <node id="5410">
         <label>gr_fft_filter_fff</label>
         <link refid="classgr__fft__filter__fff"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7781">
+      <node id="5394">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="7782" relation="public-inheritance">
+        <childnode refid="5395" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7792">
+      <node id="5405">
         <label>digital_lms_dd_equalizer_cc</label>
         <link refid="classdigital__lms__dd__equalizer__cc"/>
-        <childnode refid="7789" relation="public-inheritance">
+        <childnode refid="5402" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7791">
+      <node id="5404">
         <label>digital_kurtotic_equalizer_cc</label>
         <link refid="classdigital__kurtotic__equalizer__cc"/>
-        <childnode refid="7789" relation="public-inheritance">
+        <childnode refid="5402" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7806">
-        <label>gr_freq_xlating_fir_filter_fcc</label>
-        <link refid="classgr__freq__xlating__fir__filter__fcc"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7794">
+      <node id="5407">
         <label>gr_decode_ccsds_27_fb</label>
         <link refid="classgr__decode__ccsds__27__fb"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7807">
-        <label>gr_freq_xlating_fir_filter_fcf</label>
-        <link refid="classgr__freq__xlating__fir__filter__fcf"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7783">
+      <node id="5396">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7784" relation="public-inheritance">
+        <childnode refid="5397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7810">
+      <node id="5411">
         <label>gr_goertzel_fc</label>
         <link refid="classgr__goertzel__fc"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7814">
-        <label>gr_integrate_ss</label>
-        <link refid="classgr__integrate__ss"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7795">
+      <node id="5408">
         <label>gr_deinterleave</label>
         <link refid="classgr__deinterleave"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7787">
+      <node id="5400">
         <label>atsc_pad</label>
         <link refid="classatsc__pad"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7817">
+      <node id="5414">
         <label>gr_stream_to_streams</label>
         <link refid="classgr__stream__to__streams"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7804">
-        <label>gr_freq_xlating_fir_filter_ccc</label>
-        <link refid="classgr__freq__xlating__fir__filter__ccc"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7805">
-        <label>gr_freq_xlating_fir_filter_ccf</label>
-        <link refid="classgr__freq__xlating__fir__filter__ccf"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7813">
-        <label>gr_integrate_ii</label>
-        <link refid="classgr__integrate__ii"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7812">
-        <label>gr_integrate_ff</label>
-        <link refid="classgr__integrate__ff"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7786">
+      <node id="5399">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7811">
-        <label>gr_integrate_cc</label>
-        <link refid="classgr__integrate__cc"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7808">
-        <label>gr_freq_xlating_fir_filter_scc</label>
-        <link refid="classgr__freq__xlating__fir__filter__scc"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7809">
-        <label>gr_freq_xlating_fir_filter_scf</label>
-        <link refid="classgr__freq__xlating__fir__filter__scf"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7815">
+      <node id="5412">
         <label>gr_interleaved_short_to_complex</label>
         <link refid="classgr__interleaved__short__to__complex"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7819">
+      <node id="5416">
         <label>pager_flex_deinterleave</label>
         <link refid="classpager__flex__deinterleave"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7789">
+      <node id="5402">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7793">
+      <node id="5406">
         <label>gr_adaptive_fir_ccf</label>
         <link refid="classgr__adaptive__fir__ccf"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7820">
+      <node id="5417">
         <label>vocoder_codec2_encode_sp</label>
         <link refid="classvocoder__codec2__encode__sp"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7818">
+      <node id="5415">
         <label>gr_stream_to_vector</label>
         <link refid="classgr__stream__to__vector"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7784">
+      <node id="5397">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7785" relation="public-inheritance">
+        <childnode refid="5398" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7798">
-        <label>gr_fir_filter_ccc</label>
-        <link refid="classgr__fir__filter__ccc"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7799">
-        <label>gr_fir_filter_ccf</label>
-        <link refid="classgr__fir__filter__ccf"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7802">
-        <label>gr_fir_filter_fsf</label>
-        <link refid="classgr__fir__filter__fsf"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7788">
+      <node id="5401">
         <label>dvbt_pad</label>
         <link refid="classdvbt__pad"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7803">
-        <label>gr_fir_filter_scc</label>
-        <link refid="classgr__fir__filter__scc"/>
-        <childnode refid="7781" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7816">
+      <node id="5413">
         <label>gr_pn_correlator_cc</label>
         <link refid="classgr__pn__correlator__cc"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7796">
+      <node id="5409">
         <label>gr_fft_filter_ccc</label>
         <link refid="classgr__fft__filter__ccc"/>
-        <childnode refid="7781" relation="public-inheritance">
+        <childnode refid="5394" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7827">
+      <node id="5424">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7828" relation="public-inheritance">
+        <childnode refid="5425" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7824">
+      <node id="5421">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7825" relation="public-inheritance">
+        <childnode refid="5422" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7823">
+      <node id="5420">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="7824" relation="public-inheritance">
+        <childnode refid="5421" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7825">
+      <node id="5422">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7826" relation="public-inheritance">
+        <childnode refid="5423" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7829">
+      <node id="5426">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7830" relation="usage">
+        <childnode refid="5427" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7832">
+      <node id="5429">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7828">
+      <node id="5425">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7830">
+      <node id="5427">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7826">
+      <node id="5423">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7827" relation="public-inheritance">
+        <childnode refid="5424" relation="public-inheritance">
         </childnode>
-        <childnode refid="7829" relation="usage">
+        <childnode refid="5426" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7831" relation="usage">
+        <childnode refid="5428" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7831">
+      <node id="5428">
         <label>std::string</label>
-        <childnode refid="7832" relation="public-inheritance">
+        <childnode refid="5429" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

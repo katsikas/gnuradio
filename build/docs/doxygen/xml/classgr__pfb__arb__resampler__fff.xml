@@ -6,7 +6,7 @@
     <includes refid="gr__pfb__arb__resampler__fff_8h" local="no">gr_pfb_arb_resampler_fff.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classgr__pfb__arb__resampler__fff_1a7c5682a156e28f61f998d378619874d5" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt;</type>
+        <type>std::vector&lt; gr_fir_fff * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff*&gt; gr_pfb_arb_resampler_fff::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -19,7 +19,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_fff.h" line="116" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_arb_resampler_fff.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__arb__resampler__fff_1aa7a9fce0e25aec4f98429a29cb482321" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt;</type>
+        <type>std::vector&lt; gr_fir_fff * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff*&gt; gr_pfb_arb_resampler_fff::d_diff_filters</definition>
         <argsstring></argsstring>
         <name>d_diff_filters</name>
@@ -294,7 +294,7 @@
           <declname>ourtaps</declname>
         </param>
         <param>
-          <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt; &amp;</type>
+          <type>std::vector&lt; gr_fir_fff * &gt; &amp;</type>
           <declname>ourfilter</declname>
         </param>
         <briefdescription>
@@ -440,88 +440,88 @@ general_work must call consume or consume_each to indicate how many items were c
 <para>This block takes in a signal stream and performs arbitrary resampling. The resampling rate can be any real number <emphasis>r</emphasis>. The resampling is done by constructing <emphasis>N</emphasis> filters where <emphasis>N</emphasis> is the interpolation rate. We then calculate <emphasis>D</emphasis> where <emphasis>D = floor(N/r)</emphasis>.</para><para>Using <emphasis>N</emphasis> and <emphasis>D</emphasis>, we can perform rational resampling where <emphasis>N/D</emphasis> is a rational number close to the input rate <emphasis>r</emphasis> where we have <emphasis>N</emphasis> filters and we cycle through them as a polyphase filterbank with a stride of <emphasis>D</emphasis> so that <emphasis>i+1 = (i + D) % N</emphasis>.</para><para>To get the arbitrary rate, we want to interpolate between two points. For each value out, we take an output from the current filter, <emphasis>i</emphasis>, and the next filter <emphasis>i+1</emphasis> and then linearly interpolate between the two based on the real resampling rate we want.</para><para>The linear interpolation only provides us with an approximation to the real sampling rate specified. The error is a quantization error between the two filters we used as our interpolation points. To this end, the number of filters, <emphasis>N</emphasis>, used determines the quantization error; the larger <emphasis>N</emphasis>, the smaller the noise. You can design for a specified noise floor by setting the filter size (parameters <emphasis>filter_size</emphasis>). The size defaults to 32 filters, which is about as good as most implementations need.</para><para>The trick with designing this filter is in how to specify the taps of the prototype filter. Like the PFB interpolator, the taps are specified using the interpolated filter rate. In this case, that rate is the input sample rate multiplied by the number of filters in the filterbank, which is also the interpolation rate. All other values should be relative to this rate.</para><para>For example, for a 32-filter arbitrary resampler and using the GNU Radio&apos;s firdes utility to build the filter, we build a low-pass filter with a sampling rate of <emphasis>fs</emphasis>, a 3-dB bandwidth of <emphasis>BW</emphasis> and a transition bandwidth of <emphasis>TB</emphasis>. We can also specify the out-of-band attenuation to use, <emphasis>ATT</emphasis>, and the filter window function (a Blackman-harris window in this case). The first input is the gain of the filter, which we specify here as the interpolation rate (<emphasis>32</emphasis>).</para><para><bold><emphasis>self._taps = gr.firdes.low_pass_2(32, 32*fs, BW, TB, attenuation_dB=ATT, window=gr.firdes.WIN_BLACKMAN_hARRIS)</emphasis></bold></para><para>The theory behind this block can be found in Chapter 7.5 of the following book.</para><para><bold><emphasis>f. harris, &quot;Multirate Signal Processing for Communication
        Systems&quot;, Upper Saddle River, NJ: Prentice Hall, Inc. 2004.</emphasis></bold> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="6376">
+      <node id="4465">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6377" relation="public-inheritance">
+        <childnode refid="4466" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6374">
+      <node id="4463">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6375" relation="public-inheritance">
+        <childnode refid="4464" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6377">
+      <node id="4466">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6373">
+      <node id="4462">
         <label>gr_pfb_arb_resampler_fff</label>
         <link refid="classgr__pfb__arb__resampler__fff"/>
-        <childnode refid="6374" relation="public-inheritance">
+        <childnode refid="4463" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6375">
+      <node id="4464">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6376" relation="public-inheritance">
+        <childnode refid="4465" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6381">
+      <node id="4470">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6382" relation="public-inheritance">
+        <childnode refid="4471" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6379">
+      <node id="4468">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6380" relation="public-inheritance">
+        <childnode refid="4469" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6383">
+      <node id="4472">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6384" relation="usage">
+        <childnode refid="4473" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6386">
+      <node id="4475">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6382">
+      <node id="4471">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6378">
+      <node id="4467">
         <label>gr_pfb_arb_resampler_fff</label>
         <link refid="classgr__pfb__arb__resampler__fff"/>
-        <childnode refid="6379" relation="public-inheritance">
+        <childnode refid="4468" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6384">
+      <node id="4473">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6380">
+      <node id="4469">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6381" relation="public-inheritance">
+        <childnode refid="4470" relation="public-inheritance">
         </childnode>
-        <childnode refid="6383" relation="usage">
+        <childnode refid="4472" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6385" relation="usage">
+        <childnode refid="4474" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6385">
+      <node id="4474">
         <label>std::string</label>
-        <childnode refid="6386" relation="public-inheritance">
+        <childnode refid="4475" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

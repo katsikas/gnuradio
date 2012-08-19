@@ -64,8 +64,10 @@ protected:
 
  private:
   std::vector<gr_complex> d_constellation;
-  std::vector<gr_complex> d_cs_constellation;
   std::vector<gr_complex> d_tps_constellation;
+  std::vector<gr_complex> d_cs_constellation;
+  
+  
   gr_msg_queue_sptr	d_msgq;
   gr_message_sptr	d_msg;
   unsigned		d_msg_offset;
@@ -81,26 +83,21 @@ protected:
   unsigned char d_resid;
   unsigned int d_nresid;
   unsigned int d_last_out;
-
-  unsigned int d_tps_pilots;
-  unsigned int d_continual_pilots;
+  unsigned int d_zeros_from_left;
   unsigned int d_payload_carriers;
-
+  
   static unsigned int d_frame_number;
   static unsigned int d_symbol_number;
-
-  std::vector<int> d_payload_map;
-  std::vector<int> d_subcarrier_map;
+ 
   std::vector<int> d_tps_map;
+  std::vector<int> d_tps_info;
+  std::vector<int> d_payload_map;
   std::vector<int> d_scattered_map;
+  std::vector<int> d_subcarrier_map;
   std::vector<int> d_continuals_map;
   
-  std::bitset<6> d_code_rate;
-  std::bitset<3> d_hierarchy;
-  std::bitset<2> d_guard_interval;
   std::bitset<11> d_prbs_sequence;
   std::bitset<2> d_modulation_type;
-  std::bitset<2> d_transmission_mode;
   
   static const std::string code_rate; 
   static const std::string hierarchy;
@@ -112,10 +109,10 @@ protected:
   static const std::string cell_identification_on;
   static const std::string cell_identification_off;
 
-
   int randsym(); 
   void next_state();
   void set_modulation_type();
+  unsigned int get_tps_pilots();
   unsigned int set_tps_pilots();
   unsigned int differential_modulation(int );
 

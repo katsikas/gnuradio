@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'WaterfallDisplayPlot.h'
 **
-** Created: Thu Aug 16 20:47:37 2012
+** Created: Sun Aug 19 10:43:40 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!

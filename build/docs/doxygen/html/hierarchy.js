@@ -49,7 +49,9 @@ var hierarchy =
       [ "digital_constellation_bpsk", "classdigital__constellation__bpsk.html", null ],
       [ "digital_constellation_calcdist", "classdigital__constellation__calcdist.html", null ],
       [ "digital_constellation_dqpsk", "classdigital__constellation__dqpsk.html", null ],
+      [ "digital_constellation_dvbt_cs_pilots", "classdigital__constellation__dvbt__cs__pilots.html", null ],
       [ "digital_constellation_dvbt_qpsk", "classdigital__constellation__dvbt__qpsk.html", null ],
+      [ "digital_constellation_dvbt_tps_pilots", "classdigital__constellation__dvbt__tps__pilots.html", null ],
       [ "digital_constellation_qpsk", "classdigital__constellation__qpsk.html", null ],
       [ "digital_constellation_sector", "classdigital__constellation__sector.html", [
         [ "digital_constellation_psk", "classdigital__constellation__psk.html", null ],
@@ -102,73 +104,38 @@ var hierarchy =
     [ "gr_file_sink_base", "classgr__file__sink__base.html", [
       [ "gr_file_sink", "classgr__file__sink.html", null ]
     ] ],
-    [ "gr_fir_ccc", "classgr__fir__ccc.html", [
-      [ "gr_fir_ccc_generic", "classgr__fir__ccc__generic.html", [
-        [ "gr_fir_ccc_simd", "classgr__fir__ccc__simd.html", [
-          [ "gr_fir_ccc_3dnow", "classgr__fir__ccc__3dnow.html", null ],
-          [ "gr_fir_ccc_3dnowext", "classgr__fir__ccc__3dnowext.html", null ],
-          [ "gr_fir_ccc_sse", "classgr__fir__ccc__sse.html", null ]
-        ] ]
-      ] ]
+    [ "gr_fir_ccc_simd", "classgr__fir__ccc__simd.html", [
+      [ "gr_fir_ccc_3dnow", "classgr__fir__ccc__3dnow.html", null ],
+      [ "gr_fir_ccc_3dnowext", "classgr__fir__ccc__3dnowext.html", null ],
+      [ "gr_fir_ccc_sse", "classgr__fir__ccc__sse.html", null ]
     ] ],
-    [ "gr_fir_ccc_info", "structgr__fir__ccc__info.html", null ],
-    [ "gr_fir_ccf", "classgr__fir__ccf.html", [
-      [ "gr_fir_ccf_generic", "classgr__fir__ccf__generic.html", [
-        [ "gr_fir_ccf_armv7_a", "classgr__fir__ccf__armv7__a.html", null ],
-        [ "gr_fir_ccf_simd", "classgr__fir__ccf__simd.html", [
-          [ "gr_fir_ccf_3dnow", "classgr__fir__ccf__3dnow.html", null ],
-          [ "gr_fir_ccf_sse", "classgr__fir__ccf__sse.html", null ]
-        ] ]
-      ] ]
+    [ "gr_fir_ccf_armv7_a", "classgr__fir__ccf__armv7__a.html", null ],
+    [ "gr_fir_ccf_simd", "classgr__fir__ccf__simd.html", [
+      [ "gr_fir_ccf_3dnow", "classgr__fir__ccf__3dnow.html", null ],
+      [ "gr_fir_ccf_sse", "classgr__fir__ccf__sse.html", null ]
     ] ],
-    [ "gr_fir_ccf_info", "structgr__fir__ccf__info.html", null ],
-    [ "gr_fir_fcc", "classgr__fir__fcc.html", [
-      [ "gr_fir_fcc_generic", "classgr__fir__fcc__generic.html", [
-        [ "gr_fir_fcc_simd", "classgr__fir__fcc__simd.html", [
-          [ "gr_fir_fcc_3dnow", "classgr__fir__fcc__3dnow.html", null ],
-          [ "gr_fir_fcc_sse", "classgr__fir__fcc__sse.html", null ]
-        ] ]
-      ] ]
+    [ "gr_fir_fcc_simd", "classgr__fir__fcc__simd.html", [
+      [ "gr_fir_fcc_3dnow", "classgr__fir__fcc__3dnow.html", null ],
+      [ "gr_fir_fcc_sse", "classgr__fir__fcc__sse.html", null ]
     ] ],
-    [ "gr_fir_fcc_info", "structgr__fir__fcc__info.html", null ],
-    [ "gr_fir_fff", "classgr__fir__fff.html", [
-      [ "gr_fir_fff_generic", "classgr__fir__fff__generic.html", [
-        [ "gr_fir_fff_altivec", "classgr__fir__fff__altivec.html", null ],
-        [ "gr_fir_fff_armv7_a", "classgr__fir__fff__armv7__a.html", null ],
-        [ "gr_fir_fff_simd", "classgr__fir__fff__simd.html", [
-          [ "gr_fir_fff_3dnow", "classgr__fir__fff__3dnow.html", null ],
-          [ "gr_fir_fff_sse", "classgr__fir__fff__sse.html", null ]
-        ] ]
-      ] ]
+    [ "gr_fir_fff_altivec", "classgr__fir__fff__altivec.html", null ],
+    [ "gr_fir_fff_armv7_a", "classgr__fir__fff__armv7__a.html", null ],
+    [ "gr_fir_fff_simd", "classgr__fir__fff__simd.html", [
+      [ "gr_fir_fff_3dnow", "classgr__fir__fff__3dnow.html", null ],
+      [ "gr_fir_fff_sse", "classgr__fir__fff__sse.html", null ]
     ] ],
-    [ "gr_fir_fff_info", "structgr__fir__fff__info.html", null ],
-    [ "gr_fir_fsf", "classgr__fir__fsf.html", [
-      [ "gr_fir_fsf_generic", "classgr__fir__fsf__generic.html", [
-        [ "gr_fir_fsf_simd", "classgr__fir__fsf__simd.html", [
-          [ "gr_fir_fsf_3dnow", "classgr__fir__fsf__3dnow.html", null ],
-          [ "gr_fir_fsf_sse", "classgr__fir__fsf__sse.html", null ]
-        ] ]
-      ] ]
+    [ "gr_fir_fsf_simd", "classgr__fir__fsf__simd.html", [
+      [ "gr_fir_fsf_3dnow", "classgr__fir__fsf__3dnow.html", null ],
+      [ "gr_fir_fsf_sse", "classgr__fir__fsf__sse.html", null ]
     ] ],
-    [ "gr_fir_fsf_info", "structgr__fir__fsf__info.html", null ],
-    [ "gr_fir_scc", "classgr__fir__scc.html", [
-      [ "gr_fir_scc_generic", "classgr__fir__scc__generic.html", [
-        [ "gr_fir_scc_simd", "classgr__fir__scc__simd.html", [
-          [ "gr_fir_scc_3dnow", "classgr__fir__scc__3dnow.html", null ],
-          [ "gr_fir_scc_3dnowext", "classgr__fir__scc__3dnowext.html", null ],
-          [ "gr_fir_scc_sse", "classgr__fir__scc__sse.html", null ]
-        ] ]
-      ] ]
+    [ "gr_fir_scc_simd", "classgr__fir__scc__simd.html", [
+      [ "gr_fir_scc_3dnow", "classgr__fir__scc__3dnow.html", null ],
+      [ "gr_fir_scc_3dnowext", "classgr__fir__scc__3dnowext.html", null ],
+      [ "gr_fir_scc_sse", "classgr__fir__scc__sse.html", null ]
     ] ],
-    [ "gr_fir_scc_info", "structgr__fir__scc__info.html", null ],
-    [ "gr_fir_sysconfig", "classgr__fir__sysconfig.html", [
-      [ "gr_fir_sysconfig_generic", "classgr__fir__sysconfig__generic.html", [
-        [ "gr_fir_sysconfig_armv7_a", "classgr__fir__sysconfig__armv7__a.html", null ],
-        [ "gr_fir_sysconfig_powerpc", "classgr__fir__sysconfig__powerpc.html", null ],
-        [ "gr_fir_sysconfig_x86", "classgr__fir__sysconfig__x86.html", null ]
-      ] ]
-    ] ],
-    [ "gr_fir_util", "structgr__fir__util.html", null ],
+    [ "gr_fir_sysconfig_armv7_a", "classgr__fir__sysconfig__armv7__a.html", null ],
+    [ "gr_fir_sysconfig_powerpc", "classgr__fir__sysconfig__powerpc.html", null ],
+    [ "gr_fir_sysconfig_x86", "classgr__fir__sysconfig__x86.html", null ],
     [ "gr_firdes", "classgr__firdes.html", null ],
     [ "gr_flowgraph", "classgr__flowgraph.html", [
       [ "gr_flat_flowgraph", "classgr__flat__flowgraph.html", null ]
@@ -246,12 +213,6 @@ var hierarchy =
     [ "gri_fft_planner", "classgri__fft__planner.html", null ],
     [ "gri_fft_real_fwd", "classgri__fft__real__fwd.html", null ],
     [ "gri_fft_real_rev", "classgri__fft__real__rev.html", null ],
-    [ "gri_fir_filter_with_buffer_ccc", "classgri__fir__filter__with__buffer__ccc.html", null ],
-    [ "gri_fir_filter_with_buffer_ccf", "classgri__fir__filter__with__buffer__ccf.html", null ],
-    [ "gri_fir_filter_with_buffer_fcc", "classgri__fir__filter__with__buffer__fcc.html", null ],
-    [ "gri_fir_filter_with_buffer_fff", "classgri__fir__filter__with__buffer__fff.html", null ],
-    [ "gri_fir_filter_with_buffer_fsf", "classgri__fir__filter__with__buffer__fsf.html", null ],
-    [ "gri_fir_filter_with_buffer_scc", "classgri__fir__filter__with__buffer__scc.html", null ],
     [ "gri_glfsr", "classgri__glfsr.html", null ],
     [ "gri_goertzel", "classgri__goertzel.html", null ],
     [ "gri_iir< i_type, o_type, tap_type >", "classgri__iir.html", null ],
@@ -308,20 +269,11 @@ var hierarchy =
             [ "gr_keep_one_in_n", "classgr__keep__one__in__n.html", null ],
             [ "gr_nop", "classgr__nop.html", null ],
             [ "gr_ofdm_bpsk_demapper", "classgr__ofdm__bpsk__demapper.html", null ],
-            [ "gr_packed_to_unpacked_bb", "classgr__packed__to__unpacked__bb.html", null ],
-            [ "gr_packed_to_unpacked_ii", "classgr__packed__to__unpacked__ii.html", null ],
-            [ "gr_packed_to_unpacked_ss", "classgr__packed__to__unpacked__ss.html", null ],
             [ "gr_pfb_arb_resampler_ccf", "classgr__pfb__arb__resampler__ccf.html", null ],
             [ "gr_pfb_arb_resampler_fff", "classgr__pfb__arb__resampler__fff.html", null ],
             [ "gr_pfb_channelizer_ccf", "classgr__pfb__channelizer__ccf.html", null ],
             [ "gr_pfb_clock_sync_ccf", "classgr__pfb__clock__sync__ccf.html", null ],
             [ "gr_pfb_clock_sync_fff", "classgr__pfb__clock__sync__fff.html", null ],
-            [ "gr_rational_resampler_base_ccc", "classgr__rational__resampler__base__ccc.html", null ],
-            [ "gr_rational_resampler_base_ccf", "classgr__rational__resampler__base__ccf.html", null ],
-            [ "gr_rational_resampler_base_fcc", "classgr__rational__resampler__base__fcc.html", null ],
-            [ "gr_rational_resampler_base_fff", "classgr__rational__resampler__base__fff.html", null ],
-            [ "gr_rational_resampler_base_fsf", "classgr__rational__resampler__base__fsf.html", null ],
-            [ "gr_rational_resampler_base_scc", "classgr__rational__resampler__base__scc.html", null ],
             [ "gr_simple_correlator", "classgr__simple__correlator.html", null ],
             [ "gr_simple_framer", "classgr__simple__framer.html", null ],
             [ "gr_skiphead", "classgr__skiphead.html", null ],
@@ -383,30 +335,12 @@ var hierarchy =
               [ "dvbt_rs_encoder", "classdvbt__rs__encoder.html", null ],
               [ "dvbt_trellis_encoder", "classdvbt__trellis__encoder.html", null ],
               [ "dvbt_viterbi_decoder", "classdvbt__viterbi__decoder.html", null ],
-              [ "gr_add_cc", "classgr__add__cc.html", null ],
-              [ "gr_add_const_cc", "classgr__add__const__cc.html", null ],
-              [ "gr_add_const_ff", "classgr__add__const__ff.html", null ],
-              [ "gr_add_const_ii", "classgr__add__const__ii.html", null ],
-              [ "gr_add_const_sf", "classgr__add__const__sf.html", null ],
-              [ "gr_add_const_ss", "classgr__add__const__ss.html", null ],
-              [ "gr_add_const_vcc", "classgr__add__const__vcc.html", null ],
-              [ "gr_add_const_vff", "classgr__add__const__vff.html", null ],
-              [ "gr_add_const_vii", "classgr__add__const__vii.html", null ],
-              [ "gr_add_const_vss", "classgr__add__const__vss.html", null ],
               [ "gr_add_ff", "classgr__add__ff.html", null ],
-              [ "gr_add_ii", "classgr__add__ii.html", null ],
-              [ "gr_add_ss", "classgr__add__ss.html", null ],
               [ "gr_additive_scrambler_bb", "classgr__additive__scrambler__bb.html", null ],
               [ "gr_agc2_cc", "classgr__agc2__cc.html", null ],
               [ "gr_agc2_ff", "classgr__agc2__ff.html", null ],
               [ "gr_agc_cc", "classgr__agc__cc.html", null ],
               [ "gr_agc_ff", "classgr__agc__ff.html", null ],
-              [ "gr_and_bb", "classgr__and__bb.html", null ],
-              [ "gr_and_const_bb", "classgr__and__const__bb.html", null ],
-              [ "gr_and_const_ii", "classgr__and__const__ii.html", null ],
-              [ "gr_and_const_ss", "classgr__and__const__ss.html", null ],
-              [ "gr_and_ii", "classgr__and__ii.html", null ],
-              [ "gr_and_ss", "classgr__and__ss.html", null ],
               [ "gr_annotator_1to1", "classgr__annotator__1to1.html", null ],
               [ "gr_annotator_alltoall", "classgr__annotator__alltoall.html", null ],
               [ "gr_bin_statistics_f", "classgr__bin__statistics__f.html", null ],
@@ -429,10 +363,6 @@ var hierarchy =
               [ "gr_diff_decoder_bb", "classgr__diff__decoder__bb.html", null ],
               [ "gr_diff_encoder_bb", "classgr__diff__encoder__bb.html", null ],
               [ "gr_diff_phasor_cc", "classgr__diff__phasor__cc.html", null ],
-              [ "gr_divide_cc", "classgr__divide__cc.html", null ],
-              [ "gr_divide_ff", "classgr__divide__ff.html", null ],
-              [ "gr_divide_ii", "classgr__divide__ii.html", null ],
-              [ "gr_divide_ss", "classgr__divide__ss.html", null ],
               [ "gr_dpll_bb", "classgr__dpll__bb.html", null ],
               [ "gr_fake_channel_decoder_pp", "classgr__fake__channel__decoder__pp.html", null ],
               [ "gr_fake_channel_encoder_pp", "classgr__fake__channel__encoder__pp.html", null ],
@@ -467,38 +397,15 @@ var hierarchy =
               [ "gr_map_bb", "classgr__map__bb.html", null ],
               [ "gr_message_sink", "classgr__message__sink.html", null ],
               [ "gr_message_source", "classgr__message__source.html", null ],
-              [ "gr_moving_average_cc", "classgr__moving__average__cc.html", null ],
-              [ "gr_moving_average_ff", "classgr__moving__average__ff.html", null ],
-              [ "gr_moving_average_ii", "classgr__moving__average__ii.html", null ],
-              [ "gr_moving_average_ss", "classgr__moving__average__ss.html", null ],
               [ "gr_multiply_cc", "classgr__multiply__cc.html", null ],
               [ "gr_multiply_conjugate_cc", "classgr__multiply__conjugate__cc.html", null ],
               [ "gr_multiply_const_cc", "classgr__multiply__const__cc.html", null ],
               [ "gr_multiply_const_ff", "classgr__multiply__const__ff.html", null ],
-              [ "gr_multiply_const_ii", "classgr__multiply__const__ii.html", null ],
-              [ "gr_multiply_const_ss", "classgr__multiply__const__ss.html", null ],
-              [ "gr_multiply_const_vcc", "classgr__multiply__const__vcc.html", null ],
-              [ "gr_multiply_const_vff", "classgr__multiply__const__vff.html", null ],
-              [ "gr_multiply_const_vii", "classgr__multiply__const__vii.html", null ],
-              [ "gr_multiply_const_vss", "classgr__multiply__const__vss.html", null ],
               [ "gr_multiply_ff", "classgr__multiply__ff.html", null ],
-              [ "gr_multiply_ii", "classgr__multiply__ii.html", null ],
-              [ "gr_multiply_ss", "classgr__multiply__ss.html", null ],
-              [ "gr_mute_cc", "classgr__mute__cc.html", null ],
-              [ "gr_mute_ff", "classgr__mute__ff.html", null ],
-              [ "gr_mute_ii", "classgr__mute__ii.html", null ],
-              [ "gr_mute_ss", "classgr__mute__ss.html", null ],
               [ "gr_nlog10_ff", "classgr__nlog10__ff.html", null ],
-              [ "gr_noise_source_c", "classgr__noise__source__c.html", null ],
-              [ "gr_noise_source_f", "classgr__noise__source__f.html", null ],
-              [ "gr_noise_source_i", "classgr__noise__source__i.html", null ],
-              [ "gr_noise_source_s", "classgr__noise__source__s.html", null ],
               [ "gr_null_sink", "classgr__null__sink.html", null ],
               [ "gr_null_source", "classgr__null__source.html", null ],
               [ "gr_ofdm_frame_sink2", "classgr__ofdm__frame__sink2.html", null ],
-              [ "gr_or_bb", "classgr__or__bb.html", null ],
-              [ "gr_or_ii", "classgr__or__ii.html", null ],
-              [ "gr_or_ss", "classgr__or__ss.html", null ],
               [ "gr_oscope_sink_x", "classgr__oscope__sink__x.html", [
                 [ "gr_oscope_sink_f", "classgr__oscope__sink__f.html", null ]
               ] ],
@@ -514,16 +421,6 @@ var hierarchy =
               [ "gr_probe_avg_mag_sqrd_cf", "classgr__probe__avg__mag__sqrd__cf.html", null ],
               [ "gr_probe_avg_mag_sqrd_f", "classgr__probe__avg__mag__sqrd__f.html", null ],
               [ "gr_probe_density_b", "classgr__probe__density__b.html", null ],
-              [ "gr_probe_signal_b", "classgr__probe__signal__b.html", null ],
-              [ "gr_probe_signal_c", "classgr__probe__signal__c.html", null ],
-              [ "gr_probe_signal_f", "classgr__probe__signal__f.html", null ],
-              [ "gr_probe_signal_i", "classgr__probe__signal__i.html", null ],
-              [ "gr_probe_signal_s", "classgr__probe__signal__s.html", null ],
-              [ "gr_probe_signal_vb", "classgr__probe__signal__vb.html", null ],
-              [ "gr_probe_signal_vc", "classgr__probe__signal__vc.html", null ],
-              [ "gr_probe_signal_vf", "classgr__probe__signal__vf.html", null ],
-              [ "gr_probe_signal_vi", "classgr__probe__signal__vi.html", null ],
-              [ "gr_probe_signal_vs", "classgr__probe__signal__vs.html", null ],
               [ "gr_quadrature_demod_cf", "classgr__quadrature__demod__cf.html", null ],
               [ "gr_rail_ff", "classgr__rail__ff.html", null ],
               [ "gr_regenerate_bb", "classgr__regenerate__bb.html", null ],
@@ -532,19 +429,11 @@ var hierarchy =
               [ "gr_scrambler_bb", "classgr__scrambler__bb.html", null ],
               [ "gr_short_to_char", "classgr__short__to__char.html", null ],
               [ "gr_short_to_float", "classgr__short__to__float.html", null ],
-              [ "gr_sig_source_c", "classgr__sig__source__c.html", null ],
-              [ "gr_sig_source_f", "classgr__sig__source__f.html", null ],
-              [ "gr_sig_source_i", "classgr__sig__source__i.html", null ],
-              [ "gr_sig_source_s", "classgr__sig__source__s.html", null ],
               [ "gr_simple_squelch_cc", "classgr__simple__squelch__cc.html", null ],
               [ "gr_single_pole_iir_filter_cc", "classgr__single__pole__iir__filter__cc.html", null ],
               [ "gr_single_pole_iir_filter_ff", "classgr__single__pole__iir__filter__ff.html", null ],
               [ "gr_streams_to_vector", "classgr__streams__to__vector.html", null ],
               [ "gr_stretch_ff", "classgr__stretch__ff.html", null ],
-              [ "gr_sub_cc", "classgr__sub__cc.html", null ],
-              [ "gr_sub_ff", "classgr__sub__ff.html", null ],
-              [ "gr_sub_ii", "classgr__sub__ii.html", null ],
-              [ "gr_sub_ss", "classgr__sub__ss.html", null ],
               [ "gr_sync_decimator", "classgr__sync__decimator.html", [
                 [ "atsc_pad", "classatsc__pad.html", null ],
                 [ "dvbt_pad", "classdvbt__pad.html", null ],
@@ -558,23 +447,7 @@ var hierarchy =
                 [ "gr_deinterleave", "classgr__deinterleave.html", null ],
                 [ "gr_fft_filter_ccc", "classgr__fft__filter__ccc.html", null ],
                 [ "gr_fft_filter_fff", "classgr__fft__filter__fff.html", null ],
-                [ "gr_fir_filter_ccc", "classgr__fir__filter__ccc.html", null ],
-                [ "gr_fir_filter_ccf", "classgr__fir__filter__ccf.html", null ],
-                [ "gr_fir_filter_fcc", "classgr__fir__filter__fcc.html", null ],
-                [ "gr_fir_filter_fff", "classgr__fir__filter__fff.html", null ],
-                [ "gr_fir_filter_fsf", "classgr__fir__filter__fsf.html", null ],
-                [ "gr_fir_filter_scc", "classgr__fir__filter__scc.html", null ],
-                [ "gr_freq_xlating_fir_filter_ccc", "classgr__freq__xlating__fir__filter__ccc.html", null ],
-                [ "gr_freq_xlating_fir_filter_ccf", "classgr__freq__xlating__fir__filter__ccf.html", null ],
-                [ "gr_freq_xlating_fir_filter_fcc", "classgr__freq__xlating__fir__filter__fcc.html", null ],
-                [ "gr_freq_xlating_fir_filter_fcf", "classgr__freq__xlating__fir__filter__fcf.html", null ],
-                [ "gr_freq_xlating_fir_filter_scc", "classgr__freq__xlating__fir__filter__scc.html", null ],
-                [ "gr_freq_xlating_fir_filter_scf", "classgr__freq__xlating__fir__filter__scf.html", null ],
                 [ "gr_goertzel_fc", "classgr__goertzel__fc.html", null ],
-                [ "gr_integrate_cc", "classgr__integrate__cc.html", null ],
-                [ "gr_integrate_ff", "classgr__integrate__ff.html", null ],
-                [ "gr_integrate_ii", "classgr__integrate__ii.html", null ],
-                [ "gr_integrate_ss", "classgr__integrate__ss.html", null ],
                 [ "gr_interleaved_short_to_complex", "classgr__interleaved__short__to__complex.html", null ],
                 [ "gr_pn_correlator_cc", "classgr__pn__correlator__cc.html", null ],
                 [ "gr_stream_to_streams", "classgr__stream__to__streams.html", null ],
@@ -589,22 +462,10 @@ var hierarchy =
                 [ "digital_ofdm_cyclic_prefixer", "classdigital__ofdm__cyclic__prefixer.html", null ],
                 [ "dvbt_depad", "classdvbt__depad.html", null ],
                 [ "gr_bytes_to_syms", "classgr__bytes__to__syms.html", null ],
-                [ "gr_chunks_to_symbols_bc", "classgr__chunks__to__symbols__bc.html", null ],
-                [ "gr_chunks_to_symbols_bf", "classgr__chunks__to__symbols__bf.html", null ],
-                [ "gr_chunks_to_symbols_ic", "classgr__chunks__to__symbols__ic.html", null ],
-                [ "gr_chunks_to_symbols_if", "classgr__chunks__to__symbols__if.html", null ],
-                [ "gr_chunks_to_symbols_sc", "classgr__chunks__to__symbols__sc.html", null ],
-                [ "gr_chunks_to_symbols_sf", "classgr__chunks__to__symbols__sf.html", null ],
                 [ "gr_complex_to_interleaved_short", "classgr__complex__to__interleaved__short.html", null ],
                 [ "gr_cpfsk_bc", "classgr__cpfsk__bc.html", null ],
                 [ "gr_encode_ccsds_27_bb", "classgr__encode__ccsds__27__bb.html", null ],
                 [ "gr_interleave", "classgr__interleave.html", null ],
-                [ "gr_interp_fir_filter_ccc", "classgr__interp__fir__filter__ccc.html", null ],
-                [ "gr_interp_fir_filter_ccf", "classgr__interp__fir__filter__ccf.html", null ],
-                [ "gr_interp_fir_filter_fcc", "classgr__interp__fir__filter__fcc.html", null ],
-                [ "gr_interp_fir_filter_fff", "classgr__interp__fir__filter__fff.html", null ],
-                [ "gr_interp_fir_filter_fsf", "classgr__interp__fir__filter__fsf.html", null ],
-                [ "gr_interp_fir_filter_scc", "classgr__interp__fir__filter__scc.html", null ],
                 [ "gr_pfb_interpolator_ccf", "classgr__pfb__interpolator__ccf.html", null ],
                 [ "gr_pfb_synthesizer_ccf", "classgr__pfb__synthesizer__ccf.html", null ],
                 [ "gr_repeat", "classgr__repeat.html", null ],
@@ -623,22 +484,9 @@ var hierarchy =
               [ "gr_udp_sink", "classgr__udp__sink.html", null ],
               [ "gr_udp_source", "classgr__udp__source.html", null ],
               [ "gr_vco_f", "classgr__vco__f.html", null ],
-              [ "gr_vector_sink_b", "classgr__vector__sink__b.html", null ],
-              [ "gr_vector_sink_c", "classgr__vector__sink__c.html", null ],
-              [ "gr_vector_sink_f", "classgr__vector__sink__f.html", null ],
-              [ "gr_vector_sink_i", "classgr__vector__sink__i.html", null ],
-              [ "gr_vector_sink_s", "classgr__vector__sink__s.html", null ],
-              [ "gr_vector_source_b", "classgr__vector__source__b.html", null ],
-              [ "gr_vector_source_c", "classgr__vector__source__c.html", null ],
-              [ "gr_vector_source_f", "classgr__vector__source__f.html", null ],
-              [ "gr_vector_source_i", "classgr__vector__source__i.html", null ],
-              [ "gr_vector_source_s", "classgr__vector__source__s.html", null ],
               [ "gr_vector_to_streams", "classgr__vector__to__streams.html", null ],
               [ "gr_wavfile_sink", "classgr__wavfile__sink.html", null ],
               [ "gr_wavfile_source", "classgr__wavfile__source.html", null ],
-              [ "gr_xor_bb", "classgr__xor__bb.html", null ],
-              [ "gr_xor_ii", "classgr__xor__ii.html", null ],
-              [ "gr_xor_ss", "classgr__xor__ss.html", null ],
               [ "howto_square2_ff", "classhowto__square2__ff.html", null ],
               [ "noaa_hrpt_decoder", "classnoaa__hrpt__decoder.html", null ],
               [ "noaa_hrpt_pll_cf", "classnoaa__hrpt__pll__cf.html", null ],
@@ -675,9 +523,6 @@ var hierarchy =
               ] ]
             ] ],
             [ "gr_test", "classgr__test.html", null ],
-            [ "gr_unpacked_to_packed_bb", "classgr__unpacked__to__packed__bb.html", null ],
-            [ "gr_unpacked_to_packed_ii", "classgr__unpacked__to__packed__ii.html", null ],
-            [ "gr_unpacked_to_packed_ss", "classgr__unpacked__to__packed__ss.html", null ],
             [ "howto_square_ff", "classhowto__square__ff.html", null ],
             [ "noaa_hrpt_deframer", "classnoaa__hrpt__deframer.html", null ],
             [ "pager_flex_sync", "classpager__flex__sync.html", null ],

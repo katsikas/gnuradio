@@ -538,7 +538,7 @@ NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Even
 
 %feature("docstring") digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink "
 
-Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)"
+Params: (sym_position, t_constellation, cs_constellation, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)"
 
 %feature("docstring") digital_dvbt_ofdm_frame_sink::enter_search "
 
@@ -556,9 +556,37 @@ Params: (NONE)"
 
 Params: (NONE)"
 
+%feature("docstring") digital_dvbt_ofdm_frame_sink::next_state "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::set_modulation_type "
+
+Params: (NONE)"
+
 %feature("docstring") digital_dvbt_ofdm_frame_sink::slicer "
 
 Params: (x)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::differential_demodulation "
+
+Params: (bit)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::get_pilot_info "
+
+Params: (bits)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::extract_pilot_info "
+
+Params: (bits)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::make_pilot_decision "
+
+Params: (x)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::integrity_tps_check "
+
+Params: (in, out)"
 
 %feature("docstring") digital_dvbt_ofdm_frame_sink::demapper "
 
@@ -580,7 +608,7 @@ Params: (noutput_items, input_items, output_items)"
 
 NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.
 
-Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)"
+Params: (sym_position, t_constellation, cs_constellation, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)"
 
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv "Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping."
 
@@ -597,6 +625,10 @@ Params: (NONE)"
 Params: (NONE)"
 
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::set_modulation_type "
+
+Params: (NONE)"
+
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::get_tps_pilots "
 
 Params: (NONE)"
 
@@ -1674,13 +1706,13 @@ Params: (NONE)"
 
 %feature("docstring") std::istringstream "STL class."
 
-%feature("docstring") std::set::iterator "STL iterator class."
-
 %feature("docstring") std::basic_string::iterator "STL iterator class."
+
+%feature("docstring") std::multiset::iterator "STL iterator class."
 
 %feature("docstring") std::map::iterator "STL iterator class."
 
-%feature("docstring") std::multiset::iterator "STL iterator class."
+%feature("docstring") std::set::iterator "STL iterator class."
 
 %feature("docstring") std::vector::iterator "STL iterator class."
 
@@ -1722,25 +1754,25 @@ Params: (NONE)"
 
 %feature("docstring") std::range_error "STL class."
 
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::vector::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::list::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::map::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
+%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
+
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 

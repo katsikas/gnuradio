@@ -12,10 +12,6 @@ var group__level__blk =
       [ "gr_pwr_squelch_cc", "classgr__pwr__squelch__cc.html", null ],
       [ "gr_pwr_squelch_ff", "classgr__pwr__squelch__ff.html", null ],
       [ "gr_regenerate_bb", "classgr__regenerate__bb.html", null ],
-      [ "gr_simple_squelch_cc", "classgr__simple__squelch__cc.html", null ],
-      [ "gr_mute_cc", "classgr__mute__cc.html", null ],
-      [ "gr_mute_ff", "classgr__mute__ff.html", null ],
-      [ "gr_mute_ii", "classgr__mute__ii.html", null ],
-      [ "gr_mute_ss", "classgr__mute__ss.html", null ]
+      [ "gr_simple_squelch_cc", "classgr__simple__squelch__cc.html", null ]
     ] ]
 ];

@@ -106,18 +106,18 @@ digital_constellation::get_closest_point(const gr_complex *sample)
   min_euclid_dist = get_distance(0, sample);
   min_index = 0;
 
-  printf("\nQAM info\n");
+  /*printf("\nQAM info\n");
   printf("got = %.4f %.4fj ",sample->real(),sample->imag());
-  printf("min_euclid(0 from sample) = %f\n",min_euclid_dist);
+  printf("min_euclid(0 from sample) = %f\n",min_euclid_dist);*/
   for (unsigned int j = 1; j < d_arity; j++){
     euclid_dist = get_distance(j, sample);
-    printf("dist form point %d to sample = %f \n",j,euclid_dist);
+    //printf("dist form point %d to sample = %f \n",j,euclid_dist);
     if (euclid_dist < min_euclid_dist){
       min_euclid_dist = euclid_dist;
       min_index = j;
     }
   }
-  printf("returned item = %d \n",min_index);
+  //printf("returned item = %d \n",min_index);
   return min_index;
 }
 
@@ -642,7 +642,6 @@ digital_constellation_dvbt_cs_pilots::decision_maker(const gr_complex *sample)
 {
   return !(real(*sample) > 0);
 }
-
 
 
 /**

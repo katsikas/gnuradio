@@ -95,20 +95,18 @@ class dvbt_ofdm_mod(gr.hier_block2):
         rot = 1
         #Create constellation objects for payload data.
         if(self._modulation.find("qpsk") >= 0):
-            constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
-            rotated_const = constel.points()
+            constel = dvbt_constellations.dvbt_qpsk_constellation(arity)            
         elif(self._modulation.find("qam16") >= 0):
 	    constel = dvbt_constellations.dvbt_16qam_constellation(arity,False,mod_codes.GRAY_CODE)
-            rotated_const = map(lambda pt: pt / (math.sqrt(10)), constel.points())
 	elif(self._modulation.find("qam64") >= 0):
             constel = dvbt_constellations.dvbt_64qam_constellation(arity,False,mod_codes.GRAY_CODE)
-            rotated_const = map(lambda pt: pt / (math.sqrt(42)), constel.points())
+    	rotated_const = constel.points()
 	print rotated_const
 
 
 	#Create constellation objects for pilot signals	
-	cs_constel = dvbt_constellations.dvbt_cs_pilots(2)
-	tps_constel = dvbt_constellations.dvbt_tps_pilots(2)
+	cs_constel = dvbt_constellations.dvbt_cs_pilots()
+	tps_constel = dvbt_constellations.dvbt_tps_pilots()
 
 	#print cs_constel.points()
 	#print "\n"
@@ -116,7 +114,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
 
         self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,tps_constel.points(),
 						        	cs_constel.points(),
-						       		msgq_limit,
+						       		0,#msgq_limit,
                                                        		options.occupied_tones,
                                                        		options.fft_length)
         
@@ -255,22 +253,25 @@ class dvbt_ofdm_demod(gr.hier_block2):
         # FIXME: pass the constellation objects instead of just the points
 	if(self._modulation.find("qpsk") >= 0):
             constel = dvbt_constellations.dvbt_qpsk_constellation(arity)
-            rotated_const = constel.points()
         elif(self._modulation.find("qam16") >= 0):
             constel = dvbt_constellations.dvbt_16qam_constellation(arity,False,mod_codes.GRAY_CODE)
-            rotated_const = map(lambda pt: pt / (math.sqrt(10)), constel.points())
         elif(self._modulation.find("qam64") >= 0):
             constel = dvbt_constellations.dvbt_64qam_constellation(arity,False,mod_codes.GRAY_CODE)
-            rotated_const = map(lambda pt: pt / (math.sqrt(42)), constel.points())
+	rotated_const = constel.points()
         print rotated_const
 
         phgain = 0.25
         frgain = phgain*phgain / 4.0
- 
-        self.ofdm_demod = digital_swig.dvbt_ofdm_frame_sink(rotated_const, range(arity),
-                                                       self._rcvd_pktq,
-                                                       self._occupied_tones,
-                                                       phgain, frgain)
+        
+	#Create constellation objects for pilot signals 
+        cs_constel = dvbt_constellations.dvbt_cs_pilots()
+        tps_constel = dvbt_constellations.dvbt_tps_pilots()
+        
+        self.ofdm_demod = digital_swig.dvbt_ofdm_frame_sink(rotated_const, tps_constel.points(),
+							cs_constel.points(), range(arity),
+                                                       	self._rcvd_pktq,
+                                                       	self._occupied_tones,
+                                                       	phgain, frgain)
 
         self.connect(self, self.ofdm_recv)
         self.connect((self.ofdm_recv, 0), (self.ofdm_demod, 0))

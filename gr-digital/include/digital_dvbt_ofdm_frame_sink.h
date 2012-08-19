@@ -23,6 +23,8 @@
 #ifndef INCLUDED_DIGITAL_DVBT_OFDM_FRAME_SINK_H
 #define INCLUDED_DIGITAL_DVBT_OFDM_FRAME_SINK_H
 
+#include <bitset>
+#include <string>
 #include <digital_api.h>
 #include <gr_msg_queue.h>
 #include <gr_sync_block.h>
@@ -32,9 +34,11 @@ typedef boost::shared_ptr<digital_dvbt_ofdm_frame_sink> digital_dvbt_ofdm_frame_
 
 DIGITAL_API digital_dvbt_ofdm_frame_sink_sptr 
 digital_make_dvbt_ofdm_frame_sink (const std::vector<gr_complex> &sym_position, 
-			      const std::vector<unsigned char> &sym_value_out,
-			      gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
-			      float phase_gain=0.25, float freq_gain=0.25*0.25/4.0);
+				    const std::vector<gr_complex> &t_constellation,
+                    const std::vector<gr_complex> &cs_constellation,
+					const std::vector<unsigned char> &sym_value_out,
+					gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
+					float phase_gain=0.25, float freq_gain=0.25*0.25/4.0);
 
 /*!
  * \brief Specific class for DVBT OFDM demmaping.
@@ -50,10 +54,12 @@ digital_make_dvbt_ofdm_frame_sink (const std::vector<gr_complex> &sym_position,
 class DIGITAL_API digital_dvbt_ofdm_frame_sink : public gr_sync_block
 {
   friend DIGITAL_API digital_dvbt_ofdm_frame_sink_sptr 
-  digital_make_dvbt_ofdm_frame_sink (const std::vector<gr_complex> &sym_position, 
-				const std::vector<unsigned char> &sym_value_out,
-				gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
-				float phase_gain, float freq_gain);
+  digital_make_dvbt_ofdm_frame_sink (const std::vector<gr_complex> &sym_position,
+						const std::vector<gr_complex> &t_constellation,
+                        const std::vector<gr_complex> &cs_constellation,
+						const std::vector<unsigned char> &sym_value_out,
+						gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
+						float phase_gain, float freq_gain);
 
  private:
   enum state_t {STATE_SYNC_SEARCH, STATE_HAVE_SYNC, STATE_HAVE_HEADER};
@@ -61,44 +67,70 @@ class DIGITAL_API digital_dvbt_ofdm_frame_sink : public gr_sync_block
   static const int MAX_PKT_LEN    = 4096;
   static const int HEADERBYTELEN   = 4;
 
-  gr_msg_queue_sptr  d_target_queue;		// where to send the packet when received
+  std::vector<gr_complex>    d_sym_position;
+  std::vector<gr_complex> 	 d_tps_constellation;
+  std::vector<gr_complex> 	 d_cs_constellation;
+  std::vector<unsigned char> d_sym_value_out;
+  std::vector<gr_complex>    d_dfe;
+  gr_msg_queue_sptr  d_target_queue;									// where to send the packet when received
   state_t            d_state;
-  unsigned int       d_header;			// header bits
-  int		     d_headerbytelen_cnt;	// how many so far
+  unsigned int       d_header;											// header bits
+  int		     	 d_headerbytelen_cnt;								// how many so far
 
-  unsigned char      *d_bytes_out;              // hold the current bytes produced by the demapper    
+  unsigned char      *d_bytes_out;              						// hold the current bytes produced by the demapper    
 
   unsigned int       d_occupied_carriers;
   unsigned int       d_byte_offset;
   unsigned int       d_partial_byte;
 
-  unsigned char      d_packet[MAX_PKT_LEN];	// assembled payload
-  int 		     d_packetlen;		// length of packet
-  int                d_packet_whitener_offset;  // offset into whitener string to use
-  int		     d_packetlen_cnt;		// how many so far
+  unsigned char      d_packet[MAX_PKT_LEN];								// assembled payload
+  int 		     d_packetlen;											// length of packet
+  int            d_packet_whitener_offset;  							// offset into whitener string to use
+  int		     d_packetlen_cnt;										// how many so far
 
-  gr_complex * d_derotated_output;  // Pointer to output stream to send deroated symbols out
-
-  std::vector<gr_complex>    d_sym_position;
-  std::vector<unsigned char> d_sym_value_out;
-  std::vector<gr_complex>    d_dfe;
+  gr_complex * d_derotated_output;  									// Pointer to output stream to send deroated symbols out
+  
   unsigned int d_nbits;
-
   unsigned char d_resid;
   unsigned int d_nresid;
+  unsigned int d_last_out;
   float d_phase;
   float d_freq;
   float d_phase_gain;
   float d_freq_gain;
   float d_eq_gain;
 
+  
+  std::bitset<11> d_prbs_sequence;
+  std::bitset<2> d_modulation_type;
+ 
+  static unsigned int d_frame_number;
+  static unsigned int d_symbol_number;
+  
+  std::vector<int> d_tps_map;
+  std::vector<int> d_tps_info;
+  std::vector<int> d_payload_map;
+  std::vector<int> d_scattered_map;
   std::vector<int> d_subcarrier_map;
+  std::vector<int> d_continuals_map;
+  
+  static const std::string code_rate; 
+  static const std::string hierarchy;
+  static const std::string odd_sequence;
+  static const std::string even_sequence;
+  static const std::string init_sequence;
+  static const std::string guard_interval;
+  static const std::string transmission_mode; 
+  static const std::string cell_identification_on;
+  static const std::string cell_identification_off;
 
  protected:
-  digital_dvbt_ofdm_frame_sink(const std::vector<gr_complex> &sym_position, 
-			  const std::vector<unsigned char> &sym_value_out,
-			  gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
-			  float phase_gain, float freq_gain);
+  digital_dvbt_ofdm_frame_sink(const std::vector<gr_complex> &sym_position,
+							  const std::vector<gr_complex> &t_constellation,
+                              const std::vector<gr_complex> &cs_constellation,
+							  const std::vector<unsigned char> &sym_value_out,
+							  gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
+							  float phase_gain, float freq_gain);
 
   void enter_search();
   void enter_have_sync();
@@ -106,13 +138,18 @@ class DIGITAL_API digital_dvbt_ofdm_frame_sink : public gr_sync_block
   
   bool header_ok()
   {
-    // confirm that two copies of header info are identical
-    return ((d_header >> 16) ^ (d_header & 0xffff)) == 0;
+    return ((d_header >> 16) ^ (d_header & 0xffff)) == 0;				// confirm that two copies of header info are identical
   }
   
+  void next_state();
+  void set_modulation_type();
   unsigned char slicer(const gr_complex x);
-  unsigned int demapper(const gr_complex *in,
-			unsigned char *out);
+  unsigned int differential_demodulation(int bit);
+  unsigned int get_pilot_info(unsigned char bits);
+  unsigned int extract_pilot_info(unsigned char bits);
+  unsigned char make_pilot_decision(const gr_complex x);
+  void integrity_tps_check(unsigned int in, unsigned int out);
+  unsigned int demapper(const gr_complex *in, unsigned char *out);
 
   bool set_sym_value_out(const std::vector<gr_complex> &sym_position,
 			 const std::vector<unsigned char> &sym_value_out);

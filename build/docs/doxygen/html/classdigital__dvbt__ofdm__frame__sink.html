@@ -95,32 +95,47 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">just like <a class="el" href="classgr__block.html#a137b93d87dc83bbdb6369d33f4ea8197" title="compute output items from input items">gr_block::general_work</a>, only this arranges to call consume_each for you  <a href="#aa44bec172776f698897588e589e53942"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a9ebaea78e8a6fa40e97501390dd47c50">digital_dvbt_ofdm_frame_sink</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, <a class="el" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a> target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a02b9e9fdabe358620abd80ef1f58aa58">digital_dvbt_ofdm_frame_sink</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;sym_position, const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;t_constellation, const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;cs_constellation, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, <a class="el" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a> target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a4657733ffabe1b6ae7f9a67861ebfe50">enter_search</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#acf464edac6df344c95a1ff19eed9e89b">enter_have_sync</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#ad5dabb1846e1b7a6a615d0de70276aac">enter_have_header</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a3438724fc69c68110c3814898f15d600">header_ok</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a65681ef583f4ddcc9f7ef80f2fef055a">next_state</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#ae3142bd1ed65df6a2605f7fbb7c1cca6">slicer</a> (const <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a86f719f4f0dd037d6809248ed2ce478b">extract_pilot_info</a> (unsigned char bits)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#ae9fa25625f89bd96dbf556e68f6c2a0d">make_pilot_decision</a> (const <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a23a92a98bc61f83cf195b76e9357af8e">demapper</a> (const <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> *in, unsigned char *out)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a994d9fc504861b8f4a1bb5e4d141e005">set_sym_value_out</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out)</td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <br class="typebreak"/>
-<a class="el" href="classboost_1_1shared__ptr.html">digital_dvbt_ofdm_frame_sink_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#ae06caf14df6e7c9b4e8379bafb081fb4">digital_make_dvbt_ofdm_frame_sink</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, <a class="el" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a> target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</td></tr>
+<a class="el" href="classboost_1_1shared__ptr.html">digital_dvbt_ofdm_frame_sink_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#aa7f5fe5692575e76a224b0be9b351763">digital_make_dvbt_ofdm_frame_sink</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;sym_position, const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;t_constellation, const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;cs_constellation, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, <a class="el" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a> target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0's and 1's, packs them into packets, and sends to to a message queue sink.</p>
 <p>NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9ebaea78e8a6fa40e97501390dd47c50"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink" ref="a9ebaea78e8a6fa40e97501390dd47c50" args="(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)" -->
+<a class="anchor" id="a02b9e9fdabe358620abd80ef1f58aa58"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink" ref="a02b9e9fdabe358620abd80ef1f58aa58" args="(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; gr_complex &gt; &amp;t_constellation, const std::vector&lt; gr_complex &gt; &amp;cs_constellation, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a9ebaea78e8a6fa40e97501390dd47c50">digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink</a> </td>
+          <td class="memname"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a02b9e9fdabe358620abd80ef1f58aa58">digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>sym_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>t_constellation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cs_constellation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -255,6 +270,23 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a86f719f4f0dd037d6809248ed2ce478b"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::extract_pilot_info" ref="a86f719f4f0dd037d6809248ed2ce478b" args="(unsigned char bits)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a86f719f4f0dd037d6809248ed2ce478b">digital_dvbt_ofdm_frame_sink::extract_pilot_info</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>bits</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3438724fc69c68110c3814898f15d600"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::header_ok" ref="a3438724fc69c68110c3814898f15d600" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -264,6 +296,39 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9fa25625f89bd96dbf556e68f6c2a0d"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::make_pilot_decision" ref="ae9fa25625f89bd96dbf556e68f6c2a0d" args="(const gr_complex x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char <a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#ae9fa25625f89bd96dbf556e68f6c2a0d">digital_dvbt_ofdm_frame_sink::make_pilot_decision</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65681ef583f4ddcc9f7ef80f2fef055a"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::next_state" ref="a65681ef583f4ddcc9f7ef80f2fef055a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#a65681ef583f4ddcc9f7ef80f2fef055a">digital_dvbt_ofdm_frame_sink::next_state</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -354,15 +419,27 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Friends And Related Function Documentation</h2>
-<a class="anchor" id="ae06caf14df6e7c9b4e8379bafb081fb4"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::digital_make_dvbt_ofdm_frame_sink" ref="ae06caf14df6e7c9b4e8379bafb081fb4" args="(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)" -->
+<a class="anchor" id="aa7f5fe5692575e76a224b0be9b351763"></a><!-- doxytag: member="digital_dvbt_ofdm_frame_sink::digital_make_dvbt_ofdm_frame_sink" ref="aa7f5fe5692575e76a224b0be9b351763" args="(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; gr_complex &gt; &amp;t_constellation, const std::vector&lt; gr_complex &gt; &amp;cs_constellation, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="el" href="classboost_1_1shared__ptr.html">digital_dvbt_ofdm_frame_sink_sptr</a> <a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#ae06caf14df6e7c9b4e8379bafb081fb4">digital_make_dvbt_ofdm_frame_sink</a> </td>
+          <td class="memname"><a class="el" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="el" href="classboost_1_1shared__ptr.html">digital_dvbt_ofdm_frame_sink_sptr</a> <a class="el" href="classdigital__dvbt__ofdm__frame__sink.html#aa7f5fe5692575e76a224b0be9b351763">digital_make_dvbt_ofdm_frame_sink</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>sym_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>t_constellation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cs_constellation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -414,7 +491,7 @@ Friends</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="classdigital__dvbt__ofdm__frame__sink.html">digital_dvbt_ofdm_frame_sink</a>      </li>
 
-    <li class="footer">Generated on Thu Aug 16 2012 20:44:07 for GNU Radio 78540566 C++ API by
+    <li class="footer">Generated on Sun Aug 19 2012 10:40:03 for GNU Radio 78540566 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

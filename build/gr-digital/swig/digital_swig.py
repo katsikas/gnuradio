@@ -5786,16 +5786,17 @@ digital_dvbt_ofdm_frame_sink_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" %
 
 def dvbt_ofdm_frame_sink(*args, **kwargs):
   """
-    dvbt_ofdm_frame_sink(gr_complex_vector sym_position, __dummy_0__ sym_value_out, 
-        gr_msg_queue_sptr target_queue, unsigned int occupied_tones, 
-        float phase_gain = 0.25, 
-        float freq_gain = 0.25*0.25/4) -> digital_dvbt_ofdm_frame_sink_sptr
+    dvbt_ofdm_frame_sink(gr_complex_vector sym_position, gr_complex_vector t_constellation, 
+        gr_complex_vector cs_constellation, 
+        __dummy_0__ sym_value_out, gr_msg_queue_sptr target_queue, 
+        unsigned int occupied_tones, 
+        float phase_gain = 0.25, float freq_gain = 0.25*0.25/4) -> digital_dvbt_ofdm_frame_sink_sptr
 
     Specific class for DVBT OFDM demmaping. Takes an OFDM symbol in, demaps it into bits of 0's and 1's, packs them into packets, and sends to to a message queue sink.
 
     NOTE: The mod input parameter simply chooses a pre-defined demapper/slicer. Eventually, we want to be able to pass in a reference to an object to do the demapping and slicing for a given modulation type.
 
-    Params: (sym_position, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)
+    Params: (sym_position, t_constellation, cs_constellation, sym_value_out, target_queue, occupied_tones, phase_gain, freq_gain)
     """
   return _digital_swig.dvbt_ofdm_frame_sink(*args, **kwargs)
 

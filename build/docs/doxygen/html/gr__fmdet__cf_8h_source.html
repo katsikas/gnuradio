@@ -96,7 +96,7 @@
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032 <a class="code" href="gr__core__api_8h.html#a8b8937b0c61edd85ab57ce8203543248">GR_CORE_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">gr_fmdet_cf_sptr</a> <a class="code" href="gr__fmdet__cf_8h.html#a8ffc707cbcd8f85a09db429ac9674428">gr_make_fmdet_cf</a> (<span class="keywordtype">float</span> samplerate, <span class="keywordtype">float</span> freq_low, <span class="keywordtype">float</span> freq_high, <span class="keywordtype">float</span> scl);
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034 <span class="keyword">class </span><a class="code" href="classgr__fir__ccf.html" title="Abstract class for FIR with gr_complex input, gr_complex output and float tapsThis is the abstract cl...">gr_fir_ccf</a>;
+<a name="l00034"></a>00034 <span class="keyword">class </span>gr_fir_ccf;
 <a name="l00035"></a>00035 
 <a name="l00036"></a>00036 <span class="comment"></span>
 <a name="l00037"></a>00037 <span class="comment">/*!</span>
@@ -116,7 +116,7 @@
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052   <a class="code" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> d_S1,d_S2,d_S3,d_S4;
 <a name="l00053"></a>00053   <span class="keywordtype">float</span> d_freq,d_freqlo,d_freqhi,d_scl,d_bias;
-<a name="l00054"></a>00054   <a class="code" href="classgr__fir__ccf.html" title="Abstract class for FIR with gr_complex input, gr_complex output and float tapsThis is the abstract cl...">gr_fir_ccf</a>* d_filter;
+<a name="l00054"></a>00054   gr_fir_ccf* d_filter;
 <a name="l00055"></a>00055   <a class="code" href="classgr__fmdet__cf.html" title="Implements an IQ slope detector.">gr_fmdet_cf</a> (<span class="keywordtype">float</span> samplerate, <span class="keywordtype">float</span> freq_low, <span class="keywordtype">float</span> freq_high, <span class="keywordtype">float</span> scl);
 <a name="l00056"></a>00056 
 <a name="l00057"></a>00057   <span class="keywordtype">int</span> <a class="code" href="classgr__sync__block.html#a0c523f4285a6eb690f677ee6295ab117" title="just like gr_block::general_work, only this arranges to call consume_each for you">work</a> (<span class="keywordtype">int</span> noutput_items,
@@ -132,7 +132,7 @@
     <ul>
       <li class="navelem"><a class="el" href="gr__fmdet__cf_8h.html">gr_fmdet_cf.h</a>      </li>
 
-    <li class="footer">Generated on Thu Aug 16 2012 20:44:00 for GNU Radio 78540566 C++ API by
+    <li class="footer">Generated on Sun Aug 19 2012 10:39:59 for GNU Radio 78540566 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

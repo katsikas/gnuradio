@@ -174,88 +174,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1059">
+      <node id="1061">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
+        <childnode refid="1062" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1059">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
         <childnode refid="1060" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1057">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="1058" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1056">
+      <node id="1058">
         <label>digital_constellation_decoder_cb</label>
         <link refid="classdigital__constellation__decoder__cb"/>
-        <childnode refid="1057" relation="public-inheritance">
+        <childnode refid="1059" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1060">
+      <node id="1062">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1058">
+      <node id="1060">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1059" relation="public-inheritance">
+        <childnode refid="1061" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1064">
+      <node id="1066">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
         <childnode refid="1065" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1062">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="1063" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1061">
+      <node id="1063">
         <label>digital_constellation_decoder_cb</label>
         <link refid="classdigital__constellation__decoder__cb"/>
-        <childnode refid="1062" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1066">
-        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
-        <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1067" relation="usage">
-          <edgelabel>px</edgelabel>
-        </childnode>
-      </node>
-      <node id="1069">
-        <label>std::basic_string&lt; char &gt;</label>
-      </node>
-      <node id="1065">
-        <label>gruel::msg_accepter</label>
-        <link refid="classgruel_1_1msg__accepter"/>
-      </node>
-      <node id="1067">
-        <label>gr_io_signature</label>
-        <link refid="classgr__io__signature"/>
-      </node>
-      <node id="1063">
-        <label>gr_basic_block</label>
-        <link refid="classgr__basic__block"/>
         <childnode refid="1064" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1066" relation="usage">
-          <edgelabel>d_input_signature</edgelabel>
-          <edgelabel>d_output_signature</edgelabel>
-        </childnode>
-        <childnode refid="1068" relation="usage">
-          <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
       <node id="1068">
+        <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
+        <link refid="classboost_1_1shared__ptr"/>
+        <childnode refid="1069" relation="usage">
+          <edgelabel>px</edgelabel>
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1067">
+        <label>gruel::msg_accepter</label>
+        <link refid="classgruel_1_1msg__accepter"/>
+      </node>
+      <node id="1069">
+        <label>gr_io_signature</label>
+        <link refid="classgr__io__signature"/>
+      </node>
+      <node id="1065">
+        <label>gr_basic_block</label>
+        <link refid="classgr__basic__block"/>
+        <childnode refid="1066" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1068" relation="usage">
+          <edgelabel>d_input_signature</edgelabel>
+          <edgelabel>d_output_signature</edgelabel>
+        </childnode>
+        <childnode refid="1070" relation="usage">
+          <edgelabel>d_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1070">
         <label>std::string</label>
-        <childnode refid="1069" relation="public-inheritance">
+        <childnode refid="1071" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

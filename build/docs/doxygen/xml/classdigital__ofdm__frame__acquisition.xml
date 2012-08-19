@@ -483,88 +483,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
 <para>It then uses one of those known symbols to estimate the channel response over all subcarriers and does a simple 1-tap equalization on all subcarriers. This corrects for the phase and amplitude distortion caused by the channel. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1377">
+      <node id="1393">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1378" relation="public-inheritance">
+        <childnode refid="1394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1375">
+      <node id="1391">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1376" relation="public-inheritance">
+        <childnode refid="1392" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1374">
+      <node id="1390">
         <label>digital_ofdm_frame_acquisition</label>
         <link refid="classdigital__ofdm__frame__acquisition"/>
-        <childnode refid="1375" relation="public-inheritance">
+        <childnode refid="1391" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1378">
+      <node id="1394">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1376">
+      <node id="1392">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1377" relation="public-inheritance">
+        <childnode refid="1393" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1382">
+      <node id="1398">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1383" relation="public-inheritance">
+        <childnode refid="1399" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1380">
+      <node id="1396">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1381" relation="public-inheritance">
+        <childnode refid="1397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1384">
+      <node id="1400">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1401" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1387">
+      <node id="1403">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1379">
+      <node id="1395">
         <label>digital_ofdm_frame_acquisition</label>
         <link refid="classdigital__ofdm__frame__acquisition"/>
-        <childnode refid="1380" relation="public-inheritance">
+        <childnode refid="1396" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1383">
+      <node id="1399">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1385">
+      <node id="1401">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1381">
+      <node id="1397">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1382" relation="public-inheritance">
+        <childnode refid="1398" relation="public-inheritance">
         </childnode>
-        <childnode refid="1384" relation="usage">
+        <childnode refid="1400" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1402" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1386">
+      <node id="1402">
         <label>std::string</label>
-        <childnode refid="1387" relation="public-inheritance">
+        <childnode refid="1403" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

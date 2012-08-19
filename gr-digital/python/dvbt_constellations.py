@@ -33,27 +33,31 @@ from utils.gray_code import gray_code
 from utils import mod_codes
 from generic_mod_demod import generic_mod, generic_demod
 import psk
+import math
 
 
+_def_points = 2
 # Whether the quadrant bits are coded differentially.
 _def_differential = False
 # The default encoding (e.g. gray-code, set-partition)
 _def_mod_code = mod_codes.GRAY_CODE
 
 
-def dvbt_tps_pilots(m, mod_code=_def_mod_code):
+def dvbt_tps_pilots(m=_def_points, mod_code=_def_mod_code):
     """
     Creates a DBPSK constellation object for DVB-T's TPS pilot signals..
     """
+
     if m != 2:
         raise ValueError("BPSK can only have 2 constellation points.")
     return digital_swig.constellation_dvbt_tps_pilots().base()
 
 
-def dvbt_cs_pilots(m, mod_code=_def_mod_code):
+def dvbt_cs_pilots(m=_def_points, mod_code=_def_mod_code):
     """
     Creates a BPSK constellation object for DVB-T scattered and continual pilots.
     """
+
     if m != 2:
         raise ValueError("BPSK can only have 2 constellation points.")
     return digital_swig.constellation_dvbt_cs_pilots()
@@ -91,11 +95,13 @@ def dvbt_16qam_constellation(m, differential=_def_differential, mod_code=_def_mo
 	      complex(3,-3),complex(3,-1),complex(1,-3),complex(1,-1),
 	      complex(-3,3),complex(-3,1),complex(-1,3), complex(-1,1),
               complex(-3,-3),complex(-3,-1),complex(-1,-3),complex(-1,-1)]
+              
+    norm_points = map(lambda pt: pt / (math.sqrt(10)), points)
 
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
-    constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
+    constellation = digital_swig.constellation_rect(norm_points, pre_diff_code, 4,
                                                     side, side, width, width)
     return constellation
 
@@ -133,10 +139,12 @@ def dvbt_64qam_constellation(m,
               complex(-7,-1),complex(-7,-3),complex(-5,-1),complex(-5,-3),
               complex(-1,-7),complex(-1,-5),complex(-3,-7), complex(-3,-5),
               complex(-1,-1),complex(-1,-3),complex(-3,-1),complex(-3,-3)]
+              
+    norm_points = map(lambda pt: pt / (math.sqrt(42)), points)
 
     # No pre-diff code
     # Should add one so that we can gray-code the quadrant bits too.
     pre_diff_code = []
-    constellation = digital_swig.constellation_rect(points, pre_diff_code, 4,
+    constellation = digital_swig.constellation_rect(norm_points, pre_diff_code, 4,
                                                     side, side, width, width)
     return constellation

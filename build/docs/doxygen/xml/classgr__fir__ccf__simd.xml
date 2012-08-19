@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__fir__ccf__simd" kind="class" prot="public">
     <compoundname>gr_fir_ccf_simd</compoundname>
-    <basecompoundref refid="classgr__fir__ccf__generic" prot="public" virt="non-virtual">gr_fir_ccf_generic</basecompoundref>
     <derivedcompoundref refid="classgr__fir__ccf__3dnow" prot="public" virt="non-virtual">gr_fir_ccf_3dnow</derivedcompoundref>
     <derivedcompoundref refid="classgr__fir__ccf__sse" prot="public" virt="non-virtual">gr_fir_ccf_sse</derivedcompoundref>
     <includes refid="gr__fir__ccf__simd_8h" local="no">gr_fir_ccf_simd.h</includes>
@@ -98,13 +97,12 @@
         <definition>virtual void gr_fir_ccf_simd::set_taps</definition>
         <argsstring>(const std::vector&lt; float &gt; &amp;taps)</argsstring>
         <name>set_taps</name>
-        <reimplements refid="classgr__fir__ccf_1afaa800d2c0901730c37101bdfff9386d">set_taps</reimplements>
         <param>
           <type>const std::vector&lt; float &gt; &amp;</type>
           <declname>taps</declname>
         </param>
         <briefdescription>
-<para>install <computeroutput>new_taps</computeroutput> as the current taps. </para>        </briefdescription>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -116,99 +114,51 @@
         <definition>virtual gr_complex gr_fir_ccf_simd::filter</definition>
         <argsstring>(const gr_complex input[])</argsstring>
         <name>filter</name>
-        <reimplements refid="classgr__fir__ccf__generic_1aa3965e06fadc82c0ffde8949842b6088">filter</reimplements>
         <param>
           <type>const <ref refid="gr__complex_8h_1aec4bfe41433369afae9327f1b0bc9109" kindref="member">gr_complex</ref></type>
           <declname>input</declname>
           <array>[]</array>
         </param>
         <briefdescription>
-<para>compute a single output value. </para>        </briefdescription>
+        </briefdescription>
         <detaileddescription>
-<para><computeroutput>input</computeroutput> must have <ref refid="classgr__fir__ccf_1a03fb8ba5795cd467c6bd6314ac4a4d78" kindref="member">ntaps()</ref> valid entries. input[0] .. input[<ref refid="classgr__fir__ccf_1a03fb8ba5795cd467c6bd6314ac4a4d78" kindref="member">ntaps()</ref> - 1] are referenced to compute the output value.</para><para><simplesect kind="return"><para>the filtered input value. </para></simplesect>
-</para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_ccf_simd.h" line="63"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>common base class for SIMD versions of <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref></para><para>This base class handles alignment issues common to SSE and 3DNOW subclasses. </para>    </briefdescription>
+<para>common base class for SIMD versions of gr_fir_ccf</para><para>This base class handles alignment issues common to SSE and 3DNOW subclasses. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4099">
+      <node id="3344">
         <label>gr_fir_ccf_simd</label>
         <link refid="classgr__fir__ccf__simd"/>
-        <childnode refid="4100" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="4103">
+      <node id="3346">
         <label>gr_fir_ccf_sse</label>
         <link refid="classgr__fir__ccf__sse"/>
-        <childnode refid="4099" relation="public-inheritance">
+        <childnode refid="3344" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4101">
-        <label>gr_fir_ccf</label>
-        <link refid="classgr__fir__ccf"/>
-      </node>
-      <node id="4100">
-        <label>gr_fir_ccf_generic</label>
-        <link refid="classgr__fir__ccf__generic"/>
-        <childnode refid="4101" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4102">
+      <node id="3345">
         <label>gr_fir_ccf_3dnow</label>
         <link refid="classgr__fir__ccf__3dnow"/>
-        <childnode refid="4099" relation="public-inheritance">
+        <childnode refid="3344" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <collaborationgraph>
-      <node id="4104">
-        <label>gr_fir_ccf_simd</label>
-        <link refid="classgr__fir__ccf__simd"/>
-        <childnode refid="4105" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4107">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-      <node id="4106">
-        <label>gr_fir_ccf</label>
-        <link refid="classgr__fir__ccf"/>
-        <childnode refid="4107" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-        </childnode>
-      </node>
-      <node id="4105">
-        <label>gr_fir_ccf_generic</label>
-        <link refid="classgr__fir__ccf__generic"/>
-        <childnode refid="4106" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_ccf_simd.h" line="38" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_ccf_simd.h" bodystart="37" bodyend="64"/>
     <listofallmembers>
       <member refid="classgr__fir__ccf__simd_1a21b414b07a0353484e342e1e96216bd0" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>d_aligned_taps</name></member>
       <member refid="classgr__fir__ccf__simd_1a1f38cc30575580de30009fc8b50e9640" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>d_fcomplex_dotprod</name></member>
-      <member refid="classgr__fir__ccf_1a9af107e829a86398e5f607702840806a" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>d_taps</name></member>
       <member refid="classgr__fir__ccf__simd_1abcf7817f4bfed0daf6111c7a238859a2" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>fcomplex_dotprod_t</name></member>
       <member refid="classgr__fir__ccf__simd_1a8acdb63d025f11d8f028565c68f03bc0" prot="public" virt="virtual"><scope>gr_fir_ccf_simd</scope><name>filter</name></member>
-      <member refid="classgr__fir__ccf__generic_1ad06a6a9c87cfd7c20f0b0746f46fa28c" prot="public" virt="virtual"><scope>gr_fir_ccf_simd</scope><name>filterN</name></member>
-      <member refid="classgr__fir__ccf__generic_1a05e2e78319edd5f5a8902b9b09c45756" prot="public" virt="virtual"><scope>gr_fir_ccf_simd</scope><name>filterNdec</name></member>
-      <member refid="classgr__fir__ccf_1ab1ed3d65aaa985e7032fd5e9243537d1" prot="public" virt="virtual"><scope>gr_fir_ccf_simd</scope><name>get_taps</name></member>
-      <member refid="classgr__fir__ccf_1aa48a9accdb4deced4b5b04061a8961df" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>gr_fir_ccf</name></member>
-      <member refid="classgr__fir__ccf_1a9d5ba21009ff25164b8fdf08d0c8c7e3" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>gr_fir_ccf</name></member>
-      <member refid="classgr__fir__ccf__generic_1aa73fecc18b02a5ad506342c7ef284f36" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>gr_fir_ccf_generic</name></member>
-      <member refid="classgr__fir__ccf__generic_1a012c8d0043999db86aaf5d45fde4d506" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>gr_fir_ccf_generic</name></member>
       <member refid="classgr__fir__ccf__simd_1a9c8229586ed0a73d176c0960feb90531" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>gr_fir_ccf_simd</name></member>
       <member refid="classgr__fir__ccf__simd_1ae6af6ec1bf4f676d0a1a3c2acd744285" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>gr_fir_ccf_simd</name></member>
-      <member refid="classgr__fir__ccf_1a03fb8ba5795cd467c6bd6314ac4a4d78" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>ntaps</name></member>
       <member refid="classgr__fir__ccf__simd_1a970d13e317fa6471e65da3bcd94a2e24" prot="public" virt="virtual"><scope>gr_fir_ccf_simd</scope><name>set_taps</name></member>
-      <member refid="classgr__fir__ccf_1a1823367b810356281a5e87efa1b57d8f" prot="public" virt="virtual"><scope>gr_fir_ccf_simd</scope><name>~gr_fir_ccf</name></member>
       <member refid="classgr__fir__ccf__simd_1a233af35deedb8f55261421089c923e73" prot="public" virt="non-virtual"><scope>gr_fir_ccf_simd</scope><name>~gr_fir_ccf_simd</name></member>
     </listofallmembers>
   </compounddef>

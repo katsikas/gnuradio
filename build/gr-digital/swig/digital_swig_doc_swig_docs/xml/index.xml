@@ -319,6 +319,22 @@
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a1f4a99c59d26c0cdff606bdf33708813a32a8981fc8afa14e9d7ca4fb944737c9" kind="enumvalue"><name>STATE_HAVE_HEADER</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a087341291886f50d061aaee79161f020" kind="variable"><name>MAX_PKT_LEN</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1ae67faef31313a772e2d082a749cd9b4e" kind="variable"><name>HEADERBYTELEN</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ac43960324caae08d4bc88ae3c027d86d" kind="variable"><name>d_frame_number</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a231412d98d2e79e8cc9fd9952b00bb2a" kind="variable"><name>d_symbol_number</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a19b4bf3be6d40d73d4952f1016bcafb6" kind="variable"><name>code_rate</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a74459a88025b539e1738422001153a91" kind="variable"><name>hierarchy</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae22e9edc16285659254f41534fe1969c" kind="variable"><name>odd_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a6ffea20605d55152c60f78f8cc0b1bf4" kind="variable"><name>even_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a38575a265ba3553d3bcdde0e805d12c1" kind="variable"><name>init_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a401504776f2ed98462727c62f90d3fbb" kind="variable"><name>guard_interval</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a3145d7d01bb11cbf0b1ad5b630b999d4" kind="variable"><name>transmission_mode</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a5b913077c5a8a9b7c4141ac4197c7c1e" kind="variable"><name>cell_identification_on</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a9fd568e0cef36fe0f29a82f01e483049" kind="variable"><name>cell_identification_off</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae16fc06996e61eef661056b8b1c9f7e6" kind="variable"><name>d_sym_position</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a1a5375d18d8d06f3b29e117e8e9388e9" kind="variable"><name>d_tps_constellation</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a9cb7cd16b94be73682e2cd27bf6c77da" kind="variable"><name>d_cs_constellation</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a801977c50a99b9896b1ecda6e836861a" kind="variable"><name>d_sym_value_out</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a465f79a35deb2ca6afdef5dcce55c6ca" kind="variable"><name>d_dfe</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a67dcb2da0478f43fc6bf7a60be581af1" kind="variable"><name>d_target_queue</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1acb237d12c49fa5a5f27064cc03957e80" kind="variable"><name>d_state</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1ad80e4c27146fa1f84b964bf8a1118bf9" kind="variable"><name>d_header</name></member>
@@ -332,25 +348,37 @@
     <member refid="classdigital__dvbt__ofdm__frame__sink_1adb7d1ea919836c02fd5ab51714e08c82" kind="variable"><name>d_packet_whitener_offset</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1ab6ac502b8e250bd9ff07152fb33ed6d9" kind="variable"><name>d_packetlen_cnt</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1afd323c94f7097421e9c7d8475d235dc2" kind="variable"><name>d_derotated_output</name></member>
-    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae16fc06996e61eef661056b8b1c9f7e6" kind="variable"><name>d_sym_position</name></member>
-    <member refid="classdigital__dvbt__ofdm__frame__sink_1a801977c50a99b9896b1ecda6e836861a" kind="variable"><name>d_sym_value_out</name></member>
-    <member refid="classdigital__dvbt__ofdm__frame__sink_1a465f79a35deb2ca6afdef5dcce55c6ca" kind="variable"><name>d_dfe</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a7d18ee72805e28d16debbe2440745c5a" kind="variable"><name>d_nbits</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1aafe2e54da592a80402cc832073a4c73b" kind="variable"><name>d_resid</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a975f1715bfc68dbaf2ec35d85a1d990a" kind="variable"><name>d_nresid</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a156c9c98e46aed635297d124c40976c6" kind="variable"><name>d_last_out</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a8709ae3d02e124361ee43c90bb0e3feb" kind="variable"><name>d_phase</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a2e03df8b1ef752108003100e197121b1" kind="variable"><name>d_freq</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1acfeffdcd09945e2ca567a553d4fb266e" kind="variable"><name>d_phase_gain</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a6fbfe4fa14c7b89423bc630bd52263ef" kind="variable"><name>d_freq_gain</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1aa3fa4a7767c806eebe05259a12eb4f7a" kind="variable"><name>d_eq_gain</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a083e1852ffa142ea3ba4daa49f25e735" kind="variable"><name>d_prbs_sequence</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a8f23a4ff19babc95c3604a7e544fa09b" kind="variable"><name>d_modulation_type</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a69d1d9c01d117dba2ea8f175bf0dda3a" kind="variable"><name>d_tps_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a79507cedf0bec584e79d5ee868c1dede" kind="variable"><name>d_tps_info</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ac85ebd058472270927da4f742f8411f9" kind="variable"><name>d_payload_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a023cd71ac565c3c5e73e93fe36cee130" kind="variable"><name>d_scattered_map</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a76285852433477122feff3612ae7ea28" kind="variable"><name>d_subcarrier_map</name></member>
-    <member refid="classdigital__dvbt__ofdm__frame__sink_1a5ef7e239c5863b59ae3b2f9534c3c6bd" kind="friend"><name>digital_make_dvbt_ofdm_frame_sink</name></member>
-    <member refid="classdigital__dvbt__ofdm__frame__sink_1a9ebaea78e8a6fa40e97501390dd47c50" kind="function"><name>digital_dvbt_ofdm_frame_sink</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a7eca55025a7241890c48deaa95e32f55" kind="variable"><name>d_continuals_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a2f6801b9a2b964f026d9c9e699b34d21" kind="friend"><name>digital_make_dvbt_ofdm_frame_sink</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a02b9e9fdabe358620abd80ef1f58aa58" kind="function"><name>digital_dvbt_ofdm_frame_sink</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a4657733ffabe1b6ae7f9a67861ebfe50" kind="function"><name>enter_search</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1acf464edac6df344c95a1ff19eed9e89b" kind="function"><name>enter_have_sync</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1ad5dabb1846e1b7a6a615d0de70276aac" kind="function"><name>enter_have_header</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a3438724fc69c68110c3814898f15d600" kind="function"><name>header_ok</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a65681ef583f4ddcc9f7ef80f2fef055a" kind="function"><name>next_state</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1acb5abb8a7003e9d45bb9de42d3722e84" kind="function"><name>set_modulation_type</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1ae3142bd1ed65df6a2605f7fbb7c1cca6" kind="function"><name>slicer</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae60b3d57dff991e392c1397621e7f832" kind="function"><name>differential_demodulation</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a9613df53f91c014772f6d1aeee1a8b29" kind="function"><name>get_pilot_info</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1abeab5aa15c43070f82f5f31b9b13171b" kind="function"><name>extract_pilot_info</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1ae9fa25625f89bd96dbf556e68f6c2a0d" kind="function"><name>make_pilot_decision</name></member>
+    <member refid="classdigital__dvbt__ofdm__frame__sink_1a0672b9ae06a83e8c40dd7c887dcd6151" kind="function"><name>integrity_tps_check</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a23a92a98bc61f83cf195b76e9357af8e" kind="function"><name>demapper</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a994d9fc504861b8f4a1bb5e4d141e005" kind="function"><name>set_sym_value_out</name></member>
     <member refid="classdigital__dvbt__ofdm__frame__sink_1a55c7b5008f7761ae1bbfc238349bfd65" kind="function"><name>~digital_dvbt_ofdm_frame_sink</name></member>
@@ -358,8 +386,8 @@
   </compound>
   <compound refid="classdigital__dvbt__ofdm__mapper__bcv" kind="class"><name>digital_dvbt_ofdm_mapper_bcv</name>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ab91145854a512f6e28f1440916bccdfe" kind="variable"><name>d_constellation</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a02ed0bffa34c183135ddd8152b1632b2" kind="variable"><name>d_cs_constellation</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7aa523c778131db8616631240a565253" kind="variable"><name>d_tps_constellation</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a02ed0bffa34c183135ddd8152b1632b2" kind="variable"><name>d_cs_constellation</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a55a5441b468bdb37b3e72726a830d9ef" kind="variable"><name>d_msgq</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afb660af0f073f089577c4b88a1dce97c" kind="variable"><name>d_msg</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a296aa159ea6900afa0efacd5551dbb4b" kind="variable"><name>d_msg_offset</name></member>
@@ -373,20 +401,16 @@
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a5ebf61d477bb592148781657ceb7bd1b" kind="variable"><name>d_resid</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a611d5c0484d006d4f20135624f0c69ae" kind="variable"><name>d_nresid</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a24f4c0a5aa04fe321048afd8858ec879" kind="variable"><name>d_last_out</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ab3fff0b71f427f928f75abf0f8f69530" kind="variable"><name>d_tps_pilots</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aaa5694472d023d0557e0252e4fd7cec8" kind="variable"><name>d_continual_pilots</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a6dc33bd3ca10ae6edc05a1e0dfc36cc2" kind="variable"><name>d_zeros_from_left</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ac62d5b52a367d418540eeef09433f005" kind="variable"><name>d_payload_carriers</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7fea6eba88a64492245cecb238324623" kind="variable"><name>d_payload_map</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3593b7fac3a1966bdbc143d34745b9e0" kind="variable"><name>d_subcarrier_map</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ac396c22701218a36294d60fb37c8bc54" kind="variable"><name>d_tps_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aa2581c7bc6355487f60ba13c6b8647b5" kind="variable"><name>d_tps_info</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7fea6eba88a64492245cecb238324623" kind="variable"><name>d_payload_map</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1af22c640e412135aaf4620d11476c302b" kind="variable"><name>d_scattered_map</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3593b7fac3a1966bdbc143d34745b9e0" kind="variable"><name>d_subcarrier_map</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a8905d272fe453e9ff97e29211e302817" kind="variable"><name>d_continuals_map</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1af09789fc5f9109857e4265c1a07e1e63" kind="variable"><name>d_code_rate</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a518040119784897ca4cf074205333628" kind="variable"><name>d_hierarchy</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a918a3a127b99a9e6f3d000c36c11bb67" kind="variable"><name>d_guard_interval</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1693c76cb1049dc37f9efc89b5578da0" kind="variable"><name>d_prbs_sequence</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afbffe66be2cd159586a89e15b0b2e491" kind="variable"><name>d_modulation_type</name></member>
-    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aba2c446938c0aaf05786926a6b63b221" kind="variable"><name>d_transmission_mode</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1cdf5f0d65d211e1ffe9c6aab92c481f" kind="variable"><name>d_frame_number</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3be728ab51dba31394900f2d77a7694d" kind="variable"><name>d_symbol_number</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a91595be2adbde37e9175d37c6d22ecbd" kind="variable"><name>code_rate</name></member>
@@ -403,6 +427,7 @@
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad0f663e117c340c20de7a7a47b50da" kind="function"><name>randsym</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a215230a06a877d351ad3150a366f6dd8" kind="function"><name>next_state</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a0d4ec00ea9538fc0c1109310304abcba" kind="function"><name>set_modulation_type</name></member>
+    <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad736dafdd9774ff6c68ed39e1df4da" kind="function"><name>get_tps_pilots</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a891154947bc081460d9e3480b315a7d8" kind="function"><name>set_tps_pilots</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a3d267d746d41b8aae0af404505fe39d2" kind="function"><name>differential_modulation</name></member>
     <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a27508ae14328d2f271c115333c46279b" kind="function"><name>~digital_dvbt_ofdm_mapper_bcv</name></member>
@@ -759,13 +784,13 @@
   </compound>
   <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
-  </compound>
   <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
+  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
   </compound>
@@ -815,25 +840,25 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
+  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  </compound>
   <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
@@ -959,7 +984,7 @@
   </compound>
   <compound refid="digital__dvbt__ofdm__frame__sink_8h" kind="file"><name>digital_dvbt_ofdm_frame_sink.h</name>
     <member refid="digital__dvbt__ofdm__frame__sink_8h_1a66e9ad1dfa168a4576e3fa7a543275ce" kind="typedef"><name>digital_dvbt_ofdm_frame_sink_sptr</name></member>
-    <member refid="digital__dvbt__ofdm__frame__sink_8h_1a1b8f02dc8f83842ec021f07c9aa5d4fe" kind="function"><name>digital_make_dvbt_ofdm_frame_sink</name></member>
+    <member refid="digital__dvbt__ofdm__frame__sink_8h_1afab5992da62bef76af43256e25fc5110" kind="function"><name>digital_make_dvbt_ofdm_frame_sink</name></member>
   </compound>
   <compound refid="digital__dvbt__ofdm__mapper__bcv_8h" kind="file"><name>digital_dvbt_ofdm_mapper_bcv.h</name>
     <member refid="digital__dvbt__ofdm__mapper__bcv_8h_1a75e51712ff6ece947b55107426beb4d8" kind="typedef"><name>digital_dvbt_ofdm_mapper_bcv_sptr</name></member>

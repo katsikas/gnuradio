@@ -23,18 +23,22 @@
 GR_SWIG_BLOCK_MAGIC(digital,dvbt_ofdm_frame_sink);
 
 digital_dvbt_ofdm_frame_sink_sptr 
-digital_make_dvbt_ofdm_frame_sink(const std::vector<gr_complex> &sym_position, 
-			     const std::vector<unsigned char> &sym_value_out,
-			     gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
-			     float phase_gain=0.25, float freq_gain=0.25*0.25/4);
+digital_make_dvbt_ofdm_frame_sink(const std::vector<gr_complex> &sym_position,
+								 const std::vector<gr_complex> &t_constellation,
+                                 const std::vector<gr_complex> &cs_constellation,
+								 const std::vector<unsigned char> &sym_value_out,
+								 gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
+								 float phase_gain=0.25, float freq_gain=0.25*0.25/4);
 
 class digital_dvbt_ofdm_frame_sink : public gr_sync_block
 {
  protected:
-  digital_ofdm_frame_sink(const std::vector<gr_complex> &sym_position, 
-			  const std::vector<unsigned char> &sym_value_out,
-			  gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
-			  float phase_gain, float freq_gain);
+  digital_ofdm_frame_sink(const std::vector<gr_complex> &sym_position,
+						  const std::vector<gr_complex> &t_constellation,
+                          const std::vector<gr_complex> &cs_constellation,
+						  const std::vector<unsigned char> &sym_value_out,
+						  gr_msg_queue_sptr target_queue, unsigned int occupied_tones,
+						  float phase_gain, float freq_gain);
 
  public:
   ~digital_dvbt_ofdm_frame_sink();

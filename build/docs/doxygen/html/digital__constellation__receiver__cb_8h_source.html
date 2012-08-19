@@ -160,7 +160,7 @@
 <a name="l00095"></a>00095 <span class="comment">   * The constructor also chooses which phase detector and decision maker to use in the</span>
 <a name="l00096"></a>00096 <span class="comment">   * work loop based on the value of M.</span>
 <a name="l00097"></a>00097 <span class="comment">   */</span>
-<a name="l00098"></a>00098   <a class="code" href="classdigital__constellation__receiver__cb.html" title="This block takes care of receiving generic modulated signals through phase, frequency, and symbol synchronization.This block takes care of receiving generic modulated signals through phase, frequency, and symbol synchronization. It performs carrier frequency and phase locking as well as symbol timing recovery.">digital_constellation_receiver_cb</a> (<a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_constellation_sptr</a> constellation, 
+<a name="l00098"></a>00098   <a class="code" href="classdigital__constellation__receiver__cb.html" title="This block takes care of receiving generic modulated signals through phase, frequency, and symbol synchronization.This block takes care of receiving generic modulated signals through phase, frequency, and symbol synchronization. It performs carrier frequency and phase locking as well as symbol timing recovery.">digital_constellation_receiver_cb</a> (<a class="code" href="classboost_1_1shared__ptr.html">digital_constellation_sptr</a> constellation, 
 <a name="l00099"></a>00099                                      <span class="keywordtype">float</span> loop_bw, <span class="keywordtype">float</span> fmin, <span class="keywordtype">float</span> fmax);
 <a name="l00100"></a>00100 
 <a name="l00101"></a>00101   <span class="keywordtype">void</span> phase_error_tracking(<span class="keywordtype">float</span> phase_error);
@@ -168,7 +168,7 @@
 <a name="l00103"></a>00103 <span class="keyword">private</span>:
 <a name="l00104"></a>00104   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_M;
 <a name="l00105"></a>00105 
-<a name="l00106"></a>00106   <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_constellation_sptr</a> d_constellation;
+<a name="l00106"></a>00106   <a class="code" href="classboost_1_1shared__ptr.html">digital_constellation_sptr</a> d_constellation;
 <a name="l00107"></a>00107   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_current_const_point;
 <a name="l00108"></a>00108 <span class="comment"></span>
 <a name="l00109"></a>00109 <span class="comment">  //! delay line length.</span>
@@ -181,7 +181,7 @@
 <a name="l00116"></a>00116 <span class="comment"></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_dl_idx;
 <a name="l00117"></a>00117 
 <a name="l00118"></a>00118   <span class="keyword">friend</span> <a class="code" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_constellation_receiver_cb_sptr</a>
-<a name="l00119"></a>00119   <a class="code" href="digital__constellation__receiver__cb_8h.html#a558756eb0739bb3453d941baf84b5395">digital_make_constellation_receiver_cb</a> (<a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_constellation_sptr</a> constell,
+<a name="l00119"></a>00119   <a class="code" href="digital__constellation__receiver__cb_8h.html#a558756eb0739bb3453d941baf84b5395">digital_make_constellation_receiver_cb</a> (<a class="code" href="classboost_1_1shared__ptr.html">digital_constellation_sptr</a> constell,
 <a name="l00120"></a>00120                                           <span class="keywordtype">float</span> loop_bw, <span class="keywordtype">float</span> fmin, <span class="keywordtype">float</span> fmax);
 <a name="l00121"></a>00121 };
 <a name="l00122"></a>00122 
@@ -192,7 +192,7 @@
     <ul>
       <li class="navelem"><a class="el" href="digital__constellation__receiver__cb_8h.html">digital_constellation_receiver_cb.h</a>      </li>
 
-    <li class="footer">Generated on Thu Aug 16 2012 20:43:59 for GNU Radio 78540566 C++ API by
+    <li class="footer">Generated on Sun Aug 19 2012 10:39:58 for GNU Radio 78540566 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

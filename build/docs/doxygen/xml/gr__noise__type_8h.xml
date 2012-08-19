@@ -2,46 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__noise__type_8h" kind="file">
     <compoundname>gr_noise_type.h</compoundname>
-    <includedby refid="gr__noise__source__c_8h" local="no">gr_noise_source_c.h</includedby>
-    <includedby refid="gr__noise__source__f_8h" local="no">gr_noise_source_f.h</includedby>
-    <includedby refid="gr__noise__source__i_8h" local="no">gr_noise_source_i.h</includedby>
-    <includedby refid="gr__noise__source__s_8h" local="no">gr_noise_source_s.h</includedby>
-    <invincdepgraph>
-      <node id="12456">
-        <label>gr_channel_model.h</label>
-        <link refid="gr__channel__model_8h"/>
-      </node>
-      <node id="12454">
-        <label>gr_noise_type.h</label>
-        <link refid="gr_noise_type.h"/>
-        <childnode refid="12455" relation="include">
-        </childnode>
-        <childnode refid="12457" relation="include">
-        </childnode>
-        <childnode refid="12458" relation="include">
-        </childnode>
-        <childnode refid="12459" relation="include">
-        </childnode>
-      </node>
-      <node id="12455">
-        <label>gr_noise_source_c.h</label>
-        <link refid="gr__noise__source__c_8h"/>
-        <childnode refid="12456" relation="include">
-        </childnode>
-      </node>
-      <node id="12459">
-        <label>gr_noise_source_s.h</label>
-        <link refid="gr__noise__source__s_8h"/>
-      </node>
-      <node id="12458">
-        <label>gr_noise_source_i.h</label>
-        <link refid="gr__noise__source__i_8h"/>
-      </node>
-      <node id="12457">
-        <label>gr_noise_source_f.h</label>
-        <link refid="gr__noise__source__f_8h"/>
-      </node>
-    </invincdepgraph>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="gr__noise__type_8h_1a12ee6e1f6ac7ef3b10353cb76c0a8728" prot="public" static="no">
         <name>gr_noise_type_t</name>
