@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classfcd__source__c" kind="class" prot="public">
     <compoundname>fcd_source_c</compoundname>
     <basecompoundref refid="classgr__hier__block2" prot="public" virt="virtual">gr_hier_block2</basecompoundref>
@@ -245,94 +245,94 @@ Set IQ phase and gain balance in the device. The default values are 0.0 for phas
     <detaileddescription>
 <para>This class provides a Funcube Dongle soure block by wrapping the USB audio interface and the USB HID control interface of the Funcube Dongle into one convenient source block.</para><para>The Funcube Dongle needs to have firmware 18f or later for the control interface to work properly. As of early 2011, FCDs still come with firmware 18b. You can use qthid 2.2 (not 3) to upgrade the firmware: <ulink url="http://qthid.sf.net">http://qthid.sf.net</ulink> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1724">
+      <node id="6928">
         <label>fcd_source_c_impl</label>
         <link refid="classfcd__source__c__impl"/>
-        <childnode refid="1719" relation="public-inheritance">
+        <childnode refid="6923" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1722">
+      <node id="6926">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1723" relation="public-inheritance">
+        <childnode refid="6927" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1720">
+      <node id="6924">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="1721" relation="public-inheritance">
+        <childnode refid="6925" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1723">
+      <node id="6927">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1719">
+      <node id="6923">
         <label>fcd_source_c</label>
         <link refid="classfcd__source__c"/>
-        <childnode refid="1720" relation="public-inheritance">
+        <childnode refid="6924" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1721">
+      <node id="6925">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1722" relation="public-inheritance">
+        <childnode refid="6926" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1728">
+      <node id="6932">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1729" relation="public-inheritance">
+        <childnode refid="6933" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1726">
+      <node id="6930">
         <label>gr_hier_block2</label>
         <link refid="classgr__hier__block2"/>
-        <childnode refid="1727" relation="public-inheritance">
+        <childnode refid="6931" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1730">
+      <node id="6934">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1731" relation="usage">
+        <childnode refid="6935" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1733">
+      <node id="6937">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1729">
+      <node id="6933">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1725">
+      <node id="6929">
         <label>fcd_source_c</label>
         <link refid="classfcd__source__c"/>
-        <childnode refid="1726" relation="public-inheritance">
+        <childnode refid="6930" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1731">
+      <node id="6935">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1727">
+      <node id="6931">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1728" relation="public-inheritance">
+        <childnode refid="6932" relation="public-inheritance">
         </childnode>
-        <childnode refid="1730" relation="usage">
+        <childnode refid="6934" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1732" relation="usage">
+        <childnode refid="6936" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1732">
+      <node id="6936">
         <label>std::string</label>
-        <childnode refid="1733" relation="public-inheritance">
+        <childnode refid="6937" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

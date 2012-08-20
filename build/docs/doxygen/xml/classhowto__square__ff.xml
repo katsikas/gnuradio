@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classhowto__square__ff" kind="class" prot="public">
     <compoundname>howto_square_ff</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
     <includes refid="howto__square__ff_8h" local="no">howto_square_ff.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classhowto__square__ff_1af904c052b1e4ef3d92e95d8d96392c8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="howto__api_8h_1a7a9fda890b8e28fac667cbd66796f13b" kindref="member">HOWTO_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">howto_square_ff_sptr</ref></type>
+        <type>friend HOWTO_API <ref refid="classboost_1_1shared__ptr" kindref="compound">howto_square_ff_sptr</ref></type>
         <definition>HOWTO_API howto_square_ff_sptr howto_make_square_ff</definition>
         <argsstring>()</argsstring>
         <name>howto_make_square_ff</name>
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classhowto__square__ff" kindref="compound">howto_square_ff</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classhowto__square__ff" kindref="compound">howto_square_ff</ref>&apos;s constructor is private. howto_make_square_ff is the public interface for creating new instances. </para>        </detaileddescription>
+<para>To avoid accidental use of raw pointers, howto_square_ff&apos;s constructor is private. howto_make_square_ff is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-howto-write-a-block/include/howto_square_ff.h" line="64"/>
@@ -115,88 +115,88 @@ general_work must call consume or consume_each to indicate how many items were c
 <para><simplesect kind="see"><para><ref refid="classhowto__square2__ff" kindref="compound">howto_square2_ff</ref> for a version that subclasses <ref refid="classgr__sync__block" kindref="compound">gr_sync_block</ref>. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="5861">
+      <node id="14091">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5862" relation="public-inheritance">
+        <childnode refid="14092" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5859">
+      <node id="14089">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5860" relation="public-inheritance">
+        <childnode refid="14090" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5858">
+      <node id="14088">
         <label>howto_square_ff</label>
         <link refid="classhowto__square__ff"/>
-        <childnode refid="5859" relation="public-inheritance">
+        <childnode refid="14089" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5862">
+      <node id="14092">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5860">
+      <node id="14090">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5861" relation="public-inheritance">
+        <childnode refid="14091" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5866">
+      <node id="14096">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5867" relation="public-inheritance">
+        <childnode refid="14097" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5864">
+      <node id="14094">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5865" relation="public-inheritance">
+        <childnode refid="14095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5868">
+      <node id="14098">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5869" relation="usage">
+        <childnode refid="14099" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5871">
+      <node id="14101">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5863">
+      <node id="14093">
         <label>howto_square_ff</label>
         <link refid="classhowto__square__ff"/>
-        <childnode refid="5864" relation="public-inheritance">
+        <childnode refid="14094" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5867">
+      <node id="14097">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5869">
+      <node id="14099">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5865">
+      <node id="14095">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5866" relation="public-inheritance">
+        <childnode refid="14096" relation="public-inheritance">
         </childnode>
-        <childnode refid="5868" relation="usage">
+        <childnode refid="14098" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5870" relation="usage">
+        <childnode refid="14100" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5870">
+      <node id="14100">
         <label>std::string</label>
-        <childnode refid="5871" relation="public-inheritance">
+        <childnode refid="14101" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

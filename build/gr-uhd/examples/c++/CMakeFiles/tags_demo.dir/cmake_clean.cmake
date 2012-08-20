@@ -2,6 +2,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/tags_demo.dir/tags_demo.cc.o"
   "tags_demo.pdb"
   "tags_demo"
+  "CMakeFiles/CMakeRelink.dir/tags_demo.pdb"
+  "CMakeFiles/CMakeRelink.dir/tags_demo"
 )
 
 # Per-language clean rules from dependency scanning.

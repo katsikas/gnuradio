@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classpager__slicer__fb" kind="class" prot="public">
     <compoundname>pager_slicer_fb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classpager__slicer__fb_1a9cabf9d58dc0283924b2ddb1a398d1f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="pager__api_8h_1a0466fe431406887375cfa789a185150e" kindref="member">PAGER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">pager_slicer_fb_sptr</ref></type>
+        <type>friend PAGER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">pager_slicer_fb_sptr</ref></type>
         <definition>PAGER_API pager_slicer_fb_sptr pager_make_slicer_fb</definition>
         <argsstring>(float alpha)</argsstring>
         <name>pager_make_slicer_fb</name>
@@ -146,100 +146,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6505">
+      <node id="14861">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6506" relation="public-inheritance">
+        <childnode refid="14862" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6502">
+      <node id="14858">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6503" relation="public-inheritance">
+        <childnode refid="14859" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6503">
+      <node id="14859">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6504" relation="public-inheritance">
+        <childnode refid="14860" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6506">
+      <node id="14862">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6501">
+      <node id="14857">
         <label>pager_slicer_fb</label>
         <link refid="classpager__slicer__fb"/>
-        <childnode refid="6502" relation="public-inheritance">
+        <childnode refid="14858" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6504">
+      <node id="14860">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6505" relation="public-inheritance">
+        <childnode refid="14861" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6511">
+      <node id="14867">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6512" relation="public-inheritance">
+        <childnode refid="14868" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6508">
+      <node id="14864">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6509" relation="public-inheritance">
+        <childnode refid="14865" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6509">
+      <node id="14865">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6510" relation="public-inheritance">
+        <childnode refid="14866" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6513">
+      <node id="14869">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6514" relation="usage">
+        <childnode refid="14870" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6516">
+      <node id="14872">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6512">
+      <node id="14868">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6514">
+      <node id="14870">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6507">
+      <node id="14863">
         <label>pager_slicer_fb</label>
         <link refid="classpager__slicer__fb"/>
-        <childnode refid="6508" relation="public-inheritance">
+        <childnode refid="14864" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6510">
+      <node id="14866">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6511" relation="public-inheritance">
+        <childnode refid="14867" relation="public-inheritance">
         </childnode>
-        <childnode refid="6513" relation="usage">
+        <childnode refid="14869" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6515" relation="usage">
+        <childnode refid="14871" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6515">
+      <node id="14871">
         <label>std::string</label>
-        <childnode refid="6516" relation="public-inheritance">
+        <childnode refid="14872" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

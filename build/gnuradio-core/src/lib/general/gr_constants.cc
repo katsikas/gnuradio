@@ -29,29 +29,29 @@
 const std::string
 gr_prefix()
 {
-  return "/usr/local";
+  return "/usr";
 }
 
 const std::string
 gr_sysconfdir()
 {
-  return "/usr/local/etc";
+  return "/usr/etc";
 }
 
 const std::string
 gr_prefsdir()
 {
-  return "/usr/local/etc/gnuradio/conf.d";
+  return "/usr/etc/gnuradio/conf.d";
 }
 
 const std::string
 gr_build_date()
 {
-  return "Thu, 16 Aug 2012 17:41:41";
+  return "Mon, 20 Aug 2012 11:01:41";
 }
 
 const std::string
 gr_version()
 {
-  return "78540566";
+  return "e579fd62";
 }

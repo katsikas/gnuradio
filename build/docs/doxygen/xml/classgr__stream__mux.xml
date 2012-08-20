@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__stream__mux" kind="class" prot="public">
     <compoundname>gr_stream_mux</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -60,7 +60,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__stream__mux_1a08c268afa01b8efef29a149131330974" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_stream_mux_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_stream_mux_sptr</ref></type>
         <definition>GR_CORE_API gr_stream_mux_sptr gr_make_stream_mux</definition>
         <argsstring>(size_t itemsize, const std::vector&lt; int &gt; &amp;lengths)</argsstring>
         <name>gr_make_stream_mux</name>
@@ -239,88 +239,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
 <para>Muxes N streams together producing an output stream that contains N0 items from the first stream, N1 items from the second, etc. and repeats:</para><para>[N0, N1, N2, ..., Nm, N0, N1, ...] </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="5057">
+      <node id="12800">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5058" relation="public-inheritance">
+        <childnode refid="12801" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5055">
+      <node id="12798">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5056" relation="public-inheritance">
+        <childnode refid="12799" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5058">
+      <node id="12801">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5056">
+      <node id="12799">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5057" relation="public-inheritance">
+        <childnode refid="12800" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5054">
+      <node id="12797">
         <label>gr_stream_mux</label>
         <link refid="classgr__stream__mux"/>
-        <childnode refid="5055" relation="public-inheritance">
+        <childnode refid="12798" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5062">
+      <node id="12805">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5063" relation="public-inheritance">
+        <childnode refid="12806" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5060">
+      <node id="12803">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5061" relation="public-inheritance">
+        <childnode refid="12804" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5064">
+      <node id="12807">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5065" relation="usage">
+        <childnode refid="12808" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5067">
+      <node id="12810">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5063">
+      <node id="12806">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5065">
+      <node id="12808">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5061">
+      <node id="12804">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5062" relation="public-inheritance">
+        <childnode refid="12805" relation="public-inheritance">
         </childnode>
-        <childnode refid="5064" relation="usage">
+        <childnode refid="12807" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5066" relation="usage">
+        <childnode refid="12809" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5059">
+      <node id="12802">
         <label>gr_stream_mux</label>
         <link refid="classgr__stream__mux"/>
-        <childnode refid="5060" relation="public-inheritance">
+        <childnode refid="12803" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5066">
+      <node id="12809">
         <label>std::string</label>
-        <childnode refid="5067" relation="public-inheritance">
+        <childnode refid="12810" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

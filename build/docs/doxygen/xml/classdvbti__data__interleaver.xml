@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbti__data__interleaver" kind="class" prot="public">
     <compoundname>dvbti_data_interleaver</compoundname>
     <basecompoundref refid="classconvolutional__interleaver" prot="public" virt="non-virtual">convolutional_interleaver&lt; unsigned char &gt;</basecompoundref>
@@ -45,40 +45,39 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1673">
+      <node id="6877">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
       </node>
-      <node id="1672">
+      <node id="6876">
         <label>dvbti_data_interleaver</label>
         <link refid="classdvbti__data__interleaver"/>
-        <childnode refid="1673" relation="public-inheritance">
+        <childnode refid="6877" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1675">
+      <node id="6879">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="1676" relation="usage">
+        <childnode refid="6880" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="1674">
+      <node id="6878">
         <label>dvbti_data_interleaver</label>
         <link refid="classdvbti__data__interleaver"/>
-        <childnode refid="1675" relation="public-inheritance">
+        <childnode refid="6879" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1677">
+      <node id="6881">
         <label>interleaver_fifo&lt; unsigned char &gt;</label>
         <link refid="classinterleaver__fifo"/>
       </node>
-      <node id="1676">
+      <node id="6880">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <childnode refid="1677" relation="usage">
+        <childnode refid="6881" relation="usage">
           <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

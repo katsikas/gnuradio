@@ -10,6 +10,8 @@ FILE(REMOVE_RECURSE
   "qtgui_swig_doc_swig_docs/xml/combine.xslt"
   "_qtgui_swig.pdb"
   "_qtgui_swig.so"
+  "CMakeFiles/CMakeRelink.dir/_qtgui_swig.pdb"
+  "CMakeFiles/CMakeRelink.dir/_qtgui_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

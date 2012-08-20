@@ -33,6 +33,8 @@
 #include <gr_io_signature.h>
 #include <digital_dvbt_ofdm_mapper_bcv.h>
 
+#define LENGTH 67
+#define ORIGINAL 53
 #define CELL_IDENTIFICATION 0
 
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_frame_number;
@@ -217,14 +219,14 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   for(i = 0; i < carriers; i++) {
 	   next_state();
 	   if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
-		   diff = set_tps_pilots();					
-		  /*if(flag){						
+                  //diff = set_tps_pilots();
+                  if(flag){
 			diff = set_tps_pilots();									// Same info for all TPS carriers in a frame.Calculate once.
 			flag = false;
 		  }
 		  else{
 			diff = get_tps_pilots();
-		  }*/
+                  }
 		  out[d_subcarrier_map[i]] = d_tps_constellation[diff];
 		  //printf("SEND diff BIT = %x complex is: %.4f %.4fj \n",diff,out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag());
 	   }
@@ -317,7 +319,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
   d_symbol_number ++;
   if(d_symbol_number == 68){
-	    d_tps_info.clear();
+        d_tps_info.clear();
         d_symbol_number = 0;
         d_frame_number ++;
         if(d_frame_number == 5){										// 4 frames consist a super-frame.
@@ -325,7 +327,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 		}
   }
  
-  //if(d_symbol_number == 3){exit(-1);}
+  if(d_frame_number == 2){exit(-1);}
   return 1;  															// produced symbol
 }
 
@@ -417,12 +419,52 @@ unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(){
 	  else if( (d_symbol_number > 47) && (d_symbol_number < 54) ) {
 		diff = differential_modulation(0);								// All set to zero(For Future use)
 	  }
-	  else if(d_symbol_number > 53){
-		diff = differential_modulation(0);								// BCH parity check.
+          else if(d_symbol_number == 54){
+                encode_BCH();
+                diff = differential_modulation(d_parity[d_symbol_number-54]);								// BCH parity check.
 	  }
+          else{
+              diff = differential_modulation(0);
+          }
 	  
 	  d_tps_info.push_back(diff);
 	  return diff;
+}
+
+void digital_dvbt_ofdm_mapper_bcv::encode_BCH(){
+
+    register int    i, j;
+    register int    feedback;
+
+    int p[8]  = {1,0,0,1,0,0,0,1};
+    int g[15] = {1,1,1,0,1,1,1,0,1,1,1,1,1,1,1};
+
+
+    for (i = 0; i < LENGTH - ORIGINAL; i++){
+        d_parity[i] = 0;
+    }
+
+    printf("TPS LENGTH = %d ORIGINAL = %d LENGTH = %d \n",d_tps_info.size(),ORIGINAL,LENGTH);
+    for (i = ORIGINAL; i >= 0; i--) {
+            feedback = d_tps_info[i] ^ d_parity[LENGTH - ORIGINAL - 1];
+            if (feedback != 0) {
+                    for (j = LENGTH - ORIGINAL - 1; j > 0; j--)
+                            if (g[j] != 0)
+                                    d_parity[j] = d_parity[j - 1] ^ feedback;
+                            else
+                                    d_parity[j] = d_parity[j - 1];
+                    d_parity[0] = g[0] && feedback;
+            }
+            else {
+                    for (j = LENGTH - ORIGINAL - 1; j > 0; j--)
+                            d_parity[j] = d_parity[j - 1];
+                    d_parity[0] = 0;
+            }
+    }
+
+    for (i = 0; i < LENGTH - ORIGINAL; i++){
+        printf("d_parity = %d \n",d_parity[i]);
+    }
 }
 
 unsigned int digital_dvbt_ofdm_mapper_bcv::get_tps_pilots(){

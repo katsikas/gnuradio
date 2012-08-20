@@ -89,6 +89,7 @@ protected:
   static unsigned int d_frame_number;
   static unsigned int d_symbol_number;
  
+  int d_parity[14];
   std::vector<int> d_tps_map;
   std::vector<int> d_tps_info;
   std::vector<int> d_payload_map;
@@ -111,6 +112,7 @@ protected:
 
   int randsym(); 
   void next_state();
+  void encode_BCH();
   void set_modulation_type();
   unsigned int get_tps_pilots();
   unsigned int set_tps_pilots();

@@ -382,17 +382,17 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
 	   if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {				
 		  pilot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];
 		  bits = make_pilot_decision(pilot);
-		  diff = extract_pilot_info(bits);
-		  /*if(flag){						
+                  //diff = extract_pilot_info(bits);
+                  if(flag){
 			diff = extract_pilot_info(bits);							// Same info for all TPS carriers in a frame.Calculate once.
 			flag = false;
 		  }
 		  else{
-			diff = get_pilot_info(bits);
+                        /*diff = get_pilot_info(bits);
 			unsigned int tmp = differential_demodulation(bits);
 			printf("already checked \n");
-			integrity_tps_check(diff,tmp);
-		  }*/
+                        integrity_tps_check(diff,tmp);*/
+                  }
 		  //printf("RECEIVED diff = %d decision = %d complex is: %.4f %.4fj\n",diff,bits,pilot.real(),pilot.imag());
 	   }
 	  else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
@@ -470,7 +470,7 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
   
   d_symbol_number ++;
   if(d_symbol_number == 68){
-	    d_tps_info.clear();
+        d_tps_info.clear();
         d_symbol_number = 0;
         printf("  frame number = %d \n",d_frame_number);
         d_frame_number ++;
@@ -597,10 +597,15 @@ unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info(unsigned char bits
 	  else if(d_symbol_number > 53){
 		diff = differential_demodulation(bits);							// BCH parity check.
 		integrity_tps_check(diff,0);
+                decode_BCH();
 	  }
 	  
 	  d_tps_info.push_back(diff);
 	  return diff;
+}
+
+void digital_dvbt_ofdm_frame_sink::decode_BCH(){
+    printf("BCH_DECODER \n");
 }
 
 unsigned int digital_dvbt_ofdm_frame_sink::get_pilot_info(unsigned char bits){

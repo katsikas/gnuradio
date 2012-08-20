@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classqtgui__time__sink__c" kind="class" prot="public">
     <compoundname>qtgui_time_sink_c</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -167,7 +167,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classqtgui__time__sink__c_1a0661a1ac5ea85d62780291a1d425e783" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_time_sink_c_sptr</ref></type>
+        <type>friend GR_QTGUI_API <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_time_sink_c_sptr</ref></type>
         <definition>GR_QTGUI_API qtgui_time_sink_c_sptr qtgui_make_time_sink_c</definition>
         <argsstring>(int size, double bw, const std::string &amp;name, int nconnections, QWidget *parent)</argsstring>
         <name>qtgui_make_time_sink_c</name>
@@ -414,100 +414,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6789">
+      <node id="15144">
         <label>qtgui_time_sink_c</label>
         <link refid="classqtgui__time__sink__c"/>
-        <childnode refid="6790" relation="public-inheritance">
+        <childnode refid="15145" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6793">
+      <node id="15148">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6794" relation="public-inheritance">
+        <childnode refid="15149" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6790">
+      <node id="15145">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6791" relation="public-inheritance">
+        <childnode refid="15146" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6791">
+      <node id="15146">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6792" relation="public-inheritance">
+        <childnode refid="15147" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6794">
+      <node id="15149">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6792">
+      <node id="15147">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6793" relation="public-inheritance">
+        <childnode refid="15148" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6795">
+      <node id="15150">
         <label>qtgui_time_sink_c</label>
         <link refid="classqtgui__time__sink__c"/>
-        <childnode refid="6796" relation="public-inheritance">
+        <childnode refid="15151" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6799">
+      <node id="15154">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6800" relation="public-inheritance">
+        <childnode refid="15155" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6796">
+      <node id="15151">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6797" relation="public-inheritance">
+        <childnode refid="15152" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6797">
+      <node id="15152">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6798" relation="public-inheritance">
+        <childnode refid="15153" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6801">
+      <node id="15156">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6802" relation="usage">
+        <childnode refid="15157" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6804">
+      <node id="15159">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6800">
+      <node id="15155">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6802">
+      <node id="15157">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6798">
+      <node id="15153">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6799" relation="public-inheritance">
+        <childnode refid="15154" relation="public-inheritance">
         </childnode>
-        <childnode refid="6801" relation="usage">
+        <childnode refid="15156" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6803" relation="usage">
+        <childnode refid="15158" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6803">
+      <node id="15158">
         <label>std::string</label>
-        <childnode refid="6804" relation="public-inheritance">
+        <childnode refid="15159" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

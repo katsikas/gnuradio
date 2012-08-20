@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__packet__sink" kind="class" prot="public">
     <compoundname>gr_packet_sink</compoundname>
     <includes refid="gr__packet__sink_8h" local="no">gr_packet_sink.h</includes>
@@ -225,9 +225,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classgr__packet__sink_1ae722676b183006377b676ff9692df1cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend __GR_ATTR_IMPORT <ref refid="gr__packet__sink_8h_1a02e7c8d9d56cfa5b01fb0727ba297e43" kindref="member">gr_packet_sink_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT gr_packet_sink_sptr gr_make_packet_sink</definition>
+      <memberdef kind="friend" id="classgr__packet__sink_1a781a718905dea1dab2d31ed186e3e7c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend GR_CORE_API <ref refid="gr__packet__sink_8h_1a02e7c8d9d56cfa5b01fb0727ba297e43" kindref="member">gr_packet_sink_sptr</ref></type>
+        <definition>GR_CORE_API gr_packet_sink_sptr gr_make_packet_sink</definition>
         <argsstring>(const std::vector&lt; unsigned char &gt; &amp;sync_vector, gr_msg_queue_sptr target_queue, int threshold)</argsstring>
         <name>gr_make_packet_sink</name>
         <param>
@@ -439,7 +439,7 @@
       <member refid="classgr__packet__sink_1accc43f02145a1f6b3375a62630bcd533" prot="protected" virt="non-virtual"><scope>gr_packet_sink</scope><name>enter_have_header</name></member>
       <member refid="classgr__packet__sink_1a7479c5de3faa20374784d735b100120f" prot="protected" virt="non-virtual"><scope>gr_packet_sink</scope><name>enter_have_sync</name></member>
       <member refid="classgr__packet__sink_1a51919fbafd2e9e6d57e08e37c79852cb" prot="protected" virt="non-virtual"><scope>gr_packet_sink</scope><name>enter_search</name></member>
-      <member refid="classgr__packet__sink_1ae722676b183006377b676ff9692df1cc" prot="private" virt="non-virtual"><scope>gr_packet_sink</scope><name>gr_make_packet_sink</name></member>
+      <member refid="classgr__packet__sink_1a781a718905dea1dab2d31ed186e3e7c8" prot="private" virt="non-virtual"><scope>gr_packet_sink</scope><name>gr_make_packet_sink</name></member>
       <member refid="classgr__packet__sink_1aca3162215b64abe275567f55fd7533d0" prot="protected" virt="non-virtual"><scope>gr_packet_sink</scope><name>gr_packet_sink</name></member>
       <member refid="classgr__packet__sink_1a8113a705c44649c925447ced61fb4c67" prot="protected" virt="non-virtual"><scope>gr_packet_sink</scope><name>header_ok</name></member>
       <member refid="classgr__packet__sink_1a626be5e11e812b81a7c3670770a94234" prot="protected" virt="non-virtual"><scope>gr_packet_sink</scope><name>header_payload_len</name></member>

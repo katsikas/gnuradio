@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'TimeDomainDisplayPlot.h'
 **
-** Created: Sun Aug 19 10:43:40 2012
-**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
+** Created:
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.4)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -10,8 +10,8 @@
 #include "../../../gr-qtgui/lib/TimeDomainDisplayPlot.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'TimeDomainDisplayPlot.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.7.4. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,7 +20,7 @@ QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_TimeDomainDisplayPlot[] = {
 
  // content:
-       6,       // revision
+       5,       // revision
        0,       // classname
        0,    0, // classinfo
       10,   14, // methods
@@ -60,34 +60,9 @@ static const char qt_meta_stringdata_TimeDomainDisplayPlot[] = {
     "plotItem,on\0LegendEntryChecked(QwtPlotItem*,bool)\0"
 };
 
-void TimeDomainDisplayPlot::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        TimeDomainDisplayPlot *_t = static_cast<TimeDomainDisplayPlot *>(_o);
-        switch (_id) {
-        case 0: _t->plotPointSelected((*reinterpret_cast< const QPointF(*)>(_a[1]))); break;
-        case 1: _t->setYaxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
-        case 2: _t->setXaxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
-        case 3: _t->setTitle((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 4: _t->setColor((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 5: _t->resizeSlot((*reinterpret_cast< QSize*(*)>(_a[1]))); break;
-        case 6: _t->SetSampleRate((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< const std::string(*)>(_a[3]))); break;
-        case 7: _t->OnPickerPointSelected((*reinterpret_cast< const QwtDoublePoint(*)>(_a[1]))); break;
-        case 8: _t->OnPickerPointSelected6((*reinterpret_cast< const QPointF(*)>(_a[1]))); break;
-        case 9: _t->LegendEntryChecked((*reinterpret_cast< QwtPlotItem*(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
-        default: ;
-        }
-    }
-}
-
-const QMetaObjectExtraData TimeDomainDisplayPlot::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
-
 const QMetaObject TimeDomainDisplayPlot::staticMetaObject = {
     { &QwtPlot::staticMetaObject, qt_meta_stringdata_TimeDomainDisplayPlot,
-      qt_meta_data_TimeDomainDisplayPlot, &staticMetaObjectExtraData }
+      qt_meta_data_TimeDomainDisplayPlot, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
@@ -113,8 +88,19 @@ int TimeDomainDisplayPlot::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
-            qt_static_metacall(this, _c, _id, _a);
+        switch (_id) {
+        case 0: plotPointSelected((*reinterpret_cast< const QPointF(*)>(_a[1]))); break;
+        case 1: setYaxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
+        case 2: setXaxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
+        case 3: setTitle((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 4: setColor((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 5: resizeSlot((*reinterpret_cast< QSize*(*)>(_a[1]))); break;
+        case 6: SetSampleRate((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< const std::string(*)>(_a[3]))); break;
+        case 7: OnPickerPointSelected((*reinterpret_cast< const QwtDoublePoint(*)>(_a[1]))); break;
+        case 8: OnPickerPointSelected6((*reinterpret_cast< const QPointF(*)>(_a[1]))); break;
+        case 9: LegendEntryChecked((*reinterpret_cast< QwtPlotItem*(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
+        default: ;
+        }
         _id -= 10;
     }
     return _id;

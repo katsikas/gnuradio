@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgri__iir" kind="class" prot="public">
     <compoundname>gri_iir</compoundname>
     <includes refid="gri__iir_8h" local="no">gri_iir.h</includes>
@@ -258,28 +258,22 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="5822">
+      <node id="14049">
         <label>gri_iir&lt; i_type, o_type, tap_type &gt;</label>
         <link refid="classgri__iir"/>
-        <childnode refid="5823" relation="usage">
+        <childnode refid="14050" relation="usage">
           <edgelabel>d_fftaps</edgelabel>
           <edgelabel>d_prev_output</edgelabel>
           <edgelabel>d_fbtaps</edgelabel>
         </childnode>
-        <childnode refid="5825" relation="usage">
+        <childnode refid="14051" relation="usage">
           <edgelabel>d_prev_input</edgelabel>
         </childnode>
       </node>
-      <node id="5824">
-        <label>tap_type</label>
-      </node>
-      <node id="5823">
+      <node id="14050">
         <label>std::vector&lt; tap_type &gt;</label>
-        <childnode refid="5824" relation="usage">
-          <edgelabel>elements</edgelabel>
-        </childnode>
       </node>
-      <node id="5825">
+      <node id="14051">
         <label>std::vector&lt; i_type &gt;</label>
       </node>
     </collaborationgraph>

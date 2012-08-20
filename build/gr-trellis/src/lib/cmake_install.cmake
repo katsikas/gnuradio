@@ -2,7 +2,7 @@
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "/usr")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,33 +29,20 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+  SET(CMAKE_INSTALL_SO_NO_EXE "0")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_runtime")
-  FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-trellis-3.6.1git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-trellis-3.6.1git.so"
-      )
-    IF(EXISTS "${file}" AND
-       NOT IS_SYMLINK "${file}")
-      FILE(RPATH_CHECK
-           FILE "${file}"
-           RPATH "")
-    ENDIF()
-  ENDFOREACH()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/katsikas/gnuradio/build/gr-trellis/src/lib/libgnuradio-trellis-3.6.1git.so.0.0.0"
-    "/home/katsikas/gnuradio/build/gr-trellis/src/lib/libgnuradio-trellis-3.6.1git.so"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES
+    "/home/katsikas/gnuradio/build/gr-trellis/src/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-trellis-3.6.1git.so.0.0.0"
+    "/home/katsikas/gnuradio/build/gr-trellis/src/lib/CMakeFiles/CMakeRelink.dir/libgnuradio-trellis-3.6.1git.so"
     )
   FOREACH(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-trellis-3.6.1git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-trellis-3.6.1git.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libgnuradio-trellis-3.6.1git.so.0.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libgnuradio-trellis-3.6.1git.so"
       )
     IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
-      FILE(RPATH_REMOVE
-           FILE "${file}")
       IF(CMAKE_INSTALL_DO_STRIP)
         EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "${file}")
       ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -64,7 +51,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_runtime")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_runtime")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE FILE FILES
     "/home/katsikas/gnuradio/build/gr-trellis/src/lib/libgnuradio-trellis.so"
     "/home/katsikas/gnuradio/build/gr-trellis/src/lib/libgnuradio-trellis-3.6.1git.so.0"
     )
@@ -212,29 +199,21 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_swig")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_python")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/_trellis.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/_trellis.so")
-    FILE(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/_trellis.so"
-         RPATH "")
-  ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio" TYPE MODULE FILES "/home/katsikas/gnuradio/build/gr-trellis/src/lib/_trellis.so")
-  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/_trellis.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/_trellis.so")
-    FILE(RPATH_REMOVE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/_trellis.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio" TYPE MODULE FILES "/home/katsikas/gnuradio/build/gr-trellis/src/lib/CMakeFiles/CMakeRelink.dir/_trellis.so")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/_trellis.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/_trellis.so")
     IF(CMAKE_INSTALL_DO_STRIP)
-      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio/_trellis.so")
+      EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio/_trellis.so")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio" TYPE FILE FILES "/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_python")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "trellis_python")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/gnuradio" TYPE FILE FILES
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/python2.7/site-packages/gnuradio" TYPE FILE FILES
     "/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis.pyc"
     "/home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis.pyo"
     )

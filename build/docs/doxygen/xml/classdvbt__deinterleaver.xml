@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdvbt__deinterleaver" kind="class" prot="public">
     <compoundname>dvbt_deinterleaver</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__deinterleaver_1a2994b4b6627e21e53d50db0f9d701a3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_deinterleaver_sptr</ref></type>
+        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_deinterleaver_sptr</ref></type>
         <definition>DVBT_API dvbt_deinterleaver_sptr dvbt_make_deinterleaver</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_deinterleaver</name>
@@ -95,100 +95,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1493">
+      <node id="6697">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1494" relation="public-inheritance">
+        <childnode refid="6698" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1490">
+      <node id="6694">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1491" relation="public-inheritance">
+        <childnode refid="6695" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1491">
+      <node id="6695">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1492" relation="public-inheritance">
+        <childnode refid="6696" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1494">
+      <node id="6698">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1492">
+      <node id="6696">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1493" relation="public-inheritance">
+        <childnode refid="6697" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1489">
+      <node id="6693">
         <label>dvbt_deinterleaver</label>
         <link refid="classdvbt__deinterleaver"/>
-        <childnode refid="1490" relation="public-inheritance">
+        <childnode refid="6694" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1499">
+      <node id="6703">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1500" relation="public-inheritance">
+        <childnode refid="6704" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1496">
+      <node id="6700">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1497" relation="public-inheritance">
+        <childnode refid="6701" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1497">
+      <node id="6701">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1498" relation="public-inheritance">
+        <childnode refid="6702" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1501">
+      <node id="6705">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1502" relation="usage">
+        <childnode refid="6706" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1504">
+      <node id="6708">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1500">
+      <node id="6704">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1502">
+      <node id="6706">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1498">
+      <node id="6702">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1499" relation="public-inheritance">
+        <childnode refid="6703" relation="public-inheritance">
         </childnode>
-        <childnode refid="1501" relation="usage">
+        <childnode refid="6705" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1503" relation="usage">
+        <childnode refid="6707" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1495">
+      <node id="6699">
         <label>dvbt_deinterleaver</label>
         <link refid="classdvbt__deinterleaver"/>
-        <childnode refid="1496" relation="public-inheritance">
+        <childnode refid="6700" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1503">
+      <node id="6707">
         <label>std::string</label>
-        <childnode refid="1504" relation="public-inheritance">
+        <childnode refid="6708" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

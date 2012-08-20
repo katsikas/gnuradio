@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_noaa_swig_29741.
-
-# Include the progress variables for this target.
-include gr-noaa/swig/CMakeFiles/pygen_gr_noaa_swig_29741.dir/progress.make
 
 gr-noaa/swig/CMakeFiles/pygen_gr_noaa_swig_29741: gr-noaa/swig/noaa_swig.pyc
 gr-noaa/swig/CMakeFiles/pygen_gr_noaa_swig_29741: gr-noaa/swig/noaa_swig.pyo
@@ -77,12 +77,13 @@ gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_compl
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gr-noaa/lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gr-noaa/lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio.i
+gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: /usr/include/gruel/attributes.h
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: gr-noaa/swig/noaa_swig.tag
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gr-noaa/swig/noaa_swig.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/cmake -E make_directory /home/katsikas/gnuradio/build/gr-noaa/swig
-	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module noaa_swig -I/home/katsikas/gnuradio/gr-noaa/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-noaa/swig -I/home/katsikas/gnuradio/build/gr-noaa/swig -outdir /home/katsikas/gnuradio/build/gr-noaa/swig -c++ -I/home/katsikas/gnuradio/gr-noaa/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-noaa/swig -I/home/katsikas/gnuradio/build/gr-noaa/swig -o /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-noaa/swig/noaa_swig.i
+	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/swig -python -fvirtual -modern -keyword -w511 -module noaa_swig -I/home/katsikas/gnuradio/gr-noaa/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-noaa/swig -I/home/katsikas/gnuradio/build/gr-noaa/swig -outdir /home/katsikas/gnuradio/build/gr-noaa/swig -c++ -I/home/katsikas/gnuradio/gr-noaa/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-noaa/swig -I/home/katsikas/gnuradio/build/gr-noaa/swig -o /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-noaa/swig/noaa_swig.i
 
 gr-noaa/swig/noaa_swig.py: gr-noaa/swig/noaa_swigPYTHON_wrap.cxx
 
@@ -93,21 +94,21 @@ gr-noaa/swig/noaa_swig.tag: gr-noaa/swig/_noaa_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-noaa/swig && ./_noaa_swig_swig_tag
 	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig.tag
 
-gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
-gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
+gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_api.h
-gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt.h
+gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
+gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
 gr-noaa/swig/noaa_swig_doc.i: gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating noaa_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig_doc.i
 
-gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
-gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
+gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_api.h
-gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt.h
+gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
+gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: gr-noaa/swig/_noaa_swig_doc_tag
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for noaa_swig_doc docs"

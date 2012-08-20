@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__fake__channel__encoder__pp" kind="class" prot="public">
     <compoundname>gr_fake_channel_encoder_pp</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -57,7 +57,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__fake__channel__encoder__pp_1a227e933a8f5db288a2c199e15adaa66c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fake_channel_encoder_pp_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_fake_channel_encoder_pp_sptr</ref></type>
         <definition>GR_CORE_API gr_fake_channel_encoder_pp_sptr gr_make_fake_channel_encoder_pp</definition>
         <argsstring>(int input_vlen, int output_vlen)</argsstring>
         <name>gr_make_fake_channel_encoder_pp</name>
@@ -124,100 +124,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3101">
+      <node id="9077">
         <label>gr_fake_channel_encoder_pp</label>
         <link refid="classgr__fake__channel__encoder__pp"/>
-        <childnode refid="3102" relation="public-inheritance">
+        <childnode refid="9078" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3105">
+      <node id="9081">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3106" relation="public-inheritance">
+        <childnode refid="9082" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3102">
+      <node id="9078">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3103" relation="public-inheritance">
+        <childnode refid="9079" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3103">
+      <node id="9079">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3104" relation="public-inheritance">
+        <childnode refid="9080" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3106">
+      <node id="9082">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3104">
+      <node id="9080">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3105" relation="public-inheritance">
+        <childnode refid="9081" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3107">
+      <node id="9083">
         <label>gr_fake_channel_encoder_pp</label>
         <link refid="classgr__fake__channel__encoder__pp"/>
-        <childnode refid="3108" relation="public-inheritance">
+        <childnode refid="9084" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3111">
+      <node id="9087">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="3112" relation="public-inheritance">
+        <childnode refid="9088" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3108">
+      <node id="9084">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="3109" relation="public-inheritance">
+        <childnode refid="9085" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3109">
+      <node id="9085">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="3110" relation="public-inheritance">
+        <childnode refid="9086" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3113">
+      <node id="9089">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="3114" relation="usage">
+        <childnode refid="9090" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="3116">
+      <node id="9092">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="3112">
+      <node id="9088">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="3114">
+      <node id="9090">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="3110">
+      <node id="9086">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="3111" relation="public-inheritance">
+        <childnode refid="9087" relation="public-inheritance">
         </childnode>
-        <childnode refid="3113" relation="usage">
+        <childnode refid="9089" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="3115" relation="usage">
+        <childnode refid="9091" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="3115">
+      <node id="9091">
         <label>std::string</label>
-        <childnode refid="3116" relation="public-inheritance">
+        <childnode refid="9092" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

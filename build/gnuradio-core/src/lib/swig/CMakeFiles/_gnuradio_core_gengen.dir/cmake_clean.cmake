@@ -26,6 +26,8 @@ FILE(REMOVE_RECURSE
   "gengen_swig_doc_swig_docs/xml/combine.xslt"
   "_gnuradio_core_gengen.pdb"
   "_gnuradio_core_gengen.so"
+  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_gengen.pdb"
+  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_gengen.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__binary__slicer__fb" kind="class" prot="public">
     <compoundname>digital_binary_slicer_fb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="digital__binary__slicer__fb_8h" local="no">digital_binary_slicer_fb.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__binary__slicer__fb_1a86e7dcebbc7fe38c4eb1b7ebe36bf754" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_binary_slicer_fb_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_binary_slicer_fb_sptr</ref></type>
         <definition>DIGITAL_API digital_binary_slicer_fb_sptr digital_make_binary_slicer_fb</definition>
         <argsstring>()</argsstring>
         <name>digital_make_binary_slicer_fb</name>
@@ -67,100 +67,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="958">
+      <node id="6162">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="959" relation="public-inheritance">
+        <childnode refid="6163" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="955">
+      <node id="6159">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="956" relation="public-inheritance">
+        <childnode refid="6160" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="956">
+      <node id="6160">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="957" relation="public-inheritance">
+        <childnode refid="6161" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="954">
+      <node id="6158">
         <label>digital_binary_slicer_fb</label>
         <link refid="classdigital__binary__slicer__fb"/>
-        <childnode refid="955" relation="public-inheritance">
+        <childnode refid="6159" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="959">
+      <node id="6163">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="957">
+      <node id="6161">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="958" relation="public-inheritance">
+        <childnode refid="6162" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="964">
+      <node id="6168">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="965" relation="public-inheritance">
+        <childnode refid="6169" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="961">
+      <node id="6165">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="962" relation="public-inheritance">
+        <childnode refid="6166" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="962">
+      <node id="6166">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="963" relation="public-inheritance">
+        <childnode refid="6167" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="960">
+      <node id="6164">
         <label>digital_binary_slicer_fb</label>
         <link refid="classdigital__binary__slicer__fb"/>
-        <childnode refid="961" relation="public-inheritance">
+        <childnode refid="6165" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="966">
+      <node id="6170">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="967" relation="usage">
+        <childnode refid="6171" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="969">
+      <node id="6173">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="965">
+      <node id="6169">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="967">
+      <node id="6171">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="963">
+      <node id="6167">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="964" relation="public-inheritance">
+        <childnode refid="6168" relation="public-inheritance">
         </childnode>
-        <childnode refid="966" relation="usage">
+        <childnode refid="6170" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="968" relation="usage">
+        <childnode refid="6172" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="968">
+      <node id="6172">
         <label>std::string</label>
-        <childnode refid="969" relation="public-inheritance">
+        <childnode refid="6173" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

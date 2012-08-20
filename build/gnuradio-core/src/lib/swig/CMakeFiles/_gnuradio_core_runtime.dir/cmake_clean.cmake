@@ -20,6 +20,8 @@ FILE(REMOVE_RECURSE
   "runtime_swig_doc_swig_docs/xml/combine.xslt"
   "_gnuradio_core_runtime.pdb"
   "_gnuradio_core_runtime.so"
+  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_runtime.pdb"
+  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_runtime.so"
 )
 
 # Per-language clean rules from dependency scanning.

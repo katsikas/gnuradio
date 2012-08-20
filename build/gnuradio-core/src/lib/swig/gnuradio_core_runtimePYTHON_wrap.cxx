@@ -3652,7 +3652,7 @@ namespace swig {
     }
 
     // Random access iterator methods, but not required in Python
-    virtual ptrdiff_t distance(const SwigPyIterator &/*x*/) const
+    virtual std::ptrdiff_t distance(const SwigPyIterator &/*x*/) const
     {
       throw std::invalid_argument("operation not supported");
     }
@@ -3689,7 +3689,7 @@ namespace swig {
       return obj;
     }
 
-    SwigPyIterator *advance(ptrdiff_t n)
+    SwigPyIterator *advance(std::ptrdiff_t n)
     {
       return  (n > 0) ?  incr(n) : decr(-n);
     }
@@ -3704,27 +3704,27 @@ namespace swig {
       return ! operator==(x);
     }
       
-    SwigPyIterator& operator += (ptrdiff_t n)
+    SwigPyIterator& operator += (std::ptrdiff_t n)
     {
       return *advance(n);
     }
 
-    SwigPyIterator& operator -= (ptrdiff_t n)
+    SwigPyIterator& operator -= (std::ptrdiff_t n)
     {
       return *advance(-n);
     }
       
-    SwigPyIterator* operator + (ptrdiff_t n) const
+    SwigPyIterator* operator + (std::ptrdiff_t n) const
     {
       return copy()->advance(n);
     }
 
-    SwigPyIterator* operator - (ptrdiff_t n) const
+    SwigPyIterator* operator - (std::ptrdiff_t n) const
     {
       return copy()->advance(-n);
     }
       
-    ptrdiff_t operator - (const SwigPyIterator& x) const
+    std::ptrdiff_t operator - (const SwigPyIterator& x) const
     {
       return x.distance(*this);
     }
@@ -4312,7 +4312,7 @@ namespace swig {
 
 namespace swig {
   inline size_t
-  check_index(ptrdiff_t i, size_t size, bool insert = false) {
+  check_index(std::ptrdiff_t i, size_t size, bool insert = false) {
     if ( i < 0 ) {
       if ((size_t) (-i) <= size)
 	return (size_t) (i + size);
@@ -4326,7 +4326,7 @@ namespace swig {
   }
 
   inline size_t
-  slice_index(ptrdiff_t i, size_t size) {
+  slice_index(std::ptrdiff_t i, size_t size) {
     if ( i < 0 ) {
       if ((size_t) (-i) <= size) {
 	return (size_t) (i + size);
@@ -4485,7 +4485,7 @@ namespace swig {
       }
     }
     
-    ptrdiff_t distance(const SwigPyIterator &iter) const
+    std::ptrdiff_t distance(const SwigPyIterator &iter) const
     {
       const self_type *iters = dynamic_cast<const self_type *>(&iter);
       if (iters) {
@@ -5147,6 +5147,7 @@ SWIGINTERN void std_vector_Sl_gr_basic_block_sptr_Sg____delitem____SWIG_0(std::v
       self->erase(swig::getpos(self,i));
     }
 SWIGINTERN std::vector< boost::shared_ptr< gr_basic_block >,std::allocator< boost::shared_ptr< gr_basic_block > > > *std_vector_Sl_gr_basic_block_sptr_Sg____getitem____SWIG_0(std::vector< gr_basic_block_sptr > *self,PySliceObject *slice){
+
       Py_ssize_t i, j, step;
       if( !PySlice_Check(slice) ) {
         SWIG_Error(SWIG_TypeError, "Slice object expected.");
@@ -5283,6 +5284,7 @@ SWIGINTERN void std_vector_Sl_gr_block_sptr_Sg____delitem____SWIG_0(std::vector<
       self->erase(swig::getpos(self,i));
     }
 SWIGINTERN std::vector< boost::shared_ptr< gr_block >,std::allocator< boost::shared_ptr< gr_block > > > *std_vector_Sl_gr_block_sptr_Sg____getitem____SWIG_0(std::vector< gr_block_sptr > *self,PySliceObject *slice){
+
       Py_ssize_t i, j, step;
       if( !PySlice_Check(slice) ) {
         SWIG_Error(SWIG_TypeError, "Slice object expected.");
@@ -5684,7 +5686,7 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator_distance(PyObject *SWIGUNUSEDPARM(self
   char *  kwnames[] = {
     (char *) "self",(char *) "x", NULL 
   };
-  ptrdiff_t result;
+  std::ptrdiff_t result;
   
   if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:SwigPyIterator_distance",kwnames,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_swig__SwigPyIterator, 0 |  0 );
@@ -5944,7 +5946,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator_advance(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -5964,9 +5966,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator_advance(PyObject *SWIGUNUSEDPARM(self)
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator_advance" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator_advance" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -6095,7 +6097,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___iadd__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -6115,9 +6117,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___iadd__(PyObject *SWIGUNUSEDPARM(self
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___iadd__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___iadd__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -6150,7 +6152,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___isub__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -6170,9 +6172,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___isub__(PyObject *SWIGUNUSEDPARM(self
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___isub__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___isub__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -6205,7 +6207,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___add__(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -6225,9 +6227,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___add__(PyObject *SWIGUNUSEDPARM(self)
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___add__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___add__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -6260,7 +6262,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SwigPyIterator___sub____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   swig::SwigPyIterator *arg1 = (swig::SwigPyIterator *) 0 ;
-  ptrdiff_t arg2 ;
+  std::ptrdiff_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   ptrdiff_t val2 ;
@@ -6277,9 +6279,9 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___sub____SWIG_0(PyObject *SWIGUNUSEDPA
   arg1 = reinterpret_cast< swig::SwigPyIterator * >(argp1);
   ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___sub__" "', argument " "2"" of type '" "ptrdiff_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SwigPyIterator___sub__" "', argument " "2"" of type '" "std::ptrdiff_t""'");
   } 
-  arg2 = static_cast< ptrdiff_t >(val2);
+  arg2 = static_cast< std::ptrdiff_t >(val2);
   {
     try {
       try {
@@ -6319,7 +6321,7 @@ SWIGINTERN PyObject *_wrap_SwigPyIterator___sub____SWIG_1(PyObject *SWIGUNUSEDPA
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  ptrdiff_t result;
+  std::ptrdiff_t result;
   
   if(!PyArg_UnpackTuple(args,(char *)"SwigPyIterator___sub__",2,2,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_swig__SwigPyIterator, 0 |  0 );
@@ -20426,21 +20428,21 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SwigPyIterator_value", _wrap_SwigPyIterator_value, METH_VARARGS, (char *)"SwigPyIterator_value(SwigPyIterator self) -> PyObject"},
 	 { (char *)"SwigPyIterator_incr", (PyCFunction) _wrap_SwigPyIterator_incr, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_incr(SwigPyIterator self, size_t n = 1) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator_decr", (PyCFunction) _wrap_SwigPyIterator_decr, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_decr(SwigPyIterator self, size_t n = 1) -> SwigPyIterator"},
-	 { (char *)"SwigPyIterator_distance", (PyCFunction) _wrap_SwigPyIterator_distance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_distance(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t"},
+	 { (char *)"SwigPyIterator_distance", (PyCFunction) _wrap_SwigPyIterator_distance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_distance(SwigPyIterator self, SwigPyIterator x) -> std::ptrdiff_t"},
 	 { (char *)"SwigPyIterator_equal", (PyCFunction) _wrap_SwigPyIterator_equal, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_equal(SwigPyIterator self, SwigPyIterator x) -> bool"},
 	 { (char *)"SwigPyIterator_copy", _wrap_SwigPyIterator_copy, METH_VARARGS, (char *)"SwigPyIterator_copy(SwigPyIterator self) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator_next", _wrap_SwigPyIterator_next, METH_VARARGS, (char *)"SwigPyIterator_next(SwigPyIterator self) -> PyObject"},
 	 { (char *)"SwigPyIterator___next__", _wrap_SwigPyIterator___next__, METH_VARARGS, (char *)"SwigPyIterator___next__(SwigPyIterator self) -> PyObject"},
 	 { (char *)"SwigPyIterator_previous", _wrap_SwigPyIterator_previous, METH_VARARGS, (char *)"SwigPyIterator_previous(SwigPyIterator self) -> PyObject"},
-	 { (char *)"SwigPyIterator_advance", (PyCFunction) _wrap_SwigPyIterator_advance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_advance(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator_advance", (PyCFunction) _wrap_SwigPyIterator_advance, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator_advance(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator___eq__", (PyCFunction) _wrap_SwigPyIterator___eq__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___eq__(SwigPyIterator self, SwigPyIterator x) -> bool"},
 	 { (char *)"SwigPyIterator___ne__", (PyCFunction) _wrap_SwigPyIterator___ne__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___ne__(SwigPyIterator self, SwigPyIterator x) -> bool"},
-	 { (char *)"SwigPyIterator___iadd__", (PyCFunction) _wrap_SwigPyIterator___iadd__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___iadd__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
-	 { (char *)"SwigPyIterator___isub__", (PyCFunction) _wrap_SwigPyIterator___isub__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___isub__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
-	 { (char *)"SwigPyIterator___add__", (PyCFunction) _wrap_SwigPyIterator___add__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___add__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator___iadd__", (PyCFunction) _wrap_SwigPyIterator___iadd__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___iadd__(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator___isub__", (PyCFunction) _wrap_SwigPyIterator___isub__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___isub__(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
+	 { (char *)"SwigPyIterator___add__", (PyCFunction) _wrap_SwigPyIterator___add__, METH_VARARGS | METH_KEYWORDS, (char *)"SwigPyIterator___add__(SwigPyIterator self, std::ptrdiff_t n) -> SwigPyIterator"},
 	 { (char *)"SwigPyIterator___sub__", _wrap_SwigPyIterator___sub__, METH_VARARGS, (char *)"\n"
-		"__sub__(ptrdiff_t n) -> SwigPyIterator\n"
-		"SwigPyIterator___sub__(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
+		"__sub__(std::ptrdiff_t n) -> SwigPyIterator\n"
+		"SwigPyIterator___sub__(SwigPyIterator self, SwigPyIterator x) -> std::ptrdiff_t\n"
 		""},
 	 { (char *)"SwigPyIterator_swigregister", SwigPyIterator_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_gr_io_signature_sptr", _wrap_new_gr_io_signature_sptr, METH_VARARGS, (char *)"\n"

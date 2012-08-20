@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classstd_1_1vector" kind="class" prot="public">
     <compoundname>std::vector</compoundname>
     <includes refid="vector__docstub_8h" local="no">vector_docstub.h</includes>
@@ -14,8 +14,8 @@
         <defname>T</defname>
       </param>
     </templateparamlist>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classstd_1_1vector_1a2396209900e8f592db1f0b2467f7d899" prot="public" static="no" mutable="no">
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstd_1_1vector_1a2396209900e8f592db1f0b2467f7d899" prot="private" static="no" mutable="no">
         <type>T</type>
         <definition>T std::vector&lt; T &gt;::elements</definition>
         <argsstring></argsstring>
@@ -28,6 +28,8 @@
         </inbodydescription>
         <location file="" line="1"/>
       </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classstd_1_1vector_1a40c9747874ee917e32932253f1cca5f2" prot="public" static="no" mutable="no">
         <type>T *</type>
         <definition>T* std::vector&lt; T &gt;::p</definition>
@@ -48,20 +50,19 @@
 <para>vector documentation stub</para><para><simplesect kind="warning"><para>This isn&apos;t the real vector template. It&apos;s just enough to get doxygen to draw pretty collaboration diagrams. </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="7090">
+      <node id="15435">
         <label>T</label>
       </node>
-      <node id="7089">
+      <node id="15434">
         <label>std::vector&lt; T &gt;</label>
-        <childnode refid="7090" relation="usage">
+        <childnode refid="15435" relation="usage">
           <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
     <location file="[STL]" line="1" bodyfile="/home/katsikas/gnuradio/docs/doxygen/other/vector_docstub.h" bodystart="10" bodyend="14"/>
     <listofallmembers>
-      <member refid="classstd_1_1vector_1a2396209900e8f592db1f0b2467f7d899" prot="public" virt="non-virtual"><scope>std::vector</scope><name>elements</name></member>
+      <member refid="classstd_1_1vector_1a2396209900e8f592db1f0b2467f7d899" prot="private" virt="non-virtual"><scope>std::vector</scope><name>elements</name></member>
       <member refid="classstd_1_1vector_1a40c9747874ee917e32932253f1cca5f2" prot="public" virt="non-virtual"><scope>std::vector</scope><name>p</name></member>
     </listofallmembers>
   </compounddef>

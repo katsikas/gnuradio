@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -38,9 +41,6 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gnuradio_core_src_python_gnuradio_blks2impl_f0cc0.
-
-# Include the progress variables for this target.
-include gnuradio-core/src/python/gnuradio/blks2impl/CMakeFiles/pygen_gnuradio_core_src_python_gnuradio_blks2impl_f0cc0.dir/progress.make
 
 gnuradio-core/src/python/gnuradio/blks2impl/CMakeFiles/pygen_gnuradio_core_src_python_gnuradio_blks2impl_f0cc0: gnuradio-core/src/python/gnuradio/blks2impl/__init__.pyc
 gnuradio-core/src/python/gnuradio/blks2impl/CMakeFiles/pygen_gnuradio_core_src_python_gnuradio_blks2impl_f0cc0: gnuradio-core/src/python/gnuradio/blks2impl/am_demod.pyc

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__ofdm__frame__acquisition" kind="class" prot="public">
     <compoundname>digital_ofdm_frame_acquisition</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -164,7 +164,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__ofdm__frame__acquisition_1a68c5767d93151cc47209b45aff817c99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_ofdm_frame_acquisition_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_ofdm_frame_acquisition_sptr</ref></type>
         <definition>DIGITAL_API digital_ofdm_frame_acquisition_sptr digital_make_ofdm_frame_acquisition</definition>
         <argsstring>(unsigned int occupied_carriers, unsigned int fft_length, unsigned int cplen, const std::vector&lt; gr_complex &gt; &amp;known_symbol, unsigned int max_fft_shift_len)</argsstring>
         <name>digital_make_ofdm_frame_acquisition</name>
@@ -483,88 +483,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
 <para>It then uses one of those known symbols to estimate the channel response over all subcarriers and does a simple 1-tap equalization on all subcarriers. This corrects for the phase and amplitude distortion caused by the channel. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1393">
+      <node id="6597">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1394" relation="public-inheritance">
+        <childnode refid="6598" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1391">
+      <node id="6595">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1392" relation="public-inheritance">
+        <childnode refid="6596" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1390">
+      <node id="6594">
         <label>digital_ofdm_frame_acquisition</label>
         <link refid="classdigital__ofdm__frame__acquisition"/>
-        <childnode refid="1391" relation="public-inheritance">
+        <childnode refid="6595" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1394">
+      <node id="6598">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1392">
+      <node id="6596">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1393" relation="public-inheritance">
+        <childnode refid="6597" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1398">
+      <node id="6602">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1399" relation="public-inheritance">
+        <childnode refid="6603" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1396">
+      <node id="6600">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1397" relation="public-inheritance">
+        <childnode refid="6601" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1400">
+      <node id="6604">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1401" relation="usage">
+        <childnode refid="6605" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1403">
+      <node id="6607">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1395">
+      <node id="6599">
         <label>digital_ofdm_frame_acquisition</label>
         <link refid="classdigital__ofdm__frame__acquisition"/>
-        <childnode refid="1396" relation="public-inheritance">
+        <childnode refid="6600" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1399">
+      <node id="6603">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1401">
+      <node id="6605">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1397">
+      <node id="6601">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1398" relation="public-inheritance">
+        <childnode refid="6602" relation="public-inheritance">
         </childnode>
-        <childnode refid="1400" relation="usage">
+        <childnode refid="6604" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1402" relation="usage">
+        <childnode refid="6606" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1402">
+      <node id="6606">
         <label>std::string</label>
-        <childnode refid="1403" relation="public-inheritance">
+        <childnode refid="6607" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__lms__dd__equalizer__cc" kind="class" prot="public">
     <compoundname>digital_lms_dd_equalizer_cc</compoundname>
     <basecompoundref refid="classgr__adaptive__fir__ccc" prot="public" virt="non-virtual">gr_adaptive_fir_ccc</basecompoundref>
@@ -48,7 +48,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__lms__dd__equalizer__cc_1a874b0a76a8fb89614d1ffb8086b9f74e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_lms_dd_equalizer_cc_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_lms_dd_equalizer_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_lms_dd_equalizer_cc_sptr digital_make_lms_dd_equalizer_cc</definition>
         <argsstring>(int num_taps, float mu, int sps, digital_constellation_sptr cnst)</argsstring>
         <name>digital_make_lms_dd_equalizer_cc</name>
@@ -189,143 +189,142 @@
     <detaileddescription>
 <para>y[n] = conj(w[n]) u[n] d[n] = decision(y[n]) e[n] = d[n] - y[n] w[n+1] = w[n] + mu u[n] conj(e[n])</para><para>Where mu is a gain value (between 0 and 1 and usualy small, around 0.001 - 0.01.</para><para>This block uses the <ref refid="classdigital__constellation" kindref="compound">digital_constellation</ref> object for making the decision from y[n]. Create the constellation object for whatever constellation is to be used and pass in the object. In Python, you can use something like: self.constellation = digital.constellation_qpsk() To create a QPSK constellation (see the <ref refid="classdigital__constellation" kindref="compound">digital_constellation</ref> block for more details as to what constellations are available or how to create your own). You then pass the object to this block as an sptr, or using &quot;self.constellation.base()&quot;.</para><para>The theory for this algorithm can be found in Chapter 9 of: S. Haykin, Adaptive Filter Theory, Upper Saddle River, NJ: Prentice Hall, 1996. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1323">
+      <node id="6527">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1324" relation="public-inheritance">
+        <childnode refid="6528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1320">
+      <node id="6524">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1321" relation="public-inheritance">
+        <childnode refid="6525" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1319">
+      <node id="6523">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="1320" relation="public-inheritance">
+        <childnode refid="6524" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1317">
+      <node id="6521">
         <label>digital_lms_dd_equalizer_cc</label>
         <link refid="classdigital__lms__dd__equalizer__cc"/>
-        <childnode refid="1318" relation="public-inheritance">
+        <childnode refid="6522" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1321">
+      <node id="6525">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1322" relation="public-inheritance">
+        <childnode refid="6526" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1324">
+      <node id="6528">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1318">
+      <node id="6522">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="1319" relation="public-inheritance">
+        <childnode refid="6523" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1322">
+      <node id="6526">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1323" relation="public-inheritance">
+        <childnode refid="6527" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1331">
+      <node id="6535">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1332" relation="public-inheritance">
+        <childnode refid="6536" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1328">
+      <node id="6532">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1329" relation="public-inheritance">
+        <childnode refid="6533" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1327">
+      <node id="6531">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="1328" relation="public-inheritance">
+        <childnode refid="6532" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1325">
+      <node id="6529">
         <label>digital_lms_dd_equalizer_cc</label>
         <link refid="classdigital__lms__dd__equalizer__cc"/>
-        <childnode refid="1326" relation="public-inheritance">
+        <childnode refid="6530" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1329">
+      <node id="6533">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1330" relation="public-inheritance">
+        <childnode refid="6534" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1338">
+      <node id="6542">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="1339" relation="usage">
+        <childnode refid="6543" relation="usage">
           <edgelabel>p</edgelabel>
-          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="1333">
+      <node id="6537">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1334" relation="usage">
+        <childnode refid="6538" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1336">
+      <node id="6540">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1332">
+      <node id="6536">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1339">
+      <node id="6543">
         <label>std::complex</label>
       </node>
-      <node id="1334">
+      <node id="6538">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1326">
+      <node id="6530">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="1327" relation="public-inheritance">
+        <childnode refid="6531" relation="public-inheritance">
         </childnode>
-        <childnode refid="1337" relation="usage">
+        <childnode refid="6541" relation="usage">
           <edgelabel>d_error</edgelabel>
         </childnode>
-        <childnode refid="1338" relation="usage">
+        <childnode refid="6542" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="1330">
+      <node id="6534">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1331" relation="public-inheritance">
+        <childnode refid="6535" relation="public-inheritance">
         </childnode>
-        <childnode refid="1333" relation="usage">
+        <childnode refid="6537" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1335" relation="usage">
+        <childnode refid="6539" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1337">
+      <node id="6541">
         <label>std::complex&lt; float &gt;</label>
       </node>
-      <node id="1335">
+      <node id="6539">
         <label>std::string</label>
-        <childnode refid="1336" relation="public-inheritance">
+        <childnode refid="6540" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

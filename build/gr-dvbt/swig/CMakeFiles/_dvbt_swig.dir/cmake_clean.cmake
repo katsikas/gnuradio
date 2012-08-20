@@ -10,6 +10,8 @@ FILE(REMOVE_RECURSE
   "dvbt_swig_doc_swig_docs/xml/combine.xslt"
   "_dvbt_swig.pdb"
   "_dvbt_swig.so"
+  "CMakeFiles/CMakeRelink.dir/_dvbt_swig.pdb"
+  "CMakeFiles/CMakeRelink.dir/_dvbt_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

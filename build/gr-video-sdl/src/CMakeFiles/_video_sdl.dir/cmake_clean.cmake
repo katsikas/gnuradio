@@ -10,6 +10,8 @@ FILE(REMOVE_RECURSE
   "video_sdl_swig_doc_swig_docs/xml/combine.xslt"
   "_video_sdl.pdb"
   "_video_sdl.so"
+  "CMakeFiles/CMakeRelink.dir/_video_sdl.pdb"
+  "CMakeFiles/CMakeRelink.dir/_video_sdl.so"
 )
 
 # Per-language clean rules from dependency scanning.

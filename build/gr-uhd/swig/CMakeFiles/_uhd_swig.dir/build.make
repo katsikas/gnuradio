@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,6 +30,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -79,6 +82,7 @@ gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: ../gr-uhd/include/gr_uhd_usrp_sink.h
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: ../gr-uhd/include/gr_uhd_usrp_source.h
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/config.hpp
+gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/iterator.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/lexical_cast.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/detail/lcast_precision.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/limits.hpp
@@ -120,7 +124,7 @@ gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/ranges.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/exception.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/operators.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/usrp/dboard_iface.hpp
-gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/iterator.hpp
+gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/gruel/thread.h
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/type_traits/is_pointer.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/type_traits/make_unsigned.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/foreach.hpp
@@ -135,7 +139,7 @@ gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: ../gr-uhd/swig/uhd_swig.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/katsikas/gnuradio/build/gr-uhd/swig && /usr/bin/cmake -E make_directory /home/katsikas/gnuradio/build/gr-uhd/swig
-	cd /home/katsikas/gnuradio/build/gr-uhd/swig && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module uhd_swig -DGR_HAVE_UHD -I/home/katsikas/gnuradio/gr-uhd/include -I/usr/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-uhd/swig -I/home/katsikas/gnuradio/build/gr-uhd/swig -outdir /home/katsikas/gnuradio/build/gr-uhd/swig -c++ -I/home/katsikas/gnuradio/gr-uhd/include -I/usr/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-uhd/swig -I/home/katsikas/gnuradio/build/gr-uhd/swig -o /home/katsikas/gnuradio/build/gr-uhd/swig/uhd_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-uhd/swig/uhd_swig.i
+	cd /home/katsikas/gnuradio/build/gr-uhd/swig && /usr/bin/swig -python -fvirtual -modern -keyword -w511 -module uhd_swig -DGR_HAVE_UHD -I/home/katsikas/gnuradio/gr-uhd/include -I/usr/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-uhd/swig -I/home/katsikas/gnuradio/build/gr-uhd/swig -outdir /home/katsikas/gnuradio/build/gr-uhd/swig -c++ -I/home/katsikas/gnuradio/gr-uhd/include -I/usr/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-uhd/swig -I/home/katsikas/gnuradio/build/gr-uhd/swig -o /home/katsikas/gnuradio/build/gr-uhd/swig/uhd_swigPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-uhd/swig/uhd_swig.i
 
 gr-uhd/swig/uhd_swig.py: gr-uhd/swig/uhd_swigPYTHON_wrap.cxx
 
@@ -175,16 +179,16 @@ _uhd_swig_OBJECTS = \
 _uhd_swig_EXTERNAL_OBJECTS =
 
 gr-uhd/swig/_uhd_swig.so: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o
-gr-uhd/swig/_uhd_swig.so: /usr/lib/libpython2.7.so
+gr-uhd/swig/_uhd_swig.so: /usr/lib64/libpython2.7.so
 gr-uhd/swig/_uhd_swig.so: gr-uhd/lib/libgnuradio-uhd-3.6.1git.so.0.0.0
-gr-uhd/swig/_uhd_swig.so: /usr/lib/libuhd.so
+gr-uhd/swig/_uhd_swig.so: /usr/lib64/libuhd.so
 gr-uhd/swig/_uhd_swig.so: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
 gr-uhd/swig/_uhd_swig.so: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
-gr-uhd/swig/_uhd_swig.so: /usr/lib/libboost_date_time-mt.so
-gr-uhd/swig/_uhd_swig.so: /usr/lib/libboost_program_options-mt.so
-gr-uhd/swig/_uhd_swig.so: /usr/lib/libboost_filesystem-mt.so
-gr-uhd/swig/_uhd_swig.so: /usr/lib/libboost_system-mt.so
-gr-uhd/swig/_uhd_swig.so: /usr/lib/libboost_thread-mt.so
+gr-uhd/swig/_uhd_swig.so: /usr/lib64/libboost_date_time-mt.so
+gr-uhd/swig/_uhd_swig.so: /usr/lib64/libboost_program_options-mt.so
+gr-uhd/swig/_uhd_swig.so: /usr/lib64/libboost_filesystem-mt.so
+gr-uhd/swig/_uhd_swig.so: /usr/lib64/libboost_system-mt.so
+gr-uhd/swig/_uhd_swig.so: /usr/lib64/libboost_thread-mt.so
 gr-uhd/swig/_uhd_swig.so: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build.make
 gr-uhd/swig/_uhd_swig.so: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module _uhd_swig.so"
@@ -193,6 +197,33 @@ gr-uhd/swig/_uhd_swig.so: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/link.txt
 # Rule to build all files generated by this target.
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build: gr-uhd/swig/_uhd_swig.so
 .PHONY : gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build
+
+# Object files for target _uhd_swig
+_uhd_swig_OBJECTS = \
+"CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o"
+
+# External object files for target _uhd_swig
+_uhd_swig_EXTERNAL_OBJECTS =
+
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: /usr/lib64/libpython2.7.so
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: gr-uhd/lib/libgnuradio-uhd-3.6.1git.so.0.0.0
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: /usr/lib64/libuhd.so
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: gnuradio-core/src/lib/libgnuradio-core-3.6.1git.so.0.0.0
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: gruel/src/lib/libgruel-3.6.1git.so.0.0.0
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: /usr/lib64/libboost_date_time-mt.so
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: /usr/lib64/libboost_program_options-mt.so
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: /usr/lib64/libboost_filesystem-mt.so
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: /usr/lib64/libboost_system-mt.so
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: /usr/lib64/libboost_thread-mt.so
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/build.make
+gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module CMakeFiles/CMakeRelink.dir/_uhd_swig.so"
+	cd /home/katsikas/gnuradio/build/gr-uhd/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_uhd_swig.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+gr-uhd/swig/CMakeFiles/_uhd_swig.dir/preinstall: gr-uhd/swig/CMakeFiles/CMakeRelink.dir/_uhd_swig.so
+.PHONY : gr-uhd/swig/CMakeFiles/_uhd_swig.dir/preinstall
 
 gr-uhd/swig/CMakeFiles/_uhd_swig.dir/requires: gr-uhd/swig/CMakeFiles/_uhd_swig.dir/uhd_swigPYTHON_wrap.cxx.o.requires
 .PHONY : gr-uhd/swig/CMakeFiles/_uhd_swig.dir/requires

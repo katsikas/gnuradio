@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classqtgui__ofdm__vector__analyzer__c" kind="class" prot="public">
     <compoundname>qtgui_ofdm_vector_analyzer_c</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -206,7 +206,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classqtgui__ofdm__vector__analyzer__c_1adb77800a182f1722b5d61f31af3077a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_ofdm_vector_analyzer_c_sptr</ref></type>
+        <type>friend GR_QTGUI_API <ref refid="classboost_1_1shared__ptr" kindref="compound">qtgui_ofdm_vector_analyzer_c_sptr</ref></type>
         <definition>GR_QTGUI_API qtgui_ofdm_vector_analyzer_c_sptr qtgui_make_ofdm_vector_analyzer_c</definition>
         <argsstring>(int occupied_tones, const std::string &amp;modulation, QWidget *parent)</argsstring>
         <name>qtgui_make_ofdm_vector_analyzer_c</name>
@@ -470,88 +470,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6750">
+      <node id="15105">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6751" relation="public-inheritance">
+        <childnode refid="15106" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6748">
+      <node id="15103">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6749" relation="public-inheritance">
+        <childnode refid="15104" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6751">
+      <node id="15106">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6749">
+      <node id="15104">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6750" relation="public-inheritance">
+        <childnode refid="15105" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6747">
+      <node id="15102">
         <label>qtgui_ofdm_vector_analyzer_c</label>
         <link refid="classqtgui__ofdm__vector__analyzer__c"/>
-        <childnode refid="6748" relation="public-inheritance">
+        <childnode refid="15103" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6755">
+      <node id="15110">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6756" relation="public-inheritance">
+        <childnode refid="15111" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6753">
+      <node id="15108">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6754" relation="public-inheritance">
+        <childnode refid="15109" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6757">
+      <node id="15112">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6758" relation="usage">
+        <childnode refid="15113" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6760">
+      <node id="15115">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6756">
+      <node id="15111">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6758">
+      <node id="15113">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6754">
+      <node id="15109">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6755" relation="public-inheritance">
+        <childnode refid="15110" relation="public-inheritance">
         </childnode>
-        <childnode refid="6757" relation="usage">
+        <childnode refid="15112" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6759" relation="usage">
+        <childnode refid="15114" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6752">
+      <node id="15107">
         <label>qtgui_ofdm_vector_analyzer_c</label>
         <link refid="classqtgui__ofdm__vector__analyzer__c"/>
-        <childnode refid="6753" relation="public-inheritance">
+        <childnode refid="15108" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6759">
+      <node id="15114">
         <label>std::string</label>
-        <childnode refid="6760" relation="public-inheritance">
+        <childnode refid="15115" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

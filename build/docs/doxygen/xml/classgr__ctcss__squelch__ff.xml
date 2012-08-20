@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__ctcss__squelch__ff" kind="class" prot="public">
     <compoundname>gr_ctcss_squelch_ff</compoundname>
     <basecompoundref refid="classgr__squelch__base__ff" prot="public" virt="non-virtual">gr_squelch_base_ff</basecompoundref>
@@ -99,7 +99,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__ctcss__squelch__ff_1a5ffdc00770218eb902dadc285dc3ea22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ctcss_squelch_ff_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ctcss_squelch_ff_sptr</ref></type>
         <definition>GR_CORE_API gr_ctcss_squelch_ff_sptr gr_make_ctcss_squelch_ff</definition>
         <argsstring>(int rate, float freq, float level, int len, int ramp, bool gate)</argsstring>
         <name>gr_make_ctcss_squelch_ff</name>
@@ -290,100 +290,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2883">
+      <node id="8795">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2884" relation="public-inheritance">
+        <childnode refid="8796" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2881">
+      <node id="8793">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2882" relation="public-inheritance">
+        <childnode refid="8794" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2880">
+      <node id="8792">
         <label>gr_squelch_base_ff</label>
         <link refid="classgr__squelch__base__ff"/>
-        <childnode refid="2881" relation="public-inheritance">
+        <childnode refid="8793" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2884">
+      <node id="8796">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2882">
+      <node id="8794">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2883" relation="public-inheritance">
+        <childnode refid="8795" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2879">
+      <node id="8791">
         <label>gr_ctcss_squelch_ff</label>
         <link refid="classgr__ctcss__squelch__ff"/>
-        <childnode refid="2880" relation="public-inheritance">
+        <childnode refid="8792" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2889">
+      <node id="8801">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2890" relation="public-inheritance">
+        <childnode refid="8802" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2887">
+      <node id="8799">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2888" relation="public-inheritance">
+        <childnode refid="8800" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2891">
+      <node id="8803">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2892" relation="usage">
+        <childnode refid="8804" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2886">
+      <node id="8798">
         <label>gr_squelch_base_ff</label>
         <link refid="classgr__squelch__base__ff"/>
-        <childnode refid="2887" relation="public-inheritance">
+        <childnode refid="8799" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2894">
+      <node id="8806">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2890">
+      <node id="8802">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2892">
+      <node id="8804">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2888">
+      <node id="8800">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2889" relation="public-inheritance">
+        <childnode refid="8801" relation="public-inheritance">
         </childnode>
-        <childnode refid="2891" relation="usage">
+        <childnode refid="8803" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2893" relation="usage">
+        <childnode refid="8805" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2885">
+      <node id="8797">
         <label>gr_ctcss_squelch_ff</label>
         <link refid="classgr__ctcss__squelch__ff"/>
-        <childnode refid="2886" relation="public-inheritance">
+        <childnode refid="8798" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2893">
+      <node id="8805">
         <label>std::string</label>
-        <childnode refid="2894" relation="public-inheritance">
+        <childnode refid="8806" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

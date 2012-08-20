@@ -142,6 +142,7 @@ class DIGITAL_API digital_dvbt_ofdm_frame_sink : public gr_sync_block
   }
   
   void next_state();
+  void decode_BCH();
   void set_modulation_type();
   unsigned char slicer(const gr_complex x);
   unsigned int differential_demodulation(int bit);

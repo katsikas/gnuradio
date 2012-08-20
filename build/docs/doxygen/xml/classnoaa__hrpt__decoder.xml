@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classnoaa__hrpt__decoder" kind="class" prot="public">
     <compoundname>noaa_hrpt_decoder</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -164,7 +164,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classnoaa__hrpt__decoder_1a2126bc2c4cf01401af092e125af3b837" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="noaa__api_8h_1a799d47153d76874e09e71b816d4f4a87" kindref="member">NOAA_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">noaa_hrpt_decoder_sptr</ref></type>
+        <type>friend NOAA_API <ref refid="classboost_1_1shared__ptr" kindref="compound">noaa_hrpt_decoder_sptr</ref></type>
         <definition>NOAA_API noaa_hrpt_decoder_sptr noaa_make_hrpt_decoder</definition>
         <argsstring>(bool verbose, bool output_files)</argsstring>
         <name>noaa_make_hrpt_decoder</name>
@@ -332,100 +332,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6383">
+      <node id="14739">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6384" relation="public-inheritance">
+        <childnode refid="14740" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6380">
+      <node id="14736">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6381" relation="public-inheritance">
+        <childnode refid="14737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6381">
+      <node id="14737">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6382" relation="public-inheritance">
+        <childnode refid="14738" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6384">
+      <node id="14740">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6379">
+      <node id="14735">
         <label>noaa_hrpt_decoder</label>
         <link refid="classnoaa__hrpt__decoder"/>
-        <childnode refid="6380" relation="public-inheritance">
+        <childnode refid="14736" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6382">
+      <node id="14738">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6383" relation="public-inheritance">
+        <childnode refid="14739" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6389">
+      <node id="14745">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6390" relation="public-inheritance">
+        <childnode refid="14746" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6386">
+      <node id="14742">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6387" relation="public-inheritance">
+        <childnode refid="14743" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6387">
+      <node id="14743">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6388" relation="public-inheritance">
+        <childnode refid="14744" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6391">
+      <node id="14747">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6392" relation="usage">
+        <childnode refid="14748" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6394">
+      <node id="14750">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6390">
+      <node id="14746">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6392">
+      <node id="14748">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6385">
+      <node id="14741">
         <label>noaa_hrpt_decoder</label>
         <link refid="classnoaa__hrpt__decoder"/>
-        <childnode refid="6386" relation="public-inheritance">
+        <childnode refid="14742" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6388">
+      <node id="14744">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6389" relation="public-inheritance">
+        <childnode refid="14745" relation="public-inheritance">
         </childnode>
-        <childnode refid="6391" relation="usage">
+        <childnode refid="14747" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6393" relation="usage">
+        <childnode refid="14749" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6393">
+      <node id="14749">
         <label>std::string</label>
-        <childnode refid="6394" relation="public-inheritance">
+        <childnode refid="14750" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

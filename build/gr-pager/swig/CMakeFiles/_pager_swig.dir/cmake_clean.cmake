@@ -10,6 +10,8 @@ FILE(REMOVE_RECURSE
   "pager_swig_doc_swig_docs/xml/combine.xslt"
   "_pager_swig.pdb"
   "_pager_swig.so"
+  "CMakeFiles/CMakeRelink.dir/_pager_swig.pdb"
+  "CMakeFiles/CMakeRelink.dir/_pager_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

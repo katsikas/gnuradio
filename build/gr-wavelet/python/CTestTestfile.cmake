@@ -4,4 +4,4 @@
 # 
 # This file includes the relevent testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-ADD_TEST(qa_classify "/bin/sh" "/home/katsikas/gnuradio/build/gr-wavelet/python/qa_classify_test.sh")
+ADD_TEST(qa_classify "/usr/bin/sh" "/home/katsikas/gnuradio/build/gr-wavelet/python/qa_classify_test.sh")
