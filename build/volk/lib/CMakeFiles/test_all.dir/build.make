@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
@@ -106,8 +103,7 @@ test_all_EXTERNAL_OBJECTS =
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/testqa.cc.o
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/qa_utils.cc.o
 volk/lib/test_all: volk/lib/libvolk.so.0.0.0
-volk/lib/test_all: /usr/lib64/libboost_unit_test_framework-mt.so
-volk/lib/test_all: /usr/lib64/liborc-0.4.so
+volk/lib/test_all: /usr/lib/libboost_unit_test_framework-mt.so
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/build.make
 volk/lib/test_all: volk/lib/CMakeFiles/test_all.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test_all"

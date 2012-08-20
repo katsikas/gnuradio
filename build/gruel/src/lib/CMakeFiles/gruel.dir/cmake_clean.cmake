@@ -19,9 +19,6 @@ FILE(REMOVE_RECURSE
   "libgruel-3.6.1git.pdb"
   "libgruel-3.6.1git.so"
   "libgruel-3.6.1git.so.0.0.0"
-  "CMakeFiles/CMakeRelink.dir/libgruel-3.6.1git.pdb"
-  "CMakeFiles/CMakeRelink.dir/libgruel-3.6.1git.so"
-  "CMakeFiles/CMakeRelink.dir/libgruel-3.6.1git.so.0.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

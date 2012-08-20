@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="kiss__fft_8h" kind="file">
     <compoundname>kiss_fft.h</compoundname>
     <includes local="no">stdlib.h</includes>
@@ -8,40 +8,40 @@
     <includes local="no">string.h</includes>
     <includedby refid="__kiss__fft__guts_8h" local="yes">_kiss_fft_guts.h</includedby>
     <incdepgraph>
-      <node id="44866">
+      <node id="13777">
         <label>stdlib.h</label>
       </node>
-      <node id="44865">
+      <node id="13776">
         <label>kiss_fft.h</label>
         <link refid="kiss_fft.h"/>
-        <childnode refid="44866" relation="include">
+        <childnode refid="13777" relation="include">
         </childnode>
-        <childnode refid="44867" relation="include">
+        <childnode refid="13778" relation="include">
         </childnode>
-        <childnode refid="44868" relation="include">
+        <childnode refid="13779" relation="include">
         </childnode>
-        <childnode refid="44869" relation="include">
+        <childnode refid="13780" relation="include">
         </childnode>
       </node>
-      <node id="44869">
+      <node id="13780">
         <label>string.h</label>
       </node>
-      <node id="44868">
+      <node id="13779">
         <label>math.h</label>
       </node>
-      <node id="44867">
+      <node id="13778">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="44871">
+      <node id="13782">
         <label>_kiss_fft_guts.h</label>
         <link refid="__kiss__fft__guts_8h"/>
       </node>
-      <node id="44870">
+      <node id="13781">
         <label>kiss_fft.h</label>
         <link refid="kiss_fft.h"/>
-        <childnode refid="44871" relation="include">
+        <childnode refid="13782" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -69,17 +69,6 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/kiss_fft.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/kiss_fft.h" bodystart="33" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="kiss__fft_8h_1a4d9bf2d6a2ce1b061545a16faf77d337" prot="public" static="no">
-        <name>kiss_fft_scalar</name>
-        <initializer>float</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/kiss_fft.h" line="47" bodyfile="/home/katsikas/gnuradio/gr-vocoder/lib/codec2/kiss_fft.h" bodystart="47" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="define" id="kiss__fft_8h_1a62e86236e852945b8e120d0228377d71" prot="public" static="no">
         <name>kiss_fft_free</name>
         <initializer>free</initializer>
@@ -94,7 +83,7 @@
       <memberdef kind="define" id="kiss__fft_8h_1ad5d759d8e80434375e61c6a7de9aee79" prot="public" static="no">
         <name>kiss_fftr_next_fast_size_real</name>
         <param><defname>n</defname></param>
-        <initializer>(kiss_fft_next_fast_size( ((n)+1)&gt;&gt;1)&lt;&lt;1)</initializer>
+        <initializer>(<ref refid="kiss__fft_8h_1a26b8ac31a43a356943061318831508e9" kindref="member">kiss_fft_next_fast_size</ref>( ((n)+1)&gt;&gt;1)&lt;&lt;1)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

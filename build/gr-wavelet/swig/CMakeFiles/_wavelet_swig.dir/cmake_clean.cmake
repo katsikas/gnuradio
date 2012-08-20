@@ -10,8 +10,6 @@ FILE(REMOVE_RECURSE
   "wavelet_swig_doc_swig_docs/xml/combine.xslt"
   "_wavelet_swig.pdb"
   "_wavelet_swig.so"
-  "CMakeFiles/CMakeRelink.dir/_wavelet_swig.pdb"
-  "CMakeFiles/CMakeRelink.dir/_wavelet_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

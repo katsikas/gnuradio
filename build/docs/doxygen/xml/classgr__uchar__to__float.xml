@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__uchar__to__float" kind="class" prot="public">
     <compoundname>gr_uchar_to_float</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="gr__uchar__to__float_8h" local="no">gr_uchar_to_float.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__uchar__to__float_1ae9afed4b76cbb3da800b50622750f9f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_uchar_to_float_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_uchar_to_float_sptr</ref></type>
         <definition>GR_CORE_API gr_uchar_to_float_sptr gr_make_uchar_to_float</definition>
         <argsstring>()</argsstring>
         <name>gr_make_uchar_to_float</name>
@@ -67,100 +67,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="13543">
+      <node id="5588">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="13544" relation="public-inheritance">
+        <childnode refid="5589" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13540">
+      <node id="5585">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="13541" relation="public-inheritance">
+        <childnode refid="5586" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13541">
+      <node id="5586">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="13542" relation="public-inheritance">
+        <childnode refid="5587" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13544">
+      <node id="5589">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13542">
+      <node id="5587">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="13543" relation="public-inheritance">
+        <childnode refid="5588" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13539">
+      <node id="5584">
         <label>gr_uchar_to_float</label>
         <link refid="classgr__uchar__to__float"/>
-        <childnode refid="13540" relation="public-inheritance">
+        <childnode refid="5585" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="13549">
+      <node id="5594">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="13550" relation="public-inheritance">
+        <childnode refid="5595" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13546">
+      <node id="5591">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="13547" relation="public-inheritance">
+        <childnode refid="5592" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13547">
+      <node id="5592">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="13548" relation="public-inheritance">
+        <childnode refid="5593" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13551">
+      <node id="5596">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="13552" relation="usage">
+        <childnode refid="5597" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="13554">
+      <node id="5599">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="13550">
+      <node id="5595">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13552">
+      <node id="5597">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="13548">
+      <node id="5593">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="13549" relation="public-inheritance">
+        <childnode refid="5594" relation="public-inheritance">
         </childnode>
-        <childnode refid="13551" relation="usage">
+        <childnode refid="5596" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="13553" relation="usage">
+        <childnode refid="5598" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="13545">
+      <node id="5590">
         <label>gr_uchar_to_float</label>
         <link refid="classgr__uchar__to__float"/>
-        <childnode refid="13546" relation="public-inheritance">
+        <childnode refid="5591" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13553">
+      <node id="5598">
         <label>std::string</label>
-        <childnode refid="13554" relation="public-inheritance">
+        <childnode refid="5599" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

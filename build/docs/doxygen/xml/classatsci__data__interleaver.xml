@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsci__data__interleaver" kind="class" prot="public">
     <compoundname>atsci_data_interleaver</compoundname>
     <basecompoundref refid="classconvolutional__interleaver" prot="public" virt="non-virtual">convolutional_interleaver&lt; unsigned char &gt;</basecompoundref>
@@ -45,39 +45,40 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5524">
+      <node id="318">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
       </node>
-      <node id="5523">
+      <node id="317">
         <label>atsci_data_interleaver</label>
         <link refid="classatsci__data__interleaver"/>
-        <childnode refid="5524" relation="public-inheritance">
+        <childnode refid="318" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5526">
+      <node id="320">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="5527" relation="usage">
+        <childnode refid="321" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="5528">
+      <node id="322">
         <label>interleaver_fifo&lt; unsigned char &gt;</label>
         <link refid="classinterleaver__fifo"/>
       </node>
-      <node id="5527">
+      <node id="321">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
-        <childnode refid="5528" relation="usage">
+        <childnode refid="322" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="5525">
+      <node id="319">
         <label>atsci_data_interleaver</label>
         <link refid="classatsci__data__interleaver"/>
-        <childnode refid="5526" relation="public-inheritance">
+        <childnode refid="320" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

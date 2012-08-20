@@ -10,8 +10,6 @@ FILE(REMOVE_RECURSE
   "uhd_swig_doc_swig_docs/xml/combine.xslt"
   "_uhd_swig.pdb"
   "_uhd_swig.so"
-  "CMakeFiles/CMakeRelink.dir/_uhd_swig.pdb"
-  "CMakeFiles/CMakeRelink.dir/_uhd_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

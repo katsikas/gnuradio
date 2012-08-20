@@ -30,6 +30,11 @@
 #include <gr_msg_queue.h>
 #include <gr_sync_block.h>
 
+#define PARITY 14
+#define LENGTH 67
+#define ORIGINAL 53
+#define CELL_IDENTIFICATION 0
+
 
 class digital_dvbt_ofdm_mapper_bcv;
 typedef boost::shared_ptr<digital_dvbt_ofdm_mapper_bcv> digital_dvbt_ofdm_mapper_bcv_sptr;
@@ -62,34 +67,33 @@ protected:
                                    const std::vector<gr_complex> &cs_constellation,
                                    unsigned int msgq_limit, unsigned int occupied_carriers, unsigned int fft_length);
 
- private:
+private:
   std::vector<gr_complex> d_constellation;
   std::vector<gr_complex> d_tps_constellation;
   std::vector<gr_complex> d_cs_constellation;
   
-  
   gr_msg_queue_sptr	d_msgq;
   gr_message_sptr	d_msg;
-  unsigned		d_msg_offset;
-  bool			d_eof;
+  unsigned			d_msg_offset;
+  bool				d_eof;
 
   unsigned int 		d_occupied_carriers;
   unsigned int 		d_fft_length;
   unsigned int 		d_bit_offset;
-  int			d_pending_flag;
-
+  int				d_pending_flag;
+  
+  int d_parity[PARITY];
   unsigned long  d_nbits;
   unsigned char  d_msgbytes;
-  unsigned char d_resid;
-  unsigned int d_nresid;
-  unsigned int d_last_out;
-  unsigned int d_zeros_from_left;
-  unsigned int d_payload_carriers;
+  unsigned char  d_resid;
+  unsigned int   d_nresid;
+  unsigned int   d_last_out;
+  unsigned int   d_zeros_from_left;
+  unsigned int   d_payload_carriers;
   
   static unsigned int d_frame_number;
   static unsigned int d_symbol_number;
  
-  int d_parity[14];
   std::vector<int> d_tps_map;
   std::vector<int> d_tps_info;
   std::vector<int> d_payload_map;

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsci__data__deinterleaver" kind="class" prot="public">
     <compoundname>atsci_data_deinterleaver</compoundname>
     <basecompoundref refid="classconvolutional__interleaver" prot="public" virt="non-virtual">convolutional_interleaver&lt; unsigned char &gt;</basecompoundref>
@@ -83,33 +83,40 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="66">
+      <node id="67">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
       </node>
-      <node id="65">
+      <node id="66">
         <label>atsci_data_deinterleaver</label>
         <link refid="classatsci__data__deinterleaver"/>
-        <childnode refid="66" relation="public-inheritance">
+        <childnode refid="67" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="68">
+      <node id="69">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="69" relation="usage">
+        <childnode refid="70" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="67">
+      <node id="71">
+        <label>interleaver_fifo&lt; unsigned char &gt;</label>
+        <link refid="classinterleaver__fifo"/>
+      </node>
+      <node id="68">
         <label>atsci_data_deinterleaver</label>
         <link refid="classatsci__data__deinterleaver"/>
-        <childnode refid="68" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="69">
+      <node id="70">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
+        <childnode refid="71" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_data_interleaver.h" line="44" bodyfile="/home/katsikas/gnuradio/gr-atsc/src/lib/atsci_data_interleaver.h" bodystart="44" bodyend="63"/>

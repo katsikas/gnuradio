@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__feval_8h" kind="file">
     <compoundname>gr_feval.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -44,9 +44,9 @@
     <innerclass refid="classgr__feval__ll" prot="public">gr_feval_ll</innerclass>
     <innerclass refid="classgr__feval" prot="public">gr_feval</innerclass>
       <sectiondef kind="func">
-      <memberdef kind="function" id="gr__feval_8h_1a65d9ff17307ab3d66c83b05ea0e2802e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API double</type>
-        <definition>GR_CORE_API double gr_feval_dd_example</definition>
+      <memberdef kind="function" id="gr__feval_8h_1ac251b6dddd4fb34a8cb7934b90ad4690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT double</type>
+        <definition>__GR_ATTR_IMPORT double gr_feval_dd_example</definition>
         <argsstring>(gr_feval_dd *f, double x)</argsstring>
         <name>gr_feval_dd_example</name>
         <param>
@@ -65,9 +65,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="143"/>
       </memberdef>
-      <memberdef kind="function" id="gr__feval_8h_1a2a1638398ab2a9462df61913e14c5ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API gr_complex</type>
-        <definition>GR_CORE_API gr_complex gr_feval_cc_example</definition>
+      <memberdef kind="function" id="gr__feval_8h_1a35e6158e249c015ee5971fa71eea42c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT gr_complex</type>
+        <definition>__GR_ATTR_IMPORT gr_complex gr_feval_cc_example</definition>
         <argsstring>(gr_feval_cc *f, gr_complex x)</argsstring>
         <name>gr_feval_cc_example</name>
         <param>
@@ -86,9 +86,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="144"/>
       </memberdef>
-      <memberdef kind="function" id="gr__feval_8h_1a0a94ac837089862d8689ce143b6525cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API long</type>
-        <definition>GR_CORE_API long gr_feval_ll_example</definition>
+      <memberdef kind="function" id="gr__feval_8h_1a5b548db4d8d94c059d03e3ad26abfd78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT long</type>
+        <definition>__GR_ATTR_IMPORT long gr_feval_ll_example</definition>
         <argsstring>(gr_feval_ll *f, long x)</argsstring>
         <name>gr_feval_ll_example</name>
         <param>
@@ -107,9 +107,9 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/general/gr_feval.h" line="145"/>
       </memberdef>
-      <memberdef kind="function" id="gr__feval_8h_1a9dec6492a3ce66542675381def936ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API void</type>
-        <definition>GR_CORE_API void gr_feval_example</definition>
+      <memberdef kind="function" id="gr__feval_8h_1aaa629646234580e91ac786c2b3d39783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT void</type>
+        <definition>__GR_ATTR_IMPORT void gr_feval_example</definition>
         <argsstring>(gr_feval *f)</argsstring>
         <name>gr_feval_example</name>
         <param>
@@ -205,10 +205,10 @@
 <codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calleval();<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>invoke<sp/>&quot;eval&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="138"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="gr__feval_8h_1a65d9ff17307ab3d66c83b05ea0e2802e" kindref="member" tooltip="trivial examples / test cases showing C++ calling Python code">gr_feval_dd_example</ref>(<ref refid="classgr__feval__dd" kindref="compound" tooltip="base class for evaluating a function: double -&amp;gt; doubleThis class is designed to be subclassed in Pytho...">gr_feval_dd</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/>gr_complex<sp/><ref refid="gr__feval_8h_1a2a1638398ab2a9462df61913e14c5ffa" kindref="member">gr_feval_cc_example</ref>(<ref refid="classgr__feval__cc" kindref="compound" tooltip="base class for evaluating a function: complex -&amp;gt; complexThis class is designed to be subclassed in Pyt...">gr_feval_cc</ref><sp/>*f,<sp/>gr_complex<sp/>x);</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gr__feval_8h_1a0a94ac837089862d8689ce143b6525cd" kindref="member">gr_feval_ll_example</ref>(<ref refid="classgr__feval__ll" kindref="compound" tooltip="base class for evaluating a function: long -&amp;gt; longThis class is designed to be subclassed in Python or...">gr_feval_ll</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gr__feval_8h_1a9dec6492a3ce66542675381def936ce3" kindref="member">gr_feval_example</ref>(<ref refid="classgr__feval" kindref="compound" tooltip="base class for evaluating a function: void -&amp;gt; voidThis class is designed to be subclassed in Python or...">gr_feval</ref><sp/>*f);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="gr__feval_8h_1ac251b6dddd4fb34a8cb7934b90ad4690" kindref="member" tooltip="trivial examples / test cases showing C++ calling Python code">gr_feval_dd_example</ref>(<ref refid="classgr__feval__dd" kindref="compound" tooltip="base class for evaluating a function: double -&amp;gt; doubleThis class is designed to be subclassed in Pytho...">gr_feval_dd</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/>gr_complex<sp/><ref refid="gr__feval_8h_1a35e6158e249c015ee5971fa71eea42c3" kindref="member">gr_feval_cc_example</ref>(<ref refid="classgr__feval__cc" kindref="compound" tooltip="base class for evaluating a function: complex -&amp;gt; complexThis class is designed to be subclassed in Pyt...">gr_feval_cc</ref><sp/>*f,<sp/>gr_complex<sp/>x);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gr__feval_8h_1a5b548db4d8d94c059d03e3ad26abfd78" kindref="member">gr_feval_ll_example</ref>(<ref refid="classgr__feval__ll" kindref="compound" tooltip="base class for evaluating a function: long -&amp;gt; longThis class is designed to be subclassed in Python or...">gr_feval_ll</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gr__feval_8h_1aaa629646234580e91ac786c2b3d39783" kindref="member">gr_feval_example</ref>(<ref refid="classgr__feval" kindref="compound" tooltip="base class for evaluating a function: void -&amp;gt; voidThis class is designed to be subclassed in Python or...">gr_feval</ref><sp/>*f);</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_GR_FEVAL_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>

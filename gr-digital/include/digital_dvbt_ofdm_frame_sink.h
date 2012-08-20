@@ -29,6 +29,9 @@
 #include <gr_msg_queue.h>
 #include <gr_sync_block.h>
 
+#define VERBOSE 0
+#define CELL_IDENTIFICATION 0
+
 class digital_dvbt_ofdm_frame_sink;
 typedef boost::shared_ptr<digital_dvbt_ofdm_frame_sink> digital_dvbt_ofdm_frame_sink_sptr;
 

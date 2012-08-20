@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="qtgui__ofdm__vector__analyzer__c_8h" kind="file">
     <compoundname>qtgui_ofdm_vector_analyzer_c.h</compoundname>
     <includes local="no">Python.h</includes>
@@ -9,6 +9,16 @@
     <includes local="no">qapplication.h</includes>
     <includes local="no">gruel/high_res_timer.h</includes>
     <includes local="yes">../lib/VectorAnalyzerGUIClass.h</includes>
+    <includes local="no">gruel/thread.h</includes>
+    <includes local="no">qwidget.h</includes>
+    <includes local="no">qlabel.h</includes>
+    <includes local="no">qslider.h</includes>
+    <includes local="no">/home/katsikas/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.h</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">gr_complex.h</includes>
     <incdepgraph>
       <node id="9">
         <label>/home/katsikas/gnuradio/gr-qtgui/include/qtgui_ofdm_vector_analyzer_c.h</label>
@@ -27,15 +37,53 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
       </node>
       <node id="12">
         <label>gruel/attributes.h</label>
+      </node>
+      <node id="22">
+        <label>/home/katsikas/gnuradio/gr-qtgui/lib/VectorAnalyzerDisplayForm.h</label>
+      </node>
+      <node id="21">
+        <label>qslider.h</label>
+      </node>
+      <node id="23">
+        <label>cmath</label>
+      </node>
+      <node id="26">
+        <label>string</label>
+      </node>
+      <node id="18">
+        <label>gruel/thread.h</label>
       </node>
       <node id="15">
         <label>qapplication.h</label>
       </node>
       <node id="17">
         <label>../lib/VectorAnalyzerGUIClass.h</label>
+      </node>
+      <node id="27">
+        <label>gr_complex.h</label>
       </node>
       <node id="11">
         <label>gr_qtgui_api.h</label>
@@ -52,8 +100,20 @@
       <node id="13">
         <label>gr_block.h</label>
       </node>
+      <node id="25">
+        <label>vector</label>
+      </node>
       <node id="16">
         <label>gruel/high_res_timer.h</label>
+      </node>
+      <node id="20">
+        <label>qlabel.h</label>
+      </node>
+      <node id="19">
+        <label>qwidget.h</label>
+      </node>
+      <node id="24">
+        <label>complex</label>
       </node>
     </incdepgraph>
     <innerclass refid="classqtgui__ofdm__vector__analyzer__c" prot="public">qtgui_ofdm_vector_analyzer_c</innerclass>
@@ -73,9 +133,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="qtgui__ofdm__vector__analyzer__c_8h_1ab21f02c510e311a62f6fe20993c4e43b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_QTGUI_API <ref refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" kindref="member">qtgui_ofdm_vector_analyzer_c_sptr</ref></type>
-        <definition>GR_QTGUI_API qtgui_ofdm_vector_analyzer_c_sptr qtgui_make_ofdm_vector_analyzer_c</definition>
+      <memberdef kind="function" id="qtgui__ofdm__vector__analyzer__c_8h_1aa42bde330e2947374080a0f139ab33ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__GR_ATTR_IMPORT <ref refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" kindref="member">qtgui_ofdm_vector_analyzer_c_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT qtgui_ofdm_vector_analyzer_c_sptr qtgui_make_ofdm_vector_analyzer_c</definition>
         <argsstring>(int occupied_tones, const std::string &amp;modulation=&quot;bpsk&quot;, QWidget *parent=NULL)</argsstring>
         <name>qtgui_make_ofdm_vector_analyzer_c</name>
         <param>
@@ -122,7 +182,7 @@
 <codeline lineno="14" refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classqtgui__ofdm__vector__analyzer__c" kindref="compound" tooltip="The ofdm vector analyzerThis is a qt based vector analyzer for the ofdm modulation. It is not a callable from the gnuradio-companion and it is used internaly in the ofdm demodulator.">qtgui_ofdm_vector_analyzer_c</ref>;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;qtgui_ofdm_vector_analyzer_c&gt;<sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" kindref="member">qtgui_ofdm_vector_analyzer_c_sptr</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" kindref="member">qtgui_ofdm_vector_analyzer_c_sptr</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1ab21f02c510e311a62f6fe20993c4e43b" kindref="member">qtgui_make_ofdm_vector_analyzer_c</ref>(</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" kindref="member">qtgui_ofdm_vector_analyzer_c_sptr</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1aa42bde330e2947374080a0f139ab33ce" kindref="member">qtgui_make_ofdm_vector_analyzer_c</ref>(</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>occupied_tones,</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;modulation<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;bpsk&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QWidget<sp/>*parent<sp/>=<sp/>NULL</highlight></codeline>
@@ -130,7 +190,7 @@
 <codeline lineno="30" refid="classqtgui__ofdm__vector__analyzer__c" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref><sp/><ref refid="classqtgui__ofdm__vector__analyzer__c" kindref="compound" tooltip="The ofdm vector analyzerThis is a qt based vector analyzer for the ofdm modulation. It is not a callable from the gnuradio-companion and it is used internaly in the ofdm demodulator.">qtgui_ofdm_vector_analyzer_c</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_block</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" kindref="member">qtgui_ofdm_vector_analyzer_c_sptr</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1ab21f02c510e311a62f6fe20993c4e43b" kindref="member">qtgui_make_ofdm_vector_analyzer_c</ref>(</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="gr__qtgui__api_8h_1a630d282784934fe850aee3162ce6515b" kindref="member">GR_QTGUI_API</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1a8d4af057081d10b0c98e1c928dcfeb38" kindref="member">qtgui_ofdm_vector_analyzer_c_sptr</ref><sp/><ref refid="qtgui__ofdm__vector__analyzer__c_8h_1aa42bde330e2947374080a0f139ab33ce" kindref="member">qtgui_make_ofdm_vector_analyzer_c</ref>(</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>occupied_tones,</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;modulation,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QWidget<sp/>*parent</highlight></codeline>

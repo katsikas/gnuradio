@@ -1,50 +1,50 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="fcd__api_8h" kind="file">
     <compoundname>fcd_api.h</compoundname>
     <includes refid="attributes_8h" local="no">gruel/attributes.h</includes>
     <includedby refid="fcd__source__c_8h" local="no">fcd_source_c.h</includedby>
     <includedby refid="fcd_8h" local="no">fcd.h</includedby>
     <incdepgraph>
-      <node id="28860">
+      <node id="3842">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="28859">
+      <node id="3841">
         <label>fcd_api.h</label>
         <link refid="fcd_api.h"/>
-        <childnode refid="28860" relation="include">
+        <childnode refid="3842" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="28862">
+      <node id="3844">
         <label>fcd_source_c.h</label>
         <link refid="fcd__source__c_8h"/>
-        <childnode refid="28863" relation="include">
+        <childnode refid="3845" relation="include">
         </childnode>
       </node>
-      <node id="28863">
+      <node id="3845">
         <label>fcd_source_c_impl.h</label>
         <link refid="fcd__source__c__impl_8h"/>
       </node>
-      <node id="28864">
+      <node id="3846">
         <label>fcd.h</label>
         <link refid="fcd_8h"/>
       </node>
-      <node id="28861">
+      <node id="3843">
         <label>fcd_api.h</label>
         <link refid="fcd_api.h"/>
-        <childnode refid="28862" relation="include">
+        <childnode refid="3844" relation="include">
         </childnode>
-        <childnode refid="28864" relation="include">
+        <childnode refid="3846" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
       <memberdef kind="define" id="fcd__api_8h_1ad489a1c52387ece46b65f42f0681814f" prot="public" static="no">
         <name>FCD_API</name>
-        <initializer>__GR_ATTR_IMPORT</initializer>
+        <initializer><ref refid="attributes_8h_1a17b9cb3c185c92af4799ec9b0a38f3c1" kindref="member">__GR_ATTR_IMPORT</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__diff__decoder__bb" kind="class" prot="public">
     <compoundname>gr_diff_decoder_bb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__diff__decoder__bb_1addb87bc1cdb45b76ff99b58885b9f0a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_diff_decoder_bb_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_diff_decoder_bb_sptr</ref></type>
         <definition>GR_CORE_API gr_diff_decoder_bb_sptr gr_make_diff_decoder_bb</definition>
         <argsstring>(unsigned int modulus)</argsstring>
         <name>gr_make_diff_decoder_bb</name>
@@ -90,100 +90,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="8909">
+      <node id="2997">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="8910" relation="public-inheritance">
+        <childnode refid="2998" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8906">
+      <node id="2994">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="8907" relation="public-inheritance">
+        <childnode refid="2995" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8907">
+      <node id="2995">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="8908" relation="public-inheritance">
+        <childnode refid="2996" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8910">
+      <node id="2998">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="8908">
+      <node id="2996">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="8909" relation="public-inheritance">
+        <childnode refid="2997" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8905">
+      <node id="2993">
         <label>gr_diff_decoder_bb</label>
         <link refid="classgr__diff__decoder__bb"/>
-        <childnode refid="8906" relation="public-inheritance">
+        <childnode refid="2994" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="8915">
+      <node id="3003">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="8916" relation="public-inheritance">
+        <childnode refid="3004" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8912">
+      <node id="3000">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="8913" relation="public-inheritance">
+        <childnode refid="3001" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8913">
+      <node id="3001">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="8914" relation="public-inheritance">
+        <childnode refid="3002" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8917">
+      <node id="3005">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="8918" relation="usage">
+        <childnode refid="3006" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="8920">
+      <node id="3008">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="8916">
+      <node id="3004">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="8918">
+      <node id="3006">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="8914">
+      <node id="3002">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="8915" relation="public-inheritance">
+        <childnode refid="3003" relation="public-inheritance">
         </childnode>
-        <childnode refid="8917" relation="usage">
+        <childnode refid="3005" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="8919" relation="usage">
+        <childnode refid="3007" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="8911">
+      <node id="2999">
         <label>gr_diff_decoder_bb</label>
         <link refid="classgr__diff__decoder__bb"/>
-        <childnode refid="8912" relation="public-inheritance">
+        <childnode refid="3000" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8919">
+      <node id="3007">
         <label>std::string</label>
-        <childnode refid="8920" relation="public-inheritance">
+        <childnode refid="3008" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

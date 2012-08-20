@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__block" kind="class" prot="public">
     <compoundname>gr_block</compoundname>
     <basecompoundref refid="classgr__basic__block" prot="public" virt="non-virtual">gr_basic_block</basecompoundref>
@@ -1041,67 +1041,67 @@ This control is similar to the output_multiple setting, except that if the numbe
     <detaileddescription>
 <para>Blocks have a set of input streams and output streams. The input_signature and output_signature define the number of input streams and output streams respectively, and the type of the data items in each stream.</para><para>Although blocks may consume data on each input stream at a different rate, all outputs streams must produce data at the same rate. That rate may be different from any of the input rates.</para><para>User derived blocks override two methods, forecast and general_work, to implement their signal processing behavior. forecast is called by the system scheduler to determine how many items are required on each input stream in order to produce a given number of output items.</para><para>general_work is called to perform the signal processing in the block. It reads the input items and writes the output items. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="328">
-        <label>gr_msg_accepter</label>
-        <link refid="classgr__msg__accepter"/>
-      </node>
-      <node id="329">
-        <label>gr_sync_block</label>
-        <link refid="classgr__sync__block"/>
-        <childnode refid="326" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="330">
-        <label>gr_sync_decimator</label>
-        <link refid="classgr__sync__decimator"/>
-        <childnode refid="329" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="326">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="327" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="331">
-        <label>gr_sync_interpolator</label>
-        <link refid="classgr__sync__interpolator"/>
-        <childnode refid="329" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="327">
-        <label>gr_basic_block</label>
-        <link refid="classgr__basic__block"/>
-        <childnode refid="328" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="334">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
       </node>
       <node id="332">
-        <label>gr_block</label>
-        <link refid="classgr__block"/>
-        <childnode refid="333" relation="public-inheritance">
+        <label>gr_sync_block</label>
+        <link refid="classgr__sync__block"/>
+        <childnode refid="329" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="336">
-        <label>std::basic_string&lt; char &gt;</label>
       </node>
       <node id="333">
+        <label>gr_sync_decimator</label>
+        <link refid="classgr__sync__decimator"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="330" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>gr_sync_interpolator</label>
+        <link refid="classgr__sync__interpolator"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="330">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="334" relation="public-inheritance">
+        <childnode refid="331" relation="public-inheritance">
         </childnode>
-        <childnode refid="335" relation="usage">
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="337">
+        <label>gr_msg_accepter</label>
+        <link refid="classgr__msg__accepter"/>
+      </node>
+      <node id="335">
+        <label>gr_block</label>
+        <link refid="classgr__block"/>
+        <childnode refid="336" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="336">
+        <label>gr_basic_block</label>
+        <link refid="classgr__basic__block"/>
+        <childnode refid="337" relation="public-inheritance">
+        </childnode>
+        <childnode refid="338" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="335">
+      <node id="338">
         <label>std::string</label>
-        <childnode refid="336" relation="public-inheritance">
+        <childnode refid="339" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__freq__xlating__fir__filter__ccf" kind="class" prot="public">
     <compoundname>gr_freq_xlating_fir_filter_ccf</compoundname>
     <includes refid="gr__freq__xlating__fir__filter__ccf_8h" local="no">gr_freq_xlating_fir_filter_ccf.h</includes>
@@ -237,33 +237,33 @@
     <detaileddescription>
 <para>Uses a single input array to produce a single output array. Additional inputs and/or outputs are ignored. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="710">
+      <node id="713">
         <label>std::vector&lt; float &gt;</label>
       </node>
-      <node id="711">
+      <node id="714">
         <label>gr_fir_ccc</label>
         <link refid="classgr__fir__ccc"/>
-        <childnode refid="712" relation="usage">
+        <childnode refid="715" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="712">
+      <node id="715">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="709">
+      <node id="712">
         <label>gr_freq_xlating_fir_filter_ccf</label>
         <link refid="classgr__freq__xlating__fir__filter__ccf"/>
-        <childnode refid="710" relation="usage">
+        <childnode refid="713" relation="usage">
           <edgelabel>d_proto_taps</edgelabel>
         </childnode>
-        <childnode refid="711" relation="usage">
+        <childnode refid="714" relation="usage">
           <edgelabel>d_composite_fir</edgelabel>
         </childnode>
-        <childnode refid="713" relation="usage">
+        <childnode refid="716" relation="usage">
           <edgelabel>d_r</edgelabel>
         </childnode>
       </node>
-      <node id="713">
+      <node id="716">
         <label>gr_rotator</label>
         <link refid="classgr__rotator"/>
       </node>

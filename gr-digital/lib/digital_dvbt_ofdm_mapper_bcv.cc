@@ -33,10 +33,6 @@
 #include <gr_io_signature.h>
 #include <digital_dvbt_ofdm_mapper_bcv.h>
 
-#define LENGTH 67
-#define ORIGINAL 53
-#define CELL_IDENTIFICATION 0
-
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_frame_number;
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_symbol_number;
 const std::string digital_dvbt_ofdm_mapper_bcv::hierarchy = "000"; 					// Non Hierarchical(a=1)
@@ -50,6 +46,9 @@ const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_on =  "01111
 const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_off = "010111";
 
 
+const int p[8]  = {1,0,0,1,0,0,0,1};
+const int g[15] = {1,1,1,0,1,1,1,0,1,1,1,1,1,1,1};
+    
 const int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073,
                         1219, 1262, 1286, 1469, 1594, 1687};
 
@@ -217,18 +216,20 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   unsigned char diff = 0;
   d_payload_map.clear();
   for(i = 0; i < carriers; i++) {
-	   next_state();
-	   if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
-                  //diff = set_tps_pilots();
-                  if(flag){
-			diff = set_tps_pilots();									// Same info for all TPS carriers in a frame.Calculate once.
-			flag = false;
-		  }
-		  else{
-			diff = get_tps_pilots();
-                  }
-		  out[d_subcarrier_map[i]] = d_tps_constellation[diff];
-		  //printf("SEND diff BIT = %x complex is: %.4f %.4fj \n",diff,out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag());
+		next_state();
+		if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
+            diff = set_tps_pilots();
+			if(flag){
+				//diff = set_tps_pilots();								// Same info for all TPS carriers in a frame.Calculate once.
+				d_tps_info.push_back(diff);
+				flag = false;
+			}
+			else{
+				//diff = get_tps_pilots();
+				d_tps_info[d_symbol_number] = diff;
+			}
+			out[d_subcarrier_map[i]] = d_tps_constellation[diff];
+			//printf("SEND diff BIT = %x complex is: %.4f %.4fj \n",diff,out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag());
 	   }
 	  
 	  else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
@@ -318,6 +319,14 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
 
   d_symbol_number ++;
+  /*if(d_symbol_number == 68){
+		for (int i = 0; i < d_tps_info.size(); i++)
+		{
+			printf("tps_info[%d] = %d \n",i,d_tps_info[i]);
+		}
+		
+	  exit(-1);
+  }*/
   if(d_symbol_number == 68){
         d_tps_info.clear();
         d_symbol_number = 0;
@@ -327,7 +336,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 		}
   }
  
-  if(d_frame_number == 2){exit(-1);}
+  
   return 1;  															// produced symbol
 }
 
@@ -419,15 +428,13 @@ unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(){
 	  else if( (d_symbol_number > 47) && (d_symbol_number < 54) ) {
 		diff = differential_modulation(0);								// All set to zero(For Future use)
 	  }
-          else if(d_symbol_number == 54){
-                encode_BCH();
-                diff = differential_modulation(d_parity[d_symbol_number-54]);								// BCH parity check.
+      else if(d_symbol_number > 53){
+		if(d_symbol_number == 54){
+			encode_BCH();
+		}
+		diff = differential_modulation(d_parity[d_symbol_number - 54]);	// BCH parity check.
 	  }
-          else{
-              diff = differential_modulation(0);
-          }
-	  
-	  d_tps_info.push_back(diff);
+	 
 	  return diff;
 }
 
@@ -436,16 +443,11 @@ void digital_dvbt_ofdm_mapper_bcv::encode_BCH(){
     register int    i, j;
     register int    feedback;
 
-    int p[8]  = {1,0,0,1,0,0,0,1};
-    int g[15] = {1,1,1,0,1,1,1,0,1,1,1,1,1,1,1};
-
-
     for (i = 0; i < LENGTH - ORIGINAL; i++){
         d_parity[i] = 0;
     }
 
-    printf("TPS LENGTH = %d ORIGINAL = %d LENGTH = %d \n",d_tps_info.size(),ORIGINAL,LENGTH);
-    for (i = ORIGINAL; i >= 0; i--) {
+    for (i = ORIGINAL-1; i >= 0; i--) {
             feedback = d_tps_info[i] ^ d_parity[LENGTH - ORIGINAL - 1];
             if (feedback != 0) {
                     for (j = LENGTH - ORIGINAL - 1; j > 0; j--)
@@ -460,10 +462,6 @@ void digital_dvbt_ofdm_mapper_bcv::encode_BCH(){
                             d_parity[j] = d_parity[j - 1];
                     d_parity[0] = 0;
             }
-    }
-
-    for (i = 0; i < LENGTH - ORIGINAL; i++){
-        printf("d_parity = %d \n",d_parity[i]);
     }
 }
 

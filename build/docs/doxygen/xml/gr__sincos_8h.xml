@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="gr__sincos_8h" kind="file">
     <compoundname>gr_sincos.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
@@ -7,56 +7,56 @@
     <includedby refid="gr__nco_8h" local="no">gr_nco.h</includedby>
     <includedby refid="gr__vco_8h" local="no">gr_vco.h</includedby>
     <incdepgraph>
-      <node id="40701">
+      <node id="10889">
         <label>gr_sincos.h</label>
         <link refid="gr_sincos.h"/>
-        <childnode refid="40702" relation="include">
+        <childnode refid="10890" relation="include">
         </childnode>
       </node>
-      <node id="40703">
+      <node id="10891">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="40702">
+      <node id="10890">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="40703" relation="include">
+        <childnode refid="10891" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="40704">
+      <node id="10892">
         <label>gr_sincos.h</label>
         <link refid="gr_sincos.h"/>
-        <childnode refid="40705" relation="include">
+        <childnode refid="10893" relation="include">
         </childnode>
-        <childnode refid="40706" relation="include">
+        <childnode refid="10894" relation="include">
         </childnode>
-        <childnode refid="40708" relation="include">
+        <childnode refid="10896" relation="include">
         </childnode>
       </node>
-      <node id="40705">
+      <node id="10893">
         <label>gr_expj.h</label>
         <link refid="gr__expj_8h"/>
       </node>
-      <node id="40708">
+      <node id="10896">
         <label>gr_vco.h</label>
         <link refid="gr__vco_8h"/>
       </node>
-      <node id="40707">
+      <node id="10895">
         <label>atsc_fpll.h</label>
         <link refid="atsc__fpll_8h"/>
       </node>
-      <node id="40706">
+      <node id="10894">
         <label>gr_nco.h</label>
         <link refid="gr__nco_8h"/>
-        <childnode refid="40707" relation="include">
+        <childnode refid="10895" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="gr__sincos_8h_1a22b53144766fc26470e54e486c4db630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API void</type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> void</type>
         <definition>GR_CORE_API void gr_sincos</definition>
         <argsstring>(double x, double *sin, double *cos)</argsstring>
         <name>gr_sincos</name>
@@ -81,7 +81,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_sincos.h" line="34"/>
       </memberdef>
       <memberdef kind="function" id="gr__sincos_8h_1a1dc176e41c01ddbfc65cbed71f238cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API void</type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> void</type>
         <definition>GR_CORE_API void gr_sincosf</definition>
         <argsstring>(float x, float *sin, float *cos)</argsstring>
         <name>gr_sincosf</name>

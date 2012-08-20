@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__ofdm__bpsk__demapper" kind="class" prot="public">
     <compoundname>gr_ofdm_bpsk_demapper</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__ofdm__bpsk__demapper_1a4726af807e8951f1c9e4645ed3c629aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ofdm_bpsk_demapper_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_ofdm_bpsk_demapper_sptr</ref></type>
         <definition>GR_CORE_API gr_ofdm_bpsk_demapper_sptr gr_make_ofdm_bpsk_demapper</definition>
         <argsstring>(unsigned int occupied_carriers)</argsstring>
         <name>gr_make_ofdm_bpsk_demapper</name>
@@ -222,88 +222,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11567">
+      <node id="4334">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11568" relation="public-inheritance">
+        <childnode refid="4335" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11565">
+      <node id="4332">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11566" relation="public-inheritance">
+        <childnode refid="4333" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11568">
+      <node id="4335">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11564">
+      <node id="4331">
         <label>gr_ofdm_bpsk_demapper</label>
         <link refid="classgr__ofdm__bpsk__demapper"/>
-        <childnode refid="11565" relation="public-inheritance">
+        <childnode refid="4332" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11566">
+      <node id="4333">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11567" relation="public-inheritance">
+        <childnode refid="4334" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="11572">
+      <node id="4339">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11573" relation="public-inheritance">
+        <childnode refid="4340" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11570">
+      <node id="4337">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11571" relation="public-inheritance">
+        <childnode refid="4338" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11574">
+      <node id="4341">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11575" relation="usage">
+        <childnode refid="4342" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="11577">
+      <node id="4344">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="11573">
+      <node id="4340">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11569">
+      <node id="4336">
         <label>gr_ofdm_bpsk_demapper</label>
         <link refid="classgr__ofdm__bpsk__demapper"/>
-        <childnode refid="11570" relation="public-inheritance">
+        <childnode refid="4337" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11575">
+      <node id="4342">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="11571">
+      <node id="4338">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11572" relation="public-inheritance">
+        <childnode refid="4339" relation="public-inheritance">
         </childnode>
-        <childnode refid="11574" relation="usage">
+        <childnode refid="4341" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="11576" relation="usage">
+        <childnode refid="4343" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="11576">
+      <node id="4343">
         <label>std::string</label>
-        <childnode refid="11577" relation="public-inheritance">
+        <childnode refid="4344" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

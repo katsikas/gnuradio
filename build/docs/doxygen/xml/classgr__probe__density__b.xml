@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__probe__density__b" kind="class" prot="public">
     <compoundname>gr_probe_density_b</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__probe__density__b_1aaf4341e7af42c3f8491414e581b745e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_probe_density_b_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_probe_density_b_sptr</ref></type>
         <definition>GR_CORE_API gr_probe_density_b_sptr gr_make_probe_density_b</definition>
         <argsstring>(double alpha)</argsstring>
         <name>gr_make_probe_density_b</name>
@@ -167,100 +167,100 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="12085">
+      <node id="4714">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12086" relation="public-inheritance">
+        <childnode refid="4715" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12082">
+      <node id="4711">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12083" relation="public-inheritance">
+        <childnode refid="4712" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12083">
+      <node id="4712">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12084" relation="public-inheritance">
+        <childnode refid="4713" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12081">
+      <node id="4710">
         <label>gr_probe_density_b</label>
         <link refid="classgr__probe__density__b"/>
-        <childnode refid="12082" relation="public-inheritance">
+        <childnode refid="4711" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12086">
+      <node id="4715">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12084">
+      <node id="4713">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12085" relation="public-inheritance">
+        <childnode refid="4714" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="12091">
+      <node id="4720">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12092" relation="public-inheritance">
+        <childnode refid="4721" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12088">
+      <node id="4717">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12089" relation="public-inheritance">
+        <childnode refid="4718" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12089">
+      <node id="4718">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12090" relation="public-inheritance">
+        <childnode refid="4719" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12087">
+      <node id="4716">
         <label>gr_probe_density_b</label>
         <link refid="classgr__probe__density__b"/>
-        <childnode refid="12088" relation="public-inheritance">
+        <childnode refid="4717" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12093">
+      <node id="4722">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="12094" relation="usage">
+        <childnode refid="4723" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="12096">
+      <node id="4725">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="12092">
+      <node id="4721">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12094">
+      <node id="4723">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="12090">
+      <node id="4719">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12091" relation="public-inheritance">
+        <childnode refid="4720" relation="public-inheritance">
         </childnode>
-        <childnode refid="12093" relation="usage">
+        <childnode refid="4722" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="12095" relation="usage">
+        <childnode refid="4724" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="12095">
+      <node id="4724">
         <label>std::string</label>
-        <childnode refid="12096" relation="public-inheritance">
+        <childnode refid="4725" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

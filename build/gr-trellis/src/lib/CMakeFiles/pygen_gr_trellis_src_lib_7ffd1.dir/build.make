@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -41,6 +38,9 @@ CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Utility rule file for pygen_gr_trellis_src_lib_7ffd1.
+
+# Include the progress variables for this target.
+include gr-trellis/src/lib/CMakeFiles/pygen_gr_trellis_src_lib_7ffd1.dir/progress.make
 
 gr-trellis/src/lib/CMakeFiles/pygen_gr_trellis_src_lib_7ffd1: gr-trellis/src/lib/trellis.pyc
 gr-trellis/src/lib/CMakeFiles/pygen_gr_trellis_src_lib_7ffd1: gr-trellis/src/lib/trellis.pyo
@@ -61,8 +61,8 @@ gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/trellis_siso_f.
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/trellis_permutation.i
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/trellis_permutation.h
-gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/trellis.i
+gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_tags.h
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/calc_metric.h
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
@@ -87,13 +87,12 @@ gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/trellis_api.h
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/siso_type.h
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/interleaver.i
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/interleaver.h
-gr-trellis/src/lib/trellisPYTHON_wrap.cxx: /usr/include/gruel/attributes.h
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: gr-trellis/src/lib/trellis.tag
 gr-trellis/src/lib/trellisPYTHON_wrap.cxx: ../gr-trellis/src/lib/trellis.i
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/cmake -E make_directory /home/katsikas/gnuradio/build/gr-trellis/src/lib
-	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/swig -python -fvirtual -modern -keyword -w511 -module trellis -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -outdir /home/katsikas/gnuradio/build/gr-trellis/src/lib -c++ -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-digital/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -o /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellisPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-trellis/src/lib/trellis.i
+	cd /home/katsikas/gnuradio/build/gr-trellis/src/lib && /usr/bin/swig2.0 -python -fvirtual -modern -keyword -w511 -module trellis -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -outdir /home/katsikas/gnuradio/build/gr-trellis/src/lib -c++ -I/home/katsikas/gnuradio/gruel/src/include -I/home/katsikas/gnuradio/build/gruel/src/include -I/usr/include -I/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/gnuradio-core/src/lib/general -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/gnuradio-core/src/lib/gengen -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/filter -I/home/katsikas/gnuradio/gnuradio-core/src/lib/missing -I/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon -I/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi -I/home/katsikas/gnuradio/gnuradio-core/src/lib/io -I/home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/swig -I/home/katsikas/gnuradio/gnuradio-core/src/lib/hier -I/home/katsikas/gnuradio/build/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-trellis/src/lib -I/home/katsikas/gnuradio/gr-digital/include -I/home/katsikas/gnuradio/gruel/src/swig -I/home/katsikas/gnuradio/gr-digital/swig -I/usr/include/python2.7 -o /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellisPYTHON_wrap.cxx /home/katsikas/gnuradio/gr-trellis/src/lib/trellis.i
 
 gr-trellis/src/lib/trellis.py: gr-trellis/src/lib/trellisPYTHON_wrap.cxx
 
@@ -494,35 +493,35 @@ gr-trellis/src/lib/trellis_pccc_decoder_combined_cs.i: gr-trellis/src/lib/trelli
 
 gr-trellis/src/lib/trellis_pccc_decoder_combined_ci.i: gr-trellis/src/lib/trellis_pccc_decoder_combined_fb.i
 
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_api.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_f.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/quicksort_index.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/core_algorithms.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/interleaver.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/calc_metric.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/siso_type.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_permutation.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_combined_f.h
-gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_f.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/calc_metric.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/interleaver.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/core_algorithms.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_permutation.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_api.h
+gr-trellis/src/lib/trellis_swig_doc.i: ../gr-trellis/src/lib/trellis_siso_combined_f.h
 gr-trellis/src/lib/trellis_swig_doc.i: gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating trellis_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-trellis/src/lib/trellis_swig_doc.i
 
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_api.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_f.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/quicksort_index.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/core_algorithms.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/interleaver.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/calc_metric.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/siso_type.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_permutation.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_combined_f.h
-gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/quicksort_index.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/fsm.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_f.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/calc_metric.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/interleaver.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/core_algorithms.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/base.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_permutation.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_constellation_metrics_cf.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_api.h
+gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: ../gr-trellis/src/lib/trellis_siso_combined_f.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bb.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bs.h
 gr-trellis/src/lib/trellis_swig_doc_swig_docs/xml/index.xml: gr-trellis/src/lib/trellis_encoder_bi.h

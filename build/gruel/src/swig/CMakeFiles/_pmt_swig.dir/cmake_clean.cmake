@@ -10,8 +10,6 @@ FILE(REMOVE_RECURSE
   "pmt_swig_doc_swig_docs/xml/combine.xslt"
   "_pmt_swig.pdb"
   "_pmt_swig.so"
-  "CMakeFiles/CMakeRelink.dir/_pmt_swig.pdb"
-  "CMakeFiles/CMakeRelink.dir/_pmt_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

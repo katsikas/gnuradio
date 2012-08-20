@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__pfb__clock__sync__fff" kind="class" prot="public">
     <compoundname>gr_pfb_clock_sync_fff</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -84,7 +84,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="179" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__clock__sync__fff_1ad3368978c975c176ae6c6439e8b9c761" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt;</type>
+        <type>std::vector&lt; gr_fir_fff * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff*&gt; gr_pfb_clock_sync_fff::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -97,7 +97,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" line="180" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_clock_sync_fff.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__clock__sync__fff_1aae8b9a565b8417e60048c39d4b80f5bd" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt;</type>
+        <type>std::vector&lt; gr_fir_fff * &gt;</type>
         <definition>std::vector&lt;gr_fir_fff*&gt; gr_pfb_clock_sync_fff::d_diff_filters</definition>
         <argsstring></argsstring>
         <name>d_diff_filters</name>
@@ -229,7 +229,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pfb__clock__sync__fff_1a7fb30c0e916e9006d1a337257030c8b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_clock_sync_fff_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pfb_clock_sync_fff_sptr</ref></type>
         <definition>GR_CORE_API gr_pfb_clock_sync_fff_sptr gr_make_pfb_clock_sync_fff</definition>
         <argsstring>(double sps, float gain, const std::vector&lt; float &gt; &amp;taps, unsigned int filter_size, float init_phase, float max_rate_deviation)</argsstring>
         <name>gr_make_pfb_clock_sync_fff</name>
@@ -397,7 +397,7 @@
           <declname>ourtaps</declname>
         </param>
         <param>
-          <type>std::vector&lt; <ref refid="classgr__fir__fff" kindref="compound">gr_fir_fff</ref> * &gt; &amp;</type>
+          <type>std::vector&lt; gr_fir_fff * &gt; &amp;</type>
           <declname>ourfilter</declname>
         </param>
         <briefdescription>
@@ -644,88 +644,88 @@ general_work must call consume or consume_each to indicate how many items were c
 </itemizedlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="11878">
+      <node id="4507">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11879" relation="public-inheritance">
+        <childnode refid="4508" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11876">
+      <node id="4505">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11877" relation="public-inheritance">
+        <childnode refid="4506" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11879">
+      <node id="4508">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11875">
+      <node id="4504">
         <label>gr_pfb_clock_sync_fff</label>
         <link refid="classgr__pfb__clock__sync__fff"/>
-        <childnode refid="11876" relation="public-inheritance">
+        <childnode refid="4505" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11877">
+      <node id="4506">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11878" relation="public-inheritance">
+        <childnode refid="4507" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="11883">
+      <node id="4512">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11884" relation="public-inheritance">
+        <childnode refid="4513" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11881">
+      <node id="4510">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11882" relation="public-inheritance">
+        <childnode refid="4511" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11885">
+      <node id="4514">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11886" relation="usage">
+        <childnode refid="4515" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="11888">
+      <node id="4517">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="11884">
+      <node id="4513">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11880">
+      <node id="4509">
         <label>gr_pfb_clock_sync_fff</label>
         <link refid="classgr__pfb__clock__sync__fff"/>
-        <childnode refid="11881" relation="public-inheritance">
+        <childnode refid="4510" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11886">
+      <node id="4515">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="11882">
+      <node id="4511">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11883" relation="public-inheritance">
+        <childnode refid="4512" relation="public-inheritance">
         </childnode>
-        <childnode refid="11885" relation="usage">
+        <childnode refid="4514" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="11887" relation="usage">
+        <childnode refid="4516" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="11887">
+      <node id="4516">
         <label>std::string</label>
-        <childnode refid="11888" relation="public-inheritance">
+        <childnode refid="4517" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__file__descriptor__sink" kind="class" prot="public">
     <compoundname>gr_file_descriptor_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -34,7 +34,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__file__descriptor__sink_1af83d1a1e8dc92ad00af7df9951a1c044" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_file_descriptor_sink_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_file_descriptor_sink_sptr</ref></type>
         <definition>GR_CORE_API gr_file_descriptor_sink_sptr gr_make_file_descriptor_sink</definition>
         <argsstring>(size_t itemsize, int fd)</argsstring>
         <name>gr_make_file_descriptor_sink</name>
@@ -124,100 +124,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="9210">
+      <node id="3234">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="9211" relation="public-inheritance">
+        <childnode refid="3235" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9207">
+      <node id="3231">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="9208" relation="public-inheritance">
+        <childnode refid="3232" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9208">
+      <node id="3232">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="9209" relation="public-inheritance">
+        <childnode refid="3233" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9211">
+      <node id="3235">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="9206">
+      <node id="3230">
         <label>gr_file_descriptor_sink</label>
         <link refid="classgr__file__descriptor__sink"/>
-        <childnode refid="9207" relation="public-inheritance">
+        <childnode refid="3231" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9209">
+      <node id="3233">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="9210" relation="public-inheritance">
+        <childnode refid="3234" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9216">
+      <node id="3240">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="9217" relation="public-inheritance">
+        <childnode refid="3241" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9213">
+      <node id="3237">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="9214" relation="public-inheritance">
+        <childnode refid="3238" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9214">
+      <node id="3238">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="9215" relation="public-inheritance">
+        <childnode refid="3239" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9218">
+      <node id="3242">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="9219" relation="usage">
+        <childnode refid="3243" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="9221">
+      <node id="3245">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="9217">
+      <node id="3241">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="9219">
+      <node id="3243">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="9212">
+      <node id="3236">
         <label>gr_file_descriptor_sink</label>
         <link refid="classgr__file__descriptor__sink"/>
-        <childnode refid="9213" relation="public-inheritance">
+        <childnode refid="3237" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9215">
+      <node id="3239">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="9216" relation="public-inheritance">
+        <childnode refid="3240" relation="public-inheritance">
         </childnode>
-        <childnode refid="9218" relation="usage">
+        <childnode refid="3242" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="9220" relation="usage">
+        <childnode refid="3244" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="9220">
+      <node id="3244">
         <label>std::string</label>
-        <childnode refid="9221" relation="public-inheritance">
+        <childnode refid="3245" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__fir__ccf__3dnow" kind="class" prot="public">
     <compoundname>gr_fir_ccf_3dnow</compoundname>
     <basecompoundref refid="classgr__fir__ccf__simd" prot="public" virt="non-virtual">gr_fir_ccf_simd</basecompoundref>
@@ -37,60 +37,30 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>3DNow! version of <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> </para>    </briefdescription>
+<para>3DNow! version of gr_fir_ccf </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="9371">
+      <node id="3339">
         <label>gr_fir_ccf_simd</label>
         <link refid="classgr__fir__ccf__simd"/>
-        <childnode refid="9372" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="9373">
-        <label>gr_fir_ccf</label>
-        <link refid="classgr__fir__ccf"/>
-      </node>
-      <node id="9372">
-        <label>gr_fir_ccf_generic</label>
-        <link refid="classgr__fir__ccf__generic"/>
-        <childnode refid="9373" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="9370">
+      <node id="3338">
         <label>gr_fir_ccf_3dnow</label>
         <link refid="classgr__fir__ccf__3dnow"/>
-        <childnode refid="9371" relation="public-inheritance">
+        <childnode refid="3339" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9375">
+      <node id="3341">
         <label>gr_fir_ccf_simd</label>
         <link refid="classgr__fir__ccf__simd"/>
-        <childnode refid="9376" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="9378">
-        <label>std::vector&lt; float &gt;</label>
-      </node>
-      <node id="9377">
-        <label>gr_fir_ccf</label>
-        <link refid="classgr__fir__ccf"/>
-        <childnode refid="9378" relation="usage">
-          <edgelabel>d_taps</edgelabel>
-        </childnode>
-      </node>
-      <node id="9376">
-        <label>gr_fir_ccf_generic</label>
-        <link refid="classgr__fir__ccf__generic"/>
-        <childnode refid="9377" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="9374">
+      <node id="3340">
         <label>gr_fir_ccf_3dnow</label>
         <link refid="classgr__fir__ccf__3dnow"/>
-        <childnode refid="9375" relation="public-inheritance">
+        <childnode refid="3341" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -98,23 +68,13 @@
     <listofallmembers>
       <member refid="classgr__fir__ccf__simd_1a21b414b07a0353484e342e1e96216bd0" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>d_aligned_taps</name></member>
       <member refid="classgr__fir__ccf__simd_1a1f38cc30575580de30009fc8b50e9640" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>d_fcomplex_dotprod</name></member>
-      <member refid="classgr__fir__ccf_1a9af107e829a86398e5f607702840806a" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>d_taps</name></member>
       <member refid="classgr__fir__ccf__simd_1abcf7817f4bfed0daf6111c7a238859a2" prot="protected" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>fcomplex_dotprod_t</name></member>
       <member refid="classgr__fir__ccf__simd_1a8acdb63d025f11d8f028565c68f03bc0" prot="public" virt="virtual"><scope>gr_fir_ccf_3dnow</scope><name>filter</name></member>
-      <member refid="classgr__fir__ccf__generic_1ad06a6a9c87cfd7c20f0b0746f46fa28c" prot="public" virt="virtual"><scope>gr_fir_ccf_3dnow</scope><name>filterN</name></member>
-      <member refid="classgr__fir__ccf__generic_1a05e2e78319edd5f5a8902b9b09c45756" prot="public" virt="virtual"><scope>gr_fir_ccf_3dnow</scope><name>filterNdec</name></member>
-      <member refid="classgr__fir__ccf_1ab1ed3d65aaa985e7032fd5e9243537d1" prot="public" virt="virtual"><scope>gr_fir_ccf_3dnow</scope><name>get_taps</name></member>
-      <member refid="classgr__fir__ccf_1aa48a9accdb4deced4b5b04061a8961df" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf</name></member>
-      <member refid="classgr__fir__ccf_1a9d5ba21009ff25164b8fdf08d0c8c7e3" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf</name></member>
       <member refid="classgr__fir__ccf__3dnow_1acd42279ba0f86b1e5f9c7fd192c4db74" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf_3dnow</name></member>
       <member refid="classgr__fir__ccf__3dnow_1a56bbb9a96831a0e0f32a87ebf6a1ee24" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf_3dnow</name></member>
-      <member refid="classgr__fir__ccf__generic_1aa73fecc18b02a5ad506342c7ef284f36" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf_generic</name></member>
-      <member refid="classgr__fir__ccf__generic_1a012c8d0043999db86aaf5d45fde4d506" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf_generic</name></member>
       <member refid="classgr__fir__ccf__simd_1a9c8229586ed0a73d176c0960feb90531" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf_simd</name></member>
       <member refid="classgr__fir__ccf__simd_1ae6af6ec1bf4f676d0a1a3c2acd744285" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>gr_fir_ccf_simd</name></member>
-      <member refid="classgr__fir__ccf_1a03fb8ba5795cd467c6bd6314ac4a4d78" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>ntaps</name></member>
       <member refid="classgr__fir__ccf__simd_1a970d13e317fa6471e65da3bcd94a2e24" prot="public" virt="virtual"><scope>gr_fir_ccf_3dnow</scope><name>set_taps</name></member>
-      <member refid="classgr__fir__ccf_1a1823367b810356281a5e87efa1b57d8f" prot="public" virt="virtual"><scope>gr_fir_ccf_3dnow</scope><name>~gr_fir_ccf</name></member>
       <member refid="classgr__fir__ccf__simd_1a233af35deedb8f55261421089c923e73" prot="public" virt="non-virtual"><scope>gr_fir_ccf_3dnow</scope><name>~gr_fir_ccf_simd</name></member>
     </listofallmembers>
   </compounddef>

@@ -24,9 +24,6 @@ FILE(REMOVE_RECURSE
   "libgnuradio-dvbt-3.6.1git.pdb"
   "libgnuradio-dvbt-3.6.1git.so"
   "libgnuradio-dvbt-3.6.1git.so.0.0.0"
-  "CMakeFiles/CMakeRelink.dir/libgnuradio-dvbt-3.6.1git.pdb"
-  "CMakeFiles/CMakeRelink.dir/libgnuradio-dvbt-3.6.1git.so"
-  "CMakeFiles/CMakeRelink.dir/libgnuradio-dvbt-3.6.1git.so.0.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

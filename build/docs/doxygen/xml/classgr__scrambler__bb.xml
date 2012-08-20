@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__scrambler__bb" kind="class" prot="public">
     <compoundname>gr_scrambler_bb</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__scrambler__bb_1a894aa775a7d4424e204c11074ce5ec62" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_scrambler_bb_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_scrambler_bb_sptr</ref></type>
         <definition>GR_CORE_API gr_scrambler_bb_sptr gr_make_scrambler_bb</definition>
         <argsstring>(int mask, int seed, int len)</argsstring>
         <name>gr_make_scrambler_bb</name>
@@ -128,100 +128,100 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="12551">
+      <node id="4872">
         <label>gr_scrambler_bb</label>
         <link refid="classgr__scrambler__bb"/>
-        <childnode refid="12552" relation="public-inheritance">
+        <childnode refid="4873" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12555">
+      <node id="4876">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12556" relation="public-inheritance">
+        <childnode refid="4877" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12552">
+      <node id="4873">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12553" relation="public-inheritance">
+        <childnode refid="4874" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12553">
+      <node id="4874">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12554" relation="public-inheritance">
+        <childnode refid="4875" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12556">
+      <node id="4877">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12554">
+      <node id="4875">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12555" relation="public-inheritance">
+        <childnode refid="4876" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="12557">
+      <node id="4878">
         <label>gr_scrambler_bb</label>
         <link refid="classgr__scrambler__bb"/>
-        <childnode refid="12558" relation="public-inheritance">
+        <childnode refid="4879" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12561">
+      <node id="4882">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12562" relation="public-inheritance">
+        <childnode refid="4883" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12558">
+      <node id="4879">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12559" relation="public-inheritance">
+        <childnode refid="4880" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12559">
+      <node id="4880">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12560" relation="public-inheritance">
+        <childnode refid="4881" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12563">
+      <node id="4884">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="12564" relation="usage">
+        <childnode refid="4885" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="12566">
+      <node id="4887">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="12562">
+      <node id="4883">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12564">
+      <node id="4885">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="12560">
+      <node id="4881">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12561" relation="public-inheritance">
+        <childnode refid="4882" relation="public-inheritance">
         </childnode>
-        <childnode refid="12563" relation="usage">
+        <childnode refid="4884" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="12565" relation="usage">
+        <childnode refid="4886" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="12565">
+      <node id="4886">
         <label>std::string</label>
-        <childnode refid="12566" relation="public-inheritance">
+        <childnode refid="4887" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

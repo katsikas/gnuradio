@@ -10,8 +10,6 @@ FILE(REMOVE_RECURSE
   "noaa_swig_doc_swig_docs/xml/combine.xslt"
   "_noaa_swig.pdb"
   "_noaa_swig.so"
-  "CMakeFiles/CMakeRelink.dir/_noaa_swig.pdb"
-  "CMakeFiles/CMakeRelink.dir/_noaa_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

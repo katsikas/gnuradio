@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classwavelet__wavelet__ff__impl" kind="class" prot="public">
     <compoundname>wavelet_wavelet_ff_impl</compoundname>
     <basecompoundref refid="classwavelet__wavelet__ff" prot="public" virt="non-virtual">wavelet_wavelet_ff</basecompoundref>
@@ -86,7 +86,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classwavelet__wavelet__ff__impl_1a5373e9d005ef58f0f1f006e0c887474a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend WAVELET_API <ref refid="classboost_1_1shared__ptr" kindref="compound">wavelet_wavelet_ff_sptr</ref></type>
+        <type>friend <ref refid="wavelet__api_8h_1a9c8352ab43d3afa0c97ee932687f7a1e" kindref="member">WAVELET_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">wavelet_wavelet_ff_sptr</ref></type>
         <definition>WAVELET_API wavelet_wavelet_ff_sptr wavelet_make_wavelet_ff</definition>
         <argsstring>(int size, int order, bool forward)</argsstring>
         <name>wavelet_make_wavelet_ff</name>
@@ -184,112 +184,112 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="15803">
+      <node id="7458">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="15804" relation="public-inheritance">
+        <childnode refid="7459" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15800">
+      <node id="7455">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="15801" relation="public-inheritance">
+        <childnode refid="7456" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15801">
+      <node id="7456">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="15802" relation="public-inheritance">
+        <childnode refid="7457" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15804">
+      <node id="7459">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="15798">
+      <node id="7453">
         <label>wavelet_wavelet_ff_impl</label>
         <link refid="classwavelet__wavelet__ff__impl"/>
-        <childnode refid="15799" relation="public-inheritance">
+        <childnode refid="7454" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15802">
+      <node id="7457">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="15803" relation="public-inheritance">
+        <childnode refid="7458" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15799">
+      <node id="7454">
         <label>wavelet_wavelet_ff</label>
         <link refid="classwavelet__wavelet__ff"/>
-        <childnode refid="15800" relation="public-inheritance">
+        <childnode refid="7455" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="15810">
+      <node id="7465">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="15811" relation="public-inheritance">
+        <childnode refid="7466" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15807">
+      <node id="7462">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="15808" relation="public-inheritance">
+        <childnode refid="7463" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15808">
+      <node id="7463">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="15809" relation="public-inheritance">
+        <childnode refid="7464" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15812">
+      <node id="7467">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="15813" relation="usage">
+        <childnode refid="7468" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="15815">
+      <node id="7470">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="15811">
+      <node id="7466">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="15805">
+      <node id="7460">
         <label>wavelet_wavelet_ff_impl</label>
         <link refid="classwavelet__wavelet__ff__impl"/>
-        <childnode refid="15806" relation="public-inheritance">
+        <childnode refid="7461" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15813">
+      <node id="7468">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="15809">
+      <node id="7464">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="15810" relation="public-inheritance">
+        <childnode refid="7465" relation="public-inheritance">
         </childnode>
-        <childnode refid="15812" relation="usage">
+        <childnode refid="7467" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="15814" relation="usage">
+        <childnode refid="7469" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="15806">
+      <node id="7461">
         <label>wavelet_wavelet_ff</label>
         <link refid="classwavelet__wavelet__ff"/>
-        <childnode refid="15807" relation="public-inheritance">
+        <childnode refid="7462" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15814">
+      <node id="7469">
         <label>std::string</label>
-        <childnode refid="15815" relation="public-inheritance">
+        <childnode refid="7470" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr")
+  SET(CMAKE_INSTALL_PREFIX "/usr/local")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,20 +29,20 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "0")
+  SET(CMAKE_INSTALL_SO_NO_EXE "1")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_range.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_check_box.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_label.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_tab_widget.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_sink_x.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_chooser.xml"
     "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_time_sink_x.xml"
-    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_ofdm_vector_analyzer.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_range.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_label.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_sink_x.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_check_box.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_chooser.xml"
     "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_entry.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_ofdm_vector_analyzer.xml"
+    "/home/katsikas/gnuradio/gr-qtgui/grc/qtgui_tab_widget.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "qtgui_python")
 

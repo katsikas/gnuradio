@@ -120,8 +120,6 @@ FILE(REMOVE_RECURSE
   "trellis_swig_doc_swig_docs/xml/combine.xslt"
   "_trellis.pdb"
   "_trellis.so"
-  "CMakeFiles/CMakeRelink.dir/_trellis.pdb"
-  "CMakeFiles/CMakeRelink.dir/_trellis.so"
 )
 
 # Per-language clean rules from dependency scanning.

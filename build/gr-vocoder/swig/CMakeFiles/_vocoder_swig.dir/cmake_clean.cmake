@@ -10,8 +10,6 @@ FILE(REMOVE_RECURSE
   "vocoder_swig_doc_swig_docs/xml/combine.xslt"
   "_vocoder_swig.pdb"
   "_vocoder_swig.so"
-  "CMakeFiles/CMakeRelink.dir/_vocoder_swig.pdb"
-  "CMakeFiles/CMakeRelink.dir/_vocoder_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

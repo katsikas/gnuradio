@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__constellation__sector" kind="class" prot="public">
     <compoundname>digital_constellation_sector</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
@@ -147,56 +147,57 @@
     <detaileddescription>
 <para><ref refid="classdigital__constellation__sector" kindref="compound">digital_constellation_sector</ref> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="6347">
+      <node id="1143">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="6345" relation="public-inheritance">
+        <childnode refid="1141" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6346">
+      <node id="1142">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="6348">
+      <node id="1144">
         <label>digital_constellation_rect</label>
         <link refid="classdigital__constellation__rect"/>
-        <childnode refid="6345" relation="public-inheritance">
+        <childnode refid="1141" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6345">
+      <node id="1141">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="6346" relation="public-inheritance">
+        <childnode refid="1142" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6352">
+      <node id="1148">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="6353" relation="usage">
+        <childnode refid="1149" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="6351">
+      <node id="1147">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="6350">
+      <node id="1146">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="6351" relation="usage">
+        <childnode refid="1147" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="6352" relation="usage">
+        <childnode refid="1148" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="6353">
+      <node id="1149">
         <label>std::complex</label>
       </node>
-      <node id="6349">
+      <node id="1145">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="6350" relation="public-inheritance">
+        <childnode refid="1146" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

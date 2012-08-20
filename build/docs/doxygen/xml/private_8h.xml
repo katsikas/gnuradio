@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="private_8h" kind="file">
     <compoundname>private.h</compoundname>
     <includes refid="proto_8h" local="yes">proto.h</includes>
     <includes refid="unproto_8h" local="yes">unproto.h</includes>
     <incdepgraph>
-      <node id="46631">
+      <node id="15146">
         <label>private.h</label>
         <link refid="private.h"/>
-        <childnode refid="46632" relation="include">
+        <childnode refid="15147" relation="include">
         </childnode>
-        <childnode refid="46633" relation="include">
+        <childnode refid="15148" relation="include">
         </childnode>
       </node>
-      <node id="46633">
+      <node id="15148">
         <label>unproto.h</label>
         <link refid="unproto_8h"/>
       </node>
-      <node id="46632">
+      <node id="15147">
         <label>proto.h</label>
         <link refid="proto_8h"/>
       </node>
@@ -85,8 +85,8 @@
         <name>GSM_MULT_R</name>
         <param><defname>a</defname></param>
         <param><defname>b</defname></param>
-        <initializer>/* <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> a, <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> b, !(a == b == MIN_WORD) */	\
-	(SASR( ((<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) * (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b) + 16384), 15 ))</initializer>
+        <initializer>/* <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> a, <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> b, !(a == b == <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref>) */	\
+	(<ref refid="private_8h_1a64d7068b4ebbaf4894d4d5c623cccccb" kindref="member">SASR</ref>( ((<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) * (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b) + 16384), 15 ))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -99,8 +99,8 @@
         <name>GSM_MULT</name>
         <param><defname>a</defname></param>
         <param><defname>b</defname></param>
-        <initializer>/* <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> a, <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> b, !(a == b == MIN_WORD) */	\
-	(SASR( ((<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) * (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b)), 15 ))</initializer>
+        <initializer>/* <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> a, <ref refid="private_8h_1a0b023cbb2bf7d034c2269d58d7455ac8" kindref="member">word</ref> b, !(a == b == <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref>) */	\
+	(<ref refid="private_8h_1a64d7068b4ebbaf4894d4d5c623cccccb" kindref="member">SASR</ref>( ((<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) * (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b)), 15 ))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -129,10 +129,10 @@
         <param><defname>b</defname></param>
         <initializer>( (a) &lt;  0 ? ( (b) &gt;= 0 ? (a) + (b)	\
 		 : (utmp = (<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)-((a) + 1) + (<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)-((b) + 1)) \
-		   &gt;= MAX_LONGWORD ? MIN_LONGWORD : -(<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)utmp-2 )   \
+		   &gt;= <ref refid="private_8h_1a179af0a2ae7d7583a3781c293cea3920" kindref="member">MAX_LONGWORD</ref> ? <ref refid="private_8h_1a204b73676d9cb29d21954544c2a2ec2e" kindref="member">MIN_LONGWORD</ref> : -(<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)utmp-2 )   \
 	: ((b) &lt;= 0 ? (a) + (b)   \
-	          : (utmp = (<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)(a) + (<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)(b)) &gt;= MAX_LONGWORD \
-		    ? MAX_LONGWORD : utmp))</initializer>
+	          : (utmp = (<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)(a) + (<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)(b)) &gt;= <ref refid="private_8h_1a179af0a2ae7d7583a3781c293cea3920" kindref="member">MAX_LONGWORD</ref> \
+		    ? <ref refid="private_8h_1a179af0a2ae7d7583a3781c293cea3920" kindref="member">MAX_LONGWORD</ref> : utmp))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -145,8 +145,8 @@
         <name>GSM_ADD</name>
         <param><defname>a</defname></param>
         <param><defname>b</defname></param>
-        <initializer>((<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)((ltmp = (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) + (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b)) - MIN_WORD) &gt; \
-		MAX_WORD - MIN_WORD ? (ltmp &gt; 0 ? MAX_WORD : MIN_WORD) : ltmp)</initializer>
+        <initializer>((<ref refid="private_8h_1a7d075b9a054f8232a8f69c2b78565ed7" kindref="member">ulongword</ref>)((ltmp = (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) + (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b)) - <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref>) &gt; \
+		<ref refid="private_8h_1a95b015e2f596dc86ea9220be04427e1a" kindref="member">MAX_WORD</ref> - <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref> ? (ltmp &gt; 0 ? <ref refid="private_8h_1a95b015e2f596dc86ea9220be04427e1a" kindref="member">MAX_WORD</ref> : <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref>) : ltmp)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -159,8 +159,8 @@
         <name>GSM_SUB</name>
         <param><defname>a</defname></param>
         <param><defname>b</defname></param>
-        <initializer>((ltmp = (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) - (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b)) &gt;= MAX_WORD \
-	? MAX_WORD : ltmp &lt;= MIN_WORD ? MIN_WORD : ltmp)</initializer>
+        <initializer>((ltmp = (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(a) - (<ref refid="private_8h_1ad3ef77e8cb87b87f867389469fd7d4fa" kindref="member">longword</ref>)(b)) &gt;= <ref refid="private_8h_1a95b015e2f596dc86ea9220be04427e1a" kindref="member">MAX_WORD</ref> \
+	? <ref refid="private_8h_1a95b015e2f596dc86ea9220be04427e1a" kindref="member">MAX_WORD</ref> : ltmp &lt;= <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref> ? <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref> : ltmp)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -172,7 +172,7 @@
       <memberdef kind="define" id="private_8h_1aa750e3948eb6c3e365125d5f6fafeefc" prot="public" static="no">
         <name>GSM_ABS</name>
         <param><defname>a</defname></param>
-        <initializer>((a) &lt; 0 ? ((a) == MIN_WORD ? MAX_WORD : -(a)) : (a))</initializer>
+        <initializer>((a) &lt; 0 ? ((a) == <ref refid="private_8h_1a2fa940c1267fae76795f705cc556b0f0" kindref="member">MIN_WORD</ref> ? <ref refid="private_8h_1a95b015e2f596dc86ea9220be04427e1a" kindref="member">MAX_WORD</ref> : -(a)) : (a))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

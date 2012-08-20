@@ -6,8 +6,26 @@
 
 #IncludeRegexTransform: 
 
+../gnuradio-core/src/lib/filter/gr_sincos.h
+gr_core_api.h
+-
+
 ../gnuradio-core/src/lib/general/gr_core_api.h
 gruel/attributes.h
+-
+
+../gnuradio-core/src/lib/general/gr_expj.h
+gr_core_api.h
+-
+gr_sincos.h
+-
+gr_types.h
+-
+
+../gnuradio-core/src/lib/general/gr_math.h
+gr_core_api.h
+-
+gr_complex.h
 -
 
 ../gnuradio-core/src/lib/runtime/gr_basic_block.h
@@ -116,12 +134,10 @@ stdint.h
 gruel/attributes.h
 -
 
-../gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h
+../gr-digital/include/digital_dvbt_ofdm_frame_sink.h
 bitset
 -
 string
--
-gr_message.h
 -
 digital_api.h
 -
@@ -180,21 +196,27 @@ boost/thread/locks.hpp
 boost/thread/condition_variable.hpp
 -
 
-/home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_mapper_bcv.cc
+/home/katsikas/gnuradio/gr-digital/lib/digital_dvbt_ofdm_frame_sink.cc
 config.h
 /home/katsikas/gnuradio/gr-digital/lib/config.h
+math.h
+-
+cstdio
+-
+stdlib.h
+-
 iostream
 -
-bitset
--
-stdio.h
--
 string.h
+-
+gr_expj.h
+-
+gr_math.h
 -
 stdexcept
 -
 gr_io_signature.h
 -
-digital_dvbt_ofdm_mapper_bcv.h
+digital_dvbt_ofdm_frame_sink.h
 -
 

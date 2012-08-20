@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 export GR_DONT_LOAD_PREFS=1
 export srcdir=/home/katsikas/gnuradio/gr-qtgui/python
 export PATH=/home/katsikas/gnuradio/build/gr-qtgui/python:$PATH

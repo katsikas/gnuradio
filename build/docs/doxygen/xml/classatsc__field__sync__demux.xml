@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classatsc__field__sync__demux" kind="class" prot="public">
     <compoundname>atsc_field_sync_demux</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -112,7 +112,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classatsc__field__sync__demux_1acd3386d8b8c9b9cd6eff25d0c592fdec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend ATSC_API <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_field_sync_demux_sptr</ref></type>
+        <type>friend <ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">atsc_field_sync_demux_sptr</ref></type>
         <definition>ATSC_API atsc_field_sync_demux_sptr atsc_make_field_sync_demux</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_field_sync_demux</name>
@@ -282,88 +282,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
 <para>This class accepts 1 stream of floats (data), and 1 stream of tags (syminfo). * It outputs one stream of <ref refid="classatsc__soft__data__segment" kindref="compound">atsc_soft_data_segment</ref> packets </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="5318">
+      <node id="112">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5319" relation="public-inheritance">
+        <childnode refid="113" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5316">
+      <node id="110">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5317" relation="public-inheritance">
+        <childnode refid="111" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5319">
+      <node id="113">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5317">
+      <node id="111">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5318" relation="public-inheritance">
+        <childnode refid="112" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5315">
+      <node id="109">
         <label>atsc_field_sync_demux</label>
         <link refid="classatsc__field__sync__demux"/>
-        <childnode refid="5316" relation="public-inheritance">
+        <childnode refid="110" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5323">
+      <node id="117">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5324" relation="public-inheritance">
+        <childnode refid="118" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5321">
+      <node id="115">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5322" relation="public-inheritance">
+        <childnode refid="116" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5325">
+      <node id="119">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5326" relation="usage">
+        <childnode refid="120" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5328">
+      <node id="122">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5324">
+      <node id="118">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5326">
+      <node id="120">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5322">
+      <node id="116">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5323" relation="public-inheritance">
+        <childnode refid="117" relation="public-inheritance">
         </childnode>
-        <childnode refid="5325" relation="usage">
+        <childnode refid="119" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5327" relation="usage">
+        <childnode refid="121" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5320">
+      <node id="114">
         <label>atsc_field_sync_demux</label>
         <link refid="classatsc__field__sync__demux"/>
-        <childnode refid="5321" relation="public-inheritance">
+        <childnode refid="115" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5327">
+      <node id="121">
         <label>std::string</label>
-        <childnode refid="5328" relation="public-inheritance">
+        <childnode refid="122" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
