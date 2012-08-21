@@ -429,6 +429,8 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
       unsigned char bits = slicer(sigrot);
       gr_complex closest_sym = d_sym_position[bits];
       accum_error += sigrot * conj(closest_sym);
+      
+      //printf("RECEIVED BIT = %x complex is: %.4f %.4fj \n",bits,sigrot.real(),sigrot.imag());
 
       // FIX THE FOLLOWING STATEMENT
       if (norm(sigrot)> 0.001) d_dfe[i] +=  d_eq_gain*(closest_sym/sigrot-d_dfe[i]);
@@ -468,14 +470,14 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
   //  std::cerr << angle << "\t" << d_freq << "\t" << d_phase << "\t" << std::endl;
   
   d_symbol_number ++;
-  if(d_symbol_number == 68){
+  /*if(d_symbol_number == 68){
 		for (int i = 0; i < d_tps_info.size(); i++)
 		{
 			printf("tps_info[%d] = %d \n",i,d_tps_info[i]);
 		}
 		
 	  exit(-1);
-  }
+  }*/
   if(d_symbol_number == 68){
         d_tps_info.clear();
         d_symbol_number = 0;

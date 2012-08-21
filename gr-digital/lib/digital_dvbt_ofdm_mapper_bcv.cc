@@ -272,6 +272,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 		d_bit_offset += d_nbits;
 
 		out[d_payload_map[i]] = d_constellation[bits];
+		//printf("SEND BIT = %x complex is: %.4f %.4fj \n",bits,out[d_payload_map[i]].real(),out[d_payload_map[i]].imag());
 		i++;
 	  }
 	  else {  															// if we can't fit nbits, store them for the next																		

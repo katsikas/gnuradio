@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 1f284ee0 C++ API: digital_dvbt_ofdm_mapper_bcv.h Source File</title>
+<title>GNU Radio d79246b2 C++ API: digital_dvbt_ofdm_mapper_bcv.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 1f284ee0 C++ API
+   <div id="projectname">GNU Radio d79246b2 C++ API
    
    </div>
    
@@ -95,113 +95,117 @@
 <a name="l00030"></a>00030 <span class="preprocessor">#include &lt;<a class="code" href="gr__msg__queue_8h.html">gr_msg_queue.h</a>&gt;</span>
 <a name="l00031"></a>00031 <span class="preprocessor">#include &lt;<a class="code" href="gr__sync__block_8h.html">gr_sync_block.h</a>&gt;</span>
 <a name="l00032"></a>00032 
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034 <span class="keyword">class </span><a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a>;
-<a name="l00035"></a>00035 <span class="keyword">typedef</span> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">boost::shared_ptr&lt;digital_dvbt_ofdm_mapper_bcv&gt;</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_dvbt_ofdm_mapper_bcv_sptr</a>;
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <a class="code" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_dvbt_ofdm_mapper_bcv_sptr</a> 
-<a name="l00038"></a>00038 <a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ae36d5582c305088147ec8fe22d1aee4c">digital_make_dvbt_ofdm_mapper_bcv</a> (<span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;constellation,
-<a name="l00039"></a>00039                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;t_constellation,
-<a name="l00040"></a>00040                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;cs_constellation,
-<a name="l00041"></a>00041                                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> msgq_limit, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> occupied_carriers, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fft_length);
-<a name="l00042"></a>00042 <span class="comment"></span>
-<a name="l00043"></a>00043 <span class="comment">/*!</span>
-<a name="l00044"></a>00044 <span class="comment"> * \brief Specific class for the DVBT.Takes a stream of bytes in and maps</span>
-<a name="l00045"></a>00045 <span class="comment"> * to a vector of complex constellation points suitable for IFFT input to</span>
-<a name="l00046"></a>00046 <span class="comment"> * be used in an ofdm modulator. Abstract class must be subclassed with</span>
-<a name="l00047"></a>00047 <span class="comment"> * specific mapping. </span>
-<a name="l00048"></a>00048 <span class="comment"> * \ingroup modulation_blk</span>
-<a name="l00049"></a>00049 <span class="comment"> * \ingroup ofdm_blk</span>
-<a name="l00050"></a>00050 <span class="comment"> */</span>
-<a name="l00051"></a>00051 
-<a name="l00052"></a><a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html">00052</a> <span class="keyword">class </span><a class="code" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__block.html" title="synchronous 1:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_block</a>
-<a name="l00053"></a>00053 {
-<a name="l00054"></a>00054   <span class="keyword">friend</span> <a class="code" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_dvbt_ofdm_mapper_bcv_sptr</a>
-<a name="l00055"></a>00055   <a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ae36d5582c305088147ec8fe22d1aee4c">digital_make_dvbt_ofdm_mapper_bcv</a> (<span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;constellation,
-<a name="l00056"></a>00056                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;t_constellation,
-<a name="l00057"></a>00057                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;cs_constellation,
-<a name="l00058"></a>00058                                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> msgq_limit, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> occupied_carriers, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fft_length);
-<a name="l00059"></a>00059 <span class="keyword">protected</span>:
-<a name="l00060"></a>00060   <a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a> (<span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;constellation,
+<a name="l00033"></a><a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#af6996d12e71a534569c41a25de7d6d52">00033</a> <span class="preprocessor">#define PARITY 14</span>
+<a name="l00034"></a><a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#a30362161c93e3f1a4ee4c673f535b5a8">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define LENGTH 67</span>
+<a name="l00035"></a><a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ac64bfcbf6b1a84aaab3935d6d53ff34d">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define ORIGINAL 53</span>
+<a name="l00036"></a><a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#a8fa41780dffd12b8ba40faf4c22bea7b">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define CELL_IDENTIFICATION 0</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="keyword">class </span><a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a>;
+<a name="l00040"></a>00040 <span class="keyword">typedef</span> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">boost::shared_ptr&lt;digital_dvbt_ofdm_mapper_bcv&gt;</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_dvbt_ofdm_mapper_bcv_sptr</a>;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <a class="code" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_dvbt_ofdm_mapper_bcv_sptr</a> 
+<a name="l00043"></a>00043 <a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ae36d5582c305088147ec8fe22d1aee4c">digital_make_dvbt_ofdm_mapper_bcv</a> (<span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;constellation,
+<a name="l00044"></a>00044                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;t_constellation,
+<a name="l00045"></a>00045                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;cs_constellation,
+<a name="l00046"></a>00046                                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> msgq_limit, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> occupied_carriers, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fft_length);
+<a name="l00047"></a>00047 <span class="comment"></span>
+<a name="l00048"></a>00048 <span class="comment">/*!</span>
+<a name="l00049"></a>00049 <span class="comment"> * \brief Specific class for the DVBT.Takes a stream of bytes in and maps</span>
+<a name="l00050"></a>00050 <span class="comment"> * to a vector of complex constellation points suitable for IFFT input to</span>
+<a name="l00051"></a>00051 <span class="comment"> * be used in an ofdm modulator. Abstract class must be subclassed with</span>
+<a name="l00052"></a>00052 <span class="comment"> * specific mapping. </span>
+<a name="l00053"></a>00053 <span class="comment"> * \ingroup modulation_blk</span>
+<a name="l00054"></a>00054 <span class="comment"> * \ingroup ofdm_blk</span>
+<a name="l00055"></a>00055 <span class="comment"> */</span>
+<a name="l00056"></a>00056 
+<a name="l00057"></a><a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html">00057</a> <span class="keyword">class </span><a class="code" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__block.html" title="synchronous 1:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_block</a>
+<a name="l00058"></a>00058 {
+<a name="l00059"></a>00059   <span class="keyword">friend</span> <a class="code" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">digital_dvbt_ofdm_mapper_bcv_sptr</a>
+<a name="l00060"></a>00060   <a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ae36d5582c305088147ec8fe22d1aee4c">digital_make_dvbt_ofdm_mapper_bcv</a> (<span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;constellation,
 <a name="l00061"></a>00061                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;t_constellation,
 <a name="l00062"></a>00062                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;cs_constellation,
 <a name="l00063"></a>00063                                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> msgq_limit, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> occupied_carriers, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fft_length);
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065  <span class="keyword">private</span>:
-<a name="l00066"></a>00066   std::vector&lt;gr_complex&gt; d_constellation;
-<a name="l00067"></a>00067   std::vector&lt;gr_complex&gt; d_tps_constellation;
-<a name="l00068"></a>00068   std::vector&lt;gr_complex&gt; d_cs_constellation;
-<a name="l00069"></a>00069   
-<a name="l00070"></a>00070   
-<a name="l00071"></a>00071   <a class="code" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a>     d_msgq;
-<a name="l00072"></a>00072   <a class="code" href="classboost_1_1shared__ptr.html">gr_message_sptr</a>       d_msg;
-<a name="l00073"></a>00073   <span class="keywordtype">unsigned</span>              d_msg_offset;
-<a name="l00074"></a>00074   <span class="keywordtype">bool</span>                  d_eof;
-<a name="l00075"></a>00075 
-<a name="l00076"></a>00076   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          d_occupied_carriers;
-<a name="l00077"></a>00077   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          d_fft_length;
-<a name="l00078"></a>00078   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          d_bit_offset;
-<a name="l00079"></a>00079   <span class="keywordtype">int</span>                   d_pending_flag;
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081   <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  d_nbits;
-<a name="l00082"></a>00082   <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  d_msgbytes;
-<a name="l00083"></a>00083   <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> d_resid;
-<a name="l00084"></a>00084   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_nresid;
-<a name="l00085"></a>00085   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_last_out;
-<a name="l00086"></a>00086   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_zeros_from_left;
-<a name="l00087"></a>00087   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_payload_carriers;
-<a name="l00088"></a>00088   
-<a name="l00089"></a>00089   <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_frame_number;
-<a name="l00090"></a>00090   <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_symbol_number;
-<a name="l00091"></a>00091  
-<a name="l00092"></a>00092   <span class="keywordtype">int</span> d_parity[14];
-<a name="l00093"></a>00093   std::vector&lt;int&gt; d_tps_map;
-<a name="l00094"></a>00094   std::vector&lt;int&gt; d_tps_info;
-<a name="l00095"></a>00095   std::vector&lt;int&gt; d_payload_map;
-<a name="l00096"></a>00096   std::vector&lt;int&gt; d_scattered_map;
-<a name="l00097"></a>00097   std::vector&lt;int&gt; d_subcarrier_map;
-<a name="l00098"></a>00098   std::vector&lt;int&gt; d_continuals_map;
-<a name="l00099"></a>00099   
-<a name="l00100"></a>00100   std::bitset&lt;11&gt; d_prbs_sequence;
-<a name="l00101"></a>00101   std::bitset&lt;2&gt; d_modulation_type;
-<a name="l00102"></a>00102   
-<a name="l00103"></a>00103   <span class="keyword">static</span> <span class="keyword">const</span> std::string code_rate; 
-<a name="l00104"></a>00104   <span class="keyword">static</span> <span class="keyword">const</span> std::string hierarchy;
-<a name="l00105"></a>00105   <span class="keyword">static</span> <span class="keyword">const</span> std::string odd_sequence;
-<a name="l00106"></a>00106   <span class="keyword">static</span> <span class="keyword">const</span> std::string even_sequence;
-<a name="l00107"></a>00107   <span class="keyword">static</span> <span class="keyword">const</span> std::string init_sequence;
-<a name="l00108"></a>00108   <span class="keyword">static</span> <span class="keyword">const</span> std::string guard_interval;
-<a name="l00109"></a>00109   <span class="keyword">static</span> <span class="keyword">const</span> std::string transmission_mode; 
-<a name="l00110"></a>00110   <span class="keyword">static</span> <span class="keyword">const</span> std::string cell_identification_on;
-<a name="l00111"></a>00111   <span class="keyword">static</span> <span class="keyword">const</span> std::string cell_identification_off;
-<a name="l00112"></a>00112 
-<a name="l00113"></a>00113   <span class="keywordtype">int</span> randsym(); 
-<a name="l00114"></a>00114   <span class="keywordtype">void</span> next_state();
-<a name="l00115"></a>00115   <span class="keywordtype">void</span> encode_BCH();
-<a name="l00116"></a>00116   <span class="keywordtype">void</span> set_modulation_type();
-<a name="l00117"></a>00117   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_tps_pilots();
-<a name="l00118"></a>00118   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> set_tps_pilots();
-<a name="l00119"></a>00119   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> differential_modulation(<span class="keywordtype">int</span> );
-<a name="l00120"></a>00120 
-<a name="l00121"></a>00121  <span class="keyword">public</span>:
-<a name="l00122"></a>00122   ~<a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a>(<span class="keywordtype">void</span>);
-<a name="l00123"></a>00123 
-<a name="l00124"></a><a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html#a42312ac7f7f6dd12fea12455c4231e21">00124</a>   <a class="code" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a>     <a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html#a42312ac7f7f6dd12fea12455c4231e21">msgq</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> d_msgq; }
-<a name="l00125"></a>00125 
-<a name="l00126"></a>00126   <span class="keywordtype">int</span> <a class="code" href="classgr__sync__block.html#a0c523f4285a6eb690f677ee6295ab117" title="just like gr_block::general_work, only this arranges to call consume_each for you">work</a>(<span class="keywordtype">int</span> noutput_items,
-<a name="l00127"></a>00127            <a class="code" href="gr__types_8h.html#a9852a3d906d823cb70eb9c29e7f2a43d">gr_vector_const_void_star</a> &amp;input_items,
-<a name="l00128"></a>00128            <a class="code" href="gr__types_8h.html#acd3f499576e769966ea44554b359d949">gr_vector_void_star</a> &amp;output_items);
+<a name="l00064"></a>00064 <span class="keyword">protected</span>:
+<a name="l00065"></a>00065   <a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a> (<span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;constellation,
+<a name="l00066"></a>00066                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;t_constellation,
+<a name="l00067"></a>00067                                    <span class="keyword">const</span> std::vector&lt;gr_complex&gt; &amp;cs_constellation,
+<a name="l00068"></a>00068                                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> msgq_limit, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> occupied_carriers, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fft_length);
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="keyword">private</span>:
+<a name="l00071"></a>00071   std::vector&lt;gr_complex&gt; d_constellation;
+<a name="l00072"></a>00072   std::vector&lt;gr_complex&gt; d_tps_constellation;
+<a name="l00073"></a>00073   std::vector&lt;gr_complex&gt; d_cs_constellation;
+<a name="l00074"></a>00074   
+<a name="l00075"></a>00075   <a class="code" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a>     d_msgq;
+<a name="l00076"></a>00076   <a class="code" href="classboost_1_1shared__ptr.html">gr_message_sptr</a>       d_msg;
+<a name="l00077"></a>00077   <span class="keywordtype">unsigned</span>                      d_msg_offset;
+<a name="l00078"></a>00078   <span class="keywordtype">bool</span>                          d_eof;
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          d_occupied_carriers;
+<a name="l00081"></a>00081   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          d_fft_length;
+<a name="l00082"></a>00082   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          d_bit_offset;
+<a name="l00083"></a>00083   <span class="keywordtype">int</span>                           d_pending_flag;
+<a name="l00084"></a>00084   
+<a name="l00085"></a>00085   <span class="keywordtype">int</span> d_parity[<a class="code" href="digital__dvbt__ofdm__mapper__bcv_8h.html#af6996d12e71a534569c41a25de7d6d52">PARITY</a>];
+<a name="l00086"></a>00086   <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  d_nbits;
+<a name="l00087"></a>00087   <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  d_msgbytes;
+<a name="l00088"></a>00088   <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  d_resid;
+<a name="l00089"></a>00089   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   d_nresid;
+<a name="l00090"></a>00090   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   d_last_out;
+<a name="l00091"></a>00091   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   d_zeros_from_left;
+<a name="l00092"></a>00092   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   d_payload_carriers;
+<a name="l00093"></a>00093   
+<a name="l00094"></a>00094   <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_frame_number;
+<a name="l00095"></a>00095   <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d_symbol_number;
+<a name="l00096"></a>00096  
+<a name="l00097"></a>00097   std::vector&lt;int&gt; d_tps_map;
+<a name="l00098"></a>00098   std::vector&lt;int&gt; d_tps_info;
+<a name="l00099"></a>00099   std::vector&lt;int&gt; d_payload_map;
+<a name="l00100"></a>00100   std::vector&lt;int&gt; d_scattered_map;
+<a name="l00101"></a>00101   std::vector&lt;int&gt; d_subcarrier_map;
+<a name="l00102"></a>00102   std::vector&lt;int&gt; d_continuals_map;
+<a name="l00103"></a>00103   
+<a name="l00104"></a>00104   std::bitset&lt;11&gt; d_prbs_sequence;
+<a name="l00105"></a>00105   std::bitset&lt;2&gt; d_modulation_type;
+<a name="l00106"></a>00106   
+<a name="l00107"></a>00107   <span class="keyword">static</span> <span class="keyword">const</span> std::string code_rate; 
+<a name="l00108"></a>00108   <span class="keyword">static</span> <span class="keyword">const</span> std::string hierarchy;
+<a name="l00109"></a>00109   <span class="keyword">static</span> <span class="keyword">const</span> std::string odd_sequence;
+<a name="l00110"></a>00110   <span class="keyword">static</span> <span class="keyword">const</span> std::string even_sequence;
+<a name="l00111"></a>00111   <span class="keyword">static</span> <span class="keyword">const</span> std::string init_sequence;
+<a name="l00112"></a>00112   <span class="keyword">static</span> <span class="keyword">const</span> std::string guard_interval;
+<a name="l00113"></a>00113   <span class="keyword">static</span> <span class="keyword">const</span> std::string transmission_mode; 
+<a name="l00114"></a>00114   <span class="keyword">static</span> <span class="keyword">const</span> std::string cell_identification_on;
+<a name="l00115"></a>00115   <span class="keyword">static</span> <span class="keyword">const</span> std::string cell_identification_off;
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117   <span class="keywordtype">int</span> randsym(); 
+<a name="l00118"></a>00118   <span class="keywordtype">void</span> next_state();
+<a name="l00119"></a>00119   <span class="keywordtype">void</span> encode_BCH();
+<a name="l00120"></a>00120   <span class="keywordtype">void</span> set_modulation_type();
+<a name="l00121"></a>00121   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_tps_pilots();
+<a name="l00122"></a>00122   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> set_tps_pilots();
+<a name="l00123"></a>00123   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> differential_modulation(<span class="keywordtype">int</span> );
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125  <span class="keyword">public</span>:
+<a name="l00126"></a>00126   ~<a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html" title="Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation ...">digital_dvbt_ofdm_mapper_bcv</a>(<span class="keywordtype">void</span>);
+<a name="l00127"></a>00127 
+<a name="l00128"></a><a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html#a42312ac7f7f6dd12fea12455c4231e21">00128</a>   <a class="code" href="classboost_1_1shared__ptr.html">gr_msg_queue_sptr</a>     <a class="code" href="classdigital__dvbt__ofdm__mapper__bcv.html#a42312ac7f7f6dd12fea12455c4231e21">msgq</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> d_msgq; }
 <a name="l00129"></a>00129 
-<a name="l00130"></a>00130 };
-<a name="l00131"></a>00131 
-<a name="l00132"></a>00132 <span class="preprocessor">#endif</span>
+<a name="l00130"></a>00130   <span class="keywordtype">int</span> <a class="code" href="classgr__sync__block.html#a0c523f4285a6eb690f677ee6295ab117" title="just like gr_block::general_work, only this arranges to call consume_each for you">work</a>(<span class="keywordtype">int</span> noutput_items,
+<a name="l00131"></a>00131            <a class="code" href="gr__types_8h.html#a9852a3d906d823cb70eb9c29e7f2a43d">gr_vector_const_void_star</a> &amp;input_items,
+<a name="l00132"></a>00132            <a class="code" href="gr__types_8h.html#acd3f499576e769966ea44554b359d949">gr_vector_void_star</a> &amp;output_items);
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134 };
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html">digital_dvbt_ofdm_mapper_bcv.h</a>      </li>
 
-    <li class="footer">Generated on Mon Aug 20 2012 20:15:23 for GNU Radio 1f284ee0 C++ API by
+    <li class="footer">Generated on Tue Aug 21 2012 11:45:10 for GNU Radio d79246b2 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

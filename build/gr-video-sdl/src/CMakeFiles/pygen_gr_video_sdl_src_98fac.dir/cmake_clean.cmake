@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "video_sdl.pyo"
   "video_sdlPYTHON_wrap.cxx"
   "video_sdl.py"
-  "video_sdl.tag"
   "video_sdl_swig_doc.i"
+  "video_sdl.tag"
   "video_sdl_swig_doc_swig_docs/xml/index.xml"
   "video_sdl_swig_doc_swig_docs/xml/combine.xslt"
 )

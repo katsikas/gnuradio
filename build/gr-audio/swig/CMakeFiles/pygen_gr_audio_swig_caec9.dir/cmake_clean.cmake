@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "audio_swig.pyo"
   "audio_swigPYTHON_wrap.cxx"
   "audio_swig.py"
-  "audio_swig.tag"
   "audio_swig_doc.i"
+  "audio_swig.tag"
   "audio_swig_doc_swig_docs/xml/index.xml"
   "audio_swig_doc_swig_docs/xml/combine.xslt"
 )

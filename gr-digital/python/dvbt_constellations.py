@@ -91,10 +91,10 @@ def dvbt_16qam_constellation(m, differential=_def_differential, mod_code=_def_mo
     #width = 2.0
     width = 2.0/(side-1)
     
-    points = [complex(3,3),complex(3,1),complex(1,3), complex(1,1),
-	      complex(3,-3),complex(3,-1),complex(1,-3),complex(1,-1),
-	      complex(-3,3),complex(-3,1),complex(-1,3), complex(-1,1),
-              complex(-3,-3),complex(-3,-1),complex(-1,-3),complex(-1,-1)]
+    points = [complex(3,3),complex(-3,3),complex(3,-3), complex(-3,-3),
+	      complex(1,3),complex(-1,3),complex(1,-3),complex(-1,-3),
+	      complex(3,1),complex(-3,1),complex(3,-1), complex(-3,-1),
+              complex(1,1),complex(-1,1),complex(1,-1),complex(-1,-1)]
               
     norm_points = map(lambda pt: pt / (math.sqrt(10)), points)
 
@@ -123,22 +123,22 @@ def dvbt_64qam_constellation(m,
     #width = 2.0
     width = 2.0/(side-1)
 
-    points = [complex(7,7),complex(7,5),complex(5,7), complex(5,5),
-              complex(7,1),complex(7,3),complex(5,1),complex(5,3),
-	      complex(1,7),complex(1,5),complex(3,7), complex(3,5),
-              complex(1,1),complex(1,3),complex(3,1),complex(3,3),
-              complex(7,-7),complex(7,-5),complex(5,-7), complex(5,-5),
-              complex(7,-1),complex(7,-3),complex(5,-1),complex(5,-3),
-              complex(1,-7),complex(1,-5),complex(3,-7), complex(3,-5),
-              complex(1,-1),complex(1,-3),complex(3,-1),complex(3,-3),
-	      complex(-7,7),complex(-7,5),complex(-5,7), complex(-5,5),
-              complex(-7,1),complex(-7,3),complex(-5,1),complex(-5,3),
-              complex(-1,7),complex(-1,5),complex(-3,7), complex(-3,5),
-              complex(-1,1),complex(-1,3),complex(-3,1),complex(-3,3),
-              complex(-7,-7),complex(-7,-5),complex(-5,-7), complex(-5,-5),
-              complex(-7,-1),complex(-7,-3),complex(-5,-1),complex(-5,-3),
-              complex(-1,-7),complex(-1,-5),complex(-3,-7), complex(-3,-5),
-              complex(-1,-1),complex(-1,-3),complex(-3,-1),complex(-3,-3)]
+    points = [complex(7,7),complex(-7,7),complex(7,-7), complex(-7,-7),
+              complex(1,7),complex(-1,7),complex(1,-7),complex(-1,-7),
+	      complex(7,1),complex(-7,1),complex(7,-1), complex(-7,-1),
+              complex(1,1),complex(-1,1),complex(1,-1),complex(-1,-1),
+              complex(5,7),complex(-5,7),complex(5,-7), complex(-5,-7),
+              complex(3,7),complex(-3,7),complex(3,-7),complex(-3,-7),
+              complex(5,1),complex(-5,1),complex(5,-1), complex(-5,-1),
+              complex(3,1),complex(-3,1),complex(3,-1),complex(-3,-1),
+	      complex(7,5),complex(-7,5),complex(7,-5), complex(-7,-5),
+              complex(1,5),complex(-1,5),complex(1,-5),complex(-1,-5),
+              complex(7,3),complex(-7,3),complex(7,-3), complex(-7,-3),
+              complex(1,3),complex(-1,3),complex(1,-3),complex(-1,-3),
+              complex(5,5),complex(-5,5),complex(5,-5), complex(-5,-5),
+              complex(3,5),complex(-3,5),complex(3,-5),complex(-3,-5),
+              complex(5,3),complex(-5,3),complex(5,-3), complex(-5,-3),
+              complex(3,3),complex(-3,3),complex(3,-3),complex(-3,-3)]
               
     norm_points = map(lambda pt: pt / (math.sqrt(42)), points)
 

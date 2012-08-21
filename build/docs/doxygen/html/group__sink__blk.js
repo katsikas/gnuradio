@@ -21,6 +21,11 @@ var group__sink__blk =
       [ "gr_udp_sink", "classgr__udp__sink.html", null ],
       [ "gr_wavfile_sink", "classgr__wavfile__sink.html", null ],
       [ "digital_dvbt_ofdm_frame_sink", "classdigital__dvbt__ofdm__frame__sink.html", null ],
-      [ "digital_ofdm_frame_sink", "classdigital__ofdm__frame__sink.html", null ]
+      [ "digital_ofdm_frame_sink", "classdigital__ofdm__frame__sink.html", null ],
+      [ "gr_vector_sink_b", "classgr__vector__sink__b.html", null ],
+      [ "gr_vector_sink_c", "classgr__vector__sink__c.html", null ],
+      [ "gr_vector_sink_f", "classgr__vector__sink__f.html", null ],
+      [ "gr_vector_sink_i", "classgr__vector__sink__i.html", null ],
+      [ "gr_vector_sink_s", "classgr__vector__sink__s.html", null ]
     ] ]
 ];

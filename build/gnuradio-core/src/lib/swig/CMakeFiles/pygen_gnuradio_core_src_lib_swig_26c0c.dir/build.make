@@ -71,7 +71,7 @@ gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/microtune_xxxx_eval_board.h
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/microtune_4937_eval_board.h
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/gr_histo_sink_f.h
-gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/sdr_1000.h
+gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: gnuradio-core/src/lib/swig/io_swig_doc.i
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/gr_wavfile_source.h
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
@@ -79,6 +79,7 @@ gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/gr_oscope_sink_x.h
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/gr_oscope_sink.i
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/gr_file_sink.i
+gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/sdr_1000.h
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: /usr/include/boost/thread.hpp
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/gr_file_sink.h
 gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src/lib/io/io.i
@@ -120,16 +121,97 @@ gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx: ../gnuradio-core/src
 
 gnuradio-core/src/lib/swig/gnuradio_core_io.py: gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx
 
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_source.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_x.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/ppio_ppdev.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_tagged_file_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4937_eval_board.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4702.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c_bitbang.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_udp_source.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4937.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_eval_board_defs.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/sdr_1000.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_source.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx_eval_board.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_udp_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_source.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_histo_sink_f.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c_bbio_pp.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4702_eval_board.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_sink_base.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_f.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gri_wavfile.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_message_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_trigger_mode.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_message_source.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_oscope_guts.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/ppio.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c_bbio.h
+gnuradio-core/src/lib/swig/io_swig_doc.i: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating io_swig_doc.i"
+	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/io_swig_doc.i
+
 gnuradio-core/src/lib/swig/gnuradio_core_io.tag: gnuradio-core/src/lib/swig/runtime_swig_doc.i
 gnuradio-core/src/lib/swig/gnuradio_core_io.tag: gnuradio-core/src/lib/swig/general_swig_doc.i
 gnuradio-core/src/lib/swig/gnuradio_core_io.tag: gnuradio-core/src/lib/swig/gengen_swig_doc.i
 gnuradio-core/src/lib/swig/gnuradio_core_io.tag: gnuradio-core/src/lib/swig/filter_swig_doc.i
 gnuradio-core/src/lib/swig/gnuradio_core_io.tag: gnuradio-core/src/lib/swig/io_swig_doc.i
 gnuradio-core/src/lib/swig/gnuradio_core_io.tag: gnuradio-core/src/lib/swig/_gnuradio_core_io_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gnuradio_core_io.tag"
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_gnuradio_core_io_swig_tag
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/gnuradio_core_io.tag
+
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_source.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_x.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/ppio_ppdev.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_tagged_file_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4937_eval_board.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4702.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c_bitbang.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_udp_source.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4937.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_eval_board_defs.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/sdr_1000.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_source.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx_eval_board.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_udp_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_source.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_histo_sink_f.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c_bbio_pp.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4702_eval_board.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_sink_base.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_f.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gri_wavfile.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_message_sink.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_trigger_mode.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_message_source.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_oscope_guts.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/ppio.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c_bbio.h
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/runtime_swig_doc.i
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/general_swig_doc.i
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/gengen_swig_doc.i
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/filter_swig_doc.i
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/_io_swig_doc_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for io_swig_doc docs"
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_io_swig_doc_tag
+	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/doxygen /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/Doxyfile
+
+gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/combine.xslt: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml
 
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/gr_top_block_impl.h
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/gr_sptr_magic.h
@@ -188,7 +270,7 @@ gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/gr_sync_interpolator.h
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: ../gnuradio-core/src/lib/swig/../runtime/qa_runtime.h
 gnuradio-core/src/lib/swig/runtime_swig_doc.i: gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating runtime_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/runtime_swig_doc.i
 
@@ -359,16 +441,125 @@ gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../
 gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../general/gri_add_const_ss.h
 gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../general/gr_squelch_base_cc.h
 gnuradio-core/src/lib/swig/general_swig_doc.i: ../gnuradio-core/src/lib/swig/../general/gr_framer_sink_1.h
+gnuradio-core/src/lib/swig/general_swig_doc.i: gnuradio-core/src/lib/swig/../general/sine_table.h
 gnuradio-core/src/lib/swig/general_swig_doc.i: gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating general_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/general_swig_doc.i
 
 gnuradio-core/src/lib/swig/gengen_swig_doc.i: ../gnuradio-core/src/lib/swig/../gengen/gr_sig_source_waveform.h
 gnuradio-core/src/lib/swig/gengen_swig_doc.i: ../gnuradio-core/src/lib/swig/../gengen/gr_endianness.h
 gnuradio-core/src/lib/swig/gengen_swig_doc.i: ../gnuradio-core/src/lib/swig/../gengen/gr_noise_type.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_if.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_integrate_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_and_const_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sub_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_integrate_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_and_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_xor_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_divide_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_xor_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_max_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_sc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_not_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sub_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vi.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_and_const_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_unpacked_to_packed_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_sf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vs.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_bf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vcc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sub_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_packed_to_unpacked_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_peak_detector_ib.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_divide_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_max_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_not_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_argmax_fs.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_mute_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_or_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vcc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_max_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_packed_to_unpacked_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_b.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_peak_detector_sb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_bc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_sf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_and_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_divide_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_not_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_peak_detector_fb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_mute_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_argmax_is.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_or_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_unpacked_to_packed_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_ic.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_mute_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_integrate_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_integrate_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sub_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_divide_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_and_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_argmax_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_xor_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_unpacked_to_packed_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_b.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_and_const_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_mute_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_const_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_add_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_packed_to_unpacked_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_or_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_b.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_c.h
 gnuradio-core/src/lib/swig/gengen_swig_doc.i: gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating gengen_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/gengen_swig_doc.i
 
@@ -461,47 +652,55 @@ gnuradio-core/src/lib/swig/filter_swig_doc.i: ../gnuradio-core/src/lib/swig/../f
 gnuradio-core/src/lib/swig/filter_swig_doc.i: ../gnuradio-core/src/lib/swig/../filter/gr_fir_ccc_x86.h
 gnuradio-core/src/lib/swig/filter_swig_doc.i: ../gnuradio-core/src/lib/swig/../filter/qa_gri_fir_filter_with_buffer_fcc.h
 gnuradio-core/src/lib/swig/filter_swig_doc.i: ../gnuradio-core/src/lib/swig/../filter/float_dotprod_x86.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_util.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_fff_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_ccc_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_sysconfig_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_scc_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_fcc_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_scf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_ccf_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_fcf.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_fsf_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_sysconfig.h
+gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/../filter/gr_fir_fff.h
 gnuradio-core/src/lib/swig/filter_swig_doc.i: gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating filter_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/filter_swig_doc.i
-
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_source.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_x.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/ppio_ppdev.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_tagged_file_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4937_eval_board.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4702.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c_bitbang.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_udp_source.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4937.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_eval_board_defs.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/sdr_1000.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_source.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx_eval_board.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_udp_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_source.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_histo_sink_f.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c_bbio_pp.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/microtune_4702_eval_board.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_sink_base.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_f.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gri_wavfile.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_message_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_trigger_mode.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_message_source.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/gr_oscope_guts.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/ppio.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: ../gnuradio-core/src/lib/swig/../io/i2c_bbio.h
-gnuradio-core/src/lib/swig/io_swig_doc.i: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating io_swig_doc.i"
-	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/io_swig_doc.i
 
 gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../runtime/gr_top_block_impl.h
 gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../runtime/gr_sptr_magic.h
@@ -560,7 +759,7 @@ gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: ../gnuradio
 gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../runtime/gr_sync_interpolator.h
 gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../runtime/qa_runtime.h
 gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/_runtime_swig_doc_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for runtime_swig_doc docs"
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_runtime_swig_doc_tag
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/doxygen /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/Doxyfile
@@ -734,9 +933,10 @@ gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../general/gri_add_const_ss.h
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../general/gr_squelch_base_cc.h
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../general/gr_framer_sink_1.h
+gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../general/sine_table.h
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/runtime_swig_doc.i
 gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/_general_swig_doc_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for general_swig_doc docs"
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_general_swig_doc_tag
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/doxygen /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/Doxyfile
@@ -746,10 +946,118 @@ gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/combine.xslt: gnuradio
 gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../gengen/gr_sig_source_waveform.h
 gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../gengen/gr_endianness.h
 gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../gengen/gr_noise_type.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_if.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_integrate_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_and_const_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sub_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_integrate_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_and_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_xor_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_divide_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_xor_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_max_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_sc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_not_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sub_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vi.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_and_const_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_unpacked_to_packed_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_sf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vs.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_bf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vcc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sub_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_packed_to_unpacked_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_peak_detector_ib.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_divide_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_max_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_not_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_argmax_fs.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_mute_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_or_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vcc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_max_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_packed_to_unpacked_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_b.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_peak_detector_sb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_bc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_sf.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_and_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_divide_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_not_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_peak_detector_fb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_mute_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_vss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_argmax_is.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_or_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_unpacked_to_packed_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_chunks_to_symbols_ic.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_mute_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_integrate_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_integrate_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sub_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_ii.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_divide_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_and_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_argmax_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_xor_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_unpacked_to_packed_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_moving_average_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sample_and_hold_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_multiply_const_vff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_b.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_sink_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_noise_source_s.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_c.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_and_const_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_mute_cc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_const_ff.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_sig_source_f.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_add_ss.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_packed_to_unpacked_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_vc.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_or_bb.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_probe_signal_b.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_i.h
+gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../gengen/gr_vector_source_c.h
 gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/runtime_swig_doc.i
 gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/general_swig_doc.i
 gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/_gengen_swig_doc_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for gengen_swig_doc docs"
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_gengen_swig_doc_tag
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/doxygen /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/Doxyfile
@@ -845,72 +1153,75 @@ gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: ../gnuradio-
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../filter/gr_fir_ccc_x86.h
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../filter/qa_gri_fir_filter_with_buffer_fcc.h
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../filter/float_dotprod_x86.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_util.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_fff_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_ccc_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_sysconfig_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_fsf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_scc_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_fcc_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_filter_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_scf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_interp_fir_filter_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_scc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_ccc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_ccf_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_rational_resampler_base_ccf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gri_fir_filter_with_buffer_fff.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_freq_xlating_fir_filter_fcf.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_fcc.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_fsf_generic.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_sysconfig.h
+gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/../filter/gr_fir_fff.h
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/runtime_swig_doc.i
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/general_swig_doc.i
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/gengen_swig_doc.i
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/_filter_swig_doc_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for filter_swig_doc docs"
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_filter_swig_doc_tag
 	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/doxygen /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/Doxyfile
 
 gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/combine.xslt: gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml
 
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_source.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_x.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/ppio_ppdev.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_tagged_file_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4937_eval_board.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4702.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c_bitbang.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_udp_source.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4937.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_eval_board_defs.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/sdr_1000.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_source.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx_eval_board.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_udp_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_xxxx.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_wavfile_source.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_histo_sink_f.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c_bbio_pp.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/microtune_4702_eval_board.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_sink_base.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_oscope_sink_f.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gri_wavfile.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_file_descriptor_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_message_sink.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_trigger_mode.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_message_source.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/gr_oscope_guts.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/ppio.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: ../gnuradio-core/src/lib/swig/../io/i2c_bbio.h
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/runtime_swig_doc.i
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/general_swig_doc.i
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/gengen_swig_doc.i
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/filter_swig_doc.i
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml: gnuradio-core/src/lib/swig/_io_swig_doc_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for io_swig_doc docs"
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && ./_io_swig_doc_tag
-	cd /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig && /usr/bin/doxygen /home/katsikas/gnuradio/build/gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/Doxyfile
-
-gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/combine.xslt: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml
-
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/CMakeFiles/pygen_gnuradio_core_src_lib_swig_26c0c
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gnuradio_core_io.pyc
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gnuradio_core_io.pyo
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gnuradio_core_ioPYTHON_wrap.cxx
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gnuradio_core_io.py
+pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/io_swig_doc.i
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gnuradio_core_io.tag
+pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml
+pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/combine.xslt
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/runtime_swig_doc.i
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/general_swig_doc.i
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gengen_swig_doc.i
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/filter_swig_doc.i
-pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/io_swig_doc.i
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/index.xml
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/runtime_swig_doc_swig_docs/xml/combine.xslt
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/general_swig_doc_swig_docs/xml/index.xml
@@ -919,8 +1230,6 @@ pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gengen_swig_d
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/gengen_swig_doc_swig_docs/xml/combine.xslt
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/index.xml
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/filter_swig_doc_swig_docs/xml/combine.xslt
-pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/index.xml
-pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/io_swig_doc_swig_docs/xml/combine.xslt
 pygen_gnuradio_core_src_lib_swig_26c0c: gnuradio-core/src/lib/swig/CMakeFiles/pygen_gnuradio_core_src_lib_swig_26c0c.dir/build.make
 .PHONY : pygen_gnuradio_core_src_lib_swig_26c0c
 

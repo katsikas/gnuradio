@@ -217,100 +217,100 @@
     <detaileddescription>
 <para>This block implements a computationally efficient DC blocker that produces a tighter notch filter around DC for a smaller group delay than an equivalent FIR filter or using a single pole IIR filter (though the IIR filter is computationally cheaper).</para><para>The block defaults to using a delay line of length 32 and the long form of the filter. Optionally, the delay line length can be changed to alter the width of the DC notch (longer lines will decrease the width).</para><para>The long form of the filter produces a nearly flat response outside of the notch but at the cost of a group delay of 2D-2.</para><para>The short form of the filter does not have as flat a response in the passband but has a group delay of only D-1 and is cheaper to compute.</para><para>The theory behind this block can be found in the paper:</para><para><bold><emphasis>R. Yates, &quot;DC Blocker Algorithms,&quot; IEEE Signal Processing Magazine, Mar. 2008, pp 132-134.</emphasis></bold> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="2911">
+      <node id="2947">
         <label>gr_dc_blocker_ff</label>
         <link refid="classgr__dc__blocker__ff"/>
-        <childnode refid="2912" relation="public-inheritance">
+        <childnode refid="2948" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2915">
+      <node id="2951">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2916" relation="public-inheritance">
+        <childnode refid="2952" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2912">
+      <node id="2948">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2913" relation="public-inheritance">
+        <childnode refid="2949" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2913">
+      <node id="2949">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2914" relation="public-inheritance">
+        <childnode refid="2950" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2916">
+      <node id="2952">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2914">
+      <node id="2950">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2915" relation="public-inheritance">
+        <childnode refid="2951" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2917">
+      <node id="2953">
         <label>gr_dc_blocker_ff</label>
         <link refid="classgr__dc__blocker__ff"/>
-        <childnode refid="2918" relation="public-inheritance">
+        <childnode refid="2954" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2921">
+      <node id="2957">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2922" relation="public-inheritance">
+        <childnode refid="2958" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2918">
+      <node id="2954">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2919" relation="public-inheritance">
+        <childnode refid="2955" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2919">
+      <node id="2955">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2920" relation="public-inheritance">
+        <childnode refid="2956" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2923">
+      <node id="2959">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2924" relation="usage">
+        <childnode refid="2960" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2926">
+      <node id="2962">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2922">
+      <node id="2958">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2924">
+      <node id="2960">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2920">
+      <node id="2956">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2921" relation="public-inheritance">
+        <childnode refid="2957" relation="public-inheritance">
         </childnode>
-        <childnode refid="2923" relation="usage">
+        <childnode refid="2959" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2925" relation="usage">
+        <childnode refid="2961" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2925">
+      <node id="2961">
         <label>std::string</label>
-        <childnode refid="2926" relation="public-inheritance">
+        <childnode refid="2962" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

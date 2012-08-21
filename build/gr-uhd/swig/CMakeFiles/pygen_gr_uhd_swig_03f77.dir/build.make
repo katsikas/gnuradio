@@ -85,7 +85,7 @@ gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/clock_config.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/serial.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/stream_cmd.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/limits.h
-gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/detail/workaround.hpp
+gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/dict.ipp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio.i
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/swig/gnuradio_swig_bug_workaround.h
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/static_assert.hpp
@@ -101,12 +101,13 @@ gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/tune_request.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/dict.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/format.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/metadata.hpp
-gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/dict.ipp
+gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: gr-uhd/swig/uhd_swig_doc.i
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/types/ranges.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/exception.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/operators.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/uhd/usrp/dboard_iface.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/iterator.hpp
+gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/detail/workaround.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/type_traits/is_pointer.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/type_traits/make_unsigned.hpp
 gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: /usr/include/boost/foreach.hpp
@@ -125,21 +126,21 @@ gr-uhd/swig/uhd_swigPYTHON_wrap.cxx: ../gr-uhd/swig/uhd_swig.i
 
 gr-uhd/swig/uhd_swig.py: gr-uhd/swig/uhd_swigPYTHON_wrap.cxx
 
-gr-uhd/swig/uhd_swig.tag: gr-uhd/swig/uhd_swig_doc.i
-gr-uhd/swig/uhd_swig.tag: gr-uhd/swig/_uhd_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating uhd_swig.tag"
-	cd /home/katsikas/gnuradio/build/gr-uhd/swig && ./_uhd_swig_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-uhd/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-uhd/swig/uhd_swig.tag
-
 gr-uhd/swig/uhd_swig_doc.i: ../gr-uhd/swig/../include/gr_uhd_usrp_source.h
 gr-uhd/swig/uhd_swig_doc.i: ../gr-uhd/swig/../include/gr_uhd_amsg_source.h
 gr-uhd/swig/uhd_swig_doc.i: ../gr-uhd/swig/../include/gr_uhd_api.h
 gr-uhd/swig/uhd_swig_doc.i: ../gr-uhd/swig/../include/gr_uhd_usrp_sink.h
 gr-uhd/swig/uhd_swig_doc.i: gr-uhd/swig/uhd_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating uhd_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-uhd/swig/uhd_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-uhd/swig/uhd_swig_doc.i
+
+gr-uhd/swig/uhd_swig.tag: gr-uhd/swig/uhd_swig_doc.i
+gr-uhd/swig/uhd_swig.tag: gr-uhd/swig/_uhd_swig_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating uhd_swig.tag"
+	cd /home/katsikas/gnuradio/build/gr-uhd/swig && ./_uhd_swig_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-uhd/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-uhd/swig/uhd_swig.tag
 
 gr-uhd/swig/uhd_swig_doc_swig_docs/xml/index.xml: ../gr-uhd/swig/../include/gr_uhd_usrp_source.h
 gr-uhd/swig/uhd_swig_doc_swig_docs/xml/index.xml: ../gr-uhd/swig/../include/gr_uhd_amsg_source.h
@@ -158,8 +159,8 @@ pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig.pyc
 pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig.pyo
 pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swigPYTHON_wrap.cxx
 pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig.py
-pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig.tag
 pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig_doc.i
+pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig.tag
 pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig_doc_swig_docs/xml/index.xml
 pygen_gr_uhd_swig_03f77: gr-uhd/swig/uhd_swig_doc_swig_docs/xml/combine.xslt
 pygen_gr_uhd_swig_03f77: gr-uhd/swig/CMakeFiles/pygen_gr_uhd_swig_03f77.dir/build.make

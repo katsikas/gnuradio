@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'VectorAnalyzerDisplayForm.ui'
 **
-** Created: Mon Aug 20 20:18:55 2012
+** Created: Tue Aug 21 11:48:53 2012
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

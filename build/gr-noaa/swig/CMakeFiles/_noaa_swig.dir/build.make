@@ -74,6 +74,7 @@ gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gr-noaa/swig/noaa_swig.i
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: /usr/include/boost/shared_ptr.hpp
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gr-noaa/lib/noaa_api.h
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_tags.h
+gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: gr-noaa/swig/noaa_swig_doc.i
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_types.h
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
 gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_sync_block.h
@@ -100,22 +101,22 @@ gr-noaa/swig/noaa_swigPYTHON_wrap.cxx: ../gr-noaa/swig/noaa_swig.i
 
 gr-noaa/swig/noaa_swig.py: gr-noaa/swig/noaa_swigPYTHON_wrap.cxx
 
-gr-noaa/swig/noaa_swig.tag: gr-noaa/swig/noaa_swig_doc.i
-gr-noaa/swig/noaa_swig.tag: gr-noaa/swig/_noaa_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating noaa_swig.tag"
-	cd /home/katsikas/gnuradio/build/gr-noaa/swig && ./_noaa_swig_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig.tag
-
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt_deframer.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_api.h
 gr-noaa/swig/noaa_swig_doc.i: ../gr-noaa/swig/../lib/noaa_hrpt.h
 gr-noaa/swig/noaa_swig_doc.i: gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating noaa_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig_doc.i
+
+gr-noaa/swig/noaa_swig.tag: gr-noaa/swig/noaa_swig_doc.i
+gr-noaa/swig/noaa_swig.tag: gr-noaa/swig/_noaa_swig_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating noaa_swig.tag"
+	cd /home/katsikas/gnuradio/build/gr-noaa/swig && ./_noaa_swig_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-noaa/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-noaa/swig/noaa_swig.tag
 
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_decoder.h
 gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml: ../gr-noaa/swig/../lib/noaa_hrpt_pll_cf.h
@@ -165,8 +166,8 @@ gr-noaa/swig/CMakeFiles/_noaa_swig.dir/clean:
 
 gr-noaa/swig/CMakeFiles/_noaa_swig.dir/depend: gr-noaa/swig/noaa_swigPYTHON_wrap.cxx
 gr-noaa/swig/CMakeFiles/_noaa_swig.dir/depend: gr-noaa/swig/noaa_swig.py
-gr-noaa/swig/CMakeFiles/_noaa_swig.dir/depend: gr-noaa/swig/noaa_swig.tag
 gr-noaa/swig/CMakeFiles/_noaa_swig.dir/depend: gr-noaa/swig/noaa_swig_doc.i
+gr-noaa/swig/CMakeFiles/_noaa_swig.dir/depend: gr-noaa/swig/noaa_swig.tag
 gr-noaa/swig/CMakeFiles/_noaa_swig.dir/depend: gr-noaa/swig/noaa_swig_doc_swig_docs/xml/index.xml
 gr-noaa/swig/CMakeFiles/_noaa_swig.dir/depend: gr-noaa/swig/noaa_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-noaa/swig /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-noaa/swig /home/katsikas/gnuradio/build/gr-noaa/swig/CMakeFiles/_noaa_swig.dir/DependInfo.cmake --color=$(COLOR)

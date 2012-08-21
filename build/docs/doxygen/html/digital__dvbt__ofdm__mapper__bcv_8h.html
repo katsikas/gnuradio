@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 1f284ee0 C++ API: digital_dvbt_ofdm_mapper_bcv.h File Reference</title>
+<title>GNU Radio d79246b2 C++ API: digital_dvbt_ofdm_mapper_bcv.h File Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 1f284ee0 C++ API
+   <div id="projectname">GNU Radio d79246b2 C++ API
    
    </div>
    
@@ -61,6 +61,7 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Defines</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">digital_dvbt_ofdm_mapper_bcv.h File Reference</div>  </div>
@@ -79,11 +80,70 @@
 Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdigital__dvbt__ofdm__mapper__bcv.html">digital_dvbt_ofdm_mapper_bcv</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping.  <a href="classdigital__dvbt__ofdm__mapper__bcv.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#af6996d12e71a534569c41a25de7d6d52">PARITY</a>&#160;&#160;&#160;14</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#a30362161c93e3f1a4ee4c673f535b5a8">LENGTH</a>&#160;&#160;&#160;67</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ac64bfcbf6b1a84aaab3935d6d53ff34d">ORIGINAL</a>&#160;&#160;&#160;53</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#a8fa41780dffd12b8ba40faf4c22bea7b">CELL_IDENTIFICATION</a>&#160;&#160;&#160;0</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__api_8h.html#ae14969f36ec69051c4b2f13a0db7e9ba">DIGITAL_API</a> <br class="typebreak"/>
 <a class="el" href="classboost_1_1shared__ptr.html">digital_dvbt_ofdm_mapper_bcv_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ae36d5582c305088147ec8fe22d1aee4c">digital_make_dvbt_ofdm_mapper_bcv</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;constellation, const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;t_constellation, const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;cs_constellation, unsigned int msgq_limit, unsigned int occupied_carriers, unsigned int fft_length)</td></tr>
 </table>
+<hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a8fa41780dffd12b8ba40faf4c22bea7b"></a><!-- doxytag: member="digital_dvbt_ofdm_mapper_bcv.h::CELL_IDENTIFICATION" ref="a8fa41780dffd12b8ba40faf4c22bea7b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#a8fa41780dffd12b8ba40faf4c22bea7b">CELL_IDENTIFICATION</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30362161c93e3f1a4ee4c673f535b5a8"></a><!-- doxytag: member="digital_dvbt_ofdm_mapper_bcv.h::LENGTH" ref="a30362161c93e3f1a4ee4c673f535b5a8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#a30362161c93e3f1a4ee4c673f535b5a8">LENGTH</a>&#160;&#160;&#160;67</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac64bfcbf6b1a84aaab3935d6d53ff34d"></a><!-- doxytag: member="digital_dvbt_ofdm_mapper_bcv.h::ORIGINAL" ref="ac64bfcbf6b1a84aaab3935d6d53ff34d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#ac64bfcbf6b1a84aaab3935d6d53ff34d">ORIGINAL</a>&#160;&#160;&#160;53</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af6996d12e71a534569c41a25de7d6d52"></a><!-- doxytag: member="digital_dvbt_ofdm_mapper_bcv.h::PARITY" ref="af6996d12e71a534569c41a25de7d6d52" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html#af6996d12e71a534569c41a25de7d6d52">PARITY</a>&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="ae36d5582c305088147ec8fe22d1aee4c"></a><!-- doxytag: member="digital_dvbt_ofdm_mapper_bcv.h::digital_make_dvbt_ofdm_mapper_bcv" ref="ae36d5582c305088147ec8fe22d1aee4c" args="(const std::vector&lt; gr_complex &gt; &amp;constellation, const std::vector&lt; gr_complex &gt; &amp;t_constellation, const std::vector&lt; gr_complex &gt; &amp;cs_constellation, unsigned int msgq_limit, unsigned int occupied_carriers, unsigned int fft_length)" -->
 <div class="memitem">
@@ -142,7 +202,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="digital__dvbt__ofdm__mapper__bcv_8h.html">digital_dvbt_ofdm_mapper_bcv.h</a>      </li>
 
-    <li class="footer">Generated on Mon Aug 20 2012 20:15:25 for GNU Radio 1f284ee0 C++ API by
+    <li class="footer">Generated on Tue Aug 21 2012 11:45:12 for GNU Radio d79246b2 C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

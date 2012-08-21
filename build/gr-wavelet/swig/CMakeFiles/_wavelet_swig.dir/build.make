@@ -77,6 +77,7 @@ gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr
 gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: ../gr-wavelet/swig/wavelet_swig.i
 gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: ../gr-wavelet/include/wavelet/wavelet_wvps_ff.h
 gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: ../gruel/src/swig/gruel_common.i
+gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: gr-wavelet/swig/wavelet_swig_doc.i
 gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: ../gnuradio-core/src/lib/runtime/gr_complex.h
 gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: ../gr-wavelet/include/wavelet/wavelet_api.h
 gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: /usr/include/stdint.h
@@ -96,20 +97,20 @@ gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx: ../gr-wavelet/swig/wavelet_swig.i
 
 gr-wavelet/swig/wavelet_swig.py: gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx
 
-gr-wavelet/swig/wavelet_swig.tag: gr-wavelet/swig/wavelet_swig_doc.i
-gr-wavelet/swig/wavelet_swig.tag: gr-wavelet/swig/_wavelet_swig_swig_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating wavelet_swig.tag"
-	cd /home/katsikas/gnuradio/build/gr-wavelet/swig && ./_wavelet_swig_swig_tag
-	cd /home/katsikas/gnuradio/build/gr-wavelet/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-wavelet/swig/wavelet_swig.tag
-
 gr-wavelet/swig/wavelet_swig_doc.i: ../gr-wavelet/swig/../lib/wavelet_squash_ff_impl.h
 gr-wavelet/swig/wavelet_swig_doc.i: ../gr-wavelet/swig/../lib/wavelet_wavelet_ff_impl.h
 gr-wavelet/swig/wavelet_swig_doc.i: ../gr-wavelet/swig/../lib/wavelet_wvps_ff_impl.h
 gr-wavelet/swig/wavelet_swig_doc.i: gr-wavelet/swig/wavelet_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating wavelet_swig_doc.i"
 	cd /home/katsikas/gnuradio/docs/doxygen && /usr/bin/python -B /home/katsikas/gnuradio/docs/doxygen/swig_doc.py /home/katsikas/gnuradio/build/gr-wavelet/swig/wavelet_swig_doc_swig_docs/xml /home/katsikas/gnuradio/build/gr-wavelet/swig/wavelet_swig_doc.i
+
+gr-wavelet/swig/wavelet_swig.tag: gr-wavelet/swig/wavelet_swig_doc.i
+gr-wavelet/swig/wavelet_swig.tag: gr-wavelet/swig/_wavelet_swig_swig_tag
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/katsikas/gnuradio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating wavelet_swig.tag"
+	cd /home/katsikas/gnuradio/build/gr-wavelet/swig && ./_wavelet_swig_swig_tag
+	cd /home/katsikas/gnuradio/build/gr-wavelet/swig && /usr/bin/cmake -E touch /home/katsikas/gnuradio/build/gr-wavelet/swig/wavelet_swig.tag
 
 gr-wavelet/swig/wavelet_swig_doc_swig_docs/xml/index.xml: ../gr-wavelet/swig/../lib/wavelet_squash_ff_impl.h
 gr-wavelet/swig/wavelet_swig_doc_swig_docs/xml/index.xml: ../gr-wavelet/swig/../lib/wavelet_wavelet_ff_impl.h
@@ -157,8 +158,8 @@ gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/clean:
 
 gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/depend: gr-wavelet/swig/wavelet_swigPYTHON_wrap.cxx
 gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/depend: gr-wavelet/swig/wavelet_swig.py
-gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/depend: gr-wavelet/swig/wavelet_swig.tag
 gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/depend: gr-wavelet/swig/wavelet_swig_doc.i
+gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/depend: gr-wavelet/swig/wavelet_swig.tag
 gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/depend: gr-wavelet/swig/wavelet_swig_doc_swig_docs/xml/index.xml
 gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/depend: gr-wavelet/swig/wavelet_swig_doc_swig_docs/xml/combine.xslt
 	cd /home/katsikas/gnuradio/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/katsikas/gnuradio /home/katsikas/gnuradio/gr-wavelet/swig /home/katsikas/gnuradio/build /home/katsikas/gnuradio/build/gr-wavelet/swig /home/katsikas/gnuradio/build/gr-wavelet/swig/CMakeFiles/_wavelet_swig.dir/DependInfo.cmake --color=$(COLOR)
