@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__fir__scc__sse" kind="class" prot="public">
     <compoundname>gr_fir_scc_sse</compoundname>
     <basecompoundref refid="classgr__fir__scc__simd" prot="public" virt="non-virtual">gr_fir_scc_simd</basecompoundref>
@@ -37,31 +37,67 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>SSE version of gr_fir_scc. </para>    </briefdescription>
+<para>SSE version of <ref refid="classgr__fir__scc" kindref="compound">gr_fir_scc</ref>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3441">
+      <node id="9745">
+        <label>gr_fir_scc</label>
+        <link refid="classgr__fir__scc"/>
+      </node>
+      <node id="9742">
         <label>gr_fir_scc_sse</label>
         <link refid="classgr__fir__scc__sse"/>
-        <childnode refid="3442" relation="public-inheritance">
+        <childnode refid="9743" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3442">
+      <node id="9743">
         <label>gr_fir_scc_simd</label>
         <link refid="classgr__fir__scc__simd"/>
+        <childnode refid="9744" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9744">
+        <label>gr_fir_scc_generic</label>
+        <link refid="classgr__fir__scc__generic"/>
+        <childnode refid="9745" relation="public-inheritance">
+        </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3443">
-        <label>gr_fir_scc_sse</label>
-        <link refid="classgr__fir__scc__sse"/>
-        <childnode refid="3444" relation="public-inheritance">
+      <node id="9749">
+        <label>gr_fir_scc</label>
+        <link refid="classgr__fir__scc"/>
+        <childnode refid="9750" relation="usage">
+          <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="3444">
+      <node id="9746">
+        <label>gr_fir_scc_sse</label>
+        <link refid="classgr__fir__scc__sse"/>
+        <childnode refid="9747" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9750">
+        <label>std::vector&lt; gr_complex &gt;</label>
+        <childnode refid="9751" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+      <node id="9747">
         <label>gr_fir_scc_simd</label>
         <link refid="classgr__fir__scc__simd"/>
+        <childnode refid="9748" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9751">
+        <label>std::complex</label>
+      </node>
+      <node id="9748">
+        <label>gr_fir_scc_generic</label>
+        <link refid="classgr__fir__scc__generic"/>
+        <childnode refid="9749" relation="public-inheritance">
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_scc_x86.h" line="53" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_fir_scc_x86.h" bodystart="52" bodyend="57"/>
@@ -69,12 +105,22 @@
       <member refid="classgr__fir__scc__simd_1a793865e6cbacb81138ee16ed48cc7b29" prot="protected" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>complex_dotprod_t</name></member>
       <member refid="classgr__fir__scc__simd_1a71ebfd747c232ea9534561c9f22c115a" prot="protected" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>d_aligned_taps</name></member>
       <member refid="classgr__fir__scc__simd_1a3bc01eb6eaed710b294202f2d6e2a3b1" prot="protected" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>d_complex_dotprod</name></member>
+      <member refid="classgr__fir__scc_1aa571d27aec97b0e708ab0ba66ee7697e" prot="protected" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>d_taps</name></member>
       <member refid="classgr__fir__scc__simd_1a0c9892233109886cd83542b2fa6f4572" prot="public" virt="virtual"><scope>gr_fir_scc_sse</scope><name>filter</name></member>
+      <member refid="classgr__fir__scc__generic_1a978a159e834dbf24422f02f93f0d85ef" prot="public" virt="virtual"><scope>gr_fir_scc_sse</scope><name>filterN</name></member>
+      <member refid="classgr__fir__scc__generic_1a0218f2adbe0984b44803425263279ceb" prot="public" virt="virtual"><scope>gr_fir_scc_sse</scope><name>filterNdec</name></member>
+      <member refid="classgr__fir__scc_1a292c9d7f99daf321ac0c0900369e0a50" prot="public" virt="virtual"><scope>gr_fir_scc_sse</scope><name>get_taps</name></member>
+      <member refid="classgr__fir__scc_1a9a4cd739c2b025cc1bbed59e06781ea0" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc</name></member>
+      <member refid="classgr__fir__scc_1a335875e4c9f6295c27c212224712b033" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc</name></member>
+      <member refid="classgr__fir__scc__generic_1a3e7e904bed360fdb52df0299ea8f5a8f" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc_generic</name></member>
+      <member refid="classgr__fir__scc__generic_1aeabf5678509296c091cee383b69aa147" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc_generic</name></member>
       <member refid="classgr__fir__scc__simd_1accb2a83b2dcb744fe058da8d4485ee94" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc_simd</name></member>
       <member refid="classgr__fir__scc__simd_1a97dcb5d2fc1678e9d8baf4b3e66051bc" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc_simd</name></member>
       <member refid="classgr__fir__scc__sse_1a57ec07ff95b6728474a88e2bd640fb72" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc_sse</name></member>
       <member refid="classgr__fir__scc__sse_1a6581693ca2d52d3def6fd98f0b43198b" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>gr_fir_scc_sse</name></member>
+      <member refid="classgr__fir__scc_1a46c990dc7c764b50b1fcffdb15b9d0b0" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>ntaps</name></member>
       <member refid="classgr__fir__scc__simd_1a6a1af670f1fde60d3b85c414df763ef5" prot="public" virt="virtual"><scope>gr_fir_scc_sse</scope><name>set_taps</name></member>
+      <member refid="classgr__fir__scc_1ae65e83fa7b779593b9bb92f67f94387c" prot="public" virt="virtual"><scope>gr_fir_scc_sse</scope><name>~gr_fir_scc</name></member>
       <member refid="classgr__fir__scc__simd_1a3b75bbd22e2b42fa2064f5125cead698" prot="public" virt="non-virtual"><scope>gr_fir_scc_sse</scope><name>~gr_fir_scc_simd</name></member>
     </listofallmembers>
   </compounddef>

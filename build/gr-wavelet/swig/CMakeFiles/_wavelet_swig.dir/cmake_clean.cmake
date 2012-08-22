@@ -4,12 +4,14 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/_wavelet_swig.dir/wavelet_swigPYTHON_wrap.cxx.o"
   "wavelet_swigPYTHON_wrap.cxx"
   "wavelet_swig.py"
-  "wavelet_swig_doc.i"
   "wavelet_swig.tag"
+  "wavelet_swig_doc.i"
   "wavelet_swig_doc_swig_docs/xml/index.xml"
   "wavelet_swig_doc_swig_docs/xml/combine.xslt"
   "_wavelet_swig.pdb"
   "_wavelet_swig.so"
+  "CMakeFiles/CMakeRelink.dir/_wavelet_swig.pdb"
+  "CMakeFiles/CMakeRelink.dir/_wavelet_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

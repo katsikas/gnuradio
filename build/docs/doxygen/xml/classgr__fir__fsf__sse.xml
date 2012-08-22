@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__fir__fsf__sse" kind="class" prot="public">
     <compoundname>gr_fir_fsf_sse</compoundname>
     <basecompoundref refid="classgr__fir__fsf__simd" prot="public" virt="non-virtual">gr_fir_fsf_simd</basecompoundref>
@@ -37,30 +37,60 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>SSE version of gr_fir_fsf. </para>    </briefdescription>
+<para>SSE version of <ref refid="classgr__fir__fsf" kindref="compound">gr_fir_fsf</ref>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3425">
+      <node id="9679">
         <label>gr_fir_fsf_simd</label>
         <link refid="classgr__fir__fsf__simd"/>
+        <childnode refid="9680" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="3424">
+      <node id="9681">
+        <label>gr_fir_fsf</label>
+        <link refid="classgr__fir__fsf"/>
+      </node>
+      <node id="9678">
         <label>gr_fir_fsf_sse</label>
         <link refid="classgr__fir__fsf__sse"/>
-        <childnode refid="3425" relation="public-inheritance">
+        <childnode refid="9679" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9680">
+        <label>gr_fir_fsf_generic</label>
+        <link refid="classgr__fir__fsf__generic"/>
+        <childnode refid="9681" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3427">
+      <node id="9683">
         <label>gr_fir_fsf_simd</label>
         <link refid="classgr__fir__fsf__simd"/>
+        <childnode refid="9684" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="3426">
+      <node id="9686">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="9685">
+        <label>gr_fir_fsf</label>
+        <link refid="classgr__fir__fsf"/>
+        <childnode refid="9686" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+      </node>
+      <node id="9682">
         <label>gr_fir_fsf_sse</label>
         <link refid="classgr__fir__fsf__sse"/>
-        <childnode refid="3427" relation="public-inheritance">
+        <childnode refid="9683" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9684">
+        <label>gr_fir_fsf_generic</label>
+        <link refid="classgr__fir__fsf__generic"/>
+        <childnode refid="9685" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -68,13 +98,23 @@
     <listofallmembers>
       <member refid="classgr__fir__fsf__simd_1ad6155ccd8813f66870faba766d0e3b5c" prot="protected" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>d_aligned_taps</name></member>
       <member refid="classgr__fir__fsf__simd_1ad656ca2d761e97a0c746913bc6c0d6f3" prot="protected" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>d_float_dotprod</name></member>
+      <member refid="classgr__fir__fsf_1a4cd04bb59ee2ab71a3b470ead188d101" prot="protected" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>d_taps</name></member>
       <member refid="classgr__fir__fsf__simd_1a9b221f60ff010490358eed5e39bc9673" prot="public" virt="virtual"><scope>gr_fir_fsf_sse</scope><name>filter</name></member>
+      <member refid="classgr__fir__fsf__generic_1a5a22acd8dae47ae1bc008198ffa68b5e" prot="public" virt="virtual"><scope>gr_fir_fsf_sse</scope><name>filterN</name></member>
+      <member refid="classgr__fir__fsf__generic_1a4893ed68bbc23906e76e5094b50ffbbf" prot="public" virt="virtual"><scope>gr_fir_fsf_sse</scope><name>filterNdec</name></member>
       <member refid="classgr__fir__fsf__simd_1af0585e56d7a55c28bd095262ce9833f7" prot="protected" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>float_dotprod_t</name></member>
+      <member refid="classgr__fir__fsf_1ae6dcb8e0d14dd3fe98459f76d1b329c9" prot="public" virt="virtual"><scope>gr_fir_fsf_sse</scope><name>get_taps</name></member>
+      <member refid="classgr__fir__fsf_1af2b781c4ecca64a3a5315dfe6e10a62f" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf</name></member>
+      <member refid="classgr__fir__fsf_1a58226fbee4ba0994918afe687343f548" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf</name></member>
+      <member refid="classgr__fir__fsf__generic_1ad54060741ad9661759d6d24acc548f0d" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf_generic</name></member>
+      <member refid="classgr__fir__fsf__generic_1aae20245aa49bd786ec8e49e128aaaa40" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf_generic</name></member>
       <member refid="classgr__fir__fsf__simd_1ac164834831dc5e1c7fc9f093407ffb44" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf_simd</name></member>
       <member refid="classgr__fir__fsf__simd_1a4c327e214a874e99833839dbe2e28e76" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf_simd</name></member>
       <member refid="classgr__fir__fsf__sse_1ad1c8b4e86e359488a8c7866cfc9c2488" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf_sse</name></member>
       <member refid="classgr__fir__fsf__sse_1a65894223c95696152a4d15b86b4e6b1c" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>gr_fir_fsf_sse</name></member>
+      <member refid="classgr__fir__fsf_1a695ea61ff30c7b9c196571834002da46" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>ntaps</name></member>
       <member refid="classgr__fir__fsf__simd_1a73c1e774c165feec6b4e16123d4d83b4" prot="public" virt="virtual"><scope>gr_fir_fsf_sse</scope><name>set_taps</name></member>
+      <member refid="classgr__fir__fsf_1a711d702cf671f00754acd74813d38c4d" prot="public" virt="virtual"><scope>gr_fir_fsf_sse</scope><name>~gr_fir_fsf</name></member>
       <member refid="classgr__fir__fsf__simd_1a234d610431ed29c91adcccc2104f259e" prot="public" virt="non-virtual"><scope>gr_fir_fsf_sse</scope><name>~gr_fir_fsf_simd</name></member>
     </listofallmembers>
   </compounddef>

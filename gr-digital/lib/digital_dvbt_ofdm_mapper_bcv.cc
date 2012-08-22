@@ -320,12 +320,14 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
 
   d_symbol_number ++;
-  /*if(d_symbol_number == 68){
+  /*if(d_symbol_number == 3){
 		for (int i = 0; i < d_tps_info.size(); i++)
 		{
 			printf("tps_info[%d] = %d \n",i,d_tps_info[i]);
 		}
-		
+		for(i=0;i<2048/2;i++){
+			printf("out[%d or %d] = %.4f %.4fj \n",i-172,i,out[i].real(),out[i].imag());
+		}
 	  exit(-1);
   }*/
   if(d_symbol_number == 68){

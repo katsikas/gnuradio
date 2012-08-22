@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__pll__freqdet__cf" kind="class" prot="public">
     <compoundname>gr_pll_freqdet_cf</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -7,7 +7,7 @@
     <includes refid="gr__pll__freqdet__cf_8h" local="no">gr_pll_freqdet_cf.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__pll__freqdet__cf_1ac9ac4d8846650bc97b4a69b202901171" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pll_freqdet_cf_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_pll_freqdet_cf_sptr</ref></type>
         <definition>GR_CORE_API gr_pll_freqdet_cf_sptr gr_make_pll_freqdet_cf</definition>
         <argsstring>(float loop_bw, float max_freq, float min_freq)</argsstring>
         <name>gr_make_pll_freqdet_cf</name>
@@ -129,112 +129,112 @@
 <para>This PLL locks onto a [possibly noisy] reference carrier on the input and outputs an estimate of that frequency in radians per sample. All settings max_freq and min_freq are in terms of radians per sample, NOT HERTZ. The loop bandwidth determins the lock range and should be set around pi/200 -- 2pi/100. <simplesect kind="see"><para><ref refid="classgr__pll__refout__cc" kindref="compound">gr_pll_refout_cc</ref>, <ref refid="classgr__pll__carriertracking__cc" kindref="compound">gr_pll_carriertracking_cc</ref> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="4726">
+      <node id="11979">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4727" relation="public-inheritance">
+        <childnode refid="11980" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4723">
+      <node id="11976">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4724" relation="public-inheritance">
+        <childnode refid="11977" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4724">
+      <node id="11977">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4725" relation="public-inheritance">
+        <childnode refid="11978" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4727">
+      <node id="11980">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4728">
+      <node id="11981">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="4725">
+      <node id="11978">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4726" relation="public-inheritance">
+        <childnode refid="11979" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4722">
+      <node id="11975">
         <label>gr_pll_freqdet_cf</label>
         <link refid="classgr__pll__freqdet__cf"/>
-        <childnode refid="4723" relation="public-inheritance">
+        <childnode refid="11976" relation="public-inheritance">
         </childnode>
-        <childnode refid="4728" relation="public-inheritance">
+        <childnode refid="11981" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4733">
+      <node id="11986">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="4734" relation="public-inheritance">
+        <childnode refid="11987" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4730">
+      <node id="11983">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="4731" relation="public-inheritance">
+        <childnode refid="11984" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4731">
+      <node id="11984">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="4732" relation="public-inheritance">
+        <childnode refid="11985" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4735">
+      <node id="11988">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="4736" relation="usage">
+        <childnode refid="11989" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="4738">
+      <node id="11991">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="4734">
+      <node id="11987">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="4739">
+      <node id="11992">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="4736">
+      <node id="11989">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="4732">
+      <node id="11985">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="4733" relation="public-inheritance">
+        <childnode refid="11986" relation="public-inheritance">
         </childnode>
-        <childnode refid="4735" relation="usage">
+        <childnode refid="11988" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="4737" relation="usage">
+        <childnode refid="11990" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="4729">
+      <node id="11982">
         <label>gr_pll_freqdet_cf</label>
         <link refid="classgr__pll__freqdet__cf"/>
-        <childnode refid="4730" relation="public-inheritance">
+        <childnode refid="11983" relation="public-inheritance">
         </childnode>
-        <childnode refid="4739" relation="public-inheritance">
+        <childnode refid="11992" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4737">
+      <node id="11990">
         <label>std::string</label>
-        <childnode refid="4738" relation="public-inheritance">
+        <childnode refid="11991" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

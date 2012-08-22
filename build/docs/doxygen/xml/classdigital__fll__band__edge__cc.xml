@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__fll__band__edge__cc" kind="class" prot="public">
     <compoundname>digital_fll_band_edge_cc</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -87,7 +87,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__fll__band__edge__cc_1a0cf093022a5ef839fdb4308261c78594" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_fll_band_edge_cc_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_fll_band_edge_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_fll_band_edge_cc_sptr digital_make_fll_band_edge_cc</definition>
         <argsstring>(float samps_per_sym, float rolloff, int filter_size, float bandwidth)</argsstring>
         <name>digital_make_fll_band_edge_cc</name>
@@ -425,112 +425,112 @@
     <detaileddescription>
 <para>The frequency lock loop derives a band-edge filter that covers the upper and lower bandwidths of a digitally-modulated signal. The bandwidth range is determined by the excess bandwidth (e.g., rolloff factor) of the modulated signal. The placement in frequency of the band-edges is determined by the oversampling ratio (number of samples per symbol) and the excess bandwidth. The size of the filters should be fairly large so as to average over a number of symbols.</para><para>The FLL works by filtering the upper and lower band edges into x_u(t) and x_l(t), respectively. These are combined to form cc(t) = x_u(t) + x_l(t) and ss(t) = x_u(t) - x_l(t). Combining these to form the signal e(t) = Re{cc(t) \times ss(t)^*} (where ^* is the complex conjugate) provides an error signal at the DC term that is directly proportional to the carrier frequency. We then make a second-order loop using the error signal that is the running average of e(t).</para><para>In practice, the above equation can be simplified by just comparing the absolute value squared of the output of both filters: abs(x_l(t))^2 - abs(x_u(t))^2 = norm(x_l(t)) - norm(x_u(t)).</para><para>In theory, the band-edge filter is the derivative of the matched filter in frequency, (H_be(f) = \frac{H(f)}{df}. In practice, this comes down to a quarter sine wave at the point of the matched filter&apos;s rolloff (if it&apos;s a raised-cosine, the derivative of a cosine is a sine). Extend this sine by another quarter wave to make a half wave around the band-edges is equivalent in time to the sum of two sinc functions. The baseband filter fot the band edges is therefore derived from this sum of sincs. The band edge filters are then just the baseband signal modulated to the correct place in frequency. All of these calculations are done in the &apos;design_filter&apos; function.</para><para>Note: We use FIR filters here because the filters have to have a flat phase response over the entire frequency range to allow their comparisons to be valid.</para><para>It is very important that the band edge filters be the derivatives of the pulse shaping filter, and that they be linear phase. Otherwise, the variance of the error will be very large. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1233">
+      <node id="6437">
         <label>digital_fll_band_edge_cc</label>
         <link refid="classdigital__fll__band__edge__cc"/>
-        <childnode refid="1234" relation="public-inheritance">
+        <childnode refid="6438" relation="public-inheritance">
         </childnode>
-        <childnode refid="1239" relation="public-inheritance">
+        <childnode refid="6443" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1237">
+      <node id="6441">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1238" relation="public-inheritance">
+        <childnode refid="6442" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1234">
+      <node id="6438">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1235" relation="public-inheritance">
+        <childnode refid="6439" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1235">
+      <node id="6439">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1236" relation="public-inheritance">
+        <childnode refid="6440" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1238">
+      <node id="6442">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1239">
+      <node id="6443">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1236">
+      <node id="6440">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1237" relation="public-inheritance">
+        <childnode refid="6441" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1240">
+      <node id="6444">
         <label>digital_fll_band_edge_cc</label>
         <link refid="classdigital__fll__band__edge__cc"/>
-        <childnode refid="1241" relation="public-inheritance">
+        <childnode refid="6445" relation="public-inheritance">
         </childnode>
-        <childnode refid="1250" relation="public-inheritance">
+        <childnode refid="6454" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1244">
+      <node id="6448">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1245" relation="public-inheritance">
+        <childnode refid="6449" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1241">
+      <node id="6445">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1242" relation="public-inheritance">
+        <childnode refid="6446" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1242">
+      <node id="6446">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1243" relation="public-inheritance">
+        <childnode refid="6447" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1246">
+      <node id="6450">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1247" relation="usage">
+        <childnode refid="6451" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1249">
+      <node id="6453">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1245">
+      <node id="6449">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1250">
+      <node id="6454">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="1247">
+      <node id="6451">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1243">
+      <node id="6447">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1244" relation="public-inheritance">
+        <childnode refid="6448" relation="public-inheritance">
         </childnode>
-        <childnode refid="1246" relation="usage">
+        <childnode refid="6450" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1248" relation="usage">
+        <childnode refid="6452" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1248">
+      <node id="6452">
         <label>std::string</label>
-        <childnode refid="1249" relation="public-inheritance">
+        <childnode refid="6453" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

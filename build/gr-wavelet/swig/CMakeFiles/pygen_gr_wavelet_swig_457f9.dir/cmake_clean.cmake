@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "wavelet_swig.pyo"
   "wavelet_swigPYTHON_wrap.cxx"
   "wavelet_swig.py"
-  "wavelet_swig_doc.i"
   "wavelet_swig.tag"
+  "wavelet_swig_doc.i"
   "wavelet_swig_doc_swig_docs/xml/index.xml"
   "wavelet_swig_doc_swig_docs/xml/combine.xslt"
 )

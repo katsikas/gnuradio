@@ -614,7 +614,7 @@ unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info(unsigned char bits
 }
 
 void digital_dvbt_ofdm_frame_sink::decode_BCH(){
-    printf("BCH_DECODER \n");
+    //printf("BCH_DECODER \n");
 }
 
 unsigned int digital_dvbt_ofdm_frame_sink::get_pilot_info(unsigned char bits){
@@ -629,6 +629,6 @@ unsigned int digital_dvbt_ofdm_frame_sink::differential_demodulation(int bit){
 
 void digital_dvbt_ofdm_frame_sink::integrity_tps_check(unsigned int in, unsigned int out){
 	if(in != out){
-		printf("Wrong TPS info received %d...\n",d_symbol_number);
+		//printf("Wrong TPS info received %d...\n",d_symbol_number);
 	}
 }

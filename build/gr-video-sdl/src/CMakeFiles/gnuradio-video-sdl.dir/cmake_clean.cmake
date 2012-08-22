@@ -6,6 +6,9 @@ FILE(REMOVE_RECURSE
   "libgnuradio-video-sdl-3.6.1git.pdb"
   "libgnuradio-video-sdl-3.6.1git.so"
   "libgnuradio-video-sdl-3.6.1git.so.0.0.0"
+  "CMakeFiles/CMakeRelink.dir/libgnuradio-video-sdl-3.6.1git.pdb"
+  "CMakeFiles/CMakeRelink.dir/libgnuradio-video-sdl-3.6.1git.so"
+  "CMakeFiles/CMakeRelink.dir/libgnuradio-video-sdl-3.6.1git.so.0.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

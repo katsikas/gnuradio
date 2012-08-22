@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__constellation" kind="class" prot="public">
     <compoundname>digital_constellation</compoundname>
     <derivedcompoundref refid="classdigital__constellation__8psk" prot="public" virt="non-virtual">digital_constellation_8psk</derivedcompoundref>
@@ -531,91 +531,91 @@
     <detaileddescription>
 <para>Standard constellations (BPSK, QPSK, QAM, etc) can be inherited from this class and overloaded to perform optimized slicing and constellation mappings. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="281">
+      <node id="278">
         <label>digital_constellation_8psk</label>
         <link refid="classdigital__constellation__8psk"/>
-        <childnode refid="280" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="290">
-        <label>digital_constellation_psk</label>
-        <link refid="classdigital__constellation__psk"/>
-        <childnode refid="289" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="285">
-        <label>digital_constellation_dvbt_cs_pilots</label>
-        <link refid="classdigital__constellation__dvbt__cs__pilots"/>
-        <childnode refid="280" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="280">
-        <label>digital_constellation</label>
-        <link refid="classdigital__constellation"/>
-      </node>
-      <node id="291">
-        <label>digital_constellation_rect</label>
-        <link refid="classdigital__constellation__rect"/>
-        <childnode refid="289" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="282">
-        <label>digital_constellation_bpsk</label>
-        <link refid="classdigital__constellation__bpsk"/>
-        <childnode refid="280" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="284">
-        <label>digital_constellation_dqpsk</label>
-        <link refid="classdigital__constellation__dqpsk"/>
-        <childnode refid="280" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="288">
-        <label>digital_constellation_qpsk</label>
-        <link refid="classdigital__constellation__qpsk"/>
-        <childnode refid="280" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="283">
-        <label>digital_constellation_calcdist</label>
-        <link refid="classdigital__constellation__calcdist"/>
-        <childnode refid="280" relation="public-inheritance">
+        <childnode refid="277" relation="public-inheritance">
         </childnode>
       </node>
       <node id="287">
-        <label>digital_constellation_dvbt_tps_pilots</label>
-        <link refid="classdigital__constellation__dvbt__tps__pilots"/>
-        <childnode refid="280" relation="public-inheritance">
+        <label>digital_constellation_psk</label>
+        <link refid="classdigital__constellation__psk"/>
+        <childnode refid="286" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="289">
-        <label>digital_constellation_sector</label>
-        <link refid="classdigital__constellation__sector"/>
-        <childnode refid="280" relation="public-inheritance">
+      <node id="282">
+        <label>digital_constellation_dvbt_cs_pilots</label>
+        <link refid="classdigital__constellation__dvbt__cs__pilots"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>digital_constellation</label>
+        <link refid="classdigital__constellation"/>
+      </node>
+      <node id="288">
+        <label>digital_constellation_rect</label>
+        <link refid="classdigital__constellation__rect"/>
+        <childnode refid="286" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>digital_constellation_bpsk</label>
+        <link refid="classdigital__constellation__bpsk"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>digital_constellation_dqpsk</label>
+        <link refid="classdigital__constellation__dqpsk"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>digital_constellation_qpsk</label>
+        <link refid="classdigital__constellation__qpsk"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>digital_constellation_calcdist</label>
+        <link refid="classdigital__constellation__calcdist"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>digital_constellation_dvbt_tps_pilots</label>
+        <link refid="classdigital__constellation__dvbt__tps__pilots"/>
+        <childnode refid="277" relation="public-inheritance">
         </childnode>
       </node>
       <node id="286">
+        <label>digital_constellation_sector</label>
+        <link refid="classdigital__constellation__sector"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="283">
         <label>digital_constellation_dvbt_qpsk</label>
         <link refid="classdigital__constellation__dvbt__qpsk"/>
-        <childnode refid="280" relation="public-inheritance">
+        <childnode refid="277" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="294">
+      <node id="291">
         <label>std::vector&lt; gr_complex &gt;</label>
       </node>
-      <node id="293">
+      <node id="290">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="292">
+      <node id="289">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="293" relation="usage">
+        <childnode refid="290" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="294" relation="usage">
+        <childnode refid="291" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>

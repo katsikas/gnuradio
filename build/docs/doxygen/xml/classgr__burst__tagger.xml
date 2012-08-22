@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__burst__tagger" kind="class" prot="public">
     <compoundname>gr_burst_tagger</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -99,7 +99,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__burst__tagger_1ac4b8af9b8926f3a3ac96d16a58672f0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_burst_tagger_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_burst_tagger_sptr</ref></type>
         <definition>GR_CORE_API gr_burst_tagger_sptr gr_make_burst_tagger</definition>
         <argsstring>(size_t itemsize)</argsstring>
         <name>gr_make_burst_tagger</name>
@@ -223,100 +223,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2623">
+      <node id="8391">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2624" relation="public-inheritance">
+        <childnode refid="8392" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2620">
+      <node id="8388">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2621" relation="public-inheritance">
+        <childnode refid="8389" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2621">
+      <node id="8389">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2622" relation="public-inheritance">
+        <childnode refid="8390" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2619">
+      <node id="8387">
         <label>gr_burst_tagger</label>
         <link refid="classgr__burst__tagger"/>
-        <childnode refid="2620" relation="public-inheritance">
+        <childnode refid="8388" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2624">
+      <node id="8392">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2622">
+      <node id="8390">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2623" relation="public-inheritance">
+        <childnode refid="8391" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2629">
+      <node id="8397">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="2630" relation="public-inheritance">
+        <childnode refid="8398" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2626">
+      <node id="8394">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="2627" relation="public-inheritance">
+        <childnode refid="8395" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2627">
+      <node id="8395">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="2628" relation="public-inheritance">
+        <childnode refid="8396" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2631">
+      <node id="8399">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="2632" relation="usage">
+        <childnode refid="8400" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="2625">
+      <node id="8393">
         <label>gr_burst_tagger</label>
         <link refid="classgr__burst__tagger"/>
-        <childnode refid="2626" relation="public-inheritance">
+        <childnode refid="8394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2634">
+      <node id="8402">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="2630">
+      <node id="8398">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="2632">
+      <node id="8400">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="2628">
+      <node id="8396">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="2629" relation="public-inheritance">
+        <childnode refid="8397" relation="public-inheritance">
         </childnode>
-        <childnode refid="2631" relation="usage">
+        <childnode refid="8399" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="2633" relation="usage">
+        <childnode refid="8401" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="2633">
+      <node id="8401">
         <label>std::string</label>
-        <childnode refid="2634" relation="public-inheritance">
+        <childnode refid="8402" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

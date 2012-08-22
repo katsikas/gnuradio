@@ -1,42 +1,79 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="gr__fir__fsf__simd_8h" kind="file">
     <compoundname>gr_fir_fsf_simd.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
-    <includes local="no">gr_fir_fsf_generic.h</includes>
+    <includes refid="gr__fir__fsf__generic_8h" local="no">gr_fir_fsf_generic.h</includes>
     <includedby refid="gr__fir__fsf__x86_8h" local="no">gr_fir_fsf_x86.h</includedby>
     <incdepgraph>
-      <node id="7357">
+      <node id="34236">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="7358">
-        <label>gr_fir_fsf_generic.h</label>
+      <node id="34238">
+        <label>gr_fir_fsf.h</label>
+        <link refid="gr__fir__fsf_8h"/>
+        <childnode refid="34235" relation="include">
+        </childnode>
+        <childnode refid="34239" relation="include">
+        </childnode>
+        <childnode refid="34240" relation="include">
+        </childnode>
       </node>
-      <node id="7356">
+      <node id="34239">
+        <label>vector</label>
+      </node>
+      <node id="34237">
+        <label>gr_fir_fsf_generic.h</label>
+        <link refid="gr__fir__fsf__generic_8h"/>
+        <childnode refid="34235" relation="include">
+        </childnode>
+        <childnode refid="34238" relation="include">
+        </childnode>
+      </node>
+      <node id="34235">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="7357" relation="include">
+        <childnode refid="34236" relation="include">
         </childnode>
       </node>
-      <node id="7355">
+      <node id="34240">
+        <label>gr_reverse.h</label>
+        <link refid="gr__reverse_8h"/>
+        <childnode refid="34235" relation="include">
+        </childnode>
+        <childnode refid="34239" relation="include">
+        </childnode>
+        <childnode refid="34241" relation="include">
+        </childnode>
+      </node>
+      <node id="34234">
         <label>gr_fir_fsf_simd.h</label>
         <link refid="gr_fir_fsf_simd.h"/>
-        <childnode refid="7356" relation="include">
+        <childnode refid="34235" relation="include">
         </childnode>
-        <childnode refid="7358" relation="include">
+        <childnode refid="34237" relation="include">
+        </childnode>
+      </node>
+      <node id="34242">
+        <label>complex</label>
+      </node>
+      <node id="34241">
+        <label>gr_complex.h</label>
+        <link refid="gr__complex_8h"/>
+        <childnode refid="34242" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7360">
+      <node id="34244">
         <label>gr_fir_fsf_x86.h</label>
         <link refid="gr__fir__fsf__x86_8h"/>
       </node>
-      <node id="7359">
+      <node id="34243">
         <label>gr_fir_fsf_simd.h</label>
         <link refid="gr_fir_fsf_simd.h"/>
-        <childnode refid="7360" relation="include">
+        <childnode refid="34244" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

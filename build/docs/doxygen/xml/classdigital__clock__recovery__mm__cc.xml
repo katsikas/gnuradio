@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__clock__recovery__mm__cc" kind="class" prot="public">
     <compoundname>digital_clock_recovery_mm_cc</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -549,7 +549,7 @@ general_work must call consume or consume_each to indicate how many items were c
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__clock__recovery__mm__cc_1aaccbe04d5e306ca6c3b498b5ec097a65" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_clock_recovery_mm_cc_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_clock_recovery_mm_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_clock_recovery_mm_cc_sptr digital_make_clock_recovery_mm_cc</definition>
         <argsstring>(float omega, float gain_omega, float mu, float gain_mu, float omega_relative_limit)</argsstring>
         <name>digital_make_clock_recovery_mm_cc</name>
@@ -588,88 +588,88 @@ general_work must call consume or consume_each to indicate how many items were c
 <para>The complex version here is based on: Modified Mueller and Muller clock recovery circuit Based: G. R. Danesfahani, T.G. Jeans, &quot;Optimisation of modified Mueller
     and Muller algorithm,&quot; Electronics Letters, Vol. 31, no. 13, 22 June 1995, pp. 1032 - 1033. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="973">
+      <node id="6177">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="974" relation="public-inheritance">
+        <childnode refid="6178" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="971">
+      <node id="6175">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="972" relation="public-inheritance">
+        <childnode refid="6176" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="974">
+      <node id="6178">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="970">
+      <node id="6174">
         <label>digital_clock_recovery_mm_cc</label>
         <link refid="classdigital__clock__recovery__mm__cc"/>
-        <childnode refid="971" relation="public-inheritance">
+        <childnode refid="6175" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="972">
+      <node id="6176">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="973" relation="public-inheritance">
+        <childnode refid="6177" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="978">
+      <node id="6182">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="979" relation="public-inheritance">
+        <childnode refid="6183" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="976">
+      <node id="6180">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="977" relation="public-inheritance">
+        <childnode refid="6181" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="980">
+      <node id="6184">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="981" relation="usage">
+        <childnode refid="6185" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="983">
+      <node id="6187">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="979">
+      <node id="6183">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="975">
+      <node id="6179">
         <label>digital_clock_recovery_mm_cc</label>
         <link refid="classdigital__clock__recovery__mm__cc"/>
-        <childnode refid="976" relation="public-inheritance">
+        <childnode refid="6180" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="981">
+      <node id="6185">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="977">
+      <node id="6181">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="978" relation="public-inheritance">
+        <childnode refid="6182" relation="public-inheritance">
         </childnode>
-        <childnode refid="980" relation="usage">
+        <childnode refid="6184" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="982" relation="usage">
+        <childnode refid="6186" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="982">
+      <node id="6186">
         <label>std::string</label>
-        <childnode refid="983" relation="public-inheritance">
+        <childnode refid="6187" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classvideo__sdl__sink__uc" kind="class" prot="public">
     <compoundname>video_sdl_sink_uc</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -192,7 +192,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classvideo__sdl__sink__uc_1abc8942ab15e65cb488cd33f8a0dd2b63" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="video__sdl__api_8h_1af8670bf958d8bdc377323c404da83a58" kindref="member">VIDEO_SDL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">video_sdl_sink_uc_sptr</ref></type>
+        <type>friend VIDEO_SDL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">video_sdl_sink_uc_sptr</ref></type>
         <definition>VIDEO_SDL_API video_sdl_sink_uc_sptr video_sdl_make_sink_uc</definition>
         <argsstring>(double framerate, int width, int height, unsigned int format, int dst_width, int dst_height)</argsstring>
         <name>video_sdl_make_sink_uc</name>
@@ -447,100 +447,100 @@
     <detaileddescription>
 <para>input signature is one, two or three streams of uchar. One stream: stream is grey (Y) two streems: first is grey (Y), second is alternating U and V Three streams: first is grey (Y), second is U, third is V Input samples must be in the range [0,255]. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="7485">
+      <node id="15452">
         <label>video_sdl_sink_uc</label>
         <link refid="classvideo__sdl__sink__uc"/>
-        <childnode refid="7486" relation="public-inheritance">
+        <childnode refid="15453" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7489">
+      <node id="15456">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7490" relation="public-inheritance">
+        <childnode refid="15457" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7486">
+      <node id="15453">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7487" relation="public-inheritance">
+        <childnode refid="15454" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7487">
+      <node id="15454">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7488" relation="public-inheritance">
+        <childnode refid="15455" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7490">
+      <node id="15457">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7488">
+      <node id="15455">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7489" relation="public-inheritance">
+        <childnode refid="15456" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="7491">
+      <node id="15458">
         <label>video_sdl_sink_uc</label>
         <link refid="classvideo__sdl__sink__uc"/>
-        <childnode refid="7492" relation="public-inheritance">
+        <childnode refid="15459" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7495">
+      <node id="15462">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="7496" relation="public-inheritance">
+        <childnode refid="15463" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7492">
+      <node id="15459">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="7493" relation="public-inheritance">
+        <childnode refid="15460" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7493">
+      <node id="15460">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="7494" relation="public-inheritance">
+        <childnode refid="15461" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7497">
+      <node id="15464">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="7498" relation="usage">
+        <childnode refid="15465" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="7500">
+      <node id="15467">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="7496">
+      <node id="15463">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="7498">
+      <node id="15465">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="7494">
+      <node id="15461">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="7495" relation="public-inheritance">
+        <childnode refid="15462" relation="public-inheritance">
         </childnode>
-        <childnode refid="7497" relation="usage">
+        <childnode refid="15464" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="7499" relation="usage">
+        <childnode refid="15466" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="7499">
+      <node id="15466">
         <label>std::string</label>
-        <childnode refid="7500" relation="public-inheritance">
+        <childnode refid="15467" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

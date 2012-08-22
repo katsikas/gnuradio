@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/sh
 export GR_DONT_LOAD_PREFS=1
 export srcdir=/home/katsikas/gnuradio/gnuradio-core/src/python/gnuradio/gr
 export PATH=/home/katsikas/gnuradio/build/gnuradio-core/src/python/gnuradio/gr:$PATH

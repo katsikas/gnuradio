@@ -1,43 +1,43 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="viterbi_8h" kind="file">
     <compoundname>viterbi.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <includedby refid="gr__decode__ccsds__27__fb_8h" local="no">gr_decode_ccsds_27_fb.h</includedby>
     <incdepgraph>
-      <node id="17099">
+      <node id="47811">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="17098">
+      <node id="47810">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="17099" relation="include">
+        <childnode refid="47811" relation="include">
         </childnode>
       </node>
-      <node id="17097">
+      <node id="47809">
         <label>viterbi.h</label>
         <link refid="viterbi.h"/>
-        <childnode refid="17098" relation="include">
+        <childnode refid="47810" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="17101">
+      <node id="47813">
         <label>gr_decode_ccsds_27_fb.h</label>
         <link refid="gr__decode__ccsds__27__fb_8h"/>
       </node>
-      <node id="17100">
+      <node id="47812">
         <label>viterbi.h</label>
         <link refid="viterbi.h"/>
-        <childnode refid="17101" relation="include">
+        <childnode refid="47813" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structviterbi__state" prot="public">viterbi_state</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="viterbi_8h_1a74faa44b0828c991f56f7c415b96af70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> int</type>
+        <type>GR_CORE_API int</type>
         <definition>GR_CORE_API int gen_met</definition>
         <argsstring>(int mettab[2][256], int amp, double esn0, double bias, int scale)</argsstring>
         <name>gen_met</name>
@@ -71,7 +71,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi/viterbi.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="viterbi_8h_1a8a39b7a2d9d4d5c96d9e894faa1af349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> unsigned char</type>
+        <type>GR_CORE_API unsigned char</type>
         <definition>GR_CORE_API unsigned char encode</definition>
         <argsstring>(unsigned char *symbols, unsigned char *data, unsigned int nbytes, unsigned char encstate)</argsstring>
         <name>encode</name>
@@ -100,7 +100,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi/viterbi.h" line="43"/>
       </memberdef>
       <memberdef kind="function" id="viterbi_8h_1ae06f12882183776d2af2ff53e05ab37a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> void</type>
+        <type>GR_CORE_API void</type>
         <definition>GR_CORE_API void viterbi_chunks_init</definition>
         <argsstring>(struct viterbi_state *state)</argsstring>
         <name>viterbi_chunks_init</name>
@@ -117,7 +117,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi/viterbi.h" line="46"/>
       </memberdef>
       <memberdef kind="function" id="viterbi_8h_1ad40a86462e83679498466253d9a68d86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> void</type>
+        <type>GR_CORE_API void</type>
         <definition>GR_CORE_API void viterbi_butterfly2</definition>
         <argsstring>(unsigned char *symbols, int mettab[2][256], struct viterbi_state *state0, struct viterbi_state *state1)</argsstring>
         <name>viterbi_butterfly2</name>
@@ -147,7 +147,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/viterbi/viterbi.h" line="50"/>
       </memberdef>
       <memberdef kind="function" id="viterbi_8h_1ab3d1a6e67893a5b09c6758a05ec0c154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> unsigned char</type>
+        <type>GR_CORE_API unsigned char</type>
         <definition>GR_CORE_API unsigned char viterbi_get_output</definition>
         <argsstring>(struct viterbi_state *state, unsigned char *outbuf)</argsstring>
         <name>viterbi_get_output</name>

@@ -4,12 +4,14 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/_vocoder_swig.dir/vocoder_swigPYTHON_wrap.cxx.o"
   "vocoder_swigPYTHON_wrap.cxx"
   "vocoder_swig.py"
-  "vocoder_swig_doc.i"
   "vocoder_swig.tag"
+  "vocoder_swig_doc.i"
   "vocoder_swig_doc_swig_docs/xml/index.xml"
   "vocoder_swig_doc_swig_docs/xml/combine.xslt"
   "_vocoder_swig.pdb"
   "_vocoder_swig.so"
+  "CMakeFiles/CMakeRelink.dir/_vocoder_swig.pdb"
+  "CMakeFiles/CMakeRelink.dir/_vocoder_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

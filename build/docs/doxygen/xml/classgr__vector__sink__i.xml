@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__vector__sink__i" kind="class" prot="public">
     <compoundname>gr_vector_sink_i</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -34,7 +34,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__vector__sink__i_1ae408385c84f062964f26706f98d91892" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_vector_sink_i_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_vector_sink_i_sptr</ref></type>
         <definition>GR_CORE_API gr_vector_sink_i_sptr gr_make_vector_sink_i</definition>
         <argsstring>(int vlen)</argsstring>
         <name>gr_make_vector_sink_i</name>
@@ -142,100 +142,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5920">
+      <node id="13717">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5921" relation="public-inheritance">
+        <childnode refid="13718" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5917">
+      <node id="13714">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5918" relation="public-inheritance">
+        <childnode refid="13715" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5918">
+      <node id="13715">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5919" relation="public-inheritance">
+        <childnode refid="13716" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5921">
+      <node id="13718">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5919">
+      <node id="13716">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5920" relation="public-inheritance">
+        <childnode refid="13717" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5916">
+      <node id="13713">
         <label>gr_vector_sink_i</label>
         <link refid="classgr__vector__sink__i"/>
-        <childnode refid="5917" relation="public-inheritance">
+        <childnode refid="13714" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5926">
+      <node id="13723">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5927" relation="public-inheritance">
+        <childnode refid="13724" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5923">
+      <node id="13720">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5924" relation="public-inheritance">
+        <childnode refid="13721" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5924">
+      <node id="13721">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5925" relation="public-inheritance">
+        <childnode refid="13722" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5928">
+      <node id="13725">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5929" relation="usage">
+        <childnode refid="13726" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5931">
+      <node id="13728">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5927">
+      <node id="13724">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5929">
+      <node id="13726">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5925">
+      <node id="13722">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5926" relation="public-inheritance">
+        <childnode refid="13723" relation="public-inheritance">
         </childnode>
-        <childnode refid="5928" relation="usage">
+        <childnode refid="13725" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5930" relation="usage">
+        <childnode refid="13727" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5922">
+      <node id="13719">
         <label>gr_vector_sink_i</label>
         <link refid="classgr__vector__sink__i"/>
-        <childnode refid="5923" relation="public-inheritance">
+        <childnode refid="13720" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5930">
+      <node id="13727">
         <label>std::string</label>
-        <childnode refid="5931" relation="public-inheritance">
+        <childnode refid="13728" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

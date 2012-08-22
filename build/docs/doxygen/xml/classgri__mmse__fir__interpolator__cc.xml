@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgri__mmse__fir__interpolator__cc" kind="class" prot="public">
     <compoundname>gri_mmse_fir_interpolator_cc</compoundname>
     <includes refid="gri__mmse__fir__interpolator__cc_8h" local="no">gri_mmse_fir_interpolator_cc.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classgri__mmse__fir__interpolator__cc_1a339ff39a576abda306191912ebe7a249" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; gr_fir_ccf * &gt;</type>
+        <type>std::vector&lt; <ref refid="classgr__fir__ccf" kindref="compound">gr_fir_ccf</ref> * &gt;</type>
         <definition>std::vector&lt;gr_fir_ccf *&gt; gri_mmse_fir_interpolator_cc::filters</definition>
         <argsstring></argsstring>
         <name>filters</name>
@@ -112,13 +112,26 @@
 </itemizedlist>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="6197">
-        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
+      <node id="14067">
+        <label>std::vector&lt; float &gt;</label>
       </node>
-      <node id="6196">
+      <node id="14066">
+        <label>gr_fir_ccf</label>
+        <link refid="classgr__fir__ccf"/>
+        <childnode refid="14067" relation="usage">
+          <edgelabel>d_taps</edgelabel>
+        </childnode>
+      </node>
+      <node id="14065">
+        <label>std::vector&lt; gr_fir_ccf * &gt;</label>
+        <childnode refid="14066" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+      <node id="14064">
         <label>gri_mmse_fir_interpolator_cc</label>
         <link refid="classgri__mmse__fir__interpolator__cc"/>
-        <childnode refid="6197" relation="usage">
+        <childnode refid="14065" relation="usage">
           <edgelabel>filters</edgelabel>
         </childnode>
       </node>

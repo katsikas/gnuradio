@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "uhd_swig.pyo"
   "uhd_swigPYTHON_wrap.cxx"
   "uhd_swig.py"
-  "uhd_swig_doc.i"
   "uhd_swig.tag"
+  "uhd_swig_doc.i"
   "uhd_swig_doc_swig_docs/xml/index.xml"
   "uhd_swig_doc_swig_docs/xml/combine.xslt"
 )

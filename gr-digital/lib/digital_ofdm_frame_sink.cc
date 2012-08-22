@@ -257,9 +257,9 @@ digital_ofdm_frame_sink::digital_ofdm_frame_sink(const std::vector<gr_complex> &
     }
   }
 
-  for(i=0;i<d_subcarrier_map.size();i++){
+  /*for(i=0;i<d_subcarrier_map.size();i++){
         printf("s[%d] = %d ",i,d_subcarrier_map[i]);
-  }
+  }*/
   
   // make sure we stay in the limit currently imposed by the occupied_carriers
   if(d_subcarrier_map.size() > d_occupied_carriers) {

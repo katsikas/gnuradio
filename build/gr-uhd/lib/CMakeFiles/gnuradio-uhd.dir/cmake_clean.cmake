@@ -5,6 +5,9 @@ FILE(REMOVE_RECURSE
   "libgnuradio-uhd-3.6.1git.pdb"
   "libgnuradio-uhd-3.6.1git.so"
   "libgnuradio-uhd-3.6.1git.so.0.0.0"
+  "CMakeFiles/CMakeRelink.dir/libgnuradio-uhd-3.6.1git.pdb"
+  "CMakeFiles/CMakeRelink.dir/libgnuradio-uhd-3.6.1git.so"
+  "CMakeFiles/CMakeRelink.dir/libgnuradio-uhd-3.6.1git.so.0.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

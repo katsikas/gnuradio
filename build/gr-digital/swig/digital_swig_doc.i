@@ -1330,10 +1330,6 @@ Params: (buf, len)"
 
 %feature("docstring") std::auto_ptr "STL class."
 
-%feature("docstring") std::auto_ptr::operator-> "STL member.
-
-Params: (NONE)"
-
 %feature("docstring") std::bad_alloc "STL class."
 
 %feature("docstring") std::bad_cast "STL class."
@@ -1368,8 +1364,6 @@ Params: (NONE)"
 
 %feature("docstring") std::complex "STL class."
 
-%feature("docstring") std::map::const_iterator "STL iterator class."
-
 %feature("docstring") std::multimap::const_iterator "STL iterator class."
 
 %feature("docstring") std::basic_string::const_iterator "STL iterator class."
@@ -1388,7 +1382,7 @@ Params: (NONE)"
 
 %feature("docstring") std::list::const_iterator "STL iterator class."
 
-%feature("docstring") std::map::const_reverse_iterator "STL iterator class."
+%feature("docstring") std::map::const_iterator "STL iterator class."
 
 %feature("docstring") std::multimap::const_reverse_iterator "STL iterator class."
 
@@ -1398,15 +1392,17 @@ Params: (NONE)"
 
 %feature("docstring") std::multiset::const_reverse_iterator "STL iterator class."
 
-%feature("docstring") std::vector::const_reverse_iterator "STL iterator class."
-
 %feature("docstring") std::string::const_reverse_iterator "STL iterator class."
+
+%feature("docstring") std::vector::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::wstring::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::list::const_reverse_iterator "STL iterator class."
+
+%feature("docstring") std::map::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque "STL class."
 
@@ -1716,23 +1712,23 @@ Params: (NONE)"
 
 %feature("docstring") std::basic_string::iterator "STL iterator class."
 
-%feature("docstring") std::multiset::iterator "STL iterator class."
-
-%feature("docstring") std::map::iterator "STL iterator class."
-
-%feature("docstring") std::set::iterator "STL iterator class."
-
-%feature("docstring") std::vector::iterator "STL iterator class."
-
 %feature("docstring") std::string::iterator "STL iterator class."
 
 %feature("docstring") std::multimap::iterator "STL iterator class."
 
+%feature("docstring") std::multiset::iterator "STL iterator class."
+
+%feature("docstring") std::map::iterator "STL iterator class."
+
+%feature("docstring") std::vector::iterator "STL iterator class."
+
+%feature("docstring") std::set::iterator "STL iterator class."
+
 %feature("docstring") std::wstring::iterator "STL iterator class."
 
-%feature("docstring") std::list::iterator "STL iterator class."
-
 %feature("docstring") std::deque::iterator "STL iterator class."
+
+%feature("docstring") std::list::iterator "STL iterator class."
 
 %feature("docstring") std::length_error "STL class."
 
@@ -1764,33 +1760,27 @@ Params: (NONE)"
 
 %feature("docstring") std::string::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::vector::reverse_iterator "STL iterator class."
+%feature("docstring") std::map::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::list::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::map::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::multiset::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
+%feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::vector::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 
 %feature("docstring") std::set "STL class."
-
-%feature("docstring") std::smart_ptr "STL class."
-
-%feature("docstring") std::smart_ptr::operator-> "STL member.
-
-Params: (NONE)"
 
 %feature("docstring") std::stack "STL class."
 
@@ -1800,21 +1790,9 @@ Params: (NONE)"
 
 %feature("docstring") std::underflow_error "STL class."
 
-%feature("docstring") std::unique_ptr "STL class."
-
-%feature("docstring") std::unique_ptr::operator-> "STL member.
-
-Params: (NONE)"
-
 %feature("docstring") std::valarray "STL class."
 
 %feature("docstring") std::vector "STL class."
-
-%feature("docstring") std::weak_ptr "STL class."
-
-%feature("docstring") std::weak_ptr::operator-> "STL member.
-
-Params: (NONE)"
 
 %feature("docstring") std::wfstream "STL class."
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__buffer" kind="class" prot="public">
     <compoundname>gr_buffer</compoundname>
     <includes refid="gr__buffer_8h" local="no">gr_buffer.h</includes>
@@ -18,7 +18,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="119" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classgr__buffer_1ae7059abdea031e9dabb05114ddb8f7be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_buffer_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_buffer_sptr</ref></type>
         <definition>GR_CORE_API gr_buffer_sptr gr_make_buffer</definition>
         <argsstring>(int nitems, size_t sizeof_item, gr_block_sptr link)</argsstring>
         <name>gr_make_buffer</name>
@@ -65,7 +65,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/runtime/gr_buffer.h" line="120"/>
       </memberdef>
       <memberdef kind="friend" id="classgr__buffer_1adc1ca197033760254a594982fde1a4a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_buffer_reader_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_buffer_reader_sptr</ref></type>
         <definition>GR_CORE_API gr_buffer_reader_sptr gr_buffer_add_reader</definition>
         <argsstring>(gr_buffer_sptr buf, int nzero_preload, gr_block_sptr link)</argsstring>
         <name>gr_buffer_add_reader</name>

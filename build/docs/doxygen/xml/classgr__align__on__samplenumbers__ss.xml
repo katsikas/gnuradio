@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classgr__align__on__samplenumbers__ss" kind="class" prot="public">
     <compoundname>gr_align_on_samplenumbers_ss</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -87,7 +87,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__align__on__samplenumbers__ss_1ac02c802afc3e8b2f6cb7d9516b5da38e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_align_on_samplenumbers_ss_sptr</ref></type>
+        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_align_on_samplenumbers_ss_sptr</ref></type>
         <definition>GR_CORE_API gr_align_on_samplenumbers_ss_sptr gr_make_align_on_samplenumbers_ss</definition>
         <argsstring>(int nchan, int align_interval)</argsstring>
         <name>gr_make_align_on_samplenumbers_ss</name>
@@ -286,88 +286,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1920">
+      <node id="7316">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1921" relation="public-inheritance">
+        <childnode refid="7317" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1918">
+      <node id="7314">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1919" relation="public-inheritance">
+        <childnode refid="7315" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1917">
+      <node id="7313">
         <label>gr_align_on_samplenumbers_ss</label>
         <link refid="classgr__align__on__samplenumbers__ss"/>
-        <childnode refid="1918" relation="public-inheritance">
+        <childnode refid="7314" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1921">
+      <node id="7317">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1919">
+      <node id="7315">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1920" relation="public-inheritance">
+        <childnode refid="7316" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1925">
+      <node id="7321">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1926" relation="public-inheritance">
+        <childnode refid="7322" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1923">
+      <node id="7319">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1924" relation="public-inheritance">
+        <childnode refid="7320" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1927">
+      <node id="7323">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1928" relation="usage">
+        <childnode refid="7324" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1922">
+      <node id="7318">
         <label>gr_align_on_samplenumbers_ss</label>
         <link refid="classgr__align__on__samplenumbers__ss"/>
-        <childnode refid="1923" relation="public-inheritance">
+        <childnode refid="7319" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1930">
+      <node id="7326">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1926">
+      <node id="7322">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1928">
+      <node id="7324">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1924">
+      <node id="7320">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1925" relation="public-inheritance">
+        <childnode refid="7321" relation="public-inheritance">
         </childnode>
-        <childnode refid="1927" relation="usage">
+        <childnode refid="7323" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1929" relation="usage">
+        <childnode refid="7325" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1929">
+      <node id="7325">
         <label>std::string</label>
-        <childnode refid="1930" relation="public-inheritance">
+        <childnode refid="7326" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

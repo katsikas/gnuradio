@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="atsc__rs__decoder_8h" kind="file">
     <compoundname>atsc_rs_decoder.h</compoundname>
     <includes refid="atsc__api_8h" local="no">atsc_api.h</includes>
@@ -74,9 +74,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="atsc__rs__decoder_8h_1a7d332b65ef5de37e379c63e9d6a441ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>__GR_ATTR_IMPORT <ref refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" kindref="member">atsc_rs_decoder_sptr</ref></type>
-        <definition>__GR_ATTR_IMPORT atsc_rs_decoder_sptr atsc_make_rs_decoder</definition>
+      <memberdef kind="function" id="atsc__rs__decoder_8h_1a536f9fa70d909b02ba0ea2b9e76516c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ATSC_API <ref refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" kindref="member">atsc_rs_decoder_sptr</ref></type>
+        <definition>ATSC_API atsc_rs_decoder_sptr atsc_make_rs_decoder</definition>
         <argsstring>()</argsstring>
         <name>atsc_make_rs_decoder</name>
         <briefdescription>
@@ -124,11 +124,11 @@
 <codeline lineno="29" refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classatsc__rs__decoder" kindref="compound" tooltip="Reed-Solomon decoder for ATSCinput: atsc_mpeg_packet_rs_encoded; output: atsc_mpeg_packet_no_sync.">atsc_rs_decoder</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;atsc_rs_decoder&gt;<sp/><ref refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" kindref="member">atsc_rs_decoder_sptr</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" kindref="member">atsc_rs_decoder_sptr</ref><sp/><ref refid="atsc__rs__decoder_8h_1a7d332b65ef5de37e379c63e9d6a441ed" kindref="member">atsc_make_rs_decoder</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" kindref="member">atsc_rs_decoder_sptr</ref><sp/><ref refid="atsc__rs__decoder_8h_1a536f9fa70d909b02ba0ea2b9e76516c5" kindref="member">atsc_make_rs_decoder</ref>();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40" refid="classatsc__rs__decoder" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="classatsc__rs__decoder" kindref="compound" tooltip="Reed-Solomon decoder for ATSCinput: atsc_mpeg_packet_rs_encoded; output: atsc_mpeg_packet_no_sync.">atsc_rs_decoder</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" kindref="member">atsc_rs_decoder_sptr</ref><sp/><ref refid="atsc__rs__decoder_8h_1a7d332b65ef5de37e379c63e9d6a441ed" kindref="member">atsc_make_rs_decoder</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="atsc__api_8h_1a5c987bdbab9053a0d6650b8035e8662a" kindref="member">ATSC_API</ref><sp/><ref refid="atsc__rs__decoder_8h_1a0fc1eac2632dfa23615a918ebc37b841" kindref="member">atsc_rs_decoder_sptr</ref><sp/><ref refid="atsc__rs__decoder_8h_1a536f9fa70d909b02ba0ea2b9e76516c5" kindref="member">atsc_make_rs_decoder</ref>();</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classatsci__reed__solomon" kindref="compound" tooltip="ATSC Reed-Solomon encoder / decoder.">atsci_reed_solomon</ref><sp/><sp/><sp/><sp/>d_rs_decoder;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>

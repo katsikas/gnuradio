@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
   <compounddef id="classdigital__ofdm__frame__sink" kind="class" prot="public">
     <compoundname>digital_ofdm_frame_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -396,7 +396,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__ofdm__frame__sink_1a36ae1a0ef6a701e0eaf00153ac1a18b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_ofdm_frame_sink_sptr</ref></type>
+        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_ofdm_frame_sink_sptr</ref></type>
         <definition>DIGITAL_API digital_ofdm_frame_sink_sptr digital_make_ofdm_frame_sink</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</argsstring>
         <name>digital_make_ofdm_frame_sink</name>
@@ -629,100 +629,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1408">
+      <node id="6612">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1409" relation="public-inheritance">
+        <childnode refid="6613" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1405">
+      <node id="6609">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1406" relation="public-inheritance">
+        <childnode refid="6610" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1406">
+      <node id="6610">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1407" relation="public-inheritance">
+        <childnode refid="6611" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1404">
+      <node id="6608">
         <label>digital_ofdm_frame_sink</label>
         <link refid="classdigital__ofdm__frame__sink"/>
-        <childnode refid="1405" relation="public-inheritance">
+        <childnode refid="6609" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1409">
+      <node id="6613">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1407">
+      <node id="6611">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1408" relation="public-inheritance">
+        <childnode refid="6612" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1414">
+      <node id="6618">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="1415" relation="public-inheritance">
+        <childnode refid="6619" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1411">
+      <node id="6615">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="1412" relation="public-inheritance">
+        <childnode refid="6616" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1412">
+      <node id="6616">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="1413" relation="public-inheritance">
+        <childnode refid="6617" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1410">
+      <node id="6614">
         <label>digital_ofdm_frame_sink</label>
         <link refid="classdigital__ofdm__frame__sink"/>
-        <childnode refid="1411" relation="public-inheritance">
+        <childnode refid="6615" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1416">
+      <node id="6620">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="1417" relation="usage">
+        <childnode refid="6621" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="1419">
+      <node id="6623">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="1415">
+      <node id="6619">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="1417">
+      <node id="6621">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="1413">
+      <node id="6617">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="1414" relation="public-inheritance">
+        <childnode refid="6618" relation="public-inheritance">
         </childnode>
-        <childnode refid="1416" relation="usage">
+        <childnode refid="6620" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="1418" relation="usage">
+        <childnode refid="6622" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="1418">
+      <node id="6622">
         <label>std::string</label>
-        <childnode refid="1419" relation="public-inheritance">
+        <childnode refid="6623" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
