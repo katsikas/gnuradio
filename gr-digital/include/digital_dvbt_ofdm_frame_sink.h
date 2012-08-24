@@ -144,17 +144,17 @@ class DIGITAL_API digital_dvbt_ofdm_frame_sink : public gr_sync_block
     return ((d_header >> 16) ^ (d_header & 0xffff)) == 0;				// confirm that two copies of header info are identical
   }
   
+  unsigned char get_PRBS(int );
   void next_state();
   void decode_BCH();
   void set_modulation_type();
   unsigned char slicer(const gr_complex x);
   unsigned int differential_demodulation(int bit);
   unsigned int get_pilot_info(unsigned char bits);
-  unsigned int extract_pilot_info(unsigned char bits);
   unsigned char make_pilot_decision(const gr_complex x);
   void integrity_tps_check(unsigned int in, unsigned int out);
   unsigned int demapper(const gr_complex *in, unsigned char *out);
-
+  unsigned int extract_pilot_info(unsigned char ,unsigned char );
   bool set_sym_value_out(const std::vector<gr_complex> &sym_position,
 			 const std::vector<unsigned char> &sym_value_out);
 

@@ -92,7 +92,7 @@ digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink(const std::vector<gr_
     d_tps_map(tps, tps + sizeof tps/sizeof(int)),
     d_continuals_map(continuals, continuals + sizeof continuals/sizeof(int))
 {
-  d_last_out = 1;
+  d_last_out = 0;
   d_frame_number = 1;
   unsigned int i = 0;
   for(i = 0; i < d_occupied_carriers; i++) {							// Pad zeros left and right of the occupied carriers.
@@ -344,14 +344,23 @@ unsigned char digital_dvbt_ofdm_frame_sink::slicer(const gr_complex x)
   return d_sym_value_out[min_index];
 }
 
-void digital_dvbt_ofdm_frame_sink::next_state(){						// Private function for the pilot PRBS sequence.
-
+void
+digital_dvbt_ofdm_frame_sink::next_state(){                                                             // Private function for the pilot PRBS sequence.
+  
     unsigned char temp = 0;
     temp = d_prbs_sequence[8] ^ d_prbs_sequence[10];
     for(int j=10;j>0;j--){
             d_prbs_sequence[j] = d_prbs_sequence[j-1];
-    }
+    }                           
     d_prbs_sequence[0] = temp;
+}
+      
+unsigned char digital_dvbt_ofdm_frame_sink::get_PRBS(int barrier){
+        if(barrier > 10){
+                next_state();
+                return d_prbs_sequence.test(0);
+        }
+        return 1;
 }
 
 unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
@@ -371,17 +380,18 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
   
   bool flag = true;
   gr_complex pilot;
+  unsigned char prbs = 0;
   unsigned char bits = 0;
   unsigned char diff = 0;
   d_payload_map.clear();
   for(i = 0; i < d_subcarrier_map.size(); i++) {
-	   next_state();
+	   prbs = get_PRBS(i);
 	   if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {				
 		  pilot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];
 		  bits = make_pilot_decision(pilot);
-		  diff = extract_pilot_info(bits);
+		  diff = extract_pilot_info(bits,prbs);
 		  if(flag){
-			//diff = extract_pilot_info(bits);							// Same info for all TPS carriers in a frame.Calculate once.
+			//diff = extract_pilot_info(bits,prbs);							// Same info for all TPS carriers in a frame.Calculate once.
 			d_tps_info.push_back(diff);
 			flag = false;
 		  }
@@ -479,6 +489,8 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
 	  exit(-1);
   }*/
   if(d_symbol_number == 68){
+	d_last_out = 0;
+	d_prbs_sequence = std::bitset<11> (init_sequence);
         d_tps_info.clear();
         d_symbol_number = 0;
         printf("  frame number = %d \n",d_frame_number);
@@ -491,12 +503,12 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
   return bytes_produced;
 }
 
-unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info(unsigned char bits){
+unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info(unsigned char bits,unsigned char prbs){
 
 	  unsigned int diff = 0;
 	  if(d_symbol_number == 0){											// PRBS sequence	
 		diff = differential_demodulation(bits);
-		integrity_tps_check(diff,d_prbs_sequence.test(0));		
+		integrity_tps_check(diff,prbs);		
 	  }
 	  else if( (d_symbol_number > 0) && (d_symbol_number < 17) ){		// Synchronization
 		diff = differential_demodulation(bits);
@@ -629,6 +641,6 @@ unsigned int digital_dvbt_ofdm_frame_sink::differential_demodulation(int bit){
 
 void digital_dvbt_ofdm_frame_sink::integrity_tps_check(unsigned int in, unsigned int out){
 	if(in != out){
-		//printf("Wrong TPS info received %d...\n",d_symbol_number);
+		printf("Wrong TPS info received %d...\n",d_symbol_number);
 	}
 }

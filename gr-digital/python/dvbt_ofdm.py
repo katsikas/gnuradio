@@ -80,14 +80,18 @@ class dvbt_ofdm_mod(gr.hier_block2):
 
         # hard-coded known symbols
         preambles = (ksfreq,)
+
+
                 
         padded_preambles = list()
         for pre in preambles:
             padded = self._fft_length*[0,]
             padded[zeros_on_left : zeros_on_left + self._occupied_tones] = pre
             padded_preambles.append(padded)
-            
+
+    
         symbol_length = options.fft_length + options.cp_length
+
         
         mods = {"qpsk": 4, "qam16": 16, "qam64": 64}
         arity = mods[self._modulation]
@@ -114,7 +118,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
 
         self._pkt_input = digital_swig.dvbt_ofdm_mapper_bcv(rotated_const,tps_constel.points(),
 						        	cs_constel.points(),
-						       		0,#msgq_limit,
+						       		msgq_limit,
                                                        		options.occupied_tones,
                                                        		options.fft_length)
         
@@ -152,7 +156,7 @@ class dvbt_ofdm_mod(gr.hier_block2):
         if eof:
             msg = gr.message(1) # tell self._pkt_input we're not sending any more packets
         else:
-            # print "original_payload =", string_to_hex_list(payload)
+            #print "original_payload =", string_to_hex_list(payload)
             pkt = ofdm_packet_utils.make_packet(payload, 1, 1,
                                                 self._pad_for_usrp,
                                                 whitening=True)

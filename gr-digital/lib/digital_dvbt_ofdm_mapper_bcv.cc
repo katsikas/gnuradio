@@ -92,7 +92,7 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
     d_tps_map(tps, tps + sizeof tps/sizeof(int)),
     d_continuals_map(continuals, continuals + sizeof continuals/sizeof(int))
 {
-  d_last_out = 1;
+  d_last_out = 0;
   d_frame_number = 1;
   set_modulation_type();
 	  
@@ -167,6 +167,14 @@ digital_dvbt_ofdm_mapper_bcv::next_state(){								// Private function for the p
     d_prbs_sequence[0] = temp;
 }
 
+unsigned char digital_dvbt_ofdm_mapper_bcv::get_PRBS(int barrier){
+	if(barrier > 10){
+		next_state();
+		return d_prbs_sequence.test(0);
+	}
+	return 1;
+}
+
 
 int
 digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
@@ -203,7 +211,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
   i = 0;
   d_scattered_map.clear();
-  while((3*(d_symbol_number%4) + 12*i) < carriers){						// Create the scattered pilots positions in the current symbol...
+  while((3*(d_symbol_number%4) + 12*i) < carriers){							// Create the scattered pilots positions in the current symbol...
         d_scattered_map.push_back(3*(d_symbol_number%4) + 12*i);
         i++;
   }
@@ -212,15 +220,19 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   // Initialize all bins to 0 to set unused carriers
   memset(out, 0, d_fft_length*sizeof(gr_complex));
   bool flag = true;
+  unsigned char prbs = 0;
   unsigned char bits = 0;
   unsigned char diff = 0;
   d_payload_map.clear();
   for(i = 0; i < carriers; i++) {
-		next_state();
+		prbs = get_PRBS(i);
+		/*if(i<60){
+			printf("prbs = %d \n",prbs);
+		}*/
 		if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
-            diff = set_tps_pilots();
+            diff = set_tps_pilots(prbs);
 			if(flag){
-				//diff = set_tps_pilots();								// Same info for all TPS carriers in a frame.Calculate once.
+				//diff = set_tps_pilots();						// Same info for all TPS carriers in a frame.Calculate once.
 				d_tps_info.push_back(diff);
 				flag = false;
 			}
@@ -234,11 +246,11 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 	  
 	  else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
 		  out[d_subcarrier_map[i]] = 
-			d_cs_constellation[d_prbs_sequence.test(0)];				// Continual pilot signas
+			d_cs_constellation[prbs];									// Continual pilot signas
 	  }
 	  else if(std::find(d_scattered_map.begin(), d_scattered_map.end(), i) != d_scattered_map.end()){
 		  out[d_subcarrier_map[i]] = 
-			d_cs_constellation[d_prbs_sequence.test(0)]; 				// Scattered pilot signals
+			d_cs_constellation[prbs]; 									// Scattered pilot signals
 	  }
 	  else{
 		  d_payload_map.push_back(d_zeros_from_left+i);
@@ -320,7 +332,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
 
   d_symbol_number ++;
-  /*if(d_symbol_number == 3){
+  /*if(d_symbol_number == 2){
 		for (int i = 0; i < d_tps_info.size(); i++)
 		{
 			printf("tps_info[%d] = %d \n",i,d_tps_info[i]);
@@ -331,10 +343,12 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 	  exit(-1);
   }*/
   if(d_symbol_number == 68){
+	d_last_out = 0;
         d_tps_info.clear();
         d_symbol_number = 0;
         d_frame_number ++;
-        if(d_frame_number == 5){										// 4 frames consist a super-frame.
+        if(d_frame_number == 5){
+			d_last_out = 0;										// 4 frames consist a super-frame.
 			d_frame_number = 1;									
 		}
   }
@@ -343,10 +357,10 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   return 1;  															// produced symbol
 }
 
-unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(){
+unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(unsigned char prbs){
 	  unsigned int diff = 0;
-	  if(d_symbol_number == 0){											// PRBS sequence
-		diff = differential_modulation(d_prbs_sequence.test(0));	 			
+	  if(d_symbol_number == 0){										// PRBS sequence
+		diff = differential_modulation(prbs);		
 	  }
 	  else if( (d_symbol_number > 0) && (d_symbol_number < 17) ){		// Synchronization
 		if((d_frame_number % 2) == 0){

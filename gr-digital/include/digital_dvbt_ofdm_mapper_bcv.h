@@ -118,8 +118,9 @@ private:
   void next_state();
   void encode_BCH();
   void set_modulation_type();
+  unsigned char get_PRBS(int );
   unsigned int get_tps_pilots();
-  unsigned int set_tps_pilots();
+  unsigned int set_tps_pilots(unsigned char );
   unsigned int differential_modulation(int );
 
  public:

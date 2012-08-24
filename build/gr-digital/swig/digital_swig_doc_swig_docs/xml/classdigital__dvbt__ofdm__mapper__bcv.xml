@@ -632,6 +632,22 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="120"/>
       </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1aa58a364c6550c4ab536191a06f467ab1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char digital_dvbt_ofdm_mapper_bcv::get_PRBS</definition>
+        <argsstring>(int)</argsstring>
+        <name>get_PRBS</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="121"/>
+      </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a7ad736dafdd9774ff6c68ed39e1df4da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int digital_dvbt_ofdm_mapper_bcv::get_tps_pilots</definition>
@@ -643,20 +659,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="121"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="122"/>
       </memberdef>
-      <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a891154947bc081460d9e3480b315a7d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1af82e3e520cb48bbd9b0373eca4dcf33c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(unsigned char)</argsstring>
         <name>set_tps_pilots</name>
+        <param>
+          <type>unsigned</type>
+          <declname>char</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="122"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="123"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a3d267d746d41b8aae0af404505fe39d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
@@ -672,7 +692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="123"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="124"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -690,7 +710,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="126"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="127"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>gr_msg_queue_sptr</type>
@@ -703,7 +723,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="128" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="128" bodyend="128"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="129" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="129" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1abb3b0ec09c9a3f64923643a1256b3d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -728,14 +748,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="132"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="133"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Specific class for the DVBT.Takes a stream of bytes in and maps to a vector of complex constellation points suitable for IFFT input to be used in an ofdm modulator. Abstract class must be subclassed with specific mapping. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="57" bodyend="134"/>
+    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="57" bodyend="135"/>
     <listofallmembers>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ac4c9f67eb2a843c243cd31a4cdb4b6fd" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>cell_identification_off</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ae4d290eb4558c306ec5f56081d2180e0" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>cell_identification_on</name></member>
@@ -774,6 +794,7 @@
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1ae36d5582c305088147ec8fe22d1aee4c" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>digital_make_dvbt_ofdm_mapper_bcv</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a8a3e322eca2412dc5c1e5e6dc50d2169" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>encode_BCH</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a15a8f52ae97f2b8d4ab3e8c1ba40a8c9" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>even_sequence</name></member>
+      <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aa58a364c6550c4ab536191a06f467ab1" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>get_PRBS</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad736dafdd9774ff6c68ed39e1df4da" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>get_tps_pilots</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1add0f8b9faa5e88ee8a614e9a628a99ec" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>guard_interval</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a1fceb4fa7ec0ef9529019ae2f2c246f4" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>hierarchy</name></member>
@@ -783,7 +804,7 @@
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a27efb35eae624557d5e2bc89795af1ae" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>odd_sequence</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad0f663e117c340c20de7a7a47b50da" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>randsym</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a0d4ec00ea9538fc0c1109310304abcba" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_modulation_type</name></member>
-      <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a891154947bc081460d9e3480b315a7d8" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_tps_pilots</name></member>
+      <member refid="classdigital__dvbt__ofdm__mapper__bcv_1af82e3e520cb48bbd9b0373eca4dcf33c" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_tps_pilots</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1afb6aa3135c686f3f17fb1c33cf20f8f3" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>transmission_mode</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1abb3b0ec09c9a3f64923643a1256b3d10" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>work</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a27508ae14328d2f271c115333c46279b" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>~digital_dvbt_ofdm_mapper_bcv</name></member>

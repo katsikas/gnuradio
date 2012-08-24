@@ -556,6 +556,10 @@ Params: (NONE)"
 
 Params: (NONE)"
 
+%feature("docstring") digital_dvbt_ofdm_frame_sink::get_PRBS "
+
+Params: ()"
+
 %feature("docstring") digital_dvbt_ofdm_frame_sink::next_state "
 
 Params: (NONE)"
@@ -580,10 +584,6 @@ Params: (bit)"
 
 Params: (bits)"
 
-%feature("docstring") digital_dvbt_ofdm_frame_sink::extract_pilot_info "
-
-Params: (bits)"
-
 %feature("docstring") digital_dvbt_ofdm_frame_sink::make_pilot_decision "
 
 Params: (x)"
@@ -595,6 +595,10 @@ Params: (in, out)"
 %feature("docstring") digital_dvbt_ofdm_frame_sink::demapper "
 
 Params: (in, out)"
+
+%feature("docstring") digital_dvbt_ofdm_frame_sink::extract_pilot_info "
+
+Params: (char, char)"
 
 %feature("docstring") digital_dvbt_ofdm_frame_sink::set_sym_value_out "
 
@@ -636,13 +640,17 @@ Params: (NONE)"
 
 Params: (NONE)"
 
+%feature("docstring") digital_dvbt_ofdm_mapper_bcv::get_PRBS "
+
+Params: ()"
+
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::get_tps_pilots "
 
 Params: (NONE)"
 
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::set_tps_pilots "
 
-Params: (NONE)"
+Params: (char)"
 
 %feature("docstring") digital_dvbt_ofdm_mapper_bcv::differential_modulation "
 
