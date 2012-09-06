@@ -179,9 +179,6 @@ FILE(REMOVE_RECURSE
   "libgnuradio-trellis-3.6.1git.pdb"
   "libgnuradio-trellis-3.6.1git.so"
   "libgnuradio-trellis-3.6.1git.so.0.0.0"
-  "CMakeFiles/CMakeRelink.dir/libgnuradio-trellis-3.6.1git.pdb"
-  "CMakeFiles/CMakeRelink.dir/libgnuradio-trellis-3.6.1git.so"
-  "CMakeFiles/CMakeRelink.dir/libgnuradio-trellis-3.6.1git.so.0.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

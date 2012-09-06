@@ -10,6 +10,9 @@ struct volk_machine *volk_machines[] = {
 #if LV_MACHINE_AVX_ONLY
 &volk_machine_avx_only,
 #endif
+#if LV_MACHINE_ALTIVEC
+&volk_machine_altivec,
+#endif
 #if LV_MACHINE_SSSE3_32
 &volk_machine_ssse3_32,
 #endif
@@ -42,9 +45,6 @@ struct volk_machine *volk_machines[] = {
 #endif
 #if LV_MACHINE_SSE4_A_32
 &volk_machine_sse4_a_32,
-#endif
-#if LV_MACHINE_ALTIVEC
-&volk_machine_altivec,
 #endif
 #if LV_MACHINE_SSE4_2_32
 &volk_machine_sse4_2_32,

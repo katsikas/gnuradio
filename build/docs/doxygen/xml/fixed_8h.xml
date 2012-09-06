@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="fixed_8h" kind="file">
     <compoundname>fixed.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
     <incdepgraph>
-      <node id="28940">
+      <node id="4210">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="28938">
+      <node id="4208">
         <label>fixed.h</label>
         <link refid="fixed.h"/>
-        <childnode refid="28939" relation="include">
+        <childnode refid="4209" relation="include">
         </childnode>
       </node>
-      <node id="28939">
+      <node id="4209">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="28940" relation="include">
+        <childnode refid="4210" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -36,7 +36,7 @@
       <memberdef kind="define" id="fixed_8h_1a3ed9b2483e4d6616a203769ad381c97c" prot="public" static="no">
         <name>MODNN</name>
         <param><defname>x</defname></param>
-        <initializer>mod255(x)</initializer>
+        <initializer><ref refid="fixed_8h_1aa185022967929586fd5824ec159594af" kindref="member">mod255</ref>(x)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -146,7 +146,7 @@
       </memberdef>
       <memberdef kind="define" id="fixed_8h_1a0d158f1e3af2ab523eb8423db3e5bd6e" prot="public" static="no">
         <name>A0</name>
-        <initializer>(NN)</initializer>
+        <initializer>(<ref refid="int_8h_1a170755e30c36be4904106b7bb279b1ec" kindref="member">NN</ref>)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -157,7 +157,7 @@
       </memberdef>
       <memberdef kind="define" id="fixed_8h_1ad826cb74e3f1ac5d6ce040c651d6f737" prot="public" static="no">
         <name>ENCODE_RS</name>
-        <initializer>encode_rs_8</initializer>
+        <initializer><ref refid="rs_8h_1a913ebc22a2bcd7df5ae6e12b35d0a498" kindref="member">encode_rs_8</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -168,7 +168,7 @@
       </memberdef>
       <memberdef kind="define" id="fixed_8h_1a974397d0c45a6897c0a3d72d5e571c54" prot="public" static="no">
         <name>DECODE_RS</name>
-        <initializer>decode_rs_8</initializer>
+        <initializer><ref refid="rs_8h_1a0e9a98486945beefb90576f93b69ba39" kindref="member">decode_rs_8</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -238,16 +238,16 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon/fixed.h" line="12" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon/fixed.h" bodystart="12" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="fixed_8h_1a84aa5ef7bfade4503e9207bacee3a1f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API void</type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> void</type>
         <definition>GR_CORE_API void ENCODE_RS</definition>
         <argsstring>(DTYPE *data, DTYPE *parity)</argsstring>
         <name>ENCODE_RS</name>
         <param>
-          <type>DTYPE *</type>
+          <type><ref refid="int_8h_1a3834ad0136a8b95a6589500e4009fe9a" kindref="member">DTYPE</ref> *</type>
           <declname>data</declname>
         </param>
         <param>
-          <type>DTYPE *</type>
+          <type><ref refid="int_8h_1a3834ad0136a8b95a6589500e4009fe9a" kindref="member">DTYPE</ref> *</type>
           <declname>parity</declname>
         </param>
         <briefdescription>
@@ -259,12 +259,12 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/reed-solomon/fixed.h" line="39"/>
       </memberdef>
       <memberdef kind="function" id="fixed_8h_1a692ba511e0aa77d9d8f070b0669fa79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_CORE_API int</type>
+        <type><ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> int</type>
         <definition>GR_CORE_API int DECODE_RS</definition>
         <argsstring>(DTYPE *data, int *eras_pos, int no_eras)</argsstring>
         <name>DECODE_RS</name>
         <param>
-          <type>DTYPE *</type>
+          <type><ref refid="int_8h_1a3834ad0136a8b95a6589500e4009fe9a" kindref="member">DTYPE</ref> *</type>
           <declname>data</declname>
         </param>
         <param>

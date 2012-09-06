@@ -34,8 +34,9 @@ typedef boost::shared_ptr<dvbt_depad> dvbt_depad_sptr;
 
 DVBT_API dvbt_depad_sptr dvbt_make_depad();
 
-/*!
- * \brief remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char
+/*
+ * \brief remove 4 header bytes and depad mpeg ts packets from 256
+ * byte dvbt_mpeg_packet to 188-4 byte char
  * \ingroup dvbt
  *
  * input: dvbt_mpeg_packet; output: unsigned char

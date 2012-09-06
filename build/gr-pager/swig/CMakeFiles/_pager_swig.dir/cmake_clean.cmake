@@ -4,14 +4,12 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/_pager_swig.dir/pager_swigPYTHON_wrap.cxx.o"
   "pager_swigPYTHON_wrap.cxx"
   "pager_swig.py"
-  "pager_swig.tag"
   "pager_swig_doc.i"
+  "pager_swig.tag"
   "pager_swig_doc_swig_docs/xml/index.xml"
   "pager_swig_doc_swig_docs/xml/combine.xslt"
   "_pager_swig.pdb"
   "_pager_swig.so"
-  "CMakeFiles/CMakeRelink.dir/_pager_swig.pdb"
-  "CMakeFiles/CMakeRelink.dir/_pager_swig.so"
 )
 
 # Per-language clean rules from dependency scanning.

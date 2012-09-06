@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,9 +35,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,8 +46,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -211,11 +208,6 @@ gnuradio-config-info/fast:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/build
 .PHONY : gnuradio-config-info/fast
 
-# Manual pre-install relink rule for target.
-gnuradio-config-info/preinstall:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/lib/CMakeFiles/gnuradio-config-info.dir/preinstall
-.PHONY : gnuradio-config-info/preinstall
-
 # Convenience name for target.
 gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/rule:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/rule
@@ -229,11 +221,6 @@ gnuradio-core: gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/rule
 gnuradio-core/fast:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build
 .PHONY : gnuradio-core/fast
-
-# Manual pre-install relink rule for target.
-gnuradio-core/preinstall:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/preinstall
-.PHONY : gnuradio-core/preinstall
 
 # Convenience name for target.
 gnuradio-core/src/lib/CMakeFiles/gr_core_rstest.dir/rule:
@@ -290,53 +277,53 @@ bug_work_around_6.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/test-gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/test-gnuradio-core.dir/bug_work_around_6.cc.s
 .PHONY : bug_work_around_6.cc.s
 
-filter/ccomplex_dotprod_3dnow64.o: filter/ccomplex_dotprod_3dnow64.S.o
-.PHONY : filter/ccomplex_dotprod_3dnow64.o
+filter/ccomplex_dotprod_3dnow.o: filter/ccomplex_dotprod_3dnow.S.o
+.PHONY : filter/ccomplex_dotprod_3dnow.o
 
 # target to build an object file
-filter/ccomplex_dotprod_3dnow64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnow64.S.o
-.PHONY : filter/ccomplex_dotprod_3dnow64.S.o
+filter/ccomplex_dotprod_3dnow.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnow.S.o
+.PHONY : filter/ccomplex_dotprod_3dnow.S.o
 
-filter/ccomplex_dotprod_3dnow64.i: filter/ccomplex_dotprod_3dnow64.S.i
-.PHONY : filter/ccomplex_dotprod_3dnow64.i
+filter/ccomplex_dotprod_3dnow.i: filter/ccomplex_dotprod_3dnow.S.i
+.PHONY : filter/ccomplex_dotprod_3dnow.i
 
 # target to preprocess a source file
-filter/ccomplex_dotprod_3dnow64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnow64.S.i
-.PHONY : filter/ccomplex_dotprod_3dnow64.S.i
+filter/ccomplex_dotprod_3dnow.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnow.S.i
+.PHONY : filter/ccomplex_dotprod_3dnow.S.i
 
-filter/ccomplex_dotprod_3dnow64.s: filter/ccomplex_dotprod_3dnow64.S.s
-.PHONY : filter/ccomplex_dotprod_3dnow64.s
+filter/ccomplex_dotprod_3dnow.s: filter/ccomplex_dotprod_3dnow.S.s
+.PHONY : filter/ccomplex_dotprod_3dnow.s
 
 # target to generate assembly for a file
-filter/ccomplex_dotprod_3dnow64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnow64.S.s
-.PHONY : filter/ccomplex_dotprod_3dnow64.S.s
+filter/ccomplex_dotprod_3dnow.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnow.S.s
+.PHONY : filter/ccomplex_dotprod_3dnow.S.s
 
-filter/ccomplex_dotprod_3dnowext64.o: filter/ccomplex_dotprod_3dnowext64.S.o
-.PHONY : filter/ccomplex_dotprod_3dnowext64.o
+filter/ccomplex_dotprod_3dnowext.o: filter/ccomplex_dotprod_3dnowext.S.o
+.PHONY : filter/ccomplex_dotprod_3dnowext.o
 
 # target to build an object file
-filter/ccomplex_dotprod_3dnowext64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnowext64.S.o
-.PHONY : filter/ccomplex_dotprod_3dnowext64.S.o
+filter/ccomplex_dotprod_3dnowext.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnowext.S.o
+.PHONY : filter/ccomplex_dotprod_3dnowext.S.o
 
-filter/ccomplex_dotprod_3dnowext64.i: filter/ccomplex_dotprod_3dnowext64.S.i
-.PHONY : filter/ccomplex_dotprod_3dnowext64.i
+filter/ccomplex_dotprod_3dnowext.i: filter/ccomplex_dotprod_3dnowext.S.i
+.PHONY : filter/ccomplex_dotprod_3dnowext.i
 
 # target to preprocess a source file
-filter/ccomplex_dotprod_3dnowext64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnowext64.S.i
-.PHONY : filter/ccomplex_dotprod_3dnowext64.S.i
+filter/ccomplex_dotprod_3dnowext.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnowext.S.i
+.PHONY : filter/ccomplex_dotprod_3dnowext.S.i
 
-filter/ccomplex_dotprod_3dnowext64.s: filter/ccomplex_dotprod_3dnowext64.S.s
-.PHONY : filter/ccomplex_dotprod_3dnowext64.s
+filter/ccomplex_dotprod_3dnowext.s: filter/ccomplex_dotprod_3dnowext.S.s
+.PHONY : filter/ccomplex_dotprod_3dnowext.s
 
 # target to generate assembly for a file
-filter/ccomplex_dotprod_3dnowext64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnowext64.S.s
-.PHONY : filter/ccomplex_dotprod_3dnowext64.S.s
+filter/ccomplex_dotprod_3dnowext.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_3dnowext.S.s
+.PHONY : filter/ccomplex_dotprod_3dnowext.S.s
 
 filter/ccomplex_dotprod_generic.o: filter/ccomplex_dotprod_generic.cc.o
 .PHONY : filter/ccomplex_dotprod_generic.o
@@ -362,77 +349,77 @@ filter/ccomplex_dotprod_generic.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_generic.cc.s
 .PHONY : filter/ccomplex_dotprod_generic.cc.s
 
-filter/ccomplex_dotprod_sse64.o: filter/ccomplex_dotprod_sse64.S.o
-.PHONY : filter/ccomplex_dotprod_sse64.o
+filter/ccomplex_dotprod_sse.o: filter/ccomplex_dotprod_sse.S.o
+.PHONY : filter/ccomplex_dotprod_sse.o
 
 # target to build an object file
-filter/ccomplex_dotprod_sse64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_sse64.S.o
-.PHONY : filter/ccomplex_dotprod_sse64.S.o
+filter/ccomplex_dotprod_sse.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_sse.S.o
+.PHONY : filter/ccomplex_dotprod_sse.S.o
 
-filter/ccomplex_dotprod_sse64.i: filter/ccomplex_dotprod_sse64.S.i
-.PHONY : filter/ccomplex_dotprod_sse64.i
+filter/ccomplex_dotprod_sse.i: filter/ccomplex_dotprod_sse.S.i
+.PHONY : filter/ccomplex_dotprod_sse.i
 
 # target to preprocess a source file
-filter/ccomplex_dotprod_sse64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_sse64.S.i
-.PHONY : filter/ccomplex_dotprod_sse64.S.i
+filter/ccomplex_dotprod_sse.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_sse.S.i
+.PHONY : filter/ccomplex_dotprod_sse.S.i
 
-filter/ccomplex_dotprod_sse64.s: filter/ccomplex_dotprod_sse64.S.s
-.PHONY : filter/ccomplex_dotprod_sse64.s
+filter/ccomplex_dotprod_sse.s: filter/ccomplex_dotprod_sse.S.s
+.PHONY : filter/ccomplex_dotprod_sse.s
 
 # target to generate assembly for a file
-filter/ccomplex_dotprod_sse64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_sse64.S.s
-.PHONY : filter/ccomplex_dotprod_sse64.S.s
+filter/ccomplex_dotprod_sse.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/ccomplex_dotprod_sse.S.s
+.PHONY : filter/ccomplex_dotprod_sse.S.s
 
-filter/complex_dotprod_3dnow64.o: filter/complex_dotprod_3dnow64.S.o
-.PHONY : filter/complex_dotprod_3dnow64.o
+filter/complex_dotprod_3dnow.o: filter/complex_dotprod_3dnow.S.o
+.PHONY : filter/complex_dotprod_3dnow.o
 
 # target to build an object file
-filter/complex_dotprod_3dnow64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnow64.S.o
-.PHONY : filter/complex_dotprod_3dnow64.S.o
+filter/complex_dotprod_3dnow.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnow.S.o
+.PHONY : filter/complex_dotprod_3dnow.S.o
 
-filter/complex_dotprod_3dnow64.i: filter/complex_dotprod_3dnow64.S.i
-.PHONY : filter/complex_dotprod_3dnow64.i
+filter/complex_dotprod_3dnow.i: filter/complex_dotprod_3dnow.S.i
+.PHONY : filter/complex_dotprod_3dnow.i
 
 # target to preprocess a source file
-filter/complex_dotprod_3dnow64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnow64.S.i
-.PHONY : filter/complex_dotprod_3dnow64.S.i
+filter/complex_dotprod_3dnow.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnow.S.i
+.PHONY : filter/complex_dotprod_3dnow.S.i
 
-filter/complex_dotprod_3dnow64.s: filter/complex_dotprod_3dnow64.S.s
-.PHONY : filter/complex_dotprod_3dnow64.s
+filter/complex_dotprod_3dnow.s: filter/complex_dotprod_3dnow.S.s
+.PHONY : filter/complex_dotprod_3dnow.s
 
 # target to generate assembly for a file
-filter/complex_dotprod_3dnow64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnow64.S.s
-.PHONY : filter/complex_dotprod_3dnow64.S.s
+filter/complex_dotprod_3dnow.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnow.S.s
+.PHONY : filter/complex_dotprod_3dnow.S.s
 
-filter/complex_dotprod_3dnowext64.o: filter/complex_dotprod_3dnowext64.S.o
-.PHONY : filter/complex_dotprod_3dnowext64.o
+filter/complex_dotprod_3dnowext.o: filter/complex_dotprod_3dnowext.S.o
+.PHONY : filter/complex_dotprod_3dnowext.o
 
 # target to build an object file
-filter/complex_dotprod_3dnowext64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnowext64.S.o
-.PHONY : filter/complex_dotprod_3dnowext64.S.o
+filter/complex_dotprod_3dnowext.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnowext.S.o
+.PHONY : filter/complex_dotprod_3dnowext.S.o
 
-filter/complex_dotprod_3dnowext64.i: filter/complex_dotprod_3dnowext64.S.i
-.PHONY : filter/complex_dotprod_3dnowext64.i
+filter/complex_dotprod_3dnowext.i: filter/complex_dotprod_3dnowext.S.i
+.PHONY : filter/complex_dotprod_3dnowext.i
 
 # target to preprocess a source file
-filter/complex_dotprod_3dnowext64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnowext64.S.i
-.PHONY : filter/complex_dotprod_3dnowext64.S.i
+filter/complex_dotprod_3dnowext.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnowext.S.i
+.PHONY : filter/complex_dotprod_3dnowext.S.i
 
-filter/complex_dotprod_3dnowext64.s: filter/complex_dotprod_3dnowext64.S.s
-.PHONY : filter/complex_dotprod_3dnowext64.s
+filter/complex_dotprod_3dnowext.s: filter/complex_dotprod_3dnowext.S.s
+.PHONY : filter/complex_dotprod_3dnowext.s
 
 # target to generate assembly for a file
-filter/complex_dotprod_3dnowext64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnowext64.S.s
-.PHONY : filter/complex_dotprod_3dnowext64.S.s
+filter/complex_dotprod_3dnowext.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_3dnowext.S.s
+.PHONY : filter/complex_dotprod_3dnowext.S.s
 
 filter/complex_dotprod_generic.o: filter/complex_dotprod_generic.cc.o
 .PHONY : filter/complex_dotprod_generic.o
@@ -458,101 +445,101 @@ filter/complex_dotprod_generic.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_generic.cc.s
 .PHONY : filter/complex_dotprod_generic.cc.s
 
-filter/complex_dotprod_sse64.o: filter/complex_dotprod_sse64.S.o
-.PHONY : filter/complex_dotprod_sse64.o
+filter/complex_dotprod_sse.o: filter/complex_dotprod_sse.S.o
+.PHONY : filter/complex_dotprod_sse.o
 
 # target to build an object file
-filter/complex_dotprod_sse64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_sse64.S.o
-.PHONY : filter/complex_dotprod_sse64.S.o
+filter/complex_dotprod_sse.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_sse.S.o
+.PHONY : filter/complex_dotprod_sse.S.o
 
-filter/complex_dotprod_sse64.i: filter/complex_dotprod_sse64.S.i
-.PHONY : filter/complex_dotprod_sse64.i
+filter/complex_dotprod_sse.i: filter/complex_dotprod_sse.S.i
+.PHONY : filter/complex_dotprod_sse.i
 
 # target to preprocess a source file
-filter/complex_dotprod_sse64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_sse64.S.i
-.PHONY : filter/complex_dotprod_sse64.S.i
+filter/complex_dotprod_sse.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_sse.S.i
+.PHONY : filter/complex_dotprod_sse.S.i
 
-filter/complex_dotprod_sse64.s: filter/complex_dotprod_sse64.S.s
-.PHONY : filter/complex_dotprod_sse64.s
+filter/complex_dotprod_sse.s: filter/complex_dotprod_sse.S.s
+.PHONY : filter/complex_dotprod_sse.s
 
 # target to generate assembly for a file
-filter/complex_dotprod_sse64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_sse64.S.s
-.PHONY : filter/complex_dotprod_sse64.S.s
+filter/complex_dotprod_sse.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/complex_dotprod_sse.S.s
+.PHONY : filter/complex_dotprod_sse.S.s
 
-filter/fcomplex_dotprod_3dnow64.o: filter/fcomplex_dotprod_3dnow64.S.o
-.PHONY : filter/fcomplex_dotprod_3dnow64.o
+filter/fcomplex_dotprod_3dnow.o: filter/fcomplex_dotprod_3dnow.S.o
+.PHONY : filter/fcomplex_dotprod_3dnow.o
 
 # target to build an object file
-filter/fcomplex_dotprod_3dnow64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_3dnow64.S.o
-.PHONY : filter/fcomplex_dotprod_3dnow64.S.o
+filter/fcomplex_dotprod_3dnow.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_3dnow.S.o
+.PHONY : filter/fcomplex_dotprod_3dnow.S.o
 
-filter/fcomplex_dotprod_3dnow64.i: filter/fcomplex_dotprod_3dnow64.S.i
-.PHONY : filter/fcomplex_dotprod_3dnow64.i
+filter/fcomplex_dotprod_3dnow.i: filter/fcomplex_dotprod_3dnow.S.i
+.PHONY : filter/fcomplex_dotprod_3dnow.i
 
 # target to preprocess a source file
-filter/fcomplex_dotprod_3dnow64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_3dnow64.S.i
-.PHONY : filter/fcomplex_dotprod_3dnow64.S.i
+filter/fcomplex_dotprod_3dnow.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_3dnow.S.i
+.PHONY : filter/fcomplex_dotprod_3dnow.S.i
 
-filter/fcomplex_dotprod_3dnow64.s: filter/fcomplex_dotprod_3dnow64.S.s
-.PHONY : filter/fcomplex_dotprod_3dnow64.s
+filter/fcomplex_dotprod_3dnow.s: filter/fcomplex_dotprod_3dnow.S.s
+.PHONY : filter/fcomplex_dotprod_3dnow.s
 
 # target to generate assembly for a file
-filter/fcomplex_dotprod_3dnow64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_3dnow64.S.s
-.PHONY : filter/fcomplex_dotprod_3dnow64.S.s
+filter/fcomplex_dotprod_3dnow.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_3dnow.S.s
+.PHONY : filter/fcomplex_dotprod_3dnow.S.s
 
-filter/fcomplex_dotprod_sse64.o: filter/fcomplex_dotprod_sse64.S.o
-.PHONY : filter/fcomplex_dotprod_sse64.o
+filter/fcomplex_dotprod_sse.o: filter/fcomplex_dotprod_sse.S.o
+.PHONY : filter/fcomplex_dotprod_sse.o
 
 # target to build an object file
-filter/fcomplex_dotprod_sse64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_sse64.S.o
-.PHONY : filter/fcomplex_dotprod_sse64.S.o
+filter/fcomplex_dotprod_sse.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_sse.S.o
+.PHONY : filter/fcomplex_dotprod_sse.S.o
 
-filter/fcomplex_dotprod_sse64.i: filter/fcomplex_dotprod_sse64.S.i
-.PHONY : filter/fcomplex_dotprod_sse64.i
+filter/fcomplex_dotprod_sse.i: filter/fcomplex_dotprod_sse.S.i
+.PHONY : filter/fcomplex_dotprod_sse.i
 
 # target to preprocess a source file
-filter/fcomplex_dotprod_sse64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_sse64.S.i
-.PHONY : filter/fcomplex_dotprod_sse64.S.i
+filter/fcomplex_dotprod_sse.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_sse.S.i
+.PHONY : filter/fcomplex_dotprod_sse.S.i
 
-filter/fcomplex_dotprod_sse64.s: filter/fcomplex_dotprod_sse64.S.s
-.PHONY : filter/fcomplex_dotprod_sse64.s
+filter/fcomplex_dotprod_sse.s: filter/fcomplex_dotprod_sse.S.s
+.PHONY : filter/fcomplex_dotprod_sse.s
 
 # target to generate assembly for a file
-filter/fcomplex_dotprod_sse64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_sse64.S.s
-.PHONY : filter/fcomplex_dotprod_sse64.S.s
+filter/fcomplex_dotprod_sse.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/fcomplex_dotprod_sse.S.s
+.PHONY : filter/fcomplex_dotprod_sse.S.s
 
-filter/float_dotprod_3dnow64.o: filter/float_dotprod_3dnow64.S.o
-.PHONY : filter/float_dotprod_3dnow64.o
+filter/float_dotprod_3dnow.o: filter/float_dotprod_3dnow.S.o
+.PHONY : filter/float_dotprod_3dnow.o
 
 # target to build an object file
-filter/float_dotprod_3dnow64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_3dnow64.S.o
-.PHONY : filter/float_dotprod_3dnow64.S.o
+filter/float_dotprod_3dnow.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_3dnow.S.o
+.PHONY : filter/float_dotprod_3dnow.S.o
 
-filter/float_dotprod_3dnow64.i: filter/float_dotprod_3dnow64.S.i
-.PHONY : filter/float_dotprod_3dnow64.i
+filter/float_dotprod_3dnow.i: filter/float_dotprod_3dnow.S.i
+.PHONY : filter/float_dotprod_3dnow.i
 
 # target to preprocess a source file
-filter/float_dotprod_3dnow64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_3dnow64.S.i
-.PHONY : filter/float_dotprod_3dnow64.S.i
+filter/float_dotprod_3dnow.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_3dnow.S.i
+.PHONY : filter/float_dotprod_3dnow.S.i
 
-filter/float_dotprod_3dnow64.s: filter/float_dotprod_3dnow64.S.s
-.PHONY : filter/float_dotprod_3dnow64.s
+filter/float_dotprod_3dnow.s: filter/float_dotprod_3dnow.S.s
+.PHONY : filter/float_dotprod_3dnow.s
 
 # target to generate assembly for a file
-filter/float_dotprod_3dnow64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_3dnow64.S.s
-.PHONY : filter/float_dotprod_3dnow64.S.s
+filter/float_dotprod_3dnow.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_3dnow.S.s
+.PHONY : filter/float_dotprod_3dnow.S.s
 
 filter/float_dotprod_generic.o: filter/float_dotprod_generic.c.o
 .PHONY : filter/float_dotprod_generic.o
@@ -578,29 +565,29 @@ filter/float_dotprod_generic.c.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_generic.c.s
 .PHONY : filter/float_dotprod_generic.c.s
 
-filter/float_dotprod_sse64.o: filter/float_dotprod_sse64.S.o
-.PHONY : filter/float_dotprod_sse64.o
+filter/float_dotprod_sse.o: filter/float_dotprod_sse.S.o
+.PHONY : filter/float_dotprod_sse.o
 
 # target to build an object file
-filter/float_dotprod_sse64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_sse64.S.o
-.PHONY : filter/float_dotprod_sse64.S.o
+filter/float_dotprod_sse.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_sse.S.o
+.PHONY : filter/float_dotprod_sse.S.o
 
-filter/float_dotprod_sse64.i: filter/float_dotprod_sse64.S.i
-.PHONY : filter/float_dotprod_sse64.i
+filter/float_dotprod_sse.i: filter/float_dotprod_sse.S.i
+.PHONY : filter/float_dotprod_sse.i
 
 # target to preprocess a source file
-filter/float_dotprod_sse64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_sse64.S.i
-.PHONY : filter/float_dotprod_sse64.S.i
+filter/float_dotprod_sse.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_sse.S.i
+.PHONY : filter/float_dotprod_sse.S.i
 
-filter/float_dotprod_sse64.s: filter/float_dotprod_sse64.S.s
-.PHONY : filter/float_dotprod_sse64.s
+filter/float_dotprod_sse.s: filter/float_dotprod_sse.S.s
+.PHONY : filter/float_dotprod_sse.s
 
 # target to generate assembly for a file
-filter/float_dotprod_sse64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_sse64.S.s
-.PHONY : filter/float_dotprod_sse64.S.s
+filter/float_dotprod_sse.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/float_dotprod_sse.S.s
+.PHONY : filter/float_dotprod_sse.S.s
 
 filter/gr_adaptive_fir_ccc.o: filter/gr_adaptive_fir_ccc.cc.o
 .PHONY : filter/gr_adaptive_fir_ccc.o
@@ -3170,29 +3157,29 @@ filter/short_dotprod_generic.c.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/short_dotprod_generic.c.s
 .PHONY : filter/short_dotprod_generic.c.s
 
-filter/short_dotprod_mmx64.o: filter/short_dotprod_mmx64.S.o
-.PHONY : filter/short_dotprod_mmx64.o
+filter/short_dotprod_mmx.o: filter/short_dotprod_mmx.S.o
+.PHONY : filter/short_dotprod_mmx.o
 
 # target to build an object file
-filter/short_dotprod_mmx64.S.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/short_dotprod_mmx64.S.o
-.PHONY : filter/short_dotprod_mmx64.S.o
+filter/short_dotprod_mmx.S.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/short_dotprod_mmx.S.o
+.PHONY : filter/short_dotprod_mmx.S.o
 
-filter/short_dotprod_mmx64.i: filter/short_dotprod_mmx64.S.i
-.PHONY : filter/short_dotprod_mmx64.i
+filter/short_dotprod_mmx.i: filter/short_dotprod_mmx.S.i
+.PHONY : filter/short_dotprod_mmx.i
 
 # target to preprocess a source file
-filter/short_dotprod_mmx64.S.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/short_dotprod_mmx64.S.i
-.PHONY : filter/short_dotprod_mmx64.S.i
+filter/short_dotprod_mmx.S.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/short_dotprod_mmx.S.i
+.PHONY : filter/short_dotprod_mmx.S.i
 
-filter/short_dotprod_mmx64.s: filter/short_dotprod_mmx64.S.s
-.PHONY : filter/short_dotprod_mmx64.s
+filter/short_dotprod_mmx.s: filter/short_dotprod_mmx.S.s
+.PHONY : filter/short_dotprod_mmx.s
 
 # target to generate assembly for a file
-filter/short_dotprod_mmx64.S.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/short_dotprod_mmx64.S.s
-.PHONY : filter/short_dotprod_mmx64.S.s
+filter/short_dotprod_mmx.S.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/build.make gnuradio-core/src/lib/CMakeFiles/gnuradio-core.dir/filter/short_dotprod_mmx.S.s
+.PHONY : filter/short_dotprod_mmx.S.s
 
 filter/sse_debug.o: filter/sse_debug.c.o
 .PHONY : filter/sse_debug.o
@@ -11579,45 +11566,45 @@ help:
 	@echo "... bug_work_around_6.o"
 	@echo "... bug_work_around_6.i"
 	@echo "... bug_work_around_6.s"
-	@echo "... filter/ccomplex_dotprod_3dnow64.o"
-	@echo "... filter/ccomplex_dotprod_3dnow64.i"
-	@echo "... filter/ccomplex_dotprod_3dnow64.s"
-	@echo "... filter/ccomplex_dotprod_3dnowext64.o"
-	@echo "... filter/ccomplex_dotprod_3dnowext64.i"
-	@echo "... filter/ccomplex_dotprod_3dnowext64.s"
+	@echo "... filter/ccomplex_dotprod_3dnow.o"
+	@echo "... filter/ccomplex_dotprod_3dnow.i"
+	@echo "... filter/ccomplex_dotprod_3dnow.s"
+	@echo "... filter/ccomplex_dotprod_3dnowext.o"
+	@echo "... filter/ccomplex_dotprod_3dnowext.i"
+	@echo "... filter/ccomplex_dotprod_3dnowext.s"
 	@echo "... filter/ccomplex_dotprod_generic.o"
 	@echo "... filter/ccomplex_dotprod_generic.i"
 	@echo "... filter/ccomplex_dotprod_generic.s"
-	@echo "... filter/ccomplex_dotprod_sse64.o"
-	@echo "... filter/ccomplex_dotprod_sse64.i"
-	@echo "... filter/ccomplex_dotprod_sse64.s"
-	@echo "... filter/complex_dotprod_3dnow64.o"
-	@echo "... filter/complex_dotprod_3dnow64.i"
-	@echo "... filter/complex_dotprod_3dnow64.s"
-	@echo "... filter/complex_dotprod_3dnowext64.o"
-	@echo "... filter/complex_dotprod_3dnowext64.i"
-	@echo "... filter/complex_dotprod_3dnowext64.s"
+	@echo "... filter/ccomplex_dotprod_sse.o"
+	@echo "... filter/ccomplex_dotprod_sse.i"
+	@echo "... filter/ccomplex_dotprod_sse.s"
+	@echo "... filter/complex_dotprod_3dnow.o"
+	@echo "... filter/complex_dotprod_3dnow.i"
+	@echo "... filter/complex_dotprod_3dnow.s"
+	@echo "... filter/complex_dotprod_3dnowext.o"
+	@echo "... filter/complex_dotprod_3dnowext.i"
+	@echo "... filter/complex_dotprod_3dnowext.s"
 	@echo "... filter/complex_dotprod_generic.o"
 	@echo "... filter/complex_dotprod_generic.i"
 	@echo "... filter/complex_dotprod_generic.s"
-	@echo "... filter/complex_dotprod_sse64.o"
-	@echo "... filter/complex_dotprod_sse64.i"
-	@echo "... filter/complex_dotprod_sse64.s"
-	@echo "... filter/fcomplex_dotprod_3dnow64.o"
-	@echo "... filter/fcomplex_dotprod_3dnow64.i"
-	@echo "... filter/fcomplex_dotprod_3dnow64.s"
-	@echo "... filter/fcomplex_dotprod_sse64.o"
-	@echo "... filter/fcomplex_dotprod_sse64.i"
-	@echo "... filter/fcomplex_dotprod_sse64.s"
-	@echo "... filter/float_dotprod_3dnow64.o"
-	@echo "... filter/float_dotprod_3dnow64.i"
-	@echo "... filter/float_dotprod_3dnow64.s"
+	@echo "... filter/complex_dotprod_sse.o"
+	@echo "... filter/complex_dotprod_sse.i"
+	@echo "... filter/complex_dotprod_sse.s"
+	@echo "... filter/fcomplex_dotprod_3dnow.o"
+	@echo "... filter/fcomplex_dotprod_3dnow.i"
+	@echo "... filter/fcomplex_dotprod_3dnow.s"
+	@echo "... filter/fcomplex_dotprod_sse.o"
+	@echo "... filter/fcomplex_dotprod_sse.i"
+	@echo "... filter/fcomplex_dotprod_sse.s"
+	@echo "... filter/float_dotprod_3dnow.o"
+	@echo "... filter/float_dotprod_3dnow.i"
+	@echo "... filter/float_dotprod_3dnow.s"
 	@echo "... filter/float_dotprod_generic.o"
 	@echo "... filter/float_dotprod_generic.i"
 	@echo "... filter/float_dotprod_generic.s"
-	@echo "... filter/float_dotprod_sse64.o"
-	@echo "... filter/float_dotprod_sse64.i"
-	@echo "... filter/float_dotprod_sse64.s"
+	@echo "... filter/float_dotprod_sse.o"
+	@echo "... filter/float_dotprod_sse.i"
+	@echo "... filter/float_dotprod_sse.s"
 	@echo "... filter/gr_adaptive_fir_ccc.o"
 	@echo "... filter/gr_adaptive_fir_ccc.i"
 	@echo "... filter/gr_adaptive_fir_ccc.s"
@@ -11939,9 +11926,9 @@ help:
 	@echo "... filter/short_dotprod_generic.o"
 	@echo "... filter/short_dotprod_generic.i"
 	@echo "... filter/short_dotprod_generic.s"
-	@echo "... filter/short_dotprod_mmx64.o"
-	@echo "... filter/short_dotprod_mmx64.i"
-	@echo "... filter/short_dotprod_mmx64.s"
+	@echo "... filter/short_dotprod_mmx.o"
+	@echo "... filter/short_dotprod_mmx.i"
+	@echo "... filter/short_dotprod_mmx.s"
 	@echo "... filter/sse_debug.o"
 	@echo "... filter/sse_debug.i"
 	@echo "... filter/sse_debug.s"

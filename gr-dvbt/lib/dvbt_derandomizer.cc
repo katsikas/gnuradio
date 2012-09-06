@@ -32,6 +32,15 @@
 #include <dvbt/dvbt_derandomizer.h>
 
 
+/*!
+ * \brief "dewhiten" incoming mpeg transport stream packets
+ * Derandomize dvbt_mpeg_packet_no_sync according to the ETSI
+ * DVBT standard.
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;
+ */
+
 dvbt_derandomizer_sptr
 dvbt_make_derandomizer()
 {
@@ -51,6 +60,11 @@ dvbt_derandomizer::reset()
   	core_rand.reset();
 }
 
+/**
+ * Get the 188 next input elements, identify and remove the MPEG_TS
+ * header bytes(First byte is SYNC/NO_SYNC) derandomize and produce the 184
+ * next output elements.
+ */
 int
 dvbt_derandomizer::work (int noutput_items,
 			 gr_vector_const_void_star &input_items,

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="assembly_8h" kind="file">
     <compoundname>assembly.h</compoundname>
       <sectiondef kind="define">
@@ -18,7 +18,7 @@
       <memberdef kind="define" id="assembly_8h_1a06eabc2079f5d1532dc8bc37a14051af" prot="public" static="no">
         <name>DEF_FUNC_HEAD</name>
         <param><defname>f</defname></param>
-        <initializer>.def	GLOB_SYMB(f); .scl 2; .type 32; .endef</initializer>
+        <initializer>.def	<ref refid="assembly_8h_1adf41cbefbb0df99ea486b2f349586c77" kindref="member">GLOB_SYMB</ref>(f); .scl 2; .type 32; .endef</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -30,6 +30,7 @@
       <memberdef kind="define" id="assembly_8h_1aab5d853de41e50b138a1aebe987f9707" prot="public" static="no">
         <name>FUNC_TAIL</name>
         <param><defname>f</defname></param>
+        <initializer>/* none */</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

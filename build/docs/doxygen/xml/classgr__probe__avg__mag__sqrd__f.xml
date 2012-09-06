@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__probe__avg__mag__sqrd__f" kind="class" prot="public">
     <compoundname>gr_probe_avg_mag_sqrd_f</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -60,7 +60,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__probe__avg__mag__sqrd__f_1ae1f383f637453b0a6406059ec420fdfc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_probe_avg_mag_sqrd_f_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_probe_avg_mag_sqrd_f_sptr</ref></type>
         <definition>GR_CORE_API gr_probe_avg_mag_sqrd_f_sptr gr_make_probe_avg_mag_sqrd_f</definition>
         <argsstring>(double threshold_db, double alpha)</argsstring>
         <name>gr_make_probe_avg_mag_sqrd_f</name>
@@ -223,100 +223,100 @@
     <detaileddescription>
 <para>Compute a running average of the magnitude squared of the the input. The level and indication as to whether the level exceeds threshold can be retrieved with the level and unmuted accessors. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="12069">
+      <node id="6865">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12070" relation="public-inheritance">
+        <childnode refid="6866" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12066">
+      <node id="6862">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12067" relation="public-inheritance">
+        <childnode refid="6863" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12067">
+      <node id="6863">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12068" relation="public-inheritance">
+        <childnode refid="6864" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12070">
+      <node id="6866">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12065">
+      <node id="6861">
         <label>gr_probe_avg_mag_sqrd_f</label>
         <link refid="classgr__probe__avg__mag__sqrd__f"/>
-        <childnode refid="12066" relation="public-inheritance">
+        <childnode refid="6862" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12068">
+      <node id="6864">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12069" relation="public-inheritance">
+        <childnode refid="6865" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="12075">
+      <node id="6871">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12076" relation="public-inheritance">
+        <childnode refid="6872" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12072">
+      <node id="6868">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12073" relation="public-inheritance">
+        <childnode refid="6869" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12073">
+      <node id="6869">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12074" relation="public-inheritance">
+        <childnode refid="6870" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12077">
+      <node id="6873">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="12078" relation="usage">
+        <childnode refid="6874" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="12080">
+      <node id="6876">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="12076">
+      <node id="6872">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12071">
+      <node id="6867">
         <label>gr_probe_avg_mag_sqrd_f</label>
         <link refid="classgr__probe__avg__mag__sqrd__f"/>
-        <childnode refid="12072" relation="public-inheritance">
+        <childnode refid="6868" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12078">
+      <node id="6874">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="12074">
+      <node id="6870">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12075" relation="public-inheritance">
+        <childnode refid="6871" relation="public-inheritance">
         </childnode>
-        <childnode refid="12077" relation="usage">
+        <childnode refid="6873" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="12079" relation="usage">
+        <childnode refid="6875" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="12079">
+      <node id="6875">
         <label>std::string</label>
-        <childnode refid="12080" relation="public-inheritance">
+        <childnode refid="6876" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

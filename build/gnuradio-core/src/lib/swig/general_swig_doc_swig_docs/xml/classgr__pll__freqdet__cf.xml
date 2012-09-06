@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__pll__freqdet__cf" kind="class" prot="public">
     <compoundname>gr_pll_freqdet_cf</compoundname>
     <basecompoundref refid="classgri__control__loop" prot="public" virt="non-virtual">gri_control_loop</basecompoundref>
     <includes refid="gr__pll__freqdet__cf_8h" local="no">gr_pll_freqdet_cf.h</includes>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="classgr__pll__freqdet__cf_1ac9ac4d8846650bc97b4a69b202901171" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="gr__pll__freqdet__cf_8h_1a5e50cee86d80b5d306c3d542f520dfbd" kindref="member">gr_pll_freqdet_cf_sptr</ref></type>
-        <definition>GR_CORE_API gr_pll_freqdet_cf_sptr gr_make_pll_freqdet_cf</definition>
+      <memberdef kind="friend" id="classgr__pll__freqdet__cf_1a1b25dae13d91ca839b620e4bdbadcb85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend __GR_ATTR_IMPORT <ref refid="gr__pll__freqdet__cf_8h_1a5e50cee86d80b5d306c3d542f520dfbd" kindref="member">gr_pll_freqdet_cf_sptr</ref></type>
+        <definition>__GR_ATTR_IMPORT gr_pll_freqdet_cf_sptr gr_make_pll_freqdet_cf</definition>
         <argsstring>(float loop_bw, float max_freq, float min_freq)</argsstring>
         <name>gr_make_pll_freqdet_cf</name>
         <param>
@@ -127,26 +127,26 @@
 <para>This PLL locks onto a [possibly noisy] reference carrier on the input and outputs an estimate of that frequency in radians per sample. All settings max_freq and min_freq are in terms of radians per sample, NOT HERTZ. The loop bandwidth determins the lock range and should be set around pi/200 -- 2pi/100. <simplesect kind="see"><para><ref refid="classgr__pll__refout__cc" kindref="compound">gr_pll_refout_cc</ref>, <ref refid="classgr__pll__carriertracking__cc" kindref="compound">gr_pll_carriertracking_cc</ref> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="508">
+      <node id="511">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="507">
+      <node id="510">
         <label>gr_pll_freqdet_cf</label>
         <link refid="classgr__pll__freqdet__cf"/>
-        <childnode refid="508" relation="public-inheritance">
+        <childnode refid="511" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="510">
+      <node id="513">
         <label>gri_control_loop</label>
         <link refid="classgri__control__loop"/>
       </node>
-      <node id="509">
+      <node id="512">
         <label>gr_pll_freqdet_cf</label>
         <link refid="classgr__pll__freqdet__cf"/>
-        <childnode refid="510" relation="public-inheritance">
+        <childnode refid="513" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -168,7 +168,7 @@
       <member refid="classgri__control__loop_1abacc2448c0c6e54e7c3f7c2c89fc7326" prot="public" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>get_frequency</name></member>
       <member refid="classgri__control__loop_1a700ac8b13c088f67ebd3e40157d1e48e" prot="public" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>get_loop_bandwidth</name></member>
       <member refid="classgri__control__loop_1a965443d91327875e4a2936cd5d519a7d" prot="public" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>get_phase</name></member>
-      <member refid="classgr__pll__freqdet__cf_1ac9ac4d8846650bc97b4a69b202901171" prot="private" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>gr_make_pll_freqdet_cf</name></member>
+      <member refid="classgr__pll__freqdet__cf_1a1b25dae13d91ca839b620e4bdbadcb85" prot="private" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>gr_make_pll_freqdet_cf</name></member>
       <member refid="classgr__pll__freqdet__cf_1a9a3288e70a731960d0cf817b6012887f" prot="private" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>gr_pll_freqdet_cf</name></member>
       <member refid="classgri__control__loop_1a312bd7c64f1d0dbad92bf61935bda1e3" prot="public" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>gri_control_loop</name></member>
       <member refid="classgr__pll__freqdet__cf_1a8faeef63772224889ff2bcd8e2906a27" prot="private" virt="non-virtual"><scope>gr_pll_freqdet_cf</scope><name>mod_2pi</name></member>

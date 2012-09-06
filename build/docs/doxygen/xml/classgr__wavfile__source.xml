@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__wavfile__source" kind="class" prot="public">
     <compoundname>gr_wavfile_source</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -138,7 +138,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__wavfile__source_1a639ff916c357d4f969be972fe053b1e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_wavfile_source_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_wavfile_source_sptr</ref></type>
         <definition>GR_CORE_API gr_wavfile_source_sptr gr_make_wavfile_source</definition>
         <argsstring>(const char *filename, bool repeat)</argsstring>
         <name>gr_make_wavfile_source</name>
@@ -284,100 +284,100 @@
     <detaileddescription>
 <para>Unless otherwise called, values are within [-1;1]. Check <ref refid="classgr__wavfile__source_1a639ff916c357d4f969be972fe053b1e4" kindref="member">gr_make_wavfile_source()</ref> for extra info. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="13925">
+      <node id="8721">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="13926" relation="public-inheritance">
+        <childnode refid="8722" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13922">
+      <node id="8718">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="13923" relation="public-inheritance">
+        <childnode refid="8719" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13923">
+      <node id="8719">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="13924" relation="public-inheritance">
+        <childnode refid="8720" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13926">
+      <node id="8722">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13924">
+      <node id="8720">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="13925" relation="public-inheritance">
+        <childnode refid="8721" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13921">
+      <node id="8717">
         <label>gr_wavfile_source</label>
         <link refid="classgr__wavfile__source"/>
-        <childnode refid="13922" relation="public-inheritance">
+        <childnode refid="8718" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="13931">
+      <node id="8727">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="13932" relation="public-inheritance">
+        <childnode refid="8728" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13928">
+      <node id="8724">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="13929" relation="public-inheritance">
+        <childnode refid="8725" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13929">
+      <node id="8725">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="13930" relation="public-inheritance">
+        <childnode refid="8726" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13933">
+      <node id="8729">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="13934" relation="usage">
+        <childnode refid="8730" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="13936">
+      <node id="8732">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="13932">
+      <node id="8728">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13934">
+      <node id="8730">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="13930">
+      <node id="8726">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="13931" relation="public-inheritance">
+        <childnode refid="8727" relation="public-inheritance">
         </childnode>
-        <childnode refid="13933" relation="usage">
+        <childnode refid="8729" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="13935" relation="usage">
+        <childnode refid="8731" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="13927">
+      <node id="8723">
         <label>gr_wavfile_source</label>
         <link refid="classgr__wavfile__source"/>
-        <childnode refid="13928" relation="public-inheritance">
+        <childnode refid="8724" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13935">
+      <node id="8731">
         <label>std::string</label>
-        <childnode refid="13936" relation="public-inheritance">
+        <childnode refid="8732" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

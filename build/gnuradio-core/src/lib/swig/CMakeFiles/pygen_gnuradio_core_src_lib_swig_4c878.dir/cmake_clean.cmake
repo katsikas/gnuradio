@@ -16,16 +16,16 @@ FILE(REMOVE_RECURSE
   "gnuradio_core_gengen.pyo"
   "gnuradio_core_gengenPYTHON_wrap.cxx"
   "gnuradio_core_gengen.py"
+  "gengen_swig_doc.i"
   "gnuradio_core_gengen.tag"
+  "gengen_swig_doc_swig_docs/xml/index.xml"
+  "gengen_swig_doc_swig_docs/xml/combine.xslt"
   "runtime_swig_doc.i"
   "general_swig_doc.i"
-  "gengen_swig_doc.i"
   "runtime_swig_doc_swig_docs/xml/index.xml"
   "runtime_swig_doc_swig_docs/xml/combine.xslt"
   "general_swig_doc_swig_docs/xml/index.xml"
   "general_swig_doc_swig_docs/xml/combine.xslt"
-  "gengen_swig_doc_swig_docs/xml/index.xml"
-  "gengen_swig_doc_swig_docs/xml/combine.xslt"
 )
 
 # Per-language clean rules from dependency scanning.

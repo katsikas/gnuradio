@@ -6,8 +6,8 @@ FILE(REMOVE_RECURSE
   "digital_swig.pyo"
   "digital_swigPYTHON_wrap.cxx"
   "digital_swig.py"
-  "digital_swig.tag"
   "digital_swig_doc.i"
+  "digital_swig.tag"
   "digital_swig_doc_swig_docs/xml/index.xml"
   "digital_swig_doc_swig_docs/xml/combine.xslt"
 )

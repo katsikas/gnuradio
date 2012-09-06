@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__udp__sink" kind="class" prot="public">
     <compoundname>gr_udp_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -86,7 +86,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__udp__sink_1a32ce1fcf4c783952927291926ca7c830" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_udp_sink_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_udp_sink_sptr</ref></type>
         <definition>GR_CORE_API gr_udp_sink_sptr gr_make_udp_sink</definition>
         <argsstring>(size_t itemsize, const char *host, unsigned short port, int payload_size, bool eof)</argsstring>
         <name>gr_make_udp_sink</name>
@@ -334,100 +334,100 @@ Calls <ref refid="classgr__udp__sink_1a5fac74580b0dc7cf3e7fac7b87d3c7cb" kindref
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="13559">
+      <node id="8355">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="13560" relation="public-inheritance">
+        <childnode refid="8356" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13556">
+      <node id="8352">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="13557" relation="public-inheritance">
+        <childnode refid="8353" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13557">
+      <node id="8353">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="13558" relation="public-inheritance">
+        <childnode refid="8354" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13555">
+      <node id="8351">
         <label>gr_udp_sink</label>
         <link refid="classgr__udp__sink"/>
-        <childnode refid="13556" relation="public-inheritance">
+        <childnode refid="8352" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13560">
+      <node id="8356">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13558">
+      <node id="8354">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="13559" relation="public-inheritance">
+        <childnode refid="8355" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="13565">
+      <node id="8361">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="13566" relation="public-inheritance">
+        <childnode refid="8362" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13562">
+      <node id="8358">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="13563" relation="public-inheritance">
+        <childnode refid="8359" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13563">
+      <node id="8359">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="13564" relation="public-inheritance">
+        <childnode refid="8360" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13567">
+      <node id="8363">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="13568" relation="usage">
+        <childnode refid="8364" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="13570">
+      <node id="8366">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="13561">
+      <node id="8357">
         <label>gr_udp_sink</label>
         <link refid="classgr__udp__sink"/>
-        <childnode refid="13562" relation="public-inheritance">
+        <childnode refid="8358" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13566">
+      <node id="8362">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="13568">
+      <node id="8364">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="13564">
+      <node id="8360">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="13565" relation="public-inheritance">
+        <childnode refid="8361" relation="public-inheritance">
         </childnode>
-        <childnode refid="13567" relation="usage">
+        <childnode refid="8363" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="13569" relation="usage">
+        <childnode refid="8365" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="13569">
+      <node id="8365">
         <label>std::string</label>
-        <childnode refid="13570" relation="public-inheritance">
+        <childnode refid="8366" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

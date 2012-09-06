@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__sample__and__hold__ii" kind="class" prot="public">
     <compoundname>gr_sample_and_hold_ii</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__sample__and__hold__ii_1aa718780fa09d2b622275bd345db639ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_sample_and_hold_ii_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_sample_and_hold_ii_sptr</ref></type>
         <definition>GR_CORE_API gr_sample_and_hold_ii_sptr gr_make_sample_and_hold_ii</definition>
         <argsstring>()</argsstring>
         <name>gr_make_sample_and_hold_ii</name>
@@ -82,100 +82,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="12507">
+      <node id="7303">
         <label>gr_sample_and_hold_ii</label>
         <link refid="classgr__sample__and__hold__ii"/>
-        <childnode refid="12508" relation="public-inheritance">
+        <childnode refid="7304" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12511">
+      <node id="7307">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12512" relation="public-inheritance">
+        <childnode refid="7308" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12508">
+      <node id="7304">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12509" relation="public-inheritance">
+        <childnode refid="7305" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12509">
+      <node id="7305">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12510" relation="public-inheritance">
+        <childnode refid="7306" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12512">
+      <node id="7308">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12510">
+      <node id="7306">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12511" relation="public-inheritance">
+        <childnode refid="7307" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="12513">
+      <node id="7309">
         <label>gr_sample_and_hold_ii</label>
         <link refid="classgr__sample__and__hold__ii"/>
-        <childnode refid="12514" relation="public-inheritance">
+        <childnode refid="7310" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12517">
+      <node id="7313">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12518" relation="public-inheritance">
+        <childnode refid="7314" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12514">
+      <node id="7310">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="12515" relation="public-inheritance">
+        <childnode refid="7311" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12515">
+      <node id="7311">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12516" relation="public-inheritance">
+        <childnode refid="7312" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12519">
+      <node id="7315">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="12520" relation="usage">
+        <childnode refid="7316" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="12522">
+      <node id="7318">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="12518">
+      <node id="7314">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12520">
+      <node id="7316">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="12516">
+      <node id="7312">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12517" relation="public-inheritance">
+        <childnode refid="7313" relation="public-inheritance">
         </childnode>
-        <childnode refid="12519" relation="usage">
+        <childnode refid="7315" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="12521" relation="usage">
+        <childnode refid="7317" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="12521">
+      <node id="7317">
         <label>std::string</label>
-        <childnode refid="12522" relation="public-inheritance">
+        <childnode refid="7318" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classmicrotune__xxxx__eval__board" kind="class" prot="public">
     <compoundname>microtune_xxxx_eval_board</compoundname>
     <derivedcompoundref refid="classmicrotune__4702__eval__board" prot="public" virt="non-virtual">microtune_4702_eval_board</derivedcompoundref>
@@ -261,60 +261,60 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="14296">
+      <node id="9096">
         <label>microtune_4937_eval_board</label>
         <link refid="classmicrotune__4937__eval__board"/>
-        <childnode refid="14294" relation="public-inheritance">
+        <childnode refid="9094" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14294">
+      <node id="9094">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
       </node>
-      <node id="14295">
+      <node id="9095">
         <label>microtune_4702_eval_board</label>
         <link refid="classmicrotune__4702__eval__board"/>
-        <childnode refid="14294" relation="public-inheritance">
+        <childnode refid="9094" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="14298">
+      <node id="9098">
         <label>microtune_xxxx</label>
         <link refid="classmicrotune__xxxx"/>
       </node>
-      <node id="14297">
+      <node id="9097">
         <label>microtune_xxxx_eval_board</label>
         <link refid="classmicrotune__xxxx__eval__board"/>
-        <childnode refid="14298" relation="usage">
+        <childnode refid="9098" relation="usage">
           <edgelabel>d_tuner</edgelabel>
         </childnode>
-        <childnode refid="14299" relation="usage">
+        <childnode refid="9099" relation="usage">
           <edgelabel>d_i2c</edgelabel>
         </childnode>
-        <childnode refid="14301" relation="usage">
+        <childnode refid="9101" relation="usage">
           <edgelabel>d_ppio</edgelabel>
         </childnode>
       </node>
-      <node id="14299">
+      <node id="9099">
         <label>boost::shared_ptr&lt; i2c &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="14300" relation="usage">
+        <childnode refid="9100" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="14300">
+      <node id="9100">
         <label>i2c</label>
         <link refid="classi2c"/>
       </node>
-      <node id="14302">
+      <node id="9102">
         <label>ppio</label>
         <link refid="classppio"/>
       </node>
-      <node id="14301">
+      <node id="9101">
         <label>boost::shared_ptr&lt; ppio &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="14302" relation="usage">
+        <childnode refid="9102" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>

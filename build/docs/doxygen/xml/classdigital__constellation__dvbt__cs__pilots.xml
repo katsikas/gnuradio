@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__constellation__dvbt__cs__pilots" kind="class" prot="public">
     <compoundname>digital_constellation_dvbt_cs_pilots</compoundname>
     <basecompoundref refid="classdigital__constellation" prot="public" virt="non-virtual">digital_constellation</basecompoundref>
@@ -39,7 +39,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__constellation__dvbt__cs__pilots_1ab67504f167df0924d8e62d2f852f09cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_dvbt_cs_pilots_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_constellation_dvbt_cs_pilots_sptr</ref></type>
         <definition>DIGITAL_API digital_constellation_dvbt_cs_pilots_sptr digital_make_constellation_dvbt_cs_pilots</definition>
         <argsstring>()</argsstring>
         <name>digital_make_constellation_dvbt_cs_pilots</name>
@@ -57,44 +57,45 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6283">
+      <node id="1079">
         <label>digital_constellation_dvbt_cs_pilots</label>
         <link refid="classdigital__constellation__dvbt__cs__pilots"/>
-        <childnode refid="6284" relation="public-inheritance">
+        <childnode refid="1080" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6284">
+      <node id="1080">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6285">
+      <node id="1081">
         <label>digital_constellation_dvbt_cs_pilots</label>
         <link refid="classdigital__constellation__dvbt__cs__pilots"/>
-        <childnode refid="6286" relation="public-inheritance">
+        <childnode refid="1082" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6288">
+      <node id="1084">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="6289" relation="usage">
+        <childnode refid="1085" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="6287">
+      <node id="1083">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="6286">
+      <node id="1082">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="6287" relation="usage">
+        <childnode refid="1083" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="6288" relation="usage">
+        <childnode refid="1084" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="6289">
+      <node id="1085">
         <label>std::complex</label>
       </node>
     </collaborationgraph>

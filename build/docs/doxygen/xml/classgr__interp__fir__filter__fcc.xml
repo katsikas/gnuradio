@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__interp__fir__filter__fcc" kind="class" prot="public">
     <compoundname>gr_interp_fir_filter_fcc</compoundname>
     <basecompoundref refid="classgr__sync__interpolator" prot="public" virt="non-virtual">gr_sync_interpolator</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__interp__fir__filter__fcc_1af625d9752646e90b77d751922732f3ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_interp_fir_filter_fcc_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_interp_fir_filter_fcc_sptr</ref></type>
         <definition>GR_CORE_API gr_interp_fir_filter_fcc_sptr gr_make_interp_fir_filter_fcc</definition>
         <argsstring>(unsigned interpolation, const std::vector&lt; gr_complex &gt; &amp;taps)</argsstring>
         <name>gr_make_interp_fir_filter_fcc</name>
@@ -171,112 +171,112 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="10400">
+      <node id="5196">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="10401" relation="public-inheritance">
+        <childnode refid="5197" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10397">
+      <node id="5193">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="10398" relation="public-inheritance">
+        <childnode refid="5194" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10398">
+      <node id="5194">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="10399" relation="public-inheritance">
+        <childnode refid="5195" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10396">
+      <node id="5192">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="10397" relation="public-inheritance">
+        <childnode refid="5193" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10401">
+      <node id="5197">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="10399">
+      <node id="5195">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="10400" relation="public-inheritance">
+        <childnode refid="5196" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10395">
+      <node id="5191">
         <label>gr_interp_fir_filter_fcc</label>
         <link refid="classgr__interp__fir__filter__fcc"/>
-        <childnode refid="10396" relation="public-inheritance">
+        <childnode refid="5192" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10407">
+      <node id="5203">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="10408" relation="public-inheritance">
+        <childnode refid="5204" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10404">
+      <node id="5200">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="10405" relation="public-inheritance">
+        <childnode refid="5201" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10405">
+      <node id="5201">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="10406" relation="public-inheritance">
+        <childnode refid="5202" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10403">
+      <node id="5199">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="10404" relation="public-inheritance">
+        <childnode refid="5200" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10409">
+      <node id="5205">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="10410" relation="usage">
+        <childnode refid="5206" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="10412">
+      <node id="5208">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="10408">
+      <node id="5204">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="10410">
+      <node id="5206">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="10406">
+      <node id="5202">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="10407" relation="public-inheritance">
+        <childnode refid="5203" relation="public-inheritance">
         </childnode>
-        <childnode refid="10409" relation="usage">
+        <childnode refid="5205" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="10411" relation="usage">
+        <childnode refid="5207" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="10411">
+      <node id="5207">
         <label>std::string</label>
-        <childnode refid="10412" relation="public-inheritance">
+        <childnode refid="5208" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10402">
+      <node id="5198">
         <label>gr_interp_fir_filter_fcc</label>
         <link refid="classgr__interp__fir__filter__fcc"/>
-        <childnode refid="10403" relation="public-inheritance">
+        <childnode refid="5199" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

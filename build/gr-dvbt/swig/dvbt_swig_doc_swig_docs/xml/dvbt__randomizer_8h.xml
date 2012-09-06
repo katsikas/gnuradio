@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dvbt__randomizer_8h" kind="file">
     <compoundname>dvbt_randomizer.h</compoundname>
     <includes local="no">cassert</includes>
@@ -7,71 +7,71 @@
     <includes local="no">gr_sync_block.h</includes>
     <includes refid="dvbti__randomizer_8h" local="no">dvbt/dvbti_randomizer.h</includes>
     <incdepgraph>
-      <node id="105">
+      <node id="73">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="106">
+      <node id="74">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="103">
+      <node id="71">
         <label>cassert</label>
       </node>
-      <node id="109">
+      <node id="77">
         <label>string</label>
       </node>
-      <node id="102">
+      <node id="70">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h</label>
         <link refid="dvbt_randomizer.h"/>
-        <childnode refid="103" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="104" relation="include">
+        <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="106" relation="include">
+        <childnode refid="74" relation="include">
         </childnode>
-        <childnode refid="107" relation="include">
+        <childnode refid="75" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="76">
         <label>bitset</label>
       </node>
-      <node id="107">
+      <node id="75">
         <label>dvbt/dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="108" relation="include">
+        <childnode refid="76" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="104" relation="include">
+        <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
       </node>
-      <node id="113">
+      <node id="81">
         <label>dvbt/dvbt_consts.h</label>
         <link refid="dvbt__consts_8h"/>
       </node>
-      <node id="110">
+      <node id="78">
         <label>dvbt/dvbt_types.h</label>
         <link refid="dvbt__types_8h"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
+        <childnode refid="80" relation="include">
         </childnode>
-        <childnode refid="103" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
+        <childnode refid="81" relation="include">
         </childnode>
       </node>
-      <node id="111">
+      <node id="79">
         <label>stdio.h</label>
       </node>
-      <node id="104">
+      <node id="72">
         <label>dvbt/dvbt_api.h</label>
         <link refid="dvbt__api_8h"/>
-        <childnode refid="105" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
       </node>
-      <node id="112">
+      <node id="80">
         <label>cstring</label>
       </node>
     </incdepgraph>
@@ -93,7 +93,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__randomizer_8h_1abe226c84c41f28dd82dd1e82b416ae96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>DVBT_API <ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref></type>
+        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref></type>
         <definition>DVBT_API dvbt_randomizer_sptr dvbt_make_randomizer</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_randomizer</name>
@@ -142,19 +142,18 @@
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gr_sync_block.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbti__randomizer_8h" kindref="compound">dvbt/dvbti_randomizer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_s...">dvbt_randomizer</ref>;</highlight></codeline>
+<codeline lineno="32" refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI...">dvbt_randomizer</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;dvbt_randomizer&gt;<sp/><ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref><sp/><ref refid="dvbt__randomizer_8h_1abe226c84c41f28dd82dd1e82b416ae96" kindref="member">dvbt_make_randomizer</ref>();</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="classdvbt__randomizer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_s...">dvbt_randomizer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
-<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref><sp/><ref refid="dvbt__randomizer_8h_1abe226c84c41f28dd82dd1e82b416ae96" kindref="member">dvbt_make_randomizer</ref>();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbti__randomizer" kindref="compound" tooltip="DVBT data &amp;quot;whitener&amp;quot;.">dvbti_randomizer</ref><sp/>core_rand;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_s...">dvbt_randomizer</ref>();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classdvbt__randomizer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI...">dvbt_randomizer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__randomizer_8h_1a5f1d1e8d6af57fcb9469b6361f5065db" kindref="member">dvbt_randomizer_sptr</ref><sp/><ref refid="dvbt__randomizer_8h_1abe226c84c41f28dd82dd1e82b416ae96" kindref="member">dvbt_make_randomizer</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbti__randomizer" kindref="compound" tooltip="DVBT data &amp;quot;whitener&amp;quot; Helper class for the main randomization/derandomization proccess.">dvbti_randomizer</ref><sp/>core_rand;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__randomizer" kindref="compound" tooltip="&amp;quot;Whiten&amp;quot; incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI...">dvbt_randomizer</ref>();</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>

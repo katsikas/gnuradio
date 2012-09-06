@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,9 +35,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,8 +46,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -197,11 +194,6 @@ volk/fast:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/build
 .PHONY : volk/fast
 
-# Manual pre-install relink rule for target.
-volk/preinstall:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 volk/lib/CMakeFiles/volk.dir/preinstall
-.PHONY : volk/preinstall
-
 qa_utils.o: qa_utils.cc.o
 .PHONY : qa_utils.o
 
@@ -274,606 +266,6 @@ volk.c.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk.c.s
 .PHONY : volk.c.s
 
-volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.o: volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o
-.PHONY : volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.o
-
-# target to build an object file
-volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o
-.PHONY : volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.o
-
-volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.i: volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i
-.PHONY : volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.i
-
-# target to preprocess a source file
-volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i
-.PHONY : volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.i
-
-volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.s: volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s
-.PHONY : volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s
-.PHONY : volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.c.s
-
-volk_16ic_deinterleave_16i_x2_a_orc_impl.o: volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o
-.PHONY : volk_16ic_deinterleave_16i_x2_a_orc_impl.o
-
-# target to build an object file
-volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o
-.PHONY : volk_16ic_deinterleave_16i_x2_a_orc_impl.c.o
-
-volk_16ic_deinterleave_16i_x2_a_orc_impl.i: volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i
-.PHONY : volk_16ic_deinterleave_16i_x2_a_orc_impl.i
-
-# target to preprocess a source file
-volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i
-.PHONY : volk_16ic_deinterleave_16i_x2_a_orc_impl.c.i
-
-volk_16ic_deinterleave_16i_x2_a_orc_impl.s: volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s
-.PHONY : volk_16ic_deinterleave_16i_x2_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s
-.PHONY : volk_16ic_deinterleave_16i_x2_a_orc_impl.c.s
-
-volk_16ic_deinterleave_real_8i_a_orc_impl.o: volk_16ic_deinterleave_real_8i_a_orc_impl.c.o
-.PHONY : volk_16ic_deinterleave_real_8i_a_orc_impl.o
-
-# target to build an object file
-volk_16ic_deinterleave_real_8i_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.o
-.PHONY : volk_16ic_deinterleave_real_8i_a_orc_impl.c.o
-
-volk_16ic_deinterleave_real_8i_a_orc_impl.i: volk_16ic_deinterleave_real_8i_a_orc_impl.c.i
-.PHONY : volk_16ic_deinterleave_real_8i_a_orc_impl.i
-
-# target to preprocess a source file
-volk_16ic_deinterleave_real_8i_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.i
-.PHONY : volk_16ic_deinterleave_real_8i_a_orc_impl.c.i
-
-volk_16ic_deinterleave_real_8i_a_orc_impl.s: volk_16ic_deinterleave_real_8i_a_orc_impl.c.s
-.PHONY : volk_16ic_deinterleave_real_8i_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_16ic_deinterleave_real_8i_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_deinterleave_real_8i_a_orc_impl.c.s
-.PHONY : volk_16ic_deinterleave_real_8i_a_orc_impl.c.s
-
-volk_16ic_magnitude_16i_a_orc_impl.o: volk_16ic_magnitude_16i_a_orc_impl.c.o
-.PHONY : volk_16ic_magnitude_16i_a_orc_impl.o
-
-# target to build an object file
-volk_16ic_magnitude_16i_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.o
-.PHONY : volk_16ic_magnitude_16i_a_orc_impl.c.o
-
-volk_16ic_magnitude_16i_a_orc_impl.i: volk_16ic_magnitude_16i_a_orc_impl.c.i
-.PHONY : volk_16ic_magnitude_16i_a_orc_impl.i
-
-# target to preprocess a source file
-volk_16ic_magnitude_16i_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.i
-.PHONY : volk_16ic_magnitude_16i_a_orc_impl.c.i
-
-volk_16ic_magnitude_16i_a_orc_impl.s: volk_16ic_magnitude_16i_a_orc_impl.c.s
-.PHONY : volk_16ic_magnitude_16i_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_16ic_magnitude_16i_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16ic_magnitude_16i_a_orc_impl.c.s
-.PHONY : volk_16ic_magnitude_16i_a_orc_impl.c.s
-
-volk_16sc_magnitude_32f_aligned16_orc_impl.o: volk_16sc_magnitude_32f_aligned16_orc_impl.c.o
-.PHONY : volk_16sc_magnitude_32f_aligned16_orc_impl.o
-
-# target to build an object file
-volk_16sc_magnitude_32f_aligned16_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.o
-.PHONY : volk_16sc_magnitude_32f_aligned16_orc_impl.c.o
-
-volk_16sc_magnitude_32f_aligned16_orc_impl.i: volk_16sc_magnitude_32f_aligned16_orc_impl.c.i
-.PHONY : volk_16sc_magnitude_32f_aligned16_orc_impl.i
-
-# target to preprocess a source file
-volk_16sc_magnitude_32f_aligned16_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.i
-.PHONY : volk_16sc_magnitude_32f_aligned16_orc_impl.c.i
-
-volk_16sc_magnitude_32f_aligned16_orc_impl.s: volk_16sc_magnitude_32f_aligned16_orc_impl.c.s
-.PHONY : volk_16sc_magnitude_32f_aligned16_orc_impl.s
-
-# target to generate assembly for a file
-volk_16sc_magnitude_32f_aligned16_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16sc_magnitude_32f_aligned16_orc_impl.c.s
-.PHONY : volk_16sc_magnitude_32f_aligned16_orc_impl.c.s
-
-volk_16u_byteswap_a_orc_impl.o: volk_16u_byteswap_a_orc_impl.c.o
-.PHONY : volk_16u_byteswap_a_orc_impl.o
-
-# target to build an object file
-volk_16u_byteswap_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.o
-.PHONY : volk_16u_byteswap_a_orc_impl.c.o
-
-volk_16u_byteswap_a_orc_impl.i: volk_16u_byteswap_a_orc_impl.c.i
-.PHONY : volk_16u_byteswap_a_orc_impl.i
-
-# target to preprocess a source file
-volk_16u_byteswap_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.i
-.PHONY : volk_16u_byteswap_a_orc_impl.c.i
-
-volk_16u_byteswap_a_orc_impl.s: volk_16u_byteswap_a_orc_impl.c.s
-.PHONY : volk_16u_byteswap_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_16u_byteswap_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_16u_byteswap_a_orc_impl.c.s
-.PHONY : volk_16u_byteswap_a_orc_impl.c.s
-
-volk_32f_s32f_multiply_32f_a_orc_impl.o: volk_32f_s32f_multiply_32f_a_orc_impl.c.o
-.PHONY : volk_32f_s32f_multiply_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_s32f_multiply_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.o
-.PHONY : volk_32f_s32f_multiply_32f_a_orc_impl.c.o
-
-volk_32f_s32f_multiply_32f_a_orc_impl.i: volk_32f_s32f_multiply_32f_a_orc_impl.c.i
-.PHONY : volk_32f_s32f_multiply_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_s32f_multiply_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.i
-.PHONY : volk_32f_s32f_multiply_32f_a_orc_impl.c.i
-
-volk_32f_s32f_multiply_32f_a_orc_impl.s: volk_32f_s32f_multiply_32f_a_orc_impl.c.s
-.PHONY : volk_32f_s32f_multiply_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_s32f_multiply_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_multiply_32f_a_orc_impl.c.s
-.PHONY : volk_32f_s32f_multiply_32f_a_orc_impl.c.s
-
-volk_32f_s32f_normalize_a_orc_impl.o: volk_32f_s32f_normalize_a_orc_impl.c.o
-.PHONY : volk_32f_s32f_normalize_a_orc_impl.o
-
-# target to build an object file
-volk_32f_s32f_normalize_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.o
-.PHONY : volk_32f_s32f_normalize_a_orc_impl.c.o
-
-volk_32f_s32f_normalize_a_orc_impl.i: volk_32f_s32f_normalize_a_orc_impl.c.i
-.PHONY : volk_32f_s32f_normalize_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_s32f_normalize_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.i
-.PHONY : volk_32f_s32f_normalize_a_orc_impl.c.i
-
-volk_32f_s32f_normalize_a_orc_impl.s: volk_32f_s32f_normalize_a_orc_impl.c.s
-.PHONY : volk_32f_s32f_normalize_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_s32f_normalize_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_s32f_normalize_a_orc_impl.c.s
-.PHONY : volk_32f_s32f_normalize_a_orc_impl.c.s
-
-volk_32f_sqrt_32f_a_orc_impl.o: volk_32f_sqrt_32f_a_orc_impl.c.o
-.PHONY : volk_32f_sqrt_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_sqrt_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.o
-.PHONY : volk_32f_sqrt_32f_a_orc_impl.c.o
-
-volk_32f_sqrt_32f_a_orc_impl.i: volk_32f_sqrt_32f_a_orc_impl.c.i
-.PHONY : volk_32f_sqrt_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_sqrt_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.i
-.PHONY : volk_32f_sqrt_32f_a_orc_impl.c.i
-
-volk_32f_sqrt_32f_a_orc_impl.s: volk_32f_sqrt_32f_a_orc_impl.c.s
-.PHONY : volk_32f_sqrt_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_sqrt_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_sqrt_32f_a_orc_impl.c.s
-.PHONY : volk_32f_sqrt_32f_a_orc_impl.c.s
-
-volk_32f_x2_add_32f_a_orc_impl.o: volk_32f_x2_add_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_add_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_x2_add_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_add_32f_a_orc_impl.c.o
-
-volk_32f_x2_add_32f_a_orc_impl.i: volk_32f_x2_add_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_add_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_x2_add_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_add_32f_a_orc_impl.c.i
-
-volk_32f_x2_add_32f_a_orc_impl.s: volk_32f_x2_add_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_add_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_x2_add_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_add_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_add_32f_a_orc_impl.c.s
-
-volk_32f_x2_divide_32f_a_orc_impl.o: volk_32f_x2_divide_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_divide_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_x2_divide_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_divide_32f_a_orc_impl.c.o
-
-volk_32f_x2_divide_32f_a_orc_impl.i: volk_32f_x2_divide_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_divide_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_x2_divide_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_divide_32f_a_orc_impl.c.i
-
-volk_32f_x2_divide_32f_a_orc_impl.s: volk_32f_x2_divide_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_divide_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_x2_divide_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_divide_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_divide_32f_a_orc_impl.c.s
-
-volk_32f_x2_dot_prod_32f_a_orc_impl.o: volk_32f_x2_dot_prod_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_dot_prod_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_x2_dot_prod_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_dot_prod_32f_a_orc_impl.c.o
-
-volk_32f_x2_dot_prod_32f_a_orc_impl.i: volk_32f_x2_dot_prod_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_dot_prod_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_x2_dot_prod_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_dot_prod_32f_a_orc_impl.c.i
-
-volk_32f_x2_dot_prod_32f_a_orc_impl.s: volk_32f_x2_dot_prod_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_dot_prod_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_x2_dot_prod_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_dot_prod_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_dot_prod_32f_a_orc_impl.c.s
-
-volk_32f_x2_max_32f_a_orc_impl.o: volk_32f_x2_max_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_max_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_x2_max_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_max_32f_a_orc_impl.c.o
-
-volk_32f_x2_max_32f_a_orc_impl.i: volk_32f_x2_max_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_max_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_x2_max_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_max_32f_a_orc_impl.c.i
-
-volk_32f_x2_max_32f_a_orc_impl.s: volk_32f_x2_max_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_max_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_x2_max_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_max_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_max_32f_a_orc_impl.c.s
-
-volk_32f_x2_min_32f_a_orc_impl.o: volk_32f_x2_min_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_min_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_x2_min_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_min_32f_a_orc_impl.c.o
-
-volk_32f_x2_min_32f_a_orc_impl.i: volk_32f_x2_min_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_min_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_x2_min_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_min_32f_a_orc_impl.c.i
-
-volk_32f_x2_min_32f_a_orc_impl.s: volk_32f_x2_min_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_min_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_x2_min_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_min_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_min_32f_a_orc_impl.c.s
-
-volk_32f_x2_multiply_32f_a_orc_impl.o: volk_32f_x2_multiply_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_multiply_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_x2_multiply_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_multiply_32f_a_orc_impl.c.o
-
-volk_32f_x2_multiply_32f_a_orc_impl.i: volk_32f_x2_multiply_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_multiply_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_x2_multiply_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_multiply_32f_a_orc_impl.c.i
-
-volk_32f_x2_multiply_32f_a_orc_impl.s: volk_32f_x2_multiply_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_multiply_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_x2_multiply_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_multiply_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_multiply_32f_a_orc_impl.c.s
-
-volk_32f_x2_subtract_32f_a_orc_impl.o: volk_32f_x2_subtract_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_subtract_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32f_x2_subtract_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.o
-.PHONY : volk_32f_x2_subtract_32f_a_orc_impl.c.o
-
-volk_32f_x2_subtract_32f_a_orc_impl.i: volk_32f_x2_subtract_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_subtract_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32f_x2_subtract_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.i
-.PHONY : volk_32f_x2_subtract_32f_a_orc_impl.c.i
-
-volk_32f_x2_subtract_32f_a_orc_impl.s: volk_32f_x2_subtract_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_subtract_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32f_x2_subtract_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32f_x2_subtract_32f_a_orc_impl.c.s
-.PHONY : volk_32f_x2_subtract_32f_a_orc_impl.c.s
-
-volk_32fc_32f_multiply_32fc_a_orc_impl.o: volk_32fc_32f_multiply_32fc_a_orc_impl.c.o
-.PHONY : volk_32fc_32f_multiply_32fc_a_orc_impl.o
-
-# target to build an object file
-volk_32fc_32f_multiply_32fc_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.o
-.PHONY : volk_32fc_32f_multiply_32fc_a_orc_impl.c.o
-
-volk_32fc_32f_multiply_32fc_a_orc_impl.i: volk_32fc_32f_multiply_32fc_a_orc_impl.c.i
-.PHONY : volk_32fc_32f_multiply_32fc_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32fc_32f_multiply_32fc_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.i
-.PHONY : volk_32fc_32f_multiply_32fc_a_orc_impl.c.i
-
-volk_32fc_32f_multiply_32fc_a_orc_impl.s: volk_32fc_32f_multiply_32fc_a_orc_impl.c.s
-.PHONY : volk_32fc_32f_multiply_32fc_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32fc_32f_multiply_32fc_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_32f_multiply_32fc_a_orc_impl.c.s
-.PHONY : volk_32fc_32f_multiply_32fc_a_orc_impl.c.s
-
-volk_32fc_magnitude_32f_a_orc_impl.o: volk_32fc_magnitude_32f_a_orc_impl.c.o
-.PHONY : volk_32fc_magnitude_32f_a_orc_impl.o
-
-# target to build an object file
-volk_32fc_magnitude_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.o
-.PHONY : volk_32fc_magnitude_32f_a_orc_impl.c.o
-
-volk_32fc_magnitude_32f_a_orc_impl.i: volk_32fc_magnitude_32f_a_orc_impl.c.i
-.PHONY : volk_32fc_magnitude_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32fc_magnitude_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.i
-.PHONY : volk_32fc_magnitude_32f_a_orc_impl.c.i
-
-volk_32fc_magnitude_32f_a_orc_impl.s: volk_32fc_magnitude_32f_a_orc_impl.c.s
-.PHONY : volk_32fc_magnitude_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32fc_magnitude_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_magnitude_32f_a_orc_impl.c.s
-.PHONY : volk_32fc_magnitude_32f_a_orc_impl.c.s
-
-volk_32fc_s32f_magnitude_16i_a_orc_impl.o: volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o
-.PHONY : volk_32fc_s32f_magnitude_16i_a_orc_impl.o
-
-# target to build an object file
-volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o
-.PHONY : volk_32fc_s32f_magnitude_16i_a_orc_impl.c.o
-
-volk_32fc_s32f_magnitude_16i_a_orc_impl.i: volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i
-.PHONY : volk_32fc_s32f_magnitude_16i_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i
-.PHONY : volk_32fc_s32f_magnitude_16i_a_orc_impl.c.i
-
-volk_32fc_s32f_magnitude_16i_a_orc_impl.s: volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s
-.PHONY : volk_32fc_s32f_magnitude_16i_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s
-.PHONY : volk_32fc_s32f_magnitude_16i_a_orc_impl.c.s
-
-volk_32fc_s32fc_multiply_32fc_a_orc_impl.o: volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o
-.PHONY : volk_32fc_s32fc_multiply_32fc_a_orc_impl.o
-
-# target to build an object file
-volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o
-.PHONY : volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.o
-
-volk_32fc_s32fc_multiply_32fc_a_orc_impl.i: volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.i
-.PHONY : volk_32fc_s32fc_multiply_32fc_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.i
-.PHONY : volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.i
-
-volk_32fc_s32fc_multiply_32fc_a_orc_impl.s: volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.s
-.PHONY : volk_32fc_s32fc_multiply_32fc_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.s
-.PHONY : volk_32fc_s32fc_multiply_32fc_a_orc_impl.c.s
-
-volk_32fc_x2_multiply_32fc_a_orc_impl.o: volk_32fc_x2_multiply_32fc_a_orc_impl.c.o
-.PHONY : volk_32fc_x2_multiply_32fc_a_orc_impl.o
-
-# target to build an object file
-volk_32fc_x2_multiply_32fc_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.o
-.PHONY : volk_32fc_x2_multiply_32fc_a_orc_impl.c.o
-
-volk_32fc_x2_multiply_32fc_a_orc_impl.i: volk_32fc_x2_multiply_32fc_a_orc_impl.c.i
-.PHONY : volk_32fc_x2_multiply_32fc_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32fc_x2_multiply_32fc_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.i
-.PHONY : volk_32fc_x2_multiply_32fc_a_orc_impl.c.i
-
-volk_32fc_x2_multiply_32fc_a_orc_impl.s: volk_32fc_x2_multiply_32fc_a_orc_impl.c.s
-.PHONY : volk_32fc_x2_multiply_32fc_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32fc_x2_multiply_32fc_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32fc_x2_multiply_32fc_a_orc_impl.c.s
-.PHONY : volk_32fc_x2_multiply_32fc_a_orc_impl.c.s
-
-volk_32i_x2_and_32i_a_orc_impl.o: volk_32i_x2_and_32i_a_orc_impl.c.o
-.PHONY : volk_32i_x2_and_32i_a_orc_impl.o
-
-# target to build an object file
-volk_32i_x2_and_32i_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.o
-.PHONY : volk_32i_x2_and_32i_a_orc_impl.c.o
-
-volk_32i_x2_and_32i_a_orc_impl.i: volk_32i_x2_and_32i_a_orc_impl.c.i
-.PHONY : volk_32i_x2_and_32i_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32i_x2_and_32i_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.i
-.PHONY : volk_32i_x2_and_32i_a_orc_impl.c.i
-
-volk_32i_x2_and_32i_a_orc_impl.s: volk_32i_x2_and_32i_a_orc_impl.c.s
-.PHONY : volk_32i_x2_and_32i_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32i_x2_and_32i_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_and_32i_a_orc_impl.c.s
-.PHONY : volk_32i_x2_and_32i_a_orc_impl.c.s
-
-volk_32i_x2_or_32i_a_orc_impl.o: volk_32i_x2_or_32i_a_orc_impl.c.o
-.PHONY : volk_32i_x2_or_32i_a_orc_impl.o
-
-# target to build an object file
-volk_32i_x2_or_32i_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.o
-.PHONY : volk_32i_x2_or_32i_a_orc_impl.c.o
-
-volk_32i_x2_or_32i_a_orc_impl.i: volk_32i_x2_or_32i_a_orc_impl.c.i
-.PHONY : volk_32i_x2_or_32i_a_orc_impl.i
-
-# target to preprocess a source file
-volk_32i_x2_or_32i_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.i
-.PHONY : volk_32i_x2_or_32i_a_orc_impl.c.i
-
-volk_32i_x2_or_32i_a_orc_impl.s: volk_32i_x2_or_32i_a_orc_impl.c.s
-.PHONY : volk_32i_x2_or_32i_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_32i_x2_or_32i_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_32i_x2_or_32i_a_orc_impl.c.s
-.PHONY : volk_32i_x2_or_32i_a_orc_impl.c.s
-
-volk_8i_convert_16i_a_orc_impl.o: volk_8i_convert_16i_a_orc_impl.c.o
-.PHONY : volk_8i_convert_16i_a_orc_impl.o
-
-# target to build an object file
-volk_8i_convert_16i_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.o
-.PHONY : volk_8i_convert_16i_a_orc_impl.c.o
-
-volk_8i_convert_16i_a_orc_impl.i: volk_8i_convert_16i_a_orc_impl.c.i
-.PHONY : volk_8i_convert_16i_a_orc_impl.i
-
-# target to preprocess a source file
-volk_8i_convert_16i_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.i
-.PHONY : volk_8i_convert_16i_a_orc_impl.c.i
-
-volk_8i_convert_16i_a_orc_impl.s: volk_8i_convert_16i_a_orc_impl.c.s
-.PHONY : volk_8i_convert_16i_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_8i_convert_16i_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_convert_16i_a_orc_impl.c.s
-.PHONY : volk_8i_convert_16i_a_orc_impl.c.s
-
-volk_8i_s32f_convert_32f_a_orc_impl.o: volk_8i_s32f_convert_32f_a_orc_impl.c.o
-.PHONY : volk_8i_s32f_convert_32f_a_orc_impl.o
-
-# target to build an object file
-volk_8i_s32f_convert_32f_a_orc_impl.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.o
-.PHONY : volk_8i_s32f_convert_32f_a_orc_impl.c.o
-
-volk_8i_s32f_convert_32f_a_orc_impl.i: volk_8i_s32f_convert_32f_a_orc_impl.c.i
-.PHONY : volk_8i_s32f_convert_32f_a_orc_impl.i
-
-# target to preprocess a source file
-volk_8i_s32f_convert_32f_a_orc_impl.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.i
-.PHONY : volk_8i_s32f_convert_32f_a_orc_impl.c.i
-
-volk_8i_s32f_convert_32f_a_orc_impl.s: volk_8i_s32f_convert_32f_a_orc_impl.c.s
-.PHONY : volk_8i_s32f_convert_32f_a_orc_impl.s
-
-# target to generate assembly for a file
-volk_8i_s32f_convert_32f_a_orc_impl.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_8i_s32f_convert_32f_a_orc_impl.c.s
-.PHONY : volk_8i_s32f_convert_32f_a_orc_impl.c.s
-
 volk_cpu.o: volk_cpu.c.o
 .PHONY : volk_cpu.o
 
@@ -922,29 +314,29 @@ volk_environment_init.c.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_environment_init.c.s
 .PHONY : volk_environment_init.c.s
 
-volk_machine_avx_64.o: volk_machine_avx_64.c.o
-.PHONY : volk_machine_avx_64.o
+volk_machine_avx_32.o: volk_machine_avx_32.c.o
+.PHONY : volk_machine_avx_32.o
 
 # target to build an object file
-volk_machine_avx_64.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_avx_64.c.o
-.PHONY : volk_machine_avx_64.c.o
+volk_machine_avx_32.c.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_avx_32.c.o
+.PHONY : volk_machine_avx_32.c.o
 
-volk_machine_avx_64.i: volk_machine_avx_64.c.i
-.PHONY : volk_machine_avx_64.i
+volk_machine_avx_32.i: volk_machine_avx_32.c.i
+.PHONY : volk_machine_avx_32.i
 
 # target to preprocess a source file
-volk_machine_avx_64.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_avx_64.c.i
-.PHONY : volk_machine_avx_64.c.i
+volk_machine_avx_32.c.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_avx_32.c.i
+.PHONY : volk_machine_avx_32.c.i
 
-volk_machine_avx_64.s: volk_machine_avx_64.c.s
-.PHONY : volk_machine_avx_64.s
+volk_machine_avx_32.s: volk_machine_avx_32.c.s
+.PHONY : volk_machine_avx_32.s
 
 # target to generate assembly for a file
-volk_machine_avx_64.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_avx_64.c.s
-.PHONY : volk_machine_avx_64.c.s
+volk_machine_avx_32.c.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_avx_32.c.s
+.PHONY : volk_machine_avx_32.c.s
 
 volk_machine_avx_only.o: volk_machine_avx_only.c.o
 .PHONY : volk_machine_avx_only.o
@@ -994,29 +386,29 @@ volk_machine_generic.c.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_generic.c.s
 .PHONY : volk_machine_generic.c.s
 
-volk_machine_sse2_64.o: volk_machine_sse2_64.c.o
-.PHONY : volk_machine_sse2_64.o
+volk_machine_sse2_32.o: volk_machine_sse2_32.c.o
+.PHONY : volk_machine_sse2_32.o
 
 # target to build an object file
-volk_machine_sse2_64.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse2_64.c.o
-.PHONY : volk_machine_sse2_64.c.o
+volk_machine_sse2_32.c.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse2_32.c.o
+.PHONY : volk_machine_sse2_32.c.o
 
-volk_machine_sse2_64.i: volk_machine_sse2_64.c.i
-.PHONY : volk_machine_sse2_64.i
+volk_machine_sse2_32.i: volk_machine_sse2_32.c.i
+.PHONY : volk_machine_sse2_32.i
 
 # target to preprocess a source file
-volk_machine_sse2_64.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse2_64.c.i
-.PHONY : volk_machine_sse2_64.c.i
+volk_machine_sse2_32.c.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse2_32.c.i
+.PHONY : volk_machine_sse2_32.c.i
 
-volk_machine_sse2_64.s: volk_machine_sse2_64.c.s
-.PHONY : volk_machine_sse2_64.s
+volk_machine_sse2_32.s: volk_machine_sse2_32.c.s
+.PHONY : volk_machine_sse2_32.s
 
 # target to generate assembly for a file
-volk_machine_sse2_64.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse2_64.c.s
-.PHONY : volk_machine_sse2_64.c.s
+volk_machine_sse2_32.c.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse2_32.c.s
+.PHONY : volk_machine_sse2_32.c.s
 
 volk_machine_sse2_only.o: volk_machine_sse2_only.c.o
 .PHONY : volk_machine_sse2_only.o
@@ -1042,125 +434,125 @@ volk_machine_sse2_only.c.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse2_only.c.s
 .PHONY : volk_machine_sse2_only.c.s
 
-volk_machine_sse3_64.o: volk_machine_sse3_64.c.o
-.PHONY : volk_machine_sse3_64.o
+volk_machine_sse3_32.o: volk_machine_sse3_32.c.o
+.PHONY : volk_machine_sse3_32.o
 
 # target to build an object file
-volk_machine_sse3_64.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse3_64.c.o
-.PHONY : volk_machine_sse3_64.c.o
+volk_machine_sse3_32.c.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse3_32.c.o
+.PHONY : volk_machine_sse3_32.c.o
 
-volk_machine_sse3_64.i: volk_machine_sse3_64.c.i
-.PHONY : volk_machine_sse3_64.i
+volk_machine_sse3_32.i: volk_machine_sse3_32.c.i
+.PHONY : volk_machine_sse3_32.i
 
 # target to preprocess a source file
-volk_machine_sse3_64.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse3_64.c.i
-.PHONY : volk_machine_sse3_64.c.i
+volk_machine_sse3_32.c.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse3_32.c.i
+.PHONY : volk_machine_sse3_32.c.i
 
-volk_machine_sse3_64.s: volk_machine_sse3_64.c.s
-.PHONY : volk_machine_sse3_64.s
+volk_machine_sse3_32.s: volk_machine_sse3_32.c.s
+.PHONY : volk_machine_sse3_32.s
 
 # target to generate assembly for a file
-volk_machine_sse3_64.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse3_64.c.s
-.PHONY : volk_machine_sse3_64.c.s
+volk_machine_sse3_32.c.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse3_32.c.s
+.PHONY : volk_machine_sse3_32.c.s
 
-volk_machine_sse4_1_64.o: volk_machine_sse4_1_64.c.o
-.PHONY : volk_machine_sse4_1_64.o
+volk_machine_sse4_1_32.o: volk_machine_sse4_1_32.c.o
+.PHONY : volk_machine_sse4_1_32.o
 
 # target to build an object file
-volk_machine_sse4_1_64.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_1_64.c.o
-.PHONY : volk_machine_sse4_1_64.c.o
+volk_machine_sse4_1_32.c.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_1_32.c.o
+.PHONY : volk_machine_sse4_1_32.c.o
 
-volk_machine_sse4_1_64.i: volk_machine_sse4_1_64.c.i
-.PHONY : volk_machine_sse4_1_64.i
+volk_machine_sse4_1_32.i: volk_machine_sse4_1_32.c.i
+.PHONY : volk_machine_sse4_1_32.i
 
 # target to preprocess a source file
-volk_machine_sse4_1_64.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_1_64.c.i
-.PHONY : volk_machine_sse4_1_64.c.i
+volk_machine_sse4_1_32.c.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_1_32.c.i
+.PHONY : volk_machine_sse4_1_32.c.i
 
-volk_machine_sse4_1_64.s: volk_machine_sse4_1_64.c.s
-.PHONY : volk_machine_sse4_1_64.s
+volk_machine_sse4_1_32.s: volk_machine_sse4_1_32.c.s
+.PHONY : volk_machine_sse4_1_32.s
 
 # target to generate assembly for a file
-volk_machine_sse4_1_64.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_1_64.c.s
-.PHONY : volk_machine_sse4_1_64.c.s
+volk_machine_sse4_1_32.c.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_1_32.c.s
+.PHONY : volk_machine_sse4_1_32.c.s
 
-volk_machine_sse4_2_64.o: volk_machine_sse4_2_64.c.o
-.PHONY : volk_machine_sse4_2_64.o
+volk_machine_sse4_2_32.o: volk_machine_sse4_2_32.c.o
+.PHONY : volk_machine_sse4_2_32.o
 
 # target to build an object file
-volk_machine_sse4_2_64.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_2_64.c.o
-.PHONY : volk_machine_sse4_2_64.c.o
+volk_machine_sse4_2_32.c.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_2_32.c.o
+.PHONY : volk_machine_sse4_2_32.c.o
 
-volk_machine_sse4_2_64.i: volk_machine_sse4_2_64.c.i
-.PHONY : volk_machine_sse4_2_64.i
+volk_machine_sse4_2_32.i: volk_machine_sse4_2_32.c.i
+.PHONY : volk_machine_sse4_2_32.i
 
 # target to preprocess a source file
-volk_machine_sse4_2_64.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_2_64.c.i
-.PHONY : volk_machine_sse4_2_64.c.i
+volk_machine_sse4_2_32.c.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_2_32.c.i
+.PHONY : volk_machine_sse4_2_32.c.i
 
-volk_machine_sse4_2_64.s: volk_machine_sse4_2_64.c.s
-.PHONY : volk_machine_sse4_2_64.s
+volk_machine_sse4_2_32.s: volk_machine_sse4_2_32.c.s
+.PHONY : volk_machine_sse4_2_32.s
 
 # target to generate assembly for a file
-volk_machine_sse4_2_64.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_2_64.c.s
-.PHONY : volk_machine_sse4_2_64.c.s
+volk_machine_sse4_2_32.c.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_2_32.c.s
+.PHONY : volk_machine_sse4_2_32.c.s
 
-volk_machine_sse4_a_64.o: volk_machine_sse4_a_64.c.o
-.PHONY : volk_machine_sse4_a_64.o
+volk_machine_sse4_a_32.o: volk_machine_sse4_a_32.c.o
+.PHONY : volk_machine_sse4_a_32.o
 
 # target to build an object file
-volk_machine_sse4_a_64.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_a_64.c.o
-.PHONY : volk_machine_sse4_a_64.c.o
+volk_machine_sse4_a_32.c.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_a_32.c.o
+.PHONY : volk_machine_sse4_a_32.c.o
 
-volk_machine_sse4_a_64.i: volk_machine_sse4_a_64.c.i
-.PHONY : volk_machine_sse4_a_64.i
+volk_machine_sse4_a_32.i: volk_machine_sse4_a_32.c.i
+.PHONY : volk_machine_sse4_a_32.i
 
 # target to preprocess a source file
-volk_machine_sse4_a_64.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_a_64.c.i
-.PHONY : volk_machine_sse4_a_64.c.i
+volk_machine_sse4_a_32.c.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_a_32.c.i
+.PHONY : volk_machine_sse4_a_32.c.i
 
-volk_machine_sse4_a_64.s: volk_machine_sse4_a_64.c.s
-.PHONY : volk_machine_sse4_a_64.s
+volk_machine_sse4_a_32.s: volk_machine_sse4_a_32.c.s
+.PHONY : volk_machine_sse4_a_32.s
 
 # target to generate assembly for a file
-volk_machine_sse4_a_64.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_a_64.c.s
-.PHONY : volk_machine_sse4_a_64.c.s
+volk_machine_sse4_a_32.c.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_sse4_a_32.c.s
+.PHONY : volk_machine_sse4_a_32.c.s
 
-volk_machine_ssse3_64.o: volk_machine_ssse3_64.c.o
-.PHONY : volk_machine_ssse3_64.o
+volk_machine_ssse3_32.o: volk_machine_ssse3_32.c.o
+.PHONY : volk_machine_ssse3_32.o
 
 # target to build an object file
-volk_machine_ssse3_64.c.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_ssse3_64.c.o
-.PHONY : volk_machine_ssse3_64.c.o
+volk_machine_ssse3_32.c.o:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_ssse3_32.c.o
+.PHONY : volk_machine_ssse3_32.c.o
 
-volk_machine_ssse3_64.i: volk_machine_ssse3_64.c.i
-.PHONY : volk_machine_ssse3_64.i
+volk_machine_ssse3_32.i: volk_machine_ssse3_32.c.i
+.PHONY : volk_machine_ssse3_32.i
 
 # target to preprocess a source file
-volk_machine_ssse3_64.c.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_ssse3_64.c.i
-.PHONY : volk_machine_ssse3_64.c.i
+volk_machine_ssse3_32.c.i:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_ssse3_32.c.i
+.PHONY : volk_machine_ssse3_32.c.i
 
-volk_machine_ssse3_64.s: volk_machine_ssse3_64.c.s
-.PHONY : volk_machine_ssse3_64.s
+volk_machine_ssse3_32.s: volk_machine_ssse3_32.c.s
+.PHONY : volk_machine_ssse3_32.s
 
 # target to generate assembly for a file
-volk_machine_ssse3_64.c.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_ssse3_64.c.s
-.PHONY : volk_machine_ssse3_64.c.s
+volk_machine_ssse3_32.c.s:
+	cd /home/katsikas/gnuradio/build && $(MAKE) -f volk/lib/CMakeFiles/volk.dir/build.make volk/lib/CMakeFiles/volk.dir/volk_machine_ssse3_32.c.s
+.PHONY : volk_machine_ssse3_32.c.s
 
 volk_machines.o: volk_machines.c.o
 .PHONY : volk_machines.o
@@ -1260,117 +652,42 @@ help:
 	@echo "... volk.o"
 	@echo "... volk.i"
 	@echo "... volk.s"
-	@echo "... volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.o"
-	@echo "... volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.i"
-	@echo "... volk_16i_s32f_deinterleave_32f_x2_a_orc_impl.s"
-	@echo "... volk_16ic_deinterleave_16i_x2_a_orc_impl.o"
-	@echo "... volk_16ic_deinterleave_16i_x2_a_orc_impl.i"
-	@echo "... volk_16ic_deinterleave_16i_x2_a_orc_impl.s"
-	@echo "... volk_16ic_deinterleave_real_8i_a_orc_impl.o"
-	@echo "... volk_16ic_deinterleave_real_8i_a_orc_impl.i"
-	@echo "... volk_16ic_deinterleave_real_8i_a_orc_impl.s"
-	@echo "... volk_16ic_magnitude_16i_a_orc_impl.o"
-	@echo "... volk_16ic_magnitude_16i_a_orc_impl.i"
-	@echo "... volk_16ic_magnitude_16i_a_orc_impl.s"
-	@echo "... volk_16sc_magnitude_32f_aligned16_orc_impl.o"
-	@echo "... volk_16sc_magnitude_32f_aligned16_orc_impl.i"
-	@echo "... volk_16sc_magnitude_32f_aligned16_orc_impl.s"
-	@echo "... volk_16u_byteswap_a_orc_impl.o"
-	@echo "... volk_16u_byteswap_a_orc_impl.i"
-	@echo "... volk_16u_byteswap_a_orc_impl.s"
-	@echo "... volk_32f_s32f_multiply_32f_a_orc_impl.o"
-	@echo "... volk_32f_s32f_multiply_32f_a_orc_impl.i"
-	@echo "... volk_32f_s32f_multiply_32f_a_orc_impl.s"
-	@echo "... volk_32f_s32f_normalize_a_orc_impl.o"
-	@echo "... volk_32f_s32f_normalize_a_orc_impl.i"
-	@echo "... volk_32f_s32f_normalize_a_orc_impl.s"
-	@echo "... volk_32f_sqrt_32f_a_orc_impl.o"
-	@echo "... volk_32f_sqrt_32f_a_orc_impl.i"
-	@echo "... volk_32f_sqrt_32f_a_orc_impl.s"
-	@echo "... volk_32f_x2_add_32f_a_orc_impl.o"
-	@echo "... volk_32f_x2_add_32f_a_orc_impl.i"
-	@echo "... volk_32f_x2_add_32f_a_orc_impl.s"
-	@echo "... volk_32f_x2_divide_32f_a_orc_impl.o"
-	@echo "... volk_32f_x2_divide_32f_a_orc_impl.i"
-	@echo "... volk_32f_x2_divide_32f_a_orc_impl.s"
-	@echo "... volk_32f_x2_dot_prod_32f_a_orc_impl.o"
-	@echo "... volk_32f_x2_dot_prod_32f_a_orc_impl.i"
-	@echo "... volk_32f_x2_dot_prod_32f_a_orc_impl.s"
-	@echo "... volk_32f_x2_max_32f_a_orc_impl.o"
-	@echo "... volk_32f_x2_max_32f_a_orc_impl.i"
-	@echo "... volk_32f_x2_max_32f_a_orc_impl.s"
-	@echo "... volk_32f_x2_min_32f_a_orc_impl.o"
-	@echo "... volk_32f_x2_min_32f_a_orc_impl.i"
-	@echo "... volk_32f_x2_min_32f_a_orc_impl.s"
-	@echo "... volk_32f_x2_multiply_32f_a_orc_impl.o"
-	@echo "... volk_32f_x2_multiply_32f_a_orc_impl.i"
-	@echo "... volk_32f_x2_multiply_32f_a_orc_impl.s"
-	@echo "... volk_32f_x2_subtract_32f_a_orc_impl.o"
-	@echo "... volk_32f_x2_subtract_32f_a_orc_impl.i"
-	@echo "... volk_32f_x2_subtract_32f_a_orc_impl.s"
-	@echo "... volk_32fc_32f_multiply_32fc_a_orc_impl.o"
-	@echo "... volk_32fc_32f_multiply_32fc_a_orc_impl.i"
-	@echo "... volk_32fc_32f_multiply_32fc_a_orc_impl.s"
-	@echo "... volk_32fc_magnitude_32f_a_orc_impl.o"
-	@echo "... volk_32fc_magnitude_32f_a_orc_impl.i"
-	@echo "... volk_32fc_magnitude_32f_a_orc_impl.s"
-	@echo "... volk_32fc_s32f_magnitude_16i_a_orc_impl.o"
-	@echo "... volk_32fc_s32f_magnitude_16i_a_orc_impl.i"
-	@echo "... volk_32fc_s32f_magnitude_16i_a_orc_impl.s"
-	@echo "... volk_32fc_s32fc_multiply_32fc_a_orc_impl.o"
-	@echo "... volk_32fc_s32fc_multiply_32fc_a_orc_impl.i"
-	@echo "... volk_32fc_s32fc_multiply_32fc_a_orc_impl.s"
-	@echo "... volk_32fc_x2_multiply_32fc_a_orc_impl.o"
-	@echo "... volk_32fc_x2_multiply_32fc_a_orc_impl.i"
-	@echo "... volk_32fc_x2_multiply_32fc_a_orc_impl.s"
-	@echo "... volk_32i_x2_and_32i_a_orc_impl.o"
-	@echo "... volk_32i_x2_and_32i_a_orc_impl.i"
-	@echo "... volk_32i_x2_and_32i_a_orc_impl.s"
-	@echo "... volk_32i_x2_or_32i_a_orc_impl.o"
-	@echo "... volk_32i_x2_or_32i_a_orc_impl.i"
-	@echo "... volk_32i_x2_or_32i_a_orc_impl.s"
-	@echo "... volk_8i_convert_16i_a_orc_impl.o"
-	@echo "... volk_8i_convert_16i_a_orc_impl.i"
-	@echo "... volk_8i_convert_16i_a_orc_impl.s"
-	@echo "... volk_8i_s32f_convert_32f_a_orc_impl.o"
-	@echo "... volk_8i_s32f_convert_32f_a_orc_impl.i"
-	@echo "... volk_8i_s32f_convert_32f_a_orc_impl.s"
 	@echo "... volk_cpu.o"
 	@echo "... volk_cpu.i"
 	@echo "... volk_cpu.s"
 	@echo "... volk_environment_init.o"
 	@echo "... volk_environment_init.i"
 	@echo "... volk_environment_init.s"
-	@echo "... volk_machine_avx_64.o"
-	@echo "... volk_machine_avx_64.i"
-	@echo "... volk_machine_avx_64.s"
+	@echo "... volk_machine_avx_32.o"
+	@echo "... volk_machine_avx_32.i"
+	@echo "... volk_machine_avx_32.s"
 	@echo "... volk_machine_avx_only.o"
 	@echo "... volk_machine_avx_only.i"
 	@echo "... volk_machine_avx_only.s"
 	@echo "... volk_machine_generic.o"
 	@echo "... volk_machine_generic.i"
 	@echo "... volk_machine_generic.s"
-	@echo "... volk_machine_sse2_64.o"
-	@echo "... volk_machine_sse2_64.i"
-	@echo "... volk_machine_sse2_64.s"
+	@echo "... volk_machine_sse2_32.o"
+	@echo "... volk_machine_sse2_32.i"
+	@echo "... volk_machine_sse2_32.s"
 	@echo "... volk_machine_sse2_only.o"
 	@echo "... volk_machine_sse2_only.i"
 	@echo "... volk_machine_sse2_only.s"
-	@echo "... volk_machine_sse3_64.o"
-	@echo "... volk_machine_sse3_64.i"
-	@echo "... volk_machine_sse3_64.s"
-	@echo "... volk_machine_sse4_1_64.o"
-	@echo "... volk_machine_sse4_1_64.i"
-	@echo "... volk_machine_sse4_1_64.s"
-	@echo "... volk_machine_sse4_2_64.o"
-	@echo "... volk_machine_sse4_2_64.i"
-	@echo "... volk_machine_sse4_2_64.s"
-	@echo "... volk_machine_sse4_a_64.o"
-	@echo "... volk_machine_sse4_a_64.i"
-	@echo "... volk_machine_sse4_a_64.s"
-	@echo "... volk_machine_ssse3_64.o"
-	@echo "... volk_machine_ssse3_64.i"
-	@echo "... volk_machine_ssse3_64.s"
+	@echo "... volk_machine_sse3_32.o"
+	@echo "... volk_machine_sse3_32.i"
+	@echo "... volk_machine_sse3_32.s"
+	@echo "... volk_machine_sse4_1_32.o"
+	@echo "... volk_machine_sse4_1_32.i"
+	@echo "... volk_machine_sse4_1_32.s"
+	@echo "... volk_machine_sse4_2_32.o"
+	@echo "... volk_machine_sse4_2_32.i"
+	@echo "... volk_machine_sse4_2_32.s"
+	@echo "... volk_machine_sse4_a_32.o"
+	@echo "... volk_machine_sse4_a_32.i"
+	@echo "... volk_machine_sse4_a_32.s"
+	@echo "... volk_machine_ssse3_32.o"
+	@echo "... volk_machine_ssse3_32.i"
+	@echo "... volk_machine_ssse3_32.s"
 	@echo "... volk_machines.o"
 	@echo "... volk_machines.i"
 	@echo "... volk_machines.s"

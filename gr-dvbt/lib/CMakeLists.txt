@@ -60,13 +60,13 @@ list(APPEND dvbt_sources
 	dvbt_pad.cc
 	dvbt_rs_encoder.cc
 	dvbt_randomizer.cc
-	dvbt_interleaver.cc
+	dvbt_rs_interleaver.cc
 	dvbt_trellis_encoder.cc
 
 	dvbt_depad.cc
 	dvbt_rs_decoder.cc
 	dvbt_derandomizer.cc
-	dvbt_deinterleaver.cc
+	dvbt_rs_deinterleaver.cc
 	dvbt_viterbi_decoder.cc
 	
 	dvbti_randomizer.cc
@@ -75,7 +75,7 @@ list(APPEND dvbt_sources
 	dvbti_single_viterbi.cc
 	dvbti_trellis_encoder.cc
 	dvbti_viterbi_decoder.cc
-	dvbti_data_interleaver.cc
+	dvbti_data_rs_interleaver.cc
 	dvbti_fake_single_viterbi.cc
 	dvbti_basic_trellis_encoder.cc
 )

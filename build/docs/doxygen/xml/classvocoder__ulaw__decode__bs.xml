@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classvocoder__ulaw__decode__bs" kind="class" prot="public">
     <compoundname>vocoder_ulaw_decode_bs</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
     <includes refid="vocoder__ulaw__decode__bs_8h" local="no">vocoder_ulaw_decode_bs.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classvocoder__ulaw__decode__bs_1a44c1226ec2e8d6183ffbe336f36baac8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend VOCODER_API <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_ulaw_decode_bs_sptr</ref></type>
+        <type>friend <ref refid="vocoder__api_8h_1a8a56d8b0d26cf75df04dcad9064a0aeb" kindref="member">VOCODER_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">vocoder_ulaw_decode_bs_sptr</ref></type>
         <definition>VOCODER_API vocoder_ulaw_decode_bs_sptr vocoder_make_ulaw_decode_bs</definition>
         <argsstring>()</argsstring>
         <name>vocoder_make_ulaw_decode_bs</name>
@@ -80,100 +80,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="15710">
+      <node id="10524">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="15711" relation="public-inheritance">
+        <childnode refid="10525" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15707">
+      <node id="10521">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="15708" relation="public-inheritance">
+        <childnode refid="10522" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15708">
+      <node id="10522">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="15709" relation="public-inheritance">
+        <childnode refid="10523" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15706">
+      <node id="10520">
         <label>vocoder_ulaw_decode_bs</label>
         <link refid="classvocoder__ulaw__decode__bs"/>
-        <childnode refid="15707" relation="public-inheritance">
+        <childnode refid="10521" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15711">
+      <node id="10525">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="15709">
+      <node id="10523">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="15710" relation="public-inheritance">
+        <childnode refid="10524" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="15716">
+      <node id="10530">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="15717" relation="public-inheritance">
+        <childnode refid="10531" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15713">
+      <node id="10527">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="15714" relation="public-inheritance">
+        <childnode refid="10528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15714">
+      <node id="10528">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="15715" relation="public-inheritance">
+        <childnode refid="10529" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15712">
+      <node id="10526">
         <label>vocoder_ulaw_decode_bs</label>
         <link refid="classvocoder__ulaw__decode__bs"/>
-        <childnode refid="15713" relation="public-inheritance">
+        <childnode refid="10527" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15718">
+      <node id="10532">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="15719" relation="usage">
+        <childnode refid="10533" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="15721">
+      <node id="10535">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="15717">
+      <node id="10531">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="15719">
+      <node id="10533">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="15715">
+      <node id="10529">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="15716" relation="public-inheritance">
+        <childnode refid="10530" relation="public-inheritance">
         </childnode>
-        <childnode refid="15718" relation="usage">
+        <childnode refid="10532" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="15720" relation="usage">
+        <childnode refid="10534" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="15720">
+      <node id="10534">
         <label>std::string</label>
-        <childnode refid="15721" relation="public-inheritance">
+        <childnode refid="10535" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

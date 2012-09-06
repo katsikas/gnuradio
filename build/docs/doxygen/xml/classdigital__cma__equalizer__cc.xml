@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__cma__equalizer__cc" kind="class" prot="public">
     <compoundname>digital_cma_equalizer_cc</compoundname>
     <basecompoundref refid="classgr__adaptive__fir__ccc" prot="public" virt="non-virtual">gr_adaptive_fir_ccc</basecompoundref>
@@ -34,7 +34,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__cma__equalizer__cc_1ab5c03e81105c3b7b1c58516bf070c392" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_cma_equalizer_cc_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_cma_equalizer_cc_sptr</ref></type>
         <definition>DIGITAL_API digital_cma_equalizer_cc_sptr digital_make_cma_equalizer_cc</definition>
         <argsstring>(int num_taps, float modulus, float mu, int sps)</argsstring>
         <name>digital_make_cma_equalizer_cc</name>
@@ -206,142 +206,143 @@
 <para>D. Godard, &quot;Self-Recovering Equalization and Carrier Tracking in
  Two-Dimensional Data Communication Systems,&quot; IEEE Transactions on Communications, Vol. 28, No. 11, pp. 1867 - 1875, 1980, </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="6202">
+      <node id="998">
         <label>digital_cma_equalizer_cc</label>
         <link refid="classdigital__cma__equalizer__cc"/>
-        <childnode refid="6203" relation="public-inheritance">
+        <childnode refid="999" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6208">
+      <node id="1004">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6209" relation="public-inheritance">
+        <childnode refid="1005" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6205">
+      <node id="1001">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6206" relation="public-inheritance">
+        <childnode refid="1002" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6204">
+      <node id="1000">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="6205" relation="public-inheritance">
+        <childnode refid="1001" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6206">
+      <node id="1002">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6207" relation="public-inheritance">
+        <childnode refid="1003" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6209">
+      <node id="1005">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6203">
+      <node id="999">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="6204" relation="public-inheritance">
+        <childnode refid="1000" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6207">
+      <node id="1003">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6208" relation="public-inheritance">
+        <childnode refid="1004" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6210">
+      <node id="1006">
         <label>digital_cma_equalizer_cc</label>
         <link refid="classdigital__cma__equalizer__cc"/>
-        <childnode refid="6211" relation="public-inheritance">
+        <childnode refid="1007" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6216">
+      <node id="1012">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6217" relation="public-inheritance">
+        <childnode refid="1013" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6213">
+      <node id="1009">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6214" relation="public-inheritance">
+        <childnode refid="1010" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6212">
+      <node id="1008">
         <label>gr_sync_decimator</label>
         <link refid="classgr__sync__decimator"/>
-        <childnode refid="6213" relation="public-inheritance">
+        <childnode refid="1009" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6214">
+      <node id="1010">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6215" relation="public-inheritance">
+        <childnode refid="1011" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6223">
+      <node id="1019">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="6224" relation="usage">
+        <childnode refid="1020" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="6218">
+      <node id="1014">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6219" relation="usage">
+        <childnode refid="1015" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6221">
+      <node id="1017">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6217">
+      <node id="1013">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6224">
+      <node id="1020">
         <label>std::complex</label>
       </node>
-      <node id="6219">
+      <node id="1015">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6211">
+      <node id="1007">
         <label>gr_adaptive_fir_ccc</label>
         <link refid="classgr__adaptive__fir__ccc"/>
-        <childnode refid="6212" relation="public-inheritance">
+        <childnode refid="1008" relation="public-inheritance">
         </childnode>
-        <childnode refid="6222" relation="usage">
+        <childnode refid="1018" relation="usage">
           <edgelabel>d_error</edgelabel>
         </childnode>
-        <childnode refid="6223" relation="usage">
+        <childnode refid="1019" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="6215">
+      <node id="1011">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6216" relation="public-inheritance">
+        <childnode refid="1012" relation="public-inheritance">
         </childnode>
-        <childnode refid="6218" relation="usage">
+        <childnode refid="1014" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6220" relation="usage">
+        <childnode refid="1016" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6222">
+      <node id="1018">
         <label>std::complex&lt; float &gt;</label>
       </node>
-      <node id="6220">
+      <node id="1016">
         <label>std::string</label>
-        <childnode refid="6221" relation="public-inheritance">
+        <childnode refid="1017" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

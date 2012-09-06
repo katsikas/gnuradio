@@ -42,6 +42,12 @@ static const int K = N - rs_init_nroots;		// 239
 
 static const int amount_of_pad	 = N - DVBT_MPEG_RS_ENCODED_LENGTH;	  // 51
 
+
+/*!
+ * \brief DVBT Reed-Solomon encoder / decoder
+ *
+ * Helper class to perform main encoding/decoding proccess for a (204,188) code.
+ */
 dvbti_reed_solomon::dvbti_reed_solomon ()
 {
 	core_rs = init_rs_char (rs_init_symsize, rs_init_gfpoly,
@@ -58,6 +64,9 @@ dvbti_reed_solomon::~dvbti_reed_solomon ()
   	core_rs = 0;
 }
 
+/*!
+ * \brief Add RS error correction encoding
+ */
 void
 dvbti_reed_solomon::encode (dvbt_mpeg_packet_rs_encoded &out, const dvbt_mpeg_packet_no_sync &in)
 {
@@ -77,6 +86,10 @@ dvbti_reed_solomon::encode (dvbt_mpeg_packet_rs_encoded &out, const dvbt_mpeg_pa
   	encode_rs_char (core_rs, tmp, &out.data[sizeof (in.data)]);
 }
 
+/*!
+ * Decode RS encoded packet.
+ * \returns a count of corrected symbols, or -1 if the block was uncorrectible.
+ */
 int
 dvbti_reed_solomon::decode (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet_rs_encoded &in)
 {

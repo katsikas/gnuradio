@@ -49,7 +49,7 @@ def create_transport_stream_packet(npkts,f):
 			r[i+0] = MPEG_INVERTED_SYNC_BYTE
 		else:
         		r[i+0] = MPEG_SYNC_BYTE
-        	r[i+1] = random.randint(0, 0) # top bit (transport error bit) clear
+        	r[i+1] = random.randint(0, 0) 
 		r[i+2] = random.randint(0, 0)
 		r[i+3] = random.randint(0, 0)
         	i = i + 4
@@ -68,7 +68,6 @@ def create_transport_stream_packet(npkts,f):
 
 
 def pad_stream(src, sizeof_total, sizeof_pad):
-	print("pad_stream() called")
    	sizeof_valid = sizeof_total - sizeof_pad
     	assert sizeof_valid > 0
     	assert (len(src) % sizeof_valid) == 0
@@ -83,7 +82,6 @@ def pad_stream(src, sizeof_total, sizeof_pad):
 
 
 def depad_stream(src, sizeof_total, sizeof_pad):
-	print("depad_stream() called")
     	sizeof_valid = sizeof_total - sizeof_pad
     	assert sizeof_valid > 0
     	assert (len(src) % sizeof_total) == 0

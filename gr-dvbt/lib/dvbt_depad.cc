@@ -31,6 +31,13 @@
 #include <gr_io_signature.h>
 
 
+/*
+ * \brief remove 4 header bytes and depad mpeg ts packets from 256
+ * byte dvbt_mpeg_packet to 188-4 byte char
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet; output: unsigned char
+ */
 dvbt_depad_sptr
 dvbt_make_depad()
 {
@@ -54,6 +61,7 @@ dvbt_depad::work (int noutput_items,
   	const dvbt_mpeg_packet *in = (const dvbt_mpeg_packet *) input_items[0];
   	unsigned char *out = (unsigned char *) output_items[0];
 
+	// Check the first 4 header bytes and proccess the rest mpeg data bytes.
 	for (i = 0; i < noutput_items/DVBT_MPEG_DATA_LENGTH; i++){
 		assert(in[i].data[0] == MPEG_SYNC_BYTE);
     		memcpy(&out[i * DVBT_MPEG_DATA_LENGTH], in[i].data+4, DVBT_MPEG_DATA_LENGTH);

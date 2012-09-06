@@ -4,14 +4,12 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/_video_sdl.dir/video_sdlPYTHON_wrap.cxx.o"
   "video_sdlPYTHON_wrap.cxx"
   "video_sdl.py"
-  "video_sdl.tag"
   "video_sdl_swig_doc.i"
+  "video_sdl.tag"
   "video_sdl_swig_doc_swig_docs/xml/index.xml"
   "video_sdl_swig_doc_swig_docs/xml/combine.xslt"
   "_video_sdl.pdb"
   "_video_sdl.so"
-  "CMakeFiles/CMakeRelink.dir/_video_sdl.pdb"
-  "CMakeFiles/CMakeRelink.dir/_video_sdl.so"
 )
 
 # Per-language clean rules from dependency scanning.

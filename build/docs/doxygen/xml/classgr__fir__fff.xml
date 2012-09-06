@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__fir__fff" kind="class" prot="public">
     <compoundname>gr_fir_fff</compoundname>
     <derivedcompoundref refid="classgr__fir__fff__generic" prot="public" virt="non-virtual">gr_fir_fff_generic</derivedcompoundref>
@@ -202,56 +202,56 @@
     <detaileddescription>
 <para>The trailing suffix has the form _IOT where I codes the input type, O codes the output type, and T codes the tap type. I,O,T are elements of the set &apos;s&apos; (short), &apos;f&apos; (float), &apos;c&apos; (gr_complex), &apos;i&apos; (int) </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="9470">
+      <node id="4266">
         <label>gr_fir_fff_generic</label>
         <link refid="classgr__fir__fff__generic"/>
-        <childnode refid="9469" relation="public-inheritance">
+        <childnode refid="4265" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9471">
+      <node id="4267">
         <label>gr_fir_fff_altivec</label>
         <link refid="classgr__fir__fff__altivec"/>
-        <childnode refid="9470" relation="public-inheritance">
+        <childnode refid="4266" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9469">
+      <node id="4265">
         <label>gr_fir_fff</label>
         <link refid="classgr__fir__fff"/>
       </node>
-      <node id="9475">
+      <node id="4271">
         <label>gr_fir_fff_sse</label>
         <link refid="classgr__fir__fff__sse"/>
-        <childnode refid="9473" relation="public-inheritance">
+        <childnode refid="4269" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9473">
+      <node id="4269">
         <label>gr_fir_fff_simd</label>
         <link refid="classgr__fir__fff__simd"/>
-        <childnode refid="9470" relation="public-inheritance">
+        <childnode refid="4266" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9474">
+      <node id="4270">
         <label>gr_fir_fff_3dnow</label>
         <link refid="classgr__fir__fff__3dnow"/>
-        <childnode refid="9473" relation="public-inheritance">
+        <childnode refid="4269" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9472">
+      <node id="4268">
         <label>gr_fir_fff_armv7_a</label>
         <link refid="classgr__fir__fff__armv7__a"/>
-        <childnode refid="9470" relation="public-inheritance">
+        <childnode refid="4266" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9476">
+      <node id="4272">
         <label>gr_fir_fff</label>
         <link refid="classgr__fir__fff"/>
-        <childnode refid="9477" relation="usage">
+        <childnode refid="4273" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="9477">
+      <node id="4273">
         <label>std::vector&lt; float &gt;</label>
       </node>
     </collaborationgraph>

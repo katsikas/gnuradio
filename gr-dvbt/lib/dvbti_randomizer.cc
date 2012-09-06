@@ -29,29 +29,31 @@
 #include <dvbt/dvbti_randomizer.h>
 
 using namespace std;
+// PRBS initial state
 const string dvbti_randomizer::init_sequence = "000000010101001";
 
+/*!
+ * \brief DVBT data "whitener"
+ * Helper class for the main randomization/derandomization proccess.
+ *
+ * The data randomizer described in DVBT standard.
+ */
 dvbti_randomizer::dvbti_randomizer (){
 
 	prbs_sequence = bitset<15> (init_sequence);
 }
 
-/*!
- * \brief Generate the table used in the fast_output_map function.
- *
- * The table has 16K byte entries, but because of how is is used, only
- * 256 entries end up being resident in the cache.  This seems
- * like a good use of memory.  We can get away with a 16K table
- * because the low two bits of the state do not affect the output
- * function.  By shifting right those two bits we shrink the table,
- * and also get better cache line utilization.
+/**
+ * Set the PRBS sequence at the initial state.
  */
 void
 dvbti_randomizer::reset (){
 	prbs_sequence = bitset<15> (init_sequence);
 }
 
-
+/**
+ * Produce the next output of the PRBS sequence generator.
+ */
 void
 dvbti_randomizer::next_state(int byte_length){
 
@@ -69,6 +71,9 @@ dvbti_randomizer::next_state(int byte_length){
 }
 
 
+/**
+ * XOR the data bytes with the PRBS sequence to produce the randomized data.
+ */
 void
 dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet &in)
 {
@@ -94,6 +99,10 @@ dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_pack
 	}
 }
 
+/**
+ * XOR the input bytes with the PRBS sequence to produce the derandomized
+ * (original) data.
+ */
 void
 dvbti_randomizer::derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_sync &in)
 {

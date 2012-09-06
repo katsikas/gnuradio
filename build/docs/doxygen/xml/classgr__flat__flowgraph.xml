@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__flat__flowgraph" kind="class" prot="public">
     <compoundname>gr_flat_flowgraph</compoundname>
     <basecompoundref refid="classgr__flowgraph" prot="public" virt="non-virtual">gr_flowgraph</basecompoundref>
     <includes refid="gr__flat__flowgraph_8h" local="no">gr_flat_flowgraph.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__flat__flowgraph_1a1e704bc465208b2f98145a67de1ec399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_flat_flowgraph_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_flat_flowgraph_sptr</ref></type>
         <definition>GR_CORE_API gr_flat_flowgraph_sptr gr_make_flat_flowgraph</definition>
         <argsstring>()</argsstring>
         <name>gr_make_flat_flowgraph</name>
@@ -188,57 +188,59 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="9788">
+      <node id="4584">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
       </node>
-      <node id="9787">
+      <node id="4583">
         <label>gr_flat_flowgraph</label>
         <link refid="classgr__flat__flowgraph"/>
-        <childnode refid="9788" relation="public-inheritance">
+        <childnode refid="4584" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9791">
+      <node id="4587">
         <label>std::vector&lt; gr_edge &gt;</label>
-        <childnode refid="9792" relation="usage">
+        <childnode refid="4588" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="9795">
+      <node id="4591">
         <label>T</label>
       </node>
-      <node id="9794">
+      <node id="4590">
         <label>boost::shared_ptr&lt; T &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="9795" relation="usage">
+        <childnode refid="4591" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="9790">
+      <node id="4586">
         <label>gr_flowgraph</label>
         <link refid="classgr__flowgraph"/>
-        <childnode refid="9791" relation="usage">
+        <childnode refid="4587" relation="usage">
           <edgelabel>d_edges</edgelabel>
         </childnode>
-        <childnode refid="9793" relation="usage">
+        <childnode refid="4589" relation="usage">
           <edgelabel>d_blocks</edgelabel>
         </childnode>
       </node>
-      <node id="9793">
+      <node id="4589">
         <label>std::vector&lt; gr_basic_block_sptr &gt;</label>
-        <childnode refid="9794" relation="usage">
+        <childnode refid="4590" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="9789">
+      <node id="4585">
         <label>gr_flat_flowgraph</label>
         <link refid="classgr__flat__flowgraph"/>
-        <childnode refid="9790" relation="public-inheritance">
+        <childnode refid="4586" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9792">
+      <node id="4588">
         <label>gr_edge</label>
         <link refid="classgr__edge"/>
       </node>

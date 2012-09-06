@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__fir__ccc__simd" kind="class" prot="public">
     <compoundname>gr_fir_ccc_simd</compoundname>
     <basecompoundref refid="classgr__fir__ccc__generic" prot="public" virt="non-virtual">gr_fir_ccc_generic</basecompoundref>
@@ -138,68 +138,69 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="9344">
+      <node id="4140">
         <label>gr_fir_ccc_3dnow</label>
         <link refid="classgr__fir__ccc__3dnow"/>
-        <childnode refid="9341" relation="public-inheritance">
+        <childnode refid="4137" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9342">
+      <node id="4138">
         <label>gr_fir_ccc_generic</label>
         <link refid="classgr__fir__ccc__generic"/>
-        <childnode refid="9343" relation="public-inheritance">
+        <childnode refid="4139" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9345">
+      <node id="4141">
         <label>gr_fir_ccc_3dnowext</label>
         <link refid="classgr__fir__ccc__3dnowext"/>
-        <childnode refid="9341" relation="public-inheritance">
+        <childnode refid="4137" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9346">
+      <node id="4142">
         <label>gr_fir_ccc_sse</label>
         <link refid="classgr__fir__ccc__sse"/>
-        <childnode refid="9341" relation="public-inheritance">
+        <childnode refid="4137" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9343">
+      <node id="4139">
         <label>gr_fir_ccc</label>
         <link refid="classgr__fir__ccc"/>
       </node>
-      <node id="9341">
+      <node id="4137">
         <label>gr_fir_ccc_simd</label>
         <link refid="classgr__fir__ccc__simd"/>
-        <childnode refid="9342" relation="public-inheritance">
+        <childnode refid="4138" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="9348">
+      <node id="4144">
         <label>gr_fir_ccc_generic</label>
         <link refid="classgr__fir__ccc__generic"/>
-        <childnode refid="9349" relation="public-inheritance">
+        <childnode refid="4145" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9349">
+      <node id="4145">
         <label>gr_fir_ccc</label>
         <link refid="classgr__fir__ccc"/>
-        <childnode refid="9350" relation="usage">
+        <childnode refid="4146" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="9350">
+      <node id="4146">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="9351" relation="usage">
+        <childnode refid="4147" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="9351">
+      <node id="4147">
         <label>std::complex</label>
       </node>
-      <node id="9347">
+      <node id="4143">
         <label>gr_fir_ccc_simd</label>
         <link refid="classgr__fir__ccc__simd"/>
-        <childnode refid="9348" relation="public-inheritance">
+        <childnode refid="4144" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

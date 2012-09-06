@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dvbt__pad_8h" kind="file">
     <compoundname>dvbt_pad.h</compoundname>
     <includes refid="dvbt__api_8h" local="no">dvbt/dvbt_api.h</includes>
     <includes local="no">gr_sync_decimator.h</includes>
     <incdepgraph>
-      <node id="97">
+      <node id="65">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_pad.h</label>
         <link refid="dvbt_pad.h"/>
-        <childnode refid="98" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="100" relation="include">
+        <childnode refid="68" relation="include">
         </childnode>
       </node>
-      <node id="99">
+      <node id="67">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="100">
+      <node id="68">
         <label>gr_sync_decimator.h</label>
       </node>
-      <node id="98">
+      <node id="66">
         <label>dvbt/dvbt_api.h</label>
         <link refid="dvbt__api_8h"/>
-        <childnode refid="99" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -44,7 +44,7 @@
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="dvbt__pad_8h_1a3a657c8db9ea6f1ca4b5d69f87861ca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>DVBT_API <ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref></type>
+        <type><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref></type>
         <definition>DVBT_API dvbt_pad_sptr dvbt_make_pad</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_pad</name>
@@ -92,15 +92,15 @@
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gr_sync_decimator.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31" refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</ref>;</highlight></codeline>
+<codeline lineno="31" refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packetinput:...">dvbt_pad</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;dvbt_pad&gt;<sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref><sp/><ref refid="dvbt__pad_8h_1a3a657c8db9ea6f1ca4b5d69f87861ca4" kindref="member">dvbt_make_pad</ref>();</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="classdvbt__pad" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_decimator</highlight></codeline>
+<codeline lineno="43" refid="classdvbt__pad" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packetinput:...">dvbt_pad</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_decimator</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__pad" kindref="compound" tooltip="put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packetinput:...">dvbt_pad</ref>();</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__pad_8h_1aac9471e40abd09792c17f1e363ef444e" kindref="member">dvbt_pad_sptr</ref><sp/><ref refid="dvbt__pad_8h_1a3a657c8db9ea6f1ca4b5d69f87861ca4" kindref="member">dvbt_make_pad</ref>();</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>

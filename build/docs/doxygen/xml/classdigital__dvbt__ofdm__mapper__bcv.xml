@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__dvbt__ofdm__mapper__bcv" kind="class" prot="public">
     <compoundname>digital_dvbt_ofdm_mapper_bcv</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -504,7 +504,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__dvbt__ofdm__mapper__bcv_1ae36d5582c305088147ec8fe22d1aee4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_dvbt_ofdm_mapper_bcv_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_dvbt_ofdm_mapper_bcv_sptr</ref></type>
         <definition>DIGITAL_API digital_dvbt_ofdm_mapper_bcv_sptr digital_make_dvbt_ofdm_mapper_bcv</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;constellation, const std::vector&lt; gr_complex &gt; &amp;t_constellation, const std::vector&lt; gr_complex &gt; &amp;cs_constellation, unsigned int msgq_limit, unsigned int occupied_carriers, unsigned int fft_length)</argsstring>
         <name>digital_make_dvbt_ofdm_mapper_bcv</name>
@@ -633,6 +633,22 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="120"/>
       </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1aa58a364c6550c4ab536191a06f467ab1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char digital_dvbt_ofdm_mapper_bcv::get_PRBS</definition>
+        <argsstring>(int)</argsstring>
+        <name>get_PRBS</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="121"/>
+      </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a7ad736dafdd9774ff6c68ed39e1df4da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int digital_dvbt_ofdm_mapper_bcv::get_tps_pilots</definition>
@@ -644,20 +660,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="121"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="122"/>
       </memberdef>
-      <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a891154947bc081460d9e3480b315a7d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1af82e3e520cb48bbd9b0373eca4dcf33c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(unsigned char)</argsstring>
         <name>set_tps_pilots</name>
+        <param>
+          <type>unsigned</type>
+          <declname>char</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="122"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="123"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a3d267d746d41b8aae0af404505fe39d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
@@ -673,7 +693,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="123"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="124"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -691,7 +711,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="126"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="127"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1a42312ac7f7f6dd12fea12455c4231e21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classboost_1_1shared__ptr" kindref="compound">gr_msg_queue_sptr</ref></type>
@@ -704,7 +724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="128" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="128" bodyend="128"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="129" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="129" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__mapper__bcv_1abb3b0ec09c9a3f64923643a1256b3d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -730,7 +750,7 @@
 <para>The user must override work to define the signal processing code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="132"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="133"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -738,104 +758,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6425">
+      <node id="1221">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6426" relation="public-inheritance">
+        <childnode refid="1222" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6422">
+      <node id="1218">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6423" relation="public-inheritance">
+        <childnode refid="1219" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6423">
+      <node id="1219">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6424" relation="public-inheritance">
+        <childnode refid="1220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6421">
+      <node id="1217">
         <label>digital_dvbt_ofdm_mapper_bcv</label>
         <link refid="classdigital__dvbt__ofdm__mapper__bcv"/>
-        <childnode refid="6422" relation="public-inheritance">
+        <childnode refid="1218" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6426">
+      <node id="1222">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6424">
+      <node id="1220">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6425" relation="public-inheritance">
+        <childnode refid="1221" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6431">
+      <node id="1227">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6432" relation="public-inheritance">
+        <childnode refid="1228" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6428">
+      <node id="1224">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6429" relation="public-inheritance">
+        <childnode refid="1225" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6429">
+      <node id="1225">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6430" relation="public-inheritance">
+        <childnode refid="1226" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6433">
+      <node id="1229">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6434" relation="usage">
+        <childnode refid="1230" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6436">
+      <node id="1232">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6427">
+      <node id="1223">
         <label>digital_dvbt_ofdm_mapper_bcv</label>
         <link refid="classdigital__dvbt__ofdm__mapper__bcv"/>
-        <childnode refid="6428" relation="public-inheritance">
+        <childnode refid="1224" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6432">
+      <node id="1228">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6434">
+      <node id="1230">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6430">
+      <node id="1226">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6431" relation="public-inheritance">
+        <childnode refid="1227" relation="public-inheritance">
         </childnode>
-        <childnode refid="6433" relation="usage">
+        <childnode refid="1229" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6435" relation="usage">
+        <childnode refid="1231" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6435">
+      <node id="1231">
         <label>std::string</label>
-        <childnode refid="6436" relation="public-inheritance">
+        <childnode refid="1232" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="57" bodyend="134"/>
+    <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_mapper_bcv.h" bodystart="57" bodyend="135"/>
     <listofallmembers>
       <member refid="classgr__block_1a7578dece9d597abe61db91aae8a0df83" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>add_item_tag</name></member>
       <member refid="classgr__block_1ac8ef6a9b0086e00d80f10ccc8a7df321" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>add_item_tag</name></member>
@@ -893,6 +913,7 @@
       <member refid="classgr__sync__block_1adaecb00ae09408c22e46c44d09aad53e" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>fixed_rate_noutput_to_ninput</name></member>
       <member refid="classgr__sync__block_1a1327e83509baf039aa3c816ea81a8f22" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>forecast</name></member>
       <member refid="classgr__sync__block_1a56ca60b6bc20a3510f71d961891fa81b" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>general_work</name></member>
+      <member refid="classdigital__dvbt__ofdm__mapper__bcv_1aa58a364c6550c4ab536191a06f467ab1" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>get_PRBS</name></member>
       <member refid="classgr__block_1a54f69c4cd5ef5b05ac58d0128256def1" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>get_tags_in_range</name></member>
       <member refid="classgr__block_1ab2650baa0c05713fc04664e69dde565d" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>get_tags_in_range</name></member>
       <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a7ad736dafdd9774ff6c68ed39e1df4da" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>get_tps_pilots</name></member>
@@ -940,7 +961,7 @@
       <member refid="classgr__basic__block_1a949b6ad69ebfdf423835265db99cf63d" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_output_signature</name></member>
       <member refid="classgr__block_1ab9dc7e6d30692bbfa65fc7c4eef6fc9d" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_relative_rate</name></member>
       <member refid="classgr__block_1af9bce945f28950c1800d8deb6bb997a1" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_tag_propagation_policy</name></member>
-      <member refid="classdigital__dvbt__ofdm__mapper__bcv_1a891154947bc081460d9e3480b315a7d8" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_tps_pilots</name></member>
+      <member refid="classdigital__dvbt__ofdm__mapper__bcv_1af82e3e520cb48bbd9b0373eca4dcf33c" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_tps_pilots</name></member>
       <member refid="classgr__block_1a1f7f6b204a5d383f5903b222aa838eb3" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>set_unaligned</name></member>
       <member refid="classgr__block_1a49ea94a86f3199f23563bb837633ea1f" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>start</name></member>
       <member refid="classgr__block_1a53c2c89c037e4e393b75414d605e36b1" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_mapper_bcv</scope><name>stop</name></member>

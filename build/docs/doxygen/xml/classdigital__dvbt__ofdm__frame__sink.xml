@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__dvbt__ofdm__frame__sink" kind="class" prot="public">
     <compoundname>digital_dvbt_ofdm_frame_sink</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -669,7 +669,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdigital__dvbt__ofdm__frame__sink_1aa7f5fe5692575e76a224b0be9b351763" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DIGITAL_API <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_dvbt_ofdm_frame_sink_sptr</ref></type>
+        <type>friend <ref refid="digital__api_8h_1ae14969f36ec69051c4b2f13a0db7e9ba" kindref="member">DIGITAL_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">digital_dvbt_ofdm_frame_sink_sptr</ref></type>
         <definition>DIGITAL_API digital_dvbt_ofdm_frame_sink_sptr digital_make_dvbt_ofdm_frame_sink</definition>
         <argsstring>(const std::vector&lt; gr_complex &gt; &amp;sym_position, const std::vector&lt; gr_complex &gt; &amp;t_constellation, const std::vector&lt; gr_complex &gt; &amp;cs_constellation, const std::vector&lt; unsigned char &gt; &amp;sym_value_out, gr_msg_queue_sptr target_queue, unsigned int occupied_tones, float phase_gain, float freq_gain)</argsstring>
         <name>digital_make_dvbt_ofdm_frame_sink</name>
@@ -812,6 +812,22 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="143" bodyfile="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" bodystart="142" bodyend="145"/>
       </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1aed38ddce4131ce53d6761c908eee7f3a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char digital_dvbt_ofdm_frame_sink::get_PRBS</definition>
+        <argsstring>(int)</argsstring>
+        <name>get_PRBS</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="147"/>
+      </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a65681ef583f4ddcc9f7ef80f2fef055a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void digital_dvbt_ofdm_frame_sink::next_state</definition>
@@ -823,7 +839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="147"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="148"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1addd3a7c4c89fd65e60c65d6fdf893669" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -836,7 +852,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="148"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="149"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1acb5abb8a7003e9d45bb9de42d3722e84" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -849,7 +865,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="149"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="150"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1ae3142bd1ed65df6a2605f7fbb7c1cca6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned char</type>
@@ -866,7 +882,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="150"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="151"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1ae60b3d57dff991e392c1397621e7f832" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
@@ -883,30 +899,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="151"/>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="152"/>
       </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a9613df53f91c014772f6d1aeee1a8b29" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int digital_dvbt_ofdm_frame_sink::get_pilot_info</definition>
         <argsstring>(unsigned char bits)</argsstring>
         <name>get_pilot_info</name>
-        <param>
-          <type>unsigned char</type>
-          <declname>bits</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="152"/>
-      </memberdef>
-      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1abeab5aa15c43070f82f5f31b9b13171b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>unsigned int</type>
-        <definition>unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info</definition>
-        <argsstring>(unsigned char bits)</argsstring>
-        <name>extract_pilot_info</name>
         <param>
           <type>unsigned char</type>
           <declname>bits</declname>
@@ -978,6 +977,27 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="156"/>
       </memberdef>
+      <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1aae08acabee6cbb088e8ae133ae569037" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info</definition>
+        <argsstring>(unsigned char, unsigned char)</argsstring>
+        <name>extract_pilot_info</name>
+        <param>
+          <type>unsigned</type>
+          <declname>char</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>char</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-digital/include/digital_dvbt_ofdm_frame_sink.h" line="157"/>
+      </memberdef>
       <memberdef kind="function" id="classdigital__dvbt__ofdm__frame__sink_1a994d9fc504861b8f4a1bb5e4d141e005" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool digital_dvbt_ofdm_frame_sink::set_sym_value_out</definition>
@@ -1046,100 +1066,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6409">
+      <node id="1205">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6410" relation="public-inheritance">
+        <childnode refid="1206" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6406">
+      <node id="1202">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6407" relation="public-inheritance">
+        <childnode refid="1203" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6407">
+      <node id="1203">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6408" relation="public-inheritance">
+        <childnode refid="1204" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6410">
+      <node id="1206">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6408">
+      <node id="1204">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6409" relation="public-inheritance">
+        <childnode refid="1205" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6405">
+      <node id="1201">
         <label>digital_dvbt_ofdm_frame_sink</label>
         <link refid="classdigital__dvbt__ofdm__frame__sink"/>
-        <childnode refid="6406" relation="public-inheritance">
+        <childnode refid="1202" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6415">
+      <node id="1211">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6416" relation="public-inheritance">
+        <childnode refid="1212" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6412">
+      <node id="1208">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6413" relation="public-inheritance">
+        <childnode refid="1209" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6413">
+      <node id="1209">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6414" relation="public-inheritance">
+        <childnode refid="1210" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6417">
+      <node id="1213">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6418" relation="usage">
+        <childnode refid="1214" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6420">
+      <node id="1216">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6416">
+      <node id="1212">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6418">
+      <node id="1214">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6414">
+      <node id="1210">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6415" relation="public-inheritance">
+        <childnode refid="1211" relation="public-inheritance">
         </childnode>
-        <childnode refid="6417" relation="usage">
+        <childnode refid="1213" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6419" relation="usage">
+        <childnode refid="1215" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6411">
+      <node id="1207">
         <label>digital_dvbt_ofdm_frame_sink</label>
         <link refid="classdigital__dvbt__ofdm__frame__sink"/>
-        <childnode refid="6412" relation="public-inheritance">
+        <childnode refid="1208" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6419">
+      <node id="1215">
         <label>std::string</label>
-        <childnode refid="6420" relation="public-inheritance">
+        <childnode refid="1216" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1208,13 +1228,14 @@
       <member refid="classdigital__dvbt__ofdm__frame__sink_1acf464edac6df344c95a1ff19eed9e89b" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>enter_have_sync</name></member>
       <member refid="classdigital__dvbt__ofdm__frame__sink_1a4657733ffabe1b6ae7f9a67861ebfe50" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>enter_search</name></member>
       <member refid="classdigital__dvbt__ofdm__frame__sink_1a6ffea20605d55152c60f78f8cc0b1bf4" prot="private" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>even_sequence</name></member>
-      <member refid="classdigital__dvbt__ofdm__frame__sink_1abeab5aa15c43070f82f5f31b9b13171b" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>extract_pilot_info</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1aae08acabee6cbb088e8ae133ae569037" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>extract_pilot_info</name></member>
       <member refid="classgr__block_1ab4eeb29440f674815ab3b44b4fb0c34d" prot="public" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>fixed_rate</name></member>
       <member refid="classgr__sync__block_1a0cbbc0ce275498411248e678038710b2" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>fixed_rate_ninput_to_noutput</name></member>
       <member refid="classgr__sync__block_1adaecb00ae09408c22e46c44d09aad53e" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>fixed_rate_noutput_to_ninput</name></member>
       <member refid="classgr__sync__block_1a1327e83509baf039aa3c816ea81a8f22" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>forecast</name></member>
       <member refid="classgr__sync__block_1a56ca60b6bc20a3510f71d961891fa81b" prot="public" virt="virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>general_work</name></member>
       <member refid="classdigital__dvbt__ofdm__frame__sink_1a9613df53f91c014772f6d1aeee1a8b29" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>get_pilot_info</name></member>
+      <member refid="classdigital__dvbt__ofdm__frame__sink_1aed38ddce4131ce53d6761c908eee7f3a" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>get_PRBS</name></member>
       <member refid="classgr__block_1a54f69c4cd5ef5b05ac58d0128256def1" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>get_tags_in_range</name></member>
       <member refid="classgr__block_1ab2650baa0c05713fc04664e69dde565d" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>get_tags_in_range</name></member>
       <member refid="classgr__basic__block_1a84d1e93b57e52efb18a5aa90a3eaf2db" prot="protected" virt="non-virtual"><scope>digital_dvbt_ofdm_frame_sink</scope><name>gr_basic_block</name></member>

@@ -31,6 +31,12 @@
 #include <dvbt/dvbt_rs_encoder.h>
 
 
+/*!
+ * \brief Reed-Solomon encoder for DVBT
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded
+ */
 dvbt_rs_encoder_sptr
 dvbt_make_rs_encoder()
 {
@@ -44,6 +50,9 @@ dvbt_rs_encoder::dvbt_rs_encoder(): gr_sync_block("dvbt_rs_encoder",
   	reset();
 }
 
+/**
+ * Perform Reed-Solomon encoding in 188 byte long packets(SYNC byte included)
+ */
 int
 dvbt_rs_encoder::work (int noutput_items,
 		       gr_vector_const_void_star &input_items,

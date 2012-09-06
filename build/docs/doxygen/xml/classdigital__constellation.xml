@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdigital__constellation" kind="class" prot="public">
     <compoundname>digital_constellation</compoundname>
     <derivedcompoundref refid="classdigital__constellation__8psk" prot="public" virt="non-virtual">digital_constellation_8psk</derivedcompoundref>
@@ -531,98 +531,99 @@
     <detaileddescription>
 <para>Standard constellations (BPSK, QPSK, QAM, etc) can be inherited from this class and overloaded to perform optimized slicing and constellation mappings. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="6226">
+      <node id="1022">
         <label>digital_constellation_8psk</label>
         <link refid="classdigital__constellation__8psk"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6235">
+      <node id="1031">
         <label>digital_constellation_psk</label>
         <link refid="classdigital__constellation__psk"/>
-        <childnode refid="6234" relation="public-inheritance">
+        <childnode refid="1030" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6230">
+      <node id="1026">
         <label>digital_constellation_dvbt_cs_pilots</label>
         <link refid="classdigital__constellation__dvbt__cs__pilots"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6225">
+      <node id="1021">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
       </node>
-      <node id="6236">
+      <node id="1032">
         <label>digital_constellation_rect</label>
         <link refid="classdigital__constellation__rect"/>
-        <childnode refid="6234" relation="public-inheritance">
+        <childnode refid="1030" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6227">
+      <node id="1023">
         <label>digital_constellation_bpsk</label>
         <link refid="classdigital__constellation__bpsk"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6229">
+      <node id="1025">
         <label>digital_constellation_dqpsk</label>
         <link refid="classdigital__constellation__dqpsk"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6233">
+      <node id="1029">
         <label>digital_constellation_qpsk</label>
         <link refid="classdigital__constellation__qpsk"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6228">
+      <node id="1024">
         <label>digital_constellation_calcdist</label>
         <link refid="classdigital__constellation__calcdist"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6232">
+      <node id="1028">
         <label>digital_constellation_dvbt_tps_pilots</label>
         <link refid="classdigital__constellation__dvbt__tps__pilots"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6234">
+      <node id="1030">
         <label>digital_constellation_sector</label>
         <link refid="classdigital__constellation__sector"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6231">
+      <node id="1027">
         <label>digital_constellation_dvbt_qpsk</label>
         <link refid="classdigital__constellation__dvbt__qpsk"/>
-        <childnode refid="6225" relation="public-inheritance">
+        <childnode refid="1021" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6239">
+      <node id="1035">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="6240" relation="usage">
+        <childnode refid="1036" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="6238">
+      <node id="1034">
         <label>std::vector&lt; unsigned int &gt;</label>
       </node>
-      <node id="6237">
+      <node id="1033">
         <label>digital_constellation</label>
         <link refid="classdigital__constellation"/>
-        <childnode refid="6238" relation="usage">
+        <childnode refid="1034" relation="usage">
           <edgelabel>d_pre_diff_code</edgelabel>
         </childnode>
-        <childnode refid="6239" relation="usage">
+        <childnode refid="1035" relation="usage">
           <edgelabel>d_constellation</edgelabel>
         </childnode>
       </node>
-      <node id="6240">
+      <node id="1036">
         <label>std::complex</label>
       </node>
     </collaborationgraph>

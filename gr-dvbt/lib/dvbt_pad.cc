@@ -31,6 +31,13 @@
 #include <gr_io_signature.h>
 
 
+/*!
+ * \brief put 4 bytes header and pad mpeg ts packets from 184+4 byte char to
+ * to 256 byte dvbt_mpeg_packet
+ * \ingroup dvbt
+ *
+ * input: unsigned char; output: dvbt_mpeg_packet
+ */
 dvbt_pad_sptr
 dvbt_make_pad()
 {
@@ -63,7 +70,7 @@ dvbt_pad::work (int noutput_items,
 	const unsigned char *in = (const unsigned char *) input_items[0];
 	dvbt_mpeg_packet *out = (dvbt_mpeg_packet *) output_items[0];
 
-
+	// Put the data after header
   	for (int i = 0; i < noutput_items; i++){
 		//memset (out[i].data,0,256);
     		for (int j = 0; j < DVBT_MPEG_DATA_LENGTH; j++){

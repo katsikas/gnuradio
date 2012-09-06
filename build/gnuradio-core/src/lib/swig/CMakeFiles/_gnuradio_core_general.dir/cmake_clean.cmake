@@ -14,17 +14,15 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/_gnuradio_core_general.dir/gnuradio_core_generalPYTHON_wrap.cxx.o"
   "gnuradio_core_generalPYTHON_wrap.cxx"
   "gnuradio_core_general.py"
-  "gnuradio_core_general.tag"
-  "runtime_swig_doc.i"
   "general_swig_doc.i"
-  "runtime_swig_doc_swig_docs/xml/index.xml"
-  "runtime_swig_doc_swig_docs/xml/combine.xslt"
+  "gnuradio_core_general.tag"
   "general_swig_doc_swig_docs/xml/index.xml"
   "general_swig_doc_swig_docs/xml/combine.xslt"
+  "runtime_swig_doc.i"
+  "runtime_swig_doc_swig_docs/xml/index.xml"
+  "runtime_swig_doc_swig_docs/xml/combine.xslt"
   "_gnuradio_core_general.pdb"
   "_gnuradio_core_general.so"
-  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_general.pdb"
-  "CMakeFiles/CMakeRelink.dir/_gnuradio_core_general.so"
 )
 
 # Per-language clean rules from dependency scanning.

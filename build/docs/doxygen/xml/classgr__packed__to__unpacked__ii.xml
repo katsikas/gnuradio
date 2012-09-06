@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__packed__to__unpacked__ii" kind="class" prot="public">
     <compoundname>gr_packed_to_unpacked_ii</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -47,7 +47,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__packed__to__unpacked__ii_1a686800307ab2b88441f756162b7df20d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_packed_to_unpacked_ii_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_packed_to_unpacked_ii_sptr</ref></type>
         <definition>GR_CORE_API gr_packed_to_unpacked_ii_sptr gr_make_packed_to_unpacked_ii</definition>
         <argsstring>(unsigned int bits_per_chunk, gr_endianness_t endianness)</argsstring>
         <name>gr_make_packed_to_unpacked_ii</name>
@@ -234,88 +234,88 @@ This function is called by the runtime system whenever the topology changes. Mos
 <para>This is the inverse of gr_unpacked_to_packed_XX.</para><para>The bits in the bytes or shorts input stream are grouped into chunks of <computeroutput>bits_per_chunk</computeroutput> bits and each resulting chunk is written right- justified to the output stream of bytes or shorts. All b or 16 bits of the each input bytes or short are processed. The right thing is done if bits_per_chunk is not a power of two.</para><para>The combination of gr_packed_to_unpacked_XX_ followed by gr_chunks_to_symbols_Xf or gr_chunks_to_symbols_Xc handles the general case of mapping from a stream of bytes or shorts into arbitrary float or complex symbols.</para><para><simplesect kind="see"><para><ref refid="classgr__packed__to__unpacked__bb" kindref="compound">gr_packed_to_unpacked_bb</ref>, <ref refid="classgr__unpacked__to__packed__bb" kindref="compound">gr_unpacked_to_packed_bb</ref>, </para><simplesectsep/><para><ref refid="classgr__packed__to__unpacked__ss" kindref="compound">gr_packed_to_unpacked_ss</ref>, <ref refid="classgr__unpacked__to__packed__ss" kindref="compound">gr_unpacked_to_packed_ss</ref>, </para><simplesectsep/><para><ref refid="classgr__chunks__to__symbols__bf" kindref="compound">gr_chunks_to_symbols_bf</ref>, <ref refid="classgr__chunks__to__symbols__bc" kindref="compound">gr_chunks_to_symbols_bc</ref>. </para><simplesectsep/><para><ref refid="classgr__chunks__to__symbols__sf" kindref="compound">gr_chunks_to_symbols_sf</ref>, <ref refid="classgr__chunks__to__symbols__sc" kindref="compound">gr_chunks_to_symbols_sc</ref>. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="11711">
+      <node id="6507">
         <label>gr_packed_to_unpacked_ii</label>
         <link refid="classgr__packed__to__unpacked__ii"/>
-        <childnode refid="11712" relation="public-inheritance">
+        <childnode refid="6508" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11714">
+      <node id="6510">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11715" relation="public-inheritance">
+        <childnode refid="6511" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11712">
+      <node id="6508">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11713" relation="public-inheritance">
+        <childnode refid="6509" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11715">
+      <node id="6511">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11713">
+      <node id="6509">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11714" relation="public-inheritance">
+        <childnode refid="6510" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="11716">
+      <node id="6512">
         <label>gr_packed_to_unpacked_ii</label>
         <link refid="classgr__packed__to__unpacked__ii"/>
-        <childnode refid="11717" relation="public-inheritance">
+        <childnode refid="6513" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11719">
+      <node id="6515">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11720" relation="public-inheritance">
+        <childnode refid="6516" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11717">
+      <node id="6513">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11718" relation="public-inheritance">
+        <childnode refid="6514" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11721">
+      <node id="6517">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11722" relation="usage">
+        <childnode refid="6518" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="11724">
+      <node id="6520">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="11720">
+      <node id="6516">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11722">
+      <node id="6518">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="11718">
+      <node id="6514">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11719" relation="public-inheritance">
+        <childnode refid="6515" relation="public-inheritance">
         </childnode>
-        <childnode refid="11721" relation="usage">
+        <childnode refid="6517" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="11723" relation="usage">
+        <childnode refid="6519" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="11723">
+      <node id="6519">
         <label>std::string</label>
-        <childnode refid="11724" relation="public-inheritance">
+        <childnode refid="6520" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

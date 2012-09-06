@@ -31,6 +31,12 @@
 #include <dvbt/dvbt_rs_decoder.h>
 
 
+/*!
+ * \brief Reed-Solomon decoder for DVBT
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_no_sync
+ */
 dvbt_rs_decoder_sptr
 dvbt_make_rs_decoder()
 {
@@ -44,6 +50,9 @@ dvbt_rs_decoder::dvbt_rs_decoder(): gr_sync_block("dvbt_rs_decoder",
   	reset();
 }
 
+/**
+ * Perform Reed-Solomon decoding in 188 byte long packets(SYNC byte included)
+ */
 int
 dvbt_rs_decoder::work (int noutput_items,
 		       gr_vector_const_void_star &input_items,

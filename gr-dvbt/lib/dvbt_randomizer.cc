@@ -31,6 +31,13 @@
 
 unsigned int plinfo::packets = 0;
 
+/*!
+ * \brief "Whiten" incoming mpeg transport stream packets.
+ * Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync
+ */
 dvbt_randomizer_sptr
 dvbt_make_randomizer()
 {
@@ -50,6 +57,12 @@ dvbt_randomizer::reset()
   	core_rand.reset();
 }
 
+
+/**
+ * Get the 184 next input elements, create the MPEG_TS
+ * header bytes(First byte is SYNC/NO_SYNC) randomize and produce the 188
+ * next output elements.
+ */
 int
 dvbt_randomizer::work (int noutput_items,
 		       gr_vector_const_void_star &input_items,

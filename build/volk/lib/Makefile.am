@@ -53,6 +53,13 @@ noinst_LTLIBRARIES += libvolk_avx_only.la
 libvolk_la_LIBADD += libvolk_avx_only.la
 libvolk_la_CPPFLAGS += -DLV_MACHINE_AVX_ONLY 
 endif
+if LV_MACHINE_ALTIVEC
+libvolk_altivec_la_SOURCES = $(top_gendir)/lib/volk_machine_altivec.c
+libvolk_altivec_la_CPPFLAGS = -I$(top_srcdir)/include -I$(top_gendir)/include $(volk_orc_CFLAGS) -maltivec 
+noinst_LTLIBRARIES += libvolk_altivec.la 
+libvolk_la_LIBADD += libvolk_altivec.la
+libvolk_la_CPPFLAGS += -DLV_MACHINE_ALTIVEC 
+endif
 if LV_MACHINE_SSSE3_32
 libvolk_ssse3_32_la_SOURCES = $(top_gendir)/lib/volk_machine_ssse3_32.c
 libvolk_ssse3_32_la_CPPFLAGS = -I$(top_srcdir)/include -I$(top_gendir)/include $(volk_orc_CFLAGS) -mmmx -msse -msse2 -msse3 -mssse3 -m32 
@@ -129,13 +136,6 @@ libvolk_sse4_a_32_la_CPPFLAGS = -I$(top_srcdir)/include -I$(top_gendir)/include 
 noinst_LTLIBRARIES += libvolk_sse4_a_32.la 
 libvolk_la_LIBADD += libvolk_sse4_a_32.la
 libvolk_la_CPPFLAGS += -DLV_MACHINE_SSE4_A_32 
-endif
-if LV_MACHINE_ALTIVEC
-libvolk_altivec_la_SOURCES = $(top_gendir)/lib/volk_machine_altivec.c
-libvolk_altivec_la_CPPFLAGS = -I$(top_srcdir)/include -I$(top_gendir)/include $(volk_orc_CFLAGS) -maltivec 
-noinst_LTLIBRARIES += libvolk_altivec.la 
-libvolk_la_LIBADD += libvolk_altivec.la
-libvolk_la_CPPFLAGS += -DLV_MACHINE_ALTIVEC 
 endif
 if LV_MACHINE_SSE4_2_32
 libvolk_sse4_2_32_la_SOURCES = $(top_gendir)/lib/volk_machine_sse4_2_32.c

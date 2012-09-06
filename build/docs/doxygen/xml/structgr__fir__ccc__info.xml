@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="structgr__fir__ccc__info" kind="struct" prot="public">
     <compoundname>gr_fir_ccc_info</compoundname>
     <includes refid="gr__fir__util_8h" local="no">gr_fir_util.h</includes>
@@ -36,26 +36,27 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="9338">
+      <node id="4134">
         <label>gr_fir_ccc</label>
         <link refid="classgr__fir__ccc"/>
-        <childnode refid="9339" relation="usage">
+        <childnode refid="4135" relation="usage">
           <edgelabel>d_taps</edgelabel>
         </childnode>
       </node>
-      <node id="9339">
+      <node id="4135">
         <label>std::vector&lt; gr_complex &gt;</label>
-        <childnode refid="9340" relation="usage">
+        <childnode refid="4136" relation="usage">
           <edgelabel>p</edgelabel>
+          <edgelabel>elements</edgelabel>
         </childnode>
       </node>
-      <node id="9340">
+      <node id="4136">
         <label>std::complex</label>
       </node>
-      <node id="9337">
+      <node id="4133">
         <label>gr_fir_ccc_info</label>
         <link refid="structgr__fir__ccc__info"/>
-        <childnode refid="9338" relation="usage">
+        <childnode refid="4134" relation="usage">
           <edgelabel>create</edgelabel>
         </childnode>
       </node>

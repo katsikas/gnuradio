@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classGrAtscDeinterleaver" kind="class" prot="public">
     <compoundname>GrAtscDeinterleaver</compoundname>
     <includes refid="GrAtscDeinterleaver_8h" local="no">GrAtscDeinterleaver.h</includes>
@@ -96,26 +96,33 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="458">
+      <node id="463">
         <label>convolutional_interleaver&lt; unsigned char &gt;</label>
         <link refid="classconvolutional__interleaver"/>
-        <childnode refid="459" relation="usage">
+        <childnode refid="464" relation="usage">
           <edgelabel>m_fifo</edgelabel>
         </childnode>
       </node>
-      <node id="457">
+      <node id="465">
+        <label>interleaver_fifo&lt; unsigned char &gt;</label>
+        <link refid="classinterleaver__fifo"/>
+      </node>
+      <node id="462">
         <label>atsci_data_deinterleaver</label>
         <link refid="classatsci__data__deinterleaver"/>
-        <childnode refid="458" relation="public-inheritance">
+        <childnode refid="463" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="459">
+      <node id="464">
         <label>std::vector&lt; interleaver_fifo&lt; unsigned char &gt; * &gt;</label>
+        <childnode refid="465" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
       </node>
-      <node id="456">
+      <node id="461">
         <label>GrAtscDeinterleaver</label>
         <link refid="classGrAtscDeinterleaver"/>
-        <childnode refid="457" relation="usage">
+        <childnode refid="462" relation="usage">
           <edgelabel>deinterleaver</edgelabel>
         </childnode>
       </node>

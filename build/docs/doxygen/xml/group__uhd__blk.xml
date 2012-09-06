@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="group__uhd__blk" kind="group">
     <compoundname>uhd_blk</compoundname>
     <title>UHD Interface</title>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__uhd__blk_1gaa05125887cab9f7fb43e4d93243eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_UHD_API <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__amsg__source" kindref="compound">uhd_amsg_source</ref> &gt;</type>
+        <type><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__amsg__source" kindref="compound">uhd_amsg_source</ref> &gt;</type>
         <definition>GR_UHD_API boost::shared_ptr&lt;uhd_amsg_source&gt; uhd_make_amsg_source</definition>
         <argsstring>(const uhd::device_addr_t &amp;device_addr, gr_msg_queue_sptr msgq)</argsstring>
         <name>uhd_make_amsg_source</name>
@@ -26,7 +26,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_amsg_source.h" line="38"/>
       </memberdef>
       <memberdef kind="function" id="group__uhd__blk_1gae6b24e6bb291ec3aeddd50b7c48721b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_UHD_API <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__usrp__sink" kindref="compound">uhd_usrp_sink</ref> &gt;</type>
+        <type><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__usrp__sink" kindref="compound">uhd_usrp_sink</ref> &gt;</type>
         <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_sink&gt; uhd_make_usrp_sink</definition>
         <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::io_type_t &amp;io_type, size_t num_channels)</argsstring>
         <name>uhd_make_usrp_sink</name>
@@ -76,7 +76,7 @@
         <location file="/home/katsikas/gnuradio/gr-uhd/include/gr_uhd_usrp_sink.h" line="84"/>
       </memberdef>
       <memberdef kind="function" id="group__uhd__blk_1ga21d8f9c05e6a24d118628e2ed98c2e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GR_UHD_API <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
+        <type><ref refid="gr__uhd__api_8h_1af9aa018424cf030907c7f8c5a48f4771" kindref="member">GR_UHD_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">boost::shared_ptr</ref>&lt; <ref refid="classuhd__usrp__source" kindref="compound">uhd_usrp_source</ref> &gt;</type>
         <definition>GR_UHD_API boost::shared_ptr&lt;uhd_usrp_source&gt; uhd_make_usrp_source</definition>
         <argsstring>(const uhd::device_addr_t &amp;device_addr, const uhd::io_type_t &amp;io_type, size_t num_channels)</argsstring>
         <name>uhd_make_usrp_source</name>

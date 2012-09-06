@@ -34,7 +34,7 @@ typedef boost::shared_ptr<dvbt_pad> dvbt_pad_sptr;
 DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 /*!
- * \brief put 4 bytes header and pad mpeg ts packets from 184 byte char to
+ * \brief put 4 bytes header and pad mpeg ts packets from 184+4 byte char to
  * to 256 byte dvbt_mpeg_packet
  * \ingroup dvbt
  *

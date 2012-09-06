@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classaudio__osx__source" kind="class" prot="public">
     <compoundname>audio_osx_source</compoundname>
     <basecompoundref refid="classaudio__source" prot="public" virt="non-virtual">audio_source</basecompoundref>
@@ -714,112 +714,112 @@ This function is called by the runtime system whenever the topology changes. Mos
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5717">
+      <node id="511">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5718" relation="public-inheritance">
+        <childnode refid="512" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5714">
+      <node id="508">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5715" relation="public-inheritance">
+        <childnode refid="509" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5715">
+      <node id="509">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5716" relation="public-inheritance">
+        <childnode refid="510" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5713">
+      <node id="507">
         <label>audio_source</label>
         <link refid="classaudio__source"/>
-        <childnode refid="5714" relation="public-inheritance">
+        <childnode refid="508" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5718">
+      <node id="512">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5712">
+      <node id="506">
         <label>audio_osx_source</label>
         <link refid="classaudio__osx__source"/>
-        <childnode refid="5713" relation="public-inheritance">
+        <childnode refid="507" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5716">
+      <node id="510">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5717" relation="public-inheritance">
+        <childnode refid="511" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5724">
+      <node id="518">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="5725" relation="public-inheritance">
+        <childnode refid="519" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5721">
+      <node id="515">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="5722" relation="public-inheritance">
+        <childnode refid="516" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5722">
+      <node id="516">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="5723" relation="public-inheritance">
+        <childnode refid="517" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5726">
+      <node id="520">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="5727" relation="usage">
+        <childnode refid="521" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="5720">
+      <node id="514">
         <label>audio_source</label>
         <link refid="classaudio__source"/>
-        <childnode refid="5721" relation="public-inheritance">
+        <childnode refid="515" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5729">
+      <node id="523">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="5725">
+      <node id="519">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="5727">
+      <node id="521">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="5719">
+      <node id="513">
         <label>audio_osx_source</label>
         <link refid="classaudio__osx__source"/>
-        <childnode refid="5720" relation="public-inheritance">
+        <childnode refid="514" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5723">
+      <node id="517">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="5724" relation="public-inheritance">
+        <childnode refid="518" relation="public-inheritance">
         </childnode>
-        <childnode refid="5726" relation="usage">
+        <childnode refid="520" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="5728" relation="usage">
+        <childnode refid="522" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="5728">
+      <node id="522">
         <label>std::string</label>
-        <childnode refid="5729" relation="public-inheritance">
+        <childnode refid="523" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

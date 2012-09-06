@@ -143,7 +143,6 @@ public:
   	plinfo	pli;
 	unsigned char _pad_[NPAD];				// pad to power of 2 (256)
   	unsigned char	data[DVBT_MPEG_RS_ENCODED_LENGTH];
-  	
 
   	// overload equality operator
   	bool operator== (const dvbt_mpeg_packet_rs_encoded &other) const {
@@ -157,14 +156,13 @@ public:
 
 
 //! contains 832 3 bit symbols.  The low 3 bits in the byte hold the symbol.
-
 class dvbt_data_segment {
 public:
   	static const int NPAD = 188;
   	plinfo	pli;
 	unsigned char _pad_[NPAD];				// pad to power of 2 (1024)
   	unsigned char	data[DVBT_DATA_SEGMENT_LENGTH];
-  					
+
 
   	// overload equality operator
   	bool operator== (const dvbt_data_segment &other) const {
@@ -189,7 +187,7 @@ public:
   	plinfo	pli;
 	unsigned char _pad_[NPAD];			// pad to power of 2 (4096)
   	float	data[DVBT_DATA_SEGMENT_LENGTH];
-  	
+
   	// overload equality operator
   	bool operator== (const dvbt_data_segment &other) const {
     		return std::memcmp (data, other.data, sizeof (data)) == 0;

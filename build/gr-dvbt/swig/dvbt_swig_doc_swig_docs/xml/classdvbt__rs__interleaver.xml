@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdvbt__rs__interleaver" kind="class" prot="public">
+    <compoundname>dvbt_rs_interleaver</compoundname>
+    <includes refid="dvbt__rs__interleaver_8h" local="no">dvbt_rs_interleaver.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdvbt__rs__interleaver_1a458b8acca2f921d63766d1825e64a9ff" prot="private" static="no" mutable="no">
+        <type><ref refid="classdvbti__data__rs__interleaver" kindref="compound">dvbti_data_rs_interleaver</ref></type>
+        <definition>dvbti_data_rs_interleaver dvbt_rs_interleaver::d_interleaver</definition>
+        <argsstring></argsstring>
+        <name>d_interleaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" line="46" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdvbt__rs__interleaver_1a5bc8f173e19ef4799edc48bedcce4844" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="dvbt__rs__interleaver_8h_1a38dcf3507ce9c9d02b5df7616504db38" kindref="member">dvbt_rs_interleaver_sptr</ref></type>
+        <definition>DVBT_API dvbt_rs_interleaver_sptr dvbt_make_rs_interleaver</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_make_rs_interleaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" line="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdvbt__rs__interleaver_1ac01ce545e23a9660257b56098301ea7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dvbt_rs_interleaver::dvbt_rs_interleaver</definition>
+        <argsstring>()</argsstring>
+        <name>dvbt_rs_interleaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" line="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdvbt__rs__interleaver_1afbb2d07836f1d3cbf328c02c8d34c6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dvbt_rs_interleaver::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classdvbt__rs__interleaver_1a9ff8f3027fcef4e1ab5962b001b5a48f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dvbt_rs_interleaver::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" line="55" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interleave RS encoded DVBT data ( <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref> --&gt; <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>)*</para><para>input: <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>; output: <ref refid="classdvbt__mpeg__packet__rs__encoded" kindref="compound">dvbt_mpeg_packet_rs_encoded</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" line="43" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h" bodystart="42" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classdvbt__rs__interleaver_1a458b8acca2f921d63766d1825e64a9ff" prot="private" virt="non-virtual"><scope>dvbt_rs_interleaver</scope><name>d_interleaver</name></member>
+      <member refid="classdvbt__rs__interleaver_1a5bc8f173e19ef4799edc48bedcce4844" prot="private" virt="non-virtual"><scope>dvbt_rs_interleaver</scope><name>dvbt_make_rs_interleaver</name></member>
+      <member refid="classdvbt__rs__interleaver_1ac01ce545e23a9660257b56098301ea7f" prot="private" virt="non-virtual"><scope>dvbt_rs_interleaver</scope><name>dvbt_rs_interleaver</name></member>
+      <member refid="classdvbt__rs__interleaver_1a9ff8f3027fcef4e1ab5962b001b5a48f" prot="public" virt="non-virtual"><scope>dvbt_rs_interleaver</scope><name>reset</name></member>
+      <member refid="classdvbt__rs__interleaver_1afbb2d07836f1d3cbf328c02c8d34c6c6" prot="public" virt="non-virtual"><scope>dvbt_rs_interleaver</scope><name>work</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

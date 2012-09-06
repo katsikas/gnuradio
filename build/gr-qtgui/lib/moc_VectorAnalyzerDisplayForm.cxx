@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'VectorAnalyzerDisplayForm.h'
 **
-** Created:
-**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.4)
+** Created: Thu Sep 6 12:01:04 2012
+**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -10,8 +10,8 @@
 #include "../../../gr-qtgui/lib/VectorAnalyzerDisplayForm.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'VectorAnalyzerDisplayForm.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 62
-#error "This file was generated using the moc from 4.7.4. It"
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,7 +20,7 @@ QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_VectorAnalyzerDisplayForm[] = {
 
  // content:
-       5,       // revision
+       6,       // revision
        0,       // classname
        0,    0, // classinfo
       20,   14, // methods
@@ -80,9 +80,45 @@ static const char qt_meta_stringdata_VectorAnalyzerDisplayForm[] = {
     "holdOnTimerExpired()\0updateGuiTimer()\0"
 };
 
+void VectorAnalyzerDisplayForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        VectorAnalyzerDisplayForm *_t = static_cast<VectorAnalyzerDisplayForm *>(_o);
+        switch (_id) {
+        case 0: _t->resizeEvent((*reinterpret_cast< QResizeEvent*(*)>(_a[1]))); break;
+        case 1: _t->customEvent((*reinterpret_cast< QEvent*(*)>(_a[1]))); break;
+        case 2: _t->addSignalsToMappers((*reinterpret_cast< CustomDisplayPolicyItems*(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 3: _t->removeSignalFromMappers((*reinterpret_cast< CustomDisplayPolicyItems*(*)>(_a[1]))); break;
+        case 4: _t->setConstellationPlotAxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< QString*(*)>(_a[5]))); break;
+        case 5: _t->setConstellationPlotAxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4]))); break;
+        case 6: _t->setConstellationPlotXAxisLabel((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 7: _t->setConstellationPlotYAxisLabel((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 8: _t->SetConstellationPlotTitle((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 9: _t->setUpdateTime((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 10: { bool _r = _t->isHoldOnEnabled();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 11: _t->onDisplayPolicyChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 12: _t->addNewSpecificDisplayPolicy((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 13: _t->deleteSpecificDisplayPolicy((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 14: _t->onColorFieldClick((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 15: _t->onResetViewButtonClick(); break;
+        case 16: _t->onHoldOnCkeckBoxClick((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 17: _t->onHoldOnDelayChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 18: _t->holdOnTimerExpired(); break;
+        case 19: _t->updateGuiTimer(); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData VectorAnalyzerDisplayForm::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
 const QMetaObject VectorAnalyzerDisplayForm::staticMetaObject = {
     { &QWidget::staticMetaObject, qt_meta_stringdata_VectorAnalyzerDisplayForm,
-      qt_meta_data_VectorAnalyzerDisplayForm, 0 }
+      qt_meta_data_VectorAnalyzerDisplayForm, &staticMetaObjectExtraData }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
@@ -110,30 +146,8 @@ int VectorAnalyzerDisplayForm::qt_metacall(QMetaObject::Call _c, int _id, void *
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        switch (_id) {
-        case 0: resizeEvent((*reinterpret_cast< QResizeEvent*(*)>(_a[1]))); break;
-        case 1: customEvent((*reinterpret_cast< QEvent*(*)>(_a[1]))); break;
-        case 2: addSignalsToMappers((*reinterpret_cast< CustomDisplayPolicyItems*(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 3: removeSignalFromMappers((*reinterpret_cast< CustomDisplayPolicyItems*(*)>(_a[1]))); break;
-        case 4: setConstellationPlotAxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< QString*(*)>(_a[5]))); break;
-        case 5: setConstellationPlotAxis((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4]))); break;
-        case 6: setConstellationPlotXAxisLabel((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 7: setConstellationPlotYAxisLabel((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 8: SetConstellationPlotTitle((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 9: setUpdateTime((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 10: { bool _r = isHoldOnEnabled();
-            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
-        case 11: onDisplayPolicyChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 12: addNewSpecificDisplayPolicy((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 13: deleteSpecificDisplayPolicy((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 14: onColorFieldClick((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 15: onResetViewButtonClick(); break;
-        case 16: onHoldOnCkeckBoxClick((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 17: onHoldOnDelayChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 18: holdOnTimerExpired(); break;
-        case 19: updateGuiTimer(); break;
-        default: ;
-        }
+        if (_id < 20)
+            qt_static_metacall(this, _c, _id, _a);
         _id -= 20;
     }
     return _id;

@@ -23,9 +23,12 @@
 #ifndef _DVBT_CONSTS_H_
 #define _DVBT_CONSTS_H_
 
+/**
+ * Set static const variables according to DVBT standard.
+ */
 static const int PRBS_PERIOD = 8;			// PRBS generator resets every PRBS_PERIOD packets
 static const int PRBS_SEQUENCE = 15;                    // PRBS generator reset$
-static const int BITS_SEQUENCE = 187*8;                    // PRBS generator reset$
+static const int BITS_SEQUENCE = 187*8;                 // PRBS generator reset$
 static const int MPEG_SYNC_BYTE = 0x47;			// Synchronizaton byte
 static const int DVBT_MPEG_DATA_LENGTH = 184;		// MPEG payload
 static const int DVBT_MPEG_HEADER_LENGTH = 4;		// Header bytes length

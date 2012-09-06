@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__rational__resampler__base__fcc" kind="class" prot="public">
     <compoundname>gr_rational_resampler_base_fcc</compoundname>
     <basecompoundref refid="classgr__block" prot="public" virt="non-virtual">gr_block</basecompoundref>
@@ -100,7 +100,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__rational__resampler__base__fcc_1a5d148bcdc010731425c366be9d422a87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_rational_resampler_base_fcc_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_rational_resampler_base_fcc_sptr</ref></type>
         <definition>GR_CORE_API gr_rational_resampler_base_fcc_sptr gr_make_rational_resampler_base_fcc</definition>
         <argsstring>(unsigned interpolation, unsigned decimation, const std::vector&lt; gr_complex &gt; &amp;taps)</argsstring>
         <name>gr_make_rational_resampler_base_fcc</name>
@@ -362,88 +362,88 @@ general_work must call consume or consume_each to indicate how many items were c
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="12354">
+      <node id="7150">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12355" relation="public-inheritance">
+        <childnode refid="7151" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12352">
+      <node id="7148">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12353" relation="public-inheritance">
+        <childnode refid="7149" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12355">
+      <node id="7151">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12353">
+      <node id="7149">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12354" relation="public-inheritance">
+        <childnode refid="7150" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12351">
+      <node id="7147">
         <label>gr_rational_resampler_base_fcc</label>
         <link refid="classgr__rational__resampler__base__fcc"/>
-        <childnode refid="12352" relation="public-inheritance">
+        <childnode refid="7148" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="12359">
+      <node id="7155">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="12360" relation="public-inheritance">
+        <childnode refid="7156" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12357">
+      <node id="7153">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="12358" relation="public-inheritance">
+        <childnode refid="7154" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12361">
+      <node id="7157">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="12362" relation="usage">
+        <childnode refid="7158" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="12364">
+      <node id="7160">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="12360">
+      <node id="7156">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="12362">
+      <node id="7158">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="12358">
+      <node id="7154">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="12359" relation="public-inheritance">
+        <childnode refid="7155" relation="public-inheritance">
         </childnode>
-        <childnode refid="12361" relation="usage">
+        <childnode refid="7157" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="12363" relation="usage">
+        <childnode refid="7159" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="12356">
+      <node id="7152">
         <label>gr_rational_resampler_base_fcc</label>
         <link refid="classgr__rational__resampler__base__fcc"/>
-        <childnode refid="12357" relation="public-inheritance">
+        <childnode refid="7153" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12363">
+      <node id="7159">
         <label>std::string</label>
-        <childnode refid="12364" relation="public-inheritance">
+        <childnode refid="7160" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

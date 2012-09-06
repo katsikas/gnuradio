@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classdvbt__rs__encoder" kind="class" prot="public">
     <compoundname>dvbt_rs_encoder</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -21,7 +21,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classdvbt__rs__encoder_1ac816ac0e141751c8ee519ffd1c3803d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend DVBT_API <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_rs_encoder_sptr</ref></type>
+        <type>friend <ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">dvbt_rs_encoder_sptr</ref></type>
         <definition>DVBT_API dvbt_rs_encoder_sptr dvbt_make_rs_encoder</definition>
         <argsstring>()</argsstring>
         <name>dvbt_make_rs_encoder</name>
@@ -95,100 +95,100 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6821">
+      <node id="1601">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6822" relation="public-inheritance">
+        <childnode refid="1602" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6818">
+      <node id="1598">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6819" relation="public-inheritance">
+        <childnode refid="1599" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6817">
+      <node id="1597">
         <label>dvbt_rs_encoder</label>
         <link refid="classdvbt__rs__encoder"/>
-        <childnode refid="6818" relation="public-inheritance">
+        <childnode refid="1598" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6819">
+      <node id="1599">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6820" relation="public-inheritance">
+        <childnode refid="1600" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6822">
+      <node id="1602">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6820">
+      <node id="1600">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6821" relation="public-inheritance">
+        <childnode refid="1601" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6827">
+      <node id="1607">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6828" relation="public-inheritance">
+        <childnode refid="1608" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6824">
+      <node id="1604">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6825" relation="public-inheritance">
+        <childnode refid="1605" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6823">
+      <node id="1603">
         <label>dvbt_rs_encoder</label>
         <link refid="classdvbt__rs__encoder"/>
-        <childnode refid="6824" relation="public-inheritance">
+        <childnode refid="1604" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6825">
+      <node id="1605">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6826" relation="public-inheritance">
+        <childnode refid="1606" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6829">
+      <node id="1609">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6830" relation="usage">
+        <childnode refid="1610" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6832">
+      <node id="1612">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6828">
+      <node id="1608">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6830">
+      <node id="1610">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6826">
+      <node id="1606">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6827" relation="public-inheritance">
+        <childnode refid="1607" relation="public-inheritance">
         </childnode>
-        <childnode refid="6829" relation="usage">
+        <childnode refid="1609" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6831" relation="usage">
+        <childnode refid="1611" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6831">
+      <node id="1611">
         <label>std::string</label>
-        <childnode refid="6832" relation="public-inheritance">
+        <childnode refid="1612" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

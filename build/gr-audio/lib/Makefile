@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -35,9 +35,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/katsikas/gnuradio
 
@@ -49,8 +46,8 @@ CMAKE_BINARY_DIR = /home/katsikas/gnuradio/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"fcd_devel\" \"fcd_examples\" \"fcd_python\" \"fcd_runtime\" \"fcd_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"uhd_devel\" \"uhd_examples\" \"uhd_python\" \"uhd_runtime\" \"uhd_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"atsc_devel\" \"atsc_examples\" \"atsc_python\" \"atsc_runtime\" \"atsc_swig\" \"audio_devel\" \"audio_examples\" \"audio_python\" \"audio_runtime\" \"audio_swig\" \"core_devel\" \"core_python\" \"core_runtime\" \"core_swig\" \"digital_devel\" \"digital_python\" \"digital_runtime\" \"digital_swig\" \"docs\" \"dvbt_devel\" \"dvbt_python\" \"dvbt_runtime\" \"dvbt_swig\" \"grc\" \"gruel_devel\" \"gruel_python\" \"gruel_runtime\" \"gruel_swig\" \"noaa_devel\" \"noaa_python\" \"noaa_runtime\" \"noaa_swig\" \"pager_devel\" \"pager_python\" \"pager_runtime\" \"pager_swig\" \"qtgui_devel\" \"qtgui_python\" \"qtgui_runtime\" \"qtgui_swig\" \"trellis-examples\" \"trellis_devel\" \"trellis_docs\" \"trellis_examples\" \"trellis_python\" \"trellis_runtime\" \"trellis_swig\" \"utils\" \"video_sdl_devel\" \"video_sdl_python\" \"video_sdl_runtime\" \"video_sdl_swig\" \"vocoder_devel\" \"vocoder_examples\" \"vocoder_python\" \"vocoder_runtime\" \"vocoder_swig\" \"volk\" \"volk_devel\" \"volk_runtime\" \"wavelet_devel\" \"wavelet_python\" \"wavelet_runtime\" \"wavelet_swig\" \"wxgui\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -182,11 +179,6 @@ gnuradio-audio: gr-audio/lib/CMakeFiles/gnuradio-audio.dir/rule
 gnuradio-audio/fast:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build
 .PHONY : gnuradio-audio/fast
-
-# Manual pre-install relink rule for target.
-gnuradio-audio/preinstall:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-audio/lib/CMakeFiles/gnuradio-audio.dir/preinstall
-.PHONY : gnuradio-audio/preinstall
 
 alsa/audio_alsa_sink.o: alsa/audio_alsa_sink.cc.o
 .PHONY : alsa/audio_alsa_sink.o
@@ -284,78 +276,6 @@ gr_audio_registry.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/gr_audio_registry.cc.s
 .PHONY : gr_audio_registry.cc.s
 
-jack/audio_jack_sink.o: jack/audio_jack_sink.cc.o
-.PHONY : jack/audio_jack_sink.o
-
-# target to build an object file
-jack/audio_jack_sink.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/audio_jack_sink.cc.o
-.PHONY : jack/audio_jack_sink.cc.o
-
-jack/audio_jack_sink.i: jack/audio_jack_sink.cc.i
-.PHONY : jack/audio_jack_sink.i
-
-# target to preprocess a source file
-jack/audio_jack_sink.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/audio_jack_sink.cc.i
-.PHONY : jack/audio_jack_sink.cc.i
-
-jack/audio_jack_sink.s: jack/audio_jack_sink.cc.s
-.PHONY : jack/audio_jack_sink.s
-
-# target to generate assembly for a file
-jack/audio_jack_sink.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/audio_jack_sink.cc.s
-.PHONY : jack/audio_jack_sink.cc.s
-
-jack/audio_jack_source.o: jack/audio_jack_source.cc.o
-.PHONY : jack/audio_jack_source.o
-
-# target to build an object file
-jack/audio_jack_source.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/audio_jack_source.cc.o
-.PHONY : jack/audio_jack_source.cc.o
-
-jack/audio_jack_source.i: jack/audio_jack_source.cc.i
-.PHONY : jack/audio_jack_source.i
-
-# target to preprocess a source file
-jack/audio_jack_source.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/audio_jack_source.cc.i
-.PHONY : jack/audio_jack_source.cc.i
-
-jack/audio_jack_source.s: jack/audio_jack_source.cc.s
-.PHONY : jack/audio_jack_source.s
-
-# target to generate assembly for a file
-jack/audio_jack_source.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/audio_jack_source.cc.s
-.PHONY : jack/audio_jack_source.cc.s
-
-jack/gri_jack.o: jack/gri_jack.cc.o
-.PHONY : jack/gri_jack.o
-
-# target to build an object file
-jack/gri_jack.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/gri_jack.cc.o
-.PHONY : jack/gri_jack.cc.o
-
-jack/gri_jack.i: jack/gri_jack.cc.i
-.PHONY : jack/gri_jack.i
-
-# target to preprocess a source file
-jack/gri_jack.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/gri_jack.cc.i
-.PHONY : jack/gri_jack.cc.i
-
-jack/gri_jack.s: jack/gri_jack.cc.s
-.PHONY : jack/gri_jack.s
-
-# target to generate assembly for a file
-jack/gri_jack.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/jack/gri_jack.cc.s
-.PHONY : jack/gri_jack.cc.s
-
 oss/audio_oss_sink.o: oss/audio_oss_sink.cc.o
 .PHONY : oss/audio_oss_sink.o
 
@@ -404,78 +324,6 @@ oss/audio_oss_source.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/oss/audio_oss_source.cc.s
 .PHONY : oss/audio_oss_source.cc.s
 
-portaudio/audio_portaudio_sink.o: portaudio/audio_portaudio_sink.cc.o
-.PHONY : portaudio/audio_portaudio_sink.o
-
-# target to build an object file
-portaudio/audio_portaudio_sink.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/audio_portaudio_sink.cc.o
-.PHONY : portaudio/audio_portaudio_sink.cc.o
-
-portaudio/audio_portaudio_sink.i: portaudio/audio_portaudio_sink.cc.i
-.PHONY : portaudio/audio_portaudio_sink.i
-
-# target to preprocess a source file
-portaudio/audio_portaudio_sink.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/audio_portaudio_sink.cc.i
-.PHONY : portaudio/audio_portaudio_sink.cc.i
-
-portaudio/audio_portaudio_sink.s: portaudio/audio_portaudio_sink.cc.s
-.PHONY : portaudio/audio_portaudio_sink.s
-
-# target to generate assembly for a file
-portaudio/audio_portaudio_sink.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/audio_portaudio_sink.cc.s
-.PHONY : portaudio/audio_portaudio_sink.cc.s
-
-portaudio/audio_portaudio_source.o: portaudio/audio_portaudio_source.cc.o
-.PHONY : portaudio/audio_portaudio_source.o
-
-# target to build an object file
-portaudio/audio_portaudio_source.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/audio_portaudio_source.cc.o
-.PHONY : portaudio/audio_portaudio_source.cc.o
-
-portaudio/audio_portaudio_source.i: portaudio/audio_portaudio_source.cc.i
-.PHONY : portaudio/audio_portaudio_source.i
-
-# target to preprocess a source file
-portaudio/audio_portaudio_source.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/audio_portaudio_source.cc.i
-.PHONY : portaudio/audio_portaudio_source.cc.i
-
-portaudio/audio_portaudio_source.s: portaudio/audio_portaudio_source.cc.s
-.PHONY : portaudio/audio_portaudio_source.s
-
-# target to generate assembly for a file
-portaudio/audio_portaudio_source.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/audio_portaudio_source.cc.s
-.PHONY : portaudio/audio_portaudio_source.cc.s
-
-portaudio/gri_portaudio.o: portaudio/gri_portaudio.cc.o
-.PHONY : portaudio/gri_portaudio.o
-
-# target to build an object file
-portaudio/gri_portaudio.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/gri_portaudio.cc.o
-.PHONY : portaudio/gri_portaudio.cc.o
-
-portaudio/gri_portaudio.i: portaudio/gri_portaudio.cc.i
-.PHONY : portaudio/gri_portaudio.i
-
-# target to preprocess a source file
-portaudio/gri_portaudio.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/gri_portaudio.cc.i
-.PHONY : portaudio/gri_portaudio.cc.i
-
-portaudio/gri_portaudio.s: portaudio/gri_portaudio.cc.s
-.PHONY : portaudio/gri_portaudio.s
-
-# target to generate assembly for a file
-portaudio/gri_portaudio.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-audio/lib/CMakeFiles/gnuradio-audio.dir/build.make gr-audio/lib/CMakeFiles/gnuradio-audio.dir/portaudio/gri_portaudio.cc.s
-.PHONY : portaudio/gri_portaudio.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -504,30 +352,12 @@ help:
 	@echo "... gr_audio_registry.o"
 	@echo "... gr_audio_registry.i"
 	@echo "... gr_audio_registry.s"
-	@echo "... jack/audio_jack_sink.o"
-	@echo "... jack/audio_jack_sink.i"
-	@echo "... jack/audio_jack_sink.s"
-	@echo "... jack/audio_jack_source.o"
-	@echo "... jack/audio_jack_source.i"
-	@echo "... jack/audio_jack_source.s"
-	@echo "... jack/gri_jack.o"
-	@echo "... jack/gri_jack.i"
-	@echo "... jack/gri_jack.s"
 	@echo "... oss/audio_oss_sink.o"
 	@echo "... oss/audio_oss_sink.i"
 	@echo "... oss/audio_oss_sink.s"
 	@echo "... oss/audio_oss_source.o"
 	@echo "... oss/audio_oss_source.i"
 	@echo "... oss/audio_oss_source.s"
-	@echo "... portaudio/audio_portaudio_sink.o"
-	@echo "... portaudio/audio_portaudio_sink.i"
-	@echo "... portaudio/audio_portaudio_sink.s"
-	@echo "... portaudio/audio_portaudio_source.o"
-	@echo "... portaudio/audio_portaudio_source.i"
-	@echo "... portaudio/audio_portaudio_source.s"
-	@echo "... portaudio/gri_portaudio.o"
-	@echo "... portaudio/gri_portaudio.i"
-	@echo "... portaudio/gri_portaudio.s"
 .PHONY : help
 
 

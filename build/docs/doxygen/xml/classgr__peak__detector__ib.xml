@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.5.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="classgr__peak__detector__ib" kind="class" prot="public">
     <compoundname>gr_peak_detector_ib</compoundname>
     <basecompoundref refid="classgr__sync__block" prot="public" virt="non-virtual">gr_sync_block</basecompoundref>
@@ -86,7 +86,7 @@
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classgr__peak__detector__ib_1ae2cfdfb930604f8da54f80daa35590ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>friend GR_CORE_API <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_peak_detector_ib_sptr</ref></type>
+        <type>friend <ref refid="gr__core__api_8h_1a8b8937b0c61edd85ab57ce8203543248" kindref="member">GR_CORE_API</ref> <ref refid="classboost_1_1shared__ptr" kindref="compound">gr_peak_detector_ib_sptr</ref></type>
         <definition>GR_CORE_API gr_peak_detector_ib_sptr gr_make_peak_detector_ib</definition>
         <argsstring>(float threshold_factor_rise, float threshold_factor_fall, int look_ahead, float alpha)</argsstring>
         <name>gr_make_peak_detector_ib</name>
@@ -364,100 +364,100 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="11787">
+      <node id="6583">
         <label>gr_peak_detector_ib</label>
         <link refid="classgr__peak__detector__ib"/>
-        <childnode refid="11788" relation="public-inheritance">
+        <childnode refid="6584" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11791">
+      <node id="6587">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11792" relation="public-inheritance">
+        <childnode refid="6588" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11788">
+      <node id="6584">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="11789" relation="public-inheritance">
+        <childnode refid="6585" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11789">
+      <node id="6585">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11790" relation="public-inheritance">
+        <childnode refid="6586" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11792">
+      <node id="6588">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11790">
+      <node id="6586">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11791" relation="public-inheritance">
+        <childnode refid="6587" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="11793">
+      <node id="6589">
         <label>gr_peak_detector_ib</label>
         <link refid="classgr__peak__detector__ib"/>
-        <childnode refid="11794" relation="public-inheritance">
+        <childnode refid="6590" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11797">
+      <node id="6593">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="11798" relation="public-inheritance">
+        <childnode refid="6594" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11794">
+      <node id="6590">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="11795" relation="public-inheritance">
+        <childnode refid="6591" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11795">
+      <node id="6591">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="11796" relation="public-inheritance">
+        <childnode refid="6592" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11799">
+      <node id="6595">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="11800" relation="usage">
+        <childnode refid="6596" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="11802">
+      <node id="6598">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="11798">
+      <node id="6594">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="11800">
+      <node id="6596">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="11796">
+      <node id="6592">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="11797" relation="public-inheritance">
+        <childnode refid="6593" relation="public-inheritance">
         </childnode>
-        <childnode refid="11799" relation="usage">
+        <childnode refid="6595" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="11801" relation="usage">
+        <childnode refid="6597" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="11801">
+      <node id="6597">
         <label>std::string</label>
-        <childnode refid="11802" relation="public-inheritance">
+        <childnode refid="6598" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
