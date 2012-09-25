@@ -17,18 +17,18 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="58" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classdvbti__randomizer_1a12222ef4c42591f6291b1ec32f59987f" prot="private" static="no" mutable="no">
-        <type>bitset&lt; BITS_SEQUENCE &gt;</type>
-        <definition>bitset&lt;BITS_SEQUENCE&gt; dvbti_randomizer::bit_sequence</definition>
+      <memberdef kind="variable" id="classdvbti__randomizer_1a204f7d8e9c2b6a0a53a6d11bbe3b7da7" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int dvbti_randomizer::barrier</definition>
         <argsstring></argsstring>
-        <name>bit_sequence</name>
+        <name>barrier</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="59" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="59" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="60" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="60" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="60" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="59" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -73,14 +73,11 @@
         </inbodydescription>
         <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="46"/>
       </memberdef>
-      <memberdef kind="function" id="classdvbti__randomizer_1a3d6559e29849d09a25d8da71ee98be0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void dvbti_randomizer::next_state</definition>
-        <argsstring>(int)</argsstring>
+      <memberdef kind="function" id="classdvbti__randomizer_1ac4006fa2266dc356875fec412597610d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char dvbti_randomizer::next_state</definition>
+        <argsstring>()</argsstring>
         <name>next_state</name>
-        <param>
-          <type>int</type>
-        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -138,11 +135,11 @@
 <para>The data randomizer described in DVBT standard. </para>    </detaileddescription>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="40" bodyend="61"/>
     <listofallmembers>
-      <member refid="classdvbti__randomizer_1a12222ef4c42591f6291b1ec32f59987f" prot="private" virt="non-virtual"><scope>dvbti_randomizer</scope><name>bit_sequence</name></member>
+      <member refid="classdvbti__randomizer_1a204f7d8e9c2b6a0a53a6d11bbe3b7da7" prot="private" virt="non-virtual"><scope>dvbti_randomizer</scope><name>barrier</name></member>
       <member refid="classdvbti__randomizer_1ab1697c623374304da910e65b16a01a6b" prot="public" virt="non-virtual"><scope>dvbti_randomizer</scope><name>derandomize</name></member>
       <member refid="classdvbti__randomizer_1aeafbf0cb3e658d086516c699e9c03815" prot="public" virt="non-virtual"><scope>dvbti_randomizer</scope><name>dvbti_randomizer</name></member>
       <member refid="classdvbti__randomizer_1a6f1d633aea38428cef45620fe142fd5e" prot="private" virt="non-virtual"><scope>dvbti_randomizer</scope><name>init_sequence</name></member>
-      <member refid="classdvbti__randomizer_1a3d6559e29849d09a25d8da71ee98be0b" prot="public" virt="non-virtual"><scope>dvbti_randomizer</scope><name>next_state</name></member>
+      <member refid="classdvbti__randomizer_1ac4006fa2266dc356875fec412597610d" prot="public" virt="non-virtual"><scope>dvbti_randomizer</scope><name>next_state</name></member>
       <member refid="classdvbti__randomizer_1a83514d133dc18fc09bc9b46ee9c50daf" prot="private" virt="non-virtual"><scope>dvbti_randomizer</scope><name>prbs_sequence</name></member>
       <member refid="classdvbti__randomizer_1ae618888f6815d7c0f0c723468ab98999" prot="public" virt="non-virtual"><scope>dvbti_randomizer</scope><name>randomize</name></member>
       <member refid="classdvbti__randomizer_1ad409bf32e8f6f05bb253de83b560eb24" prot="public" virt="non-virtual"><scope>dvbti_randomizer</scope><name>reset</name></member>

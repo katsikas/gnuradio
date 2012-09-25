@@ -24,6 +24,7 @@
 #include <bitset>
 #include <string>
 #include <stdio.h>
+#include <stdlib.h>
 #include <assert.h>
 #include <iostream>
 #include <dvbt/dvbti_randomizer.h>
@@ -40,6 +41,7 @@ const string dvbti_randomizer::init_sequence = "000000010101001";
  */
 dvbti_randomizer::dvbti_randomizer (){
 
+	barrier = -1;
 	prbs_sequence = bitset<15> (init_sequence);
 }
 
@@ -48,26 +50,30 @@ dvbti_randomizer::dvbti_randomizer (){
  */
 void
 dvbti_randomizer::reset (){
+	barrier = -1;
 	prbs_sequence = bitset<15> (init_sequence);
 }
 
 /**
  * Produce the next output of the PRBS sequence generator.
  */
-void
-dvbti_randomizer::next_state(int byte_length){
+unsigned char
+dvbti_randomizer::next_state(){
 
 	unsigned char temp = 0;
-	bit_sequence = bitset<187*8> ();
-	for(int i = 0;i<byte_length*8;i++){
+	if(barrier > 14){
 		temp = prbs_sequence[13] ^ prbs_sequence[14];
         	for(int j=14;j>0;j--){
         	        prbs_sequence[j] = prbs_sequence[j-1];
         	}
-		bit_sequence[i] = temp;
         	prbs_sequence[0] = temp;
+		return prbs_sequence.test(0);
+	}
+	else{
+		barrier ++;
 	}
 
+	return (unsigned char)init_sequence.at(barrier);
 }
 
 
@@ -77,14 +83,24 @@ dvbti_randomizer::next_state(int byte_length){
 void
 dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet &in)
 {
-	next_state(187);
-  	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
-
-		bitset<8> temp = bitset<8> ();
-		for(int k = 0; k < 8; k++){
-			temp[k] = bit_sequence[k + 8*(i-1)];
+  	for (int i = 0; i < DVBT_MPEG_PACKET_LENGTH; i++){
+		if(i == 0){
+			if(out.data[0] == ~MPEG_SYNC_BYTE){
+				reset();
+			}
+			else if(out.data[0] == MPEG_SYNC_BYTE){
+                		for(int k = 0; k < 8; k++){
+                	        	next_state();
+                		}
+                	}
 		}
-    		out.data[i] = in.data[i] ^ temp.to_ulong();
+		else{
+			bitset<8> temp = bitset<8> ();
+                	for(int k = 0; k < 8; k++){
+                       		temp[k] = next_state();
+                	}
+                	out.data[i] = in.data[i] ^ temp.to_ulong();
+                }
 
 		/////////////////////////////////////////
                 // Another one way to XOR(bit per bit).//
@@ -106,14 +122,25 @@ dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_pack
 void
 dvbti_randomizer::derandomize (dvbt_mpeg_packet &out, const dvbt_mpeg_packet_no_sync &in)
 {
-	next_state(187);
-	for (int i = 1; i < DVBT_MPEG_PACKET_LENGTH; i++){
-
-		bitset<8> temp = bitset<8> ();
-                for(int k = 0; k < 8; k++){
-                        temp[k] = bit_sequence[k + 8*(i-1)];
+	for (int i = 0; i < DVBT_MPEG_PACKET_LENGTH; i++){
+                if(i == 0){
+                        if(out.data[0] == ~MPEG_SYNC_BYTE){
+                                reset();
+                        }
+                        else if(out.data[0] == MPEG_SYNC_BYTE){
+                                for(int k = 0; k < 8; k++){
+                                        next_state();
+                                }
+                        }
                 }
-                out.data[i] = in.data[i] ^ temp.to_ulong();
+                else{
+                        bitset<8> temp = bitset<8> ();
+                        for(int k = 0; k < 8; k++){
+                                temp[k] = next_state();
+                        }
+                        out.data[i] = in.data[i] ^ temp.to_ulong();
+                }
+
 
 		/////////////////////////////////////////
 		// Another one way to XOR(bit per bit).//

@@ -43,7 +43,11 @@
   </compound>
   <compound refid="classstd_1_1map_1_1const__iterator" kind="class"><name>std::map::const_iterator</name>
   </compound>
+  <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
+  </compound>
   <compound refid="classstd_1_1basic__string_1_1const__iterator" kind="class"><name>std::basic_string::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1const__iterator" kind="class"><name>std::multimap::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1const__iterator" kind="class"><name>std::multiset::const_iterator</name>
   </compound>
@@ -55,23 +59,19 @@
   </compound>
   <compound refid="classstd_1_1deque_1_1const__iterator" kind="class"><name>std::deque::const_iterator</name>
   </compound>
-  <compound refid="classstd_1_1multimap_1_1const__iterator" kind="class"><name>std::multimap::const_iterator</name>
-  </compound>
   <compound refid="classstd_1_1list_1_1const__iterator" kind="class"><name>std::list::const_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multimap_1_1const__reverse__iterator" kind="class"><name>std::multimap::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1const__reverse__iterator" kind="class"><name>std::multiset::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1const__reverse__iterator" kind="class"><name>std::vector::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
   </compound>
@@ -145,8 +145,8 @@
     <member refid="classdvbt__mpeg__packet__rs__encoded_1a26312ab6286832574b01f35978a0c272" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="classdvbt__pad" kind="class"><name>dvbt_pad</name>
-    <member refid="classdvbt__pad_1ab728fe4a6ba77046a684362c2e454636" kind="function"><name>dvbt_pad</name></member>
     <member refid="classdvbt__pad_1a3a657c8db9ea6f1ca4b5d69f87861ca4" kind="friend"><name>dvbt_make_pad</name></member>
+    <member refid="classdvbt__pad_1ab728fe4a6ba77046a684362c2e454636" kind="function"><name>dvbt_pad</name></member>
     <member refid="classdvbt__pad_1a40b68e3ebedce9c16f81dc94b2d33f67" kind="function"><name>forecast</name></member>
     <member refid="classdvbt__pad_1aaaa6286955cfde9a63d712b719d3b934" kind="function"><name>work</name></member>
     <member refid="classdvbt__pad_1a1a2eb61bf073f458a7583d6fa9f4f993" kind="function"><name>reset</name></member>
@@ -236,11 +236,11 @@
   </compound>
   <compound refid="classdvbti__randomizer" kind="class"><name>dvbti_randomizer</name>
     <member refid="classdvbti__randomizer_1a83514d133dc18fc09bc9b46ee9c50daf" kind="variable"><name>prbs_sequence</name></member>
-    <member refid="classdvbti__randomizer_1a12222ef4c42591f6291b1ec32f59987f" kind="variable"><name>bit_sequence</name></member>
+    <member refid="classdvbti__randomizer_1a204f7d8e9c2b6a0a53a6d11bbe3b7da7" kind="variable"><name>barrier</name></member>
     <member refid="classdvbti__randomizer_1a6f1d633aea38428cef45620fe142fd5e" kind="variable"><name>init_sequence</name></member>
     <member refid="classdvbti__randomizer_1aeafbf0cb3e658d086516c699e9c03815" kind="function"><name>dvbti_randomizer</name></member>
     <member refid="classdvbti__randomizer_1ad409bf32e8f6f05bb253de83b560eb24" kind="function"><name>reset</name></member>
-    <member refid="classdvbti__randomizer_1a3d6559e29849d09a25d8da71ee98be0b" kind="function"><name>next_state</name></member>
+    <member refid="classdvbti__randomizer_1ac4006fa2266dc356875fec412597610d" kind="function"><name>next_state</name></member>
     <member refid="classdvbti__randomizer_1ae618888f6815d7c0f0c723468ab98999" kind="function"><name>randomize</name></member>
     <member refid="classdvbti__randomizer_1ab1697c623374304da910e65b16a01a6b" kind="function"><name>derandomize</name></member>
   </compound>
@@ -320,23 +320,23 @@
   </compound>
   <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
-  </compound>
   <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
   </compound>
-  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
+  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
   </compound>
+  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
+  </compound>
   <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
   </compound>
   <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
-  </compound>
-  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
-  </compound>
-  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
   </compound>
   <compound refid="classstd_1_1length__error" kind="class"><name>std::length_error</name>
   </compound>
@@ -391,25 +391,25 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
   </compound>
+  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  </compound>
   <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
-  </compound>
   <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>

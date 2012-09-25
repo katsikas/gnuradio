@@ -78,14 +78,12 @@ dvbt_derandomizer::work (int noutput_items,
 		out[i].data[0] = in[i].data[0];
                 if(in[i].data[0] == MPEG_SYNC_BYTE){
 			assert(out[i].data[0] == MPEG_SYNC_BYTE);
-                        core_rand.next_state(1);
                 }
                 else if(in[i].data[0] == MPEG_INVERTED_SYNC_BYTE){
 			assert(out[i].data[0] == MPEG_INVERTED_SYNC_BYTE);
-                        core_rand.reset();
                 }
 		else{
-			//printf("NEVER HERE!!!\n");
+			//printf("NEVER HERE!!!\n")
 			assert((out[i].data[0] == MPEG_SYNC_BYTE) || (out[i].data[0] == MPEG_INVERTED_SYNC_BYTE));
 		}
 
@@ -93,7 +91,7 @@ dvbt_derandomizer::work (int noutput_items,
         }
 
 	/*for (i = 0; i < noutput_items; i++){
-                for (int j = 0; j < 4; j++){
+          	for (int j = 0; j < 4; j++){
                         printf("%d",out[i].data[j]);
                 }
                 printf("\n");

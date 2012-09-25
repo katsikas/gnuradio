@@ -33,8 +33,8 @@ extern "C" {
 
 static const int rs_init_symsize =     8;
 static const int rs_init_gfpoly  = 0x11d;
-static const int rs_init_fcr     =     0;	// first consecutive root
-static const int rs_init_prim    =     1;	// primitive is 1 (alpha)
+static const int rs_init_fcr     =     0;		// first consecutive root
+static const int rs_init_prim    =     1;		// primitive is 1 (alpha)
 static const int rs_init_nroots  =    16;
 
 static const int N = (1 << rs_init_symsize) - 1;	// 255

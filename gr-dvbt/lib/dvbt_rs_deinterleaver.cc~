@@ -30,12 +30,6 @@
 #include <dvbt/dvbt_rs_deinterleaver.h>
 
 
-/*!
- * \brief Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
- * \ingroup dvbt
- *
- * input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded
- */
 dvbt_rs_deinterleaver_sptr
 dvbt_make_rs_deinterleaver()
 {
@@ -49,9 +43,6 @@ dvbt_rs_deinterleaver::dvbt_rs_deinterleaver(): gr_sync_block("dvbt_rs_deinterle
   	reset();
 }
 
-/**
- * Deinterleave 204 byte long packets
- */
 int
 dvbt_rs_deinterleaver::work (int noutput_items,
 		       gr_vector_const_void_star &input_items,
@@ -70,3 +61,4 @@ dvbt_rs_deinterleaver::work (int noutput_items,
 
   	return noutput_items;
 }
+

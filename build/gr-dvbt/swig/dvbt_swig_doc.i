@@ -272,7 +272,11 @@ Params: (NONE)"
 
 %feature("docstring") std::map::const_iterator "STL iterator class."
 
+%feature("docstring") std::set::const_iterator "STL iterator class."
+
 %feature("docstring") std::basic_string::const_iterator "STL iterator class."
+
+%feature("docstring") std::multimap::const_iterator "STL iterator class."
 
 %feature("docstring") std::multiset::const_iterator "STL iterator class."
 
@@ -284,23 +288,19 @@ Params: (NONE)"
 
 %feature("docstring") std::deque::const_iterator "STL iterator class."
 
-%feature("docstring") std::multimap::const_iterator "STL iterator class."
-
 %feature("docstring") std::list::const_iterator "STL iterator class."
-
-%feature("docstring") std::set::const_iterator "STL iterator class."
 
 %feature("docstring") std::map::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::multimap::const_reverse_iterator "STL iterator class."
+
+%feature("docstring") std::set::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::multiset::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::vector::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::string::const_reverse_iterator "STL iterator class."
-
-%feature("docstring") std::set::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::basic_string::const_reverse_iterator "STL iterator class."
 
@@ -464,7 +464,7 @@ Params: (NONE)"
 
 %feature("docstring") dvbti_randomizer::next_state "
 
-Params: ()"
+Params: (NONE)"
 
 %feature("docstring") dvbti_randomizer::randomize "randomize (whiten) mpeg packet and remove leading MPEG-2 sync byte
 
@@ -594,23 +594,23 @@ Params: (input)"
 
 %feature("docstring") std::basic_string::iterator "STL iterator class."
 
-%feature("docstring") std::set::iterator "STL iterator class."
-
 %feature("docstring") std::multimap::iterator "STL iterator class."
 
-%feature("docstring") std::multiset::iterator "STL iterator class."
+%feature("docstring") std::map::iterator "STL iterator class."
+
+%feature("docstring") std::set::iterator "STL iterator class."
 
 %feature("docstring") std::vector::iterator "STL iterator class."
 
 %feature("docstring") std::string::iterator "STL iterator class."
 
+%feature("docstring") std::wstring::iterator "STL iterator class."
+
+%feature("docstring") std::multiset::iterator "STL iterator class."
+
 %feature("docstring") std::deque::iterator "STL iterator class."
 
 %feature("docstring") std::list::iterator "STL iterator class."
-
-%feature("docstring") std::map::iterator "STL iterator class."
-
-%feature("docstring") std::wstring::iterator "STL iterator class."
 
 %feature("docstring") std::length_error "STL class."
 
@@ -684,25 +684,25 @@ Params: (in)"
 
 %feature("docstring") std::range_error "STL class."
 
-%feature("docstring") std::vector::reverse_iterator "STL iterator class."
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::multiset::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::string::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::list::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::set::reverse_iterator "STL iterator class."
+%feature("docstring") std::vector::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::map::reverse_iterator "STL iterator class."
 
+%feature("docstring") std::list::reverse_iterator "STL iterator class."
+
 %feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::deque::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::set::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::deque::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 

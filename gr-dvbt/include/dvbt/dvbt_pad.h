@@ -42,10 +42,9 @@ DVBT_API dvbt_pad_sptr dvbt_make_pad();
  */
 class DVBT_API dvbt_pad : public gr_sync_decimator
 {
+  	friend DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 	dvbt_pad();
-
-  	friend DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 public:
 	void forecast (int noutput_items, gr_vector_int &ninput_items_required);

@@ -58,7 +58,6 @@ public:
 			transport_error = true;
   		}
 		else{
-			//printf("Correctable = %d \n",error);
 			transport_error = false;
 		}
 	}
@@ -180,7 +179,6 @@ public:
  * Nominal values are +/- {1, 3, 5, 7}.
  * This data type represents the input to the viterbi decoder.
  */
-
 class dvbt_soft_data_segment {
 public:
   	static const int NPAD = 764;

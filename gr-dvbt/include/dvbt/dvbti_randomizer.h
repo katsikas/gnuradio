@@ -46,7 +46,7 @@ public:
   	void reset ();
 
 	// Return the next state of the prbs register according to the previous.
-	void next_state(int );
+	unsigned char next_state();
 
   	//! randomize (whiten) mpeg packet and remove leading MPEG-2 sync byte
   	void randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet &in);
@@ -56,8 +56,8 @@ public:
 
 private:
 	bitset<PRBS_SEQUENCE> prbs_sequence;
-	bitset<BITS_SEQUENCE> bit_sequence;
 	static const string init_sequence;
+	unsigned int barrier;
 };
 
 #endif /* _DVBT_RANDOMIZER_H_ */
