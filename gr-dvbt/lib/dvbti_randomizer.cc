@@ -24,14 +24,15 @@
 #include <bitset>
 #include <string>
 #include <stdio.h>
-#include <stdlib.h>
 #include <assert.h>
 #include <iostream>
 #include <dvbt/dvbti_randomizer.h>
 
 using namespace std;
-// PRBS initial state
+
+// Initial PRBS state
 const string dvbti_randomizer::init_sequence = "000000010101001";
+
 
 /*!
  * \brief DVBT data "whitener"
@@ -40,10 +41,10 @@ const string dvbti_randomizer::init_sequence = "000000010101001";
  * The data randomizer described in DVBT standard.
  */
 dvbti_randomizer::dvbti_randomizer (){
-
 	barrier = -1;
 	prbs_sequence = bitset<15> (init_sequence);
 }
+
 
 /**
  * Set the PRBS sequence at the initial state.
@@ -78,12 +79,13 @@ dvbti_randomizer::next_state(){
 
 
 /**
+ * DVB-T randomization of bytes, except the first(SYNC byte)
  * XOR the data bytes with the PRBS sequence to produce the randomized data.
  */
 void
 dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_packet &in)
 {
-  	for (int i = 0; i < DVBT_MPEG_PACKET_LENGTH; i++){
+	for (int i = 0; i < DVBT_MPEG_PACKET_LENGTH; i++){
 		if(i == 0){
 			if(out.data[0] == ~MPEG_SYNC_BYTE){
 				reset();
@@ -116,6 +118,7 @@ dvbti_randomizer::randomize (dvbt_mpeg_packet_no_sync &out, const dvbt_mpeg_pack
 }
 
 /**
+ * DVB-T derandomization of bytes, except the first(SYNC byte)
  * XOR the input bytes with the PRBS sequence to produce the derandomized
  * (original) data.
  */

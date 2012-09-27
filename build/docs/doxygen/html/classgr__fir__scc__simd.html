@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 324efd26 C++ API: gr_fir_scc_simd Class Reference</title>
+<title>GNU Radio 7f75d35b C++ API: gr_fir_scc_simd Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 324efd26 C++ API
+   <div id="projectname">GNU Radio 7f75d35b C++ API
    
    </div>
    
@@ -67,8 +67,8 @@
 <div class="title">gr_fir_scc_simd Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="gr_fir_scc_simd" --><!-- doxytag: inherits="gr_fir_scc_generic" -->
-<p>common base class for SIMD versions of <a class="el" href="classgr__fir__scc.html" title="Abstract class for FIR with short input, gr_complex output and gr_complex tapsThis is the abstract cl...">gr_fir_scc</a>This base class handles alignment issues common to SSE and 3DNOW subclasses.  
+<!-- doxytag: class="gr_fir_scc_simd" -->
+<p>common base class for SIMD versions of gr_fir_sccThis base class handles alignment issues common to SSE and 3DNOW subclasses.  
  <a href="classgr__fir__scc__simd.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gr__fir__scc__simd_8h_source.html">gr_fir_scc_simd.h</a>&gt;</code></p>
@@ -78,11 +78,9 @@ Inheritance diagram for gr_fir_scc_simd:</div>
  <div class="center">
   <img src="classgr__fir__scc__simd.png" usemap="#gr_fir_scc_simd_map" alt=""/>
   <map id="gr_fir_scc_simd_map" name="gr_fir_scc_simd_map">
-<area href="classgr__fir__scc__generic.html" title="Concrete class for generic implementation of FIR with short input, gr_complex output and gr_complex t..." alt="gr_fir_scc_generic" shape="rect" coords="140,56,270,80"/>
-<area href="classgr__fir__scc.html" title="Abstract class for FIR with short input, gr_complex output and gr_complex tapsThis is the abstract cl..." alt="gr_fir_scc" shape="rect" coords="140,0,270,24"/>
-<area href="classgr__fir__scc__3dnow.html" title="3DNow! version of gr_fir_scc" alt="gr_fir_scc_3dnow" shape="rect" coords="0,168,130,192"/>
-<area href="classgr__fir__scc__3dnowext.html" title="3DNow! Ext version of gr_fir_scc" alt="gr_fir_scc_3dnowext" shape="rect" coords="140,168,270,192"/>
-<area href="classgr__fir__scc__sse.html" title="SSE version of gr_fir_scc." alt="gr_fir_scc_sse" shape="rect" coords="280,168,410,192"/>
+<area href="classgr__fir__scc__3dnow.html" title="3DNow! version of gr_fir_scc" alt="gr_fir_scc_3dnow" shape="rect" coords="0,56,130,80"/>
+<area href="classgr__fir__scc__3dnowext.html" title="3DNow! Ext version of gr_fir_scc" alt="gr_fir_scc_3dnowext" shape="rect" coords="140,56,270,80"/>
+<area href="classgr__fir__scc__sse.html" title="SSE version of gr_fir_scc." alt="gr_fir_scc_sse" shape="rect" coords="280,56,410,80"/>
 </map>
  </div></div>
 
@@ -94,9 +92,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__scc__simd.html#a97dcb5d2fc1678e9d8baf4b3e66051bc">gr_fir_scc_simd</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;<a class="el" href="interpolator__taps_8h.html#a30bf032e13c2a9fc4a98e14e390cd65a">taps</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__scc__simd.html#a3b75bbd22e2b42fa2064f5125cead698">~gr_fir_scc_simd</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__scc__simd.html#a6a1af670f1fde60d3b85c414df763ef5">set_taps</a> (const std::vector&lt; <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a> &gt; &amp;<a class="el" href="interpolator__taps_8h.html#a30bf032e13c2a9fc4a98e14e390cd65a">taps</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">install <code>new_taps</code> as the current taps.  <a href="#a6a1af670f1fde60d3b85c414df763ef5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="gr__complex_8h.html#aec4bfe41433369afae9327f1b0bc9109">gr_complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__scc__simd.html#a0c9892233109886cd83542b2fa6f4572">filter</a> (const short input[])</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">compute a single output value.  <a href="#a0c9892233109886cd83542b2fa6f4572"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-types"></a>
 Protected Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__scc__simd.html#a793865e6cbacb81138ee16ed48cc7b29">complex_dotprod_t</a> )(const short *input, const float *<a class="el" href="interpolator__taps_8h.html#a30bf032e13c2a9fc4a98e14e390cd65a">taps</a>, unsigned n_2_complex_blocks, float *result)</td></tr>
@@ -106,7 +102,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgr__fir__scc__simd.html#a793865e6cbacb81138ee16ed48cc7b29">complex_dotprod_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr__fir__scc__simd.html#a3bc01eb6eaed710b294202f2d6e2a3b1">d_complex_dotprod</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>common base class for SIMD versions of <a class="el" href="classgr__fir__scc.html" title="Abstract class for FIR with short input, gr_complex output and gr_complex tapsThis is the abstract cl...">gr_fir_scc</a></p>
+<div class="textblock"><p>common base class for SIMD versions of gr_fir_scc</p>
 <p>This base class handles alignment issues common to SSE and 3DNOW subclasses. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a793865e6cbacb81138ee16ed48cc7b29"></a><!-- doxytag: member="gr_fir_scc_simd::complex_dotprod_t" ref="a793865e6cbacb81138ee16ed48cc7b29" args=")(const short *input, const float *taps, unsigned n_2_complex_blocks, float *result)" -->
@@ -188,12 +184,6 @@ Protected Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>compute a single output value. </p>
-<p><code>input</code> must have <a class="el" href="classgr__fir__scc.html#a46c990dc7c764b50b1fcffdb15b9d0b0">ntaps()</a> valid entries. input[0] .. input[<a class="el" href="classgr__fir__scc.html#a46c990dc7c764b50b1fcffdb15b9d0b0">ntaps()</a> - 1] are referenced to compute the output value.</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>the filtered input value. </dd></dl>
-
-<p>Reimplemented from <a class="el" href="classgr__fir__scc__generic.html#ae7edfaf21a3369981d92cae952e775a7">gr_fir_scc_generic</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a6a1af670f1fde60d3b85c414df763ef5"></a><!-- doxytag: member="gr_fir_scc_simd::set_taps" ref="a6a1af670f1fde60d3b85c414df763ef5" args="(const std::vector&lt; gr_complex &gt; &amp;taps)" -->
@@ -210,10 +200,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>install <code>new_taps</code> as the current taps. </p>
-
-<p>Reimplemented from <a class="el" href="classgr__fir__scc.html#a1404a3100e262622de0ba450a4256462">gr_fir_scc</a>.</p>
 
 </div>
 </div>
@@ -254,7 +240,7 @@ Protected Attributes</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="classgr__fir__scc__simd.html">gr_fir_scc_simd</a>      </li>
 
-    <li class="footer">Generated on Thu Sep 6 2012 11:57:17 for GNU Radio 324efd26 C++ API by
+    <li class="footer">Generated on Thu Sep 27 2012 10:49:36 for GNU Radio 7f75d35b C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

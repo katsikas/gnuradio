@@ -40,7 +40,6 @@
  *
  * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;
  */
-
 dvbt_derandomizer_sptr
 dvbt_make_derandomizer()
 {
@@ -54,11 +53,13 @@ dvbt_derandomizer::dvbt_derandomizer(): gr_sync_block("dvbt_derandomizer",
   	reset();
 }
 
+
 void
 dvbt_derandomizer::reset()
 {
   	core_rand.reset();
 }
+
 
 /**
  * Get the 188 next input elements, identify and remove the MPEG_TS
@@ -81,17 +82,18 @@ dvbt_derandomizer::work (int noutput_items,
                 }
                 else if(in[i].data[0] == MPEG_INVERTED_SYNC_BYTE){
 			assert(out[i].data[0] == MPEG_INVERTED_SYNC_BYTE);
+                        core_rand.reset();
                 }
 		else{
-			//printf("NEVER HERE!!!\n")
+			//printf("NEVER HERE!!!\n");
 			assert((out[i].data[0] == MPEG_SYNC_BYTE) || (out[i].data[0] == MPEG_INVERTED_SYNC_BYTE));
 		}
 
                 core_rand.derandomize(out[i], in[i]);
         }
 
-	/*for (i = 0; i < noutput_items; i++){
-          	for (int j = 0; j < 4; j++){
+		/*for (i = 0; i < noutput_items; i++){
+                for (int j = 0; j < 4; j++){
                         printf("%d",out[i].data[j]);
                 }
                 printf("\n");

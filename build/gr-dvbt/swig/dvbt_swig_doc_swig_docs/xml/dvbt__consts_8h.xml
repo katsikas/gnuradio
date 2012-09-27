@@ -8,10 +8,6 @@
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h</label>
         <link refid="dvbt__derandomizer_8h"/>
       </node>
-      <node id="34">
-        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_deinterleaver.h</label>
-        <link refid="dvbt__rs__deinterleaver_8h"/>
-      </node>
       <node id="39">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_reed_solomon.h</label>
         <link refid="dvbti__reed__solomon_8h"/>
@@ -23,6 +19,14 @@
       <node id="45">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h</label>
         <link refid="dvbt__viterbi__decoder_8h"/>
+      </node>
+      <node id="33">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h</label>
+        <link refid="dvbti__data__interleaver_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
       </node>
       <node id="38">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_randomizer.h</label>
@@ -43,16 +47,8 @@
         <link refid="dvbt__trellis__encoder_8h"/>
       </node>
       <node id="35">
-        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h</label>
-        <link refid="dvbt__rs__interleaver_8h"/>
-      </node>
-      <node id="33">
-        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_rs_interleaver.h</label>
-        <link refid="dvbti__data__rs__interleaver_8h"/>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_interleaver.h</label>
+        <link refid="dvbt__interleaver_8h"/>
       </node>
       <node id="36">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h</label>
@@ -67,6 +63,10 @@
         <link refid="dvbt_consts.h"/>
         <childnode refid="32" relation="include">
         </childnode>
+      </node>
+      <node id="34">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_deinterleaver.h</label>
+        <link refid="dvbt__deinterleaver_8h"/>
       </node>
       <node id="32">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_types.h</label>
@@ -103,10 +103,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set static const variables according to DVBT standard. </para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="26" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ae741aa9f589229ac85bbddc2710e9990" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="30" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="27" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ace183d250be0f261977268861342b8a6" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="28" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1abbeaca3389cdaadb1abb10137ca7cfe6" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="29" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ad5ccc6a26f313ce573ef7e19b67dcd8f" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="30" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1a0c3e3059531c5185a4d0ece5717d6402" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="34" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="31" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1a82ae58ec3aa7e0e61b974cc54a93e309" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -190,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="35" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="32" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1aec0bf7a17595dad1e9e08ce7f4338bd3" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="33" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1acaeaa683423623b9b258779e915dad2b" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="37" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="37" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="34" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1ac1b330045acc5311d5f33a9851e84407" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="38" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="38" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="35" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1a060a14b51d0d831304fe2f593af85aa6" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -246,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="39" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="39" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="36" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1adbdb31d594deffaed63d1f7e156833b8" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="40" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="40" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="37" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dvbt__consts_8h_1a5f3f7cfabe741054d5fab464827b9d3e" prot="public" static="yes" mutable="no">
         <type>const int</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="42" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="42" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" line="39" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -306,24 +306,24 @@
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_DVBT_CONSTS_H_</highlight></codeline>
 <codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_DVBT_CONSTS_H_</highlight></codeline>
-<codeline lineno="25"><highlight class="preprocessor"></highlight></codeline>
-<codeline lineno="29"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PRBS_PERIOD<sp/>=<sp/>8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PRBS<sp/>generator<sp/>resets<sp/>every<sp/>PRBS_PERIOD<sp/>packets</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PRBS_SEQUENCE<sp/>=<sp/>15;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PRBS<sp/>generator<sp/>reset$</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BITS_SEQUENCE<sp/>=<sp/>187*8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PRBS<sp/>generator<sp/>reset$</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPEG_SYNC_BYTE<sp/>=<sp/>0x47;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Synchronizaton<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_DATA_LENGTH<sp/>=<sp/>184;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPEG<sp/>payload</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_HEADER_LENGTH<sp/>=<sp/>4;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Header<sp/>bytes<sp/>length</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OUTER_INTERLEAVER_BANKS<sp/>=<sp/>12;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>rows</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_PACKET_LENGTH<sp/>=<sp/>188;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TS<sp/>Header<sp/>+<sp/>Data</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPEG_INVERTED_SYNC_BYTE<sp/>=<sp/>0xB8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inverted<sp/>Syncronization<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_SUPER_FRAME_LENGTH<sp/>=<sp/>1504;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Superframe<sp/>consists<sp/>of<sp/>8<sp/>packets</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OUTER_INTERLEAVER_INC_SIZE<sp/>=<sp/>17;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fifo<sp/>incremental<sp/>size</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_RS_ENCODED_LENGTH<sp/>=<sp/>204;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Packet<sp/>after<sp/>RS<sp/>Encoding</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_DATA_SEGMENT_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>832;<sp/><sp/></highlight><highlight class="comment">//<sp/>includes<sp/>4<sp/>sync<sp/>symbols<sp/>at<sp/>beginning</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_DVBT_CONSTS_H_</highlight></codeline>
-<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PRBS_PERIOD<sp/>=<sp/>8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PRBS<sp/>generator<sp/>resets<sp/>every<sp/>PRBS_PERIOD<sp/>packets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PRBS_SEQUENCE<sp/>=<sp/>15;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PRBS<sp/>generator<sp/>reset$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BITS_SEQUENCE<sp/>=<sp/>187*8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PRBS<sp/>generator<sp/>reset$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPEG_SYNC_BYTE<sp/>=<sp/>0x47;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Synchronizaton<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_DATA_LENGTH<sp/>=<sp/>184;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPEG<sp/>payload</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_HEADER_LENGTH<sp/>=<sp/>4;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Header<sp/>bytes<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OUTER_INTERLEAVER_BANKS<sp/>=<sp/>12;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>rows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_PACKET_LENGTH<sp/>=<sp/>188;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TS<sp/>Header<sp/>+<sp/>Data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MPEG_INVERTED_SYNC_BYTE<sp/>=<sp/>0xB8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inverted<sp/>Syncronization<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_SUPER_FRAME_LENGTH<sp/>=<sp/>1504;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Superframe<sp/>consists<sp/>of<sp/>8<sp/>packets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OUTER_INTERLEAVER_INC_SIZE<sp/>=<sp/>17;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fifo<sp/>incremental<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_MPEG_RS_ENCODED_LENGTH<sp/>=<sp/>204;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Packet<sp/>after<sp/>RS<sp/>Encoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DVBT_DATA_SEGMENT_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>832;<sp/><sp/></highlight><highlight class="comment">//<sp/>includes<sp/>4<sp/>sync<sp/>symbols<sp/>at<sp/>beginning</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_DVBT_CONSTS_H_</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_consts.h"/>
   </compounddef>

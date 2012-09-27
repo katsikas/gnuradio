@@ -58,6 +58,7 @@ public:
 			transport_error = true;
   		}
 		else{
+			//printf("Correctable = %d \n",error);
 			transport_error = false;
 		}
 	}
@@ -142,6 +143,7 @@ public:
   	plinfo	pli;
 	unsigned char _pad_[NPAD];				// pad to power of 2 (256)
   	unsigned char	data[DVBT_MPEG_RS_ENCODED_LENGTH];
+  	
 
   	// overload equality operator
   	bool operator== (const dvbt_mpeg_packet_rs_encoded &other) const {
@@ -155,13 +157,14 @@ public:
 
 
 //! contains 832 3 bit symbols.  The low 3 bits in the byte hold the symbol.
+
 class dvbt_data_segment {
 public:
   	static const int NPAD = 188;
   	plinfo	pli;
 	unsigned char _pad_[NPAD];				// pad to power of 2 (1024)
   	unsigned char	data[DVBT_DATA_SEGMENT_LENGTH];
-
+  					
 
   	// overload equality operator
   	bool operator== (const dvbt_data_segment &other) const {
@@ -179,13 +182,14 @@ public:
  * Nominal values are +/- {1, 3, 5, 7}.
  * This data type represents the input to the viterbi decoder.
  */
+
 class dvbt_soft_data_segment {
 public:
   	static const int NPAD = 764;
   	plinfo	pli;
 	unsigned char _pad_[NPAD];			// pad to power of 2 (4096)
   	float	data[DVBT_DATA_SEGMENT_LENGTH];
-
+  	
   	// overload equality operator
   	bool operator== (const dvbt_data_segment &other) const {
     		return std::memcmp (data, other.data, sizeof (data)) == 0;

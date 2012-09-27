@@ -31,24 +31,26 @@
 #include <dvbt/dvbt_rs_decoder.h>
 
 
-/*!
- * \brief Reed-Solomon decoder for DVBT
- * \ingroup dvbt
- *
- * input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_no_sync
- */
 dvbt_rs_decoder_sptr
 dvbt_make_rs_decoder()
 {
   	return gnuradio::get_initial_sptr(new dvbt_rs_decoder());
 }
 
+
+/*!
+ * \brief Reed-Solomon decoder for DVBT
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_no_sync
+ */
 dvbt_rs_decoder::dvbt_rs_decoder(): gr_sync_block("dvbt_rs_decoder",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_rs_encoded)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)))
 {
   	reset();
 }
+
 
 /**
  * Perform Reed-Solomon decoding in 188 byte long packets(SYNC byte included)
@@ -65,9 +67,9 @@ dvbt_rs_decoder::work (int noutput_items,
     		out[i].pli = in[i].pli;			// copy pipeline info...
 
 	       /**
-		* reed-solomon decoding returns the number of corrected errors
-		* (up to 8) in success or -1 if packet corrupted.
-		**/
+			* reed-solomon decoding returns the number of corrected errors
+			* (up to 8) in success or -1 if packet corrupted.
+			**/
      		int nerrors_corrrected = d_rs_decoder.decode(out[i], in[i]);
     		out[i].pli.set_transport_error(nerrors_corrrected);
   	}

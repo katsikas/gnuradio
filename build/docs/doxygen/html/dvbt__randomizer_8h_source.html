@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 324efd26 C++ API: dvbt_randomizer.h Source File</title>
+<title>GNU Radio 7f75d35b C++ API: dvbt_randomizer.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 324efd26 C++ API
+   <div id="projectname">GNU Radio 7f75d35b C++ API
    
    </div>
    
@@ -94,25 +94,25 @@
 <a name="l00029"></a>00029 <span class="preprocessor">#include &lt;<a class="code" href="gr__sync__block_8h.html">gr_sync_block.h</a>&gt;</span>
 <a name="l00030"></a>00030 <span class="preprocessor">#include &lt;<a class="code" href="dvbti__randomizer_8h.html">dvbt/dvbti_randomizer.h</a>&gt;</span>
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032 <span class="keyword">class </span><a class="code" href="classdvbt__randomizer.html" title="&quot;Whiten&quot; incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI...">dvbt_randomizer</a>;
+<a name="l00032"></a>00032 <span class="keyword">class </span><a class="code" href="classdvbt__randomizer.html" title="&quot;Whiten&quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_s...">dvbt_randomizer</a>;
 <a name="l00033"></a>00033 <span class="keyword">typedef</span> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">boost::shared_ptr&lt;dvbt_randomizer&gt;</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_randomizer_sptr</a>;
 <a name="l00034"></a>00034 
 <a name="l00035"></a>00035 <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_randomizer_sptr</a> <a class="code" href="dvbt__randomizer_8h.html#abe226c84c41f28dd82dd1e82b416ae96">dvbt_make_randomizer</a>();
 <a name="l00036"></a>00036 <span class="comment"></span>
 <a name="l00037"></a>00037 <span class="comment">/*!</span>
-<a name="l00038"></a>00038 <span class="comment"> * \brief &quot;Whiten&quot; incoming mpeg transport stream packets.</span>
-<a name="l00039"></a>00039 <span class="comment"> * Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.</span>
-<a name="l00040"></a>00040 <span class="comment"> * \ingroup dvbt</span>
-<a name="l00041"></a>00041 <span class="comment"> *</span>
-<a name="l00042"></a>00042 <span class="comment"> * input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync</span>
-<a name="l00043"></a>00043 <span class="comment"> */</span>
-<a name="l00044"></a><a class="code" href="classdvbt__randomizer.html">00044</a> <span class="keyword">class </span><a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classdvbt__randomizer.html" title="&quot;Whiten&quot; incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI...">dvbt_randomizer</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__block.html" title="synchronous 1:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_block</a>
-<a name="l00045"></a>00045 {
-<a name="l00046"></a>00046         <span class="keyword">friend</span> <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_randomizer_sptr</a> <a class="code" href="dvbt__randomizer_8h.html#abe226c84c41f28dd82dd1e82b416ae96">dvbt_make_randomizer</a>();
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048         <a class="code" href="classdvbti__randomizer.html" title="DVBT data &quot;whitener&quot; Helper class for the main randomization/derandomization proccess.">dvbti_randomizer</a> core_rand;
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050         <a class="code" href="classdvbt__randomizer.html" title="&quot;Whiten&quot; incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI...">dvbt_randomizer</a>();
+<a name="l00038"></a>00038 <span class="comment"> * \brief &quot;Whiten&quot; incoming mpeg transport stream packets</span>
+<a name="l00039"></a>00039 <span class="comment"> * \ingroup dvbt</span>
+<a name="l00040"></a>00040 <span class="comment"> *</span>
+<a name="l00041"></a>00041 <span class="comment"> * input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync</span>
+<a name="l00042"></a>00042 <span class="comment"> */</span>
+<a name="l00043"></a><a class="code" href="classdvbt__randomizer.html">00043</a> <span class="keyword">class </span><a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classdvbt__randomizer.html" title="&quot;Whiten&quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_s...">dvbt_randomizer</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__block.html" title="synchronous 1:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_block</a>
+<a name="l00044"></a>00044 {
+<a name="l00045"></a>00045         <span class="keyword">friend</span> <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_randomizer_sptr</a> <a class="code" href="dvbt__randomizer_8h.html#abe226c84c41f28dd82dd1e82b416ae96">dvbt_make_randomizer</a>();
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047         <a class="code" href="classdvbti__randomizer.html" title="DVBT data &quot;whitener&quot;.">dvbti_randomizer</a> core_rand;
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049         <a class="code" href="classdvbt__randomizer.html" title="&quot;Whiten&quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_s...">dvbt_randomizer</a>();
+<a name="l00050"></a>00050 
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052 <span class="keyword">public</span>:
 <a name="l00053"></a>00053         <span class="keywordtype">int</span> <a class="code" href="classgr__sync__block.html#a0c523f4285a6eb690f677ee6295ab117" title="just like gr_block::general_work, only this arranges to call consume_each for you">work</a> (<span class="keywordtype">int</span> noutput_items,
@@ -130,7 +130,7 @@
     <ul>
       <li class="navelem"><a class="el" href="dvbt__randomizer_8h.html">dvbt_randomizer.h</a>      </li>
 
-    <li class="footer">Generated on Thu Sep 6 2012 11:57:06 for GNU Radio 324efd26 C++ API by
+    <li class="footer">Generated on Thu Sep 27 2012 10:49:24 for GNU Radio 7f75d35b C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

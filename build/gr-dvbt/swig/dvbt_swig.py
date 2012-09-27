@@ -160,7 +160,7 @@ def dvbt_make_pad():
   """
     dvbt_make_pad() -> dvbt_pad_sptr
 
-    put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packet
+    put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet
 
     input: unsigned char; output: dvbt_mpeg_packet
 
@@ -169,7 +169,7 @@ def dvbt_make_pad():
   return _dvbt_swig.dvbt_make_pad()
 class dvbt_pad(object):
     """
-    put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packet
+    put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet
 
     input: unsigned char; output: dvbt_mpeg_packet
     """
@@ -211,11 +211,19 @@ def dvbt_make_depad():
   """
     dvbt_make_depad() -> dvbt_depad_sptr
 
+    remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char
+
+    input: dvbt_mpeg_packet; output: unsigned char
+
     Params: (NONE)
     """
   return _dvbt_swig.dvbt_make_depad()
 class dvbt_depad(object):
-    """Proxy of C++ dvbt_depad class"""
+    """
+    remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char
+
+    input: dvbt_mpeg_packet; output: unsigned char
+    """
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
@@ -332,7 +340,7 @@ def dvbt_make_randomizer():
   """
     dvbt_make_randomizer() -> dvbt_randomizer_sptr
 
-    "Whiten" incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
+    "Whiten" incoming mpeg transport stream packets
 
     input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync
 
@@ -341,7 +349,7 @@ def dvbt_make_randomizer():
   return _dvbt_swig.dvbt_make_randomizer()
 class dvbt_randomizer(object):
     """
-    "Whiten" incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
+    "Whiten" incoming mpeg transport stream packets
 
     input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync
     """
@@ -375,7 +383,7 @@ def dvbt_make_derandomizer():
   """
     dvbt_make_derandomizer() -> dvbt_derandomizer_sptr
 
-    "dewhiten" incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to the ETSI DVBT standard.
+    "dewhiten" incoming mpeg transport stream packets
 
     input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;
 
@@ -384,7 +392,7 @@ def dvbt_make_derandomizer():
   return _dvbt_swig.dvbt_make_derandomizer()
 class dvbt_derandomizer(object):
     """
-    "dewhiten" incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to the ETSI DVBT standard.
+    "dewhiten" incoming mpeg transport stream packets
 
     input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;
     """
@@ -414,9 +422,9 @@ dvbt_derandomizer_swigregister = _dvbt_swig.dvbt_derandomizer_swigregister
 dvbt_derandomizer_swigregister(dvbt_derandomizer)
 
 
-def dvbt_make_rs_interleaver():
+def dvbt_make_interleaver():
   """
-    dvbt_make_rs_interleaver() -> dvbt_rs_interleaver_sptr
+    dvbt_make_interleaver() -> dvbt_interleaver_sptr
 
     Interleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)*
 
@@ -424,8 +432,8 @@ def dvbt_make_rs_interleaver():
 
     Params: (NONE)
     """
-  return _dvbt_swig.dvbt_make_rs_interleaver()
-class dvbt_rs_interleaver(object):
+  return _dvbt_swig.dvbt_make_interleaver()
+class dvbt_interleaver(object):
     """
     Interleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)*
 
@@ -441,7 +449,7 @@ class dvbt_rs_interleaver(object):
 
         Params: (noutput_items, input_items, output_items)
         """
-        return _dvbt_swig.dvbt_rs_interleaver_work(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_interleaver_work(self, *args, **kwargs)
 
     def reset(self):
         """
@@ -449,17 +457,17 @@ class dvbt_rs_interleaver(object):
 
         Params: (NONE)
         """
-        return _dvbt_swig.dvbt_rs_interleaver_reset(self)
+        return _dvbt_swig.dvbt_interleaver_reset(self)
 
-    __swig_destroy__ = _dvbt_swig.delete_dvbt_rs_interleaver
+    __swig_destroy__ = _dvbt_swig.delete_dvbt_interleaver
     __del__ = lambda self : None;
-dvbt_rs_interleaver_swigregister = _dvbt_swig.dvbt_rs_interleaver_swigregister
-dvbt_rs_interleaver_swigregister(dvbt_rs_interleaver)
+dvbt_interleaver_swigregister = _dvbt_swig.dvbt_interleaver_swigregister
+dvbt_interleaver_swigregister(dvbt_interleaver)
 
 
-def dvbt_make_rs_deinterleaver():
+def dvbt_make_deinterleaver():
   """
-    dvbt_make_rs_deinterleaver() -> dvbt_rs_deinterleaver_sptr
+    dvbt_make_deinterleaver() -> dvbt_deinterleaver_sptr
 
     Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
 
@@ -467,8 +475,8 @@ def dvbt_make_rs_deinterleaver():
 
     Params: (NONE)
     """
-  return _dvbt_swig.dvbt_make_rs_deinterleaver()
-class dvbt_rs_deinterleaver(object):
+  return _dvbt_swig.dvbt_make_deinterleaver()
+class dvbt_deinterleaver(object):
     """
     Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
 
@@ -484,7 +492,7 @@ class dvbt_rs_deinterleaver(object):
 
         Params: (noutput_items, input_items, output_items)
         """
-        return _dvbt_swig.dvbt_rs_deinterleaver_work(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_deinterleaver_work(self, *args, **kwargs)
 
     def reset(self):
         """
@@ -492,12 +500,12 @@ class dvbt_rs_deinterleaver(object):
 
         Params: (NONE)
         """
-        return _dvbt_swig.dvbt_rs_deinterleaver_reset(self)
+        return _dvbt_swig.dvbt_deinterleaver_reset(self)
 
-    __swig_destroy__ = _dvbt_swig.delete_dvbt_rs_deinterleaver
+    __swig_destroy__ = _dvbt_swig.delete_dvbt_deinterleaver
     __del__ = lambda self : None;
-dvbt_rs_deinterleaver_swigregister = _dvbt_swig.dvbt_rs_deinterleaver_swigregister
-dvbt_rs_deinterleaver_swigregister(dvbt_rs_deinterleaver)
+dvbt_deinterleaver_swigregister = _dvbt_swig.dvbt_deinterleaver_swigregister
+dvbt_deinterleaver_swigregister(dvbt_deinterleaver)
 
 
 def dvbt_make_trellis_encoder():
@@ -698,7 +706,7 @@ def pad():
   """
     pad() -> dvbt_pad_sptr
 
-    put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packet
+    put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet
 
     input: unsigned char; output: dvbt_mpeg_packet
 
@@ -810,6 +818,10 @@ def depad():
   """
     depad() -> dvbt_depad_sptr
 
+    remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char
+
+    input: dvbt_mpeg_packet; output: unsigned char
+
     Params: (NONE)
     """
   return _dvbt_swig.depad()
@@ -918,7 +930,7 @@ def randomizer():
   """
     randomizer() -> dvbt_randomizer_sptr
 
-    "Whiten" incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
+    "Whiten" incoming mpeg transport stream packets
 
     input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync
 
@@ -1030,7 +1042,7 @@ def derandomizer():
   """
     derandomizer() -> dvbt_derandomizer_sptr
 
-    "dewhiten" incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to the ETSI DVBT standard.
+    "dewhiten" incoming mpeg transport stream packets
 
     input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;
 
@@ -1261,23 +1273,23 @@ def rs_decoder():
     Params: (NONE)
     """
   return _dvbt_swig.rs_decoder()
-class dvbt_rs_interleaver_sptr(object):
-    """Proxy of C++ boost::shared_ptr<(dvbt_rs_interleaver)> class"""
+class dvbt_interleaver_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(dvbt_interleaver)> class"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
-        __init__(self) -> dvbt_rs_interleaver_sptr
-        __init__(self, dvbt_rs_interleaver p) -> dvbt_rs_interleaver_sptr
+        __init__(self) -> dvbt_interleaver_sptr
+        __init__(self, dvbt_interleaver p) -> dvbt_interleaver_sptr
         """
-        this = _dvbt_swig.new_dvbt_rs_interleaver_sptr(*args)
+        this = _dvbt_swig.new_dvbt_interleaver_sptr(*args)
         try: self.this.append(this)
         except: self.this = this
     def __deref__(self):
-        """__deref__(self) -> dvbt_rs_interleaver"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr___deref__(self)
+        """__deref__(self) -> dvbt_interleaver"""
+        return _dvbt_swig.dvbt_interleaver_sptr___deref__(self)
 
-    __swig_destroy__ = _dvbt_swig.delete_dvbt_rs_interleaver_sptr
+    __swig_destroy__ = _dvbt_swig.delete_dvbt_interleaver_sptr
     __del__ = lambda self : None;
     def work(self, *args, **kwargs):
         """
@@ -1286,7 +1298,7 @@ class dvbt_rs_interleaver_sptr(object):
 
         Params: (noutput_items, input_items, output_items)
         """
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_work(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_interleaver_sptr_work(self, *args, **kwargs)
 
     def reset(self):
         """
@@ -1294,77 +1306,77 @@ class dvbt_rs_interleaver_sptr(object):
 
         Params: (NONE)
         """
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_reset(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_reset(self)
 
     def history(self):
         """history(self) -> unsigned int"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_history(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_history(self)
 
     def output_multiple(self):
         """output_multiple(self) -> int"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_output_multiple(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_output_multiple(self)
 
     def relative_rate(self):
         """relative_rate(self) -> double"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_relative_rate(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_relative_rate(self)
 
     def start(self):
         """start(self) -> bool"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_start(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_start(self)
 
     def stop(self):
         """stop(self) -> bool"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_stop(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_stop(self)
 
     def nitems_read(self, *args, **kwargs):
         """nitems_read(self, unsigned int which_input) -> uint64_t"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_nitems_read(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_interleaver_sptr_nitems_read(self, *args, **kwargs)
 
     def nitems_written(self, *args, **kwargs):
         """nitems_written(self, unsigned int which_output) -> uint64_t"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_nitems_written(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_interleaver_sptr_nitems_written(self, *args, **kwargs)
 
     def detail(self):
         """detail(self) -> gr_block_detail_sptr"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_detail(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_detail(self)
 
     def set_detail(self, *args, **kwargs):
         """set_detail(self, gr_block_detail_sptr detail)"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_set_detail(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_interleaver_sptr_set_detail(self, *args, **kwargs)
 
     def name(self):
         """name(self) -> string"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_name(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_name(self)
 
     def input_signature(self):
         """input_signature(self) -> gr_io_signature_sptr"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_input_signature(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_input_signature(self)
 
     def output_signature(self):
         """output_signature(self) -> gr_io_signature_sptr"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_output_signature(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_output_signature(self)
 
     def unique_id(self):
         """unique_id(self) -> long"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_unique_id(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_unique_id(self)
 
     def to_basic_block(self):
         """to_basic_block(self) -> gr_basic_block_sptr"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_to_basic_block(self)
+        return _dvbt_swig.dvbt_interleaver_sptr_to_basic_block(self)
 
     def check_topology(self, *args, **kwargs):
         """check_topology(self, int ninputs, int noutputs) -> bool"""
-        return _dvbt_swig.dvbt_rs_interleaver_sptr_check_topology(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_interleaver_sptr_check_topology(self, *args, **kwargs)
 
-dvbt_rs_interleaver_sptr_swigregister = _dvbt_swig.dvbt_rs_interleaver_sptr_swigregister
-dvbt_rs_interleaver_sptr_swigregister(dvbt_rs_interleaver_sptr)
+dvbt_interleaver_sptr_swigregister = _dvbt_swig.dvbt_interleaver_sptr_swigregister
+dvbt_interleaver_sptr_swigregister(dvbt_interleaver_sptr)
 
-dvbt_rs_interleaver_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
+dvbt_interleaver_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
 
 
-def rs_interleaver():
+def interleaver():
   """
-    rs_interleaver() -> dvbt_rs_interleaver_sptr
+    interleaver() -> dvbt_interleaver_sptr
 
     Interleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)*
 
@@ -1372,24 +1384,24 @@ def rs_interleaver():
 
     Params: (NONE)
     """
-  return _dvbt_swig.rs_interleaver()
-class dvbt_rs_deinterleaver_sptr(object):
-    """Proxy of C++ boost::shared_ptr<(dvbt_rs_deinterleaver)> class"""
+  return _dvbt_swig.interleaver()
+class dvbt_deinterleaver_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(dvbt_deinterleaver)> class"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
-        __init__(self) -> dvbt_rs_deinterleaver_sptr
-        __init__(self, dvbt_rs_deinterleaver p) -> dvbt_rs_deinterleaver_sptr
+        __init__(self) -> dvbt_deinterleaver_sptr
+        __init__(self, dvbt_deinterleaver p) -> dvbt_deinterleaver_sptr
         """
-        this = _dvbt_swig.new_dvbt_rs_deinterleaver_sptr(*args)
+        this = _dvbt_swig.new_dvbt_deinterleaver_sptr(*args)
         try: self.this.append(this)
         except: self.this = this
     def __deref__(self):
-        """__deref__(self) -> dvbt_rs_deinterleaver"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr___deref__(self)
+        """__deref__(self) -> dvbt_deinterleaver"""
+        return _dvbt_swig.dvbt_deinterleaver_sptr___deref__(self)
 
-    __swig_destroy__ = _dvbt_swig.delete_dvbt_rs_deinterleaver_sptr
+    __swig_destroy__ = _dvbt_swig.delete_dvbt_deinterleaver_sptr
     __del__ = lambda self : None;
     def work(self, *args, **kwargs):
         """
@@ -1398,7 +1410,7 @@ class dvbt_rs_deinterleaver_sptr(object):
 
         Params: (noutput_items, input_items, output_items)
         """
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_work(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_work(self, *args, **kwargs)
 
     def reset(self):
         """
@@ -1406,77 +1418,77 @@ class dvbt_rs_deinterleaver_sptr(object):
 
         Params: (NONE)
         """
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_reset(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_reset(self)
 
     def history(self):
         """history(self) -> unsigned int"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_history(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_history(self)
 
     def output_multiple(self):
         """output_multiple(self) -> int"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_output_multiple(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_output_multiple(self)
 
     def relative_rate(self):
         """relative_rate(self) -> double"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_relative_rate(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_relative_rate(self)
 
     def start(self):
         """start(self) -> bool"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_start(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_start(self)
 
     def stop(self):
         """stop(self) -> bool"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_stop(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_stop(self)
 
     def nitems_read(self, *args, **kwargs):
         """nitems_read(self, unsigned int which_input) -> uint64_t"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_nitems_read(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_nitems_read(self, *args, **kwargs)
 
     def nitems_written(self, *args, **kwargs):
         """nitems_written(self, unsigned int which_output) -> uint64_t"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_nitems_written(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_nitems_written(self, *args, **kwargs)
 
     def detail(self):
         """detail(self) -> gr_block_detail_sptr"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_detail(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_detail(self)
 
     def set_detail(self, *args, **kwargs):
         """set_detail(self, gr_block_detail_sptr detail)"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_set_detail(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_set_detail(self, *args, **kwargs)
 
     def name(self):
         """name(self) -> string"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_name(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_name(self)
 
     def input_signature(self):
         """input_signature(self) -> gr_io_signature_sptr"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_input_signature(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_input_signature(self)
 
     def output_signature(self):
         """output_signature(self) -> gr_io_signature_sptr"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_output_signature(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_output_signature(self)
 
     def unique_id(self):
         """unique_id(self) -> long"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_unique_id(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_unique_id(self)
 
     def to_basic_block(self):
         """to_basic_block(self) -> gr_basic_block_sptr"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_to_basic_block(self)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_to_basic_block(self)
 
     def check_topology(self, *args, **kwargs):
         """check_topology(self, int ninputs, int noutputs) -> bool"""
-        return _dvbt_swig.dvbt_rs_deinterleaver_sptr_check_topology(self, *args, **kwargs)
+        return _dvbt_swig.dvbt_deinterleaver_sptr_check_topology(self, *args, **kwargs)
 
-dvbt_rs_deinterleaver_sptr_swigregister = _dvbt_swig.dvbt_rs_deinterleaver_sptr_swigregister
-dvbt_rs_deinterleaver_sptr_swigregister(dvbt_rs_deinterleaver_sptr)
+dvbt_deinterleaver_sptr_swigregister = _dvbt_swig.dvbt_deinterleaver_sptr_swigregister
+dvbt_deinterleaver_sptr_swigregister(dvbt_deinterleaver_sptr)
 
-dvbt_rs_deinterleaver_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
+dvbt_deinterleaver_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
 
 
-def rs_deinterleaver():
+def deinterleaver():
   """
-    rs_deinterleaver() -> dvbt_rs_deinterleaver_sptr
+    deinterleaver() -> dvbt_deinterleaver_sptr
 
     Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
 
@@ -1484,7 +1496,7 @@ def rs_deinterleaver():
 
     Params: (NONE)
     """
-  return _dvbt_swig.rs_deinterleaver()
+  return _dvbt_swig.deinterleaver()
 class dvbt_trellis_encoder_sptr(object):
     """Proxy of C++ boost::shared_ptr<(dvbt_trellis_encoder)> class"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')

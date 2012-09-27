@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 324efd26 C++ API: dvbt_depad Class Reference</title>
+<title>GNU Radio 7f75d35b C++ API: dvbt_depad Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 324efd26 C++ API
+   <div id="projectname">GNU Radio 7f75d35b C++ API
    
    </div>
    
@@ -67,6 +67,9 @@
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="dvbt_depad" --><!-- doxytag: inherits="gr_sync_interpolator" -->
+<p>remove 4 header bytes and depad mpeg ts packets from 256 byte <a class="el" href="classdvbt__mpeg__packet.html">dvbt_mpeg_packet</a> to 184 byte charinput: <a class="el" href="classdvbt__mpeg__packet.html">dvbt_mpeg_packet</a>; output: unsigned char  
+ <a href="classdvbt__depad.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="dvbt__depad_8h_source.html">dvbt_depad.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dvbt_depad:</div>
@@ -94,7 +97,10 @@ Public Member Functions</h2></td></tr>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="el" href="classboost_1_1shared__ptr.html">dvbt_depad_sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdvbt__depad.html#a8a8bf60b298c9511755540a362afbb89">dvbt_make_depad</a> ()</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>remove 4 header bytes and depad mpeg ts packets from 256 byte <a class="el" href="classdvbt__mpeg__packet.html">dvbt_mpeg_packet</a> to 184 byte char</p>
+<p>input: <a class="el" href="classdvbt__mpeg__packet.html">dvbt_mpeg_packet</a>; output: unsigned char </p>
+</div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a8bd524814516810df7e7ba07711eba40"></a><!-- doxytag: member="dvbt_depad::reset" ref="a8bd524814516810df7e7ba07711eba40" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +181,7 @@ Friends</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="classdvbt__depad.html">dvbt_depad</a>      </li>
 
-    <li class="footer">Generated on Thu Sep 6 2012 11:57:13 for GNU Radio 324efd26 C++ API by
+    <li class="footer">Generated on Thu Sep 27 2012 10:49:32 for GNU Radio 7f75d35b C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

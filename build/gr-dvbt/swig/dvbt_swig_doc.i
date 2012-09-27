@@ -8,7 +8,31 @@
 
 
 
+%feature("docstring") dvbt_deinterleaver "Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
 
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded."
+
+%feature("docstring") dvbt_deinterleaver::dvbt_deinterleaver "
+
+Params: (NONE)"
+
+%feature("docstring") dvbt_deinterleaver::work "
+
+Params: (noutput_items, input_items, output_items)"
+
+%feature("docstring") dvbt_deinterleaver::reset "
+
+Params: (NONE)"
+
+%feature("docstring") dvbt_make_deinterleaver "Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
+
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded.
+
+Params: (NONE)"
+
+%feature("docstring") dvbt_depad "remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char
+
+input: dvbt_mpeg_packet; output: unsigned char"
 
 %feature("docstring") dvbt_depad::dvbt_depad "
 
@@ -22,11 +46,13 @@ Params: (noutput_items, input_items, output_items)"
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_make_depad "
+%feature("docstring") dvbt_make_depad "remove 4 header bytes and depad mpeg ts packets from 256 byte dvbt_mpeg_packet to 184 byte char
+
+input: dvbt_mpeg_packet; output: unsigned char
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_derandomizer "\"dewhiten\" incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to the ETSI DVBT standard.
+%feature("docstring") dvbt_derandomizer "\"dewhiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;"
 
@@ -42,13 +68,35 @@ Params: (noutput_items, input_items, output_items)"
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_make_derandomizer "\"dewhiten\" incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to the ETSI DVBT standard.
+%feature("docstring") dvbt_make_derandomizer "\"dewhiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_pad "put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packet
+%feature("docstring") dvbt_interleaver "Interleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)*
+
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded."
+
+%feature("docstring") dvbt_interleaver::dvbt_interleaver "
+
+Params: (NONE)"
+
+%feature("docstring") dvbt_interleaver::work "
+
+Params: (noutput_items, input_items, output_items)"
+
+%feature("docstring") dvbt_interleaver::reset "
+
+Params: (NONE)"
+
+%feature("docstring") dvbt_make_interleaver "Interleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)*
+
+input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded.
+
+Params: (NONE)"
+
+%feature("docstring") dvbt_pad "put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet
 
 input: unsigned char; output: dvbt_mpeg_packet"
 
@@ -68,13 +116,13 @@ Params: (noutput_items, input_items, output_items)"
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_make_pad "put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packet
+%feature("docstring") dvbt_make_pad "put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packet
 
 input: unsigned char; output: dvbt_mpeg_packet
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_randomizer "\"Whiten\" incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
+%feature("docstring") dvbt_randomizer "\"Whiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync"
 
@@ -90,7 +138,7 @@ Params: (noutput_items, input_items, output_items)"
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_make_randomizer "\"Whiten\" incoming mpeg transport stream packets. Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
+%feature("docstring") dvbt_make_randomizer "\"Whiten\" incoming mpeg transport stream packets
 
 input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync
 
@@ -118,28 +166,6 @@ input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_no_sync.
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_rs_deinterleaver "Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
-
-input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded."
-
-%feature("docstring") dvbt_rs_deinterleaver::dvbt_rs_deinterleaver "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_rs_deinterleaver::work "
-
-Params: (noutput_items, input_items, output_items)"
-
-%feature("docstring") dvbt_rs_deinterleaver::reset "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_make_rs_deinterleaver "Deinterleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)
-
-input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded.
-
-Params: (NONE)"
-
 %feature("docstring") dvbt_rs_encoder "Reed-Solomon encoder for DVBT
 
 input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded."
@@ -159,28 +185,6 @@ Params: (NONE)"
 %feature("docstring") dvbt_make_rs_encoder "Reed-Solomon encoder for DVBT
 
 input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded.
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_rs_interleaver "Interleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)*
-
-input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded."
-
-%feature("docstring") dvbt_rs_interleaver::dvbt_rs_interleaver "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_rs_interleaver::work "
-
-Params: (noutput_items, input_items, output_items)"
-
-%feature("docstring") dvbt_rs_interleaver::reset "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_make_rs_interleaver "Interleave RS encoded DVBT data ( dvbt_mpeg_packet_rs_encoded --> dvbt_mpeg_packet_rs_encoded)*
-
-input: dvbt_mpeg_packet_rs_encoded; output: dvbt_mpeg_packet_rs_encoded.
 
 Params: (NONE)"
 
@@ -408,27 +412,27 @@ Params: (input)"
 
 Params: (NONE)"
 
-%feature("docstring") dvbti_data_rs_deinterleaver "dvbt convolutional data deinterleaver"
+%feature("docstring") dvbti_data_deinterleaver "dvbt convolutional data deinterleaver"
 
-%feature("docstring") dvbti_data_rs_deinterleaver::dvbti_data_rs_deinterleaver "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_data_rs_deinterleaver::deinterleave "
-
-Params: (out, in)"
-
-%feature("docstring") dvbti_data_rs_deinterleaver::remap_pli "
-
-Params: (out, in)"
-
-%feature("docstring") dvbti_data_rs_interleaver "dvbt convolutional data interleaver"
-
-%feature("docstring") dvbti_data_rs_interleaver::dvbti_data_rs_interleaver "
+%feature("docstring") dvbti_data_deinterleaver::dvbti_data_deinterleaver "
 
 Params: (NONE)"
 
-%feature("docstring") dvbti_data_rs_interleaver::interleave "
+%feature("docstring") dvbti_data_deinterleaver::deinterleave "
+
+Params: (out, in)"
+
+%feature("docstring") dvbti_data_deinterleaver::remap_pli "
+
+Params: (out, in)"
+
+%feature("docstring") dvbti_data_interleaver "dvbt convolutional data interleaver"
+
+%feature("docstring") dvbti_data_interleaver::dvbti_data_interleaver "
+
+Params: (NONE)"
+
+%feature("docstring") dvbti_data_interleaver::interleave "
 
 Params: (out, in)"
 
@@ -450,7 +454,7 @@ Params: (NONE)"
 
 Params: (NONE)"
 
-%feature("docstring") dvbti_randomizer "DVBT data \"whitener\" Helper class for the main randomization/derandomization proccess.
+%feature("docstring") dvbti_randomizer "DVBT data \"whitener\".
 
 The data randomizer described in DVBT standard."
 
@@ -458,7 +462,9 @@ The data randomizer described in DVBT standard."
 
 Params: (NONE)"
 
-%feature("docstring") dvbti_randomizer::reset "
+%feature("docstring") dvbti_randomizer::reset "reset randomizer LFSR
+
+must be called during the Data Segment Sync interval prior to the first data segment. I.e., the LFSR is reset prior to the first field of each VSB data frame.
 
 Params: (NONE)"
 
@@ -476,7 +482,7 @@ Params: (out, in)"
 
 %feature("docstring") dvbti_reed_solomon "DVBT Reed-Solomon encoder / decoder.
 
-Helper class to perform main encoding/decoding proccess for a (204,188) code."
+RS(204,188) code described in DVBT standard."
 
 %feature("docstring") dvbti_reed_solomon::dvbti_reed_solomon "
 
@@ -592,13 +598,13 @@ Params: (input)"
 
 %feature("docstring") std::istringstream "STL class."
 
-%feature("docstring") std::basic_string::iterator "STL iterator class."
+%feature("docstring") std::set::iterator "STL iterator class."
 
 %feature("docstring") std::multimap::iterator "STL iterator class."
 
 %feature("docstring") std::map::iterator "STL iterator class."
 
-%feature("docstring") std::set::iterator "STL iterator class."
+%feature("docstring") std::basic_string::iterator "STL iterator class."
 
 %feature("docstring") std::vector::iterator "STL iterator class."
 
@@ -688,21 +694,21 @@ Params: (in)"
 
 %feature("docstring") std::multiset::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::string::reverse_iterator "STL iterator class."
+%feature("docstring") std::map::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::vector::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::map::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::list::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
-
 %feature("docstring") std::wstring::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 

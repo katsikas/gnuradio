@@ -31,19 +31,20 @@
 #include <gr_io_signature.h>
 
 
-/*
- * \brief remove 4 header bytes and depad mpeg ts packets from 256
- * byte dvbt_mpeg_packet to 188-4 byte char
- * \ingroup dvbt
- *
- * input: dvbt_mpeg_packet; output: unsigned char
- */
 dvbt_depad_sptr
 dvbt_make_depad()
 {
   	return gnuradio::get_initial_sptr(new dvbt_depad());
 }
 
+
+/*!
+ * \brief remove 4 header bytes and depad mpeg ts packets from 256
+ * byte dvbt_mpeg_packet to 188-4 byte char
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet; output: unsigned char
+ */
 dvbt_depad::dvbt_depad(): gr_sync_interpolator("dvbt_depad",
 			 	gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),
 			 	gr_make_io_signature(1, 1, sizeof(unsigned char)),

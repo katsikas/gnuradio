@@ -31,7 +31,7 @@
 /*!
  * \brief DVBT Reed-Solomon encoder / decoder
  *
- * Helper class to perform main encoding/decoding proccess for a (204,188) code.
+ * RS(204,188) code described in DVBT standard.
  */
 class DVBT_API dvbti_reed_solomon {
 

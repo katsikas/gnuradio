@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 324efd26 C++ API: dvbti_randomizer Class Reference</title>
+<title>GNU Radio 7f75d35b C++ API: dvbti_randomizer Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 324efd26 C++ API
+   <div id="projectname">GNU Radio 7f75d35b C++ API
    
    </div>
    
@@ -66,7 +66,7 @@
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="dvbti_randomizer" -->
-<p>DVBT data "whitener" Helper class for the main randomization/derandomization proccess.  
+<p>DVBT data "whitener".  
  <a href="classdvbti__randomizer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="dvbti__randomizer_8h_source.html">dvbti_randomizer.h</a>&gt;</code></p>
@@ -77,14 +77,15 @@
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdvbti__randomizer.html#aeafbf0cb3e658d086516c699e9c03815">dvbti_randomizer</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdvbti__randomizer.html#ad409bf32e8f6f05bb253de83b560eb24">reset</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdvbti__randomizer.html#a3d6559e29849d09a25d8da71ee98be0b">next_state</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">reset randomizer LFSR  <a href="#ad409bf32e8f6f05bb253de83b560eb24"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdvbti__randomizer.html#ac4006fa2266dc356875fec412597610d">next_state</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdvbti__randomizer.html#ae618888f6815d7c0f0c723468ab98999">randomize</a> (<a class="el" href="classdvbt__mpeg__packet__no__sync.html">dvbt_mpeg_packet_no_sync</a> &amp;out, const <a class="el" href="classdvbt__mpeg__packet.html">dvbt_mpeg_packet</a> &amp;in)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">randomize (whiten) mpeg packet and remove leading MPEG-2 sync byte  <a href="#ae618888f6815d7c0f0c723468ab98999"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdvbti__randomizer.html#ab1697c623374304da910e65b16a01a6b">derandomize</a> (<a class="el" href="classdvbt__mpeg__packet.html">dvbt_mpeg_packet</a> &amp;out, const <a class="el" href="classdvbt__mpeg__packet__no__sync.html">dvbt_mpeg_packet_no_sync</a> &amp;in)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">derandomize (de-whiten) mpeg packet and add leading MPEG-2 sync byte  <a href="#ab1697c623374304da910e65b16a01a6b"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>DVBT data "whitener" Helper class for the main randomization/derandomization proccess. </p>
+<div class="textblock"><p>DVBT data "whitener". </p>
 <p>The data randomizer described in DVBT standard. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aeafbf0cb3e658d086516c699e9c03815"></a><!-- doxytag: member="dvbti_randomizer::dvbti_randomizer" ref="aeafbf0cb3e658d086516c699e9c03815" args="()" -->
@@ -133,14 +134,13 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3d6559e29849d09a25d8da71ee98be0b"></a><!-- doxytag: member="dvbti_randomizer::next_state" ref="a3d6559e29849d09a25d8da71ee98be0b" args="(int)" -->
+<a class="anchor" id="ac4006fa2266dc356875fec412597610d"></a><!-- doxytag: member="dvbti_randomizer::next_state" ref="ac4006fa2266dc356875fec412597610d" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classdvbti__randomizer.html#a3d6559e29849d09a25d8da71ee98be0b">dvbti_randomizer::next_state</a> </td>
+          <td class="memname">unsigned char <a class="el" href="classdvbti__randomizer.html#ac4006fa2266dc356875fec412597610d">dvbti_randomizer::next_state</a> </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -193,6 +193,9 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>reset randomizer LFSR </p>
+<p>must be called during the Data Segment Sync interval prior to the first data segment. I.e., the LFSR is reset prior to the first field of each VSB data frame. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -204,7 +207,7 @@ Public Member Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="classdvbti__randomizer.html">dvbti_randomizer</a>      </li>
 
-    <li class="footer">Generated on Thu Sep 6 2012 11:57:13 for GNU Radio 324efd26 C++ API by
+    <li class="footer">Generated on Thu Sep 27 2012 10:49:32 for GNU Radio 7f75d35b C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

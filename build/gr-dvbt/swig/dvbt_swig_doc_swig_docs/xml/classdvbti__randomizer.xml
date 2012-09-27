@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="58" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="63" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdvbti__randomizer_1a204f7d8e9c2b6a0a53a6d11bbe3b7da7" prot="private" static="no" mutable="no">
         <type>unsigned int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="60" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="60" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="65" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="59" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="59" bodyend="-1"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="64" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="44"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="43"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__randomizer_1ad409bf32e8f6f05bb253de83b560eb24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -66,12 +66,12 @@
         <argsstring>()</argsstring>
         <name>reset</name>
         <briefdescription>
-        </briefdescription>
+<para>reset randomizer LFSR </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>must be called during the Data Segment Sync interval prior to the first data segment. I.e., the LFSR is reset prior to the first field of each VSB data frame. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="46"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="51"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__randomizer_1ac4006fa2266dc356875fec412597610d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned char</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="49"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="54"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__randomizer_1ae618888f6815d7c0f0c723468ab98999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="52"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="57"/>
       </memberdef>
       <memberdef kind="function" id="classdvbti__randomizer_1ab1697c623374304da910e65b16a01a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -126,14 +126,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="55"/>
+        <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="60"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>DVBT data &quot;whitener&quot; Helper class for the main randomization/derandomization proccess. </para>    </briefdescription>
+<para>DVBT data &quot;whitener&quot;. </para>    </briefdescription>
     <detaileddescription>
 <para>The data randomizer described in DVBT standard. </para>    </detaileddescription>
-    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="41" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="40" bodyend="61"/>
+    <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" line="40" bodyfile="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_randomizer.h" bodystart="39" bodyend="66"/>
     <listofallmembers>
       <member refid="classdvbti__randomizer_1a204f7d8e9c2b6a0a53a6d11bbe3b7da7" prot="private" virt="non-virtual"><scope>dvbti_randomizer</scope><name>barrier</name></member>
       <member refid="classdvbti__randomizer_1ab1697c623374304da910e65b16a01a6b" prot="public" virt="non-virtual"><scope>dvbti_randomizer</scope><name>derandomize</name></member>

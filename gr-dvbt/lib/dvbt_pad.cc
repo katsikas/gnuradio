@@ -31,6 +31,12 @@
 #include <gr_io_signature.h>
 
 
+dvbt_pad_sptr
+dvbt_make_pad()
+{
+  	return gnuradio::get_initial_sptr(new dvbt_pad());
+}
+
 /*!
  * \brief put 4 bytes header and pad mpeg ts packets from 184+4 byte char to
  * to 256 byte dvbt_mpeg_packet
@@ -38,12 +44,6 @@
  *
  * input: unsigned char; output: dvbt_mpeg_packet
  */
-dvbt_pad_sptr
-dvbt_make_pad()
-{
-  	return gnuradio::get_initial_sptr(new dvbt_pad());
-}
-
 dvbt_pad::dvbt_pad(): gr_sync_decimator("dvbt_pad",
 			gr_make_io_signature(1, 1, sizeof(unsigned char)),
 			gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet)),

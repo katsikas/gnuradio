@@ -48,7 +48,7 @@ const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_off = "01011
 
 const int p[8]  = {1,0,0,1,0,0,0,1};
 const int g[15] = {1,1,1,0,1,1,1,0,1,1,1,1,1,1,1};
-
+    
 const int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073,
                         1219, 1262, 1286, 1469, 1594, 1687};
 
@@ -95,7 +95,7 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
   d_last_out = 0;
   d_frame_number = 1;
   set_modulation_type();
-
+	  
   if (!(d_occupied_carriers <= d_fft_length))
     throw std::invalid_argument("digital_ofdm_mapper_bcv: occupied carriers must be <= fft_length");
 
@@ -132,6 +132,7 @@ digital_dvbt_ofdm_mapper_bcv::~digital_dvbt_ofdm_mapper_bcv(void)
 }
 
 void digital_dvbt_ofdm_mapper_bcv::set_modulation_type(){
+	
 	if(d_constellation.size() == 4){
 		const std::string temp = "00";
 		d_modulation_type = std::bitset<2> (temp);
@@ -156,8 +157,8 @@ int digital_dvbt_ofdm_mapper_bcv::randsym()
 }
 
 void
-digital_dvbt_ofdm_mapper_bcv::next_state(){							// Private function for the pilot PRBS sequence.
-
+digital_dvbt_ofdm_mapper_bcv::next_state(){								// Private function for the pilot PRBS sequence.
+	
     unsigned char temp = 0;
     temp = d_prbs_sequence[8] ^ d_prbs_sequence[10];
     for(int j=10;j>0;j--){
@@ -171,9 +172,9 @@ unsigned char digital_dvbt_ofdm_mapper_bcv::get_PRBS(int barrier){
 		next_state();
 		return d_prbs_sequence.test(0);
 	}
-	next_state();
 	return 1;
 }
+
 
 int
 digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
@@ -242,28 +243,29 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 			out[d_subcarrier_map[i]] = d_tps_constellation[diff];
 			//printf("SEND diff BIT = %x complex is: %.4f %.4fj \n",diff,out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag());
 	   }
+	  
 	  else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
-		  out[d_subcarrier_map[i]] =
+		  out[d_subcarrier_map[i]] = 
 			d_cs_constellation[prbs];									// Continual pilot signas
 	  }
 	  else if(std::find(d_scattered_map.begin(), d_scattered_map.end(), i) != d_scattered_map.end()){
-		  out[d_subcarrier_map[i]] =
+		  out[d_subcarrier_map[i]] = 
 			d_cs_constellation[prbs]; 									// Scattered pilot signals
 	  }
 	  else{
 		  d_payload_map.push_back(d_zeros_from_left+i);
 	  }
   }
-
-
+  
+  
   i=0;
   while((d_msg_offset < d_msg->length()) && (i < d_payload_carriers)) {
-
+	
 	if(d_bit_offset == 0) {												// need new data to process
 	  d_msgbytes = d_msg->msg()[d_msg_offset];
 	}
 
-	if(d_nresid > 0) {			// take the residual bits, fill out nbits with info from the new byte, and put them in the symbol
+	if(d_nresid > 0) {													// take the residual bits, fill out nbits with info from the new byte, and put them in the symbol
 	  d_resid |= (((1 << d_nresid)-1) & d_msgbytes) << (d_nbits - d_nresid);
 	  bits = d_resid;
 

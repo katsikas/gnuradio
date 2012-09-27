@@ -39,7 +39,7 @@
 class digital_dvbt_ofdm_mapper_bcv;
 typedef boost::shared_ptr<digital_dvbt_ofdm_mapper_bcv> digital_dvbt_ofdm_mapper_bcv_sptr;
 
-DIGITAL_API digital_dvbt_ofdm_mapper_bcv_sptr
+DIGITAL_API digital_dvbt_ofdm_mapper_bcv_sptr 
 digital_make_dvbt_ofdm_mapper_bcv (const std::vector<gr_complex> &constellation,
                                    const std::vector<gr_complex> &t_constellation,
                                    const std::vector<gr_complex> &cs_constellation,
@@ -49,7 +49,7 @@ digital_make_dvbt_ofdm_mapper_bcv (const std::vector<gr_complex> &constellation,
  * \brief Specific class for the DVBT.Takes a stream of bytes in and maps
  * to a vector of complex constellation points suitable for IFFT input to
  * be used in an ofdm modulator. Abstract class must be subclassed with
- * specific mapping.
+ * specific mapping. 
  * \ingroup modulation_blk
  * \ingroup ofdm_blk
  */
@@ -100,21 +100,21 @@ private:
   std::vector<int> d_scattered_map;
   std::vector<int> d_subcarrier_map;
   std::vector<int> d_continuals_map;
-
+  
   std::bitset<11> d_prbs_sequence;
   std::bitset<2> d_modulation_type;
-
-  static const std::string code_rate;
+  
+  static const std::string code_rate; 
   static const std::string hierarchy;
   static const std::string odd_sequence;
   static const std::string even_sequence;
   static const std::string init_sequence;
   static const std::string guard_interval;
-  static const std::string transmission_mode;
+  static const std::string transmission_mode; 
   static const std::string cell_identification_on;
   static const std::string cell_identification_off;
 
-  int randsym();
+  int randsym(); 
   void next_state();
   void encode_BCH();
   void set_modulation_type();

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 324efd26 C++ API: dvbt_derandomizer.h Source File</title>
+<title>GNU Radio 7f75d35b C++ API: dvbt_derandomizer.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 324efd26 C++ API
+   <div id="projectname">GNU Radio 7f75d35b C++ API
    
    </div>
    
@@ -95,45 +95,43 @@
 <a name="l00030"></a>00030 <span class="preprocessor">#include &lt;<a class="code" href="dvbti__randomizer_8h.html">dvbt/dvbti_randomizer.h</a>&gt;</span>
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032 
-<a name="l00033"></a>00033 <span class="keyword">class </span><a class="code" href="classdvbt__derandomizer.html" title="&quot;dewhiten&quot; incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to t...">dvbt_derandomizer</a>;
+<a name="l00033"></a>00033 <span class="keyword">class </span><a class="code" href="classdvbt__derandomizer.html" title="&quot;dewhiten&quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_p...">dvbt_derandomizer</a>;
 <a name="l00034"></a>00034 <span class="keyword">typedef</span> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">boost::shared_ptr&lt;dvbt_derandomizer&gt;</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_derandomizer_sptr</a>;
 <a name="l00035"></a>00035 
 <a name="l00036"></a>00036 <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_derandomizer_sptr</a> <a class="code" href="dvbt__derandomizer_8h.html#a8458e520bba80d8dc60b8952a428d5c6">dvbt_make_derandomizer</a>();
 <a name="l00037"></a>00037 <span class="comment"></span>
 <a name="l00038"></a>00038 <span class="comment">/*!</span>
 <a name="l00039"></a>00039 <span class="comment"> * \brief &quot;dewhiten&quot; incoming mpeg transport stream packets</span>
-<a name="l00040"></a>00040 <span class="comment"> * Derandomize dvbt_mpeg_packet_no_sync according to the ETSI</span>
-<a name="l00041"></a>00041 <span class="comment"> * DVBT standard.</span>
-<a name="l00042"></a>00042 <span class="comment"> * \ingroup dvbt</span>
-<a name="l00043"></a>00043 <span class="comment"> *</span>
-<a name="l00044"></a>00044 <span class="comment"> * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;</span>
-<a name="l00045"></a>00045 <span class="comment"> */</span>
-<a name="l00046"></a><a class="code" href="classdvbt__derandomizer.html">00046</a> <span class="keyword">class </span><a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classdvbt__derandomizer.html" title="&quot;dewhiten&quot; incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to t...">dvbt_derandomizer</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__block.html" title="synchronous 1:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_block</a>
-<a name="l00047"></a>00047 {
-<a name="l00048"></a>00048         <span class="keyword">friend</span> <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_derandomizer_sptr</a> <a class="code" href="dvbt__derandomizer_8h.html#a8458e520bba80d8dc60b8952a428d5c6">dvbt_make_derandomizer</a>();
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050         <span class="keywordtype">int</span> packets;
-<a name="l00051"></a>00051         <a class="code" href="classdvbti__randomizer.html" title="DVBT data &quot;whitener&quot; Helper class for the main randomization/derandomization proccess.">dvbti_randomizer</a> core_rand;
+<a name="l00040"></a>00040 <span class="comment"> * \ingroup dvbt</span>
+<a name="l00041"></a>00041 <span class="comment"> *</span>
+<a name="l00042"></a>00042 <span class="comment"> * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;</span>
+<a name="l00043"></a>00043 <span class="comment"> */</span>
+<a name="l00044"></a><a class="code" href="classdvbt__derandomizer.html">00044</a> <span class="keyword">class </span><a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classdvbt__derandomizer.html" title="&quot;dewhiten&quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_p...">dvbt_derandomizer</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__block.html" title="synchronous 1:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_block</a>
+<a name="l00045"></a>00045 {
+<a name="l00046"></a>00046         <span class="keyword">friend</span> <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_derandomizer_sptr</a> <a class="code" href="dvbt__derandomizer_8h.html#a8458e520bba80d8dc60b8952a428d5c6">dvbt_make_derandomizer</a>();
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <span class="keywordtype">int</span> packets;
+<a name="l00049"></a>00049         <a class="code" href="classdvbti__randomizer.html" title="DVBT data &quot;whitener&quot;.">dvbti_randomizer</a> core_rand;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051         <a class="code" href="classdvbt__derandomizer.html" title="&quot;dewhiten&quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_p...">dvbt_derandomizer</a>();
 <a name="l00052"></a>00052 
-<a name="l00053"></a>00053         <a class="code" href="classdvbt__derandomizer.html" title="&quot;dewhiten&quot; incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to t...">dvbt_derandomizer</a>();
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 <span class="keyword">public</span>:
-<a name="l00056"></a>00056         <span class="keywordtype">int</span> <a class="code" href="classgr__sync__block.html#a0c523f4285a6eb690f677ee6295ab117" title="just like gr_block::general_work, only this arranges to call consume_each for you">work</a> (<span class="keywordtype">int</span> noutput_items,
-<a name="l00057"></a>00057                 <a class="code" href="gr__types_8h.html#a9852a3d906d823cb70eb9c29e7f2a43d">gr_vector_const_void_star</a> &amp;input_items,
-<a name="l00058"></a>00058                 <a class="code" href="gr__types_8h.html#acd3f499576e769966ea44554b359d949">gr_vector_void_star</a> &amp;output_items);
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060         <span class="keywordtype">void</span> reset();
-<a name="l00061"></a>00061 };
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064 <span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_DVBT_DERANDOMIZER_H */</span>
+<a name="l00053"></a>00053 <span class="keyword">public</span>:
+<a name="l00054"></a>00054         <span class="keywordtype">int</span> <a class="code" href="classgr__sync__block.html#a0c523f4285a6eb690f677ee6295ab117" title="just like gr_block::general_work, only this arranges to call consume_each for you">work</a> (<span class="keywordtype">int</span> noutput_items,
+<a name="l00055"></a>00055                 <a class="code" href="gr__types_8h.html#a9852a3d906d823cb70eb9c29e7f2a43d">gr_vector_const_void_star</a> &amp;input_items,
+<a name="l00056"></a>00056                 <a class="code" href="gr__types_8h.html#acd3f499576e769966ea44554b359d949">gr_vector_void_star</a> &amp;output_items);
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058         <span class="keywordtype">void</span> reset();
+<a name="l00059"></a>00059 };
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_DVBT_DERANDOMIZER_H */</span>
 </pre></div></div><!-- contents -->
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="dvbt__derandomizer_8h.html">dvbt_derandomizer.h</a>      </li>
 
-    <li class="footer">Generated on Thu Sep 6 2012 11:57:06 for GNU Radio 324efd26 C++ API by
+    <li class="footer">Generated on Thu Sep 27 2012 10:49:24 for GNU Radio 7f75d35b C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

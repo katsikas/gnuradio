@@ -3,77 +3,40 @@
   <compounddef id="gr__fir__fsf__simd_8h" kind="file">
     <compoundname>gr_fir_fsf_simd.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
-    <includes refid="gr__fir__fsf__generic_8h" local="no">gr_fir_fsf_generic.h</includes>
+    <includes local="no">gr_fir_fsf_generic.h</includes>
     <includedby refid="gr__fir__fsf__x86_8h" local="no">gr_fir_fsf_x86.h</includedby>
     <incdepgraph>
-      <node id="9506">
+      <node id="7244">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="9508">
-        <label>gr_fir_fsf.h</label>
-        <link refid="gr__fir__fsf_8h"/>
-        <childnode refid="9505" relation="include">
-        </childnode>
-        <childnode refid="9509" relation="include">
-        </childnode>
-        <childnode refid="9510" relation="include">
-        </childnode>
-      </node>
-      <node id="9509">
-        <label>vector</label>
-      </node>
-      <node id="9507">
+      <node id="7245">
         <label>gr_fir_fsf_generic.h</label>
-        <link refid="gr__fir__fsf__generic_8h"/>
-        <childnode refid="9505" relation="include">
-        </childnode>
-        <childnode refid="9508" relation="include">
-        </childnode>
       </node>
-      <node id="9505">
+      <node id="7243">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="9506" relation="include">
+        <childnode refid="7244" relation="include">
         </childnode>
       </node>
-      <node id="9510">
-        <label>gr_reverse.h</label>
-        <link refid="gr__reverse_8h"/>
-        <childnode refid="9505" relation="include">
-        </childnode>
-        <childnode refid="9509" relation="include">
-        </childnode>
-        <childnode refid="9511" relation="include">
-        </childnode>
-      </node>
-      <node id="9504">
+      <node id="7242">
         <label>gr_fir_fsf_simd.h</label>
         <link refid="gr_fir_fsf_simd.h"/>
-        <childnode refid="9505" relation="include">
+        <childnode refid="7243" relation="include">
         </childnode>
-        <childnode refid="9507" relation="include">
-        </childnode>
-      </node>
-      <node id="9512">
-        <label>complex</label>
-      </node>
-      <node id="9511">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="9512" relation="include">
+        <childnode refid="7245" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="9514">
+      <node id="7247">
         <label>gr_fir_fsf_x86.h</label>
         <link refid="gr__fir__fsf__x86_8h"/>
       </node>
-      <node id="9513">
+      <node id="7246">
         <label>gr_fir_fsf_simd.h</label>
         <link refid="gr_fir_fsf_simd.h"/>
-        <childnode refid="9514" relation="include">
+        <childnode refid="7247" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

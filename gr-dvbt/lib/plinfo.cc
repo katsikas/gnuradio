@@ -29,7 +29,6 @@ void
 plinfo::delay (plinfo &out, const plinfo &in, int nsegs_of_delay)
 {
 	// call gnuradio-core delay function!
-	assert (nsegs_of_delay == 12);
 }
 
 void

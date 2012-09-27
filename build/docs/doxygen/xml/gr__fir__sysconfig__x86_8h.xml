@@ -3,79 +3,28 @@
   <compounddef id="gr__fir__sysconfig__x86_8h" kind="file">
     <compoundname>gr_fir_sysconfig_x86.h</compoundname>
     <includes refid="gr__core__api_8h" local="no">gr_core_api.h</includes>
-    <includes refid="gr__fir__sysconfig__generic_8h" local="no">gr_fir_sysconfig_generic.h</includes>
+    <includes local="no">gr_fir_sysconfig_generic.h</includes>
     <incdepgraph>
-      <node id="9644">
-        <label>boost/shared_ptr.hpp</label>
-      </node>
-      <node id="9649">
-        <label>gr_fir_util.h</label>
-        <link refid="gr__fir__util_8h"/>
-        <childnode refid="9639" relation="include">
-        </childnode>
-        <childnode refid="9643" relation="include">
-        </childnode>
-      </node>
-      <node id="9640">
+      <node id="7278">
         <label>gruel/attributes.h</label>
         <link refid="attributes_8h"/>
       </node>
-      <node id="9643">
-        <label>gr_types.h</label>
-        <link refid="gr__types_8h"/>
-        <childnode refid="9639" relation="include">
-        </childnode>
-        <childnode refid="9644" relation="include">
-        </childnode>
-        <childnode refid="9645" relation="include">
-        </childnode>
-        <childnode refid="9646" relation="include">
-        </childnode>
-        <childnode refid="9647" relation="include">
-        </childnode>
-      </node>
-      <node id="9646">
-        <label>stddef.h</label>
-      </node>
-      <node id="9645">
-        <label>vector</label>
-      </node>
-      <node id="9642">
-        <label>gr_fir_sysconfig.h</label>
-        <link refid="gr__fir__sysconfig_8h"/>
-        <childnode refid="9643" relation="include">
-        </childnode>
-        <childnode refid="9649" relation="include">
-        </childnode>
-      </node>
-      <node id="9641">
-        <label>gr_fir_sysconfig_generic.h</label>
-        <link refid="gr__fir__sysconfig__generic_8h"/>
-        <childnode refid="9642" relation="include">
-        </childnode>
-      </node>
-      <node id="9639">
+      <node id="7277">
         <label>gr_core_api.h</label>
         <link refid="gr__core__api_8h"/>
-        <childnode refid="9640" relation="include">
+        <childnode refid="7278" relation="include">
         </childnode>
       </node>
-      <node id="9648">
-        <label>complex</label>
-      </node>
-      <node id="9647">
-        <label>gr_complex.h</label>
-        <link refid="gr__complex_8h"/>
-        <childnode refid="9648" relation="include">
-        </childnode>
-      </node>
-      <node id="9638">
+      <node id="7276">
         <label>gr_fir_sysconfig_x86.h</label>
         <link refid="gr_fir_sysconfig_x86.h"/>
-        <childnode refid="9639" relation="include">
+        <childnode refid="7277" relation="include">
         </childnode>
-        <childnode refid="9641" relation="include">
+        <childnode refid="7279" relation="include">
         </childnode>
+      </node>
+      <node id="7279">
+        <label>gr_fir_sysconfig_generic.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classgr__fir__sysconfig__x86" prot="public">gr_fir_sysconfig_x86</innerclass>

@@ -28,13 +28,13 @@ install(FILES
     	dvbt_pad.h
 	dvbt_rs_encoder.h
 	dvbt_randomizer.h
-	dvbt_rs_interleaver.h
+	dvbt_interleaver.h
 	dvbt_trellis_encoder.h
 	
     	dvbt_depad.h
     	dvbt_rs_decoder.h
 	dvbt_derandomizer.h
-	dvbt_rs_deinterleaver.h
+	dvbt_deinterleaver.h
 	dvbt_viterbi_decoder.h
 	
 	dvbti_randomizer.h
@@ -42,7 +42,7 @@ install(FILES
 	dvbti_single_viterbi.h
 	dvbti_trellis_encoder.h
 	dvbti_viterbi_decoder.h
-	dvbti_data_rs_interleaver.h
+	dvbti_data_interleaver.h
 	dvbti_fake_single_viterbi.h
 	dvbti_basic_trellis_encoder.h
 

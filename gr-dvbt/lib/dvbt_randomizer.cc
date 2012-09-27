@@ -31,6 +31,7 @@
 
 unsigned int plinfo::packets = 0;
 
+
 /*!
  * \brief "Whiten" incoming mpeg transport stream packets.
  * Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
@@ -50,6 +51,7 @@ dvbt_randomizer::dvbt_randomizer(): gr_sync_block("dvbt_randomizer",
 {
   	reset();
 }
+
 
 void
 dvbt_randomizer::reset()
@@ -81,6 +83,7 @@ dvbt_randomizer::work (int noutput_items,
                 }
                 else{
                         out[i].data[0] = ~MPEG_SYNC_BYTE;
+			core_rand.reset();
                 }
 		out[i].data[1] = out[i].pli.get_flag01();
 		out[i].data[2] = out[i].pli.get_flag02();

@@ -7,71 +7,71 @@
     <includes local="no">gr_sync_block.h</includes>
     <includes refid="dvbti__randomizer_8h" local="no">dvbt/dvbti_randomizer.h</includes>
     <incdepgraph>
-      <node id="52">
+      <node id="68">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h</label>
         <link refid="dvbt_derandomizer.h"/>
-        <childnode refid="53" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
+        <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="57" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
       </node>
-      <node id="55">
+      <node id="71">
         <label>gruel/attributes.h</label>
       </node>
-      <node id="56">
+      <node id="72">
         <label>gr_sync_block.h</label>
       </node>
-      <node id="53">
+      <node id="69">
         <label>cassert</label>
       </node>
-      <node id="59">
+      <node id="75">
         <label>string</label>
       </node>
-      <node id="58">
+      <node id="74">
         <label>bitset</label>
       </node>
-      <node id="57">
+      <node id="73">
         <label>dvbt/dvbti_randomizer.h</label>
         <link refid="dvbti__randomizer_8h"/>
-        <childnode refid="58" relation="include">
+        <childnode refid="74" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
+        <childnode refid="75" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="76" relation="include">
         </childnode>
       </node>
-      <node id="63">
+      <node id="79">
         <label>dvbt/dvbt_consts.h</label>
         <link refid="dvbt__consts_8h"/>
       </node>
-      <node id="60">
+      <node id="76">
         <label>dvbt/dvbt_types.h</label>
         <link refid="dvbt__types_8h"/>
-        <childnode refid="61" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
-        <childnode refid="53" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="63" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
       </node>
-      <node id="61">
+      <node id="77">
         <label>stdio.h</label>
       </node>
-      <node id="54">
+      <node id="70">
         <label>dvbt/dvbt_api.h</label>
         <link refid="dvbt__api_8h"/>
-        <childnode refid="55" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
       </node>
-      <node id="62">
+      <node id="78">
         <label>cstring</label>
       </node>
     </incdepgraph>
@@ -143,30 +143,30 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dvbti__randomizer_8h" kindref="compound">dvbt/dvbti_randomizer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33" refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__derandomizer" kindref="compound" tooltip="&amp;quot;dewhiten&amp;quot; incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to t...">dvbt_derandomizer</ref>;</highlight></codeline>
+<codeline lineno="33" refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdvbt__derandomizer" kindref="compound" tooltip="&amp;quot;dewhiten&amp;quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_p...">dvbt_derandomizer</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;dvbt_derandomizer&gt;<sp/><ref refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" kindref="member">dvbt_derandomizer_sptr</ref>;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" kindref="member">dvbt_derandomizer_sptr</ref><sp/><ref refid="dvbt__derandomizer_8h_1a8458e520bba80d8dc60b8952a428d5c6" kindref="member">dvbt_make_derandomizer</ref>();</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="classdvbt__derandomizer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__derandomizer" kindref="compound" tooltip="&amp;quot;dewhiten&amp;quot; incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to t...">dvbt_derandomizer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" kindref="member">dvbt_derandomizer_sptr</ref><sp/><ref refid="dvbt__derandomizer_8h_1a8458e520bba80d8dc60b8952a428d5c6" kindref="member">dvbt_make_derandomizer</ref>();</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>packets;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbti__randomizer" kindref="compound" tooltip="DVBT data &amp;quot;whitener&amp;quot; Helper class for the main randomization/derandomization proccess.">dvbti_randomizer</ref><sp/>core_rand;</highlight></codeline>
+<codeline lineno="44" refid="classdvbt__derandomizer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="classdvbt__derandomizer" kindref="compound" tooltip="&amp;quot;dewhiten&amp;quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_p...">dvbt_derandomizer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr_sync_block</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="dvbt__api_8h_1adb7443ed6054878f4fdf2c3965120390" kindref="member">DVBT_API</ref><sp/><ref refid="dvbt__derandomizer_8h_1a8952396f93fb76a5da3a1c6082678b3c" kindref="member">dvbt_derandomizer_sptr</ref><sp/><ref refid="dvbt__derandomizer_8h_1a8458e520bba80d8dc60b8952a428d5c6" kindref="member">dvbt_make_derandomizer</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>packets;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbti__randomizer" kindref="compound" tooltip="DVBT data &amp;quot;whitener&amp;quot;.">dvbti_randomizer</ref><sp/>core_rand;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__derandomizer" kindref="compound" tooltip="&amp;quot;dewhiten&amp;quot; incoming mpeg transport stream packetsinput: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_p...">dvbt_derandomizer</ref>();</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdvbt__derandomizer" kindref="compound" tooltip="&amp;quot;dewhiten&amp;quot; incoming mpeg transport stream packets Derandomize dvbt_mpeg_packet_no_sync according to t...">dvbt_derandomizer</ref>();</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
-<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_DVBT_DERANDOMIZER_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noutput_items,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_const_void_star<sp/>&amp;input_items,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gr_vector_void_star<sp/>&amp;output_items);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_DVBT_DERANDOMIZER_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_derandomizer.h"/>
   </compounddef>

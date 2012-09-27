@@ -21,10 +21,6 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="270">
-        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_deinterleaver.h</label>
-        <link refid="dvbt__rs__deinterleaver_8h"/>
-      </node>
       <node id="268">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/convolutional_interleaver.h</label>
         <link refid="convolutional__interleaver_8h"/>
@@ -34,6 +30,14 @@
       <node id="273">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_viterbi_decoder.h</label>
         <link refid="dvbt__viterbi__decoder_8h"/>
+      </node>
+      <node id="269">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_interleaver.h</label>
+        <link refid="dvbti__data__interleaver_8h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
       </node>
       <node id="267">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/interleaver_fifo.h</label>
@@ -46,16 +50,12 @@
         </childnode>
       </node>
       <node id="271">
-        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_rs_interleaver.h</label>
-        <link refid="dvbt__rs__interleaver_8h"/>
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_interleaver.h</label>
+        <link refid="dvbt__interleaver_8h"/>
       </node>
-      <node id="269">
-        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_data_rs_interleaver.h</label>
-        <link refid="dvbti__data__rs__interleaver_8h"/>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="271" relation="include">
-        </childnode>
+      <node id="270">
+        <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbt_deinterleaver.h</label>
+        <link refid="dvbt__deinterleaver_8h"/>
       </node>
       <node id="272">
         <label>/home/katsikas/gnuradio/gr-dvbt/include/dvbt/dvbti_viterbi_decoder.h</label>

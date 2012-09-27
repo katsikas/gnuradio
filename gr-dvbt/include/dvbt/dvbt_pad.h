@@ -34,7 +34,7 @@ typedef boost::shared_ptr<dvbt_pad> dvbt_pad_sptr;
 DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 /*!
- * \brief put 4 bytes header and pad mpeg ts packets from 184+4 byte char to
+ * \brief put 4 bytes header and pad mpeg ts packets from 184 byte char to
  * to 256 byte dvbt_mpeg_packet
  * \ingroup dvbt
  *
@@ -42,9 +42,10 @@ DVBT_API dvbt_pad_sptr dvbt_make_pad();
  */
 class DVBT_API dvbt_pad : public gr_sync_decimator
 {
-  	friend DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 	dvbt_pad();
+
+  	friend DVBT_API dvbt_pad_sptr dvbt_make_pad();
 
 public:
 	void forecast (int noutput_items, gr_vector_int &ninput_items_required);

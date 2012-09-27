@@ -33,7 +33,6 @@ using namespace std;
 
 /*!
  * \brief DVBT data "whitener"
- * Helper class for the main randomization/derandomization proccess.
  *
  * The data randomizer described in DVBT standard.
  */
@@ -43,6 +42,12 @@ class DVBT_API dvbti_randomizer
 public:
   	dvbti_randomizer();
 
+      	/*! \brief reset randomizer LFSR
+   	 *
+   	 * must be called during the Data Segment Sync interval prior to the
+   	 * first data segment.  I.e., the LFSR is reset prior to the first
+   	 * field of each VSB data frame.
+   	 */
   	void reset ();
 
 	// Return the next state of the prbs register according to the previous.

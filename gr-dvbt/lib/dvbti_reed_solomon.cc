@@ -33,8 +33,8 @@ extern "C" {
 
 static const int rs_init_symsize =     8;
 static const int rs_init_gfpoly  = 0x11d;
-static const int rs_init_fcr     =     0;		// first consecutive root
-static const int rs_init_prim    =     1;		// primitive is 1 (alpha)
+static const int rs_init_fcr     =     0;	// first consecutive root
+static const int rs_init_prim    =     1;	// primitive is 1 (alpha)
 static const int rs_init_nroots  =    16;
 
 static const int N = (1 << rs_init_symsize) - 1;	// 255
@@ -64,6 +64,7 @@ dvbti_reed_solomon::~dvbti_reed_solomon ()
   	core_rs = 0;
 }
 
+
 /*!
  * \brief Add RS error correction encoding
  */
@@ -85,6 +86,7 @@ dvbti_reed_solomon::encode (dvbt_mpeg_packet_rs_encoded &out, const dvbt_mpeg_pa
   	// now compute parity bytes and add them to tail end of output packet
   	encode_rs_char (core_rs, tmp, &out.data[sizeof (in.data)]);
 }
+
 
 /*!
  * Decode RS encoded packet.

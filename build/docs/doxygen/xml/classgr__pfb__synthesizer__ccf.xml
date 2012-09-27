@@ -58,7 +58,7 @@
         <location file="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" line="67" bodyfile="/home/katsikas/gnuradio/gnuradio-core/src/lib/filter/gr_pfb_synthesizer_ccf.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgr__pfb__synthesizer__ccf_1a8c31aa192fb72d8ac7ac6b9358620920" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classgri__fir__filter__with__buffer__ccf" kindref="compound">gri_fir_filter_with_buffer_ccf</ref> * &gt;</type>
+        <type>std::vector&lt; gri_fir_filter_with_buffer_ccf * &gt;</type>
         <definition>std::vector&lt; gri_fir_filter_with_buffer_ccf*&gt; gr_pfb_synthesizer_ccf::d_filters</definition>
         <argsstring></argsstring>
         <name>d_filters</name>
@@ -395,112 +395,112 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="6724">
+      <node id="4557">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6725" relation="public-inheritance">
+        <childnode refid="4558" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6721">
+      <node id="4554">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6722" relation="public-inheritance">
+        <childnode refid="4555" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6722">
+      <node id="4555">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6723" relation="public-inheritance">
+        <childnode refid="4556" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6720">
+      <node id="4553">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="6721" relation="public-inheritance">
+        <childnode refid="4554" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6725">
+      <node id="4558">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6719">
+      <node id="4552">
         <label>gr_pfb_synthesizer_ccf</label>
         <link refid="classgr__pfb__synthesizer__ccf"/>
-        <childnode refid="6720" relation="public-inheritance">
+        <childnode refid="4553" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6723">
+      <node id="4556">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6724" relation="public-inheritance">
+        <childnode refid="4557" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6731">
+      <node id="4564">
         <label>gr_msg_accepter</label>
         <link refid="classgr__msg__accepter"/>
-        <childnode refid="6732" relation="public-inheritance">
+        <childnode refid="4565" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6728">
+      <node id="4561">
         <label>gr_sync_block</label>
         <link refid="classgr__sync__block"/>
-        <childnode refid="6729" relation="public-inheritance">
+        <childnode refid="4562" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6729">
+      <node id="4562">
         <label>gr_block</label>
         <link refid="classgr__block"/>
-        <childnode refid="6730" relation="public-inheritance">
+        <childnode refid="4563" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6727">
+      <node id="4560">
         <label>gr_sync_interpolator</label>
         <link refid="classgr__sync__interpolator"/>
-        <childnode refid="6728" relation="public-inheritance">
+        <childnode refid="4561" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6733">
+      <node id="4566">
         <label>boost::shared_ptr&lt; gr_io_signature &gt;</label>
         <link refid="classboost_1_1shared__ptr"/>
-        <childnode refid="6734" relation="usage">
+        <childnode refid="4567" relation="usage">
           <edgelabel>px</edgelabel>
         </childnode>
       </node>
-      <node id="6736">
+      <node id="4569">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="6732">
+      <node id="4565">
         <label>gruel::msg_accepter</label>
         <link refid="classgruel_1_1msg__accepter"/>
       </node>
-      <node id="6726">
+      <node id="4559">
         <label>gr_pfb_synthesizer_ccf</label>
         <link refid="classgr__pfb__synthesizer__ccf"/>
-        <childnode refid="6727" relation="public-inheritance">
+        <childnode refid="4560" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6734">
+      <node id="4567">
         <label>gr_io_signature</label>
         <link refid="classgr__io__signature"/>
       </node>
-      <node id="6730">
+      <node id="4563">
         <label>gr_basic_block</label>
         <link refid="classgr__basic__block"/>
-        <childnode refid="6731" relation="public-inheritance">
+        <childnode refid="4564" relation="public-inheritance">
         </childnode>
-        <childnode refid="6733" relation="usage">
+        <childnode refid="4566" relation="usage">
           <edgelabel>d_input_signature</edgelabel>
           <edgelabel>d_output_signature</edgelabel>
         </childnode>
-        <childnode refid="6735" relation="usage">
+        <childnode refid="4568" relation="usage">
           <edgelabel>d_name</edgelabel>
         </childnode>
       </node>
-      <node id="6735">
+      <node id="4568">
         <label>std::string</label>
-        <childnode refid="6736" relation="public-inheritance">
+        <childnode refid="4569" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

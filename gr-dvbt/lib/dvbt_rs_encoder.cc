@@ -31,24 +31,26 @@
 #include <dvbt/dvbt_rs_encoder.h>
 
 
-/*!
- * \brief Reed-Solomon encoder for DVBT
- * \ingroup dvbt
- *
- * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded
- */
 dvbt_rs_encoder_sptr
 dvbt_make_rs_encoder()
 {
   	return gnuradio::get_initial_sptr(new dvbt_rs_encoder());
 }
 
+
+/*!
+ * \brief Reed-Solomon encoder for DVBT
+ * \ingroup dvbt
+ *
+ * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded
+ */
 dvbt_rs_encoder::dvbt_rs_encoder(): gr_sync_block("dvbt_rs_encoder",
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_no_sync)),
 		  gr_make_io_signature(1, 1, sizeof(dvbt_mpeg_packet_rs_encoded)))
 {
   	reset();
 }
+
 
 /**
  * Perform Reed-Solomon encoding in 188 byte long packets(SYNC byte included)

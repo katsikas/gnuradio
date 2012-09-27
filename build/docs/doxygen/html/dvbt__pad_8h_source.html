@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GNU Radio 324efd26 C++ API: dvbt_pad.h Source File</title>
+<title>GNU Radio 7f75d35b C++ API: dvbt_pad.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GNU Radio 324efd26 C++ API
+   <div id="projectname">GNU Radio 7f75d35b C++ API
    
    </div>
    
@@ -93,22 +93,22 @@
 <a name="l00028"></a>00028 <span class="preprocessor">#include &lt;<a class="code" href="gr__sync__decimator_8h.html">gr_sync_decimator.h</a>&gt;</span>
 <a name="l00029"></a>00029 
 <a name="l00030"></a>00030 
-<a name="l00031"></a>00031 <span class="keyword">class </span><a class="code" href="classdvbt__pad.html" title="put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packetinput:...">dvbt_pad</a>;
+<a name="l00031"></a>00031 <span class="keyword">class </span><a class="code" href="classdvbt__pad.html" title="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</a>;
 <a name="l00032"></a>00032 <span class="keyword">typedef</span> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">boost::shared_ptr&lt;dvbt_pad&gt;</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_pad_sptr</a>;
 <a name="l00033"></a>00033 
 <a name="l00034"></a>00034 <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_pad_sptr</a> <a class="code" href="dvbt__pad_8h.html#a3a657c8db9ea6f1ca4b5d69f87861ca4">dvbt_make_pad</a>();
 <a name="l00035"></a>00035 <span class="comment"></span>
 <a name="l00036"></a>00036 <span class="comment">/*!</span>
-<a name="l00037"></a>00037 <span class="comment"> * \brief put 4 bytes header and pad mpeg ts packets from 184+4 byte char to</span>
+<a name="l00037"></a>00037 <span class="comment"> * \brief put 4 bytes header and pad mpeg ts packets from 184 byte char to</span>
 <a name="l00038"></a>00038 <span class="comment"> * to 256 byte dvbt_mpeg_packet</span>
 <a name="l00039"></a>00039 <span class="comment"> * \ingroup dvbt</span>
 <a name="l00040"></a>00040 <span class="comment"> *</span>
 <a name="l00041"></a>00041 <span class="comment"> * input: unsigned char; output: dvbt_mpeg_packet</span>
 <a name="l00042"></a>00042 <span class="comment"> */</span>
-<a name="l00043"></a><a class="code" href="classdvbt__pad.html">00043</a> <span class="keyword">class </span><a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classdvbt__pad.html" title="put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packetinput:...">dvbt_pad</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__decimator.html" title="synchronous N:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_decimator</a>
+<a name="l00043"></a><a class="code" href="classdvbt__pad.html">00043</a> <span class="keyword">class </span><a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classdvbt__pad.html" title="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</a> : <span class="keyword">public</span> <a class="code" href="classgr__sync__decimator.html" title="synchronous N:1 input to output with historyOverride work to provide the signal processing implementa...">gr_sync_decimator</a>
 <a name="l00044"></a>00044 {
 <a name="l00045"></a>00045 
-<a name="l00046"></a>00046         <a class="code" href="classdvbt__pad.html" title="put 4 bytes header and pad mpeg ts packets from 184+4 byte char to to 256 byte dvbt_mpeg_packetinput:...">dvbt_pad</a>();
+<a name="l00046"></a>00046         <a class="code" href="classdvbt__pad.html" title="put 4 bytes header and pad mpeg ts packets from 184 byte char to to 256 byte dvbt_mpeg_packetinput: u...">dvbt_pad</a>();
 <a name="l00047"></a>00047 
 <a name="l00048"></a>00048         <span class="keyword">friend</span> <a class="code" href="dvbt__api_8h.html#adb7443ed6054878f4fdf2c3965120390">DVBT_API</a> <a class="code" href="classboost_1_1shared__ptr.html" title="shared_ptr documentation stub">dvbt_pad_sptr</a> <a class="code" href="dvbt__pad_8h.html#a3a657c8db9ea6f1ca4b5d69f87861ca4">dvbt_make_pad</a>();
 <a name="l00049"></a>00049 
@@ -129,7 +129,7 @@
     <ul>
       <li class="navelem"><a class="el" href="dvbt__pad_8h.html">dvbt_pad.h</a>      </li>
 
-    <li class="footer">Generated on Thu Sep 6 2012 11:57:06 for GNU Radio 324efd26 C++ API by
+    <li class="footer">Generated on Thu Sep 27 2012 10:49:24 for GNU Radio 7f75d35b C++ API by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

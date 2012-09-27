@@ -37,8 +37,6 @@ DVBT_API dvbt_derandomizer_sptr dvbt_make_derandomizer();
 
 /*!
  * \brief "dewhiten" incoming mpeg transport stream packets
- * Derandomize dvbt_mpeg_packet_no_sync according to the ETSI
- * DVBT standard.
  * \ingroup dvbt
  *
  * input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet;

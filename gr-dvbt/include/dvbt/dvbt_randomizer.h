@@ -35,8 +35,7 @@ typedef boost::shared_ptr<dvbt_randomizer> dvbt_randomizer_sptr;
 DVBT_API dvbt_randomizer_sptr dvbt_make_randomizer();
 
 /*!
- * \brief "Whiten" incoming mpeg transport stream packets.
- * Randomize the dvbt_mpeg_packet according to the ETSI DVBT standard.
+ * \brief "Whiten" incoming mpeg transport stream packets
  * \ingroup dvbt
  *
  * input: dvbt_mpeg_packet; output: dvbt_mpeg_packet_no_sync
@@ -48,6 +47,7 @@ class DVBT_API dvbt_randomizer : public gr_sync_block
 	dvbti_randomizer core_rand;
 
   	dvbt_randomizer();
+
 
 public:
   	int work (int noutput_items,
