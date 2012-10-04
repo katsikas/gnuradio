@@ -43,17 +43,17 @@
   </compound>
   <compound refid="classstd_1_1map_1_1const__iterator" kind="class"><name>std::map::const_iterator</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
-  </compound>
   <compound refid="classstd_1_1basic__string_1_1const__iterator" kind="class"><name>std::basic_string::const_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1const__iterator" kind="class"><name>std::multimap::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1multiset_1_1const__iterator" kind="class"><name>std::multiset::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1const__iterator" kind="class"><name>std::string::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1const__iterator" kind="class"><name>std::vector::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1const__iterator" kind="class"><name>std::multimap::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1const__iterator" kind="class"><name>std::wstring::const_iterator</name>
   </compound>
@@ -67,13 +67,13 @@
   </compound>
   <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
   </compound>
+  <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
+  </compound>
   <compound refid="classstd_1_1multiset_1_1const__reverse__iterator" kind="class"><name>std::multiset::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1const__reverse__iterator" kind="class"><name>std::vector::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1const__reverse__iterator" kind="class"><name>std::wstring::const_reverse_iterator</name>
   </compound>
@@ -98,14 +98,6 @@
     <member refid="classstd_1_1deque_1a090b92581de438d2e14bedc190f0b0f9" kind="variable"><name>elements</name></member>
   </compound>
   <compound refid="classstd_1_1domain__error" kind="class"><name>std::domain_error</name>
-  </compound>
-  <compound refid="classdvbt__data__segment" kind="class"><name>dvbt_data_segment</name>
-    <member refid="classdvbt__data__segment_1a2c1355b865c52f6d778c6804112e954a" kind="variable"><name>NPAD</name></member>
-    <member refid="classdvbt__data__segment_1acf64acaf2ebd997edba3239bcf076a09" kind="variable"><name>pli</name></member>
-    <member refid="classdvbt__data__segment_1a6a294f2cee0eb82b54b8b1a6f1624711" kind="variable"><name>_pad_</name></member>
-    <member refid="classdvbt__data__segment_1a5fb5600d1faf144c8345555a71ef3fc4" kind="variable"><name>data</name></member>
-    <member refid="classdvbt__data__segment_1a105f328742b08659ed08a02424b48ad2" kind="function"><name>operator==</name></member>
-    <member refid="classdvbt__data__segment_1abd4fcda45bc9711a7059a86768294be6" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="classdvbt__deinterleaver" kind="class"><name>dvbt_deinterleaver</name>
     <member refid="classdvbt__deinterleaver_1a64879110aad18efbb1412adb677f8998" kind="variable"><name>d_deinterleaver</name></member>
@@ -186,37 +178,6 @@
     <member refid="classdvbt__rs__encoder_1ae05bb074524f531284015d08fa688d22" kind="function"><name>work</name></member>
     <member refid="classdvbt__rs__encoder_1a0b68a74a0f90b73061772a8f8000a870" kind="function"><name>reset</name></member>
   </compound>
-  <compound refid="classdvbt__soft__data__segment" kind="class"><name>dvbt_soft_data_segment</name>
-    <member refid="classdvbt__soft__data__segment_1a72270ad57ad9183fe94d4ccb8b76c8ed" kind="variable"><name>NPAD</name></member>
-    <member refid="classdvbt__soft__data__segment_1aa12596cad0347b41e8783e7c54853e80" kind="variable"><name>pli</name></member>
-    <member refid="classdvbt__soft__data__segment_1a0712b924d3379589233c6c24dde9f353" kind="variable"><name>_pad_</name></member>
-    <member refid="classdvbt__soft__data__segment_1ad8ff0aeedf3274dff1b64ae309d96815" kind="variable"><name>data</name></member>
-    <member refid="classdvbt__soft__data__segment_1a8c793c7fcfb9d83b55ae75dfc07d279a" kind="function"><name>operator==</name></member>
-    <member refid="classdvbt__soft__data__segment_1a1039e970bedf228bf1b42843213214ea" kind="function"><name>operator!=</name></member>
-  </compound>
-  <compound refid="classdvbt__trellis__encoder" kind="class"><name>dvbt_trellis_encoder</name>
-    <member refid="classdvbt__trellis__encoder_1aa0454c9b4f7c5ea49852eb062b3c06f0" kind="variable"><name>d_trellis_encoder</name></member>
-    <member refid="classdvbt__trellis__encoder_1afdfa6572f96573f4f69fb672f88cd77f" kind="friend"><name>dvbt_make_trellis_encoder</name></member>
-    <member refid="classdvbt__trellis__encoder_1a33639beb3841a201ac07cdd41a141b57" kind="function"><name>dvbt_trellis_encoder</name></member>
-    <member refid="classdvbt__trellis__encoder_1ac0ba61cf239761ce4537729a9efbf17c" kind="function"><name>work</name></member>
-    <member refid="classdvbt__trellis__encoder_1a1ff913525ffd6fdc23a5b8ade19a331d" kind="function"><name>reset</name></member>
-  </compound>
-  <compound refid="classdvbt__viterbi__decoder" kind="class"><name>dvbt_viterbi_decoder</name>
-    <member refid="classdvbt__viterbi__decoder_1aab7986f352b83f767173ef989773c790" kind="variable"><name>d_viterbi_decoder</name></member>
-    <member refid="classdvbt__viterbi__decoder_1a81c637b55bdfea1f7475bdd16c38d5ee" kind="variable"><name>last_start</name></member>
-    <member refid="classdvbt__viterbi__decoder_1ae12dd6be21f5202661c2590287051e4f" kind="friend"><name>dvbt_make_viterbi_decoder</name></member>
-    <member refid="classdvbt__viterbi__decoder_1af37fd086fa4b7def73e689a011d2f3fb" kind="function"><name>dvbt_viterbi_decoder</name></member>
-    <member refid="classdvbt__viterbi__decoder_1a268dc2053fd9bfc72ffcec6e13ff00e7" kind="function"><name>work</name></member>
-    <member refid="classdvbt__viterbi__decoder_1af40e296c789d5b3793f1079404ac63c1" kind="function"><name>reset</name></member>
-  </compound>
-  <compound refid="classdvbti__basic__trellis__encoder" kind="class"><name>dvbti_basic_trellis_encoder</name>
-    <member refid="classdvbti__basic__trellis__encoder_1a9a9bbdad103101c9e3523ea11263ad8d" kind="variable"><name>state</name></member>
-    <member refid="classdvbti__basic__trellis__encoder_1af48babb8762b3fa3de93946bbc7383d7" kind="variable"><name>next_state</name></member>
-    <member refid="classdvbti__basic__trellis__encoder_1a0ce1f49aafd0350928327723344614e4" kind="variable"><name>out_symbol</name></member>
-    <member refid="classdvbti__basic__trellis__encoder_1a9c355d17e3d4bad5fbdabc153075522a" kind="function"><name>dvbti_basic_trellis_encoder</name></member>
-    <member refid="classdvbti__basic__trellis__encoder_1a175716ff0aaf22637c98aa5c40a6dc5b" kind="function"><name>encode</name></member>
-    <member refid="classdvbti__basic__trellis__encoder_1af05f124944e88c874c0a250296cbae2d" kind="function"><name>reset</name></member>
-  </compound>
   <compound refid="classdvbti__data__deinterleaver" kind="class"><name>dvbti_data_deinterleaver</name>
     <member refid="classdvbti__data__deinterleaver_1a1887c97ec06beeb9a34a0724df8d3e08" kind="variable"><name>alignment_fifo</name></member>
     <member refid="classdvbti__data__deinterleaver_1a148f0100bea69f0c52fec418d4b93359" kind="function"><name>dvbti_data_deinterleaver</name></member>
@@ -226,13 +187,6 @@
   <compound refid="classdvbti__data__interleaver" kind="class"><name>dvbti_data_interleaver</name>
     <member refid="classdvbti__data__interleaver_1a8e0d14e54644b488eb89a3a928fd1656" kind="function"><name>dvbti_data_interleaver</name></member>
     <member refid="classdvbti__data__interleaver_1a8f9ae2065fd566edcb728e457e58c11d" kind="function"><name>interleave</name></member>
-  </compound>
-  <compound refid="classdvbti__fake__single__viterbi" kind="class"><name>dvbti_fake_single_viterbi</name>
-    <member refid="classdvbti__fake__single__viterbi_1ac3988af90b8a0ba96870f716cf408c4f" kind="variable"><name>post_coder_state</name></member>
-    <member refid="classdvbti__fake__single__viterbi_1a8a3166c97faff9f25ce887328c32460b" kind="function"><name>dvbti_fake_single_viterbi</name></member>
-    <member refid="classdvbti__fake__single__viterbi_1a7b7b5006b1e2b9cd2f02f3813eadeee1" kind="function"><name>decode</name></member>
-    <member refid="classdvbti__fake__single__viterbi_1a3de94d7a6f8647ab124f31904778b771" kind="function"><name>reset</name></member>
-    <member refid="classdvbti__fake__single__viterbi_1a272f86a2decbb711033bec14365cc28c" kind="function"><name>delay</name></member>
   </compound>
   <compound refid="classdvbti__randomizer" kind="class"><name>dvbti_randomizer</name>
     <member refid="classdvbti__randomizer_1a83514d133dc18fc09bc9b46ee9c50daf" kind="variable"><name>prbs_sequence</name></member>
@@ -250,46 +204,6 @@
     <member refid="classdvbti__reed__solomon_1adc7ee170beb4e5ce3f2e57ebbe96830e" kind="function"><name>~dvbti_reed_solomon</name></member>
     <member refid="classdvbti__reed__solomon_1a5b23e42f8d2354166350622379890c9d" kind="function"><name>encode</name></member>
     <member refid="classdvbti__reed__solomon_1a5af9107f7e422083ffcbba2c523b8077" kind="function"><name>decode</name></member>
-  </compound>
-  <compound refid="classdvbti__single__viterbi" kind="class"><name>dvbti_single_viterbi</name>
-    <member refid="classdvbti__single__viterbi_1a52dabd173554e1d1165ba6a5da6d1238" kind="variable"><name>TB_LEN</name></member>
-    <member refid="classdvbti__single__viterbi_1ad9882b6ff98e0e3e997f1610973aa787" kind="variable"><name>phase</name></member>
-    <member refid="classdvbti__single__viterbi_1a1df0f69f80cb3270a22589a943a99a1d" kind="variable"><name>path_metrics</name></member>
-    <member refid="classdvbti__single__viterbi_1a17d1f25d68e99112e7bce11d866a6370" kind="variable"><name>traceback</name></member>
-    <member refid="classdvbti__single__viterbi_1a29994aa57c11e593a6ce319aa0317b69" kind="variable"><name>was_sent</name></member>
-    <member refid="classdvbti__single__viterbi_1a9c07644a50aa0a866769c3ae09fd2203" kind="variable"><name>transition_table</name></member>
-    <member refid="classdvbti__single__viterbi_1a233abf623ac508eb76fc8ce081244b0a" kind="function"><name>dvbti_single_viterbi</name></member>
-    <member refid="classdvbti__single__viterbi_1a6d46fe9aab6c9a41a0fcacffd30517ec" kind="function"><name>decode</name></member>
-    <member refid="classdvbti__single__viterbi_1ad0d3c28658701b8078afcc35639d1274" kind="function"><name>reset</name></member>
-    <member refid="classdvbti__single__viterbi_1ac88b6a0b92e2d79b84dd2e3b27bbb6db" kind="function"><name>delay</name></member>
-  </compound>
-  <compound refid="classdvbti__trellis__encoder" kind="class"><name>dvbti_trellis_encoder</name>
-    <member refid="classdvbti__trellis__encoder_1a3d0ceb8f5874e23eb8a467fc2357ec84" kind="variable"><name>NCODERS</name></member>
-    <member refid="classdvbti__trellis__encoder_1a4606801f53d8833d1812fa68d7343ddb" kind="variable"><name>SEGMENT_SIZE</name></member>
-    <member refid="classdvbti__trellis__encoder_1aeb8641be3e939d191a23751961fc687b" kind="variable"><name>INPUT_SIZE</name></member>
-    <member refid="classdvbti__trellis__encoder_1a917c4bf968b97eb98e581e22be6cbd13" kind="variable"><name>OUTPUT_SIZE</name></member>
-    <member refid="classdvbti__trellis__encoder_1a1f409549524efaa8de9bc6b60efc9cdc" kind="variable"><name>enc</name></member>
-    <member refid="classdvbti__trellis__encoder_1acffa57cf950e2ecc421af6708a3e27d9" kind="variable"><name>debug</name></member>
-    <member refid="classdvbti__trellis__encoder_1a1ca74c4ced4b6724cb374575492c2312" kind="function"><name>dvbti_trellis_encoder</name></member>
-    <member refid="classdvbti__trellis__encoder_1aef8a2a1eb87006a7cecbdfed86487c40" kind="function"><name>~dvbti_trellis_encoder</name></member>
-    <member refid="classdvbti__trellis__encoder_1acb07924c904a790a9b6d5493f656e1cb" kind="function"><name>reset</name></member>
-    <member refid="classdvbti__trellis__encoder_1a13e376dd3f257039444f0ed569bb8629" kind="function"><name>encode</name></member>
-    <member refid="classdvbti__trellis__encoder_1a1f29c036e6edda3e6eec4c1212d9d4dc" kind="function"><name>encode_helper</name></member>
-  </compound>
-  <compound refid="classdvbti__viterbi__decoder" kind="class"><name>dvbti_viterbi_decoder</name>
-    <member refid="classdvbti__viterbi__decoder_1a23f43f624528cecd6a7f8ceffde0ec11" kind="typedef"><name>fifo_t</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a4bd51321dc855831b8bad7e163c6a787" kind="variable"><name>NCODERS</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a997eb3665add1d7e6f7619e94e9ced4a" kind="variable"><name>SEGMENT_SIZE</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a6b938a0ed5bfdfab02a8b936f29a8a7c" kind="variable"><name>OUTPUT_SIZE</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a627554040b579ad38670e37f15a803ff" kind="variable"><name>INPUT_SIZE</name></member>
-    <member refid="classdvbti__viterbi__decoder_1acf989d5ad697c750eb67234a9eede917" kind="variable"><name>debug</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a74b86c5124fb962a2d30200724d455e0" kind="variable"><name>fifo</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a46383ab89951dcc14df488bccc63290d" kind="variable"><name>viterbi</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a22372d049f77bce7044b8b1bd898f2be" kind="function"><name>dvbti_viterbi_decoder</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a401f3aa7a8474397ffd02a29289cb1c6" kind="function"><name>~dvbti_viterbi_decoder</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a9ae0b72c5f3c1079318ed633abf9b5fe" kind="function"><name>reset</name></member>
-    <member refid="classdvbti__viterbi__decoder_1a59bdf22a2e0d4ee194a3a790cbb1ae5f" kind="function"><name>decode</name></member>
-    <member refid="classdvbti__viterbi__decoder_1ade9552a76d49f7aed618d10813463b4d" kind="function"><name>decode_helper</name></member>
   </compound>
   <compound refid="classstd_1_1exception" kind="class"><name>std::exception</name>
   </compound>
@@ -318,25 +232,25 @@
   </compound>
   <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
-  </compound>
   <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
   </compound>
+  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
+  </compound>
   <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
   </compound>
   <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
   </compound>
   <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
   </compound>
-  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
-  </compound>
   <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
   </compound>
-  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
+  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
   </compound>
   <compound refid="classstd_1_1length__error" kind="class"><name>std::length_error</name>
   </compound>
@@ -391,25 +305,25 @@
   </compound>
   <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
   </compound>
-  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
-  </compound>
-  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
+  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
   </compound>
-  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
   </compound>
   <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
   </compound>
@@ -483,7 +397,6 @@
     <member refid="dvbt__consts_8h_1ac1b330045acc5311d5f33a9851e84407" kind="variable"><name>DVBT_SUPER_FRAME_LENGTH</name></member>
     <member refid="dvbt__consts_8h_1a060a14b51d0d831304fe2f593af85aa6" kind="variable"><name>OUTER_INTERLEAVER_INC_SIZE</name></member>
     <member refid="dvbt__consts_8h_1adbdb31d594deffaed63d1f7e156833b8" kind="variable"><name>DVBT_MPEG_RS_ENCODED_LENGTH</name></member>
-    <member refid="dvbt__consts_8h_1a5f3f7cfabe741054d5fab464827b9d3e" kind="variable"><name>DVBT_DATA_SEGMENT_LENGTH</name></member>
   </compound>
   <compound refid="dvbt__deinterleaver_8h" kind="file"><name>dvbt_deinterleaver.h</name>
     <member refid="dvbt__deinterleaver_8h_1afe06652c24c9bcecd75773b5b27122c3" kind="typedef"><name>dvbt_deinterleaver_sptr</name></member>
@@ -517,33 +430,13 @@
     <member refid="dvbt__rs__encoder_8h_1a525aec97d27c4cd6ffad7d0a193872e5" kind="typedef"><name>dvbt_rs_encoder_sptr</name></member>
     <member refid="dvbt__rs__encoder_8h_1ac816ac0e141751c8ee519ffd1c3803d9" kind="function"><name>dvbt_make_rs_encoder</name></member>
   </compound>
-  <compound refid="dvbt__trellis__encoder_8h" kind="file"><name>dvbt_trellis_encoder.h</name>
-    <member refid="dvbt__trellis__encoder_8h_1ac6aae275c50377a489705931a0622343" kind="typedef"><name>dvbt_trellis_encoder_sptr</name></member>
-    <member refid="dvbt__trellis__encoder_8h_1afdfa6572f96573f4f69fb672f88cd77f" kind="function"><name>dvbt_make_trellis_encoder</name></member>
-  </compound>
   <compound refid="dvbt__types_8h" kind="file"><name>dvbt_types.h</name>
   </compound>
-  <compound refid="dvbt__viterbi__decoder_8h" kind="file"><name>dvbt_viterbi_decoder.h</name>
-    <member refid="dvbt__viterbi__decoder_8h_1adf12d19f816cbc84c420e712fa7bd06c" kind="typedef"><name>dvbt_viterbi_decoder_sptr</name></member>
-    <member refid="dvbt__viterbi__decoder_8h_1ae12dd6be21f5202661c2590287051e4f" kind="function"><name>dvbt_make_viterbi_decoder</name></member>
-  </compound>
-  <compound refid="dvbti__basic__trellis__encoder_8h" kind="file"><name>dvbti_basic_trellis_encoder.h</name>
-  </compound>
   <compound refid="dvbti__data__interleaver_8h" kind="file"><name>dvbti_data_interleaver.h</name>
-  </compound>
-  <compound refid="dvbti__fake__single__viterbi_8h" kind="file"><name>dvbti_fake_single_viterbi.h</name>
   </compound>
   <compound refid="dvbti__randomizer_8h" kind="file"><name>dvbti_randomizer.h</name>
   </compound>
   <compound refid="dvbti__reed__solomon_8h" kind="file"><name>dvbti_reed_solomon.h</name>
-  </compound>
-  <compound refid="dvbti__single__viterbi_8h" kind="file"><name>dvbti_single_viterbi.h</name>
-  </compound>
-  <compound refid="dvbti__trellis__encoder_8h" kind="file"><name>dvbti_trellis_encoder.h</name>
-  </compound>
-  <compound refid="dvbti__viterbi__decoder_8h" kind="file"><name>dvbti_viterbi_decoder.h</name>
-    <member refid="dvbti__viterbi__decoder_8h_1a946ecb7d9c6de0cab7f98aa467c5ba5f" kind="define"><name>USE_SIMPLE_SLICER</name></member>
-    <member refid="dvbti__viterbi__decoder_8h_1a5a7bdf1f5e06cdc2f6153bc6f9db4926" kind="typedef"><name>single_viterbi_t</name></member>
   </compound>
   <compound refid="interleaver__fifo_8h" kind="file"><name>interleaver_fifo.h</name>
   </compound>

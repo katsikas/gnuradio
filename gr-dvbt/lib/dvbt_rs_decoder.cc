@@ -67,9 +67,9 @@ dvbt_rs_decoder::work (int noutput_items,
     		out[i].pli = in[i].pli;			// copy pipeline info...
 
 	       /**
-			* reed-solomon decoding returns the number of corrected errors
-			* (up to 8) in success or -1 if packet corrupted.
-			**/
+		* reed-solomon decoding returns the number of corrected errors
+		* (up to 8) in success or -1 if packet corrupted.
+		**/
      		int nerrors_corrrected = d_rs_decoder.decode(out[i], in[i]);
     		out[i].pli.set_transport_error(nerrors_corrrected);
   	}

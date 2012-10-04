@@ -42,11 +42,10 @@ class DVBT_API dvbti_randomizer
 public:
   	dvbti_randomizer();
 
-      	/*! \brief reset randomizer LFSR
+      	/*! \brief reset randomizer PRBS
    	 *
-   	 * must be called during the Data Segment Sync interval prior to the
-   	 * first data segment.  I.e., the LFSR is reset prior to the first
-   	 * field of each VSB data frame.
+   	 * must be called during the first byte of the first packet
+	 * in a sequence of 8 packets.
    	 */
   	void reset ();
 

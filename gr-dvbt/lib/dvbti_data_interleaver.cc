@@ -42,7 +42,6 @@ dvbti_data_interleaver::interleave (dvbt_mpeg_packet_rs_encoded &out,
 
 /**
  * Main deinterleaving proccess plus allignment proccess because of delays.
- * 
  */
 void
 dvbti_data_deinterleaver::deinterleave (dvbt_mpeg_packet_rs_encoded &out,

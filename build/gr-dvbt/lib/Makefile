@@ -167,20 +167,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/rule:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/rule
-.PHONY : gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/rule
-
-# Convenience name for target.
-dvbti_viterbi_gen: gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/rule
-.PHONY : dvbti_viterbi_gen
-
-# fast build rule for target.
-dvbti_viterbi_gen/fast:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build.make gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build
-.PHONY : dvbti_viterbi_gen/fast
-
-# Convenience name for target.
 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/rule:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f CMakeFiles/Makefile2 gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/rule
 .PHONY : gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/rule
@@ -386,78 +372,6 @@ dvbt_rs_encoder.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_rs_encoder.cc.s
 .PHONY : dvbt_rs_encoder.cc.s
 
-dvbt_trellis_encoder.o: dvbt_trellis_encoder.cc.o
-.PHONY : dvbt_trellis_encoder.o
-
-# target to build an object file
-dvbt_trellis_encoder.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.o
-.PHONY : dvbt_trellis_encoder.cc.o
-
-dvbt_trellis_encoder.i: dvbt_trellis_encoder.cc.i
-.PHONY : dvbt_trellis_encoder.i
-
-# target to preprocess a source file
-dvbt_trellis_encoder.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.i
-.PHONY : dvbt_trellis_encoder.cc.i
-
-dvbt_trellis_encoder.s: dvbt_trellis_encoder.cc.s
-.PHONY : dvbt_trellis_encoder.s
-
-# target to generate assembly for a file
-dvbt_trellis_encoder.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_trellis_encoder.cc.s
-.PHONY : dvbt_trellis_encoder.cc.s
-
-dvbt_viterbi_decoder.o: dvbt_viterbi_decoder.cc.o
-.PHONY : dvbt_viterbi_decoder.o
-
-# target to build an object file
-dvbt_viterbi_decoder.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.o
-.PHONY : dvbt_viterbi_decoder.cc.o
-
-dvbt_viterbi_decoder.i: dvbt_viterbi_decoder.cc.i
-.PHONY : dvbt_viterbi_decoder.i
-
-# target to preprocess a source file
-dvbt_viterbi_decoder.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.i
-.PHONY : dvbt_viterbi_decoder.cc.i
-
-dvbt_viterbi_decoder.s: dvbt_viterbi_decoder.cc.s
-.PHONY : dvbt_viterbi_decoder.s
-
-# target to generate assembly for a file
-dvbt_viterbi_decoder.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbt_viterbi_decoder.cc.s
-.PHONY : dvbt_viterbi_decoder.cc.s
-
-dvbti_basic_trellis_encoder.o: dvbti_basic_trellis_encoder.cc.o
-.PHONY : dvbti_basic_trellis_encoder.o
-
-# target to build an object file
-dvbti_basic_trellis_encoder.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.o
-.PHONY : dvbti_basic_trellis_encoder.cc.o
-
-dvbti_basic_trellis_encoder.i: dvbti_basic_trellis_encoder.cc.i
-.PHONY : dvbti_basic_trellis_encoder.i
-
-# target to preprocess a source file
-dvbti_basic_trellis_encoder.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.i
-.PHONY : dvbti_basic_trellis_encoder.cc.i
-
-dvbti_basic_trellis_encoder.s: dvbti_basic_trellis_encoder.cc.s
-.PHONY : dvbti_basic_trellis_encoder.s
-
-# target to generate assembly for a file
-dvbti_basic_trellis_encoder.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_basic_trellis_encoder.cc.s
-.PHONY : dvbti_basic_trellis_encoder.cc.s
-
 dvbti_data_interleaver.o: dvbti_data_interleaver.cc.o
 .PHONY : dvbti_data_interleaver.o
 
@@ -481,30 +395,6 @@ dvbti_data_interleaver.s: dvbti_data_interleaver.cc.s
 dvbti_data_interleaver.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_data_interleaver.cc.s
 .PHONY : dvbti_data_interleaver.cc.s
-
-dvbti_fake_single_viterbi.o: dvbti_fake_single_viterbi.cc.o
-.PHONY : dvbti_fake_single_viterbi.o
-
-# target to build an object file
-dvbti_fake_single_viterbi.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_fake_single_viterbi.cc.o
-.PHONY : dvbti_fake_single_viterbi.cc.o
-
-dvbti_fake_single_viterbi.i: dvbti_fake_single_viterbi.cc.i
-.PHONY : dvbti_fake_single_viterbi.i
-
-# target to preprocess a source file
-dvbti_fake_single_viterbi.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_fake_single_viterbi.cc.i
-.PHONY : dvbti_fake_single_viterbi.cc.i
-
-dvbti_fake_single_viterbi.s: dvbti_fake_single_viterbi.cc.s
-.PHONY : dvbti_fake_single_viterbi.s
-
-# target to generate assembly for a file
-dvbti_fake_single_viterbi.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_fake_single_viterbi.cc.s
-.PHONY : dvbti_fake_single_viterbi.cc.s
 
 dvbti_randomizer.o: dvbti_randomizer.cc.o
 .PHONY : dvbti_randomizer.o
@@ -554,129 +444,6 @@ dvbti_reed_solomon.cc.s:
 	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_reed_solomon.cc.s
 .PHONY : dvbti_reed_solomon.cc.s
 
-dvbti_single_viterbi.o: dvbti_single_viterbi.cc.o
-.PHONY : dvbti_single_viterbi.o
-
-# target to build an object file
-dvbti_single_viterbi.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_single_viterbi.cc.o
-.PHONY : dvbti_single_viterbi.cc.o
-
-dvbti_single_viterbi.i: dvbti_single_viterbi.cc.i
-.PHONY : dvbti_single_viterbi.i
-
-# target to preprocess a source file
-dvbti_single_viterbi.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_single_viterbi.cc.i
-.PHONY : dvbti_single_viterbi.cc.i
-
-dvbti_single_viterbi.s: dvbti_single_viterbi.cc.s
-.PHONY : dvbti_single_viterbi.s
-
-# target to generate assembly for a file
-dvbti_single_viterbi.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_single_viterbi.cc.s
-.PHONY : dvbti_single_viterbi.cc.s
-
-dvbti_trellis_encoder.o: dvbti_trellis_encoder.cc.o
-.PHONY : dvbti_trellis_encoder.o
-
-# target to build an object file
-dvbti_trellis_encoder.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.o
-.PHONY : dvbti_trellis_encoder.cc.o
-
-dvbti_trellis_encoder.i: dvbti_trellis_encoder.cc.i
-.PHONY : dvbti_trellis_encoder.i
-
-# target to preprocess a source file
-dvbti_trellis_encoder.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.i
-.PHONY : dvbti_trellis_encoder.cc.i
-
-dvbti_trellis_encoder.s: dvbti_trellis_encoder.cc.s
-.PHONY : dvbti_trellis_encoder.s
-
-# target to generate assembly for a file
-dvbti_trellis_encoder.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_trellis_encoder.cc.s
-.PHONY : dvbti_trellis_encoder.cc.s
-
-dvbti_viterbi_decoder.o: dvbti_viterbi_decoder.cc.o
-.PHONY : dvbti_viterbi_decoder.o
-
-# target to build an object file
-dvbti_viterbi_decoder.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.o
-.PHONY : dvbti_viterbi_decoder.cc.o
-
-dvbti_viterbi_decoder.i: dvbti_viterbi_decoder.cc.i
-.PHONY : dvbti_viterbi_decoder.i
-
-# target to preprocess a source file
-dvbti_viterbi_decoder.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.i
-.PHONY : dvbti_viterbi_decoder.cc.i
-
-dvbti_viterbi_decoder.s: dvbti_viterbi_decoder.cc.s
-.PHONY : dvbti_viterbi_decoder.s
-
-# target to generate assembly for a file
-dvbti_viterbi_decoder.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_decoder.cc.s
-.PHONY : dvbti_viterbi_decoder.cc.s
-
-dvbti_viterbi_gen.o: dvbti_viterbi_gen.cc.o
-.PHONY : dvbti_viterbi_gen.o
-
-# target to build an object file
-dvbti_viterbi_gen.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build.make gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/dvbti_viterbi_gen.cc.o
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_gen.cc.o
-.PHONY : dvbti_viterbi_gen.cc.o
-
-dvbti_viterbi_gen.i: dvbti_viterbi_gen.cc.i
-.PHONY : dvbti_viterbi_gen.i
-
-# target to preprocess a source file
-dvbti_viterbi_gen.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build.make gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/dvbti_viterbi_gen.cc.i
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_gen.cc.i
-.PHONY : dvbti_viterbi_gen.cc.i
-
-dvbti_viterbi_gen.s: dvbti_viterbi_gen.cc.s
-.PHONY : dvbti_viterbi_gen.s
-
-# target to generate assembly for a file
-dvbti_viterbi_gen.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build.make gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/dvbti_viterbi_gen.cc.s
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_gen.cc.s
-.PHONY : dvbti_viterbi_gen.cc.s
-
-dvbti_viterbi_mux.o: dvbti_viterbi_mux.cc.o
-.PHONY : dvbti_viterbi_mux.o
-
-# target to build an object file
-dvbti_viterbi_mux.cc.o:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_mux.cc.o
-.PHONY : dvbti_viterbi_mux.cc.o
-
-dvbti_viterbi_mux.i: dvbti_viterbi_mux.cc.i
-.PHONY : dvbti_viterbi_mux.i
-
-# target to preprocess a source file
-dvbti_viterbi_mux.cc.i:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_mux.cc.i
-.PHONY : dvbti_viterbi_mux.cc.i
-
-dvbti_viterbi_mux.s: dvbti_viterbi_mux.cc.s
-.PHONY : dvbti_viterbi_mux.s
-
-# target to generate assembly for a file
-dvbti_viterbi_mux.cc.s:
-	cd /home/katsikas/gnuradio/build && $(MAKE) -f gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/build.make gr-dvbt/lib/CMakeFiles/gnuradio-dvbt.dir/dvbti_viterbi_mux.cc.s
-.PHONY : dvbti_viterbi_mux.cc.s
-
 plinfo.o: plinfo.cc.o
 .PHONY : plinfo.o
 
@@ -707,7 +474,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... dvbti_viterbi_gen"
 	@echo "... edit_cache"
 	@echo "... gnuradio-dvbt"
 	@echo "... install"
@@ -742,42 +508,15 @@ help:
 	@echo "... dvbt_rs_encoder.o"
 	@echo "... dvbt_rs_encoder.i"
 	@echo "... dvbt_rs_encoder.s"
-	@echo "... dvbt_trellis_encoder.o"
-	@echo "... dvbt_trellis_encoder.i"
-	@echo "... dvbt_trellis_encoder.s"
-	@echo "... dvbt_viterbi_decoder.o"
-	@echo "... dvbt_viterbi_decoder.i"
-	@echo "... dvbt_viterbi_decoder.s"
-	@echo "... dvbti_basic_trellis_encoder.o"
-	@echo "... dvbti_basic_trellis_encoder.i"
-	@echo "... dvbti_basic_trellis_encoder.s"
 	@echo "... dvbti_data_interleaver.o"
 	@echo "... dvbti_data_interleaver.i"
 	@echo "... dvbti_data_interleaver.s"
-	@echo "... dvbti_fake_single_viterbi.o"
-	@echo "... dvbti_fake_single_viterbi.i"
-	@echo "... dvbti_fake_single_viterbi.s"
 	@echo "... dvbti_randomizer.o"
 	@echo "... dvbti_randomizer.i"
 	@echo "... dvbti_randomizer.s"
 	@echo "... dvbti_reed_solomon.o"
 	@echo "... dvbti_reed_solomon.i"
 	@echo "... dvbti_reed_solomon.s"
-	@echo "... dvbti_single_viterbi.o"
-	@echo "... dvbti_single_viterbi.i"
-	@echo "... dvbti_single_viterbi.s"
-	@echo "... dvbti_trellis_encoder.o"
-	@echo "... dvbti_trellis_encoder.i"
-	@echo "... dvbti_trellis_encoder.s"
-	@echo "... dvbti_viterbi_decoder.o"
-	@echo "... dvbti_viterbi_decoder.i"
-	@echo "... dvbti_viterbi_decoder.s"
-	@echo "... dvbti_viterbi_gen.o"
-	@echo "... dvbti_viterbi_gen.i"
-	@echo "... dvbti_viterbi_gen.s"
-	@echo "... dvbti_viterbi_mux.o"
-	@echo "... dvbti_viterbi_mux.i"
-	@echo "... dvbti_viterbi_mux.s"
 	@echo "... plinfo.o"
 	@echo "... plinfo.i"
 	@echo "... plinfo.s"

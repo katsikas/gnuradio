@@ -36,7 +36,5 @@ static const int DVBT_SUPER_FRAME_LENGTH = 1504;	// Superframe consists of 8 pac
 static const int OUTER_INTERLEAVER_INC_SIZE = 17;	// Fifo incremental size
 static const int DVBT_MPEG_RS_ENCODED_LENGTH = 204;     // Packet after RS Encoding
 
-static const int DVBT_DATA_SEGMENT_LENGTH	= 832;	// includes 4 sync symbols at beginning
-
 #endif // _DVBT_CONSTS_H_
 

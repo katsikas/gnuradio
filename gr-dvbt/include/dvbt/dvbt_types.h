@@ -58,32 +58,20 @@ public:
 			transport_error = true;
   		}
 		else{
-			//printf("Correctable = %d \n",error);
 			transport_error = false;
 		}
 	}
 
-       /*!
-   	* Set \p OUT such that it reflects a \p NSEGS_OF_DELAY
-   	* pipeline delay from \p IN.
-   	*/
   	static void delay (plinfo &out, const plinfo &in, int nsegs_of_delay);
 
-       /*!
-   	* confirm that \p X is plausible
-   	*/
   	static void sanity_check (const plinfo &in);
 
 
 protected:
 
   	static unsigned int packets;
-  	// these three are mutually exclusive
-  	//     This is a regular data segment.
   	static const int	flag01		= 0x0001;
-  	//	 This is a field sync segment, for 1st half of a field.
   	static const int	flag02		= 0x0002;
-  	//	 This is a field sync segment, for 2nd half of a field.
   	static const int	flag03		= 0x0003;
 
   	// This bit is set when Reed-Solomon decoding detects an error that it
@@ -92,7 +80,6 @@ protected:
   	// then copied into the final Transport Stream packet so that MPEG
   	// software can see that the 188-byte data segment has been corrupted.
   	bool transport_error;
-	//static const int	fl_transport_error	= 0x0020;
 };
 
 
@@ -156,48 +143,4 @@ public:
 };
 
 
-//! contains 832 3 bit symbols.  The low 3 bits in the byte hold the symbol.
-
-class dvbt_data_segment {
-public:
-  	static const int NPAD = 188;
-  	plinfo	pli;
-	unsigned char _pad_[NPAD];				// pad to power of 2 (1024)
-  	unsigned char	data[DVBT_DATA_SEGMENT_LENGTH];
-  					
-
-  	// overload equality operator
-  	bool operator== (const dvbt_data_segment &other) const {
-    		return std::memcmp (data, other.data, sizeof (data)) == 0;
-  	}
-
-  	bool operator!= (const dvbt_data_segment &other) const {
-    		return !(std::memcmp (data, other.data, sizeof (data)) == 0);
-  	}
-};
-
-
-/*!
- * Contains 832 bipolar floating point symbols.
- * Nominal values are +/- {1, 3, 5, 7}.
- * This data type represents the input to the viterbi decoder.
- */
-
-class dvbt_soft_data_segment {
-public:
-  	static const int NPAD = 764;
-  	plinfo	pli;
-	unsigned char _pad_[NPAD];			// pad to power of 2 (4096)
-  	float	data[DVBT_DATA_SEGMENT_LENGTH];
-  	
-  	// overload equality operator
-  	bool operator== (const dvbt_data_segment &other) const {
-    		return std::memcmp (data, other.data, sizeof (data)) == 0;
-  	}
-
-  	bool operator!= (const dvbt_data_segment &other) const {
-    		return !(std::memcmp (data, other.data, sizeof (data)) == 0);
-  	}
-};
-
-#endif /* _DVBT_TYPES_H_ */
+#endif /* INCLUDED_DVBT_TYPES_H */

@@ -1480,19 +1480,6 @@ pygen_gr_digital_examples_d033c/fast:
 .PHONY : pygen_gr_digital_examples_d033c/fast
 
 #=============================================================================
-# Target rules for targets named dvbti_viterbi_gen
-
-# Build rule for target.
-dvbti_viterbi_gen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dvbti_viterbi_gen
-.PHONY : dvbti_viterbi_gen
-
-# fast build rule for target.
-dvbti_viterbi_gen/fast:
-	$(MAKE) -f gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build.make gr-dvbt/lib/CMakeFiles/dvbti_viterbi_gen.dir/build
-.PHONY : dvbti_viterbi_gen/fast
-
-#=============================================================================
 # Target rules for targets named gnuradio-dvbt
 
 # Build rule for target.
@@ -2362,7 +2349,6 @@ help:
 	@echo "... pygen_gr_digital_examples_75972"
 	@echo "... pygen_gr_digital_examples_cdd3b"
 	@echo "... pygen_gr_digital_examples_d033c"
-	@echo "... dvbti_viterbi_gen"
 	@echo "... gnuradio-dvbt"
 	@echo "... _dvbt_swig"
 	@echo "... _dvbt_swig_doc_tag"

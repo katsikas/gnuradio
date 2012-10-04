@@ -55,13 +55,7 @@ public:
 		     	const dvbt_mpeg_packet_rs_encoded &in);
 
 private:
-       /*!
-   	* Note: The use of the alignment_fifo keeps the encoder and decoder
-   	* aligned if both are synced to a field boundary.  There may be other
-   	* ways to implement this function.  This is a best guess as to how
-   	* this should behave, as we have no test vectors for either the
-   	* interleaver or deinterleaver.
-   	*/
+
   	interleaver_fifo<unsigned char> alignment_fifo;
 
   	static void remap_pli (plinfo &out, const plinfo &in);

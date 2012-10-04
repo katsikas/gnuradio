@@ -188,50 +188,6 @@ input: dvbt_mpeg_packet_no_sync; output: dvbt_mpeg_packet_rs_encoded.
 
 Params: (NONE)"
 
-%feature("docstring") dvbt_trellis_encoder "DVBT 12-way interleaved trellis encoder (dvbt_mpeg_packet_rs_encoded --> dvbt_data_segment)
-
-input: dvbt_mpeg_packet_rs_encoded; output: dvbt_data_segment."
-
-%feature("docstring") dvbt_trellis_encoder::dvbt_trellis_encoder "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_trellis_encoder::work "
-
-Params: (noutput_items, input_items, output_items)"
-
-%feature("docstring") dvbt_trellis_encoder::reset "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_make_trellis_encoder "DVBT 12-way interleaved trellis encoder (dvbt_mpeg_packet_rs_encoded --> dvbt_data_segment)
-
-input: dvbt_mpeg_packet_rs_encoded; output: dvbt_data_segment.
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_viterbi_decoder "DVBT 12-way interleaved viterbi decoder (dvbt_soft_data_segment --> dvbt_mpeg_packet_rs_encoded)
-
-input: dvbt_soft_data_segment; output: dvbt_mpeg_packet_rs_encoded."
-
-%feature("docstring") dvbt_viterbi_decoder::dvbt_viterbi_decoder "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_viterbi_decoder::work "
-
-Params: (noutput_items, input_items, output_items)"
-
-%feature("docstring") dvbt_viterbi_decoder::reset "
-
-Params: (NONE)"
-
-%feature("docstring") dvbt_make_viterbi_decoder "DVBT 12-way interleaved viterbi decoder (dvbt_soft_data_segment --> dvbt_mpeg_packet_rs_encoded)
-
-input: dvbt_soft_data_segment; output: dvbt_mpeg_packet_rs_encoded.
-
-Params: (NONE)"
-
 %feature("docstring") std::allocator "STL class."
 
 %feature("docstring") std::auto_ptr "STL class."
@@ -276,17 +232,17 @@ Params: (NONE)"
 
 %feature("docstring") std::map::const_iterator "STL iterator class."
 
-%feature("docstring") std::set::const_iterator "STL iterator class."
-
 %feature("docstring") std::basic_string::const_iterator "STL iterator class."
-
-%feature("docstring") std::multimap::const_iterator "STL iterator class."
 
 %feature("docstring") std::multiset::const_iterator "STL iterator class."
 
 %feature("docstring") std::string::const_iterator "STL iterator class."
 
 %feature("docstring") std::vector::const_iterator "STL iterator class."
+
+%feature("docstring") std::multimap::const_iterator "STL iterator class."
+
+%feature("docstring") std::set::const_iterator "STL iterator class."
 
 %feature("docstring") std::wstring::const_iterator "STL iterator class."
 
@@ -300,13 +256,13 @@ Params: (NONE)"
 
 %feature("docstring") std::set::const_reverse_iterator "STL iterator class."
 
+%feature("docstring") std::basic_string::const_reverse_iterator "STL iterator class."
+
 %feature("docstring") std::multiset::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::vector::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::string::const_reverse_iterator "STL iterator class."
-
-%feature("docstring") std::basic_string::const_reverse_iterator "STL iterator class."
 
 %feature("docstring") std::wstring::const_reverse_iterator "STL iterator class."
 
@@ -344,16 +300,6 @@ Params: (input)"
 
 %feature("docstring") std::domain_error "STL class."
 
-%feature("docstring") dvbt_data_segment "contains 832 3 bit symbols. The low 3 bits in the byte hold the symbol."
-
-%feature("docstring") dvbt_data_segment::operator== "
-
-Params: (other)"
-
-%feature("docstring") dvbt_data_segment::operator!= "
-
-Params: (other)"
-
 
 
 %feature("docstring") dvbt_mpeg_packet::operator== "
@@ -384,34 +330,6 @@ Params: (other)"
 
 Params: (other)"
 
-%feature("docstring") dvbt_soft_data_segment "Contains 832 bipolar floating point symbols. Nominal values are +/- {1, 3, 5, 7}. This data type represents the input to the viterbi decoder."
-
-%feature("docstring") dvbt_soft_data_segment::operator== "
-
-Params: (other)"
-
-%feature("docstring") dvbt_soft_data_segment::operator!= "
-
-Params: (other)"
-
-%feature("docstring") dvbti_basic_trellis_encoder "DVBT trellis encoder building block.
-
-Note this is NOT the 12x interleaved interface.
-
-This implements a single instance of the DVBT trellis encoder. This is a rate 2/3 encoder (really a constraint length 3, rate 1/2 encoder with the top bit passed through unencoded. This does not implement the \"precoding\" of the top bit, because the NTSC rejection filter is not supported."
-
-%feature("docstring") dvbti_basic_trellis_encoder::dvbti_basic_trellis_encoder "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_basic_trellis_encoder::encode "Encode two bit INPUT into 3 bit return value. Domain is [0,3], Range is [0,7]. The mapping to bipolar levels is not done.
-
-Params: (input)"
-
-%feature("docstring") dvbti_basic_trellis_encoder::reset "reset encoder state
-
-Params: (NONE)"
-
 %feature("docstring") dvbti_data_deinterleaver "dvbt convolutional data deinterleaver"
 
 %feature("docstring") dvbti_data_deinterleaver::dvbti_data_deinterleaver "
@@ -436,24 +354,6 @@ Params: (NONE)"
 
 Params: (out, in)"
 
-%feature("docstring") dvbti_fake_single_viterbi "single channel viterbi decoder"
-
-%feature("docstring") dvbti_fake_single_viterbi::dvbti_fake_single_viterbi "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_fake_single_viterbi::decode "ideally takes on the values +/- 1,3,5,7 return is decoded dibit in the range [0, 3]
-
-Params: (input)"
-
-%feature("docstring") dvbti_fake_single_viterbi::reset "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_fake_single_viterbi::delay "internal delay of decoder
-
-Params: (NONE)"
-
 %feature("docstring") dvbti_randomizer "DVBT data \"whitener\".
 
 The data randomizer described in DVBT standard."
@@ -462,9 +362,9 @@ The data randomizer described in DVBT standard."
 
 Params: (NONE)"
 
-%feature("docstring") dvbti_randomizer::reset "reset randomizer LFSR
+%feature("docstring") dvbti_randomizer::reset "reset randomizer PRBS
 
-must be called during the Data Segment Sync interval prior to the first data segment. I.e., the LFSR is reset prior to the first field of each VSB data frame.
+must be called during the first byte of the first packet in a sequence of 8 packets.
 
 Params: (NONE)"
 
@@ -497,68 +397,6 @@ Params: (NONE)"
 Params: (out, in)"
 
 %feature("docstring") dvbti_reed_solomon::decode "Decode RS encoded packet.
-
-Params: (out, in)"
-
-%feature("docstring") dvbti_single_viterbi "single channel viterbi decoder"
-
-%feature("docstring") dvbti_single_viterbi::dvbti_single_viterbi "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_single_viterbi::decode "ideally takes on the values +/- 1,3,5,7 return is decoded dibit in the range [0, 3]
-
-Params: (input)"
-
-%feature("docstring") dvbti_single_viterbi::reset "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_single_viterbi::delay "internal delay of decoder
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_trellis_encoder "fancy, schmancy 12-way interleaved trellis encoder for DVBT"
-
-%feature("docstring") dvbti_trellis_encoder::dvbti_trellis_encoder "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_trellis_encoder::~dvbti_trellis_encoder "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_trellis_encoder::reset "reset all encoder states
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_trellis_encoder::encode "Take 12 RS encoded, convolutionally interleaved segments and produce 12 trellis coded data segments. We work in groups of 12 because that's the smallest number of segments that composes a single full cycle of the encoder mux.
-
-Params: (out, in)"
-
-%feature("docstring") dvbti_trellis_encoder::encode_helper "
-
-Params: (out, in)"
-
-%feature("docstring") dvbti_viterbi_decoder "fancy, schmancy 12-way interleaved viterbi decoder for DVBT"
-
-%feature("docstring") dvbti_viterbi_decoder::dvbti_viterbi_decoder "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_viterbi_decoder::~dvbti_viterbi_decoder "
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_viterbi_decoder::reset "reset all decoder states
-
-Params: (NONE)"
-
-%feature("docstring") dvbti_viterbi_decoder::decode "Take 12 data segments of soft decisions (floats) and produce 12 RS encoded data segments. We work in groups of 12 because that's the smallest number of segments that composes a single full cycle of the decoder mux.
-
-Params: (out, in)"
-
-%feature("docstring") dvbti_viterbi_decoder::decode_helper "
 
 Params: (out, in)"
 
@@ -598,25 +436,25 @@ Params: (input)"
 
 %feature("docstring") std::istringstream "STL class."
 
-%feature("docstring") std::set::iterator "STL iterator class."
-
-%feature("docstring") std::multimap::iterator "STL iterator class."
-
 %feature("docstring") std::map::iterator "STL iterator class."
 
+%feature("docstring") std::list::iterator "STL iterator class."
+
 %feature("docstring") std::basic_string::iterator "STL iterator class."
+
+%feature("docstring") std::multiset::iterator "STL iterator class."
 
 %feature("docstring") std::vector::iterator "STL iterator class."
 
 %feature("docstring") std::string::iterator "STL iterator class."
 
-%feature("docstring") std::wstring::iterator "STL iterator class."
-
-%feature("docstring") std::multiset::iterator "STL iterator class."
-
 %feature("docstring") std::deque::iterator "STL iterator class."
 
-%feature("docstring") std::list::iterator "STL iterator class."
+%feature("docstring") std::set::iterator "STL iterator class."
+
+%feature("docstring") std::wstring::iterator "STL iterator class."
+
+%feature("docstring") std::multimap::iterator "STL iterator class."
 
 %feature("docstring") std::length_error "STL class."
 
@@ -676,11 +514,11 @@ Params: (remainder)"
 
 Params: (error)"
 
-%feature("docstring") plinfo::delay "Set  such that it reflects a  pipeline delay from .
+%feature("docstring") plinfo::delay "
 
 Params: (out, in, nsegs_of_delay)"
 
-%feature("docstring") plinfo::sanity_check "confirm that  is plausible
+%feature("docstring") plinfo::sanity_check "
 
 Params: (in)"
 
@@ -690,25 +528,25 @@ Params: (in)"
 
 %feature("docstring") std::range_error "STL class."
 
-%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::map::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::vector::reverse_iterator "STL iterator class."
-
-%feature("docstring") std::list::reverse_iterator "STL iterator class."
+%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::wstring::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::basic_string::reverse_iterator "STL iterator class."
+%feature("docstring") std::map::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::set::reverse_iterator "STL iterator class."
+%feature("docstring") std::list::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::multiset::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::vector::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::string::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::deque::reverse_iterator "STL iterator class."
 
-%feature("docstring") std::string::reverse_iterator "STL iterator class."
+%feature("docstring") std::multimap::reverse_iterator "STL iterator class."
+
+%feature("docstring") std::set::reverse_iterator "STL iterator class."
 
 %feature("docstring") std::runtime_error "STL class."
 
