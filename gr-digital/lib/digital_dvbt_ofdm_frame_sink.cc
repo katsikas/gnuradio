@@ -38,22 +38,22 @@
 
 unsigned int digital_dvbt_ofdm_frame_sink::d_frame_number;
 unsigned int digital_dvbt_ofdm_frame_sink::d_symbol_number;
-const std::string digital_dvbt_ofdm_frame_sink::hierarchy = "000"; 					// Non Hierarchical(a=1)
+const std::string digital_dvbt_ofdm_frame_sink::hierarchy = "000"; 				// Non Hierarchical(a=1)
 const std::string digital_dvbt_ofdm_frame_sink::code_rate = "010000";				// Inner code rate = 3/4
 const std::string digital_dvbt_ofdm_frame_sink::guard_interval = "11";				// Guard Interval = 1/4
 const std::string digital_dvbt_ofdm_frame_sink::transmission_mode = "00";			// 2k
-const std::string digital_dvbt_ofdm_frame_sink::init_sequence = "11111111111";
-const std::string digital_dvbt_ofdm_frame_sink::odd_sequence = "0011010111101110";
-const std::string digital_dvbt_ofdm_frame_sink::even_sequence = "1100101000010001";
-const std::string digital_dvbt_ofdm_frame_sink::cell_identification_on =  "011111";
-const std::string digital_dvbt_ofdm_frame_sink::cell_identification_off = "010111";
+const std::string digital_dvbt_ofdm_frame_sink::init_sequence = "11111111111";			// PRBS init sequence
+const std::string digital_dvbt_ofdm_frame_sink::odd_sequence = "0011010111101110";		// see ETSI DVBT
+const std::string digital_dvbt_ofdm_frame_sink::even_sequence = "1100101000010001";		// see ETSI DVBT
+const std::string digital_dvbt_ofdm_frame_sink::cell_identification_on =  "011111";		// see ETSI DVBT
+const std::string digital_dvbt_ofdm_frame_sink::cell_identification_off = "010111";		// see ETSI DVBT
 
 
-const int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073,
-                        1219, 1262, 1286, 1469, 1594, 1687};
+const int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073,			// TPS carrier positions
+                        1219, 1262, 1286, 1469, 1594, 1687};					// for 2k mode
 
-const int continuals[] = {0, 48, 54, 87, 141, 156, 192, 201, 255, 279,
-                        282, 333, 432, 450, 483, 525, 531, 618, 636,
+const int continuals[] = {0, 48, 54, 87, 141, 156, 192, 201, 255, 279,				// Continual carrier positions
+                        282, 333, 432, 450, 483, 525, 531, 618, 636,				// for 2k mode
                         714, 759, 765, 780, 804, 873, 888, 918, 939,
                         942, 969, 984, 1050, 1101, 1107, 1110, 1137,
                         1140, 1146, 1206, 1269, 1323, 1377, 1491, 1683, 1704};
@@ -67,19 +67,20 @@ digital_make_dvbt_ofdm_frame_sink(const std::vector<gr_complex> &sym_position,
 								 gr_msg_queue_sptr target_queue, unsigned int occupied_carriers,
 								 float phase_gain, float freq_gain)
 {
-  return gnuradio::get_initial_sptr(new digital_dvbt_ofdm_frame_sink(sym_position, t_constellation, 
-																	cs_constellation, sym_value_out,
-																	target_queue, occupied_carriers,
-																	phase_gain, freq_gain));
+  return gnuradio::get_initial_sptr(new digital_dvbt_ofdm_frame_sink(sym_position, t_constellation,
+					cs_constellation, sym_value_out,
+					target_queue, occupied_carriers,
+					phase_gain, freq_gain));
 }
 
 
 digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink(const std::vector<gr_complex> &sym_position,
-													 const std::vector<gr_complex> &t_constellation,
-													 const std::vector<gr_complex> &cs_constellation,
-													 const std::vector<unsigned char> &sym_value_out,
-													 gr_msg_queue_sptr target_queue, unsigned int occupied_carriers,
-													 float phase_gain, float freq_gain)
+							const std::vector<gr_complex> &t_constellation,
+							const std::vector<gr_complex> &cs_constellation,
+							const std::vector<unsigned char> &sym_value_out,
+							gr_msg_queue_sptr target_queue, unsigned int occupied_carriers,
+							float phase_gain, float freq_gain)
+
   : gr_sync_block ("ofdm_frame_sink",
 		   gr_make_io_signature2 (2, 2, sizeof(gr_complex)*occupied_carriers, sizeof(char)),
 		   gr_make_io_signature (1, 1, sizeof(gr_complex)*occupied_carriers)),
@@ -95,7 +96,7 @@ digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink(const std::vector<gr_
   d_last_out = 0;
   d_frame_number = 1;
   unsigned int i = 0;
-  for(i = 0; i < d_occupied_carriers; i++) {							// Pad zeros left and right of the occupied carriers.
+  for(i = 0; i < d_occupied_carriers; i++) {					// Pad zeros left and right of the occupied carriers.
         d_subcarrier_map.push_back(i);
   }
 
@@ -103,7 +104,7 @@ digital_dvbt_ofdm_frame_sink::digital_dvbt_ofdm_frame_sink(const std::vector<gr_
         printf("s[%d] = %d ",i,d_subcarrier_map[i]);
   }*/
 
-  if(d_subcarrier_map.size() > d_occupied_carriers) {					// make sure we stay in the limit currently imposed by the occupied_carriers
+  if(d_subcarrier_map.size() > d_occupied_carriers) {				// make sure we stay in the limit currently imposed by the occupied_carriers
     throw std::invalid_argument
 	("digital_ofdm_mapper_bcv: subcarriers allocated exceeds size of occupied carriers");
   }
@@ -138,12 +139,16 @@ digital_dvbt_ofdm_frame_sink::set_sym_value_out(const std::vector<gr_complex> &s
 
   d_sym_position  = sym_position;
   d_sym_value_out = sym_value_out;
-  d_nbits = (unsigned long)ceil(log10(float(d_sym_value_out.size())) / log10(2.0));
+  d_nbits = (unsigned long)ceil(log10(float(d_sym_value_out.size())) / log10(2.0));		// how many bits used pes symbol
 
   return true;
 }
 
 
+/**
+ * Get the signal, synchronize with scattered and continual pilot carriers
+ * and decode tps and payload carriers
+ */
 int
 digital_dvbt_ofdm_frame_sink::work (int noutput_items,
 			       gr_vector_const_void_star &input_items,
@@ -153,9 +158,9 @@ digital_dvbt_ofdm_frame_sink::work (int noutput_items,
   const char *sig = (const char *) input_items[1];
   unsigned int j = 0;
   unsigned int bytes=0;
-  
 
-  if(output_items.size() >= 1)											// If the output is connected, send it the derotated symbols
+
+  if(output_items.size() >= 1)								// If the output is connected, send it the derotated symbols
     d_derotated_output = (gr_complex *)output_items[0];
   else
     d_derotated_output = NULL;
@@ -165,17 +170,17 @@ digital_dvbt_ofdm_frame_sink::work (int noutput_items,
 
   switch(d_state) {
 
-  case STATE_SYNC_SEARCH:    											// Look for flag indicating beginning of pkt
-    if (VERBOSE)	
+  case STATE_SYNC_SEARCH:    								// Look for flag indicating beginning of pkt
+    if (VERBOSE)
       fprintf(stderr,"SYNC Search, noutput=%d\n", noutput_items);
 
-    if (sig[0]) {  														// Found it, set up for header decode
+    if (sig[0]) {  									// Found it, set up for header decode
       enter_have_sync();
     }
     break;
 
-  case STATE_HAVE_SYNC:													// only demod after getting the preamble signal; otherwise, the
-    bytes = demapper(&in[0], d_bytes_out);								// equalizer taps will screw with the PLL performance
+  case STATE_HAVE_SYNC:									// only demod after getting the preamble signal; otherwise, the
+    bytes = demapper(&in[0], d_bytes_out);						// equalizer taps will screw with the PLL performance
 
     if (VERBOSE) {
       if(sig[0])
@@ -194,7 +199,7 @@ digital_dvbt_ofdm_frame_sink::work (int noutput_items,
 	if (VERBOSE)
 	  fprintf(stderr, "got header: 0x%08x\n", d_header);
 
-	if (header_ok()){													// we have a full header, check to see if it has been received properly
+	if (header_ok()){							// we have a full header, check to see if it has been received properly
 	  enter_have_header();
 
 	  if (VERBOSE)
@@ -208,15 +213,15 @@ digital_dvbt_ofdm_frame_sink::work (int noutput_items,
 	    gr_message_sptr msg =
 	      gr_make_message(0, d_packet_whitener_offset, 0, d_packetlen);
 	    memcpy(msg->msg(), d_packet, d_packetlen_cnt);
-	    d_target_queue->insert_tail(msg);								// send it
-	    msg.reset();  													// free it up
+	    d_target_queue->insert_tail(msg);							// send it
+	    msg.reset();  									// free it up
 
 	    enter_search();
 	  }
 	}
 	else {
-      printf("bad header \n");
-	  enter_search();													// bad header
+      	  printf("bad header \n");								// Debug message
+	  enter_search();									// bad header
 	}
       }
     }
@@ -236,14 +241,13 @@ digital_dvbt_ofdm_frame_sink::work (int noutput_items,
       d_packet[d_packetlen_cnt++] = d_bytes_out[j++];
 
       if (d_packetlen_cnt == d_packetlen){								// packet is filled
-	
-	
-	gr_message_sptr msg =												// build a message
-	  gr_make_message(0, d_packet_whitener_offset, 0, d_packetlen_cnt); // NOTE: passing header field as arg1 is not scalable
+
+	gr_message_sptr msg =										// build a message
+	  gr_make_message(0, d_packet_whitener_offset, 0, d_packetlen_cnt); 				// NOTE: passing header field as arg1 is not scalable
 	memcpy(msg->msg(), d_packet, d_packetlen_cnt);
 
-	d_target_queue->insert_tail(msg);									// send it
-	msg.reset();  														// free it up
+	d_target_queue->insert_tail(msg);								// send it
+	msg.reset();  											// free it up
 
 	enter_search();
 	break;
@@ -254,7 +258,7 @@ digital_dvbt_ofdm_frame_sink::work (int noutput_items,
   default:
     assert(0);
 
-  } 																	// switch
+  } 													// switch
 
   return 1;
 }
@@ -278,13 +282,13 @@ digital_dvbt_ofdm_frame_sink::enter_have_sync()
 
   d_state = STATE_HAVE_SYNC;
 
-  d_byte_offset = 0;													// Resetting PLL
+  d_byte_offset = 0;									// Resetting PLL
   d_partial_byte = 0;
 
   d_header = 0;
   d_headerbytelen_cnt = 0;
 
-  d_freq = 0.0;															// Resetting PLL
+  d_freq = 0.0;										// Resetting PLL
   d_phase = 0.0;
   fill(d_dfe.begin(), d_dfe.end(), gr_complex(1.0,0.0));
 }
@@ -292,9 +296,9 @@ digital_dvbt_ofdm_frame_sink::enter_have_sync()
 inline void
 digital_dvbt_ofdm_frame_sink::enter_have_header()
 {
-  d_state = STATE_HAVE_HEADER;												
-																		// header consists of two 16-bit shorts in network byte order
-  d_packetlen = (d_header >> 16) & 0x0fff;								// payload length is lower 12 bits
+  d_state = STATE_HAVE_HEADER;
+											// header consists of two 16-bit shorts in network byte order
+  d_packetlen = (d_header >> 16) & 0x0fff;						// payload length is lower 12 bits
   d_packet_whitener_offset = (d_header >> 28) & 0x000f;					// whitener offset is upper 4 bits
   d_packetlen_cnt = 0;
 
@@ -303,6 +307,11 @@ digital_dvbt_ofdm_frame_sink::enter_have_header()
 	    d_packetlen, d_packet_whitener_offset);
 }
 
+
+/**
+ * According to the bits received, we should decide
+ * the modulation scheme used.
+ */
 void digital_dvbt_ofdm_frame_sink::set_modulation_type(){
 
 	if(d_sym_value_out.size() == 4){
@@ -323,10 +332,16 @@ void digital_dvbt_ofdm_frame_sink::set_modulation_type(){
 	}
 }
 
+/**
+ * Demapping for the pilot signals(BPSK).
+ */
 unsigned char digital_dvbt_ofdm_frame_sink::make_pilot_decision(const gr_complex x){
 	return !(real(x) > 0);
 }
 
+/**
+ * Demapping for the payload data.
+ */
 unsigned char digital_dvbt_ofdm_frame_sink::slicer(const gr_complex x)
 {
   unsigned int table_size = d_sym_value_out.size();
@@ -344,17 +359,24 @@ unsigned char digital_dvbt_ofdm_frame_sink::slicer(const gr_complex x)
   return d_sym_value_out[min_index];
 }
 
+/**
+ * Find the next state of the PRBS sequence.
+ */
 void
-digital_dvbt_ofdm_frame_sink::next_state(){                                                             // Private function for the pilot PRBS sequence.
-  
+digital_dvbt_ofdm_frame_sink::next_state(){                                                         // Private function for the pilot PRBS sequence.
+
     unsigned char temp = 0;
     temp = d_prbs_sequence[8] ^ d_prbs_sequence[10];
     for(int j=10;j>0;j--){
             d_prbs_sequence[j] = d_prbs_sequence[j-1];
-    }                           
+    }
     d_prbs_sequence[0] = temp;
 }
-      
+
+/**
+ * Get the initial PRBS state on startup or the output
+ * produced otherwise.
+ */
 unsigned char digital_dvbt_ofdm_frame_sink::get_PRBS(int barrier){
         if(barrier > 10){
                 next_state();
@@ -363,21 +385,21 @@ unsigned char digital_dvbt_ofdm_frame_sink::get_PRBS(int barrier){
         return 1;
 }
 
+
 unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
 					       unsigned char *out)
 {
   unsigned int i=0, bytes_produced=0;
   gr_complex carrier;
   carrier=gr_expj(d_phase);
-  d_prbs_sequence = std::bitset<11> (init_sequence);
-  
+
   i = 0;
   d_scattered_map.clear();
-  while((3*(d_symbol_number%4) + 12*i) < d_occupied_carriers){			// Create the scattered pilots positions 
+  while((3*(d_symbol_number%4) + 12*i) < d_occupied_carriers){			// Create the scattered pilots positions
         d_scattered_map.push_back(3*(d_symbol_number%4) + 12*i);		// in the current symbol...
         i++;
   }
-  
+
   bool flag = true;
   gr_complex pilot;
   unsigned char prbs = 0;
@@ -386,38 +408,31 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
   d_payload_map.clear();
   for(i = 0; i < d_subcarrier_map.size(); i++) {
 	   prbs = get_PRBS(i);
-	   if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {				
+	   if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) { 	// TPS pilot positions
 		  pilot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];
 		  bits = make_pilot_decision(pilot);
 		  diff = extract_pilot_info(bits,prbs);
 		  if(flag){
-			//diff = extract_pilot_info(bits,prbs);							// Same info for all TPS carriers in a frame.Calculate once.
-			d_tps_info.push_back(diff);
+			d_tps_info.push_back(diff);			// Same info for all TPS carriers in a frame.Check existance in array.
 			flag = false;
 		  }
 		  else{
-			  d_tps_info[d_symbol_number] = diff;
-			/*diff = get_pilot_info(bits);
-			unsigned int tmp = differential_demodulation(bits);
-			printf("already checked \n");
-			integrity_tps_check(diff,tmp);*/
+			  d_tps_info[d_symbol_number] = diff;		// Same info for all TPS carriers in a frame.Calculate once.
 		  }
 		  //printf("RECEIVED diff = %d decision = %d complex is: %.4f %.4fj\n",diff,bits,pilot.real(),pilot.imag());
 	   }
 	  else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
-		  pilot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];				// Continual pilot signals
+		  pilot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];				// Continual pilot positions
 	  }
-	 
 	  else if(std::find(d_scattered_map.begin(), d_scattered_map.end(), i) != d_scattered_map.end()){
-		  pilot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];				// Scattered pilot signals
-		  //printf("PILOT RECEIVED %d: %.4f %.4fj \n",i,pilot.real(),pilot.imag());
+		  pilot = in[d_subcarrier_map[i]]*carrier*d_dfe[i];				// Scattered pilot positions
 	  }
 	  else{
 		  d_payload_map.push_back(i);
 	  }
   }
-  
-  
+
+
   i = 0;
   gr_complex accum_error = 0.0;
   size_t carriers = d_payload_map.size();
@@ -439,10 +454,8 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
       unsigned char bits = slicer(sigrot);
       gr_complex closest_sym = d_sym_position[bits];
       accum_error += sigrot * conj(closest_sym);
-      
-      //printf("RECEIVED BIT = %x complex is: %.4f %.4fj \n",bits,sigrot.real(),sigrot.imag());
 
-      // FIX THE FOLLOWING STATEMENT
+      //printf("RECEIVED BIT = %x complex is: %.4f %.4fj \n",bits,sigrot.real(),sigrot.imag());
       if (norm(sigrot)> 0.001) d_dfe[i] +=  d_eq_gain*(closest_sym/sigrot-d_dfe[i]);
       i++;
 
@@ -478,46 +491,42 @@ unsigned int digital_dvbt_ofdm_frame_sink::demapper(const gr_complex *in,
 
   //if(VERBOSE)
   //  std::cerr << angle << "\t" << d_freq << "\t" << d_phase << "\t" << std::endl;
-  
+
   d_symbol_number ++;
-  /*if(d_symbol_number == 68){
-		for (int i = 0; i < d_tps_info.size(); i++)
-		{
-			printf("tps_info[%d] = %d \n",i,d_tps_info[i]);
-		}
-		
-	  exit(-1);
-  }*/
   if(d_symbol_number == 68){
 	d_last_out = 0;
-	d_prbs_sequence = std::bitset<11> (init_sequence);
         d_tps_info.clear();
         d_symbol_number = 0;
-        printf("  frame number = %d \n",d_frame_number);
+        //printf("  frame number = %d \n",d_frame_number);		// Debug message
         d_frame_number ++;
+	d_prbs_sequence = std::bitset<11> (init_sequence);
         if(d_frame_number == 5){										// 4 frames consist a super-frame.
-			d_frame_number = 1;									
+			d_frame_number = 1;
 		}
   }
-  
+
   return bytes_produced;
 }
 
+
+/**
+ * Get the TPS pilot information.
+ */
 unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info(unsigned char bits,unsigned char prbs){
 
 	  unsigned int diff = 0;
-	  if(d_symbol_number == 0){											// PRBS sequence	
+	  if(d_symbol_number == 0){						// PRBS sequence
 		diff = differential_demodulation(bits);
-		integrity_tps_check(diff,prbs);		
+		integrity_tps_check(diff,prbs);
 	  }
 	  else if( (d_symbol_number > 0) && (d_symbol_number < 17) ){		// Synchronization
 		diff = differential_demodulation(bits);
 		if((d_frame_number % 2) == 0){
-			integrity_tps_check(diff,even_sequence.at(d_symbol_number-1)-'0'); 	
+			integrity_tps_check(diff,even_sequence.at(d_symbol_number-1)-'0');
 		}
 		else{
 			integrity_tps_check(diff,odd_sequence.at(d_symbol_number-1)-'0');
-		}		
+		}
 	  }
 	  else if( (d_symbol_number > 16) && (d_symbol_number < 23) ){		// TPS length
 		diff = differential_demodulation(bits);
@@ -528,117 +537,127 @@ unsigned int digital_dvbt_ofdm_frame_sink::extract_pilot_info(unsigned char bits
 			integrity_tps_check(diff,cell_identification_off.at(d_symbol_number-17)-'0');
 		}
 	  }
-	  else if(d_symbol_number == 23){ 									// Frame number MSB
+	  else if(d_symbol_number == 23){ 					// Frame number MSB
 		diff = differential_demodulation(bits);
 		if(d_frame_number < 3){
 			integrity_tps_check(diff,0);
 		}
 		else{
 			integrity_tps_check(diff,1);
-		}	
+		}
 	  }
-	  else if(d_symbol_number == 24){ 									// Frame number LSB
+	  else if(d_symbol_number == 24){ 					// Frame number LSB
 		diff = differential_demodulation(bits);
 		if((d_frame_number % 2) != 0){
 			integrity_tps_check(diff,0);
 		}
 		else{
 			integrity_tps_check(diff,1);
-		}	
-	  }					
-	  else if(d_symbol_number == 25){ 									// Constellation
+		}
+	  }
+	  else if(d_symbol_number == 25){ 					// Constellation
 		diff = differential_demodulation(bits);
 		integrity_tps_check(diff,d_modulation_type.test(0));
 	  }
-	  else if(d_symbol_number == 26){									// Constellation
-		diff = differential_demodulation(bits);	
+	  else if(d_symbol_number == 26){					// Constellation
+		diff = differential_demodulation(bits);
 		integrity_tps_check(diff,d_modulation_type.test(1));
 	  }
 	  else if(d_symbol_number == 27){
-		diff = differential_demodulation(bits);							// Hierarchy
+		diff = differential_demodulation(bits);				// Hierarchy
 		integrity_tps_check(diff,hierarchy.at(0) - '0');
 	  }
 	  else if(d_symbol_number == 28){
-		diff = differential_demodulation(bits);							// Hierarchy
+		diff = differential_demodulation(bits);				// Hierarchy
 		integrity_tps_check(diff,hierarchy.at(1) - '0');
 	  }
 	  else if(d_symbol_number == 29){
-		diff = differential_demodulation(bits);							// Hierarchy
+		diff = differential_demodulation(bits);				// Hierarchy
 		integrity_tps_check(diff,hierarchy.at(2) - '0');
 	  }
 	  else if(d_symbol_number == 30){
-		diff = differential_demodulation(bits);							// Inner code rates
+		diff = differential_demodulation(bits);				// Inner code rates
 		integrity_tps_check(diff,code_rate.at(0) - '0');
 	  }
 	  else if(d_symbol_number == 31){
-		diff = differential_demodulation(bits);							// Inner code rates
+		diff = differential_demodulation(bits);				// Inner code rates
 		integrity_tps_check(diff,code_rate.at(1) - '0');
 	  }
 	  else if(d_symbol_number == 32){
-		diff = differential_demodulation(bits);							// Inner code rates
+		diff = differential_demodulation(bits);				// Inner code rates
 		integrity_tps_check(diff,code_rate.at(2) - '0');
 	  }
 	  else if(d_symbol_number == 33){
-		diff = differential_demodulation(bits);							// Inner code rates
+		diff = differential_demodulation(bits);				// Inner code rates
 		integrity_tps_check(diff,code_rate.at(3) - '0');
 	  }
 	  else if(d_symbol_number == 34){
-		diff = differential_demodulation(bits);							// Inner code rates
-		integrity_tps_check(diff,code_rate.at(4) - '0'); 
+		diff = differential_demodulation(bits);				// Inner code rates
+		integrity_tps_check(diff,code_rate.at(4) - '0');
 	  }
 	  else if(d_symbol_number == 35){
-		diff = differential_demodulation(bits);							// Inner code rates
+		diff = differential_demodulation(bits);				// Inner code rates
 		integrity_tps_check(diff,code_rate.at(5) - '0');
 	  }
 	  else if(d_symbol_number == 36){
-		diff = differential_demodulation(bits);							// Guard Interval
+		diff = differential_demodulation(bits);				// Guard Interval
 		integrity_tps_check(diff,guard_interval.at(0) - '0');
 	  }
 	  else if(d_symbol_number == 37){
-		diff = differential_demodulation(bits);							// Guard Interval
+		diff = differential_demodulation(bits);				// Guard Interval
 		integrity_tps_check(diff,guard_interval.at(1) - '0');
 	  }
 	  else if(d_symbol_number == 38){
-		diff = differential_demodulation(bits);							// Transmission Mode
+		diff = differential_demodulation(bits);				// Transmission Mode
 		integrity_tps_check(diff,transmission_mode.at(0) - '0');
 	  }
 	  else if(d_symbol_number == 39){
-		diff = differential_demodulation(bits);							// Transmission Mode
+		diff = differential_demodulation(bits);				// Transmission Mode
 		integrity_tps_check(diff,transmission_mode.at(1) - '0');
 	  }
 	  else if( (d_symbol_number > 39) && (d_symbol_number < 48) ) {
-		diff = differential_demodulation(bits);							// Cell Identifier(For Future use)
+		diff = differential_demodulation(bits);				// Cell Identifier(For Future use)
 		integrity_tps_check(diff,0);
 	  }
 	  else if( (d_symbol_number > 47) && (d_symbol_number < 54) ) {
-		diff = differential_demodulation(bits);							// All set to zero(For Future use)
+		diff = differential_demodulation(bits);				// All set to zero(For Future use)
 		integrity_tps_check(diff,0);
 	  }
 	  else if(d_symbol_number > 53){
-		diff = differential_demodulation(bits);							// BCH parity check.
+		diff = differential_demodulation(bits);				// BCH parity check.
 		integrity_tps_check(diff,0);
 		if(d_symbol_number == 67){
 			decode_BCH();
 		}
 	  }
-	  
+
 	  return diff;
 }
 
 void digital_dvbt_ofdm_frame_sink::decode_BCH(){
     //printf("BCH_DECODER \n");
+    // Missing BCH decoding
 }
 
+/**
+ * Return the TPS pilot information requested.
+ */
 unsigned int digital_dvbt_ofdm_frame_sink::get_pilot_info(unsigned char bits){
 	return d_tps_info[d_symbol_number];
 }
 
-unsigned int digital_dvbt_ofdm_frame_sink::differential_demodulation(int bit){												
-	unsigned int temp = !((bit + d_last_out) % 2);						// modulus = 2 for DBPSK
+/**
+ * Differentialy demodulate a BPSK signal.
+ */
+unsigned int digital_dvbt_ofdm_frame_sink::differential_demodulation(int bit){
+	unsigned int temp = !((bit + d_last_out) % 2);				// modulus = 2 for DBPSK
 	d_last_out = bit;
 	return temp;
 }
 
+/**
+ * Integrity check for the TPS information.
+ */
 void digital_dvbt_ofdm_frame_sink::integrity_tps_check(unsigned int in, unsigned int out){
 	if(in != out){
 		printf("Wrong TPS info received %d...\n",d_symbol_number);

@@ -35,25 +35,25 @@
 
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_frame_number;
 unsigned int digital_dvbt_ofdm_mapper_bcv::d_symbol_number;
-const std::string digital_dvbt_ofdm_mapper_bcv::hierarchy = "000"; 					// Non Hierarchical(a=1)
+const std::string digital_dvbt_ofdm_mapper_bcv::hierarchy = "000"; 				// Non Hierarchical(a=1)
 const std::string digital_dvbt_ofdm_mapper_bcv::code_rate = "010000";				// Inner code rate = 3/4
 const std::string digital_dvbt_ofdm_mapper_bcv::guard_interval = "11";				// Guard Interval = 1/4
 const std::string digital_dvbt_ofdm_mapper_bcv::transmission_mode = "00";			// 2k
-const std::string digital_dvbt_ofdm_mapper_bcv::init_sequence = "11111111111";
-const std::string digital_dvbt_ofdm_mapper_bcv::odd_sequence = "0011010111101110";
-const std::string digital_dvbt_ofdm_mapper_bcv::even_sequence = "1100101000010001";
-const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_on =  "011111";
-const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_off = "010111";
+const std::string digital_dvbt_ofdm_mapper_bcv::init_sequence = "11111111111";			// PRBS init sequence
+const std::string digital_dvbt_ofdm_mapper_bcv::odd_sequence = "0011010111101110";		// see ETSI DVBT
+const std::string digital_dvbt_ofdm_mapper_bcv::even_sequence = "1100101000010001";		// see ETSI DVBT
+const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_on =  "011111";		// see ETSI DVBT
+const std::string digital_dvbt_ofdm_mapper_bcv::cell_identification_off = "010111";		// see ETSI DVBT
 
 
-const int p[8]  = {1,0,0,1,0,0,0,1};
-const int g[15] = {1,1,1,0,1,1,1,0,1,1,1,1,1,1,1};
-    
-const int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073,
-                        1219, 1262, 1286, 1469, 1594, 1687};
+const int p[8]  = {1,0,0,1,0,0,0,1};								// used in TPS carriers
+const int g[15] = {1,1,1,0,1,1,1,0,1,1,1,1,1,1,1};						// BCH code.
 
-const int continuals[] = {0, 48, 54, 87, 141, 156, 192, 201, 255, 279,
-                        282, 333, 432, 450, 483, 525, 531, 618, 636,
+const int tps[] = { 34, 50, 209, 346, 413, 569, 595, 688, 790, 901, 1073,			// TPS carrier positions
+                        1219, 1262, 1286, 1469, 1594, 1687};					// for 2k mode
+
+const int continuals[] = {0, 48, 54, 87, 141, 156, 192, 201, 255, 279,				// Continual carrier positions
+                        282, 333, 432, 450, 483, 525, 531, 618, 636,				// for 2k mode
                         714, 759, 765, 780, 804, 873, 888, 918, 939,
                         942, 969, 984, 1050, 1101, 1107, 1110, 1137,
                         1140, 1146, 1206, 1269, 1323, 1377, 1491, 1683, 1704};
@@ -95,7 +95,7 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
   d_last_out = 0;
   d_frame_number = 1;
   set_modulation_type();
-	  
+
   if (!(d_occupied_carriers <= d_fft_length))
     throw std::invalid_argument("digital_ofdm_mapper_bcv: occupied carriers must be <= fft_length");
 
@@ -104,6 +104,7 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
 
   unsigned int i = 0;
   unsigned int j = 0;
+
   // Pad zeros left and right of the occupied carriers.
   d_zeros_from_left = (unsigned int)ceil(((d_fft_length - d_occupied_carriers)/2.0));
   for(i = 0; i < d_zeros_from_left+d_occupied_carriers; i++) {
@@ -123,7 +124,7 @@ digital_dvbt_ofdm_mapper_bcv::digital_dvbt_ofdm_mapper_bcv
         ("digital_ofdm_mapper_bcv: subcarriers allocated exceeds size of occupied carriers");
   }
 
-  d_nbits = (unsigned long)ceil(log10(float(d_constellation.size())) / log10(2.0));
+  d_nbits = (unsigned long)ceil(log10(float(d_constellation.size())) / log10(2.0));			// number of bits used per symbol
 
 }
 
@@ -131,8 +132,12 @@ digital_dvbt_ofdm_mapper_bcv::~digital_dvbt_ofdm_mapper_bcv(void)
 {
 }
 
+/**
+ * According to the constellation scheme we use, the modulation type
+ * parameter should be set appropriately.
+ */
 void digital_dvbt_ofdm_mapper_bcv::set_modulation_type(){
-	
+
 	if(d_constellation.size() == 4){
 		const std::string temp = "00";
 		d_modulation_type = std::bitset<2> (temp);
@@ -151,14 +156,20 @@ void digital_dvbt_ofdm_mapper_bcv::set_modulation_type(){
 	}
 }
 
+/**
+ * Used to return a random contellation point.
+ */
 int digital_dvbt_ofdm_mapper_bcv::randsym()
 {
     return (rand() % d_constellation.size());
 }
 
+/**
+ * Used to find the next state of the PRBS sequence.
+ */
 void
 digital_dvbt_ofdm_mapper_bcv::next_state(){								// Private function for the pilot PRBS sequence.
-	
+
     unsigned char temp = 0;
     temp = d_prbs_sequence[8] ^ d_prbs_sequence[10];
     for(int j=10;j>0;j--){
@@ -167,6 +178,10 @@ digital_dvbt_ofdm_mapper_bcv::next_state(){								// Private function for the p
     d_prbs_sequence[0] = temp;
 }
 
+/**
+ * Get a value of the initial PRBS sequence or a new
+ * generated value?!?!
+ */
 unsigned char digital_dvbt_ofdm_mapper_bcv::get_PRBS(int barrier){
 	if(barrier > 10){
 		next_state();
@@ -176,6 +191,9 @@ unsigned char digital_dvbt_ofdm_mapper_bcv::get_PRBS(int barrier){
 }
 
 
+/**
+ * Find all carriers positions and modulate them appropriately. 
+ */
 int
 digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
                               gr_vector_const_void_star &input_items,
@@ -184,24 +202,21 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   unsigned int i = 0;
   size_t carriers = d_subcarrier_map.size();
   gr_complex *out = (gr_complex *)output_items[0];
-  /******************************************/
-  /* Should be reset??                      */
-  /******************************************/
-  d_prbs_sequence = std::bitset<11> (init_sequence);
+
 
   if(d_eof) {
     return -1;
   }
 
   if(!d_msg) {
-    d_msg = d_msgq->delete_head();	   									// block, waiting for a message
+    d_msg = d_msgq->delete_head();	   					// block, waiting for a message
     d_msg_offset = 0;
     d_bit_offset = 0;
-    d_pending_flag = 1;			   										// new packet, write start of packet flag
+    d_pending_flag = 1;			   					// new packet, write start of packet flag
 
     if((d_msg->length() == 0) && (d_msg->type() == 1)) {
       d_msg.reset();
-      return -1;														// We're done; no more messages coming.
+      return -1;								// We're done; no more messages coming.
     }
   }
 
@@ -211,11 +226,11 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
   i = 0;
   d_scattered_map.clear();
-  while((3*(d_symbol_number%4) + 12*i) < carriers){							// Create the scattered pilots positions in the current symbol...
+  while((3*(d_symbol_number%4) + 12*i) < carriers){				// Create the scattered pilots positions in the current symbol...
         d_scattered_map.push_back(3*(d_symbol_number%4) + 12*i);
         i++;
   }
-  
+
   // Build a single symbol:
   // Initialize all bins to 0 to set unused carriers
   memset(out, 0, d_fft_length*sizeof(gr_complex));
@@ -225,47 +240,44 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   unsigned char diff = 0;
   d_payload_map.clear();
   for(i = 0; i < carriers; i++) {
-		prbs = get_PRBS(i);
-		/*if(i<60){
-			printf("prbs = %d \n",prbs);
-		}*/
-		if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {
-            diff = set_tps_pilots(prbs);
-			if(flag){
-				//diff = set_tps_pilots();						// Same info for all TPS carriers in a frame.Calculate once.
-				d_tps_info.push_back(diff);
-				flag = false;
-			}
-			else{
-				//diff = get_tps_pilots();
-				d_tps_info[d_symbol_number] = diff;
-			}
-			out[d_subcarrier_map[i]] = d_tps_constellation[diff];
-			//printf("SEND diff BIT = %x complex is: %.4f %.4fj \n",diff,out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag());
+	prbs = get_PRBS(i);
+	if(std::find(d_tps_map.begin(), d_tps_map.end(), i) != d_tps_map.end()) {	// TPS carrier position
+            	diff = set_tps_pilots(prbs);
+		if(flag){
+			d_tps_info.push_back(diff);				// Same info for all TPS carriers in a frame.Get it from the array.
+			flag = false;
+		}
+		else{
+			d_tps_info[d_symbol_number] = diff;			// Same info for all TPS carriers in a frame.Calculate once.
+		}
+		out[d_subcarrier_map[i]] = d_tps_constellation[diff];
+		//printf("SEND diff BIT = %x complex is: %.4f %.4fj \n",diff,out[d_subcarrier_map[i]].real(),out[d_subcarrier_map[i]].imag());
 	   }
-	  
-	  else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){
-		  out[d_subcarrier_map[i]] = 
-			d_cs_constellation[prbs];									// Continual pilot signas
+	  else if(std::find(d_continuals_map.begin(), d_continuals_map.end(), i) != d_continuals_map.end()){	// Continual pilot position
+		  out[d_subcarrier_map[i]] =
+			d_cs_constellation[prbs];
 	  }
-	  else if(std::find(d_scattered_map.begin(), d_scattered_map.end(), i) != d_scattered_map.end()){
-		  out[d_subcarrier_map[i]] = 
-			d_cs_constellation[prbs]; 									// Scattered pilot signals
+	  else if(std::find(d_scattered_map.begin(), d_scattered_map.end(), i) != d_scattered_map.end()){	// Scattered pilot position
+		  out[d_subcarrier_map[i]] =
+			d_cs_constellation[prbs];
 	  }
-	  else{
+	  else{													// Payload carrier position
 		  d_payload_map.push_back(d_zeros_from_left+i);
 	  }
   }
-  
-  
+
+
+  /**
+   * Proccess payload data,extract bits from bytes and modulate payload carriers.
+   */
   i=0;
   while((d_msg_offset < d_msg->length()) && (i < d_payload_carriers)) {
-	
-	if(d_bit_offset == 0) {												// need new data to process
+
+	if(d_bit_offset == 0) {							// need new data to process
 	  d_msgbytes = d_msg->msg()[d_msg_offset];
 	}
 
-	if(d_nresid > 0) {													// take the residual bits, fill out nbits with info from the new byte, and put them in the symbol
+	if(d_nresid > 0) {							// take the residual bits, fill out nbits with info from the new byte, and put them in the symbol
 	  d_resid |= (((1 << d_nresid)-1) & d_msgbytes) << (d_nbits - d_nresid);
 	  bits = d_resid;
 
@@ -279,7 +291,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 		//   bits, d_resid, d_nresid, d_bit_offset);
 	}
 	else {
-	  if((8 - d_bit_offset) >= d_nbits) {  								// test to make sure we can fit nbits
+	  if((8 - d_bit_offset) >= d_nbits) {  						// test to make sure we can fit nbits
 		bits = ((1 << d_nbits)-1) & (d_msgbytes >> d_bit_offset);		// take the nbits number of bits at a time from the byte to add to the symbol
 		d_bit_offset += d_nbits;
 
@@ -287,7 +299,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 		//printf("SEND BIT = %x complex is: %.4f %.4fj \n",bits,out[d_payload_map[i]].real(),out[d_payload_map[i]].imag());
 		i++;
 	  }
-	  else {  															// if we can't fit nbits, store them for the next																		
+	  else {  											// if we can't fit nbits, store them for the next
 		unsigned int extra = 8-d_bit_offset;							// saves d_nresid bits of this message where d_nresid < d_nbits
 		d_resid = ((1 << extra)-1) & (d_msgbytes >> d_bit_offset);
 		d_bit_offset += extra;
@@ -302,7 +314,7 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
   }
 
 
-  // Ran out of data to put in symbol
+  // Ran out of data to put in symbol.Fill it with random data.
   if ( (d_msg_offset == d_msg->length()) && (i < d_payload_carriers) ) {
 	  //printf("RAN OUT = %d \n",i);
     if(d_nresid > 0) {
@@ -312,17 +324,17 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
       d_resid = 0;
     }
 
-    while(i < d_payload_carriers) {										// finish filling out the symbol
+    while(i < d_payload_carriers) {							// finish filling out the symbol
       out[d_payload_map[i]] = d_constellation[randsym()];
       i++;
     }
 
-    if (d_msg->type() == 1)	        									// type == 1 sets EOF
+    if (d_msg->type() == 1)	        						// type == 1 sets EOF
     {
         printf("EOF \n");
 		d_eof = true;
     }
-    d_msg.reset();   													// finished packet, free message
+    d_msg.reset();   									// finished packet, free message
     assert(d_bit_offset == 0);
   }
 
@@ -332,45 +344,38 @@ digital_dvbt_ofdm_mapper_bcv::work(int noutput_items,
 
 
   d_symbol_number ++;
-  /*if(d_symbol_number == 2){
-		for (int i = 0; i < d_tps_info.size(); i++)
-		{
-			printf("tps_info[%d] = %d \n",i,d_tps_info[i]);
-		}
-		for(i=0;i<2048/2;i++){
-			printf("out[%d or %d] = %.4f %.4fj \n",i-172,i,out[i].real(),out[i].imag());
-		}
-	  exit(-1);
-  }*/
   if(d_symbol_number == 68){
 	d_last_out = 0;
         d_tps_info.clear();
         d_symbol_number = 0;
         d_frame_number ++;
+	d_prbs_sequence = std::bitset<11> (init_sequence);				// Initialize PRBS.Is it here????
         if(d_frame_number == 5){
-			d_last_out = 0;										// 4 frames consist a super-frame.
-			d_frame_number = 1;									
+			d_last_out = 0;							// 4 frames consist a super-frame.
+			d_frame_number = 1;
 		}
   }
- 
-  
-  return 1;  															// produced symbol
+
+  return 1;  										// produced symbol
 }
 
+/**
+ * Set the tps pilot bytes for each of the 68 symbols.
+ */
 unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(unsigned char prbs){
 	  unsigned int diff = 0;
-	  if(d_symbol_number == 0){										// PRBS sequence
-		diff = differential_modulation(prbs);		
+	  if(d_symbol_number == 0){							// PRBS sequence byte
+		diff = differential_modulation(prbs);
 	  }
-	  else if( (d_symbol_number > 0) && (d_symbol_number < 17) ){		// Synchronization
+	  else if( (d_symbol_number > 0) && (d_symbol_number < 17) ){			// Synchronization
 		if((d_frame_number % 2) == 0){
-			diff = differential_modulation(even_sequence.at(d_symbol_number-1));		
+			diff = differential_modulation(even_sequence.at(d_symbol_number-1));
 		}
-		else{	
-			diff = differential_modulation(odd_sequence.at(d_symbol_number-1));	
-		}		
+		else{
+			diff = differential_modulation(odd_sequence.at(d_symbol_number-1));
+		}
 	  }
-	  else if( (d_symbol_number > 16) && (d_symbol_number < 23) ){		// TPS length
+	  else if( (d_symbol_number > 16) && (d_symbol_number < 23) ){			// TPS length
 		if(CELL_IDENTIFICATION){
 			diff = differential_modulation(cell_identification_on.at(d_symbol_number-17));
 		}
@@ -378,54 +383,54 @@ unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(unsigned char prbs){
 			diff = differential_modulation(cell_identification_off.at(d_symbol_number-17));
 		}
 	  }
-	  else if(d_symbol_number == 23){ 									// Frame number MSB
+	  else if(d_symbol_number == 23){ 						// Frame number MSB
 		if(d_frame_number < 3){
 			diff = differential_modulation(0);
 		}
 		else{
 			diff = differential_modulation(1);
-		}	
+		}
 	  }
-	  else if(d_symbol_number == 24){ 									// Frame number LSB
+	  else if(d_symbol_number == 24){ 						// Frame number LSB
 		if((d_frame_number % 2) != 0){
 			diff = differential_modulation(0);
 		}
 		else{
 			diff = differential_modulation(1);
-		}	
-	  }					
-	  else if(d_symbol_number == 25){ 									// Constellation
-		diff = differential_modulation(d_modulation_type.test(0));	
+		}
 	  }
-	  else if(d_symbol_number == 26){ 									// Constellation
-		diff = differential_modulation(d_modulation_type.test(1));	
+	  else if(d_symbol_number == 25){ 						// Constellation
+		diff = differential_modulation(d_modulation_type.test(0));
+	  }
+	  else if(d_symbol_number == 26){ 						// Constellation
+		diff = differential_modulation(d_modulation_type.test(1));
 	  }
 	  else if(d_symbol_number == 27){
-		diff = differential_modulation(hierarchy.at(0));				// Hierarchy
+		diff = differential_modulation(hierarchy.at(0));			// Hierarchy
 	  }
 	  else if(d_symbol_number == 28){
-		diff = differential_modulation(hierarchy.at(1));				// Hierarchy
+		diff = differential_modulation(hierarchy.at(1));			// Hierarchy
 	  }
 	  else if(d_symbol_number == 29){
-		diff = differential_modulation(hierarchy.at(2));				// Hierarchy
+		diff = differential_modulation(hierarchy.at(2));			// Hierarchy
 	  }
 	  else if(d_symbol_number == 30){
-		diff = differential_modulation(code_rate.at(0));				// Inner code rates
+		diff = differential_modulation(code_rate.at(0));			// Inner code rates
 	  }
 	  else if(d_symbol_number == 31){
-		diff = differential_modulation(code_rate.at(1));				// Inner code rates
+		diff = differential_modulation(code_rate.at(1));			// Inner code rates
 	  }
 	  else if(d_symbol_number == 32){
-		diff = differential_modulation(code_rate.at(2));				// Inner code rates
+		diff = differential_modulation(code_rate.at(2));			// Inner code rates
 	  }
 	  else if(d_symbol_number == 33){
-		diff = differential_modulation(code_rate.at(3));				// Inner code rates
+		diff = differential_modulation(code_rate.at(3));			// Inner code rates
 	  }
 	  else if(d_symbol_number == 34){
-		diff = differential_modulation(code_rate.at(4));				// Inner code rates
+		diff = differential_modulation(code_rate.at(4));			// Inner code rates
 	  }
 	  else if(d_symbol_number == 35){
-		diff = differential_modulation(code_rate.at(5));				// Inner code rates
+		diff = differential_modulation(code_rate.at(5));			// Inner code rates
 	  }
 	  else if(d_symbol_number == 36){
 		diff = differential_modulation(guard_interval.at(0));			// Guard Interval
@@ -440,21 +445,24 @@ unsigned int digital_dvbt_ofdm_mapper_bcv::set_tps_pilots(unsigned char prbs){
 		diff = differential_modulation(transmission_mode.at(1));		// Transmission Mode
 	  }
 	  else if( (d_symbol_number > 39) && (d_symbol_number < 48) ) {
-		diff = differential_modulation(0);								// Cell Identifier(For Future use)
+		diff = differential_modulation(0);					// Cell Identifier(For Future use)
 	  }
 	  else if( (d_symbol_number > 47) && (d_symbol_number < 54) ) {
-		diff = differential_modulation(0);								// All set to zero(For Future use)
+		diff = differential_modulation(0);					// All set to zero(For Future use)
 	  }
-      else if(d_symbol_number > 53){
+      	  else if(d_symbol_number > 53){
 		if(d_symbol_number == 54){
 			encode_BCH();
 		}
-		diff = differential_modulation(d_parity[d_symbol_number - 54]);	// BCH parity check.
+		diff = differential_modulation(d_parity[d_symbol_number - 54]);		// BCH parity check.
 	  }
-	 
+
 	  return diff;
 }
 
+/**
+ * BCH parity check for the TPS pilot information.
+ */
 void digital_dvbt_ofdm_mapper_bcv::encode_BCH(){
 
     register int    i, j;
@@ -482,11 +490,17 @@ void digital_dvbt_ofdm_mapper_bcv::encode_BCH(){
     }
 }
 
+/**
+ * Get the TPS information stored.
+ */
 unsigned int digital_dvbt_ofdm_mapper_bcv::get_tps_pilots(){
 	return d_tps_info[d_symbol_number];
 }
 
+/**
+ * Differentially modulate a BPSK scheme.Used in tps carriers.
+ */
 unsigned int digital_dvbt_ofdm_mapper_bcv::differential_modulation(int bit){
-	d_last_out = !((bit + d_last_out) % 2);							
-	return d_last_out;													// modulus = 2 for DBPSK*/
+	d_last_out = !((bit + d_last_out) % 2);
+	return d_last_out;								// modulus = 2 for DBPSK*/
 }
